@@ -1,3 +1,7 @@
+import Navbar from "@/components/navbar";
+import "./globals.css";
+
+
 export const metadata = {
   title: 'Jwayyed Law LLC',
   description: 'Your trusted legal advisor',
@@ -6,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Navbar />
+
+      </body>
     </html>
   );
 }
