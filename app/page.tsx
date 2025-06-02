@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,9 +16,12 @@ export default function Home() {
             Traffic, and Civil Law.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <Link href="/contact">
             <button className="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-all duration-200 font-medium">
-              Schedule Appointment
+            Schedule Appointment
             </button>
+        </Link>
+        
             <button className="border border-gray-900 text-gray-900 px-6 py-3 rounded-md hover:bg-gray-300 transition-all duration-200 font-medium">
               Meet Attorney Jwayyed
             </button>
