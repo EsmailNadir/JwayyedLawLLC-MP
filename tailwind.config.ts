@@ -8,3 +8,4 @@ export default {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
 } satisfies Config
+
