@@ -25,57 +25,32 @@ const ContactPage = () => {
       {/* Form + Calendly */}
       <div className="flex flex-col md:flex-row gap-5 mb-8">
         {/* Contact Form */}
-        <div className="w-full md:w-1/2 bg-white shadow-md p-3 rounded-lg border">
-          <form
-            action="https://formspree.io/f/xyzjyzgv"
-            method="POST"
-            className="space-y-3"
+        <form
+          action="https://formspree.io/f/xyzjyzgv"
+          method="POST"
+          className="w-full md:w-1/2 space-y-3 bg-white shadow-md p-3 rounded-lg border"
+        >
+          <InputField label="Name" type="text" name="name" />
+          <InputField label="Email" type="email" name="email" />
+          <InputField label="Phone Number" type="tel" name="phone" />
+          <div>
+            <label className="block text-gray-800 text-sm mb-1">Message</label>
+            <textarea
+              name="message"
+              className="w-full border border-gray-300 rounded-md px-3 py-1.5 h-20 resize-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
           >
-            <div>
-              <label className="block text-gray-800 text-sm mb-1">Name</label>
-              <input
-                type="text"
-                name="name"
-                required
-                className="w-full border border-gray-300 rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-800 text-sm mb-1">Email</label>
-              <input
-                type="email"
-                name="email"
-                required
-                className="w-full border border-gray-300 rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-800 text-sm mb-1">Phone Number</label>
-              <input
-                type="tel"
-                name="phone"
-                className="w-full border border-gray-300 rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-800 text-sm mb-1">Message</label>
-              <textarea
-                name="message"
-                required
-                className="w-full border border-gray-300 rounded-md px-3 py-1.5 h-20 resize-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
-            >
-              Submit
-            </button>
-            <p className="text-xs text-gray-500 text-center">
-              We respond to most inquiries within 24 hours.
-            </p>
-          </form>
-        </div>
+            Submit
+          </button>
+          <p className="text-xs text-gray-500 text-center">
+            We respond to most inquiries within 24 hours.
+          </p>
+        </form>
 
         {/* Calendly */}
         <div className="w-full md:w-1/2 bg-white shadow-md p-3 rounded-lg border">
@@ -100,7 +75,7 @@ const ContactPage = () => {
             <ContactDetail
               icon={<MapPin className="text-blue-900 w-4 h-4" />}
               title="Office Location"
-              detail="1234 Main St, Columbus OH 43215"
+              detail="1335 Dublin Rd Suite 211A, Columbus, OH 43215"
             />
             <ContactDetail
               icon={<Phone className="text-blue-900 w-4 h-4" />}
@@ -110,12 +85,12 @@ const ContactPage = () => {
             <ContactDetail
               icon={<Mail className="text-blue-900 w-4 h-4" />}
               title="Email"
-              detail="info@jjlawohio.com"
+              detail="jwayyedlawllc@outlook.com"
             />
             <ContactDetail
               icon={<Clock className="text-blue-900 w-4 h-4" />}
               title="Business Hours"
-              detail="Mon–Fri: 9:00 AM – 5:00 PM\nSat–Sun: Closed"
+              detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
             />
           </div>
         </div>
@@ -134,6 +109,18 @@ const ContactPage = () => {
     </section>
   );
 };
+
+const InputField = ({ label, type, name }) => (
+  <div>
+    <label className="block text-gray-800 text-sm mb-1">{label}</label>
+    <input
+      type={type}
+      name={name}
+      required
+      className="w-full border border-gray-300 rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
+    />
+  </div>
+);
 
 const ContactDetail = ({ icon, title, detail }) => (
   <div className="flex items-start gap-2">
