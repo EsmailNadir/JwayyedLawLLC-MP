@@ -10,7 +10,7 @@ const Immigration = () => {
         
         <div className="w-full md:w-1/2">
           <Image
-            src="/assets/passport.jpg" //
+            src="/assets/passport.jpg" 
             alt="Immigration law"
             width={600}
             height={400}
