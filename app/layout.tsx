@@ -3,6 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import Head from "next/head";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Jwayyed Law LLC",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
       <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

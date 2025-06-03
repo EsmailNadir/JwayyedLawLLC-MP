@@ -29,20 +29,19 @@ const Navbar: React.FC = () => {
   />
 </Link>
 
-        {/* Desktop Links */}
         <div className="hidden sm:flex space-x-12">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-lg font-normal text-gray-900 hover:text-blue-600 transition-colors"
+              className="text-lg font-normal text-gray-900 hover:text-blue-900
+              transition-colors"
             >
               {link.name}
             </Link>
           ))}
         </div>
 
-        {/* Hamburger (Mobile Only) */}
         <button
           className="sm:hidden flex items-center"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -72,7 +71,6 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="sm:hidden px-6 pb-4">
           <div className="flex flex-col space-y-2">
@@ -80,7 +78,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-lg font-normal text-gray-900 py-2 hover:text-blue-600 transition-colors"
+                className="text-lg font-normal text-gray-900 py-2 hover:text-slate-700 transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}

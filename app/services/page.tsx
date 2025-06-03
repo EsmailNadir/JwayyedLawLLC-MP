@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Gavel, ScrollText, Users, FileText, BookUser, Globe, Briefcase, FileSignature, Handshake } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 
@@ -77,13 +78,14 @@ const ServicesPage = () => {
           <p className="text-md sm:text-lg md:text-xl mb-6 max-w-xl mx-auto">
             Focused. Transparent. Personalized legal support across Ohio.
           </p>
+          <Link href="/contact">
           <button className="bg-blue-950 text-white px-6 py-3 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium">
             Schedule Consultation
           </button>
+          </Link>
         </div>
       </section>
 
-      {/* ✅ Services Grid */}
       <div className="py-16 px-4 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
           <ServiceCard
