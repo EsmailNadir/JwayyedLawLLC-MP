@@ -2,6 +2,18 @@
 import React, { useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
+type InputFieldProps = {
+  label: string;
+  type: string;
+  name: string;
+};
+
+type ContactDetailProps = {
+  icon: React.ReactNode;
+  title: string;
+  detail: string;
+};
+
 const ContactPage = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -12,7 +24,6 @@ const ContactPage = () => {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
-      {/* Heading */}
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-1">
           Contact Us
@@ -22,9 +33,7 @@ const ContactPage = () => {
         </p>
       </div>
 
-      {/* Form + Calendly */}
       <div className="flex flex-col md:flex-row gap-5 mb-8">
-        {/* Contact Form */}
         <form
           action="https://formspree.io/f/xyzjyzgv"
           method="POST"
@@ -52,7 +61,6 @@ const ContactPage = () => {
           </p>
         </form>
 
-        {/* Calendly */}
         <div className="w-full md:w-1/2 bg-white shadow-md p-3 rounded-lg border">
           <h2 className="text-base font-semibold font-serif text-gray-900 mb-1 text-center">
             Schedule a Consultation
@@ -65,7 +73,6 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Contact Info & Map */}
       <div className="grid md:grid-cols-2 gap-5">
         <div className="bg-white shadow-md p-3 rounded-lg border text-sm">
           <h3 className="text-base font-semibold font-serif text-gray-900 mb-2">
@@ -90,12 +97,11 @@ const ContactPage = () => {
             <ContactDetail
               icon={<Clock className="text-blue-900 w-4 h-4" />}
               title="Business Hours"
-              detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
+              detail="Mon–Fri: 9:00 AM – 5:00 PM\nSat–Sun: Closed"
             />
           </div>
         </div>
 
-        {/* Map */}
         <div className="w-full h-full border rounded-lg overflow-hidden shadow-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8607025905874!2d-83.0018124!3d39.9611751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f19b9b1baab%3A0xfbd9f9f4f88b2a02!2sColumbus%2C%20OH!5e0!3m2!1sen!2sus!4v1717283167410!5m2!1sen!2sus"
@@ -110,7 +116,7 @@ const ContactPage = () => {
   );
 };
 
-const InputField = ({ label, type, name }) => (
+const InputField = ({ label, type, name }: InputFieldProps) => (
   <div>
     <label className="block text-gray-800 text-sm mb-1">{label}</label>
     <input
@@ -122,7 +128,7 @@ const InputField = ({ label, type, name }) => (
   </div>
 );
 
-const ContactDetail = ({ icon, title, detail }) => (
+const ContactDetail = ({ icon, title, detail }: ContactDetailProps) => (
   <div className="flex items-start gap-2">
     {icon}
     <div>

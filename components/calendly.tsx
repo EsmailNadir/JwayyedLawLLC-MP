@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 
 const Calendly = () => {
   useEffect(() => {
-    // Ensures Calendly initializes after render
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
