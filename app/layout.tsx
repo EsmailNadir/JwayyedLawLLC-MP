@@ -20,13 +20,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           async
         ></script>
       </Head>
-      <body className="h-full flex flex-col">
+
+      <body className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-1">
+
+        <main className="flex-grow">
           {children}
         </main>
-        <Footer />
+
+        <Footer/>
       </body>
     </html>
   );
-}
+};
