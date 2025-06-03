@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -15,10 +16,18 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6  py-6">
-        <div className="font-serif font-bold text-2xl text-gray-900 tracking-tight">
-          Jwayyed Law
-        </div>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+  <Image 
+    src="/assets/jwayyed-logo.png"
+    alt="Jwayyed Law Logo"
+    width={200}
+    height={50}
+    priority
+    className="h-12 w-auto hover:scale-105 transition-transform duration-200h-12  brightness-0 contrast-200 "
+  />
+</Link>
 
         {/* Desktop Links */}
         <div className="hidden sm:flex space-x-12">
