@@ -18,7 +18,7 @@ The website serves to:
 
 ## ⚙️ Technologies Used
 
-- **Next.js 14** – Full-stack React framework used for routing, layout, and server-side rendering
+- **Next.js 15** – Full-stack React framework used for routing, layout, and server-side rendering
 - **Tailwind CSS** – Utility-first CSS framework for rapid and responsive UI design
 - **Lucide React Icons** – Icon library for interface clarity and consistency
 - **Formspree** – Handles form submissions securely and simply
