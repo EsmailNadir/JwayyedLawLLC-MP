@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
@@ -73,6 +74,13 @@ const ContactPage = () => {
         </div>
       </div>
 
+      <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 p-4 rounded-md text-sm mb-8">
+        <h3 className="font-semibold mb-1">Client Communication Notice:</h3>
+        <p>
+          All phone calls, voicemails, emails, and website contact form submissions are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
+        </p>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-5">
         <div className="bg-white shadow-md p-3 rounded-lg border text-sm">
           <h3 className="text-base font-semibold font-serif text-gray-900 mb-2">
@@ -104,7 +112,7 @@ const ContactPage = () => {
 
         <div className="w-full h-full border rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8607025905874!2d-83.0018124!3d39.9611751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f19b9b1baab%3A0xfbd9f9f4f88b2a02!2sColumbus%2C%20OH!5e0!3m2!1sen!2sus!4v1717283167410!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.5000029755743!2d-83.0609554!3d39.9674267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f010f090e4d%3A0x8ef6e1676a0fbb4a!2s1335%20Dublin%20Rd%20%23211A%2C%20Columbus%2C%20OH%2043215!5e0!3m2!1sen!2sus!4v1717860781622!5m2!1sen!2sus"
             className="w-full h-56"
             allowFullScreen
             loading="lazy"
