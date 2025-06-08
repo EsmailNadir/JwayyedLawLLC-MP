@@ -1,76 +1,84 @@
-Jwayyed Law, LLC Website
-This is the official website for Jwayyed Law, LLC, built using Next.js and Tailwind CSS. It is designed to provide a clean, responsive, and accessible user experience for potential clients to learn about legal services, request consultations, and get in touch with the firm.
+# Jwayyed Law, LLC – Official Website
 
-🚀 Getting Started
-1. Clone the Repository
-bash
-Copy
-Edit
+Welcome to the official website for **Jwayyed Law, LLC**, built using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). This site provides potential clients with access to legal service information, contact options, and a seamless consultation booking experience.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/EsmailNadir/JwayyedLawLLC-MP.git
 cd JwayyedLawLLC-MP
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
 # or
 yarn install
-3. Run the Development Server
-bash
-Copy
-Edit
+```
+
+### 3. Start the Development Server
+
+```bash
 npm run dev
 # or
 yarn dev
-Open your browser and navigate to:
-👉 http://localhost:3000
+```
 
-The site will automatically reload if you make edits.
+Then open your browser and navigate to:  
+👉 [http://localhost:3000](http://localhost:3000)
 
-✨ Features
-🔒 Clean, professional UI with React and Tailwind CSS
+The site will automatically reload as you make edits.
 
-📆 Integrated Calendly widget for consultation bookings
+---
 
-📩 Contact form using Formspree
+## ✨ Features
 
-📱 Responsive mobile-first design
+- ✅ Clean, professional UI with React and Tailwind CSS  
+- 📅 Integrated Calendly widget for consultation bookings  
+- 📬 Contact form using Formspree  
+- 📱 Fully responsive mobile-first layout  
+- 🖼️ Optimized image loading with WebP format  
+- 🧩 Modular components for legal services and layout
 
-📷 Optimized image loading and webp support
+---
 
-🗂️ Modular components for legal services and layout
+## 🛠 Technologies Used
 
-🛠 Technologies Used
-Next.js 14
+- **Next.js 14**  
+- **Tailwind CSS**  
+- **Lucide React Icons**  
+- **React Hook Form (optional-ready)**  
+- **Formspree**  
+- **Calendly Embed**
 
-Tailwind CSS
+---
 
-Lucide React Icons
+## 🗂 Site Pages
 
-React Hook Form (optional setup-ready)
+- `/` – Home  
+- `/services` – List of legal services (Estate Planning, Immigration, Contracts, etc.)  
+- `/contact` – Contact form + consultation booking  
+- `/about` – Attorney profile and firm info
 
-Formspree
+---
 
-Calendly Embed
+## 🚀 Deployment
 
-🧾 Site Pages
-/ – Home
+We recommend deploying with [Vercel](https://vercel.com), the creators of Next.js.  
+Alternatively, you can follow the [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying) for platforms like Netlify or your own VPS.
 
-/services – List of legal services (Estate Planning, Immigration, Contracts, etc.)
+---
 
-/contact – Contact form + consultation scheduling
+## 📬 Contact
 
-/about – Firm information and attorney background
-
-🚀 Deployment
-To deploy this site, we recommend using Vercel, the creators of Next.js.
-
-Or follow the official Next.js deployment guide for other platforms like Netlify or your own VPS.
-
-📫 Contact
-Jwayyed Law, LLC
-1335 Dublin Rd Suite 211A
-Columbus, OH 43215
-📞 (614) 285-5482
-✉️ jwayyedlawllc@outlook.com
-🌐 jjlawohio.com
+**Jwayyed Law, LLC**  
+1335 Dublin Rd Suite 211A  
+Columbus, OH 43215  
+📞 (614) 285-5482  
+📧 [jwayyedlawllc@outlook.com](mailto:jwayyedlawllc@outlook.com)  
+🌐 [jjlawohio.com](https://jjlawohio.com)
