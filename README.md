@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Jwayyed Law, LLC Website
+This is the official website for Jwayyed Law, LLC, built using Next.js and Tailwind CSS. It is designed to provide a clean, responsive, and accessible user experience for potential clients to learn about legal services, request consultations, and get in touch with the firm.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+🚀 Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/EsmailNadir/JwayyedLawLLC-MP.git
+cd JwayyedLawLLC-MP
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+3. Run the Development Server
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser and navigate to:
+👉 http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site will automatically reload if you make edits.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✨ Features
+🔒 Clean, professional UI with React and Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📆 Integrated Calendly widget for consultation bookings
 
-## Learn More
+📩 Contact form using Formspree
 
-To learn more about Next.js, take a look at the following resources:
+📱 Responsive mobile-first design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📷 Optimized image loading and webp support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🗂️ Modular components for legal services and layout
 
-## Deploy on Vercel
+🛠 Technologies Used
+Next.js 14
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lucide React Icons
+
+React Hook Form (optional setup-ready)
+
+Formspree
+
+Calendly Embed
+
+🧾 Site Pages
+/ – Home
+
+/services – List of legal services (Estate Planning, Immigration, Contracts, etc.)
+
+/contact – Contact form + consultation scheduling
+
+/about – Firm information and attorney background
+
+🚀 Deployment
+To deploy this site, we recommend using Vercel, the creators of Next.js.
+
+Or follow the official Next.js deployment guide for other platforms like Netlify or your own VPS.
+
+📫 Contact
+Jwayyed Law, LLC
+1335 Dublin Rd Suite 211A
+Columbus, OH 43215
+📞 (614) 285-5482
+✉️ jwayyedlawllc@outlook.com
+🌐 jjlawohio.com
