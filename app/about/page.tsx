@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -15,8 +14,8 @@ export default function AboutPage() {
   const achievements = [
     { icon: <GraduationCap size={32} />, label: "Juris Doctor from Capital University" },
     { icon: <Gavel size={32} />, label: "Municipal Court Prosecutor" },
-    { icon: <Users size={32} />, label: "OSBA Leadership Academy Member" },
-    { icon: <Briefcase size={32} />, label: "Former Franklin County Defender" },
+    { icon: <Users size={32} />, label: "OSBA Leadership Academy Graduate" },
+    { icon: <Briefcase size={32} />, label: "Civil Rights Legal Director" },
   ];
 
   const testimonials = [
@@ -95,77 +94,96 @@ export default function AboutPage() {
 
   return (
     <div className="bg-[#fffaf4] min-h-screen px-6 py-12 md:px-20 text-gray-800 font-serif">
-      <div className="max-w-6xl mx-auto mb-32 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12">Meet Attorney Jwayyed</h1>
-        <div className="flex flex-col lg:flex-row gap-20 items-start text-left">
-          <div className="flex flex-col items-center">
+      {/* Meet Attorney Section */}
+      <div className="max-w-6xl mx-auto mb-32">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Meet Attorney Jwayyed</h1>
+        <div className="flex flex-col lg:flex-row gap-16 items-start justify-center">
+          <div className="flex flex-col items-center lg:flex-shrink-0 lg:mr-12">
             <img
-              src="/attorney.jpg"
+              src="/assets/attorney.jpg"
               alt="Attorney Jwayyed"
-              className="rounded-2xl w-[300px] md:w-[350px] shadow-md mb-6"
+              className="rounded-2xl w-[280px] md:w-[320px] shadow-md mb-6"
             />
             <Link href="/services">
-              <button className="bg-[#EBD2AE] text-gray-800 px-6 py-3 rounded-md font-semibold shadow hover:bg-[#e6c799] transition">
+              <button className="bg-[#D4A574] text-white px-10 py-5 rounded-lg font-bold text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200">
                 VIEW PRACTICE AREAS
               </button>
             </Link>
           </div>
 
-          <div className="flex-1">
-            <p className="text-lg mb-6 text-gray-600">Lifelong Ohio native. Experienced advocate. Proven results.</p>
-            <p className="mb-4 leading-relaxed">Attorney Jwayyed is a lifelong Ohio native. Born in Cincinnati and raised in Akron...</p>
-            <p className="mb-6 leading-relaxed">While at Capital, he gained diverse legal experience...</p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
-              {achievements.map((item, i) => (
-                <div key={i} className="bg-[#EBD2AE] p-4 rounded-lg shadow-sm text-center text-gray-800">
-                  <div className="flex justify-center mb-2">{item.icon}</div>
-                  <p className="text-sm font-medium">{item.label}</p>
-                </div>
-              ))}
-            </div>
-            <div className="relative w-full h-96 mb-10">
-              {images.map((src, index) => (
-                <img
-                  key={index}
-                  src={src}
-                  alt={`Attorney Jwayyed ${index + 1}`}
-                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out ${current === index ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrent(index)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${current === index ? "bg-gray-800 shadow-md" : "bg-gray-400 hover:bg-gray-600"}`}
-                  />
-                ))}
-              </div>
-            </div>
+          <div className="text-lg text-gray-700 leading-relaxed space-y-5 max-w-3xl lg:flex-1">
+            <p>Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor's degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>
+
+            <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender's Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney's Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
+
+            <p>Jwayyed now leads his own practice, which contracts with several municipalities in Franklin County to provide prosecutorial services. As a result, he does not accept criminal defense cases in Franklin County to avoid conflicts of interest.</p>
+
+            <p>In addition to his municipal and civil rights work, Jwayyed assists clients with business contracts, landlord-tenant agreements, wills, and basic estate planning. He also advises law enforcement agencies on legal matters and provides legal training on a range of issues relevant to public service and policing.</p>
+
+            <p>Known for his strategic thinking, clear communication, and client-centered service, Jwayyed helps individuals, businesses, and institutions navigate complex legal challenges with clarity and confidence.</p>
+
+            <h2 className="text-2xl font-semibold mt-6 mb-3">Outside the Office</h2>
+
+            <p>In his free time, Jwayyed enjoys spirited GOAT debates about Kobe, MJ, and LeBron with his cousins, staying active through weightlifting and recreational sports, and listening to podcasts on law, culture, and current events. A true Buckeye fan, he's a proud Buck Nut who tries to attend at least one road game each season with his brother. Jwayyed is also active in his local community and values spending quality time with family and friends.</p>
+
+            <p className="font-semibold">If you need experienced, honest legal guidance, contact Attorney Jwayyed today to schedule a consultation.</p>
           </div>
+        </div>
+        
+        <div className="text-center mt-12">
+          <Link href="/about/legal-assistant">
+            <button className="bg-[#D4A574] text-white px-10 py-5 rounded-lg font-bold text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+              Meet Our Legal Assistant
+            </button>
+          </Link>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto mb-32 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12">Recognition & Accolades</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 items-start text-left">
-          <div className="flex flex-col">
-            <h3 className="text-xl font-bold mb-2">Ohio State Bar Association: Leadership Academy – 2023</h3>
+      {/* Achievement Cards Section */}
+      <div className="max-w-6xl mx-auto mb-32">
+        <div className="flex justify-center items-center gap-8">
+          {achievements.map((item, i) => (
+            <div key={i} className="bg-[#EBD2AE] p-6 rounded-lg shadow-sm text-center text-gray-800 w-52 h-32 flex flex-col items-center justify-center">
+              <div className="flex justify-center mb-3">{item.icon}</div>
+              <p className="text-xs font-medium leading-tight px-2">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Professional Memberships Section */}
+      <div className="max-w-6xl mx-auto mb-20">
+        <h2 className="text-2xl font-bold text-center mb-6">Professional Memberships</h2>
+        <div className="text-center">
+          <p className="text-lg text-gray-700 mb-2">• Columbus Bar Association</p>
+          <p className="text-lg text-gray-700">• Ohio State Bar Association</p>
+        </div>
+      </div>
+
+      {/* Recognition & Accolades Section */}
+      <div className="max-w-6xl mx-auto mb-32">
+        <div className="text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Recognition & Accolades</h2>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8 lg:gap-12">
+          <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
+            <h3 className="text-xl font-bold mb-3">Ohio State Bar Association: Leadership Academy – 2023</h3>
             <p className="text-gray-700 leading-relaxed">Received the most nominations in the Academy's history. Selected as 1 of 17 attorneys statewide.</p>
           </div>
-          <div className="flex justify-center">
-            <video className="rounded-lg shadow-md w-full max-w-sm" controls>
+          <div className="flex flex-col items-center justify-center w-full lg:w-80 mx-auto">
+            <video className="rounded-lg shadow-md w-full max-w-sm h-auto" controls>
               <source src="/jwayyed-speech.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="flex flex-col">
-            <h3 className="text-xl font-bold mb-2">CALI Award Recipient – 2017</h3>
+          <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
+            <h3 className="text-xl font-bold mb-3">CALI Award Recipient – 2017</h3>
             <p className="text-gray-700 leading-relaxed">Excellence in Interviewing & Counseling (Top scorer across 100+ US law schools).</p>
           </div>
         </div>
       </div>
 
+      {/* Testimonials / Recommendations Section */}
       <div className="bg-gray-800 text-white py-16 -mx-6 md:-mx-20 -mb-12">
         <div className="max-w-6xl mx-auto px-6 md:px-20 text-center">
           <h2 className="text-4xl font-bold mb-8">Recommendations</h2>
