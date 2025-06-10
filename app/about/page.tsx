@@ -12,10 +12,10 @@ import {
 
 export default function AboutPage() {
   const achievements = [
-    { icon: <GraduationCap size={32} />, label: "Juris Doctor from Capital University" },
-    { icon: <Gavel size={32} />, label: "Municipal Court Prosecutor" },
-    { icon: <Users size={32} />, label: "OSBA Leadership Academy Graduate" },
-    { icon: <Briefcase size={32} />, label: "Civil Rights Legal Director" },
+    { icon: <GraduationCap size={28} />, label: "Juris Doctor from Capital University" },
+    { icon: <Gavel size={28} />, label: "Municipal Court Prosecutor" },
+    { icon: <Users size={28} />, label: "OSBA Leadership Academy Graduate" },
+    { icon: <Briefcase size={28} />, label: "Civil Rights Legal Director" },
   ];
 
   const testimonials = [
@@ -93,25 +93,29 @@ export default function AboutPage() {
   }, [images.length]);
 
   return (
-    <div className="bg-[#fffaf4] min-h-screen px-6 py-12 md:px-20 text-gray-800 font-serif">
+    <div className="bg-[#fffaf4] min-h-screen px-4 sm:px-6 py-8 sm:py-12 md:px-20 text-gray-800 font-serif">
       {/* Meet Attorney Section */}
-      <div className="max-w-6xl mx-auto mb-32">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Meet Attorney Jwayyed</h1>
-        <div className="flex flex-col lg:flex-row gap-16 items-start justify-center">
-          <div className="flex flex-col items-center lg:flex-shrink-0 lg:mr-12">
+      <div className="max-w-6xl mx-auto mb-20 sm:mb-32">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12">Meet Attorney Jwayyed</h1>
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center lg:items-start justify-center">
+          <div className="flex flex-col items-center lg:flex-shrink-0 lg:mr-12 order-1 lg:order-none">
             <img
-              src="/assets/attorney.jpg"
+              src="/assets/attorney-main.jpg"
               alt="Attorney Jwayyed"
-              className="rounded-2xl w-[280px] md:w-[320px] shadow-md mb-6"
+              className="rounded-2xl w-[240px] sm:w-[280px] md:w-[320px] shadow-md mb-6"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/assets/attorney.jpg";
+              }}
             />
             <Link href="/services">
-              <button className="bg-[#D4A574] text-white px-10 py-5 rounded-lg font-bold text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+              <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full sm:w-auto">
                 VIEW PRACTICE AREAS
               </button>
             </Link>
           </div>
 
-          <div className="text-lg text-gray-700 leading-relaxed space-y-5 max-w-3xl lg:flex-1">
+          <div className="text-base sm:text-lg text-gray-700 leading-relaxed space-y-4 sm:space-y-5 max-w-3xl lg:flex-1 order-2 lg:order-none">
             <p>Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor's degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>
 
             <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender's Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney's Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
@@ -122,7 +126,7 @@ export default function AboutPage() {
 
             <p>Known for his strategic thinking, clear communication, and client-centered service, Jwayyed helps individuals, businesses, and institutions navigate complex legal challenges with clarity and confidence.</p>
 
-            <h2 className="text-2xl font-semibold mt-6 mb-3">Outside the Office</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-3">Outside the Office</h2>
 
             <p>In his free time, Jwayyed enjoys spirited GOAT debates about Kobe, MJ, and LeBron with his cousins, staying active through weightlifting and recreational sports, and listening to podcasts on law, culture, and current events. A true Buckeye fan, he's a proud Buck Nut who tries to attend at least one road game each season with his brother. Jwayyed is also active in his local community and values spending quality time with family and friends.</p>
 
@@ -130,9 +134,9 @@ export default function AboutPage() {
           </div>
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 sm:mt-12">
           <Link href="/about/legal-assistant">
-            <button className="bg-[#D4A574] text-white px-10 py-5 rounded-lg font-bold text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+            <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full sm:w-auto">
               Meet Our Legal Assistant
             </button>
           </Link>
@@ -140,35 +144,35 @@ export default function AboutPage() {
       </div>
 
       {/* Achievement Cards Section */}
-      <div className="max-w-6xl mx-auto mb-32">
-        <div className="flex justify-center items-center gap-8">
+      <div className="max-w-6xl mx-auto mb-20 sm:mb-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {achievements.map((item, i) => (
-            <div key={i} className="bg-[#EBD2AE] p-6 rounded-lg shadow-sm text-center text-gray-800 w-52 h-32 flex flex-col items-center justify-center">
-              <div className="flex justify-center mb-3">{item.icon}</div>
-              <p className="text-xs font-medium leading-tight px-2">{item.label}</p>
+            <div key={i} className="bg-[#EBD2AE] p-4 sm:p-6 rounded-lg shadow-sm text-center text-gray-800 h-28 sm:h-32 flex flex-col items-center justify-center">
+              <div className="flex justify-center mb-2 sm:mb-3">{item.icon}</div>
+              <p className="text-xs sm:text-xs font-medium leading-tight px-1 sm:px-2">{item.label}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Professional Memberships Section */}
-      <div className="max-w-6xl mx-auto mb-20">
-        <h2 className="text-2xl font-bold text-center mb-6">Professional Memberships</h2>
+      <div className="max-w-6xl mx-auto mb-16 sm:mb-20">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Professional Memberships</h2>
         <div className="text-center">
-          <p className="text-lg text-gray-700 mb-2">• Columbus Bar Association</p>
-          <p className="text-lg text-gray-700">• Ohio State Bar Association</p>
+          <p className="text-base sm:text-lg text-gray-700 mb-2">• Columbus Bar Association</p>
+          <p className="text-base sm:text-lg text-gray-700">• Ohio State Bar Association</p>
         </div>
       </div>
 
       {/* Recognition & Accolades Section */}
-      <div className="max-w-6xl mx-auto mb-32">
+      <div className="max-w-6xl mx-auto mb-20 sm:mb-32">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Recognition & Accolades</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">Recognition & Accolades</h2>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-6 sm:gap-8 lg:gap-12">
           <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
-            <h3 className="text-xl font-bold mb-3">Ohio State Bar Association: Leadership Academy – 2023</h3>
-            <p className="text-gray-700 leading-relaxed">Received the most nominations in the Academy's history. Selected as 1 of 17 attorneys statewide.</p>
+            <h3 className="text-lg sm:text-xl font-bold mb-3">Ohio State Bar Association: Leadership Academy – 2023</h3>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Received the most nominations in the Academy's history. Selected as 1 of 17 attorneys statewide.</p>
           </div>
           <div className="flex flex-col items-center justify-center w-full lg:w-80 mx-auto">
             <video className="rounded-lg shadow-md w-full max-w-sm h-auto" controls>
@@ -177,22 +181,22 @@ export default function AboutPage() {
             </video>
           </div>
           <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
-            <h3 className="text-xl font-bold mb-3">CALI Award Recipient – 2017</h3>
-            <p className="text-gray-700 leading-relaxed">Excellence in Interviewing & Counseling (Top scorer across 100+ US law schools).</p>
+            <h3 className="text-lg sm:text-xl font-bold mb-3">CALI Award Recipient – 2017</h3>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Excellence in Interviewing & Counseling (Top scorer across 100+ US law schools).</p>
           </div>
         </div>
       </div>
 
       {/* Testimonials / Recommendations Section */}
-      <div className="bg-gray-800 text-white py-16 -mx-6 md:-mx-20 -mb-12">
-        <div className="max-w-6xl mx-auto px-6 md:px-20 text-center">
-          <h2 className="text-4xl font-bold mb-8">Recommendations</h2>
+      <div className="bg-gray-800 text-white py-12 sm:py-16 -mx-4 sm:-mx-6 md:-mx-20 -mb-8 sm:-mb-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-20 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Recommendations</h2>
           <div className="relative">
-            <div className="text-center mb-8 min-h-[400px] flex flex-col justify-center">
-              <blockquote className="text-lg italic leading-relaxed mb-6">
+            <div className="text-center mb-6 sm:mb-8 min-h-[300px] sm:min-h-[400px] flex flex-col justify-center">
+              <blockquote className="text-base sm:text-lg italic leading-relaxed mb-4 sm:mb-6">
                 "{testimonials[currentTestimonial].text}"
               </blockquote>
-              <p className="font-semibold">
+              <p className="font-semibold text-sm sm:text-base">
                 — {testimonials[currentTestimonial].author}, {testimonials[currentTestimonial].title}
               </p>
             </div>
@@ -203,9 +207,9 @@ export default function AboutPage() {
                 }
                 className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
               >
-                <ChevronLeft size={24} />
+                <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
               </button>
-              <span className="text-sm text-gray-300">
+              <span className="text-xs sm:text-sm text-gray-300">
                 {currentTestimonial + 1} of {testimonials.length}
               </span>
               <button
@@ -214,10 +218,10 @@ export default function AboutPage() {
                 }
                 className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
               >
-                <ChevronRight size={24} />
+                <ChevronRight size={20} className="sm:w-6 sm:h-6" />
               </button>
             </div>
-            <div className="flex justify-center space-x-2 mt-6">
+            <div className="flex justify-center space-x-2 mt-4 sm:mt-6">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
