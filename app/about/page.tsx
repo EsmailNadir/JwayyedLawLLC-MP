@@ -8,6 +8,8 @@ import {
   Briefcase,
   ChevronLeft,
   ChevronRight,
+  Scale,
+  Building2,
 } from "lucide-react";
 
 export default function AboutPage() {
@@ -16,6 +18,11 @@ export default function AboutPage() {
     { icon: <Gavel size={28} />, label: "Municipal Court Prosecutor" },
     { icon: <Users size={28} />, label: "OSBA Leadership Academy Graduate" },
     { icon: <Briefcase size={28} />, label: "Civil Rights Legal Director" },
+  ];
+
+  const memberships = [
+    { icon: <Building2 size={28} />, label: "Columbus Bar Association" },
+    { icon: <Scale size={28} />, label: "Ohio State Bar Association" },
   ];
 
   const testimonials = [
@@ -96,7 +103,9 @@ export default function AboutPage() {
     <div className="bg-[#fffaf4] min-h-screen px-4 sm:px-6 py-8 sm:py-12 md:px-20 text-gray-800 font-serif">
       {/* Meet Attorney Section */}
       <div className="max-w-6xl mx-auto mb-20 sm:mb-32">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12">Meet Attorney Jwayyed</h1>
+        <div className="text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">Meet Attorney Jwayyed</h1>
+        </div>
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center lg:items-start justify-center">
           <div className="flex flex-col items-center lg:flex-shrink-0 lg:mr-12 order-1 lg:order-none">
             <img
@@ -143,13 +152,19 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Achievement Cards Section */}
+      {/* Achievement Badges Section */}
       <div className="max-w-6xl mx-auto mb-20 sm:mb-32">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {/* First row - Education/Certifications */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[50px] justify-items-center mb-16">
           {achievements.map((item, i) => (
-            <div key={i} className="bg-[#EBD2AE] p-4 sm:p-6 rounded-lg shadow-sm text-center text-gray-800 h-28 sm:h-32 flex flex-col items-center justify-center">
-              <div className="flex justify-center mb-2 sm:mb-3">{item.icon}</div>
-              <p className="text-xs sm:text-xs font-medium leading-tight px-1 sm:px-2">{item.label}</p>
+            <div
+              key={i}
+              className="w-36 h-36 sm:w-40 sm:h-40 rounded-full bg-[#EBD2AE] border-4 border-[#c9ab88] shadow-[inset_0px_0px_15px_rgba(0,0,0,0.1)] flex flex-col items-center justify-center text-center p-4 transition transform hover:scale-105"
+            >
+              <div className="text-[#4b3d2f] mb-2">{item.icon}</div>
+              <p className="text-[11px] sm:text-xs font-medium text-gray-900 leading-snug">
+                {item.label}
+              </p>
             </div>
           ))}
         </div>
@@ -157,10 +172,21 @@ export default function AboutPage() {
 
       {/* Professional Memberships Section */}
       <div className="max-w-6xl mx-auto mb-16 sm:mb-20">
-        <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Professional Memberships</h2>
         <div className="text-center">
-          <p className="text-base sm:text-lg text-gray-700 mb-2">• Columbus Bar Association</p>
-          <p className="text-base sm:text-lg text-gray-700">• Ohio State Bar Association</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">Professional Memberships</h2>
+        </div>
+        <div className="flex justify-center gap-[50px]">
+          {memberships.map((item, i) => (
+            <div
+              key={i}
+              className="w-36 h-36 sm:w-40 sm:h-40 rounded-full bg-[#EBD2AE] border-4 border-[#c9ab88] shadow-[inset_0px_0px_15px_rgba(0,0,0,0.1)] flex flex-col items-center justify-center text-center p-4 transition transform hover:scale-105"
+            >
+              <div className="text-[#4b3d2f] mb-2">{item.icon}</div>
+              <p className="text-[11px] sm:text-xs font-medium text-gray-900 leading-snug">
+                {item.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -169,28 +195,30 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">Recognition & Accolades</h2>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-6 sm:gap-8 lg:gap-12">
-          <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
-            <h3 className="text-lg sm:text-xl font-bold mb-3">Ohio State Bar Association: Leadership Academy – 2023</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Ohio State Bar Association: Leadership Academy – 2023</h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Received the most nominations in the Academy's history. Selected as 1 of 17 attorneys statewide.</p>
           </div>
-          <div className="flex flex-col items-center justify-center w-full lg:w-80 mx-auto">
-            <video className="rounded-lg shadow-md w-full max-w-sm h-auto" controls>
+          <div className="flex flex-col items-center justify-start">
+            <video className="rounded-xl shadow-lg w-full max-w-[960px] mx-auto" controls autoPlay muted loop>
               <source src="/jwayyed-speech.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="flex flex-col items-center text-center w-full lg:w-80 mx-auto">
-            <h3 className="text-lg sm:text-xl font-bold mb-3">CALI Award Recipient – 2017</h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Excellence in Interviewing & Counseling (Top scorer across 100+ US law schools).</p>
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">CALI Award Recipient – 2017</h3>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Excellence in Interviewing & Counseling. Awarded to the top student in this course across 100+ participating US law schools nationwide.</p>
           </div>
         </div>
       </div>
 
       {/* Testimonials / Recommendations Section */}
       <div className="bg-gray-800 text-white py-12 sm:py-16 -mx-4 sm:-mx-6 md:-mx-20 -mb-8 sm:-mb-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-20 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Recommendations</h2>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-20">
+          <div className="text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Recommendations</h2>
+          </div>
           <div className="relative">
             <div className="text-center mb-6 sm:mb-8 min-h-[300px] sm:min-h-[400px] flex flex-col justify-center">
               <blockquote className="text-base sm:text-lg italic leading-relaxed mb-4 sm:mb-6">
