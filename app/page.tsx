@@ -92,7 +92,7 @@ const reviews = [
   }
 ];
 
-const EnhancedHomepage = () => {
+export default function Home() {
   const [currentReview, setCurrentReview] = useState(0);
 
   useEffect(() => {
@@ -156,8 +156,6 @@ const EnhancedHomepage = () => {
           </div>
         </div>
       </section>
-
-
 
       {/* Client Reviews Section */}
       <section className="w-full py-16 bg-gray-100">
@@ -280,6 +278,4 @@ const EnhancedHomepage = () => {
       </section>
     </div>
   );
-};
-
-export default EnhancedHomepage;
+}
