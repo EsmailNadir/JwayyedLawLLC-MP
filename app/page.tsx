@@ -111,7 +111,7 @@ const EnhancedHomepage = () => {
     setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
   };
 
-  const goToReview = (index) => {
+  const goToReview = (index: number) => {
     setCurrentReview(index);
   };
 
