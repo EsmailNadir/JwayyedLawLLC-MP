@@ -20,15 +20,15 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-  <Image 
-    src="/assets/jwayyed-logo.png"
-    alt="Jwayyed Law Logo"
-    width={200}
-    height={50}
-    priority
-    className="h-12 w-auto hover:scale-105 transition-transform duration-200h-12  brightness-0 contrast-200 "
-  />
-</Link>
+          <Image
+            src="/assets/Jwayyed_Logo_Inverted.JPEG"
+            alt="Jwayyed Law LLC Logo"
+            width={200}
+            height={50}
+            priority
+            className="h-12 w-auto hover:scale-105 transition-transform duration-200"
+          />
+        </Link>
 
         <div className="hidden sm:flex space-x-12">
           {navLinks.map((link) => (

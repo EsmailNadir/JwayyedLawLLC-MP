@@ -19,58 +19,55 @@ import ServiceCard from '@/components/ServiceCard';
 
 const services = [
   {
-    title: 'Estate Planning',
-    description: 'Avoid probate court and plan ahead to protect your family and legacy.',
-    fullText: `Creating an estate plan ensures your assets transfer directly to beneficiaries without probate court. This saves time, reduces costs, and prevents family disputes. Estate plans are tailored to your unique needs and help secure your family's future.`,
+    title: 'Estate Planning & Wills',
+    description: 'Comprehensive estate planning to protect your family and legacy.',
+    fullText: `Our estate planning services include:
+
+• Wills - Direct where your assets go with a legally binding will. Without a will, Ohio law decides how your assets are distributed.
+
+• Trusts - Avoid probate court and create flexible asset protection strategies for your beneficiaries.
+
+• Advanced Directives - Living wills and healthcare directives to ensure your medical wishes are respected.
+
+• Power of Attorney - Designate someone to make legal, financial, or medical decisions on your behalf if you're incapacitated.
+
+Creating a comprehensive estate plan ensures your assets transfer directly to beneficiaries without probate court, saves time, reduces costs, and prevents family disputes.`,
     icon: ScrollText,
     image: '/assets/estatePlanning.webp',
   },
   {
-    title: 'Wills',
-    description: 'Direct where your assets go with a legally binding will.',
-    fullText: `Without a will, Ohio law decides how your assets are distributed. A will ensures your wishes are followed, easing the burden on loved ones and avoiding legal confusion.`,
-    icon: Gavel,
-    image: '/assets/LastWills.webp',
-  },
-  {
-    title: 'Power of Attorney & Directives',
-    description: 'Designate someone to make legal, financial, or medical decisions on your behalf.',
-    fullText: `A Power of Attorney gives someone the legal ability to act on your behalf if you're incapacitated. Advanced directives include living wills and other documents that ensure your health care preferences are respected.`,
-    icon: Users,
-    image: '/assets/power.webp',
-  },
-  {
     title: 'Navigating Probate',
     description: 'We help manage the legal complexities after a loved one\'s passing.',
-    fullText: `Probate can be stressful and time-consuming. We provide compassionate, professional support to help you settle your loved one's estate efficiently.`,
+    fullText: `Probate can be stressful and time-consuming. We provide compassionate, professional support to help you settle your loved one's estate efficiently. Our services include guidance through court procedures, asset inventory, debt settlement, and distribution to beneficiaries.`,
     icon: BookUser,
     image: '/assets/nav-probate.webp',
   },
   {
     title: 'Immigration',
     description: 'Help with green cards, citizenship, asylum, and more.',
-    fullText: `We assist with immigration needs including green cards, citizenship, asylum, family sponsorships, removal defense, and more. Arabic-speaking attorney available.`,
+    fullText: `We assist with immigration needs including green cards, citizenship, asylum, family sponsorships, removal defense, and more. Arabic-speaking attorney available for comprehensive immigration support.`,
     icon: Globe,
     image: '/assets/passport.webp',
   },
   {
-    title: 'Business Law',
-    description: 'Legal support for businesses of all sizes in Ohio.',
-    fullText: `Whether you're starting a business, drafting contracts, or dissolving a company, we provide comprehensive legal services to support your business journey.`,
+    title: 'Business Law & Contracts',
+    description: 'Complete business legal support and contract services.',
+    fullText: `Whether you're starting a business, need ongoing legal support, or require contract services, we provide comprehensive solutions:
+
+• Business Formation - LLCs, corporations, partnerships
+• Contract Drafting & Review - Service agreements, NDAs, employment contracts, leases
+• Business Compliance - Ongoing legal support for businesses of all sizes
+• Contract Disputes - Resolution and enforcement
+• Business Dissolution - When it's time to close your business
+
+We ensure your documents are clear, enforceable, and protect your interests while supporting your business journey from start to finish.`,
     icon: Briefcase,
     image: '/assets/businessLaw.webp',
   },
   {
-    title: 'Contracts',
-    description: 'Get your contracts reviewed or drafted to avoid disputes.',
-    fullText: `From leases and service agreements to NDAs and employment contracts, we ensure your documents are clear, enforceable, and protect your interests.`,
-    icon: FileSignature,
-    image: '/assets/contractss.webp',
-  },
-  {
     title: 'Dispute Resolution',
     description: 'Resolve conflicts through mediation, arbitration, or negotiation.',
-    fullText: `Save time and cost compared to litigation. We help clients resolve disputes efficiently through proven alternative methods.`,
+    fullText: `Save time and cost compared to litigation. We help clients resolve disputes efficiently through proven alternative methods including mediation, arbitration, and strategic negotiation.`,
     icon: Handshake,
     image: '/assets/law.webp',
   },
@@ -86,7 +83,7 @@ Note: He does not accept criminal cases in Franklin County due to municipal pros
   {
     title: 'Personal Injury',
     description: 'Support for car accidents, slip-and-falls, and negligence claims.',
-    fullText: `If you’ve been injured due to someone else’s negligence, Attorney Jwayyed Jwayyed fights for fair compensation. He handles communication with insurers, gathers evidence, and pursues recovery for medical bills, lost wages, and pain and suffering.
+    fullText: `If you've been injured due to someone else's negligence, Attorney Jwayyed Jwayyed fights for fair compensation. He handles communication with insurers, gathers evidence, and pursues recovery for medical bills, lost wages, and pain and suffering.
 
 His approach is strategic, compassionate, and client-focused—whether negotiating a settlement or preparing for litigation.`,
     icon: Handshake,
@@ -131,7 +128,7 @@ const ServicesPage = () => {
         className="relative bg-cover bg-center bg-no-repeat h-[400px] md:h-[500px] flex items-center justify-center text-white"
         style={{ backgroundImage: "url('/assets/service-page.webp')" }}
       >
-        <div className="absolute inset-0 bg-black/30 md:bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/20 md:bg-black/25"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold mb-4 tracking-wide">
             OUR LEGAL SERVICES
@@ -161,7 +158,7 @@ const ServicesPage = () => {
 
       {isModalOpen && selectedService && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 backdrop-blur-sm px-4"
           onClick={closeModal}
         >
           <div
