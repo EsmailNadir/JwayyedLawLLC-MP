@@ -308,7 +308,6 @@ export default function Home() {
               width: 'auto',
               height: 'auto'
             }}
-            poster="/assets/jwayyeds-homepage.webp"
           >
             <source src="/videos/background-video.mp4" type="video/mp4" />
           </video>
