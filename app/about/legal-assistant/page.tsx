@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Mail, Phone, Calendar, Users } from 'lucide-react';
 
 export default function LegalAssistantPage() {
@@ -35,10 +36,14 @@ export default function LegalAssistantPage() {
               {/* Image Section */}
               <div className="w-full lg:w-2/5 flex-shrink-0">
                 <div className="h-[300px] sm:h-[400px] lg:h-[500px] w-full max-w-md mx-auto lg:max-w-none">
-                  <img
+                  <Image
                     src="/assets/raneem-backround.png"
                     alt="Raneem Ali - Legal Assistant"
-                    className="w-full h-full object-cover object-top rounded-lg shadow-lg"
+                    fill
+                    className="object-cover object-top rounded-lg shadow-lg"
+                    quality={90}
+                    loading="eager"
+                    priority
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "/assets/attorney-main.jpg";
@@ -92,10 +97,14 @@ export default function LegalAssistantPage() {
               {/* Image Section */}
               <div className="w-full lg:w-2/5 flex-shrink-0">
                 <div className="h-[300px] sm:h-[400px] lg:h-[500px] w-full max-w-md mx-auto lg:max-w-none">
-                  <img
+                  <Image
                     src="/assets/eeman.jpeg"
                     alt="Eeman Bashir - Legal Intern"
-                    className="w-full h-full object-cover object-top rounded-lg shadow-lg"
+                    fill
+                    className="object-cover object-top rounded-lg shadow-lg"
+                    quality={90}
+                    loading="eager"
+                    priority
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "/assets/attorney-main.jpg";
@@ -143,10 +152,14 @@ export default function LegalAssistantPage() {
               {/* Image Section */}
               <div className="w-full lg:w-2/5 flex-shrink-0">
                 <div className="h-[300px] sm:h-[400px] lg:h-[500px] w-full max-w-md mx-auto lg:max-w-none">
-                  <img
+                  <Image
                     src="/assets/madina.jpeg"
                     alt="Madina Iskandarova - Legal Intern"
-                    className="w-full h-full object-cover object-top rounded-lg shadow-lg"
+                    fill
+                    className="object-cover object-top rounded-lg shadow-lg"
+                    quality={90}
+                    loading="eager"
+                    priority
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "/assets/attorney-main.jpg";

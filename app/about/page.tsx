@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   GraduationCap,
   Gavel,
@@ -108,10 +109,15 @@ export default function AboutPage() {
         </div>
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center lg:items-start justify-center">
           <div className="flex flex-col items-center lg:flex-shrink-0 lg:mr-12 order-1 lg:order-none">
-            <img
+            <Image
               src="/assets/attorney-main.jpg"
               alt="Attorney Jwayyed"
+              width={320}
+              height={400}
               className="rounded-2xl w-[240px] sm:w-[280px] md:w-[320px] shadow-md mb-6"
+              priority
+              quality={90}
+              loading="eager"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = "/assets/attorney.jpg";

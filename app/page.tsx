@@ -300,6 +300,7 @@ export default function Home() {
             muted 
             loop 
             playsInline 
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover sm:object-cover md:object-cover lg:object-cover xl:object-cover"
             style={{
               objectPosition: 'center center',

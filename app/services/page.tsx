@@ -105,10 +105,20 @@ const ServicesPage = () => {
         <link rel="preload" as="image" href="/assets/service-page.webp" />
       </Head>
 
-      <section
-        className="relative bg-cover bg-center bg-no-repeat h-[400px] md:h-[500px] flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/assets/service-page.webp')" }}
-      >
+      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-white overflow-hidden">
+        {/* Optimized Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/service-page.webp"
+            alt="Legal Services Background"
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            className="object-cover"
+            loading="eager"
+          />
+        </div>
         <div className="absolute inset-0 bg-black/20 md:bg-black/25"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold mb-4 tracking-wide">
@@ -160,6 +170,7 @@ const ServicesPage = () => {
                 {selectedService.video ? (
                   <video 
                     controls
+                    preload="metadata"
                     className="absolute inset-0 w-full h-full object-contain"
                     poster={selectedService.image}
                     style={{
@@ -177,6 +188,8 @@ const ServicesPage = () => {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                     priority
+                    loading="eager"
+                    quality={85}
                   />
                 )}
               </div>
