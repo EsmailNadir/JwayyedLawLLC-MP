@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 type InputFieldProps = {
   label: string;
   type: string;
   name: string;
+  placeholder?: string;
 };
 
 type ContactDetailProps = {
@@ -16,13 +17,6 @@ type ContactDetailProps = {
 };
 
 const ContactPage = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-8">
@@ -30,7 +24,7 @@ const ContactPage = () => {
           Contact Us
         </h1>
         <p className="text-sm text-gray-700 max-w-xl mx-auto leading-snug">
-          We're here to help. Reach out with any legal questions or to schedule your free consultation.
+          We're here to help. Reach out with any legal questions or to request a consultation.
         </p>
       </div>
 
@@ -40,6 +34,9 @@ const ContactPage = () => {
           method="POST"
           className="w-full md:w-1/2 space-y-3 bg-white shadow-md p-3 rounded-lg border"
         >
+          <h2 className="text-base font-semibold font-serif text-gray-900 mb-1 text-center">
+            General Inquiry
+          </h2>
           <InputField label="Name" type="text" name="name" />
           <InputField label="Email" type="email" name="email" />
           <InputField label="Phone Number" type="tel" name="phone" />
@@ -51,6 +48,7 @@ const ContactPage = () => {
               required
             />
           </div>
+          <input type="hidden" name="form_type" value="general_inquiry" />
           <button
             type="submit"
             className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
@@ -62,23 +60,81 @@ const ContactPage = () => {
           </p>
         </form>
 
-        <div className="w-full md:w-1/2 bg-white shadow-md p-3 rounded-lg border">
+        <form
+          action="https://formspree.io/f/xyzjyzgv"
+          method="POST"
+          className="w-full md:w-1/2 bg-white shadow-md p-3 rounded-lg border space-y-3"
+        >
           <h2 className="text-base font-semibold font-serif text-gray-900 mb-1 text-center">
-            Schedule a Consultation
+            Request a Consultation
           </h2>
-          <p className="text-xs text-gray-600 mb-2 text-center">Book a time that works for you</p>
-          <div
-            className="calendly-inline-widget w-full h-[350px]"
-            data-url="https://calendly.com/jjlawohio"
-          ></div>
-        </div>
+          <p className="text-xs text-gray-600 text-center">
+            Suggest times that work for you - we'll confirm availability
+          </p>
+          
+          <input type="hidden" name="form_type" value="consultation_request" />
+          
+          <InputField label="Name" type="text" name="consultation_name" />
+          <InputField label="Phone Number" type="tel" name="consultation_phone" />
+          <InputField label="Email" type="email" name="consultation_email" />
+          
+          <div>
+            <label className="block text-gray-800 text-sm mb-1">
+              Preferred Times <span className="text-gray-500">(Please suggest 2-3 options)</span>
+            </label>
+            <textarea
+              name="preferred_times"
+              placeholder="Example: Monday 3pm, Wednesday 10am, or Friday afternoon"
+              className="w-full border border-gray-300 rounded-md px-3 py-1.5 h-20 resize-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
+              required
+            />
+          </div>
+          
+          <div>
+            <label className="block text-gray-800 text-sm mb-1">Brief Case Description</label>
+            <textarea
+              name="case_description"
+              placeholder="Please briefly describe your legal matter"
+              className="w-full border border-gray-300 rounded-md px-3 py-1.5 h-16 resize-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
+              required
+            />
+          </div>
+          
+          <button
+            type="submit"
+            className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
+          >
+            Submit Request
+          </button>
+          
+          <p className="text-xs text-gray-500 text-center">
+            Attorney will respond with available times within 24 hours
+          </p>
+        </form>
       </div>
 
-      <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 p-4 rounded-md text-sm mb-8">
-        <h3 className="font-semibold mb-1">Client Communication Notice:</h3>
-        <p>
-          All phone calls, voicemails, emails, and website contact form submissions are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
-        </p>
+      <div className="space-y-4 mb-8">
+        {/* Client Communication Notice */}
+        <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 p-4 rounded-md text-sm">
+          <h3 className="font-semibold mb-1">Client Communication Notice:</h3>
+          <p className="mb-2">
+            <strong>By Appointment Only.</strong> Walk-ins are not available. Please request your consultation using the form above or by calling our office. All consultation requests are subject to attorney availability and confirmation.
+          </p>
+          <p>
+            All phone calls, voicemails, emails, and website contact form submissions are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
+          </p>
+        </div>
+
+        {/* Emergency and Consultation Disclaimer */}
+        <div className="bg-red-50 border border-red-200 text-red-900 p-4 rounded-md text-sm">
+          <h3 className="font-semibold mb-1">Important Notice:</h3>
+          <p className="mb-2">
+            <strong>If this is an emergency, please call 911 immediately.</strong> This website and contact form should not be used for urgent matters requiring immediate assistance.
+          </p>
+          <p>
+            <strong>Consultation Disclaimer:</strong> Submitting a contact form, leaving a voicemail, or scheduling a consultation does not create an attorney-client relationship. Attorney-client privilege and confidentiality do not apply until a formal representation agreement has been signed by both parties. Do not send confidential or time-sensitive information through this form.
+          </p>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-5">
@@ -105,7 +161,7 @@ const ContactPage = () => {
             <ContactDetail
               icon={<Clock className="text-blue-900 w-4 h-4" />}
               title="Business Hours"
-              detail="Mon–Fri: 9:00 AM – 5:00 PM\nSat–Sun: Closed"
+              detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
             />
           </div>
         </div>
@@ -124,12 +180,13 @@ const ContactPage = () => {
   );
 };
 
-const InputField = ({ label, type, name }: InputFieldProps) => (
+const InputField = ({ label, type, name, placeholder }: InputFieldProps) => (
   <div>
     <label className="block text-gray-800 text-sm mb-1">{label}</label>
     <input
       type={type}
       name={name}
+      placeholder={placeholder}
       required
       className="w-full border border-gray-300 rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none text-sm"
     />

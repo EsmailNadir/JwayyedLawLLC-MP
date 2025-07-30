@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 export default function OurTeamPage() {
@@ -48,10 +49,15 @@ export default function OurTeamPage() {
 
           {/* Team Group Photo */}
           <div className="px-2 sm:px-4 md:px-0 mb-8 sm:mb-12 lg:mb-16">
-            <img
+            <Image
               src="/assets/team-photo.jpg"
               alt="Jwayyed Law LLC Team"
+              width={800}
+              height={600}
               className="w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto rounded-lg sm:rounded-xl shadow-lg object-cover h-auto"
+              priority
+              quality={90}
+              loading="eager"
             />
           </div>
         </div>
@@ -69,10 +75,14 @@ export default function OurTeamPage() {
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-6">
                   {/* Member Photo */}
                   <div className="flex-shrink-0">
-                    <img
+                    <Image
                       src={member.image}
                       alt={member.name}
+                      width={80}
+                      height={80}
                       className="w-16 h-16 sm:w-20 sm:h-20 object-cover object-top rounded-lg shadow-md"
+                      quality={85}
+                      loading="lazy"
                     />
                   </div>
                   
