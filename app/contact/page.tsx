@@ -161,7 +161,7 @@ const ContactPage = () => {
             <ContactDetail
               icon={<Clock className="text-blue-900 w-4 h-4" />}
               title="Business Hours"
-              detail="Mon–Fri: 9:00 AM – 5:00 PM\nSat–Sun: Closed"
+              detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
             />
           </div>
         </div>

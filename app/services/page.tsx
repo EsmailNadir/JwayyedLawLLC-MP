@@ -139,16 +139,16 @@ const ServicesPage = () => {
 
       {isModalOpen && selectedService && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4 py-4"
           onClick={closeModal}
         >
           <div
-            className="relative w-full max-w-5xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden"
+            className="relative w-full max-w-6xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeModal}
-              className="absolute top-6 right-6 text-gray-600 hover:text-gray-900 z-10 bg-white rounded-full p-2 shadow-md"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 text-gray-600 hover:text-gray-900 z-10 bg-white rounded-full p-2 shadow-md"
               aria-label="Close Modal"
             >
               <X size={20} />
@@ -156,12 +156,15 @@ const ServicesPage = () => {
 
             <div className="flex flex-col lg:flex-row h-full">
               {/* Image/Video Section */}
-              <div className="relative w-full lg:w-1/2 h-72 lg:h-[500px]">
+              <div className="relative w-full lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-[500px]">
                 {selectedService.video ? (
                   <video 
                     controls
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                     poster={selectedService.image}
+                    style={{
+                      backgroundColor: '#000'
+                    }}
                   >
                     <source src={selectedService.video} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -179,20 +182,20 @@ const ServicesPage = () => {
               </div>
 
               {/* Content Section - Centered */}
-              <div className="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <div className="w-full lg:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center overflow-y-auto">
                 <div className="text-center">
-                  <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-serif font-bold text-gray-900 mb-4">
                     {selectedService.title}
                   </h2>
-                  <p className="text-blue-950 font-medium text-lg mb-6">
+                  <p className="text-blue-950 font-medium text-base sm:text-lg mb-4 sm:mb-6">
                     {selectedService.description}
                   </p>
-                  <p className="text-gray-700 leading-relaxed text-base mb-8">
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base mb-6 sm:mb-8">
                     {selectedService.fullText}
                   </p>
                   
                   <a href="/contact">
-                    <button className="bg-blue-950 text-white px-8 py-4 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium text-lg">
+                    <button className="bg-blue-950 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium text-base sm:text-lg">
                       Contact Us Today
                     </button>
                   </a>

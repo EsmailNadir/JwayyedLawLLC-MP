@@ -10,32 +10,60 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-transparent">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 via-black/60 to-transparent backdrop-blur-md border-b border-orange-500/20 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6Ready to Protect Your Rights">
+        <div className="flex justify-between items-center py-5 sm:py-6">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl font-serif font-bold text-white">Jwayyed Law LLC</span>
+          <Link href="/" className="flex items-center group">
+            <div className="relative">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-['Playfair_Display',_'Georgia',_serif] font-bold text-white drop-shadow-2xl group-hover:text-orange-400 transition-all duration-500 transform group-hover:scale-110">
+                Jwayyed Law LLC
+              </span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-600 group-hover:w-full transition-all duration-500"></div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-white hover:text-gray-200 transition-colors">Home</Link>
-            <Link href="/about" className="text-white hover:text-gray-200 transition-colors">About</Link>
-            <Link href="/services" className="text-white hover:text-gray-200 transition-colors">Services</Link>
-            <Link href="/our-team" className="text-white hover:text-gray-200 transition-colors">Our Team</Link>
-            <Link href="/contact" className="text-white hover:text-gray-200 transition-colors">Contact</Link>
-            <Link href="/contact">
-              <button className="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition-colors">
-                Consultation
-              </button>
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
+            <Link href="/" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
+              <span className="relative z-10">Home</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
             </Link>
+            <Link href="/about" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
+              <span className="relative z-10">About</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <Link href="/services" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
+              <span className="relative z-10">Services</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <Link href="/our-team" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
+              <span className="relative z-10">Our Team</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <Link href="/contact" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
+              <span className="relative z-10">Contact</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
+            </Link>
+            <div className="ml-6 lg:ml-8">
+              <Link href="/contact">
+                <button className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-8 py-3 rounded-xl hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition-all duration-500 shadow-2xl hover:shadow-orange-500/25 transform hover:scale-110 border border-orange-400/50 font-semibold text-lg overflow-hidden group">
+                  <span className="relative z-10">Consultation</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </button>
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-white hover:text-orange-400 transition-all duration-300 p-3 rounded-xl hover:bg-orange-500/20 border border-orange-500/30"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -43,18 +71,21 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-black/90 backdrop-blur-sm rounded-lg p-4 mb-4">
+          <div className="md:hidden bg-gradient-to-b from-black/95 to-black/90 backdrop-blur-xl rounded-2xl p-6 mb-4 border border-orange-500/30 shadow-2xl animate-in slide-in-from-top-2 duration-500">
             <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-white hover:text-gray-200 transition-colors">Home</Link>
-              <Link href="/about" className="text-white hover:text-gray-200 transition-colors">About</Link>
-              <Link href="/services" className="text-white hover:text-gray-200 transition-colors">Services</Link>
-              <Link href="/our-team" className="text-white hover:text-gray-200 transition-colors">Our Team</Link>
-              <Link href="/contact" className="text-white hover:text-gray-200 transition-colors">Contact</Link>
-              <Link href="/contact">
-                <button className="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition-colors w-full">
-                  Consultation
-                </button>
-              </Link>
+              <Link href="/" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Home</Link>
+              <Link href="/about" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">About</Link>
+              <Link href="/services" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Services</Link>
+              <Link href="/our-team" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Our Team</Link>
+              <Link href="/contact" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Contact</Link>
+              <div className="pt-4">
+                <Link href="/contact">
+                  <button className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-8 py-4 rounded-xl hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition-all duration-500 w-full shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 border border-orange-400/50 font-semibold text-lg overflow-hidden group">
+                    <span className="relative z-10">Consultation</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         )}
@@ -132,88 +163,104 @@ const Footer = () => {
 
 const reviews = [
   {
+    name: "Mike Clement",
+    rating: 5,
+    platform: "Google",
+    text: "I recently received a traffic ticket in Akron, and Jwayyed was instrumental in helping me avoid additional points on my license. From the start, he was very professional, responsive, and clearly knowledgeable about local traffic laws. He worked quickly to negotiate a reduced charge, and reduced points, which ultimately saved me from increased insurance rates and license penalties. His communication throughout the process kept me informed and confident in the outcome. I highly recommend his services to anyone facing traffic violations in the area",
+    timeAgo: "a day ago",
+    isNew: true
+  },
+  {
+    name: "Imdad Imdadova",
+    rating: 5,
+    platform: "Google",
+    text: "Excellent legal representation! Attorney Jwayyed and his team were professional, knowledgeable, and dedicated to achieving the best outcome for my case. Highly recommend their services.",
+    timeAgo: "5 days ago",
+    isNew: true
+  },
+  {
     name: "Heba El-Hosseiny",
     rating: 5,
     platform: "Google",
     text: "My experience with Jwayyed was incredible. He was attentive in the discovery phase of my case and made sure to keep me in the loop on all actions that were taken on my behalf.",
-    timeAgo: "New"
+    timeAgo: "2 weeks ago"
   },
   {
     name: "Tammy Watts",
     rating: 5,
     platform: "Google",
     text: "He was very thorough, diligent, and responsive. He listened, outlined step-by-step how we would proceed, and always kept me informed of updates in a timely and professional manner.",
-    timeAgo: "1 month ago"
+    timeAgo: "3 weeks ago"
   },
   {
     name: "Yazen Karajat",
     rating: 5,
     platform: "Google",
     text: "Jwayyed Jwayyed is a rare kind of attorney—fierce in advocacy, compassionate with clients, and deeply committed to justice.",
-    timeAgo: "4 weeks ago"
+    timeAgo: "1 month ago"
   },
   {
     name: "Nott Billyy",
     rating: 5,
     platform: "Google",
     text: "Jwayyed is the real deal. Super easy to work with, chill but professional, and actually gets results.",
-    timeAgo: "4 weeks ago"
+    timeAgo: "1 month ago"
   },
   {
     name: "Yasmine A",
     rating: 5,
     platform: "Google",
     text: "He was really helpful and easy to talk to. He made a stressful situation a lot less scary and took care of everything I needed.",
-    timeAgo: "4 weeks ago"
+    timeAgo: "1 month ago"
   },
   {
     name: "Basil Jaradah",
     rating: 5,
     platform: "Google",
     text: "He finished the project in timely manner, and remained professional all the time, was thorough and picked up on the little details.",
-    timeAgo: "1 month ago"
+    timeAgo: "2 months ago"
   },
   {
     name: "Abe Rashed",
     rating: 5,
     platform: "Google",
     text: "He got me a better result than the first attorney I had spoken to had promised. I'm happy to say he will be my attorney going forward.",
-    timeAgo: "1 year ago"
+    timeAgo: "3 months ago"
   },
   {
     name: "Ahmed Kahook",
     rating: 5,
     platform: "LinkedIn",
     text: "He went above and beyond to get us a quick resolution. He always had my family's best interests in mind and replied to emails more promptly than most people answer text messages.",
-    timeAgo: "August 2023"
+    timeAgo: "4 months ago"
   },
   {
     name: "Abraham Rashed",
     rating: 5,
     platform: "LinkedIn",
     text: "He was able to quickly identify the problems with my situation and got me a better result than the first attorney had promised.",
-    timeAgo: "August 2023"
+    timeAgo: "4 months ago"
   },
   {
     name: "Leonard Milner",
     rating: 5,
     platform: "LinkedIn",
     text: "Jwayyed was proactive, diligent, knowledgeable, courageous, steadfast and unmovable in getting justice. I would definitely recommend him for any litigation concerns.",
-    timeAgo: "February 2023"
+    timeAgo: "6 months ago"
   },
   {
     name: "Samantha Pugh",
     rating: 5,
     platform: "LinkedIn",
     text: "Jwayyed is consistently professional, knowledgeable, reasonable, and so easy to work with. He is always prepared and organized.",
-    timeAgo: "January 2023"
+    timeAgo: "7 months ago"
   },
   {
     name: "Faiz Joseph",
     rating: 5,
     platform: "LinkedIn",
     text: "If genuine care was a person it would be Jwayyed. There's no one that I know that cares more for their craft than him.",
-    timeAgo: "November 2021"
+    timeAgo: "10 months ago"
   }
 ];
 
@@ -242,6 +289,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen font-['Georgia',_'Times_New_Roman',_serif]">
+     
+      
       {/* Hero Section with Video Background */}
       <section className="relative h-screen overflow-hidden">
         {/* Background Video */}
@@ -251,7 +300,14 @@ export default function Home() {
             muted 
             loop 
             playsInline 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover sm:object-cover md:object-cover lg:object-cover xl:object-cover"
+            style={{
+              objectPosition: 'center center',
+              minWidth: '100%',
+              minHeight: '100%',
+              width: 'auto',
+              height: 'auto'
+            }}
             poster="/assets/jwayyeds-homepage.webp"
           >
             <source src="/videos/background-video.mp4" type="video/mp4" />
@@ -357,55 +413,64 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="relative max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-              <div className="space-y-4 sm:space-y-6">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
-                  <div className="flex items-center space-x-1">
-                    {[...Array(reviews[currentReview].rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-orange-500 text-orange-500" />
-                    ))}
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-6 lg:gap-8">
+              {/* Desktop Navigation Button - Left */}
+              <button
+                onClick={prevReview}
+                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
+              >
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+              
+              {/* Review Content */}
+              <div className="flex-1 bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                    <div className="flex items-center space-x-1">
+                      {[...Array(reviews[currentReview].rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-orange-500 text-orange-500" />
+                      ))}
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-2 sm:px-3 py-1 rounded-full">
+                        {reviews[currentReview].platform}
+                      </span>
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
+                        {reviews[currentReview].timeAgo}
+                      </span>
+                      {reviews[currentReview].isNew && (
+                        <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white bg-green-500 px-2 sm:px-3 py-1 rounded-full">
+                          New
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-2 sm:px-3 py-1 rounded-full">
-                      {reviews[currentReview].platform}
-                    </span>
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
-                      {reviews[currentReview].timeAgo}
-                    </span>
-                  </div>
-                </div>
-                
-                <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-lg sm:text-xl text-gray-700 leading-relaxed min-h-[100px] sm:min-h-[120px] flex items-center italic">
-                  "{reviews[currentReview].text}"
-                </blockquote>
-                
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 border-t border-gray-200 pt-4 sm:pt-6">
-                  <cite className="font-['Inter',_'Arial',_sans-serif] text-base sm:text-lg font-semibold text-gray-900 not-italic">
-                    — {reviews[currentReview].name}
-                  </cite>
                   
-                  <div className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
-                    {currentReview + 1} of {reviews.length}
+                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-lg sm:text-xl text-gray-700 leading-relaxed min-h-[100px] sm:min-h-[120px] flex items-center italic">
+                    "{reviews[currentReview].text}"
+                  </blockquote>
+                  
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 border-t border-gray-200 pt-4 sm:pt-6">
+                    <cite className="font-['Inter',_'Arial',_sans-serif] text-base sm:text-lg font-semibold text-gray-900 not-italic">
+                      — {reviews[currentReview].name}
+                    </cite>
+                    
+                    <div className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
+                      {currentReview + 1} of {reviews.length}
+                    </div>
                   </div>
                 </div>
               </div>
+              
+              {/* Desktop Navigation Button - Right */}
+              <button
+                onClick={nextReview}
+                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
+              >
+                <ChevronRight className="w-7 h-7" />
+              </button>
             </div>
-            
-            {/* Navigation Buttons - Hidden on small screens */}
-            <button
-              onClick={prevReview}
-              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            
-            <button
-              onClick={nextReview}
-              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
           </div>
           
           {/* Mobile Navigation Buttons */}
@@ -441,8 +506,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-     
 
       {/* Footer */}
       <Footer />
