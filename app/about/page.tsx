@@ -228,10 +228,10 @@ export default function AboutPage() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-32">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {/* Ohio State Bar Association Award */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
-                    <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
-                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                <div>
+                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg h-full">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md flex-shrink-0">
                         <Scale size={32} className="text-white" />
                       </div>
                       <div className="flex-1 text-center sm:text-left">
@@ -247,10 +247,10 @@ export default function AboutPage() {
                 </div>
                 
                 {/* CALI Award */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
-                    <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
-                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                <div>
+                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg h-full">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md flex-shrink-0">
                         <GraduationCap size={32} className="text-white" />
                       </div>
                       <div className="flex-1 text-center sm:text-left">
