@@ -9,13 +9,12 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
     optimizePackageImports: ['lucide-react'],
   },
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  swcMinify: true,
 }
 
 module.exports = withVideos(nextConfig)
