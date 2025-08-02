@@ -146,7 +146,7 @@ const ContactPage = () => {
             <ContactDetail
               icon={<MapPin className="text-blue-900 w-4 h-4" />}
               title="Office Location"
-              detail="1335 Dublin Rd Suite 211A, Columbus, OH 43215"
+              detail="100 E. Campus View Boulevard, Suite #250, Columbus, OH 43235"
             />
             <ContactDetail
               icon={<Phone className="text-blue-900 w-4 h-4" />}
@@ -166,10 +166,12 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div className="w-full h-full border rounded-lg overflow-hidden shadow-md">
+        <div className="w-full h-[224px] md:h-[300px] border rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.5000029755743!2d-83.0609554!3d39.9674267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f010f090e4d%3A0x8ef6e1676a0fbb4a!2s1335%20Dublin%20Rd%20%23211A%2C%20Columbus%2C%20OH%2043215!5e0!3m2!1sen!2sus!4v1717860781622!5m2!1sen!2sus"
-            className="w-full h-56"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0585776308626!2d-83.02383492346433!3d40.03001627151842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e8c8c6b7d91%3A0xe7d5dd9b3e2335c!2s100%20E%20Campus%20View%20Blvd%20%23250%2C%20Columbus%2C%20OH%2043235!5e0!3m2!1sen!2sus!4v1703024773199!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

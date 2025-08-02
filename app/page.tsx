@@ -9,89 +9,7 @@ import { ChevronLeft, ChevronRight, Star, ArrowDown, Menu, X, Phone, Mail, MapPi
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 via-black/60 to-transparent backdrop-blur-md border-b border-orange-500/20 shadow-2xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-5 sm:py-6">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <div className="relative">
-              <span className="text-xl sm:text-2xl lg:text-3xl font-['Playfair_Display',_'Georgia',_serif] font-bold text-white drop-shadow-2xl group-hover:text-orange-400 transition-all duration-500 transform group-hover:scale-110">
-                Jwayyed Law LLC
-              </span>
-              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-600 group-hover:w-full transition-all duration-500"></div>
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
-            <Link href="/" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
-              <span className="relative z-10">Home</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-            </Link>
-            <Link href="/about" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
-              <span className="relative z-10">About</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-            </Link>
-            <Link href="/services" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
-              <span className="relative z-10">Services</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-            </Link>
-            <Link href="/our-team" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
-              <span className="relative z-10">Our Team</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-            </Link>
-            <Link href="/contact" className="relative px-4 py-3 text-white hover:text-orange-400 transition-all duration-300 drop-shadow-lg group font-medium">
-              <span className="relative z-10">Contact</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-orange-600/30 rounded-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-orange-400 transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-            </Link>
-            <div className="ml-6 lg:ml-8">
-              <Link href="/contact">
-                <button className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-8 py-3 rounded-xl hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition-all duration-500 shadow-2xl hover:shadow-orange-500/25 transform hover:scale-110 border border-orange-400/50 font-semibold text-lg overflow-hidden group">
-                  <span className="relative z-10">Consultation</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white hover:text-orange-400 transition-all duration-300 p-3 rounded-xl hover:bg-orange-500/20 border border-orange-500/30"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-gradient-to-b from-black/95 to-black/90 backdrop-blur-xl rounded-2xl p-6 mb-4 border border-orange-500/30 shadow-2xl animate-in slide-in-from-top-2 duration-500">
-            <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Home</Link>
-              <Link href="/about" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">About</Link>
-              <Link href="/services" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Services</Link>
-              <Link href="/our-team" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Our Team</Link>
-              <Link href="/contact" className="text-white hover:text-orange-400 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-orange-500/20 transform hover:translate-x-2 font-medium border-l-4 border-transparent hover:border-orange-400">Contact</Link>
-              <div className="pt-4">
-                <Link href="/contact">
-                  <button className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-8 py-4 rounded-xl hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition-all duration-500 w-full shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 border border-orange-400/50 font-semibold text-lg overflow-hidden group">
-                    <span className="relative z-10">Consultation</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </nav>
-  );
+ 
 };
 
 // Footer Component
@@ -99,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white font-['Inter',_'Arial',_sans-serif]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold">Jwayyed Law LLC</h3>
@@ -133,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-orange-500 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">1335 Dublin Rd Suite 211A<br />Columbus, OH 43215</span>
+                <span className="text-gray-400">100 E. Campus View Boulevard, Suite #250<br />Columbus, Ohio 43235</span>
               </li>
             </ul>
           </div>
@@ -145,6 +63,38 @@ const Footer = () => {
               <li>Mon–Fri: 9:00 AM – 5:00 PM</li>
               <li>Sat–Sun: Closed</li>
             </ul>
+          </div>
+
+          {/* Follow Us - Social Media */}
+          <div className="space-y-4">
+            <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Follow Us</h4>
+            <div className="flex space-x-3">
+              {/* Instagram Button */}
+              <a 
+                href="https://www.instagram.com/jjlawohio?igsh=eW1uanhzNGh2YXV2&utm_source=qr" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-800 hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400 rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-3 border border-gray-700 hover:border-transparent group"
+                aria-label="Follow us on Instagram"
+              >
+                <svg className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                </svg>
+              </a>
+              
+              {/* TikTok Button */}
+              <a 
+                href="https://www.tiktok.com/@jjlawohio?_t=ZT-8yTuAG1sVr5&_r=1" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-800 hover:bg-black rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-rotate-3 border border-gray-700 hover:border-white group"
+                aria-label="Follow us on TikTok"
+              >
+                <svg className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -289,7 +239,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen font-['Georgia',_'Times_New_Roman',_serif]">
-     
+      
       
       {/* Hero Section with Video Background */}
       <section className="relative h-screen overflow-hidden">
@@ -512,31 +462,3 @@ export default function Home() {
     </div>
   );
 }
-
-/* Add this CSS to your global styles for the fade-in animation and font imports */
-/*
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-out;
-}
-
-body {
-  font-family: 'Inter', 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', 'Georgia', serif;
-}
-*/
