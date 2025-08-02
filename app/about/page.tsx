@@ -126,14 +126,14 @@ export default function AboutPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center font-['Playfair_Display',_'Georgia',_serif]">Meet Attorney Jwayyed</h1>
           </div>
           
-          {/* Meet Attorney Section Content */}
-          <div className="w-full px-4 sm:px-6 md:px-20">
-            <div className="max-w-[1400px] mx-auto mb-20 sm:mb-32 relative">
-              {/* Video - Absolute positioning */}
-              <div className="lg:absolute lg:-left-40 lg:top-0 flex flex-col items-center mb-8 lg:mb-0 lg:w-[380px]">
+          {/* Video Section - Now at the top center */}
+          <div className="w-full px-4 sm:px-6 md:px-20 mb-12 sm:mb-16">
+            <div className="max-w-[800px] mx-auto">
+              <div className="flex flex-col items-center">
+                <div className="relative">
                   <video
                     src="/aboutme.mp4"
-                    className="rounded-lg shadow-md mb-6 w-[360px] sm:w-[380px] h-[270px] sm:h-[285px] object-cover"
+                    className="rounded-xl mb-6 w-full max-w-[500px] h-[320px] sm:h-[360px] object-cover"
                     controls
                     autoPlay
                     muted
@@ -144,16 +144,22 @@ export default function AboutPage() {
                     <source src="/aboutme.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <a href="/services">
-                    <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full max-w-[360px] sm:max-w-[380px]">
-                      VIEW PRACTICE AREAS
-                    </button>
-                  </a>
+                </div>
+                <a href="/services">
+                  <button className="bg-[#D4A574] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-bold text-lg sm:text-xl shadow-xl hover:bg-[#C9995E] hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-[#C9995E] hover:border-[#B88A4A]">
+                    VIEW PRACTICE AREAS
+                  </button>
+                </a>
               </div>
-
-              {/* Text Content - Truly centered */}
+            </div>
+          </div>
+          
+          {/* Meet Attorney Section Content */}
+          <div className="w-full px-4 sm:px-6 md:px-20">
+            <div className="max-w-[1000px] mx-auto mb-20 sm:mb-32">
+              {/* Text Content - Now centered without video interference */}
               <div className="flex justify-center w-full">
-                <div className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed space-y-4 sm:space-y-5 max-w-3xl px-4" style={{ fontFamily: "'Source Sans Pro', 'Inter', sans-serif" }}>
+                <div className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed space-y-4 sm:space-y-5 max-w-4xl px-4" style={{ fontFamily: "'Source Sans Pro', 'Inter', sans-serif" }}>
                     <p>Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor's degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>
 
                     <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender's Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney's Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
@@ -183,14 +189,16 @@ export default function AboutPage() {
 
           {/* Achievement and Membership Badges Section */}
           <div className="w-full">
-            <div className="max-w-[900px] mx-auto px-4 sm:px-6 md:px-20 mt-8 mb-16">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-20">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {achievements.map((item, i) => (
-                  <div key={i} className="relative">
-                    <div className="relative bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 h-[80px]">
-                      <div className="flex items-center px-6 h-full">
-                        <div className="text-[#4b3d2f] mr-4">{item.icon}</div>
-                        <p className="text-sm sm:text-base font-semibold text-gray-900">
+                  <div key={i} className="group">
+                    <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                      <div className="flex flex-col items-center text-center space-y-4">
+                        <div className="bg-[#D4A574] p-3 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                          <div className="text-white">{item.icon}</div>
+                        </div>
+                        <p className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 leading-tight">
                           {item.label}
                         </p>
                       </div>
@@ -198,11 +206,13 @@ export default function AboutPage() {
                   </div>
                 ))}
                 {memberships.map((item, i) => (
-                  <div key={i + achievements.length} className="relative">
-                    <div className="relative bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 h-[80px]">
-                      <div className="flex items-center px-6 h-full">
-                        <div className="text-[#4b3d2f] mr-4">{item.icon}</div>
-                        <p className="text-sm sm:text-base font-semibold text-gray-900">
+                  <div key={i + achievements.length} className="group">
+                    <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                      <div className="flex flex-col items-center text-center space-y-4">
+                        <div className="bg-[#D4A574] p-3 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                          <div className="text-white">{item.icon}</div>
+                        </div>
+                        <p className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 leading-tight">
                           {item.label}
                         </p>
                       </div>
@@ -215,17 +225,17 @@ export default function AboutPage() {
 
           {/* Awards Section */}
           <div className="w-full">
-            <div className="max-w-[900px] mx-auto px-4 sm:px-6 md:px-20 mb-20 sm:mb-32">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-32">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {/* Ohio State Bar Association Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-[240px]">
-                  <div className="p-6">
-                    <div className="flex items-start">
-                      <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
-                        <Scale size={32} />
+                <div className="group">
+                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                    <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                        <Scale size={32} className="text-white" />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 leading-tight">
+                      <div className="flex-1 text-center sm:text-left">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-3 leading-tight">
                           Ohio State Bar Association: Leadership Academy – 2023
                         </h3>
                         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
@@ -237,14 +247,14 @@ export default function AboutPage() {
                 </div>
                 
                 {/* CALI Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-[240px]">
-                  <div className="p-6">
-                    <div className="flex items-start">
-                      <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
-                        <GraduationCap size={32} />
+                <div className="group">
+                  <div className="bg-gradient-to-br from-[#F5E6D3] to-[#EBD2AE] border border-[#D4A574] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                    <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                      <div className="bg-[#D4A574] p-4 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+                        <GraduationCap size={32} className="text-white" />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 leading-tight">
+                      <div className="flex-1 text-center sm:text-left">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-3 leading-tight">
                           CALI Award Recipient – 2017
                         </h3>
                         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
