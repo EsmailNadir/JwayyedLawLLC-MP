@@ -9,7 +9,6 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
   experimental: {
-    optimizeCss: false,
     optimizePackageImports: ['lucide-react'],
   },
   compress: true,
