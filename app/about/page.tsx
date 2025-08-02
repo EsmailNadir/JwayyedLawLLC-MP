@@ -132,7 +132,6 @@ export default function AboutPage() {
               {/* Video - Absolute positioning */}
               <div className="lg:absolute lg:-left-40 lg:top-0 flex flex-col items-center mb-8 lg:mb-0 lg:w-[380px]">
                   <video
-                    src="/assets/aboutme.mp4"
                     className="rounded-lg shadow-md mb-6 w-[360px] sm:w-[380px] h-[270px] sm:h-[285px] object-cover"
                     controls
                     autoPlay
@@ -140,6 +139,7 @@ export default function AboutPage() {
                     loop
                     playsInline
                     onError={handleVideoError}
+                    onEnded={handleVideoEnded}
                   >
                     <source src="/assets/aboutme.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
