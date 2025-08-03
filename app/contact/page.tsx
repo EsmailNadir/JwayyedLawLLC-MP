@@ -51,7 +51,7 @@ const ContactPage = () => {
           <input type="hidden" name="form_type" value="general_inquiry" />
           <button
             type="submit"
-            className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
+            className="w-full cursor-pointer bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
           >
             Submit
           </button>
@@ -102,7 +102,7 @@ const ContactPage = () => {
           
           <button
             type="submit"
-            className="w-full bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
+            className="w-full cursor-pointer bg-blue-950 text-white px-4 py-1.5 rounded-md hover:bg-blue-900 transition-all duration-200 text-sm"
           >
             Submit Request
           </button>
@@ -161,7 +161,7 @@ const ContactPage = () => {
             <ContactDetail
               icon={<Clock className="text-blue-900 w-4 h-4" />}
               title="Business Hours"
-              detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
+              detail={"Mon–Fri: 9:00 AM – 5:00 PM\nSat–Sun: Closed"}
             />
           </div>
         </div>

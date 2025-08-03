@@ -281,12 +281,12 @@ export default function Home() {
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16">
             <Link href="/contact">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] cursor-pointer bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
                 Schedule Consultation
               </button>
             </Link>
             <Link href="/services">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] cursor-pointer bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
                 View Our Services
               </button>
             </Link>
@@ -319,7 +319,7 @@ export default function Home() {
                 Our firm is built on the foundation of protecting your rights, providing clear communication, and achieving the best possible outcomes for our clients.
               </p>
               <Link href="/about">
-                <button className="font-['Inter',_'Arial',_sans-serif] bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-gray-800 transform hover:scale-105 transition-all duration-200 font-medium text-base sm:text-lg shadow-lg">
+                <button className="font-['Inter',_'Arial',_sans-serif] cursor-pointer bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-gray-800 transform hover:scale-105 transition-all duration-200 font-medium text-base sm:text-lg shadow-lg">
                   Learn More About Our Firm
                 </button>
               </Link>
@@ -368,7 +368,7 @@ export default function Home() {
               {/* Desktop Navigation Button - Left */}
               <button
                 onClick={prevReview}
-                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
+                className="hidden cursor-pointer md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
               >
                 <ChevronLeft className="w-7 h-7" />
               </button>
@@ -416,7 +416,7 @@ export default function Home() {
               {/* Desktop Navigation Button - Right */}
               <button
                 onClick={nextReview}
-                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
+                className="hidden cursor-pointer md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
               >
                 <ChevronRight className="w-7 h-7" />
               </button>

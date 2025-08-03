@@ -128,7 +128,7 @@ const ServicesPage = () => {
             Focused. Transparent. Personalized legal support across Ohio.
           </p>
           <a href="/contact">
-            <button className="bg-blue-950 text-white px-6 py-3 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium">
+            <button className="bg-blue-950 cursor-pointer text-white px-6 py-3 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium">
               Schedule Consultation
             </button>
           </a>

@@ -133,9 +133,9 @@ export default function EnhancedTeamPage() {
 
                   <button
                     onClick={() => setShowMoreRaneem(!showMoreRaneem)}
-                    className="inline-flex items-center text-[#D4A574] hover:text-[#C9995E] font-semibold transition-all duration-200 group/btn mt-2"
+                    className="inline-flex cursor-pointer items-center text-[#D4A574] hover:text-[#C9995E] font-semibold transition-all duration-200 group/btn mt-2"
                   >
-                    <span>{showMoreRaneem ? 'Show Less' : 'Show More'}</span>
+                    <span className=''>{showMoreRaneem ? 'Show Less' : 'Show More'}</span>
                     <svg 
                       className={`w-4 h-4 ml-2 transform transition-transform ${showMoreRaneem ? 'rotate-180' : ''}`} 
                       fill="none" 
@@ -308,7 +308,7 @@ export default function EnhancedTeamPage() {
                 with our firm is smooth, professional, and results-oriented from start to finish.
               </p>
               <Link href="/contact">
-                <button className="bg-[#D4A574] text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-[#C9995E] hover:shadow-3xl transform hover:scale-105 transition-all duration-200 inline-flex items-center group">
+                <button className="bg-[#D4A574] cursor-pointer text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-[#C9995E] hover:shadow-3xl transform hover:scale-105 transition-all duration-200 inline-flex items-center group">
                   Schedule Your Consultation
                   <ArrowLeft className="w-5 h-5 ml-3 rotate-180 group-hover:translate-x-1 transition-transform" />
                 </button>

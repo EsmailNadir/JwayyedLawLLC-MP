@@ -23,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon: Ico
 
       <button
         onClick={onLearnMore}
-        className="inline-block text-blue-950 border border-blue-950 px-4 py-2 rounded hover:bg-blue-950 hover:text-white transition-all duration-200 text-sm font-medium w-full text-center"
+        className="inline-block cursor-pointer text-blue-950 border border-blue-950 px-4 py-2 rounded hover:bg-blue-950 hover:text-white transition-all duration-200 text-sm font-medium w-full text-center"
       >
         Learn More
       </button>

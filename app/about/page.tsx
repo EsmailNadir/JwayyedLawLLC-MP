@@ -146,7 +146,7 @@ export default function AboutPage() {
                   </video>
                 </div>
                 <a href="/services">
-                  <button className="bg-[#D4A574] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-bold text-lg sm:text-xl shadow-xl hover:bg-[#C9995E] hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-[#C9995E] hover:border-[#B88A4A]">
+                  <button className="bg-[#D4A574] cursor-pointer text-white px-8 sm:px-12 py-4 sm:py-6 rounded-xl font-bold text-lg sm:text-xl shadow-xl hover:bg-[#C9995E] hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-[#C9995E] hover:border-[#B88A4A]">
                     VIEW PRACTICE AREAS
                   </button>
                 </a>
@@ -290,7 +290,7 @@ export default function AboutPage() {
                     onClick={() =>
                       setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)
                     }
-                    className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
+                    className="bg-white/20 cursor-pointer hover:bg-white/30 p-2 rounded-full transition-all"
                   >
                     <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
                   </button>
@@ -301,7 +301,7 @@ export default function AboutPage() {
                     onClick={() =>
                       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
                     }
-                    className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
+                    className="bg-white/20 cursor-pointer hover:bg-white/30 p-2 rounded-full transition-all"
                   >
                     <ChevronRight size={20} className="sm:w-6 sm:h-6" />
                   </button>
