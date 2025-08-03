@@ -208,7 +208,7 @@ const ServicesPage = () => {
                   </p>
                   
                   <a href="/contact">
-                    <button className="bg-blue-950 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium text-base sm:text-lg">
+                    <button className="bg-blue-950 cursor-pointer text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-blue-900 transition-all duration-200 font-medium text-base sm:text-lg">
                       Contact Us Today
                     </button>
                   </a>
