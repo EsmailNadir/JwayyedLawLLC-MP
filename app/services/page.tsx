@@ -69,7 +69,7 @@ const services = [
     description: 'Support for car accidents, slip-and-falls, and negligence claims.',
     fullText: `If you've been injured due to someone else's negligence, we fight for fair compensation. We handle insurance negotiations, gather evidence, and pursue recovery for medical bills, lost wages, and pain and suffering. Our approach is strategic and client-focused.`,
     icon: Handshake,
-    image: '/assets/Injury.jpg',
+    image: '/assets/injury.jpg',
   },
   {
     title: 'Real Estate & Property Law',
