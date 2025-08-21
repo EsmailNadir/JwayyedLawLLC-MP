@@ -128,12 +128,12 @@ export default function AboutPage() {
           
           {/* Meet Attorney Section Content */}
           <div className="w-full px-4 sm:px-6 md:px-20">
-            <div className="max-w-[1400px] mx-auto mb-20 sm:mb-32 relative">
-              {/* Video - Absolute positioning */}
-              <div className="lg:absolute lg:-left-40 lg:top-0 flex flex-col items-center mb-8 lg:mb-0 lg:w-[380px]">
+            <div className="max-w-[1400px] mx-auto mb-20 sm:mb-32">
+              {/* Video - Centered on top */}
+              <div className="flex flex-col items-center mb-8 lg:mb-12">
                   <video
                     src="/aboutme.mp4"
-                    className="rounded-lg shadow-md mb-6 w-[360px] sm:w-[380px] h-[270px] sm:h-[285px] object-cover"
+                    className="rounded-lg shadow-md mb-6 w-[480px] sm:w-[580px] h-[380px] sm:h-[430px] object-cover"
                     controls
                     autoPlay
                     muted
@@ -145,13 +145,13 @@ export default function AboutPage() {
                     Your browser does not support the video tag.
                   </video>
                   <a href="/services">
-                    <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full max-w-[360px] sm:max-w-[380px]">
+                    <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full max-w-[480px] sm:max-w-[580px]">
                       VIEW PRACTICE AREAS
                     </button>
                   </a>
               </div>
 
-              {/* Text Content - Truly centered */}
+              {/* Text Content - Centered below video */}
               <div className="flex justify-center w-full">
                 <div className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed space-y-4 sm:space-y-5 max-w-3xl px-4" style={{ fontFamily: "'Source Sans Pro', 'Inter', sans-serif" }}>
                     <p>Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor's degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>

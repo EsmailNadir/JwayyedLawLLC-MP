@@ -12,6 +12,8 @@ const navLinks = [
   { name: 'Contact', href: '/contact' },
 ];
 
+const masconLink = { name: 'MASCON 2025', href: '/mascon' };
+
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +32,7 @@ const Navbar: React.FC = () => {
           />
         </Link>
 
-        <div className="hidden sm:flex space-x-12">
+        <div className="hidden sm:flex space-x-12 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -41,6 +43,12 @@ const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
+          <Link
+            href={masconLink.href}
+            className="text-lg font-bold text-white bg-gradient-to-r from-[#D4A574] to-[#C9995E] px-4 py-2 rounded-lg hover:from-[#C9995E] hover:to-[#B88A4F] transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            {masconLink.name}
+          </Link>
         </div>
 
         <button
@@ -85,6 +93,13 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
+            <Link
+              href={masconLink.href}
+              className="text-lg font-bold text-white bg-gradient-to-r from-[#D4A574] to-[#C9995E] px-4 py-2 rounded-lg hover:from-[#C9995E] hover:to-[#B88A4F] transition-all duration-200 shadow-lg text-center"
+              onClick={() => setMenuOpen(false)}
+            >
+              {masconLink.name}
+            </Link>
           </div>
         </div>
       )}

@@ -14,6 +14,7 @@ import {
   FileSignature,
   Handshake,
   X,
+  Home,
 } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 
@@ -69,6 +70,13 @@ const services = [
     fullText: `If you've been injured due to someone else's negligence, we fight for fair compensation. We handle insurance negotiations, gather evidence, and pursue recovery for medical bills, lost wages, and pain and suffering. Our approach is strategic and client-focused.`,
     icon: Handshake,
     image: '/assets/Injury.jpg',
+  },
+  {
+    title: 'Real Estate & Property Law',
+    description: 'Comprehensive legal support for real estate transactions and property disputes.',
+    fullText: `We provide comprehensive real estate and property law services including residential and commercial real estate, zoning and land use, real estate litigation, and construction law. Our services also cover quit claim deeds, affidavits for transfer of inherited real estate, quiet titles, evictions, writs of possession, and land contracts.`,
+    icon: Home,
+    image: '/assets/law.webp',
   },
 ];
 
