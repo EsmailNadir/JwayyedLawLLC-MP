@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Calendar, MapPin, Gift, Gavel, ArrowRight, Star } from 'lucide-react';
+import { Calendar, MapPin, Gift, Gavel, ArrowRight, Star, DollarSign } from 'lucide-react';
 
 export default function MasconPage() {
   return (
@@ -26,9 +26,6 @@ export default function MasconPage() {
                 <MapPin className="w-5 h-5 mr-2" />
                 <span>Booth #55 - Greater Columbus Convention Center</span>
               </div>
-              <div className="flex items-center text-white/90">
-                <span>400 N High St, Columbus, OH 43215</span>
-              </div>
             </div>
           </div>
         </div>
@@ -43,7 +40,7 @@ export default function MasconPage() {
           <p className="text-lg text-gray-700 mb-12">
             Follow us on social media and leave us a review to support our community
           </p>
-         
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
               href="https://instagram.com/jjlawohio"
@@ -57,7 +54,7 @@ export default function MasconPage() {
               <span className="font-semibold text-gray-900">Instagram</span>
               <span className="text-sm text-gray-600">@jjlawohio</span>
             </a>
-           
+            
             <a
               href="https://tiktok.com/@jjlawohio"
               target="_blank"
@@ -70,7 +67,7 @@ export default function MasconPage() {
               <span className="font-semibold text-gray-900">TikTok</span>
               <span className="text-sm text-gray-600">@jjlawohio</span>
             </a>
-           
+            
             <a
               href="https://www.google.com/search?sca_esv=1c2c48b035966a68&hl=en-US&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_VyCFWEUf6DBepoMcd2T7MiOL9-azPqhM8XfD6v3GBWfr266ME-Vry2f_ah8RhiZMCqQyeaTFQmHPzYaFSCZL3jSBgD&q=Jwayyed+Law+LLC+Reviews&sa=X&ved=2ahUKEwj66IH3wZmPAxWyjIkEHetXLpgQ0bkNegQIHhAE&biw=1280&bih=712&dpr=2"
               target="_blank"
@@ -99,7 +96,50 @@ export default function MasconPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* 50% OFF WILLS - TOP FEATURE */}
+            <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-xl p-8 text-white">
+              <div className="text-center">
+                <DollarSign className="w-16 h-16 mx-auto mb-6" />
+                <h3 className="text-3xl font-bold mb-4">50% DEAL HALF OFF WILLS</h3>
+                <p className="text-xl mb-6 opacity-90">
+                  PROTECT YOUR FAMILY&apos;S FUTURE
+                </p>
+                
+                <div className="bg-white/10 rounded-lg p-4 mb-6">
+                  <p className="text-sm font-semibold mb-2">DID YOU KNOW?</p>
+                  <p className="text-sm text-red-100">
+                    IN OHIO, YOUR FAMILY&apos;S HANDS ARE TIED WITHOUT A WILL. DO NOT LET THE COURT DECIDE WHO INHERITS, VERBAL WISHES DON&apos;T COUNT!
+                  </p>
+                </div>
+
+                <div className="text-left mb-6 space-y-2">
+                  <p className="font-semibold">WHY CHOOSE US:</p>
+                  <ul className="space-y-1 text-sm">
+                    <li>• ENSURE YOUR ASSETS AND CHILDREN ARE CARED FOR BY PEOPLE YOU TRUST</li>
+                    <li>• PROTECT YOUR LOVED ONES FROM COURT BATTLES, DELAYS, AND EXTRA COSTS</li>
+                    <li>• SECURE YOUR WISHES FOR FINANCES, HEALTH, AND ESTATE DECISIONS</li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfO5tmhUeOEqUlOuvT-dDN-ITri42_5gbNGYP-9dlKvh8Krxg/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  >
+                    Get 50% OFF Now
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
+                  <div className="text-center">
+                    <p className="text-sm text-red-100">REDEEM BEFORE:</p>
+                    <p className="text-lg font-bold">SEP 1, 2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Raffle Entry */}
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-8 text-white">
               <div className="text-center">
@@ -200,7 +240,7 @@ export default function MasconPage() {
               <MapPin className="w-12 h-12 text-[#D4A574] mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-600">Greater Columbus Convention Center</p>
-              <p className="text-gray-500 text-sm">400 N High St, Columbus, OH 43215</p>
+              <p className="text-gray-500 text-sm">Columbus, Ohio</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-[#D4A574] rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -220,19 +260,17 @@ export default function MasconPage() {
             See You at MASCON 2025!
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Don&apos;t miss out on our exclusive offers. Visit Booth #55 for your chance to win and get free legal advice.
+            Don&apos;t miss out on our exclusive offers. Visit Booth #55 for your chance to save 50% on wills and get free legal advice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfPfIBj08Gv646TzpNJ2FDwd7HfGrD2Fxe02QCdBH0BwODcRQ/viewform?usp=preview"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfO5tmhUeOEqUlOuvT-dDN-ITri42_5gbNGYP-9dlKvh8Krxg/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-white text-[#D4A574] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
-              </svg>
-              Enter Raffle
+              <DollarSign className="w-5 h-5 mr-2" />
+              Get 50% OFF Wills
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
             <Link
