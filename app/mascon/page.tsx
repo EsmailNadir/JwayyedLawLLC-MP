@@ -101,24 +101,24 @@ export default function MasconPage() {
             <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-xl p-8 text-white">
               <div className="text-center">
                 <DollarSign className="w-16 h-16 mx-auto mb-6" />
-                <h3 className="text-3xl font-bold mb-4">50% DEAL HALF OFF WILLS</h3>
+                <h3 className="text-3xl font-bold mb-4">50% WILLS</h3>
                 <p className="text-xl mb-6 opacity-90">
-                  PROTECT YOUR FAMILY&apos;S FUTURE
+                  Protect your family's future
                 </p>
                 
                 <div className="bg-white/10 rounded-lg p-4 mb-6">
-                  <p className="text-sm font-semibold mb-2">DID YOU KNOW?</p>
+                  <p className="text-sm font-semibold mb-2">Did you know?</p>
                   <p className="text-sm text-red-100">
-                    IN OHIO, YOUR FAMILY&apos;S HANDS ARE TIED WITHOUT A WILL. DO NOT LET THE COURT DECIDE WHO INHERITS, VERBAL WISHES DON&apos;T COUNT!
+                    In ohio, your family's hands are tied without a will. Do not let the court decide who inherits, verbal wishes don't count!
                   </p>
                 </div>
 
                 <div className="text-left mb-6 space-y-2">
                   <p className="font-semibold">WHY CHOOSE US:</p>
                   <ul className="space-y-1 text-sm">
-                    <li>• ENSURE YOUR ASSETS AND CHILDREN ARE CARED FOR BY PEOPLE YOU TRUST</li>
-                    <li>• PROTECT YOUR LOVED ONES FROM COURT BATTLES, DELAYS, AND EXTRA COSTS</li>
-                    <li>• SECURE YOUR WISHES FOR FINANCES, HEALTH, AND ESTATE DECISIONS</li>
+                    <li>• Ensure your assets and children are cared for by people you trust</li>
+                    <li>• Protect your loved ones from court battles, delays, and extra costs</li>
+                    <li>• Secure your wishes for finances, health, and estate decisions</li>
                   </ul>
                 </div>
 
@@ -133,8 +133,8 @@ export default function MasconPage() {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </a>
                   <div className="text-center">
-                    <p className="text-sm text-red-100">REDEEM BEFORE:</p>
-                    <p className="text-lg font-bold">SEP 1, 2025</p>
+                    <p className="text-sm text-red-100">Redeem before:</p>
+                    <p className="text-lg font-bold">Sep 1, 2025</p>
                   </div>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export default function MasconPage() {
                   <p className="font-semibold">Prizes Include:</p>
                   <ul className="space-y-1 text-sm">
                     <li>• 2 FREE WILLS ($1000 value each)</li>
-                    <li>• 6 Gift Cards</li>
-                    <li>• 6 Tumbler Cups with JL Logo</li>
+                    <li>• 5 Gift Cards</li>
+                    <li>• 6 Tumbler Cups </li>
                   </ul>
                 </div>
                 <div className="text-left mb-6 space-y-2">
@@ -199,7 +199,7 @@ export default function MasconPage() {
                   <p className="text-xs mt-3">*Submissions close shortly before each Q&A session begins</p>
                 </div>
                 <div className="text-left mb-6 space-y-2">
-                  <p className="font-semibold">Our Services:</p>
+                  <p className="font-semibold">Suggested topics:</p>
                   <ul className="space-y-1 text-sm">
                     <li>• Criminal Law</li>
                     <li>• Constitutional Law</li>
