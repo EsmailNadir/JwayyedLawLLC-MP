@@ -218,7 +218,7 @@ export default function AboutPage() {
             <div className="max-w-[900px] mx-auto px-4 sm:px-6 md:px-20 mb-20 sm:mb-32">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Ohio State Bar Association Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-[240px]">
+                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-auto min-h-[200px] sm:h-[240px]">
                   <div className="p-6">
                     <div className="flex items-start">
                       <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 </div>
                 
                 {/* CALI Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-[240px]">
+                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-auto min-h-[200px] sm:h-[240px]">
                   <div className="p-6">
                     <div className="flex items-start">
                       <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
