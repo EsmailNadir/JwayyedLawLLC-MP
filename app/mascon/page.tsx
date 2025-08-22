@@ -192,7 +192,7 @@ export default function MasconPage() {
                       <span>Location: Hall D180 + D181</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>• Sunday (24th): 4:10-5:10 PM</span>
+                      <span>• Sunday (24th): 4:30-5:30 PM</span>
                       <span>Location: Hall D180 + D181</span>
                     </li>
                   </ul>
