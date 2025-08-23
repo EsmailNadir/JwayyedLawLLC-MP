@@ -209,6 +209,14 @@ export default function MasconPage() {
                     <li>• Real Estate/Property Law</li>
                   </ul>
                 </div>
+                
+                {/* Legal Disclaimer */}
+                <div className="bg-blue-800/30 rounded-lg p-3 mb-6 border border-blue-300/20">
+                  <p className="text-xs text-blue-100">
+                    <strong>Disclaimer:</strong> The Ask a Lawyer session provides general legal information and education only. It is not a substitute for personalized legal advice.
+                  </p>
+                </div>
+
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLScoZhScOshKudsmDI20XK0sQzl2H91phrEQLpOKQnXZTA30XA/viewform?usp=header"
                   target="_blank"
