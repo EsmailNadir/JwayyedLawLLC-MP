@@ -58,11 +58,11 @@ export default function OurTeamPage() {
 
       {/* Team Member Cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 h-full flex flex-col hover:-translate-y-1 sm:hover:-translate-y-2 hover:border-[#D4A574]/30"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden border border-gray-100 h-full flex flex-col"
             >
               <div className="p-6 sm:p-8 flex-1 flex flex-col">
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-6">
@@ -99,10 +99,10 @@ export default function OurTeamPage() {
                   <Link
                     href={member.link}
                     aria-label={`View full bio of ${member.name}`}
-                    className="inline-flex items-center bg-[#D4A574] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#B8956A] transition-colors duration-300 shadow-md hover:shadow-lg text-xs sm:text-sm group w-full sm:w-auto justify-center sm:justify-start"
+                    className="inline-flex items-center bg-[#D4A574] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md text-xs sm:text-sm group w-full sm:w-auto justify-center sm:justify-start"
                   >
                     View Bio
-                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
                   </Link>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function OurTeamPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-[#D4A574] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#B8956A] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto justify-center"
+            className="inline-flex items-center bg-[#D4A574] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg text-sm sm:text-base w-full sm:w-auto justify-center"
           >
             Contact Us
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
