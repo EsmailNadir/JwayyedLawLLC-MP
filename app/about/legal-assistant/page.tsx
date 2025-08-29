@@ -8,7 +8,6 @@ import { ArrowLeft, Mail, Phone, Calendar, Users, Linkedin, BookOpen, Scale, Glo
 export default function EnhancedTeamPage() {
   const [showMoreRaneem, setShowMoreRaneem] = useState(false);
   const [showMoreEeman, setShowMoreEeman] = useState(false);
-  const [showMoreMadina, setShowMoreMadina] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -212,74 +211,6 @@ export default function EnhancedTeamPage() {
 
                   <p>
                     As a first-generation college student and multilingual speaker, Eeman offers a distinctive perspective informed by resilience, cultural insight, and a deep sense of purpose. She plans to attend law school and is dedicated to building a career centered on equity, justice, and transformative impact.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Madina Iskandarova */}
-          <div id="madina" className="w-full">
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-              {/* Image Section */}
-              <div className="flex-shrink-0 w-full max-w-[400px] lg:w-[400px]">
-                <div className="relative w-full aspect-[4/5] mx-auto">
-                  <div className="w-full h-full relative overflow-hidden rounded-2xl shadow-xl">
-                    <Image
-                      src="/assets/madina.jpeg"
-                      alt="Madina Iskandarova - Legal Intern"
-                      fill
-                      className="object-cover object-center"
-                      quality={90}
-                      sizes="(max-width: 768px) 100vw, 400px"
-                      loading="eager"
-                      priority
-                    />
-                  </div>
-                  {/* Decorative frame */}
-                  <div className="absolute -inset-3 border-2 border-[#D4A574]/20 rounded-2xl -z-10"></div>
-                </div>
-              </div>
-
-              {/* Content Section */}
-              <div className="flex-1 max-w-2xl text-center lg:text-left">
-                <div className="mb-6">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3 font-['Playfair_Display',_'Georgia',_serif]">
-                    Madina Iskandarova
-                  </h2>
-                  <p className="text-xl text-[#D4A574] font-semibold mb-4 font-['Inter',_'Arial',_sans-serif]">
-                    Legal Intern
-                  </p>
-                  
-                  {/* Quick Info Pills */}
-                  <div className="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
-                    <span className="inline-flex items-center px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                      <BookOpen className="w-3 h-3 mr-1.5" />
-                      Economics & Political Science
-                    </span>
-                    <span className="inline-flex items-center px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                      <Globe className="w-3 h-3 mr-1.5" />
-                      Fluent in Turkish
-                    </span>
-                    <span className="inline-flex items-center px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                      <Scale className="w-3 h-3 mr-1.5" />
-                      Corporate Law Interest
-                    </span>
-                  </div>
-                </div>
-
-                {/* Bio Content */}
-                <div className="space-y-4 text-gray-700 leading-relaxed text-base font-['Inter',_'Arial',_sans-serif]">
-                  <p>
-                    Madina Iskandarova holds a Bachelor's degree in Economics with a minor in Political Science from The Ohio State University. Her academic foundation combines analytical rigor with a deep understanding of political systems, shaping her interest in corporate law and public policy.
-                  </p>
-
-                  <p>
-                    Madina brings an international perspective to her legal work, along with fluency in Turkish and a strong appreciation for cross-cultural communication. She approaches each task with discipline, precision, and a keen eye for detail—qualities that serve her well in legal research, document review, and case preparation.
-                  </p>
-
-                  <p>
-                    Currently preparing for law school, Madina is committed to developing a career at the intersection of business, governance, and law. She is especially passionate about promoting transparency, ethical leadership, and effective policy solutions in both corporate and public sectors.
                   </p>
                 </div>
               </div>
