@@ -58,53 +58,54 @@ export default function OurTeamPage() {
 
       {/* Team Member Cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden border border-gray-100 h-full flex flex-col"
+              className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group"
             >
-              <div className="p-6 sm:p-8 flex-1 flex flex-col">
-                <div className="flex items-start space-x-4 sm:space-x-6 mb-6">
-                  {/* Member Photo */}
-                  <div className="flex-shrink-0">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={80}
-                      height={80}
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover object-top rounded-lg shadow-md"
-                      quality={85}
-                      loading="lazy"
-                    />
-                  </div>
-                  
-                  {/* Member Info */}
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 leading-tight">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#D4A574] font-semibold uppercase tracking-wide mb-2 sm:mb-3 leading-tight">
-                      {member.title}
-                    </p>
-                    <div className="w-10 sm:w-12 h-0.5 bg-[#D4A574] mb-2 sm:mb-3"></div>
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                      {member.description}
-                    </p>
-                  </div>
+              {/* Photo Section */}
+              <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover object-center"
+                  quality={90}
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+
+              {/* Content Section */}
+              <div className="p-6 lg:p-8">
+                {/* Name and Title */}
+                <div className="mb-4">
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm lg:text-base text-[#D4A574] font-semibold uppercase tracking-wider">
+                    {member.title}
+                  </p>
                 </div>
-                
-                {/* View Bio Button - Always at bottom */}
-                <div className="mt-auto">
-                  <Link
-                    href={member.link}
-                    aria-label={`View full bio of ${member.name}`}
-                    className="inline-flex items-center bg-[#D4A574] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md text-xs sm:text-sm group w-full sm:w-auto justify-center sm:justify-start"
-                  >
-                    View Bio
-                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                  </Link>
-                </div>
+
+                {/* Divider */}
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#D4A574] to-[#C9995E] mb-4"></div>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm lg:text-base leading-relaxed mb-6">
+                  {member.description}
+                </p>
+
+                {/* View Bio Button */}
+                <Link
+                  href={member.link}
+                  aria-label={`View full bio of ${member.name}`}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-6 py-3 rounded-xl font-semibold text-sm lg:text-base shadow-lg transition-all duration-300 group-hover:shadow-xl"
+                >
+                  View Bio
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </Link>
               </div>
             </div>
           ))}
@@ -123,10 +124,10 @@ export default function OurTeamPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-[#D4A574] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg text-sm sm:text-base w-full sm:w-auto justify-center"
+            className="inline-flex items-center bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-300 text-sm sm:text-base w-full sm:w-auto justify-center group"
           >
             Contact Us
-            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>
       </div>
