@@ -30,7 +30,7 @@ export default function OurTeamPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <div className="bg-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,10 +62,10 @@ export default function OurTeamPage() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group"
+              className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden"
             >
               {/* Photo Section */}
-              <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200">
+              <div className="relative h-56">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -74,26 +74,25 @@ export default function OurTeamPage() {
                   quality={90}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
 
               {/* Content Section */}
-              <div className="p-6 lg:p-8">
+              <div className="p-6">
                 {/* Name and Title */}
                 <div className="mb-4">
-                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-sm lg:text-base text-[#D4A574] font-semibold uppercase tracking-wider">
+                  <p className="text-sm text-[#D4A574] font-semibold uppercase tracking-wide">
                     {member.title}
                   </p>
                 </div>
 
                 {/* Divider */}
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#D4A574] to-[#C9995E] mb-4"></div>
+                <div className="w-12 h-0.5 bg-[#D4A574] mb-4"></div>
 
                 {/* Description */}
-                <p className="text-gray-600 text-sm lg:text-base leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
                   {member.description}
                 </p>
 
@@ -101,10 +100,10 @@ export default function OurTeamPage() {
                 <Link
                   href={member.link}
                   aria-label={`View full bio of ${member.name}`}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-6 py-3 rounded-xl font-semibold text-sm lg:text-base shadow-lg transition-all duration-300 group-hover:shadow-xl"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-6 py-3 rounded-lg font-semibold text-sm shadow-md"
                 >
                   View Bio
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -113,7 +112,7 @@ export default function OurTeamPage() {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-gradient-to-r from-gray-100 to-gray-50 py-12 sm:py-16">
+      <div className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
             Experience Professional Legal Support
@@ -124,10 +123,10 @@ export default function OurTeamPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-300 text-sm sm:text-base w-full sm:w-auto justify-center group"
+            className="inline-flex items-center bg-gradient-to-r from-[#D4A574] to-[#C9995E] text-white px-8 py-4 rounded-lg font-semibold shadow-md text-sm sm:text-base w-full sm:w-auto justify-center"
           >
             Contact Us
-            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
         </div>
       </div>
