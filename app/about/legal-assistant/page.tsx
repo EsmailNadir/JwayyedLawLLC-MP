@@ -151,7 +151,7 @@ export default function EnhancedTeamPage() {
 
           {/* Eeman Bashir */}
           <div id="eeman" className="w-full">
-            <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-16">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
               {/* Image Section */}
               <div className="flex-shrink-0 w-full max-w-[400px] lg:w-[400px]">
                 <div className="relative w-full aspect-[4/5] mx-auto">
