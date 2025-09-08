@@ -113,6 +113,29 @@ const Footer = () => {
 
 const reviews = [
   {
+    name: "Ace Lomax",
+    rating: 5,
+    platform: "Google",
+    text: "Great guy will fight for your freedom best experience ever thank you again God bless.",
+    timeAgo: "a week ago",
+    isNew: true
+  },
+  {
+    name: "Adnan Bashir",
+    rating: 5,
+    platform: "Google",
+    text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the entire process. Communication was always prompt, and they handled my situation with expertise and attention to detail. I'm extremely satisfied with the outcome and highly recommend Jwayyed Law LLC to anyone in need of a reliable and dedicated attorney",
+    timeAgo: "2 weeks ago",
+    isNew: true
+  },
+  {
+    name: "Rushdi Ziad",
+    rating: 5,
+    platform: "Google",
+    text: "Working with Mr. Jwayyed was one of the best decisions I could have made. I was dealing with a ticket that had me really stressed, but he took over and handled everything with skill and professionalism. He was always quick to respond, explained every step clearly, and made sure I understood my options. What really stood out was how genuinely committed he was to getting the best outcome—and he delivered. The ticket was taken care of, and I couldn't be more relieved. If you need someone who knows the law, communicates well, and truly cares about your case, I highly recommend Jwayyed. He made a difficult situation so much easier to get through.",
+    timeAgo: "a month ago"
+  },
+  {
     name: "Mike Clement",
     rating: 5,
     platform: "Google",
@@ -245,13 +268,14 @@ export default function Home() {
       <section className="relative h-screen overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
+          {/* Desktop Video - Hidden on mobile */}
           <video 
             autoPlay 
             muted 
             loop 
             playsInline 
             preload="auto"
-            className="absolute inset-0 w-full h-full object-cover sm:object-cover md:object-cover lg:object-cover xl:object-cover"
+            className="absolute inset-0 w-full h-full object-cover hidden sm:block"
             style={{
               objectPosition: 'center center',
               minWidth: '100%',
@@ -261,6 +285,25 @@ export default function Home() {
             }}
           >
             <source src="/videos/background-video.mp4" type="video/mp4" />
+          </video>
+          
+          {/* Mobile Video - Only visible on mobile */}
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover block sm:hidden"
+            style={{
+              objectPosition: 'center center',
+              minWidth: '100%',
+              minHeight: '100%',
+              width: 'auto',
+              height: 'auto'
+            }}
+          >
+            <source src="/videos/mobile-web-banner.mp4" type="video/mp4" />
           </video>
           
           {/* Gradient Overlay for better text readability */}
