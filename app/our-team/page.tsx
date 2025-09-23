@@ -19,13 +19,6 @@ export default function OurTeamPage() {
       description: "Efficient expertise in handling cases and providing comprehensive support to attorneys and clients throughout the legal process.",
       image: "/assets/raneem-backround.png",
       link: "/about/legal-assistant#raneem"
-    },
-    {
-      name: "Eeman Bashir",
-      title: "Legal Intern",
-      description: "Currently pursuing a law degree with strong research skills and passion for social justice. Eager to learn about the legal field.",
-      image: "/assets/eeman.jpeg", 
-      link: "/about/legal-assistant#eeman"
     }
   ];
 
@@ -56,9 +49,9 @@ export default function OurTeamPage() {
         </div>
       </div>
 
-      {/* Team Member Cards */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
+      {/* Team Member Cards - Now with 2 members */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -71,9 +64,9 @@ export default function OurTeamPage() {
                     <Image
                       src={member.image}
                       alt={member.name}
-                      width={80}
-                      height={80}
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover object-top rounded-lg shadow-md"
+                      width={100}
+                      height={100}
+                      className="w-20 h-20 sm:w-24 sm:h-24 object-cover object-top rounded-lg shadow-md"
                       quality={85}
                       loading="lazy"
                     />
@@ -81,14 +74,14 @@ export default function OurTeamPage() {
                   
                   {/* Member Info */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 leading-tight">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 leading-tight">
                       {member.name}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#D4A574] font-semibold uppercase tracking-wide mb-2 sm:mb-3 leading-tight">
+                    <p className="text-sm sm:text-base text-[#D4A574] font-semibold uppercase tracking-wide mb-3 leading-tight">
                       {member.title}
                     </p>
-                    <div className="w-10 sm:w-12 h-0.5 bg-[#D4A574] mb-2 sm:mb-3"></div>
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    <div className="w-12 sm:w-16 h-0.5 bg-[#D4A574] mb-3"></div>
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       {member.description}
                     </p>
                   </div>
@@ -99,10 +92,10 @@ export default function OurTeamPage() {
                   <Link
                     href={member.link}
                     aria-label={`View full bio of ${member.name}`}
-                    className="inline-flex items-center bg-[#D4A574] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md text-xs sm:text-sm group w-full sm:w-auto justify-center sm:justify-start"
+                    className="inline-flex items-center bg-[#D4A574] text-white px-5 sm:px-6 py-3 rounded-lg font-semibold shadow-md text-sm sm:text-base group w-full sm:w-auto justify-center sm:justify-start hover:bg-[#C9995E] transition-colors"
                   >
                     View Bio
-                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </div>
               </div>
@@ -123,7 +116,7 @@ export default function OurTeamPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-[#D4A574] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold shadow-md text-sm sm:text-base w-full sm:w-auto justify-center"
+            className="inline-flex items-center bg-[#D4A574] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold shadow-md text-sm sm:text-base w-full sm:w-auto justify-center hover:bg-[#C9995E] transition-colors"
           >
             Contact Us
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
