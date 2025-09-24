@@ -36,7 +36,7 @@ export default function OurTeamPage() {
           {/* Team Group Photo */}
           <div className="px-2 sm:px-4 md:px-0 mb-8 sm:mb-12 lg:mb-16">
             <Image
-              src="/assets/Screenshot 2025-08-26 at 8.35.png"
+              src="/assets/main_updated_photo.jpeg"
               alt="Jwayyed Law LLC Team"
               width={800}
               height={600}
