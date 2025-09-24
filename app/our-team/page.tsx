@@ -33,14 +33,14 @@ export default function OurTeamPage() {
             </h1>
           </div>
 
-          {/* Team Group Photo */}
+          {/* Team Group Photo - Reduced size for 2 people */}
           <div className="px-2 sm:px-4 md:px-0 mb-8 sm:mb-12 lg:mb-16">
             <Image
               src="/assets/main_updated_photo.jpeg"
               alt="Jwayyed Law LLC Team"
               width={800}
               height={600}
-              className="w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto rounded-lg sm:rounded-xl shadow-lg object-cover h-auto"
+              className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto rounded-lg sm:rounded-xl shadow-lg object-cover h-auto"
               priority
               quality={90}
               loading="eager"
