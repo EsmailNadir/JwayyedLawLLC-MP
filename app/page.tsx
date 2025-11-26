@@ -113,127 +113,142 @@ const Footer = () => {
 
 const reviews = [
   {
+    name: "Whitney Yoder",
+    rating: 5,
+    platform: "Google",
+    text: "He represented me and got my charges dismissed due to mistreatment of law enforcement."
+  },
+  {
+    name: "Gabriel",
+    rating: 5,
+    platform: "Google",
+    text: "Most attorneys take your money & leave you out to dry, I can assure you this is most certainly not the case with Mr. JJ! I knew I was facing an uphill battle & quite frankly didn't know of a strategy we could possibly put forward. This man completely took me off guard with the angles he attacked from so I know it was unexpected by the prosecution (think Johnnie Cochran). You really can't find better to entrust the fate of your case to. He goes far over & beyond. I was very pleasantly surprised. Trust me, this is the type of priceless legal aid money can't buy. He has a heart & will fight for you like you're his family. He did for me, I'm speaking from experience. You're in the best hands with him."
+  },
+  {
+    name: "Mustang Guru",
+    rating: 5,
+    platform: "Google",
+    text: "If he could cover 50 states he would be the only guy I choose. This attorney got a serious CDL violation down to a moving violation in the matter of one business day. Very straightforward, friendly and tactical with cases. If you're in Ohio it's worth the money, saved me from a suspension."
+  },
+  {
+    name: "Josh Gibson",
+    rating: 5,
+    platform: "Google",
+    text: "JWAYYED, this gentleman here came through like a hurricane. As he tore my traffic case apart and dissected key evidence to dropping and reducing the charges I had. With my lengthy criminal record from past mistakes I had no bargain coming. I was picked up for speeding and because my car had the scent of marijuana, nothing on me or my person. I was asked to do a field sobriety test, due to injuries and pins and screws in my ankle I wasn't able to keep balance so I failed the test and was placed under arrest. With the help of JJ proving how I have changed my life a full 180 and providing evidence and proof that I still am on the right path, JJ got my speed ticket tossed out and the OVI dropped from a M1 to M4. I highly recommend!"
+  },
+  {
+    name: "Lisa",
+    rating: 5,
+    platform: "Google",
+    text: "Professional player who knows the Law! Will use again if I need to but hopefully will not be needed!! Will refer to others who might need a lawyer!!"
+  },
+  {
+    name: "A. R.S.",
+    rating: 5,
+    platform: "Google",
+    text: "I honestly can't say enough good things about this team. From start to finish, they were dedicated, responsive, and genuinely cared about helping me through every step of the process. It's rare to find people in this field who combine expertise with such compassion and integrity, but that's exactly what I found here. They always took the time to explain things clearly, checked in often, and made sure I felt supported and informed the entire way. I never once felt like just another case. They truly earned my trust, and I'm so grateful for their guidance and persistence. If you're looking for a legal team that actually shows up for you and does what they say they'll do, I can't recommend them enough."
+  },
+  {
     name: "Ace Lomax",
     rating: 5,
     platform: "Google",
-    text: "Great guy will fight for your freedom best experience ever thank you again God bless.",
-    timeAgo: "a week ago",
-    isNew: true
+    text: "Great guy will fight for your freedom best experience ever thank you again God bless."
   },
   {
     name: "Adnan Bashir",
     rating: 5,
     platform: "Google",
-    text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the entire process. Communication was always prompt, and they handled my situation with expertise and attention to detail. I'm extremely satisfied with the outcome and highly recommend Jwayyed Law LLC to anyone in need of a reliable and dedicated attorney",
-    timeAgo: "2 weeks ago",
-    isNew: true
+    text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the entire process. Communication was always prompt, and they handled my situation with expertise and attention to detail. I'm extremely satisfied with the outcome and highly recommend Jwayyed Law LLC to anyone in need of a reliable and dedicated attorney."
   },
   {
     name: "Rushdi Ziad",
     rating: 5,
     platform: "Google",
-    text: "Working with Mr. Jwayyed was one of the best decisions I could have made. I was dealing with a ticket that had me really stressed, but he took over and handled everything with skill and professionalism. He was always quick to respond, explained every step clearly, and made sure I understood my options. What really stood out was how genuinely committed he was to getting the best outcome—and he delivered. The ticket was taken care of, and I couldn't be more relieved. If you need someone who knows the law, communicates well, and truly cares about your case, I highly recommend Jwayyed. He made a difficult situation so much easier to get through.",
-    timeAgo: "a month ago"
+    text: "Working with Mr. Jwayyed was one of the best decisions I could have made. I was dealing with a ticket that had me really stressed, but he took over and handled everything with skill and professionalism. He was always quick to respond, explained every step clearly, and made sure I understood my options. What really stood out was how genuinely committed he was to getting the best outcome—and he delivered. The ticket was taken care of, and I couldn't be more relieved. If you need someone who knows the law, communicates well, and truly cares about your case, I highly recommend Jwayyed. He made a difficult situation so much easier to get through."
   },
   {
     name: "Mike Clement",
     rating: 5,
     platform: "Google",
-    text: "I recently received a traffic ticket in Akron, and Jwayyed was instrumental in helping me avoid additional points on my license. From the start, he was very professional, responsive, and clearly knowledgeable about local traffic laws. He worked quickly to negotiate a reduced charge, and reduced points, which ultimately saved me from increased insurance rates and license penalties. His communication throughout the process kept me informed and confident in the outcome. I highly recommend his services to anyone facing traffic violations in the area",
-    timeAgo: "a day ago",
-    isNew: true
+    text: "I recently received a traffic ticket in Akron, and Jwayyed was instrumental in helping me avoid additional points on my license. From the start, he was very professional, responsive, and clearly knowledgeable about local traffic laws. He worked quickly to negotiate a reduced charge, and reduced points, which ultimately saved me from increased insurance rates and license penalties. His communication throughout the process kept me informed and confident in the outcome. I highly recommend his services to anyone facing traffic violations in the area."
   },
   {
     name: "Imdad Imdadova",
     rating: 5,
     platform: "Google",
-    text: "Excellent legal representation! Attorney Jwayyed and his team were professional, knowledgeable, and dedicated to achieving the best outcome for my case. Highly recommend their services.",
-    timeAgo: "5 days ago",
-    isNew: true
+    text: "Excellent legal representation! Attorney Jwayyed and his team were professional, knowledgeable, and dedicated to achieving the best outcome for my case. Highly recommend their services."
   },
   {
     name: "Heba El-Hosseiny",
     rating: 5,
     platform: "Google",
-    text: "My experience with Jwayyed was incredible. He was attentive in the discovery phase of my case and made sure to keep me in the loop on all actions that were taken on my behalf.",
-    timeAgo: "2 weeks ago"
+    text: "My experience with Jwayyed was incredible. He was attentive in the discovery phase of my case and made sure to keep me in the loop on all actions that were taken on my behalf."
   },
   {
     name: "Tammy Watts",
     rating: 5,
     platform: "Google",
-    text: "He was very thorough, diligent, and responsive. He listened, outlined step-by-step how we would proceed, and always kept me informed of updates in a timely and professional manner.",
-    timeAgo: "3 weeks ago"
+    text: "He was very thorough, diligent, and responsive. He listened, outlined step-by-step how we would proceed, and always kept me informed of updates in a timely and professional manner."
   },
   {
     name: "Yazen Karajat",
     rating: 5,
     platform: "Google",
-    text: "Jwayyed Jwayyed is a rare kind of attorney—fierce in advocacy, compassionate with clients, and deeply committed to justice.",
-    timeAgo: "1 month ago"
+    text: "Jwayyed Jwayyed is a rare kind of attorney—fierce in advocacy, compassionate with clients, and deeply committed to justice."
   },
   {
     name: "Nott Billyy",
     rating: 5,
     platform: "Google",
-    text: "Jwayyed is the real deal. Super easy to work with, chill but professional, and actually gets results.",
-    timeAgo: "1 month ago"
+    text: "Jwayyed is the real deal. Super easy to work with, chill but professional, and actually gets results."
   },
   {
     name: "Yasmine A",
     rating: 5,
     platform: "Google",
-    text: "He was really helpful and easy to talk to. He made a stressful situation a lot less scary and took care of everything I needed.",
-    timeAgo: "1 month ago"
+    text: "He was really helpful and easy to talk to. He made a stressful situation a lot less scary and took care of everything I needed."
   },
   {
     name: "Basil Jaradah",
     rating: 5,
     platform: "Google",
-    text: "He finished the project in timely manner, and remained professional all the time, was thorough and picked up on the little details.",
-    timeAgo: "2 months ago"
+    text: "He finished the project in timely manner, and remained professional all the time, was thorough and picked up on the little details."
   },
   {
     name: "Abe Rashed",
     rating: 5,
     platform: "Google",
-    text: "He got me a better result than the first attorney I had spoken to had promised. I'm happy to say he will be my attorney going forward.",
-    timeAgo: "3 months ago"
+    text: "He got me a better result than the first attorney I had spoken to had promised. I'm happy to say he will be my attorney going forward."
   },
   {
     name: "Ahmed Kahook",
     rating: 5,
     platform: "LinkedIn",
-    text: "He went above and beyond to get us a quick resolution. He always had my family's best interests in mind and replied to emails more promptly than most people answer text messages.",
-    timeAgo: "4 months ago"
+    text: "He went above and beyond to get us a quick resolution. He always had my family's best interests in mind and replied to emails more promptly than most people answer text messages."
   },
   {
     name: "Abraham Rashed",
     rating: 5,
     platform: "LinkedIn",
-    text: "He was able to quickly identify the problems with my situation and got me a better result than the first attorney had promised.",
-    timeAgo: "4 months ago"
+    text: "He was able to quickly identify the problems with my situation and got me a better result than the first attorney had promised."
   },
   {
     name: "Leonard Milner",
     rating: 5,
     platform: "LinkedIn",
-    text: "Jwayyed was proactive, diligent, knowledgeable, courageous, steadfast and unmovable in getting justice. I would definitely recommend him for any litigation concerns.",
-    timeAgo: "6 months ago"
+    text: "Jwayyed was proactive, diligent, knowledgeable, courageous, steadfast and unmovable in getting justice. I would definitely recommend him for any litigation concerns."
   },
   {
     name: "Samantha Pugh",
     rating: 5,
     platform: "LinkedIn",
-    text: "Jwayyed is consistently professional, knowledgeable, reasonable, and so easy to work with. He is always prepared and organized.",
-    timeAgo: "7 months ago"
+    text: "Jwayyed is consistently professional, knowledgeable, reasonable, and so easy to work with. He is always prepared and organized."
   },
   {
     name: "Faiz Joseph",
     rating: 5,
     platform: "LinkedIn",
-    text: "If genuine care was a person it would be Jwayyed. There's no one that I know that cares more for their craft than him.",
-    timeAgo: "10 months ago"
+    text: "If genuine care was a person it would be Jwayyed. There's no one that I know that cares more for their craft than him."
   }
 ];
 
@@ -425,19 +440,9 @@ export default function Home() {
                         <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-orange-500 text-orange-500" />
                       ))}
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-2 sm:px-3 py-1 rounded-full">
-                        {reviews[currentReview].platform}
-                      </span>
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
-                        {reviews[currentReview].timeAgo}
-                      </span>
-                      {reviews[currentReview].isNew && (
-                        <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white bg-green-500 px-2 sm:px-3 py-1 rounded-full">
-                          New
-                        </span>
-                      )}
-                    </div>
+                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-2 sm:px-3 py-1 rounded-full w-fit">
+                      {reviews[currentReview].platform}
+                    </span>
                   </div>
                   
                   <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-lg sm:text-xl text-gray-700 leading-relaxed min-h-[100px] sm:min-h-[120px] flex items-center italic">
