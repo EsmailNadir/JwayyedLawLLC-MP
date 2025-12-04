@@ -2,33 +2,145 @@ import Navbar from "@/components/navbar";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import Head from "next/head";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Jwayyed Law LLC",
-  description: "Your trusted legal advisor",
+  title: {
+    default: "Jwayyed Law LLC | Ohio Attorney | Criminal Defense, Estate Planning & Immigration",
+    template: "%s | Jwayyed Law LLC"
+  },
+  description: "Experienced Ohio attorney providing criminal defense, estate planning, immigration, business law, and probate services. Serving clients throughout the state of Ohio with personalized legal representation. Call (614) 285-5482.",
+  keywords: [
+    "Ohio attorney",
+    "attorney in Ohio",
+    "Ohio lawyer",
+    "criminal defense attorney Ohio",
+    "estate planning attorney Ohio",
+    "immigration lawyer Ohio",
+    "probate attorney Ohio",
+    "business law attorney Ohio",
+    "traffic violations attorney Ohio",
+    "family law attorney Ohio",
+    "legal services Ohio",
+    "attorney serving Ohio",
+    "lawyer throughout Ohio"
+  ],
+  authors: [{ name: "Jwayyed Law LLC" }],
+  creator: "Jwayyed Law LLC",
+  publisher: "Jwayyed Law LLC",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com',
+    siteName: 'Jwayyed Law LLC',
+    title: 'Jwayyed Law LLC | Ohio Attorney',
+    description: 'Experienced Ohio attorney providing criminal defense, estate planning, immigration, business law, and probate services throughout the state of Ohio.',
+    images: [
+      {
+        url: '/assets/Jwayyed_Logo_Inverted.JPEG',
+        width: 1200,
+        height: 630,
+        alt: 'Jwayyed Law LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jwayyed Law LLC | Ohio Attorney',
+    description: 'Experienced Ohio attorney providing comprehensive legal services throughout the state of Ohio.',
+    images: ['/assets/Jwayyed_Logo_Inverted.JPEG'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/assets/Jwayyed_Logo_Inverted.JPEG',
     shortcut: '/assets/Jwayyed_Logo_Inverted.JPEG',
     apple: '/assets/Jwayyed_Logo_Inverted.JPEG',
   },
+  verification: {
+    // Add Google Search Console verification when available
+    // google: 'your-verification-code',
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en" className="h-full">
-      <Head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-        <script
-          type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
-      </Head>
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Jwayyed Law LLC",
+    "image": `${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`,
+    "@id": siteUrl,
+    "url": siteUrl,
+    "telephone": "(614) 285-5482",
+    "email": "jwayyedlawllc@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 E. Campus View Boulevard, Suite #250",
+      "addressLocality": "Columbus",
+      "addressRegion": "OH",
+      "postalCode": "43235",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.030016,
+      "longitude": -83.023834
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "State",
+      "name": "Ohio"
+    },
+    "serviceType": [
+      "Criminal Defense",
+      "Estate Planning",
+      "Immigration Law",
+      "Business Law",
+      "Probate",
+      "Traffic Violations",
+      "Family Law"
+    ]
+  };
 
+  return (
+    <html lang="en" className="h-full" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="flex flex-col min-h-screen">
         <Navbar />
 

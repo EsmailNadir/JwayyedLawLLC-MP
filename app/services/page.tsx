@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Head from 'next/head';
 import {
   Gavel,
   ScrollText,
@@ -109,10 +108,6 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Head>
-        <link rel="preload" as="image" href="/assets/service-page.webp" />
-      </Head>
-
       <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-white overflow-hidden">
         {/* Optimized Background Image */}
         <div className="absolute inset-0">
