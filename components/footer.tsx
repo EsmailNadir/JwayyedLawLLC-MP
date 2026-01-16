@@ -4,7 +4,7 @@ export default function Footer() {
           <p className="mb-1">
             Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice.
           </p>
-          <p>© Copyright 2025 Jwayyed Law, LLC. All Rights Reserved.</p>
+          <p>© Copyright 2026 Jwayyed Law, LLC. All Rights Reserved.</p>
         </footer>
     );
 };
