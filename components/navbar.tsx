@@ -292,7 +292,6 @@ const navItems: NavItem[] = [
     subLinks: [
       { name: 'About Us', href: '/our-law-firm/about-us' },
       { name: 'Our Attorneys', href: '/our-law-firm/our-attorneys' },
-      { name: 'Case Results', href: '/our-law-firm/case-results' },
       { name: 'Testimonials', href: '/our-law-firm/testimonials' },
       { name: 'Blog', href: '/our-law-firm/blog' },
     ],
