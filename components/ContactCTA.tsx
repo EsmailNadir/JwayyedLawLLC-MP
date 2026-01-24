@@ -25,7 +25,7 @@ export default function ContactCTA({
               Ready to Discuss Your Case?
             </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-lg text-gray-200 mb-8 leading-relaxed">
-              Contact Jwayyed Law LLC today for a free consultation. We're here to help you understand your legal rights and options.
+              Contact Jwayyed Law LLC today to schedule a consultation. We're here to help you understand your legal rights and options.
             </p>
             <div className="space-y-4 font-['Inter',_'Arial',_sans-serif]">
               <a

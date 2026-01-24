@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Third OVI Defense Lawyer in Columbus, OH | Felony OVI Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus third OVI defense attorney protecting your rights. Skilled representation for felony OVI/DUI charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus third OVI defense attorney protecting your rights. Skilled representation for felony OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['third OVI lawyer Columbus OH', 'felony OVI defense attorney Ohio', 'third DUI attorney', 'Franklin County felony OVI lawyer'],
   openGraph: {
     title: 'Third OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -182,7 +182,7 @@ export default function ThirdOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing third OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a free consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing third OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

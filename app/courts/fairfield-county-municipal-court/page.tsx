@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Fairfield County Municipal Court Attorney | Experienced Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Fairfield County Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Fairfield County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Fairfield County Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Fairfield County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Fairfield County Municipal Court attorney', 'Fairfield County OVI lawyer', 'Fairfield County misdemeanor defense'],
   openGraph: {
     title: 'Fairfield County Municipal Court Attorney | Jwayyed Law LLC',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys provide free consultations.',
+    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys provide schedule consultations.',
   },
   {
     question: 'How long do Municipal Court cases take?',
@@ -115,7 +115,7 @@ export default function FairfieldCountyMunicipalCourtPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Fairfield County Municipal Court, contact Jwayyed Law LLC for a free consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a matter in Fairfield County Municipal Court, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
             </p>
           </div>
         </div>

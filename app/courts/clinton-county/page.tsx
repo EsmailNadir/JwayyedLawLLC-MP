@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Clinton County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Clinton County courts including Common Pleas and Wilmington Municipal Court. Skilled representation in Clinton County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Clinton County courts including Common Pleas and Wilmington Municipal Court. Skilled representation in Clinton County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Clinton County court attorney', 'Clinton County Common Pleas', 'Wilmington Municipal Court'],
   openGraph: {
     title: 'Clinton County Court Representation | Jwayyed Law LLC',

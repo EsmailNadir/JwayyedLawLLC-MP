@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Green Cards Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus green cards attorney helping you obtain permanent residency. Skilled representation for green card applications in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus green cards attorney helping you obtain permanent residency. Skilled representation for green card applications in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['green cards lawyer Columbus OH', 'green card attorney Ohio', 'permanent residency lawyer', 'Franklin County green card attorney'],
   openGraph: {
     title: 'Green Cards Lawyer in Columbus, OH | Jwayyed Law LLC',

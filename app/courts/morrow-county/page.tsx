@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Morrow County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Morrow County courts including Common Pleas and Municipal Court. Skilled representation in Morrow County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Morrow County courts including Common Pleas and Municipal Court. Skilled representation in Morrow County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Morrow County court attorney', 'Morrow County Common Pleas', 'Morrow County Municipal Court'],
   openGraph: {
     title: 'Morrow County Court Representation | Jwayyed Law LLC',

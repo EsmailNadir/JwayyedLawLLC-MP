@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Licking County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Licking County courts including Common Pleas and Municipal Courts. Skilled representation in Licking County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Licking County courts including Common Pleas and Municipal Courts. Skilled representation in Licking County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Licking County court attorney', 'Licking County Common Pleas', 'Licking County Municipal Court'],
   openGraph: {
     title: 'Licking County Court Representation | Jwayyed Law LLC',

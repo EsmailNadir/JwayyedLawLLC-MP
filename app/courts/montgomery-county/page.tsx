@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Montgomery County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Montgomery County courts including Common Pleas and Municipal Courts. Skilled representation in Montgomery County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Montgomery County courts including Common Pleas and Municipal Courts. Skilled representation in Montgomery County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Montgomery County court attorney', 'Montgomery County Common Pleas', 'Dayton Municipal Court'],
   openGraph: {
     title: 'Montgomery County Court Representation | Jwayyed Law LLC',

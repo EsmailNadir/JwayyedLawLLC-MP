@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Commercial DUI (CDL) Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['commercial DUI lawyer Columbus OH', 'CDL OVI defense attorney Ohio', 'CDL attorney', 'Franklin County commercial DUI lawyer'],
   openGraph: {
     title: 'Commercial DUI (CDL) Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

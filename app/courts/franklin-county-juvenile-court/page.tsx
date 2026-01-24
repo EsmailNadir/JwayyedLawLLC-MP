@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Franklin County Juvenile Court Attorney | Columbus Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County Juvenile Court. Skilled representation for juvenile delinquency, dependency, and custody matters in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Franklin County Juvenile Court. Skilled representation for juvenile delinquency, dependency, and custody matters in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Franklin County Juvenile Court attorney', 'juvenile defense Columbus', 'juvenile delinquency lawyer', 'Franklin County custody attorney'],
   openGraph: {
     title: 'Franklin County Juvenile Court Attorney | Jwayyed Law LLC',
@@ -115,7 +115,7 @@ export default function FranklinCountyJuvenileCourtPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Franklin County Juvenile Court, contact Jwayyed Law LLC for a free consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding Juvenile Court procedures and having experienced representation can significantly impact the outcome of your case and protect children's rights and futures.
+              If you have a matter in Franklin County Juvenile Court, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding Juvenile Court procedures and having experienced representation can significantly impact the outcome of your case and protect children's rights and futures.
             </p>
           </div>
         </div>

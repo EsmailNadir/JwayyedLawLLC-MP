@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Probate Administration Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'probate administration', 'Franklin County probate attorney'],
   openGraph: {
     title: 'Probate Administration Lawyer in Columbus, OH | Jwayyed Law LLC',

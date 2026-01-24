@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Franklin County Juvenile Court Attorney | Columbus Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County Juvenile Court. Skilled representation for juvenile delinquency, dependency, and custody matters in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Franklin County Juvenile Court. Skilled representation for juvenile delinquency, dependency, and custody matters in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Franklin County Juvenile Court attorney', 'juvenile defense Columbus', 'juvenile delinquency lawyer', 'Franklin County custody attorney'],
   openGraph: {
     title: 'Franklin County Juvenile Court Attorney | Jwayyed Law LLC',

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Wrongful Death Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
   openGraph: {
     title: 'Wrongful Death Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a wrongful death attorney?',
-    answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and provide free consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+    answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and provide schedule consultations. Experienced representation is essential to protect your rights and maximize recovery.',
   },
 ];
 
@@ -163,7 +163,7 @@ export default function WrongfulDeathPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
+              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
             </p>
           </div>
         </div>

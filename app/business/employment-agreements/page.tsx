@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Employment Agreements Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus employment agreements attorney protecting your interests. Skilled representation for employment agreements in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus employment agreements attorney protecting your interests. Skilled representation for employment agreements in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['employment agreements lawyer Columbus OH', 'employment agreements attorney Ohio', 'employment contract lawyer', 'Franklin County employment attorney'],
   openGraph: {
     title: 'Employment Agreements Lawyer in Columbus, OH | Jwayyed Law LLC',

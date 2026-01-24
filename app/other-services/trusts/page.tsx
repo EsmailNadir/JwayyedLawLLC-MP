@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus trusts attorney protecting your assets. Skilled representation for trust creation and administration in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus trusts attorney protecting your assets. Skilled representation for trust creation and administration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['trusts lawyer Columbus OH', 'trust attorney Ohio', 'trust creation lawyer', 'Franklin County trust attorney'],
   openGraph: {
     title: 'Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',

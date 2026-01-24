@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Burglary Charges Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus burglary defense attorney protecting your rights. Skilled representation for burglary and breaking and entering charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus burglary defense attorney protecting your rights. Skilled representation for burglary and breaking and entering charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['burglary lawyer Columbus OH', 'burglary defense attorney Ohio', 'breaking and entering attorney', 'Franklin County burglary lawyer'],
   openGraph: {
     title: 'Burglary Charges Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -178,7 +178,7 @@ export default function BurglaryChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing burglary charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in burglary cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing burglary charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in burglary cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

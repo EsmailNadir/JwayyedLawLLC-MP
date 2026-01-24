@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Limited Driving Privileges Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI suspension in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI suspension in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['limited driving privileges lawyer Columbus OH', 'driving privileges attorney Ohio', 'work privileges attorney', 'Franklin County limited privileges lawyer'],
   openGraph: {
     title: 'Limited Driving Privileges Lawyer in Columbus, OH | Jwayyed Law LLC',

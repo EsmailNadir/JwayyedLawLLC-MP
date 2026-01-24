@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Civil Protection Orders Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney'],
   openGraph: {
     title: 'Civil Protection Orders Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a civil protection order attorney?',
-    answer: 'Civil protection order proceedings move quickly and can significantly affect your rights including contact restrictions, residence, custody, and firearms. Whether you are seeking a protection order or defending against one, experienced representation is essential to protect your rights. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Civil protection order proceedings move quickly and can significantly affect your rights including contact restrictions, residence, custody, and firearms. Whether you are seeking a protection order or defending against one, experienced representation is essential to protect your rights. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
 ];
 

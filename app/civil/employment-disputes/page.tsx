@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Employment Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus employment disputes attorney protecting your rights. Skilled representation for employment disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus employment disputes attorney protecting your rights. Skilled representation for employment disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['employment disputes lawyer Columbus OH', 'employment attorney Ohio', 'wrongful termination lawyer', 'Franklin County employment attorney'],
   openGraph: {
     title: 'Employment Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need an employment disputes attorney?',
-    answer: 'Employment disputes are complex and require experienced representation. Employment attorneys understand federal and state employment laws, can identify violations, file EEOC charges, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly or contingency fee arrangements and provide free consultations.',
+    answer: 'Employment disputes are complex and require experienced representation. Employment attorneys understand federal and state employment laws, can identify violations, file EEOC charges, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly or contingency fee arrangements and provide schedule consultations.',
   },
   {
     question: 'Can I recover damages for employment disputes?',

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Columbus Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
-  description: 'Experienced Columbus criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft, and all criminal charges. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft, and all criminal charges. Schedule consultation: (614) 285-5482',
   keywords: [
     'Columbus criminal defense attorney',
     'Ohio criminal defense lawyer',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Columbus Criminal Defense Attorney | Jwayyed Law LLC',
-    description: 'Experienced criminal defense representation in Columbus and throughout Ohio. Free consultation available.',
+    description: 'Experienced criminal defense representation in Columbus and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense',
   },
   alternates: {
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: 'How much does a criminal defense attorney cost in Ohio?',
-    answer: 'Criminal defense attorney fees vary based on case complexity, severity of charges, attorney experience, and required time commitment. Simple misdemeanors may cost less, while serious felonies require substantial investment. Many attorneys offer payment plans. Some cases may qualify for court-appointed counsel if you cannot afford an attorney. During a free consultation, we can discuss fees and payment options tailored to your situation.',
+    answer: 'Criminal defense attorney fees vary based on case complexity, severity of charges, attorney experience, and required time commitment. Simple misdemeanors may cost less, while serious felonies require substantial investment. Many attorneys offer payment plans. Some cases may qualify for court-appointed counsel if you cannot afford an attorney. During a schedule consultation, we can discuss fees and payment options tailored to your situation.',
   },
   {
     question: 'What are my rights during an arrest in Ohio?',
@@ -325,7 +325,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal charges in Columbus, Franklin County, or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing criminal charges in Columbus, Franklin County, or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function PageHero({
                 href="/contact"
                 className="inline-flex items-center bg-white text-gray-900 font-semibold px-8 py-4 rounded-md hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl font-['Inter',_'Arial',_sans-serif]"
               >
-                Free Consultation
+                Schedule Consultation
               </Link>
             </div>
           )}

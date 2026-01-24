@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Estate Planning Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus estate planning attorney protecting your legacy. Skilled representation for wills, trusts, and estate planning in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus estate planning attorney protecting your legacy. Skilled representation for wills, trusts, and estate planning in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['estate planning lawyer Columbus OH', 'estate planning attorney Ohio', 'wills trusts lawyer', 'Franklin County estate planning attorney'],
   openGraph: {
     title: 'Estate Planning Lawyer in Columbus, OH | Jwayyed Law LLC',

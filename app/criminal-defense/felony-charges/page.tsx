@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Felony Charges Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus felony defense attorney protecting your rights. Skilled representation for all felony charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus felony defense attorney protecting your rights. Skilled representation for all felony charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['felony lawyer Columbus OH', 'felony defense attorney Ohio', 'felony charges attorney', 'Franklin County felony lawyer'],
   openGraph: {
     title: 'Felony Charges Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -183,7 +183,7 @@ export default function FelonyChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing felony charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in felony cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing felony charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in felony cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

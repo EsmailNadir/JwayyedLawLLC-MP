@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Criminal Misdemeanor Defense in Morrow County - Morrow County Municipal Court | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced criminal misdemeanor defense attorney in Morrow County - Morrow County Municipal Court. Skilled representation for misdemeanor charges in Morrow County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced criminal misdemeanor defense attorney in Morrow County - Morrow County Municipal Court. Skilled representation for misdemeanor charges in Morrow County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['criminal misdemeanor defense Morrow County', 'misdemeanor attorney Morrow County Municipal Court', 'Morrow County criminal lawyer', 'Morrow County misdemeanor defense'],
   openGraph: {
     title: 'Criminal Misdemeanor Defense in Morrow County - Morrow County Municipal Court | Jwayyed Law LLC',
@@ -168,7 +168,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing misdemeanor charges in Morrow County, contact Jwayyed Law LLC immediately for a free consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Morrow County Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing misdemeanor charges in Morrow County, contact Jwayyed Law LLC immediately for a schedule consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Morrow County Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Citizenship & Naturalization Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus citizenship and naturalization attorney helping you become a U.S. citizen. Skilled representation for citizenship applications in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus citizenship and naturalization attorney helping you become a U.S. citizen. Skilled representation for citizenship applications in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['citizenship naturalization lawyer Columbus OH', 'naturalization attorney Ohio', 'U.S. citizenship lawyer', 'Franklin County citizenship attorney'],
   openGraph: {
     title: 'Citizenship & Naturalization Lawyer in Columbus, OH | Jwayyed Law LLC',

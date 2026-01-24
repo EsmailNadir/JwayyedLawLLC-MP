@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Estate Planning & Wills Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus estate planning and wills attorney protecting your legacy. Skilled representation for wills and estate planning in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus estate planning and wills attorney protecting your legacy. Skilled representation for wills and estate planning in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['estate planning lawyer Columbus OH', 'wills attorney Ohio', 'estate planning attorney', 'Franklin County estate planning lawyer'],
   openGraph: {
     title: 'Estate Planning & Wills Lawyer in Columbus, OH | Jwayyed Law LLC',

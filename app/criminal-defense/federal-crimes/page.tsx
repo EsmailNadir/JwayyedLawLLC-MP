@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Federal Crimes Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus federal crimes defense attorney protecting your rights. Skilled representation for federal criminal charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus federal crimes defense attorney protecting your rights. Skilled representation for federal criminal charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['federal crimes lawyer Columbus OH', 'federal defense attorney Ohio', 'federal criminal attorney', 'Franklin County federal lawyer'],
   openGraph: {
     title: 'Federal Crimes Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

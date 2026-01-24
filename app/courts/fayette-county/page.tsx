@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Fayette County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Fayette County courts including Common Pleas and Washington Court House Municipal Court. Skilled representation in Fayette County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Fayette County courts including Common Pleas and Washington Court House Municipal Court. Skilled representation in Fayette County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Fayette County court attorney', 'Fayette County Common Pleas', 'Washington Court House Municipal Court'],
   openGraph: {
     title: 'Fayette County Court Representation | Jwayyed Law LLC',

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Driving Under OVI Suspension Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['driving under suspension lawyer Columbus OH', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'Franklin County driving under suspension lawyer'],
   openGraph: {
     title: 'Driving Under OVI Suspension Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

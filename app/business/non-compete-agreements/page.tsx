@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Non-Compete Agreements Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus non-compete agreements attorney protecting your interests. Skilled representation for non-compete agreements in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus non-compete agreements attorney protecting your interests. Skilled representation for non-compete agreements in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['non-compete agreements lawyer Columbus OH', 'non-compete attorney Ohio', 'non-compete lawyer', 'Franklin County non-compete attorney'],
   openGraph: {
     title: 'Non-Compete Agreements Lawyer in Columbus, OH | Jwayyed Law LLC',

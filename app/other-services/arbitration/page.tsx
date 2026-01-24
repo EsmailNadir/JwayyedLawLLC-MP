@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Arbitration Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus arbitration attorney helping you resolve conflicts. Skilled representation for arbitration services in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus arbitration attorney helping you resolve conflicts. Skilled representation for arbitration services in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['arbitration lawyer Columbus OH', 'arbitration attorney Ohio', 'arbitration services', 'Franklin County arbitration attorney'],
   openGraph: {
     title: 'Arbitration Lawyer in Columbus, OH | Jwayyed Law LLC',

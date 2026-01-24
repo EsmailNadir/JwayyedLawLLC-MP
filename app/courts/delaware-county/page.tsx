@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Delaware County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Delaware County courts including Common Pleas and Municipal Courts. Skilled representation in Delaware County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Delaware County courts including Common Pleas and Municipal Courts. Skilled representation in Delaware County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Delaware County court attorney', 'Delaware County Common Pleas', 'Delaware County Municipal Court'],
   openGraph: {
     title: 'Delaware County Court Representation | Jwayyed Law LLC',

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Columbus Personal Injury Attorney | Experienced Injury Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus personal injury attorney helping accident victims recover compensation. Skilled representation for car accidents, slip and fall, workplace injuries, and more. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus personal injury attorney helping accident victims recover compensation. Skilled representation for car accidents, slip and fall, workplace injuries, and more. Schedule consultation: (614) 285-5482',
   keywords: [
     'Columbus personal injury attorney',
     'Ohio personal injury lawyer',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Columbus Personal Injury Attorney | Jwayyed Law LLC',
-    description: 'Experienced personal injury representation in Columbus and throughout Ohio. Free consultation available.',
+    description: 'Experienced personal injury representation in Columbus and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/personal-injury',
   },
   alternates: {
@@ -292,7 +292,7 @@ export default function PersonalInjuryPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in an accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in personal injury cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in an accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in personal injury cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

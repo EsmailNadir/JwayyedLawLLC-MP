@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'LLC Formation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus LLC formation attorney helping you form your LLC. Skilled representation for LLC formation in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus LLC formation attorney helping you form your LLC. Skilled representation for LLC formation in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['LLC formation lawyer Columbus OH', 'LLC formation attorney Ohio', 'form LLC lawyer', 'Franklin County LLC attorney'],
   openGraph: {
     title: 'LLC Formation Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -125,7 +125,7 @@ export default function LLCFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are forming an LLC in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
+              If you are forming an LLC in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
             </p>
           </div>
         </div>

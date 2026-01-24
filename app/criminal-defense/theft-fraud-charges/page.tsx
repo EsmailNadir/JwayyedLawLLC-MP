@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Theft & Fraud Charges Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus theft and fraud defense attorney protecting your rights. Skilled representation for theft, fraud, embezzlement, and identity theft charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus theft and fraud defense attorney protecting your rights. Skilled representation for theft, fraud, embezzlement, and identity theft charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
     'theft charges lawyer Columbus OH',
     'fraud defense attorney Ohio',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Theft & Fraud Charges Lawyer in Columbus, OH | Jwayyed Law LLC',
-    description: 'Experienced theft and fraud defense representation in Columbus and throughout Ohio. Free consultation available.',
+    description: 'Experienced theft and fraud defense representation in Columbus and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/theft-fraud-charges',
   },
   alternates: {
@@ -245,7 +245,7 @@ export default function TheftFraudChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing theft or fraud charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential defenses including valuation challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in theft cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing theft or fraud charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including valuation challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in theft cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights and future.
             </p>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">

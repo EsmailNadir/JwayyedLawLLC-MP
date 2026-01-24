@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Mediation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus mediation attorney helping you resolve conflicts. Skilled representation for mediation services in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus mediation attorney helping you resolve conflicts. Skilled representation for mediation services in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['mediation lawyer Columbus OH', 'mediation attorney Ohio', 'mediation services', 'Franklin County mediation attorney'],
   openGraph: {
     title: 'Mediation Lawyer in Columbus, OH | Jwayyed Law LLC',

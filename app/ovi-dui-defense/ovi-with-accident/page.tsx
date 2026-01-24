@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'OVI with Accident Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['OVI with accident lawyer Columbus OH', 'DUI accident defense attorney Ohio', 'OVI accident attorney', 'Franklin County OVI accident lawyer'],
   openGraph: {
     title: 'OVI with Accident Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

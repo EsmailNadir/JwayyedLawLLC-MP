@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Immigration Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus immigration attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus immigration attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['immigration lawyer Columbus OH', 'immigration attorney Ohio', 'green card lawyer', 'Franklin County immigration attorney'],
   openGraph: {
     title: 'Immigration Lawyer in Columbus, OH | Jwayyed Law LLC',

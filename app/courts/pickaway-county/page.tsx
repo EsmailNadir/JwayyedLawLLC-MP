@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Pickaway County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Pickaway County courts including Common Pleas and Circleville Municipal Court. Skilled representation in Pickaway County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Pickaway County courts including Common Pleas and Circleville Municipal Court. Skilled representation in Pickaway County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Pickaway County court attorney', 'Pickaway County Common Pleas', 'Circleville Municipal Court'],
   openGraph: {
     title: 'Pickaway County Court Representation | Jwayyed Law LLC',

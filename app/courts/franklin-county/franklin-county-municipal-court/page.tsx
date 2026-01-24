@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Franklin County Municipal Court Attorney | Columbus Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Franklin County Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Franklin County Municipal Court attorney', 'Columbus Municipal Court lawyer', 'OVI defense Columbus', 'misdemeanor defense Columbus'],
   openGraph: {
     title: 'Franklin County Municipal Court Attorney | Jwayyed Law LLC',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys provide free consultations and work on affordable fee arrangements.',
+    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys provide schedule consultations and work on affordable fee arrangements.',
   },
   {
     question: 'How long do Municipal Court cases take?',

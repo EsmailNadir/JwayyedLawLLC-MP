@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Slip and Fall Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus slip and fall attorney helping victims recover compensation. Skilled representation for slip and fall injuries in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus slip and fall attorney helping victims recover compensation. Skilled representation for slip and fall injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['slip and fall lawyer Columbus OH', 'slip and fall attorney Ohio', 'premises liability lawyer', 'Franklin County slip and fall attorney'],
   openGraph: {
     title: 'Slip and Fall Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -164,7 +164,7 @@ export default function SlipAndFallPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a slip and fall accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

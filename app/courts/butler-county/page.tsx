@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Butler County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Butler County courts including Common Pleas and Municipal Courts. Skilled representation in Butler County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Butler County courts including Common Pleas and Municipal Courts. Skilled representation in Butler County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Butler County court attorney', 'Butler County Common Pleas', 'Hamilton Municipal Court'],
   openGraph: {
     title: 'Butler County Court Representation | Jwayyed Law LLC',

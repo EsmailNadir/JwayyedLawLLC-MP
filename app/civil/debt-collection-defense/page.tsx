@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Debt Collection Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus debt collection defense attorney protecting your rights. Skilled representation for debt collection defense in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus debt collection defense attorney protecting your rights. Skilled representation for debt collection defense in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['debt collection defense lawyer Columbus OH', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
   openGraph: {
     title: 'Debt Collection Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need a debt collection defense attorney?',
-    answer: 'Debt collection defense requires experienced representation to protect your rights. Debt collection defense attorneys understand debt collection law, can challenge debt validity, raise statute of limitations defenses, identify FDCPA violations, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Debt collection defense requires experienced representation to protect your rights. Debt collection defense attorneys understand debt collection law, can challenge debt validity, raise statute of limitations defenses, identify FDCPA violations, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
   {
     question: 'Can I negotiate debt collection settlements?',

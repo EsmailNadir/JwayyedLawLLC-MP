@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Gun & Weapons Charges Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus gun and weapons defense attorney protecting your rights. Skilled representation for weapons charges and firearm violations in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus gun and weapons defense attorney protecting your rights. Skilled representation for weapons charges and firearm violations in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['gun charges lawyer Columbus OH', 'weapons defense attorney Ohio', 'firearm attorney', 'Franklin County weapons lawyer'],
   openGraph: {
     title: 'Gun & Weapons Charges Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

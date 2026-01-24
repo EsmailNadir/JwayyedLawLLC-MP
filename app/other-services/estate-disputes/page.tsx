@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Estate Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus estate disputes attorney resolving conflicts. Skilled representation for estate distribution disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus estate disputes attorney resolving conflicts. Skilled representation for estate distribution disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['estate disputes lawyer Columbus OH', 'estate dispute attorney Ohio', 'estate distribution lawyer', 'Franklin County estate dispute attorney'],
   openGraph: {
     title: 'Estate Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',

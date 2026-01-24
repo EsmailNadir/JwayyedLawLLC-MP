@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Dog Bite Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus dog bite attorney helping victims recover compensation. Skilled representation for dog bite injuries in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus dog bite attorney helping victims recover compensation. Skilled representation for dog bite injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney'],
   openGraph: {
     title: 'Dog Bite Lawyer in Columbus, OH | Jwayyed Law LLC',

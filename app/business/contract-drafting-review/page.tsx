@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Contract Drafting & Review Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Contract Drafting & Review Lawyer in Columbus, OH | Jwayyed Law LLC',

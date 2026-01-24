@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Other Legal Services | Estate Planning, Probate, Immigration, Dispute Resolution | Jwayyed Law LLC',
-  description: 'Comprehensive legal services including estate planning, probate, immigration, and dispute resolution in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Comprehensive legal services including estate planning, probate, immigration, and dispute resolution in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['estate planning Columbus OH', 'probate attorney Ohio', 'immigration lawyer Columbus', 'dispute resolution attorney'],
   openGraph: {
     title: 'Other Legal Services | Jwayyed Law LLC',

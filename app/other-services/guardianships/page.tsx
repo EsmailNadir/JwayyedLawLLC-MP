@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Guardianships Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus guardianships attorney protecting vulnerable individuals. Skilled representation for guardianship establishment and administration in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus guardianships attorney protecting vulnerable individuals. Skilled representation for guardianship establishment and administration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['guardianships lawyer Columbus OH', 'guardianship attorney Ohio', 'guardian lawyer', 'Franklin County guardianship attorney'],
   openGraph: {
     title: 'Guardianships Lawyer in Columbus, OH | Jwayyed Law LLC',

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Juvenile Offenses Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus juvenile defense attorney protecting your child\'s rights. Skilled representation for juvenile criminal charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus juvenile defense attorney protecting your child\'s rights. Skilled representation for juvenile criminal charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['juvenile lawyer Columbus OH', 'juvenile defense attorney Ohio', 'juvenile charges attorney', 'Franklin County juvenile lawyer'],
   openGraph: {
     title: 'Juvenile Offenses Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

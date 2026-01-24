@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Murder & Homicide Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus murder and homicide defense attorney protecting your rights. Skilled representation for murder, manslaughter, and related charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus murder and homicide defense attorney protecting your rights. Skilled representation for murder, manslaughter, and related charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['murder lawyer Columbus OH', 'homicide defense attorney Ohio', 'manslaughter attorney', 'Franklin County murder lawyer'],
   openGraph: {
     title: 'Murder & Homicide Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -193,7 +193,7 @@ export default function MurderHomicideChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing homicide charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a free consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in homicide cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties (murder to manslaughter), or favorable plea agreements that avoid the death penalty or life imprisonment. Do not delay in seeking experienced legal representation to protect your rights, freedom, and life.
+              If you are facing homicide charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in homicide cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties (murder to manslaughter), or favorable plea agreements that avoid the death penalty or life imprisonment. Do not delay in seeking experienced legal representation to protect your rights, freedom, and life.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Shareholder Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus shareholder disputes attorney resolving corporate conflicts. Skilled representation for shareholder disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus shareholder disputes attorney resolving corporate conflicts. Skilled representation for shareholder disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['shareholder disputes lawyer Columbus OH', 'shareholder disputes attorney Ohio', 'corporate disputes lawyer', 'Franklin County shareholder attorney'],
   openGraph: {
     title: 'Shareholder Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a shareholder disputes attorney?',
-    answer: 'Shareholder disputes are complex and require experienced representation. Shareholder disputes attorneys understand corporate law, can identify breaches of fiduciary duties, protect minority shareholder rights, negotiate resolutions, and represent shareholders in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Shareholder disputes are complex and require experienced representation. Shareholder disputes attorneys understand corporate law, can identify breaches of fiduciary duties, protect minority shareholder rights, negotiate resolutions, and represent shareholders in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
 ];
 

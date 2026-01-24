@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Underage OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['underage OVI lawyer Columbus OH', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'Franklin County underage OVI lawyer'],
   openGraph: {
     title: 'Underage OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

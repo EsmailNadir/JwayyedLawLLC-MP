@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Powers of Attorney Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus powers of attorney attorney protecting your interests. Skilled representation for financial and healthcare powers of attorney in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus powers of attorney attorney protecting your interests. Skilled representation for financial and healthcare powers of attorney in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['powers of attorney lawyer Columbus OH', 'power of attorney attorney Ohio', 'financial power of attorney', 'Franklin County power of attorney attorney'],
   openGraph: {
     title: 'Powers of Attorney Lawyer in Columbus, OH | Jwayyed Law LLC',

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Business Compliance Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business compliance attorney ensuring regulatory compliance. Skilled representation for business compliance in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus business compliance attorney ensuring regulatory compliance. Skilled representation for business compliance in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['business compliance lawyer Columbus OH', 'business compliance attorney Ohio', 'regulatory compliance lawyer', 'Franklin County business compliance attorney'],
   openGraph: {
     title: 'Business Compliance Lawyer in Columbus, OH | Jwayyed Law LLC',

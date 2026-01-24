@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Breach of Contract Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Breach of Contract Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -158,7 +158,7 @@ export default function BreachOfContractPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a breach of contract dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a breach of contract dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

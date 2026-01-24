@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'First OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['first OVI lawyer Columbus OH', 'first DUI defense attorney Ohio', 'first offense OVI attorney', 'Franklin County first OVI lawyer'],
   openGraph: {
     title: 'First OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -190,7 +190,7 @@ export default function FirstOVIPage() {
               We recognize that first OVI charges can arise from various circumstances and that even first-time offenders face severe penalties. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and legal process. We work aggressively to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing a first OVI charge in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a free consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
+              If you are facing a first OVI charge in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
             </p>
           </div>
         </div>

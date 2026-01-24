@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Dispute Resolution Lawyer in Columbus, OH | Mediation & Arbitration | Jwayyed Law LLC',
-  description: 'Experienced Columbus dispute resolution attorney helping you resolve conflicts. Skilled representation for mediation and arbitration in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus dispute resolution attorney helping you resolve conflicts. Skilled representation for mediation and arbitration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['dispute resolution lawyer Columbus OH', 'mediation attorney Ohio', 'arbitration lawyer', 'Franklin County dispute resolution attorney'],
   openGraph: {
     title: 'Dispute Resolution Lawyer in Columbus, OH | Jwayyed Law LLC',

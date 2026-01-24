@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Robbery Charges Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus robbery defense attorney protecting your rights. Skilled representation for robbery and aggravated robbery charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus robbery defense attorney protecting your rights. Skilled representation for robbery and aggravated robbery charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['robbery lawyer Columbus OH', 'robbery defense attorney Ohio', 'aggravated robbery attorney', 'Franklin County robbery lawyer'],
   openGraph: {
     title: 'Robbery Charges Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -178,7 +178,7 @@ export default function RobberyChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing robbery charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in robbery cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing robbery charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in robbery cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

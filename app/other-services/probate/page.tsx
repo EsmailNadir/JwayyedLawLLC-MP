@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Probate Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus probate attorney helping you navigate probate administration. Skilled representation for probate matters in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus probate attorney helping you navigate probate administration. Skilled representation for probate matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['probate lawyer Columbus OH', 'probate attorney Ohio', 'probate administration lawyer', 'Franklin County probate attorney'],
   openGraph: {
     title: 'Probate Lawyer in Columbus, OH | Jwayyed Law LLC',

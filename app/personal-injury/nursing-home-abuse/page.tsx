@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Nursing Home Abuse Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus nursing home abuse attorney helping victims recover compensation. Skilled representation for nursing home abuse and neglect in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus nursing home abuse attorney helping victims recover compensation. Skilled representation for nursing home abuse and neglect in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['nursing home abuse lawyer Columbus OH', 'nursing home abuse attorney Ohio', 'elder abuse lawyer', 'Franklin County nursing home abuse attorney'],
   openGraph: {
     title: 'Nursing Home Abuse Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a nursing home abuse attorney?',
-    answer: 'Nursing home abuse cases are complex and require experienced representation. Nursing home abuse attorneys understand nursing home regulations, can investigate facilities and staff, handle complex litigation, and maximize compensation for vulnerable residents. Most attorneys work on a contingency fee basis and provide free consultations.',
+    answer: 'Nursing home abuse cases are complex and require experienced representation. Nursing home abuse attorneys understand nursing home regulations, can investigate facilities and staff, handle complex litigation, and maximize compensation for vulnerable residents. Most attorneys work on a contingency fee basis and provide schedule consultations.',
   },
 ];
 

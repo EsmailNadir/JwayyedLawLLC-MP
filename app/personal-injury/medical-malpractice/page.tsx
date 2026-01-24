@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Medical Malpractice Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus medical malpractice attorney helping victims recover compensation. Skilled representation for medical malpractice injuries in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus medical malpractice attorney helping victims recover compensation. Skilled representation for medical malpractice injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney'],
   openGraph: {
     title: 'Medical Malpractice Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a medical malpractice attorney?',
-    answer: 'Medical malpractice cases are complex and require experienced representation. Medical malpractice attorneys understand medical standards of care, can retain medical experts, understand damage caps, handle complex litigation, and maximize compensation within Ohio\'s damage cap limits. Most medical malpractice attorneys work on a contingency fee basis and provide free consultations.',
+    answer: 'Medical malpractice cases are complex and require experienced representation. Medical malpractice attorneys understand medical standards of care, can retain medical experts, understand damage caps, handle complex litigation, and maximize compensation within Ohio\'s damage cap limits. Most medical malpractice attorneys work on a contingency fee basis and provide schedule consultations.',
   },
 ];
 

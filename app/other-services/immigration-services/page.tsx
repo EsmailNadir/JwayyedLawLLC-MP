@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Immigration Services Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus immigration services attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus immigration services attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['immigration services lawyer Columbus OH', 'immigration attorney Ohio', 'immigration lawyer', 'Franklin County immigration attorney'],
   openGraph: {
     title: 'Immigration Services Lawyer in Columbus, OH | Jwayyed Law LLC',

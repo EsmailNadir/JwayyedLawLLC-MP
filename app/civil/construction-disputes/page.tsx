@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Construction Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus construction disputes attorney protecting your rights. Skilled representation for construction disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus construction disputes attorney protecting your rights. Skilled representation for construction disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['construction disputes lawyer Columbus OH', 'construction attorney Ohio', 'contractor disputes lawyer', 'Franklin County construction attorney'],
   openGraph: {
     title: 'Construction Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need a construction disputes attorney?',
-    answer: 'Construction disputes are complex and require experienced representation. Construction attorneys understand construction law, can analyze construction contracts, resolve mechanic\'s liens, handle payment disputes, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Construction disputes are complex and require experienced representation. Construction attorneys understand construction law, can analyze construction contracts, resolve mechanic\'s liens, handle payment disputes, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
   {
     question: 'Can construction disputes be resolved through mediation?',

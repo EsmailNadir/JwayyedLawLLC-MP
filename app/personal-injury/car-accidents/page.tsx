@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Car Accident Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus car accident attorney helping you recover compensation. Skilled representation for car accident injuries and damages in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus car accident attorney helping you recover compensation. Skilled representation for car accident injuries and damages in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['car accident lawyer Columbus OH', 'car accident attorney Ohio', 'automobile accident lawyer', 'Franklin County car accident attorney'],
   openGraph: {
     title: 'Car Accident Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -167,7 +167,7 @@ export default function CarAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a car accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a car accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

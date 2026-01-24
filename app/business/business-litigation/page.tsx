@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Business Litigation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business litigation attorney protecting your business. Skilled representation for business disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus business litigation attorney protecting your business. Skilled representation for business disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['business litigation lawyer Columbus OH', 'business litigation attorney Ohio', 'business dispute lawyer', 'Franklin County business litigation attorney'],
   openGraph: {
     title: 'Business Litigation Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a business litigation attorney?',
-    answer: 'Business litigation is complex and requires experienced representation. Business litigation attorneys understand business law, can identify legal issues, develop strategies, negotiate settlements, and represent your business in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations. Experienced representation is essential to protect your business interests.',
+    answer: 'Business litigation is complex and requires experienced representation. Business litigation attorneys understand business law, can identify legal issues, develop strategies, negotiate settlements, and represent your business in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations. Experienced representation is essential to protect your business interests.',
   },
 ];
 

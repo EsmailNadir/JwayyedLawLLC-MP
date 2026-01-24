@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Defamation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus defamation attorney protecting your reputation. Skilled representation for defamation claims in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus defamation attorney protecting your reputation. Skilled representation for defamation claims in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['defamation lawyer Columbus OH', 'defamation attorney Ohio', 'libel slander lawyer', 'Franklin County defamation attorney'],
   openGraph: {
     title: 'Defamation Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a defamation attorney?',
-    answer: 'Defamation cases are complex and require experienced representation. Defamation attorneys understand defamation law, can prove falsity and harm, identify defenses, handle complex litigation, and maximize recovery for reputation harm. Most attorneys work on hourly or contingency fee arrangements and provide free consultations.',
+    answer: 'Defamation cases are complex and require experienced representation. Defamation attorneys understand defamation law, can prove falsity and harm, identify defenses, handle complex litigation, and maximize recovery for reputation harm. Most attorneys work on hourly or contingency fee arrangements and provide schedule consultations.',
   },
 ];
 

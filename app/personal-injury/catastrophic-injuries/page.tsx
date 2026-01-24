@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Catastrophic Injury Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus catastrophic injury attorney helping victims recover compensation. Skilled representation for catastrophic injuries in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus catastrophic injury attorney helping victims recover compensation. Skilled representation for catastrophic injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'Franklin County catastrophic injury attorney'],
   openGraph: {
     title: 'Catastrophic Injury Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a catastrophic injury attorney?',
-    answer: 'Catastrophic injury cases are complex and require experienced representation. Catastrophic injury attorneys understand catastrophic injuries, can retain experts, handle complex litigation, and maximize compensation for long-term needs. Most attorneys work on a contingency fee basis and provide free consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+    answer: 'Catastrophic injury cases are complex and require experienced representation. Catastrophic injury attorneys understand catastrophic injuries, can retain experts, handle complex litigation, and maximize compensation for long-term needs. Most attorneys work on a contingency fee basis and provide schedule consultations. Experienced representation is essential to protect your rights and maximize recovery.',
   },
 ];
 

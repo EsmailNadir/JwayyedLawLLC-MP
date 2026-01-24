@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Warren County Court of Common Pleas Attorney | Experienced Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Warren County Court of Common Pleas. Skilled representation for felony cases and major civil disputes in Warren County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Warren County Court of Common Pleas. Skilled representation for felony cases and major civil disputes in Warren County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Warren County Common Pleas attorney', 'Warren County felony lawyer', 'Warren County civil attorney'],
   openGraph: {
     title: 'Warren County Court of Common Pleas Attorney | Jwayyed Law LLC',
@@ -115,7 +115,7 @@ export default function WarrenCountyCommonPleasPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Warren County Court of Common Pleas, contact Jwayyed Law LLC for a free consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a matter in Warren County Court of Common Pleas, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
             </p>
           </div>
         </div>

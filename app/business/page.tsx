@@ -7,11 +7,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Columbus Business Attorney | Experienced Business Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus business attorney handling business formation, LLC formation, contracts, business litigation, and more. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus business attorney handling business formation, LLC formation, contracts, business litigation, and more. Schedule consultation: (614) 285-5482',
   keywords: ['Columbus business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer', 'Franklin County business attorney'],
   openGraph: {
     title: 'Columbus Business Attorney | Jwayyed Law LLC',
-    description: 'Experienced business law representation in Columbus and throughout Ohio. Free consultation available.',
+    description: 'Experienced business law representation in Columbus and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/business',
   },
   alternates: { canonical: '/business' },
@@ -169,7 +169,7 @@ export default function BusinessPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you need business legal assistance in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
+              If you need business legal assistance in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
             </p>
           </div>
         </div>

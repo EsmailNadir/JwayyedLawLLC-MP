@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Refusal OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['refusal OVI lawyer Columbus OH', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney', 'Franklin County refusal OVI lawyer'],
   openGraph: {
     title: 'Refusal OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Warren County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Warren County courts including Common Pleas and Municipal Courts. Skilled representation in Warren County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Warren County courts including Common Pleas and Municipal Courts. Skilled representation in Warren County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Warren County court attorney', 'Warren County Common Pleas', 'Lebanon Municipal Court'],
   openGraph: {
     title: 'Warren County Court Representation | Jwayyed Law LLC',

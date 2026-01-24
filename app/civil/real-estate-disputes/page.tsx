@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Real Estate Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus real estate disputes attorney protecting your rights. Skilled representation for real estate disputes in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus real estate disputes attorney protecting your rights. Skilled representation for real estate disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney'],
   openGraph: {
     title: 'Real Estate Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need a real estate disputes attorney?',
-    answer: 'Real estate disputes are complex and require experienced representation. Real estate attorneys understand property law, can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Real estate disputes are complex and require experienced representation. Real estate attorneys understand property law, can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
   {
     question: 'Can real estate disputes be resolved without litigation?',
@@ -149,7 +149,7 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a real estate dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
+              If you are involved in a real estate dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
             </p>
           </div>
         </div>

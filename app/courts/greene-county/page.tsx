@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Greene County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Greene County courts including Common Pleas and Municipal Courts. Skilled representation in Greene County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Greene County courts including Common Pleas and Municipal Courts. Skilled representation in Greene County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Greene County court attorney', 'Greene County Common Pleas', 'Fairborn Municipal Court'],
   openGraph: {
     title: 'Greene County Court Representation | Jwayyed Law LLC',

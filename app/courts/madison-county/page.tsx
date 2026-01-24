@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Madison County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Madison County courts including Common Pleas and Municipal Courts. Skilled representation in Madison County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Madison County courts including Common Pleas and Municipal Courts. Skilled representation in Madison County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Madison County court attorney', 'Madison County Common Pleas', 'Madison County Municipal Court'],
   openGraph: {
     title: 'Madison County Court Representation | Jwayyed Law LLC',

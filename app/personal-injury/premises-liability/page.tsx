@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Premises Liability Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus premises liability attorney helping victims recover compensation. Skilled representation for premises liability injuries in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus premises liability attorney helping victims recover compensation. Skilled representation for premises liability injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['premises liability lawyer Columbus OH', 'premises liability attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney'],
   openGraph: {
     title: 'Premises Liability Lawyer in Columbus, OH | Jwayyed Law LLC',

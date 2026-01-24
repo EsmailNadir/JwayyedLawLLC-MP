@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Columbus OVI Attorney | Experienced DUI/OVI Defense Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, third, and felony OVI charges in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, third, and felony OVI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
     'Columbus OVI attorney',
     'Columbus DUI lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Columbus OVI Attorney | Jwayyed Law LLC',
-    description: 'Experienced OVI/DUI defense representation in Columbus and throughout Ohio. Free consultation available.',
+    description: 'Experienced OVI/DUI defense representation in Columbus and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
   },
   alternates: {
@@ -252,7 +252,7 @@ export default function OVIDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a free consultation. We will review your case, explain your rights, discuss potential defenses including license suspension appeals, and develop a strategy tailored to your situation. Time is critical in OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including license suspension appeals, and develop a strategy tailored to your situation. Time is critical in OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">

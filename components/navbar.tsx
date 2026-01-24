@@ -297,6 +297,10 @@ const navItems: NavItem[] = [
       { name: 'Blog', href: '/our-law-firm/blog' },
     ],
   },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
 ];
 
 // ============================================================================
@@ -519,12 +523,12 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
                     className={`
                       w-full flex items-center justify-between px-4 py-3.5 
                       text-left font-medium transition-all duration-200
-                      ${isExpanded ? 'bg-gray-50 text-accent' : 'text-gray-900 hover:bg-gray-50'}
+                      ${isExpanded ? 'bg-gray-50 text-orange-500' : 'text-gray-900 hover:bg-gray-50'}
                     `}
                   >
                     <span className="text-[17px]">{item.name}</span>
                     {hasChildren && (
-                      <ChevronIcon isOpen={isExpanded} className={isExpanded ? 'text-accent' : 'text-gray-400'} />
+                      <ChevronIcon isOpen={isExpanded} className={isExpanded ? 'text-orange-500' : 'text-gray-400'} />
                     )}
                   </button>
 
@@ -540,7 +544,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
                         <Link
                           href={item.href}
                           onClick={onClose}
-                          className="flex items-center gap-2 py-3 text-[15px] font-semibold text-accent"
+                          className="flex items-center gap-2 py-3 text-[15px] font-semibold text-orange-500"
                         >
                           View All {item.name}
                         </Link>
@@ -599,17 +603,6 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
               );
             })}
           </nav>
-        </div>
-
-        {/* Footer CTA */}
-        <div className="p-4 border-t border-gray-100 bg-white">
-          <Link
-            href="/contact"
-            onClick={onClose}
-            className="flex items-center justify-center w-full py-3.5 bg-accent text-white font-semibold rounded-lg shadow-lg shadow-accent/25 active:scale-[0.98] transition-all"
-          >
-            Contact Us Today
-          </Link>
         </div>
       </div>
     </>
@@ -715,12 +708,9 @@ const Navbar: React.FC = () => {
               </div>
             </div>
 
-            {/* 3. Right Action Area (Contact Button & Mobile Toggle) */}
+            {/* 3. Right Action Area (Mobile Toggle) */}
             <div className="flex items-center gap-4">
               
-              {/* Desktop Contact Button */}
-              
-
               {/* Mobile Menu Toggle */}
               <button
                 className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 rounded-lg focus:outline-none group"

@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Business Dissolution Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business dissolution attorney helping you close your business properly. Skilled representation for business dissolution in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus business dissolution attorney helping you close your business properly. Skilled representation for business dissolution in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['business dissolution lawyer Columbus OH', 'business dissolution attorney Ohio', 'close business lawyer', 'Franklin County business dissolution attorney'],
   openGraph: {
     title: 'Business Dissolution Lawyer in Columbus, OH | Jwayyed Law LLC',

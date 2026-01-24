@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Landlord-Tenant Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus landlord-tenant disputes attorney protecting your rights. Skilled representation for landlord-tenant matters in Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced Columbus landlord-tenant disputes attorney protecting your rights. Skilled representation for landlord-tenant matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Franklin County landlord tenant attorney'],
   openGraph: {
     title: 'Landlord-Tenant Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need a landlord-tenant attorney?',
-    answer: 'Landlord-tenant disputes can be complex and require experienced representation. Landlord-tenant attorneys understand Ohio landlord-tenant law, can protect tenant rights, handle eviction proceedings, negotiate disputes, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide free consultations.',
+    answer: 'Landlord-tenant disputes can be complex and require experienced representation. Landlord-tenant attorneys understand Ohio landlord-tenant law, can protect tenant rights, handle eviction proceedings, negotiate disputes, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
   },
   {
     question: 'Can landlords evict tenants without court proceedings?',
@@ -122,7 +122,7 @@ export default function LandlordTenantDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a landlord-tenant dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a free consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a landlord-tenant dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

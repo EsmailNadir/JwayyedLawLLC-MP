@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Franklin County Court Representation | Columbus Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County courts including Common Pleas, Municipal, and Juvenile Courts. Skilled representation in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Franklin County courts including Common Pleas, Municipal, and Juvenile Courts. Skilled representation in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Franklin County court attorney', 'Columbus court lawyer', 'Franklin County Common Pleas', 'Columbus Municipal Court'],
   openGraph: {
     title: 'Franklin County Court Representation | Jwayyed Law LLC',

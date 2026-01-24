@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Union County Court Representation | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Union County courts including Common Pleas and Marysville Municipal Court. Skilled representation in Union County, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Union County courts including Common Pleas and Marysville Municipal Court. Skilled representation in Union County, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Union County court attorney', 'Union County Common Pleas', 'Marysville Municipal Court'],
   openGraph: {
     title: 'Union County Court Representation | Jwayyed Law LLC',

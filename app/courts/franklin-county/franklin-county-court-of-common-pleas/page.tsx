@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Franklin County Court of Common Pleas Attorney | Columbus Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County Court of Common Pleas. Skilled representation for felony cases, major civil disputes, and probate matters in Columbus, Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Franklin County Court of Common Pleas. Skilled representation for felony cases, major civil disputes, and probate matters in Columbus, Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Franklin County Common Pleas attorney', 'Columbus Common Pleas lawyer', 'felony defense Columbus', 'Franklin County probate attorney'],
   openGraph: {
     title: 'Franklin County Court of Common Pleas Attorney | Jwayyed Law LLC',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Common Pleas Court matters?',
-    answer: 'Common Pleas Court matters are complex and require experienced representation. Felony cases, major civil disputes, and probate matters involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys provide free consultations.',
+    answer: 'Common Pleas Court matters are complex and require experienced representation. Felony cases, major civil disputes, and probate matters involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys provide schedule consultations.',
   },
   {
     question: 'How long do Common Pleas Court cases take?',

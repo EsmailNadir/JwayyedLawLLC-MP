@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Ohio Courts | County & Municipal Court Representation | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI, and civil matters in courts throughout Ohio. Free consultation: (614) 285-5482',
+  description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI, and civil matters in courts throughout Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {
     title: 'Ohio Courts | Jwayyed Law LLC',
