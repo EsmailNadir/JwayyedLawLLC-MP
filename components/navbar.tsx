@@ -517,19 +517,27 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
 
               return (
                 <div key={item.name} className="overflow-hidden rounded-xl transition-all duration-300">
-                  <button
-                    onClick={() => hasChildren ? toggleItem(item.name) : onClose()}
-                    className={`
-                      w-full flex items-center justify-between px-4 py-3.5 
-                      text-left font-medium transition-all duration-200
-                      ${isExpanded ? 'bg-gray-50 text-orange-500' : 'text-gray-900 hover:bg-gray-50'}
-                    `}
-                  >
-                    <span className="text-[17px]">{item.name}</span>
-                    {hasChildren && (
+                  {hasChildren ? (
+                    <button
+                      onClick={() => toggleItem(item.name)}
+                      className={`
+                        w-full flex items-center justify-between px-4 py-3.5 
+                        text-left font-medium transition-all duration-200
+                        ${isExpanded ? 'bg-gray-50 text-orange-500' : 'text-gray-900 hover:bg-gray-50'}
+                      `}
+                    >
+                      <span className="text-[17px]">{item.name}</span>
                       <ChevronIcon isOpen={isExpanded} className={isExpanded ? 'text-orange-500' : 'text-gray-400'} />
-                    )}
-                  </button>
+                    </button>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      onClick={onClose}
+                      className="w-full flex items-center justify-between px-4 py-3.5 text-left font-medium transition-all duration-200 text-gray-900 hover:bg-gray-50"
+                    >
+                      <span className="text-[17px]">{item.name}</span>
+                    </Link>
+                  )}
 
                   {/* Expanded Content */}
                   {hasChildren && (
