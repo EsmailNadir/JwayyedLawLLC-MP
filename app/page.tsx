@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
 import { ChevronLeft, ChevronRight, Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
 // Navbar Component
@@ -280,7 +281,7 @@ export default function Home() {
       
       
       {/* Hero Section with Video Background */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-[calc(100vh-65px)] overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Video - Hidden on mobile */}
@@ -334,6 +335,11 @@ export default function Home() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Experienced Legal Counsel in Criminal, Traffic, and Civil Law
             </p>
+
+            {/* Search Bar */}
+            <div className="w-full max-w-md mx-auto mb-6 sm:mb-8">
+              <SearchBar className="[&_input]:bg-white/10 [&_input]:backdrop-blur-md [&_input]:border-white/30 [&_input]:text-white [&_input]:placeholder-white/60 [&_input]:focus:bg-white/20 [&_input]:focus:border-white/50 [&_svg]:text-white/60" />
+            </div>
           </div>
           
           {/* Call to Action Buttons */}
