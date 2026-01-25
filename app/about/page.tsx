@@ -144,7 +144,7 @@ export default function AboutPage() {
                     <source src="/aboutme.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <a href="/services">
+                  <a href="/other-services">
                     <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full max-w-[480px] sm:max-w-[580px]">
                       VIEW PRACTICE AREAS
                     </button>

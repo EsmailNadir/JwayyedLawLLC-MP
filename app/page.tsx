@@ -32,7 +32,7 @@ const Footer = () => {
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Our Services</Link></li>
+              <li><Link href="/other-services" className="text-gray-400 hover:text-white transition-colors">Our Services</Link></li>
               <li><Link href="/our-team" className="text-gray-400 hover:text-white transition-colors">Our Team</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
@@ -349,7 +349,7 @@ export default function Home() {
                 Schedule Consultation
               </button>
             </Link>
-            <Link href="/services">
+            <Link href="/other-services">
               <button className="font-['Inter',_'Arial',_sans-serif] bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
                 View Our Services
               </button>
