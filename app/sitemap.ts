@@ -124,21 +124,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/courts/delaware-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/delaware-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
-    // Fairfield County
-    { url: '/courts/fairfield-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/fairfield-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/fairfield-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
-    // Licking County
-    { url: '/courts/licking-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/licking-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/licking-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
-    // Madison County
-    { url: '/courts/madison-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/madison-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/madison-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
     // Pickaway County
     { url: '/courts/pickaway-county', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/pickaway-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
@@ -159,43 +144,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/courts/clinton-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/wilmington-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
-    // Fayette County
-    { url: '/courts/fayette-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/fayette-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/washington-court-house-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
-    // Warren County
-    { url: '/courts/warren-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/warren-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/lebanon-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/franklin-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/mason-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
     // Butler County
     { url: '/courts/butler-county', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/butler-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/hamilton-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/middletown-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/fairfield-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Greene County
     { url: '/courts/greene-county', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/greene-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/fairborn-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/xenia-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Montgomery County
     { url: '/courts/montgomery-county', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/montgomery-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/dayton-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/kettering-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/miamisburg-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/vandalia-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    
-    // Union County
-    { url: '/courts/union-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/union-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/marysville-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Special Location Pages
     { url: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },

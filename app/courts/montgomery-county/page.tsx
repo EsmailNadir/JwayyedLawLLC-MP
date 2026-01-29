@@ -45,18 +45,6 @@ export default function MontgomeryCountyCourtsPage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Dayton Municipal Court</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
               </Link>
-              <Link href="/courts/kettering-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Kettering Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
-              </Link>
-              <Link href="/courts/miamisburg-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Miamisburg Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
-              </Link>
-              <Link href="/courts/vandalia-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Vandalia Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
-              </Link>
             </div>
           </div>
         </div>

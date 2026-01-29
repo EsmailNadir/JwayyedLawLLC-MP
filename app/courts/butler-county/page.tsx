@@ -45,14 +45,6 @@ export default function ButlerCountyCourtsPage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Hamilton Municipal Court</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
               </Link>
-              <Link href="/courts/middletown-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Middletown Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
-              </Link>
-              <Link href="/courts/fairfield-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Fairfield Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
-              </Link>
             </div>
           </div>
         </div>

@@ -128,6 +128,20 @@ const navItems: NavItem[] = [
     ],
   },
   {
+    name: 'Trusts',
+    href: '/trusts',
+    subLinks: [
+      { name: 'Columbus Trusts Attorney', href: '/trusts' },
+      { name: 'Revocable Living Trusts', href: '/trusts/revocable-living-trusts' },
+      { name: 'Irrevocable Life Insurance Trusts', href: '/trusts/irrevocable-life-insurance-trusts' },
+      { name: 'Land Trusts', href: '/trusts/land-trusts' },
+      { name: 'Medicaid Asset Protection Trusts', href: '/trusts/medicaid-asset-protection-trusts' },
+      { name: 'Special Needs Trusts', href: '/trusts/special-needs-trusts' },
+      { name: 'Dynasty Trusts', href: '/trusts/dynasty-trusts' },
+      { name: 'All Trust Areas', href: '/trusts/other-types' },
+    ],
+  },
+  {
     name: 'Other Services',
     href: '/other-services',
     subDropdowns: [
@@ -135,7 +149,6 @@ const navItems: NavItem[] = [
         name: 'Estate Planning',
         links: [
           { name: 'Estate Planning & Wills', href: '/other-services/estate-planning-wills' },
-          { name: 'Trusts', href: '/other-services/trusts' },
           { name: 'Powers of Attorney', href: '/other-services/powers-of-attorney' },
           { name: 'Guardianships', href: '/other-services/guardianships' },
         ],
@@ -186,77 +199,10 @@ const navItems: NavItem[] = [
         ],
       },
       {
-        name: 'Fairfield County',
-        links: [
-          { name: 'Fairfield County Court of Common Pleas', href: '/courts/fairfield-county-court-of-common-pleas' },
-          { name: 'Fairfield County Municipal Court', href: '/courts/fairfield-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Licking County',
-        links: [
-          { name: 'Licking County Court of Common Pleas', href: '/courts/licking-county-court-of-common-pleas' },
-          { name: 'Licking County Municipal Court', href: '/courts/licking-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Madison County',
-        links: [
-          { name: 'Madison County Court of Common Pleas', href: '/courts/madison-county-court-of-common-pleas' },
-          { name: 'Madison County Municipal Court', href: '/courts/madison-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Pickaway County',
-        links: [
-          { name: 'Pickaway County Court of Common Pleas', href: '/courts/pickaway-county-court-of-common-pleas' },
-          { name: 'Circleville Municipal Court', href: '/courts/circleville-municipal-court' },
-        ],
-      },
-      {
-        name: 'Athens County',
-        links: [
-          { name: 'Athens County Court of Common Pleas', href: '/courts/athens-county-court-of-common-pleas' },
-          { name: 'Athens Municipal Court', href: '/courts/athens-municipal-court' },
-        ],
-      },
-      {
-        name: 'Morrow County',
-        links: [
-          { name: 'Morrow County Court of Common Pleas', href: '/courts/morrow-county-court-of-common-pleas' },
-          { name: 'Morrow County Municipal Court', href: '/courts/morrow-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Clinton County',
-        links: [
-          { name: 'Clinton County Court of Common Pleas', href: '/courts/clinton-county-court-of-common-pleas' },
-          { name: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
-        ],
-      },
-      {
-        name: 'Fayette County',
-        links: [
-          { name: 'Fayette County Court of Common Pleas', href: '/courts/fayette-county-court-of-common-pleas' },
-          { name: 'Washington Court House Municipal Court', href: '/courts/washington-court-house-municipal-court' },
-        ],
-      },
-      {
-        name: 'Warren County',
-        links: [
-          { name: 'Warren County Court of Common Pleas', href: '/courts/warren-county-court-of-common-pleas' },
-          { name: 'Lebanon Municipal Court', href: '/courts/lebanon-municipal-court' },
-          { name: 'Franklin Municipal Court (Carlisle/Franklin)', href: '/courts/franklin-municipal-court' },
-          { name: 'Mason Municipal Court', href: '/courts/mason-municipal-court' },
-        ],
-      },
-      {
         name: 'Butler County',
         links: [
           { name: 'Butler County Court of Common Pleas', href: '/courts/butler-county-court-of-common-pleas' },
           { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
-          { name: 'Middletown Municipal Court', href: '/courts/middletown-municipal-court' },
-          { name: 'Fairfield Municipal Court', href: '/courts/fairfield-municipal-court' },
         ],
       },
       {
@@ -264,7 +210,6 @@ const navItems: NavItem[] = [
         links: [
           { name: 'Greene County Court of Common Pleas', href: '/courts/greene-county-court-of-common-pleas' },
           { name: 'Fairborn Municipal Court', href: '/courts/fairborn-municipal-court' },
-          { name: 'Xenia Municipal Court', href: '/courts/xenia-municipal-court' },
         ],
       },
       {
@@ -272,16 +217,15 @@ const navItems: NavItem[] = [
         links: [
           { name: 'Montgomery County Court of Common Pleas', href: '/courts/montgomery-county-court-of-common-pleas' },
           { name: 'Dayton Municipal Court', href: '/courts/dayton-municipal-court' },
-          { name: 'Kettering Municipal Court', href: '/courts/kettering-municipal-court' },
-          { name: 'Miamisburg Municipal Court', href: '/courts/miamisburg-municipal-court' },
-          { name: 'Vandalia Municipal Court', href: '/courts/vandalia-municipal-court' },
         ],
       },
       {
-        name: 'Union County',
+        name: 'Other Counties',
         links: [
-          { name: 'Union County Court of Common Pleas', href: '/courts/union-county-court-of-common-pleas' },
-          { name: 'Marysville Municipal Court', href: '/courts/marysville-municipal-court' },
+          { name: 'Morrow County', href: '/courts/morrow-county' },
+          { name: 'Athens County', href: '/courts/athens-county' },
+          { name: 'Clinton County', href: '/courts/clinton-county' },
+          { name: 'Pickaway County', href: '/courts/pickaway-county' },
         ],
       },
     ],

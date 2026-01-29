@@ -20,19 +20,13 @@ const breadcrumbItems = [{ label: 'Courts', href: '/courts' }];
 const counties = [
   { name: 'Franklin County', href: '/courts/franklin-county' },
   { name: 'Delaware County', href: '/courts/delaware-county' },
-  { name: 'Fairfield County', href: '/courts/fairfield-county' },
-  { name: 'Licking County', href: '/courts/licking-county' },
-  { name: 'Madison County', href: '/courts/madison-county' },
+  { name: 'Butler County', href: '/courts/butler-county' },
+  { name: 'Greene County', href: '/courts/greene-county' },
+  { name: 'Montgomery County', href: '/courts/montgomery-county' },
   { name: 'Pickaway County', href: '/courts/pickaway-county' },
   { name: 'Athens County', href: '/courts/athens-county' },
   { name: 'Morrow County', href: '/courts/morrow-county' },
   { name: 'Clinton County', href: '/courts/clinton-county' },
-  { name: 'Fayette County', href: '/courts/fayette-county' },
-  { name: 'Warren County', href: '/courts/warren-county' },
-  { name: 'Butler County', href: '/courts/butler-county' },
-  { name: 'Greene County', href: '/courts/greene-county' },
-  { name: 'Montgomery County', href: '/courts/montgomery-county' },
-  { name: 'Union County', href: '/courts/union-county' },
 ];
 
 export default function CourtsPage() {
