@@ -207,10 +207,6 @@ export default function CriminalDefensePage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Felony Charges</h4>
                 <p className="text-sm text-gray-600">Serious felony defense including violent and property crimes</p>
               </Link>
-              <Link href="/criminal-defense/juvenile-offenses" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Juvenile Offenses</h4>
-                <p className="text-sm text-gray-600">Defense for juvenile delinquency and criminal charges</p>
-              </Link>
               <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Expungement & Record Sealing</h4>
                 <p className="text-sm text-gray-600">Seal or expunge eligible criminal records under ORC Chapter 2953</p>

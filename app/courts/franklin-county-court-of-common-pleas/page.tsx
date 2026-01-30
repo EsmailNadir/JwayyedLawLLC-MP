@@ -6,8 +6,8 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Franklin County Court of Common Pleas Attorney | Columbus Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Franklin County Court of Common Pleas. Skilled representation for civil disputes, probate matters, and domestic relations cases in Columbus, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['Franklin County Common Pleas attorney', 'Columbus Common Pleas lawyer', 'civil disputes Franklin County', 'Franklin County probate attorney'],
+  description: 'Experienced legal representation in Franklin County Court of Common Pleas. Skilled representation for civil disputes and domestic relations cases in Columbus, Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['Franklin County Common Pleas attorney', 'Columbus Common Pleas lawyer', 'civil disputes Franklin County', 'Franklin County domestic relations attorney'],
   openGraph: {
     title: 'Franklin County Court of Common Pleas Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts/franklin-county-court-of-common-pleas',
@@ -24,11 +24,11 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What types of cases does Franklin County Court of Common Pleas handle?',
-    answer: 'Franklin County Court of Common Pleas handles felony criminal cases, major civil disputes involving amounts over $15,000, probate matters, and domestic relations cases. The court has multiple divisions including General Division, Probate Division, and Domestic Relations Division. Please note, while I currently do not handle criminal cases in Franklin County, I am available to handle civil, probate, and family law matters in this court.',
+    answer: 'Franklin County Court of Common Pleas handles felony criminal cases, major civil disputes involving amounts over $15,000, and domestic relations cases. The court has multiple divisions including General Division and Domestic Relations Division. Please note that our firm does not handle criminal defense, OVI/DUI, immigration matters, juvenile matters, or probate matters in this court. We focus on civil litigation and domestic relations.',
   },
   {
     question: 'Where is Franklin County Court of Common Pleas located?',
-    answer: 'Franklin County Court of Common Pleas is located at 345 S. High Street, Columbus, OH 43215. The General Division handles felony criminal cases and major civil disputes. The Probate Division handles estate administration and will contests. The Domestic Relations Division handles divorce, custody, and support matters.',
+    answer: 'Franklin County Court of Common Pleas is located at 345 S. High Street, Columbus, OH 43215. The General Division handles felony criminal cases and major civil disputes. The Domestic Relations Division handles divorce, custody, and support matters. Our firm focuses on civil litigation and domestic relations in this court.',
   },
   {
     question: 'What should I expect at a Common Pleas Court hearing?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Common Pleas Court matters?',
-    answer: 'Common Pleas Court matters are complex and require experienced representation. Civil disputes, probate matters, and domestic relations cases involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys provide schedule consultations.',
+    answer: 'Common Pleas Court matters are complex and require experienced representation. Civil disputes and domestic relations cases involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys provide schedule consultations.',
   },
   {
     question: 'How long do Common Pleas Court cases take?',
@@ -57,26 +57,19 @@ export default function FranklinCountyCommonPleasPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Franklin County Court of Common Pleas Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County Court of Common Pleas in Columbus, Ohio, handles felony criminal cases, major civil disputes, probate matters, and domestic relations cases. However, please note that I do not currently handle criminal cases in Franklin County. At Jwayyed Law LLC, we provide experienced representation in civil, probate, and family law matters in this court under Ohio Revised Code.
+              Franklin County Court of Common Pleas in Columbus, Ohio, handles major civil disputes and domestic relations cases. At Jwayyed Law LLC, we provide experienced representation in civil litigation and family law matters in this court under Ohio Revised Code. Please note that we do not handle criminal defense, OVI/DUI, immigration matters, juvenile matters, or probate matters in Franklin County Court of Common Pleas.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Franklin County Court of Common Pleas is located at 345 S. High Street, Columbus, OH 43215. The court has multiple divisions including the General Division (felony criminal cases and major civil disputes), Probate Division (estate administration and will contests), and Domestic Relations Division (divorce, custody, and support matters). Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              The Franklin County Court of Common Pleas is located at 345 S. High Street, Columbus, OH 43215. The court has multiple divisions including the General Division (major civil disputes) and Domestic Relations Division (divorce, custody, and support matters). Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">General Division</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">General Division - Civil Matters</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                The General Division handles felony criminal cases (all degrees of felonies), major civil disputes involving amounts over $15,000, contract disputes, personal injury cases, business litigation, and other complex civil matters. While I do not currently handle felony criminal defense in Franklin County, I can represent clients in civil matters such as personal injury or business litigation.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Probate Division</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                The Probate Division handles estate administration, will contests, guardianships, conservatorships, and trust matters. Probate proceedings require understanding of estate law, filing requirements, and court procedures. An experienced probate attorney can guide you through the process and protect your interests.
+                The General Division handles major civil disputes involving amounts over $15,000, contract disputes, personal injury cases, business litigation, and other complex civil matters. We represent clients in civil matters such as personal injury or business litigation. Please note that we do not handle criminal defense or OVI/DUI cases in this court.
               </p>
             </div>
 
@@ -90,12 +83,11 @@ export default function FranklinCountyCommonPleasPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced representation in all divisions of Franklin County Court of Common Pleas, excluding criminal cases:
+              Our firm provides experienced representation in Franklin County Court of Common Pleas for civil litigation and domestic relations matters:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
               <li><strong>Major Civil Litigation:</strong> Representation for complex civil disputes including contract disputes, personal injury cases, business litigation, and other civil matters</li>
-              <li><strong>Probate Administration:</strong> Guidance through estate administration, will contests, and probate proceedings</li>
               <li><strong>Domestic Relations:</strong> Representation for divorce, custody, support, and domestic relations matters</li>
               <li><strong>Court Procedure:</strong> Understanding of Common Pleas Court procedures, filing requirements, and judicial preferences</li>
             </ul>

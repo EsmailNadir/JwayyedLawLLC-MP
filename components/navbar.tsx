@@ -46,7 +46,6 @@ const navItems: NavItem[] = [
       { name: 'Gun / Weapons Charges', href: '/criminal-defense/gun-weapons-charges' },
       { name: 'Federal Crimes', href: '/criminal-defense/federal-crimes' },
       { name: 'Felony Charges', href: '/criminal-defense/felony-charges' },
-      { name: 'Juvenile Offenses', href: '/criminal-defense/juvenile-offenses' },
       { name: 'Expungement / Record Sealing', href: '/criminal-defense/expungement-record-sealing' },
       { name: 'All Criminal Defense Areas', href: '/criminal-defense' },
     ],
@@ -191,7 +190,6 @@ const navItems: NavItem[] = [
         links: [
           { name: 'Franklin County Court of Common Pleas', href: '/courts/franklin-county-court-of-common-pleas' },
           { name: 'Franklin County Municipal Court', href: '/courts/franklin-county-municipal-court' },
-          { name: 'Franklin County Juvenile Court', href: '/courts/franklin-county-juvenile-court' },
         ],
       },
       {

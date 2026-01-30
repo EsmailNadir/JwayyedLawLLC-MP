@@ -24,7 +24,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What types of cases does Morrow County Municipal Court handle?',
-    answer: 'Morrow County Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Morrow County. The court follows Ohio Revised Code for procedures and penalties.',
+    answer: 'Morrow County Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Morrow County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
   },
   {
     question: 'Where is Morrow County Municipal Court located?',
@@ -57,7 +57,7 @@ export default function MorrowCountyMunicipalCourtPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Morrow County Municipal Court Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Morrow County Municipal Court in Mount Gilead, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Morrow County. At Jwayyed Law LLC, we provide experienced representation in Morrow County Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes.
+              Morrow County Municipal Court in Mount Gilead, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Morrow County. At Jwayyed Law LLC, we provide experienced representation in Morrow County Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

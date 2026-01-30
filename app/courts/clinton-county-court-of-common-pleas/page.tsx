@@ -24,7 +24,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What types of cases does Clinton County Court of Common Pleas handle?',
-    answer: 'Clinton County Court of Common Pleas handles felony criminal cases, major civil disputes involving amounts over $15,000, probate matters, and domestic relations cases. The court follows Ohio Revised Code for procedures and penalties. Understanding court procedures is essential for effective representation.',
+    answer: 'Clinton County Court of Common Pleas handles felony criminal cases, major civil disputes involving amounts over $15,000, and domestic relations cases. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, or probate matters in this court. Understanding court procedures is essential for effective representation.',
   },
   {
     question: 'Where is Clinton County Court of Common Pleas located?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Common Pleas Court matters?',
-    answer: 'Common Pleas Court matters are complex and require experienced representation. Felony cases, major civil disputes, and probate matters involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, and represent you in court.',
+    answer: 'Common Pleas Court matters are complex and require experienced representation. Felony cases, major civil disputes, and domestic relations cases involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, and represent you in court.',
   },
   {
     question: 'How long do Common Pleas Court cases take?',
@@ -57,7 +57,7 @@ export default function ClintonCountyCommonPleasPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Clinton County Court of Common Pleas Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Clinton County Court of Common Pleas in Wilmington, Ohio, handles felony criminal cases, major civil disputes, probate matters, and domestic relations cases. At Jwayyed Law LLC, we provide experienced representation in Clinton County Court of Common Pleas under Ohio Revised Code. Our attorney understands Common Pleas Court procedures and can help achieve favorable outcomes.
+              Clinton County Court of Common Pleas in Wilmington, Ohio, handles felony criminal cases, major civil disputes, and domestic relations cases. At Jwayyed Law LLC, we provide experienced representation in Clinton County Court of Common Pleas under Ohio Revised Code. Our attorney understands Common Pleas Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, or probate matters in this court.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -80,13 +80,6 @@ export default function ClintonCountyCommonPleasPage() {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Probate Administration</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Common Pleas Court handles probate matters including estate administration, will contests, guardianship proceedings, and trust administration. Probate proceedings require understanding of probate law, estate planning, and court procedures to ensure proper administration and protect beneficiaries' interests.
-              </p>
-            </div>
-
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Domestic Relations Matters</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
@@ -103,7 +96,6 @@ export default function ClintonCountyCommonPleasPage() {
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
               <li><strong>Felony Criminal Defense:</strong> Experienced defense representation for all felony charges including drug crimes, theft, assault, burglary, and other serious offenses</li>
               <li><strong>Major Civil Litigation:</strong> Skilled representation for complex civil disputes including contract disputes, personal injury cases, and business litigation</li>
-              <li><strong>Probate Administration:</strong> Experienced assistance with estate administration, will contests, and guardianship proceedings</li>
               <li><strong>Domestic Relations:</strong> Representation for divorce, child custody, child support, and property division matters</li>
               <li><strong>Court Procedure:</strong> Understanding of Common Pleas Court procedures, filing requirements, and judicial preferences</li>
             </ul>

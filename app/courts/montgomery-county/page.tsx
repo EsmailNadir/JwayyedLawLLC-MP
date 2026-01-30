@@ -33,7 +33,7 @@ export default function MontgomeryCountyCourtsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Montgomery County Court Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Montgomery County courts handle various legal matters including criminal cases, OVI/DUI charges, civil disputes, and traffic violations. At Jwayyed Law LLC, we provide experienced representation in Montgomery County courts including Common Pleas Court and Municipal Courts.
+              Montgomery County courts handle various legal matters including criminal cases, OVI/DUI charges, civil disputes, and traffic violations. At Jwayyed Law LLC, we provide experienced representation in Montgomery County courts including Common Pleas Court and Municipal Courts. Please note that we do not handle immigration matters, juvenile matters, or probate matters in these courts.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Montgomery County Courts</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
