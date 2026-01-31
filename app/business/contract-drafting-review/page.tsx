@@ -56,7 +56,7 @@ export default function ContractDraftingReviewPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Contract Drafting & Review in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Contract drafting and review in Columbus or throughout Ohio is essential for protecting your business interests and avoiding disputes. At Jwayyed Law LLC, we provide experienced assistance with contract drafting and review under Ohio Revised Code Chapter 1305. Our attorney understands contract law and can help draft contracts tailored to your needs and review contracts to protect your interests.
+              Contract drafting and review in Columbus or throughout Ohio is essential for protecting your business interests and avoiding disputes. At Jwayyed Law LLC, we provide experienced assistance with contract drafting and review under Ohio law. Under Ohio Revised Code section 2305.06, the statute of limitations for written contracts is 6 years, while oral contracts have a 4-year limitation under ORC 2305.07. Our attorney understands contract law and can help draft contracts tailored to your needs and review contracts to protect your interests.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Contract Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

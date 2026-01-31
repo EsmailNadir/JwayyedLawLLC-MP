@@ -33,7 +33,7 @@ export default function ArbitrationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Arbitration in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Arbitration in Columbus or throughout Ohio is a form of alternative dispute resolution where a neutral arbitrator makes a binding decision to resolve conflicts. At Jwayyed Law LLC, we provide experienced arbitration representation under Ohio Revised Code. Our attorney can represent parties in arbitration proceedings including business disputes, employment matters, consumer disputes, and other conflicts where arbitration is required or chosen over litigation.
+              Arbitration in Columbus or throughout Ohio is a form of alternative dispute resolution where a neutral arbitrator makes a binding decision to resolve conflicts. At Jwayyed Law LLC, we provide experienced arbitration representation under Ohio Revised Code Chapter 2711 (current as of 2026). Our attorney can represent parties in arbitration proceedings including business disputes, employment matters, consumer disputes, and other conflicts where arbitration is required or chosen over litigation.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

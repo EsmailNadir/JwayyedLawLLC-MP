@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Common Pleas Court matters?',
-    answer: 'Common Pleas Court matters are complex and require experienced representation. Civil disputes and domestic relations cases involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys provide schedule consultations.',
+    answer: 'Common Pleas Court matters are complex and require experienced representation. Civil disputes and domestic relations cases involve complex legal issues and procedures. An experienced attorney can protect your rights, develop strategies, negotiate settlements, and represent you in court. Most attorneys offer consultations.',
   },
   {
     question: 'How long do Common Pleas Court cases take?',
@@ -99,7 +99,7 @@ export default function FranklinCountyCommonPleasPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Franklin County Court of Common Pleas, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a matter in Franklin County Court of Common Pleas, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
             </p>
           </div>
         </div>

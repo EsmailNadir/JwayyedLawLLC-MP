@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
@@ -18,6 +19,17 @@ const breadcrumbItems = [
   { label: 'Other Services', href: '/other-services' },
   { label: 'Immigration', href: '/other-services/immigration' },
   { label: 'Citizenship & Naturalization', href: '/other-services/citizenship-naturalization' },
+];
+
+const faqs = [
+  {
+    question: 'What are the basic naturalization requirements?',
+    answer: 'Under the Immigration and Nationality Act (INA), naturalization generally requires: at least 18 years old; lawful permanent resident for at least 5 years (or 3 years if married to a U.S. citizen); continuous residence and physical presence; good moral character; ability to read, write, and speak English; pass the civics test; and take the Oath of Allegiance. Federal law governs; requirements are subject to change.',
+  },
+  {
+    question: 'What is the 2025 naturalization civics test?',
+    answer: 'For applications filed on or after October 20, 2025, USCIS administers a civics test of 20 oral questions drawn from 128 study questions; applicants must answer 12 correctly to pass. Immigration law is federal and subject to USCIS policy updates.',
+  },
 ];
 
 export default function CitizenshipNaturalizationPage() {
@@ -42,6 +54,7 @@ export default function CitizenshipNaturalizationPage() {
           </div>
         </div>
       </section>
+      <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );

@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'What is comparative negligence in Ohio car accidents?',
-    answer: 'Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are partially at fault for the accident, your compensation is reduced by your percentage of fault. However, if you are 51% or more at fault, you cannot recover compensation. This means even if you were partially negligent, you may still recover compensation if you are less than 51% at fault.',
+    answer: 'Ohio follows a modified comparative negligence rule under ORC 2315.33 (current as of 2026). If you are partially at fault for the accident, your compensation is reduced by your percentage of fault. However, if your contributory fault exceeds 50%, you cannot recover. If you are 50% or less at fault, you may recover reduced compensation.',
   },
   {
     question: 'Do I need a car accident attorney for my claim?',
@@ -167,7 +167,7 @@ export default function CarAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a car accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a car accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

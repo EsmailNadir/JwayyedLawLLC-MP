@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a partnership disputes attorney?',
-    answer: 'Partnership disputes can be complex and require experienced representation. Partnership disputes attorneys understand partnership law, can interpret partnership agreements, identify breaches of fiduciary duties, negotiate resolutions, and represent partners in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Partnership disputes can be complex and require experienced representation. Partnership disputes attorneys understand partnership law, can interpret partnership agreements, identify breaches of fiduciary duties, negotiate resolutions, and represent partners in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
 ];
 

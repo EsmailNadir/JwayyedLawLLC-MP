@@ -168,7 +168,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing misdemeanor charges in Pickaway County, contact Jwayyed Law LLC immediately for a schedule consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Circleville Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing misdemeanor charges in Pickaway County, contact Jwayyed Law LLC immediately to schedule a consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Circleville Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

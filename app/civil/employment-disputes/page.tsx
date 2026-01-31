@@ -31,11 +31,11 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for employment disputes?',
-    answer: 'Statute of limitations for employment disputes in Ohio vary by claim type: Breach of employment contract: 15 years for written contracts, 6 years for oral contracts. Discrimination: 180 days to file with EEOC, 6 years from date of discrimination. Wage and hour: Generally 2 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Statute of limitations for employment disputes in Ohio vary by claim type: Breach of employment contract: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Discrimination: 180 days to file with EEOC, 6 years from date of discrimination. Wage and hour: Generally 2 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need an employment disputes attorney?',
-    answer: 'Employment disputes are complex and require experienced representation. Employment attorneys understand federal and state employment laws, can identify violations, file EEOC charges, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly or contingency fee arrangements and provide schedule consultations.',
+    answer: 'Employment disputes are complex and require experienced representation. Employment attorneys understand federal and state employment laws, can identify violations, file EEOC charges, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly or contingency fee arrangements and offer consultations.',
   },
   {
     question: 'Can I recover damages for employment disputes?',

@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys provide schedule consultations.',
+    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys offer consultations.',
   },
   {
     question: 'How long do Municipal Court cases take?',
@@ -76,7 +76,7 @@ export default function DelawareCountyMunicipalCourtPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">OVI/DUI Defense</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles first and second OVI/DUI charges (misdemeanor OVI). OVI convictions carry severe penalties including jail time, fines, license suspension, and vehicle immobilization. Experienced OVI defense representation is crucial to challenge evidence, develop defenses, and minimize consequences.
+                Municipal Court handles first, second, and third OVI/DUI charges (misdemeanor OVI). Fourth and subsequent OVI offenses are felonies handled in Common Pleas Court. OVI convictions carry severe penalties including jail time, fines, license suspension, and vehicle immobilization. Experienced OVI defense representation is crucial to challenge evidence, develop defenses, and minimize consequences.
               </p>
             </div>
 
@@ -115,7 +115,7 @@ export default function DelawareCountyMunicipalCourtPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Delaware County Municipal Court, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a matter in Delaware County Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
             </p>
           </div>
         </div>

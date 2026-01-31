@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for high-tier OVI in Ohio?',
-    answer: 'High-tier OVI penalties in Ohio carry enhanced penalties: First high-tier OVI: 6 days to 6 months jail (minimum 6 days mandatory vs. 3 days standard), higher fines, longer license suspensions, and mandatory alcohol assessment and treatment. Second and subsequent high-tier OVI carry even more severe penalties with longer mandatory jail sentences.',
+    answer: 'High-tier OVI penalties in Ohio carry enhanced penalties under HB 37 (effective April 2025): First high-tier OVI: 6 days to 6 months jail (minimum 6 days mandatory vs. 3 days standard), fines $565 to $1,075 (minimum increased from $375), license suspension 1 to 3 years, and mandatory alcohol assessment and treatment. Second and subsequent high-tier OVI carry even more severe penalties with longer mandatory jail sentences (20 days minimum for second offense).',
   },
   {
     question: 'Can high-tier OVI charges be reduced?',
@@ -73,12 +73,13 @@ export default function HighTierOVIPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First High-Tier OVI</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">First High-Tier OVI (Current 2026 Ohio Law - HB 37)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li><strong>Jail:</strong> 6 days to 6 months (minimum 6 days mandatory vs. 3 days standard OVI)</li>
-                <li><strong>Fines:</strong> $375 to $1,075 (higher than standard OVI fines)</li>
+                <li><strong>Fines:</strong> $565 to $1,075 (minimum increased from $375 under HB 37)</li>
                 <li><strong>License Suspension:</strong> 1 to 3 years (longer than standard OVI)</li>
-                <li><strong>Vehicle Immobilization:</strong> 90 days (vs. 6 months for second offense)</li>
+                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475)</li>
+                <li><strong>Vehicle Immobilization:</strong> 90 days (per ORC 4511.19)</li>
                 <li><strong>Yellow Plates:</strong> Required for 90 days</li>
                 <li><strong>Mandatory Alcohol Assessment and Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
               </ul>
@@ -88,10 +89,10 @@ export default function HighTierOVIPage() {
               <h4 className="font-semibold text-gray-900 mb-4">Second High-Tier OVI</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li><strong>Jail:</strong> 20 days to 1 year (minimum 20 days mandatory vs. 10 days standard)</li>
-                <li><strong>Fines:</strong> $525 to $1,625 (higher than standard OVI fines)</li>
+                <li><strong>Fines:</strong> $715 to $1,625 (minimum increased from $525 under HB 37)</li>
                 <li><strong>License Suspension:</strong> 1 to 7 years (longer than standard OVI)</li>
-                <li><strong>Vehicle Immobilization:</strong> 180 days</li>
-                <li><strong>Yellow Plates:</strong> Required for 180 days</li>
+                <li><strong>Vehicle Immobilization:</strong> 90 days</li>
+                <li><strong>Yellow Plates:</strong> Required for 90 days</li>
                 <li><strong>Mandatory Alcohol Assessment and Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
               </ul>
             </div>
@@ -186,7 +187,7 @@ export default function HighTierOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing high-tier OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including rising BAC defense and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in high-tier OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing high-tier OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including rising BAC defense and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in high-tier OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

@@ -56,7 +56,7 @@ export default function BusinessFormationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Business Formation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business formation in Columbus or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. At Jwayyed Law LLC, we provide experienced assistance with business formation under Ohio Revised Code. Our attorney understands business law and can help determine the best structure and guide you through the formation process.
+              Business formation in Columbus or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. At Jwayyed Law LLC, we provide experienced assistance with business formation under Ohio Revised Code (current as of 2026). Our attorney understands business law and can help determine the best structure and guide you through the formation process.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -156,7 +156,7 @@ export default function BusinessFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are starting a business in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
+              If you are starting a business in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
             </p>
           </div>
         </div>

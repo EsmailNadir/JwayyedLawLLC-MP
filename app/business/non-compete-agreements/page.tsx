@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'Are non-compete agreements enforceable in Ohio?',
-    answer: 'Non-compete agreements in Ohio under Ohio Revised Code 1333.29 are enforceable if they are reasonable in scope, duration, and geographic area, protect legitimate business interests, and do not impose undue hardship on employees. Courts will not enforce overbroad non-compete agreements. An attorney can help determine if a non-compete agreement is enforceable.',
+    answer: 'Non-compete agreements in Ohio are enforceable under Ohio common law if they are reasonable in scope, duration, and geographic area, protect legitimate business interests, and do not impose undue hardship on employees. Courts will not enforce overbroad non-compete agreements. An attorney can help determine if a non-compete agreement is enforceable.',
   },
   {
     question: 'What makes a non-compete agreement reasonable in Ohio?',
@@ -56,7 +56,7 @@ export default function NonCompeteAgreementsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Non-Compete Agreements in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Non-compete agreements in Columbus or throughout Ohio can significantly affect your ability to work and compete. At Jwayyed Law LLC, we provide experienced representation for non-compete agreements under Ohio Revised Code 1333.29. Our attorney understands non-compete law and can help whether you are an employer drafting agreements or an employee subject to one.
+              Non-compete agreements in Columbus or throughout Ohio can significantly affect your ability to work and compete. At Jwayyed Law LLC, we provide experienced representation for non-compete agreements under Ohio common law. Our attorney understands non-compete law and can help whether you are an employer drafting agreements or an employee subject to one.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Non-Compete Agreements Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

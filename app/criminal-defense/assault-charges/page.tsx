@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for assault in Ohio?',
-    answer: 'Assault penalties in Ohio vary by degree. Simple assault (ORC 2903.13) is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault (ORC 2903.12) is a fourth-degree felony punishable by 6-18 months imprisonment and fines up to $5,000. Felonious assault (ORC 2903.11) is a second-degree felony punishable by 2-8 years imprisonment and fines up to $15,000. Prior convictions and weapons can enhance penalties.',
+    answer: 'Assault penalties in Ohio vary by degree. Simple assault (ORC 2903.13) is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault (ORC 2903.12) is a fourth-degree felony punishable by 6-18 months imprisonment and fines up to $5,000. Felonious assault (ORC 2903.11) is a second-degree felony punishable by 2-8 years indefinite imprisonment (for offenses after March 22, 2019) and fines up to $15,000. Prior convictions and weapons can enhance penalties.',
   },
   {
     question: 'Can I defend against assault charges in Ohio?',
@@ -107,7 +107,7 @@ export default function AssaultChargesPage() {
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felonious Assault (ORC 2903.11)</h4>
               <p className="text-gray-700 mb-4">
-                Felonious assault involves knowingly causing serious physical harm to another or causing physical harm with a deadly weapon. This is charged as a second-degree felony punishable by 2-8 years imprisonment and fines up to $15,000. If the victim is a peace officer or firefighter, charges are enhanced to a first-degree felony.
+                Felonious assault involves knowingly causing serious physical harm to another or causing physical harm with a deadly weapon. This is charged as a second-degree felony (F-2) punishable by 2-8 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%) and fines up to $15,000. If the victim is a peace officer or firefighter, charges are enhanced to a first-degree felony.
               </p>
             </div>
 
@@ -303,7 +303,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing assault charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing assault charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
             </p>
 
             <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">

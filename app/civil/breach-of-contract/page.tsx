@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What constitutes breach of contract in Ohio?',
-    answer: 'Breach of contract under Ohio Revised Code Chapter 1305 occurs when one party fails to perform their obligations under a contract without legal justification. Breach may include failure to perform, defective performance, late performance, or refusal to perform. To establish breach of contract, you must prove a valid contract existed, the other party breached the contract, and you suffered damages as a result.',
+    answer: 'Breach of contract under Ohio law occurs when one party fails to perform their obligations under a contract without legal justification. Breach may include failure to perform, defective performance, late performance, or refusal to perform. To establish breach of contract, you must prove a valid contract existed, the other party breached the contract, and you suffered damages as a result.',
   },
   {
     question: 'What are the remedies for breach of contract in Ohio?',
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for breach of contract in Ohio?',
-    answer: 'Under Ohio Revised Code 2305.06, the statute of limitations for breach of contract claims in Ohio is 15 years for written contracts and 6 years for oral contracts. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026), the statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a breach of contract attorney?',
@@ -56,7 +56,7 @@ export default function BreachOfContractPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Breach of Contract Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Breach of contract disputes in Columbus or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. At Jwayyed Law LLC, we provide experienced representation for breach of contract claims under Ohio Revised Code Chapter 1305. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
+              Breach of contract disputes in Columbus or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. At Jwayyed Law LLC, we provide experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -64,7 +64,7 @@ export default function BreachOfContractPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for breach of contract claims in Ohio is 15 years for written contracts and 6 years for oral contracts under Ohio Revised Code 2305.06. Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process.
+              The statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026). Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Breach of Contract Claims Process</h3>
 
@@ -158,7 +158,7 @@ export default function BreachOfContractPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a breach of contract dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a breach of contract dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

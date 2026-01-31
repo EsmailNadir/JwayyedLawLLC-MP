@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for medical malpractice in Ohio?',
-    answer: 'Under Ohio Revised Code 2305.113, the statute of limitations for medical malpractice claims in Ohio is generally 1 year from discovery of the injury, but no more than 4 years from the date of the act or omission. However, exceptions may apply for minors or discovery of foreign objects. Missing the deadline bars recovery, making it crucial to act quickly and consult an attorney immediately.',
+    answer: 'Under Ohio Revised Code 2305.113, the statute of limitations for medical malpractice claims in Ohio is generally 1 year from when the cause of action accrued (typically discovery of the injury), but no more than 4 years from the date of the act or omission. Written notice to the defendant before the 1-year period expires may extend the filing deadline by 180 days. Exceptions apply for minors and discovery of foreign objects. Missing the deadline bars recovery, making it crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'What compensation can I recover from medical malpractice?',
@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     question: 'What are damage caps for medical malpractice in Ohio?',
-    answer: 'Under Ohio Revised Code 2323.43, non-economic damages (pain and suffering) in medical malpractice cases are capped at $250,000 per plaintiff or $350,000 per occurrence for multiple plaintiffs, unless the injury involves permanent physical deformity, loss of use of a limb, or loss of a bodily organ system, in which case the cap is $500,000 or $1,000,000 for catastrophic injuries. Economic damages are not capped.',
+    answer: 'Under Ohio Revised Code 2323.43, non-economic damages (pain and suffering) in medical malpractice cases are capped at the greater of $250,000 or three times the plaintiff\'s economic loss, with a maximum of $350,000 per plaintiff or $500,000 per occurrence. For injuries involving permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or permanent functional injury preventing self-care, the cap increases to $500,000 per plaintiff or $1,000,000 per occurrence. Economic damages are not capped. Caps do not apply to wrongful death (ORC Ch. 2125), Court of Claims cases, or claims against political subdivisions.',
   },
   {
     question: 'Do I need a medical malpractice attorney?',
-    answer: 'Medical malpractice cases are complex and require experienced representation. Medical malpractice attorneys understand medical standards of care, can retain medical experts, understand damage caps, handle complex litigation, and maximize compensation within Ohio\'s damage cap limits. Most medical malpractice attorneys work on a contingency fee basis and provide schedule consultations.',
+    answer: 'Medical malpractice cases are complex and require experienced representation. Medical malpractice attorneys understand medical standards of care, can retain medical experts, understand damage caps, handle complex litigation, and maximize compensation within Ohio\'s damage cap limits. Most medical malpractice attorneys work on a contingency fee basis and offer consultations.',
   },
 ];
 

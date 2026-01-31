@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for debt collection in Ohio?',
-    answer: 'Statute of limitations for debt collection in Ohio under Ohio Revised Code 2305.06 is generally 6 years for written contracts and 6 years for open accounts from the date of last payment or last activity. Missing the deadline bars recovery, so creditors must file collection lawsuits within the statute of limitations. An attorney can help determine if debt is time-barred.',
+    answer: 'Statute of limitations for debt collection in Ohio varies by contract type: 6 years for written contracts under ORC 2305.06 and 4 years for oral contracts under ORC 2305.07 (as amended June 2021). Open accounts with written agreements fall under the 6-year limit. Missing the deadline bars recovery, so creditors must file collection lawsuits within the statute of limitations. An attorney can help determine if debt is time-barred.',
   },
   {
     question: 'What is the Fair Debt Collection Practices Act (FDCPA)?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Do I need a debt collection defense attorney?',
-    answer: 'Debt collection defense requires experienced representation to protect your rights. Debt collection defense attorneys understand debt collection law, can challenge debt validity, raise statute of limitations defenses, identify FDCPA violations, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Debt collection defense requires experienced representation to protect your rights. Debt collection defense attorneys understand debt collection law, can challenge debt validity, raise statute of limitations defenses, identify FDCPA violations, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
     question: 'Can I negotiate debt collection settlements?',

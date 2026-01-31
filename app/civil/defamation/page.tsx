@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a defamation attorney?',
-    answer: 'Defamation cases are complex and require experienced representation. Defamation attorneys understand defamation law, can prove falsity and harm, identify defenses, handle complex litigation, and maximize recovery for reputation harm. Most attorneys work on hourly or contingency fee arrangements and provide schedule consultations.',
+    answer: 'Defamation cases are complex and require experienced representation. Defamation attorneys understand defamation law, can prove falsity and harm, identify defenses, handle complex litigation, and maximize recovery for reputation harm. Most attorneys work on hourly or contingency fee arrangements and offer consultations.',
   },
 ];
 

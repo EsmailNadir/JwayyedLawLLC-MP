@@ -24,7 +24,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for OVI in Circleville Municipal Court?',
-    answer: 'OVI penalties in Circleville Municipal Court under Ohio Revised Code 4511.19 follow state law and depend on offense level. First OVI carries 3-180 days jail (minimum 3 days mandatory), fines of $375-$1,075, and 6 months to 3 years license suspension. Subsequent offenses carry enhanced penalties. An experienced attorney can help minimize consequences.',
+    answer: 'OVI penalties in Circleville Municipal Court under Ohio Revised Code 4511.19 follow state law and depend on offense level. First OVI carries 3-180 days jail (minimum 3 days mandatory), fines of $565-$1,075 (minimum increased under HB 37 effective April 2025), and 1 to 3 years license suspension. License reinstatement fee is $315. Subsequent offenses carry enhanced penalties. An experienced attorney can help minimize consequences.',
   },
   {
     question: 'Can I get limited driving privileges in Pickaway County?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'How do I appeal an administrative license suspension in Pickaway County?',
-    answer: 'To appeal an administrative license suspension in Pickaway County, file an appeal with the Franklin County Municipal Court within 30 days of arrest. Appeals challenge the suspension based on procedural issues, testing procedures, or other legal grounds. An attorney can help file appeals, request stays of suspension, and protect your driving privileges.',
+    answer: 'To appeal an administrative license suspension in Pickaway County, file an appeal with the Circleville Municipal Court within 30 days of arrest. Appeals challenge the suspension based on procedural issues, testing procedures, or other legal grounds. An attorney can help file appeals, request stays of suspension, and protect your driving privileges.',
   },
   {
     question: 'What should I do if I am charged with OVI in Pickaway County?',
@@ -82,28 +82,28 @@ export default function PickawayOVIDefensePage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">First OVI Offense</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                A first OVI conviction in Circleville Municipal Court carries mandatory minimum penalties: 3 days in jail (or 3 days in a driver intervention program), fines of $375 to $1,075, and license suspension of 6 months to 3 years. The court may also order vehicle immobilization, ignition interlock devices, and alcohol/drug treatment programs. While these are mandatory minimums, experienced representation can help negotiate reduced penalties or alternative sentencing.
+                A first OVI conviction in Circleville Municipal Court carries mandatory minimum penalties under HB 37 (effective April 2025): 3 days in jail (or 3 days in a driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315 (reduced from $475). The court may also order vehicle immobilization, ignition interlock devices, and alcohol/drug treatment programs. Judges can now waive the 15-day waiting period for limited driving privileges for first offenders with no prior alcohol arrests. While these are mandatory minimums, experienced representation can help negotiate reduced penalties or alternative sentencing.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Second OVI Offense</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                A second OVI conviction within 10 years carries enhanced penalties: 10 days to 6 months in jail (minimum 10 days mandatory), fines of $525 to $1,625, and license suspension of 1 to 5 years. The court must order vehicle immobilization for 90 days, ignition interlock devices, and alcohol/drug treatment. Second OVI cases require aggressive defense representation to minimize these severe consequences.
+                A second OVI conviction within 10 years carries enhanced penalties under HB 37: 10 days to 6 months in jail (minimum 10 days mandatory), fines of $715 to $1,625 (minimum increased from $525), and license suspension of 1 to 7 years. License reinstatement fee is $315. The court must order vehicle immobilization for 90 days, mandatory ignition interlock device for limited driving privileges (45-day or 90-day waiting period), and alcohol/drug treatment. Second OVI cases require aggressive defense representation to minimize these severe consequences.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">High-Tier OVI</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                High-tier OVI charges (BAC of 0.17% or higher) carry enhanced penalties even for first offenses: mandatory 6 days in jail (or 3 days in jail plus 3 days in driver intervention program), fines of $375 to $1,075, and license suspension of 6 months to 3 years. High-tier OVI cases require challenging the breathalyzer results, testing procedures, and developing defenses to minimize consequences.
+                High-tier OVI charges (BAC of 0.17% or higher) carry enhanced penalties even for first offenses under HB 37: mandatory 6 days in jail (or 3 days in jail plus 3 days in driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315. High-tier OVI cases require challenging the breathalyzer results, testing procedures, and developing defenses to minimize consequences.
               </p>
             </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Administrative License Suspension (ALS) in Pickaway County</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When arrested for OVI in Pickaway County, you face two separate proceedings: the criminal OVI case in Circleville Municipal Court and an administrative license suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS suspension begins immediately upon arrest if you refuse a chemical test or test over the legal limit. You have only 30 days from the date of arrest to appeal the ALS suspension, and this appeal must be filed in Franklin County Municipal Court (the court of jurisdiction for ALS appeals in this region).
+              When arrested for OVI in Pickaway County, you face two separate proceedings: the criminal OVI case in Circleville Municipal Court and an administrative license suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS suspension begins immediately upon arrest if you refuse a chemical test or test over the legal limit. You have only 30 days from the date of arrest to appeal the ALS suspension, and this appeal must be filed in Circleville Municipal Court (the court of jurisdiction for ALS appeals in this region).
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -153,7 +153,7 @@ export default function PickawayOVIDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing OVI charges in Pickaway County, contact Jwayyed Law LLC immediately for a schedule consultation. Time is critical—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Circleville Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing OVI charges in Pickaway County, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Circleville Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is premises liability in Ohio?',
-    answer: 'Premises liability under Ohio Revised Code Chapter 2305 involves property owners\' and occupiers\' duty to maintain safe conditions for visitors and to warn of known dangers. Property owners and occupiers may be liable for injuries caused by dangerous conditions on their property including slip and fall hazards, inadequate lighting, broken stairs, and other hazards.',
+    answer: 'Premises liability in Ohio (current as of 2026) involves property owners\' and occupiers\' duty to maintain safe conditions for visitors and to warn of known dangers. Property owners and occupiers may be liable for injuries caused by dangerous conditions on their property including slip and fall hazards, inadequate lighting, broken stairs, and other hazards.',
   },
   {
     question: 'What compensation can I recover from a slip and fall accident?',
@@ -56,7 +56,7 @@ export default function SlipAndFallPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Slip and Fall Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Slip and fall accidents in Columbus or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code Chapter 2305. Our attorney understands premises liability law and the compensation process necessary to help you recover.
+              Slip and fall accidents in Columbus or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -164,7 +164,7 @@ export default function SlipAndFallPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a slip and fall accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

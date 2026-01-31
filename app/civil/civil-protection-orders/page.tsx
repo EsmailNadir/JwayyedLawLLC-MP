@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a civil protection order attorney?',
-    answer: 'Civil protection order proceedings move quickly and can significantly affect your rights including contact restrictions, residence, custody, and firearms. Whether you are seeking a protection order or defending against one, experienced representation is essential to protect your rights. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Civil protection order proceedings move quickly and can significantly affect your rights including contact restrictions, residence, custody, and firearms. Whether you are seeking a protection order or defending against one, experienced representation is essential to protect your rights. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
 ];
 

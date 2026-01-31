@@ -24,7 +24,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is a trust?',
-    answer: 'A trust is a legal arrangement where a person (the grantor) transfers assets to a trustee, who manages and distributes the assets for the benefit of a beneficiary. Trusts are commonly used in estate planning to control how assets are distributed after death, minimize estate taxes, and avoid probate.',
+    answer: 'A trust is a legal arrangement where a person (the grantor) transfers assets to a trustee, who manages and distributes the assets for the benefit of a beneficiary. Trusts are commonly used in estate planning to control how assets are distributed after death, minimize federal estate taxes (Ohio has no state estate tax since 2013), and avoid probate.',
   },
   {
     question: 'What is the difference between a revocable and irrevocable trust?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Why should I create a trust?',
-    answer: 'Trusts provide many benefits, including avoiding probate, controlling how assets are distributed, minimizing estate taxes, and protecting assets from creditors or lawsuits. They also allow for detailed planning, such as providing for minor children, charitable donations, or beneficiaries with special needs.',
+    answer: 'Trusts provide many benefits, including avoiding probate, controlling how assets are distributed, minimizing federal estate taxes (Ohio has no state estate tax since 2013), and protecting assets from creditors or lawsuits. They also allow for detailed planning, such as providing for minor children, charitable donations, or beneficiaries with special needs.',
   },
   {
     question: 'Do I need an attorney to create a trust?',
@@ -65,7 +65,7 @@ export default function TrustsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              In Ohio, trusts are governed by state law, and it is crucial to work with an experienced attorney to ensure that your trust complies with legal requirements and meets your goals. Whether you want to protect your family home, reduce estate taxes, or ensure that a loved one with special needs is provided for, we can help.
+              In Ohio, trusts are governed by state law, and it is crucial to work with an experienced attorney to ensure that your trust complies with legal requirements and meets your goals. Whether you want to protect your family home, reduce federal estate taxes (Ohio has no state estate tax since 2013), or ensure that a loved one with special needs is provided for, we can help.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Trusts We Help You Set Up</h3>
@@ -81,7 +81,7 @@ export default function TrustsPage() {
               </Link>
               <Link href="/trusts/irrevocable-life-insurance-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Irrevocable Life Insurance Trusts (ILITs)</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Protect life insurance proceeds from estate taxes and ensure that your beneficiaries receive the benefit.</p>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Protect life insurance proceeds from federal estate taxes and ensure that your beneficiaries receive the benefit.</p>
               </Link>
               <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Special Needs Trusts</h4>
@@ -89,7 +89,7 @@ export default function TrustsPage() {
               </Link>
               <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Dynasty Trusts</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Preserve wealth across generations with long-term asset protection and estate tax minimization.</p>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Preserve wealth across generations with long-term asset protection and federal estate tax minimization.</p>
               </Link>
               <Link href="/trusts/charitable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Charitable Trusts</h4>
@@ -104,7 +104,7 @@ export default function TrustsPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Your Trusts</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we provide personalized estate planning services to meet your unique needs. Our experienced attorneys understand Ohio’s trust laws and can help you create a trust that aligns with your goals, whether you want to ensure your family’s financial security, provide for a loved one with special needs, or reduce estate taxes. We are committed to helping you protect your legacy and ensure your wishes are carried out.
+              At Jwayyed Law LLC, we provide personalized estate planning services to meet your unique needs. Our experienced attorneys understand Ohio’s trust laws and can help you create a trust that aligns with your goals, whether you want to ensure your family’s financial security, provide for a loved one with special needs, or reduce federal estate taxes (Ohio has no state estate tax since 2013). We are committed to helping you protect your legacy and ensure your wishes are carried out.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

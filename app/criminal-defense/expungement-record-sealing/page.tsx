@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: 'What is the waiting period for expungement in Ohio?',
-    answer: 'Waiting periods for expungement in Ohio vary based on offense severity: First-degree misdemeanors: 3 years after final discharge. Second-degree misdemeanors: 2 years after final discharge. Third and fourth-degree misdemeanors: 1 year after final discharge. Fifth-degree felonies: 3 years after final discharge. Fourth-degree felonies: 4 years after final discharge. Third-degree felonies: 5 years after final discharge. All fines and costs must be paid, and the case must be resolved.',
+    answer: 'Waiting periods for record sealing in Ohio under ORC 2953.32 (as amended 2025) vary by offense: Minor misdemeanors: 6 months after final discharge. Misdemeanors (all degrees) and fourth/fifth-degree felonies: 1 year after final discharge. Third-degree felonies (one or two convictions): 3 years after final discharge. Expungement requires additional waiting (10 years after sealing eligibility for felonies). All fines and costs must be paid. Certain offenses are ineligible. An attorney can help determine your eligibility.',
   },
   {
     question: 'Can felony records be sealed in Ohio?',
@@ -61,17 +61,16 @@ export default function ExpungementRecordSealingPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Expungement eligibility depends on offense type, prior record, completion of sentence, and required waiting periods ranging from one to five years. Certain offenses including violent crimes, sex crimes, or offenses involving minors are generally not eligible. Sealed records remain available to law enforcement but are not accessible to most employers, landlords, or the general public.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Expungement Waiting Periods</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Record Sealing Waiting Periods (ORC 2953.32)</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Waiting periods are measured from final discharge (completion of sentence, probation, parole, and all fines/restitution):</p>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>First-degree misdemeanors: 3 years after final discharge</li>
-                <li>Second-degree misdemeanors: 2 years after final discharge</li>
-                <li>Third and fourth-degree misdemeanors: 1 year after final discharge</li>
-                <li>Fifth-degree felonies: 3 years after final discharge</li>
-                <li>Fourth-degree felonies: 4 years after final discharge</li>
-                <li>Third-degree felonies: 5 years after final discharge</li>
+                <li>Minor misdemeanors: 6 months</li>
+                <li>Misdemeanors (all degrees): 1 year</li>
+                <li>Fourth and fifth-degree felonies: 1 year</li>
+                <li>Third-degree felonies (one or two convictions): 3 years</li>
               </ul>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mt-4">All fines and costs must be paid, and the case must be resolved before filing for expungement.</p>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mt-4">Expungement requires 10 years after sealing eligibility for felonies. Certain offenses including first/second-degree felonies, violent felonies, and sex offenses are ineligible. All fines and costs must be paid before filing.</p>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Expungement Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

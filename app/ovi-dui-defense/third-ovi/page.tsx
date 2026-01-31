@@ -5,9 +5,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Third OVI Defense Lawyer in Columbus, OH | Felony OVI Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus third OVI defense attorney protecting your rights. Skilled representation for felony OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['third OVI lawyer Columbus OH', 'felony OVI defense attorney Ohio', 'third DUI attorney', 'Franklin County felony OVI lawyer'],
+  title: 'Third OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Columbus third OVI defense attorney protecting your rights. Skilled representation for third OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['third OVI lawyer Columbus OH', 'third OVI defense attorney Ohio', 'third DUI attorney', 'Franklin County third OVI lawyer'],
   openGraph: {
     title: 'Third OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/third-ovi',
@@ -23,19 +23,19 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for a third OVI in Ohio?',
-    answer: 'A third OVI offense in Ohio under ORC 4511.19 is a felony punishable by: 30 days to 1 year jail (minimum 30 days mandatory), fines of $850 to $2,750, driver\'s license suspension of 2 to 12 years, vehicle immobilization for 180 days or forfeiture, felony criminal record, and mandatory alcohol treatment. Prior convictions and circumstances enhance penalties significantly.',
+    answer: 'A third OVI offense in Ohio (within 10 years) under ORC 4511.19 is a first-degree misdemeanor punishable by: 30 days to 1 year jail (minimum 30 days mandatory), fines of $1,040 to $2,750 (minimum increased from $850 under HB 37 effective April 2025), driver\'s license suspension of 2 to 12 years, criminal forfeiture of vehicle, mandatory alcohol treatment, ignition interlock device required, and yellow license plates. A fourth OVI becomes a felony.',
   },
   {
     question: 'Is a third OVI a felony in Ohio?',
-    answer: 'Yes, a third OVI within 6 years of two prior OVI convictions is charged as a fourth-degree felony under Ohio Revised Code 4511.19. Felony OVI convictions carry substantial prison time, large fines, and permanent felony records affecting employment, housing, and opportunities. An experienced felony OVI attorney can help protect your rights.',
+    answer: 'No, a third OVI within 10 years is still a first-degree misdemeanor under Ohio Revised Code 4511.19. However, it carries significantly enhanced penalties including mandatory 30-day jail minimum, fines up to $2,750, and 2-12 year license suspension. A fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. An experienced OVI attorney can help protect your rights and explore defense options.',
   },
   {
     question: 'Can I get limited driving privileges after a third OVI?',
-    answer: 'Limited driving privileges after a third OVI are extremely restricted and typically require ignition interlock devices. Eligibility depends on circumstances and court approval. An attorney can help determine eligibility and apply for limited privileges if available.',
+    answer: 'Limited driving privileges after a third OVI are extremely restricted. Under HB 37 (effective April 2025), an ignition interlock device is mandatory before privileges can be granted. A 180-day waiting period applies before you can apply for limited privileges. Eligibility depends on circumstances and court approval. An attorney can help determine eligibility and apply for limited privileges if available.',
   },
   {
     question: 'What should I do if I am charged with a third OVI?',
-    answer: 'If charged with a third OVI, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced felony OVI defense attorney right away. Felony charges require immediate experienced representation. An attorney can protect your rights and develop defense strategies.',
+    answer: 'If charged with a third OVI, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced OVI defense attorney right away. Third OVI charges carry severe misdemeanor penalties and require immediate experienced representation. An attorney can protect your rights and develop defense strategies.',
   },
   {
     question: 'Can a third OVI be reduced to a misdemeanor?',
@@ -49,37 +49,39 @@ export default function ThirdOVIPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Third OVI Defense Lawyer in Columbus, OH"
-        description="Experienced legal defense for third OVI/DUI felony charges. Protecting your rights and fighting for the best possible outcome."
+        description="Experienced legal defense for third OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Third OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A third OVI charge in Columbus or throughout Ohio is a felony offense carrying severe penalties including mandatory jail time, substantial fines, lengthy license suspension, and a permanent felony record. At Jwayyed Law LLC, we provide experienced defense representation for third OVI felony charges under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of felony OVI convictions and defense strategies necessary to protect your rights.
+              A third OVI charge in Columbus or throughout Ohio (within 10 years of two prior OVI convictions) is a first-degree misdemeanor carrying severe penalties including mandatory 30-day jail minimum, substantial fines, lengthy license suspension, and mandatory ignition interlock requirements. At Jwayyed Law LLC, we provide experienced defense representation for third OVI charges under Ohio Revised Code 4511.19 as amended by HB 37 (effective April 2025). Our attorney understands the severe consequences of multiple OVI convictions and defense strategies necessary to protect your rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Third OVI charges are treated as serious felonies under Ohio law, and prosecutors aggressively pursue these charges. A third OVI within 6 years of two prior OVI convictions is charged as a fourth-degree felony, carrying mandatory prison time and permanent felony records. Understanding the enhanced penalties, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced felony OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
+              Third OVI charges are treated very seriously under Ohio law, and prosecutors aggressively pursue these charges. While a third OVI within 10 years remains a misdemeanor, penalties are substantially enhanced compared to first and second offenses. A fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. Understanding the enhanced penalties, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The legal process for third OVI charges involves both criminal court proceedings in Common Pleas Court (felony cases) and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences.
+              The legal process for third OVI charges involves both criminal court proceedings in Municipal Court (third OVI is a first-degree misdemeanor) and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Third OVI Penalties and Consequences in Ohio</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Under Ohio Revised Code 4511.19, third OVI convictions carry severe felony penalties:
+              Under Ohio Revised Code 4511.19, third OVI convictions carry severe penalties:
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Penalties</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Criminal Penalties (Current 2026 Ohio Law - HB 37)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                <li><strong>Classification:</strong> First-degree misdemeanor (not a felony until 4th offense)</li>
                 <li><strong>Jail:</strong> 30 days to 1 year (minimum 30 days mandatory, cannot be suspended)</li>
-                <li><strong>Fines:</strong> $850 to $2,750 plus court costs</li>
+                <li><strong>Fines:</strong> $1,040 to $2,750 (minimum increased from $850 under HB 37) plus court costs</li>
                 <li><strong>License Suspension:</strong> 2 to 12 years (significantly longer than first or second offenses)</li>
-                <li><strong>Vehicle Immobilization:</strong> 180 days or forfeiture</li>
-                <li><strong>Felony Criminal Record:</strong> Permanent fourth-degree felony record</li>
+                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475)</li>
+                <li><strong>Vehicle Forfeiture:</strong> Criminal forfeiture of vehicle (per ORC 4511.19)</li>
+                <li><strong>Criminal Record:</strong> Permanent first-degree misdemeanor record (4th offense becomes felony)</li>
                 <li><strong>Mandatory Alcohol Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
                 <li><strong>Post-Release Control:</strong> Mandatory supervision after release from jail</li>
               </ul>
@@ -95,7 +97,7 @@ export default function ThirdOVIPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Collateral Consequences</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Beyond criminal penalties, third OVI felony convictions create lasting consequences including employment barriers (many employers refuse to hire individuals with felony OVI convictions), professional license restrictions, housing difficulties, dramatically increased insurance rates (often 4-5x higher for 7-10 years), permanent felony record, permanent loss of gun rights under federal law, immigration consequences for non-citizens, and voting restrictions until restoration. These consequences persist long after completing sentences.
+                Beyond criminal penalties, third OVI convictions create lasting consequences including employment barriers (many employers are reluctant to hire individuals with multiple OVI convictions), professional license restrictions, housing difficulties, dramatically increased insurance rates (often 3-4x higher for 5-7 years), permanent criminal record, potential immigration consequences for non-citizens, and difficulty obtaining commercial driver's licenses. These consequences persist long after completing sentences.
               </p>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Legal Process for Third OVI Charges</h3>
@@ -112,9 +114,9 @@ export default function ThirdOVIPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Court Process (Common Pleas Court)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Criminal Court Process (Municipal Court)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Third OVI cases are heard in Common Pleas Court as felony cases. The process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome while simultaneously handling the ALS appeal.
+                Third OVI cases are heard in Municipal Court (first-degree misdemeanor). The process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome while simultaneously handling the ALS appeal.
               </p>
             </div>
 
@@ -174,7 +176,7 @@ export default function ThirdOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated third OVI felony defense representation in Columbus, Franklin County, and throughout Ohio. We understand that felony OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and freedom.
+              Our firm provides dedicated third OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that third OVI charges carry severe penalties and require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -182,7 +184,7 @@ export default function ThirdOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing third OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing third OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

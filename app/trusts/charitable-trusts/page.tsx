@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: 'What are the tax benefits of charitable trusts in Ohio?',
-    answer: 'Charitable trusts offer several tax benefits, including income tax deductions for charitable donations and potential estate tax benefits. In Ohio, charitable trusts can reduce taxable estates, helping individuals pass on more of their wealth to loved ones while supporting charitable causes.',
+    answer: 'Charitable trusts offer several tax benefits, including income tax deductions for charitable donations and potential federal estate tax benefits. Note: Ohio has no state estate tax (repealed January 1, 2013). Charitable trusts can reduce federal taxable estates, helping individuals pass on more of their wealth to loved ones while supporting charitable causes.',
   },
   {
     question: 'How can a charitable trust help my estate planning?',
@@ -56,7 +56,7 @@ export default function CharitableTrustsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Charitable Trusts in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Charitable trusts in Columbus, Ohio, allow individuals to support charitable causes while achieving tax benefits. These trusts are designed to provide a way to donate assets to charity in a structured manner while potentially reducing estate taxes. At Jwayyed Law LLC, we can guide you through the process of establishing a charitable trust in Ohio to ensure that your philanthropic goals align with your estate planning needs.
+              Charitable trusts in Columbus, Ohio, allow individuals to support charitable causes while achieving tax benefits. These trusts are designed to provide a way to donate assets to charity in a structured manner while potentially reducing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. At Jwayyed Law LLC, we can guide you through the process of establishing a charitable trust in Ohio to ensure that your philanthropic goals align with your estate planning needs.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Charitable Trusts</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

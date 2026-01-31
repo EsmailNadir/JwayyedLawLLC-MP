@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is a QTIP trust?',
-    answer: 'A QTIP trust (Qualified Terminable Interest Property Trust) is an estate planning tool that allows the grantor to provide income to their spouse during their lifetime while preserving the principal for other beneficiaries (usually children) after the spouse’s death. This trust can be used to minimize estate taxes while ensuring a surviving spouse is cared for.',
+    answer: 'A QTIP trust (Qualified Terminable Interest Property Trust) is an estate planning tool that allows the grantor to provide income to their spouse during their lifetime while preserving the principal for other beneficiaries (usually children) after the spouse’s death. This trust can be used to minimize federal estate taxes while ensuring a surviving spouse is cared for.',
   },
   {
     question: 'How does a QTIP trust work in Ohio?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'How is a QTIP trust different from other types of trusts?',
-    answer: 'Unlike a typical revocable living trust, which allows full control over assets during the grantor’s lifetime, a QTIP trust is irrevocable and specifically designed to benefit the surviving spouse during their lifetime while preserving assets for other heirs. It also provides significant estate tax benefits.',
+    answer: 'Unlike a typical revocable living trust, which allows full control over assets during the grantor’s lifetime, a QTIP trust is irrevocable and specifically designed to benefit the surviving spouse during their lifetime while preserving assets for other heirs. It also provides significant federal estate tax benefits.',
   },
   {
     question: 'Do I need an attorney to set up a QTIP trust?',
@@ -62,7 +62,7 @@ export default function QTIPTrustsPage() {
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Income for Spouse:</strong> The surviving spouse receives income from the trust during their lifetime.</li>
               <li><strong>Remainder to Heirs:</strong> After the spouse’s death, the remaining assets are passed on to other designated beneficiaries.</li>
-              <li><strong>Estate Tax Benefits:</strong> The QTIP trust provides estate tax benefits by qualifying for the marital deduction, deferring taxes until the surviving spouse’s death.</li>
+              <li><strong>Estate Tax Benefits:</strong> The QTIP trust provides federal estate tax benefits by qualifying for the marital deduction, deferring taxes until the surviving spouse’s death.</li>
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

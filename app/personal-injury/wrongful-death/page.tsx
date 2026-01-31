@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is wrongful death in Ohio?',
-    answer: 'Wrongful death under Ohio Revised Code Chapter 2125 occurs when someone\'s death is caused by another person\'s negligence, recklessness, or intentional misconduct. Wrongful death claims may arise from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse, defective products, and other incidents. Wrongful death claims are filed by the personal representative of the deceased person\'s estate on behalf of surviving family members.',
+    answer: 'Wrongful death under Ohio Revised Code Chapter 2125 (current as of 2026) occurs when someone\'s death is caused by another person\'s negligence, recklessness, or intentional misconduct. Wrongful death claims may arise from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse, defective products, and other incidents. Wrongful death claims are filed by the personal representative of the deceased person\'s estate on behalf of surviving family members.',
   },
   {
     question: 'Who can file a wrongful death claim in Ohio?',
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a wrongful death attorney?',
-    answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and provide schedule consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+    answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and offer consultations. Experienced representation is essential to protect your rights and maximize recovery.',
   },
 ];
 
@@ -163,7 +163,7 @@ export default function WrongfulDeathPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
+              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
             </p>
           </div>
         </div>

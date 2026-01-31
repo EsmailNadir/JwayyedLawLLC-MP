@@ -33,7 +33,7 @@ export default function EstatePlanningWillsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Estate Planning & Wills in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Estate planning and wills in Columbus or throughout Ohio involve creating legal documents to protect your assets, provide for your loved ones, and ensure your wishes are carried out after your death. At Jwayyed Law LLC, we provide experienced assistance with estate planning and wills under Ohio Revised Code Chapter 2107. Our attorney understands estate planning law and can help you create a comprehensive estate plan including wills, trusts, and powers of attorney.
+              Estate planning and wills in Columbus or throughout Ohio involve creating legal documents to protect your assets, provide for your loved ones, and ensure your wishes are carried out after your death. At Jwayyed Law LLC, we provide experienced assistance with estate planning and wills under Ohio Revised Code Chapter 2107 (current as of 2026). Our attorney understands estate planning law and can help you create a comprehensive estate plan including wills, trusts, and powers of attorney.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

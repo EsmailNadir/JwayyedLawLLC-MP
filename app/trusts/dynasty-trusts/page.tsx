@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'How does a dynasty trust work in Ohio?',
-    answer: 'In Ohio, a dynasty trust can last indefinitely, or for up to 90 years, depending on state laws. It allows you to transfer assets to future generations without triggering estate taxes at each generational level, thus preserving family wealth.',
+    answer: 'In Ohio, a dynasty trust can last indefinitely, or for up to 90 years, depending on state laws. It allows you to transfer assets to future generations without triggering federal estate taxes at each generational level, thus preserving family wealth.',
   },
   {
     question: 'What are the benefits of a dynasty trust?',
@@ -56,11 +56,11 @@ export default function DynastyTrustsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Dynasty Trusts in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Dynasty trusts are an effective tool for passing wealth across generations while minimizing estate taxes. In Ohio, these trusts can provide a secure way to protect and grow family assets over time. Jwayyed Law LLC can guide you through the process of setting up a dynasty trust to ensure your wealth is preserved and passed on according to your wishes.
+              Dynasty trusts are an effective tool for passing wealth across generations while minimizing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. In Ohio, these trusts can provide a secure way to protect and grow family assets over time. Jwayyed Law LLC can guide you through the process of setting up a dynasty trust to ensure your wealth is preserved and passed on according to your wishes.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How Dynasty Trusts Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
-              <li><strong>Wealth Transfer:</strong> Dynasty trusts allow you to transfer wealth to your heirs over multiple generations without incurring estate taxes.</li>
+              <li><strong>Wealth Transfer:</strong> Dynasty trusts allow you to transfer wealth to your heirs over multiple generations without incurring federal estate taxes.</li>
               <li><strong>Asset Protection:</strong> These trusts offer protection from creditors, ensuring your assets remain within the family.</li>
               <li><strong>Long-Term Legacy:</strong> Dynasty trusts can last for decades or even centuries, preserving your legacy for future generations.</li>
             </ul>

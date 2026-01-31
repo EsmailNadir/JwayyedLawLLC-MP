@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need an eviction attorney?',
-    answer: 'Eviction proceedings move quickly and require experienced representation. Eviction attorneys understand Ohio eviction law, can protect tenant rights, defend against eviction, handle eviction proceedings for landlords, negotiate settlements, and represent you in court. Most attorneys work on hourly fee arrangements and provide schedule consultations. Experienced representation is essential to protect your rights.',
+    answer: 'Eviction proceedings move quickly and require experienced representation. Eviction attorneys understand Ohio eviction law, can protect tenant rights, defend against eviction, handle eviction proceedings for landlords, negotiate settlements, and represent you in court. Most attorneys work on hourly fee arrangements and offer consultations. Experienced representation is essential to protect your rights.',
   },
 ];
 
@@ -155,7 +155,7 @@ export default function EvictionsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing eviction proceedings in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
+              If you are facing eviction proceedings in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
             </p>
           </div>
         </div>

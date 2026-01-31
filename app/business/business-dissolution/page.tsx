@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is business dissolution in Ohio?',
-    answer: 'Business dissolution under Ohio Revised Code involves formally closing a business entity by filing dissolution documents with the Ohio Secretary of State, settling business debts and obligations, distributing remaining assets to owners, canceling licenses and permits, filing final tax returns, and complying with all winding-up requirements. Proper dissolution protects owners from ongoing liabilities.',
+    answer: 'Business dissolution under Ohio Revised Code (current as of 2026) involves formally closing a business entity by filing dissolution documents with the Ohio Secretary of State, settling business debts and obligations, distributing remaining assets to owners, canceling licenses and permits, filing final tax returns, and complying with all winding-up requirements. Proper dissolution protects owners from ongoing liabilities.',
   },
   {
     question: 'How do I dissolve a business in Ohio?',

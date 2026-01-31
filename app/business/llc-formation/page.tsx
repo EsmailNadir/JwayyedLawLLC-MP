@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is an LLC in Ohio?',
-    answer: 'A Limited Liability Company (LLC) under Ohio Revised Code Chapter 1705 is a business structure that provides liability protection for owners (members) while offering flexibility in management and taxation. LLCs are popular because they combine the liability protection of corporations with the tax flexibility of partnerships. LLC members are generally not personally liable for business debts and obligations.',
+    answer: 'A Limited Liability Company (LLC) under Ohio Revised Code Chapter 1706 is a business structure that provides liability protection for owners (members) while offering flexibility in management and taxation. LLCs are popular because they combine the liability protection of corporations with the tax flexibility of partnerships. LLC members are generally not personally liable for business debts and obligations.',
   },
   {
     question: 'How do I form an LLC in Ohio?',
@@ -56,7 +56,7 @@ export default function LLCFormationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding LLC Formation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              LLC formation in Columbus or throughout Ohio requires filing Articles of Organization with the Ohio Secretary of State and complying with state requirements. At Jwayyed Law LLC, we provide experienced assistance with LLC formation under Ohio Revised Code Chapter 1705. Our attorney understands LLC law and can help you form your LLC correctly and protect your interests.
+              LLC formation in Columbus or throughout Ohio requires filing Articles of Organization with the Ohio Secretary of State and complying with state requirements. At Jwayyed Law LLC, we provide experienced assistance with LLC formation under Ohio Revised Code Chapter 1706. Our attorney understands LLC law and can help you form your LLC correctly and protect your interests.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -125,7 +125,7 @@ export default function LLCFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are forming an LLC in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
+              If you are forming an LLC in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
             </p>
           </div>
         </div>

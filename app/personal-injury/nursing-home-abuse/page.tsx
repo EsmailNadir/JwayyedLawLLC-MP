@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for nursing home abuse claims?',
-    answer: 'Under Ohio Revised Code 2305.10, the statute of limitations for nursing home abuse personal injury claims in Ohio is generally 2 years from the date of injury. However, exceptions may apply for discovery of abuse. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Under Ohio Revised Code 2305.10, the statute of limitations for nursing home abuse personal injury claims in Ohio is generally 2 years from the date of injury. Claims involving medical diagnosis, care, or treatment may be subject to the medical malpractice statute of limitations (ORC 2305.113: 1 year from accrual, 4-year repose). Exceptions may apply for discovery of abuse. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a nursing home abuse attorney?',
-    answer: 'Nursing home abuse cases are complex and require experienced representation. Nursing home abuse attorneys understand nursing home regulations, can investigate facilities and staff, handle complex litigation, and maximize compensation for vulnerable residents. Most attorneys work on a contingency fee basis and provide schedule consultations.',
+    answer: 'Nursing home abuse cases are complex and require experienced representation. Nursing home abuse attorneys understand nursing home regulations, can investigate facilities and staff, handle complex litigation, and maximize compensation for vulnerable residents. Most attorneys work on a contingency fee basis and offer consultations.',
   },
 ];
 

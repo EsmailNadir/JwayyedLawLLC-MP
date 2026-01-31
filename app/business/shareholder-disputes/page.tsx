@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a shareholder disputes attorney?',
-    answer: 'Shareholder disputes are complex and require experienced representation. Shareholder disputes attorneys understand corporate law, can identify breaches of fiduciary duties, protect minority shareholder rights, negotiate resolutions, and represent shareholders in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Shareholder disputes are complex and require experienced representation. Shareholder disputes attorneys understand corporate law, can identify breaches of fiduciary duties, protect minority shareholder rights, negotiate resolutions, and represent shareholders in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
 ];
 

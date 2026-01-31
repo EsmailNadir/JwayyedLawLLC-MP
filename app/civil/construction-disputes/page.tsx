@@ -31,11 +31,11 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for construction disputes?',
-    answer: 'Statute of limitations for construction disputes in Ohio vary by claim type: Breach of construction contract: 15 years for written contracts, 6 years for oral contracts. Construction defects: Generally 10 years from completion. Property damage: 4 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Statute of limitations for construction disputes in Ohio vary by claim type: Breach of construction contract: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Construction defects: Generally 10 years from completion. Property damage: 4 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a construction disputes attorney?',
-    answer: 'Construction disputes are complex and require experienced representation. Construction attorneys understand construction law, can analyze construction contracts, resolve mechanic\'s liens, handle payment disputes, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Construction disputes are complex and require experienced representation. Construction attorneys understand construction law, can analyze construction contracts, resolve mechanic\'s liens, handle payment disputes, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
     question: 'Can construction disputes be resolved through mediation?',

@@ -37,19 +37,19 @@ export default function EstatePlanningPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Estate Planning Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/estate-planning/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Estate Planning & Wills</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Comprehensive estate planning and will preparation</p>
               </Link>
-              <Link href="/other-services/estate-planning/trusts" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/trusts" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Trust creation and administration</p>
               </Link>
-              <Link href="/other-services/estate-planning/powers-of-attorney" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/powers-of-attorney" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Powers of Attorney</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Financial and healthcare powers of attorney</p>
               </Link>
-              <Link href="/other-services/estate-planning/guardianships" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/guardianships" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Guardianships</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Guardianship establishment and administration</p>
               </Link>

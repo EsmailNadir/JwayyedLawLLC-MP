@@ -33,15 +33,15 @@ export default function DisputeResolutionPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Dispute Resolution in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Dispute resolution in Columbus or throughout Ohio offers alternative methods to resolve conflicts without litigation, including mediation and arbitration. At Jwayyed Law LLC, we provide experienced assistance with dispute resolution under Ohio Revised Code. Our attorney understands alternative dispute resolution and can help you resolve conflicts efficiently.
+              Dispute resolution in Columbus or throughout Ohio offers alternative methods to resolve conflicts without litigation, including mediation and arbitration. At Jwayyed Law LLC, we provide experienced assistance with dispute resolution under Ohio Revised Code (current as of 2026). Our attorney understands alternative dispute resolution and can help you resolve conflicts efficiently.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Dispute Resolution Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/dispute-resolution/mediation" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/mediation" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Mediation</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Facilitated negotiation to resolve disputes</p>
               </Link>
-              <Link href="/other-services/dispute-resolution/arbitration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/arbitration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Arbitration</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Private dispute resolution with binding decisions</p>
               </Link>

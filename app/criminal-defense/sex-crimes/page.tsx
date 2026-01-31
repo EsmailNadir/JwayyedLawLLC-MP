@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for sex crimes in Ohio?',
-    answer: 'Sex crime penalties in Ohio depend on the specific offense and circumstances. Rape (ORC 2907.02) is a first-degree felony punishable by 3-11 years to life imprisonment and fines up to $20,000. Sexual battery (ORC 2907.03) is a third-degree felony punishable by 1-5 years imprisonment and fines up to $10,000. Prior convictions, use of force, or offenses involving minors carry enhanced penalties including mandatory life imprisonment in some cases.',
+    answer: 'Sex crime penalties in Ohio depend on the specific offense and circumstances. Rape (ORC 2907.02) is a first-degree felony punishable by 3-11 years indefinite imprisonment and fines up to $20,000. Sexual battery (ORC 2907.03) is a third-degree felony punishable by 9-36 months imprisonment and fines up to $10,000. Prior convictions, use of force, or offenses involving minors carry enhanced penalties including mandatory life imprisonment in some cases.',
   },
   {
     question: 'What is Ohio\'s sex offender registration requirement?',
@@ -78,14 +78,14 @@ export default function SexCrimesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Rape (ORC 2907.02)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Rape is a first-degree felony punishable by 3-11 years to life imprisonment, fines up to $20,000, mandatory post-release control, and mandatory sex offender registration. Prior convictions, use of force, or offenses involving minors carry enhanced penalties including mandatory life imprisonment in some cases.
+                Rape is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000, mandatory post-release control, and mandatory sex offender registration. Prior convictions, use of force, or offenses involving minors carry enhanced penalties including mandatory life imprisonment in some cases.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Sexual Battery (ORC 2907.03)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Sexual battery is a third-degree felony punishable by 1-5 years imprisonment, fines up to $10,000, mandatory post-release control, and mandatory sex offender registration. Prior convictions or offenses involving minors carry enhanced penalties.
+                Sexual battery is a third-degree felony punishable by 9-36 months imprisonment, fines up to $10,000, mandatory post-release control, and mandatory sex offender registration. Prior convictions or offenses involving minors carry enhanced penalties.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ export default function SexCrimesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing sex crime charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in sex crime cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing sex crime charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in sex crime cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

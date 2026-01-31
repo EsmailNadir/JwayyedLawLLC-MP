@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are limited driving privileges in Ohio?',
-    answer: 'Limited driving privileges under Ohio Revised Code 4511.191 allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, medical appointments, and necessary activities. Limited privileges typically require ignition interlock devices and restrict driving to specific times, locations, and purposes. Eligibility depends on offense type, prior record, and court approval.',
+    answer: 'Limited driving privileges under Ohio Revised Code 4511.191 (as amended by HB 37, effective April 2025) allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, medical appointments, and necessary activities. For first OVI offenders who test over the legal limit with no prior alcohol arrests, judges can now waive the 15-day waiting period and grant privileges immediately. Limited privileges typically require ignition interlock devices and restrict driving to specific times, locations, and purposes. Eligibility depends on offense type, prior record, and court approval.',
   },
   {
     question: 'Who is eligible for limited driving privileges in Ohio?',
@@ -56,15 +56,19 @@ export default function LimitedDrivingPrivilegesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Limited Driving Privileges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Limited driving privileges in Columbus or throughout Ohio allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, and necessary activities. At Jwayyed Law LLC, we provide experienced assistance with limited driving privileges under Ohio Revised Code 4511.191. Our attorney understands the requirements and process necessary to obtain limited privileges and help you get back on the road legally.
+              Limited driving privileges in Columbus or throughout Ohio allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, and necessary activities. At Jwayyed Law LLC, we provide experienced assistance with limited driving privileges under Ohio Revised Code 4511.191 as amended by HB 37 (effective April 2025). Under the new law, judges can now waive the 15-day waiting period for first OVI offenders who test over the legal limit with no prior alcohol arrests, allowing immediate privileges. Our attorney understands the requirements and process necessary to obtain limited privileges and help you get back on the road legally.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Limited Driving Privileges Requirements</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4">Waiting Periods Under HB 37 (Effective April 2025)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>Eligibility based on offense type and prior record</li>
-                <li>Completion of required waiting periods</li>
-                <li>Proof of insurance and payment of fees</li>
-                <li>Installation of ignition interlock device</li>
+                <li><strong>First OVI (test over, no prior alcohol arrests):</strong> 15-day waiting period may be waived by judge</li>
+                <li><strong>First OVI (refusal):</strong> 30-day waiting period (cannot be waived)</li>
+                <li><strong>Second OVI (test over):</strong> 45-day waiting period, mandatory ignition interlock</li>
+                <li><strong>Second OVI (refusal):</strong> 90-day waiting period, mandatory ignition interlock</li>
+                <li><strong>Third OVI:</strong> 180-day waiting period, mandatory ignition interlock</li>
+                <li><strong>Fourth OVI (felony):</strong> 3-year waiting period</li>
+                <li>Proof of insurance and payment of reinstatement fee ($315)</li>
                 <li>Court approval and compliance with all conditions</li>
               </ul>
             </div>

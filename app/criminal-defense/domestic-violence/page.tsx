@@ -237,14 +237,14 @@ export default function DomesticViolencePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing domestic violence charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including protection order challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in domestic violence cases—protection orders can be issued immediately, and early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing domestic violence charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including protection order challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in domestic violence cases—protection orders can be issued immediately, and early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
               <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
               <div className="flex flex-wrap gap-3 font-['Inter',_'Arial',_sans-serif]">
                 <Link href="/criminal-defense/assault-charges" className="text-orange-500 hover:underline">Assault Defense</Link>
-                <Link href="/criminal-defense/protection-orders" className="text-orange-500 hover:underline">Protection Orders</Link>
+                <Link href="/civil/civil-protection-orders" className="text-orange-500 hover:underline">Civil Protection Orders</Link>
                 <Link href="/criminal-defense/expungement-record-sealing" className="text-orange-500 hover:underline">Record Sealing</Link>
               </div>
             </div>

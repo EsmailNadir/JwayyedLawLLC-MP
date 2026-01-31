@@ -6,7 +6,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up irrevocable life insurance trusts (ILITs) to protect life insurance proceeds and reduce estate taxes in Ohio. Schedule a consultation: (614) 285-5482',
+  description: 'Experienced Columbus attorney helping you set up irrevocable life insurance trusts (ILITs) to protect life insurance proceeds and reduce federal estate taxes. Ohio has no state estate tax. Schedule a consultation: (614) 285-5482',
   keywords: ['irrevocable life insurance trust Columbus OH', 'ILIT attorney Ohio', 'life insurance trust lawyer', 'estate planning Ohio'],
   openGraph: {
     title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Columbus, OH | Jwayyed Law LLC',
@@ -49,14 +49,14 @@ export default function IrrevocableLifeInsuranceTrustsPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Irrevocable Life Insurance Trusts Lawyer in Columbus, OH"
-        description="Helping you establish irrevocable life insurance trusts to protect your assets and reduce estate taxes in Ohio."
+        description="Helping you establish irrevocable life insurance trusts to protect your assets and reduce federal estate taxes. Ohio has no state estate tax."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Irrevocable Life Insurance Trusts in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An Irrevocable Life Insurance Trust (ILIT) is an estate planning tool used to hold a life insurance policy and keep its proceeds outside of your taxable estate. This helps reduce estate taxes while ensuring that your beneficiaries are provided for in Ohio. Let Jwayyed Law LLC guide you through the process of creating an ILIT that aligns with your estate planning goals.
+              An Irrevocable Life Insurance Trust (ILIT) is an estate planning tool used to hold a life insurance policy and keep its proceeds outside of your taxable estate. This helps reduce federal estate taxes while ensuring that your beneficiaries are provided for. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to estates exceeding the federal exemption. Let Jwayyed Law LLC guide you through the process of creating an ILIT that aligns with your estate planning goals.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How ILITs Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

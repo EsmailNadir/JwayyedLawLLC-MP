@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for OVI with accident in Ohio?',
-    answer: 'OVI with accident in Ohio under ORC 4511.19 carries enhanced penalties including mandatory jail time, higher fines, longer license suspensions, and potential additional charges for causing injury or property damage. OVI accidents can also result in civil liability for damages and injuries. An experienced OVI accident attorney can help protect your rights and minimize consequences.',
+    answer: 'OVI with accident in Ohio under ORC 4511.19 (as amended by HB 37, effective April 2025) carries enhanced penalties including mandatory jail time, fines starting at $565 (first offense), longer license suspensions, and potential additional charges for causing injury or property damage. If serious physical harm results, charges can escalate to aggravated vehicular assault (F-3 or F-4) or aggravated vehicular homicide (F-1 or F-2) with prison terms up to 20 years for repeat offenders. OVI accidents can also result in civil liability for damages and injuries. An experienced OVI accident attorney can help protect your rights and minimize consequences.',
   },
   {
     question: 'Can I face additional charges for OVI with accident?',

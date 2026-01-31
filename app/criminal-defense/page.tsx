@@ -236,9 +236,9 @@ export default function CriminalDefensePage() {
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felony Penalties in Ohio</h4>
               <ul className="space-y-2 text-gray-700">
-                <li><strong>First Degree Felony:</strong> 3-11 years to life imprisonment, fines up to $20,000</li>
-                <li><strong>Second Degree Felony:</strong> 2-8 years imprisonment, fines up to $15,000</li>
-                <li><strong>Third Degree Felony:</strong> 1-5 years imprisonment, fines up to $10,000</li>
+                <li><strong>First Degree Felony (F-1):</strong> 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000</li>
+                <li><strong>Second Degree Felony (F-2):</strong> 2-8 years indefinite imprisonment (for offenses after March 22, 2019), fines up to $15,000</li>
+                <li><strong>Third Degree Felony (F-3):</strong> 9-36 months imprisonment, fines up to $10,000</li>
                 <li><strong>Fourth Degree Felony:</strong> 6-18 months imprisonment, fines up to $5,000</li>
                 <li><strong>Fifth Degree Felony:</strong> 6-12 months imprisonment, fines up to $2,500</li>
               </ul>
@@ -321,7 +321,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal charges in Columbus, Franklin County, or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing criminal charges in Columbus, Franklin County, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

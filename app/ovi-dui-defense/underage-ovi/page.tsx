@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is underage OVI in Ohio?',
-    answer: 'Underage OVI under Ohio Revised Code 4511.19 applies to drivers under 21 years old with any detectable amount of alcohol in their system. Ohio has a zero-tolerance policy for underage drinking and driving. Even BAC below 0.08% can result in OVI charges for underage drivers. Underage OVI carries severe penalties including license suspension, fines, and mandatory alcohol treatment.',
+    answer: 'Underage OVI/OVUAC under Ohio Revised Code 4511.19 applies to drivers under 21 years old. Ohio has a zero-tolerance policy with a BAC limit of 0.02% for drivers under 21. BAC between 0.02%-0.08% results in OVUAC (Operating a Vehicle After Underage Consumption) charges, a fourth-degree misdemeanor. BAC of 0.08% or higher results in full OVI charges with adult penalties. Underage OVI/OVUAC carries severe penalties including license suspension (90 days to 2 years), fines up to $250 (first offense), and mandatory alcohol treatment.',
   },
   {
     question: 'What are the penalties for underage OVI in Ohio?',

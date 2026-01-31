@@ -31,11 +31,11 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for landlord-tenant disputes?',
-    answer: 'Statute of limitations for landlord-tenant disputes in Ohio vary by claim type: Breach of lease: 15 years for written leases, 6 years for oral leases. Property damage: 4 years. Security deposit disputes: Generally 2 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Statute of limitations for landlord-tenant disputes in Ohio vary by claim type: Breach of lease: 6 years for written leases, 4 years for oral leases (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years (ORC 2305.09). Security deposit disputes: Generally 2 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a landlord-tenant attorney?',
-    answer: 'Landlord-tenant disputes can be complex and require experienced representation. Landlord-tenant attorneys understand Ohio landlord-tenant law, can protect tenant rights, handle eviction proceedings, negotiate disputes, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Landlord-tenant disputes can be complex and require experienced representation. Landlord-tenant attorneys understand Ohio landlord-tenant law, can protect tenant rights, handle eviction proceedings, negotiate disputes, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
     question: 'Can landlords evict tenants without court proceedings?',
@@ -64,7 +64,7 @@ export default function LandlordTenantDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for landlord-tenant disputes in Ohio varies by claim type: breach of lease (15 years for written leases, 6 years for oral leases), property damage (4 years), and security deposit disputes (generally 2 years). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
+              The statute of limitations for landlord-tenant disputes in Ohio varies by claim type: breach of lease (6 years for written leases, 4 years for oral leases under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and security deposit disputes (generally 2 years). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Landlord-Tenant Disputes</h3>
 
@@ -122,7 +122,7 @@ export default function LandlordTenantDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a landlord-tenant dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a landlord-tenant dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

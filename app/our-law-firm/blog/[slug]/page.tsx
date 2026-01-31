@@ -7,36 +7,39 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 const blogPosts: Record<string, any> = {
   'understanding-ohio-ovi-penalties-comprehensive-guide': {
     title: 'Understanding Ohio OVI Penalties: A Comprehensive Guide',
-    date: '2024-01-15',
+    date: '2026-01-15',
     category: 'OVI/DUI Defense',
     excerpt: 'Learn about Ohio OVI penalties, including jail time, fines, and license suspension for first, second, and third offenses.',
     content: `
       <p>Ohio Operating a Vehicle Impaired (OVI) charges carry severe penalties that escalate with each subsequent offense. Understanding these penalties is crucial for anyone facing OVI charges in Ohio.</p>
       
-      <h2>First OVI Offense in Ohio</h2>
-      <p>Under Ohio Revised Code 4511.19, a first OVI offense is typically a first-degree misdemeanor. Penalties include:</p>
+      <h2>First OVI Offense in Ohio (Current 2026 Ohio Law - HB 37)</h2>
+      <p>Under Ohio Revised Code 4511.19 as amended by HB 37 (Liv's Law, effective April 2025), a first OVI offense is typically a first-degree misdemeanor. Current penalties include:</p>
       <ul>
-        <li>Jail time: 3 days to 6 months</li>
-        <li>Fines: $375 to $1,075</li>
+        <li>Jail time: 3 days to 6 months (or 3-day Driver Intervention Program)</li>
+        <li>Fines: $565 to $1,075 (minimum increased from $375)</li>
         <li>License suspension: 1 to 3 years</li>
+        <li>License reinstatement fee: $315 (reduced from $475)</li>
         <li>Vehicle immobilization: 90 days</li>
         <li>Alcohol treatment program</li>
+        <li>Limited privileges: 15-day waiting period may be waived by judge</li>
       </ul>
       
-      <h2>Second OVI Offense</h2>
-      <p>Second OVI offenses carry enhanced penalties:</p>
+      <h2>Second OVI Offense (Within 10 Years)</h2>
+      <p>Second OVI offenses carry enhanced penalties under HB 37:</p>
       <ul>
         <li>Jail time: 10 days to 6 months (minimum 10 days mandatory)</li>
-        <li>Fines: $525 to $1,625</li>
+        <li>Fines: $715 to $1,625 (minimum increased from $525)</li>
+        <li>Ignition interlock device: Mandatory for limited driving privileges</li>
         <li>License suspension: 1 to 7 years</li>
-        <li>Vehicle immobilization: 180 days</li>
+        <li>Vehicle immobilization: 90 days</li>
       </ul>
       
-      <h2>Third OVI Offense</h2>
-      <p>Third OVI offenses may be charged as felonies with severe consequences:</p>
+      <h2>Third OVI Offense (Within 10 Years)</h2>
+      <p>Third OVI offenses are first-degree misdemeanors with severe consequences (fourth OVI within 10 years becomes a felony):</p>
       <ul>
         <li>Jail time: 30 days to 1 year (minimum 30 days mandatory)</li>
-        <li>Fines: $850 to $2,750</li>
+        <li>Fines: $1,040 to $2,750 (minimum increased from $850)</li>
         <li>License suspension: 2 to 12 years</li>
         <li>Vehicle forfeiture possible</li>
       </ul>

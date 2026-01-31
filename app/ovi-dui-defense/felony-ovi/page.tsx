@@ -23,11 +23,11 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What makes an OVI a felony in Ohio?',
-    answer: 'OVI becomes a felony in Ohio under ORC 4511.19 when: it is a third or subsequent OVI within 6 years, it is a fourth or subsequent OVI within 20 years, or it involves additional serious circumstances such as causing serious physical harm. Felony OVI convictions carry substantial prison time, large fines, and permanent felony records affecting employment, housing, and opportunities.',
+    answer: 'OVI becomes a fourth-degree felony (F-4) in Ohio under ORC 4511.19 when: it is a fourth or subsequent OVI within 10 years, it is a fifth or subsequent OVI within 20 years, or it involves additional serious circumstances such as causing serious physical harm (aggravated vehicular assault/homicide). Note: A third OVI within 10 years is still a misdemeanor. Felony OVI convictions carry substantial prison time (60 days to 30 months), large fines ($1,540-$10,500), and permanent felony records affecting employment, housing, and opportunities.',
   },
   {
     question: 'What are the penalties for felony OVI in Ohio?',
-    answer: 'Felony OVI penalties in Ohio depend on offense level: Third OVI is a fourth-degree felony (30 days to 1 year jail, fines $850-$2,750). Fourth OVI is a fourth-degree felony with enhanced penalties. Fifth or subsequent OVI is a fourth-degree felony with mandatory prison time. All felony OVI convictions result in permanent felony records and substantial consequences.',
+    answer: 'Felony OVI (fourth-degree felony F-4) penalties in Ohio under HB 37 (effective April 2025): Fourth OVI within 10 years carries 60 days to 30 months prison (minimum 60 days mandatory), fines $1,540-$10,500, license suspension 3 years to life, mandatory vehicle forfeiture, mandatory ignition interlock device, and 3-year waiting period for limited driving privileges. All felony OVI convictions result in permanent felony records and substantial consequences including loss of gun rights.',
   },
   {
     question: 'Can felony OVI charges be reduced?',
@@ -60,7 +60,7 @@ export default function FelonyOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI becomes a felony in Ohio when it is a third or subsequent OVI within 6 years, a fourth or subsequent OVI within 20 years, or involves additional serious circumstances such as causing serious physical harm. Felony OVI convictions carry substantial prison time, large fines, and permanent felony records affecting employment, housing, and opportunities. Understanding the enhanced penalties, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced felony OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
+              OVI becomes a fourth-degree felony (F-4) in Ohio when it is a fourth or subsequent OVI within 10 years, a fifth or subsequent OVI within 20 years, or involves additional serious circumstances such as causing serious physical harm (aggravated vehicular assault/homicide). Under HB 37 (effective April 2025; current 2026 Ohio law), felony OVI convictions carry substantial prison time (60 days to 30 months), large fines ($1,540-$10,500), and permanent felony records affecting employment, housing, gun rights, and opportunities. Understanding the enhanced penalties, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced felony OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -73,23 +73,34 @@ export default function FelonyOVIPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Third OVI (Fourth-Degree Felony)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Fourth OVI Within 10 Years (Fourth-Degree Felony F-4) - Current 2026 Ohio Law (HB 37)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Third OVI within 6 years of two prior OVI convictions is charged as a fourth-degree felony punishable by 30 days to 1 year jail (minimum 30 days mandatory), fines $850-$2,750, license suspension 2-12 years, vehicle immobilization 180 days or forfeiture, mandatory alcohol treatment, and permanent felony record.
+                Fourth OVI within 10 years is charged as a fourth-degree felony (F-4) punishable by:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                <li><strong>Prison:</strong> 60 days to 30 months (minimum 60 days mandatory)</li>
+                <li><strong>Fines:</strong> $1,540 to $10,500 (increased under HB 37)</li>
+                <li><strong>License Suspension:</strong> 3 years to life</li>
+                <li><strong>License Reinstatement Fee:</strong> $315</li>
+                <li><strong>Vehicle Forfeiture:</strong> Mandatory permanent forfeiture</li>
+                <li><strong>Ignition Interlock:</strong> Mandatory if limited privileges granted</li>
+                <li><strong>Limited Privileges Waiting Period:</strong> 3 years</li>
+                <li><strong>Restricted Plates:</strong> Mandatory yellow license plates</li>
+                <li><strong>Permanent Felony Record:</strong> Loss of gun rights, voting restrictions, employment barriers</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Fifth or Subsequent OVI Within 20 Years (Fourth-Degree Felony F-4)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                Fifth or subsequent OVI within 20 years carries the same fourth-degree felony penalties as a fourth OVI within 10 years: 60 days to 30 months prison, fines $1,540-$10,500, license suspension 3 years to life, mandatory vehicle forfeiture, and permanent felony record.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Fourth OVI (Fourth-Degree Felony)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Enhanced Felony OVI Penalties (High BAC or Refusal)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Fourth OVI within 6 years of three prior OVI convictions is charged as a fourth-degree felony with enhanced penalties including 60 days to 1 year jail (minimum 60 days mandatory), higher fines, longer license suspensions (3-15 years), enhanced vehicle immobilization or forfeiture, and permanent felony record.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Fifth or Subsequent OVI (Fourth-Degree Felony)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Fifth or subsequent OVI within 20 years is charged as a fourth-degree felony with mandatory prison time, substantial fines, lengthy license suspensions, vehicle forfeiture, and permanent felony record. These convictions have the most severe consequences.
+                If the felony OVI involves high BAC (0.17% or higher) or test refusal with a prior refusal, the minimum prison time increases to 120 days (instead of 60 days), with maximum remaining 30 months. All other penalties remain the same.
               </p>
             </div>
 
@@ -183,7 +194,7 @@ export default function FelonyOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing felony OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in felony OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing felony OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in felony OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

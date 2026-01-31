@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for vehicular assault in Ohio?',
-    answer: 'Vehicular assault penalties in Ohio depend on whether it involved OVI: Vehicular assault (reckless): Fourth-degree felony (6-18 months, $5,000 fine). Vehicular assault (OVI): Third-degree felony (1-5 years, $10,000 fine). Prior convictions or additional circumstances enhance penalties significantly. All vehicular assault convictions result in permanent felony records.',
+    answer: 'Vehicular assault penalties in Ohio under ORC 2903.08 (current 2026): Vehicular assault: Fourth-degree felony (6-18 months, $5,000 fine), becomes F-3 if driving under suspension. Aggravated vehicular assault (OVI-related): Third-degree felony (9-36 months, $10,000 fine), becomes F-2 if driving under suspension, prior conviction, or 3+ OVIs within 10 years. All vehicular assault convictions result in permanent felony records.',
   },
   {
     question: 'Can vehicular assault charges be reduced?',
@@ -60,10 +60,10 @@ export default function VehicularAssaultPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Vehicular Assault Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Vehicular Assault (Reckless) (ORC 2903.08)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Fourth-degree felony: 6-18 months imprisonment, fines up to $5,000</p>
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Vehicular Assault (OVI) (ORC 2903.08)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Third-degree felony: 1-5 years imprisonment, fines up to $10,000</p>
+              <h4 className="font-semibold text-gray-900 mb-4">Vehicular Assault (ORC 2903.08) - Current Ohio Law 2026</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Fourth-degree felony (F-4): 6-18 months imprisonment, fines up to $5,000. Becomes F-3 (9-36 months) if driving under suspension.</p>
+              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Aggravated Vehicular Assault (OVI-Related) (ORC 2903.08)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Third-degree felony (F-3): 9-36 months imprisonment, fines up to $10,000. Becomes F-2 (2-8 years indefinite) if driving under suspension, prior conviction, or 3+ OVIs within 10 years.</p>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Vehicular Assault Defense Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

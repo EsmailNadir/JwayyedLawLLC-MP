@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What happens if I refuse a breathalyzer test in Ohio?',
-    answer: 'Refusing a breathalyzer test in Ohio under the implied consent law (ORC 4511.191) results in automatic administrative license suspension for 1 year (first refusal) or longer for subsequent refusals. Refusal can also be used as evidence against you in court and may result in enhanced penalties if convicted. However, there are circumstances where refusal may be legally justified.',
+    answer: 'Refusing a breathalyzer or oral fluid test in Ohio under the implied consent law (ORC 4511.191 as amended by HB 37, effective April 2025) results in automatic administrative license suspension for 1 year (first refusal) or longer for subsequent refusals. Refusal can also be used as evidence against you in court and may result in enhanced penalties if convicted. For first OVI refusal, a 30-day waiting period applies before limited driving privileges can be granted (cannot be waived). However, there are circumstances where refusal may be legally justified.',
   },
   {
     question: 'Can I be charged with OVI for refusing a breathalyzer?',

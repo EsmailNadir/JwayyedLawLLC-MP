@@ -23,11 +23,11 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for a first OVI in Ohio?',
-    answer: 'A first OVI offense in Ohio under ORC 4511.19 is a first-degree misdemeanor punishable by: 3 days to 6 months jail (minimum 3 days mandatory), fines of $375 to $1,075, driver\'s license suspension of 1 to 3 years, vehicle immobilization for 90 days, mandatory alcohol assessment and treatment, and installation of ignition interlock device. These penalties increase significantly for subsequent offenses.',
+    answer: 'A first OVI offense in Ohio under ORC 4511.19 is a first-degree misdemeanor punishable by: 3 days to 6 months jail (minimum 3 days mandatory or 3-day Driver Intervention Program), fines of $565 to $1,075 (minimum increased under HB 37 effective April 2025), driver\'s license suspension of 1 to 3 years, vehicle immobilization for 90 days, mandatory alcohol assessment and treatment, and installation of ignition interlock device may be required. License reinstatement fee is $315. These penalties increase significantly for subsequent offenses.',
   },
   {
     question: 'Can I get limited driving privileges after a first OVI in Ohio?',
-    answer: 'Yes, limited driving privileges may be available after a first OVI suspension under Ohio Revised Code 4511.191. Limited privileges typically allow driving to work, school, treatment, and necessary activities. An ignition interlock device may be required. An attorney can help apply for limited privileges and guide you through the process.',
+    answer: 'Yes, limited driving privileges may be available after a first OVI suspension under Ohio Revised Code 4511.191. Under HB 37 (effective April 2025), judges can now waive the 15-day waiting period and grant privileges immediately for first-time offenders who test over the legal limit with no prior alcohol-related arrests. For refusals, a 30-day waiting period applies. Limited privileges typically allow driving to work, school, treatment, and necessary activities. An ignition interlock device may be required. An attorney can help apply for limited privileges and guide you through the process.',
   },
   {
     question: 'Can a first OVI be expunged in Ohio?',
@@ -72,14 +72,16 @@ export default function FirstOVIPage() {
               Under Ohio Revised Code 4511.19, a first OVI offense is a first-degree misdemeanor with mandatory minimum penalties. Understanding the full scope of consequences is essential:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Standard First OVI Penalties</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Standard First OVI Penalties (Current 2026 Ohio Law - HB 37)</h4>
               <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li><strong>Jail Time:</strong> 3 days to 6 months (minimum 3 days mandatory, cannot be suspended or reduced)</li>
-                <li><strong>Fines:</strong> $375 to $1,075 plus court costs, which typically add $200-$400</li>
+                <li><strong>Jail Time:</strong> 3 days to 6 months (minimum 3 days mandatory or completion of 3-day Driver Intervention Program)</li>
+                <li><strong>Fines:</strong> $565 to $1,075 (minimum increased from $375 under HB 37) plus court costs, which typically add $200-$400</li>
                 <li><strong>License Suspension:</strong> 1 to 3 years (separate from ALS suspension)</li>
+                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475 under HB 37)</li>
                 <li><strong>Vehicle Immobilization:</strong> 90 days (vehicle cannot be driven during this period)</li>
                 <li><strong>Mandatory Alcohol Assessment:</strong> Must complete alcohol/drug assessment and follow recommended treatment</li>
                 <li><strong>Ignition Interlock Device:</strong> May be required for limited driving privileges</li>
+                <li><strong>Limited Driving Privileges:</strong> 15-day waiting period may be waived by judge if no prior alcohol arrests</li>
                 <li><strong>Probation:</strong> Typically 1-2 years with supervision fees</li>
                 <li><strong>Criminal Record:</strong> Permanent misdemeanor conviction on your record</li>
               </ul>
@@ -91,8 +93,9 @@ export default function FirstOVIPage() {
               </p>
               <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li><strong>Jail Time:</strong> 6 days to 6 months (minimum 6 days mandatory)</li>
-                <li><strong>Fines:</strong> $375 to $1,075 plus court costs</li>
+                <li><strong>Fines:</strong> $565 to $1,075 (minimum increased under HB 37) plus court costs</li>
                 <li><strong>License Suspension:</strong> 1 to 3 years (longer suspensions more likely)</li>
+                <li><strong>License Reinstatement Fee:</strong> $315</li>
                 <li><strong>Vehicle Immobilization:</strong> 90 days</li>
                 <li><strong>Mandatory Treatment:</strong> More intensive alcohol assessment and treatment requirements</li>
                 <li><strong>Ignition Interlock:</strong> Typically required for any driving privileges</li>
@@ -174,9 +177,9 @@ export default function FirstOVIPage() {
               <li><strong>Trial Representation:</strong> Provide aggressive trial advocacy if your case proceeds to trial</li>
               <li><strong>Record Sealing:</strong> Help eligible clients with expungement or record sealing after required waiting periods</li>
             </ul>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Limited Driving Privileges After First OVI</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Limited Driving Privileges After First OVI (Current 2026 Ohio Law - HB 37)</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Under Ohio Revised Code 4511.191, limited driving privileges may be available after a first OVI suspension. These privileges typically allow driving to work, school, treatment programs, medical appointments, and other necessary activities. An ignition interlock device may be required. The application process requires court approval and must demonstrate necessity. An attorney can help prepare the application, present evidence of need, and navigate the approval process.
+              Under Ohio Revised Code 4511.191 as amended by HB 37 (effective April 2025), limited driving privileges may be available after a first OVI suspension. For first-time offenders who test over the legal limit with no prior alcohol-related arrests or convictions, judges now have discretion to waive the 15-day waiting period and grant privileges immediately. For refusals, a 30-day waiting period applies and cannot be waived. These privileges typically allow driving to work, school, treatment programs, medical appointments, and other necessary activities. An ignition interlock device may be required. The application process requires court approval and must demonstrate necessity. An attorney can help prepare the application, present evidence of need, and navigate the approval process.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Expungement and Record Sealing for First OVI</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -190,7 +193,7 @@ export default function FirstOVIPage() {
               We recognize that first OVI charges can arise from various circumstances and that even first-time offenders face severe penalties. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and legal process. We work aggressively to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing a first OVI charge in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
+              If you are facing a first OVI charge in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
             </p>
           </div>
         </div>

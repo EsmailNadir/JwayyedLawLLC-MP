@@ -55,7 +55,7 @@ export default function BusinessPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Experienced Business Law Representation in Columbus, Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business law matters in Columbus or throughout Ohio require experienced legal representation to protect your business interests, ensure compliance, and minimize legal risks. At Jwayyed Law LLC, we provide experienced business law representation for various business matters under Ohio Revised Code. Our attorney understands Ohio business laws, regulations, and strategies necessary to protect your business.
+              Business law matters in Columbus or throughout Ohio require experienced legal representation to protect your business interests, ensure compliance, and minimize legal risks. At Jwayyed Law LLC, we provide experienced business law representation for various business matters under Ohio Revised Code (current as of 2026). Our attorney understands Ohio business laws, regulations, and strategies necessary to protect your business.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -169,7 +169,7 @@ export default function BusinessPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you need business legal assistance in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
+              If you need business legal assistance in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
             </p>
           </div>
         </div>

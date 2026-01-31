@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a business litigation attorney?',
-    answer: 'Business litigation is complex and requires experienced representation. Business litigation attorneys understand business law, can identify legal issues, develop strategies, negotiate settlements, and represent your business in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations. Experienced representation is essential to protect your business interests.',
+    answer: 'Business litigation is complex and requires experienced representation. Business litigation attorneys understand business law, can identify legal issues, develop strategies, negotiate settlements, and represent your business in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations. Experienced representation is essential to protect your business interests.',
   },
 ];
 

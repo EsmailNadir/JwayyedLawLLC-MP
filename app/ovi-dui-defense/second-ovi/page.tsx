@@ -23,15 +23,15 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for a second OVI in Ohio?',
-    answer: 'A second OVI offense in Ohio under ORC 4511.19 carries enhanced penalties: 10 days to 6 months jail (minimum 10 days mandatory), fines of $525 to $1,625, driver\'s license suspension of 1 to 7 years, vehicle immobilization for 180 days, mandatory alcohol treatment program, and yellow license plates required. High-tier second OVI carries even more severe penalties.',
+    answer: 'A second OVI offense in Ohio (within 10 years) under ORC 4511.19 carries enhanced penalties: 10 days to 6 months jail (minimum 10 days mandatory), fines of $715 to $1,625 (minimum increased from $525 under HB 37 effective April 2025), driver\'s license suspension of 1 to 7 years, vehicle immobilization for 90 days, mandatory alcohol treatment program, yellow license plates required, and ignition interlock device required for limited driving privileges. High-tier second OVI carries even more severe penalties.',
   },
   {
     question: 'Can I get limited driving privileges after a second OVI?',
-    answer: 'Limited driving privileges may be available after a second OVI suspension, but eligibility is more restricted than first offenses. An ignition interlock device is typically required. An attorney can help determine eligibility and apply for limited privileges if available.',
+    answer: 'Limited driving privileges may be available after a second OVI suspension, but eligibility is more restricted than first offenses. Under HB 37 (effective April 2025), an ignition interlock device is mandatory for second OVI offenders before limited driving privileges can be granted. Waiting periods are 45 days (test over) or 90 days (refusal). An attorney can help determine eligibility and apply for limited privileges if available.',
   },
   {
     question: 'Will a second OVI be a felony?',
-    answer: 'A second OVI is typically still a misdemeanor, but third and subsequent offenses are charged as felonies. However, a second OVI within 6 years of a prior OVI carries enhanced penalties. An experienced attorney can help understand your specific situation and potential penalties.',
+    answer: 'A second OVI is typically still a first-degree misdemeanor, not a felony. However, a fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. A second OVI within 10 years of a prior OVI carries significantly enhanced penalties including mandatory jail time, longer license suspension, and ignition interlock requirements. An experienced attorney can help understand your specific situation and potential penalties.',
   },
   {
     question: 'What should I do if I am charged with a second OVI?',
@@ -73,15 +73,17 @@ export default function SecondOVIPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Penalties</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Criminal Penalties (Current 2026 Ohio Law - HB 37)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li><strong>Jail:</strong> 10 days to 6 months (minimum 10 days mandatory, cannot be suspended)</li>
-                <li><strong>Fines:</strong> $525 to $1,625 plus court costs</li>
+                <li><strong>Fines:</strong> $715 to $1,625 (minimum increased from $525 under HB 37) plus court costs</li>
                 <li><strong>License Suspension:</strong> 1 to 7 years (significantly longer than first offense)</li>
-                <li><strong>Vehicle Immobilization:</strong> 180 days (double the first offense period)</li>
+                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475)</li>
+                <li><strong>Vehicle Immobilization:</strong> 90 days (per ORC 4511.19)</li>
                 <li><strong>Mandatory Alcohol Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
                 <li><strong>Yellow License Plates:</strong> Required display of yellow license plates during suspension period</li>
-                <li><strong>Ignition Interlock Device:</strong> May be required for limited driving privileges</li>
+                <li><strong>Ignition Interlock Device:</strong> Mandatory for limited driving privileges (new requirement under HB 37)</li>
+                <li><strong>Limited Privileges Waiting Period:</strong> 45 days (test over) or 90 days (refusal)</li>
               </ul>
             </div>
 
@@ -182,7 +184,7 @@ export default function SecondOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing second OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in second OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing second OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in second OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

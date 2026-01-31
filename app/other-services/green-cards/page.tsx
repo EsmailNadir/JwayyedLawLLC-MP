@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function GreenCardsPage() {
           </div>
         </div>
       </section>
+      <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );

@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for murder in Ohio?',
-    answer: 'Murder in Ohio is an unclassified felony punishable by 15 years to life imprisonment or life imprisonment with parole eligibility after 15 years. Aggravated murder can result in the death penalty or life imprisonment without parole. Manslaughter is a first-degree felony punishable by 3-11 years imprisonment and fines up to $20,000. Prior convictions or aggravating circumstances enhance penalties significantly.',
+    answer: 'Murder in Ohio is an unclassified felony punishable by 15 years to life imprisonment or life imprisonment with parole eligibility after 15 years. Aggravated murder can result in the death penalty or life imprisonment without parole. Manslaughter is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%) and fines up to $20,000. Prior convictions or aggravating circumstances enhance penalties significantly.',
   },
   {
     question: 'Can murder charges be reduced in Ohio?',
@@ -92,7 +92,7 @@ export default function MurderHomicideChargesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Manslaughter (ORC 2903.03)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Manslaughter is a first-degree felony punishable by 3-11 years imprisonment and fines up to $20,000. Manslaughter involves recklessly causing the death of another, carrying lesser penalties than murder. Voluntary manslaughter involves causing death under extreme emotional distress or provocation.
+                Manslaughter is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%) and fines up to $20,000. Manslaughter involves recklessly causing the death of another, carrying lesser penalties than murder. Voluntary manslaughter involves causing death under extreme emotional distress or provocation.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ export default function MurderHomicideChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing homicide charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in homicide cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties (murder to manslaughter), or favorable plea agreements that avoid the death penalty or life imprisonment. Do not delay in seeking experienced legal representation to protect your rights, freedom, and life.
+              If you are facing homicide charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in homicide cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties (murder to manslaughter), or favorable plea agreements that avoid the death penalty or life imprisonment. Do not delay in seeking experienced legal representation to protect your rights, freedom, and life.
             </p>
           </div>
         </div>

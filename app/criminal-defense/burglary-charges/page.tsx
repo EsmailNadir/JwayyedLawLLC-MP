@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for burglary in Ohio?',
-    answer: 'Burglary in Ohio is a second-degree felony punishable by 2-8 years imprisonment and fines up to $15,000. Aggravated burglary is a first-degree felony punishable by 3-11 years to life imprisonment and fines up to $20,000. Prior burglary convictions enhance penalties. Burglary convictions carry substantial prison time and permanent felony records affecting employment and opportunities.',
+    answer: 'Burglary in Ohio under ORC 2911.12 is a second-degree felony (F-2) when another person is present or likely to be present (2-8 years indefinite imprisonment) or a third-degree felony (F-3) when no person is present (9-36 months). Aggravated burglary (ORC 2911.11) is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment. For F-1 and F-2 offenses committed after March 22, 2019, Ohio uses indefinite sentencing where the maximum equals the minimum plus 50%. Prior burglary convictions enhance penalties. Burglary convictions carry substantial prison time and permanent felony records affecting employment and opportunities.',
   },
   {
     question: 'What is the difference between burglary and breaking and entering in Ohio?',
@@ -78,14 +78,14 @@ export default function BurglaryChargesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Burglary (ORC 2911.12)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Burglary is a second-degree felony punishable by 2-8 years imprisonment, fines up to $15,000, court costs, mandatory post-release control supervision, and a permanent felony record. Prior burglary convictions enhance penalties. The felony record is permanent and accessible to employers, landlords, and others conducting background checks.
+                Burglary is a second-degree felony (F-2) punishable by 2-8 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $15,000, court costs, mandatory post-release control supervision, and a permanent felony record. Prior burglary convictions enhance penalties. The felony record is permanent and accessible to employers, landlords, and others conducting background checks.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Aggravated Burglary (ORC 2911.11)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Aggravated burglary is a first-degree felony punishable by 3-11 years to life imprisonment, fines up to $20,000, court costs, mandatory post-release control for up to 3 years, and a permanent serious felony record. Aggravated burglary involves causing or attempting physical harm, using a deadly weapon, or committing burglary when someone is present. These convictions have lifelong consequences including permanent loss of gun rights, severe employment restrictions, and significant barriers to housing and education.
+                Aggravated burglary is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000, court costs, mandatory post-release control for up to 3 years, and a permanent serious felony record. Aggravated burglary involves causing or attempting physical harm, using a deadly weapon, or committing burglary when someone is present. These convictions have lifelong consequences including permanent loss of gun rights, severe employment restrictions, and significant barriers to housing and education.
               </p>
             </div>
 
@@ -178,7 +178,7 @@ export default function BurglaryChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing burglary charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in burglary cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing burglary charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in burglary cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

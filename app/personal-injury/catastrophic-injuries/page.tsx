@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'Do I need a catastrophic injury attorney?',
-    answer: 'Catastrophic injury cases are complex and require experienced representation. Catastrophic injury attorneys understand catastrophic injuries, can retain experts, handle complex litigation, and maximize compensation for long-term needs. Most attorneys work on a contingency fee basis and provide schedule consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+    answer: 'Catastrophic injury cases are complex and require experienced representation. Catastrophic injury attorneys understand catastrophic injuries, can retain experts, handle complex litigation, and maximize compensation for long-term needs. Most attorneys work on a contingency fee basis and offer consultations. Experienced representation is essential to protect your rights and maximize recovery.',
   },
 ];
 

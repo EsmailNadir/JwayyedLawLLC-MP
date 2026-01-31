@@ -33,19 +33,19 @@ export default function ProbatePage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Probate in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Probate in Columbus or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Chapter 2107. Our attorney understands probate law and can help you navigate the probate process.
+              Probate in Columbus or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Title 21, which governs probate court procedures, estate administration, and fiduciary duties. Our attorney understands probate law and can help you navigate the probate process.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Probate Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/probate/probate-administration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/probate-administration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Probate Administration</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Complete probate administration services</p>
               </Link>
-              <Link href="/other-services/probate/will-contests" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/will-contests" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Will Contests</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Contesting or defending will validity</p>
               </Link>
-              <Link href="/other-services/probate/estate-disputes" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+              <Link href="/other-services/estate-disputes" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Estate Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Resolving estate distribution disputes</p>
               </Link>

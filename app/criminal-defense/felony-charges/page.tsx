@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for felonies in Ohio?',
-    answer: 'Felony penalties in Ohio under Ohio Revised Code Chapter 2929 depend on offense degree: First-degree felonies: 3-11 years to life imprisonment, fines up to $20,000. Second-degree felonies: 2-8 years imprisonment, fines up to $15,000. Third-degree felonies: 1-5 years imprisonment, fines up to $10,000. Fourth-degree felonies: 6-18 months imprisonment, fines up to $5,000. Fifth-degree felonies: 6-12 months imprisonment, fines up to $2,500. Prior convictions significantly enhance penalties.',
+    answer: 'Felony penalties in Ohio under Ohio Revised Code Chapter 2929 depend on offense degree: First-degree felonies (F-1): 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000. Second-degree felonies (F-2): 2-8 years indefinite imprisonment, fines up to $15,000. Third-degree felonies (F-3): 9-36 months definite imprisonment, fines up to $10,000. Fourth-degree felonies (F-4): 6-18 months imprisonment, fines up to $5,000. Fifth-degree felonies (F-5): 6-12 months imprisonment, fines up to $2,500. Prior convictions significantly enhance penalties.',
   },
   {
     question: 'Can felony charges be reduced to misdemeanors in Ohio?',
@@ -78,9 +78,9 @@ export default function FelonyChargesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Penalty Structure by Felony Degree</h4>
               <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li><strong>First-Degree Felony:</strong> 3-11 years to life imprisonment, fines up to $20,000, mandatory post-release control, permanent serious felony record</li>
-                <li><strong>Second-Degree Felony:</strong> 2-8 years imprisonment, fines up to $15,000, mandatory post-release control, permanent felony record</li>
-                <li><strong>Third-Degree Felony:</strong> 1-5 years imprisonment, fines up to $10,000, mandatory post-release control, permanent felony record</li>
+                <li><strong>First-Degree Felony (F-1):</strong> 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000, mandatory post-release control, permanent serious felony record</li>
+                <li><strong>Second-Degree Felony (F-2):</strong> 2-8 years indefinite imprisonment (for offenses after March 22, 2019), fines up to $15,000, mandatory post-release control, permanent felony record</li>
+                <li><strong>Third-Degree Felony (F-3):</strong> 9-36 months imprisonment, fines up to $10,000, mandatory post-release control, permanent felony record</li>
                 <li><strong>Fourth-Degree Felony:</strong> 6-18 months imprisonment, fines up to $5,000, mandatory post-release control, permanent felony record</li>
                 <li><strong>Fifth-Degree Felony:</strong> 6-12 months imprisonment, fines up to $2,500, mandatory post-release control, permanent felony record</li>
               </ul>
@@ -183,7 +183,7 @@ export default function FelonyChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing felony charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in felony cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing felony charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in felony cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

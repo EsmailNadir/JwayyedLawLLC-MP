@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for civil cases in Ohio?',
-    answer: 'Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Contract disputes: 15 years for written contracts, 6 years for oral contracts. Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Contract disputes: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a civil attorney for my dispute?',
@@ -174,7 +174,7 @@ export default function CivilPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Statute of Limitations</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Written contracts: 15 years. Oral contracts: 6 years. Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.
+                Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Written contracts: 6 years (ORC 2305.06 as amended June 2021). Oral contracts: 4 years (ORC 2305.07 as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function CivilPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a civil dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential outcomes, and develop a strategy tailored to your situation. Time is critical in civil cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a civil dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential outcomes, and develop a strategy tailored to your situation. Time is critical in civil cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

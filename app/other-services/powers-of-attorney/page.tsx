@@ -33,7 +33,7 @@ export default function PowersOfAttorneyPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Powers of Attorney in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Powers of attorney in Columbus or throughout Ohio are legal documents that allow you to appoint someone to make decisions on your behalf if you become unable to do so. At Jwayyed Law LLC, we provide experienced assistance with powers of attorney under Ohio Revised Code Chapter 1337. Our attorney understands power of attorney law and can help you create financial powers of attorney and healthcare powers of attorney tailored to your needs.
+              Powers of attorney in Columbus or throughout Ohio are legal documents that allow you to appoint someone to make decisions on your behalf if you become unable to do so. At Jwayyed Law LLC, we provide experienced assistance with powers of attorney under Ohio Revised Code Chapter 1337 (current as of 2026). Our attorney understands power of attorney law and can help you create financial powers of attorney and healthcare powers of attorney tailored to your needs.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

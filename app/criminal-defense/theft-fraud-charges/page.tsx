@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for theft in Ohio?',
-    answer: 'Theft penalties in Ohio depend on property value and prior convictions. Property valued under $1,000 is a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Property valued $1,000 to $7,500 is a fifth-degree felony (6-12 months, $2,500 fine). Higher values result in more severe felonies up to third-degree felonies for property over $150,000 (1-5 years, $10,000 fine). Prior theft convictions significantly enhance penalties.',
+    answer: 'Theft penalties in Ohio depend on property value and prior convictions (per ORC 2913.02 as amended by HB 366, current as of 2026). Property valued under $1,000 is a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Property valued $1,000 to less than $7,500 is a fifth-degree felony (6-12 months, $2,500 fine). Property $7,500 to less than $150,000 is a fourth-degree felony; $150,000 to $750,000 is a third-degree felony; $750,000 to $1.5 million is a second-degree felony; $1.5 million or more is a first-degree felony. Prior theft convictions significantly enhance penalties.',
   },
   {
     question: 'What is the difference between theft and fraud in Ohio?',
@@ -94,7 +94,7 @@ export default function TheftFraudChargesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Theft (ORC 2913.02)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Theft involves knowingly obtaining or exerting control over property of another without consent, with intent to deprive the owner. Penalties range from first-degree misdemeanors for property under $1,000 to third-degree felonies for property over $150,000. Theft of firearms, credit cards, or motor vehicles is charged as felonies regardless of value.
+                Theft involves knowingly obtaining or exerting control over property of another without consent, with intent to deprive the owner. Penalties range from first-degree misdemeanors for property under $1,000 to first-degree felonies for property $1.5 million or more (per ORC 2913.02 as amended by HB 366 effective April 2025). Theft of firearms, credit cards, or motor vehicles is charged as felonies regardless of value.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Fraud (ORC 2913.41)</h4>
@@ -125,10 +125,11 @@ export default function TheftFraudChargesPage() {
               <h4 className="font-semibold text-gray-900 mb-4">Penalty Structure by Property Value</h4>
               <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li><strong>First-Degree Misdemeanor:</strong> Property under $1,000 - Up to 180 days jail, fines up to $1,000, court costs, probation fees, and permanent criminal record</li>
-                <li><strong>Fifth-Degree Felony:</strong> Property $1,000 to $7,500 - 6-12 months imprisonment, fines up to $2,500, court costs, and permanent felony record</li>
-                <li><strong>Fourth-Degree Felony:</strong> Property $7,500 to $37,500 - 6-18 months imprisonment, fines up to $5,000, court costs, and permanent felony record</li>
-                <li><strong>Third-Degree Felony:</strong> Property $37,500 to $150,000 - 1-5 years imprisonment, fines up to $10,000, court costs, and permanent serious felony record</li>
-                <li><strong>Second-Degree Felony:</strong> Property over $150,000 - 2-8 years imprisonment, fines up to $15,000, court costs, and permanent serious felony record</li>
+                <li><strong>Fifth-Degree Felony:</strong> Property $1,000 to less than $7,500 - 6-12 months imprisonment, fines up to $2,500, court costs, and permanent felony record</li>
+                <li><strong>Fourth-Degree Felony:</strong> Property $7,500 to less than $150,000 - 6-18 months imprisonment, fines up to $5,000, court costs, and permanent felony record (per ORC 2913.02 as amended by HB 366 effective April 2025)</li>
+                <li><strong>Third-Degree Felony (F-3):</strong> Property $150,000 to $750,000 - 9-36 months imprisonment, fines up to $10,000, court costs, and permanent serious felony record</li>
+                <li><strong>Second-Degree Felony (F-2):</strong> Property $750,000 to $1.5 million - 2-8 years indefinite imprisonment, fines up to $15,000, court costs, and permanent serious felony record</li>
+                <li><strong>First-Degree Felony (F-1):</strong> Property $1.5 million or more - 3-11 years indefinite imprisonment, fines up to $20,000, court costs, and permanent serious felony record</li>
               </ul>
             </div>
 
@@ -245,7 +246,7 @@ export default function TheftFraudChargesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing theft or fraud charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential defenses including valuation challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in theft cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing theft or fraud charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including valuation challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in theft cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights and future.
             </p>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">

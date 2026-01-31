@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is workers compensation in Ohio?',
-    answer: 'Workers compensation under Ohio Revised Code Chapter 4123 provides benefits to employees injured on the job including medical expenses, lost wages (disability benefits), permanent disability benefits, and death benefits for dependents. Workers compensation is a no-fault system, meaning employees can recover benefits regardless of fault. However, workers compensation generally limits recovery to workers compensation benefits and may not include full compensation for pain and suffering.',
+    answer: 'Workers compensation under Ohio Revised Code Chapter 4123 (current as of 2026) provides benefits to employees injured on the job including medical expenses, lost wages (disability benefits), permanent disability benefits, and death benefits for dependents. Workers compensation is a no-fault system, meaning employees can recover benefits regardless of fault. However, workers compensation generally limits recovery to workers compensation benefits and may not include full compensation for pain and suffering.',
   },
   {
     question: 'Can I file a personal injury lawsuit for a workplace injury?',

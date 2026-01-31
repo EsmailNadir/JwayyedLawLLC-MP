@@ -23,7 +23,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is premises liability in Ohio?',
-    answer: 'Premises liability under Ohio Revised Code Chapter 2305 involves property owners\' and occupiers\' duty to maintain safe conditions for visitors and to warn of known dangers. Property owners and occupiers may be liable for injuries caused by dangerous conditions including slip and fall hazards, inadequate lighting, broken stairs, negligent security, swimming pool accidents, and other hazards.',
+    answer: 'Premises liability in Ohio (current as of 2026) involves property owners\' and occupiers\' duty to maintain safe conditions for visitors and to warn of known dangers. Property owners and occupiers may be liable for injuries caused by dangerous conditions including slip and fall hazards, inadequate lighting, broken stairs, negligent security, swimming pool accidents, and other hazards.',
   },
   {
     question: 'Who can be liable for premises liability injuries?',
@@ -56,7 +56,7 @@ export default function PremisesLiabilityPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Premises Liability Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Premises liability injuries in Columbus or throughout Ohio can result from dangerous conditions on property including slip and fall hazards, inadequate lighting, broken stairs, negligent security, and other hazards. At Jwayyed Law LLC, we provide experienced representation for premises liability injuries under Ohio Revised Code Chapter 2305. Our attorney understands premises liability law and the compensation process necessary to help you recover.
+              Premises liability injuries in Columbus or throughout Ohio can result from dangerous conditions on property including slip and fall hazards, inadequate lighting, broken stairs, negligent security, and other hazards. At Jwayyed Law LLC, we provide experienced representation for premises liability injuries under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Premises Liability Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

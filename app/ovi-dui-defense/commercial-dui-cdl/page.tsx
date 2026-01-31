@@ -60,10 +60,11 @@ export default function CommercialDUICDLPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">CDL OVI Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">First OVI Conviction</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">First OVI Conviction (Current 2026 Ohio Law - HB 37)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 <li>CDL disqualified for 1 year (3 years if carrying hazardous materials)</li>
-                <li>Standard OVI penalties (jail, fines, license suspension)</li>
+                <li>Standard OVI penalties: 3 days to 6 months jail, fines $565-$1,075, license suspension 1-3 years</li>
+                <li>License reinstatement fee: $315</li>
                 <li>May end your commercial driving career</li>
               </ul>
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Second OVI Conviction</h4>

@@ -31,11 +31,11 @@ const faqs = [
   },
   {
     question: 'What is the statute of limitations for real estate disputes?',
-    answer: 'Statute of limitations for real estate disputes in Ohio vary by claim type: Breach of contract: 15 years for written contracts, 6 years for oral contracts. Property damage: 4 years. Fraud: 4 years from discovery. Missing deadlines bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer: 'Statute of limitations for real estate disputes in Ohio vary by claim type: Breach of contract: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years. Fraud: 4 years from discovery. Missing deadlines bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
   },
   {
     question: 'Do I need a real estate disputes attorney?',
-    answer: 'Real estate disputes are complex and require experienced representation. Real estate attorneys understand property law, can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and provide schedule consultations.',
+    answer: 'Real estate disputes are complex and require experienced representation. Real estate attorneys understand property law, can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
     question: 'Can real estate disputes be resolved without litigation?',
@@ -64,7 +64,7 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (15 years for written contracts, 6 years for oral contracts), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
+              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Real Estate Disputes</h3>
 
@@ -149,7 +149,7 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a real estate dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC for a schedule consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
+              If you are involved in a real estate dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
             </p>
           </div>
         </div>

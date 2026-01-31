@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for kidnapping in Ohio?',
-    answer: 'Kidnapping in Ohio is a first-degree felony punishable by 3-11 years to life imprisonment and fines up to $20,000. Aggravated kidnapping is an unclassified felony punishable by life imprisonment or death penalty in some cases. Prior convictions or aggravating circumstances enhance penalties significantly.',
+    answer: 'Kidnapping in Ohio is a first-degree felony (F-1) punishable by 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%) and fines up to $20,000. Aggravated kidnapping is an unclassified felony punishable by life imprisonment or death penalty in some cases. Prior convictions or aggravating circumstances enhance penalties significantly.',
   },
   {
     question: 'Can kidnapping charges be reduced in Ohio?',
@@ -64,7 +64,7 @@ export default function KidnappingChargesPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Kidnapping Penalties</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Kidnapping (ORC 2905.01)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">First-degree felony: 3-11 years to life imprisonment, fines up to $20,000</p>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">First-degree felony (F-1): 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000</p>
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Aggravated Kidnapping (ORC 2905.01)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Unclassified felony: Life imprisonment or death penalty in some cases</p>
             </div>
