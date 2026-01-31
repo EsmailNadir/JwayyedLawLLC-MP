@@ -21,6 +21,17 @@ const breadcrumbItems = [
   { label: 'Green Cards', href: '/other-services/green-cards' },
 ];
 
+const faqs = [
+  {
+    question: 'What are the common pathways to obtain a green card?',
+    answer: 'Under the Immigration and Nationality Act (INA), common pathways to permanent residency include: family-based sponsorship (immediate relatives, family preference categories); employment-based sponsorship (EB-1, EB-2, EB-3, EB-4, EB-5); Diversity Visa Lottery; asylum/refugee status adjustment; and special immigrant categories. Each pathway has specific requirements and processing times. Immigration law is federal.',
+  },
+  {
+    question: 'Is green card law state or federal?',
+    answer: 'Green card (permanent residency) law is exclusively federal, governed by the Immigration and Nationality Act (INA) and administered by U.S. Citizenship and Immigration Services (USCIS) and the Executive Office for Immigration Review (EOIR). Ohio does not have separate green card laws. An immigration attorney can help navigate federal requirements.',
+  },
+];
+
 export default function GreenCardsPage() {
   return (
     <>
