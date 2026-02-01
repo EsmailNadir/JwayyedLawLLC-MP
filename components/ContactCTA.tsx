@@ -50,7 +50,12 @@ export default function ContactCTA({
           </div>
           <div className="bg-white rounded-lg p-8 text-gray-900">
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold mb-6">Contact Form</h3>
-            <form className="space-y-4 font-['Inter',_'Arial',_sans-serif]">
+            <form
+              action="https://formspree.io/f/xyzjyzgv"
+              method="POST"
+              className="space-y-4 font-['Inter',_'Arial',_sans-serif]"
+            >
+              <input type="hidden" name="form_type" value="general_inquiry" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
