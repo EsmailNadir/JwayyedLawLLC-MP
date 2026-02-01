@@ -23,14 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/criminal-defense/domestic-violence', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/drug-crimes', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/theft-fraud-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/burglary-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/robbery-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/sex-crimes', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/murder-homicide-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/kidnapping-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/gun-weapons-charges', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/federal-crimes', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/felony-charges', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/juvenile-offenses', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/expungement-record-sealing', priority: 0.8, changeFrequency: 'monthly' as const },
     
@@ -45,7 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/ovi-dui-defense/underage-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/commercial-dui-cdl', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/ovi-with-accident', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/ovi-dui-defense/vehicular-assault', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/driving-under-ovi-suspension', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/limited-driving-privileges', priority: 0.8, changeFrequency: 'monthly' as const },
     
@@ -115,48 +106,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Franklin County
     { url: '/courts/franklin-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/franklin-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/franklin-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/franklin-county-juvenile-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Delaware County
     { url: '/courts/delaware-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/delaware-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/delaware-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Pickaway County
     { url: '/courts/pickaway-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/pickaway-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/circleville-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Athens County
     { url: '/courts/athens-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/athens-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/athens-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Morrow County
     { url: '/courts/morrow-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/morrow-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/morrow-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Clinton County
     { url: '/courts/clinton-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/clinton-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/wilmington-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Butler County
     { url: '/courts/butler-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/butler-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/hamilton-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Greene County
     { url: '/courts/greene-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/greene-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/fairborn-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Montgomery County
     { url: '/courts/montgomery-county', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/montgomery-county-court-of-common-pleas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/dayton-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Special Location Pages

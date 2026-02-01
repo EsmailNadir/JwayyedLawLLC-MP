@@ -38,14 +38,6 @@ const navItems: NavItem[] = [
       { name: 'Domestic Violence', href: '/criminal-defense/domestic-violence' },
       { name: 'Drug Crimes', href: '/criminal-defense/drug-crimes' },
       { name: 'Theft & Fraud Charges', href: '/criminal-defense/theft-fraud-charges' },
-      { name: 'Burglary Charges', href: '/criminal-defense/burglary-charges' },
-      { name: 'Robbery Charges', href: '/criminal-defense/robbery-charges' },
-      { name: 'Sex Crimes', href: '/criminal-defense/sex-crimes' },
-      { name: 'Murder & Homicide Charges', href: '/criminal-defense/murder-homicide-charges' },
-      { name: 'Kidnapping Charges', href: '/criminal-defense/kidnapping-charges' },
-      { name: 'Gun / Weapons Charges', href: '/criminal-defense/gun-weapons-charges' },
-      { name: 'Federal Crimes', href: '/criminal-defense/federal-crimes' },
-      { name: 'Felony Charges', href: '/criminal-defense/felony-charges' },
       { name: 'Expungement / Record Sealing', href: '/criminal-defense/expungement-record-sealing' },
       { name: 'All Criminal Defense Areas', href: '/criminal-defense' },
     ],
@@ -64,7 +56,6 @@ const navItems: NavItem[] = [
       { name: 'Underage OVI', href: '/ovi-dui-defense/underage-ovi' },
       { name: 'Commercial DUI (CDL)', href: '/ovi-dui-defense/commercial-dui-cdl' },
       { name: 'OVI with Accident', href: '/ovi-dui-defense/ovi-with-accident' },
-      { name: 'Vehicular Assault', href: '/ovi-dui-defense/vehicular-assault' },
       { name: 'Driving Under OVI Suspension', href: '/ovi-dui-defense/driving-under-ovi-suspension' },
       { name: 'Limited Driving Privileges', href: '/ovi-dui-defense/limited-driving-privileges' },
       { name: 'All OVI Defense Areas', href: '/ovi-dui-defense' },
@@ -188,35 +179,30 @@ const navItems: NavItem[] = [
       {
         name: 'Franklin County',
         links: [
-          { name: 'Franklin County Court of Common Pleas', href: '/courts/franklin-county-court-of-common-pleas' },
           { name: 'Franklin County Municipal Court', href: '/courts/franklin-county-municipal-court' },
         ],
       },
       {
         name: 'Delaware County',
         links: [
-          { name: 'Delaware County Court of Common Pleas', href: '/courts/delaware-county-court-of-common-pleas' },
           { name: 'Delaware County Municipal Court', href: '/courts/delaware-county-municipal-court' },
         ],
       },
       {
         name: 'Butler County',
         links: [
-          { name: 'Butler County Court of Common Pleas', href: '/courts/butler-county-court-of-common-pleas' },
           { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
         ],
       },
       {
         name: 'Greene County',
         links: [
-          { name: 'Greene County Court of Common Pleas', href: '/courts/greene-county-court-of-common-pleas' },
           { name: 'Fairborn Municipal Court', href: '/courts/fairborn-municipal-court' },
         ],
       },
       {
         name: 'Montgomery County',
         links: [
-          { name: 'Montgomery County Court of Common Pleas', href: '/courts/montgomery-county-court-of-common-pleas' },
           { name: 'Dayton Municipal Court', href: '/courts/dayton-municipal-court' },
         ],
       },
@@ -333,7 +319,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ item, isOpen, itemIndex, totalItems
                 <div key={colIndex} className="space-y-2">
                   {column.map((link, linkIndex) => (
                     <Link
-                      key={link.href}
+                      key={`${link.href}-${link.name}`}
                       href={link.href}
                       className={`
                         block text-[15px] transition-colors duration-150 py-1
@@ -369,7 +355,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ item, isOpen, itemIndex, totalItems
                   </h4>
                   <ul className="space-y-2">
                     {group.links.map((link) => (
-                      <li key={link.href}>
+                      <li key={`${group.name}-${link.href}-${link.name}`}>
                         <Link
                           href={link.href}
                           className="block text-[14px] leading-snug text-gray-600 hover:text-accent font-medium transition-colors"
@@ -504,7 +490,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
                         {/* Standard SubLinks */}
                         {item.subLinks && item.subLinks.slice(1).map((link) => (
                           <Link
-                            key={link.href}
+                            key={`${link.href}-${link.name}`}
                             href={link.href}
                             onClick={onClose}
                             className="block py-2.5 text-[15px] text-gray-600 border-l-2 border-transparent hover:border-gray-200 pl-4 ml-1"
@@ -535,7 +521,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) => {
                                 <div className="pl-6 pb-2 space-y-2 border-l border-gray-200 ml-4">
                                   {group.links.map((link) => (
                                     <Link
-                                      key={link.href}
+                                      key={`${group.name}-${link.href}-${link.name}`}
                                       href={link.href}
                                       onClick={onClose}
                                       className="block py-1.5 text-[14px] text-gray-500"

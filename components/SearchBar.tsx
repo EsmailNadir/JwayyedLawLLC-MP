@@ -89,14 +89,6 @@ const navItems: NavItem[] = [
       { name: 'Domestic Violence', href: '/criminal-defense/domestic-violence' },
       { name: 'Drug Crimes', href: '/criminal-defense/drug-crimes' },
       { name: 'Theft & Fraud Charges', href: '/criminal-defense/theft-fraud-charges' },
-      { name: 'Burglary Charges', href: '/criminal-defense/burglary-charges' },
-      { name: 'Robbery Charges', href: '/criminal-defense/robbery-charges' },
-      { name: 'Sex Crimes', href: '/criminal-defense/sex-crimes' },
-      { name: 'Murder & Homicide Charges', href: '/criminal-defense/murder-homicide-charges' },
-      { name: 'Kidnapping Charges', href: '/criminal-defense/kidnapping-charges' },
-      { name: 'Gun / Weapons Charges', href: '/criminal-defense/gun-weapons-charges' },
-      { name: 'Federal Crimes', href: '/criminal-defense/federal-crimes' },
-      { name: 'Felony Charges', href: '/criminal-defense/felony-charges' },
       { name: 'Juvenile Offenses', href: '/criminal-defense/juvenile-offenses' },
       { name: 'Expungement / Record Sealing', href: '/criminal-defense/expungement-record-sealing' },
     ],
@@ -115,7 +107,6 @@ const navItems: NavItem[] = [
       { name: 'Underage OVI', href: '/ovi-dui-defense/underage-ovi' },
       { name: 'Commercial DUI (CDL)', href: '/ovi-dui-defense/commercial-dui-cdl' },
       { name: 'OVI with Accident', href: '/ovi-dui-defense/ovi-with-accident' },
-      { name: 'Vehicular Assault', href: '/ovi-dui-defense/vehicular-assault' },
       { name: 'Driving Under OVI Suspension', href: '/ovi-dui-defense/driving-under-ovi-suspension' },
       { name: 'Limited Driving Privileges', href: '/ovi-dui-defense/limited-driving-privileges' },
     ],
@@ -219,7 +210,6 @@ const navItems: NavItem[] = [
       {
         name: 'Franklin County',
         links: [
-          { name: 'Franklin County Court of Common Pleas', href: '/courts/franklin-county-court-of-common-pleas' },
           { name: 'Franklin County Municipal Court', href: '/courts/franklin-county-municipal-court' },
           { name: 'Franklin County Juvenile Court', href: '/courts/franklin-county-juvenile-court' },
         ],
@@ -227,56 +217,48 @@ const navItems: NavItem[] = [
       {
         name: 'Delaware County',
         links: [
-          { name: 'Delaware County Court of Common Pleas', href: '/courts/delaware-county-court-of-common-pleas' },
           { name: 'Delaware County Municipal Court', href: '/courts/delaware-county-municipal-court' },
         ],
       },
       {
         name: 'Pickaway County',
         links: [
-          { name: 'Pickaway County Court of Common Pleas', href: '/courts/pickaway-county-court-of-common-pleas' },
           { name: 'Circleville Municipal Court', href: '/courts/circleville-municipal-court' },
         ],
       },
       {
         name: 'Athens County',
         links: [
-          { name: 'Athens County Court of Common Pleas', href: '/courts/athens-county-court-of-common-pleas' },
           { name: 'Athens Municipal Court', href: '/courts/athens-municipal-court' },
         ],
       },
       {
         name: 'Morrow County',
         links: [
-          { name: 'Morrow County Court of Common Pleas', href: '/courts/morrow-county-court-of-common-pleas' },
           { name: 'Morrow County Municipal Court', href: '/courts/morrow-county-municipal-court' },
         ],
       },
       {
         name: 'Clinton County',
         links: [
-          { name: 'Clinton County Court of Common Pleas', href: '/courts/clinton-county-court-of-common-pleas' },
           { name: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
         ],
       },
       {
         name: 'Butler County',
         links: [
-          { name: 'Butler County Court of Common Pleas', href: '/courts/butler-county-court-of-common-pleas' },
           { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
         ],
       },
       {
         name: 'Greene County',
         links: [
-          { name: 'Greene County Court of Common Pleas', href: '/courts/greene-county-court-of-common-pleas' },
           { name: 'Fairborn Municipal Court', href: '/courts/fairborn-municipal-court' },
         ],
       },
       {
         name: 'Montgomery County',
         links: [
-          { name: 'Montgomery County Court of Common Pleas', href: '/courts/montgomery-county-court-of-common-pleas' },
           { name: 'Dayton Municipal Court', href: '/courts/dayton-municipal-court' },
         ],
       },

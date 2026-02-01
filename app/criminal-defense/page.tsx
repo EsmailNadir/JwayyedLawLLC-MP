@@ -177,35 +177,7 @@ export default function CriminalDefensePage() {
               </Link>
               <Link href="/criminal-defense/theft-fraud-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Theft & Fraud</h4>
-                <p className="text-sm text-gray-600">Representation for theft, burglary, robbery, and fraud charges under ORC Chapter 2913</p>
-              </Link>
-              <Link href="/criminal-defense/burglary-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Burglary Charges</h4>
-                <p className="text-sm text-gray-600">Defense for burglary and breaking and entering charges</p>
-              </Link>
-              <Link href="/criminal-defense/robbery-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Robbery Charges</h4>
-                <p className="text-sm text-gray-600">Defense for robbery and aggravated robbery charges</p>
-              </Link>
-              <Link href="/criminal-defense/sex-crimes" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Sex Crimes</h4>
-                <p className="text-sm text-gray-600">Defense for sexual assault, rape, and sex offense charges</p>
-              </Link>
-              <Link href="/criminal-defense/murder-homicide-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Murder & Homicide</h4>
-                <p className="text-sm text-gray-600">Serious felony defense for murder, manslaughter, and homicide charges</p>
-              </Link>
-              <Link href="/criminal-defense/gun-weapons-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Gun & Weapons Charges</h4>
-                <p className="text-sm text-gray-600">Defense for weapons offenses and firearm violations</p>
-              </Link>
-              <Link href="/criminal-defense/federal-crimes" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Federal Crimes</h4>
-                <p className="text-sm text-gray-600">Defense for federal criminal charges in federal court</p>
-              </Link>
-              <Link href="/criminal-defense/felony-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Felony Charges</h4>
-                <p className="text-sm text-gray-600">Serious felony defense including violent and property crimes</p>
+                <p className="text-sm text-gray-600">Representation for theft and fraud charges under ORC Chapter 2913</p>
               </Link>
               <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Expungement & Record Sealing</h4>

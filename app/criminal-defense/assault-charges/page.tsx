@@ -310,8 +310,7 @@ export default function AssaultChargesPage() {
               <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
               <div className="flex flex-wrap gap-3">
                 <Link href="/criminal-defense/domestic-violence" className="text-accent hover:underline">Domestic Violence Defense</Link>
-                <Link href="/criminal-defense/gun-weapons-charges" className="text-accent hover:underline">Weapons Charges Defense</Link>
-                <Link href="/criminal-defense/felony-charges" className="text-accent hover:underline">Felony Defense</Link>
+                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
               </div>
             </div>
           </div>

@@ -252,9 +252,7 @@ export default function TheftFraudChargesPage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
               <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
               <div className="flex flex-wrap gap-3 font-['Inter',_'Arial',_sans-serif]">
-                <Link href="/criminal-defense/burglary-charges" className="text-orange-500 hover:underline">Burglary Defense</Link>
-                <Link href="/criminal-defense/robbery-charges" className="text-orange-500 hover:underline">Robbery Defense</Link>
-                <Link href="/criminal-defense/felony-charges" className="text-orange-500 hover:underline">Felony Defense</Link>
+                <Link href="/criminal-defense/expungement-record-sealing" className="text-orange-500 hover:underline">Expungement & Record Sealing</Link>
               </div>
             </div>
           </div>
