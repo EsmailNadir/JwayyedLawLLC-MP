@@ -21,8 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/criminal-defense', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/criminal-defense/assault-charges', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/domestic-violence', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/drug-crimes', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/theft-fraud-charges', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/juvenile-offenses', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/expungement-record-sealing', priority: 0.8, changeFrequency: 'monthly' as const },
     
@@ -31,7 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/ovi-dui-defense/first-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/second-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/third-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/ovi-dui-defense/felony-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/high-tier-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/refusal-ovi', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/ovi-dui-defense/underage-ovi', priority: 0.8, changeFrequency: 'monthly' as const },

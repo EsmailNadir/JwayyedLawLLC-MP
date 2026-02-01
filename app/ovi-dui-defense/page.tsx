@@ -274,10 +274,6 @@ export default function OVIDefensePage() {
                 <h4 className="font-semibold text-gray-900 mb-2">First OVI</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Defense for first-time OVI charges</p>
               </Link>
-              <Link href="/ovi-dui-defense/felony-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Felony OVI</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Serious felony OVI defense</p>
-              </Link>
               <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">High-Tier OVI</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Defense for high BAC charges</p>
