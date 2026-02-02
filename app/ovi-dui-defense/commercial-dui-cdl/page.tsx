@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
   title: 'Commercial DUI (CDL) Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
@@ -87,6 +88,7 @@ export default function CommercialDUICDLPage() {
           </div>
         </div>
       </section>
+      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

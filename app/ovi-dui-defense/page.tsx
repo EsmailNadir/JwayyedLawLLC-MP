@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import OVIReviews from '@/components/OVIReviews';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -295,6 +296,7 @@ export default function OVIDefensePage() {
         </div>
       </section>
 
+      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

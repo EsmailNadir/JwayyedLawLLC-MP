@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
   title: 'Driving Under OVI Suspension Defense Lawyer in Ohio | Jwayyed Law LLC',
@@ -80,6 +81,7 @@ export default function DrivingUnderOVISuspensionPage() {
           </div>
         </div>
       </section>
+      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
