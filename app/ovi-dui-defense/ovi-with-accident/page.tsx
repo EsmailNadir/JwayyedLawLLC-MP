@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI with Accident Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['OVI with accident lawyer Columbus OH', 'DUI accident defense attorney Ohio', 'OVI accident attorney', 'Franklin County OVI accident lawyer'],
+  title: 'OVI with Accident Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['OVI with accident lawyer Ohio', 'DUI accident defense attorney Ohio', 'OVI accident attorney'],
   openGraph: {
-    title: 'OVI with Accident Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'OVI with Accident Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/ovi-with-accident',
   },
   alternates: { canonical: '/ovi-dui-defense/ovi-with-accident' },
@@ -48,7 +48,7 @@ export default function OVIWithAccidentPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI with Accident Defense Lawyer in Columbus, OH"
+        title="OVI with Accident Defense Lawyer in Ohio"
         description="Experienced legal defense for OVI/DUI charges involving accidents. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function OVIWithAccidentPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding OVI with Accident Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI with accident charges in Columbus or throughout Ohio carry enhanced penalties including mandatory jail time, potential additional charges for causing injury or death, and civil liability for damages. At Jwayyed Law LLC, we provide experienced defense representation for OVI charges involving accidents under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of OVI accidents and defense strategies necessary to protect your rights.
+              OVI with accident charges throughout Ohio carry enhanced penalties including mandatory jail time, potential additional charges for causing injury or death, and civil liability for damages. At Jwayyed Law LLC, we provide experienced defense representation for OVI charges involving accidents under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of OVI accidents and defense strategies necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">OVI with Accident Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -76,7 +76,7 @@ export default function OVIWithAccidentPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated OVI with accident defense representation in Columbus, Franklin County, and throughout Ohio. We understand that OVI accidents carry severe consequences including criminal charges, civil liability, and potential injury or death charges. Our attorney works diligently to investigate cases, develop defense strategies, and achieve favorable outcomes while protecting your rights and future.
+              Our firm provides dedicated OVI with accident defense representation throughout Ohio. We understand that OVI accidents carry severe consequences including criminal charges, civil liability, and potential injury or death charges. Our attorney works diligently to investigate cases, develop defense strategies, and achieve favorable outcomes while protecting your rights and future.
             </p>
           </div>
         </div>

@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'High-Tier OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus high-tier OVI defense attorney protecting your rights. Skilled representation for high BAC OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['high-tier OVI lawyer Columbus OH', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney', 'Franklin County high-tier OVI lawyer'],
+  title: 'High-Tier OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio high-tier OVI defense attorney protecting your rights. Skilled representation for high BAC OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['high-tier OVI lawyer Ohio', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney'],
   openGraph: {
-    title: 'High-Tier OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'High-Tier OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/high-tier-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/high-tier-ovi' },
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for high-tier OVI in Ohio?',
-    answer: 'High-tier OVI penalties in Ohio carry enhanced penalties under HB 37 (effective April 2025): First high-tier OVI: 6 days to 6 months jail (minimum 6 days mandatory vs. 3 days standard), fines $565 to $1,075 (minimum increased from $375), license suspension 1 to 3 years, and mandatory alcohol assessment and treatment. Second and subsequent high-tier OVI carry even more severe penalties with longer mandatory jail sentences (20 days minimum for second offense).',
+    answer: 'High-tier OVI penalties in Ohio carry enhanced penalties under HB 37 (effective April 2025): First high-tier OVI: 6 days to 6 months jail (minimum 6 days mandatory vs. 3 days standard), fines $565 to $1,075, license suspension 1 to 3 years. Second high-tier OVI: 20 days to 1 year jail (minimum 20 days mandatory), fines $715 to $1,625, license suspension 1 to 7 years. Third high-tier OVI: 60 days to 1 year jail (minimum 60 days mandatory), fines $850 to $2,750, license suspension 2 to 12 years, potential vehicle forfeiture. All high-tier offenses require mandatory alcohol assessment and treatment.',
   },
   {
     question: 'Can high-tier OVI charges be reduced?',
@@ -48,7 +48,7 @@ export default function HighTierOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="High-Tier OVI Defense Lawyer in Columbus, OH"
+        title="High-Tier OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for high BAC OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function HighTierOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding High-Tier OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              High-tier OVI charges in Columbus or throughout Ohio carry enhanced penalties including mandatory minimum jail sentences that are double the standard OVI penalties. At Jwayyed Law LLC, we provide experienced defense representation for high-tier OVI charges under Ohio Revised Code 4511.19. Our attorney understands the enhanced penalties of high-tier OVI convictions and defense strategies necessary to protect your rights.
+              High-tier OVI charges throughout Ohio carry enhanced penalties including mandatory minimum jail sentences that are double the standard OVI penalties. At Jwayyed Law LLC, we provide experienced defense representation for high-tier OVI charges under Ohio Revised Code 4511.19. Our attorney understands the enhanced penalties of high-tier OVI convictions and defense strategies necessary to protect your rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -93,6 +93,19 @@ export default function HighTierOVIPage() {
                 <li><strong>License Suspension:</strong> 1 to 7 years (longer than standard OVI)</li>
                 <li><strong>Vehicle Immobilization:</strong> 90 days</li>
                 <li><strong>Yellow Plates:</strong> Required for 90 days</li>
+                <li><strong>Mandatory Alcohol Assessment and Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Third High-Tier OVI</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                <li><strong>Jail:</strong> 60 days to 1 year (minimum 60 days mandatory vs. 30 days standard third OVI)</li>
+                <li><strong>Fines:</strong> $850 to $2,750 (enhanced under HB 37)</li>
+                <li><strong>License Suspension:</strong> 2 to 12 years</li>
+                <li><strong>Vehicle Forfeiture:</strong> Vehicle may be subject to criminal forfeiture</li>
+                <li><strong>Yellow Plates:</strong> Required</li>
+                <li><strong>Ignition Interlock Device:</strong> Required upon license reinstatement</li>
                 <li><strong>Mandatory Alcohol Assessment and Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
               </ul>
             </div>
@@ -179,15 +192,15 @@ export default function HighTierOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated high-tier OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that high-tier OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              Our firm provides dedicated high-tier OVI defense representation throughout Ohio. We understand that high-tier OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development including rising BAC defense, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, challenge breathalyzer results, negotiate pleas, or proceed to trial.
+              Our approach combines thorough investigation, strategic defense development including rising BAC defense, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, challenge breathalyzer results, negotiate pleas, or proceed to trial.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing high-tier OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including rising BAC defense and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in high-tier OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing high-tier OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including rising BAC defense and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in high-tier OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

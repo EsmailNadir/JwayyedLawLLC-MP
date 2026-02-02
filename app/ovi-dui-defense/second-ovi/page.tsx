@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Second OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus second OVI defense attorney protecting your rights. Skilled representation for second OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['second OVI lawyer Columbus OH', 'second DUI defense attorney Ohio', 'repeat OVI attorney', 'Franklin County second OVI lawyer'],
+  title: 'Second OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio second OVI defense attorney protecting your rights. Skilled representation for second OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['second OVI lawyer Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney'],
   openGraph: {
-    title: 'Second OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Second OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/second-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/second-ovi' },
@@ -48,7 +48,7 @@ export default function SecondOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Second OVI Defense Lawyer in Columbus, OH"
+        title="Second OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for second OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function SecondOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Second OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A second OVI charge in Columbus or throughout Ohio carries significantly enhanced penalties compared to a first offense, including mandatory jail time, longer license suspension, vehicle immobilization, and mandatory alcohol treatment. At Jwayyed Law LLC, we provide experienced defense representation for second OVI charges under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of second OVI convictions and defense strategies necessary to protect your rights.
+              A second OVI charge throughout Ohio carries significantly enhanced penalties compared to a first offense, including mandatory jail time, longer license suspension, vehicle immobilization, and mandatory alcohol treatment. At Jwayyed Law LLC, we provide experienced defense representation for second OVI charges under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of second OVI convictions and defense strategies necessary to protect your rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -176,15 +176,15 @@ export default function SecondOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated second OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that second OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              Our firm provides dedicated second OVI defense representation throughout Ohio. We understand that second OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing second OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in second OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing second OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in second OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

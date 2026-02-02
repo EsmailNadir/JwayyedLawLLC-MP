@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Underage OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['underage OVI lawyer Columbus OH', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'Franklin County underage OVI lawyer'],
+  title: 'Underage OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['underage OVI lawyer Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney'],
   openGraph: {
-    title: 'Underage OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Underage OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/underage-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/underage-ovi' },
@@ -48,7 +48,7 @@ export default function UnderageOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Underage OVI Defense Lawyer in Columbus, OH"
+        title="Underage OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for underage OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function UnderageOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Underage OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Underage OVI charges in Columbus or throughout Ohio carry severe penalties including license suspension, fines, and potential impact on education and future opportunities. At Jwayyed Law LLC, we provide experienced defense representation for underage OVI charges under Ohio Revised Code 4511.19. Our attorney understands the zero-tolerance policy for underage drinking and driving and defense strategies necessary to protect your rights.
+              Underage OVI charges throughout Ohio carry severe penalties including license suspension, fines, and potential impact on education and future opportunities. At Jwayyed Law LLC, we provide experienced defense representation for underage OVI charges under Ohio Revised Code 4511.19. Our attorney understands the zero-tolerance policy for underage drinking and driving and defense strategies necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Underage OVI Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -76,7 +76,7 @@ export default function UnderageOVIPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated underage OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that underage OVI charges can affect education and future opportunities. Our attorney works diligently to minimize consequences and protect your future while defending your rights.
+              Our firm provides dedicated underage OVI defense representation throughout Ohio. We understand that underage OVI charges can affect education and future opportunities. Our attorney works diligently to minimize consequences and protect your future while defending your rights.
             </p>
           </div>
         </div>

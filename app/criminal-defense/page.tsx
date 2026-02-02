@@ -6,23 +6,23 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
-  description: 'Experienced Columbus criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft, and all criminal charges. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
+  description: 'Experienced Ohio criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft, and all criminal charges. Schedule consultation: (614) 285-5482',
   keywords: [
-    'Columbus criminal defense attorney',
+    'Ohio criminal defense attorney',
     'Ohio criminal defense lawyer',
-    'criminal defense Columbus OH',
+    'criminal defense Ohio',
     'assault defense attorney',
     'drug crimes attorney',
     'domestic violence lawyer',
     'theft defense attorney',
     'felony defense lawyer',
     'misdemeanor defense attorney',
-    'Franklin County criminal attorney'
+    'Ohio criminal attorney'
   ],
   openGraph: {
-    title: 'Columbus Criminal Defense Attorney | Jwayyed Law LLC',
-    description: 'Experienced criminal defense representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Ohio Criminal Defense Attorney | Jwayyed Law LLC',
+    description: 'Experienced criminal defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense',
   },
   alternates: {
@@ -62,8 +62,8 @@ export default function CriminalDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Criminal Defense Attorney"
-        description="Experienced legal representation for all criminal charges in Columbus and throughout Ohio. Protecting your rights and fighting for the best possible outcome."
+        title="Ohio Criminal Defense Attorney"
+        description="Experienced legal representation for all criminal charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
       />
 
       {/* Main Content Section */}
@@ -71,11 +71,11 @@ export default function CriminalDefensePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Experienced Criminal Defense Representation in Columbus, Ohio
+              Experienced Criminal Defense Representation in Ohio
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Facing criminal charges in Columbus or throughout Ohio can be overwhelming and life-altering. At Jwayyed Law LLC, we provide dedicated criminal defense representation for individuals charged with crimes ranging from misdemeanors to serious felonies. Our attorney understands the Ohio Revised Code, local court procedures, and defense strategies necessary to protect your rights and achieve the best possible outcome.
+              Facing criminal charges throughout Ohio can be overwhelming and life-altering. At Jwayyed Law LLC, we provide dedicated criminal defense representation for individuals charged with crimes ranging from misdemeanors to serious felonies. Our attorney understands the Ohio Revised Code, local court procedures, and defense strategies necessary to protect your rights and achieve the best possible outcome.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -171,6 +171,38 @@ export default function CriminalDefensePage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Domestic Violence</h4>
                 <p className="text-sm text-gray-600">Protection for domestic violence charges and protection order matters under ORC 2919.25</p>
               </Link>
+              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Criminal Mischief</h4>
+                <p className="text-sm text-gray-600">Defense for property damage and criminal mischief charges under ORC 2909.07</p>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Criminal Trespass</h4>
+                <p className="text-sm text-gray-600">Defense for trespass charges and unlawful entry allegations under ORC 2911.21</p>
+              </Link>
+              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Petty Theft</h4>
+                <p className="text-sm text-gray-600">Defense for shoplifting and petty theft charges under ORC 2913.02</p>
+              </Link>
+              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Resisting Arrest</h4>
+                <p className="text-sm text-gray-600">Defense for resisting arrest charges under ORC 2921.33</p>
+              </Link>
+              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Obstruction of Official Business</h4>
+                <p className="text-sm text-gray-600">Defense for obstruction charges under ORC 2921.31</p>
+              </Link>
+              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Speeding Tickets</h4>
+                <p className="text-sm text-gray-600">Defense for speeding violations, point reduction, and CDL implications under ORC 4511.21</p>
+              </Link>
+              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Driving Under Suspension</h4>
+                <p className="text-sm text-gray-600">Defense for DUS charges and license reinstatement under ORC 4510.11-4510.16</p>
+              </Link>
+              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">No Operator&apos;s License</h4>
+                <p className="text-sm text-gray-600">Defense for driving without a valid license charges under ORC 4510.12</p>
+              </Link>
               <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Expungement & Record Sealing</h4>
                 <p className="text-sm text-gray-600">Seal or expunge eligible criminal records under ORC Chapter 2953</p>
@@ -178,7 +210,7 @@ export default function CriminalDefensePage() {
             </div>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              Each practice area requires specific knowledge of the relevant Ohio Revised Code sections, common defenses, sentencing structures, and case law. Our attorney stays current with changes in Ohio criminal law and understands how these laws are applied in Columbus, Franklin County, and throughout Ohio courts. We develop defense strategies tailored to the specific type of charge you face, drawing on our experience with similar cases and knowledge of local court practices.
+              Each practice area requires specific knowledge of the relevant Ohio Revised Code sections, common defenses, sentencing structures, and case law. Our attorney stays current with changes in Ohio criminal law and understands how these laws are applied throughout Ohio courts. We develop defense strategies tailored to the specific type of charge you face, drawing on our experience with similar cases and knowledge of local court practices.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -273,7 +305,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus, Franklin County, and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -285,7 +317,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal charges in Columbus, Franklin County, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing criminal charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
         </div>

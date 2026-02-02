@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Limited Driving Privileges Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI suspension in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['limited driving privileges lawyer Columbus OH', 'driving privileges attorney Ohio', 'work privileges attorney', 'Franklin County limited privileges lawyer'],
+  title: 'Limited Driving Privileges Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI suspension in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['limited driving privileges lawyer Ohio', 'driving privileges attorney Ohio', 'work privileges attorney'],
   openGraph: {
-    title: 'Limited Driving Privileges Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Limited Driving Privileges Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/limited-driving-privileges',
   },
   alternates: { canonical: '/ovi-dui-defense/limited-driving-privileges' },
@@ -48,7 +48,7 @@ export default function LimitedDrivingPrivilegesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Limited Driving Privileges Lawyer in Columbus, OH"
+        title="Limited Driving Privileges Lawyer in Ohio"
         description="Experienced legal assistance with limited driving privileges after OVI suspension. Helping you get back on the road legally."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function LimitedDrivingPrivilegesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Limited Driving Privileges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Limited driving privileges in Columbus or throughout Ohio allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, and necessary activities. At Jwayyed Law LLC, we provide experienced assistance with limited driving privileges under Ohio Revised Code 4511.191 as amended by HB 37 (effective April 2025). Under the new law, judges can now waive the 15-day waiting period for first OVI offenders who test over the legal limit with no prior alcohol arrests, allowing immediate privileges. Our attorney understands the requirements and process necessary to obtain limited privileges and help you get back on the road legally.
+              Limited driving privileges in Ohio allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, and necessary activities. At Jwayyed Law LLC, we provide experienced assistance with limited driving privileges under Ohio Revised Code 4511.191 as amended by HB 37 (effective April 2025). Under the new law, judges can now waive the 15-day waiting period for first OVI offenders who test over the legal limit with no prior alcohol arrests, allowing immediate privileges. Our attorney understands the requirements and process necessary to obtain limited privileges and help you get back on the road legally.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Limited Driving Privileges Requirements</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -81,7 +81,7 @@ export default function LimitedDrivingPrivilegesPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated assistance with limited driving privileges in Columbus, Franklin County, and throughout Ohio. We understand that driving is essential for work and daily life. Our attorney works diligently to help eligible clients obtain limited privileges, navigate the process, and get back on the road legally while complying with all conditions.
+              Our firm provides dedicated assistance with limited driving privileges throughout Ohio. We understand that driving is essential for work and daily life. Our attorney works diligently to help eligible clients obtain limited privileges, navigate the process, and get back on the road legally while complying with all conditions.
             </p>
           </div>
         </div>

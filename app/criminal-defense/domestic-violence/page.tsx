@@ -6,20 +6,20 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Domestic Violence Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus domestic violence defense attorney protecting your rights. Skilled representation for domestic violence charges, protection orders, and related offenses in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Domestic Violence Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio domestic violence defense attorney protecting your rights. Skilled representation for domestic violence charges, protection orders, and related offenses in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
-    'domestic violence lawyer Columbus OH',
+    'domestic violence lawyer Ohio',
     'domestic violence defense attorney Ohio',
     'domestic violence attorney',
     'protection order defense',
     'domestic violence charges Ohio',
     'Ohio domestic violence lawyer',
-    'Franklin County domestic violence attorney'
+    'Ohio domestic violence attorney'
   ],
   openGraph: {
-    title: 'Domestic Violence Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
-    description: 'Experienced domestic violence defense representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Domestic Violence Defense Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Experienced domestic violence defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/domestic-violence',
   },
   alternates: {
@@ -60,7 +60,7 @@ export default function DomesticViolencePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Domestic Violence Defense Lawyer in Columbus, OH"
+        title="Domestic Violence Defense Lawyer in Ohio"
         description="Experienced legal defense for domestic violence charges and protection orders. Protecting your rights and fighting for the best possible outcome."
       />
 
@@ -72,7 +72,7 @@ export default function DomesticViolencePage() {
             </h2>
             
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Domestic violence charges in Columbus or throughout Ohio carry serious criminal penalties and long-term consequences that extend far beyond potential jail time. At Jwayyed Law LLC, we provide experienced defense representation for individuals facing domestic violence charges under Ohio Revised Code 2919.25. Our attorney understands Ohio domestic violence laws, protection order procedures, and the severe impact these charges can have on your life, career, and relationships.
+              Domestic violence charges throughout Ohio carry serious criminal penalties and long-term consequences that extend far beyond potential jail time. At Jwayyed Law LLC, we provide experienced defense representation for individuals facing domestic violence charges under Ohio Revised Code 2919.25. Our attorney understands Ohio domestic violence laws, protection order procedures, and the severe impact these charges can have on your life, career, and relationships.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -225,7 +225,7 @@ export default function DomesticViolencePage() {
             </h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated domestic violence defense representation in Columbus, Franklin County, and throughout Ohio. We understand that domestic violence charges can arise from complex family situations, misunderstandings, false allegations, or legitimate self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes while protecting your rights and reputation.
+              Our firm provides dedicated domestic violence defense representation throughout Ohio. We understand that domestic violence charges can arise from complex family situations, misunderstandings, false allegations, or legitimate self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes while protecting your rights and reputation.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -233,11 +233,11 @@ export default function DomesticViolencePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue diversion programs, negotiate pleas, or proceed to trial.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue diversion programs, negotiate pleas, or proceed to trial.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing domestic violence charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including protection order challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in domestic violence cases—protection orders can be issued immediately, and early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing domestic violence charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including protection order challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in domestic violence cases—protection orders can be issued immediately, and early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">

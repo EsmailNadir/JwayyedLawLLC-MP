@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Driving Under OVI Suspension Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['driving under suspension lawyer Columbus OH', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'Franklin County driving under suspension lawyer'],
+  title: 'Driving Under OVI Suspension Defense Lawyer in Ohio | Jwayyed Law LLC',
+  description: 'Experienced Ohio driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['driving under suspension lawyer Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney'],
   openGraph: {
-    title: 'Driving Under OVI Suspension Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Driving Under OVI Suspension Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/driving-under-ovi-suspension',
   },
   alternates: { canonical: '/ovi-dui-defense/driving-under-ovi-suspension' },
@@ -48,7 +48,7 @@ export default function DrivingUnderOVISuspensionPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Driving Under OVI Suspension Defense Lawyer in Columbus, OH"
+        title="Driving Under OVI Suspension Defense Lawyer in Ohio"
         description="Experienced legal defense for driving under OVI suspension charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function DrivingUnderOVISuspensionPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Driving Under OVI Suspension Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Driving under OVI suspension charges in Columbus or throughout Ohio carry criminal penalties including jail time, fines, and additional license suspension extensions. At Jwayyed Law LLC, we provide experienced defense representation for driving under OVI suspension charges under Ohio Revised Code 4510.14. Our attorney understands the consequences of driving under suspension convictions and defense strategies necessary to protect your rights.
+              Driving under OVI suspension charges throughout Ohio carry criminal penalties including jail time, fines, and additional license suspension extensions. At Jwayyed Law LLC, we provide experienced defense representation for driving under OVI suspension charges under Ohio Revised Code 4510.14. Our attorney understands the consequences of driving under suspension convictions and defense strategies necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Driving Under OVI Suspension Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -75,7 +75,7 @@ export default function DrivingUnderOVISuspensionPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated driving under OVI suspension defense representation in Columbus, Franklin County, and throughout Ohio. We understand that driving under suspension charges can result in additional penalties and license suspension extensions. Our attorney works diligently to develop defense strategies and achieve favorable outcomes while protecting your rights and driving privileges.
+              Our firm provides dedicated driving under OVI suspension defense representation throughout Ohio. We understand that driving under suspension charges can result in additional penalties and license suspension extensions. Our attorney works diligently to develop defense strategies and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
           </div>
         </div>

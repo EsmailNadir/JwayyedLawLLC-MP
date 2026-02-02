@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Third OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus third OVI defense attorney protecting your rights. Skilled representation for third OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['third OVI lawyer Columbus OH', 'third OVI defense attorney Ohio', 'third DUI attorney', 'Franklin County third OVI lawyer'],
+  title: 'Third OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio third OVI defense attorney protecting your rights. Skilled representation for third OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['third OVI lawyer Ohio', 'third OVI defense attorney Ohio', 'third DUI attorney'],
   openGraph: {
-    title: 'Third OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Third OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/third-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/third-ovi' },
@@ -48,7 +48,7 @@ export default function ThirdOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Third OVI Defense Lawyer in Columbus, OH"
+        title="Third OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for third OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function ThirdOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Third OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A third OVI charge in Columbus or throughout Ohio (within 10 years of two prior OVI convictions) is a first-degree misdemeanor carrying severe penalties including mandatory 30-day jail minimum, substantial fines, lengthy license suspension, and mandatory ignition interlock requirements. At Jwayyed Law LLC, we provide experienced defense representation for third OVI charges under Ohio Revised Code 4511.19 as amended by HB 37 (effective April 2025). Our attorney understands the severe consequences of multiple OVI convictions and defense strategies necessary to protect your rights.
+              A third OVI charge in Ohio (within 10 years of two prior OVI convictions) is a first-degree misdemeanor carrying severe penalties including mandatory 30-day jail minimum, substantial fines, lengthy license suspension, and mandatory ignition interlock requirements. At Jwayyed Law LLC, we provide experienced defense representation for third OVI charges under Ohio Revised Code 4511.19 as amended by HB 37 (effective April 2025). Our attorney understands the severe consequences of multiple OVI convictions and defense strategies necessary to protect your rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -176,15 +176,15 @@ export default function ThirdOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated third OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that third OVI charges carry severe penalties and require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              Our firm provides dedicated third OVI defense representation throughout Ohio. We understand that third OVI charges carry severe penalties and require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, challenge prior convictions, negotiate pleas, or proceed to trial.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, challenge prior convictions, negotiate pleas, or proceed to trial.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing third OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing third OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in third OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
           </div>
         </div>

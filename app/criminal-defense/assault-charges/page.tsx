@@ -6,10 +6,10 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Assault Charges Lawyer in Columbus, OH | Experienced Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus assault defense attorney protecting your rights. Skilled representation for assault, battery, and aggravated assault charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Assault Charges Lawyer in Ohio | Experienced Defense Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio assault defense attorney protecting your rights. Skilled representation for assault, battery, and aggravated assault charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
-    'assault charges lawyer Columbus OH',
+    'assault charges lawyer Ohio',
     'assault defense attorney Ohio',
     'battery charges attorney',
     'aggravated assault lawyer',
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     'felony assault defense',
     'misdemeanor assault lawyer',
     'Ohio assault attorney',
-    'Franklin County assault lawyer'
+    'Ohio assault lawyer'
   ],
   openGraph: {
-    title: 'Assault Charges Lawyer in Columbus, OH | Jwayyed Law LLC',
-    description: 'Experienced assault defense representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Assault Charges Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Experienced assault defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/assault-charges',
   },
   alternates: {
@@ -62,7 +62,7 @@ export default function AssaultChargesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Assault Charges Lawyer in Columbus, OH"
+        title="Assault Charges Lawyer in Ohio"
         description="Experienced legal defense for assault, battery, and aggravated assault charges. Protecting your rights and fighting for the best possible outcome."
       />
 
@@ -75,7 +75,7 @@ export default function AssaultChargesPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Facing assault charges in Columbus or throughout Ohio can have serious consequences on your freedom, employment, and reputation. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with assault, battery, and aggravated assault under Ohio Revised Code Chapter 2903. Our attorney understands Ohio assault laws, potential defenses, and the impact these charges can have on your future.
+              Facing assault charges throughout Ohio can have serious consequences on your freedom, employment, and reputation. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with assault, battery, and aggravated assault under Ohio Revised Code Chapter 2903. Our attorney understands Ohio assault laws, potential defenses, and the impact these charges can have on your future.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -287,7 +287,7 @@ export default function AssaultChargesPage() {
             </h3>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated assault defense representation in Columbus, Franklin County, and throughout Ohio. We understand that assault charges can arise from misunderstandings, false allegations, or situations requiring self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes.
+              Our firm provides dedicated assault defense representation throughout Ohio. We understand that assault charges can arise from misunderstandings, false allegations, or situations requiring self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -295,7 +295,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -303,7 +303,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing assault charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing assault charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
             </p>
 
             <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">

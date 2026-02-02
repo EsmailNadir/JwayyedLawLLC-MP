@@ -6,21 +6,20 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus OVI Attorney | Experienced DUI/OVI Defense Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, third, and felony OVI charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Ohio OVI Attorney | Experienced DUI/OVI Defense Lawyer | Jwayyed Law LLC',
+  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, third, and felony OVI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
-    'Columbus OVI attorney',
-    'Columbus DUI lawyer',
+    'Ohio OVI attorney',
+    'Ohio DUI lawyer',
     'Ohio OVI defense attorney',
-    'OVI defense Columbus OH',
+    'OVI defense Ohio',
     'DUI defense attorney Ohio',
     'first OVI defense',
-    'felony OVI lawyer',
-    'Franklin County OVI attorney'
+    'felony OVI lawyer'
   ],
   openGraph: {
-    title: 'Columbus OVI Attorney | Jwayyed Law LLC',
-    description: 'Experienced OVI/DUI defense representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Ohio OVI Attorney | Jwayyed Law LLC',
+    description: 'Experienced OVI/DUI defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
   },
   alternates: {
@@ -60,19 +59,19 @@ export default function OVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus OVI Attorney"
-        description="Experienced legal representation for OVI/DUI charges in Columbus and throughout Ohio. Protecting your rights and fighting for the best possible outcome."
+        title="Ohio OVI Attorney"
+        description="Experienced legal representation for OVI/DUI charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
       />
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
-              Experienced OVI/DUI Defense Representation in Columbus, Ohio
+              Experienced OVI/DUI Defense Representation in Ohio
             </h2>
             
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Facing OVI (Operating a Vehicle Impaired) charges in Columbus or throughout Ohio carries severe criminal penalties, license suspension, and long-term consequences that extend far beyond fines and jail time. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation for individuals charged under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws including current requirements under HB 37 (Liv's Law, effective April 2025; current as of 2026), administrative license suspension procedures, and defense strategies necessary to protect your rights and achieve favorable outcomes.
+              Facing OVI (Operating a Vehicle Impaired) charges throughout Ohio carries severe criminal penalties, license suspension, and long-term consequences that extend far beyond fines and jail time. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation for individuals charged under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws including current requirements under HB 37 (Liv's Law, effective April 2025; current as of 2026), administrative license suspension procedures, and defense strategies necessary to protect your rights and achieve favorable outcomes.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -250,7 +249,7 @@ export default function OVIDefensePage() {
             </h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated OVI/DUI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that OVI charges can arise from various circumstances and that every case requires careful analysis of evidence, testing procedures, and potential defenses. Our attorney works diligently to challenge evidence, develop strong defenses, and achieve favorable outcomes while protecting your driving privileges and future.
+              Our firm provides dedicated OVI/DUI defense representation throughout Ohio. We understand that OVI charges can arise from various circumstances and that every case requires careful analysis of evidence, testing procedures, and potential defenses. Our attorney works diligently to challenge evidence, develop strong defenses, and achieve favorable outcomes while protecting your driving privileges and future.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -258,7 +257,7 @@ export default function OVIDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
+              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -266,7 +265,7 @@ export default function OVIDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing OVI charges in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including license suspension appeals, and develop a strategy tailored to your situation. Time is critical in OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you are facing OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including license suspension appeals, and develop a strategy tailored to your situation. Time is critical in OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">

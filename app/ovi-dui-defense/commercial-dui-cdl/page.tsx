@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Commercial DUI (CDL) Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['commercial DUI lawyer Columbus OH', 'CDL OVI defense attorney Ohio', 'CDL attorney', 'Franklin County commercial DUI lawyer'],
+  title: 'Commercial DUI (CDL) Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['commercial DUI lawyer Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney'],
   openGraph: {
-    title: 'Commercial DUI (CDL) Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Commercial DUI (CDL) Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/commercial-dui-cdl',
   },
   alternates: { canonical: '/ovi-dui-defense/commercial-dui-cdl' },
@@ -48,7 +48,7 @@ export default function CommercialDUICDLPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Commercial DUI (CDL) Defense Lawyer in Columbus, OH"
+        title="Commercial DUI (CDL) Defense Lawyer in Ohio"
         description="Experienced legal defense for CDL holders facing OVI/DUI charges. Protecting your commercial driving career and rights."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function CommercialDUICDLPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Commercial DUI (CDL) Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Commercial DUI charges for CDL holders in Columbus or throughout Ohio carry severe consequences that can end your commercial driving career permanently. At Jwayyed Law LLC, we provide experienced defense representation for CDL holders facing OVI charges under Ohio Revised Code 4511.19 and 4506.16. Our attorney understands the severe CDL consequences of OVI convictions and defense strategies necessary to protect your commercial driving career.
+              Commercial DUI charges for CDL holders throughout Ohio carry severe consequences that can end your commercial driving career permanently. At Jwayyed Law LLC, we provide experienced defense representation for CDL holders facing OVI charges under Ohio Revised Code 4511.19 and 4506.16. Our attorney understands the severe CDL consequences of OVI convictions and defense strategies necessary to protect your commercial driving career.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">CDL OVI Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -82,7 +82,7 @@ export default function CommercialDUICDLPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated CDL OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that your commercial driving career is at stake. Our attorney works diligently to protect your CDL, develop defense strategies, and achieve favorable outcomes while defending your rights and livelihood.
+              Our firm provides dedicated CDL OVI defense representation throughout Ohio. We understand that your commercial driving career is at stake. Our attorney works diligently to protect your CDL, develop defense strategies, and achieve favorable outcomes while defending your rights and livelihood.
             </p>
           </div>
         </div>

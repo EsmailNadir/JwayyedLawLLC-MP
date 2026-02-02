@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Expungement & Record Sealing Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus expungement attorney helping seal criminal records. Skilled representation for record sealing and expungement in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['expungement lawyer Columbus OH', 'record sealing attorney Ohio', 'expungement attorney', 'Franklin County expungement lawyer'],
+  title: 'Expungement & Record Sealing Lawyer in Ohio | Jwayyed Law LLC',
+  description: 'Experienced Ohio expungement attorney helping seal criminal records. Skilled representation for record sealing and expungement in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['expungement lawyer Ohio', 'record sealing attorney Ohio', 'expungement attorney', 'Ohio expungement lawyer'],
   openGraph: {
-    title: 'Expungement & Record Sealing Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Expungement & Record Sealing Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/expungement-record-sealing',
   },
   alternates: { canonical: '/criminal-defense/expungement-record-sealing' },
@@ -48,7 +48,7 @@ export default function ExpungementRecordSealingPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Expungement & Record Sealing Lawyer in Columbus, OH"
+        title="Expungement & Record Sealing Lawyer in Ohio"
         description="Experienced legal assistance with criminal record sealing and expungement. Helping you move forward with a clean record."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function ExpungementRecordSealingPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Expungement and Record Sealing in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Expungement or record sealing in Columbus or throughout Ohio allows individuals with criminal records to seal their records from public view, improving employment, housing, and education opportunities. At Jwayyed Law LLC, we provide experienced assistance with expungement and record sealing under Ohio Revised Code Chapter 2953. Our attorney understands Ohio expungement laws and can help determine your eligibility and guide you through the process.
+              Expungement or record sealing throughout Ohio allows individuals with criminal records to seal their records from public view, improving employment, housing, and education opportunities. At Jwayyed Law LLC, we provide experienced assistance with expungement and record sealing under Ohio Revised Code Chapter 2953. Our attorney understands Ohio expungement laws and can help determine your eligibility and guide you through the process.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Expungement eligibility depends on offense type, prior record, completion of sentence, and required waiting periods ranging from one to five years. Certain offenses including violent crimes, sex crimes, or offenses involving minors are generally not eligible. Sealed records remain available to law enforcement but are not accessible to most employers, landlords, or the general public.
@@ -82,7 +82,7 @@ export default function ExpungementRecordSealingPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated expungement and record sealing assistance in Columbus, Franklin County, and throughout Ohio. We understand that criminal records can significantly impact employment, housing, and opportunities. Our attorney works diligently to determine eligibility, prepare expungement motions, and guide you through the process to help you move forward with a clean record.
+              Our firm provides dedicated expungement and record sealing assistance throughout Ohio. We understand that criminal records can significantly impact employment, housing, and opportunities. Our attorney works diligently to determine eligibility, prepare expungement motions, and guide you through the process to help you move forward with a clean record.
             </p>
           </div>
         </div>

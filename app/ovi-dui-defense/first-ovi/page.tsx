@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'First OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['first OVI lawyer Columbus OH', 'first DUI defense attorney Ohio', 'first offense OVI attorney', 'Franklin County first OVI lawyer'],
+  title: 'First OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['first OVI lawyer Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney'],
   openGraph: {
-    title: 'First OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'First OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/first-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/first-ovi' },
@@ -48,7 +48,7 @@ export default function FirstOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="First OVI Defense Lawyer in Columbus, OH"
+        title="First OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for first-time OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function FirstOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding First OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A first OVI charge in Columbus or throughout Ohio carries serious penalties including jail time, license suspension, fines, and a permanent criminal record. At Jwayyed Law LLC, we provide experienced defense representation for first OVI charges under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws and defense strategies necessary to protect your rights and minimize consequences.
+              A first OVI charge throughout Ohio carries serious penalties including jail time, license suspension, fines, and a permanent criminal record. At Jwayyed Law LLC, we provide experienced defense representation for first OVI charges under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws and defense strategies necessary to protect your rights and minimize consequences.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               While a first OVI is typically charged as a misdemeanor, penalties are still severe including mandatory jail time, license suspension, vehicle immobilization, and mandatory alcohol treatment. High-tier OVI (BAC 0.17% or higher) carries enhanced penalties even for first offenses. A first OVI conviction can still affect employment, insurance rates, and future opportunities.
@@ -187,13 +187,13 @@ export default function FirstOVIPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated first OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that a first OVI charge requires immediate attention to protect your rights and minimize consequences. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your driving privileges and future.
+              Our firm provides dedicated first OVI defense representation throughout Ohio. We understand that a first OVI charge requires immediate attention to protect your rights and minimize consequences. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your driving privileges and future.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We recognize that first OVI charges can arise from various circumstances and that even first-time offenders face severe penalties. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and legal process. We work aggressively to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing a first OVI charge in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
+              If you are facing a first OVI charge anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
             </p>
           </div>
         </div>

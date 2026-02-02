@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Refusal OVI Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['refusal OVI lawyer Columbus OH', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney', 'Franklin County refusal OVI lawyer'],
+  title: 'Refusal OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['refusal OVI lawyer Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
   openGraph: {
-    title: 'Refusal OVI Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Refusal OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/refusal-ovi',
   },
   alternates: { canonical: '/ovi-dui-defense/refusal-ovi' },
@@ -48,7 +48,7 @@ export default function RefusalOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Refusal OVI Defense Lawyer in Columbus, OH"
+        title="Refusal OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for OVI refusal charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function RefusalOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Refusal OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Refusing a breathalyzer test in Columbus or throughout Ohio results in automatic administrative license suspension and can be used as evidence against you in court. At Jwayyed Law LLC, we provide experienced defense representation for OVI refusal cases under Ohio Revised Code 4511.191. Our attorney understands the implications of breathalyzer refusal and defense strategies necessary to protect your rights.
+              Refusing a breathalyzer test in Ohio results in automatic administrative license suspension and can be used as evidence against you in court. At Jwayyed Law LLC, we provide experienced defense representation for OVI refusal cases under Ohio Revised Code 4511.191. Our attorney understands the implications of breathalyzer refusal and defense strategies necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Refusal OVI Penalties in Ohio</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -76,7 +76,7 @@ export default function RefusalOVIPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated refusal OVI defense representation in Columbus, Franklin County, and throughout Ohio. We understand that refusal cases require immediate attention and experienced defense. Our attorney works diligently to challenge suspensions, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              Our firm provides dedicated refusal OVI defense representation throughout Ohio. We understand that refusal cases require immediate attention and experienced defense. Our attorney works diligently to challenge suspensions, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
             </p>
           </div>
         </div>
