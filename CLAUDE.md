@@ -86,9 +86,11 @@ Custom design tokens:
 
 ### External Services
 
-- **Formspree** — Contact form backend (`xyzjyzgv`)
-- **Calendly** — Appointment scheduling (`calendly.com/jjlawohio`)
+- **Formspree** — Contact form backend. Form ID is hardcoded in `components/ContactCTA.tsx` and `app/contact/page.tsx` (two forms).
+- **Calendly** — Appointment scheduling. URL is hardcoded in `components/calendly.tsx`.
 - **Git LFS** — Tracks `.mp4` video files (configured in `.gitattributes`)
+
+No environment variables are used; all service IDs are inline in source files.
 
 ## Deployment
 
