@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Before Starting Any Task
+
+1. Read this entire CLAUDE.md first
+2. Identify which files will be affected
+3. State your plan and wait for approval before writing code
+4. After making changes, run `npm run build` to verify no errors
+5. Show a summary of all changes before committing
+
 ## Project Overview
 
 Marketing website for **Jwayyed Law LLC**, a Columbus, Ohio law firm. Live at `https://www.jjlawohio.com`.
@@ -28,70 +36,93 @@ All pages use the Next.js App Router with file-based routing. Major route groups
 | Route | Content |
 |---|---|
 | `/` | Homepage with video hero, testimonials carousel, search |
-| `/criminal-defense/*` | 10 criminal defense practice area sub-pages |
-| `/ovi-dui-defense/*` | 10 OVI/DUI defense sub-pages |
-| `/personal-injury/*` | 12 personal injury sub-pages |
-| `/civil/*` | 10 civil litigation sub-pages |
-| `/business/*` | 10 business law sub-pages |
-| `/trusts/*` | 9 trust-related sub-pages |
-| `/other-services/*` | 16 additional legal services (estate planning, immigration, mediation, etc.) |
-| `/courts/*` | 17 Ohio court information pages |
-| `/locations/*` | 6 county-specific landing pages |
+| `/criminal-defense/*` | Criminal defense practice area sub-pages |
+| `/ovi-dui-defense/*` | OVI/DUI defense sub-pages |
+| `/personal-injury/*` | Personal injury sub-pages |
+| `/civil/*` | Civil litigation sub-pages |
+| `/business/*` | Business law sub-pages |
+| `/trusts/*` | Trust-related sub-pages |
+| `/other-services/*` | Additional legal services (estate planning, immigration, mediation, etc.) |
+| `/courts/*` | Ohio court information pages |
+| `/locations/*` | County-specific landing pages |
 | `/our-law-firm/*` | About, attorneys, testimonials, blog (with `[slug]` dynamic route), case results |
 | `/contact` | Contact form + Calendly scheduling embed |
 
-### Root Layout (`app/layout.tsx`)
+### Homepage vs. Inner Pages (Important Gotcha)
 
-Wraps all pages with: sticky Navbar, Footer, and comprehensive SEO metadata (Open Graph, Twitter Cards, JSON-LD `LegalService` schema). `metadataBase` is set to `https://www.jjlawohio.com`.
+`app/page.tsx` is a large `'use client'` component with **its own inline Navbar and Footer** that are completely separate from `components/navbar.tsx` and `components/footer.tsx`. Changes to the shared navbar/footer will NOT affect the homepage, and vice versa. The root layout (`app/layout.tsx`) wraps all pages with the shared Navbar and Footer, but the homepage renders its own on top.
 
-### Shared Components (`components/`)
+### Service Page Pattern
 
-- **`navbar.tsx`** (682 lines) — Complex responsive mega-menu (desktop dropdowns + mobile drawer). Contains all navigation item definitions inline.
-- **`SearchBar.tsx`** — Client-side fuzzy search using **Fuse.js** over navigation items, keyboard-navigable.
-- **`ContactCTA.tsx`** — Reusable contact call-to-action with form submitting to **Formspree** (`xyzjyzgv`).
-- **`FAQ.tsx`** — Accordion FAQ with JSON-LD `FAQPage` schema markup.
-- **`Breadcrumbs.tsx`** — Breadcrumb nav with JSON-LD `BreadcrumbList` schema.
-- **`PageHero.tsx`** — Reusable dark-gradient hero banner for service pages.
-- **`OVIReviews.tsx`** — Review carousel for OVI/DUI pages.
-- **`ServiceCard.tsx`** — Card component for service listings.
-- **`LoadingOptimizer.tsx`** — Client-side preloader for critical images/video.
-- **`calendly.tsx`** — Calendly scheduling widget embed.
-- **`footer.tsx`** — Disclaimer footer.
+Nearly all practice area sub-pages follow a consistent structure. Use any existing page (e.g., `app/criminal-defense/assault-charges/page.tsx`) as a template:
 
-### Homepage (`app/page.tsx`)
+1. `Metadata` export with title, description, keywords, openGraph, canonical URL
+2. `breadcrumbItems` array
+3. `faqs` array of `{ question, answer }` objects
+4. Page component renders: `Breadcrumbs` → `PageHero` → content sections → `FAQ` → `ContactCTA`
 
-Large single-file client component (~519 lines) with its own inline Navbar/Footer (separate from `components/`), video hero, "Why Choose Us" section, and a 23-review testimonials carousel auto-rotating every 6 seconds.
+### Navigation Data Duplication
+
+Navigation items are defined inline in **two separate places** that must stay in sync:
+- `components/navbar.tsx` — `navItems` array (line ~31)
+- `components/SearchBar.tsx` — duplicated `navItems` for Fuse.js search index
+
+When adding/removing pages, update both files **and** `app/sitemap.ts`.
 
 ### SEO
 
-- `app/robots.ts` — Programmatic robots.txt (allows all, disallows `/api/` and `/_next/`)
-- `app/sitemap.ts` — Dynamic XML sitemap with 90+ URLs, priorities, and change frequencies
-- Per-page `Metadata` exports with structured data
-- Google Search Console verification file in `public/`
+- `app/sitemap.ts` — Dynamic XML sitemap (90+ URLs). Must be updated when adding new pages.
+- `app/robots.ts` — Programmatic robots.txt
+- Per-page `Metadata` exports with structured data (JSON-LD)
+- `FAQ` and `Breadcrumbs` components auto-generate `FAQPage` and `BreadcrumbList` JSON-LD schema
 
-## Configuration Details
+### Tailwind CSS 4
 
-### Tailwind Theme (`tailwind.config.ts`)
-
-Custom design tokens:
+Uses `@import "tailwindcss"` in `app/globals.css` (not the old `@tailwind base/components/utilities` directives). Custom theme tokens are in `tailwind.config.ts`:
 - **Font:** `Playfair Display` (serif)
-- **Colors:** `primary` (#1a1a2e deep charcoal / #2d3436 dark slate), `accent` (#b87333 bronze), `secondary` (#2d6a4f forest green)
+- **Colors:** `primary` (#1a1a2e / #2d3436), `accent` (#b87333 bronze), `secondary` (#2d6a4f forest green)
 
-### Next.js Config (`next.config.ts`)
+### Next.js Config
 
-- Wrapped with `next-videos` for MP4 support
-- Image optimization: WebP + AVIF, 30-day cache TTL
-- Package import optimization for `lucide-react`
-- Compression enabled, `poweredByHeader` disabled
+`next.config.ts` uses **CommonJS** (`require`/`module.exports`), not ESM — required by the `next-videos` wrapper.
 
-### External Services
+## Hardcoded Service IDs
 
-- **Formspree** — Contact form backend. Form ID is hardcoded in `components/ContactCTA.tsx` and `app/contact/page.tsx` (two forms).
-- **Calendly** — Appointment scheduling. URL is hardcoded in `components/calendly.tsx`.
-- **Git LFS** — Tracks `.mp4` video files (configured in `.gitattributes`)
+No environment variables are used. All external service IDs are inline:
 
-No environment variables are used; all service IDs are inline in source files.
+| Service | ID/URL | Locations |
+|---|---|---|
+| **Formspree** | `xyzjyzgv` | `components/ContactCTA.tsx`, `app/contact/page.tsx` (×2) |
+| **Calendly** | `calendly.com/jjlawohio` | `components/calendly.tsx` |
+| **Site URL** | `jjlawohio.com` | `app/layout.tsx`, `app/sitemap.ts`, `components/Breadcrumbs.tsx`, individual page metadata |
+
+## Coding Rules
+
+- **NEVER** install, add, or upgrade any dependency without explicit approval
+- **NEVER** modify shared components (Navbar, Footer, ContactCTA, SearchBar) without explicit approval
+- **NEVER** delete or rename existing files without explicit approval
+- When creating new practice area pages, **ALWAYS** follow the existing service page pattern exactly (Metadata → Breadcrumbs → PageHero → content → FAQ → ContactCTA)
+- When adding new pages, update **ALL THREE**: `components/navbar.tsx` navItems, `components/SearchBar.tsx` navItems, and `app/sitemap.ts`
+- Always run `npm run build` before committing to catch errors
+- Keep commits atomic — one logical change per commit with a descriptive message
+- If unsure about anything, **ASK** before making changes
+
+## Git Workflow
+
+- All work happens on the `dev` branch
+- PRs go from `dev` → `main`
+- Push using the **EsmailNadir** GitHub account (already configured via `gh auth`)
+- **NEVER** push directly to `main`
+- Always commit before moving to a new task
+
+## Known Issues & Tech Debt
+
+- **Homepage has its own inline Navbar/Footer** — `app/page.tsx` does NOT use the shared components from `components/`. Any nav/footer changes must be made in BOTH places until this is unified.
+- **Navigation data is duplicated** between `navbar.tsx` and `SearchBar.tsx` — must be kept in sync manually.
+- **Formspree ID is hardcoded in 3 separate files** — changing it requires updating `components/ContactCTA.tsx` and `app/contact/page.tsx` (×2).
 
 ## Deployment
 
-Deployed to **Vercel**. No CI/CD pipeline config files exist — relies on Vercel's GitHub integration for automatic deploys.
+Deployed to **Vercel** via GitHub integration (automatic deploys on push). No CI/CD config files.
+
+Git LFS tracks `public/assets/*.mp4` (configured in `.gitattributes`).
