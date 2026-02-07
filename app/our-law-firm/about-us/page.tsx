@@ -1,26 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import {
   GraduationCap,
   Gavel,
   Users,
   Briefcase,
-  ChevronLeft,
-  ChevronRight,
   Scale,
   Building2,
+  Quote,
 } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import PageHero from "@/components/PageHero";
+import ContactCTA from "@/components/ContactCTA";
 
 export default function AboutPage() {
-  useEffect(() => {
-    // Add Google Fonts
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-  }, []);
-
   const achievements = [
     { icon: <GraduationCap size={28} />, label: "Juris Doctor from Capital University" },
     { icon: <Gavel size={28} />, label: "Municipal Court Prosecutor" },
@@ -91,17 +87,6 @@ export default function AboutPage() {
     }
   ];
 
-  const images = ["/photo1.jpg", "/photo2.jpg", "/photo3.jpg"];
-  const [current, setCurrent] = useState(0);
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement>) => {
     console.error("Video error:", e);
     const videoElement = e.currentTarget;
@@ -119,199 +104,185 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="bg-[#fffaf4] min-h-screen text-gray-800 relative">
-        {/* Section 1: Meet Attorney */}
-        <section className="w-full">
-          <div className="h-[120px] sm:h-[140px] flex items-center justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center font-['Playfair_Display',_'Georgia',_serif]">Meet Attorney Jwayyed</h1>
-          </div>
-          
-          {/* Meet Attorney Section Content */}
-          <div className="w-full px-4 sm:px-6 md:px-20">
-            <div className="max-w-[1400px] mx-auto mb-20 sm:mb-32">
-              {/* Video - Centered on top */}
-              <div className="flex flex-col items-center mb-8 lg:mb-12">
-                  <video
-                    src="/aboutme.mp4"
-                    className="rounded-lg shadow-md mb-6 w-[480px] sm:w-[580px] h-[380px] sm:h-[430px] object-cover"
-                    controls
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    onError={handleVideoError}
-                  >
-                    <source src="/aboutme.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <a href="/other-services">
-                    <button className="bg-[#D4A574] text-white px-6 sm:px-10 py-3 sm:py-5 rounded-lg font-bold text-base sm:text-lg shadow-lg hover:bg-[#C9995E] hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full max-w-[480px] sm:max-w-[580px]">
-                      VIEW PRACTICE AREAS
-                    </button>
-                  </a>
-              </div>
+      {/* PageHero */}
+      <PageHero
+        title="Meet Attorney Jwayyed"
+        description="Experienced legal counsel dedicated to protecting your rights throughout Ohio."
+      />
 
-              {/* Text Content - Centered below video */}
-              <div className="flex justify-center w-full">
-                <div className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed space-y-4 sm:space-y-5 max-w-3xl px-4" style={{ fontFamily: "'Source Sans Pro', 'Inter', sans-serif" }}>
-                    <p>Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor's degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>
+      {/* Section 1: Attorney Bio — Two-Column Layout */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Video Column */}
+            <div className="flex flex-col items-center">
+              <video
+                src="/aboutme.mp4"
+                className="rounded-xl shadow-lg w-full max-w-[560px] aspect-[4/3] object-cover"
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                onError={handleVideoError}
+                onEnded={handleVideoEnded}
+              >
+                <source src="/aboutme.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <a href="/other-services" className="mt-6 w-full max-w-[560px]">
+                <button className="bg-[#b87333] hover:bg-[#a0622b] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 w-full">
+                  VIEW PRACTICE AREAS
+                </button>
+              </a>
+            </div>
 
-                    <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender's Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney's Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
+            {/* Bio Text Column */}
+            <div className="border-l-4 border-[#b87333] pl-6">
+              <div className="space-y-8">
+                {/* Background & Education */}
+                <div>
+                  <h2 className="text-2xl font-bold mb-4 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Background & Education</h2>
+                  <p className="text-xl text-gray-700 leading-relaxed">Attorney Jwayyed Jwayyed is a lifelong Ohioan, born in Cincinnati and raised in Akron. He earned his bachelor&apos;s degree in Political Science from the University of Akron and his Juris Doctor from Capital University Law School in Columbus, where he concentrated in Alternative Dispute Resolution.</p>
+                </div>
 
+                {/* Professional Experience */}
+                <div>
+                  <h2 className="text-2xl font-bold mb-4 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Professional Experience</h2>
+                  <div className="space-y-4 text-gray-700 leading-relaxed">
+                    <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender&apos;s Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney&apos;s Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
                     <p>Jwayyed now leads his own practice, which contracts with several municipalities in Franklin County to provide prosecutorial services. As a result, he does not accept criminal defense cases in Franklin County to avoid conflicts of interest.</p>
+                  </div>
+                </div>
 
+                {/* Current Practice */}
+                <div>
+                  <h2 className="text-2xl font-bold mb-4 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Current Practice</h2>
+                  <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>In addition to his municipal and civil rights work, Jwayyed assists clients with business contracts, landlord-tenant agreements, wills, and basic estate planning. He also advises law enforcement agencies on legal matters and provides legal training on a range of issues relevant to public service and policing.</p>
-
                     <p>Known for his strategic thinking, clear communication, and client-centered service, Jwayyed helps individuals, businesses, and institutions navigate complex legal challenges with clarity and confidence.</p>
-
-                    <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-3 font-['Playfair_Display',_'Georgia',_serif]">Outside the Office</h2>
-
-                    <p>In his free time, Jwayyed enjoys spirited GOAT debates about Kobe, MJ, and LeBron with his cousins, staying active through weightlifting and recreational sports, and listening to podcasts on law, culture, and current events. A true Buckeye fan, he's a proud Buck Nut who tries to attend at least one road game each season with his brother. Jwayyed is also active in his local community and values spending quality time with family and friends.</p>
-
-                    <p className="font-semibold">If you need experienced, honest legal guidance, contact Attorney Jwayyed today to schedule a consultation.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2: Recognition & Accolades */}
-        <section className="w-full">
-          <div className="h-[120px] sm:h-[140px] flex items-center justify-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center font-['Playfair_Display',_'Georgia',_serif]">Recognition & Accolades</h2>
-          </div>
-
-          {/* Achievement and Membership Badges Section */}
-          <div className="w-full">
-            <div className="max-w-[900px] mx-auto px-4 sm:px-6 md:px-20 mt-8 mb-16">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {achievements.map((item, i) => (
-                  <div key={i} className="relative">
-                    <div className="relative bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 h-[80px]">
-                      <div className="flex items-center px-6 h-full">
-                        <div className="text-[#4b3d2f] mr-4">{item.icon}</div>
-                        <p className="text-sm sm:text-base font-semibold text-gray-900">
-                          {item.label}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                {memberships.map((item, i) => (
-                  <div key={i + achievements.length} className="relative">
-                    <div className="relative bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 h-[80px]">
-                      <div className="flex items-center px-6 h-full">
-                        <div className="text-[#4b3d2f] mr-4">{item.icon}</div>
-                        <p className="text-sm sm:text-base font-semibold text-gray-900">
-                          {item.label}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Awards Section */}
-          <div className="w-full">
-            <div className="max-w-[900px] mx-auto px-4 sm:px-6 md:px-20 mb-20 sm:mb-32">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Ohio State Bar Association Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-auto min-h-[200px] sm:h-[240px]">
-                  <div className="p-6">
-                    <div className="flex items-start">
-                      <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
-                        <Scale size={32} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 leading-tight">
-                          Ohio State Bar Association: Leadership Academy – 2023
-                        </h3>
-                        <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                          Received the most nominations in the Academy's history. Selected as 1 of 17 attorneys statewide.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* CALI Award */}
-                <div className="bg-[#EBD2AE] border-2 border-[#c9ab88] shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg h-auto min-h-[200px] sm:h-[240px]">
-                  <div className="p-6">
-                    <div className="flex items-start">
-                      <div className="text-[#4b3d2f] mr-4 flex-shrink-0 mt-1">
-                        <GraduationCap size={32} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 leading-tight">
-                          CALI Award Recipient – 2017
-                        </h3>
-                        <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                          Excellence in Interviewing & Counseling. Awarded to the top student in this course across 100+ participating US law schools nationwide.
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 3: Recommendations */}
-        <section className="w-full bg-gray-800 text-white">
-          <div className="h-[100px] sm:h-[120px] flex items-center justify-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center font-['Playfair_Display',_'Georgia',_serif]">Recommendations</h2>
+      {/* Section 2: Outside the Office */}
+      <section className="bg-[#faf8f5] py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Outside the Office</h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">In his free time, Jwayyed enjoys spirited GOAT debates about Kobe, MJ, and LeBron with his cousins, staying active through weightlifting and recreational sports, and listening to podcasts on law, culture, and current events. A true Buckeye fan, he&apos;s a proud Buck Nut who tries to attend at least one road game each season with his brother. Jwayyed is also active in his local community and values spending quality time with family and friends.</p>
+          <p className="text-lg font-semibold text-gray-900">If you need experienced, honest legal guidance, contact Attorney Jwayyed today to schedule a consultation.</p>
+        </div>
+      </section>
+
+      {/* Section 3: Recognition & Accolades */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Recognition & Accolades</h2>
+
+          {/* Achievement and Membership Badges */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {achievements.map((item, i) => (
+              <div key={i} className="bg-[#2c2c2c] border-l-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center px-6 py-5">
+                  <div className="text-[#b87333] mr-4 flex-shrink-0">{item.icon}</div>
+                  <p className="text-sm sm:text-base font-semibold text-white">{item.label}</p>
+                </div>
+              </div>
+            ))}
+            {memberships.map((item, i) => (
+              <div key={i + achievements.length} className="bg-[#2c2c2c] border-l-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center px-6 py-5">
+                  <div className="text-[#b87333] mr-4 flex-shrink-0">{item.icon}</div>
+                  <p className="text-sm sm:text-base font-semibold text-white">{item.label}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="w-full">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-20 pb-12 sm:pb-16">
-              <div className="relative">
-                <div className="text-center mb-6 sm:mb-8 min-h-[300px] sm:min-h-[400px] flex flex-col justify-center">
-                  <blockquote className="text-base sm:text-lg italic leading-relaxed mb-4 sm:mb-6 font-['Inter',_'Arial',_sans-serif]">
-                    "{testimonials[currentTestimonial].text}"
+
+          {/* Awards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Ohio State Bar Association Award */}
+            <div className="bg-[#2c2c2c] border-t-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="p-8">
+                <div className="flex items-start">
+                  <div className="text-[#b87333] mr-4 flex-shrink-0 mt-1">
+                    <Scale size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-tight">
+                      Ohio State Bar Association: Leadership Academy – 2023
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                      Received the most nominations in the Academy&apos;s history. Selected as 1 of 17 attorneys statewide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CALI Award */}
+            <div className="bg-[#2c2c2c] border-t-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="p-8">
+                <div className="flex items-start">
+                  <div className="text-[#b87333] mr-4 flex-shrink-0 mt-1">
+                    <GraduationCap size={32} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-tight">
+                      CALI Award Recipient – 2017
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                      Excellence in Interviewing & Counseling. Awarded to the top student in this course across 100+ participating US law schools nationwide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Recommendations */}
+      <section className="bg-[#2c2c2c] py-16 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-['Playfair_Display',_'Georgia',_serif] text-white">Recommendations</h2>
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={24}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+            pagination={{ clickable: true }}
+            loop={true}
+            className="pb-12 [&_.swiper-pagination-bullet]:bg-white/40 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet-active]:bg-[#b87333]"
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 sm:p-8 flex flex-col h-full min-h-[320px]">
+                  <Quote className="w-8 h-8 text-[#b87333] mb-4 flex-shrink-0" />
+                  <blockquote className="text-gray-300 italic leading-relaxed flex-1 text-sm sm:text-base line-clamp-[8]">
+                    &ldquo;{testimonial.text}&rdquo;
                   </blockquote>
-                  <p className="font-semibold text-sm sm:text-base font-['Inter',_'Arial',_sans-serif]">
-                    — {testimonials[currentTestimonial].author}, {testimonials[currentTestimonial].title}
-                  </p>
+                  <div className="border-t border-white/10 mt-6 pt-4">
+                    <p className="font-semibold text-white">{testimonial.author}</p>
+                    <p className="text-gray-400 text-sm">{testimonial.title}</p>
+                  </div>
                 </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <button
-                    onClick={() =>
-                      setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-                    }
-                    className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
-                  >
-                    <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
-                  </button>
-                  <span className="text-xs sm:text-sm text-gray-300">
-                    {currentTestimonial + 1} of {testimonials.length}
-                  </span>
-                  <button
-                    onClick={() =>
-                      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-                    }
-                    className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-all"
-                  >
-                    <ChevronRight size={20} className="sm:w-6 sm:h-6" />
-                  </button>
-                </div>
-                <div className="flex justify-center space-x-2 mt-4 sm:mt-6">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentTestimonial(index)}
-                      className={`w-2 h-2 rounded-full transition-all ${
-                        currentTestimonial === index ? "bg-white" : "bg-white/40"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+
+      {/* ContactCTA */}
+      <ContactCTA />
     </>
   );
 }
