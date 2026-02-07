@@ -17,7 +17,7 @@ export default function ContactCTA({
   className = '',
 }: ContactCTAProps) {
   return (
-    <section className={`py-16 bg-gray-900 text-white ${className}`}>
+    <section className={`py-16 bg-[#2c2c2c] text-white ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -30,25 +30,25 @@ export default function ContactCTA({
             <div className="space-y-4 font-['Inter',_'Arial',_sans-serif]">
               <a
                 href={`tel:${phoneNumber.replace(/\s/g, '')}`}
-                className="flex items-center gap-3 text-lg hover:text-orange-500 transition-colors"
+                className="flex items-center gap-3 text-lg hover:text-[#b87333] transition-colors"
               >
-                <Phone className="w-6 h-6 text-orange-500" />
+                <Phone className="w-6 h-6 text-[#b87333]" />
                 <span>{phoneNumber}</span>
               </a>
               <a
                 href={`mailto:${email}`}
-                className="flex items-center gap-3 text-lg hover:text-orange-500 transition-colors"
+                className="flex items-center gap-3 text-lg hover:text-[#b87333] transition-colors"
               >
-                <Mail className="w-6 h-6 text-orange-500" />
+                <Mail className="w-6 h-6 text-[#b87333]" />
                 <span>{email}</span>
               </a>
               <div className="flex items-start gap-3 text-lg">
-                <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-orange-500" />
+                <MapPin className="w-6 h-6 mt-1 flex-shrink-0 text-[#b87333]" />
                 <span>{address}</span>
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-lg p-8 text-gray-900">
+          <div className="bg-white rounded-lg p-8 text-gray-900 border-t-4 border-[#b87333]">
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold mb-6">Contact Form</h3>
             <form
               action="https://formspree.io/f/xyzjyzgv"
@@ -65,7 +65,7 @@ export default function ContactCTA({
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#b87333] focus:border-transparent"
                 />
               </div>
               <div>
@@ -77,7 +77,7 @@ export default function ContactCTA({
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#b87333] focus:border-transparent"
                 />
               </div>
               <div>
@@ -89,7 +89,7 @@ export default function ContactCTA({
                   id="phone"
                   name="phone"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#b87333] focus:border-transparent"
                 />
               </div>
               <div>
@@ -101,12 +101,12 @@ export default function ContactCTA({
                   name="message"
                   rows={4}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#b87333] focus:border-transparent"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-md transition-colors"
+                className="w-full bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold px-8 py-4 rounded-md transition-colors"
               >
                 Send Message
               </button>

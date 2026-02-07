@@ -16,13 +16,13 @@ const Navbar = () => {
 // Footer Component
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white font-['Inter',_'Arial',_sans-serif]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+    <footer className="bg-[#2c2c2c] text-white font-['Inter',_'Arial',_sans-serif]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold">Jwayyed Law LLC</h3>
-            <p className="text-gray-400">
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-[#b87333]">Jwayyed Law LLC</h3>
+            <p className="text-gray-400 leading-relaxed">
               Dedicated legal representation in criminal defense, traffic violations, and civil matters throughout Ohio.
             </p>
           </div>
@@ -30,28 +30,28 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/other-services" className="text-gray-400 hover:text-white transition-colors">Our Services</Link></li>
-              <li><Link href="/our-team" className="text-gray-400 hover:text-white transition-colors">Our Team</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+            <ul className="space-y-2.5">
+              <li><Link href="/about" className="text-gray-400 hover:text-[#b87333] transition-colors">About Us</Link></li>
+              <li><Link href="/other-services" className="text-gray-400 hover:text-[#b87333] transition-colors">Our Services</Link></li>
+              <li><Link href="/our-team" className="text-gray-400 hover:text-[#b87333] transition-colors">Our Team</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-[#b87333] transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Contact Info</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3.5">
               <li className="flex items-start space-x-3">
-                <Phone size={18} className="text-orange-500 mt-1 flex-shrink-0" />
+                <Phone size={18} className="text-[#b87333] mt-1 flex-shrink-0" />
                 <span className="text-gray-400">(614) 285-5482</span>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail size={18} className="text-orange-500 mt-1 flex-shrink-0" />
+                <Mail size={18} className="text-[#b87333] mt-1 flex-shrink-0" />
                 <span className="text-gray-400 break-all">jwayyedlawllc@outlook.com</span>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin size={18} className="text-orange-500 mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-[#b87333] mt-1 flex-shrink-0" />
                 <span className="text-gray-400">100 E. Campus View Boulevard, Suite #250<br />Columbus, Ohio 43235</span>
               </li>
             </ul>
@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Business Hours */}
           <div className="space-y-4">
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Business Hours</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2.5 text-gray-400">
               <li>Mon–Fri: 9:00 AM – 5:00 PM</li>
               <li>Sat–Sun: Closed</li>
             </ul>
@@ -71,24 +71,24 @@ const Footer = () => {
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-semibold">Follow Us</h4>
             <div className="flex space-x-3">
               {/* Instagram Button */}
-              <a 
-                href="https://www.instagram.com/jjlawohio?igsh=eW1uanhzNGh2YXV2&utm_source=qr" 
+              <a
+                href="https://www.instagram.com/jjlawohio?igsh=eW1uanhzNGh2YXV2&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-800 hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400 rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-3 border border-gray-700 hover:border-transparent group"
+                className="w-12 h-12 bg-[#363636] hover:bg-[#b87333] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 border border-[#444] hover:border-[#b87333] group"
                 aria-label="Follow us on Instagram"
               >
                 <svg className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
                 </svg>
               </a>
-              
+
               {/* TikTok Button */}
-              <a 
-                href="https://www.tiktok.com/@jjlawohio?_t=ZT-8yTuAG1sVr5&_r=1" 
+              <a
+                href="https://www.tiktok.com/@jjlawohio?_t=ZT-8yTuAG1sVr5&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-800 hover:bg-black rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-rotate-3 border border-gray-700 hover:border-white group"
+                className="w-12 h-12 bg-[#363636] hover:bg-[#b87333] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 border border-[#444] hover:border-[#b87333] group"
                 aria-label="Follow us on TikTok"
               >
                 <svg className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
@@ -100,9 +100,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
+        <div className="border-t border-[#b87333]/25 mt-10 pt-8">
           <div className="text-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Jwayyed Law LLC. All rights reserved.
             </p>
           </div>
