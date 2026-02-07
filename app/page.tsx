@@ -1,10 +1,14 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import SearchBar from '@/components/SearchBar';
-import { ChevronLeft, ChevronRight, Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // Navbar Component
 const Navbar = () => {
@@ -254,30 +258,8 @@ const reviews = [
 ];
 
 export default function Home() {
-  const [currentReview, setCurrentReview] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentReview((prev) => (prev + 1) % reviews.length);
-    }, 6000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const nextReview = () => {
-    setCurrentReview((prev) => (prev + 1) % reviews.length);
-  };
-
-  const prevReview = () => {
-    setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
-  };
-
-  const goToReview = (index: number) => {
-    setCurrentReview(index);
-  };
-
   return (
-    <div className="min-h-screen font-['Georgia',_'Times_New_Roman',_serif]">
+    <div className="min-h-screen bg-white font-['Georgia',_'Times_New_Roman',_serif]">
       
       
       {/* Hero Section with Video Background */}
@@ -345,7 +327,7 @@ export default function Home() {
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16">
             <Link href="/contact">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
                 Schedule Consultation
               </button>
             </Link>
@@ -360,7 +342,7 @@ export default function Home() {
           <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="flex flex-col items-center space-y-2">
               <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white/80">Explore More</span>
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#b87333] rounded-full flex items-center justify-center shadow-lg">
                 <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
             </div>
@@ -383,13 +365,13 @@ export default function Home() {
                 Our firm is built on the foundation of protecting your rights, providing clear communication, and achieving the best possible outcomes for our clients.
               </p>
               <Link href="/about">
-                <button className="font-['Inter',_'Arial',_sans-serif] bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-gray-800 transform hover:scale-105 transition-all duration-200 font-medium text-base sm:text-lg shadow-lg">
+                <button className="font-['Inter',_'Arial',_sans-serif] bg-[#2c2c2c] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#3a3a3a] transform hover:scale-105 transition-all duration-200 font-medium text-base sm:text-lg shadow-lg">
                   Learn More About Our Firm
                 </button>
               </Link>
             </div>
             <div className="relative mt-8 md:mt-0">
-              <div className="bg-orange-500 rounded-lg p-6 sm:p-8 text-white">
+              <div className="bg-[#b87333] rounded-lg p-6 sm:p-8 text-white">
                 <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl sm:text-2xl font-semibold mb-4">Why Choose Us?</h3>
                 <ul className="space-y-3 font-['Inter',_'Arial',_sans-serif]">
                   <li className="flex items-start">
@@ -416,98 +398,69 @@ export default function Home() {
       </section>
 
       {/* Client Reviews Section */}
-      <section className="w-full py-16 sm:py-20 bg-gray-50">
+      <section className="w-full py-16 sm:py-20 bg-[#2c2c2c]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-3 sm:mb-4">
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-3 sm:mb-4">
               Client Testimonials
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-700">
-              Real experiences from clients we've helped
+            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-400">
+              Real experiences from clients we&apos;ve helped
             </p>
           </div>
-          
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-center gap-6 lg:gap-8">
-              {/* Desktop Navigation Button - Left */}
-              <button
-                onClick={prevReview}
-                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
-              >
-                <ChevronLeft className="w-7 h-7" />
-              </button>
-              
-              {/* Review Content */}
-              <div className="flex-1 bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-                <div className="space-y-4 sm:space-y-6">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
-                    <div className="flex items-center space-x-1">
-                      {[...Array(reviews[currentReview].rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-orange-500 text-orange-500" />
-                      ))}
-                    </div>
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-2 sm:px-3 py-1 rounded-full w-fit">
-                      {reviews[currentReview].platform}
-                    </span>
+
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={24}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+            pagination={{ clickable: true }}
+            loop={true}
+            className="testimonials-swiper pb-12"
+          >
+            {reviews.map((review, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-full flex flex-col">
+                  {/* Stars */}
+                  <div className="flex items-center space-x-1 mb-3">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                    ))}
                   </div>
-                  
-                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-lg sm:text-xl text-gray-700 leading-relaxed min-h-[100px] sm:min-h-[120px] flex items-center italic">
-                    "{reviews[currentReview].text}"
+
+                  {/* Platform Badge */}
+                  <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit mb-4">
+                    {review.platform}
+                  </span>
+
+                  {/* Review Text */}
+                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
+                    &ldquo;{review.text}&rdquo;
                   </blockquote>
-                  
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 border-t border-gray-200 pt-4 sm:pt-6">
-                    <cite className="font-['Inter',_'Arial',_sans-serif] text-base sm:text-lg font-semibold text-gray-900 not-italic">
-                      — {reviews[currentReview].name}
-                    </cite>
-                    
-                    <div className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm text-gray-500">
-                      {currentReview + 1} of {reviews.length}
-                    </div>
-                  </div>
+
+                  {/* Reviewer Name */}
+                  <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4">
+                    — {review.name}
+                  </cite>
                 </div>
-              </div>
-              
-              {/* Desktop Navigation Button - Right */}
-              <button
-                onClick={nextReview}
-                className="hidden md:flex w-14 h-14 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all items-center justify-center text-gray-600 hover:text-gray-900 hover:scale-110 border border-gray-200"
-              >
-                <ChevronRight className="w-7 h-7" />
-              </button>
-            </div>
-          </div>
-          
-          {/* Mobile Navigation Buttons */}
-          <div className="flex md:hidden justify-center gap-4 mt-8">
-            <button
-              onClick={prevReview}
-              className="w-12 h-12 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all flex items-center justify-center text-gray-600 hover:text-gray-900"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            
-            <button
-              onClick={nextReview}
-              className="w-12 h-12 bg-white rounded-full shadow-xl hover:shadow-2xl transition-all flex items-center justify-center text-gray-600 hover:text-gray-900"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
-          
-          {/* Dots Navigation */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {reviews.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToReview(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentReview 
-                    ? 'bg-orange-500 w-8' 
-                    : 'bg-gray-400 hover:bg-gray-600'
-                }`}
-              />
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
+
+          {/* Custom Swiper pagination color */}
+          <style>{`
+            .testimonials-swiper .swiper-pagination-bullet {
+              background: rgba(255, 255, 255, 0.3);
+              opacity: 1;
+            }
+            .testimonials-swiper .swiper-pagination-bullet-active {
+              background: #b87333;
+            }
+          `}</style>
         </div>
       </section>
 
