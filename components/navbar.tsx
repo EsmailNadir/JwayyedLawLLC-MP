@@ -37,6 +37,7 @@ const navItems: NavItem[] = [
       { name: 'Assault Charges', href: '/criminal-defense/assault-charges' },
       { name: 'Domestic Violence', href: '/criminal-defense/domestic-violence' },
       { name: 'Criminal Mischief', href: '/criminal-defense/criminal-mischief' },
+      { name: 'Criminal Damaging', href: '/criminal-defense/criminal-damaging' },
       { name: 'Criminal Trespass', href: '/criminal-defense/criminal-trespass' },
       { name: 'Petty Theft', href: '/criminal-defense/petty-theft' },
       { name: 'Resisting Arrest', href: '/criminal-defense/resisting-arrest' },
@@ -123,23 +124,6 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    name: 'Trusts',
-    href: '/trusts',
-    subLinks: [
-      { name: 'Columbus Trusts Attorney', href: '/trusts' },
-      { name: 'Charitable Trusts', href: '/trusts/charitable-trusts' },
-      { name: 'Dynasty Trusts', href: '/trusts/dynasty-trusts' },
-      { name: 'Irrevocable Life Insurance Trusts', href: '/trusts/irrevocable-life-insurance-trusts' },
-      { name: 'Land Trusts', href: '/trusts/land-trusts' },
-      { name: 'Medicaid Asset Protection Trusts', href: '/trusts/medicaid-asset-protection-trusts' },
-      { name: 'QTIP Trusts', href: '/trusts/qtip-trusts' },
-      { name: 'Revocable Living Trusts', href: '/trusts/revocable-living-trusts' },
-      { name: 'Special Needs Trusts', href: '/trusts/special-needs-trusts' },
-      { name: 'Spendthrift Trusts', href: '/trusts/spendthrift-trusts' },
-      { name: 'All Trust Areas', href: '/trusts/other-types' },
-    ],
-  },
-  {
     name: 'Other Services',
     href: '/other-services',
     subDropdowns: [
@@ -147,6 +131,7 @@ const navItems: NavItem[] = [
         name: 'Estate Planning',
         links: [
           { name: 'Estate Planning & Wills', href: '/other-services/estate-planning-wills' },
+          { name: 'Trusts', href: '/trusts' },
           { name: 'Powers of Attorney', href: '/other-services/powers-of-attorney' },
           { name: 'Guardianships', href: '/other-services/guardianships' },
         ],

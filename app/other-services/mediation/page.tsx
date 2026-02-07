@@ -37,7 +37,7 @@ export default function MediationPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated mediation services in Columbus, Franklin County, and throughout Ohio. We understand that mediation can resolve disputes more efficiently and cost-effectively than litigation. Our attorney works diligently to facilitate productive negotiations and help parties reach mutually acceptable resolutions.
+              Our firm provides dedicated mediation services throughout Ohio. We understand that mediation can resolve disputes more efficiently and cost-effectively than litigation. Our attorney works diligently to facilitate productive negotiations and help parties reach mutually acceptable resolutions.
             </p>
           </div>
         </div>

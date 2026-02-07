@@ -67,7 +67,7 @@ export default function BusinessCompliancePage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated business compliance assistance in Columbus, Franklin County, and throughout Ohio. We understand that compliance is essential for business operations. Our attorney works diligently to identify compliance obligations, develop compliance programs, and ensure ongoing compliance to protect your business.
+              Our firm provides dedicated business compliance assistance throughout Ohio. We understand that compliance is essential for business operations. Our attorney works diligently to identify compliance obligations, develop compliance programs, and ensure ongoing compliance to protect your business.
             </p>
           </div>
         </div>

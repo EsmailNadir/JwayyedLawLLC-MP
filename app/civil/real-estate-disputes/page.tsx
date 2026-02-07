@@ -141,7 +141,7 @@ export default function RealEstateDisputesPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated real estate disputes representation in Columbus, Franklin County, and throughout Ohio. We understand that real estate disputes can be complex and affect valuable property interests. Our attorney works diligently to analyze property issues, resolve disputes, and protect your property rights.
+              Our firm provides dedicated real estate disputes representation throughout Ohio. We understand that real estate disputes can be complex and affect valuable property interests. Our attorney works diligently to analyze property issues, resolve disputes, and protect your property rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

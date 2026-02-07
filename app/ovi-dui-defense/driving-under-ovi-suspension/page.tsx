@@ -52,6 +52,7 @@ export default function DrivingUnderOVISuspensionPage() {
         title="Driving Under OVI Suspension Defense Lawyer in Ohio"
         description="Experienced legal defense for driving under OVI suspension charges. Protecting your rights and fighting for the best possible outcome."
       />
+      <OVIReviews />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
@@ -81,7 +82,6 @@ export default function DrivingUnderOVISuspensionPage() {
           </div>
         </div>
       </section>
-      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

@@ -150,7 +150,7 @@ export default function BreachOfContractPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated breach of contract representation in Columbus, Franklin County, and throughout Ohio. We understand that contract disputes can cause significant financial losses. Our attorney works diligently to analyze contracts, identify breaches, negotiate settlements, and maximize recovery for our clients.
+              Our firm provides dedicated breach of contract representation throughout Ohio. We understand that contract disputes can cause significant financial losses. Our attorney works diligently to analyze contracts, identify breaches, negotiate settlements, and maximize recovery for our clients.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

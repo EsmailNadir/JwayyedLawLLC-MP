@@ -27,6 +27,6 @@
     "postcss": "^8.5.4",
     "sharp-cli": "^5.1.0",
     "tailwindcss": "^4.1.8",
-    "typescript": "^5"
+    "typescript": "5.9.3"
   }
 }

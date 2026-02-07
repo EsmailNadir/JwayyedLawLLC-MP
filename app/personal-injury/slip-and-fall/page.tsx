@@ -156,11 +156,11 @@ export default function SlipAndFallPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated slip and fall accident representation in Columbus, Franklin County, and throughout Ohio. We understand that slip and fall accidents can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, document hazards, negotiate with insurance companies, and maximize compensation for our clients.
+              Our firm provides dedicated slip and fall accident representation throughout Ohio. We understand that slip and fall accidents can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, document hazards, negotiate with insurance companies, and maximize compensation for our clients.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, premises liability expertise, strategic case development, and aggressive advocacy. We understand the complexities of slip and fall cases, insurance company tactics, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
+              Our approach combines thorough investigation, premises liability expertise, strategic case development, and aggressive advocacy. We understand the complexities of slip and fall cases, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

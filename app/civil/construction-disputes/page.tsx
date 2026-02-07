@@ -67,7 +67,7 @@ export default function ConstructionDisputesPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated construction disputes representation in Columbus, Franklin County, and throughout Ohio. We understand that construction disputes can be complex and affect valuable construction projects. Our attorney works diligently to analyze contracts, resolve disputes, and protect your rights and interests.
+              Our firm provides dedicated construction disputes representation throughout Ohio. We understand that construction disputes can be complex and affect valuable construction projects. Our attorney works diligently to analyze contracts, resolve disputes, and protect your rights and interests.
             </p>
           </div>
         </div>

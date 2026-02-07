@@ -91,7 +91,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              Types of Assault Charges in Ohio
+              Assault Charges in Ohio
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -291,7 +291,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              We handle all types of assault cases, from simple misdemeanor assaults to serious felony felonious assaults. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
+              We handle assault cases from simple misdemeanor assaults to serious felony felonious assaults. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">

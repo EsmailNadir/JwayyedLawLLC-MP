@@ -67,7 +67,7 @@ export default function AppealsPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated appeals representation in Columbus, Franklin County, and throughout Ohio. We understand that appeals require specialized skills and experience. Our attorney works diligently to identify appealable issues, draft appellate briefs, present oral arguments, and maximize chances of success on appeal while protecting your rights.
+              Our firm provides dedicated appeals representation throughout Ohio. We understand that appeals require specialized skills and experience. Our attorney works diligently to identify appealable issues, draft appellate briefs, present oral arguments, and maximize chances of success on appeal while protecting your rights.
             </p>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function ContractDraftingReviewPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated contract drafting and review assistance in Columbus, Franklin County, and throughout Ohio. We understand that contracts are essential for protecting your business interests. Our attorney works diligently to draft contracts tailored to your needs, review contracts to identify risks, and protect your interests in every contract.
+              Our firm provides dedicated contract drafting and review assistance throughout Ohio. We understand that contracts are essential for protecting your business interests. Our attorney works diligently to draft contracts tailored to your needs, review contracts to identify risks, and protect your interests in every contract.
             </p>
           </div>
         </div>

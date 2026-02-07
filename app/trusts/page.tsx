@@ -57,7 +57,7 @@ export default function TrustsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Experienced Trusts Representation in Columbus, Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Trusts are powerful tools used in estate planning to protect your assets, ensure your loved ones are taken care of, and avoid the lengthy and costly probate process. At Jwayyed Law LLC, we provide expert legal services for creating various types of trusts, including revocable living trusts, irrevocable trusts, special needs trusts, and more. Our attorneys are here to guide you through the process and help you make the best decisions for your future.
+              Trusts are a core part of estate planning. They are powerful tools used to protect your assets, ensure your loved ones are taken care of, and avoid the lengthy and costly probate process. At Jwayyed Law LLC, we provide expert legal services for creating various types of trusts, including revocable living trusts, irrevocable trusts, special needs trusts, and more. Our attorneys are here to guide you through the process and help you make the best decisions for your future.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

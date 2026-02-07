@@ -155,7 +155,7 @@ export default function WrongfulDeathPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated wrongful death representation in Columbus, Franklin County, and throughout Ohio. We understand that losing a loved one is devastating and that families need compensation and closure. Our attorney works diligently to investigate cases, hold responsible parties accountable, and maximize compensation for surviving family members while providing compassionate representation during this difficult time.
+              Our firm provides dedicated wrongful death representation throughout Ohio. We understand that losing a loved one is devastating and that families need compensation and closure. Our attorney works diligently to investigate cases, hold responsible parties accountable, and maximize compensation for surviving family members while providing compassionate representation during this difficult time.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

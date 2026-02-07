@@ -67,7 +67,7 @@ export default function MedicalMalpracticePage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated medical malpractice representation in Columbus, Franklin County, and throughout Ohio. We understand that medical malpractice cases are complex and require experienced representation. Our attorney works diligently to investigate cases, retain medical experts, handle complex litigation, and maximize compensation for our clients within Ohio\'s damage cap limits.
+              Our firm provides dedicated medical malpractice representation throughout Ohio. We understand that medical malpractice cases are complex and require experienced representation. Our attorney works diligently to investigate cases, retain medical experts, handle complex litigation, and maximize compensation for our clients within Ohio\'s damage cap limits.
             </p>
           </div>
         </div>

@@ -33,18 +33,18 @@ export default function FranklinCountyCourtsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Franklin County Court Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County courts in Columbus, Ohio, handle various legal matters including criminal cases, OVI/DUI charges, and civil disputes. At Jwayyed Law LLC, we provide experienced representation in Franklin County Municipal Court for misdemeanor defense, OVI/DUI charges, traffic violations, and civil disputes. Please note that we do not handle immigration matters, juvenile matters, or probate matters in these courts.
+              Franklin County courts in Columbus, Ohio, handle various legal matters including criminal cases, OVI/DUI, traffic, and civil disputes. At Jwayyed Law LLC, we provide experienced representation in Franklin County only for <strong>civil</strong>, <strong>business</strong>, and <strong>estate planning</strong> matters. We do not handle criminal defense, OVI/DUI, traffic violations, immigration, juvenile, or probate matters in Franklin County.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Franklin County Courts</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link href="/courts/franklin-county-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Franklin County Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, traffic violations, and civil disputes. No immigration, juvenile, probate, or felony matters.</p>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Civil, business, and estate planning representation. We do not handle criminal, OVI, or traffic matters in Franklin County.</p>
               </Link>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Franklin County Courts</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated representation in Franklin County Municipal Court. We understand that court proceedings require experienced representation. Our attorney works diligently to understand court procedures, develop strategies, and achieve favorable outcomes for our clients in Columbus and throughout Franklin County. Please note that we do not handle immigration matters, juvenile matters, or probate matters in Franklin County courts.
+              Our firm provides dedicated civil, business, and estate planning representation in Franklin County Municipal Court. We understand that these matters require experienced representation. Our attorney works diligently to understand court procedures, develop strategies, and achieve favorable outcomes for our clients in Columbus and throughout Franklin County.
             </p>
           </div>
         </div>

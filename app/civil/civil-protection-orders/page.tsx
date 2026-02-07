@@ -67,7 +67,7 @@ export default function CivilProtectionOrdersPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated civil protection orders representation in Columbus, Franklin County, and throughout Ohio. We understand that protection order proceedings move quickly and can significantly affect your rights. Our attorney works diligently to help victims obtain protection orders and defend against protection orders to protect your rights.
+              Our firm provides dedicated civil protection orders representation throughout Ohio. We understand that protection order proceedings move quickly and can significantly affect your rights. Our attorney works diligently to help victims obtain protection orders and defend against protection orders to protect your rights.
             </p>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function EmploymentDisputesPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated employment disputes representation in Columbus, Franklin County, and throughout Ohio. We understand that employment disputes can affect your career and rights. Our attorney works diligently to identify violations, protect your rights, negotiate settlements, and maximize recovery for our clients.
+              Our firm provides dedicated employment disputes representation throughout Ohio. We understand that employment disputes can affect your career and rights. Our attorney works diligently to identify violations, protect your rights, negotiate settlements, and maximize recovery for our clients.
             </p>
           </div>
         </div>

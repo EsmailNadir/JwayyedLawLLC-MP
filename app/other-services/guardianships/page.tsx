@@ -37,7 +37,7 @@ export default function GuardianshipsPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated guardianship assistance in Columbus, Franklin County, and throughout Ohio. We understand that guardianships are essential for protecting vulnerable individuals. Our attorney works diligently to establish guardianships when necessary and ensure proper administration.
+              Our firm provides dedicated guardianship assistance throughout Ohio. We understand that guardianships are essential for protecting vulnerable individuals. Our attorney works diligently to establish guardianships when necessary and ensure proper administration.
             </p>
           </div>
         </div>

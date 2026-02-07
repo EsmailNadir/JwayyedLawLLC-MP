@@ -67,7 +67,7 @@ export default function EmploymentAgreementsPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated employment agreements representation in Columbus, Franklin County, and throughout Ohio. We understand that employment agreements can significantly affect your rights. Our attorney works diligently to draft agreements, review terms, negotiate modifications, and protect your interests.
+              Our firm provides dedicated employment agreements representation throughout Ohio. We understand that employment agreements can significantly affect your rights. Our attorney works diligently to draft agreements, review terms, negotiate modifications, and protect your interests.
             </p>
           </div>
         </div>

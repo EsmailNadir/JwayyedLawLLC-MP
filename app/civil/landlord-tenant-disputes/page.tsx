@@ -114,7 +114,7 @@ export default function LandlordTenantDisputesPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated landlord-tenant disputes representation in Columbus, Franklin County, and throughout Ohio. We understand that landlord-tenant disputes can affect your housing and rights. Our attorney works diligently to protect your rights, resolve disputes, and achieve favorable outcomes whether you are a landlord or tenant.
+              Our firm provides dedicated landlord-tenant disputes representation throughout Ohio. We understand that landlord-tenant disputes can affect your housing and rights. Our attorney works diligently to protect your rights, resolve disputes, and achieve favorable outcomes whether you are a landlord or tenant.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

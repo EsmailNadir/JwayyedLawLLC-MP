@@ -52,6 +52,7 @@ export default function LimitedDrivingPrivilegesPage() {
         title="Limited Driving Privileges Lawyer in Ohio"
         description="Experienced legal assistance with limited driving privileges after OVI suspension. Helping you get back on the road legally."
       />
+      <OVIReviews />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
@@ -87,7 +88,6 @@ export default function LimitedDrivingPrivilegesPage() {
           </div>
         </div>
       </section>
-      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

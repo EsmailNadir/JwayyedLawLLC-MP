@@ -67,7 +67,7 @@ export default function BusinessDissolutionPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated business dissolution assistance in Columbus, Franklin County, and throughout Ohio. We understand that closing a business requires proper procedures to protect owners. Our attorney works diligently to guide you through dissolution, ensure compliance with all requirements, and protect your interests.
+              Our firm provides dedicated business dissolution assistance throughout Ohio. We understand that closing a business requires proper procedures to protect owners. Our attorney works diligently to guide you through dissolution, ensure compliance with all requirements, and protect your interests.
             </p>
           </div>
         </div>

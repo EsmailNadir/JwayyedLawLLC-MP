@@ -195,11 +195,11 @@ export default function CivilPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated civil representation in Columbus, Franklin County, and throughout Ohio. We understand that civil disputes require experienced representation. Our attorney works diligently to investigate cases, develop strategies, negotiate settlements, and represent clients in court when necessary.
+              Our firm provides dedicated civil representation throughout Ohio. We understand that civil disputes require experienced representation. Our attorney works diligently to investigate cases, develop strategies, negotiate settlements, and represent clients in court when necessary.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, civil procedure rules, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize your chances of success. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement versus litigation.
+              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, civil procedure rules, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize your chances of success. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement versus litigation.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

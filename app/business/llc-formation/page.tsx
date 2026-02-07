@@ -117,7 +117,7 @@ export default function LLCFormationPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated LLC formation assistance in Columbus, Franklin County, and throughout Ohio. We understand that forming an LLC requires proper formation to protect your interests. Our attorney works diligently to help you complete formation requirements, draft operating agreements, and set up your LLC correctly from the start.
+              Our firm provides dedicated LLC formation assistance throughout Ohio. We understand that forming an LLC requires proper formation to protect your interests. Our attorney works diligently to help you complete formation requirements, draft operating agreements, and set up your LLC correctly from the start.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

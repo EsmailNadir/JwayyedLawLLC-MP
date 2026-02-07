@@ -67,7 +67,7 @@ export default function PremisesLiabilityPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated premises liability representation in Columbus, Franklin County, and throughout Ohio. We understand that premises liability injuries can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, identify liable parties, negotiate with insurance companies, and maximize compensation for our clients.
+              Our firm provides dedicated premises liability representation throughout Ohio. We understand that premises liability injuries can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, identify liable parties, negotiate with insurance companies, and maximize compensation for our clients.
             </p>
           </div>
         </div>

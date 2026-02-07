@@ -49,7 +49,7 @@ export default function CitizenshipNaturalizationPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated citizenship and naturalization assistance in Columbus, Franklin County, and throughout Ohio. We understand that becoming a U.S. citizen is a significant achievement. Our attorney works diligently to help you navigate the naturalization process and achieve your goal of U.S. citizenship.
+              Our firm provides dedicated citizenship and naturalization assistance throughout Ohio. We understand that becoming a U.S. citizen is a significant achievement. Our attorney works diligently to help you navigate the naturalization process and achieve your goal of U.S. citizenship.
             </p>
           </div>
         </div>

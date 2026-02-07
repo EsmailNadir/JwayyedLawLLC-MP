@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -50,73 +51,42 @@ export default function FranklinCountyMunicipalCourtPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Franklin County Municipal Court Attorney"
-        description="Experienced civil and business representation in Franklin County Municipal Court. Serving Columbus and throughout Franklin County."
+        description="Experienced legal representation in Franklin County Municipal Court. Serving Columbus and throughout Franklin County."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Franklin County Municipal Court Representation</h2>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              Experienced legal representation in Franklin County Municipal Court. Serving Columbus and throughout Franklin County. Contact us at <a href="tel:6142855482" className="text-accent hover:underline">(614) 285-5482</a> or <Link href="/contact" className="text-accent hover:underline">schedule a consultation</Link>.
+            </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County Municipal Court in Columbus, Ohio, handles a wide range of civil matters including civil disputes, landlord-tenant cases, eviction proceedings, and small claims. At Jwayyed Law LLC, we provide experienced civil and business representation in Franklin County Municipal Court. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that our firm does not handle criminal defense, OVI/DUI, traffic violations, immigration matters, juvenile matters, or probate matters in Franklin County at this time.
+              Franklin County Municipal Court is located at <strong>375 S. High Street, Columbus, OH 43215</strong>, with branch locations throughout the county. The court serves Columbus and surrounding communities.
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
+              <strong>Disclaimer:</strong> Jwayyed Law LLC handles only <strong>civil</strong>, <strong>business</strong>, and <strong>estate planning</strong> matters in Franklin County. We do not handle criminal defense, OVI/DUI, traffic violations, immigration, juvenile, or probate matters in Franklin County.
             </p>
 
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Franklin County Municipal Court is located at 375 S. High Street, Columbus, OH 43215, with branch locations throughout Franklin County. The court handles cases from Columbus and surrounding communities. Municipal Court proceedings require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              Franklin County Municipal Court (2026) handles misdemeanor criminal cases, OVI/traffic matters, civil disputes (including amounts within the court&apos;s jurisdictional limit), landlord-tenant and eviction cases, and other matters within its jurisdiction. Our firm represents clients in this court only in civil, business, and estate planning–related matters as described below.
             </p>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Our Services in Franklin County Municipal Court</h3>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Civil Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles civil disputes involving amounts up to $15,000, including contract disputes, personal injury cases, property damage claims, and other civil matters. Civil cases require understanding of civil procedure, evidence rules, and negotiation strategies to protect your interests.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Landlord-Tenant Matters</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles eviction proceedings, landlord-tenant disputes, and related matters. Eviction proceedings move quickly and can have immediate devastating effects. Experienced representation is essential to protect tenant rights or handle eviction proceedings for landlords.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Small Claims</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Small claims court provides a simplified process for resolving disputes involving smaller amounts. An attorney can help you navigate the process, prepare your case, and present your arguments effectively to achieve the best possible outcome.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Business-Related Civil Matters</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles business-related civil matters including contract disputes, business debt collection, and other commercial litigation within the court&apos;s jurisdiction. Experienced representation helps protect your business interests and achieve favorable resolutions.
-              </p>
-            </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced civil and business representation in Franklin County Municipal Court:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Civil Dispute Resolution:</strong> Representation for civil disputes including contract disputes, personal injury cases, and property damage claims</li>
-              <li><strong>Eviction Proceedings:</strong> Representation for eviction proceedings including defending tenants against eviction or handling eviction proceedings for landlords</li>
-              <li><strong>Landlord-Tenant Disputes:</strong> Skilled representation for lease disputes, security deposit matters, habitability issues, and other landlord-tenant matters</li>
-              <li><strong>Small Claims:</strong> Assistance with small claims matters including case preparation and court representation</li>
-              <li><strong>Business Civil Matters:</strong> Representation for business-related civil disputes within Municipal Court jurisdiction</li>
-              <li><strong>Court Procedure:</strong> Understanding of Municipal Court procedures, filing requirements, and judicial preferences</li>
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+              <li><strong>Civil matters:</strong> Civil disputes within the court&apos;s jurisdictional limit, including contract and property damage claims</li>
+              <li><strong>Business matters:</strong> Business-related civil litigation and disputes within Municipal Court jurisdiction</li>
+              <li><strong>Estate planning:</strong> We assist with estate planning; court involvement in this area may arise in related civil or probate matters within the court&apos;s scope</li>
             </ul>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated civil and business representation in Franklin County Municipal Court. We understand that civil disputes can significantly affect your rights and finances. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
+              Our firm provides dedicated civil, business, and estate planning representation in Franklin County Municipal Court. We understand that these matters can significantly affect your rights and finances. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a civil or business matter in Franklin County Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a civil, business, or estate planning matter in Franklin County Municipal Court, contact Jwayyed Law LLC at <a href="tel:6142855482" className="text-accent hover:underline">(614) 285-5482</a> or <Link href="/contact" className="text-accent hover:underline">schedule a consultation</Link>. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation.
             </p>
           </div>
         </div>

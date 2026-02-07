@@ -63,6 +63,7 @@ export default function OVIDefensePage() {
         title="Ohio OVI Attorney"
         description="Experienced legal representation for OVI/DUI charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
       />
+      <OVIReviews />
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -296,7 +297,6 @@ export default function OVIDefensePage() {
         </div>
       </section>
 
-      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

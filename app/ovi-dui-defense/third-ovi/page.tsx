@@ -52,6 +52,7 @@ export default function ThirdOVIPage() {
         title="Third OVI Defense Lawyer in Ohio"
         description="Experienced legal defense for third OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
+      <OVIReviews />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
@@ -190,7 +191,6 @@ export default function ThirdOVIPage() {
           </div>
         </div>
       </section>
-      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

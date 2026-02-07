@@ -197,7 +197,7 @@ export default function PersonalInjuryPage() {
             </div>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Each practice area requires specific knowledge of relevant Ohio Revised Code sections, insurance requirements, and case law. Our attorney stays current with changes in Ohio personal injury law and understands how these laws are applied in Columbus, Franklin County, and throughout Ohio courts. We develop strategies tailored to the specific type of accident or injury you suffered, drawing on our experience with similar cases and knowledge of local court practices.
+              Each practice area requires specific knowledge of relevant Ohio Revised Code sections, insurance requirements, and case law. Our attorney stays current with changes in Ohio personal injury law and understands how these laws are applied throughout Ohio courts. We develop strategies tailored to the specific type of accident or injury you suffered, drawing on our experience with similar cases and knowledge of local court practices.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -280,7 +280,7 @@ export default function PersonalInjuryPage() {
             </h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated personal injury representation in Columbus, Franklin County, and throughout Ohio. We understand that accidents can be life-changing and that insurance companies often minimize claims. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
+              Our firm provides dedicated personal injury representation throughout Ohio. We understand that accidents can be life-changing and that insurance companies often minimize claims. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -288,7 +288,7 @@ export default function PersonalInjuryPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, insurance company tactics, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
+              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

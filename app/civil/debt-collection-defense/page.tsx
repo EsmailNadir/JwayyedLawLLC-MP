@@ -67,7 +67,7 @@ export default function DebtCollectionDefensePage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated debt collection defense representation in Columbus, Franklin County, and throughout Ohio. We understand that debt collection can be stressful and that debt collectors often violate consumer protection laws. Our attorney works diligently to defend against collection lawsuits, challenge debt validity, identify FDCPA violations, and protect your rights.
+              Our firm provides dedicated debt collection defense representation throughout Ohio. We understand that debt collection can be stressful and that debt collectors often violate consumer protection laws. Our attorney works diligently to defend against collection lawsuits, challenge debt validity, identify FDCPA violations, and protect your rights.
             </p>
           </div>
         </div>

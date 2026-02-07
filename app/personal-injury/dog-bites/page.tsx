@@ -67,7 +67,7 @@ export default function DogBitesPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated dog bite representation in Columbus, Franklin County, and throughout Ohio. We understand that dog bites can cause serious injuries, scarring, and disfigurement requiring substantial compensation. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
+              Our firm provides dedicated dog bite representation throughout Ohio. We understand that dog bites can cause serious injuries, scarring, and disfigurement requiring substantial compensation. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
             </p>
           </div>
         </div>

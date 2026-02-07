@@ -79,7 +79,7 @@ export default function CatastrophicInjuriesPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Our firm provides dedicated catastrophic injury representation in Columbus, Franklin County, and throughout Ohio. We understand that catastrophic injuries are life-altering and require substantial compensation for long-term needs. Our attorney works diligently to investigate cases, retain experts, handle complex litigation, and maximize compensation for victims and their families.
+              Our firm provides dedicated catastrophic injury representation throughout Ohio. We understand that catastrophic injuries are life-altering and require substantial compensation for long-term needs. Our attorney works diligently to investigate cases, retain experts, handle complex litigation, and maximize compensation for victims and their families.
             </p>
           </div>
         </div>
