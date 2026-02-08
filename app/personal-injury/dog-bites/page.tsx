@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Dog Bite Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus dog bite attorney helping victims recover compensation. Skilled representation for dog bite injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Dog Bite Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio dog bite attorney helping victims recover compensation. Skilled representation for dog bite injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney'],
   openGraph: {
-    title: 'Dog Bite Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Dog Bite Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/dog-bites',
   },
   alternates: { canonical: '/personal-injury/dog-bites' },
@@ -48,7 +48,7 @@ export default function DogBitesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Dog Bite Lawyer in Columbus, OH"
+        title="Ohio Dog Bite Lawyer"
         description="Experienced legal representation for dog bite victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function DogBitesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Dog Bite Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Dog bites in Columbus or throughout Ohio can cause serious injuries including lacerations, scarring, disfigurement, infections, and permanent injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for dog bite victims under Ohio Revised Code 955.28 (current as of 2026). Our attorney understands Ohio dog bite law and the compensation process necessary to help you recover.
+              Dog bites in Columbus, Cincinnati, Dayton, or throughout Ohio can cause serious injuries including lacerations, scarring, disfigurement, infections, and permanent injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for dog bite victims under Ohio Revised Code 955.28 (current as of 2026). Our attorney understands Ohio dog bite law and the compensation process necessary to help you recover.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Dog Bite Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

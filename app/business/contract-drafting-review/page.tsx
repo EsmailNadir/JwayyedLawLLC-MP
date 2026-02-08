@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Contract Drafting & Review Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Contract Drafting & Review Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
-    title: 'Contract Drafting & Review Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Contract Drafting & Review Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/contract-drafting-review',
   },
   alternates: { canonical: '/business/contract-drafting-review' },
@@ -48,7 +48,7 @@ export default function ContractDraftingReviewPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Contract Drafting & Review Lawyer in Columbus, OH"
+        title="Ohio Contract Drafting & Review Lawyer"
         description="Experienced legal assistance with contract drafting and review. Protecting your business interests in every contract."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function ContractDraftingReviewPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Contract Drafting & Review in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Contract drafting and review in Columbus or throughout Ohio is essential for protecting your business interests and avoiding disputes. At Jwayyed Law LLC, we provide experienced assistance with contract drafting and review under Ohio law. Under Ohio Revised Code section 2305.06, the statute of limitations for written contracts is 6 years, while oral contracts have a 4-year limitation under ORC 2305.07. Our attorney understands contract law and can help draft contracts tailored to your needs and review contracts to protect your interests.
+              Contract drafting and review in Columbus, Cincinnati, Dayton, or throughout Ohio is essential for protecting your business interests and avoiding disputes. At Jwayyed Law LLC, we provide experienced assistance with contract drafting and review under Ohio law. Under Ohio Revised Code section 2305.06, the statute of limitations for written contracts is 6 years, while oral contracts have a 4-year limitation under ORC 2305.07. Our attorney understands contract law and can help draft contracts tailored to your needs and review contracts to protect your interests.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Contract Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

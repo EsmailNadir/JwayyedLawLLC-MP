@@ -4,11 +4,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Probate Administration Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Probate Administration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'probate administration', 'Franklin County probate attorney'],
   openGraph: {
-    title: 'Probate Administration Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Probate Administration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/probate-administration',
   },
   alternates: { canonical: '/other-services/probate-administration' },
@@ -25,7 +25,7 @@ export default function ProbateAdministrationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Probate Administration Lawyer in Columbus, OH"
+        title="Ohio Probate Administration Lawyer"
         description="Experienced legal assistance with probate administration. Helping you navigate the probate process."
       />
       <section className="py-16 bg-white">
@@ -33,7 +33,7 @@ export default function ProbateAdministrationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Probate Administration in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Probate administration in Columbus or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Title 21, which governs probate court procedures, estate administration, and fiduciary duties. Our attorney understands probate law and can help you navigate the probate process.
+              Probate administration in Columbus, Cincinnati, Dayton, or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Title 21, which governs probate court procedures, estate administration, and fiduciary duties. Our attorney understands probate law and can help you navigate the probate process.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

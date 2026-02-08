@@ -6,12 +6,12 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus Trusts Attorney | Experienced Estate Planning Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus trusts attorney helping you set up revocable living trusts, special needs trusts, and more to protect your assets. Schedule consultation: (614) 285-5482',
-  keywords: ['Columbus trusts attorney', 'Ohio estate planning lawyer', 'revocable living trusts', 'special needs trusts', 'trusts lawyer'],
+  title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Experienced Estate Planning Lawyer | Jwayyed Law LLC',
+  description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, special needs trusts, and more. Schedule consultation: (614) 285-5482',
+  keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {
-    title: 'Columbus Trusts Attorney | Jwayyed Law LLC',
-    description: 'Experienced attorney in Columbus offering trusts and estate planning services. Schedule a consultation today.',
+    title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    description: 'Trusts and estate planning in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule a consultation today.',
     url: 'https://www.jjlawohio.com/trusts',
   },
   alternates: { canonical: '/trusts' },
@@ -49,13 +49,13 @@ export default function TrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Trusts Lawyer in Columbus, OH"
-        description="Helping you set up trusts for estate planning, asset protection, and legacy preservation. Protect your assets and ensure your wishes are carried out."
+        title="Ohio Trusts Lawyer"
+        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Trusts for estate planning, asset protection, and legacy preservation."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Experienced Trusts Representation in Columbus, Ohio</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Trusts Representation in Columbus, Cincinnati, Dayton & Throughout Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Trusts are a core part of estate planning. They are powerful tools used to protect your assets, ensure your loved ones are taken care of, and avoid the lengthy and costly probate process. At Jwayyed Law LLC, we provide expert legal services for creating various types of trusts, including revocable living trusts, irrevocable trusts, special needs trusts, and more. Our attorneys are here to guide you through the process and help you make the best decisions for your future.
             </p>

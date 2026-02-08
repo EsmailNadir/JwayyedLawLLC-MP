@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Construction Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus construction disputes attorney protecting your rights. Skilled representation for construction disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Construction Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio construction disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for construction disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['construction disputes lawyer Columbus OH', 'construction attorney Ohio', 'contractor disputes lawyer', 'Franklin County construction attorney'],
   openGraph: {
-    title: 'Construction Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Construction Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/construction-disputes',
   },
   alternates: { canonical: '/civil/construction-disputes' },
@@ -48,7 +48,7 @@ export default function ConstructionDisputesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Construction Disputes Lawyer in Columbus, OH"
+        title="Ohio Construction Disputes Lawyer"
         description="Experienced legal representation for construction disputes. Protecting your rights and interests."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function ConstructionDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Construction Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Construction disputes in Columbus or throughout Ohio can involve breach of construction contracts, defective workmanship, payment disputes, mechanic\'s liens, and other complex construction law issues. At Jwayyed Law LLC, we provide experienced representation for construction disputes under Ohio Revised Code Chapter 1311. Our attorney understands construction law and the remedies necessary to protect your rights.
+              Construction disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve breach of construction contracts, defective workmanship, payment disputes, mechanic\'s liens, and other complex construction law issues. At Jwayyed Law LLC, we provide experienced representation for construction disputes under Ohio Revised Code Chapter 1311. Our attorney understands construction law and the remedies necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Construction Disputes Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

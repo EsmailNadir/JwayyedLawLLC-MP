@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Jwayyed Law LLC | Ohio Attorney | Criminal Defense, Estate Planning & Immigration",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Experienced Ohio attorney providing criminal defense, estate planning, immigration, business law, and probate services. Serving clients throughout the state of Ohio with personalized legal representation. Call (614) 285-5482.",
+  description: "Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, immigration, business law, and probate. Call (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com',
     siteName: 'Jwayyed Law LLC',
     title: 'Jwayyed Law LLC | Ohio Attorney',
-    description: 'Experienced Ohio attorney providing criminal defense, estate planning, immigration, business law, and probate services throughout the state of Ohio.',
+    description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, immigration, business law, probate.',
     images: [
       {
         url: '/assets/Jwayyed_Logo_Inverted.JPEG',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jwayyed Law LLC | Ohio Attorney',
-    description: 'Experienced Ohio attorney providing comprehensive legal services throughout the state of Ohio.',
+    description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Comprehensive legal services.',
     images: ['/assets/Jwayyed_Logo_Inverted.JPEG'],
   },
   robots: {

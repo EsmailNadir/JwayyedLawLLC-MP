@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Dynasty Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus dynasty trusts attorney helping you establish multi-generational wealth through trusts. Protect your legacy and minimize taxes in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Dynasty Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio dynasty trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Multi-generational wealth through trusts. Schedule a consultation: (614) 285-5482',
   keywords: ['dynasty trusts Columbus OH', 'dynasty trust attorney Ohio', 'multi-generational wealth', 'estate planning lawyer Ohio'],
   openGraph: {
-    title: 'Dynasty Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Dynasty Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/dynasty-trusts',
   },
   alternates: { canonical: '/trusts/dynasty-trusts' },
@@ -48,7 +48,7 @@ export default function DynastyTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Dynasty Trusts Lawyer in Columbus, OH"
+        title="Ohio Dynasty Trusts Lawyer"
         description="Helping you establish dynasty trusts for long-term wealth preservation and generational planning."
       />
       <section className="py-16 bg-white">

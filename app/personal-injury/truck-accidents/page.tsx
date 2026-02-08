@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Truck Accident Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Truck Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
   openGraph: {
-    title: 'Truck Accident Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Truck Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/truck-accidents',
   },
   alternates: { canonical: '/personal-injury/truck-accidents' },
@@ -48,7 +48,7 @@ export default function TruckAccidentsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Truck Accident Lawyer in Columbus, OH"
+        title="Ohio Truck Accident Lawyer"
         description="Experienced legal representation for truck accident victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function TruckAccidentsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Truck Accident Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Truck accidents in Columbus or throughout Ohio often result in catastrophic injuries, fatalities, and extensive property damage due to the size and weight of commercial trucks. At Jwayyed Law LLC, we provide experienced representation for truck accident victims under Ohio Revised Code Chapter 2305 and federal trucking regulations. Our attorney understands the complexities of truck accident cases and the compensation process necessary to help you recover.
+              Truck accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in catastrophic injuries, fatalities, and extensive property damage due to the size and weight of commercial trucks. At Jwayyed Law LLC, we provide experienced representation for truck accident victims under Ohio Revised Code Chapter 2305 and federal trucking regulations. Our attorney understands the complexities of truck accident cases and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -165,7 +165,7 @@ export default function TruckAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a truck accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, identify all potentially liable parties, and develop a strategy tailored to your situation. Time is critical in truck accident cases—evidence must be preserved, regulatory violations must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a truck accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, identify all potentially liable parties, and develop a strategy tailored to your situation. Time is critical in truck accident cases—evidence must be preserved, regulatory violations must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

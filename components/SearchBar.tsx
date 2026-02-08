@@ -104,7 +104,7 @@ const navItems: NavItem[] = [
     name: 'OVI / DUI',
     href: '/ovi-dui-defense',
     subLinks: [
-      { name: 'Columbus OVI Attorney', href: '/ovi-dui-defense' },
+      { name: 'Ohio OVI Attorney', href: '/ovi-dui-defense' },
       { name: 'First OVI', href: '/ovi-dui-defense/first-ovi' },
       { name: 'Second OVI', href: '/ovi-dui-defense/second-ovi' },
       { name: 'Third OVI', href: '/ovi-dui-defense/third-ovi' },
@@ -115,13 +115,16 @@ const navItems: NavItem[] = [
       { name: 'OVI with Accident', href: '/ovi-dui-defense/ovi-with-accident' },
       { name: 'Driving Under OVI Suspension', href: '/ovi-dui-defense/driving-under-ovi-suspension' },
       { name: 'Limited Driving Privileges', href: '/ovi-dui-defense/limited-driving-privileges' },
+      { name: 'OVI – Morrow County', href: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court' },
+      { name: 'OVI – Athens County', href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court' },
+      { name: 'OVI – Pickaway County', href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court' },
     ],
   },
   {
     name: 'Personal Injury',
     href: '/personal-injury',
     subLinks: [
-      { name: 'Columbus Personal Injury Attorney', href: '/personal-injury' },
+      { name: 'Ohio Personal Injury Attorney', href: '/personal-injury' },
       { name: 'Car Accidents', href: '/personal-injury/car-accidents' },
       { name: 'Truck Accidents', href: '/personal-injury/truck-accidents' },
       { name: 'Motorcycle Accidents', href: '/personal-injury/motorcycle-accidents' },
@@ -134,13 +137,16 @@ const navItems: NavItem[] = [
       { name: 'Workplace Injuries', href: '/personal-injury/workplace-injuries' },
       { name: 'Wrongful Death', href: '/personal-injury/wrongful-death' },
       { name: 'Catastrophic Injuries', href: '/personal-injury/catastrophic-injuries' },
+      { name: 'PI – Morrow County', href: '/locations/morrow-county/personal-injury-morrow-county' },
+      { name: 'PI – Athens County', href: '/locations/athens-county/personal-injury-athens-county' },
+      { name: 'PI – Pickaway County', href: '/locations/pickaway-county/personal-injury-pickaway-county' },
     ],
   },
   {
     name: 'Civil',
     href: '/civil',
     subLinks: [
-      { name: 'Columbus Civil Attorney', href: '/civil' },
+      { name: 'Ohio Civil Attorney', href: '/civil' },
       { name: 'Breach of Contract', href: '/civil/breach-of-contract' },
       { name: 'Real Estate Disputes', href: '/civil/real-estate-disputes' },
       { name: 'Landlord–Tenant Disputes', href: '/civil/landlord-tenant-disputes' },
@@ -157,7 +163,7 @@ const navItems: NavItem[] = [
     name: 'Business',
     href: '/business',
     subLinks: [
-      { name: 'Columbus Business Attorney', href: '/business' },
+      { name: 'Ohio Business Attorney', href: '/business' },
       { name: 'Business Formation', href: '/business/business-formation' },
       { name: 'LLC Formation', href: '/business/llc-formation' },
       { name: 'Contract Drafting & Review', href: '/business/contract-drafting-review' },
@@ -168,6 +174,9 @@ const navItems: NavItem[] = [
       { name: 'Employment Agreements', href: '/business/employment-agreements' },
       { name: 'Business Compliance', href: '/business/business-compliance' },
       { name: 'Business Dissolution', href: '/business/business-dissolution' },
+      { name: 'Business – Morrow County', href: '/locations/morrow-county/business-formation-llc-morrow-county' },
+      { name: 'Business – Athens County', href: '/locations/athens-county/business-formation-llc-athens-county' },
+      { name: 'Business – Pickaway County', href: '/locations/pickaway-county/business-formation-llc-pickaway-county' },
     ],
   },
   {

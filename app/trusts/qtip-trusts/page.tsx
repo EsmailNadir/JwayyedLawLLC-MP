@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'QTIP Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up QTIP Trusts (Qualified Terminable Interest Property Trusts) for estate planning. Ensure your spouse is provided for while preserving assets for heirs in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'QTIP Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney helping you set up QTIP Trusts (Qualified Terminable Interest Property Trusts) for estate planning. Ensure your spouse is provided for while preserving assets for heirs in Ohio. Schedule a consultation: (614) 285-5482',
   keywords: ['QTIP Trusts Columbus OH', 'QTIP trust attorney Ohio', 'estate planning lawyer', 'spouse support trust'],
   openGraph: {
-    title: 'QTIP Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'QTIP Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/qtip-trusts',
   },
   alternates: { canonical: '/trusts/qtip-trusts' },
@@ -48,7 +48,7 @@ export default function QTIPTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="QTIP Trusts Lawyer in Columbus, OH"
+        title="Ohio QTIP Trusts Lawyer"
         description="Helping you set up QTIP Trusts for spouse support and preserving wealth for heirs. Protect your family and minimize taxes in Ohio."
       />
       <section className="py-16 bg-white">

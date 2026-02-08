@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Motorcycle Accident Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
   openGraph: {
-    title: 'Motorcycle Accident Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/motorcycle-accidents',
   },
   alternates: { canonical: '/personal-injury/motorcycle-accidents' },
@@ -48,7 +48,7 @@ export default function MotorcycleAccidentsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Motorcycle Accident Lawyer in Columbus, OH"
+        title="Ohio Motorcycle Accident Lawyer"
         description="Experienced legal representation for motorcycle accident victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function MotorcycleAccidentsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Motorcycle Accident Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Motorcycle accidents in Columbus or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the lack of vehicle protection. At Jwayyed Law LLC, we provide experienced representation for motorcycle accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of motorcycle accident cases and the compensation process necessary to help you recover.
+              Motorcycle accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the lack of vehicle protection. At Jwayyed Law LLC, we provide experienced representation for motorcycle accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of motorcycle accident cases and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -164,7 +164,7 @@ export default function MotorcycleAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a motorcycle accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in motorcycle accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a motorcycle accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in motorcycle accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

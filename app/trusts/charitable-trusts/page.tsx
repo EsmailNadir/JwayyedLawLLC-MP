@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Charitable Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus charitable trusts attorney helping you set up trusts for charitable giving. Protect your legacy and support causes in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Charitable Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio charitable trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Charitable giving trusts. Schedule a consultation: (614) 285-5482',
   keywords: ['charitable trusts Columbus OH', 'charitable trust attorney Ohio', 'donor-advised funds', 'nonprofit trust lawyer'],
   openGraph: {
-    title: 'Charitable Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Charitable Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/charitable-trusts',
   },
   alternates: { canonical: '/trusts/charitable-trusts' },
@@ -48,7 +48,7 @@ export default function CharitableTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Charitable Trusts Lawyer in Columbus, OH"
+        title="Ohio Charitable Trusts Lawyer"
         description="Experienced legal representation for charitable trusts. Helping you set up trusts to support your chosen causes and minimize tax burdens."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function CharitableTrustsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Charitable Trusts in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Charitable trusts in Columbus, Ohio, allow individuals to support charitable causes while achieving tax benefits. These trusts are designed to provide a way to donate assets to charity in a structured manner while potentially reducing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. At Jwayyed Law LLC, we can guide you through the process of establishing a charitable trust in Ohio to ensure that your philanthropic goals align with your estate planning needs.
+              Charitable trusts in Columbus, Cincinnati, Dayton, and throughout Ohio allow individuals to support charitable causes while achieving tax benefits. These trusts are designed to provide a way to donate assets to charity in a structured manner while potentially reducing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. At Jwayyed Law LLC, we can guide you through the process of establishing a charitable trust in Ohio to ensure that your philanthropic goals align with your estate planning needs.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Charitable Trusts</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
@@ -71,7 +71,7 @@ export default function CharitableTrustsPage() {
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Jwayyed Law LLC offers comprehensive charitable trust services in Columbus and throughout Ohio. With our expertise in Ohio estate and trust law, we ensure that your charitable giving aligns with your goals and provides tax benefits. Whether you're looking to support a specific cause or reduce estate taxes, we can guide you through the process and help you establish a charitable trust that reflects your wishes.
+              Jwayyed Law LLC offers comprehensive charitable trust services in Columbus, Cincinnati, Dayton, and throughout Ohio. With our expertise in Ohio estate and trust law, we ensure that your charitable giving aligns with your goals and provides tax benefits. Whether you're looking to support a specific cause or reduce estate taxes, we can guide you through the process and help you establish a charitable trust that reflects your wishes.
             </p>
           </div>
         </div>

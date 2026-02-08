@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Employment Agreements Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus employment agreements attorney protecting your interests. Skilled representation for employment agreements in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Employment Agreements Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio employment agreements attorney protecting your interests. Skilled representation for employment agreements in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['employment agreements lawyer Columbus OH', 'employment agreements attorney Ohio', 'employment contract lawyer', 'Franklin County employment attorney'],
   openGraph: {
-    title: 'Employment Agreements Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Employment Agreements Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/employment-agreements',
   },
   alternates: { canonical: '/business/employment-agreements' },
@@ -48,7 +48,7 @@ export default function EmploymentAgreementsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Employment Agreements Lawyer in Columbus, OH"
+        title="Ohio Employment Agreements Lawyer"
         description="Experienced legal representation for employment agreements. Protecting your interests whether you are an employer or employee."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function EmploymentAgreementsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Employment Agreements in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Employment agreements in Columbus or throughout Ohio define the terms and conditions of employment and can significantly affect employer and employee rights. At Jwayyed Law LLC, we provide experienced representation for employment agreements under Ohio Revised Code. Our attorney understands employment law and can help draft, review, and negotiate employment agreements.
+              Employment agreements in Columbus, Cincinnati, Dayton, or throughout Ohio define the terms and conditions of employment and can significantly affect employer and employee rights. At Jwayyed Law LLC, we provide experienced representation for employment agreements under Ohio Revised Code. Our attorney understands employment law and can help draft, review, and negotiate employment agreements.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Employment Agreements Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

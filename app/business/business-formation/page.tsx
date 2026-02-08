@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business Formation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business formation attorney helping you start your business. Skilled representation for business formation in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['business formation lawyer Columbus OH', 'business formation attorney Ohio', 'LLC formation lawyer', 'Franklin County business formation attorney'],
+  title: 'Business Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+  description: 'Experienced Ohio business formation attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation. Schedule consultation: (614) 285-5482',
+  keywords: ['business formation lawyer Ohio', 'Columbus business formation attorney', 'Cincinnati business formation attorney', 'Dayton business formation attorney', 'LLC formation lawyer Ohio'],
   openGraph: {
-    title: 'Business Formation Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Business Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/business-formation',
   },
   alternates: { canonical: '/business/business-formation' },
@@ -48,7 +48,7 @@ export default function BusinessFormationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business Formation Lawyer in Columbus, OH"
+        title="Business Formation Lawyer in Ohio"
         description="Experienced legal assistance with business formation. Helping you start your business the right way."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function BusinessFormationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Business Formation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business formation in Columbus or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. At Jwayyed Law LLC, we provide experienced assistance with business formation under Ohio Revised Code (current as of 2026). Our attorney understands business law and can help determine the best structure and guide you through the formation process.
+              Business formation in Columbus, Cincinnati, Dayton, or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. At Jwayyed Law LLC, we provide experienced assistance with business formation under Ohio Revised Code (current as of 2026). Our attorney understands business law and can help determine the best structure and guide you through the formation process.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -156,7 +156,7 @@ export default function BusinessFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are starting a business in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
+              If you are starting a business in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
             </p>
           </div>
         </div>

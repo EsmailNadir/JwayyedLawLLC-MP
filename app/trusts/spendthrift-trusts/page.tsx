@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Spendthrift Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up spendthrift trusts to protect your assets from creditors and beneficiaries with poor financial management. Secure your wealth in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Spendthrift Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney helping you set up spendthrift trusts to protect your assets from creditors and beneficiaries with poor financial management. Secure your wealth in Ohio. Schedule a consultation: (614) 285-5482',
   keywords: ['spendthrift trusts Columbus OH', 'spendthrift trust attorney Ohio', 'asset protection trust lawyer', 'wealth protection Ohio'],
   openGraph: {
-    title: 'Spendthrift Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Spendthrift Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/spendthrift-trusts',
   },
   alternates: { canonical: '/trusts/spendthrift-trusts' },
@@ -48,7 +48,7 @@ export default function SpendthriftTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Spendthrift Trusts Lawyer in Columbus, OH"
+        title="Ohio Spendthrift Trusts Lawyer"
         description="Helping you establish spendthrift trusts to protect assets from creditors and manage funds for beneficiaries with financial concerns in Ohio."
       />
       <section className="py-16 bg-white">

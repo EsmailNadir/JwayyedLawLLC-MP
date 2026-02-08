@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Breach of Contract Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Breach of Contract Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
-    title: 'Breach of Contract Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Breach of Contract Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/breach-of-contract',
   },
   alternates: { canonical: '/civil/breach-of-contract' },
@@ -48,7 +48,7 @@ export default function BreachOfContractPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Breach of Contract Lawyer in Columbus, OH"
+        title="Ohio Breach of Contract Lawyer"
         description="Experienced legal representation for breach of contract disputes. Protecting your rights and fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function BreachOfContractPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Breach of Contract Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Breach of contract disputes in Columbus or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. At Jwayyed Law LLC, we provide experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
+              Breach of contract disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. At Jwayyed Law LLC, we provide experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -158,7 +158,7 @@ export default function BreachOfContractPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a breach of contract dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a breach of contract dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business Litigation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business litigation attorney protecting your business. Skilled representation for business disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Business Litigation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio business litigation attorney protecting your business. Skilled representation for business disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['business litigation lawyer Columbus OH', 'business litigation attorney Ohio', 'business dispute lawyer', 'Franklin County business litigation attorney'],
   openGraph: {
-    title: 'Business Litigation Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Business Litigation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/business-litigation',
   },
   alternates: { canonical: '/business/business-litigation' },
@@ -48,7 +48,7 @@ export default function BusinessLitigationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business Litigation Lawyer in Columbus, OH"
+        title="Ohio Business Litigation Lawyer"
         description="Experienced legal representation for business disputes. Protecting your business interests in litigation."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function BusinessLitigationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Business Litigation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business litigation in Columbus or throughout Ohio involves legal disputes related to business operations that can significantly impact your business. At Jwayyed Law LLC, we provide experienced representation for business litigation under Ohio Revised Code. Our attorney understands business law and can help protect your business interests in litigation.
+              Business litigation in Columbus, Cincinnati, Dayton, or throughout Ohio involves legal disputes related to business operations that can significantly impact your business. At Jwayyed Law LLC, we provide experienced representation for business litigation under Ohio Revised Code. Our attorney understands business law and can help protect your business interests in litigation.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Business Litigation Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

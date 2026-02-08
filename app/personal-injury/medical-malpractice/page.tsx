@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Medical Malpractice Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus medical malpractice attorney helping victims recover compensation. Skilled representation for medical malpractice injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Medical Malpractice Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio medical malpractice attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping victims recover compensation. Skilled representation for medical malpractice injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney'],
   openGraph: {
-    title: 'Medical Malpractice Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Medical Malpractice Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/medical-malpractice',
   },
   alternates: { canonical: '/personal-injury/medical-malpractice' },
@@ -48,7 +48,7 @@ export default function MedicalMalpracticePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Medical Malpractice Lawyer in Columbus, OH"
+        title="Ohio Medical Malpractice Lawyer"
         description="Experienced legal representation for medical malpractice victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function MedicalMalpracticePage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Medical Malpractice Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Medical malpractice in Columbus or throughout Ohio involves healthcare providers\' failure to meet the standard of care, resulting in injury or death. At Jwayyed Law LLC, we provide experienced representation for medical malpractice victims under Ohio Revised Code Chapter 2305. Our attorney understands medical malpractice law, damage caps, and the complex litigation process necessary to help you recover.
+              Medical malpractice in Columbus, Cincinnati, Dayton, or throughout Ohio involves healthcare providers\' failure to meet the standard of care, resulting in injury or death. At Jwayyed Law LLC, we provide experienced representation for medical malpractice victims under Ohio Revised Code Chapter 2305. Our attorney understands medical malpractice law, damage caps, and the complex litigation process necessary to help you recover.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Medical Malpractice Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

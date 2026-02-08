@@ -6,12 +6,12 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus Business Attorney | Experienced Business Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus business attorney handling business formation, LLC formation, contracts, business litigation, and more. Schedule consultation: (614) 285-5482',
-  keywords: ['Columbus business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer', 'Franklin County business attorney'],
+  title: 'Ohio Business Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
+  description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation. Schedule consultation: (614) 285-5482',
+  keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
   openGraph: {
-    title: 'Columbus Business Attorney | Jwayyed Law LLC',
-    description: 'Experienced business law representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Ohio Business Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    description: 'Business law representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/business',
   },
   alternates: { canonical: '/business' },
@@ -47,15 +47,15 @@ export default function BusinessPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Business Attorney"
-        description="Experienced legal representation for business formation, contracts, litigation, and all business law matters."
+        title="Ohio Business Attorney"
+        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, contracts, litigation, and all business law matters."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Experienced Business Law Representation in Columbus, Ohio</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Business Law Representation in Columbus, Cincinnati, Dayton & Throughout Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business law matters in Columbus or throughout Ohio require experienced legal representation to protect your business interests, ensure compliance, and minimize legal risks. At Jwayyed Law LLC, we provide experienced business law representation for various business matters under Ohio Revised Code (current as of 2026). Our attorney understands Ohio business laws, regulations, and strategies necessary to protect your business.
+              We serve business clients in Columbus, Cincinnati, Dayton, and throughout Ohio. Business law matters require experienced legal representation to protect your business interests, ensure compliance, and minimize legal risks. At Jwayyed Law LLC, we provide experienced business law representation for various business matters under Ohio Revised Code (current as of 2026). Our attorney understands Ohio business laws, regulations, and strategies necessary to protect your business.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -69,6 +69,25 @@ export default function BusinessPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Business disputes can arise from various sources including contract breaches, partnership disagreements, shareholder conflicts, employment issues, or regulatory compliance problems. These disputes can disrupt business operations, damage relationships, and result in significant financial losses. An experienced business attorney can help prevent disputes through proper planning, resolve disputes through negotiation or litigation, and protect business interests throughout the process.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Business – Locations We Serve</h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              We serve business clients in the following Ohio counties and communities:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              </Link>
+              <Link href="/locations/athens-county/business-formation-llc-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Athens County</span>
+                <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
+              </Link>
+              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              </Link>
+            </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Business Attorney Can Help</h3>
 
@@ -165,11 +184,11 @@ export default function BusinessPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough understanding of business law, strategic planning, and practical solutions. We understand the local business environment, regulatory requirements, and common business challenges in Columbus and throughout Ohio. This knowledge allows us to provide effective legal guidance tailored to your specific business needs. We work closely with clients to understand their goals, explain legal options, and make informed decisions about business structure, contracts, and dispute resolution.
+              Our approach combines thorough understanding of business law, strategic planning, and practical solutions. We understand the local business environment, regulatory requirements, and common business challenges in Columbus, Cincinnati, Dayton, and throughout Ohio. This knowledge allows us to provide effective legal guidance tailored to your specific business needs. We work closely with clients to understand their goals, explain legal options, and make informed decisions about business structure, contracts, and dispute resolution.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you need business legal assistance in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
+              If you need business legal assistance in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
             </p>
           </div>
         </div>

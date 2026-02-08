@@ -35,6 +35,9 @@ export default function MontgomeryCountyCourtsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Montgomery County courts handle various legal matters including criminal cases, OVI/DUI charges, civil disputes, and traffic violations. At Jwayyed Law LLC, we provide experienced representation in Montgomery County courts including Dayton Municipal Court. Please note that we do not handle immigration matters, juvenile matters, or probate matters in these courts.
             </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              OVI in Ohio is defined and penalized under Ohio Revised Code 4511.19. Under House Bill 37 (effective April 9, 2025), minimum fines for first and repeat OVI convictions increased, and oral fluid testing is permitted as an additional testing method. First-offense defendants may in some cases receive limited driving privileges with an ignition interlock instead of the full 15-day hard suspension. License reinstatement fees are $315. Dayton Municipal Court handles OVI, misdemeanors, and traffic cases under these state laws and local procedures. If you were arrested for OVI, you have 30 days to request an administrative license suspension hearing. An attorney can help with ALS appeals, criminal defense, and sentencing mitigation.
+            </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Montgomery County Courts</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link href="/courts/dayton-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
@@ -42,6 +45,10 @@ export default function MontgomeryCountyCourtsPage() {
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
               </Link>
             </div>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Montgomery County</h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+              We represent clients in Dayton Municipal Court and throughout Montgomery County. Our attorney understands current Ohio OVI and criminal law, court procedures, and prosecutor practices. We work to protect your rights and achieve the best possible outcome. Contact us to schedule a consultation.
+            </p>
           </div>
         </div>
       </section>

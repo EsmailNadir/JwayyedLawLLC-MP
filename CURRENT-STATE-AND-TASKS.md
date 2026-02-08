@@ -93,4 +93,44 @@ When writing, use “current 2026 Ohio law,” “Ohio law as of 2026,” or “
 
 ---
 
+---
+
+## Court + practice area combo pages (cousin’s request / SEO)
+
+**What the client/cousin is asking:**  
+He wants the same thing as [Dominy Law](https://www.dominylaw.com/practice-areas/drunk-driving-ovi-dui-defense/communities-served/dui-ovi-lawyer-for-mount-gilead-ohio/): **dedicated landing pages for every combination of court/location + practice area**, so the site can rank for hyper-local searches like “OVI lawyer Morrow County” or “personal injury attorney Circleville.”  
+Examples of the *kind* of URL he has in mind:
+
+- `jjlawohio.com/morrow-county-municipal-court/ovi-1st-offense`
+- `jjlawohio.com/morrow-county/personal-injury`
+- `jjlawohio.com/morrow-county/llc-formation`
+- `jjlawohio.com/athens-municipal-court/ovi-1st-offense`
+- …one page per court (or county) × practice area.
+
+**What actually exists today:**
+
+- **Combo pages do exist**, but under a different URL pattern and with limited coverage:
+  - **URL pattern:** `/locations/[county]/[practice-area]-[court-name]/`  
+    Example: `/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court`
+  - **Counties with location combo pages:** Morrow, Athens, Pickaway only.
+  - **Practice areas covered per county:** Only **OVI/DUI defense** and **criminal misdemeanor defense**. There are **no** location combo pages for: first-OVI, second-OVI, personal injury, LLC formation, etc.
+  - **Sitemap:** These 6 location URLs are in `app/sitemap.ts`, so they can be indexed.
+
+- **Why he “can’t find them”:**  
+  These pages are **not linked** from the main nav, OVI section, or county court pages. There is no “Locations we serve” or “Courts & practice areas” menu. So they’re hard to discover on-site and may not get strong internal links for SEO.
+
+**Gap vs what he wants:**
+
+| He wants | Current state |
+|----------|----------------|
+| Court-first or county-first URLs (e.g. `/morrow-county-municipal-court/ovi-1st`) | County-first under `/locations/` (e.g. `/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court`) |
+| Every court × practice area (OVI 1st, OVI 2nd, PI, LLC, etc.) | Only OVI (general) + criminal misdemeanor for 3 counties |
+| Easy to find from nav / OVI / county pages | Now linked from OVI pages and county pages (see below). |
+
+**Possible next steps:**
+
+1. **Link existing combo pages** so they’re discoverable: add a “Courts we serve” (or “Locations”) section on main OVI page and First OVI, and on each county court page link to the existing OVI/criminal location pages for that county.
+2. **Expand combo coverage:** add more practice areas per court (e.g. first-OVI, personal injury, LLC formation) and/or more counties, either as static pages or via a dynamic route.
+3. **Optional URL structure:** if he wants court-first URLs like `/[court-slug]/[practice-area]`, use dynamic routes, e.g. `app/courts/[court-slug]/[practice-area]/page.tsx`, and optionally redirect or canonical from current `/locations/` URLs.
+
 *Generated from code review. All legal content must be current 2026 Ohio law. Update this file when tasks are completed.*

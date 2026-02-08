@@ -42,6 +42,28 @@ export default function PickawayCountyCourtsPage() {
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
               </Link>
             </div>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Practice Areas We Handle in Pickaway County</h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              We represent clients in the following practice areas in Pickaway County and Circleville Municipal Court:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">OVI/DUI Defense</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville Municipal Court</span>
+              </Link>
+              <Link href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Criminal Misdemeanor Defense</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville Municipal Court</span>
+              </Link>
+              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Personal Injury</span>
+                <span className="block text-sm text-gray-600 mt-1">Pickaway County</span>
+              </Link>
+              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Business & LLC Formation</span>
+                <span className="block text-sm text-gray-600 mt-1">Pickaway County</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

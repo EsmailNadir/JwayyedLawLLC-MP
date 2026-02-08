@@ -5,11 +5,11 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Immigration Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus immigration attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Immigration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio immigration attorney helping you navigate the immigration system. Skilled representation for immigration matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['immigration lawyer Columbus OH', 'immigration attorney Ohio', 'green card lawyer', 'Franklin County immigration attorney'],
   openGraph: {
-    title: 'Immigration Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Immigration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/immigration',
   },
   alternates: { canonical: '/other-services/immigration' },
@@ -25,7 +25,7 @@ export default function ImmigrationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Immigration Lawyer in Columbus, OH"
+        title="Ohio Immigration Lawyer"
         description="Experienced legal assistance with immigration matters. Helping you navigate the immigration system and protect your rights."
       />
       <section className="py-16 bg-white">
@@ -33,7 +33,7 @@ export default function ImmigrationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Immigration Services in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Immigration matters in Columbus or throughout Ohio involve complex federal laws and procedures (including the Immigration and Nationality Act and related regulations) that can significantly affect your ability to live and work in the United States. At Jwayyed Law LLC, we provide experienced assistance with immigration matters under federal immigration law. Our attorney understands immigration law and can help you navigate the immigration system.
+              Immigration matters in Columbus, Cincinnati, Dayton, or throughout Ohio involve complex federal laws and procedures (including the Immigration and Nationality Act and related regulations) that can significantly affect your ability to live and work in the United States. At Jwayyed Law LLC, we provide experienced assistance with immigration matters under federal immigration law. Our attorney understands immigration law and can help you navigate the immigration system.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Immigration Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">

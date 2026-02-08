@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Columbus, OH | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up irrevocable life insurance trusts (ILITs) to protect life insurance proceeds and reduce federal estate taxes. Ohio has no state estate tax. Schedule a consultation: (614) 285-5482',
+  title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Irrevocable life insurance trusts (ILITs). Schedule a consultation: (614) 285-5482',
   keywords: ['irrevocable life insurance trust Columbus OH', 'ILIT attorney Ohio', 'life insurance trust lawyer', 'estate planning Ohio'],
   openGraph: {
-    title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-life-insurance-trusts',
   },
   alternates: { canonical: '/trusts/irrevocable-life-insurance-trusts' },
@@ -48,7 +48,7 @@ export default function IrrevocableLifeInsuranceTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Irrevocable Life Insurance Trusts Lawyer in Columbus, OH"
+        title="Ohio Irrevocable Life Insurance Trusts Lawyer"
         description="Helping you establish irrevocable life insurance trusts to protect your assets and reduce federal estate taxes. Ohio has no state estate tax."
       />
       <section className="py-16 bg-white">

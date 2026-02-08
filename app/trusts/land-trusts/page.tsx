@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Land Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus land trusts attorney helping you protect and manage real estate assets. Secure your property through land trusts in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Land Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio land trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protect and manage real estate assets. Schedule a consultation: (614) 285-5482',
   keywords: ['land trusts Columbus OH', 'land trust attorney Ohio', 'real estate trust lawyer', 'property protection Ohio'],
   openGraph: {
-    title: 'Land Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Land Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/land-trusts',
   },
   alternates: { canonical: '/trusts/land-trusts' },
@@ -48,7 +48,7 @@ export default function LandTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Land Trusts Lawyer in Columbus, OH"
+        title="Ohio Land Trusts Lawyer"
         description="Helping you protect real estate assets through land trusts. Ensure privacy and asset protection in Ohio."
       />
       <section className="py-16 bg-white">

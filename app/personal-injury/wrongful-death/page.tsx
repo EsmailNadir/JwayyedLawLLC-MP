@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wrongful Death Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Wrongful Death Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
   openGraph: {
-    title: 'Wrongful Death Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Wrongful Death Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/wrongful-death',
   },
   alternates: { canonical: '/personal-injury/wrongful-death' },
@@ -48,7 +48,7 @@ export default function WrongfulDeathPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Wrongful Death Lawyer in Columbus, OH"
+        title="Ohio Wrongful Death Lawyer"
         description="Experienced legal representation for wrongful death families seeking compensation. Fighting for the compensation your family deserves."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function WrongfulDeathPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Wrongful Death Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Wrongful death in Columbus or throughout Ohio occurs when someone's death is caused by another person's negligence, recklessness, or intentional misconduct. At Jwayyed Law LLC, we provide experienced representation for wrongful death families under Ohio Revised Code Chapter 2125. Our attorney understands wrongful death law and the compensation process necessary to help families recover and hold responsible parties accountable.
+              Wrongful death in Columbus, Cincinnati, Dayton, or throughout Ohio occurs when someone's death is caused by another person's negligence, recklessness, or intentional misconduct. At Jwayyed Law LLC, we provide experienced representation for wrongful death families under Ohio Revised Code Chapter 2125. Our attorney understands wrongful death law and the compensation process necessary to help families recover and hold responsible parties accountable.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -163,7 +163,7 @@ export default function WrongfulDeathPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
+              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
             </p>
           </div>
         </div>

@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI/DUI Defense in Morrow County - Morrow County Municipal Court | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced OVI/DUI defense attorney in Morrow County - Morrow County Municipal Court. Skilled representation for OVI/DUI charges in Morrow County, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['OVI defense Morrow County', 'DUI attorney Morrow County Municipal Court', 'Morrow County OVI lawyer', 'Morrow County DUI defense'],
+  title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Morrow County Municipal Court | Jwayyed Law LLC',
+  description: 'OVI/DUI defense attorney for Mount Gilead and Morrow County, Ohio. Morrow County Municipal Court. First OVI, second OVI, and misdemeanor OVI defense. Schedule consultation: (614) 285-5482',
+  keywords: ['OVI lawyer Mount Gilead Ohio', 'DUI attorney Morrow County', 'OVI defense Morrow County', 'Morrow County Municipal Court OVI'],
   openGraph: {
-    title: 'OVI/DUI Defense in Morrow County - Morrow County Municipal Court | Jwayyed Law LLC',
+    title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Morrow County | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court',
   },
   alternates: { canonical: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court' },
@@ -49,8 +49,8 @@ export default function MorrowOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI/DUI Defense in Morrow County - Morrow County Municipal Court"
-        description="Experienced legal defense for OVI/DUI charges in Morrow County. Protecting your rights and fighting for the best possible outcome in Morrow County Municipal Court."
+        title="OVI / DUI Lawyer for Mount Gilead, Ohio"
+        description="Morrow County Municipal Court. Experienced OVI/DUI defense for Mount Gilead, Cardington, and Morrow County, Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

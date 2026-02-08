@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Civil Protection Orders Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Civil Protection Orders Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney'],
   openGraph: {
-    title: 'Civil Protection Orders Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Civil Protection Orders Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/civil-protection-orders',
   },
   alternates: { canonical: '/civil/civil-protection-orders' },
@@ -48,7 +48,7 @@ export default function CivilProtectionOrdersPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Civil Protection Orders Lawyer in Columbus, OH"
+        title="Ohio Civil Protection Orders Lawyer"
         description="Experienced legal representation for civil protection orders. Protecting your rights whether you are seeking or defending against a protection order."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function CivilProtectionOrdersPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Civil Protection Orders in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Civil protection orders in Columbus or throughout Ohio are court orders protecting victims of domestic violence, sexual assault, stalking, and other offenses. At Jwayyed Law LLC, we provide experienced representation for civil protection orders under Ohio Revised Code 3113.31. Our attorney understands protection order procedures and can help whether you are seeking a protection order or defending against one.
+              Civil protection orders in Columbus, Cincinnati, Dayton, or throughout Ohio are court orders protecting victims of domestic violence, sexual assault, stalking, and other offenses. At Jwayyed Law LLC, we provide experienced representation for civil protection orders under Ohio Revised Code 3113.31. Our attorney understands protection order procedures and can help whether you are seeking a protection order or defending against one.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Civil Protection Orders Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

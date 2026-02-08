@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business Compliance Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus business compliance attorney ensuring regulatory compliance. Skilled representation for business compliance in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Business Compliance Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio business compliance attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Ensuring regulatory compliance. Skilled representation for business compliance in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['business compliance lawyer Columbus OH', 'business compliance attorney Ohio', 'regulatory compliance lawyer', 'Franklin County business compliance attorney'],
   openGraph: {
-    title: 'Business Compliance Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Business Compliance Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/business-compliance',
   },
   alternates: { canonical: '/business/business-compliance' },
@@ -48,7 +48,7 @@ export default function BusinessCompliancePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business Compliance Lawyer in Columbus, OH"
+        title="Ohio Business Compliance Lawyer"
         description="Experienced legal assistance with business compliance. Ensuring your business complies with all regulations."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function BusinessCompliancePage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Business Compliance in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business compliance in Columbus or throughout Ohio is essential for protecting your business from fines, penalties, and legal issues. At Jwayyed Law LLC, we provide experienced assistance with business compliance under Ohio Revised Code and federal regulations. Our attorney understands regulatory requirements and can help ensure your business complies with all applicable laws.
+              Business compliance in Columbus, Cincinnati, Dayton, or throughout Ohio is essential for protecting your business from fines, penalties, and legal issues. At Jwayyed Law LLC, we provide experienced assistance with business compliance under Ohio Revised Code and federal regulations. Our attorney understands regulatory requirements and can help ensure your business complies with all applicable laws.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Business Compliance Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

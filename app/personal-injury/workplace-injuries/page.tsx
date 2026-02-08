@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Workplace Injury Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus workplace injury attorney helping victims recover compensation. Skilled representation for workplace injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Workplace Injury Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio workplace injury attorney helping victims recover compensation. Skilled representation for workplace injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['workplace injury lawyer Columbus OH', 'workplace injury attorney Ohio', 'workers compensation lawyer', 'Franklin County workplace injury attorney'],
   openGraph: {
-    title: 'Workplace Injury Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Workplace Injury Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/workplace-injuries',
   },
   alternates: { canonical: '/personal-injury/workplace-injuries' },
@@ -48,7 +48,7 @@ export default function WorkplaceInjuriesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Workplace Injury Lawyer in Columbus, OH"
+        title="Ohio Workplace Injury Lawyer"
         description="Experienced legal representation for workplace injury victims seeking compensation. Fighting for the benefits you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function WorkplaceInjuriesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Workplace Injury Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Workplace injuries in Columbus or throughout Ohio may be covered by workers compensation benefits under Ohio Revised Code Chapter 4123, or may result in third-party personal injury claims against negligent third parties. At Jwayyed Law LLC, we provide experienced representation for workplace injury victims under Ohio workers compensation law and personal injury law. Our attorney understands workers compensation benefits and third-party claims necessary to help you recover.
+              Workplace injuries in Columbus, Cincinnati, Dayton, or throughout Ohio may be covered by workers compensation benefits under Ohio Revised Code Chapter 4123, or may result in third-party personal injury claims against negligent third parties. At Jwayyed Law LLC, we provide experienced representation for workplace injury victims under Ohio workers compensation law and personal injury law. Our attorney understands workers compensation benefits and third-party claims necessary to help you recover.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Workplace Injury Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

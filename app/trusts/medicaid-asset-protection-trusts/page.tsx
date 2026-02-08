@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Medicaid Asset Protection Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you protect assets and qualify for Medicaid with Medicaid Asset Protection Trusts. Secure your healthcare coverage in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Medicaid Asset Protection Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Medicaid Asset Protection Trusts, asset protection, Medicaid qualification. Schedule a consultation: (614) 285-5482',
   keywords: ['medicaid asset protection trusts Columbus OH', 'medicaid planning attorney Ohio', 'medicaid trust lawyer', 'asset protection Ohio'],
   openGraph: {
-    title: 'Medicaid Asset Protection Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Medicaid Asset Protection Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/medicaid-asset-protection-trusts',
   },
   alternates: { canonical: '/trusts/medicaid-asset-protection-trusts' },
@@ -48,7 +48,7 @@ export default function MedicaidAssetProtectionTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Medicaid Asset Protection Trusts Lawyer in Columbus, OH"
+        title="Ohio Medicaid Asset Protection Trusts Lawyer"
         description="Helping you protect assets and qualify for Medicaid with Medicaid Asset Protection Trusts. Secure your healthcare and legacy in Ohio."
       />
       <section className="py-16 bg-white">

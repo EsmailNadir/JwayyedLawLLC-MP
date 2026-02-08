@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Debt Collection Defense Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus debt collection defense attorney protecting your rights. Skilled representation for debt collection defense in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Debt Collection Defense Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio debt collection defense attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for debt collection defense in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['debt collection defense lawyer Columbus OH', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
   openGraph: {
-    title: 'Debt Collection Defense Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Debt Collection Defense Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/debt-collection-defense',
   },
   alternates: { canonical: '/civil/debt-collection-defense' },
@@ -48,7 +48,7 @@ export default function DebtCollectionDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Debt Collection Defense Lawyer in Columbus, OH"
+        title="Ohio Debt Collection Defense Lawyer"
         description="Experienced legal representation for debt collection defense. Protecting your rights and fighting unfair debt collection practices."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function DebtCollectionDefensePage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Debt Collection Defense in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Debt collection defense in Columbus or throughout Ohio involves defending against debt collection lawsuits and challenging debt collection practices. At Jwayyed Law LLC, we provide experienced representation for debt collection defense under Ohio Revised Code and the Fair Debt Collection Practices Act (FDCPA). Our attorney understands debt collection law and consumer protection laws necessary to protect your rights.
+              Debt collection defense in Columbus, Cincinnati, Dayton, or throughout Ohio involves defending against debt collection lawsuits and challenging debt collection practices. At Jwayyed Law LLC, we provide experienced representation for debt collection defense under Ohio Revised Code and the Fair Debt Collection Practices Act (FDCPA). Our attorney understands debt collection law and consumer protection laws necessary to protect your rights.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Debt Collection Defense Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

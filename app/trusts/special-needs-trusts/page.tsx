@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Special Needs Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up special needs trusts to protect assets for loved ones with disabilities. Ensure quality care without affecting eligibility for government benefits in Ohio. Schedule a consultation: (614) 285-5482',
+  title: 'Special Needs Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney helping you set up special needs trusts to protect assets for loved ones with disabilities. Ensure quality care without affecting eligibility for government benefits in Ohio. Schedule a consultation: (614) 285-5482',
   keywords: ['special needs trusts Columbus OH', 'special needs trust attorney Ohio', 'disability trust lawyer', 'estate planning Ohio'],
   openGraph: {
-    title: 'Special Needs Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Special Needs Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/special-needs-trusts',
   },
   alternates: { canonical: '/trusts/special-needs-trusts' },
@@ -48,7 +48,7 @@ export default function SpecialNeedsTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Special Needs Trusts Lawyer in Columbus, OH"
+        title="Ohio Special Needs Trusts Lawyer"
         description="Helping you establish special needs trusts to protect your loved ones with disabilities while preserving their eligibility for essential benefits in Ohio."
       />
       <section className="py-16 bg-white">

@@ -1,25 +1,27 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus Personal Injury Attorney | Experienced Injury Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus personal injury attorney helping accident victims recover compensation. Skilled representation for car accidents, slip and fall, workplace injuries, and more. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Personal Injury Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
+  description: 'Experienced personal injury attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Car accidents, slip and fall, workplace injuries, and more. Schedule consultation: (614) 285-5482',
   keywords: [
+    'Ohio personal injury attorney',
     'Columbus personal injury attorney',
+    'Cincinnati personal injury attorney',
+    'Dayton personal injury attorney',
     'Ohio personal injury lawyer',
-    'car accident lawyer Columbus OH',
+    'car accident lawyer Ohio',
     'slip and fall attorney',
     'workplace injury lawyer',
-    'wrongful death attorney',
-    'Franklin County personal injury lawyer'
+    'wrongful death attorney'
   ],
   openGraph: {
-    title: 'Columbus Personal Injury Attorney | Jwayyed Law LLC',
-    description: 'Experienced personal injury representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Ohio Personal Injury Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    description: 'Personal injury representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/personal-injury',
   },
   alternates: {
@@ -59,19 +61,19 @@ export default function PersonalInjuryPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Personal Injury Attorney"
-        description="Experienced legal representation for accident victims seeking compensation. Fighting for the compensation you deserve."
+        title="Ohio Personal Injury Attorney"
+        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Experienced representation for accident victims seeking compensation."
       />
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
-              Experienced Personal Injury Representation in Columbus, Ohio
+              Personal Injury Representation in Columbus, Cincinnati, Dayton & Throughout Ohio
             </h2>
             
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              If you have been injured in an accident in Columbus or throughout Ohio due to someone else's negligence, you may be entitled to compensation for your injuries, medical expenses, lost wages, and pain and suffering. At Jwayyed Law LLC, we provide experienced personal injury representation for accident victims under Ohio Revised Code Chapter 2305. Our attorney understands Ohio personal injury laws, insurance requirements, and the compensation process necessary to help you recover.
+              If you have been injured in an accident in Columbus, Cincinnati, Dayton, or throughout Ohio due to someone else's negligence, you may be entitled to compensation for your injuries, medical expenses, lost wages, and pain and suffering. At Jwayyed Law LLC, we provide experienced personal injury representation for accident victims under Ohio Revised Code Chapter 2305. Our attorney understands Ohio personal injury laws, insurance requirements, and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -85,6 +87,27 @@ export default function PersonalInjuryPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Personal injury cases require thorough investigation, medical documentation, expert testimony, and strategic negotiation or litigation. The statute of limitations for most personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Medical malpractice claims have a 1-year statute of limitations from discovery. Missing these deadlines bars recovery entirely. An experienced attorney can ensure all deadlines are met, evidence is preserved, and your claim is properly documented and pursued.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_sans-serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Personal Injury – Locations We Serve
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              We represent injury victims in the following Ohio counties and communities:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              </Link>
+              <Link href="/locations/athens-county/personal-injury-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Athens County</span>
+                <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
+              </Link>
+              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              </Link>
+            </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_sans-serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
               The Personal Injury Claims Process
@@ -292,7 +315,7 @@ export default function PersonalInjuryPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in an accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in personal injury cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in an accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in personal injury cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

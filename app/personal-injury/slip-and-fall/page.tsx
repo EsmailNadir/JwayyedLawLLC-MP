@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Slip and Fall Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus slip and fall attorney helping victims recover compensation. Skilled representation for slip and fall injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Slip and Fall Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio slip and fall attorney helping victims recover compensation. Skilled representation for slip and fall injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['slip and fall lawyer Columbus OH', 'slip and fall attorney Ohio', 'premises liability lawyer', 'Franklin County slip and fall attorney'],
   openGraph: {
-    title: 'Slip and Fall Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Slip and Fall Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/slip-and-fall',
   },
   alternates: { canonical: '/personal-injury/slip-and-fall' },
@@ -48,7 +48,7 @@ export default function SlipAndFallPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Slip and Fall Lawyer in Columbus, OH"
+        title="Ohio Slip and Fall Lawyer"
         description="Experienced legal representation for slip and fall accident victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function SlipAndFallPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Slip and Fall Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Slip and fall accidents in Columbus or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
+              Slip and fall accidents in Columbus, Cincinnati, Dayton, or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -164,7 +164,7 @@ export default function SlipAndFallPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

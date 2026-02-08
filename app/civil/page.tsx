@@ -6,12 +6,12 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Columbus Civil Attorney | Experienced Civil Litigation Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Columbus civil attorney handling contract disputes, real estate matters, landlord-tenant disputes, evictions, and more. Schedule consultation: (614) 285-5482',
-  keywords: ['Columbus civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer', 'Franklin County civil attorney'],
+  title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
+  description: 'Experienced civil attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Contract disputes, real estate, landlord-tenant, evictions, and more. Schedule consultation: (614) 285-5482',
+  keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer'],
   openGraph: {
-    title: 'Columbus Civil Attorney | Jwayyed Law LLC',
-    description: 'Experienced civil litigation representation in Columbus and throughout Ohio. Schedule consultation available.',
+    title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    description: 'Civil litigation representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/civil',
   },
   alternates: { canonical: '/civil' },
@@ -47,15 +47,15 @@ export default function CivilPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Civil Attorney"
-        description="Experienced legal representation for civil disputes including contracts, real estate, landlord-tenant matters, and more."
+        title="Ohio Civil Attorney"
+        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Civil disputes, contracts, real estate, landlord-tenant matters, and more."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Experienced Civil Litigation Representation in Columbus, Ohio</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Civil Litigation in Columbus, Cincinnati, Dayton & Throughout Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Civil litigation in Columbus or throughout Ohio involves legal disputes between parties seeking monetary damages or other remedies. At Jwayyed Law LLC, we provide experienced civil representation for various civil matters under Ohio Revised Code. Our attorney understands Ohio civil laws, court procedures, and strategies necessary to protect your rights and achieve favorable outcomes.
+              We serve civil clients in Columbus, Cincinnati, Dayton, and throughout Ohio. Civil litigation involves legal disputes between parties seeking monetary damages or other remedies. At Jwayyed Law LLC, we provide experienced civil representation for various civil matters under Ohio Revised Code. Our attorney understands Ohio civil laws, court procedures, and strategies necessary to protect your rights and achieve favorable outcomes.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -203,7 +203,7 @@ export default function CivilPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a civil dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential outcomes, and develop a strategy tailored to your situation. Time is critical in civil cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a civil dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential outcomes, and develop a strategy tailored to your situation. Time is critical in civil cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

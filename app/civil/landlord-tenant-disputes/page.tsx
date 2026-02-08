@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Landlord-Tenant Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus landlord-tenant disputes attorney protecting your rights. Skilled representation for landlord-tenant matters in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Landlord-Tenant Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio landlord-tenant disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for landlord-tenant matters in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Franklin County landlord tenant attorney'],
   openGraph: {
-    title: 'Landlord-Tenant Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Landlord-Tenant Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/landlord-tenant-disputes',
   },
   alternates: { canonical: '/civil/landlord-tenant-disputes' },
@@ -48,7 +48,7 @@ export default function LandlordTenantDisputesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Landlord–Tenant Disputes Lawyer in Columbus, OH"
+        title="Ohio Landlord–Tenant Disputes Lawyer"
         description="Experienced legal representation for landlord-tenant disputes. Protecting your rights whether you are a landlord or tenant."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function LandlordTenantDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Landlord-Tenant Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Landlord-tenant disputes in Columbus or throughout Ohio can involve security deposits, rent, habitability issues, eviction proceedings, and other complex landlord-tenant law matters. At Jwayyed Law LLC, we provide experienced representation for landlord-tenant disputes under Ohio Revised Code Chapter 5321. Our attorney understands Ohio landlord-tenant law and can protect your rights whether you are a landlord or tenant.
+              Landlord-tenant disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve security deposits, rent, habitability issues, eviction proceedings, and other complex landlord-tenant law matters. At Jwayyed Law LLC, we provide experienced representation for landlord-tenant disputes under Ohio Revised Code Chapter 5321. Our attorney understands Ohio landlord-tenant law and can protect your rights whether you are a landlord or tenant.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -122,7 +122,7 @@ export default function LandlordTenantDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a landlord-tenant dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you are involved in a landlord-tenant dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
           </div>
         </div>

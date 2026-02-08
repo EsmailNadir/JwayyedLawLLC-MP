@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Premises Liability Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus premises liability attorney helping victims recover compensation. Skilled representation for premises liability injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Premises Liability Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio premises liability attorney helping victims recover compensation. Skilled representation for premises liability injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['premises liability lawyer Columbus OH', 'premises liability attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney'],
   openGraph: {
-    title: 'Premises Liability Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Premises Liability Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/premises-liability',
   },
   alternates: { canonical: '/personal-injury/premises-liability' },
@@ -48,7 +48,7 @@ export default function PremisesLiabilityPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Premises Liability Lawyer in Columbus, OH"
+        title="Ohio Premises Liability Lawyer"
         description="Experienced legal representation for premises liability injuries. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function PremisesLiabilityPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Premises Liability Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Premises liability injuries in Columbus or throughout Ohio can result from dangerous conditions on property including slip and fall hazards, inadequate lighting, broken stairs, negligent security, and other hazards. At Jwayyed Law LLC, we provide experienced representation for premises liability injuries under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
+              Premises liability injuries in Columbus, Cincinnati, Dayton, or throughout Ohio can result from dangerous conditions on property including slip and fall hazards, inadequate lighting, broken stairs, negligent security, and other hazards. At Jwayyed Law LLC, we provide experienced representation for premises liability injuries under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Premises Liability Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

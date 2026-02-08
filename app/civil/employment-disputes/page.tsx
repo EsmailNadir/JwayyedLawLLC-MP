@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Employment Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus employment disputes attorney protecting your rights. Skilled representation for employment disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Employment Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio employment disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for employment disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['employment disputes lawyer Columbus OH', 'employment attorney Ohio', 'wrongful termination lawyer', 'Franklin County employment attorney'],
   openGraph: {
-    title: 'Employment Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Employment Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/employment-disputes',
   },
   alternates: { canonical: '/civil/employment-disputes' },
@@ -48,7 +48,7 @@ export default function EmploymentDisputesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Employment Disputes Lawyer in Columbus, OH"
+        title="Ohio Employment Disputes Lawyer"
         description="Experienced legal representation for employment disputes. Protecting your rights in the workplace."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function EmploymentDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Employment Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Employment disputes in Columbus or throughout Ohio can involve wrongful termination, discrimination, harassment, wage and hour violations, and other complex employment law matters. At Jwayyed Law LLC, we provide experienced representation for employment disputes under Ohio Revised Code and federal employment laws. Our attorney understands employment law and can protect your rights in the workplace.
+              Employment disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve wrongful termination, discrimination, harassment, wage and hour violations, and other complex employment law matters. At Jwayyed Law LLC, we provide experienced representation for employment disputes under Ohio Revised Code and federal employment laws. Our attorney understands employment law and can protect your rights in the workplace.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Employment Disputes Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

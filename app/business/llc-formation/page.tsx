@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'LLC Formation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus LLC formation attorney helping you form your LLC. Skilled representation for LLC formation in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'LLC Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio LLC formation attorney helping you form your LLC. Skilled representation for LLC formation in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['LLC formation lawyer Columbus OH', 'LLC formation attorney Ohio', 'form LLC lawyer', 'Franklin County LLC attorney'],
   openGraph: {
-    title: 'LLC Formation Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'LLC Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/llc-formation',
   },
   alternates: { canonical: '/business/llc-formation' },
@@ -48,7 +48,7 @@ export default function LLCFormationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="LLC Formation Lawyer in Columbus, OH"
+        title="Ohio LLC Formation Lawyer"
         description="Experienced legal assistance with LLC formation. Helping you form your LLC the right way."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function LLCFormationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding LLC Formation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              LLC formation in Columbus or throughout Ohio requires filing Articles of Organization with the Ohio Secretary of State and complying with state requirements. At Jwayyed Law LLC, we provide experienced assistance with LLC formation under Ohio Revised Code Chapter 1706. Our attorney understands LLC law and can help you form your LLC correctly and protect your interests.
+              LLC formation in Columbus, Cincinnati, Dayton, or throughout Ohio requires filing Articles of Organization with the Ohio Secretary of State and complying with state requirements. At Jwayyed Law LLC, we provide experienced assistance with LLC formation under Ohio Revised Code Chapter 1706. Our attorney understands LLC law and can help you form your LLC correctly and protect your interests.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -125,7 +125,7 @@ export default function LLCFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are forming an LLC in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
+              If you are forming an LLC in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain LLC formation requirements, discuss operating agreements, and help you complete the formation process. Proper LLC formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your LLC is properly formed and protected.
             </p>
           </div>
         </div>

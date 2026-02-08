@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Nursing Home Abuse Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus nursing home abuse attorney helping victims recover compensation. Skilled representation for nursing home abuse and neglect in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Nursing Home Abuse Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio nursing home abuse attorney helping victims recover compensation. Skilled representation for nursing home abuse and neglect in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['nursing home abuse lawyer Columbus OH', 'nursing home abuse attorney Ohio', 'elder abuse lawyer', 'Franklin County nursing home abuse attorney'],
   openGraph: {
-    title: 'Nursing Home Abuse Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Nursing Home Abuse Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/nursing-home-abuse',
   },
   alternates: { canonical: '/personal-injury/nursing-home-abuse' },
@@ -48,7 +48,7 @@ export default function NursingHomeAbusePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Nursing Home Abuse Lawyer in Columbus, OH"
+        title="Ohio Nursing Home Abuse Lawyer"
         description="Experienced legal representation for nursing home abuse victims seeking compensation. Fighting for the rights of vulnerable residents."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function NursingHomeAbusePage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Nursing Home Abuse Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Nursing home abuse in Columbus or throughout Ohio involves physical abuse, emotional abuse, sexual abuse, financial exploitation, neglect, and abandonment of vulnerable nursing home residents. At Jwayyed Law LLC, we provide experienced representation for nursing home abuse victims under Ohio Revised Code Chapter 3721. Our attorney understands nursing home regulations and the compensation process necessary to help residents recover and hold facilities accountable.
+              Nursing home abuse in Columbus, Cincinnati, Dayton, or throughout Ohio involves physical abuse, emotional abuse, sexual abuse, financial exploitation, neglect, and abandonment of vulnerable nursing home residents. At Jwayyed Law LLC, we provide experienced representation for nursing home abuse victims under Ohio Revised Code Chapter 3721. Our attorney understands nursing home regulations and the compensation process necessary to help residents recover and hold facilities accountable.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Nursing Home Abuse Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

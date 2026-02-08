@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Stay informed with legal insights, updates on Ohio law, and helpful information from Jwayyed Law LLC. Articles covering criminal defense, OVI/DUI, personal injury, and more.',
   keywords: [
     'Ohio legal blog',
-    'Columbus law blog',
+    'Ohio law blog', 'Columbus Cincinnati Dayton law blog',
     'criminal defense updates',
     'Ohio law updates',
     'legal news Columbus',

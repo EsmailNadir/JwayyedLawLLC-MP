@@ -5,11 +5,11 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Dispute Resolution Lawyer in Columbus, OH | Mediation & Arbitration | Jwayyed Law LLC',
-  description: 'Experienced Columbus dispute resolution attorney helping you resolve conflicts. Skilled representation for mediation and arbitration in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Dispute Resolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Mediation & Arbitration | Jwayyed Law LLC',
+  description: 'Experienced Ohio dispute resolution attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you resolve conflicts. Skilled representation for mediation and arbitration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['dispute resolution lawyer Columbus OH', 'mediation attorney Ohio', 'arbitration lawyer', 'Franklin County dispute resolution attorney'],
   openGraph: {
-    title: 'Dispute Resolution Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Dispute Resolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/dispute-resolution',
   },
   alternates: { canonical: '/other-services/dispute-resolution' },
@@ -25,7 +25,7 @@ export default function DisputeResolutionPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Dispute Resolution Lawyer in Columbus, OH"
+        title="Ohio Dispute Resolution Lawyer"
         description="Experienced legal assistance with dispute resolution. Helping you resolve conflicts through mediation and arbitration."
       />
       <section className="py-16 bg-white">
@@ -33,7 +33,7 @@ export default function DisputeResolutionPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Dispute Resolution in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Dispute resolution in Columbus or throughout Ohio offers alternative methods to resolve conflicts without litigation, including mediation and arbitration. At Jwayyed Law LLC, we provide experienced assistance with dispute resolution under Ohio Revised Code (current as of 2026). Our attorney understands alternative dispute resolution and can help you resolve conflicts efficiently.
+              Dispute resolution in Columbus, Cincinnati, Dayton, or throughout Ohio offers alternative methods to resolve conflicts without litigation, including mediation and arbitration. At Jwayyed Law LLC, we provide experienced assistance with dispute resolution under Ohio Revised Code (current as of 2026). Our attorney understands alternative dispute resolution and can help you resolve conflicts efficiently.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Dispute Resolution Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">

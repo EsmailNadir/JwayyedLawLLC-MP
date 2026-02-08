@@ -144,6 +144,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/morrow-county/personal-injury-morrow-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/morrow-county/business-formation-llc-morrow-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/athens-county/personal-injury-athens-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/athens-county/business-formation-llc-athens-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/pickaway-county/personal-injury-pickaway-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/pickaway-county/business-formation-llc-pickaway-county', priority: 0.8, changeFrequency: 'monthly' as const },
   ];
 
   return routes.map((route) => ({

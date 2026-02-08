@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-[#b87333]">Jwayyed Law LLC</h3>
             <p className="text-gray-400 leading-relaxed">
-              Dedicated legal representation in criminal defense, traffic violations, and civil matters throughout Ohio.
+              Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Dedicated legal representation in criminal defense, traffic violations, and civil matters.
             </p>
           </div>
 

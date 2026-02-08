@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Real Estate Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus real estate disputes attorney protecting your rights. Skilled representation for real estate disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Real Estate Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio real estate disputes attorney protecting your rights. Skilled representation for real estate disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney'],
   openGraph: {
-    title: 'Real Estate Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Real Estate Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/real-estate-disputes',
   },
   alternates: { canonical: '/civil/real-estate-disputes' },
@@ -48,7 +48,7 @@ export default function RealEstateDisputesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Real Estate Disputes Lawyer in Columbus, OH"
+        title="Ohio Real Estate Disputes Lawyer"
         description="Experienced legal representation for real estate disputes. Protecting your property rights and interests."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function RealEstateDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Real Estate Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Real estate disputes in Columbus or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. At Jwayyed Law LLC, we provide experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
+              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. At Jwayyed Law LLC, we provide experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -149,7 +149,7 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a real estate dispute in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
+              If you are involved in a real estate dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
             </p>
           </div>
         </div>

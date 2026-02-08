@@ -42,8 +42,12 @@ export default function ClintonCountyCourtsPage() {
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">69 N South Street, Wilmington, OH 45177. Misdemeanor cases, OVI/DUI, traffic violations, and civil matters.</p>
               </Link>
             </div>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio OVI law (Ohio Revised Code 4511.19) and House Bill 37 (effective April 9, 2025) set mandatory minimums for fines, license suspension, and in some cases ignition interlock. First-offense OVI in Ohio is a first-degree misdemeanor with a minimum fine of $565 and possible jail time. You have 30 days from arrest to request an administrative license suspension (ALS) hearing. Wilmington Municipal Court follows state law and local rules; having an attorney who knows the court and current penalties can make a significant difference in your case.
+            </p>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Clinton County</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a case in Clinton County, our attorney can help with misdemeanor criminal defense, OVI/DUI defense, traffic matters, and civil cases within the court&apos;s jurisdiction. We work to protect your rights and achieve the best possible outcome. Contact us to schedule a consultation.
+              Our attorney represents clients in Wilmington Municipal Court (Clinton County Municipal Court) for misdemeanor criminal defense, OVI/DUI defense, traffic matters, and civil cases within the court&apos;s jurisdiction. We stay current on Ohio law and work to protect your rights and achieve the best possible outcome. Contact us to schedule a consultation.
             </p>
           </div>
         </div>

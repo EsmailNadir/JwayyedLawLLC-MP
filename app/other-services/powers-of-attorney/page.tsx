@@ -4,11 +4,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Powers of Attorney Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus powers of attorney attorney protecting your interests. Skilled representation for financial and healthcare powers of attorney in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Powers of Attorney Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio powers of attorney attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your interests. Skilled representation for financial and healthcare powers of attorney in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['powers of attorney lawyer Columbus OH', 'power of attorney attorney Ohio', 'financial power of attorney', 'Franklin County power of attorney attorney'],
   openGraph: {
-    title: 'Powers of Attorney Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Powers of Attorney Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/powers-of-attorney',
   },
   alternates: { canonical: '/other-services/powers-of-attorney' },
@@ -25,7 +25,7 @@ export default function PowersOfAttorneyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Powers of Attorney Lawyer in Columbus, OH"
+        title="Ohio Powers of Attorney Lawyer"
         description="Experienced legal assistance with powers of attorney. Protecting your interests through financial and healthcare powers of attorney."
       />
       <section className="py-16 bg-white">
@@ -33,7 +33,7 @@ export default function PowersOfAttorneyPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Powers of Attorney in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Powers of attorney in Columbus or throughout Ohio are legal documents that allow you to appoint someone to make decisions on your behalf if you become unable to do so. At Jwayyed Law LLC, we provide experienced assistance with powers of attorney under Ohio Revised Code Chapter 1337 (current as of 2026). Our attorney understands power of attorney law and can help you create financial powers of attorney and healthcare powers of attorney tailored to your needs.
+              Powers of attorney in Columbus, Cincinnati, Dayton, or throughout Ohio are legal documents that allow you to appoint someone to make decisions on your behalf if you become unable to do so. At Jwayyed Law LLC, we provide experienced assistance with powers of attorney under Ohio Revised Code Chapter 1337 (current as of 2026). Our attorney understands power of attorney law and can help you create financial powers of attorney and healthcare powers of attorney tailored to your needs.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">

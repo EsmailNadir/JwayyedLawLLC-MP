@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Partnership Disputes Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus partnership disputes attorney resolving business partnership conflicts. Skilled representation for partnership disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Partnership Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio partnership disputes attorney resolving business partnership conflicts. Skilled representation for partnership disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['partnership disputes lawyer Columbus OH', 'partnership disputes attorney Ohio', 'business partnership lawyer', 'Franklin County partnership attorney'],
   openGraph: {
-    title: 'Partnership Disputes Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Partnership Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/partnership-disputes',
   },
   alternates: { canonical: '/business/partnership-disputes' },
@@ -48,7 +48,7 @@ export default function PartnershipDisputesPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Partnership Disputes Lawyer in Columbus, OH"
+        title="Ohio Partnership Disputes Lawyer"
         description="Experienced legal representation for partnership disputes. Resolving conflicts and protecting your partnership interests."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function PartnershipDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Partnership Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Partnership disputes in Columbus or throughout Ohio can disrupt business operations and threaten partnership relationships. At Jwayyed Law LLC, we provide experienced representation for partnership disputes under Ohio Revised Code Chapter 1775. Our attorney understands partnership law and can help resolve disputes while protecting partnership interests.
+              Partnership disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can disrupt business operations and threaten partnership relationships. At Jwayyed Law LLC, we provide experienced representation for partnership disputes under Ohio Revised Code Chapter 1775. Our attorney understands partnership law and can help resolve disputes while protecting partnership interests.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Partnership Disputes Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

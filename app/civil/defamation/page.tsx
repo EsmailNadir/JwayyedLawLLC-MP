@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Defamation Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus defamation attorney protecting your reputation. Skilled representation for defamation claims in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Defamation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio defamation attorney protecting your reputation. Skilled representation for defamation claims in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['defamation lawyer Columbus OH', 'defamation attorney Ohio', 'libel slander lawyer', 'Franklin County defamation attorney'],
   openGraph: {
-    title: 'Defamation Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Defamation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/defamation',
   },
   alternates: { canonical: '/civil/defamation' },
@@ -48,7 +48,7 @@ export default function DefamationPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Defamation Lawyer in Columbus, OH"
+        title="Ohio Defamation Lawyer"
         description="Experienced legal representation for defamation claims. Protecting your reputation and fighting false statements."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function DefamationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Defamation Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Defamation in Columbus or throughout Ohio involves false statements that harm someone\'s reputation, including libel (written defamation) and slander (spoken defamation). At Jwayyed Law LLC, we provide experienced representation for defamation claims under Ohio Revised Code Chapter 2739. Our attorney understands defamation law and can protect your reputation and recover damages for harm.
+              Defamation in Columbus, Cincinnati, Dayton, or throughout Ohio involves false statements that harm someone\'s reputation, including libel (written defamation) and slander (spoken defamation). At Jwayyed Law LLC, we provide experienced representation for defamation claims under Ohio Revised Code Chapter 2739. Our attorney understands defamation law and can protect your reputation and recover damages for harm.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Defamation Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

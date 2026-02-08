@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Non-Compete Agreements Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus non-compete agreements attorney protecting your interests. Skilled representation for non-compete agreements in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Non-Compete Agreements Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio non-compete agreements attorney protecting your interests. Skilled representation for non-compete agreements in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['non-compete agreements lawyer Columbus OH', 'non-compete attorney Ohio', 'non-compete lawyer', 'Franklin County non-compete attorney'],
   openGraph: {
-    title: 'Non-Compete Agreements Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Non-Compete Agreements Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/non-compete-agreements',
   },
   alternates: { canonical: '/business/non-compete-agreements' },
@@ -48,7 +48,7 @@ export default function NonCompeteAgreementsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Non-Compete Agreements Lawyer in Columbus, OH"
+        title="Ohio Non-Compete Agreements Lawyer"
         description="Experienced legal representation for non-compete agreements. Protecting your interests whether you are an employer or employee."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function NonCompeteAgreementsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Non-Compete Agreements in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Non-compete agreements in Columbus or throughout Ohio can significantly affect your ability to work and compete. At Jwayyed Law LLC, we provide experienced representation for non-compete agreements under Ohio common law. Our attorney understands non-compete law and can help whether you are an employer drafting agreements or an employee subject to one.
+              Non-compete agreements in Columbus, Cincinnati, Dayton, or throughout Ohio can significantly affect your ability to work and compete. At Jwayyed Law LLC, we provide experienced representation for non-compete agreements under Ohio common law. Our attorney understands non-compete law and can help whether you are an employer drafting agreements or an employee subject to one.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Non-Compete Agreements Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">

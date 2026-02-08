@@ -44,7 +44,13 @@ export default function CourtsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               At Jwayyed Law LLC, we provide experienced legal representation in county and municipal courts throughout Ohio. Our attorney understands court procedures, prosecutor practices, and local court expectations necessary to achieve favorable outcomes for our clients. Major metro areas such as Columbus and the greater Cincinnati area have multiple courts and counties—we represent clients in the Ohio counties and courts listed below. Please note that individual courts may have local rules, procedures, or filing requirements that differ from general Ohio practice.
             </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio county and municipal courts handle misdemeanor criminal cases, OVI/DUI charges under Ohio Revised Code 4511.19 (including changes under House Bill 37 effective April 2025), traffic offenses, civil disputes within jurisdictional limits, and in some courts small claims and landlord-tenant matters. Each county may have one or more municipal courts; knowing which court has jurisdiction over your case and how that court operates is important. We represent clients in the counties listed below—click any county for court-specific information, addresses, and the practice areas we handle in that jurisdiction.
+            </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Counties We Serve</h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              Select a county below to view courts in that area, local procedures, and how we can help with OVI/DUI defense, criminal defense, personal injury, business matters, or other services in that jurisdiction.
+            </p>
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {counties.map((county) => (
                 <Link key={county.href} href={county.href} className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
@@ -53,8 +59,11 @@ export default function CourtsPage() {
               ))}
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Our firm provides dedicated court representation in Ohio county and municipal courts. We understand that court proceedings require experienced representation. Our attorney works diligently to understand court procedures, develop strategies, and achieve favorable outcomes for our clients.
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+              We stay current on Ohio law—including OVI and criminal penalties, administrative license suspension rules, and civil procedure—so you get accurate advice. We represent clients in Columbus, Cincinnati, Dayton, and throughout the state. If you have a case in one of the counties above or need guidance on which court applies to your situation, contact us to schedule a consultation.
             </p>
           </div>
         </div>

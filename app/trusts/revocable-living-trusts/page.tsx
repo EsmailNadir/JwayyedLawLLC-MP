@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Revocable Living Trusts Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus attorney helping you set up a revocable living trust for efficient estate planning and asset management in Ohio. Protect your estate and avoid probate. Schedule a consultation: (614) 285-5482',
+  title: 'Revocable Living Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio attorney helping you set up a revocable living trust for efficient estate planning and asset management in Ohio. Protect your estate and avoid probate. Schedule a consultation: (614) 285-5482',
   keywords: ['revocable living trust Columbus OH', 'living trust attorney Ohio', 'estate planning lawyer', 'avoid probate Ohio'],
   openGraph: {
-    title: 'Revocable Living Trusts Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Revocable Living Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/revocable-living-trusts',
   },
   alternates: { canonical: '/trusts/revocable-living-trusts' },
@@ -48,7 +48,7 @@ export default function RevocableLivingTrustsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Revocable Living Trusts Lawyer in Columbus, OH"
+        title="Ohio Revocable Living Trusts Lawyer"
         description="Helping you set up revocable living trusts for efficient estate planning, asset management, and avoiding probate in Ohio."
       />
       <section className="py-16 bg-white">

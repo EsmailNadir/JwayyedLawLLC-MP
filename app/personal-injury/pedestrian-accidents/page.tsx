@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Pedestrian Accident Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus pedestrian accident attorney helping victims recover compensation. Skilled representation for pedestrian accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Pedestrian Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio pedestrian accident attorney helping victims recover compensation. Skilled representation for pedestrian accident injuries in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['pedestrian accident lawyer Columbus OH', 'pedestrian accident attorney Ohio', 'pedestrian lawyer', 'Franklin County pedestrian accident attorney'],
   openGraph: {
-    title: 'Pedestrian Accident Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Pedestrian Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/pedestrian-accidents',
   },
   alternates: { canonical: '/personal-injury/pedestrian-accidents' },
@@ -48,7 +48,7 @@ export default function PedestrianAccidentsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Pedestrian Accident Lawyer in Columbus, OH"
+        title="Ohio Pedestrian Accident Lawyer"
         description="Experienced legal representation for pedestrian accident victims seeking compensation. Fighting for the compensation you deserve."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function PedestrianAccidentsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Pedestrian Accident Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Pedestrian accidents in Columbus or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the vulnerability of pedestrians. At Jwayyed Law LLC, we provide experienced representation for pedestrian accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of pedestrian accident cases and the compensation process necessary to help you recover.
+              Pedestrian accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the vulnerability of pedestrians. At Jwayyed Law LLC, we provide experienced representation for pedestrian accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of pedestrian accident cases and the compensation process necessary to help you recover.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -165,7 +165,7 @@ export default function PedestrianAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a pedestrian accident in Columbus or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze liability issues, and develop a strategy tailored to your situation. Time is critical in pedestrian accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a pedestrian accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze liability issues, and develop a strategy tailored to your situation. Time is critical in pedestrian accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
             </p>
           </div>
         </div>

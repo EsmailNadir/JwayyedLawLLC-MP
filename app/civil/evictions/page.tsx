@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Eviction Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus eviction attorney representing landlords and tenants. Skilled representation for eviction proceedings in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Eviction Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio eviction attorney representing landlords and tenants. Skilled representation for eviction proceedings in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney'],
   openGraph: {
-    title: 'Eviction Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Eviction Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/evictions',
   },
   alternates: { canonical: '/civil/evictions' },
@@ -48,7 +48,7 @@ export default function EvictionsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Eviction Lawyer in Columbus, OH"
+        title="Ohio Eviction Lawyer"
         description="Experienced legal representation for eviction proceedings. Protecting your rights whether you are a landlord or tenant."
       />
       <section className="py-16 bg-white">
@@ -56,7 +56,7 @@ export default function EvictionsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Eviction Proceedings in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Eviction proceedings in Columbus or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. At Jwayyed Law LLC, we provide experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction.
+              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. At Jwayyed Law LLC, we provide experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -155,7 +155,7 @@ export default function EvictionsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing eviction proceedings in Columbus or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
+              If you are facing eviction proceedings in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
             </p>
           </div>
         </div>

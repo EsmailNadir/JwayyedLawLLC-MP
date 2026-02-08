@@ -4,11 +4,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Guardianships Lawyer in Columbus, OH | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Columbus guardianships attorney protecting vulnerable individuals. Skilled representation for guardianship establishment and administration in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Guardianships Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio guardianships attorney protecting vulnerable individuals. Skilled representation for guardianship establishment and administration in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['guardianships lawyer Columbus OH', 'guardianship attorney Ohio', 'guardian lawyer', 'Franklin County guardianship attorney'],
   openGraph: {
-    title: 'Guardianships Lawyer in Columbus, OH | Jwayyed Law LLC',
+    title: 'Guardianships Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/guardianships',
   },
   alternates: { canonical: '/other-services/guardianships' },
@@ -25,7 +25,7 @@ export default function GuardianshipsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Guardianships Lawyer in Columbus, OH"
+        title="Ohio Guardianships Lawyer"
         description="Experienced legal assistance with guardianships. Protecting vulnerable individuals through guardianship establishment and administration."
       />
       <section className="py-16 bg-white">
@@ -33,7 +33,7 @@ export default function GuardianshipsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Guardianships in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Guardianships in Columbus or throughout Ohio are legal arrangements that allow a guardian to make decisions for a ward who is unable to make decisions for themselves. At Jwayyed Law LLC, we provide experienced assistance with guardianship establishment and administration under Ohio Revised Code Chapter 2111 (current as of 2026). Our attorney understands guardianship law and can help you establish guardianships for minors or incapacitated adults.
+              Guardianships in Columbus, Cincinnati, Dayton, or throughout Ohio are legal arrangements that allow a guardian to make decisions for a ward who is unable to make decisions for themselves. At Jwayyed Law LLC, we provide experienced assistance with guardianship establishment and administration under Ohio Revised Code Chapter 2111 (current as of 2026). Our attorney understands guardianship law and can help you establish guardianships for minors or incapacitated adults.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
