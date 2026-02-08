@@ -104,7 +104,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Franklin County
     { url: '/courts/franklin-county', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/courts/franklin-county-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/courts/franklin-county-juvenile-court', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Delaware County
     { url: '/courts/delaware-county', priority: 0.7, changeFrequency: 'monthly' as const },

@@ -61,8 +61,19 @@ export default function FairbornMunicipalCourtPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Fairborn Municipal Court is located in Fairborn, Ohio, and serves Greene County and surrounding communities. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              The Fairborn Municipal Court is located in Fairborn, Ohio, and serves Fairborn, Bath Township, Beavercreek, Beavercreek Township, and other communities within its jurisdiction in Greene County. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
             </p>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-2">Location &amp; Directions</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-2">
+                <strong>Fairborn Municipal Court</strong><br />
+                1148 Kauffman Ave, Fairborn, OH 45324
+              </p>
+              <p className="text-sm mt-2">
+                <a href="https://www.google.com/maps?q=1148+Kauffman+Ave,+Fairborn,+OH+45324" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Get directions (Google Maps)</a>
+              </p>
+            </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
 

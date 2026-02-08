@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'Can I get limited driving privileges in Athens County?',
-    answer: 'Limited driving privileges may be available in Athens County after OVI suspension depending on offense level and circumstances. Limited privileges typically require ignition interlock devices and restrict driving to work, school, treatment, and necessary activities. An attorney can help determine eligibility and apply for limited privileges.',
+    answer: 'Limited driving privileges may be available in Athens County after OVI suspension depending on offense level and circumstances. Limited privileges may require ignition interlock devices and restrict driving to work, school, treatment, and necessary activities. An attorney can help determine eligibility and apply for limited privileges.',
   },
   {
     question: 'How do I appeal an administrative license suspension in Athens County?',
@@ -127,7 +127,7 @@ export default function AthensOVIDefensePage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Limited Driving Privileges in Athens County</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Limited driving privileges may be available in Athens County after an OVI conviction, allowing restricted driving for work, school, treatment, and necessary activities. Limited privileges typically require ignition interlock devices, restrict driving to specific times and locations, and may require proof of employment, treatment enrollment, or other conditions. Our firm helps clients determine eligibility for limited privileges, prepare applications, and navigate the requirements to obtain driving privileges as quickly as possible.
+              Limited driving privileges may be available in Athens County after an OVI conviction, allowing restricted driving for work, school, treatment, and necessary activities. Limited privileges may require ignition interlock devices, restrict driving to specific times and locations, and may require proof of employment, treatment enrollment, or other conditions. Our firm helps clients determine eligibility for limited privileges, prepare applications, and navigate the requirements to obtain driving privileges as quickly as possible.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an OVI/DUI Defense Attorney Can Help in Athens County</h3>

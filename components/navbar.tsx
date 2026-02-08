@@ -181,6 +181,10 @@ const navItems: NavItem[] = [
       {
         name: 'Butler County',
         links: [
+          { name: 'Butler County Courts', href: '/courts/butler-county' },
+          { name: 'Area I Court (Oxford)', href: '/courts/butler-county#area-i-court' },
+          { name: 'Area II Court (Hamilton)', href: '/courts/butler-county#area-ii-court' },
+          { name: 'Area III Court (West Chester)', href: '/courts/butler-county#area-iii-court' },
           { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
         ],
       },
@@ -197,11 +201,17 @@ const navItems: NavItem[] = [
         ],
       },
       {
+        name: 'Clinton County',
+        links: [
+          { name: 'Clinton County Courts', href: '/courts/clinton-county' },
+          { name: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
+        ],
+      },
+      {
         name: 'Other Counties',
         links: [
           { name: 'Morrow County', href: '/courts/morrow-county' },
           { name: 'Athens County', href: '/courts/athens-county' },
-          { name: 'Clinton County', href: '/courts/clinton-county' },
           { name: 'Pickaway County', href: '/courts/pickaway-county' },
         ],
       },

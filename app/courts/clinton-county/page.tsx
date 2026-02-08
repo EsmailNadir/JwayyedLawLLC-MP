@@ -33,15 +33,18 @@ export default function ClintonCountyCourtsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Clinton County Court Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Clinton County courts handle various legal matters including criminal cases, OVI/DUI charges, civil disputes, and traffic violations. At Jwayyed Law LLC, we provide experienced representation in Clinton County courts including Wilmington Municipal Court. Please note that we do not handle immigration matters, juvenile matters, or probate matters in these courts.
+              Clinton County is served by the Clinton County Municipal Court, located in Wilmington, Ohio (the county seat). The court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes up to $15,000, small claims, and landlord-tenant matters. At Jwayyed Law LLC, we provide experienced representation in Clinton County courts including Wilmington Municipal Court. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Clinton County Courts</h3>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
               <Link href="/courts/wilmington-municipal-court" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Wilmington Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Misdemeanor cases, OVI/DUI, and traffic violations</p>
+                <h4 className="font-semibold text-gray-900 mb-2">Wilmington Municipal Court (Clinton County Municipal Court)</h4>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">69 N South Street, Wilmington, OH 45177. Misdemeanor cases, OVI/DUI, traffic violations, and civil matters.</p>
               </Link>
             </div>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+              If you have a case in Clinton County, our attorney can help with misdemeanor criminal defense, OVI/DUI defense, traffic matters, and civil cases within the court&apos;s jurisdiction. We work to protect your rights and achieve the best possible outcome. Contact us to schedule a consultation.
+            </p>
           </div>
         </div>
       </section>

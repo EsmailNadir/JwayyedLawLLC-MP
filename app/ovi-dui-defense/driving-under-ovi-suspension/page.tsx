@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Can I get limited driving privileges while under OVI suspension?',
-    answer: 'Yes, limited driving privileges may be available while under OVI suspension for work, school, treatment, and necessary activities. Limited privileges typically require ignition interlock devices. An attorney can help apply for limited privileges and guide you through the process to legally drive while under suspension.',
+    answer: 'Yes, limited driving privileges may be available while under OVI suspension for work, school, treatment, and necessary activities. Limited privileges may require ignition interlock devices. An attorney can help apply for limited privileges and guide you through the process to legally drive while under suspension.',
   },
   {
     question: 'What should I do if I am charged with driving under OVI suspension?',

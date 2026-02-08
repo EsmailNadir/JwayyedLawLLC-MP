@@ -42,7 +42,7 @@ export default function CourtsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Ohio Courts Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we provide experienced legal representation in county and municipal courts throughout Ohio. Our attorney understands court procedures, prosecutor practices, and local court expectations necessary to achieve favorable outcomes for our clients. Please note that individual courts may have local rules, procedures, or filing requirements that differ from general Ohio practice.
+              At Jwayyed Law LLC, we provide experienced legal representation in county and municipal courts throughout Ohio. Our attorney understands court procedures, prosecutor practices, and local court expectations necessary to achieve favorable outcomes for our clients. Major metro areas such as Columbus and the greater Cincinnati area have multiple courts and counties—we represent clients in the Ohio counties and courts listed below. Please note that individual courts may have local rules, procedures, or filing requirements that differ from general Ohio practice.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Counties We Serve</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-8">

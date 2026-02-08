@@ -25,7 +25,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What types of cases does your firm handle in Franklin County Municipal Court?',
-    answer: 'Our firm handles civil disputes involving amounts up to $15,000, small claims matters, landlord-tenant disputes, eviction proceedings, and other civil matters in Franklin County Municipal Court. Please note that our firm does not handle criminal defense, OVI/DUI, traffic violations, immigration matters, juvenile matters, or probate matters in Franklin County at this time.',
+    answer: 'Due to a conflict, our firm handles only civil, business, estate planning, and probate matters in Franklin County Municipal Court. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County.',
   },
   {
     question: 'Where is Franklin County Municipal Court located?',
@@ -63,7 +63,7 @@ export default function FranklinCountyMunicipalCourtPage() {
               Franklin County Municipal Court is located at <strong>375 S. High Street, Columbus, OH 43215</strong>, with branch locations throughout the county. The court serves Columbus and surrounding communities.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
-              <strong>Disclaimer:</strong> Jwayyed Law LLC handles only <strong>civil</strong>, <strong>business</strong>, and <strong>estate planning</strong> matters in Franklin County. We do not handle criminal defense, OVI/DUI, traffic violations, immigration, juvenile, or probate matters in Franklin County.
+              <strong>Disclaimer:</strong> Due to a conflict, Jwayyed Law LLC handles only <strong>civil</strong>, <strong>business</strong>, <strong>estate planning</strong>, and <strong>probate</strong> matters in Franklin County. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>

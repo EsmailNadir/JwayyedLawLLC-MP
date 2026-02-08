@@ -5,30 +5,30 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Hamilton Municipal Court Attorney | Butler County Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Hamilton Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Butler County, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['Hamilton Municipal Court attorney', 'Butler County OVI lawyer', 'Hamilton misdemeanor defense'],
+  title: 'Wilmington Municipal Court Attorney | Clinton County Lawyer | Jwayyed Law LLC',
+  description: 'Experienced legal representation in Wilmington Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Clinton County, Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington misdemeanor defense'],
   openGraph: {
-    title: 'Hamilton Municipal Court Attorney | Jwayyed Law LLC',
-    url: 'https://www.jjlawohio.com/courts/hamilton-municipal-court',
+    title: 'Wilmington Municipal Court Attorney | Jwayyed Law LLC',
+    url: 'https://www.jjlawohio.com/courts/wilmington-municipal-court',
   },
-  alternates: { canonical: '/courts/hamilton-municipal-court' },
+  alternates: { canonical: '/courts/wilmington-municipal-court' },
 };
 
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
-  { label: 'Butler County', href: '/courts/butler-county' },
-  { label: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
+  { label: 'Clinton County', href: '/courts/clinton-county' },
+  { label: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
 ];
 
 const faqs = [
   {
-    question: 'What types of cases does Hamilton Municipal Court handle?',
-    answer: 'Hamilton Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Butler County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
+    question: 'What types of cases does Wilmington Municipal Court handle?',
+    answer: 'Wilmington Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Clinton County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
   },
   {
-    question: 'Where is Hamilton Municipal Court located?',
-    answer: 'Hamilton Municipal Court is located in Hamilton, Ohio. The court handles all misdemeanor cases, OVI/DUI charges, and traffic violations occurring in Butler County. An attorney familiar with the court can help navigate procedures and achieve favorable outcomes.',
+    question: 'Where is Wilmington Municipal Court located?',
+    answer: 'Wilmington Municipal Court is located in Wilmington, Ohio, the county seat of Clinton County. The court handles all misdemeanor cases, OVI/DUI charges, and traffic violations occurring in Clinton County. An attorney familiar with the court can help navigate procedures and achieve favorable outcomes.',
   },
   {
     question: 'Do I need an attorney for Municipal Court matters?',
@@ -44,34 +44,34 @@ const faqs = [
   },
 ];
 
-export default function HamiltonMunicipalCourtPage() {
+export default function WilmingtonMunicipalCourtPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Hamilton Municipal Court Attorney"
-        description="Experienced legal representation in Hamilton Municipal Court. Serving Butler County, Ohio."
+        title="Wilmington Municipal Court Attorney"
+        description="Experienced legal representation in Wilmington Municipal Court. Serving Clinton County, Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Hamilton Municipal Court Representation</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Wilmington Municipal Court Representation</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Hamilton Municipal Court in Hamilton, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Butler County. At Jwayyed Law LLC, we provide experienced representation in Hamilton Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
+              Wilmington Municipal Court in Wilmington, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Clinton County. At Jwayyed Law LLC, we provide experienced representation in Wilmington Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Hamilton Municipal Court is located in Hamilton, Ohio, and serves the city of Hamilton and surrounding communities. The court moved to its current location in 2025. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              The Wilmington Municipal Court (Clinton County Municipal Court) is located in Wilmington, Ohio, the county seat of Clinton County. It serves all of Clinton County and surrounding communities. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-2">Location &amp; Directions</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-2">
-                <strong>Hamilton Municipal Court</strong><br />
-                700 Hanover Street, Hamilton, OH 45011
+                <strong>Clinton County Municipal Court</strong><br />
+                69 N South Street, Wilmington, OH 45177
               </p>
               <p className="text-sm mt-2">
-                <a href="https://www.google.com/maps?q=700+Hanover+Street,+Hamilton,+OH+45011" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Get directions (Google Maps)</a>
+                <a href="https://www.google.com/maps?q=69+N+South+Street,+Wilmington,+OH+45177" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Get directions (Google Maps)</a>
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function HamiltonMunicipalCourtPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced representation in all types of cases handled by Hamilton Municipal Court:
+              Our firm provides experienced representation in all types of cases handled by Wilmington Municipal Court:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
@@ -122,11 +122,11 @@ export default function HamiltonMunicipalCourtPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated representation in Hamilton Municipal Court. We understand that Municipal Court matters can significantly affect your rights, driving privileges, and future. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
+              Our firm provides dedicated representation in Wilmington Municipal Court. We understand that Municipal Court matters can significantly affect your rights, driving privileges, and future. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Hamilton Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              If you have a matter in Wilmington Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
             </p>
           </div>
         </div>

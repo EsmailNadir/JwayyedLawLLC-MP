@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Can I get a misdemeanor expunged in Morrow County?',
-    answer: 'Yes, misdemeanors may be eligible for expungement in Morrow County under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Eligibility depends on offense type, prior convictions, and circumstances. An attorney can help determine eligibility and file expungement petitions.',
+    answer: 'Yes, many misdemeanors may be eligible for expungement in Morrow County under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Eligibility depends on offense type, prior convictions, and circumstances. An attorney can help determine eligibility and file expungement petitions.',
   },
   {
     question: 'What should I do if I am charged with a misdemeanor in Morrow County?',

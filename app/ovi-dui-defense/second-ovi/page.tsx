@@ -24,23 +24,23 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for a second OVI in Ohio?',
-    answer: 'A second OVI offense in Ohio (within 10 years) under ORC 4511.19 carries enhanced penalties: 10 days to 6 months jail (minimum 10 days mandatory), fines of $715 to $1,625 (minimum increased from $525 under HB 37 effective April 2025), driver\'s license suspension of 1 to 7 years, vehicle immobilization for 90 days, mandatory alcohol treatment program, yellow license plates required, and ignition interlock device required for limited driving privileges. High-tier second OVI carries even more severe penalties.',
+    answer: 'A second OVI within 10 years in Ohio carries mandatory jail (10 days to 6 months for low-level; 20 days to 6 months for high-level or refusal), with possible alternative minimums of 5 days jail plus 18 days house arrest (low) or 10 days jail plus 36 days house arrest (high/refusal). Fines are $715 to $1,625; license suspension is 1 to 7 years ($315 reinstatement fee). You must complete a mandatory alcohol/drug assessment, use restricted (yellow) plates, and have 90-day vehicle immobilization. Limited driving privileges require an ignition interlock and are only available after 45 days (test over) or 90 days (refusal).',
   },
   {
     question: 'Can I get limited driving privileges after a second OVI?',
-    answer: 'Limited driving privileges may be available after a second OVI suspension, but eligibility is more restricted than first offenses. Under HB 37 (effective April 2025), an ignition interlock device is mandatory for second OVI offenders before limited driving privileges can be granted. Waiting periods are 45 days (test over) or 90 days (refusal). An attorney can help determine eligibility and apply for limited privileges if available.',
+    answer: 'Yes, but only after a hard suspension: 45 days if you took the test and were over the limit, or 90 days if you refused. After that, you may apply for limited privileges for work, school, treatment, and other necessary purposes. For alcohol-related second OVI, an ignition interlock device is required on any vehicle you drive. An attorney can help you request an ALS hearing, meet the 30-day deadline, and apply for limited privileges when eligible.',
   },
   {
-    question: 'Will a second OVI be a felony?',
-    answer: 'A second OVI is typically still a first-degree misdemeanor, not a felony. However, a fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. A second OVI within 10 years of a prior OVI carries significantly enhanced penalties including mandatory jail time, longer license suspension, and ignition interlock requirements. An experienced attorney can help understand your specific situation and potential penalties.',
+    question: 'Is a second OVI a felony in Ohio?',
+    answer: 'No. A second OVI within 10 years is a first-degree misdemeanor. A fourth OVI within 10 years (or 5 OVIs within 20 years) is when the offense becomes a fourth-degree felony. A second offense still carries serious penalties: mandatory jail, 1–7 year license suspension, mandatory interlock for privileges, and 90-day immobilization. An attorney can explain your exposure and defense options.',
   },
   {
     question: 'What should I do if I am charged with a second OVI?',
-    answer: 'If charged with a second OVI, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced OVI defense attorney right away. You have only 30 days to appeal an administrative license suspension. An attorney can protect your rights and develop defense strategies.',
+    answer: 'Do not discuss the details of your case with law enforcement or others without your attorney. Contact an OVI defense lawyer right away. You have only 30 days from the arrest to request an administrative license suspension hearing—missing that deadline means you lose the chance to fight the suspension. An attorney can file the ALS appeal, seek a stay, and defend you in criminal court.',
   },
   {
     question: 'Can a second OVI be reduced to a first offense?',
-    answer: 'While it is difficult, a second OVI may potentially be reduced to a first offense in some circumstances through legal challenges, procedural defenses, or negotiations with prosecutors. An experienced attorney can evaluate your case and explore all options.',
+    answer: 'Sometimes. If the prior OVI that makes this a "second" offense is invalid, from outside the lookback period, or not properly documented, the charge may be reduced to a first offense. That can mean less jail, a shorter suspension, and different rules for limited privileges and interlock. An attorney can review your prior record and argue for a reduction where the law supports it.',
   },
 ];
 
@@ -58,135 +58,139 @@ export default function SecondOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Second OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A second OVI charge throughout Ohio carries significantly enhanced penalties compared to a first offense, including mandatory jail time, longer license suspension, vehicle immobilization, and mandatory alcohol treatment. At Jwayyed Law LLC, we provide experienced defense representation for second OVI charges under Ohio Revised Code 4511.19. Our attorney understands the severe consequences of second OVI convictions and defense strategies necessary to protect your rights.
+              A second OVI in Ohio—operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19—carries much harsher consequences than a first offense. Penalties include mandatory jail time, a long license suspension, mandatory alcohol or drug assessment, vehicle immobilization, required restricted (yellow) plates, and mandatory use of an ignition interlock device before limited driving privileges are allowed. At Jwayyed Law LLC, we provide experienced defense for second OVI charges and work to protect your rights and your license.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Second OVI charges are treated much more seriously than first offenses under Ohio law. Prosecutors aggressively pursue these charges, and judges typically impose harsher sentences. Understanding the enhanced penalties, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced second OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
+              Ohio treats repeat OVI offenses seriously. Prosecutors and courts impose stiffer sentences on second offenses, and the law draws a clear line between &quot;low level&quot; (e.g., BAC at or above .08% but below .17%), &quot;high level&quot; (e.g., BAC .17% or higher), and &quot;refusal&quot; to take a chemical test—with refusal often treated like a high-level test, especially if you have a prior OVI within 20 years. Understanding these categories, the full range of penalties, and your options for defense and limited driving is critical. Getting an experienced second OVI defense attorney involved early can make a real difference in the outcome of your case.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The legal process for second OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense.
-            </p>
+              A second OVI case involves two separate tracks: the criminal case in court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal, seek a stay of the suspension where possible, and work toward the best result for your license and your record.            </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Second OVI Penalties and Consequences in Ohio</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Under Ohio Revised Code 4511.19, second OVI convictions carry significantly enhanced penalties compared to first offenses:
+              The following reflects current Ohio law as of 2026. Penalties for a second OVI within 10 years are set by Ohio Revised Code and have been updated by legislation such as HB 37 (effective April 2025). They apply whether the offense is alcohol-only, drug-only, or a combination. The main variables are whether your case is classified as low level, high level, or refusal—which affects minimum jail time and how long you must wait before you can apply for limited driving privileges.
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Penalties (Current 2026 Ohio Law - HB 37)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Low-Level Second OVI (e.g., BAC .08% to under .17%)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li><strong>Jail:</strong> 10 days to 6 months (minimum 10 days mandatory, cannot be suspended)</li>
-                <li><strong>Fines:</strong> $715 to $1,625 (minimum increased from $525 under HB 37) plus court costs</li>
-                <li><strong>License Suspension:</strong> 1 to 7 years (significantly longer than first offense)</li>
-                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475)</li>
-                <li><strong>Vehicle Immobilization:</strong> 90 days (per ORC 4511.19)</li>
-                <li><strong>Mandatory Alcohol Treatment:</strong> Required completion of alcohol assessment and treatment program</li>
-                <li><strong>Yellow License Plates:</strong> Required display of yellow license plates during suspension period</li>
-                <li><strong>Ignition Interlock Device:</strong> Mandatory for limited driving privileges (new requirement under HB 37)</li>
-                <li><strong>Limited Privileges Waiting Period:</strong> 45 days (test over) or 90 days (refusal)</li>
+                <li><strong>Jail:</strong> 10 days to 6 months. The court may allow an alternative minimum of 5 days in jail plus 18 days of house arrest with electronic monitoring when the law and court allow it.</li>
+                <li><strong>Fines:</strong> $715 to $1,625, plus court costs.</li>
+                <li><strong>License:</strong> 1 to 7 years suspension; $315 reinstatement fee when eligible.</li>
+                <li><strong>Limited driving privileges:</strong> You are not eligible until after 45 days of hard suspension (see below for refusal).</li>
+                <li><strong>Ignition interlock:</strong> Required for any alcohol-related second OVI before limited privileges can be granted.</li>
+                <li><strong>Treatment:</strong> Mandatory alcohol/drug assessment (and any treatment ordered by the court).</li>
+                <li><strong>Restricted plates:</strong> Required (distinctive yellow/red plates on any vehicle you drive during the suspension).</li>
+                <li><strong>Vehicle:</strong> 90-day immobilization if the vehicle is registered to you. Six points are added to your license.</li>
               </ul>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">High-Tier Second OVI Penalties</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">High-Level or Refusal Second OVI (e.g., BAC .17% or higher, or refusal of chemical test)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                If your BAC was 0.17% or higher, you face high-tier second OVI penalties including mandatory minimum 20 days jail (vs. 10 days standard), higher fines, longer license suspensions, and enhanced vehicle immobilization. High-tier penalties apply even for second offenses and significantly increase consequences.
+                For a high-level or refusal second OVI, the minimum jail time increases: 20 days to 6 months. The court may allow an alternative minimum of 10 days in jail plus 36 days of house arrest with electronic monitoring when permitted. Fines remain $715 to $1,625; license suspension remains 1 to 7 years with a $315 reinstatement fee. You must wait 90 days (not 45) before you can apply for limited driving privileges if you refused the chemical test. Ignition interlock is still required for alcohol-related cases; restricted plates and mandatory assessment/treatment and 90-day immobilization still apply. Refusal is often treated as high-level, especially when there is a prior OVI within 20 years.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS) and Limited Privileges</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                For a second OVI, the ALS &quot;hard suspension&quot; period—during which you cannot drive at all—is 45 days if you took the test and were over the limit, or 90 days if you refused. After that period, you may be eligible for limited driving privileges only if you have an ignition interlock device installed (for alcohol-related OVI). You must request an ALS hearing within 30 days of arrest to challenge the suspension. An attorney can explain eligibility, help with the interlock and privilege application, and represent you at the ALS hearing.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Collateral Consequences</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Beyond criminal penalties, second OVI convictions create lasting consequences including employment barriers (many employers refuse to hire individuals with multiple OVI convictions), professional license restrictions, housing difficulties, dramatically increased insurance rates (often 3-4x higher for 5-7 years), permanent criminal record, and immigration consequences for non-citizens. These consequences persist long after completing sentences.
+                A second OVI conviction affects more than court and license. Many employers are reluctant to hire or retain someone with multiple OVIs; jobs that require driving or a clean record are especially at risk. Professional licenses (e.g., nursing, law, aviation) may need to be reported and can face discipline. Auto insurance often increases sharply or is dropped, forcing high-risk coverage. Travel to Canada can be restricted—Canada may treat OVI as serious criminality and deny entry even for an arrest without conviction. If you have a commercial driver&apos;s license, a second OVI conviction can result in lifetime CDL disqualification. These consequences can last for years.
               </p>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Legal Process for Second OVI Charges</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Understanding the legal process helps you prepare for what lies ahead:
+              Second OVI cases move on two fronts: the BMV&apos;s administrative license suspension and the criminal case in municipal or county court. Both matter for your license and your record.
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS) Process</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Within 30 days of arrest, you must file an appeal of the ALS or lose your right to challenge it. For second OVI, the ALS suspension is significantly longer (1-7 years). An attorney can file the appeal, request a stay of suspension, and represent you at the ALS hearing. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense.
+                When you are arrested for OVI, the officer typically serves an immediate suspension based on a test result over the limit or a refusal. For a second OVI, that suspension can last 1 to 7 years. You have 30 days from the arrest to request an ALS hearing. If you do not request it in time, you give up the right to contest the suspension. At the hearing, your attorney can argue that the stop, arrest, or testing was improper and seek to have the suspension set aside or reduced. Winning the ALS appeal can restore your license sooner and can also help your criminal case. Your lawyer can also ask the court to stay (delay) the suspension pending the hearing so you can keep driving until the matter is decided.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Criminal Court Process</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                The criminal process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome while simultaneously handling the ALS appeal.
+                The criminal case starts with arraignment, where you enter a plea—usually not guilty so your attorney can review discovery and explore defenses. The state must turn over evidence (reports, video, test results, calibration and maintenance records). Your attorney can file motions to suppress evidence (e.g., illegal stop, faulty testing) or to dismiss the case. Many second OVI cases are resolved through negotiation: reduced charges, alternative sentencing (jail plus house arrest, treatment), or dismissal under certain conditions. If the state will not offer an acceptable resolution, your attorney can take the case to trial and challenge the evidence and the state&apos;s case in front of a judge or jury.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Limited Driving Privileges</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Limited Driving Privileges After Second OVI</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Limited driving privileges may be available after a second OVI suspension, but eligibility is more restricted than first offenses. An ignition interlock device is typically required. The application process requires court approval and must demonstrate necessity. An attorney can help prepare the application, present evidence of need, and navigate the approval process to minimize disruption to your daily life.
+                Limited driving privileges let you drive for specific purposes (work, school, treatment, medical care, etc.) during the suspension. For a second OVI, you must first serve a &quot;hard&quot; suspension with no driving: 45 days if you took the test and were over the limit, or 90 days if you refused. After that, you may apply for limited privileges. For alcohol-related second OVI, the law requires you to install and use an ignition interlock device on any vehicle you drive; the court will not grant privileges without it. The application goes through the court and must show need and compliance with interlock and other conditions. An attorney can prepare the application, gather supporting evidence, and represent you so you have the best chance of getting limited driving for essential activities.
               </p>
             </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Second OVI Defense Attorney Can Help</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An experienced second OVI defense attorney provides comprehensive representation throughout every stage of your case:
+              A lawyer who focuses on OVI defense can guide you through both the license and criminal sides of your case:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Immediate ALS Appeal:</strong> File administrative license suspension appeal within the critical 30-day deadline, request stay of suspension, and represent you at ALS hearing to protect your driving privileges</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, dashcam footage, bodycam footage, breathalyzer maintenance records, field sobriety test procedures, and all evidence to identify weaknesses, illegal stops, or improper testing</li>
-              <li><strong>Strategic Evidence Challenges:</strong> Challenge breathalyzer accuracy through maintenance records and calibration issues, field sobriety test administration through NHTSA protocol violations, blood test procedures through chain of custody issues, or improperly obtained evidence through pretrial motions</li>
-              <li><strong>Defense Strategy Development:</strong> Develop and execute defense strategies including illegal traffic stops, lack of probable cause, rising BAC defense, medical conditions affecting testing, or insufficient evidence based on thorough investigation</li>
-              <li><strong>Prior Conviction Challenges:</strong> Challenge the validity of prior OVI convictions that elevate your charge to second offense, as invalid prior convictions can reduce charges to first offense</li>
-              <li><strong>Skilled Negotiation:</strong> Work with prosecutors to reduce charges, negotiate favorable plea agreements, secure alternative sentencing options including treatment programs, or arrange dismissals upon completion of conditions</li>
-              <li><strong>Limited Driving Privileges:</strong> Help eligible clients obtain limited driving privileges for work, school, treatment, and necessary activities during suspension, including preparation of applications and court representation</li>
-              <li><strong>Aggressive Trial Advocacy:</strong> Provide effective trial representation with compelling arguments, strategic cross-examination of police officers and expert witnesses, expert testimony, and protection of your rights throughout trial proceedings if your case proceeds to trial</li>
+              <li><strong>ALS appeal and stay:</strong> File the ALS appeal before the 30-day deadline, request a stay of the suspension when appropriate, and represent you at the ALS hearing so you have a chance to keep or restore your license.</li>
+              <li><strong>Case review and investigation:</strong> Review police reports, dash and body camera video, breath or blood test records, calibration and maintenance logs, and field sobriety documentation to find weaknesses, unlawful stops, or testing errors.</li>
+              <li><strong>Challenging the evidence:</strong> File motions to suppress evidence when the stop lacked reasonable suspicion, the arrest lacked probable cause, or testing was flawed (e.g., improper calibration, broken chain of custody, or failure to follow approved procedures).</li>
+              <li><strong>Prior conviction review:</strong> Examine whether your prior OVI can be used to make this a &quot;second&quot; offense. If the prior is invalid, from outside the lookback period, or not properly documented, the charge may be reduced to a first offense, which greatly reduces penalties.</li>
+              <li><strong>Plea and sentencing negotiations:</strong> Work with the prosecutor on reduced charges, alternative sentencing (e.g., jail plus house arrest with monitoring, or treatment in lieu of some jail), or dismissals upon completing conditions where the law allows.</li>
+              <li><strong>Limited driving privileges and interlock:</strong> Explain when you become eligible for limited privileges (45 or 90 days, depending on test or refusal), help you satisfy the ignition interlock requirement, and prepare and argue your privilege application in court.</li>
+              <li><strong>Trial:</strong> If the case does not settle, present a strong defense at trial—challenging the state&apos;s evidence, cross-examining officers and experts, and protecting your rights throughout the process.</li>
             </ul>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Defenses to Second OVI Charges</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Challenging Prior Conviction</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Challenging the Prior Conviction</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                If your prior OVI conviction is invalid, improperly recorded, or occurred outside the lookback period, you may be able to challenge it and reduce your charge to a first offense. This requires careful review of prior case records and can significantly reduce penalties.
+                The state must prove you have a qualifying prior OVI within the lookback period (e.g., 10 years for penalty purposes). If that prior is invalid, misclassified, or from another state and not properly counted, your charge may be treated as a first offense. That can mean less jail time, a shorter suspension, and no mandatory interlock for a first offense. An attorney can obtain and review the prior case file and argue that it should not count.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Illegal Traffic Stop</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Illegal Stop or Arrest</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Police must have reasonable suspicion of a traffic violation or crime to stop your vehicle. If the stop was illegal, evidence obtained may be suppressed, potentially resulting in dismissed charges. An attorney can challenge the legality of the stop and argue for suppression of evidence.
+                Officers need reasonable suspicion to stop your car and probable cause to arrest you for OVI. If the stop or arrest was not justified, the court may suppress the evidence that followed—including field sobriety and chemical test results—which can lead to dismissal or a much better outcome. Your attorney can argue the stop or arrest was illegal and seek suppression.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Inaccurate Breathalyzer Results</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Problems With Chemical Testing</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Breathalyzer machines must be properly calibrated, maintained, and operated by trained officers. Medical conditions, recent alcohol consumption, or improper procedures can affect results. An attorney can challenge breathalyzer accuracy, maintenance records, and operator qualifications.
+                Breath machines must be maintained and calibrated according to state rules; blood draws must follow proper procedures and chain of custody. Medical conditions, mouth alcohol, or operator error can also affect results. Challenging the reliability or admissibility of the test can undermine the state&apos;s case and sometimes lead to a reduction or dismissal.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Field Sobriety Test Challenges</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Field Sobriety Test Issues</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Field sobriety tests are subjective and can be affected by medical conditions, weather, road conditions, or improper administration. An attorney can challenge test administration, scoring, and reliability as evidence of impairment.
+                Standardized field sobriety tests must be given and scored according to approved protocols. Poor conditions (weather, surface, lighting), health or mobility issues, or improper instructions or scoring can make the results unreliable. An attorney can use training manuals and video to show that the tests were not valid evidence of impairment.
               </p>
             </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated second OVI defense representation throughout Ohio. We understand that second OVI charges require immediate attention and experienced defense. Our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              Jwayyed Law LLC represents clients facing second OVI charges across Ohio. We know that a second offense means mandatory jail, long suspension, and interlock—and we focus on protecting your license and your record. We file ALS appeals on time, dig into the evidence, challenge prior convictions when appropriate, and negotiate or try your case with your best interest in mind.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
+              We combine careful case review with clear advice and active advocacy. We are familiar with Ohio courts and how prosecutors and judges handle second OVI cases, so we can tailor a strategy to your facts and your court. We work with you to decide whether to fight the ALS, push for a reduction, accept a negotiated resolution, or go to trial—and we explain the pros and cons of each path.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing second OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including prior conviction challenges and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in second OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
+              If you have been charged with a second OVI in Ohio, contact Jwayyed Law LLC as soon as possible. We will review your case, explain your rights and the penalties you face, and outline options for defense—including ALS appeal, prior conviction challenges, and limited driving privileges. You only have 30 days to request an ALS hearing; getting a lawyer early can make a real difference for your license and your case. Call us to schedule a consultation and protect your rights and your future.
             </p>
           </div>
         </div>

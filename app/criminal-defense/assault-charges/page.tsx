@@ -7,14 +7,12 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Assault Charges Lawyer in Ohio | Experienced Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio assault defense attorney protecting your rights. Skilled representation for assault, battery, and aggravated assault charges in Ohio. Schedule consultation: (614) 285-5482',
+  description: 'Experienced Ohio assault defense attorney protecting your rights. Skilled representation for misdemeanor assault and battery charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: [
     'assault charges lawyer Ohio',
     'assault defense attorney Ohio',
     'battery charges attorney',
-    'aggravated assault lawyer',
     'simple assault attorney',
-    'felony assault defense',
     'misdemeanor assault lawyer',
     'Ohio assault attorney',
     'Ohio assault lawyer'
@@ -37,11 +35,11 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is the difference between assault and battery in Ohio?',
-    answer: 'In Ohio, assault under Ohio Revised Code 2903.13 involves knowingly causing physical harm or causing another to believe they will suffer physical harm. Battery is typically charged as assault in Ohio. Aggravated assault under ORC 2903.12 involves serious physical harm or use of a deadly weapon. The severity depends on the harm caused and weapons involved, affecting whether charges are misdemeanors or felonies.',
+    answer: 'In Ohio, assault under Ohio Revised Code 2903.13 involves knowingly causing physical harm or causing another to believe they will suffer physical harm. Battery is typically charged as assault in Ohio. Our firm represents clients only on simple (misdemeanor) assault under ORC 2903.13. We do not handle more serious assault charges. The severity of charges depends on the harm caused and weapons involved.',
   },
   {
     question: 'What are the penalties for assault in Ohio?',
-    answer: 'Assault penalties in Ohio vary by degree. Simple assault (ORC 2903.13) is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault (ORC 2903.12) is a fourth-degree felony punishable by 6-18 months imprisonment and fines up to $5,000. Felonious assault (ORC 2903.11) is a second-degree felony punishable by 2-8 years indefinite imprisonment (for offenses after March 22, 2019) and fines up to $15,000. Prior convictions and weapons can enhance penalties.',
+    answer: 'Simple assault (ORC 2903.13), which our firm handles, is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Our firm does not handle more serious assault charges. Prior convictions and weapons can enhance penalties.',
   },
   {
     question: 'Can I defend against assault charges in Ohio?',
@@ -49,7 +47,7 @@ const faqs = [
   },
   {
     question: 'Will an assault conviction appear on my criminal record in Ohio?',
-    answer: 'Yes, an assault conviction will appear on your criminal record in Ohio and can be accessed by employers, landlords, and others. Misdemeanor assault convictions may be eligible for expungement or record sealing after a waiting period if you meet eligibility requirements under Ohio Revised Code Chapter 2953. Felony assault convictions are generally not eligible for expungement. An attorney can help determine your eligibility for record sealing.',
+    answer: 'Yes, a misdemeanor assault conviction will appear on your criminal record in Ohio and can be accessed by employers, landlords, and others. Misdemeanor assault convictions may be eligible for expungement or record sealing after a waiting period if you meet eligibility requirements under Ohio Revised Code Chapter 2953. An attorney can help determine your eligibility for record sealing.',
   },
   {
     question: 'What should I do if I am charged with assault in Ohio?',
@@ -63,7 +61,7 @@ export default function AssaultChargesPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Assault Charges Lawyer in Ohio"
-        description="Experienced legal defense for assault, battery, and aggravated assault charges. Protecting your rights and fighting for the best possible outcome."
+        description="Experienced legal defense for misdemeanor assault and battery charges. Protecting your rights and fighting for the best possible outcome."
       />
 
       {/* Main Content Section */}
@@ -75,11 +73,11 @@ export default function AssaultChargesPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Facing assault charges throughout Ohio can have serious consequences on your freedom, employment, and reputation. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with assault, battery, and aggravated assault under Ohio Revised Code Chapter 2903. Our attorney understands Ohio assault laws, potential defenses, and the impact these charges can have on your future.
+              Facing misdemeanor assault charges throughout Ohio can have serious consequences on your freedom, employment, and reputation. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with simple assault and battery under Ohio Revised Code 2903.13. Our attorney understands Ohio assault laws, potential defenses, and the impact these charges can have on your future.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Assault charges in Ohio range from misdemeanor simple assault to serious felony felonious assault, each carrying different penalties and long-term consequences. Under Ohio law, assault involves knowingly causing physical harm to another person or causing another to believe they will suffer physical harm. The severity of charges depends on the harm caused, weapons involved, and the relationship between parties.
+              Under Ohio law, assault involves knowingly causing physical harm to another person or causing another to believe they will suffer physical harm. We represent clients charged with <strong>misdemeanor assault</strong> (simple assault under ORC 2903.13) only. The severity of charges depends on the harm caused, weapons involved, and the relationship between parties.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -95,19 +93,13 @@ export default function AssaultChargesPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Simple Assault (ORC 2903.13)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Simple Assault (ORC 2903.13) — We Represent Clients on This Charge</h4>
               <p className="text-gray-700 mb-4">
-                Simple assault occurs when a person knowingly causes or attempts to cause physical harm to another, or negligently causes physical harm with a deadly weapon. This is typically charged as a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000.
+                Simple assault occurs when a person knowingly causes or attempts to cause physical harm to another, or negligently causes physical harm with a deadly weapon. This is typically charged as a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Our firm handles defense for simple (misdemeanor) assault charges throughout Ohio.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Aggravated Assault (ORC 2903.12)</h4>
-              <p className="text-gray-700 mb-4">
-                Aggravated assault involves knowingly causing serious physical harm to another or causing physical harm with a deadly weapon. This is charged as a fourth-degree felony punishable by 6-18 months imprisonment and fines up to $5,000. If the victim is a peace officer, firefighter, or emergency medical services worker, charges are enhanced.
-              </p>
-
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felonious Assault (ORC 2903.11)</h4>
-              <p className="text-gray-700 mb-4">
-                Felonious assault involves knowingly causing serious physical harm to another or causing physical harm with a deadly weapon. This is charged as a second-degree felony (F-2) punishable by 2-8 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%) and fines up to $15,000. If the victim is a peace officer or firefighter, charges are enhanced to a first-degree felony.
+              <p className="text-gray-700 mb-4 text-sm italic">
+                If your charge is not simple assault under ORC 2903.13, you will need to consult an attorney who handles those matters.
               </p>
             </div>
 
@@ -126,20 +118,6 @@ export default function AssaultChargesPage() {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Fourth-Degree Felony (Aggravated Assault - ORC 2903.12)</h4>
-              <p className="text-gray-700 mb-4">
-                Aggravated assault is a serious felony offense punishable by 6 to 18 months in state prison, fines up to $5,000, mandatory post-release control supervision, and a permanent felony criminal record. Felony convictions create additional barriers including loss of voting rights (until restoration), prohibition from possessing firearms under federal law, restrictions on professional licensing, and limitations on employment in many fields. The felony record is permanent and accessible to employers, landlords, and others conducting background checks.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Second-Degree Felony (Felonious Assault - ORC 2903.11)</h4>
-              <p className="text-gray-700 mb-4">
-                Felonious assault is among the most serious assault charges, punishable by 2 to 8 years in state prison, fines up to $15,000, mandatory post-release control for up to 3 years, and a permanent serious felony record. If the victim is a peace officer, firefighter, or emergency medical services worker, the charge is enhanced to a first-degree felony punishable by 3 to 11 years imprisonment. These convictions have lifelong consequences including permanent loss of gun rights, severe employment restrictions, and significant barriers to housing and education.
-              </p>
-            </div>
-
             <h4 className="font-semibold text-gray-900 mt-6 mb-4">Enhanced Penalties and Aggravating Factors</h4>
             <p className="text-gray-700 mb-4">
               Under Ohio Revised Code 2929.12, judges consider various factors that can increase penalties including prior criminal history, use of weapons, harm to protected persons (children, elderly, disabled), gang-related activity, or offenses committed in the presence of children. These factors can result in maximum sentences, consecutive prison terms, and enhanced fines. Additionally, assault convictions can trigger mandatory minimum sentences in certain circumstances.
@@ -147,7 +125,7 @@ export default function AssaultChargesPage() {
 
             <h4 className="font-semibold text-gray-900 mt-6 mb-4">Collateral Consequences of Assault Convictions</h4>
             <p className="text-gray-700 mb-6">
-              Beyond criminal penalties, assault convictions create lasting collateral consequences. Employment opportunities become limited as many employers conduct background checks and may refuse to hire individuals with assault convictions. Professional licenses in fields such as healthcare, education, law enforcement, and finance may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights are permanently lost for felony convictions. Immigration consequences can include deportation for non-citizens. Child custody and visitation rights may be restricted. These consequences persist long after completing sentences and paying fines.
+              Beyond criminal penalties, assault convictions create lasting collateral consequences. Employment opportunities become limited as many employers conduct background checks and may refuse to hire individuals with assault convictions. Professional licenses in fields such as healthcare, education, law enforcement, and finance may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights may be lost for certain serious convictions. Immigration consequences can include deportation for non-citizens. Child custody and visitation rights may be restricted. These consequences persist long after completing sentences and paying fines.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -182,7 +160,7 @@ export default function AssaultChargesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Plea Negotiations</h4>
               <p className="text-gray-700 mb-4">
-                Most assault cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (felony to misdemeanor, aggravated to simple assault), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
+                Most assault cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (e.g., aggravated to simple assault where applicable), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
               </p>
             </div>
 
@@ -291,7 +269,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              We handle assault cases from simple misdemeanor assaults to serious felony felonious assaults. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
+              We handle misdemeanor assault cases throughout Ohio. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">

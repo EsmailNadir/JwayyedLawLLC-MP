@@ -217,7 +217,6 @@ const navItems: NavItem[] = [
         name: 'Franklin County',
         links: [
           { name: 'Franklin County Municipal Court', href: '/courts/franklin-county-municipal-court' },
-          { name: 'Franklin County Juvenile Court', href: '/courts/franklin-county-juvenile-court' },
         ],
       },
       {
@@ -247,12 +246,17 @@ const navItems: NavItem[] = [
       {
         name: 'Clinton County',
         links: [
+          { name: 'Clinton County Courts', href: '/courts/clinton-county' },
           { name: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
         ],
       },
       {
         name: 'Butler County',
         links: [
+          { name: 'Butler County Courts', href: '/courts/butler-county' },
+          { name: 'Area I Court (Oxford)', href: '/courts/butler-county#area-i-court' },
+          { name: 'Area II Court (Hamilton)', href: '/courts/butler-county#area-ii-court' },
+          { name: 'Area III Court (West Chester)', href: '/courts/butler-county#area-iii-court' },
           { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
         ],
       },

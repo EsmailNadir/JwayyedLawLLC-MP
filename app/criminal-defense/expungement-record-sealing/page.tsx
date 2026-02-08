@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'Who is eligible for expungement in Ohio?',
-    answer: 'Expungement eligibility in Ohio depends on several factors including offense type, prior record, completion of sentence, and required waiting periods. Generally, first-time offenders with certain misdemeanors or low-level felonies may be eligible after waiting periods ranging from one to five years. Certain offenses including violent crimes, sex crimes, or offenses involving minors are generally not eligible for expungement.',
+    answer: 'Expungement eligibility in Ohio depends on several factors including offense type, prior record, completion of sentence, and required waiting periods. Generally, first-time offenders with certain misdemeanors or low-level felonies may be eligible after waiting periods ranging from one to five years. Certain offenses are not eligible for expungement or record sealing in Ohio, including violent crimes, sex crimes, and offenses involving minors. An attorney can help determine eligibility.',
   },
   {
     question: 'What is the waiting period for expungement in Ohio?',

@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     'drug crimes attorney',
     'domestic violence lawyer',
     'theft defense attorney',
-    'felony defense lawyer',
     'misdemeanor defense attorney',
     'Ohio criminal attorney'
   ],
@@ -44,12 +43,8 @@ const faqs = [
     answer: 'In Ohio, misdemeanors are less serious crimes punishable by fines and up to 12 months in jail. Misdemeanors are classified as first, second, third, or fourth degree. Felonies are more serious crimes punishable by substantial prison time, ranging from six months to life imprisonment. Felonies in Ohio include first, second, third, fourth, and fifth degree offenses. The severity of the charge significantly impacts potential penalties, your record, and future opportunities.',
   },
   {
-    question: 'Can I get my criminal record expunged in Ohio?',
-    answer: 'Expungement eligibility in Ohio depends on several factors including the type of conviction, time since conviction, completion of sentence, and your criminal history. Generally, first-time offenders with certain misdemeanors or low-level felonies may be eligible after a waiting period. Under Ohio Revised Code sections 2953.31 through 2953.61, expungement can seal records from public view. An attorney can help determine your eligibility and guide you through the expungement process.',
-  },
-  {
     question: 'How much does a criminal defense attorney cost in Ohio?',
-    answer: 'Criminal defense attorney fees vary based on case complexity, severity of charges, attorney experience, and required time commitment. Simple misdemeanors may cost less, while serious felonies require substantial investment. Many attorneys offer payment plans. Some cases may qualify for court-appointed counsel if you cannot afford an attorney. During a schedule consultation, we can discuss fees and payment options tailored to your situation.',
+    answer: 'Criminal defense attorney fees vary based on case complexity, severity of charges, attorney experience, and required time commitment. We represent clients in misdemeanor matters only. Many attorneys offer payment plans. Some cases may qualify for court-appointed counsel if you cannot afford an attorney. During a schedule consultation, we can discuss fees and payment options tailored to your situation.',
   },
   {
     question: 'What are my rights during an arrest in Ohio?',
@@ -74,8 +69,12 @@ export default function CriminalDefensePage() {
               Experienced Criminal Defense Representation in Ohio
             </h2>
             
+            <p className="text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
+              <strong>Our practice:</strong> Jwayyed Law LLC represents clients in <strong>misdemeanor</strong> criminal matters only. We do not handle felony cases. If you have been charged with a felony, you will need to consult an attorney who handles felony criminal defense.
+            </p>
+
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Facing criminal charges throughout Ohio can be overwhelming and life-altering. At Jwayyed Law LLC, we provide dedicated criminal defense representation for individuals charged with crimes ranging from misdemeanors to serious felonies. Our attorney understands the Ohio Revised Code, local court procedures, and defense strategies necessary to protect your rights and achieve the best possible outcome.
+              Facing criminal charges throughout Ohio can be overwhelming and life-altering. At Jwayyed Law LLC, we provide dedicated criminal defense representation for individuals charged with misdemeanor crimes. Our attorney understands the Ohio Revised Code, local court procedures, and defense strategies necessary to protect your rights and achieve the best possible outcome.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -87,7 +86,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The consequences of a criminal conviction extend far beyond the immediate penalties. A criminal record can create barriers to employment, as many employers conduct background checks and may refuse to hire individuals with criminal convictions. Professional licenses in fields such as healthcare, education, law enforcement, finance, and real estate may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights are permanently lost for felony convictions. Immigration consequences can include deportation for non-citizens. These collateral consequences persist long after completing sentences and paying fines.
+              The consequences of a criminal conviction extend far beyond the immediate penalties. A criminal record can create barriers to employment, as many employers conduct background checks and may refuse to hire individuals with criminal convictions. Professional licenses in fields such as healthcare, education, law enforcement, finance, and real estate may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights may be lost for certain serious convictions. Immigration consequences can include deportation for non-citizens. These collateral consequences persist long after completing sentences and paying fines.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -122,7 +121,7 @@ export default function CriminalDefensePage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Plea Negotiations</h4>
               <p className="text-gray-700 mb-4">
-                Most criminal cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (felony to misdemeanor, aggravated to simple), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
+                Most criminal cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges where applicable (e.g., aggravated to simple), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
               </p>
             </div>
 
@@ -165,7 +164,7 @@ export default function CriminalDefensePage() {
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Assault Charges</h4>
-                <p className="text-sm text-gray-600">Defense for assault, battery, aggravated assault, and felonious assault charges under ORC 2903.11-2903.13</p>
+                <p className="text-sm text-gray-600">Defense for misdemeanor assault (simple assault) and battery under ORC 2903.13. We do not handle felony assault.</p>
               </Link>
               <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all">
                 <h4 className="font-semibold text-gray-900 mb-2">Domestic Violence</h4>
@@ -230,7 +229,8 @@ export default function CriminalDefensePage() {
                 <li><strong>Fourth Degree Misdemeanor:</strong> Up to 30 days in jail, fines up to $250</li>
               </ul>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felony Penalties in Ohio</h4>
+              <p className="text-gray-700 mt-4 mb-2 text-sm italic">We do not represent clients on felony charges. The following is general information only.</p>
+              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felony Penalties in Ohio (Informational — We Do Not Handle Felony Cases)</h4>
               <ul className="space-y-2 text-gray-700">
                 <li><strong>First Degree Felony (F-1):</strong> 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000</li>
                 <li><strong>Second Degree Felony (F-2):</strong> 2-8 years indefinite imprisonment (for offenses after March 22, 2019), fines up to $15,000</li>
@@ -313,7 +313,7 @@ export default function CriminalDefensePage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our experience includes defending clients charged with misdemeanors and felonies across all practice areas. We have successfully negotiated reduced charges, secured dismissals, won trials, and helped clients seal or expunge records. We understand that each case is different and requires careful analysis of the facts, law, and available defenses. We invest the time and resources necessary to build strong defenses and achieve favorable outcomes.
+              Our experience includes defending clients charged with misdemeanors across all practice areas. We have successfully negotiated reduced charges, secured dismissals, won trials, and helped clients seal or expunge records. We understand that each case is different and requires careful analysis of the facts, law, and available defenses. We invest the time and resources necessary to build strong defenses and achieve favorable outcomes.
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">

@@ -24,7 +24,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are limited driving privileges in Ohio?',
-    answer: 'Limited driving privileges under Ohio Revised Code 4511.191 (as amended by HB 37, effective April 2025) allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, medical appointments, and necessary activities. For first OVI offenders who test over the legal limit with no prior alcohol arrests, judges can now waive the 15-day waiting period and grant privileges immediately. Limited privileges typically require ignition interlock devices and restrict driving to specific times, locations, and purposes. Eligibility depends on offense type, prior record, and court approval.',
+    answer: 'Limited driving privileges under Ohio Revised Code 4511.191 (as amended by HB 37, effective April 2025) allow individuals with suspended licenses to drive for specific purposes including work, school, treatment, medical appointments, and necessary activities. For first OVI offenders who test over the legal limit with no prior alcohol arrests, judges can now waive the 15-day waiting period and grant privileges immediately. Limited privileges may require ignition interlock devices and restrict driving to specific times, locations, and purposes. Eligibility depends on offense type, prior record, and court approval.',
   },
   {
     question: 'Who is eligible for limited driving privileges in Ohio?',
@@ -32,11 +32,11 @@ const faqs = [
   },
   {
     question: 'How do I apply for limited driving privileges in Ohio?',
-    answer: 'To apply for limited driving privileges in Ohio, file a motion with the court that suspended your license or the court handling your OVI case. The motion must specify the purposes for which you need to drive (work, school, treatment, etc.). Limited privileges typically require ignition interlock devices, proof of insurance, and payment of fees. An attorney can help prepare and file the motion.',
+    answer: 'To apply for limited driving privileges in Ohio, file a motion with the court that suspended your license or the court handling your OVI case. The motion must specify the purposes for which you need to drive (work, school, treatment, etc.). Limited privileges may require ignition interlock devices, proof of insurance, and payment of fees. An attorney can help prepare and file the motion.',
   },
   {
     question: 'What restrictions apply to limited driving privileges?',
-    answer: 'Limited driving privileges restrictions in Ohio typically include: Driving only for specified purposes (work, school, treatment, medical appointments, necessary activities), installation of ignition interlock device, restrictions on times and locations, compliance with all conditions, and immediate revocation for any violations. Violations can result in additional penalties and loss of privileges.',
+    answer: 'Limited driving privileges restrictions in Ohio may include: Driving only for specified purposes (work, school, treatment, medical appointments, necessary activities), installation of ignition interlock device when required, restrictions on times and locations, compliance with all conditions, and immediate revocation for any violations. Violations can result in additional penalties and loss of privileges.',
   },
   {
     question: 'Can limited driving privileges be revoked?',

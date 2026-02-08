@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Ohio OVI Attorney | Experienced DUI/OVI Defense Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, third, and felony OVI charges in Ohio. Schedule consultation: (614) 285-5482',
+  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, and third (misdemeanor) OVI charges in Ohio. We do not handle felony OVI cases. Schedule consultation: (614) 285-5482',
   keywords: [
     'Ohio OVI attorney',
     'Ohio DUI lawyer',
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     'OVI defense Ohio',
     'DUI defense attorney Ohio',
     'first OVI defense',
-    'felony OVI lawyer'
   ],
   openGraph: {
     title: 'Ohio OVI Attorney | Jwayyed Law LLC',
@@ -39,7 +38,7 @@ const faqs = [
   },
   {
     question: 'What are the penalties for a first OVI in Ohio?',
-    answer: 'A first OVI offense in Ohio under ORC 4511.19 is typically a first-degree misdemeanor. Penalties include: 3 days to 6 months jail (minimum 3 days mandatory or completion of 3-day Driver Intervention Program), fines of $565 to $1,075, driver\'s license suspension of 1 to 3 years, vehicle immobilization for 90 days, mandatory alcohol assessment and treatment, and installation of ignition interlock device may be required. License reinstatement fee is $315. These penalties increase significantly for subsequent offenses.',
+    answer: 'A first OVI in Ohio is a first-degree misdemeanor. Low-level: 3 days to 6 months jail (court may allow 3-day Driver Intervention Program instead of jail, or waive jail with an ignition interlock). Fines $565 to $1,075; license 1 to 3 years ($315 reinstatement fee). Limited privileges after 15 days (30 for refusal); the 15-day wait may be waived if you have no prior Physical Control conviction. Treatment and restricted plates are optional at the court\'s discretion. High-level or refusal: 6 days minimum jail.',
   },
   {
     question: 'Can I refuse a breathalyzer test in Ohio?',
@@ -51,7 +50,7 @@ const faqs = [
   },
   {
     question: 'Can I get limited driving privileges after an OVI suspension in Ohio?',
-    answer: 'Limited driving privileges may be available after an OVI suspension under Ohio Revised Code 4511.191. For first-time offenders who test over the legal limit with no prior alcohol-related arrests, judges can now waive the 15-day waiting period and grant privileges immediately. For refusals or those with prior convictions, mandatory waiting periods apply (30 days for first refusal, 45 days for second offense). Limited privileges typically allow driving to work, school, treatment, and other necessary locations. An ignition interlock device is required for those with prior OVI or Physical Control convictions. An attorney can help apply for limited privileges and guide you through the process.',
+    answer: 'Yes, depending on offense level. First OVI: eligible after 15 days (30 for refusal); the 15-day wait may be waived if you have no prior Physical Control conviction; interlock is optional unless you have that prior. Second OVI: after 45 days (90 for refusal), interlock required. Third OVI: after 180 days (1 year for refusal), interlock required. Privileges typically allow driving for work, school, treatment, and necessary activities. An attorney can help you request an ALS hearing (30-day deadline) and apply for limited privileges when eligible.',
   },
 ];
 
@@ -72,12 +71,15 @@ export default function OVIDefensePage() {
               Experienced OVI/DUI Defense Representation in Ohio
             </h2>
             
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
+              <strong>Disclaimer:</strong> Due to a conflict, Jwayyed Law LLC handles only civil, business, estate planning, and probate matters in Franklin County. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County.
+            </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Facing OVI (Operating a Vehicle Impaired) charges throughout Ohio carries severe criminal penalties, license suspension, and long-term consequences that extend far beyond fines and jail time. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation for individuals charged under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws including current requirements under HB 37 (Liv's Law, effective April 2025; current as of 2026), administrative license suspension procedures, and defense strategies necessary to protect your rights and achieve favorable outcomes.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI charges in Ohio can be based on BAC (blood alcohol content) of 0.08% or higher, evidence of impairment from alcohol, drugs, or a combination, or results from the new oral fluid testing authorized under HB 37. Penalties escalate significantly with each subsequent offense, and high-tier OVI (BAC 0.17% or higher) carries enhanced penalties even for first offenses. An OVI conviction results in criminal penalties, administrative license suspension, increased insurance rates, and a permanent criminal record affecting employment and opportunities.
+              OVI in Ohio applies to impairment by alcohol, drugs (including marijuana, prescription drugs, and controlled substances), or a combination. Charges can be based on BAC of 0.08% or higher, evidence of impairment, or oral fluid or other chemical testing authorized under HB 37. The same penalty structure applies whether the offense involves alcohol, drugs, or both. Penalties escalate significantly with each subsequent offense, and high-tier OVI (BAC 0.17% or higher for alcohol) carries enhanced penalties even for first offenses. An OVI conviction results in criminal penalties, administrative license suspension, increased insurance rates, and a permanent criminal record.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -97,49 +99,31 @@ export default function OVIDefensePage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">First OVI Offense (ORC 4511.19)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">First OVI (within 10 years)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>Jail: 3 days to 6 months (minimum 3 days mandatory or 3-day Driver Intervention Program)</li>
-                <li>Fines: $565 to $1,075 (minimum increased under HB 37 effective April 2025)</li>
-                <li>License Suspension: 1 to 3 years</li>
-                <li>License Reinstatement Fee: $315 (reduced from $475)</li>
-                <li>Vehicle Immobilization: 90 days</li>
-                <li>Mandatory alcohol assessment and treatment</li>
-                <li>Ignition interlock device may be required</li>
-                <li>Limited driving privileges: 15-day waiting period may be waived by judge if no prior alcohol arrests</li>
+                <li>Low-level: Jail 3 days to 6 months (court may allow 3-day DIP instead of jail or waive jail with interlock). High-level or refusal: 6 days to 6 months minimum.</li>
+                <li>Fines: $565 to $1,075. License: 1 to 3 years ($315 reinstatement fee).</li>
+                <li>Limited privileges after 15 days (30 for refusal); 15-day wait may be waived if no prior Physical Control. Interlock, treatment, and restricted plates optional at court&apos;s discretion (interlock required if prior Physical Control).</li>
               </ul>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Second OVI Offense (within 10 years)</h4>
+              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Second OVI (within 10 years)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>Jail: 10 days to 6 months (minimum 10 days mandatory)</li>
-                <li>Fines: $715 to $1,625 (minimum increased under HB 37)</li>
-                <li>License Suspension: 1 to 7 years</li>
-                <li>Vehicle Immobilization: 90 days</li>
-                <li>Mandatory alcohol treatment program</li>
-                <li>Yellow license plates required</li>
-                <li>Ignition interlock device required for limited driving privileges</li>
-                <li>Limited privileges: 45-day waiting period (test over) or 90-day waiting period (refusal)</li>
+                <li>Low-level: 10 days to 6 months jail (alternative minimum 5 days jail + 18 days house arrest with monitoring). High-level or refusal: 20 days to 6 months (alternative 10 days jail + 36 days house arrest).</li>
+                <li>Fines: $715 to $1,625. License: 1 to 7 years ($315 reinstatement fee). Mandatory alcohol/drug assessment. Restricted plates required. 90-day vehicle immobilization if registered to you.</li>
+                <li>Limited privileges after 45 days (90 for refusal). Ignition interlock required for alcohol-related OVI.</li>
               </ul>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Third OVI Offense (within 10 years)</h4>
+              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Third OVI (within 10 years)</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>Jail: 30 days to 1 year (minimum 30 days mandatory)</li>
-                <li>Fines: $1,040 to $2,750 (minimum increased under HB 37)</li>
-                <li>License Suspension: 2 to 12 years</li>
-                <li>Vehicle Forfeiture: Criminal forfeiture of vehicle (per ORC 4511.19)</li>
-                <li>Misdemeanor of the first degree (becomes felony on 4th offense or more)</li>
-                <li>Mandatory alcohol treatment</li>
-                <li>Ignition interlock device required</li>
-                <li>Limited privileges: 180-day waiting period</li>
+                <li>Low-level: 30 days to 1 year jail (alternative 15 days jail + 55 days house arrest). High-level or refusal: 60 days to 1 year (alternative 30 days jail + 110 days house arrest).</li>
+                <li>Fines: $1,040 to $2,750. License: 2 to 12 years ($315 reinstatement fee). Mandatory alcohol/drug addiction program. Restricted plates required. Vehicle forfeiture if registered to you.</li>
+                <li>Limited privileges after 180 days (1 year for refusal). Ignition interlock required. First-degree misdemeanor; fourth OVI within 10 years becomes a felony.</li>
               </ul>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">High-Tier OVI (BAC 0.17% or higher)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li>Enhanced penalties for all offense levels</li>
-                <li>Minimum 6 days jail for first offense (vs. 3 days standard)</li>
-                <li>Higher fines and longer license suspensions</li>
-                <li>Mandatory alcohol assessment and treatment</li>
-              </ul>
+              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Fourth OVI (within 10 years)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                Fourth OVI within 10 years is a felony. Jwayyed Law LLC does not represent clients on felony OVI charges.
+              </p>
             </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -181,7 +165,7 @@ export default function OVIDefensePage() {
               <li><strong>Skilled Negotiation:</strong> Work with prosecutors to reduce charges, negotiate favorable plea agreements, secure alternative sentencing options including treatment programs, or arrange dismissals upon completion of conditions</li>
               <li><strong>Limited Driving Privileges:</strong> Help eligible clients obtain limited driving privileges for work, school, treatment, and necessary activities during suspension, including preparation of applications and court representation</li>
               <li><strong>Aggressive Trial Advocacy:</strong> Provide effective trial representation with compelling arguments, strategic cross-examination of police officers and expert witnesses, expert testimony, and protection of your rights throughout trial proceedings if your case proceeds to trial</li>
-              <li><strong>Record Sealing:</strong> Help eligible clients seal first-offense OVI records after required waiting periods (typically 3 years) and completion of sentences under Ohio Revised Code Chapter 2953</li>
+              <li><strong>Understanding Consequences:</strong> We help clients understand the long-term impact of an OVI and fight charges to avoid conviction when possible</li>
             </ul>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -221,11 +205,11 @@ export default function OVIDefensePage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">ALS Suspension Periods</h4>
               <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                <li><strong>Test Refusal (First Offense):</strong> 1 year suspension (30-day waiting period for limited privileges)</li>
-                <li><strong>Failed Test - Standard OVI (First Offense):</strong> 90 days suspension (15-day waiting period, may be waived by judge under HB 37)</li>
-                <li><strong>Failed Test - High-Tier OVI (First Offense):</strong> 1 year suspension</li>
-                <li><strong>Subsequent Offenses:</strong> Suspension periods increase significantly (2-5 years depending on offense number)</li>
-                <li><strong>License Reinstatement Fee:</strong> $315 (reduced from $475 under HB 37)</li>
+                <li><strong>First offense—test over limit:</strong> Suspension per statute; eligible for limited privileges after 15 days (waiver possible if no prior Physical Control).</li>
+                <li><strong>First offense—refusal:</strong> 1 year suspension; eligible for limited privileges after 30 days.</li>
+                <li><strong>Second offense:</strong> 1 to 7 years suspension; eligible after 45 days (90 for refusal); interlock required.</li>
+                <li><strong>Third offense:</strong> 2 to 12 years suspension; eligible after 180 days (1 year for refusal); interlock required.</li>
+                <li><strong>License reinstatement fee:</strong> $315 when eligible.</li>
               </ul>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
                 The ALS suspension runs concurrently with any criminal court suspension, but winning the ALS appeal can result in immediate license reinstatement and can strengthen your criminal defense case. You must file an ALS appeal within 30 days of arrest to preserve your right to challenge the suspension.
@@ -233,9 +217,9 @@ export default function OVIDefensePage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Limited Driving Privileges (Current 2026 Ohio Law - HB 37)</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Limited Driving Privileges</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Under Ohio Revised Code 4511.191 as amended by HB 37 (effective April 2025), limited driving privileges may be available after an OVI suspension. For first-time offenders who test over the legal limit with no prior alcohol-related arrests or convictions, judges now have discretion to waive the 15-day waiting period and grant privileges immediately. For refusals or those with prior OVI or Physical Control convictions, mandatory waiting periods apply and an ignition interlock device is required before privileges can be granted. These privileges typically allow driving to work, school, treatment programs, medical appointments, and other necessary activities. An attorney can help prepare the application, present evidence of need, and navigate the approval process to minimize disruption to your daily life.
+                First OVI: eligible after 15 days (30 for refusal). The 15-day wait may be waived by the judge if you have no prior &quot;Physical Control&quot; conviction within 10 years; if you do, interlock is required. Second OVI: eligible after 45 days (90 for refusal); interlock required. Third OVI: eligible after 180 days (1 year for refusal); interlock required. Privileges typically allow driving for work, school, treatment, medical care, and other necessary purposes. An attorney can help prepare the application and navigate the process.
               </p>
             </div>
 
@@ -255,7 +239,7 @@ export default function OVIDefensePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              We handle all types of OVI cases, from first-time misdemeanor charges to serious felony OVI with prior convictions. Our firm also assists with administrative license suspension appeals, limited driving privileges, and working with prosecutors to secure alternative sentencing options including treatment programs when appropriate. We maintain open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and license suspension procedures throughout your case.
+              We handle misdemeanor OVI cases (first, second, and third OVI under Ohio law). Fourth OVI within 10 years is a felony; we do not handle felony OVI cases. Our firm also assists with administrative license suspension appeals, limited driving privileges, and working with prosecutors to secure alternative sentencing options including treatment programs when appropriate. We maintain open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and license suspension procedures throughout your case.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
