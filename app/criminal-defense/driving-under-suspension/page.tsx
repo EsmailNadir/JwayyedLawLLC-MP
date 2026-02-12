@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -89,6 +90,8 @@ export default function DrivingUnderSuspensionPage() {
             <p className="text-gray-700 mb-6 leading-relaxed">
               The consequences of a DUS conviction extend beyond criminal penalties. Additional suspension time makes it harder to maintain employment, care for your family, and meet daily obligations. A criminal record can affect future job prospects, housing applications, and other areas of your life. Taking DUS charges seriously and obtaining experienced legal representation is critical to minimizing these consequences and working toward reinstatement of your driving privileges.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of Driving Under Suspension in Ohio

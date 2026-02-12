@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Spendthrift Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function SpendthriftTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               A spendthrift trust can be a valuable tool to protect your assets from creditors and to ensure that funds are used responsibly by beneficiaries. At Jwayyed Law LLC, we help you set up spendthrift trusts to safeguard your wealth and manage it in accordance with your wishes.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How Spendthrift Trusts Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Asset Protection:</strong> Protects the trust’s assets from creditors, ensuring they are used only for the beneficiary’s needs.</li>

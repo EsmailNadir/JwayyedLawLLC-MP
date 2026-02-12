@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Medicaid Asset Protection Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function MedicaidAssetProtectionTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Medicaid Asset Protection Trusts (MAPTs) are designed to help individuals protect their assets while qualifying for Medicaid coverage in Ohio. These trusts allow you to transfer assets into an irrevocable trust to reduce your countable assets, helping you access the care you need while preserving wealth for your family.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How Medicaid Asset Protection Trusts Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Asset Protection:</strong> Helps you protect your home, savings, and other assets from Medicaid spend-down requirements.</li>

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Mediation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function MediationPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Mediation in Columbus, Cincinnati, Dayton, or throughout Ohio is a form of alternative dispute resolution where a neutral third party facilitates negotiation between parties to resolve conflicts. At Jwayyed Law LLC, we provide experienced mediation services under Ohio Revised Code (current as of 2026). Our attorney can serve as a mediator to help parties resolve disputes including business disputes, family matters, civil disputes, and other conflicts without litigation.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated mediation services throughout Ohio. We understand that mediation can resolve disputes more efficiently and cost-effectively than litigation. Our attorney works diligently to facilitate productive negotiations and help parties reach mutually acceptable resolutions.

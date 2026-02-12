@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Breach of Contract Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -66,6 +67,9 @@ export default function BreachOfContractPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               The statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026). Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Breach of Contract Claims Process</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

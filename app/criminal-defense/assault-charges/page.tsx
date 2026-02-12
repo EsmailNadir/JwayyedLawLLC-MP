@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -87,6 +88,8 @@ export default function AssaultChargesPage() {
             <p className="text-gray-700 mb-6 leading-relaxed">
               The legal process for assault charges begins with arrest and initial court appearances, followed by discovery, pretrial motions, plea negotiations, and potentially trial. Each stage requires strategic decision-making and experienced legal representation. Early intervention by a skilled defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Assault Charges in Ohio

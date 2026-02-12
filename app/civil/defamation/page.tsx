@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Defamation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function DefamationPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Defamation in Columbus, Cincinnati, Dayton, or throughout Ohio involves false statements that harm someone\'s reputation, including libel (written defamation) and slander (spoken defamation). At Jwayyed Law LLC, we provide experienced representation for defamation claims under Ohio Revised Code Chapter 2739. Our attorney understands defamation law and can protect your reputation and recover damages for harm.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Defamation Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Case Investigation:</strong> Investigate defamatory statements and gather evidence of falsity and harm</li>

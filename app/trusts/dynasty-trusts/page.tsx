@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Dynasty Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function DynastyTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Dynasty trusts are an effective tool for passing wealth across generations while minimizing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. In Ohio, these trusts can provide a secure way to protect and grow family assets over time. Jwayyed Law LLC can guide you through the process of setting up a dynasty trust to ensure your wealth is preserved and passed on according to your wishes.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How Dynasty Trusts Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Wealth Transfer:</strong> Dynasty trusts allow you to transfer wealth to your heirs over multiple generations without incurring federal estate taxes.</li>

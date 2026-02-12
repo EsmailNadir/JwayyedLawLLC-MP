@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function IrrevocableLifeInsuranceTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               An Irrevocable Life Insurance Trust (ILIT) is an estate planning tool used to hold a life insurance policy and keep its proceeds outside of your taxable estate. This helps reduce federal estate taxes while ensuring that your beneficiaries are provided for. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to estates exceeding the federal exemption. Let Jwayyed Law LLC guide you through the process of creating an ILIT that aligns with your estate planning goals.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How ILITs Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Estate Tax Reduction:</strong> Removes life insurance proceeds from your taxable estate, reducing estate taxes.</li>

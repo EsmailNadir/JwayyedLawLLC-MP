@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -69,6 +70,8 @@ export default function CivilPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Civil cases are decided based on preponderance of evidence (more likely than not) rather than beyond a reasonable doubt required in criminal cases. This lower standard means civil cases can be won even when evidence is not overwhelming. However, civil litigation requires thorough preparation, strategic planning, and effective advocacy. An experienced civil attorney can navigate the complex civil procedure rules, develop winning strategies, and maximize your chances of success.
             </p>
+
+            <LocationsWeServe title="Civil" />
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Civil Litigation Process</h3>
 

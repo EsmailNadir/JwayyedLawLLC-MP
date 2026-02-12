@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -38,6 +39,9 @@ export default function EstatePlanningPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               If you die without a will, your estate generally goes through probate in the county where you lived. Ohio allows a summary release from administration for smaller estates, which can simplify the process. More complex estates may take longer. Planning ahead with a will, and in many cases a revocable living trust, can reduce probate cost and delay and give you control over who inherits and who manages your affairs. We also assist with powers of attorney (financial and healthcare) so someone you trust can act if you become incapacitated, and with guardianships when a court must appoint a guardian for an adult or minor.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Estate Planning Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link href="/other-services/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">

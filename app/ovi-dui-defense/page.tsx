@@ -98,20 +98,44 @@ export default function OVIDefensePage() {
               OVI / DUI – Locations We Serve
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We represent clients in OVI cases in the following Ohio courts and communities. Each location has its own procedures; these pages provide court-specific information.
+              We represent clients in OVI cases in the following Ohio counties and courts. Each county has its own page and court procedures; click through for court-specific information. (Note: We do not handle criminal or OVI matters in Franklin County due to a conflict—see Franklin County for civil, business, and estate planning.)
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Morrow County Municipal Court</span>
+              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Franklin County</span>
+                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information & practice areas</span>
+              </Link>
+              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Delaware County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Delaware County Municipal Court</span>
+              </Link>
+              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Butler County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Area Courts & Hamilton Municipal Court</span>
+              </Link>
+              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Greene County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Fairborn Municipal Court</span>
+              </Link>
+              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Montgomery County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Dayton Municipal Court</span>
+              </Link>
+              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Circleville Municipal Court</span>
               </Link>
               <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Athens County</span>
                 <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Athens Municipal Court</span>
               </Link>
-              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Circleville Municipal Court</span>
+              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Morrow County Municipal Court</span>
+              </Link>
+              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Clinton County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI Defense – Wilmington Municipal Court</span>
               </Link>
             </div>
 

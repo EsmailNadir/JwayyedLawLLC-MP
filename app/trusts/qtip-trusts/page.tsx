@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'QTIP Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function QTIPTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               A QTIP trust allows you to provide financial support to your spouse after your death while preserving your estate for future generations. At Jwayyed Law LLC, we help clients in Ohio set up QTIP trusts as part of a comprehensive estate plan that ensures both tax efficiency and family security.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How QTIP Trusts Work</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Income for Spouse:</strong> The surviving spouse receives income from the trust during their lifetime.</li>

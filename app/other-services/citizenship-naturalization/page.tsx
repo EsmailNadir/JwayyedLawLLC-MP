@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Citizenship & Naturalization Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -47,6 +48,9 @@ export default function CitizenshipNaturalizationPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Citizenship and naturalization in Columbus, Cincinnati, Dayton, or throughout Ohio involve the process of becoming a U.S. citizen. At Jwayyed Law LLC, we provide experienced assistance with citizenship and naturalization applications under federal immigration law. Our attorney understands naturalization requirements and can help you apply for U.S. citizenship including preparing for the citizenship test and interview.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated citizenship and naturalization assistance throughout Ohio. We understand that becoming a U.S. citizen is a significant achievement. Our attorney works diligently to help you navigate the naturalization process and achieve your goal of U.S. citizenship.

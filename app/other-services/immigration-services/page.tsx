@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Immigration Services Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function ImmigrationServicesPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Immigration matters in Columbus, Cincinnati, Dayton, or throughout Ohio involve complex federal laws and procedures that can significantly affect your ability to live and work in the United States. At Jwayyed Law LLC, we provide experienced assistance with immigration matters under federal immigration law. Our attorney understands immigration law and can help you navigate the immigration system including visa applications, green cards, citizenship, and deportation defense.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated immigration assistance throughout Ohio. We understand that immigration matters can be complex and life-changing. Our attorney works diligently to help you navigate the immigration system, complete applications, and protect your rights.

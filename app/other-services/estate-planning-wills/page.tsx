@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Estate Planning & Wills Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function EstatePlanningWillsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Estate planning and wills in Columbus, Cincinnati, Dayton, or throughout Ohio involve creating legal documents to protect your assets, provide for your loved ones, and ensure your wishes are carried out after your death. At Jwayyed Law LLC, we provide experienced assistance with estate planning and wills under Ohio Revised Code Chapter 2107 (current as of 2026). Our attorney understands estate planning law and can help you create a comprehensive estate plan including wills, trusts, and powers of attorney.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated estate planning and wills assistance throughout Ohio. We understand that estate planning is essential for protecting your legacy. Our attorney works diligently to create comprehensive estate plans tailored to your needs and ensure your wishes are carried out.

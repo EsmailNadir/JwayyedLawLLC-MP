@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Civil Protection Orders Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function CivilProtectionOrdersPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Civil protection orders in Columbus, Cincinnati, Dayton, or throughout Ohio are court orders protecting victims of domestic violence, sexual assault, stalking, and other offenses. At Jwayyed Law LLC, we provide experienced representation for civil protection orders under Ohio Revised Code 3113.31. Our attorney understands protection order procedures and can help whether you are seeking a protection order or defending against one.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Civil Protection Orders Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Protection Order Petitions:</strong> File protection order petitions and obtain temporary protection orders</li>

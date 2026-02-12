@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -83,6 +84,8 @@ export default function CriminalDamagingPage() {
             <p className="text-gray-700 mb-6 leading-relaxed">
               The legal process for criminal damaging charges involves arraignment, discovery, pretrial negotiations, and potentially trial. An experienced attorney can challenge evidence, negotiate with prosecutors, and work toward favorable outcomes including dismissal, reduced charges, or alternative sentencing.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Criminal Damaging Under Ohio Law (ORC 2909.06)

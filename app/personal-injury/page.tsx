@@ -92,20 +92,44 @@ export default function PersonalInjuryPage() {
               Personal Injury – Locations We Serve
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We represent injury victims in the following Ohio counties and communities:
+              We represent injury victims in the following Ohio counties and communities. Each county has its own page; click through for more information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              <Link href="/locations/franklin-county/personal-injury-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Franklin County</span>
+                <span className="block text-sm text-gray-600 mt-1">Columbus & surrounding areas</span>
+              </Link>
+              <Link href="/locations/delaware-county/personal-injury-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Delaware County</span>
+                <span className="block text-sm text-gray-600 mt-1">Delaware & surrounding areas</span>
+              </Link>
+              <Link href="/locations/butler-county/personal-injury-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Butler County</span>
+                <span className="block text-sm text-gray-600 mt-1">Hamilton, Oxford, West Chester</span>
+              </Link>
+              <Link href="/locations/greene-county/personal-injury-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Greene County</span>
+                <span className="block text-sm text-gray-600 mt-1">Fairborn & surrounding areas</span>
+              </Link>
+              <Link href="/locations/montgomery-county/personal-injury-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Montgomery County</span>
+                <span className="block text-sm text-gray-600 mt-1">Dayton & surrounding areas</span>
+              </Link>
+              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
               </Link>
               <Link href="/locations/athens-county/personal-injury-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Athens County</span>
                 <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
               </Link>
-              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              </Link>
+              <Link href="/locations/clinton-county/personal-injury-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Clinton County</span>
+                <span className="block text-sm text-gray-600 mt-1">Wilmington & surrounding areas</span>
               </Link>
             </div>
 

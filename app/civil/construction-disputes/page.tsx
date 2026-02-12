@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Construction Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function ConstructionDisputesPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Construction disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve breach of construction contracts, defective workmanship, payment disputes, mechanic\'s liens, and other complex construction law issues. At Jwayyed Law LLC, we provide experienced representation for construction disputes under Ohio Revised Code Chapter 1311. Our attorney understands construction law and the remedies necessary to protect your rights.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Construction Disputes Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Contract Analysis:</strong> Analyze construction contracts and identify breaches</li>

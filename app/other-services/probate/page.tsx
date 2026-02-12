@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -35,6 +36,9 @@ export default function ProbatePage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Probate in Columbus, Cincinnati, Dayton, or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Title 21, which governs probate court procedures, estate administration, and fiduciary duties. Our attorney understands probate law and can help you navigate the probate process.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Probate Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link href="/other-services/probate-administration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">

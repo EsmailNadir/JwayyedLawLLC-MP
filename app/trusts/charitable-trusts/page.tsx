@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Charitable Trusts Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function CharitableTrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Charitable trusts in Columbus, Cincinnati, Dayton, and throughout Ohio allow individuals to support charitable causes while achieving tax benefits. These trusts are designed to provide a way to donate assets to charity in a structured manner while potentially reducing federal estate taxes. Note: Ohio has no state estate tax (repealed January 1, 2013), but federal estate tax may apply to large estates. At Jwayyed Law LLC, we can guide you through the process of establishing a charitable trust in Ohio to ensure that your philanthropic goals align with your estate planning needs.
             </p>
+
+            <LocationsWeServe title="Trusts" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Charitable Trusts</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Charitable Remainder Trust (CRT):</strong> Allows you to retain income from the trust for a period of time before the remainder is donated to charity.</li>

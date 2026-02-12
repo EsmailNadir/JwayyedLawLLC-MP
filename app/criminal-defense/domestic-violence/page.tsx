@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -86,6 +87,8 @@ export default function DomesticViolencePage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               The legal process for domestic violence charges begins with arrest and initial court appearances, often involving immediate protection orders that can remove you from your home, restrict contact with family members, and affect custody. These orders are issued quickly and can have immediate devastating effects. An attorney can challenge protection orders, address violations, and work to modify or terminate orders when appropriate while simultaneously defending the criminal charges.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
               Domestic Violence Laws in Ohio

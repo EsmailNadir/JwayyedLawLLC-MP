@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -89,6 +90,8 @@ export default function SpeedingTicketsPage() {
             <p className="text-gray-700 mb-6 leading-relaxed">
               Whether you were cited for driving a few miles over the limit or face serious charges for excessive speed, construction zone violations, or school zone infractions, an experienced attorney can help. We handle all types of speeding cases throughout Ohio, from minor infractions to serious violations that threaten your license or CDL.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of Speeding Violations in Ohio

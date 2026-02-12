@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -66,7 +67,50 @@ export default function SecondOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A second OVI case involves two separate tracks: the criminal case in court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal, seek a stay of the suspension where possible, and work toward the best result for your license and your record.            </p>
+              A second OVI case involves two separate tracks: the criminal case in court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal, seek a stay of the suspension where possible, and work toward the best result for your license and your record.
+            </p>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Second OVI – Counties We Serve</h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              We represent clients facing second OVI charges in the following Ohio counties and courts. Each county has its own page; click through for court information. (We do not handle OVI in Franklin County due to a conflict.)
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Franklin County</span>
+                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information</span>
+              </Link>
+              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Delaware County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Delaware County Municipal Court</span>
+              </Link>
+              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Butler County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Area Courts & Hamilton Municipal Court</span>
+              </Link>
+              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Greene County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Fairborn Municipal Court</span>
+              </Link>
+              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Montgomery County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Dayton Municipal Court</span>
+              </Link>
+              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Circleville Municipal Court</span>
+              </Link>
+              <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Athens County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Athens Municipal Court</span>
+              </Link>
+              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Morrow County Municipal Court</span>
+              </Link>
+              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Clinton County</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Wilmington Municipal Court</span>
+              </Link>
+            </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Second OVI Penalties and Consequences in Ohio</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -67,6 +68,8 @@ export default function TrustsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               In Ohio, trusts are governed by state law, and it is crucial to work with an experienced attorney to ensure that your trust complies with legal requirements and meets your goals. Whether you want to protect your family home, reduce federal estate taxes (Ohio has no state estate tax since 2013), or ensure that a loved one with special needs is provided for, we can help.
             </p>
+
+            <LocationsWeServe title="Trusts" />
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Trusts We Help You Set Up</h3>
 

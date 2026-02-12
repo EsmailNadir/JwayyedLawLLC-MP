@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -32,6 +33,9 @@ export default function OtherServicesPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               At Jwayyed Law LLC, we provide comprehensive legal services beyond criminal defense, OVI/DUI defense, personal injury, civil litigation, and business law. Our additional services include estate planning, probate administration, immigration services, and dispute resolution.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <Link href="/other-services/estate-planning" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
                 <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-3">Estate Planning</h3>

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Guardianships Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function GuardianshipsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Guardianships in Columbus, Cincinnati, Dayton, or throughout Ohio are legal arrangements that allow a guardian to make decisions for a ward who is unable to make decisions for themselves. At Jwayyed Law LLC, we provide experienced assistance with guardianship establishment and administration under Ohio Revised Code Chapter 2111 (current as of 2026). Our attorney understands guardianship law and can help you establish guardianships for minors or incapacitated adults.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated guardianship assistance throughout Ohio. We understand that guardianships are essential for protecting vulnerable individuals. Our attorney works diligently to establish guardianships when necessary and ensure proper administration.

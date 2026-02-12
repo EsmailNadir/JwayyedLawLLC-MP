@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Employment Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function EmploymentDisputesPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Employment disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve wrongful termination, discrimination, harassment, wage and hour violations, and other complex employment law matters. At Jwayyed Law LLC, we provide experienced representation for employment disputes under Ohio Revised Code and federal employment laws. Our attorney understands employment law and can protect your rights in the workplace.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Employment Disputes Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Employment Law Analysis:</strong> Analyze employment issues and identify violations</li>

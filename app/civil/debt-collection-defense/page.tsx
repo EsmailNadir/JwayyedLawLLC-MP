@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Debt Collection Defense Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -58,6 +59,9 @@ export default function DebtCollectionDefensePage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Debt collection defense in Columbus, Cincinnati, Dayton, or throughout Ohio involves defending against debt collection lawsuits and challenging debt collection practices. At Jwayyed Law LLC, we provide experienced representation for debt collection defense under Ohio Revised Code and the Fair Debt Collection Practices Act (FDCPA). Our attorney understands debt collection law and consumer protection laws necessary to protect your rights.
             </p>
+
+            <LocationsWeServe title="Civil" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Debt Collection Defense Attorney Can Help</h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
               <li><strong>Debt Challenges:</strong> Challenge debt validity and raise defenses including statute of limitations</li>

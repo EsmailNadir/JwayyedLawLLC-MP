@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Expungement & Record Sealing Lawyer in Ohio | Jwayyed Law LLC',
@@ -61,6 +62,9 @@ export default function ExpungementRecordSealingPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Expungement eligibility depends on offense type, prior record, completion of sentence, and required waiting periods ranging from one to five years. Certain offenses including violent crimes, sex crimes, or offenses involving minors are generally not eligible. Sealed records remain available to law enforcement but are not accessible to most employers, landlords, or the general public.
             </p>
+
+            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Record Sealing Waiting Periods (ORC 2953.32)</h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Waiting periods are measured from final discharge (completion of sentence, probation, parole, and all fines/restitution):</p>

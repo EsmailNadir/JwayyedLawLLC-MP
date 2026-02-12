@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Probate Administration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function ProbateAdministrationPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Probate administration in Columbus, Cincinnati, Dayton, or throughout Ohio involves the legal process of administering a deceased person's estate, including validating wills, paying debts, and distributing assets to beneficiaries. At Jwayyed Law LLC, we provide experienced assistance with probate administration under Ohio Revised Code Title 21, which governs probate court procedures, estate administration, and fiduciary duties. Our attorney understands probate law and can help you navigate the probate process.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated probate administration assistance throughout Ohio. We understand that probate can be complex and emotional. Our attorney works diligently to guide you through probate, ensure compliance with all requirements, and protect your interests.

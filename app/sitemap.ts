@@ -150,6 +150,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/locations/athens-county/business-formation-llc-athens-county', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/locations/pickaway-county/personal-injury-pickaway-county', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/locations/pickaway-county/business-formation-llc-pickaway-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Franklin County (PI, Business only)
+    { url: '/locations/franklin-county/personal-injury-franklin-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/franklin-county/business-formation-llc-franklin-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Delaware County
+    { url: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/delaware-county/personal-injury-delaware-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/delaware-county/business-formation-llc-delaware-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Butler County
+    { url: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/butler-county/personal-injury-butler-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/butler-county/business-formation-llc-butler-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Greene County
+    { url: '/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/greene-county/personal-injury-greene-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/greene-county/business-formation-llc-greene-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Montgomery County
+    { url: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/montgomery-county/personal-injury-montgomery-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/montgomery-county/business-formation-llc-montgomery-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Clinton County
+    { url: '/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/clinton-county/personal-injury-clinton-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/clinton-county/business-formation-llc-clinton-county', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const },
   ];
 
   return routes.map((route) => ({

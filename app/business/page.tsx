@@ -72,20 +72,44 @@ export default function BusinessPage() {
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Business – Locations We Serve</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We serve business clients in the following Ohio counties and communities:
+              We serve business clients in the following Ohio counties and communities. Each county has its own page; click through for more information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              <Link href="/locations/franklin-county/business-formation-llc-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Franklin County</span>
+                <span className="block text-sm text-gray-600 mt-1">Columbus & surrounding areas</span>
+              </Link>
+              <Link href="/locations/delaware-county/business-formation-llc-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Delaware County</span>
+                <span className="block text-sm text-gray-600 mt-1">Delaware & surrounding areas</span>
+              </Link>
+              <Link href="/locations/butler-county/business-formation-llc-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Butler County</span>
+                <span className="block text-sm text-gray-600 mt-1">Hamilton, Oxford, West Chester</span>
+              </Link>
+              <Link href="/locations/greene-county/business-formation-llc-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Greene County</span>
+                <span className="block text-sm text-gray-600 mt-1">Fairborn & surrounding areas</span>
+              </Link>
+              <Link href="/locations/montgomery-county/business-formation-llc-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Montgomery County</span>
+                <span className="block text-sm text-gray-600 mt-1">Dayton & surrounding areas</span>
+              </Link>
+              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
               </Link>
               <Link href="/locations/athens-county/business-formation-llc-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Athens County</span>
                 <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
               </Link>
-              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              </Link>
+              <Link href="/locations/clinton-county/business-formation-llc-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Clinton County</span>
+                <span className="block text-sm text-gray-600 mt-1">Wilmington & surrounding areas</span>
               </Link>
             </div>
 

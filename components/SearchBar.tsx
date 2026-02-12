@@ -97,7 +97,7 @@ const navItems: NavItem[] = [
       { name: "No Operator's License", href: '/criminal-defense/no-operators-license' },
       { name: 'Criminal Damaging', href: '/criminal-defense/criminal-damaging' },
       { name: 'Expungement / Record Sealing', href: '/criminal-defense/expungement-record-sealing' },
-      { name: 'All Criminal Defense Areas', href: '/criminal-defense' },
+      { name: 'Criminal Defense – Locations We Serve', href: '/criminal-defense' },
     ],
   },
   {
@@ -115,9 +115,7 @@ const navItems: NavItem[] = [
       { name: 'OVI with Accident', href: '/ovi-dui-defense/ovi-with-accident' },
       { name: 'Driving Under OVI Suspension', href: '/ovi-dui-defense/driving-under-ovi-suspension' },
       { name: 'Limited Driving Privileges', href: '/ovi-dui-defense/limited-driving-privileges' },
-      { name: 'OVI – Morrow County', href: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court' },
-      { name: 'OVI – Athens County', href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court' },
-      { name: 'OVI – Pickaway County', href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court' },
+      { name: 'OVI – Locations We Serve', href: '/ovi-dui-defense' },
     ],
   },
   {
@@ -137,9 +135,7 @@ const navItems: NavItem[] = [
       { name: 'Workplace Injuries', href: '/personal-injury/workplace-injuries' },
       { name: 'Wrongful Death', href: '/personal-injury/wrongful-death' },
       { name: 'Catastrophic Injuries', href: '/personal-injury/catastrophic-injuries' },
-      { name: 'PI – Morrow County', href: '/locations/morrow-county/personal-injury-morrow-county' },
-      { name: 'PI – Athens County', href: '/locations/athens-county/personal-injury-athens-county' },
-      { name: 'PI – Pickaway County', href: '/locations/pickaway-county/personal-injury-pickaway-county' },
+      { name: 'Personal Injury – Locations We Serve', href: '/personal-injury' },
     ],
   },
   {
@@ -157,6 +153,7 @@ const navItems: NavItem[] = [
       { name: 'Defamation', href: '/civil/defamation' },
       { name: 'Civil Protection Orders', href: '/civil/civil-protection-orders' },
       { name: 'Appeals', href: '/civil/appeals' },
+      { name: 'Civil – Locations We Serve', href: '/civil' },
     ],
   },
   {
@@ -174,9 +171,7 @@ const navItems: NavItem[] = [
       { name: 'Employment Agreements', href: '/business/employment-agreements' },
       { name: 'Business Compliance', href: '/business/business-compliance' },
       { name: 'Business Dissolution', href: '/business/business-dissolution' },
-      { name: 'Business – Morrow County', href: '/locations/morrow-county/business-formation-llc-morrow-county' },
-      { name: 'Business – Athens County', href: '/locations/athens-county/business-formation-llc-athens-county' },
-      { name: 'Business – Pickaway County', href: '/locations/pickaway-county/business-formation-llc-pickaway-county' },
+      { name: 'Business – Locations We Serve', href: '/business' },
     ],
   },
   {

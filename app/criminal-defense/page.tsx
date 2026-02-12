@@ -89,6 +89,51 @@ export default function CriminalDefensePage() {
               The consequences of a criminal conviction extend far beyond the immediate penalties. A criminal record can create barriers to employment, as many employers conduct background checks and may refuse to hire individuals with criminal convictions. Professional licenses in fields such as healthcare, education, law enforcement, finance, and real estate may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights may be lost for certain serious convictions. Immigration consequences can include deportation for non-citizens. These collateral consequences persist long after completing sentences and paying fines.
             </p>
 
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Criminal Defense – Locations We Serve
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              We serve clients in the following Ohio counties. Each county has its own page; click through for court information and local details. (We do not handle criminal matters in Franklin County due to a conflict—see Franklin County for civil, business, and estate planning.)
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Franklin County</span>
+                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information (no criminal in Franklin)</span>
+              </Link>
+              <Link href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Delaware County</span>
+                <span className="block text-sm text-gray-600 mt-1">Criminal Defense – Delaware County Municipal Court</span>
+              </Link>
+              <Link href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Butler County</span>
+                <span className="block text-sm text-gray-600 mt-1">Hamilton, Oxford, West Chester</span>
+              </Link>
+              <Link href="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Greene County</span>
+                <span className="block text-sm text-gray-600 mt-1">Fairborn & surrounding areas</span>
+              </Link>
+              <Link href="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Montgomery County</span>
+                <span className="block text-sm text-gray-600 mt-1">Dayton & surrounding areas</span>
+              </Link>
+              <Link href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Pickaway County</span>
+                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              </Link>
+              <Link href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Athens County</span>
+                <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
+              </Link>
+              <Link href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Morrow County</span>
+                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              </Link>
+              <Link href="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900">Clinton County</span>
+                <span className="block text-sm text-gray-600 mt-1">Wilmington & surrounding areas</span>
+              </Link>
+            </div>
+
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               The Criminal Court Process in Ohio
             </h3>

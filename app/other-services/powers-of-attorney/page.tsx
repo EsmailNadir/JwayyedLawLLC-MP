@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Powers of Attorney Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -35,6 +36,9 @@ export default function PowersOfAttorneyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Powers of attorney in Columbus, Cincinnati, Dayton, or throughout Ohio are legal documents that allow you to appoint someone to make decisions on your behalf if you become unable to do so. At Jwayyed Law LLC, we provide experienced assistance with powers of attorney under Ohio Revised Code Chapter 1337 (current as of 2026). Our attorney understands power of attorney law and can help you create financial powers of attorney and healthcare powers of attorney tailored to your needs.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated powers of attorney assistance throughout Ohio. We understand that powers of attorney are essential for protecting your interests if you become incapacitated. Our attorney works diligently to create powers of attorney tailored to your needs and ensure your wishes are carried out.

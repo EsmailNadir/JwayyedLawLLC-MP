@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Green Cards Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
@@ -47,6 +48,9 @@ export default function GreenCardsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Green cards, or permanent resident cards, in Columbus, Cincinnati, Dayton, or throughout Ohio provide legal permanent residency in the United States. At Jwayyed Law LLC, we provide experienced assistance with green card applications under federal immigration law. Our attorney understands green card processes and can help you apply for permanent residency through family sponsorship, employment, investment, or other pathways.
             </p>
+
+            <LocationsWeServe title="Other Services" />
+
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Our firm provides dedicated green card assistance throughout Ohio. We understand that obtaining permanent residency is a significant step. Our attorney works diligently to help you navigate the green card application process and protect your rights.
