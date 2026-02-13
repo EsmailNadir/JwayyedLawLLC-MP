@@ -1,0 +1,177 @@
+import { Metadata } from 'next';
+import PageHero from '@/components/PageHero';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import FAQ from '@/components/FAQ';
+import ContactCTA from '@/components/ContactCTA';
+
+export const metadata: Metadata = {
+  title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
+  openGraph: {
+    title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    url: 'https://www.jjlawohio.com/personal-injury/motorcycle-accidents',
+  },
+  alternates: { canonical: '/personal-injury/motorcycle-accidents' },
+};
+
+const breadcrumbItems = [
+  { label: 'Personal Injury', href: '/personal-injury' },
+  { label: 'Motorcycle Accidents', href: '/personal-injury/motorcycle-accidents' },
+];
+
+const faqs = [
+  {
+    question: 'Why are motorcycle accidents more serious than car accidents?',
+    answer: 'Motorcycle accidents are typically more serious than car accidents because motorcyclists lack the protection of a vehicle, making them more vulnerable to serious injuries, fatalities, and catastrophic injuries including traumatic brain injury, spinal cord injury, and severe fractures. Motorcycle accidents often result in higher medical costs, longer recovery periods, and greater pain and suffering.',
+  },
+  {
+    question: 'What compensation can I recover from a motorcycle accident?',
+    answer: 'Motorcycle accident compensation in Ohio may include economic damages (medical expenses, lost wages, property damage, future medical costs, loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment, loss of consortium), and potentially punitive damages for egregious conduct. Motorcycle accident cases often involve higher compensation due to severe injuries.',
+  },
+  {
+    question: 'What is Ohio\'s helmet law for motorcycles?',
+    answer: 'Ohio does not require motorcycle helmets for riders 18 years or older under Ohio Revised Code 4511.53. However, riders under 18 must wear helmets. The absence of a helmet requirement does not prevent recovery for injuries, but insurance companies may attempt to reduce compensation. An attorney can help protect your rights regardless of helmet use.',
+  },
+  {
+    question: 'How long do motorcycle accident cases take?',
+    answer: 'Motorcycle accident case duration varies significantly depending on case complexity, injury severity, insurance company cooperation, and whether the case goes to trial. Simple cases may resolve in months, while complex cases involving severe injuries may take years. An attorney can provide a realistic timeline based on your specific case circumstances.',
+  },
+  {
+    question: 'Do I need a motorcycle accident attorney?',
+    answer: 'While you can handle a motorcycle accident claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+  },
+];
+
+export default function MotorcycleAccidentsPage() {
+  return (
+    <>
+      <Breadcrumbs items={breadcrumbItems} />
+      <PageHero
+        title="Ohio Motorcycle Accident Lawyer"
+        description="Experienced legal representation for motorcycle accident victims seeking compensation. Fighting for the compensation you deserve."
+      />
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Motorcycle Accident Claims in Ohio</h2>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Motorcycle accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the lack of vehicle protection. At Jwayyed Law LLC, we provide experienced representation for motorcycle accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of motorcycle accident cases and the compensation process necessary to help you recover.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Motorcyclists lack the protection of a vehicle, making them extremely vulnerable to serious injuries including traumatic brain injury, spinal cord injury, severe fractures, and fatalities. Motorcycle accidents often result in higher medical costs, longer recovery periods, and greater pain and suffering than typical car accidents. Understanding your rights, the unique aspects of motorcycle accident cases, and the compensation process is essential for maximizing recovery. Early intervention by a skilled motorcycle accident attorney can significantly impact the outcome, ensuring proper documentation, investigation, and maximum compensation.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              The statute of limitations for motorcycle accident personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Motorcycle accident cases often involve complex liability issues including driver negligence, road conditions, and motorcycle-specific factors. Insurance companies often attempt to minimize claims or argue that motorcyclists are partially at fault, making experienced representation essential.
+            </p>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Motorcycle Accident Claims Process</h3>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Understanding the motorcycle accident claims process helps you prepare for what lies ahead:
+            </p>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Immediate Investigation and Documentation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                Immediately after a motorcycle accident, evidence must be preserved including photos of the scene, vehicles, motorcycle damage, your injuries, road conditions, witness contact information, police reports, and helmet condition if applicable. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Medical Treatment and Documentation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                Seeking prompt medical treatment is essential both for your health and your claim. Motorcycle accidents often result in serious injuries requiring extensive medical treatment. Medical records document injuries, treatment, and prognosis. An attorney can help coordinate medical treatment, ensure all injuries are documented, and work with medical providers to establish causation and prognosis. Complete medical documentation is necessary to prove damages including future medical costs and loss of earning capacity.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Insurance Negotiation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                Most motorcycle accident claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims, deny liability, or argue that motorcyclists are partially at fault. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4">Litigation and Trial</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony including accident reconstruction experts, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
+              </p>
+            </div>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Motorcycle Accident Attorney Can Help</h3>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              An experienced motorcycle accident attorney provides comprehensive representation throughout every stage of your claim:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos, witness statements, police reports, surveillance footage, and documenting all injuries and damages</li>
+              <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
+              <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
+              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation, establish liability, and protect your rights throughout the claims process</li>
+              <li><strong>Comprehensive Documentation:</strong> Prepare all documentation, medical records, evidence, and expert reports necessary to support your claim and maximize compensation</li>
+              <li><strong>Expert Consultation:</strong> Consult with medical experts, accident reconstruction experts, economic experts, or other specialists to establish causation, damages, and liability</li>
+              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
+              <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and property damage</li>
+            </ul>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Compensation Available</h3>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Motorcycle accident compensation in Ohio may include various types of damages, often higher than typical car accidents due to severe injuries:
+            </p>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications, long-term care)</li>
+                <li>Lost wages and loss of earning capacity</li>
+                <li>Property damage (motorcycle repair or replacement, damaged gear)</li>
+                <li>Rehabilitation and therapy costs</li>
+                <li>Home modifications for disabilities</li>
+                <li>Other financial losses directly related to the accident</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-gray-900 mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                <li>Pain and suffering</li>
+                <li>Emotional distress</li>
+                <li>Loss of enjoyment of life</li>
+                <li>Loss of consortium (spousal relationship)</li>
+                <li>Disfigurement and scarring</li>
+                <li>Mental anguish</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4">Punitive Damages</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+                In cases involving egregious conduct such as drunk driving, reckless driving, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
+              </p>
+            </div>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Our firm provides dedicated motorcycle accident representation throughout Ohio. We understand that motorcycle accidents can be catastrophic and life-changing. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the unique aspects of motorcycle accident cases, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+              If you have been injured in a motorcycle accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in motorcycle accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+            </p>
+          </div>
+        </div>
+      </section>
+      <FAQ faqs={faqs} />
+      <ContactCTA />
+    </>
+  );
+}
+
