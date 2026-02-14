@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Experienced Estate Planning Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, special needs trusts, and more. Schedule consultation: (614) 285-5482',
-  keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'special needs trusts', 'trusts lawyer Ohio'],
+  description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, asset protection trusts, special needs trusts, and more. Schedule consultation: (614) 285-5482',
+  keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {
     title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-    description: 'Trusts and estate planning in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule a consultation today.',
+    description: 'Trusts and estate planning in Columbus, Cincinnati, Dayton, and throughout Ohio. Asset protection trusts, revocable living trusts, and more. Schedule a consultation today.',
     url: 'https://www.jjlawohio.com/trusts',
   },
   alternates: { canonical: '/trusts' },
@@ -42,6 +42,14 @@ const faqs = [
   {
     question: 'What is the cost of setting up a trust in Ohio?',
     answer: 'The cost of setting up a trust varies depending on the complexity of the trust and the services provided by the attorney. Simple trusts may cost a few hundred dollars, while more complex estate plans could involve higher fees. The investment is worthwhile for the protection and control a trust provides.',
+  },
+  {
+    question: 'What is an asset protection trust in Ohio?',
+    answer: 'An asset protection trust is an irrevocable trust designed to shield assets from future creditors, lawsuits, and legal judgments. While Ohio does not have a domestic asset protection trust statute, Ohio residents can use irrevocable trusts with spendthrift provisions under Ohio Revised Code Chapter 5805 or establish asset protection trusts in jurisdictions with favorable laws. An experienced Ohio trusts attorney can help determine which approach best fits your situation.',
+  },
+  {
+    question: 'Who should consider an asset protection trust?',
+    answer: 'Asset protection trusts are especially valuable for business owners, physicians, real estate investors, and other professionals who face heightened exposure to lawsuits and liability claims. They are also used in Medicaid planning to protect assets while qualifying for long-term care benefits. The trust must be established before any known claims arise — timing and proper structuring are essential to avoid fraudulent transfer challenges.',
   },
 ];
 
@@ -102,7 +110,29 @@ export default function TrustsPage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Spendthrift Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Protect assets from creditors and ensure responsible distribution to beneficiaries.</p>
               </Link>
+              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Asset Protection Trusts</h4>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Shield your wealth from creditors, lawsuits, and future claims while retaining indirect access to trust assets.</p>
+              </Link>
             </div>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Asset Protection Trusts in Ohio</h3>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              An <strong>asset protection trust</strong> is an irrevocable trust designed to shield your wealth from future creditors, lawsuits, and legal judgments. Unlike a standard revocable living trust — which offers probate avoidance but no creditor protection — an asset protection trust places assets beyond the reach of most claimants by transferring legal ownership to the trust. Once properly funded, the assets held inside an asset protection trust are generally no longer considered part of your personal estate for purposes of creditor claims, making this one of the most effective legal strategies available for preserving wealth.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio does not currently have a domestic asset protection trust statute like some states (such as Ohio's neighbors Delaware and Nevada). However, Ohio residents can still establish <strong>asset protection trusts</strong> through several recognized legal mechanisms. Irrevocable trusts with spendthrift provisions under Ohio Revised Code Chapter 5805 can provide meaningful protection against beneficiary creditors. Additionally, Ohio residents may create asset protection trusts in jurisdictions that have favorable domestic asset protection trust (DAPT) laws, provided the trust is properly structured, uses a qualified trustee in that jurisdiction, and complies with applicable state and federal requirements. An experienced Ohio trusts attorney can evaluate your specific circumstances and recommend whether an in-state irrevocable trust with spendthrift protections or an out-of-state asset protection trust is the best fit for your goals.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <strong>Asset protection trusts</strong> are particularly valuable for business owners, physicians, real estate investors, and other professionals who face elevated exposure to lawsuits and liability claims. They are also used in Medicaid planning to protect assets while qualifying for long-term care benefits. It is important to note that asset protection trusts must be established before any known claims or legal actions arise — transferring assets into a trust to avoid an existing or reasonably anticipated creditor can be challenged as a fraudulent transfer under Ohio's Uniform Voidable Transactions Act (Ohio Revised Code Chapter 1336). Proper timing and structuring are essential, which is why working with an attorney who understands both Ohio law and trust planning strategy is critical.
+            </p>
+
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-500 text-sm italic mb-6 leading-relaxed border-l-4 border-orange-300 pl-4">
+              This information is for general educational purposes only and does not constitute legal advice. Asset protection planning involves complex legal and tax considerations that vary based on individual circumstances. Contact Jwayyed Law LLC to discuss your specific situation.
+            </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Your Trusts</h3>
 

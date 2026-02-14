@@ -280,11 +280,10 @@ const navItems: NavItem[] = [
   },
   {
     name: 'Our Firm',
-    href: '/our-law-firm',
+    href: '/our-law-firm/our-attorneys',
     subLinks: [
       { name: 'About Us', href: '/our-law-firm/about-us' },
-      { name: 'Our Attorneys', href: '/our-law-firm/our-attorneys' },
-      { name: 'Testimonials', href: '/our-law-firm/testimonials' },
+      { name: 'Our Staff', href: '/our-law-firm/our-attorneys' },
       { name: 'Blog', href: '/our-law-firm/blog' },
     ],
   },
@@ -292,6 +291,26 @@ const navItems: NavItem[] = [
     name: 'Contact',
     href: '/contact',
   },
+];
+
+// Blog articles for search indexing
+const blogSearchItems: SearchItem[] = [
+  { title: 'What to Do If You\'re Pulled Over for OVI in Ohio', href: '/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio', category: 'Blog', subcategory: 'OVI/DUI' },
+  { title: 'Understanding Ohio\'s Castle Doctrine and Self-Defense Laws', href: '/our-law-firm/blog/ohio-castle-doctrine-self-defense-laws', category: 'Blog', subcategory: 'Criminal Defense' },
+  { title: 'Steps to Take After a Car Accident in Ohio', href: '/our-law-firm/blog/steps-after-car-accident-ohio', category: 'Blog', subcategory: 'Personal Injury' },
+  { title: 'How Ohio\'s New Expungement Laws Could Clear Your Record', href: '/our-law-firm/blog/ohio-new-expungement-laws-clear-record', category: 'Blog', subcategory: 'Criminal Defense' },
+  { title: 'Starting a Business in Ohio: LLC vs. Corporation', href: '/our-law-firm/blog/starting-business-ohio-llc-vs-corporation', category: 'Blog', subcategory: 'Business Law' },
+  { title: 'What to Expect at Your First Court Appearance in Ohio', href: '/our-law-firm/blog/what-to-expect-first-court-appearance-ohio', category: 'Blog', subcategory: 'Ohio Courts' },
+  { title: 'Ohio Slip and Fall Laws: What Property Owners Owe You', href: '/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners', category: 'Blog', subcategory: 'Personal Injury' },
+  { title: 'Protecting Your Rights During a Traffic Stop in Ohio', href: '/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio', category: 'Blog', subcategory: 'Criminal Defense' },
+];
+
+// Team member search entries
+const teamSearchItems: SearchItem[] = [
+  { title: 'Raneem Ali — Legal Assistant', href: '/our-law-firm/our-attorneys/raneem-ali', category: 'Our Staff' },
+  { title: 'Jonathan Cowan — Legal Intern', href: '/our-law-firm/our-attorneys/jonathan-cowan', category: 'Our Staff' },
+  { title: 'Layan Khairi — Legal Intern', href: '/our-law-firm/our-attorneys/layan-khairi', category: 'Our Staff' },
+  { title: 'Mateo Improvola — Legal Intern', href: '/our-law-firm/our-attorneys/mateo-improvola', category: 'Our Staff' },
 ];
 
 // ============================================================================
@@ -309,8 +328,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Build search index once
-  const searchIndex = useMemo(() => buildSearchIndex(navItems), []);
+  // Build search index once (nav items + blog articles + team members)
+  const searchIndex = useMemo(() => [...buildSearchIndex(navItems), ...blogSearchItems, ...teamSearchItems], []);
 
   // Initialize Fuse.js
   const fuse = useMemo(() => {
