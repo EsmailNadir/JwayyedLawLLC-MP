@@ -6,17 +6,16 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Jwayyed Law LLC | Ohio Attorney | Criminal Defense, Estate Planning & Immigration",
+    default: "Jwayyed Law LLC | Ohio Attorney | Criminal Defense, Estate Planning & Business Law",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, immigration, business law, and probate. Call (614) 285-5482.",
+  description: "Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, and probate. Call (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",
     "Ohio lawyer",
     "criminal defense attorney Ohio",
     "estate planning attorney Ohio",
-    "immigration lawyer Ohio",
     "probate attorney Ohio",
     "business law attorney Ohio",
     "traffic violations attorney Ohio",
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com',
     siteName: 'Jwayyed Law LLC',
     title: 'Jwayyed Law LLC | Ohio Attorney',
-    description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, immigration, business law, probate.',
+    description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, probate.',
     images: [
       {
         url: '/assets/Jwayyed_Logo_Inverted.JPEG',
@@ -125,7 +124,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     "serviceType": [
       "Criminal Defense",
       "Estate Planning",
-      "Immigration Law",
       "Business Law",
       "Probate",
       "Traffic Violations",

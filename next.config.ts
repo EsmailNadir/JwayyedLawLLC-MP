@@ -19,6 +19,15 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  async redirects() {
+    return [
+      { source: '/other-services/immigration', destination: '/other-services', permanent: true },
+      { source: '/other-services/immigration-services', destination: '/other-services', permanent: true },
+      { source: '/other-services/green-cards', destination: '/other-services', permanent: true },
+      { source: '/other-services/deportation-defense', destination: '/other-services', permanent: true },
+      { source: '/other-services/citizenship-naturalization', destination: '/other-services', permanent: true },
+    ]
+  },
 }
 
 module.exports = withVideos(nextConfig)

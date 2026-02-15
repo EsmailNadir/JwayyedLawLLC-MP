@@ -196,15 +196,6 @@ const navItems: NavItem[] = [
         ],
       },
       {
-        name: 'Immigration',
-        links: [
-          { name: 'Immigration Services', href: '/other-services/immigration-services' },
-          { name: 'Green Cards', href: '/other-services/green-cards' },
-          { name: 'Citizenship & Naturalization', href: '/other-services/citizenship-naturalization' },
-          { name: 'Deportation Defense', href: '/other-services/deportation-defense' },
-        ],
-      },
-      {
         name: 'Dispute Resolution',
         links: [
           { name: 'Mediation', href: '/other-services/mediation' },
