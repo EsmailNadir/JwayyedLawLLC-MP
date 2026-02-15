@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Main pages
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const },
     { url: '/contact', priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: '/about/legal-assistant', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Our Law Firm
     { url: '/our-law-firm', priority: 0.8, changeFrequency: 'monthly' as const },
@@ -32,7 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/criminal-defense', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/criminal-defense/assault-charges', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/domestic-violence', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/criminal-defense/juvenile-offenses', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/criminal-mischief', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/criminal-damaging', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/criminal-trespass', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/petty-theft', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/resisting-arrest', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/obstruction-of-official-business', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/speeding-tickets', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/driving-under-suspension', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/criminal-defense/no-operators-license', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/criminal-defense/expungement-record-sealing', priority: 0.8, changeFrequency: 'monthly' as const },
     
     // OVI/DUI Defense
@@ -93,7 +103,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/other-services', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/other-services/estate-planning', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/estate-planning-wills', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/other-services/trusts', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/powers-of-attorney', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/guardianships', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/probate', priority: 0.7, changeFrequency: 'monthly' as const },
@@ -103,6 +112,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/other-services/dispute-resolution', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/mediation', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/other-services/arbitration', priority: 0.7, changeFrequency: 'monthly' as const },
+    
+    // Trusts (standalone section, linked from Other Services > Estate Planning)
+    { url: '/trusts', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/trusts/revocable-living-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/irrevocable-life-insurance-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/special-needs-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/dynasty-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/charitable-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/spendthrift-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/medicaid-asset-protection-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/land-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/trusts/qtip-trusts', priority: 0.7, changeFrequency: 'monthly' as const },
     
     // Courts
     { url: '/courts', priority: 0.8, changeFrequency: 'monthly' as const },
