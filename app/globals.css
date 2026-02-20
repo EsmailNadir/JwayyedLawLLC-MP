@@ -7,3 +7,14 @@ body:has(.bg-gray-100) {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Tidio chat: avoid overlap with sticky bottom bar on mobile/tablet (below 1024px) */
+@media (max-width: 1023px) {
+  #tidio-chat-iframe {
+    bottom: 70px !important;
+  }
+
+  #tidio-chat {
+    bottom: 70px !important;
+  }
+}

@@ -51,6 +51,26 @@ export default function CivilPage() {
         title="Ohio Civil Attorney"
         description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Civil disputes, contracts, real estate, landlord-tenant matters, and more."
       />
+
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">Civil Legal Services</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link href="/civil/breach-of-contract" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Breach of Contract</Link>
+            <Link href="/civil/real-estate-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Real Estate Disputes</Link>
+            <Link href="/civil/landlord-tenant-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Landlord–Tenant Disputes</Link>
+            <Link href="/civil/evictions" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Evictions</Link>
+            <Link href="/civil/construction-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Construction Disputes</Link>
+            <Link href="/civil/debt-collection-defense" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Debt Collection Defense</Link>
+            <Link href="/civil/employment-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Employment Disputes</Link>
+            <Link href="/civil/defamation" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Defamation</Link>
+            <Link href="/civil/civil-protection-orders" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Civil Protection Orders</Link>
+            <Link href="/civil/appeals" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Appeals</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">

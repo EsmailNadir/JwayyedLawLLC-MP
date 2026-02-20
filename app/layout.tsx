@@ -3,6 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -148,11 +149,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-grow">
+        <main className="flex-grow pb-20 lg:pb-0">
           {children}
         </main>
 
         <Footer/>
+
+        <Script
+          src="//code.tidio.co/5sutrftwltrkg4rhvjyhg9rth2qvbppx.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

@@ -62,6 +62,26 @@ export default function OVIDefensePage() {
         title="Ohio OVI Attorney"
         description="Experienced legal representation for OVI/DUI charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
       />
+
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">OVI / DUI Defense Services</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link href="/ovi-dui-defense/first-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">First OVI</Link>
+            <Link href="/ovi-dui-defense/second-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Second OVI</Link>
+            <Link href="/ovi-dui-defense/third-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Third OVI</Link>
+            <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">High-Tier OVI</Link>
+            <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Refusal OVI</Link>
+            <Link href="/ovi-dui-defense/underage-ovi" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Underage OVI</Link>
+            <Link href="/ovi-dui-defense/commercial-dui-cdl" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Commercial DUI (CDL)</Link>
+            <Link href="/ovi-dui-defense/ovi-with-accident" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">OVI with Accident</Link>
+            <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Driving Under OVI Suspension</Link>
+            <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Limited Driving Privileges</Link>
+          </div>
+        </div>
+      </section>
+
       <OVIReviews />
 
       <section className="py-16 bg-white">

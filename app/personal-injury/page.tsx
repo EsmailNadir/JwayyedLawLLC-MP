@@ -65,6 +65,27 @@ export default function PersonalInjuryPage() {
         description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Experienced representation for accident victims seeking compensation."
       />
 
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">Personal Injury Services</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link href="/personal-injury/car-accidents" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Car Accidents</Link>
+            <Link href="/personal-injury/truck-accidents" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Truck Accidents</Link>
+            <Link href="/personal-injury/motorcycle-accidents" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Motorcycle Accidents</Link>
+            <Link href="/personal-injury/pedestrian-accidents" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Pedestrian Accidents</Link>
+            <Link href="/personal-injury/slip-and-fall" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Slip and Fall</Link>
+            <Link href="/personal-injury/premises-liability" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Premises Liability</Link>
+            <Link href="/personal-injury/dog-bites" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Dog Bites</Link>
+            <Link href="/personal-injury/medical-malpractice" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Medical Malpractice</Link>
+            <Link href="/personal-injury/nursing-home-abuse" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Nursing Home Abuse</Link>
+            <Link href="/personal-injury/workplace-injuries" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Workplace Injuries</Link>
+            <Link href="/personal-injury/wrongful-death" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Wrongful Death</Link>
+            <Link href="/personal-injury/catastrophic-injuries" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Catastrophic Injuries</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">

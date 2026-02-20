@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import SearchBar from '@/components/SearchBar';
 import { Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -262,8 +261,8 @@ export default function Home() {
     <div className="min-h-screen bg-white font-['Georgia',_'Times_New_Roman',_serif]">
       
       
-      {/* Hero Section with Video Background */}
-      <section className="relative h-[calc(100vh-65px)] overflow-hidden">
+      {/* Hero Section with Video Background — extra bottom padding on mobile so sticky bar doesn't overlap Explore More */}
+      <section className="relative h-[calc(100vh-65px)] min-h-[500px] overflow-hidden pb-24 lg:pb-0">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Video - Hidden on mobile */}
@@ -317,22 +316,17 @@ export default function Home() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Experienced Legal Counsel in Criminal, Traffic, and Civil Law
             </p>
-
-            {/* Search Bar */}
-            <div className="w-full max-w-md mx-auto mb-6 sm:mb-8">
-              <SearchBar className="[&_input]:bg-white/10 [&_input]:backdrop-blur-md [&_input]:border-white/30 [&_input]:text-white [&_input]:placeholder-white/60 [&_input]:focus:bg-white/20 [&_input]:focus:border-white/50 [&_svg]:text-white/60" />
-            </div>
           </div>
           
-          {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16">
-            <Link href="/contact">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+          {/* Call to Action Buttons — Schedule hidden below md/768px; View Our Services full-width on mobile */}
+          <div className="flex flex-col md:flex-row gap-4 justify-center mb-12 sm:mb-16">
+            <Link href="/contact" className="hidden md:inline-flex">
+              <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 Schedule Consultation
               </button>
             </Link>
-            <Link href="/other-services">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+            <Link href="/other-services" className="w-full md:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] w-full bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 View Our Services
               </button>
             </Link>
