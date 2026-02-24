@@ -31,13 +31,13 @@ const ContactPage = () => {
       />
 
       {/* Forms Section */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-        <div className="flex flex-col lg:flex-row gap-8">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
           {/* Request a Consultation — Primary Form */}
           <form
             action="https://formspree.io/f/xyzjyzgv"
             method="POST"
-            className="w-full lg:w-1/2 bg-[#b87333]/[0.03] border border-[#b87333]/20 border-l-4 border-l-[#b87333] shadow-lg p-6 sm:p-8 rounded-xl space-y-5"
+            className="w-full lg:w-1/2 bg-[#b87333]/[0.03] border border-[#b87333]/20 border-l-4 border-l-[#b87333] shadow-lg p-5 sm:p-7 rounded-xl space-y-4 sm:space-y-5"
           >
             <div className="text-center mb-2">
               <h2 className="text-xl sm:text-2xl font-semibold font-['Playfair_Display',_'Georgia',_serif] text-gray-900">
@@ -78,7 +78,7 @@ const ContactPage = () => {
 
             <button
               type="submit"
-              className="w-full bg-[#b87333] text-white px-6 py-3 rounded-lg hover:bg-[#a0632d] transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg"
+              className="w-full bg-[#b87333] text-white px-6 py-3 rounded-xl hover:bg-[#a0632d] transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg active:scale-[0.99]"
             >
               Submit Request
             </button>
@@ -92,7 +92,7 @@ const ContactPage = () => {
           <form
             action="https://formspree.io/f/xyzjyzgv"
             method="POST"
-            className="w-full lg:w-1/2 space-y-5 bg-white shadow-md p-6 sm:p-8 rounded-xl border border-gray-100"
+            className="w-full lg:w-1/2 space-y-4 sm:space-y-5 bg-white shadow-md p-5 sm:p-7 rounded-xl border border-gray-100"
           >
             <h2 className="text-xl sm:text-2xl font-semibold font-['Playfair_Display',_'Georgia',_serif] text-gray-900 mb-2 text-center">
               General Inquiry
@@ -111,7 +111,7 @@ const ContactPage = () => {
             <input type="hidden" name="form_type" value="general_inquiry" />
             <button
               type="submit"
-              className="w-full bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg"
+              className="w-full bg-gray-900 text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg active:scale-[0.99]"
             >
               Submit
             </button>

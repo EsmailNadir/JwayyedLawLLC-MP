@@ -149,7 +149,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-grow pb-20 lg:pb-0">
+        <main className="flex-grow pb-[calc(var(--mobile-sticky-cta-height)+8px)] lg:pb-0">
           {children}
         </main>
 

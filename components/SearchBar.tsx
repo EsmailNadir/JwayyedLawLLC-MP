@@ -453,11 +453,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
             className="
             absolute top-full left-0 right-0 mt-2
             bg-white border border-gray-100 rounded-xl shadow-xl
-            overflow-hidden z-50
+            overflow-hidden z-[130]
             "
         >
           {results.length > 0 ? (
-            <ul className="py-2 max-h-[300px] overflow-y-auto scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <ul className="py-2 max-h-[45vh] sm:max-h-[300px] overflow-y-auto overscroll-contain scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {results.map((result, index) => (
                 <li key={`${result.item.href}-${index}`}>
                   <Link

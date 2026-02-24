@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  --mobile-sticky-cta-height: 80px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body:has(.bg-gray-100) {
   background-color: #f3f4f6;
 }
@@ -8,13 +17,35 @@ body:has(.bg-gray-100) {
   display: none;
 }
 
-/* Tidio chat: avoid overlap with sticky bottom bar on mobile/tablet (below 1024px) */
+/* Fixed widget offsets for mobile/tablet so they don't overlap sticky CTA */
 @media (max-width: 1023px) {
+  :root {
+    --mobile-sticky-cta-height: calc(80px + env(safe-area-inset-bottom));
+  }
+
   #tidio-chat-iframe {
-    bottom: 70px !important;
+    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
+    right: 12px !important;
   }
 
   #tidio-chat {
-    bottom: 70px !important;
+    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
+    right: 12px !important;
+  }
+
+  /* accessiBe/common accessibility launcher selectors */
+  #acsb-trigger,
+  #acsb-trigger-frame,
+  .acsb-trigger,
+  .acsb-widget,
+  [data-acsb] {
+    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
+    right: 12px !important;
+  }
+}
+
+@media (max-width: 1023px) and (max-height: 760px) {
+  :root {
+    --mobile-sticky-cta-height: calc(72px + env(safe-area-inset-bottom));
   }
 }

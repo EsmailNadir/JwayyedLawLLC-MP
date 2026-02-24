@@ -261,8 +261,8 @@ export default function Home() {
     <div className="min-h-screen bg-white font-['Georgia',_'Times_New_Roman',_serif]">
       
       
-      {/* Hero Section with Video Background — extra bottom padding on mobile so sticky bar doesn't overlap Explore More */}
-      <section className="relative h-[calc(100vh-65px)] min-h-[500px] overflow-hidden pb-24 lg:pb-0">
+      {/* Hero Section with Video Background */}
+      <section className="relative h-[calc(100vh-65px)] min-h-[440px] overflow-hidden pb-[calc(var(--mobile-sticky-cta-height)+0.75rem)] lg:pb-0">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Video - Hidden on mobile */}
@@ -308,32 +308,32 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center">
-          <div className="max-w-5xl mx-auto mb-8 sm:mb-12 animate-fade-in">
-            <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 drop-shadow-2xl">
+        <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center pt-6 sm:pt-0">
+          <div className="max-w-5xl mx-auto mb-6 sm:mb-12 animate-fade-in">
+            <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-[2.55rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-3.5 sm:mb-6 drop-shadow-2xl">
               Protecting Your Rights in Ohio
             </h1>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
+            <p className="font-['Inter',_'Arial',_sans-serif] text-[1.05rem] sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Experienced Legal Counsel in Criminal, Traffic, and Civil Law
             </p>
           </div>
           
-          {/* Call to Action Buttons — Schedule hidden below md/768px; View Our Services full-width on mobile */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center mb-12 sm:mb-16">
+          {/* Hero CTA: keep View Our Services visible on mobile; schedule remains desktop/tablet */}
+          <div className="flex flex-col md:flex-row gap-4 justify-center mb-8 sm:mb-16">
             <Link href="/contact" className="hidden md:inline-flex">
               <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 Schedule Consultation
               </button>
             </Link>
-            <Link href="/other-services" className="w-full md:w-auto">
-              <button className="font-['Inter',_'Arial',_sans-serif] w-full bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
+            <Link href="/other-services" className="w-full sm:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 View Our Services
               </button>
             </Link>
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="hidden sm:block absolute bottom-[calc(var(--mobile-sticky-cta-height)+0.75rem)] sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="flex flex-col items-center space-y-2">
               <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white/80">Explore More</span>
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#b87333] rounded-full flex items-center justify-center shadow-lg">

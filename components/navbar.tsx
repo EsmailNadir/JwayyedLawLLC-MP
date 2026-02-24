@@ -22,6 +22,8 @@ const mainNavItems: { name: string; href: string }[] = [
 
 const PHONE = '(614) 285-5482';
 const PHONE_TEL = 'tel:+16142855482';
+const CHAT_WIDGET_SELECTOR = '#tidio-chat, #tidio-chat-iframe';
+const ACCESSIBILITY_WIDGET_SELECTOR = '#acsb-trigger, #acsb-trigger-frame, .acsb-trigger, .acsb-widget, [data-acsb]';
 
 // ============================================================================
 // MAIN NAVBAR
@@ -36,6 +38,33 @@ export default function Navbar() {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const applyWidgetPriority = () => {
+      const isMobileViewport = window.innerWidth < 1024;
+      const hasChatWidget = !!document.querySelector(CHAT_WIDGET_SELECTOR);
+
+      document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
+        (el as HTMLElement).style.display = isMobileViewport && hasChatWidget ? 'none' : '';
+      });
+    };
+
+    applyWidgetPriority();
+
+    const observer = new MutationObserver(applyWidgetPriority);
+    observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+    window.addEventListener('resize', applyWidgetPriority);
+    const intervalId = window.setInterval(applyWidgetPriority, 1500);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', applyWidgetPriority);
+      window.clearInterval(intervalId);
+      document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
+        (el as HTMLElement).style.display = '';
+      });
+    };
   }, []);
 
   return (
@@ -57,7 +86,7 @@ export default function Navbar() {
                   width={130}
                   height={32}
                   priority
-                  className="h-6 sm:h-7 w-auto"
+                  className="h-7 sm:h-7 w-auto"
                 />
               </Link>
 
@@ -112,10 +141,10 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              {/* Mobile/Tablet (below lg): Hamburger only — phone in sticky bar + hamburger menu */}
+              {/* Mobile/Tablet (below lg): compact call + hamburger */}
               <div className="flex lg:hidden items-center gap-2 flex-shrink-0">
                 <button
-                  className="flex flex-col justify-center items-center w-11 h-11 rounded-lg focus:outline-none min-h-[44px] min-w-[44px]"
+                  className="flex flex-col justify-center items-center w-11 h-11 rounded-lg focus:outline-none min-h-[44px] min-w-[44px] active:scale-[0.98] transition-transform"
                   onClick={() => setMobileMenuOpen(true)}
                   aria-label="Open menu"
                 >
@@ -154,20 +183,18 @@ export default function Navbar() {
 
       {/* Sticky Bottom CTA: visible below lg (mobile + tablet); hidden when hamburger open */}
       {!mobileMenuOpen && (
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#2c2c2c] border-t border-gray-700 shadow-lg">
-        <div className="flex gap-2 p-3">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#262626]/95 backdrop-blur border-t border-gray-700 shadow-lg">
+        <div className="flex gap-2 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
           <a
             href={PHONE_TEL}
-            className="flex-1 flex items-center justify-center gap-2 bg-transparent border border-gray-500 text-white hover:bg-gray-600/50 font-semibold py-3 rounded-lg transition-colors min-h-[44px]"
+            className="flex-1 flex flex-col items-center justify-center gap-0.5 bg-transparent border border-gray-500 text-white hover:bg-gray-600/50 font-semibold py-1.5 rounded-xl transition-colors min-h-[44px] active:scale-[0.99] active:bg-gray-600/60"
           >
-            <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            Call Now
+            <span className="text-[14px] leading-none">Call Now</span>
+            <span className="text-[10px] leading-none tracking-[0.02em] text-gray-200">(614) 285-5482</span>
           </a>
           <Link
             href="/contact"
-            className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold py-3 rounded-lg transition-colors min-h-[44px]"
+            className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold py-2 rounded-xl transition-colors min-h-[44px] active:scale-[0.99] active:bg-[#95531f]"
           >
             Book Consultation
           </Link>
@@ -185,12 +212,12 @@ export default function Navbar() {
 function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
-    document.querySelectorAll('#tidio-chat, #tidio-chat-iframe').forEach((el) => {
+    document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
       (el as HTMLElement).style.display = isOpen ? 'none' : '';
     });
     return () => {
       document.body.style.overflow = '';
-      document.querySelectorAll('#tidio-chat, #tidio-chat-iframe').forEach((el) => {
+      document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
         (el as HTMLElement).style.display = '';
       });
     };
@@ -199,7 +226,7 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black/30 backdrop-blur-sm z-[90] transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/30 backdrop-blur-sm z-[110] transition-opacity duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
         onClick={onClose}
@@ -207,7 +234,7 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
       />
 
       <div
-        className={`fixed top-0 right-0 h-full w-[85%] max-w-[360px] bg-white z-[100] transform transition-transform duration-300 ease-out shadow-2xl flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-[85%] max-w-[360px] bg-white z-[120] transform transition-transform duration-300 ease-out shadow-2xl flex flex-col ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -215,7 +242,7 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
           <span className="font-serif font-bold text-xl text-gray-900">JWAYYED LAW</span>
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 active:scale-[0.97] transition-transform"
             aria-label="Close menu"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -242,7 +269,7 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className="block px-4 py-3.5 text-gray-900 font-medium hover:bg-gray-50 hover:text-accent rounded-lg transition-colors"
+                className="block px-4 py-3.5 text-gray-900 font-medium hover:bg-gray-50 hover:text-accent rounded-lg transition-colors active:scale-[0.99]"
               >
                 {item.name}
               </Link>
