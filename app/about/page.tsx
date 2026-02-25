@@ -13,8 +13,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import ContactCTA from "@/components/ContactCTA";
+
+const breadcrumbItems = [{ label: "Meet Attorney Jwayyed", href: "/about" }];
 
 export default function AboutPage() {
   const achievements = [
@@ -104,7 +107,7 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* PageHero */}
+      <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Meet Attorney Jwayyed"
         description="Experienced legal counsel dedicated to protecting your rights throughout Ohio."
