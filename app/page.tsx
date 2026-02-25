@@ -318,13 +318,8 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Hero CTA: keep View Our Services visible on mobile; schedule remains desktop/tablet */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center mb-8 sm:mb-16">
-            <Link href="/contact" className="hidden md:inline-flex">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
-                Schedule Consultation
-              </button>
-            </Link>
+          {/* Hero CTA: single secondary action to explore services */}
+          <div className="flex justify-center mb-8 sm:mb-16">
             <Link href="/other-services" className="w-full sm:w-auto">
               <button className="font-['Inter',_'Arial',_sans-serif] w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 View Our Services

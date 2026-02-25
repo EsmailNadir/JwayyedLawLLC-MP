@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Fuse from 'fuse.js';
 
 // ============================================================================
@@ -310,14 +311,16 @@ const teamSearchItems: SearchItem[] = [
 
 interface SearchBarProps {
   className?: string;
+  onNavigate?: () => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate }) => {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
 
   // Build search index once (nav items + blog articles + team members)
   const searchIndex = useMemo(() => [...buildSearchIndex(navItems), ...blogSearchItems, ...teamSearchItems], []);
@@ -358,6 +361,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
     setSelectedIndex(0);
   }, [results]);
 
+  // Prefetch likely targets so click-through feels instant.
+  useEffect(() => {
+    if (!isOpen || results.length === 0) return;
+    results.slice(0, 5).forEach((result) => {
+      router.prefetch(result.item.href);
+    });
+  }, [isOpen, results, router]);
+
   // Handle keyboard navigation
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (!isOpen || results.length === 0) return;
@@ -374,7 +385,12 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
       case 'Enter':
         e.preventDefault();
         if (results[selectedIndex]) {
-          window.location.href = results[selectedIndex].item.href;
+          const href = results[selectedIndex].item.href;
+          setQuery('');
+          setIsOpen(false);
+          inputRef.current?.blur();
+          onNavigate?.();
+          router.push(href);
         }
         break;
       case 'Escape':
@@ -390,9 +406,12 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
     setIsOpen(value.length >= 2);
   };
 
-  const handleResultClick = () => {
+  const handleResultClick = (href: string) => {
     setQuery('');
     setIsOpen(false);
+    inputRef.current?.blur();
+    onNavigate?.();
+    router.push(href);
   };
 
   return (
@@ -410,7 +429,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
           className="
             w-full pl-10 pr-4 py-2.5 
             bg-gray-50 border border-gray-200 rounded-lg
-            text-sm text-gray-900 placeholder-gray-400
+            text-base sm:text-sm text-gray-900 placeholder-gray-400
             focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500
             transition-all duration-200
           "
@@ -462,7 +481,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '' }) => {
                 <li key={`${result.item.href}-${index}`}>
                   <Link
                     href={result.item.href}
-                    onClick={handleResultClick}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleResultClick(result.item.href);
+                    }}
                     className={`
                       flex flex-col px-4 py-3 transition-colors
                       ${index === selectedIndex ? 'bg-orange-50' : 'hover:bg-gray-50'}

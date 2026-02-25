@@ -149,7 +149,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-grow pb-[calc(var(--mobile-sticky-cta-height)+8px)] lg:pb-0">
+        <main className="flex-grow bg-[#2c2c2c] lg:bg-transparent pb-[calc(var(--mobile-sticky-cta-height)+8px)] lg:pb-0">
           {children}
         </main>
 
@@ -157,7 +157,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <Script
           src="//code.tidio.co/5sutrftwltrkg4rhvjyhg9rth2qvbppx.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
       </body>
     </html>

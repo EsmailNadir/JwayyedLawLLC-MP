@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import { Phone } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 
 // ============================================================================
@@ -33,6 +35,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchExpanded, setSearchExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
+  const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -41,31 +45,46 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const applyWidgetPriority = () => {
+    const syncWidgetVisibility = () => {
       const isMobileViewport = window.innerWidth < 1024;
       const hasChatWidget = !!document.querySelector(CHAT_WIDGET_SELECTOR);
 
       document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
         (el as HTMLElement).style.display = isMobileViewport && hasChatWidget ? 'none' : '';
       });
+
+      // Only reset display in case the mobile drawer previously hid widgets.
+      // Do not override pointer/visibility/opacity; Tidio controls those and uses a full-screen container.
+      if (!isMobileViewport) {
+        document.querySelectorAll(CHAT_WIDGET_SELECTOR).forEach((el) => {
+          const element = el as HTMLElement;
+          element.style.display = '';
+        });
+      }
     };
 
-    applyWidgetPriority();
+    syncWidgetVisibility();
 
-    const observer = new MutationObserver(applyWidgetPriority);
-    observer.observe(document.body, { childList: true, subtree: true, attributes: true });
-    window.addEventListener('resize', applyWidgetPriority);
-    const intervalId = window.setInterval(applyWidgetPriority, 1500);
+    const observer = new MutationObserver(syncWidgetVisibility);
+    observer.observe(document.body, { childList: true, subtree: true });
+    window.addEventListener('resize', syncWidgetVisibility);
 
     return () => {
       observer.disconnect();
-      window.removeEventListener('resize', applyWidgetPriority);
-      window.clearInterval(intervalId);
+      window.removeEventListener('resize', syncWidgetVisibility);
       document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
         (el as HTMLElement).style.display = '';
       });
     };
   }, []);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    mainNavItems.forEach((item) => {
+      router.prefetch(item.href);
+    });
+    router.prefetch('/contact');
+  }, [mobileMenuOpen, router]);
 
   return (
     <>
@@ -125,19 +144,20 @@ export default function Navbar() {
               {!searchExpanded && <div className="hidden lg:block flex-1 max-w-md" />}
 
               {/* Phone + CTA — desktop only (lg+); hidden on mobile/tablet (sticky bar handles CTAs on mobile) */}
-              <div className="hidden lg:flex items-center gap-3 flex-shrink-0 relative z-10">
+              <div className="hidden lg:flex items-center flex-shrink-0 relative z-10">
                 <a
                   href={PHONE_TEL}
-                  className="flex items-center gap-1.5 text-gray-700 hover:text-accent font-medium text-sm whitespace-nowrap"
+                  className="inline-flex items-center gap-1.5 text-[#b87333] hover:opacity-80 text-sm font-medium whitespace-nowrap transition-opacity border-r border-gray-200 pr-4 mr-4"
+                  aria-label={`Call ${PHONE}`}
                 >
-                  <span className="text-accent" aria-hidden>📞</span>
-                  {PHONE}
+                  <Phone className="w-4 h-4" strokeWidth={1.9} aria-hidden="true" />
+                  <span>{PHONE}</span>
                 </a>
                 <Link
                   href="/contact"
-                  className="bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold text-sm px-4 py-2 rounded-md transition-colors whitespace-nowrap"
+                  className="bg-[#b87333] hover:bg-[#a0622b] text-white text-sm font-semibold px-4 py-2 rounded-md shadow-sm transition-colors duration-200 whitespace-nowrap"
                 >
-                  Book a Consultation
+                  Schedule Consultation
                 </Link>
               </div>
 
@@ -147,6 +167,7 @@ export default function Navbar() {
                   className="flex flex-col justify-center items-center w-11 h-11 rounded-lg focus:outline-none min-h-[44px] min-w-[44px] active:scale-[0.98] transition-transform"
                   onClick={() => setMobileMenuOpen(true)}
                   aria-label="Open menu"
+                  style={{ touchAction: 'manipulation' }}
                 >
                   <span className="block w-6 h-0.5 bg-gray-800" />
                   <span className="block w-6 h-0.5 bg-gray-800 mt-1.5" />
@@ -178,7 +199,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       <MobileDrawer
         isOpen={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
+        onClose={closeMobileMenu}
       />
 
       {/* Sticky Bottom CTA: visible below lg (mobile + tablet); hidden when hamburger open */}
@@ -196,7 +217,7 @@ export default function Navbar() {
             href="/contact"
             className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold py-2 rounded-xl transition-colors min-h-[44px] active:scale-[0.99] active:bg-[#95531f]"
           >
-            Book Consultation
+            Schedule Consultation
           </Link>
         </div>
       </div>
@@ -210,6 +231,9 @@ export default function Navbar() {
 // ============================================================================
 
 function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const pathname = usePathname();
+  const previousPathnameRef = useRef(pathname);
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
@@ -222,6 +246,14 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
       });
     };
   }, [isOpen]);
+
+  // Ensure drawer closes only after route/path change (including search result clicks).
+  useEffect(() => {
+    if (previousPathnameRef.current !== pathname && isOpen) {
+      onClose();
+    }
+    previousPathnameRef.current = pathname;
+  }, [pathname, onClose]);
 
   return (
     <>
@@ -253,13 +285,14 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
 
         <div className="flex-1 overflow-y-auto p-4 flex flex-col">
           {/* Phone at top */}
-          <a href={PHONE_TEL} onClick={onClose} className="flex items-center gap-2 text-[#b87333] font-semibold text-lg mb-6">
-            <span>📞</span> {PHONE}
+          <a href={PHONE_TEL} onClick={onClose} className="flex items-center gap-2 text-[#b87333] font-medium text-base mb-4">
+            <Phone className="w-4 h-4" strokeWidth={1.9} aria-hidden="true" />
+            <span>{PHONE}</span>
           </a>
 
           {/* Search in mobile menu */}
           <div className="mb-6">
-            <SearchBar />
+            <SearchBar onNavigate={onClose} />
           </div>
 
           {/* 8 nav items */}
@@ -276,13 +309,13 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
             ))}
           </nav>
 
-          {/* Full-width Book a Consultation at bottom of menu */}
+          {/* Full-width Schedule Consultation at bottom of menu */}
           <Link
             href="/contact"
             onClick={onClose}
             className="mt-4 block w-full text-center bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold py-3.5 rounded-lg transition-colors"
           >
-            Book a Consultation
+            Schedule Consultation
           </Link>
         </div>
       </div>

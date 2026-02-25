@@ -49,3 +49,22 @@ body:has(.bg-gray-100) {
     --mobile-sticky-cta-height: calc(72px + env(safe-area-inset-bottom));
   }
 }
+
+/* Desktop: constrain Tidio chat panel so it doesn't dominate hero/header content */
+@media (min-width: 1024px) {
+  #tidio-chat {
+    left: auto !important;
+    top: auto !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    max-height: calc(100dvh - 120px) !important;
+  }
+
+  #tidio-chat-iframe,
+  #tidio-chat iframe[src*="tidio"],
+  #tidio-chat iframe,
+  iframe[title*="Tidio"],
+  iframe[title*="tidio"] {
+    max-height: calc(100dvh - 120px) !important;
+  }
+}
