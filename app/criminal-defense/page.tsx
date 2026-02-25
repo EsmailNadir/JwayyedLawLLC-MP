@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
+import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
@@ -64,20 +65,19 @@ export default function CriminalDefensePage() {
       {/* Sub-Services Grid */}
       <section className="py-8 bg-gray-50 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">Criminal Defense Services</h2>
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Criminal Defense Services
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <Link href="/criminal-defense/assault-charges" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Assault Charges</Link>
-            <Link href="/criminal-defense/domestic-violence" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Domestic Violence</Link>
-            <Link href="/criminal-defense/criminal-mischief" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Criminal Mischief</Link>
-            <Link href="/criminal-defense/criminal-damaging" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Criminal Damaging</Link>
-            <Link href="/criminal-defense/criminal-trespass" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Criminal Trespass</Link>
-            <Link href="/criminal-defense/petty-theft" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Petty Theft</Link>
-            <Link href="/criminal-defense/resisting-arrest" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Resisting Arrest</Link>
-            <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Obstruction of Official Business</Link>
-            <Link href="/criminal-defense/speeding-tickets" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Speeding Tickets</Link>
-            <Link href="/criminal-defense/driving-under-suspension" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Driving Under Suspension</Link>
-            <Link href="/criminal-defense/no-operators-license" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">No Operator&apos;s License</Link>
-            <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Expungement / Record Sealing</Link>
+            {criminalDefenseServices.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+              >
+                {service.title}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

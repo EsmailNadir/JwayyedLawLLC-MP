@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
+import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Other Legal Services | Estate Planning, Probate, Dispute Resolution | Jwayyed Law LLC',
@@ -37,33 +38,20 @@ export default function OtherServicesPage() {
             <LocationsWeServe title="Other Services" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <Link href="/other-services/estate-planning" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-3">Estate Planning</h3>
-                <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Wills, trusts, powers of attorney, and guardianships to protect your legacy.</p>
-                <ul className="space-y-2 text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
-                  <li>• Estate Planning & Wills</li>
-                  <li>• Trusts</li>
-                  <li>• Powers of Attorney</li>
-                  <li>• Guardianships</li>
-                </ul>
-              </Link>
-              <Link href="/other-services/probate" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-3">Probate</h3>
-                <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Probate administration, will contests, and estate disputes.</p>
-                <ul className="space-y-2 text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
-                  <li>• Probate Administration</li>
-                  <li>• Will Contests</li>
-                  <li>• Estate Disputes</li>
-                </ul>
-              </Link>
-              <Link href="/other-services/dispute-resolution" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-3">Dispute Resolution</h3>
-                <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Alternative dispute resolution through mediation and arbitration.</p>
-                <ul className="space-y-2 text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
-                  <li>• Mediation</li>
-                  <li>• Arbitration</li>
-                </ul>
-              </Link>
+              {otherServices.map((service) => (
+                <Link
+                  key={service.href}
+                  href={service.href}
+                  className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all"
+                >
+                  <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-3">
+                    {service.title}
+                  </h3>
+                  {service.description && (
+                    <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">{service.description}</p>
+                  )}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

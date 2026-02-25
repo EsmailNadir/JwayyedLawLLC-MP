@@ -312,15 +312,29 @@ const teamSearchItems: SearchItem[] = [
 interface SearchBarProps {
   className?: string;
   onNavigate?: () => void;
+  autoFocus?: boolean;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoFocus }) => {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
+
+  // Ensure the input is actually focused when autoFocus is requested (e.g., when navbar toggles it open).
+  useEffect(() => {
+    if (!autoFocus) return;
+    const id = window.setTimeout(() => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+        const length = inputRef.current.value.length;
+        inputRef.current.setSelectionRange?.(length, length);
+      }
+    }, 10);
+    return () => window.clearTimeout(id);
+  }, [autoFocus]);
 
   // Build search index once (nav items + blog articles + team members)
   const searchIndex = useMemo(() => [...buildSearchIndex(navItems), ...blogSearchItems, ...teamSearchItems], []);
@@ -426,6 +440,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate }) => 
           onFocus={() => query.length >= 2 && setIsOpen(true)}
           onKeyDown={handleKeyDown}
           placeholder="Search services..."
+          autoFocus={autoFocus}
           className="
             w-full pl-10 pr-4 py-2.5 
             bg-gray-50 border border-gray-200 rounded-lg

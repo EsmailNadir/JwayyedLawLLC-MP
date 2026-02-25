@@ -256,13 +256,28 @@ const reviews = [
   }
 ];
 
+const MAX_REVIEW_LENGTH = 230;
+const REVIEW_START_LENGTH = 120;
+const REVIEW_END_LENGTH = 80;
+
+function truncateReview(text: string): string {
+  if (text.length <= MAX_REVIEW_LENGTH) {
+    return text;
+  }
+
+  const start = text.slice(0, REVIEW_START_LENGTH).trimEnd();
+  const end = text.slice(-REVIEW_END_LENGTH).trimStart();
+
+  return `${start}... ${end}`;
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-['Georgia',_'Times_New_Roman',_serif]">
       
       
       {/* Hero Section with Video Background */}
-      <section className="relative h-[calc(100vh-65px)] min-h-[440px] overflow-hidden pb-[calc(var(--mobile-sticky-cta-height)+0.75rem)] lg:pb-0">
+      <section className="relative h-[calc(100vh-65px)] min-h-[440px] overflow-hidden pb-4 lg:pb-0">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Video - Hidden on mobile */}
@@ -320,7 +335,7 @@ export default function Home() {
           
           {/* Hero CTA: single secondary action to explore services */}
           <div className="flex justify-center mb-8 sm:mb-16">
-            <Link href="/other-services" className="w-full sm:w-auto">
+            <Link href="/services" className="w-full sm:w-auto">
               <button className="font-['Inter',_'Arial',_sans-serif] w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 View Our Services
               </button>
@@ -328,7 +343,7 @@ export default function Home() {
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="hidden sm:block absolute bottom-[calc(var(--mobile-sticky-cta-height)+0.75rem)] sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="flex flex-col items-center space-y-2">
               <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white/80">Explore More</span>
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#b87333] rounded-full flex items-center justify-center shadow-lg">
@@ -428,7 +443,7 @@ export default function Home() {
 
                   {/* Review Text */}
                   <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
-                    &ldquo;{review.text}&rdquo;
+                    &ldquo;{truncateReview(review.text)}&rdquo;
                   </blockquote>
 
                   {/* Reviewer Name */}

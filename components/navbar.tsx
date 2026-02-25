@@ -33,7 +33,6 @@ const ACCESSIBILITY_WIDGET_SELECTOR = '#acsb-trigger, #acsb-trigger-frame, .acsb
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchExpanded, setSearchExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
   const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
@@ -109,39 +108,14 @@ export default function Navbar() {
                 />
               </Link>
 
-              {/* Search - expand on click (desktop lg+) */}
+              {/* Search - desktop (lg+): always-visible search input, like the mobile drawer */}
               <div className="hidden lg:flex items-center flex-1 max-w-md justify-center">
-                {searchExpanded ? (
-                  <div className="w-full flex items-center gap-2">
-                    <button
-                      onClick={() => setSearchExpanded(false)}
-                      className="flex-shrink-0 text-gray-400 hover:text-gray-600 p-1"
-                      aria-label="Close search"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                    <div className="flex-1 min-w-0">
-                      <SearchBar className="[&_input]:py-2 [&_input]:text-sm" />
-                    </div>
+                <div className="w-full flex items-center gap-2">
+                  <div className="flex-1 min-w-0">
+                    <SearchBar className="[&_input]:py-2 [&_input]:text-sm" />
                   </div>
-                ) : (
-                  <button
-                    onClick={() => setSearchExpanded(true)}
-                    className="flex items-center gap-2 text-gray-500 hover:text-accent transition-colors"
-                    aria-label="Open search"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                    <span className="text-sm text-gray-500">Search...</span>
-                  </button>
-                )}
+                </div>
               </div>
-
-              {/* Spacer when search collapsed */}
-              {!searchExpanded && <div className="hidden lg:block flex-1 max-w-md" />}
 
               {/* Phone + CTA — desktop only (lg+); hidden on mobile/tablet (sticky bar handles CTAs on mobile) */}
               <div className="hidden lg:flex items-center flex-shrink-0 relative z-10">
@@ -201,27 +175,6 @@ export default function Navbar() {
         isOpen={mobileMenuOpen}
         onClose={closeMobileMenu}
       />
-
-      {/* Sticky Bottom CTA: visible below lg (mobile + tablet); hidden when hamburger open */}
-      {!mobileMenuOpen && (
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#262626]/95 backdrop-blur border-t border-gray-700 shadow-lg">
-        <div className="flex gap-3 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
-          <a
-            href={PHONE_TEL}
-            className="flex-1 flex flex-col items-center justify-center gap-1 bg-transparent border border-gray-500 text-white hover:bg-gray-600/50 font-semibold py-2.5 rounded-xl transition-colors min-h-[52px] active:scale-[0.99] active:bg-gray-600/60"
-          >
-            <span className="text-[14px] leading-none">Call Now</span>
-            <span className="text-[9px] leading-tight tracking-[0.02em] text-gray-200">(614) 285-5482</span>
-          </a>
-          <Link
-            href="/contact"
-            className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white text-[13px] font-semibold py-3 rounded-xl transition-colors min-h-[52px] active:scale-[0.99] active:bg-[#95531f]"
-          >
-            Schedule Consultation
-          </Link>
-        </div>
-      </div>
-      )}
     </>
   );
 }

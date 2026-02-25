@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --mobile-sticky-cta-height: 80px;
-}
-
 html,
 body {
   overflow-x: hidden;
@@ -17,23 +13,14 @@ body:has(.bg-gray-100) {
   display: none;
 }
 
-/* Fixed widget offsets for mobile/tablet so they don't overlap sticky CTA */
 @media (max-width: 1023px) {
-  :root {
-    --mobile-sticky-cta-height: calc(80px + env(safe-area-inset-bottom));
-  }
-
   body.mobile-drawer-open nav[aria-label="Breadcrumb"] {
     display: none !important;
   }
 
-  #tidio-chat-iframe {
-    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
-    right: 12px !important;
-  }
-
+  #tidio-chat-iframe,
   #tidio-chat {
-    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
+    bottom: 16px !important;
     right: 12px !important;
   }
 
@@ -43,14 +30,8 @@ body:has(.bg-gray-100) {
   .acsb-trigger,
   .acsb-widget,
   [data-acsb] {
-    bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
+    bottom: 16px !important;
     right: 12px !important;
-  }
-}
-
-@media (max-width: 1023px) and (max-height: 760px) {
-  :root {
-    --mobile-sticky-cta-height: calc(72px + env(safe-area-inset-bottom));
   }
 }
 

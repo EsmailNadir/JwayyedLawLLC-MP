@@ -5,6 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
+import { civilServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
@@ -55,18 +56,19 @@ export default function CivilPage() {
       {/* Sub-Services Grid */}
       <section className="py-8 bg-gray-50 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">Civil Legal Services</h2>
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Civil Legal Services
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <Link href="/civil/breach-of-contract" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Breach of Contract</Link>
-            <Link href="/civil/real-estate-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Real Estate Disputes</Link>
-            <Link href="/civil/landlord-tenant-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Landlord–Tenant Disputes</Link>
-            <Link href="/civil/evictions" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Evictions</Link>
-            <Link href="/civil/construction-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Construction Disputes</Link>
-            <Link href="/civil/debt-collection-defense" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Debt Collection Defense</Link>
-            <Link href="/civil/employment-disputes" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Employment Disputes</Link>
-            <Link href="/civil/defamation" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Defamation</Link>
-            <Link href="/civil/civil-protection-orders" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Civil Protection Orders</Link>
-            <Link href="/civil/appeals" className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900">Appeals</Link>
+            {civilServices.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+              >
+                {service.title}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

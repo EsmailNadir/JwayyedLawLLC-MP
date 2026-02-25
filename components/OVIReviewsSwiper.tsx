@@ -23,6 +23,21 @@ export const oviReviews = [
   { name: "Ace Lomax", rating: 5, platform: "Google", text: "Great guy will fight for your freedom best experience ever thank you again God bless." },
 ];
 
+const MAX_REVIEW_LENGTH = 230;
+const REVIEW_START_LENGTH = 120;
+const REVIEW_END_LENGTH = 80;
+
+function truncateReview(text: string): string {
+  if (text.length <= MAX_REVIEW_LENGTH) {
+    return text;
+  }
+
+  const start = text.slice(0, REVIEW_START_LENGTH).trimEnd();
+  const end = text.slice(-REVIEW_END_LENGTH).trimStart();
+
+  return `${start}... ${end}`;
+}
+
 export default function OVIReviewsSwiper() {
   return (
     <Swiper
@@ -50,7 +65,7 @@ export default function OVIReviewsSwiper() {
               {review.platform}
             </span>
             <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
-              &ldquo;{review.text}&rdquo;
+              &ldquo;{truncateReview(review.text)}&rdquo;
             </blockquote>
             <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4">
               — {review.name}
