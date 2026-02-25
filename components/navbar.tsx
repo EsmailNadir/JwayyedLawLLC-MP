@@ -93,11 +93,11 @@ export default function Navbar() {
         }`}
       >
         {/* TOP BAR: Logo | Search | Phone | CTA */}
-        <div className="border-b border-gray-100">
+        <div className="relative border-b border-gray-100">
           <div className="max-w-[1440px] mx-auto px-3 sm:px-4 lg:px-6">
             <div className="flex items-center justify-between h-14 gap-2 sm:gap-4 min-w-0 overflow-visible">
               {/* Logo */}
-              <Link href="/" className="flex-shrink-0 min-w-0">
+              <Link href="/" className="flex-shrink-0 min-w-0 relative z-10">
                 <Image
                   src="/assets/Jwayyed_Logo_Inverted.JPEG"
                   alt="Jwayyed Law LLC"
@@ -108,16 +108,16 @@ export default function Navbar() {
                 />
               </Link>
 
-              {/* Search - desktop (lg+): always-visible search input, like the mobile drawer */}
-              <div className="hidden lg:flex items-center flex-1 max-w-md justify-center">
-                <div className="w-full flex items-center gap-2">
-                  <div className="flex-1 min-w-0">
-                    <SearchBar className="[&_input]:py-2 [&_input]:text-sm" />
-                  </div>
+              {/* Search - desktop (lg+): absolutely centered on full navbar width */}
+              <div
+                className="hidden lg:flex absolute left-1/2 -translate-x-1/2 top-0 bottom-0 items-center justify-center w-full max-w-[min(28rem,calc(100vw-22rem))] px-2 pointer-events-none"
+              >
+                <div className="w-full max-w-md pointer-events-auto">
+                  <SearchBar className="[&_input]:py-2 [&_input]:text-sm" />
                 </div>
               </div>
 
-              {/* Phone + CTA — desktop only (lg+); hidden on mobile/tablet (sticky bar handles CTAs on mobile) */}
+              {/* Phone + CTA — desktop only (lg+); hidden on mobile/tablet */}
               <div className="hidden lg:flex items-center flex-shrink-0 relative z-10">
                 <a
                   href={PHONE_TEL}

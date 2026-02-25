@@ -24,6 +24,10 @@ const OVIReviews: React.FC = () => {
         <OVIReviewsSwiper />
 
         <style>{`
+          .testimonials-swiper .swiper-pagination {
+            margin-top: 1.25rem;
+            position: relative;
+          }
           .testimonials-swiper .swiper-pagination-bullet {
             background: rgba(255, 255, 255, 0.3);
             opacity: 1;

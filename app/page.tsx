@@ -424,30 +424,30 @@ export default function Home() {
             autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
             pagination={{ clickable: true }}
             loop={true}
-            className="testimonials-swiper pb-12"
+            className="testimonials-swiper pb-16"
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-full flex flex-col">
-                  {/* Stars */}
-                  <div className="flex items-center space-x-1 mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
-                    ))}
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-[300px] flex flex-col">
+                  {/* Stars + Badge (flex-shrink-0) */}
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center space-x-1 mb-3">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                      ))}
+                    </div>
+                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit block mb-4">
+                      {review.platform}
+                    </span>
                   </div>
 
-                  {/* Platform Badge */}
-                  <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit mb-4">
-                    {review.platform}
-                  </span>
-
-                  {/* Review Text */}
-                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
+                  {/* Testimonial Text (flex-1, overflow-hidden, no scrollbar) */}
+                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 min-h-0 overflow-hidden italic">
                     &ldquo;{truncateReview(review.text)}&rdquo;
                   </blockquote>
 
-                  {/* Reviewer Name */}
-                  <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4">
+                  {/* Reviewer Name (flex-shrink-0, mt-auto) */}
+                  <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4 flex-shrink-0 mt-auto">
                     — {review.name}
                   </cite>
                 </div>
@@ -455,8 +455,12 @@ export default function Home() {
             ))}
           </Swiper>
 
-          {/* Custom Swiper pagination color */}
+          {/* Custom Swiper pagination color and spacing so dots don't touch cards */}
           <style>{`
+            .testimonials-swiper .swiper-pagination {
+              margin-top: 1.25rem;
+              position: relative;
+            }
             .testimonials-swiper .swiper-pagination-bullet {
               background: rgba(255, 255, 255, 0.3);
               opacity: 1;
