@@ -205,17 +205,17 @@ export default function Navbar() {
       {/* Sticky Bottom CTA: visible below lg (mobile + tablet); hidden when hamburger open */}
       {!mobileMenuOpen && (
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#262626]/95 backdrop-blur border-t border-gray-700 shadow-lg">
-        <div className="flex gap-2 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+        <div className="flex gap-3 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
           <a
             href={PHONE_TEL}
-            className="flex-1 flex flex-col items-center justify-center gap-0.5 bg-transparent border border-gray-500 text-white hover:bg-gray-600/50 font-semibold py-1.5 rounded-xl transition-colors min-h-[44px] active:scale-[0.99] active:bg-gray-600/60"
+            className="flex-1 flex flex-col items-center justify-center gap-1 bg-transparent border border-gray-500 text-white hover:bg-gray-600/50 font-semibold py-2.5 rounded-xl transition-colors min-h-[52px] active:scale-[0.99] active:bg-gray-600/60"
           >
             <span className="text-[14px] leading-none">Call Now</span>
-            <span className="text-[10px] leading-none tracking-[0.02em] text-gray-200">(614) 285-5482</span>
+            <span className="text-[9px] leading-tight tracking-[0.02em] text-gray-200">(614) 285-5482</span>
           </a>
           <Link
             href="/contact"
-            className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white font-semibold py-2 rounded-xl transition-colors min-h-[44px] active:scale-[0.99] active:bg-[#95531f]"
+            className="flex-1 flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a0622b] text-white text-[13px] font-semibold py-3 rounded-xl transition-colors min-h-[52px] active:scale-[0.99] active:bg-[#95531f]"
           >
             Schedule Consultation
           </Link>
