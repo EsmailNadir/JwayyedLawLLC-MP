@@ -23,6 +23,10 @@ body:has(.bg-gray-100) {
     --mobile-sticky-cta-height: calc(80px + env(safe-area-inset-bottom));
   }
 
+  body.mobile-drawer-open nav[aria-label="Breadcrumb"] {
+    display: none !important;
+  }
+
   #tidio-chat-iframe {
     bottom: calc(var(--mobile-sticky-cta-height) + 12px) !important;
     right: 12px !important;

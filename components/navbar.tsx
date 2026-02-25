@@ -236,11 +236,13 @@ function MobileDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
+    document.body.classList.toggle('mobile-drawer-open', isOpen);
     document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
       (el as HTMLElement).style.display = isOpen ? 'none' : '';
     });
     return () => {
       document.body.style.overflow = '';
+      document.body.classList.remove('mobile-drawer-open');
       document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
         (el as HTMLElement).style.display = '';
       });
