@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Star, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -342,15 +342,6 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Scroll Down Indicator */}
-          <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="flex flex-col items-center space-y-2">
-              <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white/80">Explore More</span>
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#b87333] rounded-full flex items-center justify-center shadow-lg">
-                <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
