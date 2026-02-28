@@ -58,7 +58,7 @@ export default function AnnouncementBar() {
       aria-label="Award announcement"
       className={`announcement-bar-wrapper overflow-hidden transition-[max-height] duration-300 ease-out ${isDismissing ? 'max-h-0' : hasAnimatedIn ? 'max-h-[38px]' : 'max-h-0'}`}
     >
-      <div className="relative bg-gradient-to-r from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] border-b border-[#b87333]/30 text-white text-xs sm:text-sm h-[38px] flex items-center justify-center px-4 sm:px-6 pr-12 sm:pr-14">
+      <div className="relative bg-gradient-to-r from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] border-b border-[#b87333]/30 text-white text-xs sm:text-sm h-[38px] flex items-center justify-center px-4 sm:px-6 pr-14 sm:pr-14">
         {/* Shimmer overlay */}
         <div
           className="absolute inset-0 pointer-events-none overflow-hidden"
@@ -91,7 +91,7 @@ export default function AnnouncementBar() {
         <button
           type="button"
           onClick={handleDismiss}
-          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#b87333]/50 focus:ring-offset-2 focus:ring-offset-[#0f0f0f]"
+          className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#b87333]/50 focus:ring-offset-2 focus:ring-offset-[#0f0f0f]"
           aria-label="Close announcement"
         >
           <X className="w-4 h-4" strokeWidth={2.5} aria-hidden="true" />

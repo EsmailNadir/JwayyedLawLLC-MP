@@ -20,8 +20,8 @@ body:has(.bg-gray-100) {
 
   #tidio-chat-iframe,
   #tidio-chat {
-    bottom: 24px !important;
-    right: 24px !important;
+    bottom: 40px !important;
+    right: 20px !important;
   }
 
   /* accessiBe/common accessibility launcher selectors */
