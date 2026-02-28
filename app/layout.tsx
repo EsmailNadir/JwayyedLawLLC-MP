@@ -1,4 +1,6 @@
+import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
+import TidioChatLabelHide from "@/components/TidioChatLabelHide";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -147,6 +149,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="flex flex-col min-h-screen">
+        <AnnouncementBar />
         <Navbar />
 
         <main className="flex-grow">
@@ -159,6 +162,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           src="//code.tidio.co/5sutrftwltrkg4rhvjyhg9rth2qvbppx.js"
           strategy="afterInteractive"
         />
+        <TidioChatLabelHide />
       </body>
     </html>
   );

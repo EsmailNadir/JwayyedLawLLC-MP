@@ -20,8 +20,8 @@ body:has(.bg-gray-100) {
 
   #tidio-chat-iframe,
   #tidio-chat {
-    bottom: 16px !important;
-    right: 12px !important;
+    bottom: 24px !important;
+    right: 24px !important;
   }
 
   /* accessiBe/common accessibility launcher selectors */
@@ -35,13 +35,40 @@ body:has(.bg-gray-100) {
   }
 }
 
+/* Announcement bar slide-down on load */
+@keyframes announcement-slide-down {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 38px;
+    opacity: 1;
+  }
+}
+
+/* Announcement bar shimmer animation */
+@keyframes announcement-shimmer {
+  0%, 100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
 /* Desktop: constrain Tidio chat panel so it doesn't dominate hero/header content */
 @media (min-width: 1024px) {
   #tidio-chat {
     left: auto !important;
     top: auto !important;
-    right: 16px !important;
-    bottom: 16px !important;
+    right: 24px !important;
+    bottom: 24px !important;
     max-height: calc(100dvh - 120px) !important;
   }
 
