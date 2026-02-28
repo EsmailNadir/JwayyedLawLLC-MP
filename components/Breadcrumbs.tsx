@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
 
@@ -43,13 +41,14 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ol className="flex items-center space-x-2 text-sm">
             <li>
-              <Link
+              <a
                 href="/"
-                className="text-gray-600 hover:text-orange-500 transition-colors"
+                className="inline-flex items-center gap-1.5 px-2 py-1 -mx-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-gray-200/60 transition-colors min-h-[32px] cursor-pointer pointer-events-auto"
                 aria-label="Home"
               >
                 <Home className="w-4 h-4" />
-              </Link>
+                <span className="font-medium font-['Inter',_'Arial',_sans-serif]">Home</span>
+              </a>
             </li>
             {items.map((item, index) => (
               <li key={item.href} className="flex items-center">
@@ -74,4 +73,3 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
     </>
   );
 }
-

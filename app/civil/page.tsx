@@ -5,6 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
+import { civilServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
@@ -51,6 +52,27 @@ export default function CivilPage() {
         title="Ohio Civil Attorney"
         description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Civil disputes, contracts, real estate, landlord-tenant matters, and more."
       />
+
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Civil Legal Services
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {civilServices.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+              >
+                {service.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">

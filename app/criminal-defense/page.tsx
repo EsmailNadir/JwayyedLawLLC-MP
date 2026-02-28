@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
+import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
@@ -60,6 +61,26 @@ export default function CriminalDefensePage() {
         title="Ohio Criminal Defense Attorney"
         description="Experienced legal representation for all criminal charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
       />
+
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Criminal Defense Services
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {criminalDefenseServices.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+              >
+                {service.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Main Content Section */}
       <section className="py-16 bg-white">

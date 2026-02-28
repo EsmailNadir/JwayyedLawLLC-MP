@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import SearchBar from '@/components/SearchBar';
 import { Star, ArrowDown, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -257,13 +256,28 @@ const reviews = [
   }
 ];
 
+const MAX_REVIEW_LENGTH = 230;
+const REVIEW_START_LENGTH = 120;
+const REVIEW_END_LENGTH = 80;
+
+function truncateReview(text: string): string {
+  if (text.length <= MAX_REVIEW_LENGTH) {
+    return text;
+  }
+
+  const start = text.slice(0, REVIEW_START_LENGTH).trimEnd();
+  const end = text.slice(-REVIEW_END_LENGTH).trimStart();
+
+  return `${start}... ${end}`;
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-['Georgia',_'Times_New_Roman',_serif]">
       
       
       {/* Hero Section with Video Background */}
-      <section className="relative h-[calc(100vh-65px)] overflow-hidden">
+      <section className="relative h-[calc(100vh-65px)] min-h-[440px] overflow-hidden pb-4 lg:pb-0">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           {/* Desktop Video - Hidden on mobile */}
@@ -309,37 +323,27 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center">
-          <div className="max-w-5xl mx-auto mb-8 sm:mb-12 animate-fade-in">
-            <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 drop-shadow-2xl">
+        <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center pt-6 sm:pt-0">
+          <div className="max-w-5xl mx-auto mb-6 sm:mb-12 animate-fade-in">
+            <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-[2.55rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-3.5 sm:mb-6 drop-shadow-2xl">
               Protecting Your Rights in Ohio
             </h1>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
+            <p className="font-['Inter',_'Arial',_sans-serif] text-[1.05rem] sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Experienced Legal Counsel in Criminal, Traffic, and Civil Law
             </p>
-
-            {/* Search Bar */}
-            <div className="w-full max-w-md mx-auto mb-6 sm:mb-8">
-              <SearchBar className="[&_input]:bg-white/10 [&_input]:backdrop-blur-md [&_input]:border-white/30 [&_input]:text-white [&_input]:placeholder-white/60 [&_input]:focus:bg-white/20 [&_input]:focus:border-white/50 [&_svg]:text-white/60" />
-            </div>
           </div>
           
-          {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16">
-            <Link href="/contact">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-[#b87333] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-[#a0622b] transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
-                Schedule Consultation
-              </button>
-            </Link>
-            <Link href="/other-services">
-              <button className="font-['Inter',_'Arial',_sans-serif] bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl w-full sm:w-auto">
+          {/* Hero CTA: single secondary action to explore services */}
+          <div className="flex justify-center mb-8 sm:mb-16">
+            <Link href="/services" className="w-full sm:w-auto">
+              <button className="font-['Inter',_'Arial',_sans-serif] w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg shadow-2xl">
                 View Our Services
               </button>
             </Link>
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="flex flex-col items-center space-y-2">
               <span className="font-['Inter',_'Arial',_sans-serif] text-xs sm:text-sm font-medium text-white/80">Explore More</span>
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#b87333] rounded-full flex items-center justify-center shadow-lg">
@@ -420,30 +424,30 @@ export default function Home() {
             autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
             pagination={{ clickable: true }}
             loop={true}
-            className="testimonials-swiper pb-12"
+            className="testimonials-swiper pb-16"
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-full flex flex-col">
-                  {/* Stars */}
-                  <div className="flex items-center space-x-1 mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
-                    ))}
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-[300px] flex flex-col">
+                  {/* Stars + Badge (flex-shrink-0) */}
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center space-x-1 mb-3">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                      ))}
+                    </div>
+                    <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit block mb-4">
+                      {review.platform}
+                    </span>
                   </div>
 
-                  {/* Platform Badge */}
-                  <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit mb-4">
-                    {review.platform}
-                  </span>
-
-                  {/* Review Text */}
-                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
-                    &ldquo;{review.text}&rdquo;
+                  {/* Testimonial Text (flex-1, overflow-hidden, no scrollbar) */}
+                  <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 min-h-0 overflow-hidden italic">
+                    &ldquo;{truncateReview(review.text)}&rdquo;
                   </blockquote>
 
-                  {/* Reviewer Name */}
-                  <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4">
+                  {/* Reviewer Name (flex-shrink-0, mt-auto) */}
+                  <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4 flex-shrink-0 mt-auto">
                     — {review.name}
                   </cite>
                 </div>
@@ -451,8 +455,12 @@ export default function Home() {
             ))}
           </Swiper>
 
-          {/* Custom Swiper pagination color */}
+          {/* Custom Swiper pagination color and spacing so dots don't touch cards */}
           <style>{`
+            .testimonials-swiper .swiper-pagination {
+              margin-top: 1.25rem;
+              position: relative;
+            }
             .testimonials-swiper .swiper-pagination-bullet {
               background: rgba(255, 255, 255, 0.3);
               opacity: 1;

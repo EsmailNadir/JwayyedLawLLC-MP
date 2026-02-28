@@ -8,13 +8,29 @@ import {
   Scale,
   Building2,
   Quote,
+  Trophy,
+  Check,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import ContactCTA from "@/components/ContactCTA";
+
+const breadcrumbItems = [{ label: "Meet Attorney Jwayyed", href: "/about" }];
+
+const MAX_TESTIMONIAL_LENGTH = 230;
+const TESTIMONIAL_START_LENGTH = 120;
+const TESTIMONIAL_END_LENGTH = 80;
+
+function truncateTestimonial(text: string): string {
+  if (text.length <= MAX_TESTIMONIAL_LENGTH) return text;
+  const start = text.slice(0, TESTIMONIAL_START_LENGTH).trimEnd();
+  const end = text.slice(-TESTIMONIAL_END_LENGTH).trimStart();
+  return `${start}... ${end}`;
+}
 
 export default function AboutPage() {
   const achievements = [
@@ -104,7 +120,7 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* PageHero */}
+      <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Meet Attorney Jwayyed"
         description="Experienced legal counsel dedicated to protecting your rights throughout Ohio."
@@ -179,7 +195,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3: Recognition & Accolades */}
-      <section className="bg-white py-16 sm:py-20">
+      <section id="accolades" className="bg-white py-16 sm:py-20 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Recognition & Accolades</h2>
 
@@ -204,7 +220,34 @@ export default function AboutPage() {
           </div>
 
           {/* Awards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Best of 2026 — BusinessRate (NEW) */}
+            <div className="relative bg-gradient-to-br from-[#1e3a2f] via-[#2c2c2c] to-[#2c2c2c] border-t-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-[#b87333]/15 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" aria-hidden="true" />
+              <div className="relative p-8">
+                <span className="inline-block px-2.5 py-1 bg-[#b87333] text-[#1a1a2e] text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded mb-4">
+                  NEW — 2026
+                </span>
+                <div className="flex items-start">
+                  <div className="text-[#b87333] mr-4 flex-shrink-0 mt-1">
+                    <Trophy size={32} strokeWidth={1.5} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-tight">
+                      Best of 2026 Award Winner — BusinessRate
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-4">
+                      Named Best Law Firm in Crosswoods, Columbus by BusinessRate. This recognition is based entirely on Google Reviews from our clients.
+                    </p>
+                    <div className="inline-flex items-center gap-1.5 text-gray-400 text-xs opacity-80">
+                      <Check className="w-4 h-4 text-[#b87333] flex-shrink-0" aria-hidden="true" />
+                      <span>Powered by Google Reviews</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Ohio State Bar Association Award */}
             <div className="bg-[#2c2c2c] border-t-4 border-[#b87333] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="p-8">
@@ -261,16 +304,16 @@ export default function AboutPage() {
             autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
             pagination={{ clickable: true }}
             loop={true}
-            className="pb-12 [&_.swiper-pagination-bullet]:bg-white/40 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet-active]:bg-[#b87333]"
+            className="recommendations-swiper pb-16 [&_.swiper-pagination-bullet]:bg-white/40 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:h-3 [&_.swiper-pagination-bullet-active]:bg-[#b87333]"
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 sm:p-8 flex flex-col h-full min-h-[320px]">
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 sm:p-8 flex flex-col h-[300px]">
                   <Quote className="w-8 h-8 text-[#b87333] mb-4 flex-shrink-0" />
-                  <blockquote className="text-gray-300 italic leading-relaxed flex-1 text-sm sm:text-base line-clamp-[8]">
-                    &ldquo;{testimonial.text}&rdquo;
+                  <blockquote className="text-gray-300 italic leading-relaxed flex-1 min-h-0 overflow-hidden text-sm sm:text-base">
+                    &ldquo;{truncateTestimonial(testimonial.text)}&rdquo;
                   </blockquote>
-                  <div className="border-t border-white/10 mt-6 pt-4">
+                  <div className="border-t border-white/10 pt-4 flex-shrink-0 mt-auto">
                     <p className="font-semibold text-white">{testimonial.author}</p>
                     <p className="text-gray-400 text-sm">{testimonial.title}</p>
                   </div>
@@ -278,6 +321,19 @@ export default function AboutPage() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <style>{`
+            .recommendations-swiper .swiper-pagination {
+              margin-top: 1.25rem;
+              position: relative;
+            }
+            .recommendations-swiper .swiper-pagination-bullet {
+              background: rgba(255, 255, 255, 0.4);
+              opacity: 1;
+            }
+            .recommendations-swiper .swiper-pagination-bullet-active {
+              background: #b87333;
+            }
+          `}</style>
         </div>
       </section>
 

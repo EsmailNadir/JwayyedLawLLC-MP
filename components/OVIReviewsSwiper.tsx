@@ -23,6 +23,21 @@ export const oviReviews = [
   { name: "Ace Lomax", rating: 5, platform: "Google", text: "Great guy will fight for your freedom best experience ever thank you again God bless." },
 ];
 
+const MAX_REVIEW_LENGTH = 230;
+const REVIEW_START_LENGTH = 120;
+const REVIEW_END_LENGTH = 80;
+
+function truncateReview(text: string): string {
+  if (text.length <= MAX_REVIEW_LENGTH) {
+    return text;
+  }
+
+  const start = text.slice(0, REVIEW_START_LENGTH).trimEnd();
+  const end = text.slice(-REVIEW_END_LENGTH).trimStart();
+
+  return `${start}... ${end}`;
+}
+
 export default function OVIReviewsSwiper() {
   return (
     <Swiper
@@ -36,23 +51,28 @@ export default function OVIReviewsSwiper() {
       autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
       pagination={{ clickable: true }}
       loop={true}
-      className="testimonials-swiper pb-12"
+      className="testimonials-swiper pb-16"
     >
       {oviReviews.map((review, index) => (
         <SwiperSlide key={index}>
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-full flex flex-col">
-            <div className="flex items-center space-x-1 mb-3">
-              {[...Array(review.rating)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
-              ))}
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-[300px] flex flex-col">
+            {/* Stars + Badge (flex-shrink-0) */}
+            <div className="flex-shrink-0">
+              <div className="flex items-center space-x-1 mb-3">
+                {[...Array(review.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                ))}
+              </div>
+              <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit block mb-4">
+                {review.platform}
+              </span>
             </div>
-            <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-medium text-[#b87333] bg-[#b87333]/10 px-2.5 py-1 rounded-full w-fit mb-4">
-              {review.platform}
-            </span>
-            <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 italic mb-4">
-              &ldquo;{review.text}&rdquo;
+            {/* Testimonial Text (flex-1, overflow-hidden) */}
+            <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 min-h-0 overflow-hidden italic">
+              &ldquo;{truncateReview(review.text)}&rdquo;
             </blockquote>
-            <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4">
+            {/* Reviewer Name (flex-shrink-0, mt-auto) */}
+            <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4 flex-shrink-0 mt-auto">
               — {review.name}
             </cite>
           </div>

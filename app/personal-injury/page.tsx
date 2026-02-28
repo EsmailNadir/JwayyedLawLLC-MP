@@ -4,6 +4,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { personalInjuryServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Personal Injury Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
@@ -64,6 +65,26 @@ export default function PersonalInjuryPage() {
         title="Ohio Personal Injury Attorney"
         description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Experienced representation for accident victims seeking compensation."
       />
+
+      {/* Sub-Services Grid */}
+      <section className="py-8 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Personal Injury Services
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {personalInjuryServices.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+              >
+                {service.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
