@@ -20,7 +20,7 @@ body:has(.bg-gray-100) {
 
   #tidio-chat-iframe,
   #tidio-chat {
-    bottom: 40px !important;
+    bottom: 24px !important;
     right: 20px !important;
   }
 
