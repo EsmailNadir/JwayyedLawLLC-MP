@@ -5,7 +5,7 @@ export default function Footer() {
             <p className="leading-relaxed">
               Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice. Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
             </p>
-            <p className="text-[#b87333]/70">© Copyright 2026 Jwayyed Law, LLC. All Rights Reserved.</p>
+            <p className="text-[#b87333]/70">© Copyright 2026 Jwayyed Law LLC (JJ Law Ohio). All Rights Reserved.</p>
           </div>
         </footer>
     );

@@ -86,10 +86,11 @@ export default function OurStaffPage() {
                     <div className="relative w-full h-[290px] overflow-hidden bg-[#2d3436] flex-shrink-0">
                       <Image
                         src={member.image}
-                        alt={member.name}
+                        alt={member.imageAlt ?? member.name}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                        style={{ objectPosition: member.imageObjectPosition ?? 'center 20%' }}
                         quality={85}
                       />
                       {/* Gradient overlay at bottom for text readability */}

@@ -13,6 +13,10 @@ body:has(.bg-gray-100) {
   display: none;
 }
 
+#accolades {
+  scroll-margin-top: 100px;
+}
+
 @media (max-width: 1023px) {
   body.mobile-drawer-open nav[aria-label="Breadcrumb"] {
     display: none !important;
