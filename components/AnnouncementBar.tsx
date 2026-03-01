@@ -58,7 +58,7 @@ export default function AnnouncementBar() {
       aria-label="Award announcement"
       className={`announcement-bar-wrapper overflow-hidden transition-[max-height] duration-300 ease-out ${isDismissing ? 'max-h-0' : hasAnimatedIn ? 'max-h-[38px]' : 'max-h-0'}`}
     >
-      <div className="relative bg-gradient-to-r from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] border-b border-[#b87333]/30 text-white text-xs sm:text-sm h-[38px] flex items-center justify-center pl-[28px] sm:pl-6 pr-20 sm:pr-14">
+      <div className="relative bg-gradient-to-r from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] border-b border-[#b87333]/30 text-white text-xs sm:text-sm h-[38px] flex items-center justify-center pl-[40px] sm:pl-6 pr-20 sm:pr-14">
         {/* Shimmer overlay */}
         <div
           className="absolute inset-0 pointer-events-none overflow-hidden"
