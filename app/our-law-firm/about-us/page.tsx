@@ -15,6 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import ContactCTA from "@/components/ContactCTA";
@@ -206,11 +207,16 @@ export default function AboutPage() {
           <div id="accolades" className="mb-16 sm:mb-20 py-12 sm:py-16 px-6 sm:px-10 rounded-2xl bg-[#FAFAFA]">
             <div className="flex flex-col items-center max-w-xl mx-auto text-center">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Best of 2026 — Award Winner</h3>
-              <img
-                src="/assets/jwayyed-law-llc-plaque.png"
-                alt="Jwayyed Law LLC — Best of 2026 Award Winner by BusinessRate"
-                className="w-full max-w-[280px] sm:max-w-[400px] shadow-lg rounded-lg mb-6"
-              />
+              <div className="w-full max-w-[280px] sm:max-w-[400px] mx-auto mb-6">
+                <Image
+                  src="/assets/jwayyed-law-llc-plaque.png"
+                  alt="Jwayyed Law LLC — Best of 2026 Award Winner by BusinessRate"
+                  width={400}
+                  height={520}
+                  priority
+                  className="w-full h-auto shadow-lg rounded-lg"
+                />
+              </div>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Jwayyed Law LLC has been named Best of 2026 by BusinessRate, powered by Google Reviews. This award recognizes top-rated businesses in the Crosswoods area of Columbus, OH.
               </p>
