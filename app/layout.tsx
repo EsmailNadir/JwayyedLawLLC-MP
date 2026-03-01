@@ -9,10 +9,10 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
-    default: "Jwayyed Law LLC | Ohio Attorney | Criminal Defense, Estate Planning & Business Law",
+    default: "Jwayyed Law LLC | JJ Law Ohio | Ohio Attorney | Criminal Defense, Estate Planning & Business Law",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, and probate. Call (614) 285-5482.",
+  description: "Jwayyed Law LLC (JJ Law Ohio) — Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, and probate. Call (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com',
     siteName: 'Jwayyed Law LLC',
-    title: 'Jwayyed Law LLC | Ohio Attorney',
+    title: 'Jwayyed Law LLC | JJ Law Ohio | Ohio Attorney',
     description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, probate.',
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jwayyed Law LLC | Ohio Attorney',
+    title: 'Jwayyed Law LLC | JJ Law Ohio | Ohio Attorney',
     description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Comprehensive legal services.',
     images: ['/assets/Jwayyed_Logo_Inverted.JPEG'],
   },
@@ -89,7 +89,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "Jwayyed Law LLC",
-    "image": `${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`,
+    "alternateName": "JJ Law Ohio",
+    "image": [`${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`, `${siteUrl}/assets/jwayyed-law-llc-plaque.png`],
     "@id": siteUrl,
     "url": siteUrl,
     "telephone": "(614) 285-5482",

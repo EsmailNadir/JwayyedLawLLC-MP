@@ -198,9 +198,24 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3: Recognition & Accolades */}
-      <section id="accolades" className="bg-white py-16 sm:py-20 scroll-mt-20">
+      <section className="bg-white py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Recognition & Accolades</h2>
+
+          {/* Best of 2026 — Plaque Showcase */}
+          <div id="accolades" className="mb-16 sm:mb-20 py-12 sm:py-16 px-6 sm:px-10 rounded-2xl bg-[#FAFAFA]">
+            <div className="flex flex-col items-center max-w-xl mx-auto text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Best of 2026 — Award Winner</h3>
+              <img
+                src="/assets/jwayyed-law-llc-plaque.png"
+                alt="Jwayyed Law LLC — Best of 2026 Award Winner by BusinessRate"
+                className="w-full max-w-[280px] sm:max-w-[400px] shadow-lg rounded-lg mb-6"
+              />
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                Jwayyed Law LLC has been named Best of 2026 by BusinessRate, powered by Google Reviews. This award recognizes top-rated businesses in the Crosswoods area of Columbus, OH.
+              </p>
+            </div>
+          </div>
 
           {/* Achievement and Membership Badges */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">

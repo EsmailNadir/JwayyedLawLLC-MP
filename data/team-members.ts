@@ -4,6 +4,8 @@ export interface TeamMember {
   title: string;
   role: 'Attorney' | 'Staff' | 'Intern';
   image: string;
+  imageAlt?: string;
+  imageObjectPosition?: string;
   shortBio: string;
   fullBio: string;
   profileLink: string;
@@ -19,7 +21,8 @@ export const teamMembers: TeamMember[] = [
     name: 'Attorney Jwayyed',
     title: 'Managing Attorney',
     role: 'Attorney',
-    image: '/assets/attorney-main.jpg',
+    image: '/assets/IMG_5570.JPG',
+    imageAlt: 'Attorney Jwayyed — Managing Attorney at Jwayyed Law LLC',
     shortBio:
       'Extensive experience in criminal defense, civil rights, and municipal law. Dedicated to fighting for justice and protecting client rights throughout Ohio.',
     fullBio: '',
