@@ -191,6 +191,9 @@ export default function AboutPage() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Outside the Office</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">In his free time, Jwayyed enjoys spirited GOAT debates about Kobe, MJ, and LeBron with his cousins, staying active through weightlifting and recreational sports, and listening to podcasts on law, culture, and current events. A true Buckeye fan, he&apos;s a proud Buck Nut who tries to attend at least one road game each season with his brother. Jwayyed is also active in his local community and values spending quality time with family and friends.</p>
           <p className="text-lg font-semibold text-gray-900">If you need experienced, honest legal guidance, contact Attorney Jwayyed today to schedule a consultation.</p>
+          <p className="text-lg text-gray-700 mt-6">
+            <a href="/about/legal-assistant" className="text-[#b87333] hover:underline font-medium">Meet our legal assistant</a>—dedicated to providing exceptional support for all our clients.
+          </p>
         </div>
       </section>
 

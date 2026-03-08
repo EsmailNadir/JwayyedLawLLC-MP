@@ -463,6 +463,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO: Our Practice Areas - internal links for crawl */}
+      <section className="w-full py-16 sm:py-20 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl font-semibold text-gray-900 mb-8 text-center">
+            Our Practice Areas
+          </h2>
+          <p className="font-['Inter',_'Arial',_sans-serif] text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+            Jwayyed Law LLC provides experienced legal representation throughout Ohio in the following practice areas:
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <Link href="/criminal-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Criminal Defense</Link>
+            <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">First OVI / DUI</Link>
+            <Link href="/ovi-dui-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">OVI / DUI Defense</Link>
+            <Link href="/personal-injury" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Personal Injury</Link>
+            <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Civil Litigation</Link>
+            <Link href="/civil/appeals" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Civil Appeals</Link>
+            <Link href="/business" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Business Law</Link>
+            <Link href="/business/llc-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">LLC Formation</Link>
+            <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Other Services</Link>
+            <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">Trusts</Link>
+            <Link href="/services" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900">All Services</Link>
+          </div>
+          <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-semibold text-gray-900 mb-6 text-center">
+            Counties &amp; Courts We Serve
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link href="/courts/franklin-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Franklin County</Link>
+            <Link href="/courts/delaware-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Delaware County</Link>
+            <Link href="/courts/butler-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Butler County</Link>
+            <Link href="/courts/greene-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Greene County</Link>
+            <Link href="/courts/montgomery-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Montgomery County</Link>
+            <Link href="/courts/pickaway-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Pickaway County</Link>
+            <Link href="/courts/athens-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Athens County</Link>
+            <Link href="/courts/morrow-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Morrow County</Link>
+            <Link href="/courts/clinton-county" className="block p-3 border border-gray-200 rounded-lg hover:border-[#b87333] transition-all text-gray-700 text-sm">Clinton County</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <Footer />
     </div>

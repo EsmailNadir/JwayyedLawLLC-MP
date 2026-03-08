@@ -114,6 +114,14 @@ export default function TrustsPage() {
                 <h4 className="font-semibold text-gray-900 mb-2">Asset Protection Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Shield your wealth from creditors, lawsuits, and future claims while retaining indirect access to trust assets.</p>
               </Link>
+              <Link href="/trusts/land-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">Land Trusts</h4>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Hold and manage real property with privacy and flexibility for estate planning and asset protection.</p>
+              </Link>
+              <Link href="/trusts/qtip-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
+                <h4 className="font-semibold text-gray-900 mb-2">QTIP Trusts</h4>
+                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Provide for a surviving spouse while qualifying for the marital deduction and controlling ultimate distribution.</p>
+              </Link>
             </div>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Asset Protection Trusts in Ohio</h3>
