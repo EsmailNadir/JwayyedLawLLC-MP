@@ -27,6 +27,14 @@ export default function OurStaffPage() {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#1a1a2e]/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* ── Our Law Firm Links (SEO: internal links for crawl) ─────────── */}
+          <div className="mb-10 flex flex-wrap gap-3 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
+            <Link href="/our-law-firm/about-us" className="text-[#b87333] hover:underline font-medium">About Us</Link>
+            <Link href="/our-law-firm/our-attorneys" className="text-[#b87333] hover:underline font-medium">Our Attorneys</Link>
+            <Link href="/our-law-firm/case-results" className="text-[#b87333] hover:underline font-medium">Case Results</Link>
+            <Link href="/our-law-firm/blog" className="text-[#b87333] hover:underline font-medium">Blog</Link>
+          </div>
+
           {/* ── Header ─────────────────────────────────────────────── */}
           <div
             className="mb-12"
