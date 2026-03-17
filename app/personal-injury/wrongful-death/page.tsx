@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'Do I need a wrongful death attorney?',
     answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and offer consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+  },
+  {
+    question: `Who can bring a wrongful death claim in Ohio?`,
+    answer: `Under ORC 2125.02, an Ohio wrongful death claim must be brought by the personal representative of the deceased person's estate — not directly by surviving family members. The personal representative is typically named in the will; if no will exists, or if no personal representative has been appointed, the probate court will appoint one. The claim is brought on behalf of the surviving beneficiaries who are entitled to share in the recovery, which under ORC 2125.02 includes the surviving spouse, children, and parents of the deceased. Other next of kin or dependents may also qualify. An attorney can help the family navigate the probate process to establish the estate and ensure the claim is properly filed within the statutory deadline.`,
+  },
+  {
+    question: `What is the statute of limitations for wrongful death claims in Ohio?`,
+    answer: `Under ORC 2125.02, the statute of limitations for a wrongful death claim in Ohio is two years from the date of the decedent's death — not from the date of the underlying accident or injury. If the personal representative fails to file the lawsuit within two years of the date of death, the claim is permanently barred and the surviving family members lose their right to compensation. Unlike some personal injury statutes, there is generally no discovery rule extension for wrongful death. Given the complexity of establishing an estate and conducting a thorough investigation, families should contact an attorney as soon as possible after a loved one's death.`,
+  },
+  {
+    question: `What damages are available in an Ohio wrongful death claim?`,
+    answer: `ORC 2125.02 sets out the damages recoverable in an Ohio wrongful death action. Recoverable damages include: funeral and burial expenses; medical expenses incurred before death; lost support (the economic support the deceased would have provided to beneficiaries); loss of services (household, childcare, and other services the deceased provided); loss of society — meaning the loss of the deceased's companionship, care, assistance, attention, protection, advice, guidance, and education to each beneficiary; and the mental anguish suffered by surviving beneficiaries. Economic damages such as lost support and lost services are calculated based on the deceased's earning history, life expectancy, and the needs of the surviving family. Non-economic damages like loss of society and mental anguish are determined by the jury based on the evidence. An attorney can retain economic and life-care experts to fully document and present all categories of loss.`,
   },
 ];
 
@@ -163,9 +176,29 @@ export default function WrongfulDeathPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have lost a loved one due to someone else's negligence, recklessness, or intentional misconduct in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, guide you through the estate administration process if necessary, and develop a strategy tailored to your situation. Time is critical in wrongful death cases—the statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved and all deadlines are met. Do not delay in seeking experienced legal representation to protect your family's interests and hold responsible parties accountable.
+              If you have lost a loved one due to someone else&apos;s negligence in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. The statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link> or read about <Link href="/our-law-firm/blog/how-long-sue-after-injury-ohio" className="text-[#b87333] underline hover:text-[#a06828]">Ohio&apos;s statute of limitations for injury claims</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Catastrophic Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Severe and life-altering injury claims</span>
+          </Link>
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          </Link>
+          <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Truck Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Commercial vehicle and semi-truck collision claims</span>
+          </Link>
+          <Link href="/personal-injury/medical-malpractice" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Medical Malpractice</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Healthcare provider negligence claims</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for OVI in Athens County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Athens County courts, Athens Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced OVI attorney can provide effective representation.',
   },
+  {
+    question: `What is the 30-day ALS appeal deadline and what happens if it is missed in Athens County?`,
+    answer: `Under Ohio Revised Code 4511.191, when you are arrested for OVI in Athens County and either refuse a chemical test or test over the legal limit, an administrative license suspension (ALS) takes effect immediately. You have exactly 30 days from the date of arrest to file an appeal of the ALS with Athens Municipal Court. If you miss this 30-day deadline, the right to appeal the ALS is permanently waived and the suspension remains in effect for its full duration — one year for a first refusal or 90 days for a first test failure. Missing the deadline also eliminates the opportunity to request a stay of suspension while the appeal is pending. Contact an attorney immediately after an OVI arrest to preserve this critical right.`,
+  },
+  {
+    question: `How does proximity to Ohio University affect OVI enforcement in Athens County?`,
+    answer: `Athens County is home to Ohio University, and the Athens Municipal Court handles a significant volume of alcohol-related OVI cases tied to the university community. Law enforcement in Athens is familiar with high-traffic periods around Ohio University events, football games, and college bar districts, and patrol patterns are often intensified during these times. Officers conducting OVI stops in Athens may have extensive experience with sobriety testing, and prosecutors in Athens Municipal Court regularly handle alcohol-related cases. This environment makes experienced OVI defense representation especially important — an attorney who understands how Athens Municipal Court handles these cases can identify procedural defenses, challenge testing procedures, and negotiate effectively on your behalf.`,
+  },
+  {
+    question: `What changed for first OVI offenses under HB 37 effective April 9, 2025?`,
+    answer: `Ohio House Bill 37, effective April 9, 2025, made several notable changes for first-time OVI offenders statewide, including those charged in Athens Municipal Court. The minimum fine for a first OVI was increased from $375 to $565, with a maximum of $1,075. The license reinstatement fee was reduced from $475 to $315. Importantly, HB 37 gives judges the discretion to waive the 15-day hard suspension period before limited driving privileges begin — but only for non-refusal first offenses where the driver has no prior alcohol-related arrests. For first offenders who refused the chemical test, the 15-day hard suspension still applies before limited privileges can be granted. An attorney can help first-time OVI defendants in Athens County take full advantage of these changes to minimize the impact on their driving privileges.`,
+  },
 ];
 
 export default function AthensOVIDefensePage() {

@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for misdemeanor defense in Athens County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Athens County courts, Athens Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced criminal defense attorney can provide effective representation.',
   },
+  {
+    question: `What misdemeanor offenses are most common in Athens Municipal Court near Ohio University?`,
+    answer: `Because Athens is a college town home to Ohio University, Athens Municipal Court sees a high volume of alcohol-related misdemeanor charges. The most common offenses include disorderly conduct under ORC 2917.11 (often arising from public intoxication or disturbances near campus), criminal trespass under ORC 2911.21, underage consumption, and petty theft under ORC 2913.02. Alcohol-related offenses spike around university events, homecoming weekends, and the bar district on Court Street. Even misdemeanor convictions for these offenses can affect academic standing, campus housing eligibility, and future employment. An experienced defense attorney familiar with Athens Municipal Court can help students and residents pursue dismissals, reduced charges, or diversion programs.`,
+  },
+  {
+    question: `What are the penalties for a first-degree misdemeanor in Ohio under ORC 2929.21?`,
+    answer: `Under Ohio Revised Code 2929.21, a first-degree misdemeanor (M1) carries a maximum sentence of up to 180 days in jail and a fine of up to $1,000. In Athens Municipal Court, M1 offenses include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25, and certain theft offenses. While 180 days is the statutory maximum, judges have discretion to impose lesser sentences, community control, community service, or treatment in lieu of incarceration. A conviction — even without jail time — creates a permanent criminal record that can affect employment, professional licensing, and housing. Experienced defense representation can help minimize the consequences or pursue alternatives to conviction.`,
+  },
+  {
+    question: `Can misdemeanor convictions from Athens Municipal Court be sealed under ORC 2953.32?`,
+    answer: `Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Athens Municipal Court are eligible for sealing (commonly called expungement) after a one-year waiting period following final discharge from the sentence — meaning after completing any jail time, probation, fines, and other conditions. Eligible offenses include most M1 through M4 misdemeanors. Certain offenses are not eligible for sealing, including convictions for offenses involving victims who are minors and certain traffic offenses. Once a record is sealed, it is not accessible to the general public, which can significantly improve employment and housing opportunities. An attorney can evaluate your eligibility, prepare the petition, and represent you at the sealing hearing in Athens Municipal Court.`,
+  },
 ];
 
 export default function AthensCriminalMisdemeanorDefensePage() {

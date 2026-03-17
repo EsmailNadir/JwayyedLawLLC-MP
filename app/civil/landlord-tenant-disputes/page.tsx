@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -6,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Landlord-Tenant Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio landlord-tenant disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for landlord-tenant matters in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Franklin County landlord tenant attorney'],
+  title: 'Landlord-Tenant Disputes Lawyer Ohio | ORC Chapter 5321 | Columbus | Jwayyed Law LLC',
+  description: 'Ohio landlord-tenant disputes attorney representing landlords and tenants in eviction defense, security deposit claims, habitability issues, and lease disputes under ORC Chapter 5321. Columbus and statewide. Call (614) 285-5482.',
+  keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Ohio eviction defense attorney', 'ORC 5321 landlord tenant'],
   openGraph: {
-    title: 'Landlord-Tenant Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Landlord-Tenant Disputes Lawyer Ohio | ORC Chapter 5321 | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/landlord-tenant-disputes',
   },
   alternates: { canonical: '/civil/landlord-tenant-disputes' },
@@ -23,24 +24,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: 'What are common landlord-tenant disputes in Ohio?',
-    answer: 'Common landlord-tenant disputes in Ohio under Ohio Revised Code Chapter 5321 may include security deposit disputes, rent disputes, lease violations, habitability issues (lack of heat, water, repairs), property damage disputes, eviction proceedings, tenant rights violations, landlord entry disputes, and lease termination disputes. Landlord-tenant disputes require understanding of Ohio landlord-tenant law.',
+    question: `What are common landlord-tenant disputes handled under Ohio law?`,
+    answer: `Common landlord-tenant disputes in Ohio under ORC Chapter 5321 include security deposit withholding disputes, habitability claims (lack of heat, water, or required repairs), lease violations, retaliatory eviction defenses, landlord entry disputes, illegal lockout claims, and rent withholding situations. Both landlords and tenants have rights and obligations defined by statute — landlords must maintain habitable premises under ORC 5321.04, while tenants must pay rent and maintain the property. An attorney can protect your rights and pursue appropriate remedies on either side of the dispute.`,
   },
   {
-    question: 'What are tenant rights in Ohio?',
-    answer: 'Tenant rights in Ohio under ORC Chapter 5321 include the right to habitable premises (heat, water, repairs), the right to privacy (notice before entry), the right to withhold rent for habitability violations, the right to security deposit return, protection from retaliatory eviction, and protection from illegal lockouts. Tenants also have obligations including paying rent, maintaining premises, and not causing damage.',
+    question: `What are tenant rights under Ohio's Landlord-Tenant Act (ORC Chapter 5321)?`,
+    answer: `Under ORC Chapter 5321, Ohio tenants have the right to habitable premises including functioning heat, water, and plumbing; the right to reasonable privacy (landlords must give at least 24 hours notice before entry under ORC 5321.04 except in emergencies); the right to receive their security deposit with an itemized statement within 30 days of move-out under ORC 5321.16; protection from retaliatory eviction under ORC 5321.02; and the right to rent escrow or repair-and-deduct remedies when landlords fail to maintain habitable conditions. These protections apply to residential tenancies throughout Ohio.`,
   },
   {
-    question: 'What is the statute of limitations for landlord-tenant disputes?',
-    answer: 'Statute of limitations for landlord-tenant disputes in Ohio vary by claim type: Breach of lease: 6 years for written leases, 4 years for oral leases (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years (ORC 2305.09). Security deposit disputes: Generally 2 years. Missing deadlines may bar recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    question: `What is the statute of limitations for landlord-tenant disputes in Ohio?`,
+    answer: `Statutes of limitations for Ohio landlord-tenant claims vary by claim type. Breach of a written lease: 6 years under ORC 2305.06. Breach of an oral lease: 4 years under ORC 2305.07 (as amended June 2021). Property damage claims: 4 years under ORC 2305.09. Security deposit disputes under ORC 5321.16: generally 2 years as a civil claim for wrongful withholding. Missing these deadlines can permanently bar recovery. Acting quickly — before evidence is lost and while witnesses are available — is always advisable.`,
   },
   {
-    question: 'Do I need a landlord-tenant attorney?',
-    answer: 'Landlord-tenant disputes can be complex and require experienced representation. Landlord-tenant attorneys understand Ohio landlord-tenant law, can protect tenant rights, handle eviction proceedings, negotiate disputes, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
+    question: `What must Ohio landlords do before evicting a tenant?`,
+    answer: `Ohio landlords cannot evict tenants without going through the court process under ORC Chapter 1923. Self-help eviction — changing locks, removing property, shutting off utilities, or otherwise forcing a tenant out without a court order — is illegal and exposes the landlord to liability for damages. Before filing an eviction action, the landlord must provide proper written notice: a 3-day notice for nonpayment of rent, and a notice consistent with the lease or statute for other violations. After proper notice, the landlord files an eviction (forcible entry and detainer) action in the appropriate municipal or county court.`,
   },
   {
-    question: 'Can landlords evict tenants without court proceedings?',
-    answer: 'No, landlords cannot evict tenants without court proceedings in Ohio under ORC Chapter 1923. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability for damages. Eviction requires filing an eviction action in court and obtaining a court order. An attorney can help protect tenant rights and defend against illegal eviction.',
+    question: `Can a tenant withhold rent for habitability problems in Ohio?`,
+    answer: `Yes, with conditions. Under ORC 5321.07, a tenant may deposit rent with the court (rent escrow) or terminate the lease if the landlord has been given written notice of a habitability condition and has failed to remedy it within a reasonable time (not less than 30 days for most conditions). This remedy is not available if the condition was caused by the tenant or their guests. Improper rent withholding — simply stopping payment without following the statutory process — can expose the tenant to eviction. An attorney can advise on the correct procedure to protect your rights.`,
+  },
+  {
+    question: `What damages can a tenant recover for wrongful security deposit withholding?`,
+    answer: `Under ORC 5321.16, if a landlord wrongfully withholds a security deposit or fails to provide an itemized statement of deductions within 30 days of the tenant vacating, the tenant may recover the wrongfully withheld amount plus damages in an amount equal to twice the withheld portion, plus reasonable attorney fees. This double-damages remedy incentivizes landlord compliance and can make security deposit disputes worthwhile to litigate even when the deposit amount is relatively small. Our attorney pursues the full statutory remedy on behalf of tenants whose deposits are wrongfully withheld.`,
+  },
+  {
+    question: `What defenses are available against eviction in Ohio Municipal Court?`,
+    answer: `Common defenses to eviction in Ohio include: (1) improper or defective notice — the landlord failed to give the correct notice period or method required under ORC Chapter 1923; (2) retaliatory eviction under ORC 5321.02 — the landlord is evicting in response to the tenant complaining about habitability conditions; (3) habitability defenses — the landlord's failure to maintain the property renders the eviction unconscionable; (4) acceptance of rent after the notice was given, which may waive the notice; and (5) payment of all overdue rent. An attorney can evaluate which defenses apply to your specific situation.`,
+  },
+  {
+    question: `Does Jwayyed Law LLC represent both landlords and tenants in Ohio?`,
+    answer: `Yes. Jwayyed Law LLC represents both landlords and tenants in Ohio landlord-tenant disputes. For landlords, we handle eviction proceedings under ORC Chapter 1923, security deposit disputes, lease enforcement, and damage claims. For tenants, we defend against eviction, pursue security deposit recovery under ORC 5321.16, assert habitability rights, and challenge illegal landlord conduct. Our attorney brings a thorough understanding of Ohio landlord-tenant law to each representation, regardless of which side of the dispute our client is on.`,
   },
 ];
 
@@ -50,84 +63,65 @@ export default function LandlordTenantDisputesPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Landlord–Tenant Disputes Lawyer"
-        description="Experienced legal representation for landlord-tenant disputes. Protecting your rights whether you are a landlord or tenant."
+        description="Representing landlords and tenants in eviction proceedings, security deposit disputes, habitability claims, and lease enforcement under ORC Chapter 5321. Columbus and throughout Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Landlord-Tenant Disputes in Ohio</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              Ohio Landlord-Tenant Disputes Under ORC Chapter 5321
+            </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Landlord-tenant disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve security deposits, rent, habitability issues, eviction proceedings, and other complex landlord-tenant law matters. At Jwayyed Law LLC, we provide experienced representation for landlord-tenant disputes under Ohio Revised Code Chapter 5321. Our attorney understands Ohio landlord-tenant law and can protect your rights whether you are a landlord or tenant.
+              Ohio&apos;s Landlord-Tenant Act, codified in <strong>ORC Chapter 5321</strong>, establishes a detailed framework of rights and obligations governing residential tenancies throughout the state. Landlords must maintain habitable premises — functioning heat, water, plumbing, and necessary structural elements — under ORC 5321.04. Tenants must pay rent, maintain the property in a clean and safe condition, and refrain from causing damage beyond normal wear and tear under ORC 5321.05. When either side fails to meet its obligations, disputes arise — and prompt legal action is often necessary to protect your rights. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC represents both landlords and tenants in Ohio landlord-tenant matters. For more on this topic, read our articles on <Link href="/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties and tenant rights</Link> and <Link href="/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws" className="text-[#b87333] underline hover:text-[#a06828]">Ohio security deposit laws</Link>.
             </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio landlord-tenant law establishes rights and obligations for both landlords and tenants. Tenants have rights including habitable premises, privacy, security deposit return, and protection from retaliatory eviction. Landlords have rights including rent payment, property maintenance, and eviction for valid reasons. Understanding these rights and obligations is essential for resolving disputes and protecting your interests. Early intervention by a skilled landlord-tenant attorney can significantly impact the outcome, ensuring proper documentation, negotiation, and protection of your rights.
+              Security deposit disputes are among the most common landlord-tenant matters. Under <strong>ORC 5321.16</strong>, landlords must return the security deposit with an itemized statement of deductions within 30 days after the tenant vacates. Failure to comply can expose the landlord to the wrongfully withheld amount plus twice that amount in damages, plus attorney fees — a significant statutory penalty. On the other side, tenants who cause damage beyond normal wear and tear may face claims by the landlord for unpaid rent or excess damage.
             </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for landlord-tenant disputes in Ohio varies by claim type: breach of lease (6 years for written leases, 4 years for oral leases under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and security deposit disputes (generally 2 years). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
+              Eviction proceedings in Ohio are governed by <strong>ORC Chapter 1923</strong>. Ohio strictly prohibits self-help eviction — a landlord cannot change locks, remove a tenant&apos;s belongings, or shut off utilities to force a tenant out without a court order. Doing so exposes the landlord to significant liability. The statutory eviction process requires proper written notice, filing in the correct court, and service on the tenant. Tenants facing eviction have the right to appear and raise defenses, including improper notice, habitability violations, and retaliatory eviction under <strong>ORC 5321.02</strong>. For more on the eviction process, see our <Link href="/civil/evictions" className="text-[#b87333] underline hover:text-[#a06828]">evictions</Link> page.
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              The statutes of limitations for landlord-tenant claims vary by claim type. Breach of a written lease is subject to a 6-year limitations period under ORC 2305.06; breach of an oral lease carries a 4-year period under ORC 2305.07 (as amended June 2021); and property damage claims are subject to a 4-year period under ORC 2305.09. Acting quickly after a dispute arises preserves both the legal claims and the underlying evidence.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Landlord-Tenant Disputes</h3>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Security Deposit Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Security deposit disputes often arise when landlords withhold deposits for damages, cleaning, or unpaid rent. Under Ohio Revised Code 5321.16, landlords must return security deposits within 30 days of lease termination or provide an itemized list of deductions. Tenants can challenge improper deductions, and landlords can seek damages for property damage beyond normal wear and tear.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Habitability Issues</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Landlords must maintain habitable premises including heat, water, electricity, and necessary repairs. Under Ohio Revised Code 5321.04, tenants can withhold rent for habitability violations, make repairs and deduct costs, or terminate leases. Landlords must address habitability issues promptly or face liability for damages.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Rent Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Rent disputes may involve nonpayment, late fees, rent increases, or lease violations. Landlords can seek eviction for nonpayment, while tenants can challenge improper rent increases or lease violations. Understanding lease terms, rent payment obligations, and legal requirements is essential for resolving rent disputes.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Eviction Proceedings</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Eviction proceedings require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. Tenants can defend against eviction by raising defenses including lack of proper notice, habitability violations, retaliatory eviction, or payment of rent. An attorney can help protect tenant rights or handle eviction proceedings for landlords.
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Landlord-Tenant Disputes Attorney Can Help</h3>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An experienced landlord-tenant disputes attorney provides comprehensive representation for both landlords and tenants:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Rights Protection:</strong> Protect tenant rights including habitability, privacy, security deposits, and protection from retaliatory eviction, or protect landlord rights including rent payment, property maintenance, and eviction for valid reasons</li>
-              <li><strong>Eviction Defense:</strong> Defend tenants against eviction proceedings, raise defenses including lack of proper notice, habitability violations, or retaliatory eviction, and protect tenant rights throughout the process</li>
-              <li><strong>Eviction Proceedings:</strong> Handle eviction proceedings for landlords following proper procedures, file eviction actions, and represent landlords in court</li>
-              <li><strong>Dispute Resolution:</strong> Negotiate disputes including security deposits, habitability issues, rent disputes, and lease violations to work toward resolution without litigation</li>
-              <li><strong>Documentation and Evidence:</strong> Prepare documentation, gather evidence, and build cases to support your position in disputes</li>
-              <li><strong>Court Representation:</strong> Represent you in court if necessary to protect your rights, present evidence, and advocate for favorable outcomes</li>
-              <li><strong>Lease Review:</strong> Review leases to identify rights, obligations, and potential issues, and draft or negotiate lease terms</li>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+              Landlord and Tenant Representation: How We Help
+            </h3>
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+              <li><strong>Eviction proceedings (landlords):</strong> Proper notice drafting, filing eviction actions under ORC Chapter 1923, pursuing judgment for possession and back rent.</li>
+              <li><strong>Eviction defense (tenants):</strong> Raising habitability defenses, challenging defective notice, asserting retaliatory eviction under ORC 5321.02.</li>
+              <li><strong>Security deposit recovery (tenants):</strong> Pursuing the double-damages remedy under ORC 5321.16 for wrongful withholding.</li>
+              <li><strong>Habitability claims:</strong> Advising tenants on rent escrow under ORC 5321.07 and proper procedures for withholding rent or terminating a lease.</li>
+              <li><strong>Lease review and enforcement:</strong> Reviewing residential leases for enforceability, analyzing rights and obligations, and enforcing lease terms in court.</li>
             </ul>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated landlord-tenant disputes representation throughout Ohio. We understand that landlord-tenant disputes can affect your housing and rights. Our attorney works diligently to protect your rights, resolve disputes, and achieve favorable outcomes whether you are a landlord or tenant.
-            </p>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our approach combines thorough understanding of Ohio landlord-tenant law, strategic dispute resolution, and aggressive advocacy when necessary. We understand the local court systems, judicial preferences, and common issues in landlord-tenant disputes. This knowledge allows us to develop effective strategies tailored to your specific situation and protect your interests. We work closely with clients to understand their goals, explain legal options, and make informed decisions about dispute resolution strategies.
-            </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are involved in a landlord-tenant dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in landlord-tenant disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
+              If you have a landlord-tenant dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> at (614) 285-5482. Related practice areas include{' '}
+              <Link href="/civil/debt-collection-defense" className="text-[#b87333] underline hover:text-[#a06828]">debt collection defense</Link> and{' '}
+              <Link href="/civil/breach-of-contract" className="text-[#b87333] underline hover:text-[#a06828]">breach of contract</Link>.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/civil/evictions" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Evictions</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Landlord eviction proceedings and tenant eviction defense in Ohio</span>
+              </Link>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Real Estate Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Title disputes, boundary issues, quiet title actions, and property litigation</span>
+              </Link>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              </Link>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -136,4 +130,3 @@ export default function LandlordTenantDisputesPage() {
     </>
   );
 }
-

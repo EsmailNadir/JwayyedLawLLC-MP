@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for misdemeanor defense in Pickaway County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Pickaway County courts, Circleville Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced criminal defense attorney can provide effective representation.',
   },
+  {
+    question: `What misdemeanor charges are common in Pickaway County?`,
+    answer: `Circleville Municipal Court handles a broad range of misdemeanor offenses that reflect the mix of urban and rural communities in Pickaway County. Common charges include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25, misdemeanor drug possession under ORC 2925.11, theft and petty theft under ORC 2913.02, and property crimes such as criminal damaging under ORC 2909.06. Traffic-related misdemeanors, including driving under suspension and reckless operation, are also frequently prosecuted in Circleville Municipal Court. Each of these offenses carries consequences beyond jail time and fines — a conviction can affect employment background checks, professional licenses, and housing applications in Pickaway County and beyond.`,
+  },
+  {
+    question: `What are the penalties for misdemeanor offenses in Pickaway County under ORC 2929.21?`,
+    answer: `Under Ohio Revised Code 2929.21, misdemeanor penalties in Circleville Municipal Court depend on the degree of the offense: first-degree misdemeanors (M1) carry up to 180 days in jail and fines up to $1,000; second-degree misdemeanors (M2) carry up to 90 days in jail and fines up to $750; third-degree misdemeanors (M3) carry up to 60 days in jail and fines up to $500; and fourth-degree misdemeanors (M4) carry up to 30 days in jail and fines up to $250. Judges in Circleville Municipal Court may also impose community control, community service, restitution, and treatment conditions. These are maximum penalties — experienced defense representation can often result in reduced charges, suspended sentences, or alternative sentencing depending on your circumstances and criminal history.`,
+  },
+  {
+    question: `Can misdemeanor convictions from Circleville Municipal Court be sealed under ORC 2953.32?`,
+    answer: `Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Circleville Municipal Court are eligible for sealing after a one-year waiting period following final discharge from the sentence. Final discharge means you have completed all jail time, probation, community service, fines, and any other court-imposed conditions. Most M1 through M4 misdemeanor convictions qualify, though certain offenses are excluded — including convictions involving minor victims and certain traffic offenses. A sealed record is not accessible to the general public, which can open doors to employment, professional licensing, and housing that a visible criminal record would otherwise close. An attorney can assess your eligibility, prepare the petition, and represent you at the sealing hearing in Circleville Municipal Court.`,
+  },
 ];
 
 export default function PickawayCriminalMisdemeanorDefensePage() {

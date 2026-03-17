@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'Do I need a pedestrian accident attorney?',
     answer: 'While you can handle a pedestrian accident claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+  },
+  {
+    question: `What are Ohio pedestrian right-of-way laws?`,
+    answer: `ORC 4511.46 governs the duty of drivers at crosswalks in Ohio. Drivers must yield the right of way to a pedestrian crossing the roadway within any marked crosswalk or within any unmarked crosswalk at an intersection. A driver may not pass another vehicle that has stopped at a crosswalk to yield to a pedestrian. Pedestrians also have duties — ORC 4511.48 requires pedestrians to obey traffic control signals, and ORC 4511.50 prohibits jaywalking where signals or marked crosswalks are available. When a driver violates ORC 4511.46 by failing to yield, that violation is powerful evidence of negligence and can be used to establish liability in a personal injury claim.`,
+  },
+  {
+    question: `Can a pedestrian recover compensation if they were jaywalking when they were hit?`,
+    answer: `Yes, in many cases. Ohio applies modified comparative negligence under ORC 2315.33, meaning that a pedestrian who was partially at fault — including by jaywalking — can still recover compensation as long as their own fault does not exceed 50%. If a jury finds the pedestrian 40% at fault and the driver 60% at fault, the pedestrian can still recover 60% of their total damages. Insurance companies will aggressively argue that a jaywalking pedestrian bears substantial fault to reduce or eliminate their payout. An attorney can investigate the driver's conduct, vehicle speed, visibility conditions, and other factors to establish that the driver bears the majority of the fault regardless of where the pedestrian was crossing.`,
+  },
+  {
+    question: `What compensation is available for pedestrian accident victims in Ohio?`,
+    answer: `Because pedestrians have no vehicle protection, pedestrian accident injuries are among the most severe in personal injury law, and the range of available compensation is correspondingly broad. Economic damages include all past and future medical expenses (emergency care, surgeries, hospitalization, rehabilitation, long-term care, assistive devices), lost wages and loss of future earning capacity, and other out-of-pocket financial losses. Non-economic damages include pain and suffering, emotional distress, disfigurement, loss of enjoyment of life, and loss of consortium. In cases involving drunk drivers, distracted driving, or other egregious conduct, punitive damages may also be available. An attorney can work with medical and economic experts to fully value every category of loss and pursue maximum compensation.`,
   },
 ];
 
@@ -165,9 +178,29 @@ export default function PedestrianAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a pedestrian accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze liability issues, and develop a strategy tailored to your situation. Time is critical in pedestrian accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a pedestrian accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Time is critical—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          </Link>
+          <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Motorcycle Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Representing injured motorcyclists across Ohio</span>
+          </Link>
+          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Catastrophic Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Severe and life-altering injury claims</span>
+          </Link>
+          <Link href="/personal-injury/wrongful-death" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Wrongful Death</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Holding negligent parties accountable for fatal injuries</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

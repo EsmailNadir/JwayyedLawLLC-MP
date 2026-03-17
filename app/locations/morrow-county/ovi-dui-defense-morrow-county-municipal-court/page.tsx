@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for OVI in Morrow County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Morrow County courts, Morrow County Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced OVI attorney can provide effective representation.',
   },
+  {
+    question: `What is the 30-day ALS appeal deadline after a Morrow County OVI arrest?`,
+    answer: `Under Ohio Revised Code 4511.191, an administrative license suspension (ALS) takes effect immediately upon a Morrow County OVI arrest if you refuse a chemical test or test over the legal limit. You have exactly 30 days from the date of arrest to file an appeal of the ALS with Morrow County Municipal Court. Missing this deadline permanently waives the right to appeal, and the suspension remains in place for its full statutory duration — one year for a first refusal or 90 days for a first test failure. Filing the appeal promptly also allows your attorney to request a stay of the suspension, which can preserve your driving privileges while the appeal is pending. Contact a Morrow County OVI attorney immediately after arrest to protect this right.`,
+  },
+  {
+    question: `How does rural road OVI enforcement on US 42 differ from urban OVI stops?`,
+    answer: `OVI enforcement on rural roads like US 42 in Morrow County has distinct characteristics compared to urban areas. Rural stops often involve single-vehicle accidents, agricultural equipment traffic, and long stretches of road with fewer traffic signals, which can affect how officers establish reasonable suspicion for a stop. Ohio State Highway Patrol and Morrow County Sheriff deputies patrol these highways and may conduct checkpoint operations or targeted enforcement. Because emergency medical response times are longer in rural Morrow County, law enforcement may be especially attentive to impaired driving on these routes. At the same time, rural stops can present unique defense opportunities — dashcam footage quality, witness availability, and field sobriety test administration on uneven road surfaces can all be challenged by an experienced OVI defense attorney.`,
+  },
+  {
+    question: `What are the consequences of a first OVI conviction for rural Morrow County residents who depend on their vehicle for work?`,
+    answer: `A first OVI conviction in Morrow County Municipal Court carries a mandatory license suspension of one to three years under ORC 4511.19, which can be devastating for rural residents who have no public transportation options. Many Morrow County residents rely on personal vehicles to commute to work in Mount Gilead, Cardington, or neighboring counties. Limited driving privileges may be available under ORC 4510.021, but they restrict driving to specific purposes such as employment, school, and medical appointments, and may require an ignition interlock device. Under HB 37 (effective April 9, 2025), judges can waive the 15-day hard suspension waiting period for non-refusal first offenders, allowing earlier access to limited privileges. An experienced OVI attorney can advocate for the earliest possible limited driving privileges to minimize the impact on your livelihood.`,
+  },
 ];
 
 export default function MorrowOVIDefensePage() {

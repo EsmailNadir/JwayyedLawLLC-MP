@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -42,6 +43,18 @@ const faqs = [
     question: 'What should I do if I am charged with high-tier OVI?',
     answer: 'If charged with high-tier OVI, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced high-tier OVI defense attorney right away. You have only 30 days to appeal an administrative license suspension. An attorney can protect your rights and develop defense strategies.',
   },
+  {
+    question: `What makes an OVI "high-tier" under ORC 4511.19 in Ohio?`,
+    answer: `Under Ohio Revised Code 4511.19, an OVI is classified as "high-tier" when a chemical test result meets or exceeds specific concentration thresholds. For breath testing, a BAC of 0.17% or higher triggers high-tier status. For blood testing, the equivalent is 0.17 grams or more per 100 milliliters of whole blood. For urine testing, the threshold is 0.238 grams or more per 100 milliliters. These thresholds apply to alcohol; separate per se limits exist for controlled substances and metabolites. High-tier classification doubles the mandatory minimum jail time and triggers additional penalties compared to a standard low-tier OVI at the same offense number.`,
+  },
+  {
+    question: `How does a high-tier OVI affect plea negotiations in Ohio?`,
+    answer: `A high-tier OVI designation significantly narrows plea negotiation options because it carries mandatory minimums that the court cannot waive. Prosecutors are generally less willing to reduce a high-tier charge to a standard low-tier OVI without a compelling factual reason—such as a credible challenge to the breathalyzer result, a strong rising BAC defense, or a problem with the stop or arrest. If the test result is close to the 0.17% threshold, there may be more room to argue machine error or calibration issues. An attorney can evaluate the strength of the test evidence, identify any procedural defects, and use that leverage in negotiations to seek a reduction to low-tier OVI, reckless operation, or alternative sentencing arrangements.`,
+  },
+  {
+    question: `What is the difference between a high-tier OVI and a standard refusal OVI in Ohio?`,
+    answer: `Both high-tier OVI (BAC 0.17% or higher) and test refusal OVI trigger enhanced penalties under ORC 4511.19, but they arise from different facts. A high-tier OVI means you submitted to chemical testing and the result was 0.17% BAC or above. A refusal OVI means you declined to take the chemical test after a lawful request, triggering Ohio's implied consent law (ORC 4511.191) and an automatic license suspension. For a first offense, both carry a 6-day minimum jail term rather than the 3-day low-tier minimum. However, the ALS periods differ: a high-tier test result typically results in a shorter initial ALS than a refusal (which carries a 1-year suspension for a first offense). Refusal can also be argued by prosecutors as consciousness of guilt. An attorney can help assess which designation applies and what defenses are available.`,
+  },
 ];
 
 export default function HighTierOVIPage() {
@@ -58,15 +71,15 @@ export default function HighTierOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding High-Tier OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              High-tier OVI charges throughout Ohio carry enhanced penalties including mandatory minimum jail sentences that are double the standard OVI penalties. At Jwayyed Law LLC, we provide experienced defense representation for high-tier OVI charges under Ohio Revised Code 4511.19. Our attorney understands the enhanced penalties of high-tier OVI convictions and defense strategies necessary to protect your rights.
+              High-tier OVI charges throughout Ohio carry enhanced penalties including mandatory minimum jail sentences that are double the standard OVI penalties. At Jwayyed Law LLC, we provide experienced defense representation for high-tier OVI charges under Ohio Revised Code 4511.19 as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>. Our attorney understands the enhanced penalties of high-tier OVI convictions and defense strategies necessary to protect your rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              High-tier OVI occurs when your BAC (blood alcohol content) is 0.17% or higher at the time of testing, which is more than double the legal limit of 0.08%. Even for a first offense, high-tier OVI requires more severe penalties than standard OVI including double the mandatory minimum jail time. Understanding the enhanced penalties, available defenses including rising BAC defense, and strategies to minimize consequences is essential. Early intervention by an experienced high-tier OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
+              High-tier OVI occurs when your BAC (blood alcohol content) is 0.17% or higher at the time of testing, which is more than double the legal limit of 0.08%. Even for a first offense, high-tier OVI requires more severe penalties than standard OVI including double the mandatory minimum jail time. Understanding the enhanced penalties, available defenses including rising BAC defense, and strategies to minimize consequences is essential. Early intervention by an experienced high-tier OVI defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences. Learn more about <Link href="/our-law-firm/blog/how-much-does-dui-cost-ohio" className="text-[#b87333] underline hover:text-[#a06828]">how much a DUI costs in Ohio</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The legal process for high-tier OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences.
+              The legal process for high-tier OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your high-tier OVI case.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">High-Tier OVI Penalties and Consequences in Ohio</h3>
 
@@ -204,6 +217,26 @@ export default function HighTierOVIPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing high-tier OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including rising BAC defense and license suspension appeals, and develop a strategy tailored to your situation. Time is critical in high-tier OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              </Link>
+              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Second OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enhanced penalties and mandatory jail for second OVI offenses in Ohio</span>
+              </Link>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              </Link>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -212,4 +245,3 @@ export default function HighTierOVIPage() {
     </>
   );
 }
-

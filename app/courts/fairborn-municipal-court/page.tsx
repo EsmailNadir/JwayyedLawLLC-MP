@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Fairborn Municipal Court Attorney | Greene County Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Fairborn Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Greene County, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense'],
+  title: 'Fairborn Municipal Court Attorney | Greene County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
+  description: 'Experienced attorney for Fairborn Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Greene County, Ohio. Near Wright-Patterson AFB. Call (614) 285-5482.',
+  keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense', 'Wright-Patterson AFB OVI defense', 'Beavercreek criminal attorney'],
   openGraph: {
     title: 'Fairborn Municipal Court Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts/fairborn-municipal-court',
@@ -23,24 +24,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: 'What types of cases does Fairborn Municipal Court handle?',
-    answer: 'Fairborn Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Greene County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
+    question: `What types of cases does Fairborn Municipal Court handle?`,
+    answer: `Fairborn Municipal Court has jurisdiction over misdemeanor criminal offenses, OVI/DUI charges under ORC 4511.19, traffic violations, civil disputes up to $15,000, and small claims matters arising within the court's territorial jurisdiction in Greene County. The court's jurisdiction includes Fairborn, Bath Township, Beavercreek, Beavercreek Township, and other communities. Felony cases are bound over to the Greene County Common Pleas Court. Our firm does not handle juvenile, probate, or immigration matters.`,
   },
   {
-    question: 'Where is Fairborn Municipal Court located?',
-    answer: 'Fairborn Municipal Court is located in Fairborn, Ohio. The court handles all misdemeanor cases, OVI/DUI charges, and traffic violations occurring in Greene County. An attorney familiar with the court can help navigate procedures and achieve favorable outcomes.',
+    question: `Where is Fairborn Municipal Court located?`,
+    answer: `Fairborn Municipal Court is located at 1148 Kauffman Ave, Fairborn, OH 45324. Fairborn is in western Greene County adjacent to Wright-Patterson Air Force Base and Dayton. The court handles a significant volume of OVI and traffic cases, including charges arising from SR 444 (the primary access road to Wright-Patterson AFB), US 35, and I-675. Familiarity with this court's procedures is essential for effective representation.`,
   },
   {
-    question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys offer consultations.',
+    question: `What are the OVI penalties in Fairborn Municipal Court under current Ohio law?`,
+    answer: `Under ORC 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Fairborn Municipal Court carries: mandatory minimum 3 days in jail (or 3-day driver intervention program), fines of $565–$1,075, a class five license suspension of 1–3 years, and 6 points on your license. A high-tier first OVI (BAC 0.17%+ or test refusal with a prior refusal on record) carries a mandatory 6-day minimum in jail. Under HB 37, the 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device is installed.`,
   },
   {
-    question: 'How long do Municipal Court cases take?',
-    answer: 'Municipal Court case duration varies depending on case complexity, court schedule, and whether the case goes to trial. Simple traffic violations may resolve quickly, while OVI/DUI and misdemeanor cases may take months. An attorney can provide a realistic timeline.',
+    question: `Does an OVI conviction in Fairborn affect military status or security clearances?`,
+    answer: `Yes. For active-duty military, reservists, and government contractors near Wright-Patterson AFB, an OVI conviction in Fairborn Municipal Court can have serious collateral consequences beyond the criminal sentence. The military services have their own administrative processes for misconduct on or off base, and an OVI conviction — or in some cases even an arrest — may trigger review of security clearances under Executive Order 12968 and related guidelines. Our attorney advises clients on how the criminal case intersects with potential military or security clearance consequences, and pursues the best criminal outcome to minimize those risks.`,
   },
   {
-    question: 'What should I expect at a Municipal Court hearing?',
-    answer: 'Municipal Court hearings are less formal than Common Pleas Court but still require proper preparation. Hearings may include arraignments, pretrial conferences, motions hearings, and trials. Understanding court procedures and expectations is essential. An attorney can help prepare you.',
+    question: `What is the 30-day ALS appeal deadline after a Fairborn or Greene County OVI arrest?`,
+    answer: `An Administrative License Suspension (ALS) under ORC 4511.191 takes effect immediately at arrest when you test above 0.08% BAC or refuse a chemical test. You have 30 days from the date of arrest to file an appeal of the ALS with Fairborn Municipal Court. Missing this deadline forfeits your right to challenge the suspension. Our attorney files the appeal and supporting motion promptly and simultaneously pursues suppression of the traffic stop and the chemical test to build a comprehensive defense.`,
+  },
+  {
+    question: `What misdemeanor criminal charges are common in Fairborn Municipal Court?`,
+    answer: `Fairborn Municipal Court handles misdemeanor assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), disorderly conduct, drug possession, and other M1–M4 charges. The Beavercreek and Fairborn area's retail corridors generate misdemeanor theft and disorderly conduct cases. Under ORC 2929.21, an M1 conviction carries up to 180 days in jail and a $1,000 fine. Many misdemeanor convictions are eligible for sealing under ORC 2953.32 after a one-year waiting period from final discharge.`,
+  },
+  {
+    question: `Can I get limited driving privileges after an OVI charge in Fairborn Municipal Court?`,
+    answer: `Yes. Limited driving privileges (LDP) for work, school, medical appointments, and other essential travel can be granted by Fairborn Municipal Court under ORC 4510.021. Under HB 37, for non-refusal first OVI offenses, the former mandatory 15-day hard suspension before LDP is available has been eliminated when an ignition interlock device is installed. Our attorney pursues LDP at the earliest opportunity to ensure you can continue working and meeting your responsibilities while your case proceeds.`,
+  },
+  {
+    question: `Does Fairborn Municipal Court handle charges from Beavercreek and Bath Township?`,
+    answer: `Yes. Fairborn Municipal Court's territorial jurisdiction includes Beavercreek, Bath Township, and other communities in addition to the city of Fairborn. Beavercreek is a substantial suburban community adjacent to Fairborn, and traffic enforcement along SR 35, I-675, and US 35 generates cases heard in this court. If you received a citation or were arrested in Beavercreek or Bath Township, your case will typically be filed in Fairborn Municipal Court unless the charge is a felony, which would go to the Greene County Common Pleas Court.`,
   },
 ];
 
@@ -50,83 +63,31 @@ export default function FairbornMunicipalCourtPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Fairborn Municipal Court Attorney"
-        description="Experienced legal representation in Fairborn Municipal Court. Serving Greene County, Ohio."
+        description="OVI/DUI defense, misdemeanor criminal charges, and traffic matters in Fairborn Municipal Court. Serving Fairborn, Beavercreek, and Greene County, Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Fairborn Municipal Court Representation</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              Fairborn Municipal Court: OVI Defense and Misdemeanor Representation
+            </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Fairborn Municipal Court in Fairborn, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Greene County. At Jwayyed Law LLC, we provide experienced representation in Fairborn Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
+              Fairborn Municipal Court, located at 1148 Kauffman Ave in Fairborn, Ohio, serves the western portion of Greene County — including Fairborn, Beavercreek, Bath Township, and communities adjacent to Wright-Patterson Air Force Base. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations in its jurisdiction. Jwayyed Law LLC represents defendants in Fairborn Municipal Court for OVI defense, misdemeanor criminal matters, and traffic charges. If you face an OVI charge, the 30-day ALS appeal window under <strong>ORC 4511.191</strong> runs from the date of arrest — contact our office immediately.
             </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Fairborn Municipal Court is located in Fairborn, Ohio, and serves Fairborn, Bath Township, Beavercreek, Beavercreek Township, and other communities within its jurisdiction in Greene County. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              The Fairborn and Beavercreek area features significant traffic on US 35, SR 444, and I-675, and OVI enforcement is active in these corridors. For military personnel and government contractors near Wright-Patterson AFB, an OVI conviction carries collateral risks beyond the criminal sentence, including potential security clearance implications. Our attorney understands these intersecting concerns and pursues the best criminal outcome — including suppression motions, ALS appeals, and plea negotiations — to protect both your record and your career. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device is installed.
             </p>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-2">Location &amp; Directions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-2">
-                <strong>Fairborn Municipal Court</strong><br />
-                1148 Kauffman Ave, Fairborn, OH 45324
-              </p>
-              <p className="text-sm mt-2">
-                <a href="https://www.google.com/maps?q=1148+Kauffman+Ave,+Fairborn,+OH+45324" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Get directions (Google Maps)</a>
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Misdemeanor Criminal Cases</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles all misdemeanor criminal cases including assault, theft, drug possession, domestic violence, and other misdemeanor offenses. Misdemeanor convictions can result in jail time, fines, and permanent criminal records. Experienced representation is essential to protect your rights and achieve favorable outcomes.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">OVI/DUI Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles first, second, and third OVI/DUI charges (misdemeanor OVI). Fourth and subsequent OVI offenses are felonies handled in Common Pleas Court. OVI convictions carry severe penalties including jail time, fines, license suspension, and vehicle immobilization. Experienced OVI defense representation is crucial to challenge evidence, develop defenses, and minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Traffic Violations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles traffic violations including speeding, reckless driving, driving under suspension, and other traffic offenses. Traffic violations can result in points on your license, fines, and license suspension. An attorney can help challenge violations, negotiate reductions, or minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Civil Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles civil disputes involving amounts up to $15,000, including contract disputes, personal injury cases, property damage claims, and other civil matters. Civil cases require understanding of civil procedure, evidence rules, and negotiation strategies.
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
-
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Misdemeanor Defense in Greene County
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced representation in all types of cases handled by Fairborn Municipal Court:
+              Beyond OVI, Fairborn Municipal Court handles misdemeanor assault, domestic violence (<strong>ORC 2919.25</strong>), theft, drug possession, and disorderly conduct. Under <strong>ORC 2929.21</strong>, an M1 offense carries up to 180 days in jail and a $1,000 fine. Our attorney evaluates suppression, plea negotiations, and diversion options to pursue the best available outcome and protect your record. Many misdemeanor convictions are eligible for sealing under <strong>ORC 2953.32</strong> after a one-year waiting period.
             </p>
-
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Misdemeanor Criminal Defense:</strong> Experienced defense representation for all misdemeanor charges including assault, theft, drug possession, domestic violence, and other offenses</li>
-              <li><strong>OVI/DUI Defense:</strong> Skilled OVI defense representation including challenging evidence, developing defenses, and minimizing consequences</li>
-              <li><strong>Traffic Violation Defense:</strong> Representation for traffic violations including challenging violations, negotiating reductions, and minimizing consequences</li>
-              <li><strong>Civil Dispute Resolution:</strong> Representation for civil disputes including contract disputes, personal injury cases, and property damage claims</li>
-              <li><strong>Court Procedure:</strong> Understanding of Municipal Court procedures, filing requirements, and judicial preferences</li>
-            </ul>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated representation in Fairborn Municipal Court. We understand that Municipal Court matters can significantly affect your rights, driving privileges, and future. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
-            </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Fairborn Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              Contact Jwayyed Law LLC at (614) 285-5482 or through{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Fairborn Municipal Court. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'Do I need a car accident attorney for my claim?',
     answer: 'While you can handle a car accident claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary. Most personal injury attorneys work on a contingency fee basis.',
+  },
+  {
+    question: `What is the deadline to file a car accident lawsuit in Ohio?`,
+    answer: `Under ORC 2305.10, you generally have two years from the date of the car accident to file a personal injury lawsuit in Ohio. Missing this deadline will almost certainly result in your case being dismissed and your right to compensation being permanently lost. Certain exceptions may extend the deadline — for example, if the injured person is a minor — but these are narrow. Property damage claims carry a four-year statute of limitations. Do not wait to consult an attorney; evidence fades, witnesses become unavailable, and acting early gives your case the best foundation.`,
+  },
+  {
+    question: `How does uninsured motorist coverage work after an Ohio car accident?`,
+    answer: `Under ORC 3937.18, Ohio insurers are required to offer uninsured motorist (UM) and underinsured motorist (UIM) coverage as part of every auto policy, though policyholders may reject it in writing. If the at-fault driver has no insurance or insufficient coverage to fully compensate your injuries, you may file a UM/UIM claim against your own policy. This coverage can pay for medical expenses, lost wages, and pain and suffering. An attorney can review your policy, determine available coverage, and ensure you pursue every source of compensation available after a crash.`,
+  },
+  {
+    question: `Should I accept the insurance company's first settlement offer after a car accident?`,
+    answer: `In almost all cases, no. Insurance companies typically make early settlement offers before you have completed medical treatment and before the full extent of your injuries — including long-term or permanent effects — is known. Accepting a low offer releases the insurer from all future liability, even if your condition worsens. An experienced car accident attorney can evaluate whether an offer fairly compensates all your economic and non-economic losses, negotiate for a higher amount, and advise you on the right time to settle versus proceeding to litigation.`,
   },
 ];
 
@@ -167,9 +180,29 @@ export default function CarAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a car accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a car accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in car accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Learn more about our full range of <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury services</Link> or read our guide on <Link href="/our-law-firm/blog/steps-after-car-accident-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to do after a car accident in Ohio</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Slip & Fall Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Premises liability claims for unsafe conditions</span>
+          </Link>
+          <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Truck Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Commercial vehicle and semi-truck collision claims</span>
+          </Link>
+          <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Motorcycle Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Representing injured motorcyclists across Ohio</span>
+          </Link>
+          <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Pedestrian Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Claims for pedestrians struck by vehicles</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

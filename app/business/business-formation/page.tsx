@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -41,6 +42,18 @@ const faqs = [
     question: 'What are the costs of business formation in Ohio?',
     answer: 'Business formation costs in Ohio include filing fees with the Ohio Secretary of State ($99 for LLCs, $99 for corporations), EIN fees (free from IRS), license and permit fees (vary), and attorney fees. Total costs vary depending on structure and services needed. An attorney can help understand costs and ensure you meet all requirements.',
   },
+  {
+    question: `What business structures are available in Ohio?`,
+    answer: `Ohio recognizes several business structures for new and existing businesses. Limited Liability Companies (LLCs) are governed by ORC Chapter 1706 and offer liability protection with flexible taxation and management. Corporations are governed by ORC Chapter 1701 and can be structured as C-corps or S-corps, with more formal governance requirements. General and limited partnerships are governed by ORC Chapters 1775 and 1776 respectively, offering pass-through taxation but varying degrees of liability protection for partners. Sole proprietorships require no formal state filing and are the simplest structure, but offer no liability protection. The right choice depends on your liability concerns, tax goals, management preferences, and growth plans.`,
+  },
+  {
+    question: `How do LLCs and S-corporations compare for Ohio small businesses?`,
+    answer: `Both LLCs and S-corporations offer pass-through taxation, meaning business profits and losses flow through to owners' personal tax returns and avoid double corporate taxation. The key tax advantage of electing S-corporation status is the ability for owner-employees to split income between W-2 wages and distributions—only the W-2 wages are subject to self-employment taxes, which can result in significant payroll tax savings at higher income levels. LLCs taxed as sole proprietorships or partnerships subject all net earnings to self-employment taxes. Ohio LLCs can elect to be taxed as S-corporations by filing IRS Form 2553. An attorney or tax advisor can help evaluate which structure is most advantageous for your specific revenue level and situation.`,
+  },
+  {
+    question: `What is a statutory agent in Ohio and who can serve in that role?`,
+    answer: `Under Ohio Revised Code 1706.05, every Ohio LLC is required to designate and maintain a statutory agent—also called a registered agent—with a physical street address in Ohio. The statutory agent receives official legal and government correspondence on behalf of the business, including service of process in lawsuits, notices from the Ohio Secretary of State, and tax correspondence. Any Ohio resident with a physical Ohio address may serve as a statutory agent, as may any domestic or foreign corporation or LLC authorized to do business in Ohio. The statutory agent must be available during regular business hours. Failing to maintain a valid statutory agent can result in administrative cancellation of the entity.`,
+  },
 ];
 
 export default function BusinessFormationPage() {
@@ -56,11 +69,11 @@ export default function BusinessFormationPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Business Formation in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Business formation in Columbus, Cincinnati, Dayton, or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. At Jwayyed Law LLC, we provide experienced assistance with business formation under Ohio Revised Code (current as of 2026). Our attorney understands business law and can help determine the best structure and guide you through the formation process.
+              Business formation in Columbus, Cincinnati, Dayton, or throughout Ohio requires understanding of business structures, state requirements, and legal considerations. As part of our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">Ohio business law practice</Link>, Jwayyed Law LLC provides experienced assistance with business formation under Ohio Revised Code (current as of 2026). Our attorney understands business law and can help determine the best structure and guide you through the formation process.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Choosing the right business structure is one of the most important decisions when starting a business. Different structures (LLC, corporation, partnership, sole proprietorship) offer different benefits including liability protection, tax advantages, management flexibility, and ability to raise capital. Understanding these differences and selecting the best structure for your specific needs is essential for protecting your interests and setting up your business for success. Early consultation with a business formation attorney can help you make informed decisions and avoid costly mistakes.
+              Choosing the right business structure is one of the most important decisions when starting a business. Different structures (LLC, corporation, partnership, sole proprietorship) offer different benefits including liability protection, tax advantages, management flexibility, and ability to raise capital. Understanding these differences and selecting the best structure for your specific needs is essential for protecting your interests and setting up your business for success. Early consultation with a business formation attorney can help you make informed decisions and avoid costly mistakes. For a detailed look at LLC formation specifically, see our <Link href="/business/llc-formation" className="text-[#b87333] underline hover:text-[#a06828]">Ohio LLC formation</Link> page. You can also read our blog posts on <Link href="/our-law-firm/blog/starting-business-ohio-llc-vs-corporation" className="text-[#b87333] underline hover:text-[#a06828]">starting a business in Ohio: LLC vs. corporation</Link> and <Link href="/our-law-firm/blog/ohio-business-formation-llc-vs-corp" className="text-[#b87333] underline hover:text-[#a06828]">Ohio business formation: LLC vs. corp</Link> for more guidance.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -126,7 +139,7 @@ export default function BusinessFormationPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Licenses, Permits, and Compliance</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Businesses must obtain necessary licenses and permits (varies by industry and location), obtain an EIN from the IRS, register for state taxes if applicable, and comply with all state and federal requirements. An attorney can help identify required licenses and permits, ensure compliance, and avoid costly mistakes.
+                Businesses must obtain necessary licenses and permits (varies by industry and location), obtain an EIN from the IRS, register for state taxes if applicable, and comply with all state and federal requirements. An attorney can help identify required licenses and permits, ensure compliance, and avoid costly mistakes. For ongoing compliance needs after formation, see our <Link href="/business/business-compliance" className="text-[#b87333] underline hover:text-[#a06828]">business compliance</Link> page.
               </p>
             </div>
 
@@ -156,8 +169,27 @@ export default function BusinessFormationPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are starting a business in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
+              If you are starting a business in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your business plans, explain different structure options, discuss formation requirements, and help you determine the best approach for your specific situation. Proper business formation from the start protects your interests, avoids costly mistakes, and sets your business up for success. Do not delay in seeking experienced legal assistance to ensure your business is properly formed and protected.
             </p>
+
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/business/llc-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">LLC Formation</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Form an Ohio LLC under ORC Chapter 1706 with experienced legal guidance</span>
+              </Link>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Contract Drafting & Review</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protect your new business with properly drafted contracts and agreements</span>
+              </Link>
+              <Link href="/business/business-compliance" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Compliance</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Maintain corporate formalities and meet Ohio regulatory requirements</span>
+              </Link>
+              <Link href="/business/business-dissolution" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Dissolution</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Properly close your Ohio business and protect against ongoing liability</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -166,4 +198,3 @@ export default function BusinessFormationPage() {
     </>
   );
 }
-

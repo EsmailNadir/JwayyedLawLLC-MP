@@ -55,6 +55,18 @@ const faqs = [
     question: 'What should I do if I am charged with criminal damaging in Ohio?',
     answer: 'If charged with criminal damaging in Ohio, exercise your right to remain silent and contact an experienced criminal defense attorney immediately. Do not make statements to police without your attorney present. Preserve any evidence that may support your defense. An attorney can protect your rights, challenge evidence, negotiate with prosecutors, and work toward dismissal or reduced charges.',
   },
+  {
+    question: `What are the elements of criminal damaging under ORC 2909.06?`,
+    answer: `Under Ohio Revised Code 2909.06, the prosecution must prove that you knowingly caused physical harm to property belonging to another person without that person's consent, or that you knowingly created a substantial risk of physical harm to such property by fire, explosion, flood, or other means. The base offense is a second-degree misdemeanor (M2), punishable by up to 90 days in jail and fines up to $750. "Knowingly" is the required mental state—accidental damage is not sufficient to sustain a conviction.`,
+  },
+  {
+    question: `What is the difference between criminal damaging and criminal mischief in Ohio?`,
+    answer: `Criminal damaging under ORC 2909.06 and criminal mischief under ORC 2909.07 are related but distinct offenses. Criminal damaging involves knowingly causing physical harm to another's property or creating a substantial risk of physical harm by fire, explosion, or flood, and is a second-degree misdemeanor (M2) as the base offense. Criminal mischief covers tampering with, defacing, or improperly handling property—including safety devices and boundary markers—and is a third-degree misdemeanor (M3) as the base offense. Criminal damaging carries the more serious penalty tier.`,
+  },
+  {
+    question: `Can criminal damaging be charged as a felony in Ohio?`,
+    answer: `Yes. While the base offense under ORC 2909.06 is a second-degree misdemeanor, criminal damaging can be elevated to a felony when the damage exceeds $1,000 to certain property types or when fire or explosion is involved as the means of harm. Prosecutors may alternatively charge vandalism under ORC 2909.05—a felony offense—when property damage thresholds are met or when the damage involves government property or critical infrastructure. A felony conviction carries significantly harsher penalties including prison time and higher fines under Ohio's felony sentencing structure.`,
+  },
 ];
 
 export default function CriminalDamagingPage() {
@@ -156,17 +168,26 @@ export default function CriminalDamagingPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal damaging charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical—early intervention can significantly impact the outcome.
+              If you are facing criminal damaging charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio" className="text-[#b87333] underline hover:text-[#a06828]">misdemeanor vs. felony charges in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/criminal-mischief" className="text-accent hover:underline">Criminal Mischief</Link>
-                <Link href="/criminal-defense/criminal-trespass" className="text-accent hover:underline">Criminal Trespass</Link>
-                <Link href="/criminal-defense/petty-theft" className="text-accent hover:underline">Petty Theft</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Mischief</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property interference and tampering defense</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
+              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Petty Theft</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Shoplifting and theft defense in Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
             </div>
           </div>
         </div>

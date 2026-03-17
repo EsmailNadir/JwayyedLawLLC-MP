@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'Do I need a motorcycle accident attorney?',
     answer: 'While you can handle a motorcycle accident claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+  },
+  {
+    question: `Does Ohio's helmet law affect a motorcycle accident injury claim?`,
+    answer: `Under ORC 4511.53, Ohio does not require motorcycle riders age 18 or older to wear a helmet, though riders under 18 must wear one. The fact that you were not wearing a helmet does not automatically bar your claim — Ohio's modified comparative negligence system (ORC 2315.33) still applies. However, insurance companies and defense attorneys routinely argue that the absence of a helmet contributed to head or brain injuries and seek to reduce your compensation by assigning you a percentage of fault. An attorney can work with medical experts to counter these arguments and establish that your injuries were caused by the collision itself, not by the absence of a helmet.`,
+  },
+  {
+    question: `What is lane filtering and how does it affect fault in a motorcycle accident in Ohio?`,
+    answer: `Lane filtering — the practice of a motorcycle moving between lanes of slow or stopped traffic — is not explicitly authorized under Ohio law. Ohio Revised Code 4511.272 permits lane sharing between two motorcycles riding side by side in the same lane, but it does not permit a motorcycle to pass between lanes of moving or stopped vehicles. If a motorcyclist was filtering at the time of a crash, an insurance company or defense attorney will likely argue that the rider was at least partially at fault for the accident. Under Ohio's modified comparative negligence rule (ORC 2315.33), this could reduce your recovery. An attorney can assess exactly what happened, analyze applicable traffic laws, and build the strongest possible case regarding fault allocation.`,
+  },
+  {
+    question: `Why are motorcycle accident injuries often more severe and how does that affect damages?`,
+    answer: `Motorcyclists have no surrounding vehicle structure, airbags, or seatbelts to absorb crash forces. As a result, motorcycle accident injuries are disproportionately severe — commonly including traumatic brain injury (TBI), spinal cord injuries, road rash causing permanent scarring, multiple fractures, and internal injuries. These catastrophic injuries typically require extensive surgeries, lengthy hospitalizations, and long-term or lifelong rehabilitation. This severity directly increases every category of recoverable damages: past and future medical expenses are higher, lost wages and loss of earning capacity may be substantial if the victim cannot return to their prior occupation, and non-economic damages for pain, suffering, and loss of enjoyment of life are significantly greater. An attorney can retain medical and economic experts to fully document and quantify these damages to pursue maximum compensation.`,
   },
 ];
 
@@ -164,9 +177,29 @@ export default function MotorcycleAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a motorcycle accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in motorcycle accident cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a motorcycle accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Time is critical—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          </Link>
+          <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Truck Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Commercial vehicle and semi-truck collision claims</span>
+          </Link>
+          <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Pedestrian Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Claims for pedestrians struck by vehicles</span>
+          </Link>
+          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Catastrophic Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Severe and life-altering injury claims</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

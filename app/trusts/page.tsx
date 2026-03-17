@@ -51,6 +51,10 @@ const faqs = [
     question: 'Who should consider an asset protection trust?',
     answer: 'Asset protection trusts are especially valuable for business owners, physicians, real estate investors, and other professionals who face heightened exposure to lawsuits and liability claims. They are also used in Medicaid planning to protect assets while qualifying for long-term care benefits. The trust must be established before any known claims arise — timing and proper structuring are essential to avoid fraudulent transfer challenges.',
   },
+  {
+    question: `What is the role of a trustee in Ohio and what fiduciary duties do they owe?`,
+    answer: `In Ohio, a trustee is the person or institution responsible for managing a trust and its assets for the benefit of the trust beneficiaries. Under Ohio Revised Code 5808.02, a trustee owes a duty of loyalty — meaning the trustee must administer the trust solely in the interest of the beneficiaries, not for the trustee's own benefit. The trustee is also bound by the prudent investor standard under ORC Chapter 5809, which requires investing and managing trust assets as a prudent investor would, considering the purposes and terms of the trust, risk tolerance, and the need for liquidity. Additionally, trustees in Ohio owe a duty to inform and report to beneficiaries, keeping them reasonably informed about the trust's administration and providing regular accountings of trust assets and transactions. Failure to meet these fiduciary duties can expose a trustee to personal liability. If you are a trustee or are selecting one, working with an experienced Ohio trusts attorney helps ensure the trust is administered properly and in compliance with Ohio law.`,
+  },
 ];
 
 export default function TrustsPage() {

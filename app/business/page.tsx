@@ -41,6 +41,18 @@ const faqs = [
     question: 'What should I do if my business is involved in a dispute?',
     answer: 'If your business is involved in a dispute, consult an experienced business attorney immediately. Gather relevant documents, preserve evidence, avoid making statements that could harm your position, and document all communications. An attorney can evaluate your case, develop strategies, negotiate settlements, and represent your business in court if necessary. Early legal intervention can often prevent disputes from escalating.',
   },
+  {
+    question: `What is a fiduciary duty in Ohio business law and who owes it?`,
+    answer: `A fiduciary duty is an obligation to act in the best interests of another party rather than in one's own self-interest. In Ohio LLC law, ORC 1706.30 governs the duties of members and managers, including the duty of loyalty (avoiding conflicts of interest and self-dealing) and the duty of care (acting in good faith and in a manner reasonably believed to be in the best interests of the company). For Ohio corporations, ORC 1701.59 imposes duties of care and loyalty on directors and officers. Breach of fiduciary duty can expose members, managers, directors, or officers to personal liability for losses caused to the business or its other owners.`,
+  },
+  {
+    question: `What is piercing the corporate veil in Ohio and how is it prevented?`,
+    answer: `Piercing the corporate veil is a legal doctrine that allows courts to hold individual owners personally liable for business debts or judgments when the business entity has been used improperly. Under ORC 1706.26 and Ohio common law, courts will pierce the veil when the entity was used to perpetrate fraud, when there was a failure to observe corporate or LLC formalities, when the business was inadequately capitalized, or when the personal and business finances were commingled. To prevent veil-piercing, owners should maintain separate business bank accounts, keep accurate records, avoid using business assets for personal expenses, ensure adequate capitalization, and comply with all governance requirements such as annual meetings and proper recordkeeping.`,
+  },
+  {
+    question: `What is the Ohio Commercial Activity Tax (CAT) and which businesses must register?`,
+    answer: `The Ohio Commercial Activity Tax (CAT) is a tax on the privilege of doing business in Ohio, imposed on taxable gross receipts from business activities in the state. Governed by ORC Chapter 5751, the CAT applies to most businesses with taxable gross receipts exceeding $150,000 annually—regardless of profitability or business structure. Businesses at or below $150,000 in taxable gross receipts are generally exempt. The CAT rate is 0.26% on taxable gross receipts above the threshold. Ohio LLCs, corporations, partnerships, and sole proprietors may all be subject to the CAT depending on their gross receipts. Businesses must register with the Ohio Department of Taxation and file returns on an annual or quarterly basis depending on their gross receipts level.`,
+  },
 ];
 
 export default function BusinessPage() {

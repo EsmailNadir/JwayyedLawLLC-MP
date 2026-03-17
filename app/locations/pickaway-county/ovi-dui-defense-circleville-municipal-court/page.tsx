@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for OVI in Pickaway County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Pickaway County courts, Circleville Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced OVI attorney can provide effective representation.',
   },
+  {
+    question: `What is the 30-day ALS appeal deadline after a Pickaway County OVI arrest?`,
+    answer: `Under Ohio Revised Code 4511.191, an administrative license suspension (ALS) takes effect immediately upon a Pickaway County OVI arrest if you refuse a chemical test or test over the legal limit. You have exactly 30 days from the date of arrest to file an appeal of the ALS with Circleville Municipal Court. If this deadline is missed, the right to appeal is permanently waived and the suspension continues for its full statutory duration — one year for a first refusal or 90 days for a first test failure. Filing promptly also allows your attorney to request a stay of the suspension while the appeal is pending, which can preserve your driving privileges during the case. Contact a Pickaway County OVI attorney as soon as possible after your arrest to protect this critical right.`,
+  },
+  {
+    question: `What OVI enforcement activity occurs on US 23 in Pickaway County?`,
+    answer: `US 23 is a major north-south corridor running through Pickaway County between Columbus and Chillicothe, and it is a known focus of OVI enforcement by the Ohio State Highway Patrol and Pickaway County Sheriff deputies. The highway sees heavy commuter and commercial traffic, and law enforcement regularly patrols for impaired drivers, particularly on weekend nights and holiday weekends. Sobriety checkpoints have been conducted along the US 23 corridor in Pickaway County. Traffic stops on US 23 are often recorded on dashcam, which can be an important source of evidence in OVI defense. An attorney experienced with Circleville Municipal Court can review all dashcam and body camera footage, challenge the basis for the traffic stop, and identify weaknesses in the prosecution's evidence.`,
+  },
+  {
+    question: `What HB 37 changes apply to first OVI offenses in Circleville Municipal Court?`,
+    answer: `Ohio House Bill 37, effective April 9, 2025, made several changes that apply to first-time OVI defendants in Circleville Municipal Court. The minimum fine for a first OVI conviction was increased from $375 to $565, with a maximum of $1,075. The license reinstatement fee was reduced from $475 to $315. Most significantly for first offenders, HB 37 gives judges discretion to waive the 15-day hard suspension before limited driving privileges can be granted — but only for non-refusal first offenses where the defendant has no prior alcohol-related arrests. First offenders who refused the chemical test are not eligible for the waiver and must still serve the 15-day period before limited privileges begin. An experienced OVI attorney can help eligible Pickaway County first offenders secure the earliest possible limited driving privileges under these new rules.`,
+  },
 ];
 
 export default function PickawayOVIDefensePage() {

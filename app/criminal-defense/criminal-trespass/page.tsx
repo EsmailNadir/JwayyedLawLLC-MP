@@ -56,6 +56,18 @@ const faqs = [
     question: 'What should I do if I am charged with criminal trespass in Ohio?',
     answer: 'If charged with criminal trespass in Ohio, remain calm and exercise your right to remain silent. Do not argue with police or attempt to justify your presence on the property, as statements can be used against you. Contact an experienced criminal defense attorney immediately. Document any evidence that may support your defense, such as evidence of permission, lack of posted signs, or reasons you believed you had a right to be on the property. An attorney can protect your rights and work toward dismissal or reduced charges.',
   },
+  {
+    question: `What are the elements of criminal trespass in Ohio?`,
+    answer: `Under Ohio Revised Code 2911.21, criminal trespass requires that a person knowingly enter or remain on the land or premises of another without privilege to do so, when notice against unauthorized access has been given by actual communication, posting in a manner reasonably calculated to inform potential intruders, or fencing or other enclosure. The base offense is a fourth-degree misdemeanor (M4), punishable by up to 30 days in jail and fines up to $250. The prosecution must prove both the knowing entry without privilege and that proper notice was given.`,
+  },
+  {
+    question: `What is aggravated trespass in Ohio and how does it differ from criminal trespass?`,
+    answer: `Aggravated trespass under Ohio Revised Code 2911.211 occurs when a person enters or remains on the land or premises of another with the purpose to commit a misdemeanor offense that is likely to cause physical harm or to cause another person to believe the offender will cause physical harm. Unlike standard criminal trespass (ORC 2911.21, M4), aggravated trespass is a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000. The key distinction is the intent to commit a harmful misdemeanor, which elevates the offense two full misdemeanor levels.`,
+  },
+  {
+    question: `Can a criminal trespass conviction be expunged in Ohio?`,
+    answer: `Yes. A criminal trespass conviction under ORC 2911.21 is a fourth-degree misdemeanor (M4) and is generally eligible for record sealing under Ohio Revised Code 2953.32 after a one-year waiting period from the completion of sentence, provided you meet eligibility requirements. Record sealing effectively removes the conviction from most background checks, restoring employment and housing opportunities. An attorney can evaluate your eligibility, identify any obstacles, and guide you through the application process.`,
+  },
 ];
 
 export default function CriminalTrespassPage() {
@@ -265,17 +277,26 @@ export default function CriminalTrespassPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal trespass charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases -- early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing criminal trespass charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read about <Link href="/our-law-firm/blog/what-to-expect-first-court-appearance-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to expect at your first court appearance in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/criminal-mischief" className="text-accent hover:underline">Criminal Mischief</Link>
-                <Link href="/criminal-defense/resisting-arrest" className="text-accent hover:underline">Resisting Arrest</Link>
-                <Link href="/criminal-defense/petty-theft" className="text-accent hover:underline">Petty Theft</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/criminal-damaging" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Damaging</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property damage and destruction charges</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Mischief</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property interference and tampering defense</span>
+              </Link>
+              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Resisting Arrest</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for resisting arrest and obstruction charges</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
             </div>
           </div>
         </div>

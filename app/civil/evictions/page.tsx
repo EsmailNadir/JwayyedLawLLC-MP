@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -42,6 +43,18 @@ const faqs = [
     question: 'Do I need an eviction attorney?',
     answer: 'Eviction proceedings move quickly and require experienced representation. Eviction attorneys understand Ohio eviction law, can protect tenant rights, defend against eviction, handle eviction proceedings for landlords, negotiate settlements, and represent you in court. Most attorneys work on hourly fee arrangements and offer consultations. Experienced representation is essential to protect your rights.',
   },
+  {
+    question: `What notice is required before filing an eviction in Ohio?`,
+    answer: `Under Ohio Revised Code 1923.04, landlords must provide written notice to tenants before filing an eviction action. For nonpayment of rent, the landlord must provide a three-day written notice to vacate. For other lease violations, the required notice period is governed by the lease terms or applicable statute—commonly 30 days for month-to-month tenancies. The notice must be properly served on the tenant, either by personal delivery, leaving a copy at the residential unit, or mailing. Defective notice—whether incorrect content, improper service, or insufficient time—can result in dismissal of the eviction action.`,
+  },
+  {
+    question: `What is the eviction timeline in Ohio from filing to writ of possession?`,
+    answer: `After proper notice expires, an Ohio landlord files a forcible entry and detainer action in the municipal or county court. A hearing is typically scheduled within seven to ten days of filing. If the court rules in the landlord's favor, a judgment is entered and a writ of execution (writ of possession) can be issued after the applicable appeal period. The sheriff then executes the writ and removes the tenant. From the date of filing, the entire process commonly takes three to six weeks in uncontested cases, but can take longer if the tenant raises defenses, requests continuances, or appeals the judgment.`,
+  },
+  {
+    question: `What are tenant defenses to eviction in Ohio?`,
+    answer: `Ohio tenants have several recognized defenses to eviction. Improper or defective notice under ORC 1923.04 can result in dismissal. Retaliatory eviction is prohibited under ORC 5321.02—a landlord may not evict a tenant in retaliation for reporting code violations, joining a tenant organization, or exercising other protected rights. Habitability violations under ORC 5321.07 may provide a defense or counterclaim when the landlord has failed to maintain the premises in a fit and habitable condition. A landlord's acceptance of rent after serving a notice to vacate may waive the notice and require the process to start over. An attorney can identify applicable defenses and present them effectively in court.`,
+  },
 ];
 
 export default function EvictionsPage() {
@@ -57,15 +70,15 @@ export default function EvictionsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Eviction Proceedings in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. At Jwayyed Law LLC, we provide experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction.
+              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction. Evictions are closely related to <Link href="/civil/landlord-tenant-disputes" className="text-[#b87333] underline hover:text-[#a06828]">landlord-tenant disputes</Link>, and understanding your rights under ORC Chapter 5321 is essential.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Eviction proceedings move quickly and can have immediate devastating effects on tenants including loss of housing, removal of property, and damage to credit. Landlords must follow proper procedures including providing proper notice, filing eviction actions in court, and obtaining court orders. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability. Understanding eviction procedures, available defenses, and your rights is essential for protecting your interests.
+              Eviction proceedings move quickly and can have immediate devastating effects on tenants including loss of housing, removal of property, and damage to credit. Landlords must follow proper procedures including providing proper notice, filing eviction actions in court, and obtaining court orders. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability. Understanding eviction procedures, available defenses, and your rights is essential for protecting your interests. For more on tenant rights, read our articles on <Link href="/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties</Link> and <Link href="/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws" className="text-[#b87333] underline hover:text-[#a06828]">Ohio security deposit laws</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The eviction process begins with proper notice (3 days for nonpayment, 30 days for lease violations), followed by filing an eviction action in court, serving notice on tenants, obtaining a court order, and having the sheriff execute the eviction. Tenants can defend against eviction by raising defenses including lack of proper notice, habitability violations, retaliatory eviction, or payment of rent. Early intervention by an experienced eviction attorney can significantly impact the outcome, potentially preventing eviction or minimizing consequences.
+              The eviction process begins with proper notice (3 days for nonpayment, 30 days for lease violations), followed by filing an eviction action in court, serving notice on tenants, obtaining a court order, and having the sheriff execute the eviction. Tenants can defend against eviction by raising defenses including lack of proper notice, habitability violations, retaliatory eviction, or payment of rent. Early intervention by an experienced eviction attorney can significantly impact the outcome, potentially preventing eviction or minimizing consequences. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> immediately if you are facing an eviction proceeding.
             </p>
 
             <LocationsWeServe title="Civil" />
@@ -161,6 +174,26 @@ export default function EvictionsPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing eviction proceedings in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Security deposit claims, habitability issues, and lease enforcement</span>
+              </Link>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              </Link>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Real Estate Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Title disputes, boundary issues, quiet title actions, and property litigation</span>
+              </Link>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -169,4 +202,3 @@ export default function EvictionsPage() {
     </>
   );
 }
-

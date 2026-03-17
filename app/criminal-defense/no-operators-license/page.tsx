@@ -56,6 +56,18 @@ const faqs = [
     question: 'How do I obtain a driver\'s license in Ohio if I have never had one?',
     answer: 'To obtain a driver\'s license in Ohio, you must be at least 16 years old (with completed driver\'s education) or 18 years old (without driver\'s education). You must pass a written knowledge test, a vision screening, and a driving skills test. Required documents include proof of identity (birth certificate or passport), proof of Social Security number, and proof of Ohio residency. You must also provide proof of financial responsibility (insurance). If you have outstanding suspensions or holds on your record from previous violations, these must be resolved before you can obtain a license. An attorney can help identify and resolve any obstacles to obtaining your license.',
   },
+  {
+    question: `What are the penalties for no operator's license in Ohio under ORC 4510.12?`,
+    answer: `Under Ohio Revised Code 4510.12, a first offense for operating a motor vehicle without a valid operator's license is an unclassified minor misdemeanor (MM) carrying a maximum fine of $150 plus court costs. However, if the offender has a prior conviction for the same offense within the preceding three years, the charge is elevated to a fourth-degree misdemeanor (M4), punishable by up to 30 days in jail and fines up to $250. Repeat violations can escalate further. In all cases, the court may impose license suspension and probation. A conviction also creates a criminal record that can affect employment and other opportunities.`,
+  },
+  {
+    question: `What is the difference between no operator's license and driving under suspension in Ohio?`,
+    answer: `No operator's license (ORC 4510.12) and driving under suspension (ORC 4510.14) are distinct offenses with different penalties. No operator's license applies when a person has never obtained a valid license, has an expired license, or holds an invalid license. Driving under suspension applies when a person's license has been actively suspended or revoked by the Ohio BMV or a court order. Driving under suspension is generally the more serious charge, particularly when the suspension is OVI-related or related to the Financial Responsibility Act, and can carry mandatory jail time and longer suspension periods depending on the basis for the suspension.`,
+  },
+  {
+    question: `Can a no operator's license charge be dismissed if I get a valid license before my court date?`,
+    answer: `Obtaining a valid Ohio operator's license before your court date can significantly improve the outcome of your case and is one of the most effective steps you can take. Many prosecutors and judges are willing to reduce the charge to a non-criminal minor misdemeanor, dismiss the case entirely, or minimize penalties when a defendant demonstrates they have resolved the underlying licensing issue. However, dismissal is not guaranteed and depends on the specific court, prosecutor, your prior driving history, and the circumstances of the stop. An experienced attorney can negotiate on your behalf and present your newly obtained license in the most favorable light possible.`,
+  },
 ];
 
 export default function NoOperatorsLicensePage() {
@@ -279,16 +291,26 @@ export default function NoOperatorsLicensePage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you have been charged with driving without a valid operator&apos;s license anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy to achieve the best possible outcome. Taking action early, including working toward obtaining a valid license, can make a significant difference in the resolution of your case. Contact us today to discuss your situation.
+              If you have been charged with driving without a valid license anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio" className="text-[#b87333] underline hover:text-[#a06828]">protecting your rights during a traffic stop in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/speeding-tickets" className="text-accent hover:underline">Speeding Tickets</Link>
-                <Link href="/criminal-defense/driving-under-suspension" className="text-accent hover:underline">Driving Under Suspension</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement &amp; Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Driving Under Suspension</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Suspended license defense in Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Speeding Tickets</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Traffic violation defense throughout Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     "probate attorney Ohio",
     "business law attorney Ohio",
     "traffic violations attorney Ohio",
-    "family law attorney Ohio",
     "legal services Ohio",
     "attorney serving Ohio",
     "lawyer throughout Ohio"
@@ -127,12 +126,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     },
     "serviceType": [
       "Criminal Defense",
+      "OVI DUI Defense",
+      "Personal Injury",
       "Estate Planning",
       "Business Law",
       "Probate",
-      "Traffic Violations",
-      "Family Law"
-    ]
+      "Civil Litigation",
+      "Traffic Violations"
+    ],
+    "sameAs": []
   };
 
   return (

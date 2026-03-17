@@ -51,6 +51,22 @@ const faqs = [
     question: 'What are my rights during an arrest in Ohio?',
     answer: 'You have important constitutional rights during arrest in Ohio. You have the right to remain silent and cannot be compelled to testify against yourself under the Fifth Amendment. You have the right to an attorney under the Sixth Amendment and should request one immediately. You have the right to know the charges against you. You have the right to refuse searches without a warrant or probable cause, except in limited circumstances. Remember: anything you say can be used against you, so exercise your right to remain silent until you have legal counsel.',
   },
+  {
+    question: `What is the difference between misdemeanor and felony charges in Ohio?`,
+    answer: `In Ohio, misdemeanors and felonies carry very different sentencing structures. Under ORC 2929.21, misdemeanor sentences are capped at 180 days in jail for a first-degree misdemeanor and $1,000 in fines. Felonies are governed by ORC 2929.14, which sets prison terms ranging from 6–12 months for a fifth-degree felony (F5) up to 3–11 years (or more) for a first-degree felony (F1). Felony convictions also carry long-term collateral consequences including loss of voting rights, gun rights, and greater barriers to employment and housing. Jwayyed Law LLC handles misdemeanor matters only; if you are charged with a felony, you should seek an attorney who handles felony defense.`,
+  },
+  {
+    question: `What happens at an arraignment in Ohio?`,
+    answer: `An arraignment is your first formal court appearance after being charged with a crime. At arraignment, the judge reads the charges against you, informs you of your constitutional rights, and asks you to enter a plea — typically not guilty at this stage. The court will also address bail or bond conditions. Entering a not guilty plea preserves all of your rights and gives your attorney time to review discovery, investigate the facts, and develop a defense strategy. Arraignment is a critical opportunity for your attorney to argue for reasonable bail and begin protecting your interests from the outset.`,
+  },
+  {
+    question: `How does Ohio's record sealing statute work after a conviction?`,
+    answer: `Under ORC 2953.32, Ohio allows eligible individuals to apply to have their criminal records sealed after a conviction. For most misdemeanor convictions, the waiting period is one year after the completion of your sentence (including probation). Once sealed, the record is not accessible to the general public or most employers — though law enforcement and certain licensing agencies may still view sealed records. Not all offenses are eligible; certain convictions such as some violent offenses or sex offenses are excluded. An experienced attorney can evaluate your eligibility and guide you through the application process to help minimize the long-term impact of a conviction on your life.`,
+  },
+  {
+    question: `What are the collateral consequences of a criminal conviction in Ohio beyond jail and fines?`,
+    answer: `A criminal conviction in Ohio can carry significant collateral consequences beyond the direct sentence. Misdemeanor and felony convictions can: affect employment (employers routinely run background checks and may deny jobs based on criminal history); result in loss of professional licenses regulated by Ohio agencies; affect housing (landlords may deny rental applications); affect immigration status for non-citizens (certain convictions trigger removal or inadmissibility proceedings); and result in the loss of firearm rights for felony convictions under ORC 2923.13 and federal law. A domestic violence misdemeanor conviction triggers a lifetime federal firearms prohibition under 18 USC 922(g)(9). Understanding and minimizing these collateral consequences is a core part of effective criminal defense representation.`,
+  },
 ];
 
 export default function CriminalDefensePage() {
