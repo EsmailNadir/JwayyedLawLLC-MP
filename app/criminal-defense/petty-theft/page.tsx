@@ -56,6 +56,18 @@ const faqs = [
     question: 'What should I do if I am charged with petty theft or shoplifting in Ohio?',
     answer: 'If charged with petty theft or shoplifting in Ohio, exercise your right to remain silent immediately. Do not make statements to police, store security, or loss prevention officers without an attorney present. Do not sign any admission of guilt or civil demand letters. Contact an experienced criminal defense attorney immediately. Preserve any evidence that may support your defense, such as receipts, text messages, or witness information. An attorney can protect your rights, challenge the evidence, and work toward the best possible outcome including potential dismissal.',
   },
+  {
+    question: `What is the value threshold between petty theft and felony theft in Ohio?`,
+    answer: `Under ORC 2913.02, the value of the property or services stolen determines the degree of the offense. Theft of property valued at less than $1,000 is petty theft, charged as a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000 (or a minor misdemeanor if under $150 with no prior theft convictions). When the value reaches $1,000 to $7,499, the offense becomes a fifth-degree felony (F5) punishable by 6–12 months in prison. The threshold increases further for higher-value thefts. Accurately valuing property is therefore a critical issue in theft cases, and an attorney can challenge inflated valuations to potentially reduce the severity of the charge.`,
+  },
+  {
+    question: `Can a petty theft conviction be sealed in Ohio?`,
+    answer: `Yes, in most cases a petty theft conviction is eligible for record sealing under ORC 2953.32. After a one-year waiting period following the completion of your sentence (including any probation), you may petition the court to seal your record. Once sealed, the record is hidden from most employers and landlords conducting background checks — though law enforcement and certain licensing agencies may still access it. Because theft convictions are particularly damaging to employment prospects (they signal dishonesty to employers), pursuing record sealing as soon as you are eligible is strongly advisable. An attorney can evaluate your eligibility and file the necessary petition on your behalf.`,
+  },
+  {
+    question: `Does a petty theft conviction affect professional licensing in Ohio?`,
+    answer: `Yes, a petty theft conviction can affect professional licensing in Ohio. Many licensing boards — including those governing nursing, pharmacy, education, real estate, insurance, and financial services — conduct background checks and have authority to deny, suspend, or revoke licenses based on criminal convictions. Because theft offenses involve dishonesty, licensing boards often view them seriously even when the amount stolen is small. If you hold a professional license or are pursuing one, the stakes of a theft conviction go well beyond criminal penalties. An experienced attorney can work to minimize or avoid a conviction through diversion programs, charge reductions, or dismissal, and can also advise on how to address any licensing board inquiries.`,
+  },
 ];
 
 export default function PettyTheftPage() {
@@ -277,17 +289,26 @@ export default function PettyTheftPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing petty theft or shoplifting charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases -- early intervention by experienced counsel can significantly impact the outcome, particularly in securing diversion program placement. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing petty theft or shoplifting charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/shoplifting-ohio-first-offense" className="text-[#b87333] underline hover:text-[#a06828]">shoplifting charges for a first offense in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/criminal-mischief" className="text-accent hover:underline">Criminal Mischief</Link>
-                <Link href="/criminal-defense/criminal-trespass" className="text-accent hover:underline">Criminal Trespass</Link>
-                <Link href="/criminal-defense/obstruction-of-official-business" className="text-accent hover:underline">Obstruction of Official Business</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/criminal-damaging" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Damaging</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property damage and destruction charges</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Mischief</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property interference and tampering defense</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
+              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Obstruction of Official Business</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for interfering with law enforcement</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -42,6 +43,18 @@ const faqs = [
     question: 'Can real estate disputes be resolved without litigation?',
     answer: 'Yes, many real estate disputes can be resolved through negotiation, mediation, or arbitration without litigation. Alternative dispute resolution can save time and money while resolving disputes. However, some disputes require litigation to resolve title issues, quiet title actions, or other complex matters. An attorney can help determine the best approach.',
   },
+  {
+    question: `What types of real estate disputes are handled in Ohio courts?`,
+    answer: `Ohio courts handle a wide range of real estate disputes including title disputes (competing claims to ownership), boundary disputes between neighboring property owners, easement issues involving rights of access or use, partition actions under ORC Chapter 5307 where co-owners cannot agree on the use or sale of property, adverse possession claims under ORC 2305.04, seller disclosure violations under ORC 5302.30, purchase agreement breaches, construction defect claims, and landlord-tenant disputes. Each type of dispute involves distinct legal standards and procedures, and many can be resolved through negotiation or alternative dispute resolution before reaching trial.`,
+  },
+  {
+    question: `What is adverse possession in Ohio and how long does it take?`,
+    answer: `Adverse possession under Ohio Revised Code 2305.04 is a legal doctrine allowing a person to acquire title to another's property by occupying it openly, notoriously, continuously, exclusively, and hostilely—meaning without the true owner's permission—for a period of 21 years. All five elements must be present throughout the entire statutory period. Ohio courts strictly enforce the 21-year requirement, and any permissive use, abandonment of possession, or interruption by the true owner restarts the clock. A successful adverse possession claim requires a quiet title action filed in the Court of Common Pleas to formally establish legal ownership.`,
+  },
+  {
+    question: `What is a partition action in Ohio and when is it used?`,
+    answer: `A partition action under ORC Chapter 5307 is a legal proceeding used when two or more co-owners of real property—such as tenants in common or joint tenants—cannot agree on what to do with the property. Either co-owner may file a complaint in the Court of Common Pleas requesting partition. The court may order physical partition of the property if practicable, or if physical partition is not feasible, order the property sold at a sheriff's sale with the proceeds divided among the co-owners according to their ownership interests. Partition actions are common in estate situations, divorce-adjacent property disputes, and investment property co-ownership disagreements.`,
+  },
 ];
 
 export default function RealEstateDisputesPage() {
@@ -57,7 +70,7 @@ export default function RealEstateDisputesPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Real Estate Disputes in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. At Jwayyed Law LLC, we provide experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
+              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -65,7 +78,7 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. An experienced attorney can help identify applicable deadlines, preserve your rights, and resolve disputes efficiently.
+              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> to discuss your real estate dispute and protect your rights.
             </p>
 
             <LocationsWeServe title="Civil" />
@@ -96,7 +109,7 @@ export default function RealEstateDisputesPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h4 className="font-semibold text-gray-900 mb-4">Easement Disputes</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Easement disputes involve rights to use another person's property for specific purposes (access, utilities, etc.). These disputes may require analysis of easement agreements, property records, and legal action to resolve. An attorney can analyze easement issues and resolve disputes.
+                Easement disputes involve rights to use another person&apos;s property for specific purposes (access, utilities, etc.). These disputes may require analysis of easement agreements, property records, and legal action to resolve. An attorney can analyze easement issues and resolve disputes.
               </p>
             </div>
 
@@ -155,6 +168,26 @@ export default function RealEstateDisputesPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are involved in a real estate dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/civil/construction-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Construction Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
+              </Link>
+              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
+              </Link>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              </Link>
+              <Link href="/civil/evictions" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Evictions</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Landlord eviction proceedings and tenant eviction defense in Ohio</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -163,4 +196,3 @@ export default function RealEstateDisputesPage() {
     </>
   );
 }
-

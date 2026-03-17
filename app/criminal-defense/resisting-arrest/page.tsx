@@ -56,6 +56,18 @@ const faqs = [
     question: 'What should I do if I am charged with resisting arrest in Ohio?',
     answer: 'If charged with resisting arrest in Ohio, exercise your right to remain silent and do not discuss the incident with anyone except your attorney. Contact an experienced criminal defense attorney immediately. Do not make statements to police about what happened during the arrest. Document everything you remember about the arrest including officer names, badge numbers, witnesses, and any injuries sustained. If you were injured during the arrest, seek medical attention and document your injuries. An attorney can review the circumstances of your arrest and develop an effective defense strategy.',
   },
+  {
+    question: `What must the prosecution prove for a resisting arrest conviction in Ohio?`,
+    answer: `To obtain a conviction under ORC 2921.33, the prosecution must prove beyond a reasonable doubt that: (1) an arrest was being made; (2) the arrest was lawful — meaning the officer had proper authority and probable cause; (3) the defendant recklessly or by force resisted or interfered with that arrest; and (4) the defendant was aware of a substantial risk that their conduct would hinder the arrest and consciously disregarded that risk. Each element is subject to challenge. If the underlying arrest was unlawful, if the conduct did not rise to the level of reckless resistance, or if the physical reaction was involuntary rather than intentional, the charge may not hold up in court.`,
+  },
+  {
+    question: `Does the lawfulness of the underlying arrest matter for a resisting arrest charge in Ohio?`,
+    answer: `Yes — ORC 2921.33 requires that the arrest being resisted be a "lawful" arrest. If the officer lacked probable cause, exceeded their authority, or violated your constitutional rights in making the arrest, the arrest may be deemed unlawful, which can serve as a defense to the resisting charge. However, Ohio courts generally discourage physical resistance even to unlawful arrests, advising that the proper remedy is to challenge the arrest through legal proceedings afterward rather than physically at the scene. An attorney can investigate the circumstances of your arrest, file a motion to suppress if constitutional violations occurred, and argue that the arrest was unlawful as part of your defense strategy.`,
+  },
+  {
+    question: `What are the penalties for resisting arrest versus obstructing official business in Ohio?`,
+    answer: `Resisting arrest under ORC 2921.33(A) is a second-degree misdemeanor (M2) punishable by up to 90 days in jail and fines up to $750. If force is used against the officer during the resistance, it is enhanced to a first-degree misdemeanor (M1) carrying up to 180 days in jail and fines up to $1,000. Obstructing official business under ORC 2921.31 is a second-degree misdemeanor for a first offense — same penalty range as standard resisting arrest — but is elevated to a fifth-degree felony (F5) if the obstruction creates a risk of physical harm to any person. Both charges are often filed together following a confrontational police encounter, and an experienced attorney can negotiate to resolve or reduce both charges as part of a unified defense strategy.`,
+  },
 ];
 
 export default function ResistingArrestPage() {
@@ -272,17 +284,26 @@ export default function ResistingArrestPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing resisting arrest charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases -- early intervention by experienced counsel can significantly impact the outcome, particularly in obtaining and preserving video evidence. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing resisting arrest charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read about <Link href="/our-law-firm/blog/what-to-expect-first-court-appearance-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to expect at your first court appearance in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/obstruction-of-official-business" className="text-accent hover:underline">Obstruction of Official Business</Link>
-                <Link href="/criminal-defense/assault-charges" className="text-accent hover:underline">Assault Charges</Link>
-                <Link href="/criminal-defense/domestic-violence" className="text-accent hover:underline">Domestic Violence Defense</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Assault Charges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Simple and aggravated assault defense in Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Obstruction of Official Business</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for interfering with law enforcement</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
             </div>
           </div>
         </div>

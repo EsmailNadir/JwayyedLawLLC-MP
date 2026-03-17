@@ -54,6 +54,18 @@ const faqs = [
     question: 'How can a domestic violence defense attorney help my case?',
     answer: 'A domestic violence defense attorney can investigate your case, challenge evidence including witness credibility, develop defense strategies including self-defense or false allegations, negotiate with prosecutors for reduced charges or dismissal, address protection orders, protect your rights during court proceedings, and work to minimize long-term consequences. Time is critical—contact an attorney immediately to protect your rights and begin building your defense.',
   },
+  {
+    question: `Can the alleged victim drop domestic violence charges in Ohio?`,
+    answer: `No. In Ohio, domestic violence charges are prosecuted by the state, not by the alleged victim. Once police are called and charges are filed, the decision to proceed belongs to the prosecutor — not the alleged victim. Even if the alleged victim recants, refuses to cooperate, or asks that charges be dropped, the prosecutor can and often does continue pursuing the case using other evidence such as 911 recordings, medical records, photographs, and officer observations. An experienced defense attorney can work to challenge the prosecution's evidence, present alternative explanations, and negotiate with prosecutors even when the alleged victim is uncooperative.`,
+  },
+  {
+    question: `What is the impact of a domestic violence conviction on gun rights?`,
+    answer: `A domestic violence conviction carries severe and permanent consequences for gun rights under federal law. Under 18 U.S.C. 922(g)(9), it is a federal crime for any person convicted of a misdemeanor crime of domestic violence to possess, purchase, or receive a firearm or ammunition. This prohibition applies even to misdemeanor domestic violence convictions — not just felonies — and there is no exception for hunters, sport shooters, or individuals who rely on firearms for self-defense. Unlike many other collateral consequences, this federal firearms prohibition is permanent and cannot be restored. This makes it critical to aggressively fight domestic violence charges before a conviction occurs.`,
+  },
+  {
+    question: `What is a civil protection order (CPO) and how does it relate to a domestic violence criminal case?`,
+    answer: `A civil protection order (CPO) is a court order issued under ORC 3113.31 that restricts an individual from contacting, approaching, or harassing a family or household member. CPOs are civil proceedings separate from a criminal domestic violence case, but they are frequently filed at the same time or shortly after criminal charges are brought. A CPO can remove you from your home, restrict contact with your children, and affect custody arrangements — often within days of the alleged incident through an ex parte (one-sided) emergency hearing. Violating a CPO is itself a criminal offense under ORC 2919.27. An attorney can represent you at CPO hearings to challenge the order, protect your parental rights, and work to modify or terminate the order while the criminal case proceeds.`,
+  },
 ];
 
 export default function DomesticViolencePage() {
@@ -240,16 +252,26 @@ export default function DomesticViolencePage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing domestic violence charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including protection order challenges, evaluate eligibility for diversion programs, and develop a strategy tailored to your situation. Time is critical in domestic violence cases—protection orders can be issued immediately, and early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or eligibility for treatment programs. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
+              If you are facing domestic violence charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> immediately. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our guide on <Link href="/our-law-firm/blog/ohio-civil-protection-order-guide" className="text-[#b87333] underline hover:text-[#a06828]">Ohio civil protection orders</Link>.
             </p>
 
-            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3 font-['Inter',_'Arial',_sans-serif]">
-                <Link href="/criminal-defense/assault-charges" className="text-orange-500 hover:underline">Assault Defense</Link>
-                <Link href="/civil/civil-protection-orders" className="text-orange-500 hover:underline">Civil Protection Orders</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-orange-500 hover:underline">Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Assault Charges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Simple and aggravated assault defense in Ohio</span>
+              </Link>
+              <Link href="/civil/civil-protection-orders" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Civil Protection Orders</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">CPO defense and modification in Ohio courts</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wilmington Municipal Court Attorney | Clinton County Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Wilmington Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Clinton County, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington misdemeanor defense'],
+  title: 'Wilmington Municipal Court Attorney | Clinton County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
+  description: 'Experienced attorney for Wilmington Municipal Court (Clinton County Municipal Court). OVI/DUI defense, misdemeanor charges, and traffic violations in Clinton County, Ohio. Call (614) 285-5482.',
+  keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington Ohio misdemeanor defense', 'Clinton County criminal attorney', 'Clinton County DUI lawyer'],
   openGraph: {
     title: 'Wilmington Municipal Court Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts/wilmington-municipal-court',
@@ -23,24 +24,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: 'What types of cases does Wilmington Municipal Court handle?',
-    answer: 'Wilmington Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Clinton County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
+    question: `What types of cases does Wilmington Municipal Court handle?`,
+    answer: `Wilmington Municipal Court (officially the Clinton County Municipal Court) handles misdemeanor criminal cases, OVI/DUI charges under ORC 4511.19, traffic violations, civil disputes up to $15,000, and small claims matters arising throughout Clinton County. As the county seat, Wilmington hosts the primary municipal court for all of Clinton County. Felony charges are bound over to the Clinton County Common Pleas Court. Our firm does not handle juvenile, probate, or immigration matters in this court.`,
   },
   {
-    question: 'Where is Wilmington Municipal Court located?',
-    answer: 'Wilmington Municipal Court is located in Wilmington, Ohio, the county seat of Clinton County. The court handles all misdemeanor cases, OVI/DUI charges, and traffic violations occurring in Clinton County. An attorney familiar with the court can help navigate procedures and achieve favorable outcomes.',
+    question: `Where is Wilmington Municipal Court located?`,
+    answer: `Wilmington Municipal Court (Clinton County Municipal Court) is located at 69 N South Street, Wilmington, OH 45177. Wilmington is the county seat of Clinton County, a rural southwestern Ohio county. The court serves all of Clinton County, including Sabina, Blanchester, Clarksville, and Port William. US 68 runs north-south through the county and is a common source of OVI and traffic charges heard in this court.`,
   },
   {
-    question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys offer consultations.',
+    question: `What are the OVI penalties in Wilmington Municipal Court under current Ohio law?`,
+    answer: `Under ORC 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Wilmington Municipal Court carries: mandatory minimum 3 days in jail (or 3-day driver intervention program), fines of $565–$1,075, a class five license suspension of 1–3 years, and 6 points on your license. A high-tier first OVI (BAC 0.17% or higher, or test refusal with a prior refusal) carries a mandatory minimum of 6 days in jail. HB 37 eliminated the 15-day hard suspension for non-refusal first OVI offenses when an ignition interlock device is installed — important for rural Clinton County residents who rely on their vehicles.`,
   },
   {
-    question: 'How long do Municipal Court cases take?',
-    answer: 'Municipal Court case duration varies depending on case complexity, court schedule, and whether the case goes to trial. Simple traffic violations may resolve quickly, while OVI/DUI and misdemeanor cases may take months. An attorney can provide a realistic timeline.',
+    question: `What is the 30-day ALS appeal deadline after a Clinton County OVI arrest?`,
+    answer: `Under ORC 4511.191, an Administrative License Suspension (ALS) takes effect immediately at arrest when you test above 0.08% BAC or refuse a chemical test in Clinton County. You have exactly 30 days from the arrest date to appeal the ALS to Wilmington Municipal Court. Missing this deadline permanently forfeits your right to challenge the suspension administratively. An attorney must file the appeal and supporting memorandum within this 30-day window, and can simultaneously challenge the validity of the traffic stop and the chemical test to pursue full dismissal.`,
   },
   {
-    question: 'What should I expect at a Municipal Court hearing?',
-    answer: 'Municipal Court hearings are less formal than Common Pleas Court but still require proper preparation. Hearings may include arraignments, pretrial conferences, motions hearings, and trials. Understanding court procedures and expectations is essential. An attorney can help prepare you.',
+    question: `Does Wilmington Municipal Court handle rural road OVI charges, including animal-vehicle collision scenarios?`,
+    answer: `Yes. Clinton County's rural character means OVI charges sometimes arise from accidents involving deer, farm equipment, or other hazards on rural roads including US 68 and SR 73. In these cases, the mere occurrence of an accident does not establish impairment, and our attorney challenges both the basis for any OVI charge and the accident causation analysis. A thorough investigation of road conditions, sight lines, and the circumstances of the incident is essential to building a complete defense.`,
+  },
+  {
+    question: `What misdemeanor criminal charges are common in Wilmington Municipal Court?`,
+    answer: `Wilmington Municipal Court handles misdemeanor assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), criminal trespass, disorderly conduct, and drug possession (minor misdemeanor marijuana under 100g, ORC 2925.11). Clinton County's agricultural and rural character generates a range of property-related misdemeanor matters as well. Under ORC 2929.21, an M1 conviction carries up to 180 days in jail and a $1,000 fine. Many misdemeanor convictions can be sealed under ORC 2953.32 after a one-year waiting period from final discharge.`,
+  },
+  {
+    question: `Can I get limited driving privileges after a Clinton County OVI charge?`,
+    answer: `Yes. Wilmington Municipal Court can grant limited driving privileges (LDP) for work, school, medical appointments, and other essential travel under ORC 4510.021. Under HB 37, the 15-day hard suspension before LDP is available has been eliminated for non-refusal first OVI offenses when an ignition interlock device is installed. For rural Clinton County residents without public transit alternatives, preserving driving privileges is critical — our attorney petitions for LDP as early as possible to protect your ability to work and meet daily obligations.`,
+  },
+  {
+    question: `Do I need an attorney for Wilmington Municipal Court charges?`,
+    answer: `Yes, experienced legal representation is strongly advisable for any criminal, OVI, or serious traffic matter in Wilmington Municipal Court. In a smaller rural county, misdemeanor and OVI convictions can have significant community and professional consequences. An attorney can file suppression motions, challenge the admissibility of evidence, negotiate with the Clinton County prosecuting attorney, and represent you at trial. Our firm provides experienced representation for defendants in Clinton County Municipal Court and throughout southwestern Ohio.`,
   },
 ];
 
@@ -50,83 +63,31 @@ export default function WilmingtonMunicipalCourtPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Wilmington Municipal Court Attorney"
-        description="Experienced legal representation in Wilmington Municipal Court. Serving Clinton County, Ohio."
+        description="OVI/DUI defense, misdemeanor criminal charges, and traffic matters in Wilmington Municipal Court. Serving Clinton County, Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Wilmington Municipal Court Representation</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              Wilmington Municipal Court: OVI Defense and Misdemeanor Representation
+            </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Wilmington Municipal Court in Wilmington, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Clinton County. At Jwayyed Law LLC, we provide experienced representation in Wilmington Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
+              Wilmington Municipal Court (officially the Clinton County Municipal Court), located at 69 N South Street in Wilmington, Ohio, serves all of Clinton County — a rural southwestern Ohio county along US 68 between Columbus and Cincinnati. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, traffic violations, and civil matters for the entirety of Clinton County. Jwayyed Law LLC represents defendants in Wilmington Municipal Court in OVI defense, misdemeanor criminal matters, and traffic cases. If you were arrested for OVI, the 30-day ALS appeal window under <strong>ORC 4511.191</strong> runs from the date of arrest — contact our office immediately.
             </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Wilmington Municipal Court (Clinton County Municipal Court) is located in Wilmington, Ohio, the county seat of Clinton County. It serves all of Clinton County and surrounding communities. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              OVI arrests in Clinton County frequently arise from US 68 and SR 73 enforcement. Clinton County&apos;s rural roads present unique defense considerations — accidents involving animals, adverse road conditions, or agricultural equipment can be misconstrued as impairment-related events. Our attorney investigates the full circumstances of each stop and arrest, challenging field sobriety tests, breath test calibration, and the legal basis for the stop. Under <strong>HB 37</strong> (effective April 9, 2025), fines for a first OVI are $565–$1,075, and the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when an ignition interlock device is installed — critical for rural residents who depend on their vehicles.
             </p>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-2">Location &amp; Directions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-2">
-                <strong>Clinton County Municipal Court</strong><br />
-                69 N South Street, Wilmington, OH 45177
-              </p>
-              <p className="text-sm mt-2">
-                <a href="https://www.google.com/maps?q=69+N+South+Street,+Wilmington,+OH+45177" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Get directions (Google Maps)</a>
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Misdemeanor Criminal Cases</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles all misdemeanor criminal cases including assault, theft, drug possession, domestic violence, and other misdemeanor offenses. Misdemeanor convictions can result in jail time, fines, and permanent criminal records. Experienced representation is essential to protect your rights and achieve favorable outcomes.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">OVI/DUI Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles first, second, and third OVI/DUI charges (misdemeanor OVI). Fourth and subsequent OVI offenses are felonies handled in Common Pleas Court. OVI convictions carry severe penalties including jail time, fines, license suspension, and vehicle immobilization. Experienced OVI defense representation is crucial to challenge evidence, develop defenses, and minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Traffic Violations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles traffic violations including speeding, reckless driving, driving under suspension, and other traffic offenses. Traffic violations can result in points on your license, fines, and license suspension. An attorney can help challenge violations, negotiate reductions, or minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Civil Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles civil disputes involving amounts up to $15,000, including contract disputes, personal injury cases, property damage claims, and other civil matters. Civil cases require understanding of civil procedure, evidence rules, and negotiation strategies.
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
-
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Misdemeanor Defense in Clinton County
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced representation in all types of cases handled by Wilmington Municipal Court:
+              The court also handles misdemeanor assault, domestic violence (<strong>ORC 2919.25</strong>), theft, drug possession, and disorderly conduct. Under <strong>ORC 2929.21</strong>, an M1 conviction carries up to 180 days in jail and a $1,000 fine. In a smaller rural county, misdemeanor convictions can have significant reputational and professional consequences. Our attorney pursues suppression motions, seeks dismissal or reduced charges, and represents clients at trial when necessary to achieve the best possible outcome in Wilmington Municipal Court.
             </p>
-
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Misdemeanor Criminal Defense:</strong> Experienced defense representation for all misdemeanor charges including assault, theft, drug possession, domestic violence, and other offenses</li>
-              <li><strong>OVI/DUI Defense:</strong> Skilled OVI defense representation including challenging evidence, developing defenses, and minimizing consequences</li>
-              <li><strong>Traffic Violation Defense:</strong> Representation for traffic violations including challenging violations, negotiating reductions, and minimizing consequences</li>
-              <li><strong>Civil Dispute Resolution:</strong> Representation for civil disputes including contract disputes, personal injury cases, and property damage claims</li>
-              <li><strong>Court Procedure:</strong> Understanding of Municipal Court procedures, filing requirements, and judicial preferences</li>
-            </ul>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated representation in Wilmington Municipal Court. We understand that Municipal Court matters can significantly affect your rights, driving privileges, and future. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
-            </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Wilmington Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Wilmington Municipal Court. See our{' '}
+              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> pages for more information.
             </p>
           </div>
         </div>

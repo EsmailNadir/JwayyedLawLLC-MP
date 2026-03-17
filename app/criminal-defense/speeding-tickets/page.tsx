@@ -56,6 +56,18 @@ const faqs = [
     question: 'How does a speeding ticket affect my CDL (Commercial Driver\'s License) in Ohio?',
     answer: 'Speeding tickets have serious consequences for CDL holders in Ohio. Under federal and Ohio regulations, a speeding violation of 15 mph or more over the limit in a commercial vehicle is a serious traffic violation. Two serious violations within three years results in a 60-day CDL disqualification, and three serious violations within three years results in a 120-day disqualification. Even speeding in a personal vehicle can affect your CDL. It is critical for CDL holders to fight speeding tickets aggressively to protect their livelihood.',
   },
+  {
+    question: `How many points does a speeding ticket add to my Ohio driving record?`,
+    answer: `Under ORC 4510.036, Ohio uses a point system to track traffic violations. Most speeding violations add 2 points to your driving record — this applies to speeds up to 30 mph over the posted limit. Speeding 30 mph or more over the limit results in 4 points. Points accumulate over a two-year rolling period; reaching 12 points triggers a six-month license suspension. At 6 points, the Ohio BMV sends a warning letter. Points also signal to insurance companies that you are a higher-risk driver, leading to premium increases. An attorney may be able to negotiate a reduction to a non-moving or lesser violation that carries fewer or no points.`,
+  },
+  {
+    question: `Can speeding tickets be reduced or dismissed in Ohio?`,
+    answer: `Yes, in many cases a speeding ticket can be reduced to a lesser offense or even dismissed in Ohio. An experienced traffic defense attorney can negotiate with the prosecutor to reduce the charge to a non-moving violation (which carries no points), a lower speed (fewer points), or a lesser offense in exchange for a fine or completion of a driving safety course. Dismissal may be possible if the prosecution's evidence is insufficient — for example, if calibration records for the radar or lidar device are missing, if the officer's training is inadequate, or if the speed survey supporting the posted limit is defective. Each case is different, and the likelihood of reduction or dismissal depends on the specific court, prosecutor policies, your driving history, and the strength of the evidence.`,
+  },
+  {
+    question: `When does speeding become a criminal charge rather than a civil infraction in Ohio?`,
+    answer: `Most speeding tickets in Ohio are minor misdemeanors — civil in nature and carrying only a fine with no potential for jail time. However, speeding can escalate to a criminal charge under ORC 4511.21 and related statutes when the circumstances are aggravated. Reckless operation under ORC 4511.20 — which can be charged when a driver operates a vehicle in willful or wanton disregard of the safety of others — is a minor misdemeanor for a first offense but a fourth-degree misdemeanor for a second offense within one year. In practice, speeds of 35 mph or more over the limit, racing, or other aggravated circumstances may lead officers to charge reckless operation rather than a standard speeding violation, which can result in potential jail time, higher fines, and a more serious criminal record.`,
+  },
 ];
 
 export default function SpeedingTicketsPage() {
@@ -285,16 +297,26 @@ export default function SpeedingTicketsPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you have received a speeding ticket anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not simply pay the ticket without understanding the full consequences. An experienced traffic defense attorney can often achieve a significantly better outcome, saving you money and protecting your driving record. Call today to discuss your case.
+              If you have received a speeding ticket anywhere in Ohio, do not simply pay it. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio" className="text-[#b87333] underline hover:text-[#a06828]">protecting your rights during a traffic stop in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/driving-under-suspension" className="text-accent hover:underline">Driving Under Suspension</Link>
-                <Link href="/criminal-defense/no-operators-license" className="text-accent hover:underline">No Operator&apos;s License</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement &amp; Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Driving Under Suspension</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Suspended license defense in Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">No Operator&apos;s License</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Driving without a valid license defense</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
             </div>
           </div>
         </div>

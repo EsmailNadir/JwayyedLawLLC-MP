@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Dayton Municipal Court Attorney | Montgomery County Lawyer | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Dayton Municipal Court. Skilled representation for misdemeanor cases, OVI/DUI, and traffic violations in Montgomery County, Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['Dayton Municipal Court attorney', 'Montgomery County OVI lawyer', 'Dayton misdemeanor defense'],
+  title: 'Dayton Municipal Court Attorney | Montgomery County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
+  description: 'Experienced attorney for Dayton Municipal Court. OVI/DUI defense, misdemeanor criminal charges, traffic violations, and civil matters in Montgomery County, Ohio. Call (614) 285-5482.',
+  keywords: ['Dayton Municipal Court attorney', 'Montgomery County OVI lawyer', 'Dayton misdemeanor defense', 'Dayton Ohio criminal attorney', 'Montgomery County DUI lawyer'],
   openGraph: {
     title: 'Dayton Municipal Court Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts/dayton-municipal-court',
@@ -23,24 +24,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: 'What types of cases does Dayton Municipal Court handle?',
-    answer: 'Dayton Municipal Court handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, civil disputes involving amounts up to $15,000, small claims matters, and landlord-tenant disputes occurring in Montgomery County. The court follows Ohio Revised Code for procedures and penalties. Please note that our firm does not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.',
+    question: `What types of cases does Dayton Municipal Court handle?`,
+    answer: `Dayton Municipal Court handles misdemeanor criminal charges, OVI/DUI charges under ORC 4511.19, traffic violations, civil disputes up to $15,000, and small claims under $6,000 arising within the city of Dayton and portions of Montgomery County. The court also maintains specialty dockets for driving under suspension and domestic violence matters. Felony cases are bound over to the Montgomery County Common Pleas Court. Our firm does not handle juvenile, probate, or immigration matters.`,
   },
   {
-    question: 'Where is Dayton Municipal Court located?',
-    answer: 'Dayton Municipal Court is located in Dayton, Ohio. The court handles all misdemeanor cases, OVI/DUI charges, and traffic violations occurring in Montgomery County. An attorney familiar with the court can help navigate procedures and achieve favorable outcomes.',
+    question: `Where is Dayton Municipal Court located?`,
+    answer: `Dayton Municipal Court is located at 301 W Third St, Dayton, OH 45402. The courthouse is in downtown Dayton and serves the city of Dayton and surrounding unincorporated areas of Montgomery County within the court's territorial jurisdiction. The court handles a high volume of cases across criminal, OVI, traffic, and civil divisions. Hearings are scheduled in divisions, and navigating the court's docket requires familiarity with local procedures.`,
   },
   {
-    question: 'Do I need an attorney for Municipal Court matters?',
-    answer: 'Municipal Court matters can significantly affect your rights, driving privileges, and future. While you can represent yourself, an experienced attorney can protect your rights, develop defense strategies, negotiate settlements, and achieve better outcomes. Most attorneys offer consultations.',
+    question: `What are the OVI penalties in Dayton Municipal Court under current Ohio law?`,
+    answer: `Under ORC 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Dayton Municipal Court carries: 3-day mandatory minimum jail (or 3-day driver intervention program), fines of $565–$1,075, a class five license suspension of 1–3 years, and 6 points on your license. A first high-tier OVI (BAC 0.17+ or test refusal with a prior test refusal) carries a mandatory 6 days in jail. HB 37 eliminated the mandatory 15-day hard suspension for non-refusal first OVI offenses when an ignition interlock device is installed — an important development for preserving driving privileges.`,
   },
   {
-    question: 'How long do Municipal Court cases take?',
-    answer: 'Municipal Court case duration varies depending on case complexity, court schedule, and whether the case goes to trial. Simple traffic violations may resolve quickly, while OVI/DUI and misdemeanor cases may take months. An attorney can provide a realistic timeline.',
+    question: `Does Dayton Municipal Court have a specialty driving under suspension docket?`,
+    answer: `Yes. Dayton Municipal Court actively prosecutes driving under OVI-related suspension charges under ORC 4510.14, which carries a mandatory minimum 30 days in jail for a first offense when the underlying suspension was OVI-related. The court also handles driving under financial responsibility law suspension (ORC 4510.16) and other license suspension categories. These charges are often brought alongside OVI charges and require separate analysis and defense strategy.`,
   },
   {
-    question: 'What should I expect at a Municipal Court hearing?',
-    answer: 'Municipal Court hearings are less formal than Common Pleas Court but still require proper preparation. Hearings may include arraignments, pretrial conferences, motions hearings, and trials. Understanding court procedures and expectations is essential. An attorney can help prepare you.',
+    question: `How does the 30-day ALS appeal deadline work after a Dayton OVI arrest?`,
+    answer: `An Administrative License Suspension (ALS) under ORC 4511.191 takes effect immediately at arrest when a driver in Dayton either tests above the legal limit or refuses a chemical test. You have 30 days from the date of arrest to appeal the ALS to Dayton Municipal Court. Missing this deadline means you forfeit the right to challenge the suspension. Our attorney files the appeal promptly, challenges the probable cause for the stop, and argues the validity of the BAC test or refusal to maximize the chances of ALS termination.`,
+  },
+  {
+    question: `What misdemeanor drug offenses are handled in Dayton Municipal Court?`,
+    answer: `Dayton Municipal Court handles misdemeanor drug possession charges including possession of marijuana under 100 grams (a minor misdemeanor under ORC 2925.11), possession of drug paraphernalia (ORC 2925.14), and other minor drug misdemeanors. More serious drug charges — possession of controlled substances in larger quantities or trafficking offenses — are felonies handled in the Montgomery County Common Pleas Court. Misdemeanor drug convictions can be sealed under ORC 2953.32 after a one-year waiting period in many cases.`,
+  },
+  {
+    question: `Can I get limited driving privileges after an OVI charge in Dayton Municipal Court?`,
+    answer: `Yes. Limited driving privileges (LDP) for work, school, medical, and other essential purposes can be granted by Dayton Municipal Court under ORC 4510.021. Under HB 37, the mandatory 15-day hard suspension period before LDP is available has been eliminated for non-refusal first OVI offenses when the defendant agrees to install an ignition interlock device. This means LDP can often be obtained quickly after an arrest. Our attorney petitions the court for LDP at the earliest opportunity to minimize disruption to your daily life.`,
+  },
+  {
+    question: `What should I do after being charged in Dayton Municipal Court?`,
+    answer: `After a charge in Dayton Municipal Court, you should: (1) retain an attorney before your arraignment — entering a not-guilty plea preserves all your options; (2) if charged with OVI, note the exact date of arrest as the 30-day ALS appeal deadline runs from that date; (3) do not discuss your case with police, insurance adjusters, or anyone other than your attorney; (4) preserve any evidence — dashcam footage, witness contact information, or other documentation; and (5) contact Jwayyed Law LLC promptly to begin building your defense.`,
   },
 ];
 
@@ -50,72 +63,31 @@ export default function DaytonMunicipalCourtPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Dayton Municipal Court Attorney"
-        description="Experienced legal representation in Dayton Municipal Court. Serving Montgomery County, Ohio."
+        description="OVI/DUI defense, misdemeanor criminal charges, and traffic matters in Dayton Municipal Court. Serving Montgomery County, Ohio."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Dayton Municipal Court Representation</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              Dayton Municipal Court: Jurisdiction, OVI Defense, and Misdemeanor Representation
+            </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Dayton Municipal Court in Dayton, Ohio, handles misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil disputes occurring in Montgomery County. At Jwayyed Law LLC, we provide experienced representation in Dayton Municipal Court under Ohio Revised Code. Our attorney understands Municipal Court procedures and can help achieve favorable outcomes. Please note that we do not handle immigration matters, juvenile matters, probate matters, or felony cases in this court.
+              Dayton Municipal Court, located at 301 W Third St in downtown Dayton, Ohio, is one of Ohio&apos;s busiest municipal courts, handling misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil matters for the city of Dayton and portions of Montgomery County. Jwayyed Law LLC represents defendants in Dayton Municipal Court across all misdemeanor criminal and OVI matters. If you are charged in this court, understanding the court&apos;s procedures — including the critical 30-day deadline to appeal an Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> — is essential to protecting your rights.
             </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Dayton Municipal Court is located in Dayton, Ohio, and serves Montgomery County and surrounding communities. Municipal Court proceedings are less formal than Common Pleas Court but still require proper preparation and experienced representation. Understanding court procedures, filing requirements, and judicial preferences is essential for successful representation.
+              OVI defense in Dayton Municipal Court requires challenging multiple layers of evidence. The legality of the initial traffic stop, the administration of standardized field sobriety tests (SFSTs) under NHTSA protocols, and the maintenance and calibration records of the breath testing instrument (typically a DataMaster DMT) must all be scrutinized. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when the defendant agrees to install an ignition interlock device — a significant improvement that our attorney pursues where applicable. Minimum fines for a first OVI are now $565 to $1,075 under HB 37.
             </p>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Services and Case Types</h3>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Misdemeanor Criminal Cases</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles all misdemeanor criminal cases including assault, theft, drug possession, domestic violence, and other misdemeanor offenses. Misdemeanor convictions can result in jail time, fines, and permanent criminal records. Experienced representation is essential to protect your rights and achieve favorable outcomes.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">OVI/DUI Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles first, second, and third OVI/DUI charges (misdemeanor OVI). Fourth and subsequent OVI offenses are felonies handled in Common Pleas Court. OVI convictions carry severe penalties including jail time, fines, license suspension, and vehicle immobilization. Experienced OVI defense representation is crucial to challenge evidence, develop defenses, and minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Traffic Violations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles traffic violations including speeding, reckless driving, driving under suspension, and other traffic offenses. Traffic violations can result in points on your license, fines, and license suspension. An attorney can help challenge violations, negotiate reductions, or minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Civil Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                Municipal Court handles civil disputes involving amounts up to $15,000, including contract disputes, personal injury cases, property damage claims, and other civil matters. Civil cases require understanding of civil procedure, evidence rules, and negotiation strategies.
-              </p>
-            </div>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
-
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Montgomery County Misdemeanor Defense
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides experienced representation in all types of cases handled by Dayton Municipal Court:
+              Beyond OVI, Dayton Municipal Court handles assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), drug possession misdemeanors, disorderly conduct, criminal trespass, and other misdemeanor charges. Misdemeanor penalties under <strong>ORC 2929.21</strong> include up to 180 days in jail and $1,000 in fines for an M1 offense. The court&apos;s driving under suspension docket under <strong>ORC 4510.14</strong> is particularly active, with mandatory minimum 30-day jail sentences for OVI-related suspension violations. Our attorney examines each case for constitutional challenges, suppression motions, and negotiated resolutions to minimize consequences.
             </p>
-
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-              <li><strong>Misdemeanor Criminal Defense:</strong> Experienced defense representation for all misdemeanor charges including assault, theft, drug possession, domestic violence, and other offenses</li>
-              <li><strong>OVI/DUI Defense:</strong> Skilled OVI defense representation including challenging evidence, developing defenses, and minimizing consequences</li>
-              <li><strong>Traffic Violation Defense:</strong> Representation for traffic violations including challenging violations, negotiating reductions, and minimizing consequences</li>
-              <li><strong>Civil Dispute Resolution:</strong> Representation for civil disputes including contract disputes, personal injury cases, and property damage claims</li>
-              <li><strong>Court Procedure:</strong> Understanding of Municipal Court procedures, filing requirements, and judicial preferences</li>
-            </ul>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides dedicated representation in Dayton Municipal Court. We understand that Municipal Court matters can significantly affect your rights, driving privileges, and future. Our attorney works diligently to navigate court procedures, develop strategies, negotiate settlements, and represent clients in court when necessary.
-            </p>
-
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a matter in Dayton Municipal Court, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation. Understanding court procedures and having experienced representation can significantly impact the outcome of your case.
+              Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Dayton Municipal Court. See our{' '}
+              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice pages for more information on how we approach these cases.
             </p>
           </div>
         </div>

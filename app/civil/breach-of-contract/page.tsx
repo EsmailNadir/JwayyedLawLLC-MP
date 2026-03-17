@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -42,6 +43,18 @@ const faqs = [
     question: 'Can I recover attorney fees for breach of contract?',
     answer: 'Attorney fees for breach of contract in Ohio are generally not recoverable unless specified in the contract, authorized by statute, or awarded as part of punitive damages for egregious conduct. Contracts often include attorney fee provisions requiring the losing party to pay attorney fees. An attorney can help review your contract and determine if attorney fees are recoverable.',
   },
+  {
+    question: `What are the elements of a breach of contract claim in Ohio?`,
+    answer: `To prevail on a breach of contract claim in Ohio, a plaintiff must establish four elements by a preponderance of the evidence: (1) the existence of a valid, enforceable contract between the parties; (2) performance by the plaintiff of their obligations under the contract, or a valid excuse for non-performance; (3) a breach by the defendant—failure to perform a contractual duty; and (4) damages suffered by the plaintiff as a direct and proximate result of the breach. Without all four elements, the claim will fail. An experienced attorney can analyze your contract and facts to determine whether each element can be proven.`,
+  },
+  {
+    question: `What is the statute of limitations for breach of contract in Ohio?`,
+    answer: `Under Ohio Revised Code 2305.06, the statute of limitations for breach of a written contract is six years from the date the breach occurred. Under ORC 2305.07 as amended in June 2021, the statute of limitations for breach of an oral contract was reduced to four years. Missing these deadlines generally bars recovery entirely, regardless of how strong your underlying claim may be. It is critical to consult an attorney promptly after a breach occurs to preserve your rights and ensure all filing deadlines are met.`,
+  },
+  {
+    question: `What damages are available for breach of contract in Ohio?`,
+    answer: `Ohio recognizes several categories of damages for breach of contract. Compensatory (expectation) damages are the most common—placing the non-breaching party in the position they would have been in had the contract been performed. Consequential damages may be recovered for losses that were foreseeable at the time of contracting. Specific performance may be ordered by a court when monetary damages are inadequate, such as for contracts involving unique goods or real property. Rescission and restitution may be available when the contract is voided due to material breach or fraud. Punitive damages are rare in contract cases and require a showing of egregious conduct beyond the breach itself.`,
+  },
 ];
 
 export default function BreachOfContractPage() {
@@ -57,15 +70,15 @@ export default function BreachOfContractPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Breach of Contract Claims in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Breach of contract disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. At Jwayyed Law LLC, we provide experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
+              Breach of contract disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Contracts are legally binding agreements between parties, and when one party fails to perform their obligations, the other party may suffer financial losses. Breach of contract can occur through failure to perform, defective performance, late performance, or refusal to perform. Understanding your rights, available remedies, and the legal process is essential for protecting your interests and recovering damages.
+              Contracts are legally binding agreements between parties, and when one party fails to perform their obligations, the other party may suffer financial losses. Breach of contract can occur through failure to perform, defective performance, late performance, or refusal to perform. Understanding your rights, available remedies, and the legal process is essential for protecting your interests and recovering damages. For an overview of how contractual obligations intersect with landlord-tenant relationships, see our article on <Link href="/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties and tenant rights</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026). Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process.
+              The statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026). Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact us today</Link> to discuss your breach of contract matter.
             </p>
 
             <LocationsWeServe title="Civil" />
@@ -164,6 +177,26 @@ export default function BreachOfContractPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are involved in a breach of contract dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/civil/construction-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Construction Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
+              </Link>
+              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Employment Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Wrongful termination, discrimination, and workplace retaliation claims</span>
+              </Link>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Real Estate Disputes</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Title disputes, boundary issues, quiet title actions, and property litigation</span>
+              </Link>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -172,4 +205,3 @@ export default function BreachOfContractPage() {
     </>
   );
 }
-

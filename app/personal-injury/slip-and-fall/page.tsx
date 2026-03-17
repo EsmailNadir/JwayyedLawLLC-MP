@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'Do I need a slip and fall attorney?',
     answer: 'While you can handle a slip and fall claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand premises liability law, insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+  },
+  {
+    question: `What is the "open and obvious" doctrine in Ohio premises liability cases and how can it be overcome?`,
+    answer: `Under Ohio law, a property owner generally has no duty to warn of or remedy a hazard that is "open and obvious" — meaning one that a reasonable person exercising ordinary care would readily observe and appreciate. Courts have held that open and obvious conditions break the chain of the owner's duty. However, this defense can be overcome in several ways: if the property owner should have anticipated that visitors would be distracted or would not notice the hazard despite its obvious nature (the "attendant circumstances" exception), or if the hazard was not truly open and obvious given the specific conditions at the time. An attorney can analyze the specific facts of your fall and develop arguments to overcome this common defense.`,
+  },
+  {
+    question: `What evidence should I collect after a slip and fall accident?`,
+    answer: `Strong evidence is critical in slip and fall cases. As soon as possible after the incident, you should: photograph the exact hazard (wet floor, uneven surface, broken step, inadequate lighting) and the surrounding area before it is corrected; report the incident to the property owner or manager and request a copy of the incident report; obtain the names and contact information of any witnesses; preserve the clothing and footwear you were wearing; seek medical treatment promptly so your injuries are documented; and save all medical records, bills, and receipts. An attorney can send a spoliation letter demanding that the property owner preserve surveillance video and maintenance logs before that evidence is lost.`,
+  },
+  {
+    question: `What is the difference between invitee, licensee, and trespasser status in Ohio premises liability?`,
+    answer: `Ohio law recognizes three categories of entrants that determine the duty of care a property owner owes. An invitee is someone invited onto the property for the owner's commercial benefit (e.g., a store customer) — the owner owes the highest duty: reasonable care to inspect, maintain, and warn. A licensee enters with the owner's permission but for their own purposes (e.g., a social guest) — the owner must warn of known hidden dangers but need not inspect. A trespasser enters without permission — the owner generally owes only a duty not to willfully or wantonly injure them, though ORC 2305.321 provides special protections for child trespassers under the attractive nuisance doctrine. Identifying your status at the time of the fall is one of the first steps in evaluating your premises liability claim.`,
   },
 ];
 
@@ -164,9 +177,29 @@ export default function SlipAndFallPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, analyze premises liability issues, and develop a strategy tailored to your situation. Time is critical in slip and fall cases—evidence must be preserved, hazards must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and analyze premises liability issues. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link> or read our articles on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-[#b87333] underline hover:text-[#a06828]">Ohio slip and fall laws</Link> and <Link href="/our-law-firm/blog/slipped-fell-at-store-can-i-sue" className="text-[#b87333] underline hover:text-[#a06828]">whether you can sue after slipping at a store</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/premises-liability" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Premises Liability</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property owner negligence and unsafe conditions</span>
+          </Link>
+          <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Workplace Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">On-the-job injuries and workers&apos; compensation</span>
+          </Link>
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          </Link>
+          <Link href="/personal-injury/dog-bites" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Dog Bites</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Animal attack liability under Ohio law</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

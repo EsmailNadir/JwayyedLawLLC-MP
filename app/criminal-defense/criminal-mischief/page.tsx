@@ -56,6 +56,18 @@ const faqs = [
     question: 'What should I do if I am charged with criminal mischief in Ohio?',
     answer: 'If charged with criminal mischief in Ohio, exercise your right to remain silent and contact an experienced criminal defense attorney immediately. Do not make statements to police without your attorney present. Avoid contacting the property owner or attempting to resolve the matter on your own, as this could be used against you. Gather any evidence that may support your defense, such as alibis, witness information, or photographs. An attorney can protect your rights, negotiate with prosecutors, and work toward the best possible outcome including potential dismissal or reduced charges.',
   },
+  {
+    question: `What is criminal mischief under Ohio law?`,
+    answer: `Criminal mischief under Ohio Revised Code 2909.07 is a property offense that covers knowingly tampering with safety devices or equipment, defacing or damaging property, interfering with boundary markers, or otherwise improperly handling another person's property without consent. It also includes tampering with fire hydrants, extinguishers, and other safety apparatus. The base offense is a third-degree misdemeanor (M3), punishable by up to 60 days in jail and fines up to $500. When an occupied aircraft is involved, the offense is elevated to a first-degree misdemeanor.`,
+  },
+  {
+    question: `How does criminal mischief differ from vandalism under Ohio law?`,
+    answer: `Ohio law does not use the term "vandalism" for a standalone misdemeanor offense. What is commonly called vandalism may be charged as criminal mischief (ORC 2909.07, M3 base) for minor property damage such as graffiti or defacement, criminal damaging (ORC 2909.06, M2) for knowingly causing physical harm to property, or vandalism (ORC 2909.05, felony) when the damage value exceeds applicable thresholds or involves government property or critical infrastructure. The specific charge depends on the value of damage, the nature of the property, and the method of harm.`,
+  },
+  {
+    question: `What are the penalties for criminal mischief and can it be sealed in Ohio?`,
+    answer: `A standard criminal mischief conviction under ORC 2909.07 is a third-degree misdemeanor (M3) carrying up to 60 days in jail, fines up to $500, restitution, and a permanent criminal record. If the mischief involves an occupied aircraft, penalties increase to a first-degree misdemeanor. Under Ohio Revised Code 2953.32, a criminal mischief conviction is generally eligible for record sealing after a one-year waiting period from the completion of sentence, provided you meet eligibility requirements including having no more than the allowable number of prior convictions. An attorney can evaluate your eligibility and guide you through the sealing process.`,
+  },
 ];
 
 export default function CriminalMischiefPage() {
@@ -270,17 +282,26 @@ export default function CriminalMischiefPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing criminal mischief charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases -- early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
+              If you are facing criminal mischief charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio" className="text-[#b87333] underline hover:text-[#a06828]">misdemeanor vs. felony charges in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/assault-charges" className="text-accent hover:underline">Assault Charges</Link>
-                <Link href="/criminal-defense/criminal-trespass" className="text-accent hover:underline">Criminal Trespass</Link>
-                <Link href="/criminal-defense/petty-theft" className="text-accent hover:underline">Petty Theft</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/criminal-damaging" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Damaging</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property damage and destruction charges</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
+              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Petty Theft</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Shoplifting and theft defense in Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
             </div>
           </div>
         </div>

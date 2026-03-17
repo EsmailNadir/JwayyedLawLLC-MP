@@ -43,6 +43,18 @@ const faqs = [
     question: 'Can a second OVI be reduced to a first offense?',
     answer: 'Sometimes. If the prior OVI that makes this a "second" offense is invalid, from outside the lookback period, or not properly documented, the charge may be reduced to a first offense. That can mean less jail, a shorter suspension, and different rules for limited privileges and interlock. An attorney can review your prior record and argue for a reduction where the law supports it.',
   },
+  {
+    question: `What are the mandatory minimum jail sentences for a second OVI in Ohio under HB 37?`,
+    answer: `For a low-level second OVI (BAC .08% to under .17%), the mandatory minimum is 10 consecutive days in jail. The court may substitute an alternative minimum of 5 consecutive days in jail plus 18 days of house arrest with electronic monitoring when permitted. For a high-level or refusal second OVI (BAC .17% or higher, or refusal of the chemical test), the mandatory minimum doubles to 20 consecutive days, with an alternative of 10 days jail plus 36 days house arrest. Fines under HB 37 (effective April 9, 2025) range from $850 to $2,750 for a second offense. These minimums cannot be waived or suspended by the court.`,
+  },
+  {
+    question: `What is the lookback period for a second OVI in Ohio?`,
+    answer: `Under ORC 4511.19, Ohio uses a 10-year lookback period to determine whether a prior OVI conviction counts as a predicate offense for sentencing purposes. If your prior OVI occurred within 10 years of the current offense date, prosecutors can use it to charge you as a second offender and trigger the enhanced mandatory minimums. A prior OVI from more than 10 years ago generally does not count for mandatory sentencing purposes, though it may still be considered by the court at sentencing. An attorney can review your prior conviction records to confirm the dates and whether the prior offense is properly within the lookback period.`,
+  },
+  {
+    question: `Can a second OVI be reduced or dismissed in Ohio?`,
+    answer: `A second OVI can sometimes be reduced or, in rare cases, dismissed. Reduction to a first offense is possible if the prior conviction that creates the "second offense" designation is successfully challenged—for example, if the prior is outside the 10-year lookback, was not a qualifying OVI conviction, or was from another state and not properly counted under Ohio law. Dismissal may result if evidence is suppressed due to an illegal stop, defective chemical testing, or other constitutional violations. Even without full dismissal, negotiated outcomes such as alternative sentencing arrangements (jail plus house arrest) may reduce the actual time served. An experienced attorney can evaluate your case and identify the best path forward.`,
+  },
 ];
 
 export default function SecondOVIPage() {
@@ -59,15 +71,15 @@ export default function SecondOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Second OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A second OVI in Ohio—operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19—carries much harsher consequences than a first offense. Penalties include mandatory jail time, a long license suspension, mandatory alcohol or drug assessment, vehicle immobilization, required restricted (yellow) plates, and mandatory use of an ignition interlock device before limited driving privileges are allowed. At Jwayyed Law LLC, we provide experienced defense for second OVI charges and work to protect your rights and your license.
+              A second OVI in Ohio—operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19—carries much harsher consequences than a first offense. Penalties include mandatory jail time, a long license suspension, mandatory alcohol or drug assessment, vehicle immobilization, required restricted (yellow) plates, and mandatory use of an ignition interlock device before limited driving privileges are allowed. At Jwayyed Law LLC, we provide experienced defense for second OVI charges as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link> and work to protect your rights and your license.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio treats repeat OVI offenses seriously. Prosecutors and courts impose stiffer sentences on second offenses, and the law draws a clear line between &quot;low level&quot; (e.g., BAC at or above .08% but below .17%), &quot;high level&quot; (e.g., BAC .17% or higher), and &quot;refusal&quot; to take a chemical test—with refusal often treated like a high-level test, especially if you have a prior OVI within 20 years. Understanding these categories, the full range of penalties, and your options for defense and limited driving is critical. Getting an experienced second OVI defense attorney involved early can make a real difference in the outcome of your case.
+              Ohio treats repeat OVI offenses seriously. Prosecutors and courts impose stiffer sentences on second offenses, and the law draws a clear line between &quot;low level&quot; (e.g., BAC at or above .08% but below .17%), &quot;high level&quot; (e.g., BAC .17% or higher), and &quot;refusal&quot; to take a chemical test—with refusal often treated like a high-level test, especially if you have a prior OVI within 20 years. Understanding these categories, the full range of penalties, and your options for defense and limited driving is critical. Getting an experienced second OVI defense attorney involved early can make a real difference in the outcome of your case. Learn more about <Link href="/our-law-firm/blog/what-happens-after-ovi-arrest-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what happens after an OVI arrest in Ohio</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A second OVI case involves two separate tracks: the criminal case in court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal, seek a stay of the suspension where possible, and work toward the best result for your license and your record.
+              A second OVI case involves two separate tracks: the criminal case in court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal, seek a stay of the suspension where possible, and work toward the best result for your license and your record. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your second OVI case.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Second OVI – Counties We Serve</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
@@ -236,6 +248,26 @@ export default function SecondOVIPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you have been charged with a second OVI in Ohio, contact Jwayyed Law LLC as soon as possible. We will review your case, explain your rights and the penalties you face, and outline options for defense—including ALS appeal, prior conviction challenges, and limited driving privileges. You only have 30 days to request an ALS hearing; getting a lawyer early can make a real difference for your license and your case. Call us to schedule a consultation and protect your rights and your future.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              </Link>
+              <Link href="/ovi-dui-defense/third-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Third OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Aggressive defense for third OVI charges with mandatory jail and vehicle forfeiture</span>
+              </Link>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              </Link>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -244,4 +276,3 @@ export default function SecondOVIPage() {
     </>
   );
 }
-

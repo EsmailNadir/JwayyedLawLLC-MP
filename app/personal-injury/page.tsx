@@ -55,6 +55,18 @@ const faqs = [
     question: 'How long does a personal injury case take?',
     answer: 'Personal injury case duration varies significantly depending on case complexity, injury severity, insurance company cooperation, and whether the case goes to trial. Simple cases may resolve in months, while complex cases may take years. Most cases settle before trial, but preparation and negotiation can take substantial time. An attorney can provide a realistic timeline based on your specific case circumstances.',
   },
+  {
+    question: `What is Ohio's modified comparative negligence rule and how does it affect my case?`,
+    answer: `Ohio follows a modified comparative negligence rule under ORC 2315.33. If you share some fault for your injury, your total compensation is reduced by your percentage of fault. Critically, the 50% bar applies: if your contributory fault is greater than 50%, you are completely barred from recovering any damages. For example, if a jury awards $100,000 but finds you 30% at fault, you recover $70,000. An experienced attorney can gather evidence, counter inflated fault allegations by the defense, and protect your right to maximum recovery.`,
+  },
+  {
+    question: `What damages are available in Ohio personal injury cases?`,
+    answer: `Ohio personal injury victims may recover two broad categories of damages. Economic damages — such as past and future medical expenses, lost wages, and loss of earning capacity — are not capped. Non-economic damages (pain and suffering, emotional distress, loss of consortium) are also generally uncapped in standard negligence cases; however, ORC 2323.43 imposes caps on non-economic damages in medical malpractice cases. Punitive damages may be awarded in cases involving actual malice or egregious conduct. An attorney can evaluate all available damages categories and build the documentation needed to maximize your recovery.`,
+  },
+  {
+    question: `Why should I avoid giving a recorded statement to the insurance adjuster?`,
+    answer: `Insurance adjusters are trained to use recorded statements to minimize or deny claims. A statement made before you fully understand the extent of your injuries can be used to argue that you downplayed symptoms, admitted partial fault, or contradicted later medical findings. Ohio law does not require you to give a recorded statement to the at-fault party's insurer. You should speak with a personal injury attorney before making any recorded statement. Your attorney can communicate with the insurer on your behalf and ensure nothing you say is used against you.`,
+  },
 ];
 
 export default function PersonalInjuryPage() {

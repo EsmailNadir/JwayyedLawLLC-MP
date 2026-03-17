@@ -39,6 +39,22 @@ const faqs = [
     question: 'What defenses are available to a first OVI charge?',
     answer: 'Common first OVI defenses include illegal traffic stops, inaccurate breathalyzer results, improper field sobriety test administration, rising BAC defense, medical conditions affecting testing, or insufficient evidence. An attorney can challenge evidence, develop defense strategies, negotiate with prosecutors, and defend your case at trial when necessary.',
   },
+  {
+    question: `What did HB 37 change for first OVI offenses in Ohio?`,
+    answer: `HB 37 (Liv's Law), effective April 9, 2025, updated several first OVI rules under ORC 4511.19. Fines for a first offense are now set at $565 to $1,075 (the prior minimum was $375). The law also clarified that a judge may waive the 15-day hard suspension waiting period for limited driving privileges—even without an ignition interlock—for a non-refusal first OVI, as long as you have no prior "Physical Control" conviction within 10 years. If you do have a prior Physical Control, the hard suspension and interlock remain mandatory. HB 37 also added oral fluid (saliva) testing to implied consent and authorized law enforcement to use that evidence in OVI prosecutions.`,
+  },
+  {
+    question: `What happens at a first OVI arraignment in Ohio?`,
+    answer: `Arraignment is typically your first court appearance after an OVI arrest. The judge will read the charges against you, inform you of your rights, and ask for your plea. In nearly all first OVI cases, your attorney will enter a not-guilty plea on your behalf so there is time to review discovery and explore defenses. The court may also address bond conditions and set future hearing dates. If you have not yet filed an ALS appeal, your attorney can do so immediately—the 30-day deadline begins from the date of your arrest, not your arraignment. Coming to arraignment with an attorney is strongly advisable.`,
+  },
+  {
+    question: `Can a first OVI be reduced to reckless operation in Ohio?`,
+    answer: `Yes, in some cases a first OVI charge in Ohio can be negotiated down to reckless operation (sometimes called a "wet reckless" when alcohol is involved). Reckless operation under ORC 4511.20 is a minor misdemeanor for a first offense, carries no mandatory jail, and does not count as a prior OVI for lookback purposes. However, prosecutors do not offer this reduction automatically—it depends on the strength of the state's evidence, the facts of your stop and testing, and your driving and criminal history. An experienced attorney can assess whether the evidence supports challenging the OVI and negotiate with the prosecutor for a reduction when the facts support it.`,
+  },
+  {
+    question: `Does a first OVI in Ohio stay on your record permanently?`,
+    answer: `An OVI conviction in Ohio is a permanent criminal record entry and cannot be expunged or sealed under current Ohio law. ORC 2953.36 specifically excludes OVI convictions from expungement eligibility. This means a first OVI will appear on background checks for employment, professional licensing, housing applications, and other purposes indefinitely. This is one reason it is so important to fight a first OVI charge before a conviction occurs—once convicted, the record is permanent. An attorney can evaluate all available defenses and negotiate for reduced charges such as reckless operation (which may be eligible for expungement) when the evidence and facts support it.`,
+  },
 ];
 
 export default function FirstOVIPage() {
@@ -55,16 +71,16 @@ export default function FirstOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding First OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A first OVI charge throughout Ohio carries serious penalties including jail time, license suspension, fines, and a permanent criminal record. OVI applies to impairment by alcohol, drugs, or both—the same penalty structure applies regardless. At Jwayyed Law LLC, we provide experienced defense representation for first OVI charges under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws and defense strategies necessary to protect your rights and minimize consequences.
+              A first OVI charge throughout Ohio carries serious penalties including jail time, license suspension, fines, and a permanent criminal record. OVI applies to impairment by alcohol, drugs, or both—the same penalty structure applies regardless. At Jwayyed Law LLC, we provide experienced defense representation for first OVI charges under Ohio Revised Code 4511.19 as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>. Our attorney understands Ohio OVI laws and defense strategies necessary to protect your rights and minimize consequences.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A first OVI is a first-degree misdemeanor. Ohio law treats &quot;low level&quot; (e.g., BAC at or above .08% but below .17%) and &quot;high level&quot; or refusal (e.g., BAC .17% or higher, or refusing the chemical test) differently—low-level first OVI can allow a 3-day Driver Intervention Program instead of jail, or jail may be waived with an ignition interlock. High-level or refusal carries a higher minimum jail term. Treatment and restricted plates are optional at the court&apos;s discretion for first offenses. A first OVI conviction can still affect employment, insurance, and future opportunities.
+              A first OVI is a first-degree misdemeanor. Ohio law treats &quot;low level&quot; (e.g., BAC at or above .08% but below .17%) and &quot;high level&quot; or refusal (e.g., BAC .17% or higher, or refusing the chemical test) differently—low-level first OVI can allow a 3-day Driver Intervention Program instead of jail, or jail may be waived with an ignition interlock. High-level or refusal carries a higher minimum jail term. Treatment and restricted plates are optional at the court&apos;s discretion for first offenses. A first OVI conviction can still affect employment, insurance, and future opportunities. Learn more about <Link href="/our-law-firm/blog/first-dui-ohio-will-i-go-to-jail" className="text-[#b87333] underline hover:text-[#a06828]">what to expect after a first DUI in Ohio</Link> and <Link href="/our-law-firm/blog/how-much-does-dui-cost-ohio" className="text-[#b87333] underline hover:text-[#a06828]">how much a DUI costs in Ohio</Link>.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Ohio's OVI laws are among the strictest in the nation, and prosecutors aggressively pursue these charges. Even first-time offenders face mandatory minimum sentences, automatic license suspensions, and significant financial penalties. Understanding the legal process, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced OVI defense attorney can significantly impact the outcome of your case.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The legal process for first OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences.
+              The legal process for first OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your case.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">First OVI Defense by County / Court</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
@@ -219,6 +235,26 @@ export default function FirstOVIPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing a first OVI charge anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—the 30-day deadline for ALS appeals and early intervention can significantly impact your case outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Do not delay in seeking experienced legal representation to protect your driving privileges, minimize consequences, and protect your future.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Second OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enhanced penalties and mandatory jail for repeat OVI offenses in Ohio</span>
+              </Link>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              </Link>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              </Link>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -227,4 +263,3 @@ export default function FirstOVIPage() {
     </>
   );
 }
-

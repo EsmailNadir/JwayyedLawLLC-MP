@@ -43,6 +43,18 @@ const faqs = [
     question: 'Can a third OVI be reduced to a second or first offense?',
     answer: 'Sometimes. If one or both of the prior OVIs that make this a "third" offense are invalid, from outside the lookback period, or not properly documented, the charge may be reduced to a second or first offense. That can mean less jail, a shorter suspension, no vehicle forfeiture, and different rules for limited privileges. An attorney can review your prior record and argue for a reduction where the law supports it.',
   },
+  {
+    question: `What are the jail and fine penalties for a third OVI in Ohio under HB 37?`,
+    answer: `Under ORC 4511.19 as updated by HB 37 (effective April 9, 2025), a low-level third OVI (BAC .08% to under .17%) carries a mandatory minimum of 30 consecutive days in jail, with an alternative minimum of 15 consecutive days jail plus 55 days of house arrest with electronic monitoring. A high-level or refusal third OVI (BAC .17% or higher, or test refusal) requires 60 consecutive days minimum, with an alternative of 30 days jail plus 110 days house arrest. Fines range from $850 to $2,750. License suspension is 2 to 10 years, and the vehicle may be subject to criminal forfeiture if registered to you. These are mandatory minimums the court cannot waive.`,
+  },
+  {
+    question: `Are ignition interlock devices required for a third OVI in Ohio?`,
+    answer: `Yes. For any alcohol-related third OVI in Ohio, an ignition interlock device (IID) is required before the court will grant limited driving privileges. The IID must be installed on every vehicle you operate during the privilege period. The hard suspension before you can even apply for limited privileges is 180 days (if you took the test and were over the limit) or one full year (if you refused). After that waiting period, you must show proof of IID installation and court approval. The IID requirement continues for the duration of the limited privilege period. An attorney can help you navigate the IID installation process and prepare the privilege application.`,
+  },
+  {
+    question: `How does the 10-year lookback period affect a third OVI charge in Ohio?`,
+    answer: `Ohio's 10-year lookback period under ORC 4511.19 means that only prior OVI convictions within 10 years of the current offense date count toward enhanced sentencing. To be charged as a third OVI with third-offense mandatory minimums (30 or 60 days jail, 2–10 year suspension, vehicle forfeiture), prosecutors must show two qualifying prior OVIs within that 10-year window. If one or both priors fall outside the lookback period, the mandatory penalties are lower. An attorney will carefully review the dates and records of your prior convictions to determine whether they are within the lookback window and whether any can be challenged as improperly counted.`,
+  },
 ];
 
 export default function ThirdOVIPage() {
@@ -59,15 +71,15 @@ export default function ThirdOVIPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Third OVI Charges in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A third OVI in Ohio—operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19—is still a first-degree misdemeanor, but the penalties are much harsher than for a first or second offense. They include mandatory jail time (30 days to one year, or more for high-level or refusal), large fines, a license suspension of 2 to 12 years, mandatory alcohol/drug addiction program, required restricted (yellow) plates, mandatory ignition interlock for limited driving privileges, and criminal forfeiture of the vehicle if it is registered to you. At Jwayyed Law LLC, we provide experienced defense for third OVI charges and work to protect your rights and your license.
+              A third OVI in Ohio—operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19—is still a first-degree misdemeanor, but the penalties are much harsher than for a first or second offense. They include mandatory jail time (30 days to one year, or more for high-level or refusal), large fines, a license suspension of 2 to 12 years, mandatory alcohol/drug addiction program, required restricted (yellow) plates, mandatory ignition interlock for limited driving privileges, and criminal forfeiture of the vehicle if it is registered to you. At Jwayyed Law LLC, we provide experienced defense for third OVI charges as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link> and work to protect your rights and your license.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio treats a third OVI within 10 years as a serious repeat offense. The law distinguishes &quot;low level&quot; (e.g., BAC at or above .08% but below .17%), &quot;high level&quot; (e.g., BAC .17% or higher), and &quot;refusal&quot; of a chemical test—with refusal often treated like a high-level test. High-level or refusal carries a higher minimum jail term and a longer wait before you can apply for limited driving privileges. A fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. Understanding the full range of penalties and your defense options is critical. Getting an experienced third OVI defense attorney involved early can make a real difference.
+              Ohio treats a third OVI within 10 years as a serious repeat offense. The law distinguishes &quot;low level&quot; (e.g., BAC at or above .08% but below .17%), &quot;high level&quot; (e.g., BAC .17% or higher), and &quot;refusal&quot; of a chemical test—with refusal often treated like a high-level test. High-level or refusal carries a higher minimum jail term and a longer wait before you can apply for limited driving privileges. A fourth OVI within 10 years (or 5 OVIs within 20 years) becomes a fourth-degree felony. Understanding the full range of penalties and your defense options is critical. Getting an experienced third OVI defense attorney involved early can make a real difference. Learn more about <Link href="/our-law-firm/blog/what-happens-after-ovi-arrest-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what happens after an OVI arrest in Ohio</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A third OVI case involves two tracks: the criminal case in municipal or county court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal and work toward the best result for your license and your record.
+              A third OVI case involves two tracks: the criminal case in municipal or county court and the administrative license suspension (ALS) process through the BMV. You have only 30 days from the date of arrest to request an ALS hearing; missing that deadline means you lose the chance to fight the suspension. An attorney can handle both the criminal defense and the ALS appeal and work toward the best result for your license and your record. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your third OVI case.
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Third OVI – Counties We Serve</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
@@ -236,6 +248,26 @@ export default function ThirdOVIPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you have been charged with a third OVI in Ohio, contact Jwayyed Law LLC as soon as possible. We will review your case, explain your rights and the penalties you face, and outline options for defense—including ALS appeal, prior conviction challenges, and limited driving privileges. You only have 30 days to request an ALS hearing; getting a lawyer early can make a real difference for your license and your case. Call us to schedule a consultation and protect your rights and your future.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Second OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enhanced penalties and mandatory jail for second OVI offenses in Ohio</span>
+              </Link>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              </Link>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              </Link>
+              <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Driving Under OVI Suspension</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for driving while suspended due to an OVI conviction</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -244,4 +276,3 @@ export default function ThirdOVIPage() {
     </>
   );
 }
-

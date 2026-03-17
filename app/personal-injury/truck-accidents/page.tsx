@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -40,6 +41,18 @@ const faqs = [
   {
     question: 'How long do truck accident cases take?',
     answer: 'Truck accident case duration varies significantly depending on case complexity, injury severity, number of parties involved, and whether the case goes to trial. Simple cases may resolve in months, while complex cases involving severe injuries and multiple parties may take years. An attorney can provide a realistic timeline based on your specific case circumstances.',
+  },
+  {
+    question: `What federal regulations govern commercial truck drivers?`,
+    answer: `Commercial truck drivers and carriers operating in interstate commerce are subject to extensive federal regulations enforced by the Federal Motor Carrier Safety Administration (FMCSA). Most importantly, 49 CFR Part 395 establishes hours-of-service (HOS) rules that limit how long a driver may operate without rest — generally 11 driving hours within a 14-hour window after 10 consecutive hours off duty, with a mandatory 30-minute break after 8 hours of driving. Drivers are required to maintain electronic logging device (ELD) records of their duty status. Violations of HOS rules are a leading cause of fatigued-driving crashes. Other key regulations cover driver qualifications (49 CFR Part 391), vehicle inspection and maintenance (49 CFR Part 396), and drug and alcohol testing (49 CFR Part 382). Evidence of regulatory violations can establish negligence per se in a truck accident claim.`,
+  },
+  {
+    question: `What is the deadline to preserve black box (ECM) data after a truck accident?`,
+    answer: `Commercial trucks are equipped with an Engine Control Module (ECM) or "black box" that records critical pre-crash data including vehicle speed, brake application, throttle position, and engine RPM. Trucking companies and their insurers are often quick to download and control this data — or allow it to be overwritten — after a crash. There is no fixed statutory deadline, but data can be lost within days if the truck returns to service. An attorney should send a preservation letter (spoliation notice) to the trucking company immediately after the accident demanding that all electronic data, driver logs, maintenance records, and communications be preserved. Failure to preserve evidence after proper notice can result in spoliation sanctions at trial.`,
+  },
+  {
+    question: `How does liability work when a truck driver is an independent contractor vs. an employee?`,
+    answer: `Trucking companies sometimes classify drivers as independent contractors to avoid direct vicarious liability. However, Ohio and federal courts look beyond labels to determine the actual relationship. Under the FMCSA's regulations, a motor carrier that holds the operating authority remains legally responsible for a driver operating under its authority regardless of how the employment relationship is characterized. Additionally, Ohio courts may impose liability on trucking companies under theories of negligent hiring, negligent entrustment, or negligent supervision even when the driver is a true independent contractor. An attorney can investigate the contractual relationship, the carrier's operating authority, and the specific circumstances of the crash to identify all liable parties and maximize your recovery.`,
   },
 ];
 
@@ -165,9 +178,29 @@ export default function TruckAccidentsPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a truck accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, identify all potentially liable parties, and develop a strategy tailored to your situation. Time is critical in truck accident cases—evidence must be preserved, regulatory violations must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
+              If you have been injured in a truck accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Time is critical in truck accident cases—evidence must be preserved, regulatory violations must be documented, and the statute of limitations must be met. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link> or read our guide on <Link href="/our-law-firm/blog/steps-after-car-accident-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to do after an accident in Ohio</Link>.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          </Link>
+          <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Motorcycle Accidents</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Representing injured motorcyclists across Ohio</span>
+          </Link>
+          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Catastrophic Injuries</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Severe and life-altering injury claims</span>
+          </Link>
+          <Link href="/personal-injury/wrongful-death" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Wrongful Death</span>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Holding negligent parties accountable for fatal injuries</span>
+          </Link>
         </div>
       </section>
       <FAQ faqs={faqs} />

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
@@ -6,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'OVI / DUI Lawyer for Delaware, Ohio | Delaware County Municipal Court | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Delaware and Delaware County, Ohio. Delaware County Municipal Court. First OVI, second OVI, and misdemeanor OVI defense. Schedule consultation: (614) 285-5482',
-  keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Delaware County', 'Delaware County Municipal Court OVI'],
+  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
+  keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio'],
   openGraph: {
     title: 'OVI / DUI Lawyer for Delaware, Ohio | Delaware County | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court',
@@ -23,24 +24,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: 'What are the penalties for OVI in Delaware County Municipal Court?',
-    answer: 'OVI penalties in Delaware County Municipal Court under Ohio Revised Code 4511.19 follow state law and depend on offense level. First OVI carries 3-180 days jail (minimum 3 days mandatory), fines of $565-$1,075 (minimum increased under HB 37 effective April 2025), and 1 to 3 years license suspension. License reinstatement fee is $315. Subsequent offenses carry enhanced penalties. An experienced attorney can help minimize consequences.',
+    question: `What are the OVI penalties in Delaware County Municipal Court?`,
+    answer: `Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Delaware County Municipal Court carries 3 to 180 days in jail (minimum 3 mandatory days or driver intervention program), fines of $565 to $1,075, and a license suspension of 1 to 3 years. The license reinstatement fee is $315. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums. A second OVI within 10 years carries minimum 10 days in jail and fines of $715 to $1,625.`,
   },
   {
-    question: 'Can I get limited driving privileges in Delaware County?',
-    answer: 'Limited driving privileges may be available in Delaware County after OVI suspension depending on offense level and circumstances. Limited privileges may require ignition interlock devices and restrict driving to work, school, treatment, and necessary activities. An attorney can help determine eligibility and apply for limited privileges.',
+    question: `How do I appeal an ALS in Delaware County?`,
+    answer: `Under ORC 4511.191, you have 30 days from the date of arrest to file an Administrative License Suspension appeal in Delaware County Municipal Court, located at 70 N. Union St, Delaware, OH 43015. The ALS takes effect immediately upon arrest and is separate from the criminal OVI case. An attorney can file the appeal, seek a stay of suspension, and challenge the suspension on procedural or substantive grounds before the deadline expires.`,
   },
   {
-    question: 'How do I appeal an administrative license suspension in Delaware County?',
-    answer: 'To appeal an administrative license suspension in Delaware County, file an appeal with the Delaware County Municipal Court within 30 days of arrest. Appeals challenge the suspension based on procedural issues, testing procedures, or other legal grounds. An attorney can help file appeals, request stays of suspension, and protect your driving privileges.',
+    question: `Can the 15-day hard suspension be waived in Delaware County under HB 37?`,
+    answer: `Yes. HB 37 (effective April 9, 2025) authorizes Delaware County Municipal Court to waive the 15-day hard suspension waiting period for limited driving privileges if the first-time OVI defendant agrees to install and use a certified ignition interlock device. This allows first offenders to potentially maintain driving privileges for work or medical appointments almost immediately, subject to the court&apos;s discretion and interlock compliance.`,
   },
   {
-    question: 'What should I do if I am charged with OVI in Delaware County?',
-    answer: 'If charged with OVI in Delaware County, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced OVI defense attorney right away. You have only 30 days to appeal an administrative license suspension. An attorney can protect your rights and develop defense strategies.',
+    question: `What makes OVI defense in Delaware County unique?`,
+    answer: `Delaware County is one of Ohio&apos;s fastest-growing counties, with high-traffic US 23 and US 36 corridors running through Delaware, Powell, and Lewis Center. Law enforcement agencies including the Delaware County Sheriff and Ohio State Highway Patrol actively patrol these routes. Our attorney understands which agencies handle stops in which areas and the specific procedures each agency uses for field sobriety and chemical testing.`,
   },
   {
-    question: 'Do I need a local attorney for OVI in Delaware County?',
-    answer: 'While you can hire any Ohio attorney, an attorney familiar with Delaware County courts, Delaware County Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced OVI attorney can provide effective representation.',
+    question: `What OVI defenses apply in Delaware County?`,
+    answer: `Common OVI defenses our firm investigates for Delaware County cases include: challenging the stop for lack of reasonable suspicion; disputing Standardized Field Sobriety Test (SFST) administration under NHTSA guidelines; challenging breathalyzer or blood test accuracy and chain of custody; asserting the rising BAC defense; and filing motions to suppress illegally obtained evidence under ORC 2935.26. We obtain all videos, calibration records, and police reports before evaluating any offer.`,
+  },
+  {
+    question: `Can I get limited driving privileges in Delaware County after an OVI?`,
+    answer: `Yes. Delaware County Municipal Court can grant limited driving privileges for work, school, medical, and other essential purposes after an OVI suspension. Under HB 37, first-time defendants who agree to ignition interlock may qualify to bypass the standard waiting period. For ALS-related suspensions, privileges may be granted once the hard suspension period passes. Our firm petitions quickly and helps you meet all court requirements.`,
+  },
+  {
+    question: `Will an OVI affect my professional license in Ohio?`,
+    answer: `OVI convictions can impact professional licenses regulated by Ohio licensing boards, including medical, nursing, legal, real estate, and commercial driving licenses. Delaware County&apos;s higher-income professional population often faces these collateral consequences. Our firm evaluates professional licensing implications alongside the criminal case and works to achieve outcomes that minimize long-term career consequences.`,
+  },
+  {
+    question: `Why hire Jwayyed Law LLC for a Delaware County OVI?`,
+    answer: `Jwayyed Law LLC provides experienced OVI/DUI defense in Delaware County Municipal Court. We act immediately to file ALS appeals within the 30-day deadline under ORC 4511.191, obtain all evidence, and build a defense strategy tailored to your case and the specific procedures of Delaware County Municipal Court. We understand the local prosecutors and court expectations in this rapidly growing suburban county. Call (614) 285-5482 for a consultation.`,
   },
 ];
 
@@ -50,36 +63,54 @@ export default function DelawareOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI / DUI Lawyer for Delaware, Ohio"
-        description="Delaware County Municipal Court. Experienced OVI/DUI defense for Delaware and Delaware County, Ohio."
+        description="Delaware County Municipal Court OVI defense. Serving Delaware, Powell, Dublin, Westerville, Lewis Center, and Sunbury under HB 37 and ORC 4511.19."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">OVI/DUI Defense in Delaware County, Ohio</h2>
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              OVI/DUI Defense in Delaware County, Ohio
+            </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI/DUI charges in Delaware County, particularly in Delaware County Municipal Court, require experienced defense representation to protect your rights and minimize consequences. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation in Delaware County under Ohio Revised Code 4511.19. Our attorney understands Delaware County Municipal Court procedures, local prosecutor practices, and judicial preferences, enabling us to provide effective representation tailored to this specific court.
+              Delaware County is one of the fastest-growing counties in Ohio, with booming communities along the US 23 and US 36 corridors including Delaware, Powell, Lewis Center, Dublin, Westerville, and Sunbury. The Delaware County Municipal Court, located at 70 N. Union St, Delaware, OH 43015, handles all misdemeanor OVI and DUI charges arising in the county. Jwayyed Law LLC provides aggressive OVI defense representation under{' '}
+              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">Ohio Revised Code 4511.19</Link>{' '}
+              for clients throughout Delaware County.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Delaware County, located north of Columbus, includes Delaware (the county seat) and surrounding communities. The Delaware County Municipal Court serves as the primary court for OVI/DUI cases occurring throughout Delaware County. Understanding the unique characteristics of this court, including its procedures, prosecutor approaches, and judicial expectations, is essential for achieving favorable outcomes in OVI cases.
+              The heavy growth in Delaware County has brought increased law enforcement presence on US 23, US 36, State Route 315, and the various connector routes linking suburb to suburb. The Delaware County Sheriff&apos;s Office, Ohio State Highway Patrol, and municipal police departments in Powell, Westerville, and Delaware City all make OVI stops and arrests. Our firm understands the specific procedures used by each agency and identifies any procedural deficiencies in the stop, testing, and arrest process.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Understanding Delaware County Municipal Court</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              OVI Penalties in Delaware County Under HB 37
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Delaware County Municipal Court is located in Delaware, Ohio, and handles all misdemeanor OVI/DUI cases occurring in Delaware County. The court follows Ohio Revised Code 4511.19 for OVI penalties and procedures, but local court practices, prosecutor policies, and judicial preferences can significantly impact case outcomes. Our attorney has extensive experience representing clients in Delaware County Municipal Court and understands the nuances of how OVI cases are handled in this jurisdiction.
+              Ohio&apos;s House Bill 37, effective April 9, 2025, revised the mandatory minimum penalties for OVI under ORC 4511.19. A first OVI conviction in Delaware County Municipal Court carries a mandatory minimum of 3 days in jail or 3 days in a certified driver intervention program, fines of $565 to $1,075, and license suspension of 1 to 3 years. The license reinstatement fee is $315. Importantly, HB 37 now allows Delaware County Municipal Court judges to waive the 15-day hard suspension waiting period for limited driving privileges when a first-time defendant agrees to use an ignition interlock device — a critical change for professionals who cannot afford to lose driving access.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">OVI Penalties in Delaware County</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI penalties in Delaware County follow Ohio Revised Code 4511.19 and depend on the offense level. First OVI carries mandatory minimum penalties under HB 37 (effective April 2025): 3 days in jail (or driver intervention program), fines of $565 to $1,075, and license suspension of 1 to 3 years. License reinstatement fee is $315. Second OVI and high-tier OVI carry enhanced penalties. Experienced representation can help negotiate reduced penalties or alternative sentencing.
+              High-tier OVI charges — where the BAC is 0.17% or above, or where certain drug concentrations are detected — carry enhanced mandatory minimums even for first offenses: 6 mandatory days in jail (or 3 days in jail plus 3 days in a driver intervention program). A second OVI within 10 years escalates to a minimum of 10 days in jail, fines of $715 to $1,625, and suspension of 1 to 7 years. Given Delaware County&apos;s higher-income professional demographic, these penalties can have severe career and licensing consequences beyond the courtroom.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Administrative License Suspension (ALS) in Delaware County</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Administrative License Suspension — 30-Day Deadline in Delaware County
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When arrested for OVI in Delaware County, you face two separate proceedings: the criminal OVI case in Delaware County Municipal Court and an administrative license suspension (ALS) through the Ohio Bureau of Motor Vehicles. You have only 30 days from the date of arrest to appeal the ALS suspension, and this appeal must be filed in Delaware County Municipal Court. Our firm immediately files ALS appeals, requests stays of suspension, and challenges the suspension based on procedural issues or testing procedures.
+              Upon arrest for OVI in Delaware County, the officer immediately seizes your license and issues a notice of Administrative License Suspension under ORC 4511.191. The ALS is an entirely separate civil proceeding from the criminal OVI case. You have only 30 days from the date of arrest to appeal the ALS in Delaware County Municipal Court. Missing this window permanently forfeits your right to administratively contest the suspension. Our firm treats the ALS appeal as an emergency matter — we file appeals promptly and request a stay of suspension so you can continue driving during the appeal process.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an OVI/DUI Defense Attorney Can Help in Delaware County</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Our firm provides comprehensive OVI defense representation in Delaware County: immediate ALS appeals, evidence review, motion practice, negotiation with Delaware County prosecutors, trial representation when needed, limited driving privilege assistance, and local court knowledge. We understand that OVI charges can have devastating consequences; our attorney works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
+              ALS appeals can succeed when the officer failed to properly advise the defendant of consequences of refusal or submission, when the approved chemical testing device was improperly maintained, or when procedural requirements under ORC 4511.191 were not followed. Even a partial victory on an ALS appeal can meaningfully reduce the suspension period and improve your negotiating position in the criminal case.
+            </p>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              OVI Defense Strategies for Delaware County
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Our firm evaluates multiple defense angles for every Delaware County OVI case. We examine whether the initial traffic stop was supported by reasonable articulable suspicion — particularly important on busy US 23 or US 36 where officers sometimes conduct checkpoint-style enforcement. We review body-cam and dash-cam footage of field sobriety tests and evaluate whether the officer administered the walk-and-turn, one-leg stand, and horizontal gaze nystagmus tests in strict compliance with NHTSA standards. We obtain breathalyzer maintenance and calibration logs to challenge the accuracy of BAC readings, and we analyze whether blood draws were handled with proper chain-of-custody procedures. Where the BAC result is near the threshold, a rising BAC defense — arguing BAC was below 0.08% while driving and rose by the time of testing — can be powerful.
+            </p>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Professional Licensing Consequences in Delaware County
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Delaware County&apos;s large professional workforce means that many OVI defendants face consequences beyond the criminal penalties. Ohio licensing boards for physicians, nurses, attorneys, real estate agents, commercial drivers, and others may investigate or sanction license holders convicted of OVI. Our firm considers these collateral consequences when evaluating potential plea agreements and works to achieve outcomes that minimize long-term professional impact. In some cases, a reduction to reckless operation under ORC 4511.20 can significantly limit licensing board exposure and expungement eligibility under ORC 2953.31 may follow after applicable waiting periods.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing OVI charges in Delaware County, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—you have only 30 days to appeal an administrative license suspension. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to Delaware County Municipal Court procedures.
+              If you are facing OVI or DUI charges in Delaware County, contact Jwayyed Law LLC immediately at (614) 285-5482. Time is critical — you have only 30 days from your arrest to appeal your administrative license suspension, and that deadline cannot be extended. We will review your case, explain all available defenses, and develop a strategy tailored to the facts of your case and the specific procedures of Delaware County Municipal Court.
             </p>
           </div>
         </div>

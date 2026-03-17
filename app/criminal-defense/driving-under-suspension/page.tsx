@@ -56,6 +56,18 @@ const faqs = [
     question: 'What should I do if I am charged with driving under suspension in Ohio?',
     answer: 'If charged with DUS in Ohio, contact an experienced criminal defense attorney immediately. Do not ignore the charge, as failure to appear can result in additional penalties and warrants. An attorney can review the basis for your suspension, determine if proper notice was given, evaluate potential defenses, negotiate with prosecutors for reduced charges, and help you work toward license reinstatement. Early legal intervention is critical to protecting your rights and minimizing consequences.',
   },
+  {
+    question: `What is the mandatory minimum penalty for driving under an OVI-related suspension in Ohio?`,
+    answer: `Driving under an OVI-related suspension is treated especially harshly under ORC 4510.14. For a first offense, the statute imposes a mandatory minimum of 30 consecutive days in jail — though the court may substitute 30 consecutive days of house arrest with electronic monitoring in lieu of jail. The mandatory minimums increase significantly for subsequent offenses: a second offense within five years requires at least 10 consecutive days in jail (or 90 days house arrest), and a third offense requires at least 30 consecutive days in jail. These mandatory minimums cannot be suspended or waived by the court, making it critical to mount an aggressive defense before any conviction occurs.`,
+  },
+  {
+    question: `How is driving under a financial responsibility (FRA) suspension different from driving under an OVI-related suspension?`,
+    answer: `Both are serious charges, but they arise from different underlying conduct and carry different reinstatement requirements. An FRA (Financial Responsibility Act) suspension under ORC 4510.16 occurs when you fail to provide proof of insurance after an accident, fail to maintain required SR-22 insurance, or otherwise fail to comply with Ohio's financial responsibility laws. Unlike the mandatory jail minimums for OVI-related DUS under ORC 4510.14, FRA DUS is a first-degree misdemeanor that does not carry the same mandatory consecutive jail requirements for a first offense, though jail time remains possible. Reinstatement after an FRA suspension requires filing SR-22 proof of financial responsibility with the Ohio BMV and maintaining it for typically three years, in addition to paying reinstatement fees.`,
+  },
+  {
+    question: `Can a driving under suspension charge affect reinstatement of the original suspension?`,
+    answer: `Yes, significantly. A conviction for driving under suspension typically results in an additional license suspension on top of the original one. This means each DUS conviction extends the total period during which you cannot legally drive, creating a compounding cycle that becomes increasingly difficult to break without legal help. Under ORC 4510.14, for example, an OVI-related DUS conviction carries an additional one-to-five-year suspension. If you are caught driving again during that extended period, you face yet another DUS charge and another extension. Resolving DUS charges strategically — including negotiating reductions, obtaining driving privileges, and addressing the root causes of the original suspension — is essential to breaking this cycle.`,
+  },
 ];
 
 export default function DrivingUnderSuspensionPage() {
@@ -281,16 +293,26 @@ export default function DrivingUnderSuspensionPage() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              If you are facing driving under suspension charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, examine the basis for your suspension, discuss potential defenses, and develop a strategy to protect your rights and driving privileges. Time is critical in DUS cases. Early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation.
+              If you are facing driving under suspension charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio" className="text-[#b87333] underline hover:text-[#a06828]">protecting your rights during a traffic stop in Ohio</Link>.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/speeding-tickets" className="text-accent hover:underline">Speeding Tickets</Link>
-                <Link href="/criminal-defense/no-operators-license" className="text-accent hover:underline">No Operator&apos;s License</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement &amp; Record Sealing</Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">No Operator&apos;s License</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Driving without a valid license defense</span>
+              </Link>
+              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Speeding Tickets</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Traffic violation defense throughout Ohio</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
+              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Obstruction of Official Business</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for interfering with law enforcement</span>
+              </Link>
             </div>
           </div>
         </div>

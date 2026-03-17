@@ -42,6 +42,18 @@ const faqs = [
     question: 'Do I need a local attorney for misdemeanor defense in Morrow County?',
     answer: 'While you can hire any Ohio attorney, an attorney familiar with Morrow County courts, Morrow County Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced criminal defense attorney can provide effective representation.',
   },
+  {
+    question: `What types of misdemeanor charges are common in rural Morrow County?`,
+    answer: `Morrow County is a largely rural, agricultural county, and the misdemeanor charges most frequently handled in Morrow County Municipal Court reflect that character. Common charges include agricultural trespass and criminal trespass under ORC 2911.21 involving disputes over farm boundaries or hunting rights, property crimes such as theft and criminal damaging under ORC 2909.06, misdemeanor assault under ORC 2903.13, and domestic violence under ORC 2919.25. Drug-related misdemeanors are also prevalent in rural Ohio communities. Because Morrow County is a small community, individuals charged with misdemeanor offenses often know the involved parties and witnesses, which can create complex dynamics that an experienced defense attorney must navigate carefully.`,
+  },
+  {
+    question: `What are the penalties for a misdemeanor conviction in Morrow County under ORC 2929.21?`,
+    answer: `Under Ohio Revised Code 2929.21, misdemeanor penalties in Morrow County Municipal Court are set by offense degree: first-degree misdemeanors (M1) carry up to 180 days in jail and fines up to $1,000; second-degree misdemeanors (M2) carry up to 90 days in jail and fines up to $750; third-degree misdemeanors (M3) carry up to 60 days in jail and fines up to $500; and fourth-degree misdemeanors (M4) carry up to 30 days in jail and fines up to $250. The court may also impose community control, community service, and restitution. While these are maximum penalties, experienced defense representation can often result in reduced charges, alternative sentencing, or dismissal depending on the circumstances of the case.`,
+  },
+  {
+    question: `Can misdemeanor convictions from Morrow County Municipal Court be sealed under ORC 2953.32?`,
+    answer: `Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Morrow County Municipal Court are eligible for sealing after a one-year waiting period following final discharge from the sentence — meaning after completing all jail time, fines, probation, and other court-imposed conditions. Eligible convictions include most M1 through M4 misdemeanors. Certain categories of offenses are excluded, including convictions involving minor victims and certain traffic offenses. Sealing a record makes it inaccessible to the general public, which can remove barriers to employment and housing in and around Morrow County. An attorney can review your conviction history, confirm your eligibility, prepare the petition, and represent you at the sealing hearing in Morrow County Municipal Court.`,
+  },
 ];
 
 export default function MorrowCriminalMisdemeanorDefensePage() {

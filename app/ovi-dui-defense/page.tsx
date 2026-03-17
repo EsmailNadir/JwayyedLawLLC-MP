@@ -53,6 +53,18 @@ const faqs = [
     question: 'Can I get limited driving privileges after an OVI suspension in Ohio?',
     answer: 'Yes, depending on offense level. First OVI: eligible after 15 days (30 for refusal); the 15-day wait may be waived if you have no prior Physical Control conviction; interlock is optional unless you have that prior. Second OVI: after 45 days (90 for refusal), interlock required. Third OVI: after 180 days (1 year for refusal), interlock required. Privileges typically allow driving for work, school, treatment, and necessary activities. An attorney can help you request an ALS hearing (30-day deadline) and apply for limited privileges when eligible.',
   },
+  {
+    question: `What are the OVI lookback periods in Ohio?`,
+    answer: `Ohio uses two distinct lookback windows under ORC 4511.19. First, a 10-year lookback governs prior-offense counting for mandatory sentencing purposes: a prior OVI conviction within 10 years of the current offense date counts toward determining whether you face first-, second-, or third-offense penalties. Second, a 20-year lookback applies in limited specific contexts, such as whether a refusal is treated as a high-tier offense when there is a prior OVI within 20 years. There is no separate "6-year" lookback in current Ohio OVI law for penalty enhancement purposes. An attorney can review your prior record to determine which convictions fall within the relevant lookback windows and whether any priors can be challenged.`,
+  },
+  {
+    question: `What is an ALS and how do you appeal it in Ohio?`,
+    answer: `An Administrative License Suspension (ALS) is an automatic license suspension imposed by the BMV under Ohio's implied consent law (ORC 4511.191) when you are arrested for OVI and either fail a chemical test or refuse one. The ALS is separate from any criminal court suspension and begins immediately upon arrest. To challenge an ALS, you or your attorney must file a written appeal with the court within 30 days of the arrest—missing this deadline permanently waives your right to contest the suspension. Along with the appeal, your attorney can request a stay of the suspension, which allows you to keep driving while the appeal is pending. At the ALS hearing, the court examines whether the officer had reasonable grounds to stop you and request testing, whether the arrest was lawful, and whether testing was properly administered. Winning the ALS appeal can result in license reinstatement and may also benefit your criminal defense.`,
+  },
+  {
+    question: `What changed under HB 37 (effective April 9, 2025) for Ohio OVI cases?`,
+    answer: `HB 37, known as Liv's Law, took effect on April 9, 2025, and made several significant changes to Ohio OVI law under ORC 4511.19. Key changes include: updated fine ranges for all offense levels (for example, first OVI fines now start at $565 rather than the prior $375 minimum); authorization of oral fluid (saliva) testing as a new method of chemical testing subject to implied consent, with results admissible in court; clarification of ignition interlock device waiver rules for first OVI (the 15-day hard suspension can be waived for non-refusal cases with no prior Physical Control conviction); and updates to the reinstatement fee structure ($315 fee). The law was named after a victim of an OVI crash and reflects Ohio's continued effort to strengthen OVI enforcement. An attorney familiar with HB 37 can advise how these changes affect your specific charges.`,
+  },
 ];
 
 export default function OVIDefensePage() {
@@ -341,7 +353,7 @@ export default function OVIDefensePage() {
               <div className="flex flex-wrap gap-3 font-['Inter',_'Arial',_sans-serif]">
                 <Link href="/criminal-defense" className="text-orange-500 hover:underline">Criminal Defense</Link>
                 <Link href="/personal-injury/car-accidents" className="text-orange-500 hover:underline">Car Accident Claims</Link>
-                <Link href="/criminal-defense" className="text-orange-500 hover:underline">Criminal Defense</Link>
+                <Link href="/criminal-defense/expungement-record-sealing" className="text-orange-500 hover:underline">Expungement</Link>
               </div>
             </div>
           </div>

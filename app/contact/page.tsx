@@ -1,9 +1,14 @@
-'use client';
-
+import type { Metadata } from 'next';
 import React from 'react';
+import Link from 'next/link';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
+
+export const metadata: Metadata = {
+  title: 'Contact Our Ohio Law Firm | Schedule a Consultation | Jwayyed Law LLC',
+  description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving Columbus, Franklin County, and all of Ohio in criminal defense, OVI/DUI, personal injury, and more.',
+};
 
 type InputFieldProps = {
   label: string;
@@ -25,10 +30,27 @@ const ContactPage = () => {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Contact Us"
-        description="We're here to help. Reach out with any legal questions or to request a consultation."
+        title="Contact Our Ohio Law Firm"
+        description="Serving Columbus, Cincinnati, Dayton, and clients throughout all of Ohio. Reach out to schedule a consultation or ask a question about your legal matter."
         showCTA={false}
       />
+
+      {/* Practice Areas We Can Help With */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-2">
+        <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 text-center mb-6 max-w-3xl mx-auto leading-relaxed">
+          Jwayyed Law LLC provides experienced legal representation throughout Ohio — serving Columbus, Cincinnati, Dayton, and clients in every Ohio county. Whether you need help with a criminal charge, an injury claim, a business matter, or an estate plan, our attorneys are ready to listen and advise you on your options.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
+          <Link href="/criminal-defense" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Criminal Defense</Link>
+          <Link href="/ovi-dui-defense" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">OVI / DUI Defense</Link>
+          <Link href="/personal-injury" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Personal Injury</Link>
+          <Link href="/civil" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Civil Litigation</Link>
+          <Link href="/business" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Business Law</Link>
+          <Link href="/trusts" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Trusts</Link>
+          <Link href="/other-services/estate-planning" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Estate Planning</Link>
+          <Link href="/other-services/probate" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Probate</Link>
+        </div>
+      </section>
 
       {/* Forms Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">

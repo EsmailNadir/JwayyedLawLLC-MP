@@ -54,6 +54,18 @@ const faqs = [
     question: 'What should I do if I am charged with assault in Ohio?',
     answer: 'If charged with assault in Ohio, remain calm and exercise your rights. Do not discuss the case with anyone except your attorney. Contact an experienced criminal defense attorney immediately. Avoid contact with the alleged victim. Gather any evidence including witnesses, photos, or documents that support your defense. Time is critical—an attorney can help protect your rights, challenge evidence, negotiate with prosecutors, and develop a defense strategy.',
   },
+  {
+    question: `What is the difference between assault and aggravated assault in Ohio?`,
+    answer: `Under ORC 2903.13, simple assault — knowingly causing or attempting to cause physical harm to another — is generally a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault under ORC 2903.12 is a more serious charge that applies when a person causes serious physical harm or uses a deadly weapon while under the influence of sudden passion or rage brought on by serious provocation. Aggravated assault is a fourth-degree felony (F4) punishable by 6–18 months in prison. Jwayyed Law LLC handles misdemeanor assault (ORC 2903.13) only; if you are charged with aggravated assault, you will need to consult an attorney who handles felony matters.`,
+  },
+  {
+    question: `Can self-defense be raised as a defense to assault in Ohio?`,
+    answer: `Yes. Under ORC 2901.05, self-defense is an affirmative defense in Ohio assault cases. As of 2019, Ohio shifted the burden to the prosecution — once a defendant raises evidence of self-defense, the state must disprove self-defense beyond a reasonable doubt. To succeed on a self-defense claim, the evidence must show that you were not at fault in creating the situation, you had a reasonable and honest belief that you were in imminent danger of bodily harm, and the force used was proportionate to the threat. An experienced defense attorney can evaluate whether the facts of your case support a self-defense argument and present it effectively.`,
+  },
+  {
+    question: `What are the collateral consequences of an assault conviction in Ohio?`,
+    answer: `Beyond jail time and fines, an assault conviction in Ohio can have lasting collateral consequences. A criminal record for assault may lead employers to reject your job applications, particularly in healthcare, education, law enforcement, or any field requiring a background check. Professional licensing boards — including those for nursing, teaching, and real estate — can deny or revoke licenses based on assault convictions. Housing applications may be rejected by landlords. For non-citizens, an assault conviction may trigger immigration consequences including removal proceedings. Even a misdemeanor assault on your record signals potential violence to those reviewing it, making early and aggressive defense essential.`,
+  },
 ];
 
 export default function AssaultChargesPage() {
@@ -287,12 +299,27 @@ export default function AssaultChargesPage() {
               If you are facing assault charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
             </p>
 
-            <div className="bg-accent/10 border-l-4 border-accent p-6 mb-8">
-              <h4 className="font-semibold text-gray-900 mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense/domestic-violence" className="text-accent hover:underline">Domestic Violence Defense</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-accent hover:underline">Expungement & Record Sealing</Link>
-              </div>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              If you are facing assault charges in Ohio, call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link>. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/charged-with-assault-what-happens-next" className="text-[#b87333] underline hover:text-[#a06828]">what happens after being charged with assault in Ohio</Link>.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Domestic Violence Defense</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Ohio DV charges and protection order defense</span>
+              </Link>
+              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Resisting Arrest</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for resisting arrest and obstruction charges</span>
+              </Link>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              </Link>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
+                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              </Link>
             </div>
           </div>
         </div>

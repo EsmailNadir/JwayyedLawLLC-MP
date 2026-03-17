@@ -42,6 +42,18 @@ const faqs = [
     question: 'How long does a civil case take?',
     answer: 'Civil case duration varies significantly depending on case complexity, court schedule, and whether the case goes to trial. Simple cases may resolve in months, while complex cases may take years. Most cases settle before trial, but preparation and negotiation can take substantial time. An attorney can provide a realistic timeline based on your specific case circumstances.',
   },
+  {
+    question: `What is the difference between a jury trial and a bench trial in Ohio civil cases?`,
+    answer: `In Ohio civil cases, a party has the right to a jury trial for legal claims (such as breach of contract or personal injury) involving amounts over $1,000 under Article I, Section 5 of the Ohio Constitution and Ohio Civil Rule 38. A jury trial involves a panel of six or eight jurors who decide disputed facts and apply the law as instructed by the judge. A bench trial (also called a court trial) is presided over by a judge alone who decides both the facts and the law. Equitable claims—such as requests for specific performance, injunctions, or other non-monetary relief—are generally tried to a bench, not a jury.`,
+  },
+  {
+    question: `How does Ohio's preponderance of evidence standard work in civil cases?`,
+    answer: `In Ohio civil litigation, the party bearing the burden of proof—typically the plaintiff—must establish their claims by a preponderance of the evidence. This means that the evidence must show it is more likely than not (greater than 50%) that the claimed facts are true. This is a significantly lower bar than the beyond-a-reasonable-doubt standard required in criminal cases. In practice, a single credible witness, a persuasive document, or a modest weight of circumstantial evidence can tip the scales in a civil case. Some specific civil claims, such as fraud, require proof by clear and convincing evidence, a higher standard than preponderance but still lower than beyond a reasonable doubt.`,
+  },
+  {
+    question: `What is a default judgment in Ohio and how can it be vacated?`,
+    answer: `Under Ohio Civil Rule 55, a default judgment may be entered against a defendant who fails to appear or respond to a properly served complaint within the time allowed by the rules. Once entered, a default judgment has the same legal effect as any other judgment and can be enforced through wage garnishment, bank levies, or liens on property. A defendant seeking to vacate a default judgment may file a motion under Ohio Civil Rule 60(B), which allows relief from judgment for reasons including mistake, excusable neglect, newly discovered evidence, fraud, or any other reason justifying relief. The motion must be filed within a reasonable time and, for certain grounds, within one year of the judgment.`,
+  },
 ];
 
 export default function CivilPage() {
