@@ -5,13 +5,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Misdemeanor Defense in Morrow County - Morrow County Municipal Court | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced criminal misdemeanor defense attorney in Morrow County - Morrow County Municipal Court. Skilled representation for misdemeanor charges in Morrow County, Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Criminal Defense Lawyer | Morrow County Court',
+  description: 'Experienced criminal misdemeanor defense attorney in Morrow County - Morrow County Municipal Court. Skilled representation for misdemeanor charges in Morro.',
   keywords: ['criminal misdemeanor defense Morrow County', 'misdemeanor attorney Morrow County Municipal Court', 'Morrow County criminal lawyer', 'Morrow County misdemeanor defense'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Morrow County - Morrow County Municipal Court | Jwayyed Law LLC',
+    title: 'Criminal Defense Lawyer | Morrow County Court',
     url: 'https://www.jjlawohio.com/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court' },
 };
 
@@ -61,7 +62,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Misdemeanor Defense in Morrow County - Morrow County Municipal Court"
+        title="Criminal Defense Lawyer | Morrow County Court"
         description="Experienced legal defense for criminal misdemeanor charges in Morrow County. Protecting your rights and fighting for the best possible outcome in Morrow County Municipal Court."
       />
       <section className="py-16 bg-white">

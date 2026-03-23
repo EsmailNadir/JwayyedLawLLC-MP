@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Business Litigation Lawyer Ohio | ORC 2307 | Columbus | Jwayyed Law LLC',
-  description: 'Ohio business litigation attorney handling contract disputes, fraud, business torts, unfair competition, TROs, and appeals in Ohio Common Pleas Court. Franklin County. Call (614) 285-5482.',
+  title: 'Business Litigation Lawyer Ohio | ORC 2307',
+  description: 'Ohio business litigation attorney handling contract disputes, fraud, business torts, unfair competition, TROs, and appeals in Ohio Common Pleas Court.',
   keywords: ['business litigation lawyer Columbus OH', 'Ohio business dispute attorney', 'ORC 2307 attorney', 'contract dispute Ohio', 'business fraud lawyer Ohio', 'Franklin County business litigation', 'temporary restraining order Ohio'],
   openGraph: {
-    title: 'Business Litigation Lawyer Ohio | ORC 2307 | Columbus | Jwayyed Law LLC',
+    title: 'Business Litigation Lawyer Ohio | ORC 2307',
     url: 'https://www.jjlawohio.com/business/business-litigation',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/business-litigation' },
 };
 

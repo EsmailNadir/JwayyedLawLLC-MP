@@ -5,9 +5,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Legal Document Templates | Jwayyed Law LLC | Ohio',
+  title: 'Legal Document Templates | Ohio',
   description:
-    '8 free Ohio legal document templates: landlord repair requests, demand letters, cease and desist, OVI evidence preservation, and more. Use as a starting point — consult an attorney for your specific situation.',
+    'Free Ohio legal document templates: landlord repair requests, demand letters, cease and desist, OVI evidence preservation, and more. Consult an attorney for your situation.',
   keywords: [
     'Ohio legal templates',
     'landlord repair letter',
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Legal Document Templates | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/our-law-firm/document-templates',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/our-law-firm/document-templates' },
 };

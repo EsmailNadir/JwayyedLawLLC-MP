@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Non-Compete Agreement Lawyer Ohio | Raimonde Standard | Columbus | Jwayyed Law LLC',
-  description: 'Ohio non-compete agreement attorney drafting, challenging, and enforcing restrictive covenants under the Raimonde reasonableness test. Trade secret protection under ORC 1333.61. Call (614) 285-5482.',
+  title: 'Non-Compete Agreement Lawyer Ohio',
+  description: 'Ohio non-compete agreement attorney drafting, challenging, and enforcing restrictive covenants under the Raimonde reasonableness test.',
   keywords: ['non-compete agreement lawyer Columbus OH', 'non-compete attorney Ohio', 'Raimonde v Van Vlerah Ohio', 'trade secrets ORC 1333.61', 'non-solicitation agreement Ohio', 'blue pencil doctrine Ohio'],
   openGraph: {
-    title: 'Non-Compete Agreement Lawyer Ohio | Raimonde Standard | Columbus | Jwayyed Law LLC',
+    title: 'Non-Compete Agreement Lawyer Ohio',
     url: 'https://www.jjlawohio.com/business/non-compete-agreements',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/non-compete-agreements' },
 };
 

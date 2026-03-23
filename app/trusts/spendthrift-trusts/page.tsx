@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Spendthrift Trusts Lawyer Ohio | ORC 5805.01 Creditor Protection | Jwayyed Law LLC',
-  description: 'Ohio spendthrift trust attorney serving Columbus, Cincinnati, and Dayton. ORC 5805.01 creditor protection, exceptions for child support and alimony, discretionary vs. mandatory distributions, Ohio Legacy Trusts. Call (614) 285-5482.',
+  title: 'Spendthrift Trusts Lawyer Ohio',
+  description: 'Ohio spendthrift trust attorney serving Columbus, Cincinnati, and Dayton. ORC 5805.01 creditor protection, exceptions for child support and alimony.',
   keywords: [
     'spendthrift trust Columbus OH',
     'spendthrift trust attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'self-settled spendthrift trust Ohio',
   ],
   openGraph: {
-    title: 'Spendthrift Trusts Lawyer Ohio | ORC 5805.01 Creditor Protection | Jwayyed Law LLC',
+    title: 'Spendthrift Trusts Lawyer Ohio',
     url: 'https://www.jjlawohio.com/trusts/spendthrift-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/spendthrift-trusts' },
 };
 

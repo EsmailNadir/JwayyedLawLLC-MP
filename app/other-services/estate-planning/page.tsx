@@ -7,13 +7,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Estate Planning Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio estate planning attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your legacy. Skilled representation for wills, trusts, and estate planning in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Estate Planning Lawyer in Ohio',
+  description: 'Experienced Ohio estate planning attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your legacy.',
   keywords: ['estate planning lawyer Columbus OH', 'estate planning attorney Ohio', 'wills trusts lawyer', 'Franklin County estate planning attorney'],
   openGraph: {
-    title: 'Estate Planning Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Estate Planning Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/other-services/estate-planning',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/estate-planning' },
 };
 

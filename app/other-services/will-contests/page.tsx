@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution. Serving Columbus and all of Ohio. Call (614) 285-5482.',
+  title: 'Will Contests Lawyer in Ohio | Columbus',
+  description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution.',
   keywords: [
     'will contest lawyer Columbus OH',
     'will contest attorney Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'defending will contest Ohio',
   ],
   openGraph: {
-    title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+    title: 'Will Contests Lawyer in Ohio | Columbus',
     description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/other-services/will-contests',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/will-contests' },
 };
 

@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Motorcycle Accident Lawyer in Ohio',
+  description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio.',
   keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
   openGraph: {
-    title: 'Motorcycle Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Motorcycle Accident Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/personal-injury/motorcycle-accidents',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/motorcycle-accidents' },
 };
 

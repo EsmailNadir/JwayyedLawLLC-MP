@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Civil Protection Orders Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Civil Protection Orders Lawyer in Ohio',
   description: 'Experienced Ohio civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney'],
   openGraph: {
-    title: 'Civil Protection Orders Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Civil Protection Orders Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/civil-protection-orders',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/civil-protection-orders' },
 };
 

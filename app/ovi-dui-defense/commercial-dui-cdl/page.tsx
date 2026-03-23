@@ -8,13 +8,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Commercial DUI (CDL) Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Commercial DUI (CDL) Defense Lawyer in Ohio',
+  description: 'Experienced Ohio commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio.',
   keywords: ['commercial DUI lawyer Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense'],
   openGraph: {
-    title: 'Commercial DUI (CDL) Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Commercial DUI (CDL) Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/commercial-dui-cdl',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/commercial-dui-cdl' },
 };
 

@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Franklin County, Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Business attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and Worthington. LLC formation, business law, contracts. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Franklin County',
+  description: 'Business attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and Worthington. LLC formation, business law.',
   keywords: ['business lawyer Franklin County', 'LLC formation Columbus Ohio', 'Franklin County business attorney', 'LLC formation Dublin Ohio', 'small business attorney Columbus Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Franklin County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Franklin County',
     url: 'https://www.jjlawohio.com/locations/franklin-county/business-formation-llc-franklin-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/franklin-county/business-formation-llc-franklin-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCFranklinCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Franklin County, Ohio"
+        title="Business & LLC Formation | Franklin County"
         description="Serving Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, Reynoldsburg, Worthington, and surrounding communities with business formation and LLC law."
       />
       <section className="py-16 bg-white">

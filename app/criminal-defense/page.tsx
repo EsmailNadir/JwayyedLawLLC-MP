@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Criminal Defense Attorney | Experienced Legal Representation | Jwayyed Law LLC',
-  description: 'Experienced Ohio criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft, and all criminal charges. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Criminal Defense Attorney',
+  description: 'Experienced Ohio criminal defense attorney protecting your rights. Skilled representation for assault, drug crimes, domestic violence, theft.',
   keywords: [
     'Ohio criminal defense attorney',
     'Ohio criminal defense lawyer',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'Ohio criminal attorney'
   ],
   openGraph: {
-    title: 'Ohio Criminal Defense Attorney | Jwayyed Law LLC',
+    title: 'Ohio Criminal Defense Attorney',
     description: 'Experienced criminal defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense',
   },

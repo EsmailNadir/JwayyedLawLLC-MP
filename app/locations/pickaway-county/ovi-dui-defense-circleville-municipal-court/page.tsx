@@ -5,13 +5,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI/DUI Defense in Pickaway County - Circleville Municipal Court | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced OVI/DUI defense attorney in Pickaway County - Circleville Municipal Court. Skilled representation for OVI/DUI charges in Pickaway County, Ohio. Schedule consultation: (614) 285-5482',
+  title: 'OVI Defense Lawyer | Circleville Municipal Court',
+  description: 'Experienced OVI/DUI defense attorney in Pickaway County - Circleville Municipal Court. Skilled representation for OVI/DUI charges in Pickaway County, Ohio.',
   keywords: ['OVI defense Pickaway County', 'DUI attorney Circleville Municipal Court', 'Pickaway County OVI lawyer', 'Circleville DUI defense'],
   openGraph: {
-    title: 'OVI/DUI Defense in Pickaway County - Circleville Municipal Court | Jwayyed Law LLC',
+    title: 'OVI Defense Lawyer | Circleville Municipal Court',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court' },
 };
 
@@ -61,7 +62,7 @@ export default function PickawayOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI/DUI Defense in Pickaway County - Circleville Municipal Court"
+        title="OVI Defense Lawyer | Circleville Municipal Court"
         description="Experienced legal defense for OVI/DUI charges in Pickaway County. Protecting your rights and fighting for the best possible outcome in Circleville Municipal Court."
       />
       <section className="py-16 bg-white">

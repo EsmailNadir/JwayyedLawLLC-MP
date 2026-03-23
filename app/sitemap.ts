@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { blogPosts } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
@@ -12,6 +13,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     location: new Date('2026-03-16'),
   };
 
+  // Dynamically generate blog post sitemap entries from data
+  const blogRoutes = blogPosts.map((post) => ({
+    url: `/our-law-firm/blog/${post.slug}`,
+    priority: 0.7,
+    changeFrequency: 'monthly' as const,
+    lastModified: new Date(post.date),
+  }));
+
   const routes = [
     // Main pages
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const, lastModified: d.home },
@@ -19,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/services', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.service },
     { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/about/legal-assistant', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    
+
     // Our Law Firm
     { url: '/our-law-firm', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.home },
     { url: '/our-law-firm/about-us', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
@@ -31,40 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/our-law-firm/case-results', priority: 0.7, changeFrequency: 'weekly' as const, lastModified: d.blog },
     { url: '/our-law-firm/document-templates', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.blog },
     { url: '/our-law-firm/blog', priority: 0.8, changeFrequency: 'weekly' as const, lastModified: d.blog },
-    { url: '/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-01-15') },
-    { url: '/our-law-firm/blog/ohio-castle-doctrine-self-defense-laws', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-01-20') },
-    { url: '/our-law-firm/blog/steps-after-car-accident-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-01-25') },
-    { url: '/our-law-firm/blog/ohio-new-expungement-laws-clear-record', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-01') },
-    { url: '/our-law-firm/blog/starting-business-ohio-llc-vs-corporation', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-05') },
-    { url: '/our-law-firm/blog/what-to-expect-first-court-appearance-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-10') },
-    { url: '/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-12') },
-    { url: '/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-15') },
-    { url: '/our-law-firm/blog/limited-driving-privileges-after-ovi-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-18') },
-    { url: '/our-law-firm/blog/ohio-als-appeal-30-day-deadline', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-20') },
-    { url: '/our-law-firm/blog/dog-bite-laws-ohio-owner-liability', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-22') },
-    { url: '/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-24') },
-    { url: '/our-law-firm/blog/forming-llc-ohio-step-by-step', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-26') },
-    { url: '/our-law-firm/blog/what-is-revocable-living-trust', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-02-28') },
-    { url: '/our-law-firm/blog/first-dui-ohio-will-i-go-to-jail', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-01') },
-    { url: '/our-law-firm/blog/how-much-does-dui-cost-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-02') },
-    { url: '/our-law-firm/blog/charged-with-assault-what-happens-next', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-03') },
-    { url: '/our-law-firm/blog/shoplifting-ohio-first-offense', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-04') },
-    { url: '/our-law-firm/blog/slipped-fell-at-store-can-i-sue', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-05') },
-    { url: '/our-law-firm/blog/how-long-sue-after-injury-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-06') },
-    { url: '/our-law-firm/blog/landlord-wont-fix-heat-repairs-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-07') },
-    { url: '/our-law-firm/blog/do-i-need-will-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-08') },
-    { url: '/our-law-firm/blog/do-i-need-llc-for-business', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-09') },
-    { url: '/our-law-firm/blog/will-vs-trust-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-10') },
-    { url: '/our-law-firm/blog/ohio-probate-process-step-by-step', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-16') },
-    { url: '/our-law-firm/blog/what-is-expungement-ohio-2024', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-17') },
-    { url: '/our-law-firm/blog/ohio-business-formation-llc-vs-corp', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-18') },
-    { url: '/our-law-firm/blog/personal-injury-ohio-statute-of-limitations', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-19') },
-    { url: '/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-20') },
-    { url: '/our-law-firm/blog/misdemeanor-vs-felony-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-21') },
-    { url: '/our-law-firm/blog/ohio-power-of-attorney-guide', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-22') },
-    { url: '/our-law-firm/blog/what-happens-after-ovi-arrest-ohio', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-23') },
-    { url: '/our-law-firm/blog/ohio-civil-protection-order-guide', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-24') },
-    { url: '/our-law-firm/blog/starting-ohio-nonprofit-organization', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: new Date('2026-03-25') },
+    ...blogRoutes,
 
     // Criminal Defense
     { url: '/criminal-defense', priority: 0.9, changeFrequency: 'weekly' as const, lastModified: d.service },

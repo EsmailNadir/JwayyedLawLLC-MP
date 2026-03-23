@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Dayton, Ohio | Dayton & Kettering Municipal Courts | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Dayton, Kettering, Huber Heights, and Montgomery County, Ohio. Dayton Municipal Court and Kettering Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
+  title: 'OVI / DUI Lawyer for Dayton, Ohio',
+  description: 'OVI/DUI defense attorney for Dayton, Kettering, Huber Heights, and Montgomery County, Ohio. Dayton Municipal Court and Kettering Municipal Court. HB 37.',
   keywords: ['OVI lawyer Dayton Ohio', 'DUI attorney Montgomery County', 'OVI defense Kettering Ohio', 'Dayton Municipal Court OVI', 'Montgomery County OVI attorney'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Dayton, Ohio | Montgomery County | Jwayyed Law LLC',
+    title: 'OVI / DUI Lawyer for Dayton, Ohio',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court' },
 };
 

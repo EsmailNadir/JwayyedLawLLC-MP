@@ -8,13 +8,14 @@ import Link from 'next/link';
 import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Estate Planning, Probate & Dispute Resolution Lawyer Ohio | Jwayyed Law LLC',
-  description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and throughout Ohio under ORC Chapters 2107, 2113, and 2711. Call (614) 285-5482.',
+  title: 'Estate Planning & Probate Lawyer Ohio',
+  description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and throughout Ohio under ORC Chapter.',
   keywords: ['estate planning attorney Columbus Ohio', 'probate lawyer Ohio', 'dispute resolution attorney Columbus', 'Ohio will attorney', 'trust attorney Columbus OH'],
   openGraph: {
-    title: 'Estate Planning, Probate & Dispute Resolution Lawyer Ohio | Jwayyed Law LLC',
+    title: 'Estate Planning & Probate Lawyer Ohio',
     url: 'https://www.jjlawohio.com/other-services',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services' },
 };
 

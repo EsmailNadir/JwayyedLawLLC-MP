@@ -7,13 +7,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Business Dissolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio business dissolution attorney helping you close your business properly. Skilled representation for business dissolution in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Business Dissolution Lawyer in Ohio',
+  description: 'Experienced Ohio business dissolution attorney helping you close your business properly. Skilled representation for business dissolution in Ohio.',
   keywords: ['business dissolution lawyer Columbus OH', 'business dissolution attorney Ohio', 'close business lawyer', 'Franklin County business dissolution attorney'],
   openGraph: {
-    title: 'Business Dissolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Business Dissolution Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/business/business-dissolution',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/business-dissolution' },
 };
 

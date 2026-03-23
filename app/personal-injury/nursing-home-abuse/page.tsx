@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Nursing Home Abuse Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Ohio nursing home abuse and neglect attorney protecting vulnerable residents under ORC Chapter 3721. Pressure ulcers, physical abuse, financial exploitation. Call (614) 285-5482.',
+  title: 'Ohio Nursing Home Abuse Lawyer',
+  description: 'Ohio nursing home abuse and neglect attorney protecting vulnerable residents under ORC Chapter 3721. Pressure ulcers, physical abuse.',
   keywords: ['nursing home abuse lawyer Columbus OH', 'nursing home abuse attorney Ohio', 'elder abuse lawyer', 'Franklin County nursing home abuse attorney', 'ORC 3721 nursing home neglect'],
   openGraph: {
-    title: 'Ohio Nursing Home Abuse Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Nursing Home Abuse Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/nursing-home-abuse',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/nursing-home-abuse' },
 };
 

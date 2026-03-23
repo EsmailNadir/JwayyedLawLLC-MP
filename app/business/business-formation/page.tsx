@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Experienced Ohio business formation attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation. Schedule consultation: (614) 285-5482',
+  title: 'Business Formation Lawyer in Ohio',
+  description: 'Experienced Ohio business formation attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation.',
   keywords: ['business formation lawyer Ohio', 'Columbus business formation attorney', 'Cincinnati business formation attorney', 'Dayton business formation attorney', 'LLC formation lawyer Ohio'],
   openGraph: {
-    title: 'Business Formation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Business Formation Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/business/business-formation',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/business-formation' },
 };
 

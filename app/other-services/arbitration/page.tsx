@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Arbitration Lawyer | Columbus Arbitration Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio arbitration attorney representing businesses and individuals in AAA, JAMS, and private arbitration proceedings. Arbitration agreement review, hearings, award confirmation, and vacatur under ORC Chapter 2711. Call (614) 285-5482.',
+  title: 'Ohio Arbitration LawyerArbitration Attorney',
+  description: 'Experienced Ohio arbitration attorney representing businesses and individuals in AAA, JAMS, and private arbitration proceedings.',
   keywords: [
     'arbitration lawyer Columbus OH',
     'arbitration attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'employment arbitration lawyer Ohio',
   ],
   openGraph: {
-    title: 'Ohio Arbitration Lawyer | Columbus Arbitration Attorney | Jwayyed Law LLC',
+    title: 'Ohio Arbitration LawyerArbitration Attorney',
     url: 'https://www.jjlawohio.com/other-services/arbitration',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/arbitration' },
 };
 

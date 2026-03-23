@@ -326,7 +326,7 @@ export default function HomePageClient() {
         <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center pt-6 sm:pt-0">
           <div className="max-w-5xl mx-auto mb-6 sm:mb-12 animate-fade-in">
             <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-[2.55rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-3.5 sm:mb-6 drop-shadow-2xl">
-              Protecting Your Rights in Ohio
+              Ohio Criminal Defense &amp; OVI Attorney
             </h1>
             <p className="font-['Inter',_'Arial',_sans-serif] text-[1.05rem] sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Experienced Legal Counsel in Criminal, Traffic, and Civil Law

@@ -7,13 +7,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Probate Administration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Probate Administration Lawyer in Ohio',
+  description: 'Experienced Ohio probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio.',
   keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'probate administration', 'Franklin County probate attorney'],
   openGraph: {
-    title: 'Probate Administration Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Probate Administration Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/other-services/probate-administration',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/probate-administration' },
 };
 

@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'No Operator\'s License Lawyer in Ohio | Traffic Defense Attorney | Jwayyed Law LLC',
+  title: 'No Operator\'s License Lawyer in Ohio | Traffic Defense Attorney',
   description: 'Experienced Ohio no operator\'s license defense attorney. Defense for ORC 4510.12 charges - driving without a valid license. Protect your rights and minimize penalties. Schedule consultation: (614) 285-5482',
   keywords: [
     'no operators license lawyer Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'driving without valid license Ohio'
   ],
   openGraph: {
-    title: 'No Operator\'s License Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'No Operator\'s License Lawyer in Ohio',
     description: 'Experienced defense for driving without a valid operator\'s license charges throughout Ohio. Protect your rights and minimize penalties.',
     url: 'https://www.jjlawohio.com/criminal-defense/no-operators-license',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/no-operators-license',
   },

@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Defamation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Defamation Lawyer in Ohio',
   description: 'Experienced Ohio defamation attorney protecting your reputation. Skilled representation for defamation claims in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['defamation lawyer Columbus OH', 'defamation attorney Ohio', 'libel slander lawyer', 'Franklin County defamation attorney'],
   openGraph: {
-    title: 'Defamation Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Defamation Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/defamation',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/defamation' },
 };
 

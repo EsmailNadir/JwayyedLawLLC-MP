@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Catastrophic Injury Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Ohio catastrophic injury attorney for TBI, spinal cord injury, paralysis, and severe burns. ORC 2323.43 elevated damage caps, life care planning. Call (614) 285-5482.',
+  title: 'Ohio Catastrophic Injury Lawyer',
+  description: 'Ohio catastrophic injury attorney for TBI, spinal cord injury, paralysis, and severe burns. ORC 2323.43 elevated damage caps, life care planning.',
   keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'TBI attorney Ohio', 'Franklin County catastrophic injury attorney'],
   openGraph: {
-    title: 'Ohio Catastrophic Injury Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Catastrophic Injury Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/catastrophic-injuries',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/catastrophic-injuries' },
 };
 

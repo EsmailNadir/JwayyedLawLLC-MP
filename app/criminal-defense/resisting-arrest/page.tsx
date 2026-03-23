@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Resisting Arrest Lawyer in Ohio | Misdemeanor Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio resisting arrest defense attorney protecting your rights. Skilled representation for resisting arrest charges under ORC 2921.33. Schedule consultation: (614) 285-5482',
+  title: 'Resisting Arrest Lawyer in Ohio',
+  description: 'Experienced Ohio resisting arrest defense attorney protecting your rights. Skilled representation for resisting arrest charges under ORC 2921.33.',
   keywords: [
     'resisting arrest lawyer Ohio',
     'resisting arrest defense attorney',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'criminal defense resisting arrest'
   ],
   openGraph: {
-    title: 'Resisting Arrest Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Resisting Arrest Lawyer in Ohio',
     description: 'Experienced resisting arrest defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/resisting-arrest',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/resisting-arrest',
   },

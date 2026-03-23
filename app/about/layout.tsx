@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     title: 'About Us | Jwayyed Law LLC',
     description: 'Experienced Ohio attorney serving the state, dedicated to protecting your rights and providing personalized legal representation.',
     url: `${siteUrl}/about`,
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
+  alternates: {
+    canonical: '/about',
   },
 };
 

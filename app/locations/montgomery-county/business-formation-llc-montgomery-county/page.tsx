@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Montgomery County, Ohio | Dayton | Jwayyed Law LLC',
-  description: 'Business attorney serving Montgomery County, Dayton, Kettering, Miamisburg, Trotwood, and surrounding Ohio communities. LLC formation, business law, contracts. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Montgomery County',
+  description: 'Business attorney serving Montgomery County, Dayton, Kettering, Miamisburg, Trotwood, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Montgomery County', 'LLC formation Dayton Ohio', 'Montgomery County business attorney', 'LLC formation Kettering Ohio', 'small business attorney Dayton Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Montgomery County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Montgomery County',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/montgomery-county/business-formation-llc-montgomery-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCMontgomeryCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Montgomery County, Ohio"
+        title="Business & LLC Formation | Montgomery County"
         description="Serving Dayton, Kettering, Trotwood, Huber Heights, Miamisburg, Vandalia, and surrounding communities with business formation and LLC law."
       />
       <section className="py-16 bg-white">

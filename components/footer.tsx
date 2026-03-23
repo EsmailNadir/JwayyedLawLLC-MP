@@ -3,7 +3,7 @@ import Link from 'next/link';
 const FOOTER_LINKS = [
   { href: '/services', label: 'Services' },
   { href: '/criminal-defense', label: 'Criminal Defense' },
-  { href: '/criminal-defense/drug-charges', label: 'Drug Charges' },
+  { href: '/criminal-defense/domestic-violence', label: 'Domestic Violence' },
   { href: '/criminal-defense/expungement-record-sealing', label: 'Expungement' },
   { href: '/ovi-dui-defense', label: 'OVI / DUI Defense' },
   { href: '/ovi-dui-defense/first-ovi', label: 'First OVI' },

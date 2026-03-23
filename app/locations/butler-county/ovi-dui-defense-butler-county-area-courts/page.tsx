@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Hamilton, Ohio | Butler County Area Courts | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Hamilton, Oxford, West Chester, and Butler County, Ohio. Butler County Area Courts and Hamilton Municipal Court. HB 37 updated penalties. Schedule consultation: (614) 285-5482',
+  title: 'OVI / DUI Lawyer for Hamilton, Ohio',
+  description: 'OVI/DUI defense attorney for Hamilton, Oxford, West Chester, and Butler County, Ohio. Butler County Area Courts and Hamilton Municipal Court.',
   keywords: ['OVI lawyer Hamilton Ohio', 'DUI attorney Butler County', 'OVI defense Butler County', 'Butler County Area Court OVI', 'Oxford Ohio OVI attorney', 'West Chester OVI lawyer'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Hamilton, Ohio | Butler County | Jwayyed Law LLC',
+    title: 'OVI / DUI Lawyer for Hamilton, Ohio',
     url: 'https://www.jjlawohio.com/locations/butler-county/ovi-dui-defense-butler-county-area-courts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts' },
 };
 

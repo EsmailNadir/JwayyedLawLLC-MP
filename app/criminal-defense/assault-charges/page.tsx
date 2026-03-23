@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Assault Charges Lawyer in Ohio | Experienced Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio assault defense attorney protecting your rights. Skilled representation for misdemeanor assault and battery charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Assault Charges Lawyer in Ohio',
+  description: 'Experienced Ohio assault defense attorney protecting your rights. Skilled representation for misdemeanor assault and battery charges in Ohio.',
   keywords: [
     'assault charges lawyer Ohio',
     'assault defense attorney Ohio',
@@ -19,10 +19,11 @@ export const metadata: Metadata = {
     'Ohio assault lawyer'
   ],
   openGraph: {
-    title: 'Assault Charges Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Assault Charges Lawyer in Ohio',
     description: 'Experienced assault defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/assault-charges',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/assault-charges',
   },

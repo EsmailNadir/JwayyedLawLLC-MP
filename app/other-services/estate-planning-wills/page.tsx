@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Estate Planning & Wills Lawyer | Columbus Will Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio estate planning attorney drafting wills, powers of attorney, and healthcare directives for Columbus-area families. Ohio will requirements under ORC 2107.02, holographic wills, self-proving wills, and comprehensive estate plans. Call (614) 285-5482.',
+  title: 'Ohio Estate Planning & Wills Lawyer',
+  description: 'Experienced Ohio estate planning attorney drafting wills, powers of attorney, and healthcare directives for Columbus-area families.',
   keywords: [
     'estate planning lawyer Columbus OH',
     'wills attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'disinherit Ohio attorney',
   ],
   openGraph: {
-    title: 'Ohio Estate Planning & Wills Lawyer | Columbus Will Attorney | Jwayyed Law LLC',
+    title: 'Ohio Estate Planning & Wills Lawyer',
     url: 'https://www.jjlawohio.com/other-services/estate-planning-wills',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/estate-planning-wills' },
 };
 

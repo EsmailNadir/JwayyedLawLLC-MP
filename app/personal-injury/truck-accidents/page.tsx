@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Truck Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Truck Accident Lawyer in Ohio',
+  description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio.',
   keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
   openGraph: {
-    title: 'Truck Accident Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Truck Accident Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/personal-injury/truck-accidents',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/truck-accidents' },
 };
 

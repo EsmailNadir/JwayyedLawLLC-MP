@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Misdemeanor Defense Lawyer for Dayton, Ohio | Dayton & Kettering Municipal Courts | Jwayyed Law LLC',
-  description: 'Experienced criminal misdemeanor defense attorney for Dayton, Kettering, Huber Heights, and Montgomery County, Ohio. Dayton Municipal Court and Kettering Municipal Court. Call (614) 285-5482.',
+  title: 'Criminal Defense Lawyer | Dayton, Ohio',
+  description: 'Experienced criminal misdemeanor defense attorney for Dayton, Kettering, Huber Heights, and Montgomery County, Ohio.',
   keywords: ['criminal defense Dayton Ohio', 'misdemeanor attorney Montgomery County', 'Dayton Municipal Court criminal lawyer', 'Kettering misdemeanor defense', 'Montgomery County criminal defense attorney'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Montgomery County - Dayton & Kettering Courts | Jwayyed Law LLC',
+    title: 'Criminal Misdemeanor Defense in Montgomery County - Dayton & Kettering Courts',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court' },
 };
 

@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Greene County, Ohio | Xenia & Fairborn | Jwayyed Law LLC',
-  description: 'Business attorney serving Greene County, Xenia, Fairborn, Beavercreek, Yellow Springs, and surrounding Ohio communities. LLC formation, business law, contracts. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Greene County, Ohio',
+  description: 'Business attorney serving Greene County, Xenia, Fairborn, Beavercreek, Yellow Springs, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Greene County', 'LLC formation Xenia Ohio', 'Greene County business attorney', 'LLC formation Fairborn Ohio', 'small business attorney Beavercreek Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Greene County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Greene County, Ohio',
     url: 'https://www.jjlawohio.com/locations/greene-county/business-formation-llc-greene-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/greene-county/business-formation-llc-greene-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCGreeneCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Greene County, Ohio"
+        title="Business & LLC Formation | Greene County, Ohio"
         description="Serving Xenia, Fairborn, Beavercreek, Yellow Springs, and surrounding communities near Wright-Patterson AFB with business formation and LLC law."
       />
       <section className="py-16 bg-white">

@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Workplace Injury Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+  title: 'Ohio Workplace Injury Lawyer',
   description: 'Ohio workplace injury and workers compensation attorney. ORC Chapter 4123, BWC claims, third-party lawsuits, employer retaliation (ORC 4123.90). Call (614) 285-5482.',
   keywords: ['workplace injury lawyer Columbus OH', 'workers compensation attorney Ohio', 'BWC claim lawyer', 'Franklin County workplace injury attorney', 'ORC 4123 workers comp Ohio'],
   openGraph: {
-    title: 'Ohio Workplace Injury Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Workplace Injury Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/workplace-injuries',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/workplace-injuries' },
 };
 

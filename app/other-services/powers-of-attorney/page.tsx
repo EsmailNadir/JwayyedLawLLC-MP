@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Powers of Attorney Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney drafting durable financial and healthcare powers of attorney under ORC Chapter 1337. Protect yourself and your family from the need for guardianship. Serving Columbus and all of Ohio. Call (614) 285-5482.',
+  title: 'Powers of Attorney Lawyer in Ohio | Columbus',
+  description: 'Ohio attorney drafting durable financial and healthcare powers of attorney under ORC Chapter 1337. Protect yourself and your family from the need for guard.',
   keywords: [
     'power of attorney attorney Columbus OH',
     'durable power of attorney Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'living will Ohio',
   ],
   openGraph: {
-    title: 'Powers of Attorney Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+    title: 'Powers of Attorney Lawyer in Ohio | Columbus',
     description: 'Ohio attorney drafting durable financial and healthcare powers of attorney under ORC Chapter 1337. Protect yourself and your family from the need for guardianship. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/other-services/powers-of-attorney',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/powers-of-attorney' },
 };
 

@@ -13,9 +13,13 @@ import {
 } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Our Legal Services | Jwayyed Law LLC',
+  title: 'Our Legal Services',
   description:
-    'Explore all legal services offered by Jwayyed Law LLC across Ohio, including criminal defense, OVI/DUI defense, personal injury, civil litigation, business law, and other services.',
+    'Explore legal services offered by Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, and more.',
+  openGraph: {
+    title: 'Our Legal Services | Jwayyed Law LLC',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
   alternates: {
     canonical: '/services',
   },

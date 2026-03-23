@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Montgomery County, Ohio | Dayton | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Montgomery County, Dayton, Kettering, Huber Heights, Miamisburg, Vandalia, and surrounding communities. Car accidents, slip and fall. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer | Montgomery County',
+  description: 'Personal injury attorney serving Montgomery County, Dayton, Kettering, Huber Heights, Miamisburg, Vandalia, and surrounding communities. Car accidents.',
   keywords: ['personal injury Montgomery County', 'injury lawyer Dayton Ohio', 'Montgomery County accident attorney', 'car accident lawyer Dayton Ohio', 'personal injury Kettering Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Montgomery County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer | Montgomery County',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/personal-injury-montgomery-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/montgomery-county/personal-injury-montgomery-county' },
 };
 
@@ -62,7 +63,7 @@ export default function PersonalInjuryMontgomeryCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Lawyer in Montgomery County, Ohio"
+        title="Personal Injury Lawyer | Montgomery County"
         description="Serving Dayton, Kettering, Trotwood, Huber Heights, Englewood, Miamisburg, Vandalia, and surrounding communities."
       />
       <section className="py-16 bg-white">

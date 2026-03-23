@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Franklin County, Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and surrounding Ohio communities. Car accidents, slip and fall. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Franklin County, Ohio',
+  description: 'Personal injury attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and surrounding Ohio communities.',
   keywords: ['personal injury Franklin County', 'injury lawyer Columbus Ohio', 'Franklin County accident attorney', 'car accident lawyer Columbus Ohio', 'personal injury Dublin Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Franklin County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Franklin County, Ohio',
     url: 'https://www.jjlawohio.com/locations/franklin-county/personal-injury-franklin-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/franklin-county/personal-injury-franklin-county' },
 };
 

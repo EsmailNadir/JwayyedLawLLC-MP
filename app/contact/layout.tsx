@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     title: 'Contact Us | Jwayyed Law LLC',
     description: 'Schedule a consultation with Jwayyed Law LLC serving Ohio. Call (614) 285-5482.',
     url: `${siteUrl}/contact`,
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
+  alternates: {
+    canonical: '/contact',
   },
 };
 

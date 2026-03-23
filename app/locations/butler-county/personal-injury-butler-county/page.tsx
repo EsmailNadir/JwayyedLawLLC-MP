@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Butler County, Ohio | Hamilton, Oxford & West Chester | Jwayyed Law LLC',
-  description: 'Experienced personal injury attorney serving Butler County, Hamilton, Oxford, West Chester, Fairfield, Middletown, and surrounding Ohio communities. Car accidents, slip and fall, and injury claims. Schedule consultation: (614) 285-5482',
+  title: 'Personal Injury Lawyer in Butler County, Ohio',
+  description: 'Experienced personal injury attorney serving Butler County, Hamilton, Oxford, West Chester, Fairfield, Middletown, and surrounding Ohio communities.',
   keywords: ['personal injury Butler County', 'injury lawyer Hamilton Ohio', 'Butler County accident attorney', 'car accident lawyer Butler County', 'personal injury West Chester Ohio', 'Oxford Ohio injury attorney'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Butler County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Butler County, Ohio',
     url: 'https://www.jjlawohio.com/locations/butler-county/personal-injury-butler-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/butler-county/personal-injury-butler-county' },
 };
 

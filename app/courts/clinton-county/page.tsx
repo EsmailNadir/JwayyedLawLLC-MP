@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Clinton County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'OVI defense, criminal defense, and civil representation in Clinton County courts including Wilmington Municipal Court and Clinton County Common Pleas. Serving Wilmington, Sabina, Blanchester & more. Call (614) 285-5482.',
+  title: 'Clinton County Court Representation',
+  description: 'OVI defense, criminal defense, and civil representation in Clinton County courts including Wilmington Municipal Court and Clinton County Common Pleas.',
   keywords: [
     'Clinton County OVI attorney',
     'Wilmington Municipal Court lawyer',
@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     'Clinton County Common Pleas',
   ],
   openGraph: {
-    title: 'Clinton County Court Representation | OVI, Criminal & Civil | Jwayyed Law LLC',
+    title: 'Clinton County Court Representation',
     url: 'https://www.jjlawohio.com/courts/clinton-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/clinton-county' },
 };
 

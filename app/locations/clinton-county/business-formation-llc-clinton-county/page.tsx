@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Clinton County, Ohio | Wilmington | Jwayyed Law LLC',
-  description: 'Business attorney serving Clinton County, Wilmington, Sabina, Blanchester, and surrounding Ohio communities. LLC formation, business law, contracts, operating agreements. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Clinton County, Ohio',
+  description: 'Business attorney serving Clinton County, Wilmington, Sabina, Blanchester, and surrounding Ohio communities. LLC formation, business law, contracts.',
   keywords: ['business lawyer Clinton County', 'LLC formation Wilmington Ohio', 'Clinton County business attorney', 'small business attorney Wilmington Ohio', 'LLC formation Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Clinton County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Clinton County, Ohio',
     url: 'https://www.jjlawohio.com/locations/clinton-county/business-formation-llc-clinton-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/clinton-county/business-formation-llc-clinton-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCClintonCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Clinton County, Ohio"
+        title="Business & LLC Formation | Clinton County, Ohio"
         description="Serving Wilmington, Sabina, Blanchester, Clarksville, and surrounding communities with business formation and LLC law."
       />
       <section className="py-16 bg-white">

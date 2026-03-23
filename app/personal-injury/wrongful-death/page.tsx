@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wrongful Death Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Wrongful Death Lawyer in Ohio',
+  description: 'Experienced Ohio wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio.',
   keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
   openGraph: {
-    title: 'Wrongful Death Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Wrongful Death Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/personal-injury/wrongful-death',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/wrongful-death' },
 };
 
