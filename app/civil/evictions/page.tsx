@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Eviction Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Eviction Lawyer in Ohio',
   description: 'Experienced Ohio eviction attorney representing landlords and tenants. Skilled representation for eviction proceedings in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney'],
   openGraph: {
-    title: 'Eviction Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Eviction Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/evictions',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/evictions' },
 };
 

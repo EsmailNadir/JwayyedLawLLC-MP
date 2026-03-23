@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import { personalInjuryServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Personal Injury Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
-  description: 'Experienced personal injury attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Car accidents, slip and fall, workplace injuries, and more. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Personal Injury Attorney',
+  description: 'Experienced personal injury attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Car accidents, slip and fall, workplace injuries, and more.',
   keywords: [
     'Ohio personal injury attorney',
     'Columbus personal injury attorney',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'wrongful death attorney'
   ],
   openGraph: {
-    title: 'Ohio Personal Injury Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Ohio Personal Injury Attorney',
     description: 'Personal injury representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/personal-injury',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/personal-injury',
   },

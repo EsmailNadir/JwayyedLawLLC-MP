@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Fairborn & Xenia, Ohio | Greene County Courts | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Fairborn, Beavercreek, Xenia, and Greene County, Ohio. Fairborn Municipal Court and Xenia Municipal Court. Military OVI defense. Call (614) 285-5482.',
+  title: 'OVI / DUI Lawyer for Fairborn & Xenia, Ohio',
+  description: 'OVI/DUI defense attorney for Fairborn, Beavercreek, Xenia, and Greene County, Ohio. Fairborn Municipal Court and Xenia Municipal Court.',
   keywords: ['OVI lawyer Fairborn Ohio', 'DUI attorney Greene County', 'OVI defense Beavercreek Ohio', 'Fairborn Municipal Court OVI', 'military OVI attorney Ohio'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Fairborn & Xenia, Ohio | Greene County | Jwayyed Law LLC',
+    title: 'OVI / DUI Lawyer for Fairborn & Xenia, Ohio',
     url: 'https://www.jjlawohio.com/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court' },
 };
 

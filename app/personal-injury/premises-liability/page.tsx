@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Premises Liability Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Ohio premises liability and slip and fall attorney. Invitee duty, open and obvious doctrine, ORC 2315.33 comparative fault, ORC 5321 landlord duties. Call (614) 285-5482.',
+  title: 'Ohio Premises Liability Lawyer',
+  description: 'Ohio premises liability and slip and fall attorney. Invitee duty, open and obvious doctrine, ORC 2315.33 comparative fault, ORC 5321 landlord duties.',
   keywords: ['premises liability lawyer Columbus OH', 'slip and fall attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney', 'ORC 2315.33 comparative fault Ohio'],
   openGraph: {
-    title: 'Ohio Premises Liability Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Premises Liability Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/premises-liability',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/premises-liability' },
 };
 

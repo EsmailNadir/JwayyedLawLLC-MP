@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'OVI, criminal defense, and civil representation in Delaware County courts including Delaware County Municipal Court and Common Pleas Court. Serving Powell, Dublin, Lewis Center & more. Call (614) 285-5482.',
+  title: 'Delaware County Court Representation',
+  description: 'OVI, criminal defense, and civil representation in Delaware County courts including Delaware County Municipal Court and Common Pleas Court. Serving Powell.',
   keywords: [
     'Delaware County OVI attorney',
     'Delaware County criminal defense',
@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     'ALS appeal Delaware County',
   ],
   openGraph: {
-    title: 'Delaware County Court Representation | OVI, Criminal & Civil | Jwayyed Law LLC',
+    title: 'Delaware County Court Representation',
     url: 'https://www.jjlawohio.com/courts/delaware-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/delaware-county' },
 };
 

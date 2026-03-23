@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Morrow County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Morrow County courts including Morrow County Municipal Court and Common Pleas. OVI defense, criminal defense, and civil matters in Morrow County, Ohio. Call (614) 285-5482.',
+  title: 'Morrow County Court Representation',
+  description: 'Experienced legal representation in Morrow County courts including Morrow County Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Morrow County court attorney',
     'OVI lawyer Morrow County Ohio',
@@ -18,9 +18,10 @@ export const metadata: Metadata = {
     'rural Ohio OVI attorney',
   ],
   openGraph: {
-    title: 'Morrow County Court Representation | Jwayyed Law LLC',
+    title: 'Morrow County Court Representation',
     url: 'https://www.jjlawohio.com/courts/morrow-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/morrow-county' },
 };
 

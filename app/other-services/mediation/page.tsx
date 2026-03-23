@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Mediation Attorney in Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney providing mediation services for civil, business, landlord-tenant, and estate disputes. Confidential, cost-effective conflict resolution under ORC Chapter 2710. Call (614) 285-5482.',
+  title: 'Mediation Attorney in Ohio | Columbus',
+  description: 'Ohio attorney providing mediation services for civil, business, landlord-tenant, and estate disputes. Confidential.',
   keywords: [
     'mediation attorney Columbus OH',
     'mediation services Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'alternative dispute resolution Ohio',
   ],
   openGraph: {
-    title: 'Mediation Attorney in Ohio | Columbus | Jwayyed Law LLC',
-    description: 'Ohio attorney providing mediation services for civil, business, landlord-tenant, and estate disputes. Confidential, cost-effective conflict resolution under ORC Chapter 2710. Call (614) 285-5482.',
+    title: 'Mediation Attorney in Ohio | Columbus',
+    description: 'Ohio attorney providing mediation services for civil, business, landlord-tenant, and estate disputes. Confidential.',
     url: 'https://www.jjlawohio.com/other-services/mediation',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/mediation' },
 };
 

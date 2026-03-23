@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Trespass Lawyer in Ohio | Trespassing Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio criminal trespass defense attorney protecting your rights. Skilled representation for trespassing charges under ORC 2911.21. Schedule consultation: (614) 285-5482',
+  title: 'Criminal Trespass Lawyer in Ohio',
+  description: 'Experienced Ohio criminal trespass defense attorney protecting your rights. Skilled representation for trespassing charges under ORC 2911.21.',
   keywords: [
     'criminal trespass lawyer Ohio',
     'trespassing defense attorney',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'property crime defense attorney'
   ],
   openGraph: {
-    title: 'Criminal Trespass Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Criminal Trespass Lawyer in Ohio',
     description: 'Experienced criminal trespass defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-trespass',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/criminal-trespass',
   },

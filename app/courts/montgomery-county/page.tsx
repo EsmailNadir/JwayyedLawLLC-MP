@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Montgomery County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'OVI defense, criminal defense, and civil representation in Montgomery County courts including Dayton Municipal Court and Kettering Municipal Court. Serving Dayton, Kettering, Huber Heights, Miamisburg & more. Call (614) 285-5482.',
+  title: 'Montgomery County Court Representation',
+  description: 'OVI defense, criminal defense, and civil representation in Montgomery County courts including Dayton Municipal Court and Kettering Municipal Court.',
   keywords: [
     'Montgomery County OVI attorney',
     'Dayton Municipal Court lawyer',
@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     'Montgomery County Common Pleas',
   ],
   openGraph: {
-    title: 'Montgomery County Court Representation | OVI, Criminal & Civil | Jwayyed Law LLC',
+    title: 'Montgomery County Court Representation',
     url: 'https://www.jjlawohio.com/courts/montgomery-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/montgomery-county' },
 };
 

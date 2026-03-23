@@ -7,13 +7,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Contract Drafting & Review Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Contract Drafting & Review Lawyer in Ohio',
+  description: 'Experienced Ohio contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio.',
   keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
-    title: 'Contract Drafting & Review Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Contract Drafting & Review Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/business/contract-drafting-review',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/contract-drafting-review' },
 };
 

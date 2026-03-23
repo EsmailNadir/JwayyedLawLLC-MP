@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens Municipal Court Attorney | Athens County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
-  description: 'Experienced attorney for Athens Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Athens County, Ohio. Near Ohio University. Call (614) 285-5482.',
+  title: 'Athens Municipal Court Attorney',
+  description: 'Experienced attorney for Athens Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Athens County, Ohio.',
   keywords: ['Athens Municipal Court attorney', 'Athens County OVI lawyer', 'Athens misdemeanor defense', 'Ohio University OVI defense', 'Athens Ohio criminal attorney'],
   openGraph: {
-    title: 'Athens Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Athens Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/athens-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/athens-municipal-court' },
 };
 

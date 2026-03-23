@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wilmington Municipal Court Attorney | Clinton County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
-  description: 'Experienced attorney for Wilmington Municipal Court (Clinton County Municipal Court). OVI/DUI defense, misdemeanor charges, and traffic violations in Clinton County, Ohio. Call (614) 285-5482.',
+  title: 'Wilmington Municipal Court Attorney',
+  description: 'Experienced attorney for Wilmington Municipal Court (Clinton County Municipal Court). OVI/DUI defense, misdemeanor charges.',
   keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington Ohio misdemeanor defense', 'Clinton County criminal attorney', 'Clinton County DUI lawyer'],
   openGraph: {
-    title: 'Wilmington Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Wilmington Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/wilmington-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/wilmington-municipal-court' },
 };
 

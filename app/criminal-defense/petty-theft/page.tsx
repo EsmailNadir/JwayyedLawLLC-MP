@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Petty Theft Lawyer in Ohio | Misdemeanor Theft Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio petty theft defense attorney protecting your rights. Skilled representation for theft and shoplifting charges under ORC 2913.02. Schedule consultation: (614) 285-5482',
+  title: 'Petty Theft Lawyer in Ohio',
+  description: 'Experienced Ohio petty theft defense attorney protecting your rights. Skilled representation for theft and shoplifting charges under ORC 2913.02.',
   keywords: [
     'petty theft lawyer Ohio',
     'shoplifting defense attorney',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'first offense theft attorney'
   ],
   openGraph: {
-    title: 'Petty Theft Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Petty Theft Lawyer in Ohio',
     description: 'Experienced petty theft defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/petty-theft',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/petty-theft',
   },

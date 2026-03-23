@@ -5,12 +5,13 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'About Our Law Firm | Jwayyed Law LLC — Columbus, Ohio',
+  title: 'About Our Law Firm — Columbus, Ohio',
   description:
     'Learn about Jwayyed Law LLC — an Ohio law firm serving Columbus, Cincinnati, Dayton, and statewide. Meet our attorneys, read case results, and explore our legal blog.',
   openGraph: {
     title: 'About Our Law Firm | Jwayyed Law LLC — Columbus, Ohio',
     url: 'https://www.jjlawohio.com/our-law-firm',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/our-law-firm' },
 };

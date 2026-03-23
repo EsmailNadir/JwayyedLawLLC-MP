@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Expungement & Record Sealing Lawyer Ohio | ORC 2953 | Columbus | Jwayyed Law LLC',
-  description: 'Ohio expungement attorney helping seal criminal records under ORC 2953.32. Misdemeanors, low-level felonies, and dismissed charges. Columbus and throughout Ohio. Call (614) 285-5482.',
+  title: 'Expungement & Record Sealing Lawyer Ohio',
+  description: 'Ohio expungement attorney helping seal criminal records under ORC 2953.32. Misdemeanors, low-level felonies, and dismissed charges.',
   keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County'],
   openGraph: {
-    title: 'Expungement & Record Sealing Lawyer Ohio | ORC 2953 | Jwayyed Law LLC',
+    title: 'Expungement & Record Sealing Lawyer Ohio',
     url: 'https://www.jjlawohio.com/criminal-defense/expungement-record-sealing',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/criminal-defense/expungement-record-sealing' },
 };
 

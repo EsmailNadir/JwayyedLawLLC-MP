@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Employment Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio employment disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for employment disputes in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Employment Disputes Lawyer in Ohio',
+  description: 'Experienced Ohio employment disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
   keywords: ['employment disputes lawyer Columbus OH', 'employment attorney Ohio', 'wrongful termination lawyer', 'Franklin County employment attorney'],
   openGraph: {
-    title: 'Employment Disputes Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Employment Disputes Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/employment-disputes',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/employment-disputes' },
 };
 

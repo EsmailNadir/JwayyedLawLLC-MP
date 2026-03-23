@@ -23,7 +23,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | Jwayyed Law LLC Blog`,
+    title: post.title,
     description: post.excerpt,
     keywords: [
       'Ohio law blog',
@@ -38,6 +38,7 @@ export async function generateMetadata({
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
+      images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
     alternates: {
       canonical: `/our-law-firm/blog/${slug}`,

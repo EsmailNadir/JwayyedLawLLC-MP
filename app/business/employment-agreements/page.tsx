@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Employment Agreement Lawyer Ohio | At-Will Employment | Columbus | Jwayyed Law LLC',
-  description: 'Ohio employment agreement attorney drafting and reviewing employment contracts, offer letters, severance agreements, and independent contractor agreements under Ohio at-will employment doctrine. Call (614) 285-5482.',
+  title: 'Employment Agreement Lawyer Ohio',
+  description: 'Ohio employment agreement attorney drafting and reviewing employment contracts, offer letters, severance agreements.',
   keywords: ['employment agreement lawyer Columbus OH', 'Ohio employment contract attorney', 'at-will employment Ohio', 'severance agreement Ohio', 'independent contractor misclassification Ohio', 'ORC 4111 employment lawyer'],
   openGraph: {
-    title: 'Employment Agreement Lawyer Ohio | At-Will Employment | Columbus | Jwayyed Law LLC',
+    title: 'Employment Agreement Lawyer Ohio',
     url: 'https://www.jjlawohio.com/business/employment-agreements',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/employment-agreements' },
 };
 

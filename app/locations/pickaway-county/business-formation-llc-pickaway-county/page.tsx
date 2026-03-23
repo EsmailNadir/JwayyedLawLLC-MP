@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Pickaway County, Ohio | Circleville | Jwayyed Law LLC',
-  description: 'Business attorney serving Pickaway County, Circleville, Ashville, Commercial Point, and surrounding Ohio communities. LLC formation, business law, contracts. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Pickaway County',
+  description: 'Business attorney serving Pickaway County, Circleville, Ashville, Commercial Point, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Pickaway County', 'LLC formation Circleville Ohio', 'Pickaway County business attorney', 'small business attorney Ashville Ohio', 'LLC formation Ohio south Columbus'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Pickaway County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Pickaway County',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/business-formation-llc-pickaway-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/pickaway-county/business-formation-llc-pickaway-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCPickawayCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Pickaway County, Ohio"
+        title="Business & LLC Formation | Pickaway County"
         description="Serving Circleville, Ashville, Commercial Point, South Bloomfield, Williamsport, and surrounding communities with business formation and LLC law."
       />
       <section className="py-16 bg-white">

@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Probate Lawyer | Columbus Probate Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio probate attorney guiding executors and beneficiaries through Franklin County Probate Court. Estate administration, creditor claims, inventory, and distribution under ORC Chapter 2113. Call (614) 285-5482.',
+  title: 'Ohio Probate Lawyer | Columbus Probate Attorney',
+  description: 'Experienced Ohio probate attorney guiding executors and beneficiaries through Franklin County Probate Court. Estate administration, creditor claims.',
   keywords: [
     'probate lawyer Columbus OH',
     'probate attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'ORC 2113 attorney',
   ],
   openGraph: {
-    title: 'Ohio Probate Lawyer | Columbus Probate Attorney | Jwayyed Law LLC',
+    title: 'Ohio Probate Lawyer | Columbus Probate Attorney',
     url: 'https://www.jjlawohio.com/other-services/probate',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/probate' },
 };
 

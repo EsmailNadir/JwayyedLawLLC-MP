@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Court Representation | Civil, Business & Probate Attorney | Jwayyed Law LLC',
-  description: 'Civil, business, estate planning, and probate representation in Franklin County courts including Franklin County Municipal Court and Common Pleas Court. Columbus, Ohio. Call (614) 285-5482.',
+  title: 'Franklin County Court Representation',
+  description: 'Civil, business, estate planning, and probate representation in Franklin County courts including Franklin County Municipal Court and Common Pleas Court.',
   keywords: [
     'Franklin County court attorney',
     'Columbus civil attorney',
@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     'Franklin County small claims court',
   ],
   openGraph: {
-    title: 'Franklin County Court Representation | Civil, Business & Probate | Jwayyed Law LLC',
+    title: 'Franklin County Court Representation',
     url: 'https://www.jjlawohio.com/courts/franklin-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/franklin-county' },
 };
 

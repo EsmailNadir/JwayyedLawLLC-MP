@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Morrow County, Ohio | Mt. Gilead | Jwayyed Law LLC',
-  description: 'Business attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. LLC formation, business law, farm LLCs, contracts. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Morrow County, Ohio',
+  description: 'Business attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. LLC formation, business law, farm LLCs.',
   keywords: ['business lawyer Morrow County', 'LLC formation Mt. Gilead Ohio', 'Morrow County business attorney', 'farm LLC Ohio', 'small business attorney Cardington Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Morrow County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Morrow County, Ohio',
     url: 'https://www.jjlawohio.com/locations/morrow-county/business-formation-llc-morrow-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/morrow-county/business-formation-llc-morrow-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCMorrowCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Morrow County, Ohio"
+        title="Business & LLC Formation | Morrow County, Ohio"
         description="Serving Mt. Gilead, Cardington, Marengo, Edison, and surrounding communities with business formation, farm LLCs, and business law."
       />
       <section className="py-16 bg-white">

@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Charitable Trusts Lawyer in Ohio | CRT, CLT & Donor Planning | Jwayyed Law LLC',
-  description: 'Ohio charitable trust attorney helping Columbus, Cincinnati, and Dayton clients set up charitable remainder trusts (CRTs), charitable lead trusts (CLTs), and donor-advised funds. Capital gains bypass, income tax deductions, Ohio AG oversight. Call (614) 285-5482.',
+  title: 'Charitable Trusts Lawyer in Ohio',
+  description: 'Ohio charitable trust attorney helping Columbus, Cincinnati, and Dayton clients set up charitable remainder trusts (CRTs), charitable lead trusts (CLTs).',
   keywords: [
     'charitable trusts Columbus OH',
     'charitable remainder trust Ohio',
@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     'estate planning charitable giving Ohio',
   ],
   openGraph: {
-    title: 'Charitable Trusts Lawyer in Ohio | CRT, CLT & Donor Planning | Jwayyed Law LLC',
+    title: 'Charitable Trusts Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/trusts/charitable-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/charitable-trusts' },
 };
 

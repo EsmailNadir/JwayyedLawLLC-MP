@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Appeals Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio appeals attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you appeal court decisions. Skilled representation for appeals in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Appeals Lawyer in Ohio',
+  description: 'Experienced Ohio appeals attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you appeal court decisions.',
   keywords: ['appeals lawyer Columbus OH', 'appeals attorney Ohio', 'appellate lawyer', 'Franklin County appeals attorney'],
   openGraph: {
-    title: 'Appeals Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Appeals Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/appeals',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/appeals' },
 };
 

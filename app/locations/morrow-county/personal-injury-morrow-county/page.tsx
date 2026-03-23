@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Morrow County, Ohio | Mt. Gilead | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. Car accidents, slip and fall, injury claims. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Morrow County, Ohio',
+  description: 'Personal injury attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Morrow County', 'injury lawyer Mt. Gilead Ohio', 'Morrow County accident attorney', 'car accident lawyer Cardington Ohio', 'slip and fall Morrow County'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Morrow County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Morrow County, Ohio',
     url: 'https://www.jjlawohio.com/locations/morrow-county/personal-injury-morrow-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/morrow-county/personal-injury-morrow-county' },
 };
 

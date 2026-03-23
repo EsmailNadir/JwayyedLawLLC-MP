@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation Lawyer in Athens County, Ohio | Athens | Jwayyed Law LLC',
-  description: 'Business attorney serving Athens County, Athens, Nelsonville, and surrounding Ohio communities. LLC formation, business law, contracts, and operating agreements. Call (614) 285-5482.',
+  title: 'Business & LLC Formation | Athens County, Ohio',
+  description: 'Business attorney serving Athens County, Athens, Nelsonville, and surrounding Ohio communities. LLC formation, business law, contracts.',
   keywords: ['business lawyer Athens County', 'LLC formation Athens Ohio', 'Athens County business attorney', 'LLC formation Ohio University area', 'small business attorney Athens Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation Lawyer in Athens County, Ohio | Jwayyed Law LLC',
+    title: 'Business & LLC Formation | Athens County, Ohio',
     url: 'https://www.jjlawohio.com/locations/athens-county/business-formation-llc-athens-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/athens-county/business-formation-llc-athens-county' },
 };
 
@@ -62,7 +63,7 @@ export default function BusinessFormationLLCAthensCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation Lawyer in Athens County, Ohio"
+        title="Business & LLC Formation | Athens County, Ohio"
         description="Serving Athens, Albany, Nelsonville, The Plains, and the Ohio University community with business formation and LLC law."
       />
       <section className="py-16 bg-white">

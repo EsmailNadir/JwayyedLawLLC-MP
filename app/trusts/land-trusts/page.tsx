@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Land Trusts Lawyer in Ohio | ORC 5301.255 Real Estate Privacy | Jwayyed Law LLC',
-  description: 'Ohio land trust attorney helping Columbus, Cincinnati, and Dayton real estate investors and owners use land trusts under ORC 5301.255 for privacy, probate avoidance, and ownership transfer. Call (614) 285-5482.',
+  title: 'Land Trusts Lawyer in Ohio',
+  description: 'Ohio land trust attorney helping Columbus, Cincinnati, and Dayton real estate investors and owners use land trusts under ORC 5301.255 for privacy.',
   keywords: [
     'land trusts Columbus OH',
     'Ohio land trust ORC 5301.255',
@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     'Illinois-style land trust Ohio',
   ],
   openGraph: {
-    title: 'Land Trusts Lawyer in Ohio | ORC 5301.255 Real Estate Privacy | Jwayyed Law LLC',
+    title: 'Land Trusts Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/trusts/land-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/land-trusts' },
 };
 

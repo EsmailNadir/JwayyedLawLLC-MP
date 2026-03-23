@@ -7,13 +7,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Dispute Resolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Mediation & Arbitration | Jwayyed Law LLC',
-  description: 'Experienced Ohio dispute resolution attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you resolve conflicts. Skilled representation for mediation and arbitration in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Dispute Resolution Lawyer in Ohio',
+  description: 'Experienced Ohio dispute resolution attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you resolve conflicts.',
   keywords: ['dispute resolution lawyer Columbus OH', 'mediation attorney Ohio', 'arbitration lawyer', 'Franklin County dispute resolution attorney'],
   openGraph: {
-    title: 'Dispute Resolution Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Dispute Resolution Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/other-services/dispute-resolution',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/dispute-resolution' },
 };
 

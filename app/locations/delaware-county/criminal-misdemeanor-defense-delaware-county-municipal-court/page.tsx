@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Misdemeanor Defense Lawyer for Delaware, Ohio | Delaware County Municipal Court | Jwayyed Law LLC',
-  description: 'Experienced criminal misdemeanor defense attorney for Delaware, Powell, Dublin, and Delaware County, Ohio. Delaware County Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
+  title: 'Criminal Defense Lawyer | Delaware, Ohio',
+  description: 'Experienced criminal misdemeanor defense attorney for Delaware, Powell, Dublin, and Delaware County, Ohio. Delaware County Municipal Court. Assault, theft.',
   keywords: ['criminal defense Delaware Ohio', 'misdemeanor attorney Delaware County', 'Delaware County Municipal Court criminal lawyer', 'Powell Ohio misdemeanor defense', 'Dublin criminal defense attorney'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Delaware County - Delaware County Municipal Court | Jwayyed Law LLC',
+    title: 'Criminal Misdemeanor Defense in Delaware County - Delaware County Municipal Court',
     url: 'https://www.jjlawohio.com/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court' },
 };
 

@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Speeding Ticket Lawyer in Ohio | Traffic Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio speeding ticket defense attorney. Fight your speeding ticket, protect your driving record, and minimize points. Representation for all traffic violations under ORC 4511.21. Schedule consultation: (614) 285-5482',
+  title: 'Speeding Ticket Lawyer in Ohio',
+  description: 'Experienced Ohio speeding ticket defense attorney. Fight your speeding ticket, protect your driving record, and minimize points.',
   keywords: [
     'speeding ticket lawyer Ohio',
     'traffic defense attorney Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'construction zone speeding'
   ],
   openGraph: {
-    title: 'Speeding Ticket Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Speeding Ticket Lawyer in Ohio',
     description: 'Experienced speeding ticket defense representation throughout Ohio. Protect your driving record and minimize penalties.',
     url: 'https://www.jjlawohio.com/criminal-defense/speeding-tickets',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/speeding-tickets',
   },

@@ -8,13 +8,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'OVI with Accident Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'OVI with Accident Defense Lawyer in Ohio',
+  description: 'Experienced Ohio OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio.',
   keywords: ['OVI with accident lawyer Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney'],
   openGraph: {
-    title: 'OVI with Accident Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'OVI with Accident Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/ovi-with-accident',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/ovi-with-accident' },
 };
 

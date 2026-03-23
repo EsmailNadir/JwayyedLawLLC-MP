@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Domestic Violence Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio domestic violence defense attorney protecting your rights. Skilled representation for domestic violence charges, protection orders, and related offenses in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Domestic Violence Defense Lawyer in Ohio',
+  description: 'Experienced Ohio domestic violence defense attorney protecting your rights. Skilled representation for domestic violence charges, protection orders.',
   keywords: [
     'domestic violence lawyer Ohio',
     'domestic violence defense attorney Ohio',
@@ -19,10 +19,11 @@ export const metadata: Metadata = {
     'Ohio domestic violence attorney'
   ],
   openGraph: {
-    title: 'Domestic Violence Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Domestic Violence Defense Lawyer in Ohio',
     description: 'Experienced domestic violence defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/domestic-violence',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/domestic-violence',
   },

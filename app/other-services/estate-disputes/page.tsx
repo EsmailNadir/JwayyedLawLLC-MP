@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Estate Disputes Lawyer | Columbus Estate Litigation Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio estate disputes attorney representing beneficiaries, heirs, and trustees in will contests, executor misconduct, trust disputes, and fiduciary litigation in Franklin County Probate Court. Call (614) 285-5482.',
+  title: 'Ohio Estate Disputes & Litigation Lawyer',
+  description: 'Experienced Ohio estate disputes attorney representing beneficiaries, heirs, and trustees in will contests, executor misconduct, trust disputes.',
   keywords: [
     'estate disputes lawyer Columbus OH',
     'estate dispute attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'Franklin County estate dispute attorney',
   ],
   openGraph: {
-    title: 'Ohio Estate Disputes Lawyer | Columbus Estate Litigation Attorney | Jwayyed Law LLC',
+    title: 'Ohio Estate Disputes & Litigation Lawyer',
     url: 'https://www.jjlawohio.com/other-services/estate-disputes',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/estate-disputes' },
 };
 

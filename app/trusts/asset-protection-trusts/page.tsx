@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Asset Protection Trusts Lawyer in Ohio | Ohio Legacy Trust | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Serving Columbus and all of Ohio. Call (614) 285-5482.',
+  title: 'Asset Protection Trusts Lawyer in Ohio',
+  description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors.',
   keywords: [
     'asset protection trust Ohio',
     'Ohio Legacy Trust attorney',
@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     'Ohio DAPT attorney',
   ],
   openGraph: {
-    title: 'Asset Protection Trusts Lawyer in Ohio | Ohio Legacy Trust | Columbus | Jwayyed Law LLC',
+    title: 'Asset Protection Trusts Lawyer in Ohio',
     description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/asset-protection-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/asset-protection-trusts' },
 };
 

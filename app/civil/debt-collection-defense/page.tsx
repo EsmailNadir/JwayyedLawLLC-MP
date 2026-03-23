@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Debt Collection Defense Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio debt collection defense attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights. Skilled representation for debt collection defense in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Debt Collection Defense Lawyer in Ohio',
+  description: 'Experienced Ohio debt collection defense attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
   keywords: ['debt collection defense lawyer Columbus OH', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
   openGraph: {
-    title: 'Debt Collection Defense Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Debt Collection Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/debt-collection-defense',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/debt-collection-defense' },
 };
 

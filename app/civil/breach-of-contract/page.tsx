@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Breach of Contract Lawyer in Ohio | Columbus, Cincinnati, Dayton | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Breach of Contract Lawyer in Ohio',
   description: 'Experienced Ohio breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
-    title: 'Breach of Contract Lawyer in Ohio | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Breach of Contract Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/civil/breach-of-contract',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/breach-of-contract' },
 };
 

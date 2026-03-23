@@ -8,13 +8,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Refusal OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Refusal OVI Defense Lawyer in Ohio',
   description: 'Experienced Ohio refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['refusal OVI lawyer Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
   openGraph: {
-    title: 'Refusal OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Refusal OVI Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/refusal-ovi',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/refusal-ovi' },
 };
 

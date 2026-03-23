@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Medicaid Asset Protection Trusts Ohio | 5-Year Lookback, MAPT Lawyer | Jwayyed Law LLC',
-  description: 'Ohio Medicaid Asset Protection Trust attorney helping Columbus, Cincinnati, and Dayton families protect assets from Medicaid spend-down. 5-year lookback rules, income-only trusts, Ohio estate recovery under ORC 5163.21. Call (614) 285-5482.',
+  title: 'Medicaid Asset Protection Trusts Ohio',
+  description: 'Ohio Medicaid Asset Protection Trust attorney helping Columbus, Cincinnati, and Dayton families protect assets from Medicaid spend-down.',
   keywords: [
     'medicaid asset protection trust Columbus OH',
     'MAPT attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'long-term care planning Columbus OH',
   ],
   openGraph: {
-    title: 'Medicaid Asset Protection Trusts Ohio | 5-Year Lookback, MAPT Lawyer | Jwayyed Law LLC',
+    title: 'Medicaid Asset Protection Trusts Ohio',
     url: 'https://www.jjlawohio.com/trusts/medicaid-asset-protection-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/medicaid-asset-protection-trusts' },
 };
 

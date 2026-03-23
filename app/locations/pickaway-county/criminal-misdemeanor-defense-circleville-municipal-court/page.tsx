@@ -5,13 +5,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Misdemeanor Defense in Pickaway County - Circleville Municipal Court | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced criminal misdemeanor defense attorney in Pickaway County - Circleville Municipal Court. Skilled representation for misdemeanor charges in Pickaway County, Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Criminal Defense Lawyer | Circleville Municipal Court',
+  description: 'Experienced criminal misdemeanor defense attorney in Pickaway County - Circleville Municipal Court. Skilled representation for misdemeanor charges in Picka.',
   keywords: ['criminal misdemeanor defense Pickaway County', 'misdemeanor attorney Circleville Municipal Court', 'Pickaway County criminal lawyer', 'Circleville misdemeanor defense'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Pickaway County - Circleville Municipal Court | Jwayyed Law LLC',
+    title: 'Criminal Defense Lawyer | Circleville Municipal Court',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court' },
 };
 
@@ -61,7 +62,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Misdemeanor Defense in Pickaway County - Circleville Municipal Court"
+        title="Criminal Defense Lawyer | Circleville Municipal Court"
         description="Experienced legal defense for criminal misdemeanor charges in Pickaway County. Protecting your rights and fighting for the best possible outcome in Circleville Municipal Court."
       />
       <section className="py-16 bg-white">

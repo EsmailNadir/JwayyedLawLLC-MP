@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Medical Malpractice Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Ohio medical malpractice attorney handling misdiagnosis, surgical errors, and birth injuries under ORC 2305.113. Non-economic damage caps explained. Call (614) 285-5482.',
+  title: 'Ohio Medical Malpractice Lawyer',
+  description: 'Ohio medical malpractice attorney handling misdiagnosis, surgical errors, and birth injuries under ORC 2305.113. Non-economic damage caps explained.',
   keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney', 'ORC 2305.113 malpractice'],
   openGraph: {
-    title: 'Ohio Medical Malpractice Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Medical Malpractice Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/medical-malpractice',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/medical-malpractice' },
 };
 

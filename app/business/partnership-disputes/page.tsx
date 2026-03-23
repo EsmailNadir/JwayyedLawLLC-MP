@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Partnership Disputes Lawyer in Ohio | ORC 1776 | Columbus | Jwayyed Law LLC',
-  description: 'Ohio partnership disputes attorney handling fiduciary breaches, profit-sharing conflicts, judicial dissolution, and partner expulsion under ORC Chapter 1776. Columbus, Franklin County. Call (614) 285-5482.',
+  title: 'Partnership Disputes Lawyer in Ohio | ORC 1776',
+  description: 'Ohio partnership disputes attorney handling fiduciary breaches, profit-sharing conflicts, judicial dissolution.',
   keywords: ['partnership disputes lawyer Columbus OH', 'Ohio partnership dispute attorney', 'ORC 1776 attorney', 'partnership dissolution Ohio', 'fiduciary duty partner Ohio', 'Franklin County partnership attorney'],
   openGraph: {
-    title: 'Partnership Disputes Lawyer in Ohio | ORC 1776 | Columbus | Jwayyed Law LLC',
+    title: 'Partnership Disputes Lawyer in Ohio | ORC 1776',
     url: 'https://www.jjlawohio.com/business/partnership-disputes',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/partnership-disputes' },
 };
 

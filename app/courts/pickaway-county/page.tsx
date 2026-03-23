@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Pickaway County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Pickaway County courts including Circleville Municipal Court and Common Pleas. OVI defense, criminal defense, and civil matters in Pickaway County, Ohio. Call (614) 285-5482.',
+  title: 'Pickaway County Court Representation',
+  description: 'Experienced legal representation in Pickaway County courts including Circleville Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Pickaway County court attorney',
     'OVI lawyer Pickaway County Ohio',
@@ -18,9 +18,10 @@ export const metadata: Metadata = {
     'U.S. 23 OVI attorney',
   ],
   openGraph: {
-    title: 'Pickaway County Court Representation | Jwayyed Law LLC',
+    title: 'Pickaway County Court Representation',
     url: 'https://www.jjlawohio.com/courts/pickaway-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/pickaway-county' },
 };
 

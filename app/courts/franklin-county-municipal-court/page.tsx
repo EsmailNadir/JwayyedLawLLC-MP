@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Municipal Court Attorney | Civil & Business Representation | Jwayyed Law LLC',
-  description: 'Experienced civil and business representation in Franklin County Municipal Court. Skilled representation for civil disputes, landlord-tenant matters, and evictions in Columbus, Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Franklin County Municipal Court Attorney',
+  description: 'Experienced civil and business representation in Franklin County Municipal Court. Skilled representation for civil disputes, landlord-tenant matters.',
   keywords: ['Franklin County Municipal Court attorney', 'Columbus Municipal Court civil lawyer', 'eviction attorney Columbus', 'landlord tenant lawyer Columbus'],
   openGraph: {
-    title: 'Franklin County Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Franklin County Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/franklin-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/franklin-county-municipal-court' },
 };
 

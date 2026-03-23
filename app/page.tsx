@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'OVI Defense & Criminal Defense Attorney Columbus Ohio | Jwayyed Law LLC',
-  description: 'Jwayyed Law LLC — experienced criminal defense, OVI/DUI, personal injury, and civil litigation attorney serving Columbus and all of Ohio. Free consultations available.',
+  title: 'OVI Defense & Criminal Defense Attorney Columbus Ohio',
+  description: 'Jwayyed Law LLC — experienced criminal defense, OVI/DUI, personal injury, and civil litigation attorney serving Columbus and all of Ohio. Free consultations.',
   keywords: [
     'criminal defense attorney Columbus Ohio',
     'OVI defense attorney Ohio',
@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'trusts attorney Ohio',
     'Jwayyed Law LLC',
   ],
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function Home() {

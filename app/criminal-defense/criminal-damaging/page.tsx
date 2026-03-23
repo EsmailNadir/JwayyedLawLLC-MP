@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Damaging Lawyer in Ohio | Property Damage Defense | Jwayyed Law LLC',
-  description: 'Experienced Ohio criminal damaging defense attorney protecting your rights. Skilled representation for criminal damaging and endangering charges under ORC 2909.06 (2026 Ohio law). Schedule consultation: (614) 285-5482',
+  title: 'Criminal Damaging Lawyer in Ohio',
+  description: 'Experienced Ohio criminal damaging defense attorney protecting your rights. Skilled representation for criminal damaging and endangering charges under ORC.',
   keywords: [
     'criminal damaging lawyer Ohio',
     'criminal damaging ORC 2909.06',
@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     'property crime defense attorney'
   ],
   openGraph: {
-    title: 'Criminal Damaging Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Criminal Damaging Lawyer in Ohio',
     description: 'Experienced criminal damaging defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-damaging',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/criminal-damaging',
   },

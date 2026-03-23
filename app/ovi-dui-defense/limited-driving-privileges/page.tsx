@@ -8,13 +8,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Limited Driving Privileges Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI suspension in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Limited Driving Privileges Lawyer in Ohio',
+  description: 'Experienced Ohio limited driving privileges attorney helping you get back on the road. Skilled representation for limited driving privileges after OVI susp.',
   keywords: ['limited driving privileges lawyer Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio'],
   openGraph: {
-    title: 'Limited Driving Privileges Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Limited Driving Privileges Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/limited-driving-privileges',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/limited-driving-privileges' },
 };
 

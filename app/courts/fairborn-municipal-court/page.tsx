@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Fairborn Municipal Court Attorney | Greene County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
-  description: 'Experienced attorney for Fairborn Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Greene County, Ohio. Near Wright-Patterson AFB. Call (614) 285-5482.',
+  title: 'Fairborn Municipal Court Attorney',
+  description: 'Experienced attorney for Fairborn Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Greene County, Ohio.',
   keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense', 'Wright-Patterson AFB OVI defense', 'Beavercreek criminal attorney'],
   openGraph: {
-    title: 'Fairborn Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Fairborn Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/fairborn-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/fairborn-municipal-court' },
 };
 

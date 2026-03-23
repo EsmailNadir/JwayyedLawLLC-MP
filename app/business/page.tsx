@@ -7,14 +7,15 @@ import Link from 'next/link';
 import { businessServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Business Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
-  description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Business Attorney',
+  description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation.',
   keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
   openGraph: {
-    title: 'Ohio Business Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Ohio Business Attorney',
     description: 'Business law representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/business',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business' },
 };
 

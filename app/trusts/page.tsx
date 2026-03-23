@@ -7,14 +7,15 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Experienced Estate Planning Lawyer | Jwayyed Law LLC',
-  description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, asset protection trusts, special needs trusts, and more. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Trusts Attorney',
+  description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, asset protection trusts.',
   keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {
-    title: 'Ohio Trusts Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Ohio Trusts Attorney',
     description: 'Trusts and estate planning in Columbus, Cincinnati, Dayton, and throughout Ohio. Asset protection trusts, revocable living trusts, and more. Schedule a consultation today.',
     url: 'https://www.jjlawohio.com/trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts' },
 };
 

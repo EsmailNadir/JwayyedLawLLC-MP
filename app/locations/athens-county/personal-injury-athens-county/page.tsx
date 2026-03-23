@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Athens County, Ohio | Athens | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Athens County, Athens, Nelsonville, and surrounding Ohio communities. Car accidents, slip and fall, and injury claims. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Athens County, Ohio',
+  description: 'Personal injury attorney serving Athens County, Athens, Nelsonville, and surrounding Ohio communities. Car accidents, slip and fall, and injury claims.',
   keywords: ['personal injury Athens County', 'injury lawyer Athens Ohio', 'Athens County accident attorney', 'car accident lawyer Athens Ohio', 'slip and fall Athens County'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Athens County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Athens County, Ohio',
     url: 'https://www.jjlawohio.com/locations/athens-county/personal-injury-athens-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/athens-county/personal-injury-athens-county' },
 };
 

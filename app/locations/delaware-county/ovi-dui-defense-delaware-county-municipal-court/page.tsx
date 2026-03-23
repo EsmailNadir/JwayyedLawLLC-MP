@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Delaware, Ohio | Delaware County Municipal Court | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
+  title: 'OVI / DUI Lawyer for Delaware, Ohio',
+  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals.',
   keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Delaware, Ohio | Delaware County | Jwayyed Law LLC',
+    title: 'OVI / DUI Lawyer for Delaware, Ohio',
     url: 'https://www.jjlawohio.com/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court' },
 };
 

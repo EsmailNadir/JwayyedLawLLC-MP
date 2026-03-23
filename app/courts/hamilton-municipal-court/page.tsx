@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Hamilton Municipal Court Attorney | Butler County OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
-  description: 'Experienced attorney for Hamilton Municipal Court in Hamilton, Ohio. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Butler County. 700 Hanover St. Call (614) 285-5482.',
+  title: 'Hamilton Municipal Court Attorney',
+  description: 'Experienced attorney for Hamilton Municipal Court in Hamilton, Ohio. OVI/DUI defense, misdemeanor criminal charges.',
   keywords: ['Hamilton Municipal Court attorney', 'Butler County OVI lawyer', 'Hamilton Ohio misdemeanor defense', 'Hamilton Ohio criminal attorney', 'Butler County DUI lawyer'],
   openGraph: {
-    title: 'Hamilton Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Hamilton Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/hamilton-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/hamilton-municipal-court' },
 };
 

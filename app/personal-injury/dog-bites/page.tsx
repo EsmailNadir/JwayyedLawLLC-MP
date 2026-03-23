@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Dog Bite Lawyer | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
-  description: 'Ohio dog bite attorney fighting for victims under ORC 955.28 strict liability. Recover medical bills, scarring, lost wages, and pain and suffering. Call (614) 285-5482.',
+  title: 'Ohio Dog Bite Lawyer',
+  description: 'Ohio dog bite attorney fighting for victims under ORC 955.28 strict liability. Recover medical bills, scarring, lost wages, and pain and suffering.',
   keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney', 'ORC 955.28 dog bite claim'],
   openGraph: {
-    title: 'Ohio Dog Bite Lawyer | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Dog Bite Lawyer | Columbus',
     url: 'https://www.jjlawohio.com/personal-injury/dog-bites',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/personal-injury/dog-bites' },
 };
 

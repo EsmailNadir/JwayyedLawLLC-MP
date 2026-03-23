@@ -6,6 +6,21 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import Footer from "@/components/footer";
 import Script from "next/script";
+import { DM_Sans, Playfair_Display } from "next/font/google";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+  weight: ["400", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -35,9 +50,6 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -53,12 +65,6 @@ export const metadata: Metadata = {
         alt: 'Jwayyed Law LLC',
       },
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Jwayyed Law LLC | JJ Law Ohio | Ohio Attorney',
-    description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Comprehensive legal services.',
-    images: ['/assets/Jwayyed_Logo_Inverted.JPEG'],
   },
   robots: {
     index: true,
@@ -134,18 +140,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       "Civil Litigation",
       "Traffic Violations"
     ],
-    "sameAs": []
+    "sameAs": [
+      "https://www.instagram.com/jjlawohio"
+    ]
   };
 
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className={`h-full ${dmSans.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;600;700;800&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

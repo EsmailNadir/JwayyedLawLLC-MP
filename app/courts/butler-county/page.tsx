@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Butler County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Butler County courts including Area Courts I, II, III and Hamilton Municipal Court. OVI defense, criminal defense, and civil matters in Butler County, Ohio. Call (614) 285-5482.',
+  title: 'Butler County Court Representation',
+  description: 'Experienced legal representation in Butler County courts including Area Courts I, II, III and Hamilton Municipal Court. OVI defense, criminal defense.',
   keywords: [
     'Butler County court attorney',
     'Hamilton Municipal Court attorney',
@@ -18,9 +18,10 @@ export const metadata: Metadata = {
     'Oxford OVI lawyer',
   ],
   openGraph: {
-    title: 'Butler County Court Representation | Jwayyed Law LLC',
+    title: 'Butler County Court Representation',
     url: 'https://www.jjlawohio.com/courts/butler-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/butler-county' },
 };
 

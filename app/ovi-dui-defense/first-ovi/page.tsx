@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'First OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'First OVI Defense Lawyer in Ohio',
+  description: 'Experienced Ohio first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio.',
   keywords: ['first OVI lawyer Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney'],
   openGraph: {
-    title: 'First OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'First OVI Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/first-ovi',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/first-ovi' },
 };
 

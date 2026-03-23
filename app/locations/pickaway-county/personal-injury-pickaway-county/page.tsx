@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Pickaway County, Ohio | Circleville | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Pickaway County, Circleville, Ashville, Commercial Point, and surrounding Ohio communities. Car accidents, US 23 injury claims. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Pickaway County, Ohio',
+  description: 'Personal injury attorney serving Pickaway County, Circleville, Ashville, Commercial Point, and surrounding Ohio communities. Car accidents.',
   keywords: ['personal injury Pickaway County', 'injury lawyer Circleville Ohio', 'Pickaway County accident attorney', 'car accident US 23 Ohio', 'personal injury Ashville Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Pickaway County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Pickaway County, Ohio',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/pickaway-county/personal-injury-pickaway-county' },
 };
 

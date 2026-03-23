@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'High-Tier OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio high-tier OVI defense attorney protecting your rights. Skilled representation for high BAC OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'High-Tier OVI Defense Lawyer in Ohio',
+  description: 'Experienced Ohio high-tier OVI defense attorney protecting your rights. Skilled representation for high BAC OVI/DUI charges in Ohio.',
   keywords: ['high-tier OVI lawyer Ohio', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney'],
   openGraph: {
-    title: 'High-Tier OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'High-Tier OVI Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/high-tier-ovi',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/high-tier-ovi' },
 };
 

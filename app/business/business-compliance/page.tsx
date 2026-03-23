@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Business Compliance Lawyer | ORC 1705, 1701 | Columbus | Jwayyed Law LLC',
-  description: 'Ohio business compliance attorney helping LLCs and corporations meet Ohio Secretary of State requirements, maintain corporate formalities, register for the CAT tax, and avoid piercing the corporate veil. Call (614) 285-5482.',
+  title: 'Ohio Business Compliance Lawyer',
+  description: 'Ohio business compliance attorney helping LLCs and corporations meet Ohio Secretary of State requirements, maintain corporate formalities.',
   keywords: ['business compliance lawyer Columbus OH', 'Ohio LLC compliance attorney', 'corporate formalities Ohio', 'Ohio Secretary of State filing attorney', 'Ohio CAT tax attorney', 'pierce corporate veil Ohio', 'ORC 1705 attorney'],
   openGraph: {
-    title: 'Ohio Business Compliance Lawyer | ORC 1705, 1701 | Columbus | Jwayyed Law LLC',
+    title: 'Ohio Business Compliance Lawyer',
     url: 'https://www.jjlawohio.com/business/business-compliance',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/business/business-compliance' },
 };
 

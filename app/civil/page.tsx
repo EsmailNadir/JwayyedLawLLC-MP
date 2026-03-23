@@ -8,14 +8,15 @@ import Link from 'next/link';
 import { civilServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton & Throughout Ohio | Jwayyed Law LLC',
-  description: 'Experienced civil attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Contract disputes, real estate, landlord-tenant, evictions, and more. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Civil Attorney',
+  description: 'Experienced civil attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Contract disputes, real estate, landlord-tenant, evictions, and more.',
   keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer'],
   openGraph: {
-    title: 'Ohio Civil Attorney | Columbus, Cincinnati, Dayton | Jwayyed Law LLC',
+    title: 'Ohio Civil Attorney',
     description: 'Civil litigation representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/civil',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil' },
 };
 

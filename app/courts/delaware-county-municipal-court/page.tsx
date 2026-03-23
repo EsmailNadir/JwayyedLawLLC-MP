@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Municipal Court Attorney | OVI & Misdemeanor Lawyer | Jwayyed Law LLC',
-  description: 'Experienced attorney for Delaware County Municipal Court in Delaware, Ohio. OVI/DUI defense, misdemeanor criminal charges, and traffic violations. North of Columbus on US 23. Call (614) 285-5482.',
+  title: 'Delaware County Municipal Court Attorney',
+  description: 'Experienced attorney for Delaware County Municipal Court in Delaware, Ohio. OVI/DUI defense, misdemeanor criminal charges, and traffic violations.',
   keywords: ['Delaware County Municipal Court attorney', 'Delaware County OVI lawyer', 'Delaware County misdemeanor defense', 'Delaware Ohio criminal attorney', 'OVI lawyer Delaware Ohio'],
   openGraph: {
-    title: 'Delaware County Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Delaware County Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/delaware-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/delaware-county-municipal-court' },
 };
 

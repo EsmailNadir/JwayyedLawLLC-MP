@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Guardianships Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney helping families establish guardianships for incapacitated adults and minors through probate court. Experienced guidance on Ohio ORC Chapter 2111. Call (614) 285-5482.',
+  title: 'Guardianships Lawyer in Ohio | Columbus',
+  description: 'Ohio attorney helping families establish guardianships for incapacitated adults and minors through probate court.',
   keywords: [
     'guardianship lawyer Columbus OH',
     'guardianship attorney Ohio',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'ORC 2111 guardianship attorney',
   ],
   openGraph: {
-    title: 'Guardianships Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-    description: 'Ohio attorney helping families establish guardianships for incapacitated adults and minors through probate court. Experienced guidance on Ohio ORC Chapter 2111. Call (614) 285-5482.',
+    title: 'Guardianships Lawyer in Ohio | Columbus',
+    description: 'Ohio attorney helping families establish guardianships for incapacitated adults and minors through probate court.',
     url: 'https://www.jjlawohio.com/other-services/guardianships',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/other-services/guardianships' },
 };
 

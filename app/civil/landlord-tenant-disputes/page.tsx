@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Landlord-Tenant Disputes Lawyer Ohio | ORC Chapter 5321 | Columbus | Jwayyed Law LLC',
-  description: 'Ohio landlord-tenant disputes attorney representing landlords and tenants in eviction defense, security deposit claims, habitability issues, and lease disputes under ORC Chapter 5321. Columbus and statewide. Call (614) 285-5482.',
+  title: 'Landlord-Tenant Disputes Lawyer Ohio',
+  description: 'Ohio landlord-tenant disputes attorney representing landlords and tenants in eviction defense, security deposit claims, habitability issues.',
   keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Ohio eviction defense attorney', 'ORC 5321 landlord tenant'],
   openGraph: {
-    title: 'Landlord-Tenant Disputes Lawyer Ohio | ORC Chapter 5321 | Jwayyed Law LLC',
+    title: 'Landlord-Tenant Disputes Lawyer Ohio',
     url: 'https://www.jjlawohio.com/civil/landlord-tenant-disputes',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/civil/landlord-tenant-disputes' },
 };
 

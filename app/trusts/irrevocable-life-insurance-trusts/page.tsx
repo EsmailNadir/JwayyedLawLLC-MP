@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio ILIT attorney serving Columbus, Cincinnati, and Dayton. Remove life insurance from your taxable estate under IRC 2042. Crummey powers, 3-year rule, premium funding, second-to-die policies. Call (614) 285-5482.',
+  title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
+  description: 'Ohio ILIT attorney serving Columbus, Cincinnati, and Dayton. Remove life insurance from your taxable estate under IRC 2042. Crummey powers, 3-year rule.',
   keywords: [
     'irrevocable life insurance trust Columbus OH',
     'ILIT attorney Ohio',
@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     '3-year rule life insurance transfer Ohio',
   ],
   openGraph: {
-    title: 'Irrevocable Life Insurance Trusts (ILIT) Lawyer Ohio | Columbus | Jwayyed Law LLC',
+    title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-life-insurance-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/irrevocable-life-insurance-trusts' },
 };
 

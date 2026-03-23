@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Greene County, Ohio | Xenia & Fairborn | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Greene County, Xenia, Fairborn, Beavercreek, and surrounding Ohio communities. Car accidents, slip and fall, injury claims. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Greene County, Ohio',
+  description: 'Personal injury attorney serving Greene County, Xenia, Fairborn, Beavercreek, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Greene County', 'injury lawyer Xenia Ohio', 'Greene County accident attorney', 'car accident lawyer Fairborn Ohio', 'personal injury Beavercreek Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Greene County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Greene County, Ohio',
     url: 'https://www.jjlawohio.com/locations/greene-county/personal-injury-greene-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/locations/greene-county/personal-injury-greene-county' },
 };
 

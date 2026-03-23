@@ -6,13 +6,14 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Morrow County Municipal Court Attorney | OVI & Misdemeanor Lawyer Mount Gilead | Jwayyed Law LLC',
-  description: 'Experienced attorney for Morrow County Municipal Court in Mount Gilead, Ohio. OVI/DUI defense, misdemeanor criminal charges, and traffic violations on US 42. Call (614) 285-5482.',
+  title: 'Morrow County Municipal Court Attorney',
+  description: 'Experienced attorney for Morrow County Municipal Court in Mount Gilead, Ohio. OVI/DUI defense, misdemeanor criminal charges.',
   keywords: ['Morrow County Municipal Court attorney', 'Morrow County OVI lawyer', 'Mount Gilead misdemeanor defense', 'Morrow County criminal attorney', 'OVI lawyer Mount Gilead Ohio'],
   openGraph: {
-    title: 'Morrow County Municipal Court Attorney | Jwayyed Law LLC',
+    title: 'Morrow County Municipal Court Attorney',
     url: 'https://www.jjlawohio.com/courts/morrow-county-municipal-court',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/morrow-county-municipal-court' },
 };
 

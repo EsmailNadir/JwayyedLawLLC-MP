@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'QTIP Trusts Lawyer Ohio | Blended Family Estate Planning | Jwayyed Law LLC',
-  description: 'Ohio QTIP trust attorney serving Columbus, Cincinnati, and Dayton. Qualified Terminable Interest Property trusts under IRC 2056(b)(7) for blended families. Spouse income protection, remainder to children, portability comparison. Call (614) 285-5482.',
+  title: 'QTIP Trusts Lawyer Ohio',
+  description: 'Ohio QTIP trust attorney serving Columbus, Cincinnati, and Dayton. Qualified Terminable Interest Property trusts under IRC 2056(b)(7) for blended families.',
   keywords: [
     'QTIP trust Columbus OH',
     'QTIP trust attorney Ohio',
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     'federal estate tax marital deduction Ohio',
   ],
   openGraph: {
-    title: 'QTIP Trusts Lawyer Ohio | Blended Family Estate Planning | Jwayyed Law LLC',
+    title: 'QTIP Trusts Lawyer Ohio',
     url: 'https://www.jjlawohio.com/trusts/qtip-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/qtip-trusts' },
 };
 

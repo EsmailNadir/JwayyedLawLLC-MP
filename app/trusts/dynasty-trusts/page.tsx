@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Dynasty Trusts Lawyer in Ohio | Multi-Generational Wealth Planning | Jwayyed Law LLC',
-  description: 'Ohio dynasty trust attorney helping Columbus, Cincinnati, and Dayton families build perpetual trusts. Ohio abolished the rule against perpetuities in 2012. GST tax exemption planning, spendthrift protection, trustee succession. Call (614) 285-5482.',
+  title: 'Dynasty Trusts Lawyer in Ohio',
+  description: 'Ohio dynasty trust attorney helping Columbus, Cincinnati, and Dayton families build perpetual trusts. Ohio abolished the rule against perpetuities in 2012.',
   keywords: [
     'dynasty trusts Columbus OH',
     'dynasty trust attorney Ohio',
@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     'spendthrift dynasty trust Ohio',
   ],
   openGraph: {
-    title: 'Dynasty Trusts Lawyer in Ohio | Multi-Generational Wealth Planning | Jwayyed Law LLC',
+    title: 'Dynasty Trusts Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/trusts/dynasty-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/dynasty-trusts' },
 };
 

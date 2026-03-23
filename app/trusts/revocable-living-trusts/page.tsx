@@ -7,8 +7,8 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Revocable Living Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-  description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets. Serving Columbus and all of Ohio. Call (614) 285-5482.',
+  title: 'Revocable Living Trusts Lawyer in Ohio',
+  description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets.',
   keywords: [
     'revocable living trust Columbus OH',
     'living trust attorney Ohio',
@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     'Ohio Trust Code attorney',
   ],
   openGraph: {
-    title: 'Revocable Living Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+    title: 'Revocable Living Trusts Lawyer in Ohio',
     description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/revocable-living-trusts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/trusts/revocable-living-trusts' },
 };
 

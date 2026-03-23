@@ -7,13 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'Second OVI Defense Lawyer in Ohio | Experienced Attorney | Jwayyed Law LLC',
+  title: 'Second OVI Defense Lawyer in Ohio',
   description: 'Experienced Ohio second OVI defense attorney protecting your rights. Skilled representation for second OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
   keywords: ['second OVI lawyer Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney'],
   openGraph: {
-    title: 'Second OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Second OVI Defense Lawyer in Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/second-ovi',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/second-ovi' },
 };
 

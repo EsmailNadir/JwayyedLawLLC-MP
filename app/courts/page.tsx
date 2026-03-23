@@ -5,13 +5,14 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ohio Courts | County & Municipal Court Representation | Jwayyed Law LLC',
-  description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI, and civil matters in courts throughout Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Ohio Courts',
+  description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI.',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {
-    title: 'Ohio Courts | Jwayyed Law LLC',
+    title: 'Ohio Courts',
     url: 'https://www.jjlawohio.com/courts',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts' },
 };
 

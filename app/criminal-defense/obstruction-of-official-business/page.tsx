@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Obstruction of Official Business Lawyer in Ohio | Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio obstruction of official business defense attorney protecting your rights. Skilled representation for obstruction charges under ORC 2921.31. Schedule consultation: (614) 285-5482',
+  title: 'Obstruction of Official Business Lawyer in Ohio',
+  description: 'Experienced Ohio obstruction of official business defense attorney protecting your rights. Skilled representation for obstruction charges under ORC 2921.',
   keywords: [
     'obstruction of official business lawyer Ohio',
     'obstruction defense attorney',
@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     'criminal defense obstruction attorney'
   ],
   openGraph: {
-    title: 'Obstruction of Official Business Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Obstruction of Official Business Lawyer in Ohio',
     description: 'Experienced obstruction of official business defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/obstruction-of-official-business',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: {
     canonical: '/criminal-defense/obstruction-of-official-business',
   },

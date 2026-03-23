@@ -8,13 +8,14 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Driving Under OVI Suspension Defense Lawyer in Ohio | Jwayyed Law LLC',
-  description: 'Experienced Ohio driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio. Schedule consultation: (614) 285-5482',
+  title: 'Driving Under OVI Suspension Lawyer Ohio',
+  description: 'Experienced Ohio driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio.',
   keywords: ['driving under suspension lawyer Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'ORC 4510.14 defense'],
   openGraph: {
-    title: 'Driving Under OVI Suspension Defense Lawyer in Ohio | Jwayyed Law LLC',
+    title: 'Driving Under OVI Suspension Lawyer Ohio',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/driving-under-ovi-suspension',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/ovi-dui-defense/driving-under-ovi-suspension' },
 };
 
@@ -64,7 +65,7 @@ export default function DrivingUnderOVISuspensionPage() {
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Driving Under OVI Suspension Defense Lawyer in Ohio"
+        title="Driving Under OVI Suspension Lawyer Ohio"
         description="Experienced legal defense for driving under OVI suspension charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">

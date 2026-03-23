@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Greene County Court Representation | OVI, Criminal & Civil Attorney | Jwayyed Law LLC',
-  description: 'OVI defense, criminal defense, and civil representation in Greene County courts including Fairborn Municipal Court and Xenia Municipal Court. Serving Xenia, Fairborn, Beavercreek, Yellow Springs & more. Call (614) 285-5482.',
+  title: 'Greene County Court Representation',
+  description: 'OVI defense, criminal defense, and civil representation in Greene County courts including Fairborn Municipal Court and Xenia Municipal Court.',
   keywords: [
     'Greene County OVI attorney',
     'Fairborn Municipal Court lawyer',
@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     'Greene County Common Pleas',
   ],
   openGraph: {
-    title: 'Greene County Court Representation | OVI, Criminal & Civil | Jwayyed Law LLC',
+    title: 'Greene County Court Representation',
     url: 'https://www.jjlawohio.com/courts/greene-county',
-  },
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    },
   alternates: { canonical: '/courts/greene-county' },
 };
 
