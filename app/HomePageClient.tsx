@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
@@ -8,6 +8,61 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+const practiceAreas = [
+  'Criminal Defense',
+  'OVI/DUI Defense',
+  'Personal Injury',
+  'Business Law',
+  'Estate Planning',
+  'Civil Litigation',
+];
+
+function RotatingSubtitle() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [phase, setPhase] = useState<'enter' | 'visible' | 'exit'>('enter');
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    if (phase === 'enter') {
+      timeout = setTimeout(() => setPhase('visible'), 50);
+    } else if (phase === 'visible') {
+      timeout = setTimeout(() => setPhase('exit'), 2200);
+    } else if (phase === 'exit') {
+      timeout = setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % practiceAreas.length);
+        setPhase('enter');
+      }, 500);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [phase]);
+
+  const transform =
+    phase === 'enter'
+      ? 'translate-y-8 opacity-0 scale-95'
+      : phase === 'visible'
+        ? 'translate-y-0 opacity-100 scale-100'
+        : '-translate-y-8 opacity-0 scale-95';
+
+  return (
+    <div className="mb-4 sm:mb-8 flex flex-col items-center">
+      <div className="w-16 h-[1px] bg-[#b87333]/60 mb-4 sm:mb-5" />
+      <div className="h-[2rem] sm:h-[2.5rem] md:h-[2.75rem] flex items-center justify-center overflow-hidden">
+        <p
+          className={`font-['Inter',_'Arial',_sans-serif] text-[0.95rem] sm:text-lg md:text-xl lg:text-[1.35rem] font-medium tracking-[0.25em] uppercase drop-shadow-2xl transition-all duration-500 ease-out ${transform}`}
+          style={{
+            color: '#e8c8a0',
+            textShadow: '0 0 20px rgba(184, 115, 51, 0.3)',
+          }}
+        >
+          {practiceAreas[currentIndex]}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 // Navbar Component
 const Navbar = () => {
@@ -326,11 +381,9 @@ export default function HomePageClient() {
         <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-white text-center pt-6 sm:pt-0">
           <div className="max-w-5xl mx-auto mb-6 sm:mb-12 animate-fade-in">
             <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-[2.55rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-3.5 sm:mb-6 drop-shadow-2xl">
-              Ohio Criminal Defense &amp; OVI Attorney
+              Defending Your Rights. Building Your Future.
             </h1>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-[1.05rem] sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
-              Experienced Legal Counsel in Criminal, Traffic, and Civil Law
-            </p>
+            <RotatingSubtitle />
           </div>
 
           {/* Hero CTA: single secondary action to explore services */}
