@@ -78,9 +78,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/assets/Jwayyed_Logo_Inverted.JPEG',
-    shortcut: '/assets/Jwayyed_Logo_Inverted.JPEG',
-    apple: '/assets/Jwayyed_Logo_Inverted.JPEG',
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   verification: {
     // Add Google Search Console verification when available
@@ -141,7 +144,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       "Traffic Violations"
     ],
     "sameAs": [
-      "https://www.instagram.com/jjlawohio"
+      "https://www.instagram.com/jjlawohio",
+      "https://www.yelp.com/biz/jwayyed-law-columbus",
+      "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
+      "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html"
     ]
   };
 
