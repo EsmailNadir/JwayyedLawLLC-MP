@@ -5,9 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
 
 const practiceAreas = [
   'Criminal Defense',
@@ -171,18 +170,147 @@ const Footer = () => {
 };
 
 const reviews = [
+  // ~1 day ago
   {
-    name: "Whitney Yoder",
+    name: "aleasha waldron",
     rating: 5,
     platform: "Google",
-    text: "He represented me and got my charges dismissed due to mistreatment of law enforcement."
+    text: "Jay went above and beyond to try and ensure the best possible outcome. The courts wanted to lock me up but Jay got it down to just a fine! Thank you so much! If you want the best then call JJay!!"
   },
   {
-    name: "Gabriel",
+    name: "Fatima Verdi",
     rating: 5,
     platform: "Google",
-    text: "Most attorneys take your money & leave you out to dry, I can assure you this is most certainly not the case with Mr. JJ! I knew I was facing an uphill battle & quite frankly didn't know of a strategy we could possibly put forward. This man completely took me off guard with the angles he attacked from so I know it was unexpected by the prosecution (think Johnnie Cochran). You really can't find better to entrust the fate of your case to. He goes far over & beyond. I was very pleasantly surprised. Trust me, this is the type of priceless legal aid money can't buy. He has a heart & will fight for you like you're his family. He did for me, I'm speaking from experience. You're in the best hands with him."
+    text: "Really great experience, everything was done seamlessly and with great communication. I would highly recommend Jwayyed Law to anyone and I cannot thank them enough!"
   },
+  {
+    name: "Bruce Burns",
+    rating: 5,
+    platform: "Google",
+    text: "Jwayyed Law was amazing, really saved me. Always answered my calls even after hours. I'd definitely use him again. Got my charges dropped significantly. Thank you."
+  },
+  {
+    name: "Kathryn",
+    rating: 5,
+    platform: "Google",
+    text: "I had an excellent experience working with Jwayyed and would highly recommend his services to anyone in need of strong, reliable legal representation. From the beginning, he demonstrated an understanding of my situation and kept the cost reasonable throughout the entire process."
+  },
+  // ~3 days ago
+  {
+    name: "Damn Quanboi",
+    rating: 5,
+    platform: "Google",
+    text: "I was getting a runaround from other attorneys that rushed me, but this guy sat on the phone with me for almost 2 hours on a Sunday to get me caught up with all my cases — even though I couldn't pay him. I needed help and he 100% helped me find every case that I needed handled."
+  },
+  // ~1 week ago
+  {
+    name: "Wes Potts",
+    rating: 5,
+    platform: "Google",
+    text: "This law firm is excellent. I am an owner of a S-Corp and as such I am prevented from representing my business in court as it's a corporation and I am not an attorney. That part was frustrating, however Jwayyed Law handled my small claims case with complete professionalism. Highly recommend."
+  },
+  // ~2 weeks ago
+  {
+    name: "Damilola Celina Fashina",
+    rating: 5,
+    platform: "Google",
+    text: "I'm very grateful for the support and expertise my lawyer provided during my DUI case. From the beginning, they were clear, patient, and confident in handling my situation. Thanks to their hard work, my charge was dropped."
+  },
+  {
+    name: "Jayden Wells",
+    rating: 5,
+    platform: "Google",
+    text: "Great guy, came all the way from Columbus to get my ticket taken care of. 10/10."
+  },
+  // ~1 month ago
+  {
+    name: "Steelo Fre",
+    rating: 5,
+    platform: "Google",
+    text: "Really did a great job on my CDL ticket. I would recommend you go with Jwayyed for any court case — very reasonable on price."
+  },
+  {
+    name: "AJ H",
+    rating: 5,
+    platform: "Google",
+    text: "Jwayyed Law is the best in the land. Very professional, precise and outright grounded. Very trusted and reputable source. You can put full faith with this one. No regrets!"
+  },
+  {
+    name: "Fantom M",
+    rating: 5,
+    platform: "Google",
+    text: "Absolutely incredible!! I can't recommend him enough. He's truly the best lawyer out there – a lifesaver!"
+  },
+  {
+    name: "Terry",
+    rating: 5,
+    platform: "Google",
+    text: "Super nice guy. Didn't hesitate to text, email or call back right away. Was very polite and knowledgeable about the law. Worked his magic before court even started. Definitely took care of business. Very reasonable rate as well. Would definitely recommend him. If I ever needed an attorney again I wouldn't hesitate to call him."
+  },
+  {
+    name: "Sweet Tee",
+    rating: 5,
+    platform: "Google",
+    text: "Was very professional, responded to every email and text quickly. Willing to travel from Columbus to Fairfield Ohio. His rates were reasonable and worked with us on making payments. Very knowledgeable and able to get everything reduced. Was worth every penny. I would recommend his services to everyone."
+  },
+  {
+    name: "Lori",
+    rating: 5,
+    platform: "Google",
+    text: "I was not in the position to dish out thousands of dollars for an attorney when I truly needed one. Jwayyed Law made me feel at ease, less ashamed, and walked me through step by step everything that would be happening. I was scared and he made the whole process so much less overwhelming."
+  },
+  // ~2 months ago
+  {
+    name: "Jay Mayberry",
+    rating: 5,
+    platform: "Google",
+    text: "Highly recommend Jwayyed got my second OVI dropped down to a reckless op. Very knowledgeable and professional."
+  },
+  {
+    name: "Nader Zidan",
+    rating: 5,
+    platform: "Google",
+    text: "Outstanding experience from start to finish — Jwayyed explained everything clearly and handled the legal planning documents with care. The process was smooth and organized. I felt confident and supported the whole way and would highly recommend their services."
+  },
+  {
+    name: "Youssef Saifi",
+    rating: 5,
+    platform: "Google",
+    text: "I am very grateful to Jwayyed Law LLC for their excellent work on my case. From the beginning, they were professional, responsive, and gave me confidence during a stressful situation. Thanks to their experience and dedication, my case was dismissed, which was the best result I could hope for. I highly recommend them to anyone looking for a reliable and skilled defense lawyer."
+  },
+  {
+    name: "Allison Tharan",
+    rating: 5,
+    platform: "Google",
+    text: "Amazing job!! Would refer to anyone needing the help. I got an OVI and was looking at jail time, a big fine, and was about to lose my license. He got it dropped to a reckless operation, the fine reduced to 1/3 of what it was going to be, no jail time and got my license back. Best lawyer in the land!!"
+  },
+  // ~3 months ago
+  {
+    name: "Luke Lewis",
+    rating: 5,
+    platform: "Google",
+    text: "I can't recommend Attorney Jwayyed enough. My incident happened on a Saturday night and I called him around 7 PM the next day. He answered right away and spent about 40 minutes on the phone with me, explaining everything and calming me down. He said, 'You're in good hands and everything will work out.' He was always available, responsive, and professional. He was able to reduce the outcome to the lowest penalty possible short of dismissal and truly cared about my situation. Thank you!!!!"
+  },
+  // ~4 months ago
+  {
+    name: "Derek Ramsey",
+    rating: 5,
+    platform: "Google",
+    text: "I was traveling to the University of Cincinnati for my daughter's freshman move-in weekend. I hadn't had a drink since mid-July but I made a terrible decision on the road and was arrested for an OVI. JJ not only knew the law but he knew everyone in the system and could communicate effectively on my behalf. Most importantly, he calmed my nerves. Today I do not have an OVI on my record. I did not spend any more time in jail. I did not lose my license. I am blessed and forever grateful."
+  },
+  {
+    name: "Mazi B",
+    rating: 5,
+    platform: "Google",
+    text: "I had a case for an OVI, and Jwayyed was my attorney. I was super nervous at first but he guided me through it all, helped me understand all our options. A couple weeks later he let me know that he would be trying to drop my charges."
+  },
+  {
+    name: "Manmohan Judge",
+    rating: 5,
+    platform: "Google",
+    text: "I am a CDL holder. I got cited for an accident when the other vehicle hit mine. My employer did not believe it and put me on leave, turning my world upside down. I was lucky to find JJ. He fought for me. Answered the phone and texts at all hours."
+  },
+  // ~5 months ago
   {
     name: "Mustang Guru",
     rating: 5,
@@ -202,10 +330,36 @@ const reviews = [
     text: "Professional player who knows the Law! Will use again if I need to but hopefully will not be needed!! Will refer to others who might need a lawyer!!"
   },
   {
+    name: "Whitney Yoder",
+    rating: 5,
+    platform: "Google",
+    text: "He represented me and got my charges dismissed due to mistreatment of law enforcement."
+  },
+  {
+    name: "Gabriel",
+    rating: 5,
+    platform: "Google",
+    text: "Most attorneys take your money & leave you out to dry, I can assure you this is most certainly not the case with Mr. JJ! I knew I was facing an uphill battle & quite frankly didn't know of a strategy we could possibly put forward. This man completely took me off guard with the angles he attacked from so I know it was unexpected by the prosecution (think Johnnie Cochran). You really can't find better to entrust the fate of your case to. He goes far over & beyond. I was very pleasantly surprised. Trust me, this is the type of priceless legal aid money can't buy. He has a heart & will fight for you like you're his family. He did for me, I'm speaking from experience. You're in the best hands with him."
+  },
+  // ~6 months ago
+  {
     name: "A. R.S.",
     rating: 5,
     platform: "Google",
     text: "I honestly can't say enough good things about this team. From start to finish, they were dedicated, responsive, and genuinely cared about helping me through every step of the process. It's rare to find people in this field who combine expertise with such compassion and integrity, but that's exactly what I found here. They always took the time to explain things clearly, checked in often, and made sure I felt supported and informed the entire way. I never once felt like just another case. They truly earned my trust, and I'm so grateful for their guidance and persistence. If you're looking for a legal team that actually shows up for you and does what they say they'll do, I can't recommend them enough."
+  },
+  // ~7 months ago
+  {
+    name: "Tooba M.",
+    rating: 5,
+    platform: "Google",
+    text: "Eeman was so good at pulling me into the raffle and really brought my attention to protecting the rights of Ohio!"
+  },
+  {
+    name: "Adnan Bashir",
+    rating: 5,
+    platform: "Google",
+    text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the entire process. Communication was always prompt, and they handled my situation with expertise and attention to detail. I'm extremely satisfied with the outcome and highly recommend Jwayyed Law LLC to anyone in need of a reliable and dedicated attorney."
   },
   {
     name: "Ace Lomax",
@@ -214,11 +368,18 @@ const reviews = [
     text: "Great guy will fight for your freedom best experience ever thank you again God bless."
   },
   {
-    name: "Adnan Bashir",
+    name: "Omar Heif",
     rating: 5,
     platform: "Google",
-    text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the entire process. Communication was always prompt, and they handled my situation with expertise and attention to detail. I'm extremely satisfied with the outcome and highly recommend Jwayyed Law LLC to anyone in need of a reliable and dedicated attorney."
+    text: "Cool guys."
   },
+  {
+    name: "Ayesha Momin",
+    rating: 5,
+    platform: "Google",
+    text: "Great!"
+  },
+  // ~8 months ago
   {
     name: "Rushdi Ziad",
     rating: 5,
@@ -231,6 +392,7 @@ const reviews = [
     platform: "Google",
     text: "I recently received a traffic ticket in Akron, and Jwayyed was instrumental in helping me avoid additional points on my license. From the start, he was very professional, responsive, and clearly knowledgeable about local traffic laws. He worked quickly to negotiate a reduced charge, and reduced points, which ultimately saved me from increased insurance rates and license penalties. His communication throughout the process kept me informed and confident in the outcome. I highly recommend his services to anyone facing traffic violations in the area."
   },
+  // ~9 months ago
   {
     name: "Imdad Imdadova",
     rating: 5,
@@ -243,6 +405,7 @@ const reviews = [
     platform: "Google",
     text: "My experience with Jwayyed was incredible. He was attentive in the discovery phase of my case and made sure to keep me in the loop on all actions that were taken on my behalf."
   },
+  // ~10 months ago
   {
     name: "Tammy Watts",
     rating: 5,
@@ -267,12 +430,14 @@ const reviews = [
     platform: "Google",
     text: "He was really helpful and easy to talk to. He made a stressful situation a lot less scary and took care of everything I needed."
   },
+  // ~11 months ago
   {
     name: "Basil Jaradah",
     rating: 5,
     platform: "Google",
     text: "He finished the project in timely manner, and remained professional all the time, was thorough and picked up on the little details."
   },
+  // ~2 years ago
   {
     name: "Abe Rashed",
     rating: 5,
@@ -452,28 +617,35 @@ export default function HomePageClient() {
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-3 sm:mb-4">
               Client Testimonials
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-400">
+            <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-400 mb-4">
               Real experiences from clients we&apos;ve helped
             </p>
+            <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                ))}
+              </div>
+              <span className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-[#b87333]">
+                60+ five-star reviews on Google
+              </span>
+            </div>
           </div>
 
           <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-            autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-            pagination={{ clickable: true }}
+            autoplay={{ delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true }}
             loop={true}
-            className="testimonials-swiper pb-16"
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-[300px] flex flex-col">
-                  {/* Stars + Badge (flex-shrink-0) */}
                   <div className="flex-shrink-0">
                     <div className="flex items-center space-x-1 mb-3">
                       {[...Array(review.rating)].map((_, i) => (
@@ -484,13 +656,9 @@ export default function HomePageClient() {
                       {review.platform}
                     </span>
                   </div>
-
-                  {/* Testimonial Text (flex-1, overflow-hidden, no scrollbar) */}
                   <blockquote className="font-['Georgia',_'Times_New_Roman',_serif] text-sm sm:text-base text-gray-300 leading-relaxed flex-1 min-h-0 overflow-hidden italic">
                     &ldquo;{truncateReview(review.text)}&rdquo;
                   </blockquote>
-
-                  {/* Reviewer Name (flex-shrink-0, mt-auto) */}
                   <cite className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-white not-italic border-t border-white/10 pt-4 flex-shrink-0 mt-auto">
                     — {review.name}
                   </cite>
@@ -498,21 +666,6 @@ export default function HomePageClient() {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Custom Swiper pagination color and spacing so dots don't touch cards */}
-          <style>{`
-            .testimonials-swiper .swiper-pagination {
-              margin-top: 1.25rem;
-              position: relative;
-            }
-            .testimonials-swiper .swiper-pagination-bullet {
-              background: rgba(255, 255, 255, 0.3);
-              opacity: 1;
-            }
-            .testimonials-swiper .swiper-pagination-bullet-active {
-              background: #b87333;
-            }
-          `}</style>
         </div>
       </section>
 

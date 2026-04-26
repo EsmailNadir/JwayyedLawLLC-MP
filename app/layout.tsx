@@ -85,6 +85,10 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "JJ Law Ohio",
+  },
   verification: {
     // Add Google Search Console verification when available
     // google: 'your-verification-code',
