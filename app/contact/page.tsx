@@ -1,26 +1,15 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, Calendar, ArrowRight, ShieldCheck } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import Calendly from '@/components/calendly';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 
 export const metadata: Metadata = {
   title: 'Contact Our Ohio Law Firm | Schedule a Consultation | Jwayyed Law LLC',
   description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving Columbus, Franklin County, and all of Ohio in criminal defense, OVI/DUI, personal injury, and more.',
-};
-
-type InputFieldProps = {
-  label: string;
-  type: string;
-  name: string;
-  placeholder?: string;
-};
-
-type ContactDetailProps = {
-  icon: React.ReactNode;
-  title: string;
-  detail: string;
 };
 
 const breadcrumbItems = [{ label: 'Contact', href: '/contact' }];
@@ -52,128 +41,125 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Forms Section */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
-        <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
-          {/* Request a Consultation — Primary Form */}
-          <form
-            action="https://formspree.io/f/xyzjyzgv"
-            method="POST"
-            className="w-full lg:w-1/2 bg-[#b87333]/[0.03] border border-[#b87333]/20 border-l-4 border-l-[#b87333] shadow-lg p-5 sm:p-7 rounded-xl space-y-4 sm:space-y-5"
+      {/* How to Reach Us — Primary Contact Methods */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+        <div className="text-center mb-8 md:mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#b87333]/10 text-[#b87333] text-xs font-semibold uppercase tracking-wider mb-3 font-['Inter',_'Arial',_sans-serif]">
+            <ShieldCheck className="w-3.5 h-3.5" aria-hidden="true" />
+            Confidential Consultation
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-3">
+            How to Reach Us
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto font-['Inter',_'Arial',_sans-serif] leading-relaxed">
+            Choose the option that works best for you. Every inquiry is reviewed by our team and returned within one business day.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* Call Now — PRIMARY action */}
+          <a
+            href="tel:+16142855482"
+            aria-label="Call Jwayyed Law at (614) 285-5482"
+            className="group relative bg-[#b87333] text-white rounded-2xl p-7 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-[#b87333] focus:outline-none focus:ring-2 focus:ring-[#b87333]/40 focus:ring-offset-2"
           >
-            <div className="text-center mb-2">
-              <h2 className="text-xl sm:text-2xl font-semibold font-['Playfair_Display',_'Georgia',_serif] text-gray-900">
-                Request a Consultation
-              </h2>
-              <p className="text-sm text-gray-500 mt-1">
-                Suggest times that work for you - we&apos;ll confirm availability
-              </p>
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white/15 mb-5 transition-colors duration-300 group-hover:bg-white/20">
+              <Phone className="w-7 h-7" aria-hidden="true" />
             </div>
-
-            <input type="hidden" name="form_type" value="consultation_request" />
-
-            <InputField label="Name" type="text" name="consultation_name" />
-            <InputField label="Phone Number" type="tel" name="consultation_phone" />
-            <InputField label="Email" type="email" name="consultation_email" />
-
-            <div>
-              <label className="block text-gray-700 text-sm font-medium mb-1.5">
-                Preferred Times <span className="text-gray-400 font-normal">(Please suggest 2-3 options)</span>
-              </label>
-              <textarea
-                name="preferred_times"
-                placeholder="Example: Monday 3pm, Wednesday 10am, or Friday afternoon"
-                className="w-full border border-gray-200 rounded-lg px-4 py-2.5 h-24 resize-none focus:ring-2 focus:ring-[#b87333]/20 focus:border-[#b87333] outline-none text-sm transition-colors duration-200"
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700 text-sm font-medium mb-1.5">Brief Case Description</label>
-              <textarea
-                name="case_description"
-                placeholder="Please briefly describe your legal matter"
-                className="w-full border border-gray-200 rounded-lg px-4 py-2.5 h-20 resize-none focus:ring-2 focus:ring-[#b87333]/20 focus:border-[#b87333] outline-none text-sm transition-colors duration-200"
-                required
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-[#b87333] text-white px-6 py-3 rounded-xl hover:bg-[#a0632d] transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg active:scale-[0.99]"
-            >
-              Submit Request
-            </button>
-
-            <p className="text-xs text-gray-400 text-center">
-              Attorney will respond with available times within 24 hours
+            <h3 className="text-2xl font-['Playfair_Display',_'Georgia',_serif] font-semibold mb-2">
+              Call Now
+            </h3>
+            <p className="text-white/90 text-sm mb-5 leading-relaxed font-['Inter',_'Arial',_sans-serif]">
+              Speak directly with our team. The fastest way to discuss urgent matters or get same-day answers.
             </p>
-          </form>
+            <div className="flex items-center justify-between">
+              <span className="text-lg font-semibold tracking-wide font-['Inter',_'Arial',_sans-serif]">
+                (614) 285-5482
+              </span>
+              <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            </div>
+            <div className="mt-3 text-xs text-white/75 font-['Inter',_'Arial',_sans-serif]">
+              Mon–Fri · 9:00 AM – 5:00 PM
+            </div>
+          </a>
 
-          {/* General Inquiry — Secondary Form */}
-          <form
-            action="https://formspree.io/f/xyzjyzgv"
-            method="POST"
-            className="w-full lg:w-1/2 space-y-4 sm:space-y-5 bg-white shadow-md p-5 sm:p-7 rounded-xl border border-gray-100"
+          {/* Email — obfuscated client component */}
+          <ObfuscatedEmail />
+
+          {/* Visit Our Office */}
+          <a
+            href="https://www.google.com/maps/place/100+E+Campus+View+Blvd+%23250,+Columbus,+OH+43235"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get directions to our Columbus office"
+            className="group relative bg-white text-gray-900 rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-[#b87333]/40 focus:outline-none focus:ring-2 focus:ring-[#b87333]/40 focus:ring-offset-2"
           >
-            <h2 className="text-xl sm:text-2xl font-semibold font-['Playfair_Display',_'Georgia',_serif] text-gray-900 mb-2 text-center">
-              General Inquiry
-            </h2>
-            <InputField label="Name" type="text" name="name" />
-            <InputField label="Email" type="email" name="email" />
-            <InputField label="Phone Number" type="tel" name="phone" />
-            <div>
-              <label className="block text-gray-700 text-sm font-medium mb-1.5">Message</label>
-              <textarea
-                name="message"
-                className="w-full border border-gray-200 rounded-lg px-4 py-2.5 h-24 resize-none focus:ring-2 focus:ring-[#b87333]/20 focus:border-[#b87333] outline-none text-sm transition-colors duration-200"
-                required
-              />
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#b87333]/10 mb-5 transition-colors duration-300 group-hover:bg-[#b87333]/15">
+              <MapPin className="w-7 h-7 text-[#b87333]" aria-hidden="true" />
             </div>
-            <input type="hidden" name="form_type" value="general_inquiry" />
-            <button
-              type="submit"
-              className="w-full bg-gray-900 text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-all duration-200 text-sm font-semibold tracking-wide shadow-md hover:shadow-lg active:scale-[0.99]"
-            >
-              Submit
-            </button>
-            <p className="text-xs text-gray-400 text-center">
-              We respond to most inquiries within 24 hours.
+            <h3 className="text-2xl font-['Playfair_Display',_'Georgia',_serif] font-semibold mb-2">
+              Visit Our Office
+            </h3>
+            <p className="text-gray-600 text-sm mb-5 leading-relaxed font-['Inter',_'Arial',_sans-serif]">
+              100 E. Campus View Blvd, Suite 250
+              <br />
+              Columbus, OH 43235
             </p>
-          </form>
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-semibold text-[#b87333] tracking-wide font-['Inter',_'Arial',_sans-serif]">
+                Get Directions
+              </span>
+              <ArrowRight className="w-5 h-5 text-[#b87333] transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            </div>
+            <div className="mt-3 text-xs text-gray-500 font-['Inter',_'Arial',_sans-serif]">
+              By appointment only
+            </div>
+          </a>
+        </div>
+
+        {/* Office Hours Strip */}
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-700 font-['Inter',_'Arial',_sans-serif]">
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-[#b87333]" aria-hidden="true" />
+            <span><span className="font-semibold text-gray-900">Office Hours:</span> Mon–Fri, 9:00 AM – 5:00 PM</span>
+          </div>
+          <span className="hidden sm:inline text-gray-300">|</span>
+          <span className="text-gray-600">Saturday &amp; Sunday: Closed</span>
         </div>
       </section>
 
-      {/* Contact Information Cards */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <ContactCard
-            icon={<MapPin className="w-5 h-5 text-[#b87333]" />}
-            title="Office Location"
-            detail="100 E. Campus View Boulevard, Suite #250, Columbus, OH 43235"
-          />
-          <ContactCard
-            icon={<Phone className="w-5 h-5 text-[#b87333]" />}
-            title="Phone"
-            detail="(614) 285-5482"
-          />
-          <ContactCard
-            icon={<Mail className="w-5 h-5 text-[#b87333]" />}
-            title="Email"
-            detail="jwayyedlawllc@outlook.com"
-          />
-          <ContactCard
-            icon={<Clock className="w-5 h-5 text-[#b87333]" />}
-            title="Business Hours"
-            detail="Mon–Fri: 9:00 AM – 5:00 PM Sat–Sun: Closed"
-          />
+      {/* Calendly — Online Scheduling */}
+      <section className="bg-gradient-to-b from-gray-50 to-white py-12 md:py-16 border-y border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-6 md:mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#b87333]/10 text-[#b87333] text-xs font-semibold uppercase tracking-wider mb-3 font-['Inter',_'Arial',_sans-serif]">
+              <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
+              Online Scheduling
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-3">
+              Book Your Consultation
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto font-['Inter',_'Arial',_sans-serif] leading-relaxed">
+              Pick a time that works for you. Available slots update automatically — no email tag required.
+            </p>
+          </div>
+          <Calendly />
         </div>
       </section>
 
       {/* Google Maps */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        <div className="text-center mb-6">
+          <h2 className="text-2xl sm:text-3xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+            Find Our Office
+          </h2>
+          <p className="text-gray-600 text-sm font-['Inter',_'Arial',_sans-serif]">
+            100 E. Campus View Boulevard, Suite #250, Columbus, OH 43235
+          </p>
+        </div>
         <div className="w-full h-[300px] md:h-[450px] rounded-xl overflow-hidden shadow-lg">
           <iframe
+            title="Map showing Jwayyed Law LLC office location in Columbus, Ohio"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0585776308626!2d-83.02383492346433!3d40.03001627151842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e8c8c6b7d91%3A0xe7d5dd9b3e2335c!2s100%20E%20Campus%20View%20Blvd%20%23250%2C%20Columbus%2C%20OH%2043235!5e0!3m2!1sen!2sus!4v1703024773199!5m2!1sen!2sus"
             width="100%"
             height="100%"
@@ -189,24 +175,24 @@ const ContactPage = () => {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
         <div className="space-y-5">
           {/* Client Communication Notice */}
-          <div className="bg-amber-50/80 border border-amber-100 text-amber-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed">
+          <div className="bg-amber-50/80 border border-amber-100 text-amber-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed font-['Inter',_'Arial',_sans-serif]">
             <h3 className="font-semibold mb-1.5">Client Communication Notice:</h3>
             <p className="mb-2.5">
-              <strong>By Appointment Only.</strong> Walk-ins are not available. Please request your consultation using the form above or by calling our office. All consultation requests are subject to attorney availability and confirmation.
+              <strong>By Appointment Only.</strong> Walk-ins are not available. Please request your consultation by phone, email, or by booking online above. All consultation requests are subject to attorney availability and confirmation.
             </p>
             <p>
-              All phone calls, voicemails, emails, and website contact form submissions are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
+              All phone calls, voicemails, and emails are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
             </p>
           </div>
 
           {/* Emergency and Consultation Disclaimer */}
-          <div className="bg-red-50/60 border border-red-100 text-red-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed">
+          <div className="bg-red-50/60 border border-red-100 text-red-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed font-['Inter',_'Arial',_sans-serif]">
             <h3 className="font-semibold mb-1.5">Important Notice:</h3>
             <p className="mb-2.5">
-              <strong>If this is an emergency, please call 911 immediately.</strong> This website and contact form should not be used for urgent matters requiring immediate assistance.
+              <strong>If this is an emergency, please call 911 immediately.</strong> This website should not be used for urgent matters requiring immediate assistance.
             </p>
             <p>
-              <strong>Consultation Disclaimer:</strong> Submitting a contact form, leaving a voicemail, or scheduling a consultation does not create an attorney-client relationship. Attorney-client privilege and confidentiality do not apply until a formal representation agreement has been signed by both parties. Do not send confidential or time-sensitive information through this form.
+              <strong>Consultation Disclaimer:</strong> Sending an email, leaving a voicemail, or scheduling a consultation does not create an attorney-client relationship. Attorney-client privilege and confidentiality do not apply until a formal representation agreement has been signed by both parties. Do not send confidential or time-sensitive information by email or through online scheduling.
             </p>
           </div>
         </div>
@@ -214,28 +200,5 @@ const ContactPage = () => {
     </>
   );
 };
-
-const InputField = ({ label, type, name, placeholder }: InputFieldProps) => (
-  <div>
-    <label className="block text-gray-700 text-sm font-medium mb-1.5">{label}</label>
-    <input
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      required
-      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#b87333]/20 focus:border-[#b87333] outline-none text-sm transition-colors duration-200"
-    />
-  </div>
-);
-
-const ContactCard = ({ icon, title, detail }: ContactDetailProps) => (
-  <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm text-center">
-    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#b87333]/10 mb-3">
-      {icon}
-    </div>
-    <h4 className="font-semibold font-['Playfair_Display',_'Georgia',_serif] text-gray-900 text-sm mb-1">{title}</h4>
-    <p className="text-gray-600 text-sm leading-relaxed">{detail}</p>
-  </div>
-);
 
 export default ContactPage;
