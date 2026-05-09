@@ -12,9 +12,6 @@ export interface TeamMember {
   highlights?: string[];
 }
 
-export const roles = ['All', 'Attorneys', 'Staff', 'Interns'] as const;
-export type RoleFilter = (typeof roles)[number];
-
 export const teamMembers: TeamMember[] = [
   {
     slug: 'attorney-jwayyed',
@@ -62,22 +59,6 @@ export const teamMembers: TeamMember[] = [
     highlights: ['Capital University Law School', 'U.S. Air Force Veteran', 'Legal Intern Certificate'],
   },
   {
-    slug: 'layan-khairi',
-    name: 'Layan Khairi',
-    title: 'Legal Intern',
-    role: 'Intern',
-    image: '/assets/LayanKhairi.jpg',
-    shortBio:
-      'Pursuing a B.S. in Finance at The Ohio State University with a minor in Law and Public Policy. Brings strong analytical skills and a client-focused approach to document review and case preparation.',
-    fullBio: `<p>Layan Khairi joined Jwayyed Law LLC in 2026, bringing strong analytical skills and a thoughtful, client-focused approach to her work. She supports the team with document review and case preparation, contributing to the firm's commitment to thorough and strategic representation. Layan approaches each task with professionalism and attention to detail, ensuring that matters are handled efficiently and accurately.</p>
-
-<p>Layan is currently pursuing a Bachelor of Science in Finance at The Ohio State University, along with a minor in Law and Public Policy, and is expected to graduate in 2029. Her academic background in finance provides her with a strong foundation in analytical skills and corporate structure, which align with her long-term goal of practicing corporate law. While she maintains an interest in multiple areas of the legal field, she is particularly drawn to corporate and business-related matters.</p>
-
-<p>Bilingual in English and Arabic, Layan is able to communicate effectively with clients from diverse backgrounds. She is committed to developing the skills necessary to become a well-rounded attorney and is passionate about contributing meaningfully to the legal profession.</p>`,
-    profileLink: '/our-law-firm/our-attorneys/layan-khairi',
-    highlights: ['OSU Finance Major', 'Bilingual: English & Arabic', 'Law & Public Policy Minor'],
-  },
-  {
     slug: 'mateo-improvola',
     name: 'Mateo Improvola',
     title: 'Legal Intern',
@@ -97,14 +78,4 @@ export const teamMembers: TeamMember[] = [
 
 export function getMemberBySlug(slug: string): TeamMember | undefined {
   return teamMembers.find((m) => m.slug === slug);
-}
-
-export function getMembersByRole(filter: RoleFilter): TeamMember[] {
-  if (filter === 'All') return teamMembers;
-  const roleMap: Record<string, TeamMember['role']> = {
-    Attorneys: 'Attorney',
-    Staff: 'Staff',
-    Interns: 'Intern',
-  };
-  return teamMembers.filter((m) => m.role === roleMap[filter]);
 }
