@@ -116,7 +116,7 @@ export default function ExpungementRecordSealingPage() {
               If you have a prior criminal record in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to discuss whether record sealing may be available to you. Read our articles on <Link href="/our-law-firm/blog/ohio-new-expungement-laws-clear-record" className="text-[#b87333] underline hover:text-[#a06828]">Ohio&apos;s new expungement laws</Link> and <Link href="/our-law-firm/blog/what-is-expungement-ohio-2024" className="text-[#b87333] underline hover:text-[#a06828]">how expungement works in Ohio</Link>. Related services include <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">Ohio criminal defense</Link> and <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense</Link>. Note that OVI convictions under ORC 4511.19 are not sealable.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">

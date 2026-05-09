@@ -104,7 +104,7 @@ export default function CriminalTrespassPage() {
               The legal process for criminal trespass charges involves arraignment, discovery, pretrial negotiations, and potentially trial. Each stage presents opportunities for an experienced attorney to challenge the prosecution's evidence and negotiate favorable outcomes. Early intervention by a skilled attorney can often result in reduced charges, dismissed cases, or alternative resolutions.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of Criminal Trespass Under Ohio Law

@@ -104,7 +104,7 @@ export default function CriminalMischiefPage() {
               The legal process for criminal mischief charges involves arraignment, discovery, pretrial negotiations, and potentially trial. Each stage presents opportunities for an experienced attorney to challenge evidence, negotiate with prosecutors, and work toward favorable outcomes including dismissal, reduced charges, or alternative sentencing options.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of Criminal Mischief Under Ohio Law

@@ -193,7 +193,7 @@ export default function ClintonCountyCourtsPage() {
               your consultation.
             </p>
 
-            <LocationsWeServe title="Clinton County Legal Services" criminalDisclaimer={true} />
+            <LocationsWeServe title="Clinton County Legal Services"  />
 
           </div>
         </div>

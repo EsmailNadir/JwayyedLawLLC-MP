@@ -7,14 +7,20 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Municipal Court Attorney',
-  description: 'Experienced civil and business representation in Franklin County Municipal Court. Skilled representation for civil disputes, landlord-tenant matters.',
-  keywords: ['Franklin County Municipal Court attorney', 'Columbus Municipal Court civil lawyer', 'eviction attorney Columbus', 'landlord tenant lawyer Columbus'],
+  title: 'Franklin County Municipal Court Attorney | Columbus, OH',
+  description: 'OVI, criminal defense, and civil representation in Franklin County Municipal Court at 375 S. High St., Columbus. Call Jwayyed Law LLC — (614) 285-5482.',
+  keywords: [
+    'Franklin County Municipal Court attorney',
+    'Columbus Municipal Court OVI lawyer',
+    'criminal defense Franklin County Municipal Court',
+    'eviction attorney Columbus',
+    'Franklin County Municipal Court criminal lawyer',
+  ],
   openGraph: {
-    title: 'Franklin County Municipal Court Attorney',
+    title: 'Franklin County Municipal Court Attorney | Columbus, OH',
     url: 'https://www.jjlawohio.com/courts/franklin-county-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/courts/franklin-county-municipal-court' },
 };
 
@@ -26,36 +32,36 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What types of cases does your firm handle in Franklin County Municipal Court?`,
-    answer: `Due to a conflict, Jwayyed Law LLC handles only civil, business, estate planning, and probate matters in Franklin County Municipal Court. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County. Our civil representation in this court includes contract disputes, property damage claims, landlord-tenant matters, eviction proceedings, and business collections within the court's $15,000 civil jurisdictional limit.`,
+    question: `What types of cases does Jwayyed Law LLC handle in Franklin County Municipal Court?`,
+    answer: `Jwayyed Law LLC provides full-service representation in Franklin County Municipal Court, including OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container, and more), traffic defense, and civil matters (contract disputes, evictions, landlord-tenant proceedings, and business collections within the court's $15,000 civil jurisdictional limit). Call (614) 285-5482 to discuss your case.`,
   },
   {
-    question: `How does the eviction process work in Franklin County Municipal Court?`,
-    answer: `Ohio's eviction process (forcible entry and detainer) is governed by ORC Chapter 1923. In Franklin County, the process begins when a landlord serves the tenant with the appropriate written notice — typically a 3-day notice to pay rent or vacate for nonpayment, or a 30-day notice for other lease violations. If the tenant does not comply, the landlord files an eviction complaint in Franklin County Municipal Court. The court schedules a hearing, which must occur within 30 days of filing. If the landlord prevails, the court issues a judgment for possession and the tenant has a set period to vacate before a writ of restitution is issued authorizing law enforcement to remove the tenant. An attorney can help landlords navigate this process efficiently and avoid procedural errors that can delay eviction.`,
+    question: `What are the OVI penalties in Franklin County Municipal Court?`,
+    answer: `Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Franklin County Municipal Court carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums of 6 days. A second OVI within 10 years carries a minimum of 10 consecutive days, fines of $715 to $1,625, and suspension of 1 to 7 years. Felony OVI (4th degree) applies when there are 3 or more prior OVI convictions within 10 years.`,
+  },
+  {
+    question: `How do I appeal an Administrative License Suspension (ALS) in Franklin County?`,
+    answer: `Under ORC 4511.191, you have 30 days from the date of arrest to file an ALS appeal in Franklin County Municipal Court at 375 S. High Street, Columbus, OH 43215. The ALS takes effect immediately upon arrest and is a separate civil proceeding from the criminal OVI case. An attorney can file the appeal, request a stay of suspension, and challenge the suspension on procedural or substantive grounds before the deadline expires. Missing this 30-day window permanently forfeits your right to contest the ALS.`,
+  },
+  {
+    question: `What criminal misdemeanor cases are heard in Franklin County Municipal Court?`,
+    answer: `Franklin County Municipal Court handles all misdemeanor criminal charges arising within the court's jurisdiction, including: OVI/DUI, theft and shoplifting (M1 for amounts under $1,000), domestic violence (R.C. 2919.25), assault (R.C. 2903.13), drug possession (R.C. 2925.11), disorderly conduct (R.C. 2917.11), open container (R.C. 4301.62), driving under suspension, criminal damaging, criminal mischief, criminal trespass, obstructing official business, and resisting arrest. The court also handles felony arraignments before cases are bound over to Franklin County Common Pleas Court.`,
   },
   {
     question: `What is the civil jurisdictional limit of Franklin County Municipal Court?`,
-    answer: `Franklin County Municipal Court has civil jurisdiction over disputes where the amount in controversy does not exceed $15,000, excluding interest and costs. Claims above $15,000 must be filed in the Franklin County Common Pleas Court (General Division). Small claims cases — generally simpler disputes — are heard in the Small Claims Division with a $6,000 limit. If you are unsure which court has jurisdiction over your dispute, an attorney can help evaluate the amount in controversy and select the appropriate forum.`,
+    answer: `Franklin County Municipal Court has civil jurisdiction over disputes where the amount in controversy does not exceed $15,000, excluding interest and costs. Claims above $15,000 must be filed in the Franklin County Court of Common Pleas (General Division). Small claims cases are heard in the Small Claims Division with a $6,000 limit. If you are unsure which court has jurisdiction over your dispute, an attorney can help evaluate the amount in controversy and select the appropriate forum.`,
   },
   {
-    question: `How can I collect on a civil judgment in Franklin County?`,
-    answer: `After obtaining a civil judgment in Franklin County Municipal Court, a creditor can enforce the judgment through several mechanisms under Ohio law. Wage garnishment under ORC 2716.02 allows the creditor to collect up to 25% of the debtor's disposable earnings per pay period. A bank levy under ORC 2716.11 allows the creditor to attach funds in the debtor's bank accounts, subject to applicable exemptions. A judgment lien under ORC 2329.02 attaches to real property in the county where the judgment is filed and can be enforced upon sale or refinancing. An attorney can help navigate the post-judgment collection process and handle any exemption claims raised by the debtor.`,
+    question: `How does the eviction process work in Franklin County Municipal Court?`,
+    answer: `Ohio's eviction process (forcible entry and detainer) is governed by ORC Chapter 1923. In Franklin County, the process begins when a landlord serves the tenant with proper written notice — typically a 3-day notice for nonpayment of rent, or a 30-day notice for other lease violations. If the tenant does not comply, the landlord files an eviction complaint in Franklin County Municipal Court. Under ORC 1923.07, the court schedules a hearing within 30 days of filing. If the landlord prevails, the court issues a judgment for possession. After the appeal period, a writ of restitution authorizes law enforcement to remove the tenant. Procedural errors can result in dismissal, so proper compliance with ORC Chapter 1923 is critical.`,
   },
   {
-    question: `How does the small claims process work in Franklin County Municipal Court?`,
-    answer: `The Franklin County Municipal Court Small Claims Division handles civil disputes where the amount claimed does not exceed $6,000, excluding interest and costs. Small claims proceedings are designed to be accessible — parties may represent themselves, the rules of evidence are relaxed, and hearings are informal. However, having an attorney can still be valuable, particularly for business plaintiffs or defendants facing organized creditors. Small claims cases generally proceed faster than regular civil cases, with hearings often scheduled within 30 to 60 days of filing. Judgments obtained in small claims court are enforceable through the same collection mechanisms as regular civil judgments.`,
+    question: `What specialized dockets does Franklin County Municipal Court operate?`,
+    answer: `Franklin County Municipal Court operates several specialized dockets including: HART Court (a recovery docket for defendants with opioid addiction, offering treatment as an alternative to incarceration); MAVS Court (a mental health docket for defendants with serious mental illness); and CATCH Court (a specialized docket for adult female victims of human trafficking and sexual exploitation). Eligibility for these dockets may provide defendants with a path to treatment and dismissal of charges. An attorney can evaluate whether a client may qualify and advocate for placement.`,
   },
   {
-    question: `What is the Housing Division of Franklin County Municipal Court?`,
-    answer: `The Franklin County Municipal Court includes a Housing Division that handles residential eviction cases (forcible entry and detainer under ORC Chapter 1923) as well as cases involving violations of housing codes, rental inspection matters, and certain landlord-tenant disputes. The Housing Division provides a streamlined process for residential eviction matters in Franklin County. Landlords filing residential eviction cases should be prepared to demonstrate compliance with the notice requirements of ORC Chapter 1923. Tenants facing eviction in the Housing Division have the right to appear and present defenses, including payment of rent, habitability issues, and improper notice.`,
-  },
-  {
-    question: `How long do civil cases take in Franklin County Municipal Court?`,
-    answer: `The duration of civil cases in Franklin County Municipal Court varies depending on whether the case is contested, the complexity of the issues, and the court's schedule. Uncontested matters — such as default judgments on collection cases — can be resolved in weeks. Small claims cases typically reach hearing within 30 to 60 days of filing. Contested civil cases where discovery is necessary may take 6 to 12 months or longer. Eviction cases in the Housing Division are generally heard within 30 days under ORC 1923.07. An attorney familiar with Franklin County Municipal Court procedures can provide a realistic timeline based on the specifics of your matter.`,
-  },
-  {
-    question: `Do I need an attorney for civil matters in Franklin County Municipal Court?`,
-    answer: `While individuals may represent themselves in Franklin County Municipal Court civil proceedings, having an attorney provides meaningful advantages. An attorney can evaluate the strength of your claims or defenses, ensure procedural requirements are met, navigate discovery, negotiate settlements, and present your case effectively at hearing. In landlord-tenant and eviction matters, procedural errors — such as an improper notice or failure to comply with ORC Chapter 1923 — can result in dismissal and delay. For business entities, Ohio law may require attorney representation in certain court proceedings. Jwayyed Law LLC handles civil, business, and related matters in Franklin County Municipal Court and can help you achieve efficient, effective results.`,
+    question: `Why hire Jwayyed Law LLC for a Franklin County Municipal Court case?`,
+    answer: `Jwayyed Law LLC provides experienced representation across all of Franklin County Municipal Court's divisions — criminal, OVI, traffic, civil, and eviction. Our firm understands the court's procedures, the local prosecutors' practices, and the specialized dockets available for certain defendants. We act quickly to file ALS appeals (30-day deadline from arrest), obtain evidence, and develop defense strategies tailored to each case. For criminal and OVI matters, early intervention is critical. Call (614) 285-5482 to discuss your Franklin County Municipal Court case.`,
   },
 ];
 
@@ -65,53 +71,87 @@ export default function FranklinCountyMunicipalCourtPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Franklin County Municipal Court Attorney"
-        description="Experienced legal representation in Franklin County Municipal Court. Serving Columbus and throughout Franklin County."
+        description="OVI defense, criminal misdemeanor defense, and civil representation at Franklin County Municipal Court, 375 S. High Street, Columbus, OH 43215."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              Experienced legal representation in Franklin County Municipal Court for civil, business, and related matters. Serving Columbus and throughout Franklin County. Contact us at <a href="tel:6142855482" className="text-accent hover:underline">(614) 285-5482</a> or <Link href="/contact" className="text-accent hover:underline">schedule a consultation</Link>.
+
+            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+              Full-Service Representation at Franklin County Municipal Court
+            </h2>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Franklin County Municipal Court, located at <strong>375 S. High Street, Columbus, OH 43215</strong> (floors 12–15), is the busiest municipal court in Ohio — hearing tens of thousands of criminal, OVI, traffic, and civil cases each year for Columbus and the surrounding Franklin County communities. Jwayyed Law LLC provides experienced representation in all divisions of this court, including OVI and DUI defense, criminal misdemeanor defense, traffic violations, civil disputes, and landlord-tenant matters. Call{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              to speak with an attorney about your Franklin County Municipal Court case.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              OVI / DUI Defense at Franklin County Municipal Court
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              OVI charges under{' '}
+              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">Ohio Revised Code 4511.19</Link>{' '}
+              are among the most frequently litigated matters in Franklin County Municipal Court. A first OVI conviction carries mandatory minimum penalties: 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years — all significantly revised under HB 37, effective April 9, 2025. High-tier OVI charges (BAC 0.17% or above) carry enhanced mandatory minimums even for first-time defendants. A second OVI within 10 years escalates to a minimum of 10 consecutive days in jail, fines of $715 to $1,625, and suspension of 1 to 7 years.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County Municipal Court is located at <strong>375 S. High Street, Columbus, OH 43215</strong>, with branch locations throughout the county. The court serves Columbus and surrounding communities and handles a broad range of civil, landlord-tenant, and business matters within its jurisdictional limits.
+              Upon an OVI arrest anywhere in Franklin County, the arresting officer immediately issues an Administrative License Suspension (ALS) notice under ORC 4511.191. The ALS is a separate civil proceeding from the criminal OVI case — and you have only <strong>30 days from the date of arrest</strong> to appeal it in Franklin County Municipal Court. Our firm treats the ALS appeal as an emergency matter, filing immediately and requesting a stay of suspension so you can continue driving during the appeal process. Missing this window permanently forfeits your right to contest the suspension.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
-              <strong>Disclaimer:</strong> Due to a conflict, Jwayyed Law LLC handles only <strong>civil</strong>, <strong>business</strong>, <strong>estate planning</strong>, and <strong>probate</strong> matters in Franklin County. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County.
-            </p>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Court Divisions and Civil Jurisdiction</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County Municipal Court has civil jurisdiction over disputes where the amount in controversy does not exceed $15,000, excluding interest and costs. The court operates several divisions relevant to civil and business matters. The Civil Division handles contract disputes, property damage claims, and other civil cases up to the $15,000 limit. The Small Claims Division handles simpler disputes up to $6,000 where parties often appear without attorneys, though having legal representation is still permitted and can be advantageous. The Housing Division handles residential eviction matters (forcible entry and detainer) under ORC Chapter 1923 and certain housing code enforcement matters. For disputes exceeding $15,000, cases must be filed in Franklin County Common Pleas Court (General Division).
+              Our OVI defense strategy at Franklin County Municipal Court includes: evaluating the constitutionality of the initial traffic stop; reviewing body-cam and dash-cam footage of field sobriety test administration; challenging whether NHTSA-standardized procedures were followed for the HGN, walk-and-turn, and one-leg stand tests; obtaining breathalyzer maintenance and calibration records to challenge BAC accuracy; and analyzing blood-draw chain-of-custody documentation. Where BAC is near the legal threshold, the rising BAC defense — arguing BAC was below 0.08% at the time of driving and rose before testing — can be a viable argument. For clients facing career consequences, we also evaluate the impact of an OVI on professional licenses regulated by Ohio boards.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Eviction and Landlord-Tenant Matters</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Criminal Misdemeanor Defense
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio's eviction process (forcible entry and detainer) under ORC Chapter 1923 is heard in Franklin County Municipal Court's Housing Division. Before filing an eviction, a landlord must serve the tenant with proper written notice — typically a 3-day notice to vacate for nonpayment of rent or for other material lease violations. After the notice period expires without compliance, the landlord may file an eviction complaint. Under ORC 1923.07, the court must schedule a hearing within 30 days of the filing. If the landlord prevails, the court issues a judgment for possession of the premises. After the appeal period expires, the landlord may request a writ of restitution authorizing the bailiff to remove the tenant. Procedural compliance is critical — errors in the notice or complaint can result in dismissal and require the landlord to start over.
+              Franklin County Municipal Court handles the full range of misdemeanor criminal charges for Columbus and all Franklin County municipalities. Common cases our firm defends include theft and shoplifting under ORC 2913.02 (misdemeanor of the first degree for amounts under $1,000, with up to 180 days in jail and a $1,000 fine); domestic violence under ORC 2919.25 (M1 for physical harm, M4 for threats — with significant collateral consequences including the federal Lautenberg Amendment's permanent firearm prohibition triggered by any misdemeanor DV conviction); assault under ORC 2903.13 (M1 baseline, escalating to felony in certain circumstances); drug possession under ORC 2925.11; disorderly conduct under ORC 2917.11; and open container under ORC 4301.62.
             </p>
-
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Business Collections and Civil Judgment Enforcement</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County Municipal Court is a practical forum for businesses seeking to collect on unpaid invoices, breach of contract claims, and other commercial disputes under $15,000. After obtaining a civil judgment, creditors can pursue collection through wage garnishment under ORC 2716.02 (up to 25% of disposable earnings), bank account levies under ORC 2716.11, or judgment liens on real property under ORC 2329.02. Debtors have the right to claim Ohio property exemptions under ORC 2329.66 in response to garnishment or levy proceedings, and responding to these exemption claims correctly is important for creditors. An attorney experienced in Franklin County Municipal Court can help businesses file collection cases, obtain default judgments when appropriate, and pursue effective post-judgment remedies.
+              Franklin County Municipal Court's high caseload means that early, informed advocacy is essential. Our firm obtains all available evidence — including police body-cam footage, incident reports, witness statements, and any applicable forensic evidence — before evaluating any plea offer. Franklin County prosecutors routinely offer diversion programs for first-time offenders in appropriate cases, and our firm understands when to pursue those options and when to push for dismissal or trial. A misdemeanor conviction creates a permanent criminal record accessible to employers, landlords, and licensing boards, which is why every case in Franklin County Municipal Court deserves aggressive representation regardless of the charge.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Civil Procedure in Municipal Court</h3>
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Specialized Dockets — HART, MAVS, and CATCH Courts
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Ohio Rules of Civil Procedure apply in Franklin County Municipal Court, with some modifications applicable to courts of limited jurisdiction. Defendants in civil cases must file a timely Answer — generally within 28 days of service of the complaint — or face a default judgment. Discovery may be available in contested civil cases, though the scope is often more limited than in Common Pleas Court given the lower amounts in controversy. Parties have the right to a bench trial or jury trial depending on the type of case. Cases that cannot be resolved through settlement or summary procedures proceed to hearing before a judge or magistrate. Magistrates in Municipal Court handle many civil and eviction matters, with the right to object to a magistrate's decision and seek review by the assigned judge.
+              Franklin County Municipal Court operates three specialized dockets that may provide defendants with treatment-based alternatives to traditional prosecution. <strong>HART Court</strong> is a recovery-focused docket for defendants with opioid use disorder, offering structured treatment programming as an alternative to incarceration for eligible drug-related offenses. <strong>MAVS Court</strong> is a mental health docket serving defendants with serious mental illness, connecting them with community mental health services as part of their case disposition. <strong>CATCH Court</strong> is a specialized docket specifically designed for adult female victims of human trafficking and sexual exploitation, providing comprehensive social services and legal advocacy. Placement in a specialized docket can result in dismissal of charges upon successful program completion. An attorney can evaluate eligibility and advocate for placement in the appropriate docket.
             </p>
 
-            <LocationsWeServe title="Civil" />
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Civil Jurisdiction — Disputes, Collections, and Evictions
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Franklin County Municipal Court has civil jurisdiction over disputes where the amount in controversy does not exceed $15,000, excluding interest and costs. The Civil Division handles contract disputes, property damage claims, and commercial collections. The Small Claims Division handles simpler disputes up to $6,000. The Housing Division handles residential evictions (forcible entry and detainer under ORC Chapter 1923), housing code enforcement, and certain landlord-tenant matters. For disputes exceeding $15,000, cases must be filed in Franklin County Court of Common Pleas (General Division).
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio's eviction process requires strict procedural compliance. Before filing an eviction complaint, a landlord must serve the tenant with the appropriate written notice — typically a 3-day notice to vacate for nonpayment of rent, or a 30-day notice for other material lease violations under ORC Chapter 5321. After the notice period expires without compliance, the landlord files an eviction complaint in the Housing Division. Under ORC 1923.07, the court must schedule a hearing within 30 days. If the landlord prevails, the court issues a judgment for possession, and after the appeal period, a writ of restitution authorizes law enforcement to remove the tenant. Procedural errors — an improper notice, failure to comply with ORC 5321 habitability requirements, or an incorrect court filing — can result in dismissal and significant delay.
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              After obtaining a civil judgment, creditors may enforce it through wage garnishment under ORC 2716.02 (up to 25% of disposable earnings), bank account levies under ORC 2716.11, or judgment liens on real property under ORC 2329.02. Debtors may claim Ohio property exemptions under ORC 2329.66 in response to garnishment or levy proceedings. Our firm handles both creditor-side collections and debtor-side defense in Franklin County Municipal Court post-judgment proceedings.
+            </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How We Can Help</h3>
+            <LocationsWeServe title="Franklin County & Ohio" />
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              How We Can Help
+            </h3>
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
-              <li><strong>Civil matters:</strong> Contract disputes, property damage claims, and civil collections within the $15,000 jurisdictional limit</li>
-              <li><strong>Landlord-tenant matters:</strong> Residential evictions, lease enforcement, and Housing Division proceedings under ORC Chapter 1923</li>
-              <li><strong>Business matters:</strong> Business-related civil litigation and commercial collections within Municipal Court jurisdiction</li>
-              <li><strong>Post-judgment enforcement:</strong> Wage garnishment, bank levies, and judgment lien filings after obtaining a civil judgment</li>
+              <li><strong>OVI / DUI defense:</strong> ALS appeals (30-day deadline), first/second/third offense defense, high-tier OVI, CDL OVI, limited driving privileges</li>
+              <li><strong>Criminal misdemeanor defense:</strong> Theft, domestic violence, assault, drug possession, disorderly conduct, open container, driving under suspension, and more</li>
+              <li><strong>Traffic violations:</strong> Speeding, reckless operation, failure to comply, marked lanes, and other traffic charges in Franklin County</li>
+              <li><strong>Expungement:</strong> Record sealing for eligible misdemeanor convictions after applicable waiting periods under R.C. 2953.32</li>
+              <li><strong>Civil disputes:</strong> Contract claims, property damage, and commercial collections within the $15,000 jurisdictional limit</li>
+              <li><strong>Evictions:</strong> Residential and commercial eviction proceedings in the Housing Division under ORC Chapter 1923</li>
+              <li><strong>Post-judgment enforcement:</strong> Wage garnishment, bank levies, and judgment lien filings</li>
             </ul>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have a civil, business, or related matter in Franklin County Municipal Court, contact Jwayyed Law LLC at <a href="tel:6142855482" className="text-accent hover:underline">(614) 285-5482</a> or <Link href="/contact" className="text-accent hover:underline">schedule a consultation</Link>. We will review your case, explain court procedures, discuss your options, and develop a strategy tailored to your situation.
+              If you have a criminal, OVI, traffic, or civil matter in Franklin County Municipal Court, contact Jwayyed Law LLC immediately at{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              or{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              For OVI arrests, the 30-day ALS appeal deadline cannot be extended — early contact is critical.
             </p>
           </div>
         </div>

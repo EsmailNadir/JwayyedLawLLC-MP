@@ -106,9 +106,6 @@ export default function OVIDefensePage() {
               Experienced OVI/DUI Defense Representation in Ohio
             </h2>
             
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed rounded-lg bg-amber-50 border border-amber-200 p-4">
-              <strong>Disclaimer:</strong> Due to a conflict, Jwayyed Law LLC handles only civil, business, estate planning, and probate matters in Franklin County. We do not handle criminal defense, OVI/DUI, or traffic violations in Franklin County.
-            </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Facing OVI (Operating a Vehicle Impaired) charges throughout Ohio carries severe criminal penalties, license suspension, and long-term consequences that extend far beyond fines and jail time. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation for individuals charged under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws including current requirements under HB 37 (Liv's Law, effective April 2025; current as of 2026), administrative license suspension procedures, and defense strategies necessary to protect your rights and achieve favorable outcomes.
             </p>
@@ -133,12 +130,12 @@ export default function OVIDefensePage() {
               OVI / DUI – Locations We Serve
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We represent clients in OVI cases in the following Ohio counties and courts. Each county has its own page and court procedures; click through for court-specific information. (Note: We do not handle criminal or OVI matters in Franklin County due to a conflict—see Franklin County for civil, business, and estate planning.)
+              We represent clients in OVI cases in the following Ohio counties and courts. Each county has its own page and court procedures; click through for court-specific information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information & practice areas</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Franklin County Municipal Court</span>
               </Link>
               <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Delaware County</span>

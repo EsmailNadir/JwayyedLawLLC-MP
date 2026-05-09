@@ -73,20 +73,57 @@ export default function BusinessFormationLLCFranklinCountyPage() {
               Business & LLC Formation in Franklin County
             </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County is the commercial and governmental heart of Ohio. Columbus — the state capital and Ohio&apos;s largest city — anchors a county that also includes Dublin, Westerville, Hilliard, Gahanna, Grove City, Reynoldsburg, and Worthington. The county&apos;s diverse economy spans technology, healthcare, finance, higher education, professional services, manufacturing, retail, and hospitality. Jwayyed Law LLC is a Columbus-based firm, and business formation in Franklin County is a central part of our practice. We help entrepreneurs and business owners throughout the county form LLCs, corporations, and other business entities correctly under current Ohio law.
+              Franklin County is the commercial and governmental heart of Ohio. Columbus — the state capital and Ohio&apos;s largest city — anchors a county that also includes Dublin, Westerville, Hilliard, Gahanna, Grove City, Reynoldsburg, and Worthington. The county&apos;s diverse economy spans technology, healthcare, finance, higher education, professional services, manufacturing, retail, and hospitality. Jwayyed Law LLC is a Columbus-based firm, and business formation in Franklin County is a central part of our practice. We help entrepreneurs and business owners throughout the county form LLCs, corporations, and other business entities correctly under current Ohio law — ORC Chapter 1706 for LLCs and ORC Chapter 1701 for corporations. Call{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              to discuss your formation needs.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Ohio LLC Formation Under ORC Chapter 1706
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, effective February 11, 2022. Chapter 1706 replaced the former Chapter 1705 and significantly modernized Ohio LLC law. Key features include authorization for series LLCs (allowing one entity to maintain distinct series with separate assets and liabilities); more detailed default governance rules clarifying which provisions the operating agreement must address versus which defaults apply in silence; enhanced flexibility for corporate-style management structures within an LLC; and streamlined procedures for member admission, withdrawal, and dissolution. All Ohio LLCs — whether formed before or after 2022 — are now governed by Chapter 1706.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, which became effective February 2022 and replaced the former Chapter 1705. Chapter 1706 represents a significant modernization of Ohio LLC law — introducing series LLC capabilities, enhanced management flexibility, and clearer rules governing the operating agreement. Ohio corporations remain under ORC Chapter 1701. As a Columbus firm with direct experience in Ohio&apos;s business formation landscape, our attorney provides clear and current guidance on entity selection and structure.
+              Formation requires filing Articles of Organization (Form 533A) with the Ohio Secretary of State and paying the applicable filing fee. Once processed, the LLC exists as a legal entity. Post-formation obligations include designating a statutory agent with a physical Ohio address under ORC 1705.06 (incorporated into Chapter 1706), obtaining a federal Employer Identification Number, preparing a written operating agreement, and completing any applicable state and local tax registrations. Our attorney guides clients through the complete formation process — from entity selection through post-formation compliance.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              LLC vs. Corporation — Choosing the Right Entity for Your Columbus Business
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Ohio LLCs offer flexible management, pass-through taxation by default, and lower ongoing compliance requirements than Ohio corporations. Corporations (ORC Chapter 1701) require a board of directors, formal officer appointments, annual shareholder meetings, and detailed record-keeping — but they are the preferred structure for businesses seeking venture capital investment, planning to issue multiple classes of stock, or working toward a public offering. Columbus&apos;s growing technology and startup ecosystem includes both LLC-based companies and corporations depending on funding strategy and investor expectations.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The operating agreement is the single most important document in any multi-member LLC — and one of the most frequently neglected. Online formation services provide generic templates that leave critical questions unaddressed: how are profits really shared? Who has the final say when co-owners disagree? What happens if one owner wants to sell their interest, becomes incapacitated, or passes away? In Columbus&apos;s active startup and professional services environment, co-founder disputes and ownership disagreements are a leading cause of early business failure. Our attorney prepares operating agreements tailored to your specific ownership, industry, and management structure.
+              S corporations — a federal tax election available to qualifying Ohio corporations and LLCs — provide pass-through taxation while maintaining corporate formality, and are frequently used by Columbus-area professional service firms and closely held businesses. C corporations are required for businesses anticipating significant outside investment or issuing preferred stock to investors. The right entity for your Franklin County business depends on your industry, ownership structure, funding plans, and tax situation. Our attorney provides specific guidance — not generic recommendations — based on your actual business circumstances.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Operating Agreements — The Foundation of Every Franklin County LLC
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              The operating agreement is the most important document in any Ohio LLC. Under ORC Chapter 1706, many default statutory rules apply in the absence of a contrary provision in an operating agreement — and those defaults often do not reflect a business&apos;s actual intentions. A customized operating agreement addresses ownership percentages and capital contributions, profit and loss allocations, management authority and voting rights, restrictions on transfer of membership interests, buy-sell provisions for member exits or death, dispute resolution procedures, and dissolution mechanics. For Columbus-area multi-member LLCs — whether technology startups, professional practices, real estate ventures, or family businesses — a detailed written operating agreement is the foundation that prevents costly disputes and protects all members.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County&apos;s professional services sector — law firms, medical practices, accounting firms, consulting businesses, and technology companies — may have specific legal structure requirements. Ohio licensed professionals in medicine, law, and other regulated fields may be required to use professional corporations (PCs) or professional LLCs (PLLCs). Real estate investors in Columbus benefit from LLC holding company structures that separate individual properties and limit cross-liability. Our attorney advises on these industry-specific and asset-specific formation needs.
+              Online formation services file the paperwork but cannot draft a meaningful operating agreement. Generic templates leave critical gaps that only surface when a dispute arises — typically the worst possible time to discover that the document does not say what the owners thought it said. In Columbus&apos;s active startup environment, co-founder disagreements and ownership disputes are a leading cause of early business failure. Our attorney drafts operating agreements tailored to your specific ownership structure, industry, and management model.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Professional LLCs, Series LLCs, and Real Estate Holding Structures
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Franklin County&apos;s professional services sector — medical practices, law firms, accounting firms, and other licensed professions — may be required to form professional LLCs (PLLCs) or professional corporations (PCs) under Ohio licensing regulations. Ohio licensed professionals in medicine, law, dentistry, optometry, and other regulated fields must use the appropriate entity type or risk operating in violation of licensure requirements. Our attorney advises on Ohio&apos;s professional entity requirements and ensures formation is compliant with the applicable licensing board&apos;s rules.
+            </p>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Columbus-area real estate investors frequently benefit from series LLC structures under ORC Chapter 1706, which allow a single LLC to maintain legally separate series — each with its own assets, liabilities, and members — reducing cross-liability between properties. Holding company structures using multiple LLCs can further isolate risk across a portfolio of rental properties, commercial real estate, or development projects. Our attorney designs holding structures that provide maximum liability protection while minimizing formation and administrative costs.
+            </p>
+
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              As a Columbus-based law firm, Jwayyed Law LLC serves Franklin County business clients with local knowledge and statewide capability. Ohio business formation is handled through the Ohio Secretary of State and our services are available to clients across Ohio. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              As a Columbus-based law firm, Jwayyed Law LLC serves Franklin County business clients with local knowledge and statewide capability. Contact us at{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              or{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>{' '}
+              to discuss your business formation needs. Learn more about our{' '}
               <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>

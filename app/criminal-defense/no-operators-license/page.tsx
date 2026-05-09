@@ -104,7 +104,7 @@ export default function NoOperatorsLicensePage() {
               Ohio law distinguishes between driving without a license and driving under suspension, and the penalties differ accordingly. Understanding which charge applies to your situation and the available defenses is essential for building an effective defense strategy. Our attorney will analyze your specific circumstances, review the evidence, and develop a plan to achieve the best possible outcome.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of No Operator&apos;s License Situations

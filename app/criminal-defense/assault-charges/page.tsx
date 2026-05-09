@@ -102,7 +102,7 @@ export default function AssaultChargesPage() {
               The legal process for assault charges begins with arrest and initial court appearances, followed by discovery, pretrial motions, plea negotiations, and potentially trial. Each stage requires strategic decision-making and experienced legal representation. Early intervention by a skilled defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Assault Charges in Ohio

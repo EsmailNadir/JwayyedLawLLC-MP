@@ -84,12 +84,12 @@ export default function SecondOVIPage() {
             </p>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Second OVI – Counties We Serve</h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We represent clients facing second OVI charges in the following Ohio counties and courts. Each county has its own page; click through for court information. (We do not handle OVI in Franklin County due to a conflict.)
+              We represent clients facing second OVI charges in the following Ohio counties and courts. Each county has its own page; click through for court information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information</span>
+                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Franklin County Municipal Court</span>
               </Link>
               <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Delaware County</span>

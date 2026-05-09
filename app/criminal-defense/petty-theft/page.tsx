@@ -104,7 +104,7 @@ export default function PettyTheftPage() {
               The legal process for petty theft charges involves arraignment, discovery, pretrial negotiations, and potentially trial. Many petty theft cases are resolved through pretrial negotiations, particularly for first-time offenders. An experienced attorney can negotiate for diversion programs, reduced charges, or dismissals that protect your record and future.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Types of Petty Theft Under Ohio Law

@@ -212,7 +212,7 @@ export default function MontgomeryCountyCourtsPage() {
               client. Call <strong>(614) 285-5482</strong> to schedule your free initial consultation.
             </p>
 
-            <LocationsWeServe title="Montgomery County Legal Services" criminalDisclaimer={true} />
+            <LocationsWeServe title="Montgomery County Legal Services"  />
 
           </div>
         </div>

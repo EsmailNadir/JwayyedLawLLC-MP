@@ -124,7 +124,7 @@ export default function UnderageOVIPage() {
               <li><strong>Future Protection:</strong> Structure outcomes to minimize impact on college, scholarships, and professional licensing</li>
             </ul>
 
-            <LocationsWeServe title="OVI/DUI Defense" criminalDisclaimer />
+            <LocationsWeServe title="OVI/DUI Defense" />
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">

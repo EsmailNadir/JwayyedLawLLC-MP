@@ -188,7 +188,7 @@ export default function DelawareCountyCourtsPage() {
               advocacy. Call <strong>(614) 285-5482</strong> or contact us online to schedule a consultation.
             </p>
 
-            <LocationsWeServe title="Delaware County Legal Services" criminalDisclaimer={true} />
+            <LocationsWeServe title="Delaware County Legal Services"  />
 
           </div>
         </div>

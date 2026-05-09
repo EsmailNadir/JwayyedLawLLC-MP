@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for First-Time Defendants</h2>
       <p>If this is your first OVI, you may feel alone and unsure what to expect. Many first-time defendants receive alternatives to jail—such as the Driver Intervention Program or probation—especially with an attorney advocating for them. See our <a href="/our-law-firm/case-results">case results</a> for examples of outcomes we have achieved.</p>
 
-      <p>If you have been stopped or charged with OVI in Ohio, Jwayyed Law LLC is ready to review your case and help you understand your options. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>If you have been stopped or charged with OVI in Ohio, Jwayyed Law LLC is ready to review your case and help you understand your options. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
       <h2>When to Seek Legal Counsel</h2>
       <p>Even clear-cut self-defense situations can lead to criminal charges. Prosecutors may question whether the threat was truly imminent, whether the level of force was reasonable, whether you could have avoided the confrontation, or whether you were the initial aggressor. If you have used force in self-defense, contact an attorney before speaking with investigators. Statements made while emotional or in shock can be taken out of context and used against you.</p>
 
-      <p>If you are facing charges related to the use of force in Ohio, Jwayyed Law LLC can evaluate the facts and help build a defense that protects your rights under Ohio&apos;s self-defense statutes. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>If you are facing charges related to the use of force in Ohio, Jwayyed Law LLC can evaluate the facts and help build a defense that protects your rights under Ohio&apos;s self-defense statutes. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -305,7 +305,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Should You Hire an Attorney Before the Arraignment?</h2>
       <p>Ideally, yes. Having an attorney at arraignment ensures you enter the correct plea, that your bond conditions are fair and achievable, and that no rights are waived inadvertently. In high-volume municipal courts, arraignments move quickly with limited time for questions. An attorney familiar with the court and its judges can advocate for favorable bond conditions and set the tone for the rest of your case. If you cannot afford an attorney, request a public defender at arraignment.</p>
 
-      <p>If you are facing criminal charges and have an upcoming arraignment in any Ohio court, Jwayyed Law LLC can represent you from the very first hearing and guide you through every stage of the process. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
+      <p>If you are facing criminal charges and have an upcoming arraignment in any Ohio court, Jwayyed Law LLC can represent you from the very first hearing and guide you through every stage of the process. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -415,7 +415,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What to Do After a Stop</h2>
       <p>Write down everything you remember as soon as possible: time, location, weather, the officer&apos;s name and badge number, what was said. Note the agency and get the case number from your citation if you received one. Do not discuss the stop with anyone except your attorney. Do not post about it on social media. If you believe the officer used excessive force or violated your rights, you can file a complaint with the police department&apos;s internal affairs division.</p>
 
-      <p>If you are facing charges arising from a traffic stop in Ohio—OVI/DUI, drug possession, or other charges—Jwayyed Law LLC can review the details of your stop and help protect your constitutional rights. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
+      <p>If you are facing charges arising from a traffic stop in Ohio—OVI/DUI, drug possession, or other charges—Jwayyed Law LLC can review the details of your stop and help protect your constitutional rights. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
       <p>Courts often restrict driving to specific hours, routes, and purposes. You may be required to use an ignition interlock device—a breathalyzer installed in your vehicle that requires you to blow into it before the car starts. The court will specify all conditions in the written order. Driving outside these terms—even one mile off the approved route or one hour outside approved times—can result in charges for driving under suspension, which carries its own penalties.</p>
 
       <h2>Why Legal Help Matters</h2>
-      <p>Navigating the waiting periods, filing deadlines, and court requirements can be complex. An experienced <a href="/ovi-dui-defense">OVI attorney</a> understands how different judges approach these motions and can craft arguments that resonate with the specific court. If you are facing an OVI suspension in Ohio, Jwayyed Law LLC can help you understand your options and apply for limited driving privileges that meet your needs. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>Navigating the waiting periods, filing deadlines, and court requirements can be complex. An experienced <a href="/ovi-dui-defense">OVI attorney</a> understands how different judges approach these motions and can craft arguments that resonate with the specific court. If you are facing an OVI suspension in Ohio, Jwayyed Law LLC can help you understand your options and apply for limited driving privileges that meet your needs. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -473,7 +473,7 @@ export const blogPosts: BlogPost[] = [
       <p>The 30-day deadline under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.191" target="_blank" rel="noopener noreferrer">Ohio Revised Code 4511.191</a> is strict and does not have exceptions. Courts generally do not extend it, no matter the circumstances. If you miss it—even by one day—your only option is to wait out the suspension and apply for limited driving privileges when eligible. You lose your right to challenge the suspension itself.</p>
 
       <h2>What You Need to Do</h2>
-      <p>Contact an attorney as soon as possible after your arrest. An experienced <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, request a stay of suspension (allowing you to keep driving until the hearing), and represent you at the BMV hearing. The criminal case and the ALS appeal run on separate tracks—both need immediate attention from day one. If you have been arrested for OVI in Ohio, do not wait. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio except Franklin County for OVI matters due to a conflict. Time is critical.</p>
+      <p>Contact an attorney as soon as possible after your arrest. An experienced <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, request a stay of suspension (allowing you to keep driving until the hearing), and represent you at the BMV hearing. The criminal case and the ALS appeal run on separate tracks—both need immediate attention from day one. If you have been arrested for OVI in Ohio, do not wait. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities. Time is critical.</p>
     `,
   },
   {
@@ -628,7 +628,7 @@ export const blogPosts: BlogPost[] = [
       <p>A first OVI brings license suspension (6 months to 3 years depending on BAC and refusal), fines ($565 to $1,075), court costs, driver&apos;s license reinstatement fees ($315+), ignition interlock costs if ordered ($50–$100/month), and required participation in a Driver Intervention Program or substance abuse counseling. You may be eligible for <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> after 15 days (30 if you refused).</p>
 
       <h2>Why an Attorney Matters</h2>
-      <p>An experienced <a href="/ovi-dui-defense">OVI attorney</a> can challenge the traffic stop, question the administration and accuracy of field sobriety tests or breath tests, identify constitutional violations, negotiate with prosecutors for reduced charges or better plea offers, and argue to the judge for jail alternatives. The difference between representing yourself and having an attorney can be months of jail time, thousands in fines and costs, and years of license suspension. If you are facing first-time OVI charges in Ohio, Jwayyed Law LLC can help. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>An experienced <a href="/ovi-dui-defense">OVI attorney</a> can challenge the traffic stop, question the administration and accuracy of field sobriety tests or breath tests, identify constitutional violations, negotiate with prosecutors for reduced charges or better plea offers, and argue to the judge for jail alternatives. The difference between representing yourself and having an attorney can be months of jail time, thousands in fines and costs, and years of license suspension. If you are facing first-time OVI charges in Ohio, Jwayyed Law LLC can help. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -662,7 +662,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Long-Term Costs</h2>
       <p>An OVI conviction affects employment prospects for years. Many employers run background checks and view DUI convictions negatively. Certain professions (transportation, healthcare, education) may be closed to you. Housing and rental applications may be affected. Professional licensing may be blocked. The total cost of an OVI in Ohio—combining court fines, suspension fees, insurance increases, lost income, and employment impacts—can easily exceed $15,000–$30,000 or more over several years.</p>
 
-      <p>If you are facing OVI charges in Ohio, Jwayyed Law LLC can help you understand the true costs and work to minimize them. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>If you are facing OVI charges in Ohio, Jwayyed Law LLC can help you understand the true costs and work to minimize them. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Self-defense</strong> is a common and powerful defense if you reasonably believed you needed to use force to protect yourself from imminent harm. <strong>Defense of others</strong>—using reasonable force to protect a family member or someone else—is also valid. Other defenses include lack of intent to cause harm, mistaken identity, or insufficient evidence. An attorney can evaluate your situation and develop the strongest defense strategy.</p>
 
       <h2>What You Should Do</h2>
-      <p>Do not discuss the case with anyone except your attorney. Do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible. The sooner you get legal help, the sooner your attorney can request evidence, investigate the circumstances, and develop your defense. Jwayyed Law LLC represents clients charged with assault in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>Do not discuss the case with anyone except your attorney. Do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible. The sooner you get legal help, the sooner your attorney can request evidence, investigate the circumstances, and develop your defense. Jwayyed Law LLC represents clients charged with assault in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {
@@ -716,7 +716,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Possible Defenses</h2>
       <p>Lack of intent (you did not intend to take the item—maybe you forgot to pay or misunderstood store procedures), mistaken identity (you were not the person who shoplifted), lack of proof (insufficient evidence), or unauthorized store employee collaboration. An attorney can evaluate your case and fight for the best outcome.</p>
 
-      <p>Expungement or <a href="/criminal-defense/expungement-record-sealing">record sealing</a> may be possible after you complete your sentence and meet the waiting period. If you have been charged with shoplifting or theft in Ohio, Jwayyed Law LLC can evaluate your case and fight for the best outcome. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>Expungement or <a href="/criminal-defense/expungement-record-sealing">record sealing</a> may be possible after you complete your sentence and meet the waiting period. If you have been charged with shoplifting or theft in Ohio, Jwayyed Law LLC can evaluate your case and fight for the best outcome. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio, including Franklin County, Columbus, and surrounding communities.</p>
     `,
   },
   {

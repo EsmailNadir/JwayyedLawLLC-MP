@@ -211,7 +211,7 @@ export default function GreeneCountyCourtsPage() {
               representation. Call <strong>(614) 285-5482</strong> to schedule a consultation.
             </p>
 
-            <LocationsWeServe title="Greene County Legal Services" criminalDisclaimer={true} />
+            <LocationsWeServe title="Greene County Legal Services"  />
 
           </div>
         </div>

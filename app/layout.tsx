@@ -133,10 +133,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       "closes": "17:00"
     },
     "priceRange": "$$",
-    "areaServed": {
-      "@type": "State",
-      "name": "Ohio"
-    },
+    "areaServed": [
+      { "@type": "State", "name": "Ohio" },
+      { "@type": "County", "name": "Franklin County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+      { "@type": "County", "name": "Delaware County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+      { "@type": "County", "name": "Greene County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+      { "@type": "County", "name": "Montgomery County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+      { "@type": "County", "name": "Licking County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+      { "@type": "County", "name": "Fairfield County", "containedInPlace": { "@type": "State", "name": "Ohio" } }
+    ],
     "serviceType": [
       "Criminal Defense",
       "OVI DUI Defense",

@@ -73,20 +73,57 @@ export default function PersonalInjuryFranklinCountyPage() {
               Personal Injury Representation in Franklin County
             </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County is Ohio&apos;s most populous county and the home of Jwayyed Law LLC. Columbus and its surrounding suburbs — Dublin, Westerville, Hilliard, Gahanna, Grove City, Reynoldsburg, Worthington, Bexley, and Upper Arlington — generate a high volume and wide variety of personal injury matters each year. Our attorney represents injury victims throughout Franklin County in car accidents, truck accidents, slip and fall, premises liability, pedestrian injuries, bicycle accidents, dog bites, and wrongful death cases. If someone&apos;s negligence injured you in Franklin County, we will fight to hold them accountable.
+              Franklin County is Ohio&apos;s most populous county and the home of Jwayyed Law LLC. Columbus and its surrounding suburbs — Dublin, Westerville, Hilliard, Gahanna, Grove City, Reynoldsburg, Worthington, Bexley, and Upper Arlington — generate a high volume and wide variety of personal injury matters each year. Our attorney represents injury victims throughout Franklin County in car accidents, truck accidents, slip and fall, premises liability, pedestrian injuries, bicycle accidents, dog bites, and wrongful death cases. Ohio Revised Code 2305.10 gives personal injury claimants two years from the date of injury to file suit. This is a firm deadline — courts do not extend it. Our attorney begins working immediately upon retention, preserving evidence and documenting your damages from the outset. If someone&apos;s negligence injured you in Franklin County, contact Jwayyed Law LLC at{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Car and Truck Accidents in Columbus and the Columbus Suburbs
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Columbus&apos;s highway network — I-270, I-71, I-70, I-670, US-33, and SR-315 — is among the busiest in the Midwest, with heavy commuter traffic, significant commercial trucking volume, and constant construction activity. High-speed rear-end collisions on I-270&apos;s outer belt, sideswipe accidents on I-71 interchanges, and intersection crashes throughout Columbus neighborhoods are all common injury scenarios. Suburban corridors in Dublin, Westerville, Hilliard, and Reynoldsburg generate a high volume of intersection and rear-end crashes, particularly on SR-161, US-23, and other heavily traveled suburban arterials.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio Revised Code 2305.10 gives personal injury claimants two years from the date of injury to file suit. This is a firm deadline — courts almost never extend it. While an insurance adjuster may tell you there is no hurry, the reality is that evidence degrades, witnesses move on, and your legal options narrow as time passes. Our attorney begins working immediately upon retention, preserving your claim and documenting your damages from the outset.
+              The Ohio comparative negligence statute, ORC 2315.33, makes fault allocation one of the most important battlegrounds in any Franklin County accident case. Insurers defending Columbus-area accident claims routinely try to attribute partial fault to injured claimants to reduce or eliminate compensation. Our attorney investigates every case rigorously — gathering police reports, traffic camera footage, electronic data from commercial vehicles, and accident reconstruction evidence — to accurately establish who was responsible and to what degree. When commercial trucks are involved, federal FMCSA regulations and hours-of-service logs provide additional avenues for establishing carrier and driver liability.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Slip and Fall and Premises Liability in Franklin County
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Franklin County&apos;s large commercial base — shopping centers, restaurant strips, apartment complexes, office parks, and retail establishments throughout Columbus and its suburbs — generates a significant number of premises liability claims each year. Ohio property owners owe a duty of reasonable care to lawful visitors, and when they fail — leaving a wet floor unmarked, allowing ice and snow to accumulate on entranceways, failing to repair cracked pavement, or permitting broken fixtures to remain in service — they bear legal responsibility for resulting injuries under Ohio common law and ORC 2305.10.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Ohio comparative negligence statute, ORC 2315.33, makes fault allocation one of the most important battlegrounds in any personal injury case. In Columbus&apos;s busy interstate and surface street network — I-270, I-71, I-670, and US 33 — accident liability can be genuinely complex. Insurers defending accident claims in Franklin County routinely try to attribute fault to injured parties to reduce or deny claims. Our attorney investigates every case rigorously, gathering physical evidence, traffic data, and witness testimony to accurately establish who was responsible and to what degree.
+              Premises liability cases in Franklin County require rapid evidence collection. Surveillance footage is often overwritten within days of an incident. Prior incident reports that show the property owner was aware of the hazard can be crucial to establishing liability. Our attorney sends preservation letters immediately, requests all relevant inspection logs and maintenance records, and evaluates the property condition against the applicable standard of care. Whether the incident occurred at a Columbus grocery store, a Dublin office complex, a Hilliard apartment building, or a Westerville restaurant, early legal action preserves the evidence needed to build a strong claim.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Dog Bite Injuries in Franklin County
+            </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Slip and fall and premises liability cases are extremely common in the Columbus area given the number of commercial properties, apartment complexes, restaurants, and retail establishments. Property owners have a duty to maintain safe conditions for lawful visitors. When they fail — leaving ice unaddressed, failing to repair broken flooring, or creating other hazardous conditions — they are legally responsible for injuries that result. Our attorney evaluates premises liability claims carefully, including reviewing property inspection records and prior incident reports.
+              Ohio Revised Code 955.28 establishes strict liability for dog owners in Franklin County — meaning an owner is liable for injuries caused by their dog regardless of whether the dog had previously bitten anyone or shown any dangerous propensity. The injured person does not need to prove the owner was negligent; the owner is liable simply because their dog caused the injury. ORC 955.28(B) provides for recovery of all damages caused by the dog, including medical expenses, lost wages, and pain and suffering. Franklin County&apos;s dense residential areas — particularly in Columbus neighborhoods, Westerville, Upper Arlington, and Grove City — produce a significant number of dog bite injury cases each year.
             </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Uninsured and Underinsured Motorist Claims in the Columbus Area
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Columbus has a significant uninsured driver population. When the at-fault driver in a Franklin County accident carries no insurance or insufficient insurance to cover your injuries, your own uninsured/underinsured motorist (UM/UIM) coverage becomes your most important source of recovery. Ohio law requires insurers to offer UM/UIM coverage, and many Columbus-area drivers carry it without realizing when or how it applies. Our attorney helps Franklin County injury clients identify and pursue UM/UIM claims against their own carriers — including filing arbitration when insurers refuse to pay full value — to ensure every available source of compensation is exhausted.
+            </p>
+
+            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Where Personal Injury Cases Are Filed in Franklin County
+            </h3>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Personal injury lawsuits in Franklin County are generally filed at the <strong>Franklin County Court of Common Pleas</strong>, located at 369 S. High Street, Columbus, OH 43215. Cases involving smaller damages may be filed in Franklin County Municipal Court or in one of the county&apos;s municipal courts depending on the amount at issue. As a Columbus-based firm, Jwayyed Law LLC is thoroughly familiar with Franklin County&apos;s court system, judges, local rules, and the insurance defense attorneys who handle these cases — giving our clients the advantage of local knowledge at every stage of litigation.
+            </p>
+
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Franklin County personal injury cases are filed at the Franklin County Common Pleas Court, 369 S. High St, Columbus, OH 43215. As a Columbus-based firm, Jwayyed Law LLC is uniquely positioned to handle Franklin County personal injury matters efficiently. We work on a contingency fee basis — no fees unless we recover for you. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              Jwayyed Law LLC handles personal injury cases on a contingency fee basis — no fees unless we recover for you. If you were injured anywhere in Franklin County, contact us at{' '}
+              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              or{' '}
+              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> throughout Ohio.
             </p>
           </div>

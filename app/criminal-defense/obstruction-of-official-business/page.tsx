@@ -104,7 +104,7 @@ export default function ObstructionOfficialBusinessPage() {
               The legal process for obstruction charges involves arraignment, discovery, pretrial motions, negotiations, and potentially trial. Because obstruction charges often accompany other criminal charges, the defense strategy must address all charges together. Early intervention by a skilled attorney can significantly impact the outcome, particularly in identifying constitutional defenses and challenging the prosecution's narrative.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Elements of Obstruction of Official Business Under Ohio Law

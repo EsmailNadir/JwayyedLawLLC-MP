@@ -15,11 +15,9 @@ const COUNTIES = [
 type LocationsWeServeProps = {
   /** e.g. "Criminal Defense", "Civil", "Trusts", "Other Services" */
   title: string;
-  /** When true, adds note that we do not handle criminal matters in Franklin County. */
-  criminalDisclaimer?: boolean;
 };
 
-export default function LocationsWeServe({ title, criminalDisclaimer }: LocationsWeServeProps) {
+export default function LocationsWeServe({ title }: LocationsWeServeProps) {
   return (
     <>
       <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -27,7 +25,6 @@ export default function LocationsWeServe({ title, criminalDisclaimer }: Location
       </h3>
       <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
         We serve clients in the following Ohio counties. Each county has its own page; click through for court information and local details.
-        {criminalDisclaimer && ' (We do not handle criminal matters in Franklin County due to a conflict—see Franklin County for civil, business, and estate planning.)'}
       </p>
       <div className="grid md:grid-cols-3 gap-4 mb-8">
         {COUNTIES.map(({ slug, name, subtitle }) => (

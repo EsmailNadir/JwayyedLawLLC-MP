@@ -98,7 +98,7 @@ export default function CriminalDamagingPage() {
               The legal process for criminal damaging charges involves arraignment, discovery, pretrial negotiations, and potentially trial. An experienced attorney can challenge evidence, negotiate with prosecutors, and work toward favorable outcomes including dismissal, reduced charges, or alternative sentencing.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Criminal Damaging Under Ohio Law (ORC 2909.06)

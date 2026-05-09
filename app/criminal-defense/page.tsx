@@ -131,12 +131,12 @@ export default function CriminalDefensePage() {
               Criminal Defense – Locations We Serve
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              We serve clients in the following Ohio counties. Each county has its own page; click through for court information and local details. (We do not handle criminal matters in Franklin County due to a conflict—see Franklin County for civil, business, and estate planning.)
+              We serve clients in the following Ohio counties. Each county has its own page; click through for court information and local details.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/courts/franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">Columbus – Court information (no criminal in Franklin)</span>
+                <span className="block text-sm text-gray-600 mt-1">Criminal Defense – Franklin County Municipal Court</span>
               </Link>
               <Link href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
                 <span className="font-semibold text-gray-900">Delaware County</span>

@@ -117,7 +117,7 @@ export default function DrivingUnderOVISuspensionPage() {
               <li><strong>IID Compliance Planning:</strong> Advise on ignition interlock device requirements and how to maintain driving privileges lawfully under HB 37</li>
             </ul>
 
-            <LocationsWeServe title="OVI/DUI Defense" criminalDisclaimer />
+            <LocationsWeServe title="OVI/DUI Defense" />
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -104,7 +104,7 @@ export default function ResistingArrestPage() {
               The legal process for resisting arrest charges involves arraignment, discovery, pretrial motions, negotiations, and potentially trial. Because these charges often accompany other criminal charges, the defense strategy must address all charges in a coordinated manner. Early intervention by a skilled attorney can significantly impact the outcome.
             </p>
 
-            <LocationsWeServe title="Criminal Defense" criminalDisclaimer />
+            <LocationsWeServe title="Criminal Defense" />
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               Elements of Resisting Arrest Under Ohio Law

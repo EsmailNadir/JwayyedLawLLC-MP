@@ -2,6 +2,7 @@
 
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { Star } from 'lucide-react';
 
 const OVIReviewsSwiper = dynamic(() => import('@/components/OVIReviewsSwiper'), {
   ssr: false,
@@ -16,26 +17,22 @@ const OVIReviews: React.FC = () => {
           <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-3 sm:mb-4">
             Client Testimonials
           </h2>
-          <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-400">
+          <p className="font-['Inter',_'Arial',_sans-serif] text-lg sm:text-xl text-gray-400 mb-4">
             Real experiences from clients we&apos;ve helped
           </p>
+          <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+              ))}
+            </div>
+            <span className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-[#b87333]">
+              60+ five-star reviews on Google
+            </span>
+          </div>
         </div>
 
         <OVIReviewsSwiper />
-
-        <style>{`
-          .testimonials-swiper .swiper-pagination {
-            margin-top: 1.25rem;
-            position: relative;
-          }
-          .testimonials-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3);
-            opacity: 1;
-          }
-          .testimonials-swiper .swiper-pagination-bullet-active {
-            background: #b87333;
-          }
-        `}</style>
       </div>
     </section>
   );

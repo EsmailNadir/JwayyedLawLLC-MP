@@ -167,7 +167,7 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-bold mb-4 font-['Playfair_Display',_'Georgia',_serif] text-gray-900">Professional Experience</h2>
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>During law school, Jwayyed gained valuable experience interning at the Franklin County Public Defender&apos;s Office and Safe Auto Insurance, building a strong foundation in both public and private sector legal work. Since becoming a licensed attorney in 2019, he has worked at the Columbus City Attorney&apos;s Office and Frost Brown Todd, a major regional law firm. He also served as Assistant Law Director for the City of Circleville and as Legal Director for a civil rights organization, where he focused on cases involving discrimination in employment and education.</p>
-                    <p>Jwayyed now leads his own practice, which contracts with several municipalities in Franklin County to provide prosecutorial services. As a result, he does not accept criminal defense cases in Franklin County to avoid conflicts of interest.</p>
+                    <p>Jwayyed now leads his own full-service defense practice. After concluding his prosecutorial contracts with Franklin County municipalities, he expanded his criminal defense and OVI representation to include Franklin County, Columbus, and the surrounding suburbs — offering the same aggressive, experienced defense representation throughout central Ohio that he provides in the counties surrounding Franklin.</p>
                   </div>
                 </div>
 
