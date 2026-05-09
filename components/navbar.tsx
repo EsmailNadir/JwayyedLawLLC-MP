@@ -137,7 +137,7 @@ export default function Navbar() {
                 </a>
                 <span className="h-3 w-px bg-white/15" aria-hidden="true" />
                 <span className="text-[#e8c8a0] font-semibold tracking-[0.18em] uppercase text-[0.65rem]">
-                  Free Consultation
+                  Mon–Fri · 9:00 AM – 5:00 PM
                 </span>
               </div>
             </div>

@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for First-Time Defendants</h2>
       <p>If this is your first OVI, you may feel alone and unsure what to expect. Many first-time defendants receive alternatives to jail—such as the Driver Intervention Program or probation—especially with an attorney advocating for them. See our <a href="/our-law-firm/case-results">case results</a> for examples of outcomes we have achieved.</p>
 
-      <p>If you have been stopped or charged with OVI in Ohio, Jwayyed Law LLC is ready to review your case and help you understand your options. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>If you have been stopped or charged with OVI in Ohio, Jwayyed Law LLC is ready to review your case and help you understand your options. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
     `,
   },
   {
@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
       <h2>When to Seek Legal Counsel</h2>
       <p>Even clear-cut self-defense situations can lead to criminal charges. Prosecutors may question whether the threat was truly imminent, whether the level of force was reasonable, whether you could have avoided the confrontation, or whether you were the initial aggressor. If you have used force in self-defense, contact an attorney before speaking with investigators. Statements made while emotional or in shock can be taken out of context and used against you.</p>
 
-      <p>If you are facing charges related to the use of force in Ohio, Jwayyed Law LLC can evaluate the facts and help build a defense that protects your rights under Ohio&apos;s self-defense statutes. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>If you are facing charges related to the use of force in Ohio, Jwayyed Law LLC can evaluate the facts and help build a defense that protects your rights under Ohio&apos;s self-defense statutes. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
     `,
   },
   {
@@ -162,7 +162,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for Accident Victims</h2>
       <p>Even if you think your injuries are minor, see a doctor within 24–48 hours. Adrenaline can mask pain, and delayed treatment weakens your claim. Insurance companies use gaps in treatment to argue the injury wasn&apos;t serious.</p>
 
-      <p>If you have been injured in a car accident in Ohio, Jwayyed Law LLC can help you understand your options and fight for the compensation you deserve. See our <a href="/our-law-firm/case-results">case results</a> for examples of settlements we have achieved. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We work on contingency—there is no cost to you unless we win your case.</p>
+      <p>If you have been injured in a car accident in Ohio, Jwayyed Law LLC can help you understand your options and fight for the compensation you deserve. See our <a href="/our-law-firm/case-results">case results</a> for examples of settlements we have achieved. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—there is no cost to you unless we win your case.</p>
     `,
   },
   {
@@ -218,7 +218,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for Anyone with a Record</h2>
       <p>Even if you were told years ago that your record could not be expunged, Ohio law has changed. Many more people qualify now. It is worth having an attorney re-evaluate your eligibility. See our <a href="/our-law-firm/case-results">case results</a> for examples of successful expungements.</p>
 
-      <p>If you believe your record may be eligible for sealing under Ohio&apos;s updated laws, Jwayyed Law LLC can evaluate your case, determine your eligibility, and guide you through the entire expungement process. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties for expungement petitions.</p>
+      <p>If you believe your record may be eligible for sealing under Ohio&apos;s updated laws, Jwayyed Law LLC can evaluate your case, determine your eligibility, and guide you through the entire expungement process. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties for expungement petitions.</p>
     `,
   },
   {
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Which Is Right for Your Business?</h2>
       <p>There is no one-size-fits-all answer. A solo consultant or small service business may benefit most from an LLC&apos;s simplicity and flexibility. A tech startup seeking outside investment may need the corporate structure. A growing business with multiple owners and significant profits might benefit from an S-Corporation election. Consider your current situation—how many owners, plans for investment, expected profit—and the future—how you envision growth, when you might bring in new owners or investors.</p>
 
-      <p>If you are starting a business in Ohio and need guidance on choosing the right entity structure, Jwayyed Law LLC can help you evaluate your options and set up your business on a solid legal foundation. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties for <a href="/business">business law</a> matters.</p>
+      <p>If you are starting a business in Ohio and need guidance on choosing the right entity structure, Jwayyed Law LLC can help you evaluate your options and set up your business on a solid legal foundation. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties for <a href="/business">business law</a> matters.</p>
     `,
   },
   {
@@ -305,7 +305,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Should You Hire an Attorney Before the Arraignment?</h2>
       <p>Ideally, yes. Having an attorney at arraignment ensures you enter the correct plea, that your bond conditions are fair and achievable, and that no rights are waived inadvertently. In high-volume municipal courts, arraignments move quickly with limited time for questions. An attorney familiar with the court and its judges can advocate for favorable bond conditions and set the tone for the rest of your case. If you cannot afford an attorney, request a public defender at arraignment.</p>
 
-      <p>If you are facing criminal charges and have an upcoming arraignment in any Ohio court, Jwayyed Law LLC can represent you from the very first hearing and guide you through every stage of the process. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
+      <p>If you are facing criminal charges and have an upcoming arraignment in any Ohio court, Jwayyed Law LLC can represent you from the very first hearing and guide you through every stage of the process. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
     `,
   },
   {
@@ -354,7 +354,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for Slip and Fall Victims</h2>
       <p>Take photos of the hazard before it is cleaned up. Ask the manager to create an incident report and get a copy. Get contact information from witnesses. These steps are time-sensitive—do them at the scene if you can.</p>
 
-      <p>If you have been injured in a slip and fall accident in Ohio, Jwayyed Law LLC can evaluate your claim, determine who may be liable, and help you pursue full and fair compensation. See our <a href="/our-law-firm/case-results">case results</a> for examples. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
+      <p>If you have been injured in a slip and fall accident in Ohio, Jwayyed Law LLC can evaluate your claim, determine who may be liable, and help you pursue full and fair compensation. See our <a href="/our-law-firm/case-results">case results</a> for examples. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
     `,
   },
   {
@@ -415,7 +415,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What to Do After a Stop</h2>
       <p>Write down everything you remember as soon as possible: time, location, weather, the officer&apos;s name and badge number, what was said. Note the agency and get the case number from your citation if you received one. Do not discuss the stop with anyone except your attorney. Do not post about it on social media. If you believe the officer used excessive force or violated your rights, you can file a complaint with the police department&apos;s internal affairs division.</p>
 
-      <p>If you are facing charges arising from a traffic stop in Ohio—OVI/DUI, drug possession, or other charges—Jwayyed Law LLC can review the details of your stop and help protect your constitutional rights. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
+      <p>If you are facing charges arising from a traffic stop in Ohio—OVI/DUI, drug possession, or other charges—Jwayyed Law LLC can review the details of your stop and help protect your constitutional rights. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for <a href="/criminal-defense">criminal defense</a> matters due to a conflict.</p>
     `,
   },
   {
@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
       <p>Courts often restrict driving to specific hours, routes, and purposes. You may be required to use an ignition interlock device—a breathalyzer installed in your vehicle that requires you to blow into it before the car starts. The court will specify all conditions in the written order. Driving outside these terms—even one mile off the approved route or one hour outside approved times—can result in charges for driving under suspension, which carries its own penalties.</p>
 
       <h2>Why Legal Help Matters</h2>
-      <p>Navigating the waiting periods, filing deadlines, and court requirements can be complex. An experienced <a href="/ovi-dui-defense">OVI attorney</a> understands how different judges approach these motions and can craft arguments that resonate with the specific court. If you are facing an OVI suspension in Ohio, Jwayyed Law LLC can help you understand your options and apply for limited driving privileges that meet your needs. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>Navigating the waiting periods, filing deadlines, and court requirements can be complex. An experienced <a href="/ovi-dui-defense">OVI attorney</a> understands how different judges approach these motions and can craft arguments that resonate with the specific court. If you are facing an OVI suspension in Ohio, Jwayyed Law LLC can help you understand your options and apply for limited driving privileges that meet your needs. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
     `,
   },
   {
@@ -473,7 +473,7 @@ export const blogPosts: BlogPost[] = [
       <p>The 30-day deadline under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.191" target="_blank" rel="noopener noreferrer">Ohio Revised Code 4511.191</a> is strict and does not have exceptions. Courts generally do not extend it, no matter the circumstances. If you miss it—even by one day—your only option is to wait out the suspension and apply for limited driving privileges when eligible. You lose your right to challenge the suspension itself.</p>
 
       <h2>What You Need to Do</h2>
-      <p>Contact an attorney as soon as possible after your arrest. An experienced <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, request a stay of suspension (allowing you to keep driving until the hearing), and represent you at the BMV hearing. The criminal case and the ALS appeal run on separate tracks—both need immediate attention from day one. If you have been arrested for OVI in Ohio, do not wait. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve clients throughout Ohio except Franklin County for OVI matters due to a conflict. Time is critical.</p>
+      <p>Contact an attorney as soon as possible after your arrest. An experienced <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, request a stay of suspension (allowing you to keep driving until the hearing), and represent you at the BMV hearing. The criminal case and the ALS appeal run on separate tracks—both need immediate attention from day one. If you have been arrested for OVI in Ohio, do not wait. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve clients throughout Ohio except Franklin County for OVI matters due to a conflict. Time is critical.</p>
     `,
   },
   {
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Ohio&apos;s Statute of Limitations</h2>
       <p>You have two years from the date of the injury to file a lawsuit. Do not delay—evidence and witnesses can disappear over time, and insurance companies may dispute claims that are reported late.</p>
 
-      <p>If you or a family member has been injured by a dog in Ohio, Jwayyed Law LLC can help. We represent dog bite victims throughout the counties we serve. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
+      <p>If you or a family member has been injured by a dog in Ohio, Jwayyed Law LLC can help. We represent dog bite victims throughout the counties we serve. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
     `,
   },
   {
@@ -533,7 +533,7 @@ export const blogPosts: BlogPost[] = [
       <p>Always put your repair request in writing—email, text, or certified letter—and keep proof. Verbal complaints are hard to prove later. For a sample letter format, see our <a href="/our-law-firm/document-templates">document templates</a>.</p>
 
       <h2>When to Get Legal Help</h2>
-      <p>If you are dealing with unsafe conditions (mold, pests, major systems that don&apos;t work), an attorney can advise you on your rights and the proper steps under Ohio law. For <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> and <a href="/civil/evictions">eviction defense</a>, Jwayyed Law LLC provides experienced representation. See our <a href="/our-law-firm/case-results">case results</a> for examples of tenant outcomes. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you are dealing with unsafe conditions (mold, pests, major systems that don&apos;t work), an attorney can advise you on your rights and the proper steps under Ohio law. For <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> and <a href="/civil/evictions">eviction defense</a>, Jwayyed Law LLC provides experienced representation. See our <a href="/our-law-firm/case-results">case results</a> for examples of tenant outcomes. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -564,7 +564,7 @@ export const blogPosts: BlogPost[] = [
       <h2>5. Obtain an EIN and Comply With Ongoing Requirements</h2>
       <p>If you have employees or multiple members, you will need an Employer Identification Number (EIN) from the IRS—free to apply online at irs.gov. If you are a single-member LLC with no employees, you may not need an EIN, but having one is recommended. Ohio LLCs must file a biennial report with the Secretary of State (currently free) every two years.</p>
 
-      <p>If you are starting a business in Ohio and need help with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">operating agreements</a>, or other business matters, Jwayyed Law LLC can assist. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you are starting a business in Ohio and need help with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">operating agreements</a>, or other business matters, Jwayyed Law LLC can assist. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -597,7 +597,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Do You Need One?</h2>
       <p>Revocable living trusts are especially useful if you have significant assets, own real estate in multiple states, or want to avoid probate and maintain privacy. A simple will may be enough for smaller estates. An attorney can help you evaluate your situation and choose the right tools.</p>
 
-      <p>Jwayyed Law LLC provides <a href="/trusts/revocable-living-trusts">revocable living trust</a> planning and other <a href="/trusts">trust</a> and <a href="/other-services/estate-planning">estate planning</a> services throughout Ohio. Call (614) 285-5482 or visit our <a href="/contact">contact page</a> for a free consultation.</p>
+      <p>Jwayyed Law LLC provides <a href="/trusts/revocable-living-trusts">revocable living trust</a> planning and other <a href="/trusts">trust</a> and <a href="/other-services/estate-planning">estate planning</a> services throughout Ohio. Call (614) 285-5482 or visit our <a href="/contact">contact page</a> for a consultation.</p>
     `,
   },
   {
@@ -628,7 +628,7 @@ export const blogPosts: BlogPost[] = [
       <p>A first OVI brings license suspension (6 months to 3 years depending on BAC and refusal), fines ($565 to $1,075), court costs, driver&apos;s license reinstatement fees ($315+), ignition interlock costs if ordered ($50–$100/month), and required participation in a Driver Intervention Program or substance abuse counseling. You may be eligible for <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> after 15 days (30 if you refused).</p>
 
       <h2>Why an Attorney Matters</h2>
-      <p>An experienced <a href="/ovi-dui-defense">OVI attorney</a> can challenge the traffic stop, question the administration and accuracy of field sobriety tests or breath tests, identify constitutional violations, negotiate with prosecutors for reduced charges or better plea offers, and argue to the judge for jail alternatives. The difference between representing yourself and having an attorney can be months of jail time, thousands in fines and costs, and years of license suspension. If you are facing first-time OVI charges in Ohio, Jwayyed Law LLC can help. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>An experienced <a href="/ovi-dui-defense">OVI attorney</a> can challenge the traffic stop, question the administration and accuracy of field sobriety tests or breath tests, identify constitutional violations, negotiate with prosecutors for reduced charges or better plea offers, and argue to the judge for jail alternatives. The difference between representing yourself and having an attorney can be months of jail time, thousands in fines and costs, and years of license suspension. If you are facing first-time OVI charges in Ohio, Jwayyed Law LLC can help. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
     `,
   },
   {
@@ -662,7 +662,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Long-Term Costs</h2>
       <p>An OVI conviction affects employment prospects for years. Many employers run background checks and view DUI convictions negatively. Certain professions (transportation, healthcare, education) may be closed to you. Housing and rental applications may be affected. Professional licensing may be blocked. The total cost of an OVI in Ohio—combining court fines, suspension fees, insurance increases, lost income, and employment impacts—can easily exceed $15,000–$30,000 or more over several years.</p>
 
-      <p>If you are facing OVI charges in Ohio, Jwayyed Law LLC can help you understand the true costs and work to minimize them. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
+      <p>If you are facing OVI charges in Ohio, Jwayyed Law LLC can help you understand the true costs and work to minimize them. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for OVI matters due to a conflict.</p>
     `,
   },
   {
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Self-defense</strong> is a common and powerful defense if you reasonably believed you needed to use force to protect yourself from imminent harm. <strong>Defense of others</strong>—using reasonable force to protect a family member or someone else—is also valid. Other defenses include lack of intent to cause harm, mistaken identity, or insufficient evidence. An attorney can evaluate your situation and develop the strongest defense strategy.</p>
 
       <h2>What You Should Do</h2>
-      <p>Do not discuss the case with anyone except your attorney. Do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible. The sooner you get legal help, the sooner your attorney can request evidence, investigate the circumstances, and develop your defense. Jwayyed Law LLC represents clients charged with assault in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>Do not discuss the case with anyone except your attorney. Do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible. The sooner you get legal help, the sooner your attorney can request evidence, investigate the circumstances, and develop your defense. Jwayyed Law LLC represents clients charged with assault in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
     `,
   },
   {
@@ -716,7 +716,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Possible Defenses</h2>
       <p>Lack of intent (you did not intend to take the item—maybe you forgot to pay or misunderstood store procedures), mistaken identity (you were not the person who shoplifted), lack of proof (insufficient evidence), or unauthorized store employee collaboration. An attorney can evaluate your case and fight for the best outcome.</p>
 
-      <p>Expungement or <a href="/criminal-defense/expungement-record-sealing">record sealing</a> may be possible after you complete your sentence and meet the waiting period. If you have been charged with shoplifting or theft in Ohio, Jwayyed Law LLC can evaluate your case and fight for the best outcome. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
+      <p>Expungement or <a href="/criminal-defense/expungement-record-sealing">record sealing</a> may be possible after you complete your sentence and meet the waiting period. If you have been charged with shoplifting or theft in Ohio, Jwayyed Law LLC can evaluate your case and fight for the best outcome. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We serve all Ohio counties except Franklin County for criminal defense matters due to a conflict.</p>
     `,
   },
   {
@@ -741,7 +741,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Statute of Limitations</h2>
       <p>You have two years from the date of the fall to file a lawsuit in Ohio. Do not wait—evidence and witnesses can disappear, and the longer you wait, the harder it is to prove what caused your fall.</p>
 
-      <p>Jwayyed Law LLC represents <a href="/personal-injury/slip-and-fall">slip and fall</a> victims throughout Ohio. We work on contingency—you do not pay unless we recover for you. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Jwayyed Law LLC represents <a href="/personal-injury/slip-and-fall">slip and fall</a> victims throughout Ohio. We work on contingency—you do not pay unless we recover for you. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -769,7 +769,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Why Act Sooner Rather Than Later</h2>
       <p>Even with two years, it is wise to contact an attorney early. Evidence can disappear, witnesses can forget, memories fade, businesses delete surveillance video, and memories become unreliable. Building a strong case takes time. Insurance companies may also have notice requirements. An experienced <a href="/personal-injury">personal injury attorney</a> can ensure your claim is filed correctly and on time.</p>
 
-      <p>If you have been injured in Ohio, Jwayyed Law LLC can evaluate your case and ensure you meet all deadlines. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you have been injured in Ohio, Jwayyed Law LLC can evaluate your case and ensure you meet all deadlines. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -797,7 +797,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for Renters</h2>
       <p>Document everything: photos of the problem, copies of your written notices to the landlord, and any responses. Before withholding rent, consult an attorney—improper procedures can lead to eviction. See our <a href="/our-law-firm/document-templates">document templates</a> for a repair request letter.</p>
 
-      <p>Jwayyed Law LLC handles <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Jwayyed Law LLC handles <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -822,7 +822,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Who Especially Needs a Will</h2>
       <p>Parents of minor children (to name guardians), people with significant assets, anyone who wants to leave something to someone other than the default heirs, and blended families. Even if you think your estate is &quot;simple,&quot; a will brings clarity and peace of mind.</p>
 
-      <p>Jwayyed Law LLC helps clients with <a href="/other-services/estate-planning-wills">wills and estate planning</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Jwayyed Law LLC helps clients with <a href="/other-services/estate-planning-wills">wills and estate planning</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -847,7 +847,7 @@ export const blogPosts: BlogPost[] = [
       <h2>When You Might Not Need One</h2>
       <p>If you are doing occasional side work with minimal risk, you might operate as a sole proprietor initially. But once you have real revenue or liability exposure, forming an LLC is usually smart.</p>
 
-      <p>Jwayyed Law LLC helps Ohio business owners with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">operating agreements</a>, and related matters. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Jwayyed Law LLC helps Ohio business owners with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">operating agreements</a>, and related matters. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -872,7 +872,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Do You Need Both?</h2>
       <p>Many people have both. A will can direct assets you did not put in the trust into the trust at death (a &quot;pour-over&quot; will). A will is also where you name guardians for children. An attorney can help you design a plan that fits your assets and goals.</p>
 
-      <p>Jwayyed Law LLC provides <a href="/other-services/estate-planning">estate planning</a>, <a href="/trusts">trusts</a>, and <a href="/other-services/estate-planning-wills">wills</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Jwayyed Law LLC provides <a href="/other-services/estate-planning">estate planning</a>, <a href="/trusts">trusts</a>, and <a href="/other-services/estate-planning-wills">wills</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -909,7 +909,7 @@ export const blogPosts: BlogPost[] = [
       <h2>How to Avoid Probate</h2>
       <p>Many Ohio families choose to minimize probate exposure through proactive planning. Common strategies include establishing a <a href="/trusts">revocable living trust</a>, adding payable-on-death or transfer-on-death designations to bank accounts and real estate (Ohio's Transfer on Death Designation Affidavit under <a href="https://codes.ohio.gov/ohio-revised-code/section-5302.22" target="_blank" rel="noopener noreferrer">ORC 5302.22</a>), using joint ownership with right of survivorship, and keeping beneficiary designations current on retirement and insurance accounts. Proper planning now can save your family months of court involvement and thousands in administration costs later.</p>
 
-      <p>If you are administering an estate or planning ahead to protect your loved ones, an experienced <a href="/other-services/probate">probate attorney</a> can make the process far less overwhelming. Jwayyed Law LLC provides comprehensive <a href="/other-services/estate-planning">estate planning</a> and probate administration services throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you are administering an estate or planning ahead to protect your loved ones, an experienced <a href="/other-services/probate">probate attorney</a> can make the process far less overwhelming. Jwayyed Law LLC provides comprehensive <a href="/other-services/estate-planning">estate planning</a> and probate administration services throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -946,7 +946,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Employer Background Checks After Sealing</h2>
       <p>Ohio law prohibits most private employers from asking about sealed records and from discriminating based on them in most hiring situations. However, jobs with state or federal licensing requirements, positions working with children or vulnerable populations, and law enforcement roles remain exceptions. If a private employer discovers a sealed record and refuses to hire you, you may have a cause of action under Ohio law. An attorney can advise you on your rights.</p>
 
-      <p>If you believe you may qualify for expungement or record sealing in Ohio, an experienced <a href="/criminal-defense/expungement-record-sealing">expungement attorney</a> can evaluate your eligibility and guide you through every step. Jwayyed Law LLC handles expungement petitions throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you believe you may qualify for expungement or record sealing in Ohio, an experienced <a href="/criminal-defense/expungement-record-sealing">expungement attorney</a> can evaluate your eligibility and guide you through every step. Jwayyed Law LLC handles expungement petitions throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -980,7 +980,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Which Structure Is Right for You?</h2>
       <p>For most small and medium-sized Ohio businesses, the <strong>LLC offers the best balance</strong> of simplicity, tax flexibility, and liability protection. The lighter governance requirements make it easier to maintain. A corporation may be preferable if you plan to raise outside capital through equity investment, want to issue stock options to employees, or eventually plan to go public. Many startups seeking venture capital form C-Corporations in Delaware (or Ohio) specifically for investor preference. There is no single right answer—the best structure depends on your industry, growth plans, tax situation, and how many people will own the business.</p>
 
-      <p>Before filing anything, consult with an experienced <a href="/business/llc-formation">Ohio business formation attorney</a> who can analyze your specific situation and help you draft the operating agreement or bylaws you need. Jwayyed Law LLC assists Ohio entrepreneurs with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">contract drafting</a>, and <a href="/business">business law matters</a> statewide. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Before filing anything, consult with an experienced <a href="/business/llc-formation">Ohio business formation attorney</a> who can analyze your specific situation and help you draft the operating agreement or bylaws you need. Jwayyed Law LLC assists Ohio entrepreneurs with <a href="/business/llc-formation">LLC formation</a>, <a href="/business/contract-drafting-review">contract drafting</a>, and <a href="/business">business law matters</a> statewide. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -1051,7 +1051,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Enforcing Your Rights: Small Claims Court</h2>
       <p>For most security deposit disputes, <strong>Ohio small claims court</strong> (handled in the municipal or county court small claims division) is the appropriate venue. Ohio small claims courts can hear cases involving amounts up to $6,000. Filing fees are minimal (typically $30–$100), and you do not need an attorney, though having one significantly improves your chances. Bring your lease, move-in and move-out photos, your written forwarding address notice, and any correspondence with your landlord. Courts frequently side with tenants when landlords cannot substantiate deductions with documentation. If your claim exceeds $6,000 (including the doubled damages), you may need to file in municipal court's general division instead.</p>
 
-      <p>Whether you are a landlord defending against a security deposit claim or a tenant seeking to recover what you are owed, our <a href="/civil-litigation/landlord-tenant">landlord-tenant attorneys</a> can help you navigate Ohio law. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including landlord-tenant disputes across Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Whether you are a landlord defending against a security deposit claim or a tenant seeking to recover what you are owed, our <a href="/civil-litigation/landlord-tenant">landlord-tenant attorneys</a> can help you navigate Ohio law. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including landlord-tenant disputes across Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -1095,7 +1095,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Expungement Eligibility Differences</h2>
       <p>Eligibility for record sealing differs significantly between misdemeanors and felonies. Most misdemeanor convictions (except OVI and domestic violence) have a one-year waiting period and are relatively more straightforward to seal. Many felonies can also be sealed, but first- and second-degree felonies are categorically ineligible under <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.36" target="_blank" rel="noopener noreferrer">ORC 2953.36</a>. F3 through F5 convictions may be eligible after a three-year waiting period, subject to other conditions. See our article on <a href="/our-law-firm/blog/what-is-expungement-ohio-2024">Ohio expungement</a> for a full breakdown.</p>
 
-      <p>No matter whether you are facing a misdemeanor or felony charge, experienced legal representation matters enormously at every stage. Jwayyed Law LLC provides aggressive <a href="/criminal-defense">criminal defense</a> representation throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>No matter whether you are facing a misdemeanor or felony charge, experienced legal representation matters enormously at every stage. Jwayyed Law LLC provides aggressive <a href="/criminal-defense">criminal defense</a> representation throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -1129,7 +1129,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Why You Need a POA Even If You Have a Will</h2>
       <p>Many people assume a will covers everything. It does not. A will only takes effect after death—it does nothing to help during incapacity. Without a durable POA, if you become incapacitated due to illness, injury, or cognitive decline, your family may have no legal authority to pay your bills, manage your accounts, or make decisions on your behalf. They would have to petition the probate court for a <strong>guardianship</strong> proceeding—a costly, time-consuming, and emotionally difficult process that could take months and leave your affairs in limbo. A properly drafted POA costs a fraction of what a guardianship proceeding costs and provides immediate, clear authority to someone you have chosen.</p>
 
-      <p>Jwayyed Law LLC helps Ohio families create comprehensive estate plans including durable powers of attorney, healthcare POAs, living wills, and <a href="/other-services/estate-planning-wills">wills</a>. Contact our <a href="/other-services/estate-planning">estate planning attorneys</a> today at (614) 285-5482 or <a href="/contact">schedule a free consultation</a>.</p>
+      <p>Jwayyed Law LLC helps Ohio families create comprehensive estate plans including durable powers of attorney, healthcare POAs, living wills, and <a href="/other-services/estate-planning-wills">wills</a>. Contact our <a href="/other-services/estate-planning">estate planning attorneys</a> today at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
     `,
   },
   {
@@ -1169,7 +1169,7 @@ export const blogPosts: BlogPost[] = [
       <h2>BMV Reinstatement After an OVI</h2>
       <p>After your suspension period ends, you must apply for license reinstatement through the Ohio BMV. Reinstatement requires paying all applicable fees (typically $475 for a first OVI offense), completing any required remedial driving course or DIP, satisfying any SR-22 insurance requirement (high-risk insurance filing for three years), and meeting any other court-ordered conditions. Driving under suspension is a separate criminal offense under <a href="https://codes.ohio.gov/ohio-revised-code/section-4510.11" target="_blank" rel="noopener noreferrer">ORC 4510.11</a>, so do not drive until full reinstatement is confirmed.</p>
 
-      <p>If you have been arrested for OVI in Ohio, the sooner you involve an attorney the better. Jwayyed Law LLC provides experienced <a href="/ovi-dui-defense">OVI defense</a> representation across Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>If you have been arrested for OVI in Ohio, the sooner you involve an attorney the better. Jwayyed Law LLC provides experienced <a href="/ovi-dui-defense">OVI defense</a> representation across Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -1203,7 +1203,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Defending Against a CPO</h2>
       <p>If a CPO has been filed against you, you have the right to contest it at the full hearing. A CPO can affect your housing, your parental rights, your employment (especially if you work in law enforcement, education, or a licensed profession), and your firearm rights. An experienced attorney can evaluate the evidence, identify weaknesses in the petitioner's allegations, cross-examine witnesses, present your own evidence, and argue against the issuance of the order or the scope of its terms. Simply not appearing at the full hearing typically results in a default CPO being issued against you—do not ignore court dates.</p>
 
-      <p>Whether you need to obtain a protection order for your safety or you are responding to one that has been filed against you, experienced legal representation is critical. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including protection order proceedings throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Whether you need to obtain a protection order for your safety or you are responding to one that has been filed against you, experienced legal representation is critical. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including protection order proceedings throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -1243,7 +1243,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Ongoing Compliance Obligations</h2>
       <p>Forming the nonprofit is just the beginning. To maintain your 501(c)(3) status and good standing in Ohio, you must: file annual IRS Form 990 (990-N, 990-EZ, or 990 depending on revenue); file annual Ohio nonprofit biennial reports with the Secretary of State; renew your AG charitable registration annually; hold regular board meetings and keep minutes; maintain a conflicts of interest policy; and avoid prohibited activities (excessive private benefit, substantial lobbying, political campaign activity). Failing to file Form 990 for three consecutive years results in automatic revocation of tax-exempt status by the IRS.</p>
 
-      <p>Starting a nonprofit the right way requires careful planning and legal guidance. Jwayyed Law LLC assists Ohio nonprofit founders with <a href="/business">business formation</a>, governance documents, and compliance planning. Call (614) 285-5482 or <a href="/contact">schedule a free consultation</a> today.</p>
+      <p>Starting a nonprofit the right way requires careful planning and legal guidance. Jwayyed Law LLC assists Ohio nonprofit founders with <a href="/business">business formation</a>, governance documents, and compliance planning. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
 ];

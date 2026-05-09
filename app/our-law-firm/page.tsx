@@ -97,7 +97,7 @@ export default function OurLawFirmPage() {
             </a>{' '}
             or{' '}
             <Link href="/contact" className="text-[#b87333] font-semibold hover:underline">
-              schedule a free consultation online
+              schedule a consultation online
             </Link>
             . Our office is located at 100 E. Campus View Boulevard, Suite #250, Columbus, Ohio
             43235.

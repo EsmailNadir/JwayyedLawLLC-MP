@@ -9,7 +9,7 @@ import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 
 export const metadata: Metadata = {
   title: 'Contact Our Ohio Law Firm | Schedule a Consultation | Jwayyed Law LLC',
-  description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving Columbus, Franklin County, and all of Ohio in criminal defense, OVI/DUI, personal injury, and more.',
+  description: 'Contact Jwayyed Law LLC to schedule a consultation. Serving Columbus, Franklin County, and all of Ohio in criminal defense, OVI/DUI, personal injury, and more.',
 };
 
 const breadcrumbItems = [{ label: 'Contact', href: '/contact' }];

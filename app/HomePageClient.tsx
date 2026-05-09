@@ -189,13 +189,13 @@ const differentiators = [
   },
   {
     icon: Clock,
-    title: '24/7 Responsiveness',
-    body: 'Calls, texts, and emails answered after hours and on weekends.',
+    title: 'Weekday Responsiveness',
+    body: 'Calls, texts, and emails returned promptly during business hours, Monday through Friday.',
   },
   {
     icon: CheckCircle2,
     title: 'Transparent Pricing',
-    body: 'Free consultations and reasonable, predictable rates from day one.',
+    body: 'Reasonable, predictable rates with clear expectations from day one.',
   },
 ];
 
@@ -283,14 +283,14 @@ export default function HomePageClient() {
 
             {/* Subhead */}
             <p className="text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10">
-              Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and estate matters. Free, confidential consultations.
+              Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and estate matters. Confidential consultations available.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
               <Link href="/contact" className="w-full sm:w-auto group">
                 <button className="cursor-pointer w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#b87333] hover:bg-[#a66628] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-md font-semibold text-base sm:text-lg shadow-xl shadow-black/30 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e8c8a0] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
-                  Free Consultation
+                  Schedule a Consultation
                   <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-0.5" />
                 </button>
               </Link>
@@ -569,7 +569,7 @@ export default function HomePageClient() {
             Don&apos;t face this alone.
           </h2>
           <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto mb-10">
-            Free, confidential consultations — calls, texts, and emails answered after hours and on weekends.
+            Confidential consultations — calls, texts, and emails returned promptly during business hours, Monday through Friday.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link href="/contact" className="w-full sm:w-auto group">

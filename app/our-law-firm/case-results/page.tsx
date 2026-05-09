@@ -88,7 +88,7 @@ export default function CaseResultsPage() {
             </div>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mt-12 leading-relaxed">
-              If you are facing charges or need representation, <Link href="/contact">contact us</Link> for a free consultation. We will review your case and discuss your options.
+              If you are facing charges or need representation, <Link href="/contact">contact us</Link> for a consultation. We will review your case and discuss your options.
             </p>
           </div>
         </div>
