@@ -35,7 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/our-law-firm/our-attorneys', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/our-attorneys/raneem-ali', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/our-attorneys/jonathan-cowan', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    { url: '/our-law-firm/our-attorneys/layan-khairi', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/our-attorneys/mateo-improvola', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/case-results', priority: 0.7, changeFrequency: 'weekly' as const, lastModified: d.blog },
     { url: '/our-law-firm/document-templates', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.blog },

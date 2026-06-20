@@ -301,7 +301,6 @@ const blogSearchItems: SearchItem[] = [
 const teamSearchItems: SearchItem[] = [
   { title: 'Raneem Ali — Legal Assistant', href: '/our-law-firm/our-attorneys/raneem-ali', category: 'Our Staff' },
   { title: 'Jonathan Cowan — Legal Intern', href: '/our-law-firm/our-attorneys/jonathan-cowan', category: 'Our Staff' },
-  { title: 'Layan Khairi — Legal Intern', href: '/our-law-firm/our-attorneys/layan-khairi', category: 'Our Staff' },
   { title: 'Mateo Improvola — Legal Intern', href: '/our-law-firm/our-attorneys/mateo-improvola', category: 'Our Staff' },
 ];
 
