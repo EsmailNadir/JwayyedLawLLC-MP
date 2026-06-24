@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Legal Document Templates | Ohio',
+  title: 'Legal Document Templates | Ohio | Jwayyed Law LLC',
   description:
     'Free Ohio legal document templates: landlord repair requests, demand letters, cease and desist, OVI evidence preservation, and more. Consult an attorney for your situation.',
   keywords: [
@@ -34,7 +34,7 @@ const templates = [
   {
     id: 'landlord-repair',
     category: 'Landlord-Tenant',
-    title: 'Landlord Repair Request Letter',
+    title: 'Landlord Repair Request Letter | Jwayyed Law LLC',
     description:
       'Use this template to notify your landlord in writing of needed repairs — such as heat, plumbing, pest control, or structural issues. Under Ohio Revised Code § 5321.02 and § 5321.07, written notice is required before a tenant may withhold rent, make repairs and deduct costs, or terminate the lease due to habitability failures.',
     practiceHref: '/civil/landlord-tenant-disputes',
@@ -79,7 +79,7 @@ Enclosures: [LIST ANY PHOTOS OR DOCUMENTATION YOU ARE ATTACHING]`,
   {
     id: 'security-deposit',
     category: 'Landlord-Tenant',
-    title: 'Security Deposit Demand Letter',
+    title: 'Security Deposit Demand Letter | Jwayyed Law LLC',
     description:
       'If your landlord has failed to return your security deposit or has made improper deductions, this letter formally demands its return. Ohio Revised Code § 5321.16 requires landlords to return the deposit (with an itemized list of deductions) within 30 days of the tenancy ending. Failure entitles you to double damages plus attorney fees.',
     practiceHref: '/civil/landlord-tenant-disputes',
@@ -120,7 +120,7 @@ Enclosures: Copy of Lease, Move-Out Documentation, Proof of Forwarding Address P
   {
     id: 'personal-injury-demand',
     category: 'Personal Injury',
-    title: 'Personal Injury Demand Letter',
+    title: 'Personal Injury Demand Letter | Jwayyed Law LLC',
     description:
       'A demand letter is typically sent to the at-fault party or their insurance company before filing a lawsuit. It outlines the facts of the incident, your injuries and treatment, your total damages, and a settlement demand. Sending a well-documented demand letter often initiates settlement negotiations and can resolve a claim without litigation.',
     practiceHref: '/personal-injury',
@@ -192,7 +192,7 @@ Enclosures: Medical Records, Medical Bills, Police Report, Photographs, Proof of
   {
     id: 'cease-desist-debt',
     category: 'Consumer / Debt',
-    title: 'Cease and Desist Letter (Debt Collector Harassment)',
+    title: 'Cease and Desist Letter (Debt Collector Harassment) | Jwayyed Law LLC',
     description:
       'The Fair Debt Collection Practices Act (FDCPA) gives consumers the right to demand that a debt collector stop contacting them. Once a collector receives this letter, they may generally only contact you to confirm they will stop or to notify you of a specific legal action. Sending this letter by certified mail creates a record of your demand.',
     practiceHref: '/civil',
@@ -239,7 +239,7 @@ Sent via Certified Mail, Return Receipt Requested — Tracking #: [TRACKING NUMB
   {
     id: 'breach-contract',
     category: 'Business / Civil',
-    title: 'Business Contract Breach Demand Letter',
+    title: 'Business Contract Breach Demand Letter | Jwayyed Law LLC',
     description:
       'When a party to a contract fails to perform their obligations — whether by not paying, not delivering goods or services, or otherwise breaching the agreement — this letter formally puts them on notice of the breach and demands they cure it or face legal action. Sending a written demand before suing is often required and can also facilitate resolution.',
     practiceHref: '/business',
@@ -290,7 +290,7 @@ Sincerely,
   {
     id: 'notice-intent-sue',
     category: 'Civil / Small Claims',
-    title: 'Notice of Intent to Sue (Pre-Suit / Small Claims)',
+    title: 'Notice of Intent to Sue (Pre-Suit / Small Claims) | Jwayyed Law LLC',
     description:
       'Before filing in small claims court (or any court), sending a formal notice of intent gives the other party a final chance to resolve the dispute and demonstrates good faith on your part. Ohio small claims court handles disputes up to $6,000. This letter is also useful as a general pre-suit notice in any civil matter.',
     practiceHref: '/civil',
@@ -343,7 +343,7 @@ Sincerely,
   {
     id: 'employment-grievance',
     category: 'Employment',
-    title: 'Employment Dispute Grievance Letter',
+    title: 'Employment Dispute Grievance Letter | Jwayyed Law LLC',
     description:
       'If you have experienced workplace discrimination, harassment, retaliation, unpaid wages, or another employment law violation, documenting your complaint in writing is a critical first step. This letter creates a formal record, puts your employer on notice, and may be required before you can file a claim with the EEOC or Ohio Civil Rights Commission.',
     practiceHref: '/civil',
@@ -403,7 +403,7 @@ Enclosures: [LIST ANY SUPPORTING DOCUMENTS — e.g., emails, text messages, pay 
   {
     id: 'ovi-evidence-preservation',
     category: 'Criminal Defense / OVI',
-    title: 'OVI/Criminal Defense Evidence Preservation Demand',
+    title: 'OVI/Criminal Defense Evidence Preservation Demand | Jwayyed Law LLC',
     description:
       'After an OVI or criminal arrest, critical evidence — dashcam footage, bodycam video, breath test records, calibration logs, and dispatch recordings — can be deleted in as little as 30 to 90 days. This letter demands that law enforcement and other parties preserve all evidence related to your arrest before it is destroyed. Send it as soon as possible after your arrest.',
     practiceHref: '/ovi-dui-defense',
@@ -477,8 +477,25 @@ Tracking or Confirmation #: [IF APPLICABLE]`,
 ];
 
 export default function DocumentTemplatesPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Free Ohio Legal Document Templates"

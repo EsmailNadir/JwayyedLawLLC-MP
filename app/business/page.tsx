@@ -7,11 +7,11 @@ import Link from 'next/link';
 import { businessServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Business Attorney',
+  title: 'Ohio Business Attorney | Jwayyed Law LLC',
   description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation.',
   keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
   openGraph: {
-    title: 'Ohio Business Attorney',
+    title: 'Ohio Business Attorney | Jwayyed Law LLC',
     description: 'Business law representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/business',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -57,8 +57,38 @@ const faqs = [
 ];
 
 export default function BusinessPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Business Attorney"
@@ -249,6 +279,89 @@ export default function BusinessPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you need business legal assistance in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* County Service Locations */}
+      <section className="py-12 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            Business Attorney — Ohio Counties We Serve
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link
+                key="/locations/franklin-county/business-formation-llc-franklin-county"
+                href="/locations/franklin-county/business-formation-llc-franklin-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & surrounding areas</span>
+              </Link>
+              <Link
+                key="/locations/delaware-county/business-formation-llc-delaware-county"
+                href="/locations/delaware-county/business-formation-llc-delaware-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware & Powell</span>
+              </Link>
+              <Link
+                key="/locations/pickaway-county/business-formation-llc-pickaway-county"
+                href="/locations/pickaway-county/business-formation-llc-pickaway-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville & surrounding areas</span>
+              </Link>
+              <Link
+                key="/locations/greene-county/business-formation-llc-greene-county"
+                href="/locations/greene-county/business-formation-llc-greene-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn & Xenia</span>
+              </Link>
+              <Link
+                key="/locations/montgomery-county/business-formation-llc-montgomery-county"
+                href="/locations/montgomery-county/business-formation-llc-montgomery-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton & surrounding areas</span>
+              </Link>
+              <Link
+                key="/locations/morrow-county/business-formation-llc-morrow-county"
+                href="/locations/morrow-county/business-formation-llc-morrow-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Mount Gilead & surrounding areas</span>
+              </Link>
+              <Link
+                key="/locations/butler-county/business-formation-llc-butler-county"
+                href="/locations/butler-county/business-formation-llc-butler-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton, Oxford & West Chester</span>
+              </Link>
+              <Link
+                key="/locations/athens-county/business-formation-llc-athens-county"
+                href="/locations/athens-county/business-formation-llc-athens-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens & surrounding areas</span>
+              </Link>
+              <Link
+                key="/locations/clinton-county/business-formation-llc-clinton-county"
+                href="/locations/clinton-county/business-formation-llc-clinton-county"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington & surrounding areas</span>
+              </Link>
           </div>
         </div>
       </section>

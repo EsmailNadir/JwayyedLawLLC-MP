@@ -5,12 +5,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
   const d = {
-    home: new Date('2026-03-10'),
-    blog: new Date('2026-03-10'),
-    attorneys: new Date('2026-02-15'),
-    service: new Date('2026-03-16'),
-    court: new Date('2026-03-16'),
-    location: new Date('2026-03-16'),
+    home: new Date('2026-06-24'),
+    blog: new Date('2026-06-24'),
+    attorneys: new Date('2026-06-24'),
+    service: new Date('2026-06-24'),
+    court: new Date('2026-06-24'),
+    location: new Date('2026-06-24'),
   };
 
   // Dynamically generate blog post sitemap entries from data
@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/services', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.service },
     { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/about/legal-assistant', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
+    { url: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const, lastModified: d.home },
 
     // Our Law Firm
     { url: '/our-law-firm', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.home },
@@ -55,6 +56,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/criminal-defense/driving-under-suspension', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
     { url: '/criminal-defense/no-operators-license', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
     { url: '/criminal-defense/expungement-record-sealing', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
+    { url: '/criminal-defense/disorderly-conduct', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
+    { url: '/criminal-defense/drug-possession', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
+    { url: '/criminal-defense/marijuana-possession', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
+    { url: '/criminal-defense/open-container', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
 
     // OVI/DUI Defense
     { url: '/ovi-dui-defense', priority: 0.9, changeFrequency: 'weekly' as const, lastModified: d.service },

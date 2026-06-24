@@ -5,11 +5,11 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ohio Courts',
+  title: 'Ohio Courts | Jwayyed Law LLC',
   description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI.',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {
-    title: 'Ohio Courts',
+    title: 'Ohio Courts | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -31,8 +31,25 @@ const counties = [
 ];
 
 export default function CourtsPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Courts Representation"

@@ -65,8 +65,38 @@ export default function AssaultTemplate({ suburb }: Props) {
     },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title={`Assault Defense Attorney in ${suburb}, Ohio`}

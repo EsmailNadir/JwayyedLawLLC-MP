@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Limited Driving Privileges OVI Ohio | Jwayyed',
+  title: 'Limited Driving Privileges OVI Ohio | Jwayyed | Jwayyed Law LLC',
   description: 'Ohio OVI attorney helping you get limited driving privileges after suspension. Get back on the road legally. Call Jwayyed Law LLC: (614) 285-5482.',
   keywords: ['limited driving privileges attorney Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio'],
   openGraph: {
-    title: 'Limited Driving Privileges OVI Ohio | Jwayyed',
+    title: 'Limited Driving Privileges OVI Ohio | Jwayyed | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/limited-driving-privileges',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -60,8 +60,38 @@ const faqs = [
 ];
 
 export default function LimitedDrivingPrivilegesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero

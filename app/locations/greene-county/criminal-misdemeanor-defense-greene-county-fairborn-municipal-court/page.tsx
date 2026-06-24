@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Fairborn & Xenia, Ohio',
-  description: 'Experienced criminal misdemeanor defense attorney for Fairborn, Beavercreek, Xenia, and Greene County, Ohio.',
+  title: 'Criminal Defense Lawyer | Fairborn & Xenia, Ohio | Jwayyed Law LLC',
+  description: 'Criminal defense attorney serving Greene County, Ohio. Assault, domestic violence, drug charges, theft, and more — Fairborn Municipal Court. Call (614) 285-5482.',
   keywords: ['criminal defense Fairborn Ohio', 'misdemeanor attorney Greene County', 'Fairborn Municipal Court criminal lawyer', 'Xenia misdemeanor defense', 'military criminal defense Ohio'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Greene County - Fairborn & Xenia Courts',
+    title: 'Criminal Misdemeanor Defense in Greene County - Fairborn & Xenia Courts | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -59,8 +59,44 @@ const faqs = [
 ];
 
 export default function GreeneCriminalMisdemeanorDefensePage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Criminal Defense in Greene County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Greene County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court"};
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Criminal Misdemeanor Defense in Greene County"

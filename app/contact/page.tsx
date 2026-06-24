@@ -10,13 +10,37 @@ import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 export const metadata: Metadata = {
   title: 'Contact Jwayyed Law LLC | Free Consultation',
   description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving all of Ohio — OVI/DUI, criminal defense, estate planning & more. Call (614) 285-5482.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Jwayyed Law LLC | Free Consultation',
+    description: 'Schedule a free consultation with Jwayyed Law LLC. OVI/DUI, criminal defense, estate planning, and more. Call (614) 285-5482.',
+    url: 'https://www.jjlawohio.com/contact',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
 };
 
 const breadcrumbItems = [{ label: 'Contact', href: '/contact' }];
 
 const ContactPage = () => {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Contact Our Ohio Law Firm"

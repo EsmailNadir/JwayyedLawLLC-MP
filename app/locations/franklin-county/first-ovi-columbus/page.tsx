@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law',
+  title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
   description: 'First OVI offense in Columbus? Mandatory 3-day jail or DIP, $565–$1,075 fine, 1–3 year suspension under HB 37. ALS appeal (30-day deadline). (614) 285-5482.',
   keywords: [
     'first OVI Columbus Ohio',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'Franklin County first OVI attorney',
   ],
   openGraph: {
-    title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law',
+    title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/first-ovi-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -59,8 +59,44 @@ const faqs = [
 ];
 
 export default function ColumbusFirstOVIPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — First OVI Defense in Columbus", "serviceType": "OVI DUI Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/first-ovi-columbus"};
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="First OVI Defense in Columbus, Ohio"

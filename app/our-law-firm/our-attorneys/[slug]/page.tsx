@@ -65,6 +65,19 @@ export default async function StaffProfilePage({
     { label: member.name, href: `/our-law-firm/our-attorneys/${slug}` },
   ];
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -87,6 +100,10 @@ export default async function StaffProfilePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Breadcrumbs items={breadcrumbItems} />
 

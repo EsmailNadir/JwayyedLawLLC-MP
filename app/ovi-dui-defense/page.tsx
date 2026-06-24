@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { oviServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law',
+  title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law LLC',
   description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. First, second, and third OVI charges statewide. Call (614) 285-5482.',
   keywords: [
     'Ohio OVI attorney',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'first OVI defense',
   ],
   openGraph: {
-    title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law',
+    title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law LLC',
     description: 'Experienced OVI/DUI defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -69,8 +69,38 @@ const faqs = [
 ];
 
 export default function OVIDefensePage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio OVI Attorney"
@@ -358,6 +388,89 @@ export default function OVIDefensePage() {
         </div>
       </section>
 
+
+      {/* County Service Locations */}
+      <section className="py-12 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+            OVI/DUI Defense Attorney — Ohio Counties We Serve
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link
+                key="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court"
+                href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & Franklin County Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court"
+                href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court"
+                href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court"
+                href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court"
+                href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"
+                href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Morrow County Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/butler-county/ovi-dui-defense-butler-county-area-courts"
+                href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/athens-county/ovi-dui-defense-athens-municipal-court"
+                href="/locations/athens-county/ovi-dui-defense-athens-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens Municipal Court</span>
+              </Link>
+              <Link
+                key="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court"
+                href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+              >
+                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
+                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington Municipal Court</span>
+              </Link>
+          </div>
+        </div>
+      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

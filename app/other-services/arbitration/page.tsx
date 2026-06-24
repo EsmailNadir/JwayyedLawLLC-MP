@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Arbitration LawyerArbitration Attorney',
+  title: 'Ohio Arbitration LawyerArbitration Attorney | Jwayyed Law LLC',
   description: 'Experienced Ohio arbitration attorney representing businesses and individuals in AAA, JAMS, and private arbitration proceedings.',
   keywords: [
     'arbitration lawyer Columbus OH',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'employment arbitration lawyer Ohio',
   ],
   openGraph: {
-    title: 'Ohio Arbitration LawyerArbitration Attorney',
+    title: 'Ohio Arbitration LawyerArbitration Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/arbitration',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -70,8 +70,38 @@ const faqs = [
 ];
 
 export default function ArbitrationPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Arbitration Lawyer"

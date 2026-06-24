@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Athens County Business Attorney | Jwayyed Law LLC',
-  description: 'Business attorney serving Athens County, Ohio. LLC formation, business law, and contracts. Call (614) 285-5482.',
+  description: 'Business attorney serving Athens County, Ohio. LLC formation, operating agreements, contracts, and business law. Call (614) 285-5482.',
   keywords: ['business lawyer Athens County', 'LLC formation Athens Ohio', 'Athens County business attorney', 'LLC formation Ohio University area', 'small business attorney Athens Ohio'],
   openGraph: {
     title: 'Athens County Business Attorney | Jwayyed Law LLC',
@@ -59,8 +59,44 @@ const faqs = [
 ];
 
 export default function BusinessFormationLLCAthensCountyPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Business Formation and LLC in Athens County", "serviceType": "Business Law", "areaServed": {"@type": "County", "name": "Athens County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/athens-county/business-formation-llc-athens-county"};
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Business & LLC Formation | Athens County, Ohio"

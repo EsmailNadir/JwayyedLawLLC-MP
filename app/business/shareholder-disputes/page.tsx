@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Shareholder Disputes Lawyer Ohio | ORC 1701',
+  title: 'Shareholder Disputes Lawyer Ohio | ORC 1701 | Jwayyed Law LLC',
   description: 'Ohio shareholder disputes attorney handling minority oppression, breach of fiduciary duty, deadlock, books-and-records demands, derivative suits.',
   keywords: ['shareholder disputes lawyer Columbus OH', 'minority shareholder oppression Ohio', 'ORC 1701 attorney', 'corporate dissolution Ohio', 'derivative suit Ohio', 'Franklin County shareholder attorney'],
   openGraph: {
-    title: 'Shareholder Disputes Lawyer Ohio | ORC 1701',
+    title: 'Shareholder Disputes Lawyer Ohio | ORC 1701 | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/shareholder-disputes',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -59,8 +59,38 @@ const faqs = [
 ];
 
 export default function ShareholderDisputesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Shareholder Disputes Lawyer"

@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Expungement Attorney | Jwayyed Law',
+  title: 'Franklin County Expungement Attorney | Jwayyed Law LLC',
   description: 'Expunge or seal your criminal record in Franklin County. R.C. 2953.32, expanded eligibility under H.B. 96. Franklin County Common Pleas. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Franklin County expungement attorney', 'seal criminal record Columbus Ohio', 'expungement Columbus lawyer', 'Ohio record sealing Franklin County', 'Franklin County expungement eligibility'],
   openGraph: {
-    title: 'Franklin County Expungement Attorney | Jwayyed Law',
+    title: 'Franklin County Expungement Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/expungement-franklin-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -52,8 +52,44 @@ const faqs = [
 ];
 
 export default function FranklinCountyExpungementPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Expungement and Record Sealing in Franklin County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/expungement-franklin-county"};
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Franklin County Expungement Attorney — Seal Your Criminal Record"

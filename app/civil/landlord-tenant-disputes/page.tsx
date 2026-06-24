@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Landlord-Tenant Disputes Lawyer Ohio',
+  title: 'Landlord-Tenant Disputes Lawyer Ohio | Jwayyed Law LLC',
   description: 'Ohio landlord-tenant disputes attorney representing landlords and tenants in eviction defense, security deposit claims, habitability issues.',
   keywords: ['landlord tenant disputes lawyer Columbus OH', 'landlord tenant attorney Ohio', 'tenant rights lawyer', 'Ohio eviction defense attorney', 'ORC 5321 landlord tenant'],
   openGraph: {
-    title: 'Landlord-Tenant Disputes Lawyer Ohio',
+    title: 'Landlord-Tenant Disputes Lawyer Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/civil/landlord-tenant-disputes',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -59,8 +59,38 @@ const faqs = [
 ];
 
 export default function LandlordTenantDisputesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Landlord–Tenant Disputes Lawyer"

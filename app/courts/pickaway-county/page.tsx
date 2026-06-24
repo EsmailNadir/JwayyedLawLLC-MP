@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Pickaway County Court Representation',
+  title: 'Pickaway County Court Representation | Jwayyed Law LLC',
   description: 'Experienced legal representation in Pickaway County courts including Circleville Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Pickaway County court attorney',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'U.S. 23 OVI attorney',
   ],
   openGraph: {
-    title: 'Pickaway County Court Representation',
+    title: 'Pickaway County Court Representation | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/courts/pickaway-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -66,8 +66,38 @@ const faqs = [
 ];
 
 export default function PickawayCountyCourtsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Pickaway County Court Representation"

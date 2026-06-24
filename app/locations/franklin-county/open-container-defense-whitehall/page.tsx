@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Open Container Defense | Jwayyed Law',
-  description: 'Open container citation in Whitehall? R.C. 4301.62. Whitehall Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
+  title: 'Whitehall Open Container Defense | Jwayyed Law LLC',
+  description: 'Criminal defense attorney serving Whitehall, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
   keywords: ['Whitehall open container lawyer', 'Whitehall open container defense', 'Whitehall Ohio open container'],
   openGraph: {
-    title: 'Whitehall Open Container Defense | Jwayyed Law',
+    title: 'Whitehall Open Container Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/open-container-defense-whitehall',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -14,5 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function WhitehallOpenContainerPage() {
-  return <OpenContainerTemplate suburb="Whitehall" />;
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Open Container Defense in Whitehall", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Whitehall", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/open-container-defense-whitehall"};
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <OpenContainerTemplate suburb="Whitehall" />
+    </>
+  );
 }

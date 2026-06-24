@@ -24,45 +24,62 @@ const breadcrumbItems = [
 const caseExamples = [
   {
     area: 'OVI/DUI Defense',
-    title: 'First-Time OVI: Charges Reduced to Reckless Operation',
+    title: 'First-Time OVI: Charges Reduced to Reckless Operation | Jwayyed Law LLC',
     summary: 'Client was stopped for a lane violation and arrested for OVI with BAC 0.12%. We challenged the legality of the traffic stop and identified issues with the breath test administration. Result: charges reduced to reckless operation. Client avoided OVI conviction, kept license with limited privileges, and avoided mandatory DIP program.',
     href: '/ovi-dui-defense/first-ovi',
   },
   {
     area: 'OVI/DUI Defense',
-    title: 'ALS Appeal Won—License Reinstated',
+    title: 'ALS Appeal Won—License Reinstated | Jwayyed Law LLC',
     summary: 'Client refused the chemical test after arrest. We filed a timely ALS appeal and at the hearing, cross-examination revealed procedural gaps in the arrest documentation. Result: ALS reversed. Client retained driving privileges while the criminal case proceeded.',
     href: '/ovi-dui-defense',
   },
   {
     area: 'Criminal Defense',
-    title: 'Assault Charges Dismissed After Self-Defense Evidence',
+    title: 'Assault Charges Dismissed After Self-Defense Evidence | Jwayyed Law LLC',
     summary: 'Client was charged with assault following a physical altercation. We gathered witness statements and surveillance footage showing the other party was the aggressor. Result: charges dismissed after presenting self-defense evidence to the prosecutor.',
     href: '/criminal-defense/assault-charges',
   },
   {
     area: 'Personal Injury',
-    title: 'Rear-End Collision: Full Recovery for Client',
+    title: 'Rear-End Collision: Full Recovery for Client | Jwayyed Law LLC',
     summary: 'Client suffered neck and back injuries in a rear-end collision. The at-fault driver\'s insurer initially offered a low settlement. We documented medical treatment, lost wages, and ongoing limitations. Result: settlement covering medical bills, lost wages, and pain and suffering.',
     href: '/personal-injury/car-accidents',
   },
   {
     area: 'Personal Injury',
-    title: 'Slip and Fall at Retail Store',
+    title: 'Slip and Fall at Retail Store | Jwayyed Law LLC',
     summary: 'Client fell on a wet floor in a store with no warning signs. We established that the store had notice of the condition and failed to warn. Result: settlement for medical expenses and pain and suffering.',
     href: '/personal-injury/slip-and-fall',
   },
   {
     area: 'Civil / Landlord-Tenant',
-    title: 'Tenant Recovers for Uninhabitable Conditions',
+    title: 'Tenant Recovers for Uninhabitable Conditions | Jwayyed Law LLC',
     summary: 'Client\'s landlord failed to provide heat and repair water damage. We helped document the violations and properly withhold rent under Ohio law. Result: negotiated release from lease with returned security deposit and compensation for displacement.',
     href: '/civil/landlord-tenant-disputes',
   },
 ];
 
 export default function CaseResultsPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Case Results"

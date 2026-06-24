@@ -20,35 +20,35 @@ const breadcrumbItems = [{ label: 'Our Law Firm', href: '/our-law-firm' }];
 
 const sections = [
   {
-    title: 'Our Attorneys & Staff',
+    title: 'Our Attorneys & Staff | Jwayyed Law LLC',
     description:
       'Meet the legal team at Jwayyed Law LLC — experienced Ohio attorneys dedicated to protecting your rights and achieving results.',
     href: '/our-law-firm/our-attorneys',
     icon: '⚖',
   },
   {
-    title: 'About Us',
+    title: 'About Us | Jwayyed Law LLC',
     description:
       'Learn about our firm\'s history, values, and commitment to providing aggressive, client-focused legal representation throughout Ohio.',
     href: '/our-law-firm/about-us',
     icon: '🏛',
   },
   {
-    title: 'Case Results',
+    title: 'Case Results | Jwayyed Law LLC',
     description:
       'Review our track record of successful outcomes in criminal defense, OVI/DUI, personal injury, civil litigation, and more.',
     href: '/our-law-firm/case-results',
     icon: '📋',
   },
   {
-    title: 'Legal Blog',
+    title: 'Legal Blog | Jwayyed Law LLC',
     description:
       'Stay informed with articles on Ohio law, your legal rights, court procedures, and updates relevant to our practice areas.',
     href: '/our-law-firm/blog',
     icon: '📝',
   },
   {
-    title: 'Document Templates',
+    title: 'Document Templates | Jwayyed Law LLC',
     description:
       'Free Ohio legal document templates — demand letters, repair requests, and more — to use as a starting point for common legal situations.',
     href: '/our-law-firm/document-templates',
@@ -57,8 +57,25 @@ const sections = [
 ];
 
 export default function OurLawFirmPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="About Jwayyed Law LLC"

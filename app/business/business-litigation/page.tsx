@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Business Litigation Lawyer Ohio | ORC 2307',
+  title: 'Business Litigation Lawyer Ohio | ORC 2307 | Jwayyed Law LLC',
   description: 'Ohio business litigation attorney handling contract disputes, fraud, business torts, unfair competition, TROs, and appeals in Ohio Common Pleas Court.',
   keywords: ['business litigation lawyer Columbus OH', 'Ohio business dispute attorney', 'ORC 2307 attorney', 'contract dispute Ohio', 'business fraud lawyer Ohio', 'Franklin County business litigation', 'temporary restraining order Ohio'],
   openGraph: {
-    title: 'Business Litigation Lawyer Ohio | ORC 2307',
+    title: 'Business Litigation Lawyer Ohio | ORC 2307 | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/business-litigation',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -59,8 +59,38 @@ const faqs = [
 ];
 
 export default function BusinessLitigationPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Business Litigation Lawyer"

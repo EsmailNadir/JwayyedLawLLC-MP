@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
+  title: 'ILIT Lawyer Ohio | Life Insurance Trusts | Jwayyed Law LLC',
   description: 'Ohio ILIT attorney serving Columbus, Cincinnati, and Dayton. Remove life insurance from your taxable estate under IRC 2042. Crummey powers, 3-year rule.',
   keywords: [
     'irrevocable life insurance trust Columbus OH',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     '3-year rule life insurance transfer Ohio',
   ],
   openGraph: {
-    title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
+    title: 'ILIT Lawyer Ohio | Life Insurance Trusts | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-life-insurance-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -69,8 +69,38 @@ const faqs = [
 ];
 
 export default function IrrevocableLifeInsuranceTrustsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Irrevocable Life Insurance Trusts (ILIT) Lawyer"

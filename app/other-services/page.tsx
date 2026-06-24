@@ -8,11 +8,11 @@ import Link from 'next/link';
 import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Estate Planning & Probate Lawyer Ohio',
+  title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
   description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and throughout Ohio under ORC Chapter.',
   keywords: ['estate planning attorney Columbus Ohio', 'probate lawyer Ohio', 'dispute resolution attorney Columbus', 'Ohio will attorney', 'trust attorney Columbus OH'],
   openGraph: {
-    title: 'Estate Planning & Probate Lawyer Ohio',
+    title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -57,8 +57,38 @@ const faqs = [
 ];
 
 export default function OtherServicesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Estate Planning, Probate &amp; Dispute Resolution"

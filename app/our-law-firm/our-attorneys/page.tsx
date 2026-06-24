@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/our-law-firm/our-attorneys',
   },
+  openGraph: {
+    title: 'Our Attorneys | Jwayyed Law LLC Ohio',
+    description: 'Meet the legal team at Jwayyed Law LLC — experienced Ohio attorneys in OVI/DUI, criminal defense, estate planning & business law.',
+    url: 'https://www.jjlawohio.com/our-law-firm/our-attorneys',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
 };
 
 const breadcrumbItems = [
@@ -34,8 +40,25 @@ export default function OurStaffPage() {
     (a, b) => roleOrder[a.role] - roleOrder[b.role],
   );
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* ======================= HERO ======================= */}

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Will Contests Lawyer in Ohio | Columbus',
+  title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
   description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution.',
   keywords: [
     'will contest lawyer Columbus OH',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'defending will contest Ohio',
   ],
   openGraph: {
-    title: 'Will Contests Lawyer in Ohio | Columbus',
+    title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
     description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/other-services/will-contests',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -71,8 +71,38 @@ const faqs = [
 ];
 
 export default function WillContestsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Will Contests Lawyer"

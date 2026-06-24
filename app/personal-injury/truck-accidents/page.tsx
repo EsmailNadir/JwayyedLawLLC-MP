@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Truck Accident Lawyer in Ohio',
+  title: 'Truck Accident Lawyer in Ohio | Jwayyed Law LLC',
   description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio.',
   keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
   openGraph: {
-    title: 'Truck Accident Lawyer in Ohio',
+    title: 'Truck Accident Lawyer in Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/personal-injury/truck-accidents',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -58,8 +58,38 @@ const faqs = [
 ];
 
 export default function TruckAccidentsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Truck Accident Lawyer"

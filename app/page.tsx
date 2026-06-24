@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  openGraph: {
+    title: 'Ohio Attorney | OVI & Criminal Defense | Jwayyed Law LLC',
+    description: 'Jwayyed Law LLC — OVI/DUI & criminal defense attorney serving all of Ohio. Call (614) 285-5482 for a free consultation.',
+    url: 'https://www.jjlawohio.com',
+    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+  },
 };
 
 export default function Home() {

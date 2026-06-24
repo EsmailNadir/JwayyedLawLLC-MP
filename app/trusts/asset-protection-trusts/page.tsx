@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Asset Protection Trusts Lawyer in Ohio',
+  title: 'Asset Protection Trusts Lawyer in Ohio | Jwayyed Law LLC',
   description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors.',
   keywords: [
     'asset protection trust Ohio',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Ohio DAPT attorney',
   ],
   openGraph: {
-    title: 'Asset Protection Trusts Lawyer in Ohio',
+    title: 'Asset Protection Trusts Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/asset-protection-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -69,8 +69,38 @@ const faqs = [
 ];
 
 export default function AssetProtectionTrustsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Ohio Asset Protection Trusts Lawyer"

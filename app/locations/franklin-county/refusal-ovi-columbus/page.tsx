@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law',
+  title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law LLC',
   description: 'Refused breath or blood test in Columbus? 1-year ALS for refusal, enhanced OVI penalties. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Columbus OVI refusal lawyer', 'refused breath test Columbus Ohio', 'implied consent OVI Columbus', 'Columbus DUI refusal attorney', 'OVI refusal Franklin County defense'],
   openGraph: {
-    title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law',
+    title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/refusal-ovi-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -52,8 +52,44 @@ const faqs = [
 ];
 
 export default function ColumbusRefusalOVIPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — OVI Refusal Defense in Columbus", "serviceType": "OVI DUI Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/refusal-ovi-columbus"};
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map((f: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Columbus OVI / DUI Refusal Defense Attorney"

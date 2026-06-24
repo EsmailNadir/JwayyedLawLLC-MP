@@ -74,14 +74,28 @@ export default async function BlogPostPage({
     { label: post.title, href: `/our-law-firm/blog/${slug}` },
   ];
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: post.author,
+      url: 'https://www.jjlawohio.com/our-law-firm/about-us',
     },
     publisher: {
       '@type': 'Organization',
@@ -99,6 +113,10 @@ export default async function BlogPostPage({
   // not user-generated input. No XSS risk exists.
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -216,6 +234,69 @@ export default async function BlogPostPage({
           </div>
         </div>
       </article>
+
+      {/* ── Related Practice Areas ─────────────────────────────────── */}
+      {(() => {
+        const serviceLinks: Record<string, { href: string; label: string }[]> = {
+          'Criminal Defense': [
+            { href: '/criminal-defense', label: 'Criminal Defense Overview' },
+            { href: '/criminal-defense/expungement-record-sealing', label: 'Expungement & Record Sealing' },
+            { href: '/criminal-defense/assault-charges', label: 'Assault Defense' },
+          ],
+          'OVI/DUI': [
+            { href: '/ovi-dui-defense', label: 'OVI/DUI Defense Overview' },
+            { href: '/ovi-dui-defense/first-ovi', label: 'First OVI Defense' },
+            { href: '/ovi-dui-defense/high-tier-ovi', label: 'High-Tier OVI Defense' },
+          ],
+          'Personal Injury': [
+            { href: '/personal-injury', label: 'Personal Injury Overview' },
+            { href: '/personal-injury/car-accidents', label: 'Car Accident Attorney' },
+            { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall Claims' },
+          ],
+          'Estate Planning': [
+            { href: '/other-services/estate-planning', label: 'Estate Planning' },
+            { href: '/other-services/will-contests', label: 'Will Contests' },
+            { href: '/trusts', label: 'Trusts Overview' },
+          ],
+          'Business Law': [
+            { href: '/business', label: 'Business Law Overview' },
+            { href: '/business/llc-formation', label: 'LLC Formation' },
+            { href: '/business/contract-drafting-review', label: 'Contract Drafting & Review' },
+          ],
+          'Civil Litigation': [
+            { href: '/civil', label: 'Civil Litigation Overview' },
+            { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
+            { href: '/civil/landlord-tenant-disputes', label: 'Landlord-Tenant Disputes' },
+          ],
+          'Trusts': [
+            { href: '/trusts', label: 'Trusts Overview' },
+            { href: '/trusts/revocable-living-trusts', label: 'Revocable Living Trusts' },
+            { href: '/other-services/estate-planning', label: 'Estate Planning' },
+          ],
+        };
+        const links = serviceLinks[post.category];
+        if (!links) return null;
+        return (
+          <section className="py-10 bg-white border-t border-gray-100">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mb-4">
+                Related Services
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {links.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="inline-block px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-[#b87333] hover:text-[#b87333] transition-colors duration-200 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+                  >
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* ── Related Posts ───────────────────────────────────────────── */}
       <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">

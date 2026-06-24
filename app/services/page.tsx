@@ -13,7 +13,7 @@ import {
 } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Our Legal Services',
+  title: 'Our Legal Services | Jwayyed Law LLC',
   description:
     'Explore legal services offered by Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, and more.',
   openGraph: {
@@ -36,6 +36,19 @@ function ServicesSection({
   intro: string;
   services: ServiceCard[];
 }) {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbItems.map(
+      (item: { label: string; href: string }, idx: number) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'name': item.label,
+        'item': `https://www.jjlawohio.com${item.href}`,
+      })
+    ),
+  };
+
   return (
     <section className="py-10 sm:py-12 border-b border-gray-100 last:border-b-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,6 +84,10 @@ function ServicesSection({
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Our Legal Services"
