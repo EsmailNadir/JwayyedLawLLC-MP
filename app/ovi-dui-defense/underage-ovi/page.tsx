@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Underage OVI Defense Lawyer in Ohio',
+  title: 'Underage OVI Defense Ohio | Jwayyed Law LLC',
   description: 'Experienced Ohio underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio.',
-  keywords: ['underage OVI lawyer Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'OVUAC Ohio'],
+  keywords: ['underage OVI attorney Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'OVUAC Ohio'],
   openGraph: {
-    title: 'Underage OVI Defense Lawyer in Ohio',
+    title: 'Underage OVI Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/underage-ovi',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -65,7 +65,7 @@ export default function UnderageOVIPage() {
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Underage OVI Defense Lawyer in Ohio"
+        title="Underage OVI Defense Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for underage OVI/DUI and OVUAC charges. Protecting your future and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">

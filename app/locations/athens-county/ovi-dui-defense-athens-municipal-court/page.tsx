@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI Defense Lawyer | Athens Municipal Court',
-  description: 'Experienced OVI/DUI defense attorney in Athens County - Athens Municipal Court. Skilled representation for OVI/DUI charges in Athens County, Ohio.',
+  title: 'Athens County OVI Attorney | Jwayyed Law LLC',
+  description: 'OVI/DUI defense attorney in Athens County, Ohio. Athens Municipal Court. HB 37 penalties, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI defense Athens County', 'DUI attorney Athens Municipal Court', 'Athens County OVI lawyer', 'Athens DUI defense'],
   openGraph: {
-    title: 'OVI Defense Lawyer | Athens Municipal Court',
+    title: 'Athens County OVI Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/athens-county/ovi-dui-defense-athens-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Athens County', href: '/courts/athens-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Athens County', href: '/locations/athens-county' },
   { label: 'OVI/DUI Defense - Athens Municipal Court', href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court' },
 ];
 
@@ -62,7 +62,7 @@ export default function AthensOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI Defense Lawyer | Athens Municipal Court"
+        title="OVI Defense Attorney | Athens Municipal Court"
         description="Experienced legal defense for OVI/DUI charges in Athens County. Protecting your rights and fighting for the best possible outcome in Athens Municipal Court."
       />
       <section className="py-16 bg-white">

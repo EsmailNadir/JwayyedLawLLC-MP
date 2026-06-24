@@ -68,7 +68,7 @@ const reviews = [
     name: 'Damilola Celina Fashina',
     rating: 5,
     platform: 'Google',
-    text: "I'm very grateful for the support and expertise my lawyer provided during my DUI case. From the beginning, they were clear, patient, and confident in handling my situation. Thanks to their hard work, my charge was dropped.",
+    text: "I'm very grateful for the support and expertise my attorney provided during my DUI case. From the beginning, they were clear, patient, and confident in handling my situation. Thanks to their hard work, my charge was dropped.",
   },
   {
     name: 'Jayden Wells',
@@ -110,7 +110,7 @@ const reviews = [
     name: 'Allison Tharan',
     rating: 5,
     platform: 'Google',
-    text: 'Amazing job!! He got it dropped to a reckless operation, the fine reduced to 1/3 of what it was going to be, no jail time and got my license back. Best lawyer in the land!!',
+    text: 'Amazing job!! He got it dropped to a reckless operation, the fine reduced to 1/3 of what it was going to be, no jail time and got my license back. Best attorney in the land!!',
   },
   {
     name: 'Mustang Guru',
@@ -310,7 +310,7 @@ export default function HomePageClient() {
                 ))}
               </div>
               <span className="text-slate-200/85">
-                <span className="font-semibold text-white">60+</span> five-star Google reviews
+                <span className="font-semibold text-white">85+</span> five-star Google reviews
               </span>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function HomePageClient() {
               </div>
               <span className="text-sm font-semibold text-slate-900">5.0</span>
               <span className="h-4 w-px bg-slate-300" aria-hidden="true" />
-              <span className="text-sm text-slate-600">60+ Google reviews</span>
+              <span className="text-sm text-slate-600">85+ Google reviews</span>
             </div>
           </div>
 
@@ -587,7 +587,7 @@ export default function HomePageClient() {
           </div>
           <div className="flex items-center justify-center gap-2 mt-8 text-sm text-slate-400">
             <MapPin className="w-4 h-4 text-[#b87333]" aria-hidden="true" />
-            <span>100 E. Campus View Blvd, Suite #250, Columbus, OH 43235</span>
+            <span>100 E. Campus View Blvd, Suite 250, Columbus, OH 43235</span>
           </div>
         </div>
       </section>
@@ -634,15 +634,15 @@ export default function HomePageClient() {
           </h3>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { name: 'Franklin County', href: '/courts/franklin-county' },
-              { name: 'Delaware County', href: '/courts/delaware-county' },
-              { name: 'Butler County', href: '/courts/butler-county' },
-              { name: 'Greene County', href: '/courts/greene-county' },
-              { name: 'Montgomery County', href: '/courts/montgomery-county' },
-              { name: 'Pickaway County', href: '/courts/pickaway-county' },
-              { name: 'Athens County', href: '/courts/athens-county' },
-              { name: 'Morrow County', href: '/courts/morrow-county' },
-              { name: 'Clinton County', href: '/courts/clinton-county' },
+              { name: 'Franklin County', href: '/locations/franklin-county' },
+              { name: 'Delaware County', href: '/locations/delaware-county' },
+              { name: 'Butler County', href: '/locations/butler-county' },
+              { name: 'Greene County', href: '/locations/greene-county' },
+              { name: 'Montgomery County', href: '/locations/montgomery-county' },
+              { name: 'Pickaway County', href: '/locations/pickaway-county' },
+              { name: 'Athens County', href: '/locations/athens-county' },
+              { name: 'Morrow County', href: '/locations/morrow-county' },
+              { name: 'Clinton County', href: '/locations/clinton-county' },
             ].map((c) => (
               <Link
                 key={c.href}

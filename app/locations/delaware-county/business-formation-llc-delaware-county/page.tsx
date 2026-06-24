@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Delaware County',
-  description: 'Business attorney serving Delaware County, Delaware, Powell, Westerville, Dublin, and Lewis Center. LLC formation, business law, contracts.',
+  title: 'Delaware County Business Attorney | Jwayyed Law LLC',
+  description: 'Business attorney serving Delaware County, Ohio. LLC formation, business law, Delaware, Powell, Dublin, Lewis Center. Call (614) 285-5482.',
   keywords: ['business lawyer Delaware County', 'LLC formation Delaware Ohio', 'Delaware County business attorney', 'LLC formation Powell Ohio', 'small business attorney Lewis Center Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation | Delaware County',
+    title: 'Delaware County Business Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/delaware-county/business-formation-llc-delaware-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Delaware County', href: '/courts/delaware-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Delaware County', href: '/locations/delaware-county' },
   { label: 'Business & LLC Formation - Delaware County', href: '/locations/delaware-county/business-formation-llc-delaware-county' },
 ];
 

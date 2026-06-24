@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'OVI with Accident Defense Lawyer in Ohio',
+  title: 'OVI With Accident Ohio | Jwayyed Law LLC',
   description: 'Experienced Ohio OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio.',
-  keywords: ['OVI with accident lawyer Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney'],
+  keywords: ['OVI with accident attorney Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney'],
   openGraph: {
-    title: 'OVI with Accident Defense Lawyer in Ohio',
+    title: 'OVI With Accident Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/ovi-with-accident',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -65,7 +65,7 @@ export default function OVIWithAccidentPage() {
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI with Accident Defense Lawyer in Ohio"
+        title="OVI With Accident Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for OVI/DUI charges involving accidents. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">

@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Mischief Lawyer in Ohio',
-  description: 'Experienced Ohio criminal mischief defense attorney protecting your rights. Skilled representation for criminal mischief and property damage charges under.',
+  title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
+  description: 'Ohio criminal mischief defense attorney for ORC 2909.07 charges statewide. Call Jwayyed Law LLC at (614) 285-5482 for a consultation.',
   keywords: [
     'criminal mischief lawyer Ohio',
     'property damage defense attorney',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'property crime defense attorney'
   ],
   openGraph: {
-    title: 'Criminal Mischief Lawyer in Ohio',
+    title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
     description: 'Experienced criminal mischief defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-mischief',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -76,7 +76,7 @@ export default function CriminalMischiefPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Mischief Lawyer in Ohio"
+        title="Criminal Mischief Defense Attorney in Ohio"
         description="Experienced legal defense for criminal mischief and property damage charges. Protecting your rights and fighting for the best possible outcome."
       />
 

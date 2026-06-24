@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Butler County Courts',
-  description: 'Experienced criminal misdemeanor defense attorney in Butler County - Area Courts and Hamilton Municipal Court. Assault, domestic violence, theft.',
+  title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',
+  description: 'Criminal misdemeanor defense attorney in Butler County, Ohio. Area Courts and Hamilton Municipal Court. Assault, domestic violence, theft. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Butler County', 'misdemeanor attorney Butler County Area Court', 'Butler County criminal lawyer', 'Hamilton Ohio misdemeanor defense', 'Oxford Ohio criminal attorney', 'West Chester misdemeanor lawyer'],
   openGraph: {
-    title: 'Criminal Defense Lawyer | Butler County Courts',
+    title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Butler County', href: '/courts/butler-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Butler County', href: '/locations/butler-county' },
   { label: 'Criminal Misdemeanor Defense - Butler County Area Courts', href: '/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts' },
 ];
 
@@ -63,7 +63,7 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Defense Lawyer | Butler County Courts"
+        title="Criminal Defense Attorney | Butler County Courts"
         description="Experienced legal defense for criminal misdemeanor charges in Butler County. Protecting your rights in Area Courts I, II, III and Hamilton Municipal Court."
       />
       <section className="py-16 bg-white">

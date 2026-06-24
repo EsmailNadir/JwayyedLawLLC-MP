@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Delaware County, Ohio',
-  description: 'Personal injury attorney serving Delaware County, Delaware, Powell, Westerville, Dublin, and Lewis Center. Car accidents, slip and fall, injury claims.',
+  title: 'Delaware County Personal Injury Attorney | Jwayyed Law LLC',
+  description: 'Personal injury attorney serving Delaware County, Ohio. Delaware, Powell, Dublin, Lewis Center. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Delaware County', 'injury lawyer Delaware Ohio', 'Delaware County accident attorney', 'car accident lawyer Powell Ohio', 'personal injury Westerville Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Delaware County, Ohio',
+    title: 'Delaware County Personal Injury Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/delaware-county/personal-injury-delaware-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

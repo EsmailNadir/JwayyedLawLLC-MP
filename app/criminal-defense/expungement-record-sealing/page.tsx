@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Expungement & Record Sealing Lawyer Ohio',
-  description: 'Ohio expungement attorney helping seal criminal records under ORC 2953.32. Misdemeanors, low-level felonies, and dismissed charges.',
+  title: 'Expungement Attorney Ohio | Jwayyed Law LLC',
+  description: 'Ohio expungement attorney sealing criminal records under ORC 2953.32. Misdemeanors, low-level felonies, dismissed charges. Call (614) 285-5482.',
   keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County'],
   openGraph: {
-    title: 'Expungement & Record Sealing Lawyer Ohio',
+    title: 'Expungement Attorney Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/expungement-record-sealing',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -63,7 +63,7 @@ export default function ExpungementRecordSealingPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Expungement &amp; Record Sealing Lawyer in Ohio"
+        title="Expungement &amp; Record Sealing Attorney in Ohio"
         description="Helping clients seal criminal records under ORC Chapter 2953. Misdemeanors, low-level felonies, dismissed charges, and not-guilty verdicts."
       />
       <section className="py-16 bg-white">

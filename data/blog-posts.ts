@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
     title: 'What to Do If You\'re Pulled Over for OVI in Ohio',
     excerpt: 'Being stopped on suspicion of OVI can be intimidating. Know your rights and the critical steps that could protect your future before, during, and after a traffic stop in Ohio.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-02-10',
     featured: true,
     image: '/assets/dui-blog.jpg',
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Understanding Ohio\'s Castle Doctrine and Self-Defense Laws',
     excerpt: 'Ohio law provides strong protections for individuals defending themselves in their homes. Learn where the Castle Doctrine applies, its limits, and what changed with Stand Your Ground.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-02-03',
     featured: true,
     image: '/assets/criminallaw-blog2.jpg',
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Steps to Take After a Car Accident in Ohio',
     excerpt: 'The actions you take in the hours and days after a car accident can determine whether you receive fair compensation. Here is a clear guide for Ohio drivers.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-01-27',
     featured: false,
     image: '/assets/personalinjury-blog.jpg',
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
     title: 'How Ohio\'s New Expungement Laws Could Clear Your Record',
     excerpt: 'Recent changes to Ohio\'s expungement statutes have expanded eligibility significantly. Find out whether your criminal record qualifies for sealing under the updated law.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-01-20',
     featured: false,
     image: '/assets/criminallaws-blog.jpg',
@@ -226,7 +226,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Starting a Business in Ohio: LLC vs. Corporation',
     excerpt: 'Choosing between an LLC and a corporation is one of the first major decisions for any Ohio entrepreneur. Understand the key differences in taxes, liability, and flexibility.',
     category: 'Business Law',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-01-13',
     featured: false,
     image: '/assets/businesslaw-blog.jpg',
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     title: 'What to Expect at Your First Court Appearance in Ohio',
     excerpt: 'Your first time in an Ohio courtroom does not have to be overwhelming. Learn what happens at an arraignment, how to prepare, and what decisions you will face.',
     category: 'Ohio Courts',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-01-06',
     featured: false,
     image: '/assets/courthouse-blog.jpg',
@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio Slip and Fall Laws: What Property Owners Owe You',
     excerpt: 'Slip and fall injuries can result in significant medical bills and lost wages. Understand Ohio\'s premises liability rules and what you need to prove to recover damages.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2025-12-30',
     featured: false,
     image: '/assets/personalinjury-blog2-jpg.jpg',
@@ -362,7 +362,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Protecting Your Rights During a Traffic Stop in Ohio',
     excerpt: 'A routine traffic stop can escalate quickly if you do not understand your rights. Learn what officers can and cannot do during a stop, and how to protect yourself legally.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2025-12-23',
     featured: false,
     image: '/assets/criminallaw-blog3.jpg',
@@ -423,7 +423,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Limited Driving Privileges After OVI in Ohio: What You Need to Know',
     excerpt: 'If your license is suspended after an OVI arrest in Ohio, you may qualify for limited driving privileges. Learn the eligibility rules, deadlines, and how to apply.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-10',
     featured: true,
     image: '/assets/criminal.jpg',
@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio ALS Appeal: Why the 30-Day Deadline Matters',
     excerpt: 'After an OVI arrest, you have only 30 days to appeal your administrative license suspension. Missing this deadline means losing your right to challenge it.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-08',
     featured: false,
     image: '/assets/law.jpg',
@@ -481,7 +481,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Dog Bite Laws in Ohio: Owner Liability and Your Rights',
     excerpt: 'Ohio has specific rules for dog bite liability. Learn when owners are liable, what you can recover, and the steps to take after a dog attack.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-05',
     featured: false,
     image: '/assets/injury.jpg',
@@ -509,7 +509,7 @@ export const blogPosts: BlogPost[] = [
     title: "Landlord's Duty to Repair: Ohio Tenant Rights",
     excerpt: 'Ohio law requires landlords to keep rental properties fit and habitable. Learn your rights when repairs are needed and what to do if your landlord fails to act.',
     category: 'Civil Litigation',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-03',
     featured: false,
     image: '/assets/nav-probate.jpg',
@@ -541,7 +541,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Forming an LLC in Ohio: Step-by-Step Guide',
     excerpt: 'Starting an LLC in Ohio? Here is a clear overview of the process, from choosing a name to filing with the Secretary of State and drafting an operating agreement.',
     category: 'Business Law',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-02-28',
     featured: false,
     image: '/assets/contracts.webp',
@@ -572,7 +572,7 @@ export const blogPosts: BlogPost[] = [
     title: 'What Is a Revocable Living Trust?',
     excerpt: 'A revocable living trust lets you control your assets during life and avoid probate after death. Learn how it works and whether it makes sense for you.',
     category: 'Trusts',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-02-25',
     featured: false,
     image: '/assets/estatePlanning.webp',
@@ -605,7 +605,7 @@ export const blogPosts: BlogPost[] = [
     title: 'First DUI in Ohio: Will I Go to Jail?',
     excerpt: 'Facing your first OVI/DUI in Ohio? Learn what penalties to expect, including jail time, fines, and license suspension. An attorney can help you fight for the best outcome.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-15',
     featured: true,
     image: '/assets/Contractss.webp',
@@ -636,7 +636,7 @@ export const blogPosts: BlogPost[] = [
     title: 'How Much Does a DUI Cost in Ohio?',
     excerpt: 'The total cost of an OVI/DUI in Ohio goes far beyond court fines. Learn about fines, lawyer fees, insurance increases, and other hidden costs.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-14',
     featured: false,
     image: '/assets/passport.jpg',
@@ -670,7 +670,7 @@ export const blogPosts: BlogPost[] = [
     title: 'I Was Charged with Assault—What Happens Next?',
     excerpt: 'Facing assault charges in Ohio? Learn what to expect at arraignment, possible penalties, and how a criminal defense attorney can help protect your rights.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-12',
     featured: true,
     image: '/assets/law.webp',
@@ -696,7 +696,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Shoplifting in Ohio: First Offense and Consequences',
     excerpt: 'Shoplifting and petty theft in Ohio can lead to criminal charges, fines, and a record. Learn the penalties, possible defenses, and how to protect your future.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-11',
     featured: false,
     image: '/assets/power.jpg',
@@ -724,7 +724,7 @@ export const blogPosts: BlogPost[] = [
     title: 'I Slipped and Fell at a Store—Can I Sue?',
     excerpt: 'If you were injured in a slip and fall at a store or business in Ohio, you may have a claim. Learn what you need to prove and what to do next.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-09',
     featured: false,
     image: '/assets/nav-probate.webp',
@@ -749,7 +749,7 @@ export const blogPosts: BlogPost[] = [
     title: 'How Long Do I Have to Sue After an Injury in Ohio?',
     excerpt: 'Ohio has strict deadlines for filing personal injury lawsuits. Missing the statute of limitations means you lose your right to sue. Learn the time limits that apply.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-07',
     featured: true,
     image: '/assets/power.webp',
@@ -777,7 +777,7 @@ export const blogPosts: BlogPost[] = [
     title: "My Landlord Won't Fix the Heat (or Repairs)—What Can I Do?",
     excerpt: 'Ohio law requires landlords to maintain fit and habitable housing. If your landlord refuses to make repairs, you have options. Learn your rights as a tenant.',
     category: 'Civil Litigation',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-06',
     featured: false,
     image: '/assets/service-page.jpg',
@@ -805,7 +805,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Do I Need a Will in Ohio?',
     excerpt: 'Most people benefit from having a will. Learn what happens if you die without one in Ohio and why a will is one of the most important documents you can have.',
     category: 'Estate Planning',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-04',
     featured: false,
     image: '/assets/LastWills.webp',
@@ -830,7 +830,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Do I Need an LLC for My Business?',
     excerpt: 'Wondering whether to form an LLC? Learn the benefits of limited liability, when an LLC makes sense, and when it might not be necessary.',
     category: 'Business Law',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-02',
     featured: false,
     image: '/assets/businessLaw.webp',
@@ -855,7 +855,7 @@ export const blogPosts: BlogPost[] = [
     title: "What's the Difference Between a Will and a Trust?",
     excerpt: 'Wills and trusts both help you pass assets to loved ones, but they work differently. Learn the key differences and which might be right for you.',
     category: 'Estate Planning',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-01',
     featured: false,
     image: '/assets/trusts.webp',
@@ -880,7 +880,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio Probate: Step-by-Step Guide to Administering an Estate',
     excerpt: 'When someone dies in Ohio, their estate may need to pass through probate court. Learn the full step-by-step process—from opening the estate to final distribution—and when probate can be avoided.',
     category: 'Estate Planning',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-16',
     featured: false,
     image: '/assets/realestate-blog.jpg',
@@ -917,7 +917,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio Expungement in 2024: Who Qualifies and How It Works',
     excerpt: 'A criminal record can follow you for life—but Ohio law allows many offenders to seal or expunge their records. Find out if you qualify, how long you must wait, and what the petition process involves.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-17',
     featured: false,
     image: '/assets/criminallaw-blog2.jpg',
@@ -954,7 +954,7 @@ export const blogPosts: BlogPost[] = [
     title: 'LLC vs. Corporation in Ohio: Which Is Right for Your Business?',
     excerpt: 'Choosing between an LLC and a corporation is one of the most important early decisions for any Ohio business owner. Learn the key differences in liability, taxes, management, and costs.',
     category: 'Business Law',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-18',
     featured: false,
     image: '/assets/businesslaw-blog.jpg',
@@ -988,7 +988,7 @@ export const blogPosts: BlogPost[] = [
     title: "Ohio Personal Injury Statute of Limitations: Don't Miss Your Window",
     excerpt: 'Ohio law gives you a limited window to file a personal injury lawsuit. Miss the deadline and you may permanently lose your right to compensation. Learn the rules, exceptions, and why acting quickly matters.',
     category: 'Personal Injury',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-19',
     featured: false,
     image: '/assets/personalinjury-blog.jpg',
@@ -1025,7 +1025,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio Security Deposit Laws: What Landlords and Tenants Must Know',
     excerpt: 'Ohio has strict rules governing security deposits—how they must be held, when they must be returned, and what happens when landlords wrongfully withhold them. Both landlords and tenants should know their rights.',
     category: 'Civil Litigation',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-20',
     featured: false,
     image: '/assets/realestate-blog.jpg',
@@ -1059,7 +1059,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Misdemeanor vs. Felony in Ohio: Understanding the Difference',
     excerpt: 'Ohio classifies crimes into misdemeanors and felonies, with each carrying very different consequences. Understanding the classification system, maximum penalties, and long-term collateral consequences is critical.',
     category: 'Criminal Defense',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-21',
     featured: false,
     image: '/assets/criminallaw-blog2.jpg',
@@ -1103,7 +1103,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ohio Power of Attorney: Everything You Need to Know',
     excerpt: 'A power of attorney allows someone you trust to act on your behalf if you become incapacitated. Ohio law has specific requirements for creating a valid POA—and having one can spare your family enormous stress.',
     category: 'Estate Planning',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-22',
     featured: false,
     image: '/assets/realestate-blog.jpg',
@@ -1137,7 +1137,7 @@ export const blogPosts: BlogPost[] = [
     title: 'What Happens After an OVI Arrest in Ohio: The Complete Timeline',
     excerpt: 'An OVI arrest sets off a chain of legal events that can feel overwhelming. This guide walks you through every stage—from booking and arraignment to sentencing and BMV reinstatement—so you know what to expect.',
     category: 'OVI/DUI',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-23',
     featured: false,
     image: '/assets/dui-blog.jpg',
@@ -1177,7 +1177,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Civil Protection Orders in Ohio: What You Need to Know',
     excerpt: 'Ohio courts issue civil protection orders to protect victims of domestic violence and stalking. Whether you need one or have one filed against you, understanding the process and your rights is critical.',
     category: 'Civil Litigation',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-24',
     featured: false,
     image: '/assets/criminallaw-blog2.jpg',
@@ -1211,7 +1211,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Starting a Nonprofit in Ohio: Legal Requirements and Steps',
     excerpt: 'Forming a nonprofit in Ohio involves multiple legal steps—from incorporating with the state to obtaining IRS tax-exempt status. Here is a comprehensive guide to doing it right the first time.',
     category: 'Business Law',
-    author: 'Jwayyed Law LLC',
+    author: 'Jwayyed Jwayyed',
     date: '2026-03-25',
     featured: false,
     image: '/assets/businesslaw-blog.jpg',
@@ -1244,6 +1244,213 @@ export const blogPosts: BlogPost[] = [
       <p>Forming the nonprofit is just the beginning. To maintain your 501(c)(3) status and good standing in Ohio, you must: file annual IRS Form 990 (990-N, 990-EZ, or 990 depending on revenue); file annual Ohio nonprofit biennial reports with the Secretary of State; renew your AG charitable registration annually; hold regular board meetings and keep minutes; maintain a conflicts of interest policy; and avoid prohibited activities (excessive private benefit, substantial lobbying, political campaign activity). Failing to file Form 990 for three consecutive years results in automatic revocation of tax-exempt status by the IRS.</p>
 
       <p>Starting a nonprofit the right way requires careful planning and legal guidance. Jwayyed Law LLC assists Ohio nonprofit founders with <a href="/business">business formation</a>, governance documents, and compliance planning. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
+    `,
+  },
+  {
+    slug: 'ohio-defamation-statute-of-limitations-one-year-rule',
+    title: 'Ohio Defamation Statute of Limitations: The One-Year Rule (ORC 2305.11)',
+    excerpt: 'Ohio gives you one year to file a defamation claim under ORC 2305.11. Learn when the clock starts, why it is so short, and what happens if you miss it.',
+    category: 'Civil Litigation',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>If someone has damaged your reputation with a false statement, one of the first things to understand is how much time you have to act. In Ohio, the window for filing a defamation lawsuit is unusually short — far shorter than for many other kinds of legal claims. Missing it can end your case before it begins, no matter how strong the underlying facts are.</p>
+      <p>Under Ohio Revised Code § 2305.11(A), an action for libel or slander must be commenced within one year after the cause of action accrued. One year is short. By comparison, Ohio gives two years for bodily injury claims and many written-contract claims run longer. Defamation sits among the shortest limitations periods in Ohio law.</p>
+      <h2>When Does the Clock Start?</h2>
+      <p>In the ordinary defamation case, the one-year clock starts on the date the defamatory statement is published — that is, the date it is communicated to a third party — not the date you discover it. "Publication" in defamation law means communication to at least one person other than you. A single email, social media post, or remark to a coworker can satisfy it.</p>
+      <p>This default rule matters. Because the clock can begin running the moment a statement reaches a third party, waiting to "see how things play out" can quietly consume your filing window.</p>
+      <h2>The Discovery Rule Exception</h2>
+      <p>Ohio courts have recognized a discovery rule in defamation: in some circumstances, the one-year period does not begin until the plaintiff knew or reasonably should have known that the statement was published. <em>Weidman v. Hildebrant</em> (Ohio App. 2024) illustrates how courts apply this in hidden-publication scenarios. However, the discovery rule is not available in every case — courts examine whether the plaintiff exercised reasonable diligence.</p>
+      <p>If you believe you have a defamation claim, consult an attorney promptly. Jwayyed Law LLC handles <a href="/civil">civil litigation</a> including defamation matters throughout Ohio (outside Franklin County for civil purposes, the firm serves Franklin County clients). Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. Consult an attorney for guidance on your specific situation.</em></p>
+    `,
+  },
+  {
+    slug: 'can-you-sue-for-defamation-ohio-elements-defenses',
+    title: 'Can You Sue for Defamation in Ohio? Elements, Defenses, and What to Expect',
+    excerpt: 'What it takes to bring a defamation claim in Ohio: the elements you must prove, common defenses like truth and opinion, and a realistic look at the process.',
+    category: 'Civil Litigation',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Being lied about in public is upsetting, and many people's first instinct is to ask whether they can sue. The answer depends on the facts. Ohio law allows defamation claims, but not every hurtful or unfair statement qualifies. Understanding what a claim actually requires — and the defenses you would face — helps you make a clear-eyed decision.</p>
+      <h2>The Elements You Generally Have to Prove</h2>
+      <p>Defamation in Ohio is a common-law claim. To bring one, a plaintiff generally must establish: (1) a false statement of fact — not opinion; (2) published to a third party; (3) of and concerning the plaintiff; (4) made with the required level of fault (negligence for private figures; actual malice for public figures under <em>New York Times Co. v. Sullivan</em>); and (5) damages, or a statement that is defamatory per se.</p>
+      <h2>Defamation Per Se</h2>
+      <p>Ohio recognizes defamation per se — statements so inherently damaging that harm is presumed. Categories include: falsely accusing someone of a crime; statements that injure a person in their trade or profession; statements imputing a loathsome disease; and certain statements about sexual conduct. Under <em>Becker v. Toulmin</em> and subsequent Ohio decisions, a plaintiff in a per se case does not have to prove actual economic harm to recover general damages.</p>
+      <h2>Common Defenses</h2>
+      <p>Truth is an absolute defense in Ohio — a true statement cannot be defamatory, no matter how damaging. Opinion is also protected: statements of pure opinion that cannot be verified as true or false are not actionable. Privilege (absolute or qualified) protects statements made in certain contexts, such as court proceedings or employment references made in good faith.</p>
+      <p>If you believe you have a defamation claim or are defending one, Jwayyed Law LLC handles <a href="/civil">civil litigation</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. Consult an attorney for guidance on your specific situation.</em></p>
+    `,
+  },
+  {
+    slug: 'libel-vs-slander-ohio-difference',
+    title: 'Libel vs. Slander in Ohio: What\'s the Difference?',
+    excerpt: 'Libel is written defamation; slander is spoken. Learn how Ohio law treats the two, what defamation per se means, and why the distinction affects damages.',
+    category: 'Civil Litigation',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>People often use "libel" and "slander" as if they mean the same thing. In everyday conversation that is harmless, but in an actual defamation case the difference can matter — particularly when it comes to proving harm.</p>
+      <h2>The Basic Distinction</h2>
+      <p><strong>Libel</strong> is defamation in written, printed, or otherwise fixed and lasting form. <strong>Slander</strong> is defamation in spoken, transitory form. Both are forms of defamation — a false statement of fact, communicated to a third party, that harms someone's reputation.</p>
+      <h2>Why It Matters for Damages</h2>
+      <p>Ohio courts have historically treated the lasting nature of written statements as more serious than spoken ones. As a result, libel per se can be easier to establish than slander per se. Ohio recognizes slander per se for four categories of statements: falsely accusing someone of a crime; statements injurious to one's trade or profession; statements imputing a loathsome disease; and statements about unchastity. Outside these categories, a slander plaintiff typically must prove actual, special damages — quantifiable economic loss.</p>
+      <h2>Online Statements</h2>
+      <p>Online posts, social media comments, and emails are generally treated as libel because they are written and lasting — even if brief. A single defamatory tweet or Yelp review can satisfy the libel definition. See also our article on <a href="/our-law-firm/blog/ohio-single-publication-rule-online-defamation">Ohio's single publication rule and online defamation</a>.</p>
+      <p>Jwayyed Law LLC handles <a href="/civil">civil litigation</a> including defamation matters throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026.</em></p>
+    `,
+  },
+  {
+    slug: 'ohio-single-publication-rule-online-defamation',
+    title: 'Ohio\'s Single Publication Rule and Online Defamation',
+    excerpt: 'How Ohio\'s single publication rule applies to online posts and reviews, and how it affects the one-year defamation deadline for content that stays up.',
+    category: 'Civil Litigation',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>If someone posts a defamatory statement about you online — a false Google review, a damaging social media post, an untrue article — you might assume that every day it stays up restarts the one-year statute of limitations. Ohio's single publication rule says otherwise, and understanding it is critical before deciding when to act.</p>
+      <h2>What the Single Publication Rule Means</h2>
+      <p>Under the single publication rule, a mass communication — a newspaper edition, a book printing, or a single online post — gives rise to only one cause of action, regardless of how many people read it or how long it remains accessible. The one-year limitations period (ORC 2305.11(A)) begins when the statement is first published, not each time someone views it.</p>
+      <p>Applied online: a Google review posted on March 1 that is still visible two years later does not give you a fresh one-year window every day it stays up. The clock started on March 1 of the original post year. If you wait 13 months to sue, your claim is likely time-barred even though the review is still harming you.</p>
+      <h2>The Honest Uncertainty in Ohio</h2>
+      <p>Ohio courts have not definitively settled how the single publication rule applies to all online scenarios — particularly content that is substantially revised or re-published by a new act of the defendant. A significant update to a post may constitute a new publication. This area of law continues to develop, and the answer in a specific case turns on how a court characterizes the online activity.</p>
+      <p>If you are considering a defamation claim involving online content, consult an attorney promptly. Jwayyed Law LLC handles <a href="/civil">civil litigation</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. The single-publication rule's application to online content is unsettled in Ohio — consult an attorney for advice on your specific situation.</em></p>
+    `,
+  },
+  {
+    slug: 'fra-suspension-ohio-what-it-is-how-to-fix',
+    title: 'What Is an FRA Suspension in Ohio (and How to Fix It)?',
+    excerpt: 'An FRA suspension in Ohio is tied to proof of insurance. Learn what triggers it, the SR-22 and reinstatement-fee requirements, and how to seek driving privileges.',
+    category: 'Criminal Defense',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/dui-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>An FRA suspension is one of the most common — and most confusing — types of license suspension in Ohio. It has nothing to do with DUI or criminal charges. It is triggered by failing to maintain proof of insurance under Ohio's Financial Responsibility Act (FRA), ORC Chapter 4509.</p>
+      <h2>What Triggers an FRA Suspension</h2>
+      <p>Ohio requires all drivers to carry at least minimum liability insurance. An FRA suspension can be triggered when: (1) you are involved in an accident and cannot show proof of insurance; (2) a random BMV verification request goes unanswered; or (3) your insurance lapses and your insurer notifies the BMV. Under HB 29 (effective April 9, 2025), the BMV's random verification program was restructured — if you receive a verification request, respond promptly.</p>
+      <h2>Reinstatement Requirements</h2>
+      <p>To clear an FRA suspension, Ohio generally requires: (1) proof of current insurance (SR-22 certificate filed by your insurer with the BMV); (2) payment of reinstatement fees — $40 for a first suspension, $300 for a second, $600 for a third or subsequent under ORC 4509.101; and (3) maintaining the SR-22 for a required period (typically one year).</p>
+      <h2>Limited Driving Privileges</h2>
+      <p>During an FRA suspension, you may be eligible for limited driving privileges for work, school, or medical appointments. An attorney can petition the court or BMV for these privileges. Driving on a suspended license — even an FRA suspension — is a criminal offense in Ohio (Driving Under Suspension, ORC 4510.11).</p>
+      <p>If you have an FRA suspension or a <a href="/criminal-defense/driving-under-suspension">driving under suspension charge</a>, Jwayyed Law LLC can help. We serve clients throughout Ohio outside Franklin County for criminal matters. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including HB 29 (effective April 9, 2025). Consult an attorney for advice on your specific situation.</em></p>
+    `,
+  },
+  {
+    slug: 'what-to-expect-circleville-municipal-court-pickaway-county',
+    title: 'What to Expect in Circleville Municipal Court (Pickaway County)',
+    excerpt: 'A practical guide to appearing in Circleville Municipal Court in Pickaway County — what cases it hears, arraignment and pretrial, what to bring, and courtroom etiquette.',
+    category: 'Criminal Defense',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Circleville Municipal Court serves the City of Circleville and Pickaway County. If you have been charged with an OVI, misdemeanor, or traffic offense in the Circleville area, your case will be heard there. Attorney Jwayyed Jwayyed previously served as Assistant Law Director for the City of Circleville — he is familiar with the court's procedures, judges, and local practices.</p>
+      <h2>Jurisdiction and Location</h2>
+      <p>Circleville Municipal Court is located at 151 E. Franklin St., Circleville, OH 43113. The court handles misdemeanor criminal offenses, OVI/DUI, traffic violations, and civil cases up to $15,000 under ORC 1901.17 and ORC 1901.20. Felony charges are bound over to Pickaway County Common Pleas Court.</p>
+      <h2>What to Expect at Arraignment</h2>
+      <p>At arraignment, the court formally reads the charges against you and asks for your plea. You will enter not guilty, guilty, or no contest. In most cases, entering a not guilty plea at arraignment is advisable — it preserves your options and gives your attorney time to review the evidence. The court will set conditions for release (personal recognizance or bail) and schedule a pretrial conference.</p>
+      <h2>Pretrial Conference</h2>
+      <p>At the pretrial, your attorney and the prosecutor exchange discovery (police reports, dashcam footage, test results) and discuss potential resolutions. Many cases resolve at or after the pretrial stage. If no agreement is reached, the case proceeds to trial.</p>
+      <h2>Practical Tips</h2>
+      <p>Arrive early. Dress professionally. Bring your ID and any paperwork related to the case. Do not discuss your case in the hallways. If you are represented by counsel, let your attorney do the talking in court.</p>
+      <p>Jwayyed Law LLC regularly appears at Circleville Municipal Court and courts throughout Pickaway County. If you have been charged with an OVI or misdemeanor in Circleville, call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Court rules and procedures may change. Consult an attorney for advice on your specific case.</em></p>
+    `,
+  },
+  {
+    slug: 'ovi-charges-ohio-university-students-athens',
+    title: 'OVI Charges for Ohio University Students: What Athens Defendants Should Know',
+    excerpt: 'An OVI charge in Athens carries stakes beyond court for Ohio University students — academic discipline, financial aid, and licenses. Here is what to understand.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/dui-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Athens, Ohio is a college town, and OVI charges involving Ohio University students are common at Athens Municipal Court. For a student, an OVI is not just a criminal matter — it can trigger academic consequences, affect financial aid, and threaten professional licenses. Understanding the stakes helps you make informed decisions.</p>
+      <h2>Where Your Case Will Be Heard</h2>
+      <p>OVI arrests in Athens are typically processed at Athens Municipal Court, which sits at 8 E. Washington St., Athens, OH 45701. The court has jurisdiction over misdemeanor OVI charges arising in Athens County. Athens Municipal Court handles a high volume of student-related cases each academic year.</p>
+      <h2>The Criminal Consequences</h2>
+      <p>A first OVI conviction in Ohio under ORC 4511.19 carries: a mandatory minimum of 3 days in jail (or a 3-day driver intervention program), a fine of $375–$1,075, license suspension of 1–3 years, and points on your record. A BAC at or above 0.17 (high-tier OVI) triggers higher mandatory minimums. An OVUAC charge (under 21, BAC 0.02–0.079) carries different but still serious penalties.</p>
+      <h2>Academic and Financial Aid Consequences</h2>
+      <p>Ohio University's Student Code of Conduct prohibits operating a vehicle under the influence. A criminal conviction can trigger a student conduct referral. Separately, federal financial aid (Pell Grants, subsidized loans) can be affected by drug-related convictions — and while OVI is not a drug offense, each school applies its own standards. Professional programs (nursing, education, law) conduct background checks where an OVI can create complications.</p>
+      <h2>Administrative License Suspension (ALS)</h2>
+      <p>If you refused a breath or blood test, or tested at 0.08 or above at the scene, an Administrative License Suspension takes effect immediately — separate from the criminal case. You have 30 days to appeal the ALS. Acting quickly matters.</p>
+      <p>Jwayyed Law LLC defends OVI charges at Athens Municipal Court and throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. We serve clients outside Franklin County for OVI matters.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. Consult an attorney for advice on your specific situation.</em></p>
+    `,
+  },
+  {
+    slug: 'estate-planning-new-parents-central-ohio',
+    title: 'Estate Planning for New Parents in Central Ohio',
+    excerpt: 'Welcoming a child changes what is at stake. A straightforward estate plan lets central Ohio parents name a guardian, protect savings, and plan with peace of mind.',
+    category: 'Estate Planning',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/estatePlanning.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Becoming a parent changes your relationship with risk. Before a child, an incomplete estate plan is an inconvenience. After one, it can mean a court deciding who raises your child. A straightforward estate plan — drafted and signed — solves that and does not have to be complicated.</p>
+      <h2>Naming a Guardian</h2>
+      <p>The most important thing a will does for new parents is name a guardian for minor children. Under ORC 2111.12 and ORC 2111.121, a parent can nominate a guardian in a will. If both parents die without naming one, the Probate Court appoints a guardian — often after a contested hearing among relatives. Naming your choice in a will does not guarantee the court will follow it, but it creates a strong, documented preference that courts take seriously.</p>
+      <h2>A Will Is Not Enough by Itself</h2>
+      <p>A will controls assets that pass through your estate — property in your name alone with no beneficiary designation. It does not control life insurance, 401(k)s, IRAs, or joint accounts with right of survivorship. Review and update beneficiary designations on all financial accounts. If you name your estate as beneficiary on a life insurance policy, those funds go through probate — which is slower and more expensive than a direct beneficiary transfer.</p>
+      <h2>Consider a Revocable Living Trust</h2>
+      <p>For parents who want to avoid probate and control how assets are distributed over time (for example, at age 25 rather than 18), a <a href="/trusts/revocable-living-trusts">revocable living trust</a> is worth considering. You retain full control during your lifetime; assets held in the trust pass outside probate at your death.</p>
+      <h2>Powers of Attorney</h2>
+      <p>A durable power of attorney designates someone to handle your financial affairs if you are incapacitated. A healthcare power of attorney designates someone to make medical decisions. These documents are especially important for young parents — an accident or illness that temporarily incapacitates you should not freeze your family's finances.</p>
+      <p>Jwayyed Law LLC assists central Ohio families with <a href="/trusts">estate planning</a>, wills, trusts, and powers of attorney throughout Ohio including Franklin County. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including ORC 2111.12 and ORC 2111.121. Consult an attorney for advice on your specific estate planning situation.</em></p>
+    `,
+  },
+  {
+    slug: 'first-time-landlord-columbus-legal-checklist',
+    title: 'First-Time Landlord in Columbus? Your Legal Checklist',
+    excerpt: 'A practical legal checklist for new Columbus and central-Ohio landlords: leases, security deposits, disclosures, repairs, entry notice, and evictions.',
+    category: 'Civil Litigation',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-06-23',
+    featured: false,
+    image: '/assets/courthouse-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Renting out a property in Columbus or central Ohio for the first time means entering a highly regulated relationship. Ohio's landlord-tenant law under ORC Chapter 5321 is detailed and tenant-protective. Getting the basics right from the start prevents costly disputes later.</p>
+      <h2>Your Lease Agreement</h2>
+      <p>Use a written lease. An oral month-to-month tenancy is legal in Ohio but creates unnecessary ambiguity. Your lease should cover: rent amount and due date; late fee (if any — Ohio does not cap late fees but they must be reasonable); security deposit terms; who pays utilities; rules about guests, pets, smoking; and the lease term. Ohio does not require a specific lease form, but having an attorney review your template before you use it is worthwhile.</p>
+      <h2>Security Deposit Rules</h2>
+      <p>Ohio does not cap security deposit amounts. However, under ORC 5321.16: if you hold a deposit for more than 30 days on a month-to-month tenancy, you must pay 5% annual interest on the amount over one month's rent. You must return the deposit (or itemized deductions) within 30 days of the tenant moving out. Failure to comply can cost you double the withheld amount plus attorney fees.</p>
+      <h2>Habitability and Repair Obligations</h2>
+      <p>Ohio landlords must maintain rental property in a fit and habitable condition under ORC 5321.04. You must keep all common areas safe, maintain in good working order all electrical, plumbing, sanitary, heating, and ventilating systems, and comply with all housing, health, and safety codes. A tenant who gives reasonable notice of a needed repair that you fail to make can withhold rent or terminate the lease under ORC 5321.07 — following a specific notice procedure.</p>
+      <h2>Entry Notice Requirement</h2>
+      <p>Under ORC 5321.04(A)(8), you must give the tenant at least 24 hours notice before entering — except in emergencies. Entering without notice is a violation that can give the tenant grounds for a lease termination or damages claim.</p>
+      <h2>Evictions</h2>
+      <p>Ohio's eviction process (forcible entry and detainer) requires a 3-day written notice to vacate under ORC 1923.04 before filing in court. You cannot self-help evict — no changing locks, removing belongings, or shutting off utilities to force a tenant out. The court process typically takes 3–6 weeks from notice to writ of possession in Franklin County.</p>
+      <p>Jwayyed Law LLC handles <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> and evictions throughout Ohio including Franklin County. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including ORC Chapter 5321. Local court rules may differ. Consult an attorney for advice on your specific situation.</em></p>
     `,
   },
 ];

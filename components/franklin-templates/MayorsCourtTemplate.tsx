@@ -28,8 +28,8 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `${suburb} Mayor's Court`, href: `/locations/franklin-county/mayors-court-${slug}` },
   ];
 
@@ -55,7 +55,7 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
       answer: `Yes. A conviction in ${suburb} Mayor's Court is a criminal conviction under Ohio law and creates a permanent public record identical in effect to a conviction in any other Ohio court. The conviction appears on criminal background checks and is subject to the same expungement rules under ORC 2953.32. Many misdemeanor convictions are eligible for expungement after applicable waiting periods. Our firm evaluates expungement eligibility as part of every defense engagement and advises on long-term record outcomes.`,
     },
     {
-      question: `Do I need a lawyer for ${suburb} Mayor's Court?`,
+      question: `Do I need an attorney for ${suburb} Mayor's Court?`,
       answer: `You have the right to an attorney in ${suburb} Mayor's Court for any charge that carries the possibility of incarceration. While minor traffic violations can sometimes be handled without counsel, any misdemeanor criminal charge — OVI, disorderly conduct, theft, assault — benefits significantly from attorney representation. An attorney can evaluate defenses you may not know about, negotiate with the prosecutor before your court date, and pursue dismissal or diversion options that are not available to unrepresented defendants. Call Jwayyed Law LLC at (614) 285-5482 before your ${suburb} Mayor's Court date.`,
     },
   ];

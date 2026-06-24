@@ -34,8 +34,8 @@ export default function OVITemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `OVI Defense — ${suburb}`, href: `/locations/franklin-county/ovi-dui-defense-${slug}` },
   ];
 

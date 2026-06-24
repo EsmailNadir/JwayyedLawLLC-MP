@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Delaware, Ohio',
-  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals.',
+  title: 'Delaware County OVI Attorney | Jwayyed Law LLC',
+  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Delaware, Ohio',
+    title: 'Delaware County OVI Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Delaware County', href: '/courts/delaware-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Delaware County', href: '/locations/delaware-county' },
   { label: 'OVI/DUI Defense - Delaware County Municipal Court', href: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court' },
 ];
 
@@ -63,7 +63,7 @@ export default function DelawareOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI / DUI Lawyer for Delaware, Ohio"
+        title="OVI / DUI Attorney for Delaware, Ohio"
         description="Delaware County Municipal Court OVI defense. Serving Delaware, Powell, Dublin, Westerville, Lewis Center, and Sunbury under HB 37 and ORC 4511.19."
       />
       <section className="py-16 bg-white">

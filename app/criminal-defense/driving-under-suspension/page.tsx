@@ -7,8 +7,8 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Driving Under Suspension Lawyer in Ohio',
-  description: 'Experienced Ohio driving under suspension (DUS) defense attorney. Defense for ORC 4510.11, 4510.14, and 4510.16 charges.',
+  title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
+  description: 'Ohio driving under suspension defense attorney for ORC 4510.11, 4510.14, and 4510.16 charges statewide. Call (614) 285-5482.',
   keywords: [
     'driving under suspension lawyer Ohio',
     'DUS defense attorney Ohio',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'Ohio DUS attorney'
   ],
   openGraph: {
-    title: 'Driving Under Suspension Lawyer in Ohio',
+    title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
     description: 'Experienced driving under suspension defense representation throughout Ohio. Protect your rights and work toward license reinstatement.',
     url: 'https://www.jjlawohio.com/criminal-defense/driving-under-suspension',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -76,7 +76,7 @@ export default function DrivingUnderSuspensionPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Driving Under Suspension Lawyer in Ohio"
+        title="Driving Under Suspension Defense in Ohio"
         description="Experienced legal defense for driving under suspension (DUS) charges throughout Ohio. Protecting your rights and working toward reinstatement of your driving privileges."
       />
 

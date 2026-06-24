@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Disorderly Conduct Defense Attorney | Ohio | Jwayyed Law',
+  title: 'Disorderly Conduct Defense Ohio | Jwayyed Law LLC',
   description: 'Charged with disorderly conduct in Ohio? Jwayyed Law LLC defends R.C. 2917.11 charges across Franklin County and central Ohio. Call (614) 285-5482.',
   keywords: [
     'disorderly conduct lawyer Ohio',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'disorderly conduct M4 Ohio',
   ],
   openGraph: {
-    title: 'Disorderly Conduct Defense Attorney | Ohio | Jwayyed Law',
+    title: 'Disorderly Conduct Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/disorderly-conduct',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -117,8 +117,8 @@ export default function DisorderlyConductPage() {
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing disorderly conduct charges in{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/courts/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>, or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
+              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
+              <Link href="/locations/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>, or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.

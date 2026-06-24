@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Refusal OVI Defense Lawyer in Ohio',
-  description: 'Experienced Ohio refusal OVI defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['refusal OVI lawyer Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
+  title: 'OVI Refusal Attorney Ohio | Jwayyed Law LLC',
+  description: 'Experienced Ohio OVI refusal defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. (614) 285-5482.',
+  keywords: ['refusal OVI attorney Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
   openGraph: {
-    title: 'Refusal OVI Defense Lawyer in Ohio',
+    title: 'OVI Refusal Attorney Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/refusal-ovi',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -65,7 +65,7 @@ export default function RefusalOVIPage() {
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Refusal OVI Defense Lawyer in Ohio"
+        title="OVI Refusal Attorney Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for OVI refusal charges. Protecting your rights and fighting for the best possible outcome."
       />
       <section className="py-16 bg-white">

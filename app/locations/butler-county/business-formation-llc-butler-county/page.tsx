@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Butler County, Ohio',
-  description: 'Experienced business attorney serving Butler County, Hamilton, Oxford, West Chester, and surrounding Ohio communities. LLC formation, business formation.',
+  title: 'Butler County Business Attorney | Jwayyed Law LLC',
+  description: 'Business attorney serving Butler County, Ohio. LLC formation, business law, Hamilton, Oxford, West Chester. Call (614) 285-5482.',
   keywords: ['business lawyer Butler County', 'LLC formation Hamilton Ohio', 'Butler County business attorney', 'business formation Ohio', 'LLC attorney West Chester Ohio', 'Oxford Ohio business lawyer'],
   openGraph: {
-    title: 'Business & LLC Formation | Butler County, Ohio',
+    title: 'Butler County Business Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/butler-county/business-formation-llc-butler-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Butler County', href: '/courts/butler-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Butler County', href: '/locations/butler-county' },
   { label: 'Business & LLC Formation - Butler County', href: '/locations/butler-county/business-formation-llc-butler-county' },
 ];
 

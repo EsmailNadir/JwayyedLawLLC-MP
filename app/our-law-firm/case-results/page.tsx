@@ -5,11 +5,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Case Results | Jwayyed Law LLC | Columbus, Ohio',
-  description: 'Review our track record of successful outcomes for clients in criminal defense, OVI/DUI defense, personal injury, and civil matters throughout Ohio.',
+  title: 'Case Results | Jwayyed Law LLC Ohio',
+  description: 'Review Jwayyed Law LLC\'s track record in criminal defense, OVI/DUI, personal injury, and civil matters throughout Ohio. Call (614) 285-5482.',
   keywords: ['law firm case results', 'attorney success rate', 'Ohio law firm results'],
   openGraph: {
-    title: 'Case Results | Jwayyed Law LLC',
+    title: 'Case Results | Jwayyed Law LLC Ohio',
     url: 'https://www.jjlawohio.com/our-law-firm/case-results',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

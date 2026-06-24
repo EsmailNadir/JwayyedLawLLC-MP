@@ -27,8 +27,8 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `Drug Possession Defense — ${suburb}`, href: `/locations/franklin-county/drug-possession-defense-${slug}` },
   ];
 

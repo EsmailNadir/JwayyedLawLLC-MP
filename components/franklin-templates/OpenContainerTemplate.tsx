@@ -27,8 +27,8 @@ export default function OpenContainerTemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `Open Container Defense — ${suburb}`, href: `/locations/franklin-county/open-container-defense-${slug}` },
   ];
 

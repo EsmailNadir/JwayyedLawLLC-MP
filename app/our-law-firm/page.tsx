@@ -5,11 +5,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'About Our Law Firm — Columbus, Ohio',
+  title: 'Our Law Firm | Jwayyed Law LLC Ohio',
   description:
-    'Learn about Jwayyed Law LLC — an Ohio law firm serving Columbus, Cincinnati, Dayton, and statewide. Meet our attorneys, read case results, and explore our legal blog.',
+    'Learn about Jwayyed Law LLC — a full-service Ohio law firm serving Columbus, Cincinnati, Dayton, and all Ohio counties. Call (614) 285-5482.',
   openGraph: {
-    title: 'About Our Law Firm | Jwayyed Law LLC — Columbus, Ohio',
+    title: 'Our Law Firm | Jwayyed Law LLC Ohio',
     url: 'https://www.jjlawohio.com/our-law-firm',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -99,7 +99,7 @@ export default function OurLawFirmPage() {
             <Link href="/contact" className="text-[#b87333] font-semibold hover:underline">
               schedule a consultation online
             </Link>
-            . Our office is located at 100 E. Campus View Boulevard, Suite #250, Columbus, Ohio
+            . Our office is located at 100 E. Campus View Boulevard, Suite 250, Columbus, Ohio
             43235.
           </p>
 

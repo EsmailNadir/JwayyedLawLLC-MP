@@ -29,8 +29,8 @@ export default function TheftTemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `Theft Defense — ${suburb}`, href: `/locations/franklin-county/theft-defense-${slug}` },
   ];
 

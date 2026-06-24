@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Commercial DUI (CDL) Defense Lawyer in Ohio',
+  title: 'CDL & Commercial OVI Ohio | Jwayyed Law LLC',
   description: 'Experienced Ohio commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio.',
-  keywords: ['commercial DUI lawyer Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense'],
+  keywords: ['commercial DUI attorney Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense'],
   openGraph: {
-    title: 'Commercial DUI (CDL) Defense Lawyer in Ohio',
+    title: 'CDL & Commercial OVI Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/commercial-dui-cdl',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -65,7 +65,7 @@ export default function CommercialDUICDLPage() {
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Commercial DUI (CDL) Defense Lawyer in Ohio"
+        title="CDL & Commercial OVI Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for CDL holders facing OVI/DUI charges. Protecting your commercial driving career and your livelihood."
       />
       <section className="py-16 bg-white">

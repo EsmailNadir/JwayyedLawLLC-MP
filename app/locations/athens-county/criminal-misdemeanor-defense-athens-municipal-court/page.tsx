@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Athens Municipal Court',
-  description: 'Experienced criminal misdemeanor defense attorney in Athens County - Athens Municipal Court. Skilled representation for misdemeanor charges in Athens Count.',
+  title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
+  description: 'Criminal misdemeanor defense attorney in Athens County, Ohio. Athens Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Athens County', 'misdemeanor attorney Athens Municipal Court', 'Athens County criminal lawyer', 'Athens misdemeanor defense'],
   openGraph: {
-    title: 'Criminal Defense Lawyer | Athens Municipal Court',
+    title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Athens County', href: '/courts/athens-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Athens County', href: '/locations/athens-county' },
   { label: 'Criminal Misdemeanor Defense - Athens Municipal Court', href: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court' },
 ];
 
@@ -62,7 +62,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Defense Lawyer | Athens Municipal Court"
+        title="Criminal Defense Attorney | Athens Municipal Court"
         description="Experienced legal defense for criminal misdemeanor charges in Athens County. Protecting your rights and fighting for the best possible outcome in Athens Municipal Court."
       />
       <section className="py-16 bg-white">

@@ -7,9 +7,9 @@ import ContactCTA from '@/components/ContactCTA';
 import { teamMembers, type TeamMember } from '@/data/team-members';
 
 export const metadata: Metadata = {
-  title: 'Our Attorneys & Staff — Columbus, Ohio',
+  title: 'Our Attorneys | Jwayyed Law LLC Ohio',
   description:
-    'Meet the legal team at Jwayyed Law LLC. Experienced attorneys and staff serving clients throughout Ohio in criminal defense, OVI/DUI, personal injury, and more.',
+    'Meet the legal team at Jwayyed Law LLC — experienced Ohio attorneys in OVI/DUI, criminal defense, estate planning & business law. Call (614) 285-5482.',
   alternates: {
     canonical: '/our-law-firm/our-attorneys',
   },

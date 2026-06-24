@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Drug Possession Defense Attorney | Ohio | Jwayyed Law',
+  title: 'Drug Possession Defense Ohio | Jwayyed Law LLC',
   description: 'Facing drug possession charges in Ohio? Jwayyed Law LLC defends cocaine, heroin, fentanyl, meth, and marijuana possession under R.C. 2925.11. Call (614) 285-5482.',
   keywords: [
     'drug possession lawyer Ohio',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'controlled substance possession attorney',
   ],
   openGraph: {
-    title: 'Drug Possession Defense Attorney | Ohio | Jwayyed Law',
+    title: 'Drug Possession Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/drug-possession',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -130,8 +130,8 @@ export default function DrugPossessionPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing drug possession charges in Ohio — in{' '}
               <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/courts/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>,{' '}
-              <Link href="/courts/greene-county" className="text-[#b87333] underline hover:opacity-80">Greene County</Link>, or elsewhere — contact Jwayyed Law LLC at{' '}
+              <Link href="/locations/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>,{' '}
+              <Link href="/locations/greene-county" className="text-[#b87333] underline hover:opacity-80">Greene County</Link>, or elsewhere — contact Jwayyed Law LLC at{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.

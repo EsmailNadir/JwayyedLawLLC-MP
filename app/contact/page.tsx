@@ -8,8 +8,8 @@ import Calendly from '@/components/calendly';
 import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 
 export const metadata: Metadata = {
-  title: 'Contact Our Ohio Law Firm | Schedule a Consultation | Jwayyed Law LLC',
-  description: 'Contact Jwayyed Law LLC to schedule a consultation. Serving Columbus, Franklin County, and all of Ohio in criminal defense, OVI/DUI, personal injury, and more.',
+  title: 'Contact Jwayyed Law LLC | Free Consultation',
+  description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving all of Ohio — OVI/DUI, criminal defense, estate planning & more. Call (614) 285-5482.',
 };
 
 const breadcrumbItems = [{ label: 'Contact', href: '/contact' }];
@@ -79,7 +79,7 @@ const ContactPage = () => {
               <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
             </div>
             <div className="mt-3 text-xs text-white/75 font-['Inter',_'Arial',_sans-serif]">
-              Mon–Fri · 9:00 AM – 5:00 PM
+              Mon–Fri · 10:00 AM – 6:00 PM
             </div>
           </a>
 
@@ -121,7 +121,7 @@ const ContactPage = () => {
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-700 font-['Inter',_'Arial',_sans-serif]">
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4 text-[#b87333]" aria-hidden="true" />
-            <span><span className="font-semibold text-gray-900">Office Hours:</span> Mon–Fri, 9:00 AM – 5:00 PM</span>
+            <span><span className="font-semibold text-gray-900">Office Hours:</span> Mon–Fri, 10:00 AM – 6:00 PM</span>
           </div>
           <span className="hidden sm:inline text-gray-300">|</span>
           <span className="text-gray-600">Saturday &amp; Sunday: Closed</span>
@@ -154,7 +154,7 @@ const ContactPage = () => {
             Find Our Office
           </h2>
           <p className="text-gray-600 text-sm font-['Inter',_'Arial',_sans-serif]">
-            100 E. Campus View Boulevard, Suite #250, Columbus, OH 43235
+            100 E. Campus View Boulevard, Suite 250, Columbus, OH 43235
           </p>
         </div>
         <div className="w-full h-[300px] md:h-[450px] rounded-xl overflow-hidden shadow-lg">

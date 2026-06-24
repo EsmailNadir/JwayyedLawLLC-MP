@@ -24,10 +24,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Jwayyed Law LLC | JJ Law Ohio | Ohio Attorney | Criminal Defense, Estate Planning & Business Law",
+    default: "Jwayyed Law LLC | Ohio Attorney — OVI, Criminal & Estate Law",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Jwayyed Law LLC (JJ Law Ohio) — Experienced Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, and probate. Call (614) 285-5482.",
+  description: "Ohio OVI, criminal defense, estate planning & business law attorney. Serving Columbus, Franklin County, Dayton & statewide. Free consultation: (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",
@@ -99,64 +99,102 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Jwayyed Law LLC",
-    "alternateName": "JJ Law Ohio",
-    "image": [`${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`, `${siteUrl}/assets/jwayyed-law-llc-plaque.png`],
-    "@id": siteUrl,
-    "url": siteUrl,
-    "telephone": "(614) 285-5482",
-    "email": "jwayyedlawllc@outlook.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 E. Campus View Boulevard, Suite #250",
-      "addressLocality": "Columbus",
-      "addressRegion": "OH",
-      "postalCode": "43235",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.030016,
-      "longitude": -83.023834
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "17:00"
-    },
-    "priceRange": "$$",
-    "areaServed": [
-      { "@type": "State", "name": "Ohio" },
-      { "@type": "County", "name": "Franklin County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-      { "@type": "County", "name": "Delaware County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-      { "@type": "County", "name": "Greene County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-      { "@type": "County", "name": "Montgomery County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-      { "@type": "County", "name": "Licking County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-      { "@type": "County", "name": "Fairfield County", "containedInPlace": { "@type": "State", "name": "Ohio" } }
-    ],
-    "serviceType": [
-      "Criminal Defense",
-      "OVI DUI Defense",
-      "Personal Injury",
-      "Estate Planning",
-      "Business Law",
-      "Probate",
-      "Civil Litigation",
-      "Traffic Violations"
-    ],
-    "sameAs": [
-      "https://www.instagram.com/jjlawohio",
-      "https://www.yelp.com/biz/jwayyed-law-columbus",
-      "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
-      "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html"
+    "@graph": [
+      {
+        "@type": "LegalService",
+        "name": "Jwayyed Law LLC",
+        "alternateName": "JJ Law Ohio",
+        "image": [`${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`, `${siteUrl}/assets/jwayyed-law-llc-plaque.png`],
+        "@id": siteUrl,
+        "url": siteUrl,
+        "telephone": "(614) 285-5482",
+        "email": "jwayyedlawllc@outlook.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 E. Campus View Blvd, Suite 250",
+          "addressLocality": "Columbus",
+          "addressRegion": "OH",
+          "postalCode": "43235",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.0938,
+          "longitude": -83.0174
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "areaServed": [
+          { "@type": "State", "name": "Ohio" },
+          { "@type": "County", "name": "Franklin County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Delaware County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Greene County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Montgomery County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Fairfield County", "containedInPlace": { "@type": "State", "name": "Ohio" } }
+        ],
+        "serviceType": [
+          "Criminal Defense",
+          "OVI DUI Defense",
+          "Personal Injury",
+          "Estate Planning",
+          "Business Law",
+          "Probate",
+          "Civil Litigation",
+          "Traffic Violations"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/jjlawohio",
+          "https://www.linkedin.com/in/jwayyed-jwayyed",
+          "https://www.yelp.com/biz/jwayyed-law-columbus",
+          "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
+          "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://www.jjlawohio.com",
+        "name": "Jwayyed Law LLC",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.jjlawohio.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Jwayyed Jwayyed",
+        "jobTitle": "Attorney at Law",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Capital University Law School"
+        },
+        "worksFor": {
+          "@type": "LegalService",
+          "name": "Jwayyed Law LLC"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Juris Doctor",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Capital University Law School"
+            }
+          }
+        ],
+        "description": "Former Municipal Prosecutor and Former Assistant Law Director for the City of Circleville. OSBA Leadership Academy 2023."
+      }
     ]
   };
 

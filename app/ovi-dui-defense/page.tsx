@@ -8,18 +8,18 @@ import Link from 'next/link';
 import { oviServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio OVI Attorney',
-  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. Skilled representation for first, second, and third (misdemeanor) OVI charges in Ohio.',
+  title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law',
+  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. First, second, and third OVI charges statewide. Call (614) 285-5482.',
   keywords: [
     'Ohio OVI attorney',
-    'Ohio DUI lawyer',
+    'Ohio DUI attorney',
     'Ohio OVI defense attorney',
     'OVI defense Ohio',
     'DUI defense attorney Ohio',
     'first OVI defense',
   ],
   openGraph: {
-    title: 'Ohio OVI Attorney',
+    title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law',
     description: 'Experienced OVI/DUI defense representation throughout Ohio. Schedule consultation available.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],

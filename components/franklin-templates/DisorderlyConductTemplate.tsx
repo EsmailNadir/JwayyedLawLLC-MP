@@ -27,8 +27,8 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
-    { label: 'Courts', href: '/courts' },
-    { label: 'Franklin County', href: '/courts/franklin-county' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Franklin County', href: '/locations/franklin-county' },
     { label: `Disorderly Conduct Defense — ${suburb}`, href: `/locations/franklin-county/disorderly-conduct-defense-${slug}` },
   ];
 

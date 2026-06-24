@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Wilmington, Ohio',
-  description: 'Experienced criminal misdemeanor defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. Assault, theft, drug charges.',
+  title: 'Clinton County Criminal Defense Attorney | Jwayyed Law LLC',
+  description: 'Criminal misdemeanor defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
   keywords: ['criminal defense Wilmington Ohio', 'misdemeanor attorney Clinton County', 'Wilmington Municipal Court criminal lawyer', 'Clinton County misdemeanor defense'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Clinton County - Wilmington Municipal Court',
+    title: 'Clinton County Criminal Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Clinton County', href: '/courts/clinton-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Clinton County', href: '/locations/clinton-county' },
   { label: 'Criminal Misdemeanor Defense - Wilmington Municipal Court', href: '/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court' },
 ];
 

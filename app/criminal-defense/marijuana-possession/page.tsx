@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Marijuana Possession Defense Attorney | Ohio | Jwayyed Law',
+  title: 'Marijuana Possession Defense Ohio | Jwayyed Law LLC',
   description: 'Marijuana possession charge in Ohio? Know what is legal and what is still criminal under Issue 2 and HB 86. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: [
     'marijuana possession lawyer Ohio',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'Ohio adult use marijuana possession',
   ],
   openGraph: {
-    title: 'Marijuana Possession Defense Attorney | Ohio | Jwayyed Law',
+    title: 'Marijuana Possession Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/marijuana-possession',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -127,7 +127,7 @@ export default function MarijuanaPossessionPage() {
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you are facing a marijuana possession charge in{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
+              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
               or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}

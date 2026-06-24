@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Hamilton, Ohio',
-  description: 'OVI/DUI defense attorney for Hamilton, Oxford, West Chester, and Butler County, Ohio. Butler County Area Courts and Hamilton Municipal Court.',
+  title: 'Butler County OVI Attorney | Jwayyed Law LLC',
+  description: 'OVI/DUI defense attorney for Hamilton, Oxford, West Chester, and Butler County, Ohio. Area Courts and Hamilton Municipal Court. Call (614) 285-5482.',
   keywords: ['OVI lawyer Hamilton Ohio', 'DUI attorney Butler County', 'OVI defense Butler County', 'Butler County Area Court OVI', 'Oxford Ohio OVI attorney', 'West Chester OVI lawyer'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Hamilton, Ohio',
+    title: 'Butler County OVI Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/butler-county/ovi-dui-defense-butler-county-area-courts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Butler County', href: '/courts/butler-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Butler County', href: '/locations/butler-county' },
   { label: 'OVI/DUI Defense - Butler County Area Courts', href: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts' },
 ];
 
@@ -63,7 +63,7 @@ export default function ButlerOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI / DUI Lawyer for Hamilton, Ohio"
+        title="OVI / DUI Attorney for Hamilton, Ohio"
         description="Butler County Area Courts and Hamilton Municipal Court. Experienced OVI/DUI defense for Hamilton, Oxford, West Chester, and Butler County, Ohio."
       />
       <section className="py-16 bg-white">

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Open Container Defense Attorney | Ohio | Jwayyed Law',
+  title: 'Open Container Defense Ohio | Jwayyed Law LLC',
   description: 'Open container citation in Ohio? Jwayyed Law LLC defends R.C. 4301.62 charges in Franklin County and throughout central Ohio. Call (614) 285-5482.',
   keywords: [
     'open container lawyer Ohio',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'open container minor misdemeanor Ohio',
   ],
   openGraph: {
-    title: 'Open Container Defense Attorney | Ohio | Jwayyed Law',
+    title: 'Open Container Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/criminal-defense/open-container',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -74,7 +74,7 @@ export default function OpenContainerPage() {
             </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               An open container citation in Ohio under R.C. 4301.62 may seem like the least serious charge a person can face — a minor misdemeanor, maximum $150 fine, no jail time. But a guilty plea to an open container violation creates a permanent public criminal record just like any other misdemeanor conviction. For professionals undergoing background checks, tenants applying for housing, or anyone applying for certain occupational licenses, even a minor misdemeanor conviction can raise a flag. Jwayyed Law LLC handles open container defense throughout Ohio, including{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
+              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
               and surrounding communities, and in many first-offense cases can achieve a dismissal or diversion that avoids any conviction. Call{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               to discuss your options.
@@ -121,7 +121,7 @@ export default function OpenContainerPage() {
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               If you have an open container citation in{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
+              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>{' '}
               or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}

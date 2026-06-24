@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'OVI Defense & Criminal Defense Attorney Columbus Ohio',
-  description: 'Jwayyed Law LLC — experienced criminal defense, OVI/DUI, personal injury, and civil litigation attorney serving Columbus and all of Ohio.',
+  title: 'Ohio Attorney | OVI & Criminal Defense | Jwayyed Law LLC',
+  description: 'Jwayyed Law LLC — OVI/DUI & criminal defense attorney serving all of Ohio. Call (614) 285-5482 for a free consultation.',
   keywords: [
     'criminal defense attorney Columbus Ohio',
     'OVI defense attorney Ohio',
-    'DUI lawyer Columbus Ohio',
+    'DUI attorney Columbus Ohio',
     'personal injury attorney Ohio',
     'civil litigation attorney Columbus',
     'business law attorney Ohio',

@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'First OVI Defense Lawyer in Ohio',
+  title: 'First OVI Attorney Ohio | Jwayyed Law LLC',
   description: 'Experienced Ohio first OVI defense attorney protecting your rights. Skilled representation for first-time OVI/DUI charges in Ohio.',
-  keywords: ['first OVI lawyer Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney'],
+  keywords: ['first OVI attorney Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney'],
   openGraph: {
-    title: 'First OVI Defense Lawyer in Ohio',
+    title: 'First OVI Attorney Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/first-ovi',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -63,7 +63,7 @@ export default function FirstOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="First OVI Defense Lawyer in Ohio"
+        title="First OVI Attorney Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for first-time OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <OVIReviews />

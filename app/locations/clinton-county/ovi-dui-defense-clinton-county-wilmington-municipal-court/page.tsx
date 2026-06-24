@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Wilmington, Ohio',
-  description: 'OVI/DUI defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. HB 37 penalties, ALS appeals, license defense. Call (614) 285-5482.',
+  title: 'Clinton County OVI Attorney | Jwayyed Law LLC',
+  description: 'OVI/DUI defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. HB 37 penalties, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI lawyer Wilmington Ohio', 'DUI attorney Clinton County', 'OVI defense Clinton County', 'Wilmington Municipal Court OVI'],
   openGraph: {
-    title: 'OVI / DUI Lawyer for Wilmington, Ohio',
+    title: 'Clinton County OVI Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Clinton County', href: '/courts/clinton-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Clinton County', href: '/locations/clinton-county' },
   { label: 'OVI/DUI Defense - Wilmington Municipal Court', href: '/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court' },
 ];
 
@@ -63,7 +63,7 @@ export default function ClintonOVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI / DUI Lawyer for Wilmington, Ohio"
+        title="OVI / DUI Attorney for Wilmington, Ohio"
         description="Wilmington Municipal Court OVI defense. Experienced representation for Clinton County OVI and DUI charges under HB 37 and ORC 4511.19."
       />
       <section className="py-16 bg-white">

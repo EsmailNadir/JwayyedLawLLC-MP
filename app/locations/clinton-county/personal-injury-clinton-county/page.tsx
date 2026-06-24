@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Clinton County, Ohio',
-  description: 'Personal injury attorney serving Clinton County, Wilmington, Sabina, Blanchester, and surrounding Ohio communities. Car accidents, slip and fall.',
+  title: 'Clinton County Personal Injury Attorney | Jwayyed Law LLC',
+  description: 'Personal injury attorney serving Clinton County, Ohio. Wilmington, Sabina, Blanchester. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Clinton County', 'injury lawyer Wilmington Ohio', 'Clinton County accident attorney', 'car accident lawyer Wilmington Ohio', 'slip and fall Clinton County'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Clinton County, Ohio',
+    title: 'Clinton County Personal Injury Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/clinton-county/personal-injury-clinton-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Clinton County', href: '/courts/clinton-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Clinton County', href: '/locations/clinton-county' },
   { label: 'Personal Injury - Clinton County', href: '/locations/clinton-county/personal-injury-clinton-county' },
 ];
 
@@ -63,7 +63,7 @@ export default function PersonalInjuryClintonCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Lawyer in Clinton County, Ohio"
+        title="Personal Injury Attorney in Clinton County, Ohio"
         description="Serving Wilmington, Sabina, Blanchester, Clarksville, Port William, and surrounding communities."
       />
       <section className="py-16 bg-white">

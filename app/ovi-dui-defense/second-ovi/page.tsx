@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'Second OVI Defense Lawyer in Ohio',
-  description: 'Experienced Ohio second OVI defense attorney protecting your rights. Skilled representation for second OVI/DUI charges in Ohio. Schedule consultation: (614) 285-5482',
-  keywords: ['second OVI lawyer Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney'],
+  title: 'Second OVI Defense Ohio | Jwayyed Law LLC',
+  description: 'Experienced Ohio second OVI defense attorney protecting your rights. Skilled representation for second OVI/DUI charges in Ohio. (614) 285-5482.',
+  keywords: ['second OVI attorney Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney'],
   openGraph: {
-    title: 'Second OVI Defense Lawyer in Ohio',
+    title: 'Second OVI Defense Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/second-ovi',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     question: 'What should I do if I am charged with a second OVI?',
-    answer: 'Do not discuss the details of your case with law enforcement or others without your attorney. Contact an OVI defense lawyer right away. You have only 30 days from the arrest to request an administrative license suspension hearing—missing that deadline means you lose the chance to fight the suspension. An attorney can file the ALS appeal, seek a stay, and defend you in criminal court.',
+    answer: 'Do not discuss the details of your case with law enforcement or others without your attorney. Contact an OVI defense attorney right away. You have only 30 days from the arrest to request an administrative license suspension hearing—missing that deadline means you lose the chance to fight the suspension. An attorney can file the ALS appeal, seek a stay, and defend you in criminal court.',
   },
   {
     question: 'Can a second OVI be reduced to a first offense?',
@@ -63,7 +63,7 @@ export default function SecondOVIPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Second OVI Defense Lawyer in Ohio"
+        title="Second OVI Defense Ohio | Jwayyed Law LLC"
         description="Experienced legal defense for second OVI/DUI charges. Protecting your rights and fighting for the best possible outcome."
       />
       <OVIReviews />
@@ -173,7 +173,7 @@ export default function SecondOVIPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS)</h4>
               <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
-                When you are arrested for OVI, the officer typically serves an immediate suspension based on a test result over the limit or a refusal. For a second OVI, that suspension can last 1 to 7 years. You have 30 days from the arrest to request an ALS hearing. If you do not request it in time, you give up the right to contest the suspension. At the hearing, your attorney can argue that the stop, arrest, or testing was improper and seek to have the suspension set aside or reduced. Winning the ALS appeal can restore your license sooner and can also help your criminal case. Your lawyer can also ask the court to stay (delay) the suspension pending the hearing so you can keep driving until the matter is decided.
+                When you are arrested for OVI, the officer typically serves an immediate suspension based on a test result over the limit or a refusal. For a second OVI, that suspension can last 1 to 7 years. You have 30 days from the arrest to request an ALS hearing. If you do not request it in time, you give up the right to contest the suspension. At the hearing, your attorney can argue that the stop, arrest, or testing was improper and seek to have the suspension set aside or reduced. Winning the ALS appeal can restore your license sooner and can also help your criminal case. Your attorney can also ask the court to stay (delay) the suspension pending the hearing so you can keep driving until the matter is decided.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default function SecondOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Second OVI Defense Attorney Can Help</h3>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              A lawyer who focuses on OVI defense can guide you through both the license and criminal sides of your case:
+              An attorney who focuses on OVI defense can guide you through both the license and criminal sides of your case:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
@@ -247,7 +247,7 @@ export default function SecondOVIPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been charged with a second OVI in Ohio, contact Jwayyed Law LLC as soon as possible. We will review your case, explain your rights and the penalties you face, and outline options for defense—including ALS appeal, prior conviction challenges, and limited driving privileges. You only have 30 days to request an ALS hearing; getting a lawyer early can make a real difference for your license and your case. Call us to schedule a consultation and protect your rights and your future.
+              If you have been charged with a second OVI in Ohio, contact Jwayyed Law LLC as soon as possible. We will review your case, explain your rights and the penalties you face, and outline options for defense—including ALS appeal, prior conviction challenges, and limited driving privileges. You only have 30 days to request an ALS hearing; getting an attorney early can make a real difference for your license and your case. Call us to schedule a consultation and protect your rights and your future.
             </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>

@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Butler County, Ohio',
-  description: 'Experienced personal injury attorney serving Butler County, Hamilton, Oxford, West Chester, Fairfield, Middletown, and surrounding Ohio communities.',
+  title: 'Butler County Personal Injury Attorney | Jwayyed Law LLC',
+  description: 'Personal injury attorney serving Butler County, Ohio. Hamilton, Oxford, West Chester, Fairfield, Middletown. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Butler County', 'injury lawyer Hamilton Ohio', 'Butler County accident attorney', 'car accident lawyer Butler County', 'personal injury West Chester Ohio', 'Oxford Ohio injury attorney'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Butler County, Ohio',
+    title: 'Butler County Personal Injury Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/butler-county/personal-injury-butler-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbItems = [
-  { label: 'Courts', href: '/courts' },
-  { label: 'Butler County', href: '/courts/butler-county' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Butler County', href: '/locations/butler-county' },
   { label: 'Personal Injury - Butler County', href: '/locations/butler-county/personal-injury-butler-county' },
 ];
 
@@ -63,7 +63,7 @@ export default function PersonalInjuryButlerCountyPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Lawyer in Butler County, Ohio"
+        title="Personal Injury Attorney in Butler County, Ohio"
         description="Serving Hamilton, Oxford, West Chester, Fairfield, Middletown, Monroe, Mason, and surrounding communities. Experienced representation for accident and injury claims."
       />
       <section className="py-16 bg-white">
