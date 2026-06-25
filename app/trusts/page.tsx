@@ -121,40 +121,40 @@ export default function TrustsPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Revocable Living Trusts</h4>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Revocable Living Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Maintain control over your assets while avoiding probate and ensuring a smooth transition for your heirs.</p>
               </Link>
-              <Link href="/trusts/irrevocable-life-insurance-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Irrevocable Life Insurance Trusts (ILITs)</h4>
+              <Link href="/trusts/irrevocable-life-insurance-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Irrevocable Life Insurance Trusts (ILITs)</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Protect life insurance proceeds from federal estate taxes and ensure that your beneficiaries receive the benefit.</p>
               </Link>
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Special Needs Trusts</h4>
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Special Needs Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Provide for a loved one with disabilities while maintaining their eligibility for government benefits.</p>
               </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Dynasty Trusts</h4>
+              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Dynasty Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Preserve wealth across generations with long-term asset protection and federal estate tax minimization.</p>
               </Link>
-              <Link href="/trusts/charitable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Charitable Trusts</h4>
+              <Link href="/trusts/charitable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Charitable Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Support charitable causes while receiving tax benefits and leaving a legacy of giving.</p>
               </Link>
-              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Spendthrift Trusts</h4>
+              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Spendthrift Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Protect assets from creditors and ensure responsible distribution to beneficiaries.</p>
               </Link>
-              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Asset Protection Trusts</h4>
+              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Asset Protection Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Shield your wealth from creditors, lawsuits, and future claims while retaining indirect access to trust assets.</p>
               </Link>
-              <Link href="/trusts/land-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Land Trusts</h4>
+              <Link href="/trusts/land-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Land Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Hold and manage real property with privacy and flexibility for estate planning and asset protection.</p>
               </Link>
-              <Link href="/trusts/qtip-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">QTIP Trusts</h4>
+              <Link href="/trusts/qtip-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">QTIP Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Provide for a surviving spouse while qualifying for the marital deduction and controlling ultimate distribution.</p>
               </Link>
             </div>

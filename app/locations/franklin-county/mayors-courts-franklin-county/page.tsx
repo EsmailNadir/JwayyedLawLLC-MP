@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "What charges are handled at Franklin County mayor's courts?",
-    answer: "Franklin County suburb mayor's courts typically handle: minor misdemeanor traffic violations; first-offense OVI citations under R.C. 4511.19 (the arraignment occurs at the mayor's court but OVI cases are usually transferred to Franklin County Municipal Court for trial); minor misdemeanor disorderly conduct; open container violations; minor drug paraphernalia citations; and municipal ordinance violations such as noise complaints, parking offenses, and code violations. If a charge is elevated beyond a minor misdemeanor during proceedings, it must transfer to Franklin County Municipal Court.",
+    answer: "Franklin County suburb mayor's courts typically handle: minor misdemeanor traffic violations; first-offense OVI citations under R.C. 4511.19 (first-offense OVI can be heard at mayor's court; second offense and above OVI charges must transfer to Franklin County Municipal Court at 375 S. High St, Columbus, OH 43215); minor misdemeanor disorderly conduct; open container violations; minor drug paraphernalia citations; and municipal ordinance violations such as noise complaints, parking offenses, and code violations. If a charge is elevated beyond a minor misdemeanor during proceedings, it must transfer to Franklin County Municipal Court.",
   },
   {
     question: "Does a mayor's court decision have the same legal effect as a Municipal Court decision?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Which Franklin County suburbs operate active mayor's courts?",
-    answer: "As of 2026, the following Franklin County suburbs operate active mayor's courts where Jwayyed Law LLC appears: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington. Grandview Heights closed its mayor's court on December 31, 2023, and Marble Cliff has no independent court — both route directly to Franklin County Municipal Court. New Albany Mayor's Court is administered by a separate municipality; cases that do not resolve there transfer to Franklin County Municipal Court. Shawnee Hills and Valleyview also have no active mayor's courts.",
+    answer: "As of 2026, the following Franklin County suburbs operate active mayor's courts where Jwayyed Law LLC appears: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, New Albany (held at Gahanna City Hall, 200 S. Hamilton Road, Gahanna), Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington. Grandview Heights closed its mayor's court on December 31, 2023, and Marble Cliff has no independent court — both route directly to Franklin County Municipal Court. Shawnee Hills and Valleyview also have no active mayor's courts.",
   },
   {
     question: "Why hire Jwayyed Law LLC for a Franklin County mayor's court case?",
@@ -58,6 +58,7 @@ const mayorsCourts = [
   { suburb: 'Grove City', slug: 'grove-city', description: 'Grove City Mayor\'s Court handles traffic and misdemeanor matters along Southwest Boulevard and S.R. 665 corridors.' },
   { suburb: 'Groveport', slug: 'groveport', description: 'Groveport Mayor\'s Court serves this southeastern Franklin County logistics hub near I-270 and Rickenbacker.' },
   { suburb: 'Hilliard', slug: 'hilliard', description: 'Hilliard Mayor\'s Court handles charges arising in this major northwest Franklin County suburb along Cemetery Road and I-270.' },
+  { suburb: 'New Albany', slug: 'new-albany', description: 'New Albany Mayor\'s Court (held at Gahanna City Hall) handles OVI, traffic, and misdemeanor matters for this northeast Franklin County community.' },
   { suburb: 'Obetz', slug: 'obetz', description: 'Obetz Mayor\'s Court handles matters for this small south Franklin County municipality near Rickenbacker.' },
   { suburb: 'Pickerington', slug: 'pickerington', description: 'Pickerington Mayor\'s Court serves this eastern Franklin County suburb where I-270 and S.R. 256 meet.' },
   { suburb: 'Reynoldsburg', slug: 'reynoldsburg', description: 'Reynoldsburg Mayor\'s Court handles charges from this active eastern suburb along I-70 and U.S. 40.' },
@@ -119,7 +120,7 @@ export default function FranklinCountyMayorsCourtHubPage() {
               Franklin County Mayor&apos;s Courts — What They Are and How They Work
             </h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Franklin County is home to Columbus and 42 other municipalities — and many of those suburbs operate their own local courts known as mayor&apos;s courts. Under R.C. Chapter 1905, Ohio municipalities with a population under the threshold for a municipal court may establish a mayor&apos;s court to handle minor misdemeanor charges, traffic violations, and local ordinance matters that occur within the municipality. As of 2026, thirteen Franklin County suburbs operate active mayor&apos;s courts where Jwayyed Law LLC appears: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington. Mayor&apos;s courts are not courts of record and operate with limited jurisdiction — but a conviction entered there has the same legal weight as a Franklin County Municipal Court conviction and counts in Ohio&apos;s criminal history for purposes like OVI look-back periods. Jwayyed Law LLC appears in all thirteen active Franklin County mayor&apos;s courts. Call{' '}
+              Franklin County is home to Columbus and 42 other municipalities — and many of those suburbs operate their own local courts known as mayor&apos;s courts. Under R.C. Chapter 1905, Ohio municipalities with a population under the threshold for a municipal court may establish a mayor&apos;s court to handle minor misdemeanor charges, traffic violations, and local ordinance matters that occur within the municipality. As of 2026, fourteen Franklin County suburbs operate active mayor&apos;s courts where Jwayyed Law LLC appears: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, New Albany, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington. Mayor&apos;s courts are not courts of record and operate with limited jurisdiction — but a conviction entered there has the same legal weight as a Franklin County Municipal Court conviction and counts in Ohio&apos;s criminal history for purposes like OVI look-back periods. Jwayyed Law LLC appears in all fourteen active Franklin County mayor&apos;s courts. Call{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               if you have been cited in any Franklin County suburb.
             </p>
@@ -148,7 +149,7 @@ export default function FranklinCountyMayorsCourtHubPage() {
               Franklin County Mayor&apos;s Courts — All Active Suburbs
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
-              Jwayyed Law LLC appears in all thirteen active Franklin County mayor&apos;s courts. Select your suburb for specific defense information:
+              Jwayyed Law LLC appears in all fourteen active Franklin County mayor&apos;s courts. Select your suburb for specific defense information:
             </p>
 
             <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

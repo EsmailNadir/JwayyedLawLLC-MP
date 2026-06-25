@@ -124,7 +124,7 @@ export default function OVIWithAccidentPage() {
               Ohio OVI Accident Charge Hierarchy
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>OVI (ORC 4511.19):</strong> M1 misdemeanor — no injury or death; 3–180 days jail, fines $565–$1,075 (HB 37 first offense)</li>
                 <li><strong>Vehicular Assault (ORC 2903.08):</strong> F4 felony — OVI causes serious physical harm; 6–18 months prison</li>
                 <li><strong>Aggravated Vehicular Assault (ORC 2903.08):</strong> F3 felony — driver under OVI suspension or prior felony OVI; 9 months to 3 years prison</li>

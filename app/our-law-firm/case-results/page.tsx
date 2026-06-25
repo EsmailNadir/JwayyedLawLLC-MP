@@ -52,12 +52,6 @@ const caseExamples = [
     summary: 'Client fell on a wet floor in a store with no warning signs. We established that the store had notice of the condition and failed to warn. Result: settlement for medical expenses and pain and suffering.',
     href: '/personal-injury/slip-and-fall',
   },
-  {
-    area: 'Civil / Landlord-Tenant',
-    title: 'Tenant Recovers for Uninhabitable Conditions | Jwayyed Law LLC',
-    summary: 'Client\'s landlord failed to provide heat and repair water damage. We helped document the violations and properly withhold rent under Ohio law. Result: negotiated release from lease with returned security deposit and compensation for displacement.',
-    href: '/civil/landlord-tenant-disputes',
-  },
 ];
 
 export default function CaseResultsPage() {

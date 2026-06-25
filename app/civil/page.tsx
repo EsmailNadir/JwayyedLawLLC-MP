@@ -107,9 +107,10 @@ export default function CivilPage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+                className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                {service.title}
+                <span className="font-medium text-gray-900 group-hover:text-[#b87333] transition-colors text-sm">{service.title}</span>
+                <span className="text-gray-300 group-hover:text-[#b87333] transition-colors ml-2 text-xs shrink-0">→</span>
               </Link>
             ))}
           </div>
@@ -145,29 +146,29 @@ export default function CivilPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Filing the Complaint</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Filing the Complaint</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The process begins with filing a complaint stating your claims and the relief sought. The defendant must be properly served with the complaint and has a limited time to respond. An attorney can draft the complaint, ensure proper service, and respond to any counterclaims or defenses raised by the defendant.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Discovery Phase</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery Phase</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 During discovery, both parties exchange evidence, take depositions, request documents, and conduct investigations. This phase is crucial for building your case and understanding the other party's position. An experienced attorney can conduct effective discovery, protect against improper discovery requests, and use discovery to strengthen your case.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial Motions and Settlement Negotiations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Motions and Settlement Negotiations</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Pretrial motions can resolve issues, dismiss claims, or limit evidence. Most civil cases settle during this phase through negotiation or mediation. An attorney can file strategic motions, negotiate effectively, and evaluate settlement offers to determine if they are in your best interest.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial and Judgment</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial and Judgment</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If settlement negotiations fail, the case proceeds to trial where a judge or jury decides the outcome. An experienced attorney can present compelling evidence, cross-examine witnesses effectively, and argue for maximum recovery. After trial, judgments can be enforced through various collection methods.
               </p>
             </div>
@@ -178,7 +179,7 @@ export default function CivilPage() {
               An experienced civil attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Case Evaluation:</strong> Thoroughly evaluate your case, assess strengths and weaknesses, identify legal claims, and determine potential recovery or exposure</li>
               <li><strong>Legal Strategy Development:</strong> Develop comprehensive strategies to achieve your goals, whether that's recovering damages, defending against claims, or resolving disputes</li>
               <li><strong>Document Preparation:</strong> Draft complaints, answers, motions, discovery requests, and other legal documents necessary for your case</li>
@@ -195,44 +196,36 @@ export default function CivilPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Breach of Contract</h4>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Breach of Contract</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for contract disputes and breaches under ORC Chapter 1301</p>
               </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Real Estate Disputes</h4>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Real Estate Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Legal assistance for real estate and property disputes</p>
               </Link>
-              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Landlord-Tenant Disputes</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Legal assistance for landlord and tenant matters under ORC Chapter 5321</p>
-              </Link>
-              <Link href="/civil/evictions" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Evictions</h4>
+              <Link href="/civil/evictions" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Evictions</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Eviction representation for landlords and tenants</p>
               </Link>
-              <Link href="/civil/construction-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Construction Disputes</h4>
+              <Link href="/civil/construction-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Construction Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for construction and contractor disputes</p>
               </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Debt Collection Defense</h4>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Debt Collection Defense</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Defense against debt collection and creditor claims</p>
               </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Employment Disputes</h4>
+              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Employment Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for employment-related disputes</p>
               </Link>
-              <Link href="/civil/defamation" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Defamation</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Claims for libel, slander, and defamation</p>
-              </Link>
-              <Link href="/civil/civil-protection-orders" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Civil Protection Orders</h4>
+              <Link href="/civil/civil-protection-orders" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Civil Protection Orders</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Assistance with protection orders and restraining orders</p>
               </Link>
-              <Link href="/civil/appeals" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Appeals</h4>
+              <Link href="/civil/appeals" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Appeals</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Appellate representation for civil cases</p>
               </Link>
             </div>
@@ -240,22 +233,22 @@ export default function CivilPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Understanding Ohio Civil Law</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Statute of Limitations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Statute of Limitations</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Written contracts: 6 years (ORC 2305.06 as amended June 2021). Oral contracts: 4 years (ORC 2305.07 as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Burden of Proof</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Burden of Proof</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Civil cases require proof by preponderance of evidence (more likely than not), which is a lower standard than criminal cases requiring proof beyond a reasonable doubt. This means civil cases can be won even when evidence is not overwhelming, but thorough preparation and effective presentation are still essential.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Available Remedies</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Available Remedies</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Civil cases can result in monetary damages (compensatory and punitive), injunctive relief (court orders requiring or prohibiting certain actions), specific performance (requiring contract performance), or declaratory judgments (determining rights). The appropriate remedy depends on the type of case and circumstances.
               </p>
             </div>

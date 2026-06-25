@@ -18,7 +18,7 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
   const suburbData = getSuburb(suburb);
   if (!suburbData) throw new Error(`No reference data found for suburb: ${suburb}`);
 
-  const { mayorsCourt, policeAgency, keyRoads, population2020 } = suburbData;
+  const { mayorsCourt, policeAgency, keyRoads, population2020, formerProsecutorTitle } = suburbData;
 
   if (!mayorsCourt.active) {
     throw new Error(`MayorsCourtTemplate used for suburb without active mayor's court: ${suburb}. Use a different template.`);
@@ -104,6 +104,12 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
               {suburb} Mayor&apos;s Court — What You Need to Know
             </h2>
+            {formerProsecutorTitle && (
+              <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
+                <span className="text-[#b87333] font-bold text-sm">⚖</span>
+                <span className="text-sm font-semibold text-slate-800">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
+              </div>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               {suburb} Mayor&apos;s Court handles the initial processing of most misdemeanor criminal charges and traffic violations arising within {suburb} city limits — including OVI, speeding, disorderly conduct, open container, petty theft, and a range of other offenses that residents and visitors to {suburb} may face. The court meets{' '}
               <strong>{schedule}</strong> at{' '}
@@ -111,6 +117,11 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
               <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               before your court date — not after.
             </p>
+            {formerProsecutorTitle && (
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+                As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
+              </p>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents. The <strong>{policeAgency}</strong> makes most of the arrests and issues most of the citations that flow into {suburb} Mayor&apos;s Court. Traffic stops on {keyRoads[0]} and other primary corridors through {suburb} account for a significant portion of the court&apos;s caseload — OVI stops, speeding citations, open container discoveries, and other traffic-related criminal charges. Understanding how the mayor&apos;s court process works and when a case should be contested versus resolved by plea is knowledge that an attorney brings to every appearance.
             </p>

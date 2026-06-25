@@ -146,7 +146,7 @@ export default function EmploymentDisputesPage() {
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
               </Link>
-              <Link href="/civil/defamation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Defamation</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protect your reputation against false and harmful statements</span>
               </Link>

@@ -120,9 +120,10 @@ export default function PersonalInjuryPage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+                className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                {service.title}
+                <span className="font-medium text-gray-900 group-hover:text-[#b87333] transition-colors text-sm">{service.title}</span>
+                <span className="text-gray-300 group-hover:text-[#b87333] transition-colors ml-2 text-xs shrink-0">→</span>
               </Link>
             ))}
           </div>
@@ -159,41 +160,41 @@ export default function PersonalInjuryPage() {
               We represent injury victims in the following Ohio counties and communities. Each county has its own page; click through for more information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/personal-injury-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">Columbus & surrounding areas</span>
+              <Link href="/locations/franklin-county/personal-injury-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Franklin County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Columbus & surrounding areas</span>
               </Link>
-              <Link href="/locations/delaware-county/personal-injury-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Delaware County</span>
-                <span className="block text-sm text-gray-600 mt-1">Delaware & surrounding areas</span>
+              <Link href="/locations/delaware-county/personal-injury-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Delaware County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Delaware & surrounding areas</span>
               </Link>
-              <Link href="/locations/butler-county/personal-injury-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Butler County</span>
-                <span className="block text-sm text-gray-600 mt-1">Hamilton, Oxford, West Chester</span>
+              <Link href="/locations/butler-county/personal-injury-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Butler County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
               </Link>
-              <Link href="/locations/greene-county/personal-injury-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Greene County</span>
-                <span className="block text-sm text-gray-600 mt-1">Fairborn & surrounding areas</span>
+              <Link href="/locations/greene-county/personal-injury-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Greene County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Fairborn & surrounding areas</span>
               </Link>
-              <Link href="/locations/montgomery-county/personal-injury-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Montgomery County</span>
-                <span className="block text-sm text-gray-600 mt-1">Dayton & surrounding areas</span>
+              <Link href="/locations/montgomery-county/personal-injury-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Montgomery County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Dayton & surrounding areas</span>
               </Link>
-              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Pickaway County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Circleville & surrounding areas</span>
               </Link>
-              <Link href="/locations/athens-county/personal-injury-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Athens County</span>
-                <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
+              <Link href="/locations/athens-county/personal-injury-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Athens County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Athens & surrounding areas</span>
               </Link>
-              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Morrow County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
               </Link>
-              <Link href="/locations/clinton-county/personal-injury-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Clinton County</span>
-                <span className="block text-sm text-gray-600 mt-1">Wilmington & surrounding areas</span>
+              <Link href="/locations/clinton-county/personal-injury-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Clinton County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Wilmington & surrounding areas</span>
               </Link>
             </div>
 
@@ -206,29 +207,29 @@ export default function PersonalInjuryPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Initial Investigation and Documentation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Initial Investigation and Documentation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Immediately after an accident, evidence must be preserved including photos of the scene, vehicles, and injuries, witness contact information, police reports, and medical records. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Medical Treatment and Documentation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Medical Treatment and Documentation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Seeking prompt medical treatment is essential both for your health and your claim. Medical records document injuries, treatment, and prognosis. An attorney can help coordinate medical treatment, ensure all injuries are documented, and work with medical providers to establish causation between the accident and injuries. Complete medical documentation is necessary to prove damages.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Insurance Negotiation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Insurance Negotiation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most personal injury claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims or deny liability. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Litigation and Trial</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Trial</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
               </p>
             </div>
@@ -241,7 +242,7 @@ export default function PersonalInjuryPage() {
               An experienced personal injury attorney provides comprehensive representation throughout every stage of your claim:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate your accident, gather evidence including photos, witness statements, police reports, and surveillance footage, and document all injuries and damages</li>
               <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
               <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
@@ -261,48 +262,48 @@ export default function PersonalInjuryPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Car Accidents</h4>
+              <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Car Accidents</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Compensation for car accident injuries, property damage, and related losses</p>
               </Link>
-              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Truck Accidents</h4>
+              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Truck Accidents</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for commercial truck accident victims involving complex liability</p>
               </Link>
-              <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Motorcycle Accidents</h4>
+              <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Motorcycle Accidents</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Compensation for motorcycle accident injuries and damages</p>
               </Link>
-              <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Pedestrian Accidents</h4>
+              <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Pedestrian Accidents</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for pedestrians injured by vehicles</p>
               </Link>
-              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Slip and Fall</h4>
+              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Slip and Fall</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Premises liability claims for slip and fall injuries</p>
               </Link>
-              <Link href="/personal-injury/premises-liability" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Premises Liability</h4>
+              <Link href="/personal-injury/premises-liability" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Premises Liability</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Claims for injuries on unsafe property</p>
               </Link>
-              <Link href="/personal-injury/dog-bites" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Dog Bites</h4>
+              <Link href="/personal-injury/dog-bites" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Dog Bites</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Compensation for dog bite and animal attack injuries</p>
               </Link>
-              <Link href="/personal-injury/medical-malpractice" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Medical Malpractice</h4>
+              <Link href="/personal-injury/medical-malpractice" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Medical Malpractice</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Claims for medical negligence and malpractice</p>
               </Link>
-              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Workplace Injuries</h4>
+              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Workplace Injuries</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Third-party claims for workplace accidents</p>
               </Link>
-              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Wrongful Death</h4>
+              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Wrongful Death</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Compensation for families who lost loved ones due to negligence</p>
               </Link>
-              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Catastrophic Injuries</h4>
+              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Catastrophic Injuries</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for severe, life-altering injuries</p>
               </Link>
             </div>
@@ -320,29 +321,29 @@ export default function PersonalInjuryPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Statute of Limitations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Statute of Limitations</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Under Ohio Revised Code 2305.10, personal injury claims must generally be filed within 2 years of the injury. Medical malpractice claims have a 1-year statute of limitations from discovery. Claims against government entities require special notice within 2 years. Missing the deadline bars recovery entirely, making it crucial to act quickly and consult an attorney immediately. The statute of limitations begins running from the date of injury or discovery of injury, depending on the circumstances.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Modified Comparative Negligence</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Modified Comparative Negligence</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are partially at fault for your injury, your compensation is reduced by your percentage of fault. However, if you are 51% or more at fault, you cannot recover any compensation. This means even if you were partially negligent, you may still recover compensation if you are less than 51% at fault. An attorney can help protect your rights, establish the other party's fault, and maximize your recovery even when you share some fault.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Damage Caps and Compensation Types</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Damage Caps and Compensation Types</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Ohio law generally does not cap non-economic damages (pain and suffering, emotional distress) in most personal injury cases. However, medical malpractice cases have damage caps. Economic damages are not capped and can include all medical expenses (past and future), lost wages, loss of earning capacity, property damage, and other financial losses. Punitive damages may be available in cases involving egregious conduct. An attorney can help identify all available damages and maximize your compensation.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Insurance Requirements and Coverage</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Insurance Requirements and Coverage</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Ohio requires minimum auto insurance coverage of $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage. However, many drivers carry higher coverage or have umbrella policies. Understanding available insurance coverage, uninsured/underinsured motorist coverage, and how to access multiple insurance policies is crucial for maximizing recovery. An attorney can identify all available insurance coverage and pursue claims against all responsible parties.
               </p>
             </div>
@@ -356,8 +357,8 @@ export default function PersonalInjuryPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Medical expenses (past and future)</li>
                 <li>Lost wages and loss of earning capacity</li>
                 <li>Property damage</li>
@@ -368,8 +369,8 @@ export default function PersonalInjuryPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Pain and suffering</li>
                 <li>Emotional distress</li>
                 <li>Loss of enjoyment of life</li>
@@ -380,8 +381,8 @@ export default function PersonalInjuryPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Punitive Damages</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Punitive Damages</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In cases involving egregious conduct, recklessness, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
               </p>
             </div>
@@ -420,73 +421,73 @@ export default function PersonalInjuryPage() {
               <Link
                 key="/locations/franklin-county/personal-injury-franklin-county"
                 href="/locations/franklin-county/personal-injury-franklin-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/delaware-county/personal-injury-delaware-county"
                 href="/locations/delaware-county/personal-injury-delaware-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware & Powell</span>
               </Link>
               <Link
                 key="/locations/pickaway-county/personal-injury-pickaway-county"
                 href="/locations/pickaway-county/personal-injury-pickaway-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/greene-county/personal-injury-greene-county"
                 href="/locations/greene-county/personal-injury-greene-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn & Xenia</span>
               </Link>
               <Link
                 key="/locations/montgomery-county/personal-injury-montgomery-county"
                 href="/locations/montgomery-county/personal-injury-montgomery-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/morrow-county/personal-injury-morrow-county"
                 href="/locations/morrow-county/personal-injury-morrow-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Mount Gilead & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/butler-county/personal-injury-butler-county"
                 href="/locations/butler-county/personal-injury-butler-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton, Oxford & West Chester</span>
               </Link>
               <Link
                 key="/locations/athens-county/personal-injury-athens-county"
                 href="/locations/athens-county/personal-injury-athens-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/clinton-county/personal-injury-clinton-county"
                 href="/locations/clinton-county/personal-injury-clinton-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington & surrounding areas</span>
               </Link>
           </div>

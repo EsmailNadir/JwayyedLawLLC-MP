@@ -117,29 +117,29 @@ export default function TruckAccidentsPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Immediate Investigation and Evidence Preservation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Immediate Investigation and Evidence Preservation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Immediately after a truck accident, evidence must be preserved including photos of the scene, vehicles, cargo, injuries, and road conditions, witness contact information, police reports, truck driver information, trucking company information, and electronic logging device (ELD) data. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Regulatory Investigation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Regulatory Investigation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Federal Motor Carrier Safety Administration (FMCSA) regulations apply to commercial trucking including hours of service requirements, driver qualifications, vehicle maintenance requirements, cargo securement, and drug and alcohol testing. Violations of these regulations can establish negligence. An attorney can investigate regulatory violations, obtain driver logs, maintenance records, and company safety records to establish liability.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Identifying All Liable Parties</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Identifying All Liable Parties</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Multiple parties may be liable for truck accidents including the truck driver (if negligent), the trucking company (if negligent hiring, training, supervision, or maintenance), the truck owner (if negligent maintenance or equipment), cargo loaders (if improper loading caused the accident), manufacturers (if defective equipment), and government entities (if dangerous road conditions). An attorney can identify all potentially liable parties and pursue claims against each to maximize recovery.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Insurance Negotiation and Litigation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Insurance Negotiation and Litigation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Truck accident cases often involve multiple insurance policies including truck driver insurance, trucking company insurance, cargo insurance, and umbrella policies. Insurance companies often attempt to minimize claims or deny liability. An experienced attorney understands insurance tactics, can negotiate effectively with multiple insurers, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function TruckAccidentsPage() {
               An experienced truck accident attorney provides comprehensive representation throughout every stage of your claim:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos, witness statements, police reports, surveillance footage, ELD data, driver logs, maintenance records, and documenting all injuries and damages</li>
               <li><strong>Regulatory Investigation:</strong> Investigate federal FMCSA regulations, hours of service violations, driver qualifications, vehicle maintenance requirements, cargo securement violations, and drug and alcohol testing to establish negligence</li>
               <li><strong>Identifying All Liable Parties:</strong> Identify all potentially liable parties including truck drivers, trucking companies, truck owners, cargo loaders, manufacturers, and government entities to maximize recovery</li>
@@ -168,8 +168,8 @@ export default function TruckAccidentsPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications, long-term care)</li>
                 <li>Lost wages and loss of earning capacity</li>
                 <li>Property damage (vehicle repair or replacement)</li>
@@ -180,8 +180,8 @@ export default function TruckAccidentsPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Pain and suffering</li>
                 <li>Emotional distress</li>
                 <li>Loss of enjoyment of life</li>
@@ -192,8 +192,8 @@ export default function TruckAccidentsPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Punitive Damages</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Punitive Damages</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In cases involving egregious conduct such as driver fatigue violations, drug or alcohol use, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are more common in truck accident cases due to the severity of violations and injuries.
               </p>
             </div>

@@ -158,9 +158,9 @@ export default function MorrowCountyCourtsPage() {
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">Morrow County Municipal Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Morrow County Municipal Court</h4>
                 <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">60 E. High St, Mt. Gilead, OH 43338</p>
-                <p className="text-sm text-gray-600 mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=60+E+High+St,+Mt+Gilead,+OH+43338"
@@ -173,9 +173,9 @@ export default function MorrowCountyCourtsPage() {
                 </p>
               </div>
               <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">Morrow County Common Pleas Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Morrow County Common Pleas Court</h4>
                 <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">48 E. High St, Mt. Gilead, OH 43338</p>
-                <p className="text-sm text-gray-600 mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=48+E+High+St,+Mt+Gilead,+OH+43338"

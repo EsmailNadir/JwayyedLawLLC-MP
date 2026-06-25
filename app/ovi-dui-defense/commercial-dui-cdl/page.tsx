@@ -124,15 +124,15 @@ export default function CommercialDUICDLPage() {
               CDL OVI Penalties in Ohio (HB 37, Effective April 9, 2025)
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-3">First OVI Conviction — CDL Consequences</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">First OVI Conviction — CDL Consequences</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>CDL disqualification: 1 year (3 years if transporting HAZMAT at time of offense)</li>
                 <li>Criminal OVI penalties: mandatory 3 days jail or driver intervention program, fines $565–$1,075, license suspension 1–3 years, reinstatement fee $315</li>
                 <li>Mandatory 30-day employer notification under 49 CFR 383.31</li>
                 <li>FMCSA CDLIS entry — nationally visible in all states</li>
               </ul>
               <h4 className="font-semibold text-gray-900 mt-6 mb-3">Second OVI Conviction — CDL Consequences</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Lifetime CDL disqualification — no reinstatement, no waiver, no appeal</li>
                 <li>Permanent end of commercial driving career</li>
                 <li>Enhanced criminal OVI penalties for repeat offense</li>

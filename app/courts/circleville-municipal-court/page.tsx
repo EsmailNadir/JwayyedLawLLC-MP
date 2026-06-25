@@ -102,6 +102,13 @@ export default function CirclevilleMunicipalCourtPage() {
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
               Circleville Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
+            <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
+              <span className="text-[#b87333] font-bold text-sm">⚖</span>
+              <span className="text-sm font-semibold text-slate-800">Former Assistant Law Director of Circleville — Insider knowledge of local court procedures and prosecution strategy.</span>
+            </div>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
+            </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               Circleville Municipal Court, located at 111 S Paint St in Circleville, Ohio, serves Pickaway County — a rural county south of Columbus along the US 23 corridor. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations arising throughout Pickaway County. Jwayyed Law LLC represents defendants in Circleville Municipal Court, including individuals stopped on US 23 and SR 56. If you face an OVI charge, the 30-day deadline to appeal your Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> begins running from the date of arrest — do not delay in contacting our office.
             </p>

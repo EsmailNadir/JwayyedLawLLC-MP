@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { getSuburb, FCMC, DOMESTIC_VIOLENCE, MISDEMEANOR_SENTENCING, FIRM_NAP } from '@/data/franklin-county-reference';
+import { getSuburb, FCMC, MISDEMEANOR_SENTENCING, FIRM_NAP } from '@/data/franklin-county-reference';
 
 interface Props {
   suburb: string;
@@ -18,12 +18,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
   const suburbData = getSuburb(suburb);
   if (!suburbData) throw new Error(`No reference data found for suburb: ${suburb}`);
 
-  const { mayorsCourt, policeAgency, population2020 } = suburbData;
-  const hasMayorsCourt = mayorsCourt.active;
-  const courtName = hasMayorsCourt ? `${suburb} Mayor's Court` : FCMC.name;
-  const courtAddress = hasMayorsCourt ? mayorsCourt.address! : FCMC.address;
-  const courtPhone = hasMayorsCourt ? mayorsCourt.phone! : FCMC.clerkPhone;
-  const courtSchedule = hasMayorsCourt ? mayorsCourt.schedule : null;
+  const { policeAgency, population2020, formerProsecutorTitle } = suburbData;
   const slug = slugify(suburb);
 
   const breadcrumbItems = [
@@ -39,7 +34,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
     },
     {
       question: `Can a domestic violence charge in ${suburb} be dropped if the alleged victim does not want to press charges?`,
-      answer: `This is one of the most common misunderstandings in domestic violence cases. In Ohio, the decision to prosecute belongs to the state — not to the alleged victim. Once the ${policeAgency} makes an arrest and submits a report, the Franklin County prosecutor or the ${hasMayorsCourt ? suburb + ' Mayor\'s Court' : 'Franklin County Municipal Court'} prosecutor proceeds with the case regardless of whether the alleged victim recants, refuses to cooperate, or asks for the charges to be dropped. An attorney can advocate with the prosecutor and present legal defenses, but the alleged victim alone cannot dismiss the case.`,
+      answer: `This is one of the most common misunderstandings in domestic violence cases. In Ohio, the decision to prosecute belongs to the state — not to the alleged victim. Once the ${policeAgency} makes an arrest and submits a report, the Franklin County prosecutor or the Franklin County Municipal Court prosecutor proceeds with the case regardless of whether the alleged victim recants, refuses to cooperate, or asks for the charges to be dropped. An attorney can advocate with the prosecutor and present legal defenses, but the alleged victim alone cannot dismiss the case.`,
     },
     {
       question: `What is the Lautenberg Amendment and how does it affect a DV conviction in ${suburb}?`,
@@ -47,9 +42,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
     },
     {
       question: `Where is a domestic violence case from ${suburb} heard?`,
-      answer: hasMayorsCourt
-        ? `Domestic violence charges arising in ${suburb} are initially processed in ${suburb} Mayor's Court at ${courtAddress}, ${courtPhone}. The court meets ${courtSchedule}. More complex DV cases — those involving felony escalation, prior convictions, or protective order violations — transfer to Franklin County Municipal Court at ${FCMC.address} or, for felony charges, to Franklin County Court of Common Pleas.`
-        : `${mayorsCourt.note} Domestic violence charges from ${suburb} are processed directly in Franklin County Municipal Court at ${FCMC.address} (${FCMC.floors}), ${FCMC.clerkPhone}. Felony DV matters are bound over to Franklin County Court of Common Pleas.`,
+      answer: `Domestic violence charges are a first-degree misdemeanor under Ohio Revised Code 2919.25 and cannot be processed at the mayor's court level. All DV cases arising in ${suburb} are handled in Franklin County Municipal Court at ${FCMC.address} (${FCMC.floors}), ${FCMC.clerkPhone}. The mayor's court may receive the initial citation but must transfer all DV proceedings to Franklin County Municipal Court. Felony DV escalations (with prior DV convictions) are bound over to Franklin County Court of Common Pleas.`,
     },
     {
       question: `What happens if a protective order is violated in ${suburb}?`,
@@ -100,7 +93,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title={`Domestic Violence Defense Attorney in ${suburb}, Ohio`}
-        description={`Facing domestic violence charges in ${suburb}? Jwayyed Law LLC provides experienced DV defense in ${courtName} and throughout Franklin County. Call (614) 285-5482.`}
+        description={`Facing domestic violence charges in ${suburb}? Jwayyed Law LLC provides experienced DV defense in Franklin County Municipal Court and throughout Franklin County. Call (614) 285-5482.`}
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -109,14 +102,25 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
               Domestic Violence Defense in {suburb}, Ohio
             </h2>
+            {formerProsecutorTitle && (
+              <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
+                <span className="text-[#b87333] font-bold text-sm">⚖</span>
+                <span className="text-sm font-semibold text-slate-800">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
+              </div>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               A domestic violence arrest in {suburb} triggers consequences that begin immediately — before any court date, before any conviction, and often before you fully understand what is happening. When the{' '}
               <strong>{policeAgency}</strong> responds to a domestic disturbance call, Ohio mandatory arrest policies mean that an officer who finds probable cause to believe domestic violence has occurred will make an arrest. A temporary protection order is often issued the same night, prohibiting contact with your family home and potentially with your children. And the prosecution that follows proceeds under Ohio law on the state&apos;s timeline — not yours, and not the alleged victim&apos;s. Jwayyed Law LLC provides experienced{' '}
               <Link href="/criminal-defense/domestic-violence" className="text-[#b87333] underline hover:opacity-80">domestic violence defense</Link>{' '}
-              for {suburb} residents, including full representation at {courtName} and Franklin County Municipal Court. Call{' '}
+              for {suburb} residents, including full representation at Franklin County Municipal Court. Call{' '}
               <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               immediately — the earlier we are involved, the more options you have.
             </p>
+            {formerProsecutorTitle && (
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+                As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
+              </p>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               {suburb} is a Franklin County community with approximately {population2020.toLocaleString()} residents. Domestic disturbance calls and domestic violence arrests occur across all residential neighborhoods and economic demographics — this is not a charge limited to any particular background or circumstance. In many cases, the underlying facts are genuinely disputed, shaped by the dynamics of a difficult relationship, or driven by circumstances that the responding officer did not have time or information to fully evaluate. Our firm approaches each case by understanding the complete factual picture before advising on strategy.
             </p>
@@ -145,15 +149,9 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
               Where Your {suburb} DV Case Is Heard
             </h3>
-            {hasMayorsCourt ? (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-                Domestic violence charges arising in {suburb} are initially processed in <strong>{suburb} Mayor&apos;s Court</strong> at {courtAddress}, {courtPhone}. The court meets {courtSchedule}. Misdemeanor DV matters — including arraignment, pretrial proceedings, and pleas — may be handled at the mayor&apos;s court level. Protection order proceedings are heard in Franklin County Municipal Court (for civil TPOs) or Franklin County Domestic Relations Court (for civil protection orders). Felony DV escalations are transferred to Franklin County Court of Common Pleas. Our firm appears at each venue and coordinates your defense across all proceedings.
-              </p>
-            ) : (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-                {mayorsCourt.note} Domestic violence charges from {suburb} are processed directly in <strong>Franklin County Municipal Court</strong> at {FCMC.address} ({FCMC.floors}), {FCMC.clerkPhone}. Felony DV escalations are bound over to Franklin County Court of Common Pleas. Franklin County Municipal Court also handles temporary protection order (TPO) proceedings. Our firm appears regularly at Franklin County Municipal Court and understands its domestic violence docket procedures.
-              </p>
-            )}
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              Domestic violence is a first-degree misdemeanor under Ohio Revised Code 2919.25 and <strong>cannot be processed at the mayor&apos;s court level</strong> — Ohio law requires that DV charges be handled by a court of record. All domestic violence charges arising in {suburb} are processed in <strong>Franklin County Municipal Court</strong> at {FCMC.address} ({FCMC.floors}), {FCMC.clerkPhone}. If a {suburb} citation is initially issued, it is transferred to Franklin County Municipal Court for all proceedings, including arraignment, pretrial hearings, pleas, and trial. Temporary protection order (TPO) proceedings are also heard at Franklin County Municipal Court. Felony DV escalations are bound over to Franklin County Court of Common Pleas. Our firm appears regularly at Franklin County Municipal Court and understands its domestic violence docket and prosecutors.
+            </p>
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
               Defense Strategies for Domestic Violence Charges

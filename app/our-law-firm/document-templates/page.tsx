@@ -7,15 +7,14 @@ import ContactCTA from '@/components/ContactCTA';
 export const metadata: Metadata = {
   title: 'Legal Document Templates | Ohio | Jwayyed Law LLC',
   description:
-    'Free Ohio legal document templates: landlord repair requests, demand letters, cease and desist, OVI evidence preservation, and more. Consult an attorney for your situation.',
+    'Free Ohio legal document templates: personal injury demand letters, cease and desist, OVI evidence preservation, contract notices, and more. Consult an attorney for your situation.',
   keywords: [
     'Ohio legal templates',
-    'landlord repair letter',
     'demand letter template',
     'legal forms Ohio',
     'cease and desist letter',
-    'security deposit demand letter',
     'OVI evidence preservation',
+    'personal injury demand letter',
   ],
   openGraph: {
     title: 'Legal Document Templates | Jwayyed Law LLC',
@@ -31,92 +30,6 @@ const breadcrumbItems = [
 ];
 
 const templates = [
-  {
-    id: 'landlord-repair',
-    category: 'Landlord-Tenant',
-    title: 'Landlord Repair Request Letter | Jwayyed Law LLC',
-    description:
-      'Use this template to notify your landlord in writing of needed repairs — such as heat, plumbing, pest control, or structural issues. Under Ohio Revised Code § 5321.02 and § 5321.07, written notice is required before a tenant may withhold rent, make repairs and deduct costs, or terminate the lease due to habitability failures.',
-    practiceHref: '/civil/landlord-tenant-disputes',
-    practiceLabel: 'Landlord-Tenant Disputes',
-    templateText: `[YOUR NAME]
-[YOUR ADDRESS]
-[CITY, STATE, ZIP]
-[PHONE NUMBER]
-[EMAIL ADDRESS]
-
-[DATE]
-
-[LANDLORD\'S NAME]
-[LANDLORD\'S ADDRESS OR PROPERTY MANAGEMENT COMPANY]
-[CITY, STATE, ZIP]
-
-Re: Written Notice of Required Repairs — [RENTAL PROPERTY ADDRESS]
-
-Dear [LANDLORD\'S NAME]:
-
-I am writing to formally notify you of conditions at my rental unit located at [RENTAL PROPERTY ADDRESS], which require your immediate attention and repair. I have been a tenant at this property since [MOVE-IN DATE] under the lease agreement dated [LEASE DATE].
-
-The following conditions exist at the property that affect the habitability of the unit:
-
-1. [DESCRIBE REPAIR ISSUE #1 — e.g., "The furnace is not functioning. The unit has had no heat since [DATE]. Temperatures inside the unit have fallen below 50°F."]
-2. [DESCRIBE REPAIR ISSUE #2 — e.g., "There is a plumbing leak under the kitchen sink that has caused water damage to the cabinet interior."]
-3. [DESCRIBE REPAIR ISSUE #3 — if applicable]
-
-These conditions violate Ohio\'s landlord-tenant law, including Ohio Revised Code § 5321.02, which requires landlords to maintain rental premises in a fit and habitable condition.
-
-Pursuant to ORC § 5321.07, I am requesting that you remedy these conditions within a reasonable time. If repairs are not completed within [NUMBER — typically 30] days of this notice, I reserve all rights available to me under Ohio law, including but not limited to withholding rent, making repairs and deducting costs from rent, or terminating this lease agreement.
-
-Please confirm receipt of this letter in writing and provide a timeline for completing the repairs.
-
-Sincerely,
-
-[YOUR SIGNATURE]
-[YOUR PRINTED NAME]
-
-Enclosures: [LIST ANY PHOTOS OR DOCUMENTATION YOU ARE ATTACHING]`,
-  },
-  {
-    id: 'security-deposit',
-    category: 'Landlord-Tenant',
-    title: 'Security Deposit Demand Letter | Jwayyed Law LLC',
-    description:
-      'If your landlord has failed to return your security deposit or has made improper deductions, this letter formally demands its return. Ohio Revised Code § 5321.16 requires landlords to return the deposit (with an itemized list of deductions) within 30 days of the tenancy ending. Failure entitles you to double damages plus attorney fees.',
-    practiceHref: '/civil/landlord-tenant-disputes',
-    practiceLabel: 'Landlord-Tenant Disputes',
-    templateText: `[YOUR NAME]
-[YOUR CURRENT ADDRESS]
-[CITY, STATE, ZIP]
-[PHONE NUMBER]
-[EMAIL ADDRESS]
-
-[DATE]
-
-[LANDLORD\'S NAME OR PROPERTY MANAGEMENT COMPANY]
-[LANDLORD\'S ADDRESS]
-[CITY, STATE, ZIP]
-
-Re: Demand for Return of Security Deposit — [FORMER RENTAL ADDRESS]
-
-Dear [LANDLORD\'S NAME]:
-
-I was a tenant at [FORMER RENTAL ADDRESS, UNIT #] from [MOVE-IN DATE] to [MOVE-OUT DATE]. Upon vacating the property, I provided my forwarding address to you in writing on [DATE]. My security deposit in the amount of $[DEPOSIT AMOUNT] has not been returned, nor have I received an itemized written accounting of any deductions.
-
-Under Ohio Revised Code § 5321.16, you are required to return my security deposit, together with any written itemization of deductions, within thirty (30) days of the termination of my tenancy and delivery of my forwarding address. That 30-day deadline has now passed.
-
-I am formally demanding the immediate return of my full security deposit in the amount of $[DEPOSIT AMOUNT]. [ALTERNATIVELY, IF PARTIAL REFUND WAS RECEIVED: On [DATE] I received a partial refund of $[AMOUNT RECEIVED]. I dispute the following deductions as improper: [DESCRIBE DISPUTED DEDUCTIONS].]
-
-If I do not receive payment of $[AMOUNT DEMANDED] within 10 days of the date of this letter, I intend to pursue all available legal remedies, including filing a claim in [COUNTY] County court. Under ORC § 5321.16, if a court finds you wrongfully withheld my deposit, you may be liable for double the amount wrongfully withheld, plus my court costs and attorney fees.
-
-Please send payment by check or money order payable to [YOUR NAME] to the address above.
-
-Sincerely,
-
-[YOUR SIGNATURE]
-[YOUR PRINTED NAME]
-
-Enclosures: Copy of Lease, Move-Out Documentation, Proof of Forwarding Address Provided`,
-  },
   {
     id: 'personal-injury-demand',
     category: 'Personal Injury',
@@ -499,7 +412,7 @@ export default function DocumentTemplatesPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Free Ohio Legal Document Templates"
-        description="Download free legal document templates for common Ohio legal situations. Landlord repair requests, demand letters, cease and desist, and more."
+        description="Download free legal document templates for common Ohio legal situations. Personal injury demand letters, cease and desist, OVI evidence preservation, and more."
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

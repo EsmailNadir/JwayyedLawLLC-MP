@@ -199,7 +199,7 @@ export default function BlogPageClient() {
                       <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#b87333] to-[#8b5a1f] flex items-center justify-center">
                         <span className="text-white text-[10px] font-bold">JL</span>
                       </div>
-                      <div className="text-xs text-gray-500">
+                      <div className="text-xs text-gray-500 group-hover:text-gray-700 transition-colors">
                         <span className="block font-medium text-gray-700">{post.author}</span>
                         <time dateTime={post.date}>{formatDate(post.date)}</time>
                       </div>

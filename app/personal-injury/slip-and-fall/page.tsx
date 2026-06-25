@@ -117,29 +117,29 @@ export default function SlipAndFallPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Immediate Investigation and Documentation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Immediate Investigation and Documentation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Immediately after a slip and fall accident, evidence must be preserved including photos of the hazard, surrounding area, lighting conditions, your injuries, witness contact information, incident reports, and maintenance records if available. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Proving Premises Liability</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Proving Premises Liability</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Proving fault in slip and fall cases requires demonstrating that the property owner or occupier knew or should have known of the dangerous condition and failed to remedy it or warn of it. Evidence may include photos of the hazard, witness statements, maintenance records, incident reports, expert testimony, and evidence of similar prior incidents. An attorney can help gather evidence and build your case.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Insurance Negotiation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Insurance Negotiation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most slip and fall claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims, deny liability, or argue that you were partially at fault. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Litigation and Trial</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Trial</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony including safety experts, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function SlipAndFallPage() {
               An experienced slip and fall attorney provides comprehensive representation throughout every stage of your claim:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos of the hazard, surrounding area, lighting conditions, your injuries, witness statements, incident reports, and maintenance records</li>
               <li><strong>Premises Liability Analysis:</strong> Analyze premises liability issues, determine fault, identify all potentially liable parties, and establish that the property owner knew or should have known of the dangerous condition</li>
               <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
@@ -167,8 +167,8 @@ export default function SlipAndFallPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications)</li>
                 <li>Lost wages and loss of earning capacity</li>
                 <li>Property damage (damaged clothing or personal items)</li>
@@ -179,8 +179,8 @@ export default function SlipAndFallPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Pain and suffering</li>
                 <li>Emotional distress</li>
                 <li>Loss of enjoyment of life</li>
@@ -191,8 +191,8 @@ export default function SlipAndFallPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Punitive Damages</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Punitive Damages</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In cases involving egregious conduct such as intentional failure to remedy known hazards or gross negligence, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
               </p>
             </div>

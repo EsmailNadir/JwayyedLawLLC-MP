@@ -117,29 +117,29 @@ export default function WrongfulDeathPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Estate Administration</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Estate Administration</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Wrongful death claims must be filed by the personal representative of the deceased person's estate. If no personal representative exists, one must be appointed by the probate court. The personal representative is typically named in the will or appointed by the court. An attorney can help determine who can file, guide you through the probate process if necessary, and ensure the estate is properly established to file the claim.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Investigation and Evidence Gathering</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Investigation and Evidence Gathering</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Thorough investigation is essential to identify all responsible parties and gather evidence. This includes reviewing police reports, medical records, accident reports, witness statements, surveillance footage, and other evidence. An attorney can coordinate investigation, identify all potentially liable parties, and ensure all evidence is properly preserved. This investigation may reveal multiple responsible parties including drivers, employers, manufacturers, or government entities.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Filing the Wrongful Death Claim</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Filing the Wrongful Death Claim</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Wrongful death claims must be filed within 2 years of the date of death. The claim is filed by the personal representative on behalf of surviving family members. The complaint must identify all responsible parties, allege negligence or misconduct, and seek compensation for damages. An attorney can draft and file the complaint, ensure all deadlines are met, and protect your family's interests throughout the process.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Litigation and Settlement</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Settlement</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most wrongful death cases are resolved through settlement negotiations, but some proceed to trial. Litigation involves discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation. Most cases settle before trial, but preparation for trial strengthens negotiation position.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function WrongfulDeathPage() {
               An experienced wrongful death attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Estate Administration Guidance:</strong> Help determine who can file the claim, guide you through probate if necessary, and ensure the estate is properly established to file the wrongful death claim</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly investigate the incident including reviewing police reports, medical records, accident reports, witness statements, surveillance footage, and identifying all potentially liable parties</li>
               <li><strong>Estate Representation:</strong> File wrongful death claims on behalf of estates and surviving family members, ensuring all legal requirements are met and deadlines are satisfied</li>
@@ -167,8 +167,8 @@ export default function WrongfulDeathPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Medical expenses (past medical expenses before death)</li>
                 <li>Funeral and burial expenses</li>
                 <li>Lost wages (from date of injury to date of death)</li>
@@ -179,8 +179,8 @@ export default function WrongfulDeathPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Loss of consortium (spousal relationship)</li>
                 <li>Loss of companionship</li>
                 <li>Loss of guidance and support</li>
@@ -190,8 +190,8 @@ export default function WrongfulDeathPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Punitive Damages</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Punitive Damages</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In cases involving egregious conduct such as drunk driving, reckless behavior, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
               </p>
             </div>

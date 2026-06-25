@@ -166,16 +166,16 @@ export default function SpendthriftTrustsPage() {
             <LocationsWeServe title="Spendthrift Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 All Trust Services
               </Link>
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Special Needs Trusts
               </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Dynasty Trusts
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Irrevocable Trusts
               </Link>
             </div>

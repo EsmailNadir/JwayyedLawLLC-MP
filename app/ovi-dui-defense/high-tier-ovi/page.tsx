@@ -119,8 +119,8 @@ export default function HighTierOVIPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First High-Tier OVI (Current 2026 Ohio Law - HB 37)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First High-Tier OVI (Current 2026 Ohio Law - HB 37)</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Jail:</strong> 6 days to 6 months (minimum 6 days mandatory vs. 3 days standard OVI)</li>
                 <li><strong>Fines:</strong> $565 to $1,075 (minimum increased from $375 under HB 37)</li>
                 <li><strong>License Suspension:</strong> 1 to 3 years (longer than standard OVI)</li>
@@ -132,8 +132,8 @@ export default function HighTierOVIPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Second High-Tier OVI</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Second High-Tier OVI</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Jail:</strong> 20 days to 1 year (minimum 20 days mandatory vs. 10 days standard)</li>
                 <li><strong>Fines:</strong> $715 to $1,625 (minimum increased from $525 under HB 37)</li>
                 <li><strong>License Suspension:</strong> 1 to 7 years (longer than standard OVI)</li>
@@ -144,8 +144,8 @@ export default function HighTierOVIPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Third High-Tier OVI</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Third High-Tier OVI</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Jail:</strong> 60 days to 1 year (minimum 60 days mandatory vs. 30 days standard third OVI)</li>
                 <li><strong>Fines:</strong> $850 to $2,750 (enhanced under HB 37)</li>
                 <li><strong>License Suspension:</strong> 2 to 12 years</li>
@@ -157,8 +157,8 @@ export default function HighTierOVIPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Collateral Consequences</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Collateral Consequences</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Beyond criminal penalties, high-tier OVI convictions create lasting consequences including dramatically increased insurance rates (often 4-5x higher for 7-10 years), employment barriers, professional license restrictions, permanent criminal record, and impact on future OVI charges (high-tier status can enhance future penalties). These consequences persist long after completing sentences.
               </p>
             </div>
@@ -169,22 +169,22 @@ export default function HighTierOVIPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS) Process</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Administrative License Suspension (ALS) Process</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Within 30 days of arrest, you must file an appeal of the ALS or lose your right to challenge it. For high-tier OVI, the ALS suspension is longer than standard OVI. An attorney can file the appeal, request a stay of suspension, and represent you at the ALS hearing. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Court Process</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Criminal Court Process</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 High-tier OVI cases are heard in Municipal Court (for first and second offenses) or Common Pleas Court (for felony offenses). The process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome while simultaneously handling the ALS appeal.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Limited Driving Privileges</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Limited Driving Privileges</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Limited driving privileges after high-tier OVI are available but may require ignition interlock devices. Eligibility depends on circumstances and court approval. The application process requires court approval and must demonstrate necessity. An attorney can help prepare the application, present evidence of need, and navigate the approval process to minimize disruption to your daily life.
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function HighTierOVIPage() {
               An experienced high-tier OVI defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate ALS Appeal:</strong> File administrative license suspension appeal within the critical 30-day deadline, request stay of suspension, and represent you at ALS hearing to protect your driving privileges</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, dashcam footage, bodycam footage, breathalyzer maintenance records, field sobriety test procedures, and all evidence to identify weaknesses, illegal stops, or improper testing</li>
               <li><strong>Strategic Evidence Challenges:</strong> Challenge breathalyzer accuracy through maintenance records and calibration issues, field sobriety test administration through NHTSA protocol violations, blood test procedures through chain of custody issues, or improperly obtained evidence through pretrial motions</li>
@@ -208,29 +208,29 @@ export default function HighTierOVIPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Defenses to High-Tier OVI Charges</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Rising BAC Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Rising BAC Defense</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Rising BAC defense argues that your BAC was under 0.08% at the time of driving but rose to 0.17% or higher by the time of testing. This defense requires expert testimony and careful analysis of timing and consumption patterns. If successful, this defense can reduce high-tier OVI to standard OVI or result in dismissed charges.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Inaccurate Breathalyzer Results</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Inaccurate Breathalyzer Results</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Breathalyzer machines must be properly calibrated, maintained, and operated by trained officers. Medical conditions, recent alcohol consumption, or improper procedures can affect results. An attorney can challenge breathalyzer accuracy, maintenance records, and operator qualifications to reduce or dismiss high-tier charges.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Illegal Traffic Stop</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Illegal Traffic Stop</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Police must have reasonable suspicion of a traffic violation or crime to stop your vehicle. If the stop was illegal, evidence obtained may be suppressed, potentially resulting in dismissed charges. An attorney can challenge the legality of the stop and argue for suppression of evidence.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Field Sobriety Test Challenges</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Field Sobriety Test Challenges</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Field sobriety tests are subjective and can be affected by medical conditions, weather, road conditions, or improper administration. An attorney can challenge test administration, scoring, and reliability as evidence of impairment, potentially weakening the prosecution's case.
               </p>
             </div>

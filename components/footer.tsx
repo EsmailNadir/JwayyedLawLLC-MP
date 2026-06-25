@@ -11,7 +11,6 @@ const FOOTER_LINKS = [
   { href: '/personal-injury/car-accidents', label: 'Car Accidents' },
   { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall' },
   { href: '/civil', label: 'Civil Litigation' },
-  { href: '/civil/landlord-tenant-disputes', label: 'Landlord-Tenant' },
   { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
   { href: '/business', label: 'Business Law' },
   { href: '/business/llc-formation', label: 'LLC Formation' },
@@ -45,6 +44,18 @@ export default function Footer() {
             </Link>
           ))}
         </nav>
+        <div className="flex items-center justify-center gap-6 py-2 border-t border-white/10 pt-4">
+          <a href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick" target="_blank" rel="nofollow noreferrer" className="flex items-center gap-2.5 opacity-70 hover:opacity-100 transition-opacity">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png" style={{ border: 0 }} alt="Jwayyed Law LLC BBB Business Review" width={120} height={25} className="object-contain" />
+            <span className="text-xs text-gray-400">A+ Accredited Business</span>
+          </a>
+          <span className="h-4 w-px bg-white/20" aria-hidden="true" />
+          <div className="flex items-center gap-1.5 opacity-70">
+            <span className="text-[#b87333] text-xs">★★★★★</span>
+            <span className="text-xs text-gray-400">5.0 · 94+ Google Reviews</span>
+          </div>
+        </div>
         <p className="leading-relaxed">
           Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice. Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
         </p>

@@ -166,10 +166,10 @@ export default function ButlerCountyCourtsPage() {
             </p>
             <div className="grid md:grid-cols-1 gap-6 mb-6">
               <div id="area-i-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">Butler County Area I Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area I Court</h4>
                 <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">118 West High Street, Oxford, OH 45056</p>
-                <p className="text-sm text-gray-600 mt-1">Phone: (513) 523-4748</p>
-                <p className="text-sm text-gray-600 mt-1">Serves: City of Oxford; Hanover, Milford, Morgan, Oxford, Reily, and Wayne Townships</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 523-4748</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Serves: City of Oxford; Hanover, Milford, Morgan, Oxford, Reily, and Wayne Townships</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=118+West+High+Street,+Oxford,+OH+45056"
@@ -182,9 +182,9 @@ export default function ButlerCountyCourtsPage() {
                 </p>
               </div>
               <div id="area-ii-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">Butler County Area II Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area II Court</h4>
                 <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">101 High St, Hamilton, OH 45011</p>
-                <p className="text-sm text-gray-600 mt-1">Phone: (513) 887-3459</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 887-3459</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=101+High+St,+Hamilton,+OH+45011"
@@ -197,9 +197,9 @@ export default function ButlerCountyCourtsPage() {
                 </p>
               </div>
               <div id="area-iii-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 mb-2">Butler County Area III Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area III Court</h4>
                 <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">9577 Beckett Rd #300, West Chester, OH 45069</p>
-                <p className="text-sm text-gray-600 mt-1">Phone: (513) 867-5070</p>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 867-5070</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=9577+Beckett+Rd,+West+Chester,+OH+45069"
@@ -247,9 +247,9 @@ export default function ButlerCountyCourtsPage() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link
                 href="/courts/hamilton-municipal-court"
-                className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all"
+                className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <h4 className="font-semibold text-gray-900 mb-2">Hamilton Municipal Court</h4>
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Hamilton Municipal Court</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
                   700 Hanover Street, Hamilton, OH 45011. Misdemeanor cases, OVI/DUI, and traffic violations.
                 </p>

@@ -129,22 +129,22 @@ export default function AthensOVIDefensePage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First OVI Offense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First OVI Offense</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 A first OVI conviction in Athens Municipal Court carries mandatory minimum penalties under HB 37 (effective April 2025): 3 days in jail (or 3 days in a driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315 (reduced from $475). The court may also order vehicle immobilization, ignition interlock devices, and alcohol/drug treatment programs. Judges can now waive the 15-day waiting period for limited driving privileges for first offenders with no prior alcohol arrests. While these are mandatory minimums, experienced representation can help negotiate reduced penalties or alternative sentencing.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Second OVI Offense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Second OVI Offense</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 A second OVI conviction within 10 years carries enhanced penalties under HB 37: 10 days to 6 months in jail (minimum 10 days mandatory), fines of $715 to $1,625 (minimum increased from $525), and license suspension of 1 to 7 years. License reinstatement fee is $315. The court must order vehicle immobilization for 90 days, mandatory ignition interlock device for limited driving privileges (45-day or 90-day waiting period), and alcohol/drug treatment. Second OVI cases require aggressive defense representation to minimize these severe consequences.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">High-Tier OVI</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">High-Tier OVI</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 High-tier OVI charges (BAC of 0.17% or higher) carry enhanced penalties even for first offenses under HB 37: mandatory 6 days in jail (or 3 days in jail plus 3 days in driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315. High-tier OVI cases require challenging the breathalyzer results, testing procedures, and developing defenses to minimize consequences.
               </p>
             </div>

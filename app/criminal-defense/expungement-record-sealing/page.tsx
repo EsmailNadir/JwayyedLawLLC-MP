@@ -120,8 +120,8 @@ export default function ExpungementRecordSealingPage() {
               Ohio Record Sealing Waiting Periods (ORC 2953.32)
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">Waiting periods are measured from <strong>final discharge</strong> — completion of all incarceration, probation, parole, and payment of all fines, costs, and restitution:</p>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">Waiting periods are measured from <strong>final discharge</strong> — completion of all incarceration, probation, parole, and payment of all fines, costs, and restitution:</p>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>Minor misdemeanors: <strong>1 year</strong></li>
                 <li>Misdemeanors (all degrees, M1–M4): <strong>1 year</strong></li>
                 <li>Fourth- and fifth-degree felonies (F4, F5): <strong>1 year</strong></li>

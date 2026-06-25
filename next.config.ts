@@ -21,6 +21,8 @@ const nextConfig = {
   generateEtags: false,
   async redirects() {
     return [
+      { source: '/civil/landlord-tenant-disputes', destination: '/civil', permanent: true },
+      { source: '/civil/defamation', destination: '/civil', permanent: true },
       { source: '/other-services/immigration', destination: '/other-services', permanent: true },
       { source: '/other-services/immigration-services', destination: '/other-services', permanent: true },
       { source: '/other-services/green-cards', destination: '/other-services', permanent: true },

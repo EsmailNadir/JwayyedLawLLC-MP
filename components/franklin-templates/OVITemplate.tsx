@@ -18,7 +18,7 @@ export default function OVITemplate({ suburb }: Props) {
   const suburbData = getSuburb(suburb);
   if (!suburbData) throw new Error(`No reference data found for suburb: ${suburb}`);
 
-  const { mayorsCourt, policeAgency, keyRoads, population2020 } = suburbData;
+  const { mayorsCourt, policeAgency, keyRoads, population2020, formerProsecutorTitle } = suburbData;
   const hasMayorsCourt = mayorsCourt.active;
   const courtName = hasMayorsCourt ? `${suburb} Mayor's Court` : FCMC.name;
   const courtAddress = hasMayorsCourt ? mayorsCourt.address! : FCMC.address;
@@ -47,7 +47,7 @@ export default function OVITemplate({ suburb }: Props) {
     {
       question: `Where is my OVI case heard if I was arrested in ${suburb}?`,
       answer: hasMayorsCourt
-        ? `OVI and traffic charges arising in ${suburb} are initially heard in ${suburb} Mayor's Court, located at ${courtAddress}. The court meets ${courtSchedule}. If your case involves a felony OVI or cannot be resolved at the mayor's court level, it transfers to Franklin County Municipal Court at ${FCMC.address}. An attorney can appear at both courts on your behalf.`
+        ? `OVI and traffic charges arising in ${suburb} are initially heard in ${suburb} Mayor's Court, located at ${courtAddress}. The court meets ${courtSchedule}. If your case involves a 2nd offense OVI or higher, a high-tier OVI (BAC 0.17%+), or any matter that cannot be resolved at the mayor's court level, it transfers to Franklin County Municipal Court at ${FCMC.address}. First-offense OVI matters may be handled at ${suburb} Mayor's Court; repeat offenses must be heard in Franklin County Municipal Court. An attorney can appear at both courts on your behalf.`
         : `${mayorsCourt.note} All OVI cases from ${suburb} are heard at ${FCMC.address}, ${FCMC.floors}. The Franklin County Municipal Court handles the full spectrum of OVI matters including arraignments, ALS appeals, pleas, and trials.`,
     },
     {
@@ -116,6 +116,12 @@ export default function OVITemplate({ suburb }: Props) {
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
               OVI / DUI Defense in {suburb}, Ohio
             </h2>
+            {formerProsecutorTitle && (
+              <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
+                <span className="text-[#b87333] font-bold text-sm">⚖</span>
+                <span className="text-sm font-semibold text-slate-800">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
+              </div>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               An OVI arrest in {suburb} can happen fast — a traffic stop on {keyRoads[0]}, a checkpoint near a {suburb} business district, or a late-night stop by the{' '}
               <strong>{policeAgency}</strong>. One moment you are driving home; the next you have a citation in your hand, your license has been suspended, and you are wondering what to do. Ohio Revised Code 4511.19, substantially revised by HB 37 (effective April 9, 2025), sets mandatory minimum penalties that a court cannot waive below — meaning the consequences of even a first OVI conviction are serious, automatic, and lasting. Jwayyed Law LLC provides experienced{' '}
@@ -124,6 +130,11 @@ export default function OVITemplate({ suburb }: Props) {
               <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               immediately — the administrative license suspension appeal deadline is only 30 days from your arrest.
             </p>
+            {formerProsecutorTitle && (
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+                As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
+              </p>
+            )}
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents, and law enforcement activity on its primary corridors — {roadsText} — produces a significant number of OVI arrests each year. The {policeAgency} patrols these routes routinely, and Ohio State Highway Patrol units also operate in portions of Franklin County. Every OVI stop involves a sequence of decisions by law enforcement — the legal justification for the stop, the administration of field sobriety tests, the request for a breath or blood sample, and the documentation of results — and any misstep in that sequence can be the foundation of a successful defense.
             </p>

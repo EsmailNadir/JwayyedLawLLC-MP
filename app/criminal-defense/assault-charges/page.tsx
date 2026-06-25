@@ -37,11 +37,11 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is the difference between assault and battery in Ohio?',
-    answer: 'In Ohio, assault under Ohio Revised Code 2903.13 involves knowingly causing physical harm or causing another to believe they will suffer physical harm. Battery is typically charged as assault in Ohio. Our firm represents clients only on simple (misdemeanor) assault under ORC 2903.13. We do not handle more serious assault charges. The severity of charges depends on the harm caused and weapons involved.',
+    answer: 'In Ohio, assault under Ohio Revised Code 2903.13 involves knowingly causing physical harm or causing another to believe they will suffer physical harm. Battery is typically charged as assault in Ohio. The severity of charges depends on the harm caused, weapons involved, and the relationship between the parties.',
   },
   {
     question: 'What are the penalties for assault in Ohio?',
-    answer: 'Simple assault (ORC 2903.13), which our firm handles, is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Our firm does not handle more serious assault charges. Prior convictions and weapons can enhance penalties.',
+    answer: 'Simple assault (ORC 2903.13) is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault escalates to a fourth-degree felony with up to 18 months in prison. Prior convictions and weapons can enhance penalties.',
   },
   {
     question: 'Can I defend against assault charges in Ohio?',
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     question: `What is the difference between assault and aggravated assault in Ohio?`,
-    answer: `Under ORC 2903.13, simple assault — knowingly causing or attempting to cause physical harm to another — is generally a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault under ORC 2903.12 is a more serious charge that applies when a person causes serious physical harm or uses a deadly weapon while under the influence of sudden passion or rage brought on by serious provocation. Aggravated assault is a fourth-degree felony (F4) punishable by 6–18 months in prison. Jwayyed Law LLC handles misdemeanor assault (ORC 2903.13) only; if you are charged with aggravated assault, you will need to consult an attorney who handles felony matters.`,
+    answer: `Under ORC 2903.13, simple assault — knowingly causing or attempting to cause physical harm to another — is generally a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault under ORC 2903.12 is a more serious charge that applies when a person causes serious physical harm or uses a deadly weapon while under the influence of sudden passion or rage brought on by serious provocation. Aggravated assault is a fourth-degree felony (F4) punishable by 6–18 months in prison. If you are facing either charge, contact Jwayyed Law LLC at (614) 285-5482 to discuss your case.`,
   },
   {
     question: `Can self-defense be raised as a defense to assault in Ohio?`,
@@ -121,7 +121,7 @@ export default function AssaultChargesPage() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Under Ohio law, assault involves knowingly causing physical harm to another person or causing another to believe they will suffer physical harm. We represent clients charged with <strong>misdemeanor assault</strong> (simple assault under ORC 2903.13) only. The severity of charges depends on the harm caused, weapons involved, and the relationship between parties.
+              Under Ohio law, assault involves knowingly causing physical harm to another person or causing another to believe they will suffer physical harm. The severity of charges depends on the harm caused, weapons involved, and the relationship between parties — ranging from simple misdemeanor assault under ORC 2903.13 to more serious charges under ORC 2903.12.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -139,14 +139,11 @@ export default function AssaultChargesPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Simple Assault (ORC 2903.13) — We Represent Clients on This Charge</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Simple Assault (ORC 2903.13) — We Represent Clients on This Charge</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Simple assault occurs when a person knowingly causes or attempts to cause physical harm to another, or negligently causes physical harm with a deadly weapon. This is typically charged as a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Our firm handles defense for simple (misdemeanor) assault charges throughout Ohio.
               </p>
 
-              <p className="text-gray-700 mb-4 text-sm italic">
-                If your charge is not simple assault under ORC 2903.13, you will need to consult an attorney who handles those matters.
-              </p>
             </div>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -158,14 +155,14 @@ export default function AssaultChargesPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First-Degree Misdemeanor (Simple Assault - ORC 2903.13)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First-Degree Misdemeanor (Simple Assault - ORC 2903.13)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Simple assault convictions carry significant penalties including up to 180 days in county jail, fines up to $1,000, court costs, probation supervision fees, mandatory anger management or counseling programs, and a permanent criminal record. Even misdemeanor convictions can affect employment, professional licensing, housing applications, and educational opportunities. Under Ohio Revised Code 2953.32, misdemeanor assault convictions may be eligible for expungement after a waiting period, but the process requires careful navigation.
               </p>
             </div>
 
             <h4 className="font-semibold text-gray-900 mt-6 mb-4">Enhanced Penalties and Aggravating Factors</h4>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               Under Ohio Revised Code 2929.12, judges consider various factors that can increase penalties including prior criminal history, use of weapons, harm to protected persons (children, elderly, disabled), gang-related activity, or offenses committed in the presence of children. These factors can result in maximum sentences, consecutive prison terms, and enhanced fines. Additionally, assault convictions can trigger mandatory minimum sentences in certain circumstances.
             </p>
 
@@ -183,36 +180,36 @@ export default function AssaultChargesPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Initial Arrest and Arraignment</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Initial Arrest and Arraignment</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 After arrest, you will be taken before a judge for arraignment where charges are formally read, bail is set, and you enter a plea. This is a critical stage where an attorney can argue for reduced bail, release on recognizance, or house arrest. The initial plea (typically not guilty) preserves your rights and allows time for investigation and defense preparation. An attorney can also request discovery materials including police reports, witness statements, medical records, and evidence at this early stage.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Discovery and Investigation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence they intend to use at trial. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, examine medical records, review surveillance footage if available, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting self-defense, lack of intent, mistaken identity, or false allegations. Independent experts including medical professionals, forensic specialists, or use-of-force experts may be consulted to challenge the prosecution's evidence.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial Motions</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Motions</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Strategic pretrial motions can significantly impact your case. Motions to suppress evidence may be filed if evidence was obtained illegally, if your constitutional rights were violated during arrest, or if statements were coerced. Motions to dismiss may be filed if charges lack sufficient evidence, if statutes of limitations have expired, or if procedural errors occurred. Motions to compel discovery ensure prosecutors provide all required evidence. These motions require legal expertise and can result in dismissal of charges or exclusion of damaging evidence.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Plea Negotiations</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Plea Negotiations</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most assault cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (e.g., aggravated to simple assault where applicable), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial Representation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial Representation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If your case proceeds to trial, experienced trial representation is essential. Your attorney will present evidence supporting your defense, cross-examine prosecution witnesses to expose weaknesses or inconsistencies, present expert testimony when appropriate, make compelling arguments to the jury, and protect your rights throughout the process. Trial requires extensive preparation, knowledge of evidence rules, and effective advocacy skills. A not guilty verdict results in complete dismissal of charges.
               </p>
             </div>
@@ -225,7 +222,7 @@ export default function AssaultChargesPage() {
               An experienced assault defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of arrest, including right to remain silent, right to counsel, and protection against self-incrimination</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, medical records, witness statements, surveillance footage, and all evidence to identify weaknesses, inconsistencies, or evidence supporting your defense</li>
               <li><strong>Strategic Defense Development:</strong> Develop and execute defense strategies including self-defense (ORC 2901.05), defense of others, lack of intent, mistaken identity, insufficient evidence, or false allegations based on thorough investigation</li>
@@ -242,23 +239,23 @@ export default function AssaultChargesPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Self-Defense</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Self-Defense</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Under Ohio Revised Code 2901.05, you may use reasonable force to defend yourself if you reasonably believe you are in imminent danger of physical harm. The force used must be proportional to the threat faced. Evidence of self-defense can result in dismissal or acquittal.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Defense of Others</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Similar to self-defense, you may use reasonable force to protect another person from imminent physical harm. The defense requires a reasonable belief that the other person was in danger and that your actions were necessary and proportional.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Lack of Intent</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Assault requires knowingly causing harm. If the incident was accidental or unintentional, or you lacked knowledge that your actions would cause harm, this defense may apply. Evidence of accident or mistake can result in reduced or dismissed charges.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">False Allegations</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Sometimes individuals make false assault allegations for various reasons including revenge, custody disputes, or financial gain. An attorney can investigate, gather evidence, identify inconsistencies, and expose false allegations to protect your rights.
               </p>
             </div>
@@ -272,36 +269,36 @@ export default function AssaultChargesPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Consent Defense</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Consent Defense</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In certain circumstances, if the alleged victim consented to the physical contact (such as in sports, mutual combat, or consensual activities), this may serve as a defense. However, consent must be genuine, informed, and not obtained through fraud or coercion. This defense requires careful analysis of the specific facts and circumstances.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Defense of Property</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Defense of Property</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Under Ohio law, you may use reasonable force to protect your property from theft, damage, or trespass. However, the force must be proportional and reasonable under the circumstances. Deadly force is generally not permitted solely for property protection unless there is also a threat of serious physical harm.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Mental State Defenses</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Mental State Defenses</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you lacked the required mental state (knowingly, recklessly, or negligently) to commit assault, this may serve as a defense. For example, if the contact was truly accidental, if you were unaware your actions would cause harm, or if you reasonably believed your actions were necessary and lawful, these factors may support a defense.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Alibi Defense</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Alibi Defense</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you can prove you were not present at the location where the assault allegedly occurred, or if you were elsewhere at the time, this alibi defense can result in complete dismissal of charges. Alibi defenses require strong evidence including witness testimony, surveillance footage, receipts, or other documentation proving your location.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Prosecutorial Misconduct or Procedural Errors</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Prosecutorial Misconduct or Procedural Errors</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Sometimes cases can be dismissed due to prosecutorial misconduct, violations of your constitutional rights, failure to provide required discovery, or other procedural errors. An experienced attorney can identify these issues and file appropriate motions to dismiss or suppress evidence.
               </p>
             </div>

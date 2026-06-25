@@ -105,7 +105,7 @@ export default function BreachOfContractPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Contracts are legally binding agreements between parties, and when one party fails to perform their obligations, the other party may suffer financial losses. Breach of contract can occur through failure to perform, defective performance, late performance, or refusal to perform. Understanding your rights, available remedies, and the legal process is essential for protecting your interests and recovering damages. For an overview of how contractual obligations intersect with landlord-tenant relationships, see our article on <Link href="/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties and tenant rights</Link>.
+              Contracts are legally binding agreements between parties, and when one party fails to perform their obligations, the other party may suffer financial losses. Breach of contract can occur through failure to perform, defective performance, late performance, or refusal to perform. Understanding your rights, available remedies, and the legal process is essential for protecting your interests and recovering damages. For an overview of how contractual obligations intersect with landlord-tenant relationships, see our article on <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties and tenant rights</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -121,29 +121,29 @@ export default function BreachOfContractPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Contract Analysis and Breach Identification</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Contract Analysis and Breach Identification</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The process begins with analyzing the contract to identify breaches, determine contract validity, and calculate damages. An attorney can review contracts, identify breaches, assess contract enforceability, calculate damages including direct and consequential damages, and determine available remedies. This analysis is crucial for building a strong case.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Demand and Negotiation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Demand and Negotiation</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Before filing a lawsuit, sending a demand letter outlining the breach and damages is often the first step. This can lead to settlement negotiations. An attorney can draft demand letters, negotiate with opposing parties, and work toward resolution without litigation. Most contract disputes settle during negotiation, but preparation for litigation strengthens negotiation position.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Litigation Process</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation Process</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If settlement negotiations fail, litigation may be necessary. This involves filing a complaint, discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum recovery at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Remedies and Enforcement</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Remedies and Enforcement</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 After obtaining a judgment, enforcement may be necessary through various collection methods including wage garnishment, bank levies, or property liens. An attorney can help enforce judgments and collect damages when necessary.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function BreachOfContractPage() {
               An experienced breach of contract attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Contract Analysis:</strong> Thoroughly analyze contracts to identify breaches, assess contract validity and enforceability, determine contract terms and obligations, and identify potential defenses</li>
               <li><strong>Damage Calculation:</strong> Calculate all damages including direct damages (losses directly from breach), consequential damages (foreseeable losses), liquidated damages (if specified in contract), and lost profits or opportunities</li>
               <li><strong>Legal Strategy Development:</strong> Develop strategies to prove breach, establish damages, and maximize recovery based on contract type, breach severity, and circumstances</li>
@@ -170,8 +170,8 @@ export default function BreachOfContractPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Monetary Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Monetary Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Compensatory Damages:</strong> Direct losses from breach including costs to complete performance, lost profits, and expenses incurred</li>
                 <li><strong>Consequential Damages:</strong> Foreseeable losses resulting from breach including lost opportunities, business losses, and indirect damages</li>
                 <li><strong>Liquidated Damages:</strong> Damages specified in contract if breach occurs, enforceable if reasonable and not punitive</li>
@@ -180,8 +180,8 @@ export default function BreachOfContractPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Equitable Remedies</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Equitable Remedies</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Specific Performance:</strong> Court order requiring breaching party to perform contract obligations, available when monetary damages are inadequate</li>
                 <li><strong>Rescission:</strong> Contract cancellation, returning parties to pre-contract position, available for material breaches or fraud</li>
                 <li><strong>Restitution:</strong> Return of payments or benefits received under contract, available when contract is rescinded</li>
@@ -189,8 +189,8 @@ export default function BreachOfContractPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Attorney Fees</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Attorney Fees</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Attorney fees for breach of contract in Ohio are generally not recoverable unless specified in the contract, authorized by statute, or awarded as part of punitive damages for egregious conduct. Contracts often include attorney fee provisions requiring the losing party to pay attorney fees. An attorney can help review your contract and determine if attorney fees are recoverable.
               </p>
             </div>

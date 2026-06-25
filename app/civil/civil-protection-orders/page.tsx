@@ -137,11 +137,11 @@ export default function CivilProtectionOrdersPage() {
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
               </Link>
-              <Link href="/civil/defamation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Defamation</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protect your reputation against false and harmful statements</span>
               </Link>

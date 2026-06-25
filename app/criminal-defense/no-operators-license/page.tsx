@@ -141,28 +141,28 @@ export default function NoOperatorsLicensePage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Never Obtained a License</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Never Obtained a License</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Some individuals have never gone through the licensing process and do not hold a valid Ohio driver&apos;s license or a license from any other state. This is the most straightforward no operator&apos;s license charge. The prosecution must prove that you were operating a motor vehicle and did not possess a valid license at the time. Penalties for a first offense are typically limited to fines, but subsequent offenses carry increasingly severe penalties including potential jail time.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Expired License</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Driving with an expired license is charged under ORC 4510.12 as operating without a valid license. Ohio driver&apos;s licenses expire on your birthday every four or eight years depending on when the license was issued. Many people fail to renew on time and continue driving without realizing their license has expired. While this is generally treated less seriously than never having a license, it is still a criminal charge that can result in fines and a record. Renewing your license before your court date can often help in achieving a favorable outcome.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Wrong Class of License</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Operating a vehicle that requires a different class of license than the one you hold can result in a charge under ORC 4510.12. For example, driving a commercial vehicle without a CDL, operating a motorcycle without a motorcycle endorsement, or driving a vehicle requiring special endorsements without those endorsements. The penalty depends on the specific circumstances and whether you hold any valid license at all.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Foreign License Holders</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Individuals who hold a valid driver&apos;s license from another country may be charged with no operator&apos;s license if they have been residing in Ohio beyond the period during which their foreign license is recognized. Ohio generally requires new residents to obtain an Ohio driver&apos;s license within 30 days of establishing residency. International visitors may use their foreign license for a limited period, but extended stays require obtaining an Ohio license. An attorney can help navigate these complex situations and present appropriate defenses.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Suspended vs. No License</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 It is important to distinguish between having no license (ORC 4510.12) and driving under suspension (ORC 4510.11). If your license was suspended by the BMV or a court, you may face the more serious DUS charge rather than the no license charge. However, if your license expired during a suspension period, the charges can overlap. An experienced attorney will analyze which charge applies and develop the most effective defense strategy for your specific situation.
               </p>
             </div>
@@ -176,22 +176,22 @@ export default function NoOperatorsLicensePage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First Offense (Unclassified Misdemeanor)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First Offense (Unclassified Misdemeanor)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 A first offense under ORC 4510.12 is an unclassified misdemeanor carrying a maximum fine of $150 plus court costs. While jail time is not typically imposed for a first offense, the conviction creates a criminal record. The court may also impose a period of license suspension, require you to obtain a valid license within a specified time, or impose other conditions. Court costs vary by jurisdiction but typically add $100-$200 or more to the total financial obligation.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Second and Subsequent Offenses</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Second and Subsequent Offenses</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 A second or subsequent offense within three years is a first-degree misdemeanor, significantly escalating the potential penalties. A first-degree misdemeanor carries up to 180 days in jail, fines up to $1,000, and additional license suspension. The court is more likely to impose jail time for repeat offenders who have not resolved their licensing issues. Probation, community service, and other conditions may also be imposed. The enhanced penalties for repeat offenses underscore the importance of resolving the underlying licensing issue as quickly as possible.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Additional Consequences</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Additional Consequences</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Beyond the direct criminal penalties, a no operator&apos;s license conviction can have additional consequences. Your vehicle may be towed and impounded at the time of the stop, resulting in towing and storage fees that can amount to hundreds of dollars. If you are also found to be driving without insurance, you face additional charges and FRA suspension. A criminal record can affect employment prospects, as many employers conduct background checks. For non-citizens, criminal convictions can have immigration consequences. These collateral consequences make it essential to take even a first offense seriously.
               </p>
             </div>
@@ -205,29 +205,29 @@ export default function NoOperatorsLicensePage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Citation and Court Date</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Citation and Court Date</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 When you are stopped and found to be driving without a valid license, you will receive a citation with a court date. It is critical to appear at your scheduled court date or have an attorney appear on your behalf. Failure to appear can result in a bench warrant, additional charges, and license suspension. Before your court date, consult with an attorney to understand your options and begin preparing your defense.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Arraignment</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Arraignment</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 At arraignment, the charge is formally read and you enter a plea. Entering a not guilty plea allows time for your attorney to review the evidence, investigate potential defenses, and negotiate with the prosecutor. Your attorney may also use this time to help you obtain a valid license, which can significantly improve the outcome of your case. In many courts, an attorney can appear on your behalf at arraignment.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial and Negotiation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial and Negotiation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The pretrial phase is often the most critical stage for no operator&apos;s license cases. Your attorney will negotiate with the prosecutor for a favorable resolution. If you have obtained a valid license between the time of the citation and the pretrial hearing, this significantly strengthens your negotiating position. Common favorable outcomes include reduction to a non-criminal minor misdemeanor, dismissal upon proof of obtaining a valid license, reduced fines, or completion of a driving course.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial or Resolution</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial or Resolution</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If the case cannot be resolved through negotiation, it may proceed to trial. At trial, the prosecution must prove beyond a reasonable doubt that you were operating a motor vehicle and that you did not possess a valid operator&apos;s license at the time. Your attorney can challenge the evidence, present defenses, and advocate for a not guilty verdict. If you accept a negotiated plea or are found guilty, your attorney will advocate for the most lenient sentence possible.
               </p>
             </div>
@@ -240,7 +240,7 @@ export default function NoOperatorsLicensePage() {
               An experienced attorney provides comprehensive representation for no operator&apos;s license charges:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Case Evaluation:</strong> Thoroughly review the circumstances of your case, the basis for the charge, and your driving history to identify the strongest defense strategy</li>
               <li><strong>License Status Investigation:</strong> Investigate your complete BMV record to determine whether you actually lacked a valid license, whether there were BMV errors, or whether an out-of-state license was valid at the time</li>
               <li><strong>Licensing Assistance:</strong> Help you understand and navigate the process of obtaining a valid Ohio driver&apos;s license, including identifying any obstacles such as outstanding suspensions or holds</li>
@@ -256,28 +256,28 @@ export default function NoOperatorsLicensePage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Valid Out-of-State or Foreign License</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Valid Out-of-State or Foreign License</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you held a valid driver&apos;s license from another state or country at the time of the traffic stop, this may serve as a complete defense to the charge. Ohio recognizes valid licenses from other states under reciprocity principles, and certain foreign licenses may be recognized for limited periods. An attorney can help obtain the necessary documentation to prove the validity of your out-of-state or foreign license.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">BMV Record Errors</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The Ohio BMV database can contain errors that incorrectly reflect your license status. If BMV records erroneously show that you do not have a valid license when you actually do, or if administrative errors caused your license to be improperly canceled, this can form the basis of a defense. An attorney can investigate BMV records and identify any discrepancies or errors.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Lack of Knowledge</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 While ignorance of the law is generally not a defense, lack of knowledge that your license had expired or was no longer valid may be considered as a mitigating factor. This is particularly relevant in cases where the expiration was recent, where you had no reason to know the license was invalid, or where BMV communications were not received. While not a complete defense, this can influence the prosecutor&apos;s willingness to offer a favorable resolution.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Unlawful Traffic Stop</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If the traffic stop that led to the discovery of your unlicensed status was conducted without reasonable suspicion or probable cause, the evidence obtained may be suppressed under the Fourth Amendment. Without a lawful basis for the stop, the officer would not have discovered your license status, and the charge may be dismissed. Your attorney will evaluate the circumstances of the stop and file a suppression motion if appropriate.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Not Operating on a Public Roadway</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 ORC 4510.12 applies to operating a motor vehicle upon a highway or public or private property used by the public for vehicular travel. If you were operating the vehicle on purely private property not used by the public for travel, this may serve as a defense. The applicability of this defense depends on the specific location and whether it qualifies as property used by the public.
               </p>
             </div>
@@ -291,7 +291,7 @@ export default function NoOperatorsLicensePage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Eligibility requirements:</strong> You must be at least 16 years old (with driver&apos;s education) or 18 years old (without driver&apos;s education). You must be a resident of Ohio or have an Ohio-based employment.</li>
                 <li><strong>Required documents:</strong> You need proof of identity (birth certificate, passport, or other acceptable document), proof of Social Security number, proof of Ohio residency (two documents such as utility bills, bank statements, or lease agreements), and proof of legal presence if not a U.S. citizen.</li>
                 <li><strong>Written knowledge test:</strong> You must pass a written test covering Ohio traffic laws, signs, and safe driving practices. Study materials are available through the Ohio BMV website.</li>
@@ -300,7 +300,7 @@ export default function NoOperatorsLicensePage() {
                 <li><strong>Fees:</strong> License fees vary by type and duration. A standard four-year license costs approximately $25.75. Additional fees may apply for endorsements or special licenses.</li>
                 <li><strong>Clear any holds:</strong> Before you can obtain a license, any outstanding suspensions, holds, or blocks on your BMV record must be resolved. This may require paying reinstatement fees, resolving outstanding tickets, or addressing other issues.</li>
               </ul>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you have obstacles to obtaining a license, such as outstanding suspensions, unpaid tickets, or other BMV holds, an attorney can help you identify and resolve these issues. Getting properly licensed not only helps your current case but protects you from future charges and the escalating penalties that come with repeat offenses.
               </p>
             </div>

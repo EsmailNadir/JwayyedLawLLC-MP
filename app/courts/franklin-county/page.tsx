@@ -201,17 +201,16 @@ export default function FranklinCountyCourtsPage() {
               Charged in Columbus or at Franklin County Municipal Court? Select your practice area below.
             </p>
 
-            <div className="not-prose space-y-4 mb-10">
+            {/* Columbus Practice Area Cards */}
+            <div className="not-prose grid md:grid-cols-3 gap-5 mb-10">
 
               {/* OVI Card */}
-              <div className="border-l-4 border-[#b87333] bg-gray-50 rounded-r-lg p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900">OVI / DUI Defense — Columbus</h4>
-                  <Link href="/locations/franklin-county/ovi-dui-defense-columbus" className="text-[#b87333] font-['Inter',_'Arial',_sans-serif] text-sm font-medium hover:opacity-80 whitespace-nowrap ml-4">
-                    View hub →
-                  </Link>
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
+                <div className="bg-[#b87333] px-5 py-4">
+                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">OVI / DUI Defense</span>
+                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2">
+                <div className="flex flex-col divide-y divide-gray-100 flex-1">
                   {[
                     { label: '1st OVI', href: '/locations/franklin-county/first-ovi-columbus' },
                     { label: '2nd OVI', href: '/locations/franklin-county/second-ovi-columbus' },
@@ -224,17 +223,26 @@ export default function FranklinCountyCourtsPage() {
                     { label: 'Marijuana OVI', href: '/locations/franklin-county/marijuana-ovi-columbus' },
                     { label: 'OVI With Accident', href: '/locations/franklin-county/ovi-with-accident-columbus' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="font-['Inter',_'Arial',_sans-serif] text-sm text-[#b87333] hover:opacity-80 hover:underline">
-                      {label}
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
+                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
+                <div className="px-4 py-3 border-t border-gray-100">
+                  <Link href="/locations/franklin-county/ovi-dui-defense-columbus" className="block text-center text-xs font-semibold font-['Inter',_'Arial',_sans-serif] text-[#b87333] border border-[#b87333] rounded-lg py-2 hover:bg-[#b87333] hover:text-white transition-colors">
+                    View OVI hub →
+                  </Link>
+                </div>
               </div>
 
-              {/* Criminal Card */}
-              <div className="border-l-4 border-[#b87333] bg-gray-50 rounded-r-lg p-5">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-3">Criminal Defense — Columbus</h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2">
+              {/* Criminal Defense Card */}
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
+                <div className="bg-[#b87333] px-5 py-4">
+                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">Criminal Defense</span>
+                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
+                </div>
+                <div className="flex flex-col divide-y divide-gray-100 flex-1">
                   {[
                     { label: 'Theft / Shoplifting', href: '/locations/franklin-county/theft-defense-columbus' },
                     { label: 'Drug Possession', href: '/locations/franklin-county/drug-possession-defense-columbus' },
@@ -245,25 +253,30 @@ export default function FranklinCountyCourtsPage() {
                     { label: 'Open Container', href: '/locations/franklin-county/open-container-defense-columbus' },
                     { label: 'Expungement', href: '/locations/franklin-county/expungement-columbus' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="font-['Inter',_'Arial',_sans-serif] text-sm text-[#b87333] hover:opacity-80 hover:underline">
-                      {label}
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
+                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
               </div>
 
-              {/* FCMC Card */}
-              <div className="border-l-4 border-gray-400 bg-gray-50 rounded-r-lg p-5">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-3">Franklin County Municipal Court &amp; County-Wide</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+              {/* County-Wide Card */}
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
+                <div className="bg-gray-700 px-5 py-4">
+                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">County-Wide Pages</span>
+                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Franklin County Municipal Court &amp; county</span>
+                </div>
+                <div className="flex flex-col divide-y divide-gray-100 flex-1">
                   {[
-                    { label: 'OVI Defense — Franklin County Municipal Court', href: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court' },
-                    { label: 'Criminal Defense — Franklin County Municipal Court', href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
-                    { label: "Mayor's Courts — All Franklin County Suburbs", href: '/locations/franklin-county/mayors-courts-franklin-county' },
+                    { label: 'OVI Defense — FCMC', href: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court' },
+                    { label: 'Criminal Defense — FCMC', href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
+                    { label: "Mayor's Courts — All Suburbs", href: '/locations/franklin-county/mayors-courts-franklin-county' },
                     { label: 'Expungement — Franklin County', href: '/locations/franklin-county/expungement-franklin-county' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="font-['Inter',_'Arial',_sans-serif] text-sm text-[#b87333] hover:opacity-80 hover:underline">
-                      {label}
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
+                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
@@ -278,12 +291,7 @@ export default function FranklinCountyCourtsPage() {
               Charged in a Franklin County suburb? Find your community below.
             </p>
 
-            <div className="not-prose border border-gray-200 rounded-lg overflow-hidden mb-10">
-              {/* Header row */}
-              <div className="hidden sm:grid sm:grid-cols-[180px_1fr] bg-gray-900 px-4 py-2">
-                <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-semibold text-gray-400 uppercase tracking-wide">Community</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-xs font-semibold text-gray-400 uppercase tracking-wide">Practice Areas</span>
-              </div>
+            <div className="not-prose grid sm:grid-cols-2 gap-4 mb-10">
               {[
                 { suburb: 'Bexley', slug: 'bexley', hasMayorsCourt: true },
                 { suburb: 'Canal Winchester', slug: 'canal-winchester', hasMayorsCourt: true },
@@ -301,17 +309,16 @@ export default function FranklinCountyCourtsPage() {
                 { suburb: 'Westerville', slug: 'westerville', hasMayorsCourt: true },
                 { suburb: 'Whitehall', slug: 'whitehall', hasMayorsCourt: true },
                 { suburb: 'Worthington', slug: 'worthington', hasMayorsCourt: true },
-              ].map(({ suburb, slug, hasMayorsCourt }, i, arr) => (
-                <div
-                  key={slug}
-                  className={`grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-2 px-4 py-3 ${i < arr.length - 1 ? 'border-b border-gray-100' : ''} ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
-                >
-                  <Link
-                    href={`/locations/franklin-county/ovi-dui-defense-${slug}`}
-                    className="font-['Playfair_Display',_'Georgia',_serif] text-sm font-bold text-gray-900 hover:text-[#b87333] transition-colors self-center"
-                  >
-                    {suburb}
-                  </Link>
+              ].map(({ suburb, slug, hasMayorsCourt }) => (
+                <div key={slug} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-[#b87333]/40 hover:shadow-md transition-all">
+                  <div className="flex items-center justify-between mb-3">
+                    <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 text-base">{suburb}</h4>
+                    {hasMayorsCourt && (
+                      <span className="font-['Inter',_'Arial',_sans-serif] text-[10px] font-semibold uppercase tracking-wide text-[#b87333] bg-[#b87333]/10 px-2 py-0.5 rounded-full">
+                        Mayor&apos;s Court
+                      </span>
+                    )}
+                  </div>
                   <div className="flex flex-wrap gap-1.5">
                     {[
                       { label: 'OVI / DUI', href: `/locations/franklin-county/ovi-dui-defense-${slug}` },
@@ -323,11 +330,7 @@ export default function FranklinCountyCourtsPage() {
                       { label: 'Open Container', href: `/locations/franklin-county/open-container-defense-${slug}` },
                       ...(hasMayorsCourt ? [{ label: "Mayor's Court", href: `/locations/franklin-county/mayors-court-${slug}` }] : []),
                     ].map(({ label, href }) => (
-                      <Link
-                        key={href}
-                        href={href}
-                        className="inline-block bg-gray-100 hover:bg-[#b87333] hover:text-white text-gray-700 font-['Inter',_'Arial',_sans-serif] text-xs font-medium px-2.5 py-1 rounded-full transition-colors whitespace-nowrap"
-                      >
+                      <Link key={href} href={href} className="inline-block font-['Inter',_'Arial',_sans-serif] text-xs font-medium px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-[#b87333] hover:text-white transition-colors whitespace-nowrap">
                         {label}
                       </Link>
                     ))}

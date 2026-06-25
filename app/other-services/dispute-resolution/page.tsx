@@ -120,12 +120,12 @@ export default function DisputeResolutionPage() {
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Dispute Resolution Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/mediation" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Mediation</h4>
+              <Link href="/other-services/mediation" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Mediation</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Confidential, facilitated negotiation to resolve disputes — parties control the outcome</p>
               </Link>
-              <Link href="/other-services/arbitration" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Arbitration</h4>
+              <Link href="/other-services/arbitration" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Arbitration</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Private dispute resolution with a binding decision enforceable under ORC 2711.09</p>
               </Link>
             </div>

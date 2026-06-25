@@ -120,20 +120,20 @@ export default function EstatePlanningPage() {
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Estate Planning Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Estate Planning & Wills</h4>
+              <Link href="/other-services/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Estate Planning & Wills</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Comprehensive estate planning and will preparation under ORC Chapter 2107</p>
               </Link>
-              <Link href="/trusts" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Trusts</h4>
+              <Link href="/trusts" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Trusts</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Revocable living trusts and trust administration under ORC Chapter 5801</p>
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Powers of Attorney</h4>
+              <Link href="/other-services/powers-of-attorney" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Powers of Attorney</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Financial and healthcare powers of attorney under ORC 1337.21 et seq.</p>
               </Link>
-              <Link href="/other-services/guardianships" className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Guardianships</h4>
+              <Link href="/other-services/guardianships" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Guardianships</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Guardianship establishment and administration under ORC Chapter 2111</p>
               </Link>
             </div>

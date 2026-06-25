@@ -113,29 +113,29 @@ export default function BusinessFormationPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Business Structure Options</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Limited Liability Company (LLC)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Limited Liability Company (LLC)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 LLCs offer liability protection for owners (members) while providing flexibility in management and taxation. LLCs can be taxed as pass-through entities (avoiding double taxation), offer flexible management structures, and require less formal record-keeping than corporations. LLCs are popular for small to medium-sized businesses seeking liability protection with operational flexibility.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Corporation (C-Corp or S-Corp)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Corporation (C-Corp or S-Corp)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Corporations offer liability protection and ability to raise capital through stock sales. C-Corporations are taxed separately from owners (double taxation), while S-Corporations are taxed as pass-through entities (with restrictions). Corporations require more formal structure including bylaws, board of directors, and shareholder meetings. Corporations are ideal for businesses planning to raise capital or go public.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Partnership</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Partnership</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Partnerships (general or limited) allow multiple owners to share profits and losses. General partnerships offer no liability protection, while limited partnerships offer limited liability for limited partners. Partnerships are taxed as pass-through entities and require partnership agreements. Partnerships are suitable for businesses with multiple owners who want simple structures.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Sole Proprietorship</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Sole Proprietorship</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Sole proprietorships are the simplest business structure with no separate legal entity. Owners have unlimited personal liability and are taxed on personal income. Sole proprietorships require no formal formation but offer no liability protection. Sole proprietorships are suitable for very small businesses with minimal risk.
               </p>
             </div>
@@ -147,29 +147,29 @@ export default function BusinessFormationPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Structure Selection and Planning</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Structure Selection and Planning</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The first step is selecting the best business structure based on your needs, goals, tax situation, and plans for growth. An attorney can help evaluate options, explain differences, and recommend the best structure. This decision affects liability protection, taxation, management, and ability to raise capital.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Filing with Ohio Secretary of State</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Filing with Ohio Secretary of State</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 After selecting a structure, you must file articles of incorporation (for corporations) or articles of organization (for LLCs) with the Ohio Secretary of State. Filing requires business name, registered agent, business purpose, and other information. Online filings are typically processed faster than paper filings. An attorney can prepare and file documents, ensure compliance, and expedite processing.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Operating Agreements and Bylaws</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Operating Agreements and Bylaws</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Operating agreements (for LLCs) or bylaws (for corporations) establish governance, management structure, ownership interests, profit distribution, and dispute resolution procedures. These documents are essential for protecting interests and avoiding disputes. An attorney can draft comprehensive operating agreements or bylaws tailored to your specific needs.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Licenses, Permits, and Compliance</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Licenses, Permits, and Compliance</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Businesses must obtain necessary licenses and permits (varies by industry and location), obtain an EIN from the IRS, register for state taxes if applicable, and comply with all state and federal requirements. An attorney can help identify required licenses and permits, ensure compliance, and avoid costly mistakes. For ongoing compliance needs after formation, see our <Link href="/business/business-compliance" className="text-[#b87333] underline hover:text-[#a06828]">business compliance</Link> page.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function BusinessFormationPage() {
               An experienced business formation attorney provides comprehensive assistance throughout the formation process:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Structure Selection:</strong> Help determine the best business structure for your needs by evaluating liability protection, taxation, management flexibility, and ability to raise capital</li>
               <li><strong>Formation Process Guidance:</strong> Guide you through the entire formation process, prepare and file necessary documents with the Ohio Secretary of State, and ensure all requirements are met</li>
               <li><strong>Operating Agreements and Bylaws:</strong> Draft comprehensive operating agreements (for LLCs) or bylaws (for corporations) that establish governance, management structure, ownership interests, and dispute resolution procedures</li>

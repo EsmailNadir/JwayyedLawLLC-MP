@@ -141,23 +141,23 @@ export default function CriminalTrespassPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Knowingly Entering Without Privilege (ORC 2911.21(A)(1))</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Knowingly Entering Without Privilege (ORC 2911.21(A)(1))</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 This is the most common form of criminal trespass and occurs when a person knowingly enters or remains on the land or premises of another without privilege to do so, when notice against unauthorized access or presence is given by actual communication to the offender, posting in a manner reasonably calculated to inform potential intruders, or fencing or other enclosure. This is a fourth-degree misdemeanor.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Reckless Entry After Notice (ORC 2911.21(A)(2))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 This form of trespass occurs when a person knowingly enters or remains on the land or premises of another when notice against unauthorized access is given by actual communication, posting, or fencing, and the person recklessly disregards the notice. The reckless mental state means the person was aware of a substantial risk that they did not have permission but disregarded that risk. This is also a fourth-degree misdemeanor.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Failure to Leave After Notification (ORC 2911.21(A)(3))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 This occurs when a person recklessly enters or remains on the land or premises of another and negligently fails or refuses to leave after being notified by signage, fencing, or other posting to do so by the owner, occupant, or authorized agent. Common situations include refusing to leave a business after being asked by management, remaining on private property after the owner requests departure, or staying in a public area after hours. This is a fourth-degree misdemeanor.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Trespass in an Occupied Structure (ORC 2911.21(B))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 When criminal trespass occurs in a permanent or temporary habitation of any person when any person other than the offender is present or likely to be present, the offense is elevated to a first-degree misdemeanor. This enhancement reflects the greater risk to personal safety when trespass involves occupied structures such as homes, apartments, or other dwellings where people are present.
               </p>
             </div>
@@ -171,22 +171,22 @@ export default function CriminalTrespassPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Fourth-Degree Misdemeanor (Standard Criminal Trespass)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Fourth-Degree Misdemeanor (Standard Criminal Trespass)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Standard criminal trespass is a fourth-degree misdemeanor carrying penalties including up to 30 days in jail, fines up to $250, court costs, possible probation with conditions such as staying away from the property, and a permanent criminal record. While the penalties may appear relatively minor, the criminal record can have lasting consequences on employment, housing, and other opportunities.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First-Degree Misdemeanor (Trespass in Occupied Structure)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First-Degree Misdemeanor (Trespass in Occupied Structure)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Trespass in an occupied structure is a first-degree misdemeanor carrying significantly enhanced penalties including up to 180 days in jail, fines up to $1,000, court costs, probation with conditions, possible no-contact orders, and a permanent criminal record. This is the same penalty classification as simple assault, reflecting the seriousness Ohio law places on entering occupied structures without permission.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Related Enhanced Charges</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Related Enhanced Charges</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Depending on the circumstances, prosecutors may pursue more serious charges related to trespass. Breaking and entering under ORC 2911.13 is a fifth-degree felony when it involves an unoccupied structure with intent to commit theft or a felony. Burglary under ORC 2911.12 ranges from a fourth-degree felony to a first-degree felony when it involves occupied structures with criminal intent. Aggravated burglary under ORC 2911.11 is a first-degree felony involving occupied structures with deadly weapons or causing physical harm.
               </p>
             </div>
@@ -205,29 +205,29 @@ export default function CriminalTrespassPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Citation or Arrest and Arraignment</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Citation or Arrest and Arraignment</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal trespass charges may begin with a citation issued at the scene or a formal arrest. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For most misdemeanor trespass charges, defendants are released on their own recognizance or with minimal bond. The court may impose conditions such as no-contact orders or orders to stay away from the property in question. An attorney can argue for favorable release conditions at this stage.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Discovery and Investigation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence including police reports, witness statements, photographs of posted signs or fencing, surveillance footage, and any other relevant evidence. An experienced attorney will thoroughly review this evidence, conduct independent investigation, verify whether proper notice was given, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting defenses such as implied consent, lack of notice, or privilege to be on the property.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial Negotiations</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Negotiations</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most misdemeanor trespass cases are resolved through pretrial negotiations. An experienced attorney can negotiate with prosecutors to dismiss charges, secure diversion program placement, arrange for community service in lieu of jail, or negotiate plea agreements that minimize consequences. For first-time offenders with no significant criminal history, prosecutors may be willing to offer favorable alternatives to conviction including conditional dismissals.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine prosecution witnesses, challenge the adequacy of notice, and advocate for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that you knowingly entered without privilege and that proper notice was given. An experienced attorney can effectively challenge these elements and protect your rights throughout trial.
               </p>
             </div>
@@ -240,7 +240,7 @@ export default function CriminalTrespassPage() {
               An experienced criminal trespass defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of citation or arrest, advise you on statements and interactions with law enforcement</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, photographs, witness statements, property records, and all evidence to identify weaknesses and inconsistencies in the prosecution's case</li>
               <li><strong>Notice Verification:</strong> Investigate whether proper notice against trespass was given as required by law, including verification of posted signs, fencing, and communications</li>
@@ -257,28 +257,28 @@ export default function CriminalTrespassPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Privilege or Consent</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Privilege or Consent</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal trespass requires entry "without privilege." If you had permission from the property owner or an authorized person to be on the property, this is a complete defense. Privilege can be express (direct permission) or implied (open business hours, public invitation, customary access). Evidence of consent or privilege can result in complete dismissal of charges.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Lack of Proper Notice</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The prosecution must prove that notice against unauthorized access was given by actual communication, posting, or fencing. If posted signs were inadequate, not visible, or improperly placed, or if fencing was incomplete or ambiguous, the notice requirement may not be satisfied. An attorney can investigate and challenge the adequacy of notice to obtain dismissal.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Mistake of Fact</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you reasonably believed you had a right to be on the property -- for example, if you were confused about property boundaries, believed you were on public land, or were directed to the property by someone you believed had authority -- this mistake of fact defense may negate the required mental state. Evidence demonstrating a reasonable mistake can result in acquittal.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Necessity</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The necessity defense may apply if you entered the property to avoid a greater harm, such as seeking shelter during a medical emergency, escaping a dangerous situation, or responding to someone in distress. This defense requires showing that the trespass was necessary to prevent imminent harm and that no reasonable legal alternative existed.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Constitutional Challenges</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In some cases, trespass charges may implicate constitutional rights including First Amendment protections for peaceful protest or assembly on public property. If the trespass charges were issued in retaliation for exercising constitutional rights, or if the property at issue is a public forum, constitutional defenses may apply. An experienced attorney can evaluate whether your constitutional rights were violated.
               </p>
             </div>

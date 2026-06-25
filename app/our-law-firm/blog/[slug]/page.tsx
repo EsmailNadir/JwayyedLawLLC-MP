@@ -266,7 +266,6 @@ export default async function BlogPostPage({
           'Civil Litigation': [
             { href: '/civil', label: 'Civil Litigation Overview' },
             { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
-            { href: '/civil/landlord-tenant-disputes', label: 'Landlord-Tenant Disputes' },
           ],
           'Trusts': [
             { href: '/trusts', label: 'Trusts Overview' },

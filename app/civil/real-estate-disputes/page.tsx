@@ -117,29 +117,29 @@ export default function RealEstateDisputesPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Real Estate Disputes</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Boundary Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Boundary Disputes</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Boundary disputes arise when property owners disagree about property lines, fences, or structures. These disputes may require surveys, title research, and legal action to resolve. An attorney can analyze property records, surveys, and evidence to determine boundaries and resolve disputes through negotiation or litigation.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Title Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Title Disputes</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Title disputes involve competing claims to property, title defects, liens, or other clouds on title. Quiet title actions under Ohio Revised Code 5303.01 can resolve title disputes and establish clear ownership. An attorney can analyze title issues, file quiet title actions, and resolve title disputes.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Purchase Agreement Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Purchase Agreement Disputes</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Purchase agreement disputes may involve breach of contract, seller disclosure issues, inspection disputes, closing disputes, or financing issues. These disputes can delay or prevent property transactions. An attorney can analyze purchase agreements, negotiate disputes, and protect your interests.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Easement Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Easement Disputes</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Easement disputes involve rights to use another person&apos;s property for specific purposes (access, utilities, etc.). These disputes may require analysis of easement agreements, property records, and legal action to resolve. An attorney can analyze easement issues and resolve disputes.
               </p>
             </div>
@@ -151,22 +151,22 @@ export default function RealEstateDisputesPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Investigation and Analysis</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Investigation and Analysis</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The process begins with investigating the dispute, analyzing property records, surveys, title documents, contracts, and evidence. An attorney can review documents, conduct title searches, analyze property records, and identify issues. This analysis is crucial for understanding the dispute and developing strategies.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Negotiation and Settlement</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Negotiation and Settlement</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Many real estate disputes can be resolved through negotiation without litigation. An attorney can negotiate with opposing parties, draft settlement agreements, and work toward resolution. Alternative dispute resolution including mediation or arbitration can save time and money while resolving disputes.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Litigation and Quiet Title Actions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Quiet Title Actions</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If negotiation fails, litigation may be necessary. This involves filing lawsuits, quiet title actions, or other legal proceedings. Litigation may include discovery, depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process and protect your property rights.
               </p>
             </div>
@@ -177,7 +177,7 @@ export default function RealEstateDisputesPage() {
               An experienced real estate disputes attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Property Law Analysis:</strong> Analyze property issues, title problems, boundary disputes, easement disputes, and other property law matters to understand your rights and options</li>
               <li><strong>Title Research:</strong> Conduct title searches, review property records, surveys, and documents to identify issues and resolve title disputes</li>
               <li><strong>Quiet Title Actions:</strong> File quiet title actions under Ohio Revised Code 5303.01 to resolve title disputes and establish clear ownership of property</li>
@@ -206,7 +206,7 @@ export default function RealEstateDisputesPage() {
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Construction Disputes</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
               </Link>
-              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
               </Link>

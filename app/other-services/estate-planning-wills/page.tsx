@@ -170,16 +170,16 @@ export default function EstatePlanningWillsPage() {
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Ohio Probate Administration
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Powers of Attorney in Ohio
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Revocable Living Trusts
               </Link>
             </div>

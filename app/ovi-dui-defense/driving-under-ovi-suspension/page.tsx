@@ -124,7 +124,7 @@ export default function DrivingUnderOVISuspensionPage() {
               Driving Under OVI Suspension Penalties in Ohio (ORC 4510.14)
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Classification:</strong> First-degree misdemeanor (M1)</li>
                 <li><strong>Mandatory minimum jail:</strong> 30 consecutive days (cannot be waived, suspended, or converted)</li>
                 <li><strong>Maximum jail:</strong> 180 days</li>

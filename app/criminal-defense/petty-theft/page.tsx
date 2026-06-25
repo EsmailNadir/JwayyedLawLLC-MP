@@ -141,23 +141,23 @@ export default function PettyTheftPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Shoplifting / Retail Theft</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Shoplifting / Retail Theft</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Shoplifting is the most common form of petty theft and involves knowingly concealing store merchandise, removing merchandise from a store without paying, altering price tags, transferring merchandise to different containers, or otherwise depriving a retail establishment of the full retail value of merchandise. Ohio does not have a separate shoplifting statute; these offenses are charged under the general theft statute ORC 2913.02.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Theft of Personal Property</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Taking another person's personal property without their consent constitutes theft. This includes taking items from another person's home, vehicle, workplace, or other location. The offense is charged based on the value of the property taken. Items valued under $1,000 are charged as petty theft, a misdemeanor offense.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Theft of Services</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Theft of services involves knowingly obtaining services without paying or with the intent to avoid payment. This can include dining and leaving without paying (dine and dash), obtaining utility services through illegal connections, receiving professional services through deception, or using transportation without paying the required fare.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Theft by Deception</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Theft by deception occurs when a person obtains property or services through false representation, misleading conduct, or concealment of material facts. This can overlap with fraud-related offenses but is charged as petty theft when the value is under $1,000. Examples include using false identification to obtain goods or misrepresenting facts to receive property or services.
               </p>
             </div>
@@ -171,35 +171,35 @@ export default function PettyTheftPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Minor Misdemeanor (Value Under $150)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Minor Misdemeanor (Value Under $150)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 When the value of stolen property is less than $150 and the offender has no prior theft convictions, the offense is a minor misdemeanor. Penalties include a maximum fine of $150, no jail time, court costs, and restitution. While no jail time is imposed, a conviction still creates a criminal record. However, this is the least severe classification and may be eligible for quick resolution.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First-Degree Misdemeanor (Value $150 - $999)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First-Degree Misdemeanor (Value $150 - $999)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 When the value of stolen property is between $150 and $999, the offense is a first-degree misdemeanor carrying up to 180 days in jail, fines up to $1,000, restitution to the victim, court costs, probation with conditions, community service, and a permanent criminal record. This penalty level also applies to minor misdemeanor thefts when the offender has a prior theft conviction.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Enhanced Penalties Based on Prior Convictions</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Enhanced Penalties Based on Prior Convictions</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Prior theft convictions significantly enhance penalties under Ohio law. A second theft offense of property under $150 becomes a first-degree misdemeanor. Multiple prior theft convictions can elevate even minor thefts to felony charges. The court considers all prior theft-related convictions when determining the appropriate charge level, making it critical to aggressively defend even first-time theft charges to avoid future enhancement.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Special Category Enhancements</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Special Category Enhancements</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Certain types of theft carry enhanced penalties regardless of value. Theft from an elderly person or disabled adult under ORC 2913.02(B)(3) is elevated in degree. Theft of a firearm is a felony regardless of value. Theft of a motor vehicle is a felony. Theft of drugs is enhanced. These special categories reflect the legislature's determination that certain thefts warrant more severe punishment.
               </p>
             </div>
 
             <h4 className="font-semibold text-gray-900 mt-6 mb-4">Civil Liability for Shoplifting</h4>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               In addition to criminal penalties, Ohio law allows retail merchants to pursue civil damages against shoplifters under ORC 2307.61. Merchants can seek the retail value of the merchandise, a civil penalty of up to $150, and attorney fees. Parents of minor children who shoplift may also be held civilly liable. These civil demands are separate from criminal penalties and can add significant financial consequences.
             </p>
 
@@ -217,29 +217,29 @@ export default function PettyTheftPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Citation, Arrest, or Summons and Arraignment</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Citation, Arrest, or Summons and Arraignment</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Petty theft charges may begin with a citation at the scene, a formal arrest, or a summons to appear in court. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For misdemeanor theft charges, defendants are often released on their own recognizance. An attorney can argue for favorable release conditions and begin building your defense immediately. Entering a not guilty plea preserves all your rights and allows time for investigation.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Discovery and Investigation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence including police reports, loss prevention reports, surveillance footage, witness statements, and any statements you may have made. An experienced attorney will thoroughly review this evidence, analyze surveillance footage for inconsistencies, challenge the valuation of property, verify the chain of custody, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting defenses such as lack of intent, mistaken identification, or consent.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial Negotiations and Diversion Programs</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Negotiations and Diversion Programs</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most petty theft cases are resolved through pretrial negotiations. An experienced attorney can negotiate with prosecutors for dismissal, placement in a theft diversion program, reduction to a minor misdemeanor, or plea agreements that minimize consequences. Many Ohio courts offer diversion or intervention programs for first-time theft offenders that result in dismissal upon completion of program requirements. These programs typically involve theft prevention education, community service, restitution, and a probationary period.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine prosecution witnesses, challenge surveillance evidence, dispute property valuations, and advocate for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that you knowingly obtained or exerted control over the property without consent and with the purpose to deprive the owner. An experienced attorney can effectively challenge these elements.
               </p>
             </div>
@@ -252,7 +252,7 @@ export default function PettyTheftPage() {
               An experienced petty theft defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected, advise you on interactions with law enforcement and loss prevention, and prevent self-incriminating statements</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, loss prevention reports, surveillance footage, witness statements, and all evidence to identify weaknesses and build your defense</li>
               <li><strong>Surveillance Evidence Analysis:</strong> Carefully analyze surveillance footage for inconsistencies, gaps, poor quality, or evidence that contradicts the prosecution's narrative</li>
@@ -269,28 +269,28 @@ export default function PettyTheftPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Lack of Intent</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Lack of Intent</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Theft requires that the defendant acted "knowingly" with the purpose to deprive the owner of property. If the taking was accidental, the result of confusion or forgetfulness (such as forgetting an item in your cart or pocket), or you lacked the intent to permanently deprive the owner, this defense may apply. Many shoplifting charges involve situations where individuals genuinely forgot to pay for an item or were distracted.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Consent or Claim of Right</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If you had a good faith belief that you had permission to take the property or a legitimate claim of ownership or right to the property, this defense may negate the theft charge. This applies in situations involving shared property, property you believed was abandoned, or property you had a reasonable belief you were entitled to possess.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Mistaken Identity</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 In retail theft cases, identification can be unreliable, particularly when based solely on surveillance footage. If you were not the person who committed the alleged theft, challenges to the identification evidence may result in acquittal or dismissal. An attorney can analyze surveillance footage quality, challenge witness identifications, and present alibi evidence.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The prosecution must prove every element of theft beyond a reasonable doubt. If the evidence is insufficient to establish that you knowingly took property without consent and with the purpose to deprive the owner, the charges should be dismissed. Surveillance footage may be unclear, witness testimony may be inconsistent, and the chain of custody may be flawed.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Value Dispute</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 While not a complete defense, challenging the value of the property can reduce the severity of charges and penalties. If the prosecution overstates the value of property, a successful challenge can reduce a first-degree misdemeanor to a minor misdemeanor, significantly reducing potential penalties. An attorney can obtain independent valuations and challenge the prosecution's valuation methodology.
               </p>
             </div>

@@ -141,23 +141,23 @@ export default function CriminalMischiefPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Tampering with Property (ORC 2909.07(A)(1))</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Tampering with Property (ORC 2909.07(A)(1))</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 This involves knowingly moving, defacing, damaging, destroying, or otherwise improperly tampering with the property of another without consent. Common examples include spray-painting graffiti on buildings, scratching vehicles, breaking windows, damaging fences, or defacing public property. This is typically charged as a third-degree misdemeanor.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Tampering with Boundary Markers (ORC 2909.07(A)(2))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 This involves knowingly moving, removing, or tampering with property boundary markers, survey stakes, or monuments without proper authorization. Disputes over property boundaries can lead to criminal mischief charges when individuals take matters into their own hands rather than pursuing civil remedies. This is a third-degree misdemeanor.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Tampering with Safety Devices or Equipment (ORC 2909.07(A)(3))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Knowingly tampering with fire hydrants, fire extinguishers, safety devices, or other emergency equipment without proper authorization constitutes criminal mischief. This type of criminal mischief is taken particularly seriously because it can endanger public safety. Charges may be elevated depending on the circumstances.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Tampering with Occupied Aircraft (ORC 2909.07(B))</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal mischief involving an occupied aircraft is elevated to a first-degree misdemeanor, carrying significantly harsher penalties of up to 180 days in jail and fines up to $1,000. This enhanced charge reflects the serious safety risks associated with tampering with aircraft while passengers are aboard.
               </p>
             </div>
@@ -171,28 +171,28 @@ export default function CriminalMischiefPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Third-Degree Misdemeanor (Standard Criminal Mischief)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Third-Degree Misdemeanor (Standard Criminal Mischief)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Standard criminal mischief under ORC 2909.07 is a third-degree misdemeanor carrying penalties including up to 60 days in jail, fines up to $500, restitution to the property owner for damages, court costs, probation with conditions, community service, and a permanent criminal record. The court may also order the defendant to pay for cleanup or repair of damaged property.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">First-Degree Misdemeanor (Occupied Aircraft)</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First-Degree Misdemeanor (Occupied Aircraft)</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 When criminal mischief involves an occupied aircraft, the offense is elevated to a first-degree misdemeanor punishable by up to 180 days in jail, fines up to $1,000, significant restitution, court costs, and a permanent criminal record. The enhanced penalty reflects the serious safety implications of this conduct.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Enhanced Charges for Significant Damage</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Enhanced Charges for Significant Damage</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If the property damage is significant, prosecutors may pursue more serious charges such as criminal damaging or endangering under ORC 2909.06, which is a second-degree misdemeanor carrying up to 90 days in jail and fines up to $750. If the damage involves government property, fire safety equipment, or creates a risk of physical harm, charges may be elevated further. Vandalism under ORC 2909.05 is a felony offense that applies when property damage exceeds certain thresholds.
               </p>
             </div>
 
             <h4 className="font-semibold text-gray-900 mt-6 mb-4">Restitution and Civil Liability</h4>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               In addition to criminal penalties, courts typically order restitution requiring the defendant to compensate the property owner for the cost of repair or replacement. Property owners may also pursue separate civil lawsuits for damages, potentially including treble damages under Ohio law. The combination of criminal penalties and civil liability can result in significant financial consequences.
             </p>
 
@@ -210,29 +210,29 @@ export default function CriminalMischiefPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Citation or Arrest and Arraignment</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Citation or Arrest and Arraignment</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal mischief charges may begin with a citation issued at the scene or an arrest. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For misdemeanor charges, defendants are often released on their own recognizance or with minimal bond. An attorney can argue for favorable release conditions and begin building your defense immediately.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Discovery and Investigation</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence including police reports, witness statements, photographs of damage, surveillance footage, and any other evidence. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting your defense such as lack of intent, mistaken identity, or consent.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Pretrial Negotiations</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Negotiations</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Most misdemeanor criminal mischief cases are resolved through pretrial negotiations. An experienced attorney can negotiate with prosecutors to reduce or dismiss charges, secure diversion program placement, arrange for community service in lieu of jail, or negotiate plea agreements that minimize consequences. For first-time offenders, prosecutors may be willing to offer favorable alternatives to conviction.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Trial</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine prosecution witnesses, challenge the evidence against you, and advocate for acquittal. Misdemeanor trials in Ohio may be before a judge (bench trial) or jury. An experienced attorney can effectively present your case and protect your rights throughout the trial process.
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function CriminalMischiefPage() {
               An experienced criminal mischief defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of citation or arrest, including your right to remain silent and right to counsel</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, photographs, surveillance footage, witness statements, and all evidence to identify weaknesses and inconsistencies in the prosecution's case</li>
               <li><strong>Strategic Defense Development:</strong> Develop and execute defense strategies including lack of intent, mistaken identity, consent, insufficient evidence, or constitutional violations based on thorough investigation</li>
@@ -262,28 +262,28 @@ export default function CriminalMischiefPage() {
             </h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Lack of Intent</h4>
-              <p className="text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Lack of Intent</h4>
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal mischief requires that the defendant acted "knowingly" in tampering with or damaging property. If the damage was accidental or unintentional, or you did not know the property belonged to another, this defense may apply. Evidence demonstrating accident or mistake can result in reduced or dismissed charges.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Consent or Authorization</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If the property owner gave consent or authorization for the conduct in question, this is a complete defense to criminal mischief charges. Evidence of permission, whether written, verbal, or implied, can result in dismissal. For example, if you reasonably believed you had permission to modify, move, or handle the property, this defense may apply.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Mistaken Identity</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal mischief often occurs without witnesses, and charges may be based on circumstantial evidence or unreliable witness identification. If you were not the person who committed the alleged offense, an alibi defense or challenge to the identification evidence may result in acquittal or dismissal.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Ownership or Right to Property</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Criminal mischief requires that the property belongs to another person. If you are the owner of the property or have a legitimate claim or right to the property, this may serve as a defense. Property disputes are sometimes mischaracterized as criminal mischief when they should be resolved through civil proceedings.
               </p>
 
               <h4 className="font-semibold text-gray-900 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The prosecution must prove every element of criminal mischief beyond a reasonable doubt. If the evidence is insufficient to establish that you knowingly tampered with, defaced, damaged, or destroyed the property of another, the charges should be dismissed. An experienced attorney can identify gaps in the prosecution's evidence and challenge the sufficiency of proof.
               </p>
             </div>

@@ -124,7 +124,7 @@ export default function RefusalOVIPage() {
               Refusal OVI Penalties in Ohio (HB 37, Effective April 9, 2025)
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>ALS suspension: 1 year (first refusal), 2 years (second refusal within 10 years)</li>
                 <li>Criminal OVI first offense: mandatory 3-day jail minimum — driver intervention program (DIP) is NOT available as an alternative in refusal cases</li>
                 <li>Fines: $565–$1,075 (first OVI offense under HB 37)</li>

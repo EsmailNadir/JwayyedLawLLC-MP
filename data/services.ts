@@ -106,12 +106,10 @@ export const personalInjuryServices: ServiceCard[] = [
 export const civilServices: ServiceCard[] = [
   { title: 'Breach of Contract', href: '/civil/breach-of-contract', description: 'Disputes involving broken agreements.' },
   { title: 'Real Estate Disputes', href: '/civil/real-estate-disputes', description: 'Conflicts over real property and transactions.' },
-  { title: 'Landlord–Tenant Disputes', href: '/civil/landlord-tenant-disputes', description: 'Issues between landlords and tenants.' },
   { title: 'Evictions', href: '/civil/evictions', description: 'Representation in eviction proceedings.' },
   { title: 'Construction Disputes', href: '/civil/construction-disputes', description: 'Contract and defect disputes in construction.' },
   { title: 'Debt Collection Defense', href: '/civil/debt-collection-defense', description: 'Defense against debt collection lawsuits.' },
   { title: 'Employment Disputes', href: '/civil/employment-disputes', description: 'Employment-related civil claims.' },
-  { title: 'Defamation', href: '/civil/defamation', description: 'Libel, slander, and reputation-related claims.' },
   { title: 'Civil Protection Orders', href: '/civil/civil-protection-orders', description: 'Protection orders and related relief.' },
   { title: 'Appeals', href: '/civil/appeals', description: 'Appellate representation in civil matters.' },
 ];

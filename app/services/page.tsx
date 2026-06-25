@@ -63,7 +63,7 @@ function ServicesSection({
             <Link
               key={service.href}
               href={service.href}
-              className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all"
+              className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
             >
               <h3 className="font-['Inter',_'Arial',_sans-serif] font-semibold text-gray-900 mb-1">
                 {service.title}

@@ -124,7 +124,7 @@ export default function LimitedDrivingPrivilegesPage() {
               Hard Suspension Waiting Periods Under HB 37 (Effective April 9, 2025)
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>First OVI (test-over, no prior alcohol arrests):</strong> 15-day hard suspension — waivable with IID agreement, allowing immediate LDP</li>
                 <li><strong>First OVI (refusal):</strong> 30-day hard suspension — not waivable; IID required for LDP after 30 days</li>
                 <li><strong>Second OVI (test-over):</strong> 45-day hard suspension; mandatory IID for LDP</li>

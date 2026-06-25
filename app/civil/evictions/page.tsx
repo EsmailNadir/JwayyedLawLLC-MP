@@ -101,11 +101,11 @@ export default function EvictionsPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Eviction Proceedings in Ohio</h2>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction. Evictions are closely related to <Link href="/civil/landlord-tenant-disputes" className="text-[#b87333] underline hover:text-[#a06828]">landlord-tenant disputes</Link>, and understanding your rights under ORC Chapter 5321 is essential.
+              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction. Evictions are closely related to <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">landlord-tenant disputes</Link>, and understanding your rights under ORC Chapter 5321 is essential.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Eviction proceedings move quickly and can have immediate devastating effects on tenants including loss of housing, removal of property, and damage to credit. Landlords must follow proper procedures including providing proper notice, filing eviction actions in court, and obtaining court orders. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability. Understanding eviction procedures, available defenses, and your rights is essential for protecting your interests. For more on tenant rights, read our articles on <Link href="/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties</Link> and <Link href="/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws" className="text-[#b87333] underline hover:text-[#a06828]">Ohio security deposit laws</Link>.
+              Eviction proceedings move quickly and can have immediate devastating effects on tenants including loss of housing, removal of property, and damage to credit. Landlords must follow proper procedures including providing proper notice, filing eviction actions in court, and obtaining court orders. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability. Understanding eviction procedures, available defenses, and your rights is essential for protecting your interests. For more on tenant rights, read our articles on <Link href="/civil/evictions" className="text-[#b87333] underline hover:text-[#a06828]">Ohio landlord repair duties</Link> and <Link href="/civil/evictions" className="text-[#b87333] underline hover:text-[#a06828]">Ohio security deposit laws</Link>.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
@@ -121,29 +121,29 @@ export default function EvictionsPage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Proper Notice Requirements</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Proper Notice Requirements</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Landlords must provide proper notice before filing eviction actions. Under Ohio Revised Code 1923.04, notice requirements vary: 3 days for nonpayment of rent, 30 days for lease violations, or other periods depending on circumstances. Notice must be properly served and contain required information. Defective notice can result in dismissal of eviction actions.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Filing Eviction Actions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Filing Eviction Actions</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 After providing proper notice, landlords must file eviction actions (forcible entry and detainer) in the appropriate court (Municipal Court or Common Pleas Court depending on jurisdiction). The complaint must allege grounds for eviction and be properly served on tenants. Tenants have the right to respond and raise defenses.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Court Proceedings</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Court Proceedings</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Eviction proceedings move quickly with hearings typically scheduled within days or weeks. Tenants can raise defenses including lack of proper notice, habitability violations, retaliatory eviction, discrimination, payment of rent, or other legal defenses. An attorney can help identify defenses, prepare responses, and represent you in court.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Execution of Eviction</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Execution of Eviction</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If the court orders eviction, the sheriff executes the eviction by removing tenants and property. Self-help eviction (changing locks, removing property without court order) is illegal and may result in landlord liability for damages. Tenants have limited time to remove property after eviction orders.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function EvictionsPage() {
               An experienced eviction attorney provides comprehensive representation for both landlords and tenants:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Eviction Proceedings for Landlords:</strong> Handle eviction proceedings following proper procedures, draft and file eviction actions, serve notice properly, and represent landlords in court to obtain eviction orders</li>
               <li><strong>Eviction Defense for Tenants:</strong> Defend tenants against eviction, raise defenses including lack of proper notice, habitability violations, retaliatory eviction, discrimination, or payment of rent, and protect tenant rights throughout the process</li>
               <li><strong>Negotiation and Settlement:</strong> Negotiate settlements including payment plans, lease modifications, or move-out agreements to resolve disputes without eviction when possible</li>
@@ -165,29 +165,29 @@ export default function EvictionsPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Eviction Defenses</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Lack of Proper Notice</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Lack of Proper Notice</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Landlords must provide proper notice before filing eviction actions. If notice is defective, improperly served, or lacks required information, eviction actions may be dismissed. An attorney can challenge notice defects and protect tenant rights.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Habitability Violations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Habitability Violations</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If landlords fail to maintain habitable premises (lack of heat, water, necessary repairs), tenants can raise habitability violations as defenses to eviction. Tenants may also be able to withhold rent or make repairs and deduct costs. An attorney can help identify habitability violations and raise them as defenses.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Retaliatory Eviction</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Retaliatory Eviction</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Retaliatory eviction (eviction in retaliation for exercising tenant rights such as reporting code violations or joining tenant organizations) is illegal under Ohio Revised Code 5321.02. Tenants can raise retaliatory eviction as a defense, and landlords may face liability for damages.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Payment of Rent</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Payment of Rent</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 If tenants pay rent or cure lease violations before eviction orders are issued, eviction actions may be dismissed. Tenants can raise payment of rent as a defense, and landlords must accept proper payment. An attorney can help ensure rent is properly paid and raise payment as a defense.
               </p>
             </div>
@@ -208,7 +208,7 @@ export default function EvictionsPage() {
 
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Security deposit claims, habitability issues, and lease enforcement</span>
               </Link>

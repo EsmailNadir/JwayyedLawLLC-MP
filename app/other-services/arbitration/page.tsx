@@ -166,16 +166,16 @@ export default function ArbitrationPage() {
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/mediation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/mediation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Mediation in Ohio
               </Link>
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Breach of Contract
               </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
                 Business Litigation
               </Link>
             </div>

@@ -145,7 +145,7 @@ const ContactPage = () => {
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-700 font-['Inter',_'Arial',_sans-serif]">
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4 text-[#b87333]" aria-hidden="true" />
-            <span><span className="font-semibold text-gray-900">Office Hours:</span> Mon–Fri, 10:00 AM – 6:00 PM</span>
+            <span><span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Office Hours:</span> Mon–Fri, 10:00 AM – 6:00 PM</span>
           </div>
           <span className="hidden sm:inline text-gray-300">|</span>
           <span className="text-gray-600">Saturday &amp; Sunday: Closed</span>

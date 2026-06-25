@@ -123,13 +123,13 @@ export default function OtherServicesPage() {
                 <a
                   key={service.href}
                   href={service.href}
-                  className="block p-6 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all"
+                  className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
                 >
-                  <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-semibold text-gray-900 mb-3">
+                  <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">
                     {service.title}
                   </h4>
                   {service.description && (
-                    <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">{service.description}</p>
+                    <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">{service.description}</p>
                   )}
                 </a>
               ))}

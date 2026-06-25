@@ -142,7 +142,7 @@ export default function DebtCollectionDefensePage() {
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil/landlord-tenant-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
+              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
                 <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
                 <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
               </Link>

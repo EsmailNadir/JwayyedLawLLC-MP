@@ -106,9 +106,10 @@ export default function BusinessPage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-medium text-gray-900"
+                className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                {service.title}
+                <span className="font-medium text-gray-900 group-hover:text-[#b87333] transition-colors text-sm">{service.title}</span>
+                <span className="text-gray-300 group-hover:text-[#b87333] transition-colors ml-2 text-xs shrink-0">→</span>
               </Link>
             ))}
           </div>
@@ -140,41 +141,41 @@ export default function BusinessPage() {
               We serve business clients in the following Ohio counties and communities. Each county has its own page; click through for more information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/business-formation-llc-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">Columbus & surrounding areas</span>
+              <Link href="/locations/franklin-county/business-formation-llc-franklin-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Franklin County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Columbus & surrounding areas</span>
               </Link>
-              <Link href="/locations/delaware-county/business-formation-llc-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Delaware County</span>
-                <span className="block text-sm text-gray-600 mt-1">Delaware & surrounding areas</span>
+              <Link href="/locations/delaware-county/business-formation-llc-delaware-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Delaware County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Delaware & surrounding areas</span>
               </Link>
-              <Link href="/locations/butler-county/business-formation-llc-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Butler County</span>
-                <span className="block text-sm text-gray-600 mt-1">Hamilton, Oxford, West Chester</span>
+              <Link href="/locations/butler-county/business-formation-llc-butler-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Butler County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
               </Link>
-              <Link href="/locations/greene-county/business-formation-llc-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Greene County</span>
-                <span className="block text-sm text-gray-600 mt-1">Fairborn & surrounding areas</span>
+              <Link href="/locations/greene-county/business-formation-llc-greene-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Greene County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Fairborn & surrounding areas</span>
               </Link>
-              <Link href="/locations/montgomery-county/business-formation-llc-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Montgomery County</span>
-                <span className="block text-sm text-gray-600 mt-1">Dayton & surrounding areas</span>
+              <Link href="/locations/montgomery-county/business-formation-llc-montgomery-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Montgomery County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Dayton & surrounding areas</span>
               </Link>
-              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">Circleville & surrounding areas</span>
+              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Pickaway County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Circleville & surrounding areas</span>
               </Link>
-              <Link href="/locations/athens-county/business-formation-llc-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Athens County</span>
-                <span className="block text-sm text-gray-600 mt-1">Athens & surrounding areas</span>
+              <Link href="/locations/athens-county/business-formation-llc-athens-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Athens County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Athens & surrounding areas</span>
               </Link>
-              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Morrow County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
               </Link>
-              <Link href="/locations/clinton-county/business-formation-llc-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Clinton County</span>
-                <span className="block text-sm text-gray-600 mt-1">Wilmington & surrounding areas</span>
+              <Link href="/locations/clinton-county/business-formation-llc-clinton-county" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Clinton County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Wilmington & surrounding areas</span>
               </Link>
             </div>
 
@@ -184,7 +185,7 @@ export default function BusinessPage() {
               An experienced business attorney provides comprehensive representation for various business needs:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Business Formation:</strong> Help choose the right business structure (LLC, corporation, partnership), file formation documents with the Ohio Secretary of State, draft operating agreements or bylaws, and ensure compliance with formation requirements</li>
               <li><strong>Contract Drafting and Review:</strong> Draft clear, comprehensive contracts that protect your interests, review contracts for potential issues, negotiate favorable terms, and ensure contracts are legally enforceable</li>
               <li><strong>Business Compliance:</strong> Ensure compliance with Ohio business laws, regulations, licensing requirements, tax obligations, and employment laws to minimize legal risks</li>
@@ -201,44 +202,44 @@ export default function BusinessPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/business/business-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Business Formation</h4>
+              <Link href="/business/business-formation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Business Formation</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">LLC, corporation, and partnership formation under Ohio law</p>
               </Link>
-              <Link href="/business/llc-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">LLC Formation</h4>
+              <Link href="/business/llc-formation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">LLC Formation</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Limited Liability Company formation and structuring</p>
               </Link>
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Contract Drafting & Review</h4>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Contract Drafting & Review</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Drafting and reviewing business contracts and agreements</p>
               </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Business Litigation</h4>
+              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Business Litigation</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for business disputes and litigation</p>
               </Link>
-              <Link href="/business/partnership-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Partnership Disputes</h4>
+              <Link href="/business/partnership-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Partnership Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Resolution of partnership conflicts and disputes</p>
               </Link>
-              <Link href="/business/shareholder-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Shareholder Disputes</h4>
+              <Link href="/business/shareholder-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Shareholder Disputes</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Representation for corporate shareholder conflicts</p>
               </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Non-Compete Agreements</h4>
+              <Link href="/business/non-compete-agreements" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Non-Compete Agreements</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Drafting and enforcement of non-compete agreements</p>
               </Link>
-              <Link href="/business/employment-agreements" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Employment Agreements</h4>
+              <Link href="/business/employment-agreements" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Employment Agreements</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Drafting employment contracts and agreements</p>
               </Link>
-              <Link href="/business/business-compliance" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Business Compliance</h4>
+              <Link href="/business/business-compliance" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Business Compliance</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Ensuring compliance with business laws and regulations</p>
               </Link>
-              <Link href="/business/business-dissolution" className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                <h4 className="font-semibold text-gray-900 mb-2">Business Dissolution</h4>
+              <Link href="/business/business-dissolution" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Business Dissolution</h4>
                 <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Guidance through business dissolution and winding up</p>
               </Link>
             </div>
@@ -246,22 +247,22 @@ export default function BusinessPage() {
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Understanding Ohio Business Law</h3>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Business Structures in Ohio</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Business Structures in Ohio</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Ohio recognizes various business structures including LLCs (Limited Liability Companies), corporations (C-corp and S-corp), partnerships (general, limited, limited liability), and sole proprietorships. Each structure offers different liability protection, tax treatment, management flexibility, and formation requirements. Choosing the right structure depends on your business goals, tax situation, and growth plans. An attorney can help evaluate options and choose the best structure for your business.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Formation Requirements</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Formation Requirements</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Business formation in Ohio requires filing articles of incorporation or organization with the Ohio Secretary of State, obtaining necessary licenses and permits, establishing operating agreements or bylaws, obtaining an EIN from the IRS, and complying with state and federal requirements. Proper formation ensures liability protection, tax benefits, and legal compliance. An attorney can guide you through the formation process and ensure all requirements are met.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Ongoing Compliance</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Ongoing Compliance</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Businesses must maintain ongoing compliance with Ohio business laws including annual reports, tax filings, licensing renewals, employment law compliance, and corporate governance requirements. Failure to maintain compliance can result in penalties, loss of liability protection, or business dissolution. An attorney can help ensure ongoing compliance and avoid legal problems.
               </p>
             </div>
@@ -293,73 +294,73 @@ export default function BusinessPage() {
               <Link
                 key="/locations/franklin-county/business-formation-llc-franklin-county"
                 href="/locations/franklin-county/business-formation-llc-franklin-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/delaware-county/business-formation-llc-delaware-county"
                 href="/locations/delaware-county/business-formation-llc-delaware-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware & Powell</span>
               </Link>
               <Link
                 key="/locations/pickaway-county/business-formation-llc-pickaway-county"
                 href="/locations/pickaway-county/business-formation-llc-pickaway-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/greene-county/business-formation-llc-greene-county"
                 href="/locations/greene-county/business-formation-llc-greene-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn & Xenia</span>
               </Link>
               <Link
                 key="/locations/montgomery-county/business-formation-llc-montgomery-county"
                 href="/locations/montgomery-county/business-formation-llc-montgomery-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/morrow-county/business-formation-llc-morrow-county"
                 href="/locations/morrow-county/business-formation-llc-morrow-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Mount Gilead & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/butler-county/business-formation-llc-butler-county"
                 href="/locations/butler-county/business-formation-llc-butler-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton, Oxford & West Chester</span>
               </Link>
               <Link
                 key="/locations/athens-county/business-formation-llc-athens-county"
                 href="/locations/athens-county/business-formation-llc-athens-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens & surrounding areas</span>
               </Link>
               <Link
                 key="/locations/clinton-county/business-formation-llc-clinton-county"
                 href="/locations/clinton-county/business-formation-llc-clinton-county"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-md transition-all"
+                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
               >
-                <span className="font-semibold text-gray-900 font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
                 <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington & surrounding areas</span>
               </Link>
           </div>

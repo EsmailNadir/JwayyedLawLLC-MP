@@ -24,6 +24,7 @@ export interface SuburbData {
   keyRoads: string[]; // roads/highways where OVI stops are common
   policeAgency: string;
   mayorsCourt: MayorsCourt;
+  formerProsecutorTitle?: string; // credential badge shown in templates when set
 }
 
 export interface OVIPenalty {
@@ -72,6 +73,7 @@ export const SUBURBS: SuburbData[] = [
       phone: '(614) 559-4437',
       schedule: 'Alternating Thursdays at 1:00 PM in City Hall Council Chambers',
     },
+    formerProsecutorTitle: 'Former Bexley City Prosecutor',
   },
   {
     name: 'Canal Winchester',
@@ -128,6 +130,7 @@ export const SUBURBS: SuburbData[] = [
       schedule:
         'Wednesdays — 9:00 AM for failure-to-comply and interpreter cases; 10:00 AM for criminal cases and minor traffic arraignments',
     },
+    formerProsecutorTitle: "Former Grove City Prosecutor & Mayor's Court Prosecutor",
   },
   {
     name: 'Groveport',
@@ -179,10 +182,13 @@ export const SUBURBS: SuburbData[] = [
     policeAgency: 'New Albany Police Department',
     mayorsCourt: {
       suburb: 'New Albany',
-      active: false,
-      note:
-        'New Albany Mayor\'s Court is administered by the City of Gahanna and held at Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230, (614) 342-4080. Because Jwayyed Law LLC maintains a prosecutorial contract with Gahanna, the firm cannot appear as defense counsel in New Albany Mayor\'s Court proceedings. Cases that escalate beyond mayor\'s court transfer to Franklin County Municipal Court at 375 S. High Street, Columbus, OH 43215, where the firm can provide representation.',
+      active: true,
+      address: 'Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230',
+      phone: '(614) 342-4080',
+      schedule: 'Contact Gahanna City Hall for current schedule',
+      note: 'New Albany Mayor\'s Court is administered by the City of Gahanna and held at Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230, (614) 342-4080. Jwayyed Law LLC regularly appears in New Albany Mayor\'s Court to defend New Albany clients. First-offense OVI and traffic citations from New Albany are typically heard here. Although the court shares facilities with Gahanna City Hall, the client is a New Albany defendant — this is the proper venue for New Albany citations.',
     },
+    formerProsecutorTitle: 'Former New Albany Prosecutor',
   },
   {
     name: 'Obetz',
@@ -197,6 +203,7 @@ export const SUBURBS: SuburbData[] = [
       phone: '(614) 491-3211',
       schedule: 'Every Wednesday at 5:00 PM (enter through Police Department entrance)',
     },
+    formerProsecutorTitle: 'Former Obetz Prosecutor',
   },
   {
     name: 'Pickerington',
@@ -211,6 +218,7 @@ export const SUBURBS: SuburbData[] = [
       phone: '(614) 837-3974 ext. 2417',
       schedule: 'Every Monday at 3:30 PM (if Monday is a holiday, court meets Tuesday)',
     },
+    formerProsecutorTitle: "Former Pickerington Mayor's Court Prosecutor",
   },
   {
     name: 'Reynoldsburg',
@@ -269,6 +277,7 @@ export const SUBURBS: SuburbData[] = [
       schedule:
         'Every Tuesday — 7:45 AM check-in; 8:00 AM traffic cases; 8:15 AM (translator available); 8:30 AM pre-trials; 8:45 AM code enforcement; 9:00 AM criminal cases; 10:15 AM trials (2nd Tuesday only)',
     },
+    formerProsecutorTitle: 'Former Whitehall City Prosecutor',
   },
   {
     name: 'Worthington',

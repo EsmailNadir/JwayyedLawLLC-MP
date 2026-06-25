@@ -505,38 +505,6 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: 'landlord-duty-repair-ohio-tenant-rights',
-    title: "Landlord's Duty to Repair: Ohio Tenant Rights",
-    excerpt: 'Ohio law requires landlords to keep rental properties fit and habitable. Learn your rights when repairs are needed and what to do if your landlord fails to act.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-03-03',
-    featured: false,
-    image: '/assets/nav-probate.jpg',
-    gradient: 'from-[#2d6a4f]/40 via-[#1a1a2e] to-[#2d3436]',
-    content: `
-      <p>Ohio law requires landlords to keep rental properties fit and habitable. Landlords have legal duties to maintain the premises and make necessary repairs. When they fail to do so, you have options under Ohio law to protect yourself and, in some cases, to withhold rent or pursue legal remedies.</p>
-
-      <h2>Landlord&apos;s Obligations Under Ohio Law</h2>
-      <p><a href="https://codes.ohio.gov/ohio-revised-code/section-5321.04" target="_blank" rel="noopener noreferrer">Ohio Revised Code 5321.04</a> requires landlords to: comply with all applicable building, housing, health, and safety codes; make all repairs and do whatever is necessary to put and keep the premises in fit and habitable condition; keep common areas safe and clean; maintain all plumbing, heating, electrical systems, and appliances in working order; provide functioning hot water; provide trash receptacles where required by law; and comply with lead-based paint disclosure requirements. These duties cannot be waived by lease language. A landlord cannot ask you to sign away your right to habitable housing.</p>
-
-      <h2>What Constitutes &quot;Habitable&quot;</h2>
-      <p>A habitable dwelling means it is safe for human occupancy. This includes adequate heat (at least 68 degrees in winter), functioning hot and cold water, working toilet and sink, adequate plumbing, working electrical system, structural integrity, protection from pests and infestations, and compliance with building codes.</p>
-
-      <h2>Your Obligations as a Tenant</h2>
-      <p>You must keep the premises safe and sanitary, dispose of trash properly, use fixtures and appliances reasonably and not destroy them, and allow the landlord reasonable access to make repairs after proper notice (usually 24 hours).</p>
-
-      <h2>What to Do If Repairs Are Not Made</h2>
-      <p>Notify the landlord in writing—email, text, or letter, but get proof that they received it. Describe the problem and give a reasonable time to make repairs (lack of heat in winter requires urgent action; minor cosmetic issues allow more time). If the landlord does nothing, you may have options: withholding rent (under strict procedures in <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.07" target="_blank" rel="noopener noreferrer">ORC 5321.07</a> that must be followed exactly), &quot;repair and deduct&quot; in limited circumstances, or filing a lawsuit for breach of the implied warranty of habitability. Before withholding rent, consult an attorney—improper withholding can lead to eviction.</p>
-
-      <h2>Tip for Tenants</h2>
-      <p>Always put your repair request in writing—email, text, or certified letter—and keep proof. Verbal complaints are hard to prove later. For a sample letter format, see our <a href="/our-law-firm/document-templates">document templates</a>.</p>
-
-      <h2>When to Get Legal Help</h2>
-      <p>If you are dealing with unsafe conditions (mold, pests, major systems that don&apos;t work), an attorney can advise you on your rights and the proper steps under Ohio law. For <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> and <a href="/civil/evictions">eviction defense</a>, Jwayyed Law LLC provides experienced representation. See our <a href="/our-law-firm/case-results">case results</a> for examples of tenant outcomes. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
-    `,
-  },
-  {
     slug: 'forming-llc-ohio-step-by-step',
     title: 'Forming an LLC in Ohio: Step-by-Step Guide',
     excerpt: 'Starting an LLC in Ohio? Here is a clear overview of the process, from choosing a name to filing with the Secretary of State and drafting an operating agreement.',
@@ -773,34 +741,6 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: 'landlord-wont-fix-heat-repairs-ohio',
-    title: "My Landlord Won't Fix the Heat (or Repairs)—What Can I Do?",
-    excerpt: 'Ohio law requires landlords to maintain fit and habitable housing. If your landlord refuses to make repairs, you have options. Learn your rights as a tenant.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-03-06',
-    featured: false,
-    image: '/assets/service-page.jpg',
-    gradient: 'from-[#2d6a4f]/40 via-[#1a1a2e] to-[#2d3436]',
-    content: `
-      <p>Ohio law requires landlords to maintain fit and habitable housing. If your heat is out, your pipes are leaking, or your landlord refuses to make repairs, you are not powerless. You have specific legal rights and remedies under Ohio law.</p>
-
-      <h2>Landlord&apos;s Legal Duty</h2>
-      <p>Under <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.04" target="_blank" rel="noopener noreferrer">Ohio Revised Code 5321.04</a>, landlords must keep the premises fit and habitable. This includes working heat (at least 68 degrees in Ohio during winter months), safe plumbing and electrical systems, working appliances, structural integrity, and compliance with building and health codes. These duties cannot be waived by your lease.</p>
-
-      <h2>Steps to Take</h2>
-      <p>Notify your landlord in writing (email, text, certified letter—get proof they received it). Describe the problem and give a reasonable time to fix it (24–48 hours for no heat in winter; longer for less urgent issues). If the landlord still does nothing, you may have options.</p>
-
-      <h2>Your Legal Remedies</h2>
-      <p>You may be able to withhold rent following strict procedures in <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.07" target="_blank" rel="noopener noreferrer">Ohio Revised Code 5321.07</a>, repair the problem yourself and deduct the cost from rent (limited circumstances), or file a lawsuit for breach of the implied warranty of habitability. Before withholding rent, consult an attorney—improper withholding can lead to eviction. The procedures for rent withholding are strict.</p>
-
-      <h2>Tip for Renters</h2>
-      <p>Document everything: photos of the problem, copies of your written notices to the landlord, and any responses. Before withholding rent, consult an attorney—improper procedures can lead to eviction. See our <a href="/our-law-firm/document-templates">document templates</a> for a repair request letter.</p>
-
-      <p>Jwayyed Law LLC handles <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
-    `,
-  },
-  {
     slug: 'do-i-need-will-ohio',
     title: 'Do I Need a Will in Ohio?',
     excerpt: 'Most people benefit from having a will. Learn what happens if you die without one in Ohio and why a will is one of the most important documents you can have.',
@@ -1021,40 +961,6 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: 'ohio-landlord-tenant-security-deposit-laws',
-    title: 'Ohio Security Deposit Laws: What Landlords and Tenants Must Know',
-    excerpt: 'Ohio has strict rules governing security deposits—how they must be held, when they must be returned, and what happens when landlords wrongfully withhold them. Both landlords and tenants should know their rights.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-03-20',
-    featured: false,
-    image: '/assets/realestate-blog.jpg',
-    gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
-    content: `
-      <p>Security deposits are one of the most common sources of disputes between Ohio landlords and tenants. Ohio law provides a detailed framework for how security deposits must be handled—and the consequences for landlords who do not follow the rules can be significant. Whether you are a landlord trying to protect your property or a tenant trying to recover what you are owed, understanding <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.16" target="_blank" rel="noopener noreferrer">Ohio Revised Code 5321.16</a> is essential.</p>
-
-      <h2>The 30-Day Return Deadline</h2>
-      <p>Under <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.16" target="_blank" rel="noopener noreferrer">ORC 5321.16(B)</a>, a landlord must return the security deposit (or the portion not used for deductions) within <strong>30 days</strong> after the tenant vacates the dwelling. The 30-day clock begins when the tenant actually vacates—not when notice is given, not when the lease ends, but when the tenant has physically moved out. Along with any money returned, if the landlord makes any deductions, they must provide a written, itemized statement explaining each deduction. Simply keeping the deposit without explanation violates the statute.</p>
-
-      <h2>What Deductions Are Permitted?</h2>
-      <p>A landlord may lawfully deduct from the security deposit for: unpaid rent; damages to the rental unit caused by the tenant or guests beyond <strong>normal wear and tear</strong>; costs to clean a unit left in an abnormal state of filth; and other losses authorized by the lease. Ohio courts and the statute draw a clear line between <strong>normal wear and tear</strong>—which landlords must absorb as part of the cost of doing business—and actual damage caused by the tenant. Normal wear and tear includes minor scuffs on walls from furniture, light carpet wear from normal foot traffic, small nail holes from picture hanging, and gradual fading of paint over years of tenancy. Actual damage includes large holes in walls, stains from spilled substances, burns in carpets or counters, broken fixtures, and excessive dirt or filth requiring professional remediation. Replacing an entire carpet that was five years old due to minor wear is almost certainly not chargeable to the tenant; replacing it due to pet damage likely is.</p>
-
-      <h2>The Double Damages Penalty for Wrongful Withholding</h2>
-      <p>If a landlord fails to return the deposit within 30 days, or fails to provide the required written itemized list of deductions, <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.16" target="_blank" rel="noopener noreferrer">ORC 5321.16(C)</a> provides the tenant with powerful remedies: the landlord forfeits the right to retain any portion of the deposit AND the tenant may recover <strong>double the amount wrongfully withheld</strong> plus <strong>reasonable attorney fees</strong>. This is a significant penalty. For example, if a landlord wrongfully withholds a $1,000 deposit, the tenant may be entitled to $2,000 (double damages) plus attorney fees. Ohio courts take this provision seriously.</p>
-
-      <h2>Notice of Forwarding Address</h2>
-      <p>Under <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.16" target="_blank" rel="noopener noreferrer">ORC 5321.16(A)</a>, a tenant must provide the landlord with a written forwarding address before vacating. If the tenant fails to provide a forwarding address, the 30-day clock may be affected. Tenants should always provide their new address in writing (keep a copy or send via certified mail) to ensure their rights are protected and the landlord cannot later claim they had no address to which to return the deposit.</p>
-
-      <h2>Interest on Security Deposits</h2>
-      <p>Under <a href="https://codes.ohio.gov/ohio-revised-code/section-5321.16" target="_blank" rel="noopener noreferrer">ORC 5321.16(A)</a>, if a landlord requires a security deposit exceeding $50 or one month's rent (whichever is greater) and the tenancy is for six months or more, the landlord must pay interest on the amount exceeding the threshold at the rate of 5% per year. The interest accrues annually and must be paid to the tenant annually or at the end of the tenancy.</p>
-
-      <h2>Enforcing Your Rights: Small Claims Court</h2>
-      <p>For most security deposit disputes, <strong>Ohio small claims court</strong> (handled in the municipal or county court small claims division) is the appropriate venue. Ohio small claims courts can hear cases involving amounts up to $6,000. Filing fees are minimal (typically $30–$100), and you do not need an attorney, though having one significantly improves your chances. Bring your lease, move-in and move-out photos, your written forwarding address notice, and any correspondence with your landlord. Courts frequently side with tenants when landlords cannot substantiate deductions with documentation. If your claim exceeds $6,000 (including the doubled damages), you may need to file in municipal court's general division instead.</p>
-
-      <p>Whether you are a landlord defending against a security deposit claim or a tenant seeking to recover what you are owed, our <a href="/civil-litigation/landlord-tenant">landlord-tenant attorneys</a> can help you navigate Ohio law. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including landlord-tenant disputes across Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
-    `,
-  },
-  {
     slug: 'misdemeanor-vs-felony-ohio',
     title: 'Misdemeanor vs. Felony in Ohio: Understanding the Difference',
     excerpt: 'Ohio classifies crimes into misdemeanors and felonies, with each carrying very different consequences. Understanding the classification system, maximum penalties, and long-term collateral consequences is critical.',
@@ -1247,93 +1153,6 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: 'ohio-defamation-statute-of-limitations-one-year-rule',
-    title: 'Ohio Defamation Statute of Limitations: The One-Year Rule (ORC 2305.11)',
-    excerpt: 'Ohio gives you one year to file a defamation claim under ORC 2305.11. Learn when the clock starts, why it is so short, and what happens if you miss it.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-06-23',
-    featured: false,
-    image: '/assets/courthouse-blog.jpg',
-    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
-    content: `
-      <p>If someone has damaged your reputation with a false statement, one of the first things to understand is how much time you have to act. In Ohio, the window for filing a defamation lawsuit is unusually short — far shorter than for many other kinds of legal claims. Missing it can end your case before it begins, no matter how strong the underlying facts are.</p>
-      <p>Under Ohio Revised Code § 2305.11(A), an action for libel or slander must be commenced within one year after the cause of action accrued. One year is short. By comparison, Ohio gives two years for bodily injury claims and many written-contract claims run longer. Defamation sits among the shortest limitations periods in Ohio law.</p>
-      <h2>When Does the Clock Start?</h2>
-      <p>In the ordinary defamation case, the one-year clock starts on the date the defamatory statement is published — that is, the date it is communicated to a third party — not the date you discover it. "Publication" in defamation law means communication to at least one person other than you. A single email, social media post, or remark to a coworker can satisfy it.</p>
-      <p>This default rule matters. Because the clock can begin running the moment a statement reaches a third party, waiting to "see how things play out" can quietly consume your filing window.</p>
-      <h2>The Discovery Rule Exception</h2>
-      <p>Ohio courts have recognized a discovery rule in defamation: in some circumstances, the one-year period does not begin until the plaintiff knew or reasonably should have known that the statement was published. <em>Weidman v. Hildebrant</em> (Ohio App. 2024) illustrates how courts apply this in hidden-publication scenarios. However, the discovery rule is not available in every case — courts examine whether the plaintiff exercised reasonable diligence.</p>
-      <p>If you believe you have a defamation claim, consult an attorney promptly. Jwayyed Law LLC handles <a href="/civil">civil litigation</a> including defamation matters throughout Ohio (outside Franklin County for civil purposes, the firm serves Franklin County clients). Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
-      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. Consult an attorney for guidance on your specific situation.</em></p>
-    `,
-  },
-  {
-    slug: 'can-you-sue-for-defamation-ohio-elements-defenses',
-    title: 'Can You Sue for Defamation in Ohio? Elements, Defenses, and What to Expect',
-    excerpt: 'What it takes to bring a defamation claim in Ohio: the elements you must prove, common defenses like truth and opinion, and a realistic look at the process.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-06-23',
-    featured: false,
-    image: '/assets/courthouse-blog.jpg',
-    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
-    content: `
-      <p>Being lied about in public is upsetting, and many people's first instinct is to ask whether they can sue. The answer depends on the facts. Ohio law allows defamation claims, but not every hurtful or unfair statement qualifies. Understanding what a claim actually requires — and the defenses you would face — helps you make a clear-eyed decision.</p>
-      <h2>The Elements You Generally Have to Prove</h2>
-      <p>Defamation in Ohio is a common-law claim. To bring one, a plaintiff generally must establish: (1) a false statement of fact — not opinion; (2) published to a third party; (3) of and concerning the plaintiff; (4) made with the required level of fault (negligence for private figures; actual malice for public figures under <em>New York Times Co. v. Sullivan</em>); and (5) damages, or a statement that is defamatory per se.</p>
-      <h2>Defamation Per Se</h2>
-      <p>Ohio recognizes defamation per se — statements so inherently damaging that harm is presumed. Categories include: falsely accusing someone of a crime; statements that injure a person in their trade or profession; statements imputing a loathsome disease; and certain statements about sexual conduct. Under <em>Becker v. Toulmin</em> and subsequent Ohio decisions, a plaintiff in a per se case does not have to prove actual economic harm to recover general damages.</p>
-      <h2>Common Defenses</h2>
-      <p>Truth is an absolute defense in Ohio — a true statement cannot be defamatory, no matter how damaging. Opinion is also protected: statements of pure opinion that cannot be verified as true or false are not actionable. Privilege (absolute or qualified) protects statements made in certain contexts, such as court proceedings or employment references made in good faith.</p>
-      <p>If you believe you have a defamation claim or are defending one, Jwayyed Law LLC handles <a href="/civil">civil litigation</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
-      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. Consult an attorney for guidance on your specific situation.</em></p>
-    `,
-  },
-  {
-    slug: 'libel-vs-slander-ohio-difference',
-    title: 'Libel vs. Slander in Ohio: What\'s the Difference?',
-    excerpt: 'Libel is written defamation; slander is spoken. Learn how Ohio law treats the two, what defamation per se means, and why the distinction affects damages.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-06-23',
-    featured: false,
-    image: '/assets/courthouse-blog.jpg',
-    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
-    content: `
-      <p>People often use "libel" and "slander" as if they mean the same thing. In everyday conversation that is harmless, but in an actual defamation case the difference can matter — particularly when it comes to proving harm.</p>
-      <h2>The Basic Distinction</h2>
-      <p><strong>Libel</strong> is defamation in written, printed, or otherwise fixed and lasting form. <strong>Slander</strong> is defamation in spoken, transitory form. Both are forms of defamation — a false statement of fact, communicated to a third party, that harms someone's reputation.</p>
-      <h2>Why It Matters for Damages</h2>
-      <p>Ohio courts have historically treated the lasting nature of written statements as more serious than spoken ones. As a result, libel per se can be easier to establish than slander per se. Ohio recognizes slander per se for four categories of statements: falsely accusing someone of a crime; statements injurious to one's trade or profession; statements imputing a loathsome disease; and statements about unchastity. Outside these categories, a slander plaintiff typically must prove actual, special damages — quantifiable economic loss.</p>
-      <h2>Online Statements</h2>
-      <p>Online posts, social media comments, and emails are generally treated as libel because they are written and lasting — even if brief. A single defamatory tweet or Yelp review can satisfy the libel definition. See also our article on <a href="/our-law-firm/blog/ohio-single-publication-rule-online-defamation">Ohio's single publication rule and online defamation</a>.</p>
-      <p>Jwayyed Law LLC handles <a href="/civil">civil litigation</a> including defamation matters throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
-      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026.</em></p>
-    `,
-  },
-  {
-    slug: 'ohio-single-publication-rule-online-defamation',
-    title: 'Ohio\'s Single Publication Rule and Online Defamation',
-    excerpt: 'How Ohio\'s single publication rule applies to online posts and reviews, and how it affects the one-year defamation deadline for content that stays up.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-06-23',
-    featured: false,
-    image: '/assets/courthouse-blog.jpg',
-    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
-    content: `
-      <p>If someone posts a defamatory statement about you online — a false Google review, a damaging social media post, an untrue article — you might assume that every day it stays up restarts the one-year statute of limitations. Ohio's single publication rule says otherwise, and understanding it is critical before deciding when to act.</p>
-      <h2>What the Single Publication Rule Means</h2>
-      <p>Under the single publication rule, a mass communication — a newspaper edition, a book printing, or a single online post — gives rise to only one cause of action, regardless of how many people read it or how long it remains accessible. The one-year limitations period (ORC 2305.11(A)) begins when the statement is first published, not each time someone views it.</p>
-      <p>Applied online: a Google review posted on March 1 that is still visible two years later does not give you a fresh one-year window every day it stays up. The clock started on March 1 of the original post year. If you wait 13 months to sue, your claim is likely time-barred even though the review is still harming you.</p>
-      <h2>The Honest Uncertainty in Ohio</h2>
-      <p>Ohio courts have not definitively settled how the single publication rule applies to all online scenarios — particularly content that is substantially revised or re-published by a new act of the defendant. A significant update to a post may constitute a new publication. This area of law continues to develop, and the answer in a specific case turns on how a court characterizes the online activity.</p>
-      <p>If you are considering a defamation claim involving online content, consult an attorney promptly. Jwayyed Law LLC handles <a href="/civil">civil litigation</a> throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
-      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026. The single-publication rule's application to online content is unsettled in Ohio — consult an attorney for advice on your specific situation.</em></p>
-    `,
-  },
-  {
     slug: 'fra-suspension-ohio-what-it-is-how-to-fix',
     title: 'What Is an FRA Suspension in Ohio (and How to Fix It)?',
     excerpt: 'An FRA suspension in Ohio is tied to proof of insurance. Learn what triggers it, the SR-22 and reinstatement-fee requirements, and how to seek driving privileges.',
@@ -1425,32 +1244,6 @@ export const blogPosts: BlogPost[] = [
       <p>A durable power of attorney designates someone to handle your financial affairs if you are incapacitated. A healthcare power of attorney designates someone to make medical decisions. These documents are especially important for young parents — an accident or illness that temporarily incapacitates you should not freeze your family's finances.</p>
       <p>Jwayyed Law LLC assists central Ohio families with <a href="/trusts">estate planning</a>, wills, trusts, and powers of attorney throughout Ohio including Franklin County. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
       <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including ORC 2111.12 and ORC 2111.121. Consult an attorney for advice on your specific estate planning situation.</em></p>
-    `,
-  },
-  {
-    slug: 'first-time-landlord-columbus-legal-checklist',
-    title: 'First-Time Landlord in Columbus? Your Legal Checklist',
-    excerpt: 'A practical legal checklist for new Columbus and central-Ohio landlords: leases, security deposits, disclosures, repairs, entry notice, and evictions.',
-    category: 'Civil Litigation',
-    author: 'Jwayyed Jwayyed',
-    date: '2026-06-23',
-    featured: false,
-    image: '/assets/courthouse-blog.jpg',
-    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
-    content: `
-      <p>Renting out a property in Columbus or central Ohio for the first time means entering a highly regulated relationship. Ohio's landlord-tenant law under ORC Chapter 5321 is detailed and tenant-protective. Getting the basics right from the start prevents costly disputes later.</p>
-      <h2>Your Lease Agreement</h2>
-      <p>Use a written lease. An oral month-to-month tenancy is legal in Ohio but creates unnecessary ambiguity. Your lease should cover: rent amount and due date; late fee (if any — Ohio does not cap late fees but they must be reasonable); security deposit terms; who pays utilities; rules about guests, pets, smoking; and the lease term. Ohio does not require a specific lease form, but having an attorney review your template before you use it is worthwhile.</p>
-      <h2>Security Deposit Rules</h2>
-      <p>Ohio does not cap security deposit amounts. However, under ORC 5321.16: if you hold a deposit for more than 30 days on a month-to-month tenancy, you must pay 5% annual interest on the amount over one month's rent. You must return the deposit (or itemized deductions) within 30 days of the tenant moving out. Failure to comply can cost you double the withheld amount plus attorney fees.</p>
-      <h2>Habitability and Repair Obligations</h2>
-      <p>Ohio landlords must maintain rental property in a fit and habitable condition under ORC 5321.04. You must keep all common areas safe, maintain in good working order all electrical, plumbing, sanitary, heating, and ventilating systems, and comply with all housing, health, and safety codes. A tenant who gives reasonable notice of a needed repair that you fail to make can withhold rent or terminate the lease under ORC 5321.07 — following a specific notice procedure.</p>
-      <h2>Entry Notice Requirement</h2>
-      <p>Under ORC 5321.04(A)(8), you must give the tenant at least 24 hours notice before entering — except in emergencies. Entering without notice is a violation that can give the tenant grounds for a lease termination or damages claim.</p>
-      <h2>Evictions</h2>
-      <p>Ohio's eviction process (forcible entry and detainer) requires a 3-day written notice to vacate under ORC 1923.04 before filing in court. You cannot self-help evict — no changing locks, removing belongings, or shutting off utilities to force a tenant out. The court process typically takes 3–6 weeks from notice to writ of possession in Franklin County.</p>
-      <p>Jwayyed Law LLC handles <a href="/civil/landlord-tenant-disputes">landlord-tenant disputes</a> and evictions throughout Ohio including Franklin County. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
-      <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including ORC Chapter 5321. Local court rules may differ. Consult an attorney for advice on your specific situation.</em></p>
     `,
   },
 ];

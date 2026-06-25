@@ -129,29 +129,29 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
             </p>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Assault and Domestic Violence</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Assault and Domestic Violence</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Assault and domestic violence charges are serious misdemeanors that can result in jail time, protective orders, and permanent criminal records. These cases require immediate attention to protect your rights, challenge evidence, and develop defense strategies. Our firm understands the sensitive nature of these cases and works diligently to protect your rights while achieving favorable outcomes.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Theft and Property Crimes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Theft and Property Crimes</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Theft, shoplifting, vandalism, and other property crime charges can result in jail time, fines, and restitution. The severity of penalties depends on the value of property involved and prior convictions. Our firm challenges evidence, negotiates with prosecutors, and develops defense strategies to minimize consequences.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Drug Possession</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Drug Possession</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Drug possession charges, even for small amounts, can result in jail time, fines, and driver's license suspension. First-time offenders may be eligible for intervention in lieu of conviction programs or drug court. Our firm explores all options including treatment programs, dismissal opportunities, and reduced charges.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Disorderly Conduct and Disturbing the Peace</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Disorderly Conduct and Disturbing the Peace</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Disorderly conduct, disturbing the peace, and related charges often result from disputes or arguments. These charges can be challenged based on lack of evidence, improper police conduct, or constitutional issues. Our firm works to have these charges dismissed or reduced.
               </p>
             </div>

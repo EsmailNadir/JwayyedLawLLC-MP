@@ -71,22 +71,22 @@ export default function CourtsPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               {counties.map((county) => (
-                <Link key={county.href} href={county.href} className="block p-4 border border-gray-200 rounded-lg hover:border-orange-500 hover:shadow-md transition-all">
-                  <h4 className="font-semibold text-gray-900">{county.name}</h4>
+                <Link key={county.href} href={county.href} className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
+                  <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">{county.name}</h4>
                 </Link>
               ))}
             </div>
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mt-8 mb-4">Municipal Courts</h4>
             <div className="grid md:grid-cols-2 gap-3 mb-8">
-              <Link href="/courts/franklin-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Franklin County Municipal Court</Link>
-              <Link href="/courts/delaware-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Delaware County Municipal Court</Link>
-              <Link href="/courts/circleville-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Circleville Municipal Court</Link>
-              <Link href="/courts/athens-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Athens Municipal Court</Link>
-              <Link href="/courts/morrow-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Morrow County Municipal Court</Link>
-              <Link href="/courts/wilmington-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Wilmington Municipal Court</Link>
-              <Link href="/courts/hamilton-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Hamilton Municipal Court</Link>
-              <Link href="/courts/fairborn-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Fairborn Municipal Court</Link>
-              <Link href="/courts/dayton-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:border-orange-500 transition-all text-gray-700">Dayton Municipal Court</Link>
+              <Link href="/courts/franklin-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Franklin County Municipal Court</Link>
+              <Link href="/courts/delaware-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Delaware County Municipal Court</Link>
+              <Link href="/courts/circleville-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Circleville Municipal Court</Link>
+              <Link href="/courts/athens-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Athens Municipal Court</Link>
+              <Link href="/courts/morrow-county-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Morrow County Municipal Court</Link>
+              <Link href="/courts/wilmington-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Wilmington Municipal Court</Link>
+              <Link href="/courts/hamilton-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Hamilton Municipal Court</Link>
+              <Link href="/courts/fairborn-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Fairborn Municipal Court</Link>
+              <Link href="/courts/dayton-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Dayton Municipal Court</Link>
             </div>
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mt-8 mb-4">Location-Specific Practice Areas</h4>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">

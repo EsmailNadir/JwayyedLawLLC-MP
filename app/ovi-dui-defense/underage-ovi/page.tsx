@@ -124,8 +124,8 @@ export default function UnderageOVIPage() {
               OVUAC vs. Full OVI Penalties at a Glance
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-3">OVUAC — ORC 4511.19(B) (BAC 0.02%–0.079%, under age 21)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">OVUAC — ORC 4511.19(B) (BAC 0.02%–0.079%, under age 21)</h4>
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>M4 misdemeanor</li>
                 <li>License suspension: 90 days to 2 years</li>
                 <li>Fine: up to $250</li>
@@ -133,7 +133,7 @@ export default function UnderageOVIPage() {
                 <li>Mandatory alcohol assessment and treatment</li>
               </ul>
               <h4 className="font-semibold text-gray-900 mt-6 mb-3">Full OVI — ORC 4511.19(A) (BAC 0.08%+, any age; HB 37 first offense)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li>M1 misdemeanor</li>
                 <li>Mandatory minimum 3 days jail or driver intervention program</li>
                 <li>Fines: $565–$1,075</li>

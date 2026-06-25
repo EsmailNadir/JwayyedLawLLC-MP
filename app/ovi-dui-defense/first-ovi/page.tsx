@@ -118,41 +118,41 @@ export default function FirstOVIPage() {
               We represent clients facing first OVI charges in the following Ohio counties and courts. Each county has its own page; click through for court-specific information.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Franklin County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Franklin County Municipal Court</span>
+              <Link href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Franklin County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Franklin County Municipal Court</span>
               </Link>
-              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Delaware County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Delaware County Municipal Court</span>
+              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Delaware County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Delaware County Municipal Court</span>
               </Link>
-              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Butler County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Area Courts & Hamilton Municipal Court</span>
+              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Butler County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Area Courts & Hamilton Municipal Court</span>
               </Link>
-              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Greene County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Fairborn Municipal Court</span>
+              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Greene County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Fairborn Municipal Court</span>
               </Link>
-              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Montgomery County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Dayton Municipal Court</span>
+              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Montgomery County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Dayton Municipal Court</span>
               </Link>
-              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Pickaway County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Circleville Municipal Court</span>
+              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Pickaway County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Circleville Municipal Court</span>
               </Link>
-              <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Athens County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Athens Municipal Court</span>
+              <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Athens County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Athens Municipal Court</span>
               </Link>
-              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Morrow County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Morrow County Municipal Court</span>
+              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Morrow County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Morrow County Municipal Court</span>
               </Link>
-              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:border-accent hover:shadow-md transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900">Clinton County</span>
-                <span className="block text-sm text-gray-600 mt-1">OVI/DUI – Wilmington Municipal Court</span>
+              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
+                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Clinton County</span>
+                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">OVI/DUI – Wilmington Municipal Court</span>
               </Link>
             </div>
             <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">First OVI Penalties in Ohio</h3>
@@ -160,8 +160,8 @@ export default function FirstOVIPage() {
               Under Ohio Revised Code 4511.19, a first OVI offense is a first-degree misdemeanor with mandatory minimum penalties. Understanding the full scope of consequences is essential:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Low-Level First OVI (e.g., BAC .08% to under .17%)</h4>
-              <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Low-Level First OVI (e.g., BAC .08% to under .17%)</h4>
+              <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Jail:</strong> 3 days to 6 months. The court may allow a 3-day Driver Intervention Program (DIP) instead of jail. Jail may be waived with an ignition interlock device.</li>
                 <li><strong>Fines:</strong> $565 to $1,075 plus court costs.</li>
                 <li><strong>License:</strong> 1 to 3 years suspension; $315 reinstatement fee when eligible.</li>
@@ -172,17 +172,17 @@ export default function FirstOVIPage() {
               </ul>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">High-Level or Refusal First OVI (e.g., BAC .17% or higher, or refusal of chemical test)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">High-Level or Refusal First OVI (e.g., BAC .17% or higher, or refusal of chemical test)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 For high-level or refusal, the minimum jail is 6 days to 6 months. The court may allow a 3-day jail term plus a 3-day Driver Intervention Program. Fines remain $565 to $1,075; license suspension remains 1 to 3 years ($315 reinstatement fee). You are eligible for limited driving privileges after 15 days (30 days for refusal). If you have a prior &quot;Physical Control&quot; conviction within 10 years, the waiting period is mandatory and an ignition interlock is required. Otherwise, interlock is optional. Treatment and restricted plates remain at the court&apos;s discretion. Refusal is often treated as high-level, especially when there is a prior OVI within 20 years.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Administrative License Suspension (ALS)</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Under Ohio's implied consent law (ORC 4511.191), you face automatic license suspension separate from criminal penalties:
               </p>
-              <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 <li><strong>Test Refusal:</strong> 1 year suspension (can appeal within 30 days)</li>
                 <li><strong>Failed Test (BAC 0.08%+):</strong> 90 days suspension (can appeal within 30 days)</li>
                 <li><strong>High-Tier (BAC 0.17%+):</strong> 1 year suspension</li>
@@ -199,14 +199,14 @@ export default function FirstOVIPage() {
               First OVI cases involve two separate legal processes that require immediate attention:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Administrative License Suspension (ALS) Process</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Administrative License Suspension (ALS) Process</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Within 30 days of arrest, you must file an appeal of the ALS or lose your right to challenge it. An attorney can file the appeal, request a stay of suspension, and represent you at the ALS hearing. The hearing focuses on whether the officer had reasonable grounds to believe you were OVI, whether you were properly arrested, and whether testing was properly administered. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Criminal Court Process</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Criminal Court Process</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 The criminal process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome.
               </p>
             </div>
@@ -215,26 +215,26 @@ export default function FirstOVIPage() {
               Several defense strategies may apply to first OVI charges depending on the specific circumstances:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Illegal Traffic Stop</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Illegal Traffic Stop</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Police must have reasonable suspicion of a traffic violation or criminal activity to stop your vehicle. If the stop was illegal, all evidence obtained after the stop may be suppressed, potentially resulting in dismissal. Common issues include stops based on race, stops without reasonable suspicion, or pretextual stops.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Breathalyzer and Chemical Test Challenges</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Breathalyzer and Chemical Test Challenges</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Breathalyzer results can be challenged based on improper calibration, lack of maintenance records, operator error, rising BAC defense (BAC was below 0.08% while driving but rose by time of test), or medical conditions affecting results. Blood tests can be challenged based on improper collection, chain of custody issues, or lab errors.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Field Sobriety Test Challenges</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Field Sobriety Test Challenges</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Field sobriety tests are subjective and can be challenged based on improper administration, medical conditions affecting performance, environmental factors, or lack of proper training. The National Highway Traffic Safety Administration (NHTSA) has specific protocols that must be followed exactly.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Rising BAC Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Rising BAC Defense</h4>
+              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
                 Your BAC may have been below 0.08% while driving but rose above the legal limit by the time testing occurred. This defense requires expert testimony and can result in reduced charges or dismissal if successful.
               </p>
             </div>
@@ -242,7 +242,7 @@ export default function FirstOVIPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               An experienced first OVI defense attorney provides comprehensive representation:
             </p>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4">
+            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
               <li><strong>Immediate ALS Appeal:</strong> File administrative license suspension appeal within 30-day deadline, request stay of suspension, and represent you at ALS hearing</li>
               <li><strong>Comprehensive Case Investigation:</strong> Review police reports, dashcam footage, bodycam footage, breathalyzer maintenance records, and all evidence to identify weaknesses</li>
               <li><strong>Evidence Challenges:</strong> Challenge breathalyzer accuracy, field sobriety test administration, chemical test procedures, or improperly obtained evidence through pretrial motions</li>
