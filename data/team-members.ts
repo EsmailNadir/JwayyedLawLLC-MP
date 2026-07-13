@@ -28,7 +28,7 @@ export const teamMembers: TeamMember[] = [
 
 <p>In 2023, Attorney Jwayyed was selected for the Ohio State Bar Association (OSBA) Leadership Academy, a competitive program for emerging legal leaders in Ohio. He holds a 4.9-star rating with 86+ verified Google reviews from clients across the state.</p>
 
-<p>Jwayyed Law LLC handles OVI/DUI defense, criminal defense (misdemeanor), personal injury, civil litigation, business law, estate planning, trusts, probate, and related matters throughout Ohio. Due to a conflict of interest arising from his prior municipal prosecution work, the firm does not handle criminal, OVI, or traffic matters in Franklin County — but fully serves Franklin County clients in civil, business, estate planning, and probate matters.</p>`,
+<p>Jwayyed Law LLC handles OVI/DUI defense, criminal defense (misdemeanor), personal injury, civil litigation, business law, estate planning, trusts, probate, and related matters throughout Ohio — including Franklin County, Columbus, and the surrounding suburbs. Having concluded his prosecutorial contracts with Franklin County municipalities, Attorney Jwayyed represents clients across all practice areas countywide.</p>`,
     profileLink: '/our-law-firm/about-us',
     highlights: ['Ohio Bar #0098679', 'Former Municipal Prosecutor', 'Former Asst. Law Director — Circleville', 'OSBA Leadership Academy 2023', 'Capital University Law School J.D.', 'Licensed 2019'],
   },
