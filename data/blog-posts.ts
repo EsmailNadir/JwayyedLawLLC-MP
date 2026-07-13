@@ -1170,7 +1170,7 @@ export const blogPosts: BlogPost[] = [
       <p>To clear an FRA suspension, Ohio generally requires: (1) proof of current insurance (SR-22 certificate filed by your insurer with the BMV); (2) payment of reinstatement fees — $40 for a first suspension, $300 for a second, $600 for a third or subsequent under ORC 4509.101; and (3) maintaining the SR-22 for a required period (typically one year).</p>
       <h2>Limited Driving Privileges</h2>
       <p>During an FRA suspension, you may be eligible for limited driving privileges for work, school, or medical appointments. An attorney can petition the court or BMV for these privileges. Driving on a suspended license — even an FRA suspension — is a criminal offense in Ohio (Driving Under Suspension, ORC 4510.11).</p>
-      <p>If you have an FRA suspension or a <a href="/criminal-defense/driving-under-suspension">driving under suspension charge</a>, Jwayyed Law LLC can help. We serve clients throughout Ohio, including Franklin County, for criminal matters. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p>If you have an FRA suspension or a <a href="/criminal-defense/driving-under-suspension">driving under suspension charge</a>, Jwayyed Law LLC can assist you. We represent clients throughout Ohio, including Franklin County, in criminal and traffic matters. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
       <p><em>This article is for general educational purposes only and does not constitute legal advice. Ohio law as of 2026 including HB 29 (effective April 9, 2025). Consult an attorney for advice on your specific situation.</em></p>
     `,
   },
