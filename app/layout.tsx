@@ -1,6 +1,7 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
 import TidioChatLabelHide from "@/components/TidioChatLabelHide";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -238,6 +239,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           strategy="afterInteractive"
         />
         <TidioChatLabelHide />
+
+        {/* GA4 measurement floor (skill 2i) */}
+        <Script
+          id="ga4-src"
+          src="https://www.googletagmanager.com/gtag/js?id=G-S37MJ180WG"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S37MJ180WG');`}
+        </Script>
+        <Analytics />
       </body>
     </html>
   );
