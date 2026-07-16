@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Personal Injury Lawyer | Montgomery County | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Montgomery County, Dayton, Kettering, Huber Heights, Miamisburg, and Vandalia, Ohio. Car accidents, slip and fall, serious injuries. Call (614) 285-5482.',
+  description: 'Personal injury attorney serving Montgomery County, Dayton, and Kettering, Ohio. Car accidents, slip and fall, and serious injuries. Call (614) 285-5482.',
   keywords: ['personal injury Montgomery County', 'injury lawyer Dayton Ohio', 'Montgomery County accident attorney', 'car accident lawyer Dayton Ohio', 'personal injury Kettering Ohio'],
   openGraph: {
     title: 'Personal Injury Lawyer | Montgomery County | Jwayyed Law LLC',
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `Do I need to pay upfront for a personal injury attorney?`,
-    answer: `No. Jwayyed Law LLC represents personal injury clients on a contingency fee basis. You pay no attorney fees unless we recover compensation for you. The fee is a percentage of the final recovery — deducted at settlement or judgment. This model ensures that people injured in Montgomery County can access skilled legal representation without any financial barrier. We discuss the fee structure openly at your initial consultation so you always know exactly how it works.`,
+    answer: `No. Jwayyed Law LLC represents personal injury clients on a contingency fee basis. The fee is a percentage of the final recovery — deducted at settlement or judgment. This model ensures that people injured in Montgomery County can access skilled legal representation without any financial barrier. We discuss the fee structure openly at your initial consultation so you always know exactly how it works.`,
   },
   {
     question: `Where are personal injury cases filed in Montgomery County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryMontgomeryCountyPage() {
               Montgomery County&apos;s urban density brings significant slip and fall and premises liability activity as well. Retail establishments, restaurants, parking lots, and commercial properties throughout Dayton, Kettering, and Miamisburg must maintain safe conditions for visitors. When they fail to do so, injury victims can hold property owners accountable. We also handle dog bite claims under ORC 955.28, workplace third-party negligence cases, bicycle and pedestrian accident claims, and catastrophic injury matters.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury cases in Montgomery County are filed at the Montgomery County Common Pleas Court, 41 N. Perry St, Dayton, OH 45422. We represent clients on a contingency fee basis — you pay nothing unless we win. Contact us at{' '}
+              Personal injury cases in Montgomery County are filed at the Montgomery County Common Pleas Court, 41 N. Perry St, Dayton, OH 45422. We represent clients on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> across Ohio.
             </p>

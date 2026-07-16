@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Municipal Court OVI Defense | Jwayyed Law LLC',
+  title: 'Franklin County Municipal Court OVI | Jwayyed Law LLC',
   description: 'OVI/DUI defense at Franklin County Municipal Court (375 S. High St). ALS appeals, HB 37 penalties, all OVI charge types. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Franklin County Municipal Court OVI lawyer', 'Franklin County OVI defense attorney', 'Columbus OVI Municipal Court', 'Franklin County DUI defense 375 S High St', 'Franklin County Municipal Court ALS appeal'],
   openGraph: {
-    title: 'Franklin County Municipal Court OVI Defense | Jwayyed Law LLC',
+    title: 'Franklin County Municipal Court OVI | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

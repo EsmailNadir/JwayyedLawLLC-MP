@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Greene County, Ohio | Jwayyed Law LLC',
+  title: 'Greene County Personal Injury Lawyer | Jwayyed Law LLC',
   description: 'Personal injury attorney serving Greene County, Xenia, Fairborn, Beavercreek, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Greene County', 'injury lawyer Xenia Ohio', 'Greene County accident attorney', 'car accident lawyer Fairborn Ohio', 'personal injury Beavercreek Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Greene County, Ohio | Jwayyed Law LLC',
+    title: 'Greene County Personal Injury Lawyer | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/greene-county/personal-injury-greene-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `How do contingency fees work for personal injury cases?`,
-    answer: `Jwayyed Law LLC handles personal injury cases on a contingency fee basis. You pay no attorney fees unless and until we obtain a recovery for you through settlement or trial. The fee is a percentage of the gross recovery and is deducted when the case concludes. This structure allows injured clients in Greene County to hire skilled legal representation with no upfront cost, ensuring access to justice regardless of your financial situation at the time of injury.`,
+    answer: `Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the gross recovery and is deducted when the case concludes.`,
   },
   {
     question: `Where are personal injury lawsuits filed in Greene County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryGreeneCountyPage() {
               In addition to highway and road accidents, Greene County presents slip and fall and premises liability risks at retail establishments, restaurants, parking lots, and public spaces throughout Beavercreek and the Fairborn commercial corridor. We also handle dog bite injuries under ORC 955.28, workplace injuries involving third-party negligence, wrongful death claims, and motorcycle and bicycle accidents. Each case is approached with detailed factual investigation and an understanding of Ohio&apos;s injury statutes.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury cases in Greene County are filed at the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Jwayyed Law LLC works on a contingency fee basis — you pay no fees unless we recover for you. Contact us at{' '}
+              Personal injury cases in Greene County are filed at the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Jwayyed Law LLC works on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
             </p>

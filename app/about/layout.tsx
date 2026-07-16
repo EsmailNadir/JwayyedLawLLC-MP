@@ -4,7 +4,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
 export const metadata: Metadata = {
   title: 'About Jwayyed Law LLC | Ohio Attorney',
-  description: 'Meet Attorney Jwayyed Jwayyed — OVI & criminal defense, estate planning, and business law throughout Ohio. Former Prosecutor. Call (614) 285-5482.',
+  description: 'Meet Attorney Jwayyed Jwayyed — Ohio OVI, criminal defense, estate planning & business law. Former municipal prosecutor. Free consultation: (614) 285-5482.',
   keywords: [
     'Ohio attorney',
     'attorney Jwayyed',

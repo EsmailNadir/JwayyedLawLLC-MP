@@ -3,7 +3,7 @@ import LegalAssistantClient from './LegalAssistantClient';
 
 export const metadata: Metadata = {
   title: 'Legal Assistant Team | Jwayyed Law LLC',
-  description: 'Meet the legal assistant team at Jwayyed Law LLC — dedicated professionals supporting Ohio clients in OVI, criminal defense, and civil matters from our Columbus office.',
+  description: 'Meet the legal assistant team at Jwayyed Law LLC — professionals supporting Ohio clients in OVI, criminal defense, and civil matters from Columbus.',
   alternates: { canonical: '/about/legal-assistant' },
   openGraph: {
     title: 'Legal Assistant Team | Jwayyed Law LLC',

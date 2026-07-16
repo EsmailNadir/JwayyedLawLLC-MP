@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Columbus Theft & Shoplifting Defense | Jwayyed Law LLC',
-  description: 'Theft and shoplifting defense in Columbus, Ohio. R.C. 2913.02, petty theft M1, felony theft. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
+  description: 'Theft & shoplifting defense in Columbus, Ohio. R.C. 2913.02, petty & felony theft. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: [
     'Columbus theft lawyer',
     'Columbus shoplifting attorney',

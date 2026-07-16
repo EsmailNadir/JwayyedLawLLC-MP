@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Breach of Contract Lawyer in Ohio | Jwayyed Law LLC',
-  description: 'Experienced Ohio breach of contract attorney protecting your rights. Skilled representation for contract disputes in Ohio. Schedule consultation: (614) 285-5482',
+  description: 'Experienced Ohio breach of contract attorney handling contract disputes and protecting your rights. Schedule a consultation: (614) 285-5482',
   keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Breach of Contract Lawyer in Ohio | Jwayyed Law LLC',

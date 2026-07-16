@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Franklin County Expungement Attorney | Jwayyed Law LLC',
-  description: 'Expunge or seal your criminal record in Franklin County. R.C. 2953.32, expanded eligibility under H.B. 96. Franklin County Common Pleas. Jwayyed Law LLC. (614) 285-5482.',
+  description: 'Expunge or seal your criminal record in Franklin County. R.C. 2953.32, expanded eligibility under H.B. 96. Franklin County Common Pleas. (614) 285-5482.',
   keywords: ['Franklin County expungement attorney', 'seal criminal record Columbus Ohio', 'expungement Columbus lawyer', 'Ohio record sealing Franklin County', 'Franklin County expungement eligibility'],
   openGraph: {
     title: 'Franklin County Expungement Attorney | Jwayyed Law LLC',

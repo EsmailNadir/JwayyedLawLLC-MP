@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Athens County Criminal Defense & OVI | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Athens County — Athens, Ohio University area, Nelsonville, and surrounding communities. Athens Municipal Court. Call (614) 285-5482.',
+    'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Athens County — Athens, Nelsonville, and nearby. Call (614) 285-5482.',
   keywords: [
     'Athens County OVI attorney',
     'Athens County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Athens Ohio criminal defense attorney',
   ],
   openGraph: {
-    title: 'Athens County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Athens County Criminal Defense & OVI | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/athens-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

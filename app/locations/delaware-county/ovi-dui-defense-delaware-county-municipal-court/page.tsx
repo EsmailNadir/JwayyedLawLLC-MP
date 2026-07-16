@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Delaware County OVI Attorney | Jwayyed Law LLC',
-  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville, and Delaware County, Ohio. Delaware County Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
+  description: 'OVI/DUI defense attorney for Delaware, Powell, Dublin, Westerville. Delaware County Municipal Court. HB 37, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio'],
   openGraph: {
     title: 'Delaware County OVI Attorney | Jwayyed Law LLC',

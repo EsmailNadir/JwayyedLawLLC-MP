@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 export const metadata: Metadata = {
   title: 'Legal Document Templates | Ohio | Jwayyed Law LLC',
   description:
-    'Free Ohio legal document templates: personal injury demand letters, cease and desist, OVI evidence preservation, contract notices, and more. Consult an attorney for your situation.',
+    'Free Ohio legal document templates: personal injury demand letters, cease and desist, OVI evidence preservation, and more. Consult an attorney first.',
   keywords: [
     'Ohio legal templates',
     'demand letter template',

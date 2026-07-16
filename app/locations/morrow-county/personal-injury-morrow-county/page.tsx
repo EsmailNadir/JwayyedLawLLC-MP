@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Morrow County, Ohio | Jwayyed Law LLC',
+  title: 'Personal Injury Lawyer | Morrow County | Jwayyed Law LLC',
   description: 'Personal injury attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Morrow County', 'injury lawyer Mt. Gilead Ohio', 'Morrow County accident attorney', 'car accident lawyer Cardington Ohio', 'slip and fall Morrow County'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Morrow County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer | Morrow County | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/morrow-county/personal-injury-morrow-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `How does a contingency fee arrangement work for personal injury cases?`,
-    answer: `Jwayyed Law LLC handles personal injury cases on a contingency fee basis. You pay no attorney fees unless we obtain a recovery for you through settlement or trial. The fee is a predetermined percentage of the recovery and is deducted at the time the case concludes. This means injured individuals in Morrow County — regardless of their financial situation — can access skilled legal representation from the day of the accident without any upfront payment or hourly cost.`,
+    answer: `Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a predetermined percentage of the recovery and is deducted at the time the case concludes. This means injured individuals in Morrow County — regardless of their financial situation — can access skilled legal representation from the day of the accident without any upfront payment or hourly cost.`,
   },
   {
     question: `Where are personal injury lawsuits filed in Morrow County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryMorrowCountyPage() {
               Beyond vehicle accidents, Morrow County personal injury cases can involve premises liability at local businesses in Mt. Gilead and Cardington, dog bite injuries under ORC 955.28, workplace accidents where a third party bears liability, and wrongful death claims. Every case is evaluated on its individual facts and pursued with the same level of dedication, regardless of the size of the claim or the county in which it arises.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury cases in Morrow County are filed at the Morrow County Common Pleas Court, 48 E. High St, Mt. Gilead, OH 43338. Jwayyed Law LLC handles these cases on a contingency fee basis — no attorney fees unless we win your case. Contact us at{' '}
+              Personal injury cases in Morrow County are filed at the Morrow County Common Pleas Court, 48 E. High St, Mt. Gilead, OH 43338. Jwayyed Law LLC handles these cases on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
             </p>

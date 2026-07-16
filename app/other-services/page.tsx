@@ -9,7 +9,7 @@ import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
-  description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and throughout Ohio under ORC Chapter.',
+  description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and communities across Ohio.',
   keywords: ['estate planning attorney Columbus Ohio', 'probate lawyer Ohio', 'dispute resolution attorney Columbus', 'Ohio will attorney', 'trust attorney Columbus OH'],
   openGraph: {
     title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',

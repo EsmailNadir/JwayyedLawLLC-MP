@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Pickaway County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Pickaway County OVI & Criminal Defense | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Pickaway County — Circleville, Ashville, Williamsport, and surrounding communities. Circleville Municipal Court. Call (614) 285-5482.',
+    'OVI, criminal, and personal injury defense in Pickaway County — Circleville, Ashville, and Williamsport. Circleville Municipal Court. Call (614) 285-5482.',
   keywords: [
     'Pickaway County OVI attorney',
     'Pickaway County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Circleville OVI defense attorney',
   ],
   openGraph: {
-    title: 'Pickaway County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Pickaway County OVI & Criminal Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/pickaway-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

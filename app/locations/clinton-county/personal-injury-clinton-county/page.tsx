@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `How does a contingency fee arrangement work, and do I have to pay upfront?`,
-    answer: `At Jwayyed Law LLC, personal injury cases are typically handled on a contingency fee basis. This means you pay no attorney fees unless we achieve a recovery for you through settlement or verdict. The attorney's fee is calculated as a percentage of the recovery and is deducted at the time of settlement or judgment. This arrangement ensures that injured people in Clinton County and throughout Ohio can access quality legal counsel without worrying about upfront costs or hourly billing.`,
+    answer: `At Jwayyed Law LLC, personal injury cases are typically handled on a contingency fee basis. The attorney's fee is calculated as a percentage of the recovery and is deducted at the time of settlement or judgment. This arrangement ensures that injured people in Clinton County and throughout Ohio can access quality legal counsel without worrying about upfront costs or hourly billing.`,
   },
   {
     question: `Where are personal injury lawsuits filed in Clinton County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryClintonCountyPage() {
               Clinton County&apos;s agricultural character means that farm-related injury scenarios, animal-vehicle collisions, and rural road hazards are not uncommon. Beyond traffic accidents, we handle slip and fall claims at local businesses, premises liability cases, dog bite injuries under ORC 955.28, and workplace injuries where third-party negligence is involved. Every case receives individualized attention and thorough legal analysis tailored to the specific facts.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury lawsuits in Clinton County are filed at the Clinton County Common Pleas Court, 46 S. South St, Wilmington, OH 45177. Jwayyed Law LLC handles personal injury cases on a contingency fee basis — no fees unless we recover for you. Contact us at{' '}
+              Personal injury lawsuits in Clinton County are filed at the Clinton County Common Pleas Court, 46 S. South St, Wilmington, OH 45177. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 for a consultation. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury services</Link> throughout Ohio.
             </p>

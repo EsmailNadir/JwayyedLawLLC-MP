@@ -3,7 +3,7 @@ import OpenContainerTemplate from '@/components/franklin-templates/OpenContainer
 
 export const metadata: Metadata = {
   title: 'Worthington Open Container Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Worthington, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Open container defense attorney serving Worthington, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Worthington open container lawyer', 'Worthington open container defense', 'Worthington Ohio open container'],
   openGraph: {
     title: 'Worthington Open Container Defense | Jwayyed Law LLC',

@@ -157,12 +157,12 @@ export const blogPosts: BlogPost[] = [
       <p>Under <a href="https://codes.ohio.gov/ohio-revised-code/section-2305.10" target="_blank" rel="noopener noreferrer">Ohio Revised Code 2305.10</a>, you have two years from the date of the accident to file a personal injury lawsuit. For property damage, the deadline is also two years. Building a strong case takes months—contact an attorney within weeks or months of the accident, not weeks before the deadline expires.</p>
 
       <h2>10. Consult a Personal Injury Attorney</h2>
-      <p>An attorney can evaluate whether the other driver was at fault, calculate the full value of your claim including future medical expenses and lost earning capacity, negotiate with insurance companies on your behalf, and take your case to trial if a fair settlement cannot be reached. Many personal injury attorneys work on contingency—you do not pay unless and until you recover compensation.</p>
+      <p>An attorney can evaluate whether the other driver was at fault, calculate the full value of your claim including future medical expenses and lost earning capacity, negotiate with insurance companies on your behalf, and take your case to trial if a fair settlement cannot be reached. Many personal injury attorneys work on a contingency fee basis.</p>
 
       <h2>Tip for Accident Victims</h2>
       <p>Even if you think your injuries are minor, see a doctor within 24–48 hours. Adrenaline can mask pain, and delayed treatment weakens your claim. Insurance companies use gaps in treatment to argue the injury wasn&apos;t serious.</p>
 
-      <p>If you have been injured in a car accident in Ohio, Jwayyed Law LLC can help you understand your options and fight for the compensation you deserve. See our <a href="/our-law-firm/case-results">case results</a> for examples of settlements we have achieved. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—there is no cost to you unless we win your case.</p>
+      <p>If you have been injured in a car accident in Ohio, Jwayyed Law LLC can help you understand your options and fight for the compensation you deserve. See our <a href="/our-law-firm/case-results">case results</a> for examples of settlements we have achieved. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on a contingency fee basis.</p>
     `,
   },
   {
@@ -354,7 +354,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Tip for Slip and Fall Victims</h2>
       <p>Take photos of the hazard before it is cleaned up. Ask the manager to create an incident report and get a copy. Get contact information from witnesses. These steps are time-sensitive—do them at the scene if you can.</p>
 
-      <p>If you have been injured in a slip and fall accident in Ohio, Jwayyed Law LLC can evaluate your claim, determine who may be liable, and help you pursue full and fair compensation. See our <a href="/our-law-firm/case-results">case results</a> for examples. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
+      <p>If you have been injured in a slip and fall accident in Ohio, Jwayyed Law LLC can evaluate your claim, determine who may be liable, and help you pursue full and fair compensation. See our <a href="/our-law-firm/case-results">case results</a> for examples. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on a contingency fee basis.</p>
     `,
   },
   {
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Ohio&apos;s Statute of Limitations</h2>
       <p>You have two years from the date of the injury to file a lawsuit. Do not delay—evidence and witnesses can disappear over time, and insurance companies may dispute claims that are reported late.</p>
 
-      <p>If you or a family member has been injured by a dog in Ohio, Jwayyed Law LLC can help. We represent dog bite victims throughout the counties we serve. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on contingency—you do not pay unless we recover for you.</p>
+      <p>If you or a family member has been injured by a dog in Ohio, Jwayyed Law LLC can help. We represent dog bite victims throughout the counties we serve. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today. We work on a contingency fee basis.</p>
     `,
   },
   {
@@ -709,7 +709,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Statute of Limitations</h2>
       <p>You have two years from the date of the fall to file a lawsuit in Ohio. Do not wait—evidence and witnesses can disappear, and the longer you wait, the harder it is to prove what caused your fall.</p>
 
-      <p>Jwayyed Law LLC represents <a href="/personal-injury/slip-and-fall">slip and fall</a> victims throughout Ohio. We work on contingency—you do not pay unless we recover for you. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
+      <p>Jwayyed Law LLC represents <a href="/personal-injury/slip-and-fall">slip and fall</a> victims throughout Ohio. We work on a contingency fee basis. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {
@@ -957,7 +957,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What Happens If You Miss the Deadline?</h2>
       <p>If you file a lawsuit after the statute of limitations has expired, the defendant will file a motion to dismiss based on the time bar. Ohio courts almost uniformly grant such motions—your case will be dismissed regardless of its merits. You will not be able to recover any compensation for your injuries, medical bills, lost wages, pain and suffering, or other damages. This is why contacting a <a href="/personal-injury">personal injury attorney</a> immediately after an injury is so critical.</p>
 
-      <p>Jwayyed Law LLC represents injured Ohioans in all types of personal injury cases. Do not wait—<a href="/contact">contact us</a> or call (614) 285-5482 for a free case evaluation. We handle cases on a contingency fee basis, meaning you pay nothing unless we recover for you.</p>
+      <p>Jwayyed Law LLC represents injured Ohioans in all types of personal injury cases. Do not wait—<a href="/contact">contact us</a> or call (614) 285-5482 for a free case evaluation. We handle cases on a contingency fee basis.</p>
     `,
   },
   {
@@ -1109,7 +1109,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Defending Against a CPO</h2>
       <p>If a CPO has been filed against you, you have the right to contest it at the full hearing. A CPO can affect your housing, your parental rights, your employment (especially if you work in law enforcement, education, or a licensed profession), and your firearm rights. An experienced attorney can evaluate the evidence, identify weaknesses in the petitioner's allegations, cross-examine witnesses, present your own evidence, and argue against the issuance of the order or the scope of its terms. Simply not appearing at the full hearing typically results in a default CPO being issued against you—do not ignore court dates.</p>
 
-      <p>Whether you need to obtain a protection order for your safety or you are responding to one that has been filed against you, experienced legal representation is critical. Jwayyed Law LLC handles <a href="/civil-litigation">civil litigation</a> matters including protection order proceedings throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
+      <p>Whether you need to obtain a protection order for your safety or you are responding to one that has been filed against you, experienced legal representation is critical. Jwayyed Law LLC handles <a href="/civil">civil litigation</a> matters including protection order proceedings throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a> today.</p>
     `,
   },
   {

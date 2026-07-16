@@ -55,7 +55,7 @@ const practiceAreas = [
   {
     icon: HeartPulse,
     title: 'Personal Injury',
-    blurb: 'Auto, slip-and-fall, and negligence claims. No fee unless we win.',
+    blurb: 'Auto, slip-and-fall, and negligence claims. Contingency-fee representation.',
     href: '/personal-injury',
   },
   {

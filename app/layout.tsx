@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: "Jwayyed Law LLC | Ohio Attorney — OVI, Criminal & Estate Law",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Ohio OVI, criminal defense, estate planning & business law attorney. Serving Columbus, Franklin County, Dayton & statewide. Free consultation: (614) 285-5482.",
+  description: "Ohio OVI, criminal defense, estate planning & business law attorney. Columbus, Franklin County, Dayton & statewide. Free consultation: (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",

@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'Hilliard Disorderly Conduct Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Hilliard, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Disorderly conduct defense attorney in Hilliard, Ohio — ORC 2917.11 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Hilliard disorderly conduct lawyer', 'Hilliard disorderly conduct defense', 'Hilliard Ohio disorderly conduct'],
   openGraph: {
     title: 'Hilliard Disorderly Conduct Defense | Jwayyed Law LLC',

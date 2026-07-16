@@ -136,7 +136,7 @@ export default function CatastrophicInjuriesPage() {
               Why Choose Jwayyed Law LLC
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Catastrophic injury cases demand patience, resources, and experience. At Jwayyed Law LLC, we take catastrophic injury cases seriously — retaining the right experts, waiting for medical stabilization before evaluating settlement, and building the strongest possible case for maximum lifetime compensation. We handle catastrophic injury claims on a contingency fee basis, meaning no fees unless we recover for you and your family.
+              Catastrophic injury cases demand patience, resources, and experience. At Jwayyed Law LLC, we take catastrophic injury cases seriously — retaining the right experts, waiting for medical stabilization before evaluating settlement, and building the strongest possible case for maximum lifetime compensation. We handle catastrophic injury claims on a contingency fee basis.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We also handle related matters including{' '}

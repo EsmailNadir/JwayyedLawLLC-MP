@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Morrow County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Morrow County OVI & Criminal Defense | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Morrow County — Mt. Gilead, Cardington, Marengo, and surrounding communities. Morrow County Municipal Court. Call (614) 285-5482.',
+    'OVI, criminal, and personal injury defense in Morrow County — Mt. Gilead, Cardington, and Marengo. Morrow County Municipal Court. Call (614) 285-5482.',
   keywords: [
     'Morrow County OVI attorney',
     'Morrow County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Mt Gilead criminal defense attorney',
   ],
   openGraph: {
-    title: 'Morrow County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Morrow County OVI & Criminal Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/morrow-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

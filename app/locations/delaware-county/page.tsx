@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Delaware County Criminal Defense & OVI | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Delaware County — Delaware, Powell, Lewis Center, Dublin, and Sunbury. Delaware County Municipal Court. Call (614) 285-5482.',
+    'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Delaware County — Delaware, Powell, Dublin, Sunbury. Call (614) 285-5482.',
   keywords: [
     'Delaware County OVI attorney',
     'Delaware County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'personal injury Delaware County Ohio',
   ],
   openGraph: {
-    title: 'Delaware County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Delaware County Criminal Defense & OVI | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/delaware-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

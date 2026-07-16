@@ -7,10 +7,10 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer | Dayton, Ohio | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Montgomery County, Ohio. Assault, domestic violence, drug charges, theft, and more — Dayton Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney serving Montgomery County, Ohio — Dayton Municipal Court. Assault, drug, theft & OVI charges. Call (614) 285-5482.',
   keywords: ['criminal defense Dayton Ohio', 'misdemeanor attorney Montgomery County', 'Dayton Municipal Court criminal lawyer', 'Kettering misdemeanor defense', 'Montgomery County criminal defense attorney'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Montgomery County - Dayton & Kettering Courts | Jwayyed Law LLC',
+    title: 'Montgomery County Criminal Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
