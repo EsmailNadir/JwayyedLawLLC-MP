@@ -47,7 +47,7 @@ const OVIReviews: React.FC = () => {
                   </div>
                   <span className="text-sm font-bold text-slate-900">5.0</span>
                 </div>
-                <p className="text-xs text-slate-500">94+ Google Reviews</p>
+                <p className="text-xs text-slate-500">100+ Google Reviews</p>
               </div>
             </a>
 

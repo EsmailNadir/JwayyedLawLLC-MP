@@ -53,7 +53,7 @@ export default function Footer() {
           <span className="h-4 w-px bg-white/20" aria-hidden="true" />
           <div className="flex items-center gap-1.5 opacity-70">
             <span className="text-[#b87333] text-xs">★★★★★</span>
-            <span className="text-xs text-gray-400">5.0 · 94+ Google Reviews</span>
+            <span className="text-xs text-gray-400">5.0 · 100+ Google Reviews</span>
           </div>
         </div>
         <p className="leading-relaxed">

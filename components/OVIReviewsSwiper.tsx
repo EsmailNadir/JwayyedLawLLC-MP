@@ -7,6 +7,16 @@ import 'swiper/css';
 
 export const oviReviews = [
   // newest
+  { name: "Samuel T", rating: 5, platform: "Google", text: "JJ is hands down the best lawyer I've ever worked with. He is extremely thorough and straight to the point. He helped me ensure everything in my business is legal from start to finish and pointed out things I would've never thought of on my own. If you need a lawyer don't even think twice, JJ is the best." },
+  { name: "Morgan Shadix", rating: 5, platform: "Google", text: "If you're looking for an OVI attorney in Ohio, I cannot recommend Jwayyed and his team enough. From the very beginning, they went above and beyond. I was arrested over Memorial Day weekend for my first OVI offense." },
+  { name: "Surya", rating: 5, platform: "Google", text: "Attorney Jwayyed and his team were very prompt in helping me out with my traffic violation ticket in Circleville. They helped me understand the situation, provided very good guidance and were excellent in communication throughout the process. They helped me get rid of the 2 points I had on my violation and reduced the infraction." },
+  { name: "Josh Ellinger", rating: 5, platform: "Google", text: "I was charged for a car accident in Pickerington Municipal Court. I hired him as my attorney and we were able to sit down and go over our case and successfully win our case. It was a very pleasurable experience." },
+  { name: "Anay Garcia", rating: 5, platform: "Google", text: "Great guy, was very helpful — highly recommend! Thank you for helping us!" },
+  { name: "Charles Horn", rating: 5, platform: "Google", text: "Before I contacted Jwayyed Law LLC, I was very distraught and worried about my case. I thought I might even end up in jail. At Kettering Municipal Court, my lawyer got my charge reduced." },
+  { name: "David Goddard", rating: 5, platform: "Google", text: "He really helped me with my case. This was in Kettering Municipal Court and my third OVI in five years. I thought I would be going to jail for a long time. He got my sentence reduced greatly and was available anytime I needed him, even in the evenings." },
+  { name: "Jennifer Dennison", rating: 5, platform: "Google", text: "Kettering courts, serious OVI — limited jail days and saved my family. Thank you so much." },
+  { name: "larry reboulet", rating: 5, platform: "Google", text: "Did an incredible job for me in Vandalia courts. I tested high and he got me a great deal and the break I needed. He found suppression issues and it ended in a 0 point violation. Saved me thousands on fines and BMV fees. Highly recommend him. He essentially saved my job." },
+  { name: "Nikki Steinmetz", rating: 5, platform: "Google", text: "Vandalia Municipal Court OVI — JJ suggested a few things up front to help with the judge and the case was reduced to a lower charge, $50 fine and no reinstatement fees." },
   { name: "Devaughn Poore-Garnett", rating: 5, platform: "Google", text: "If you're in need of an attorney that cares about your case and the best results, JJ is your guy. I was facing my 3rd OVI offense in 10 years which could come with felony charges. Just a simple drive home to Circleville and then bam!" },
   { name: "Rapsidy Lee", rating: 5, platform: "Google", text: "Hired Jwayyed for an OVI crash with a high blood test. He was very proactive in getting things we needed done. I was let off with no jail time or probation!" },
   { name: "Kyce Ally", rating: 5, platform: "Google", text: "Got me a speeding ticket reduced in Fairlawn." },
@@ -16,6 +26,7 @@ export const oviReviews = [
   { name: "Brooke Wear", rating: 5, platform: "Google", text: "I recently got pulled over in Circleville texting while driving — my second one in a year. JJ got it reduced to absolutely no points & was willing to drive to Circleville for my case — actually he drove twice. His prices were amazing!" },
   { name: "Amanda Hauke", rating: 5, platform: "Google", text: "Very prompt response! Great value. Took on my employment/civil case quickly. I had what I needed fast, and I felt very supported. Thank you, JJ!" },
   { name: "Amanda Gardner", rating: 5, platform: "Google", text: "My Criminal Case Success Story because of Jwayyed Law!! I had an active warrant in Wilmington, a driver's license block, and was facing potential jail time." },
+  { name: "Xiuying Chen", rating: 5, platform: "Google", text: "I'm in Connecticut. Reopened a case from 2024. Now the case is well done. Good job." },
   { name: "Creation Sensation", rating: 5, platform: "Google", text: "I highly recommend Jwayyed Law LLC to anyone facing an OVI or other criminal charges. After being involved in an accident in Vandalia, I was facing serious concerns about my case. Attorney JJ was aggressive in his representation and took the time to understand my situation." },
   { name: "Samantha Mannon", rating: 5, platform: "Google", text: "Called and he answered right away about a civil litigation consultation. Professional and kind." },
   { name: "DeShawn Byrd", rating: 5, platform: "Google", text: "I highly recommend Jwayyed Law LLC. I hired Mr. Jwayyed only 3 days before my court date for an OVI case in Vandalia involving a breath test and positive urine sample, and he helped me tremendously. He was able to get my case reduced." },
@@ -66,6 +77,7 @@ export const oviReviews = [
   { name: "Adnan Bashir", rating: 5, platform: "Google", text: "I had an excellent experience working with Jwayyed Law LLC. From the very first consultation, they were professional, knowledgeable, and genuinely cared about my case. They took the time to explain everything clearly and made me feel confident throughout the process." },
   { name: "Omar Heif", rating: 5, platform: "Google", text: "Cool guys." },
   { name: "Ayesha Momin", rating: 5, platform: "Google", text: "Great!" },
+  { name: "Tooba M.", rating: 5, platform: "Google", text: "Eeman was so good at pulling me into the raffle and really brought my attention to protecting the rights of Ohio!" },
   { name: "Rushdi Ziad", rating: 5, platform: "Google", text: "Working with Mr. Jwayyed was one of the best decisions I could have made. I was dealing with a ticket that had me really stressed, but he took over and handled everything with skill and professionalism. He was always quick to respond, explained every step clearly, and made sure I understood my options. The ticket was taken care of, and I couldn't be more relieved." },
   { name: "Mike Clement", rating: 5, platform: "Google", text: "I recently received a traffic ticket in Akron, and Jwayyed was instrumental in helping me avoid additional points on my license. From the start, he was very professional, responsive, and clearly knowledgeable about local traffic laws. He worked quickly to negotiate a reduced charge, which ultimately saved me from increased insurance rates and license penalties." },
   { name: "Heba El-Hosseiny", rating: 5, platform: "Google", text: "My experience with Jwayyed was incredible. He was attentive in the discovery phase of my case and made sure to keep me in the loop on all actions that were taken on my behalf. Communication with him was very timely and he made himself available whenever I needed." },
@@ -84,8 +96,13 @@ const REVIEW_END_LENGTH = 80;
 
 function truncateReview(text: string): string {
   if (text.length <= MAX_REVIEW_LENGTH) return text;
-  const start = text.slice(0, REVIEW_START_LENGTH).trimEnd();
-  const end = text.slice(-REVIEW_END_LENGTH).trimStart();
+  // Pull each cut back to a word boundary so the ellipsis never lands mid-word.
+  const head = text.slice(0, REVIEW_START_LENGTH);
+  const headBreak = head.lastIndexOf(' ');
+  const start = (headBreak > 0 ? head.slice(0, headBreak) : head).trimEnd();
+  const tail = text.slice(-REVIEW_END_LENGTH);
+  const tailBreak = tail.indexOf(' ');
+  const end = (tailBreak > -1 ? tail.slice(tailBreak + 1) : tail).trimStart();
   return `${start}… ${end}`;
 }
 
