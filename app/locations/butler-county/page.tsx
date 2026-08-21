@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Butler County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Butler County Criminal Defense & OVI | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Butler County — Hamilton, Middletown, Fairfield, Oxford, and surrounding communities. Call (614) 285-5482.',
+    'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Butler County — Hamilton, Middletown, Fairfield, Oxford. Call (614) 285-5482.',
   keywords: [
     'Butler County OVI attorney',
     'Butler County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Butler County area courts attorney',
   ],
   openGraph: {
-    title: 'Butler County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Butler County Criminal Defense & OVI | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/butler-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

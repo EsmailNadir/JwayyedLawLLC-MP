@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Fairborn & Xenia, Ohio | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Greene County, Ohio. Assault, domestic violence, drug charges, theft, and more — Fairborn Municipal Court. Call (614) 285-5482.',
+  title: 'Criminal Defense Lawyer | Fairborn & Xenia | Jwayyed Law LLC',
+  description: 'Criminal defense attorney serving Greene County, Ohio — Fairborn Municipal Court. Assault, drug, theft & OVI charges. Call (614) 285-5482.',
   keywords: ['criminal defense Fairborn Ohio', 'misdemeanor attorney Greene County', 'Fairborn Municipal Court criminal lawyer', 'Xenia misdemeanor defense', 'military criminal defense Ohio'],
   openGraph: {
-    title: 'Criminal Misdemeanor Defense in Greene County - Fairborn & Xenia Courts | Jwayyed Law LLC',
+    title: 'Criminal Defense Lawyer | Fairborn & Xenia | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

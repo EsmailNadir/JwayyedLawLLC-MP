@@ -5,9 +5,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
   const d = {
-    home: new Date('2026-06-24'),
+    home: new Date('2026-07-12'),
     blog: new Date('2026-06-24'),
-    attorneys: new Date('2026-06-24'),
+    attorneys: new Date('2026-07-12'),
     service: new Date('2026-06-24'),
     court: new Date('2026-06-24'),
     location: new Date('2026-06-24'),

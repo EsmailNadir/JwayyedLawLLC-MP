@@ -123,7 +123,7 @@ export default function BusinessFormationLLCPickawayCountyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Ohio business formation is administered through the Ohio Secretary of State, so our attorney can assist Pickaway County clients from anywhere in Ohio. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs.
+              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

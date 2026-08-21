@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: 'Do I need a personal injury attorney for my claim?',
-    answer: 'While you can handle a personal injury claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary. Most personal injury attorneys work on a contingency fee basis, meaning you only pay if you recover compensation.',
+    answer: 'While you can handle a personal injury claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary. Most personal injury attorneys work on a contingency fee basis.',
   },
   {
     question: 'How long does a personal injury case take?',
@@ -396,7 +396,7 @@ export default function PersonalInjuryPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              We handle all types of personal injury cases, from car accidents to workplace injuries to wrongful death. Our firm works on a contingency fee basis, meaning you only pay attorney fees if we recover compensation for you. This arrangement ensures our interests are aligned with yours—we only succeed when you succeed. We maintain open communication with clients, ensuring you understand the process, your options, and case progress throughout your claim.
+              We handle all types of personal injury cases, from car accidents to workplace injuries to wrongful death. Our firm works on a contingency fee basis. This arrangement ensures our interests are aligned with yours—we only succeed when you succeed. We maintain open communication with clients, ensuring you understand the process, your options, and case progress throughout your claim.
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">

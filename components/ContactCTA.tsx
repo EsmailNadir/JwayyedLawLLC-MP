@@ -13,7 +13,7 @@ interface ContactCTAProps {
 export default function ContactCTA({
   phoneNumber = '(614) 285-5482',
   email = 'jwayyedlawllc@outlook.com',
-  address = '100 E. Campus View Boulevard, Suite #250, Columbus, Ohio 43235',
+  address = '100 E. Campus View Blvd, Suite 250, Columbus, OH 43235',
   className = '',
 }: ContactCTAProps) {
   return (

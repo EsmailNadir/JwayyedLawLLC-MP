@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Special Needs Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+  title: 'Special Needs Trusts Lawyer | Columbus | Jwayyed Law LLC',
   description: 'Ohio attorney helping families establish special needs trusts to protect loved ones with disabilities while preserving Medicaid and SSI eligibility.',
   keywords: [
     'special needs trust Columbus OH',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     'pooled trust Ohio',
   ],
   openGraph: {
-    title: 'Special Needs Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
-    description: 'Ohio attorney helping families establish special needs trusts to protect loved ones with disabilities while preserving Medicaid and SSI eligibility. Call (614) 285-5482.',
+    title: 'Special Needs Trusts Lawyer | Columbus | Jwayyed Law LLC',
+    description: 'Ohio special needs trusts attorney — protect a loved one with disabilities while preserving Medicaid and SSI eligibility. (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/special-needs-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

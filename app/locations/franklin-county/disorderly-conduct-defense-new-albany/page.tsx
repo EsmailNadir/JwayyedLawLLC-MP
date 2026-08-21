@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'New Albany Disorderly Conduct Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving New Albany, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Disorderly conduct defense attorney in New Albany, Ohio — ORC 2917.11 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['New Albany disorderly conduct lawyer', 'New Albany disorderly conduct defense', 'New Albany Ohio disorderly conduct'],
   openGraph: {
     title: 'New Albany Disorderly Conduct Defense | Jwayyed Law LLC',

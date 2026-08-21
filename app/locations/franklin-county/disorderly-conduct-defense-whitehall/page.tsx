@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'Whitehall Disorderly Conduct Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Whitehall, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney serving Whitehall, Ohio. Assault, domestic violence, drug, and theft charges — Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Whitehall disorderly conduct lawyer', 'Whitehall disorderly conduct defense', 'Whitehall Ohio disorderly conduct'],
   openGraph: {
     title: 'Whitehall Disorderly Conduct Defense | Jwayyed Law LLC',

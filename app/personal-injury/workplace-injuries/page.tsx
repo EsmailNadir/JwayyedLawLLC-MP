@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Ohio Workplace Injury Lawyer | Jwayyed Law LLC',
-  description: 'Ohio workplace injury and workers compensation attorney. ORC Chapter 4123, BWC claims, third-party lawsuits, employer retaliation (ORC 4123.90). Call (614) 285-5482.',
+  description: 'Ohio workplace injury and workers compensation attorney. ORC 4123, BWC claims, third-party lawsuits, and employer retaliation. Call (614) 285-5482.',
   keywords: ['workplace injury lawyer Columbus OH', 'workers compensation attorney Ohio', 'BWC claim lawyer', 'Franklin County workplace injury attorney', 'ORC 4123 workers comp Ohio'],
   openGraph: {
     title: 'Ohio Workplace Injury Lawyer | Columbus | Jwayyed Law LLC',
@@ -136,7 +136,7 @@ export default function WorkplaceInjuriesPage() {
               Why Choose Jwayyed Law LLC
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Navigating the Ohio BWC system while simultaneously evaluating potential third-party civil claims requires an attorney who understands both paths. At Jwayyed Law LLC, we help injured Ohio workers pursue every available avenue of recovery — including challenging denied BWC claims before the Industrial Commission and filing civil lawsuits against negligent third parties. We handle workplace injury cases on a contingency fee basis with no upfront costs.
+              Navigating the Ohio BWC system while simultaneously evaluating potential third-party civil claims requires an attorney who understands both paths. At Jwayyed Law LLC, we help injured Ohio workers pursue every available avenue of recovery — including challenging denied BWC claims before the Industrial Commission and filing civil lawsuits against negligent third parties. We handle workplace injury cases on a contingency fee basis.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We also handle related matters including{' '}

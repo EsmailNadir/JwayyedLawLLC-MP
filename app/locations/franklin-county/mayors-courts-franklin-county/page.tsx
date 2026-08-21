@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: "Franklin County Mayor's Courts Defense | Jwayyed Law LLC",
-  description: "Mayor's courts in Franklin County suburbs handle OVI, traffic, and misdemeanor charges. Jwayyed Law LLC appears in all Franklin County mayor's courts. (614) 285-5482.",
+  description: "Mayor's courts in Franklin County suburbs handle OVI, traffic, and misdemeanor charges. Jwayyed Law LLC appears in all of them. (614) 285-5482.",
   keywords: ["Franklin County mayor's court lawyer", "Franklin County mayor's court OVI", "Columbus suburb mayor's court attorney", "Franklin County municipal court suburbs", "Ohio mayor's court defense"],
   openGraph: {
     title: "Franklin County Mayor's Courts Defense | Jwayyed Law LLC",

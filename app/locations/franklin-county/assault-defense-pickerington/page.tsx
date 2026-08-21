@@ -3,7 +3,7 @@ import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
   title: 'Pickerington Assault Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Pickerington, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney in Pickerington, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Pickerington assault lawyer', 'Pickerington assault attorney', 'Pickerington Ohio assault defense'],
   openGraph: {
     title: 'Pickerington Assault Defense Attorney | Jwayyed Law LLC',

@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Columbus OVI Defense Attorney | Jwayyed Law LLC',
-  description: 'OVI and DUI defense in Columbus, Ohio. Franklin County Municipal Court. ALS appeals (30-day deadline), first & second offense OVI, HB 37. Call (614) 285-5482.',
+  description: 'OVI & DUI defense in Columbus, Ohio — Franklin County Municipal Court. ALS appeals, first & second offense OVI, HB 37. Call (614) 285-5482.',
   keywords: [
     'Columbus OVI lawyer',
     'Columbus DUI attorney',

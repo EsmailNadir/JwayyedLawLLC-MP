@@ -123,7 +123,7 @@ export default function BusinessFormationLLCAthensCountyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Ohio LLCs are formed through the Ohio Secretary of State and governed by state law, so our attorney can assist clients in Athens County and throughout Ohio regardless of location. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. You can also learn more about our{' '}
-              <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
+              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

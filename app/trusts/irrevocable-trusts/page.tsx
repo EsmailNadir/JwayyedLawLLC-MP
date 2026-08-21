@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Irrevocable Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+  title: 'Irrevocable Trusts Lawyer | Columbus | Jwayyed Law LLC',
   description: 'Ohio attorney helping clients establish irrevocable trusts for estate tax planning, Medicaid planning, and asset protection.',
   keywords: [
     'irrevocable trust Columbus OH',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'ORC 5804.11 trust modification',
   ],
   openGraph: {
-    title: 'Irrevocable Trusts Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+    title: 'Irrevocable Trusts Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Ohio attorney helping clients establish irrevocable trusts for estate tax planning, Medicaid planning, and asset protection. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],

@@ -8,11 +8,11 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Limited Driving Privileges OVI Ohio | Jwayyed | Jwayyed Law LLC',
+  title: 'Limited Driving Privileges | OVI Ohio | Jwayyed Law LLC',
   description: 'Ohio OVI attorney helping you get limited driving privileges after suspension. Get back on the road legally. Call Jwayyed Law LLC: (614) 285-5482.',
   keywords: ['limited driving privileges attorney Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio'],
   openGraph: {
-    title: 'Limited Driving Privileges OVI Ohio | Jwayyed | Jwayyed Law LLC',
+    title: 'Limited Driving Privileges | OVI Ohio | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/limited-driving-privileges',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'Groveport Disorderly Conduct Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Groveport, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Disorderly conduct defense attorney in Groveport, Ohio — ORC 2917.11 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Groveport disorderly conduct lawyer', 'Groveport disorderly conduct defense', 'Groveport Ohio disorderly conduct'],
   openGraph: {
     title: 'Groveport Disorderly Conduct Defense | Jwayyed Law LLC',

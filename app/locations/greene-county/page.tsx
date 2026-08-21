@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Greene County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Greene County OVI & Criminal Defense | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Greene County — Fairborn, Xenia, Beavercreek, Kettering, and surrounding communities. Fairborn Municipal Court. Call (614) 285-5482.',
+    'OVI, criminal defense & personal injury across Greene County — Fairborn, Xenia, Beavercreek & nearby. Fairborn Municipal Court. (614) 285-5482.',
   keywords: [
     'Greene County OVI attorney',
     'Greene County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'personal injury Greene County Ohio',
   ],
   openGraph: {
-    title: 'Greene County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Greene County OVI & Criminal Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/greene-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

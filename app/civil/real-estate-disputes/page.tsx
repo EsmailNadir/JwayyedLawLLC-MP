@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Real Estate Disputes Lawyer in Ohio | Jwayyed Law LLC',
-  description: 'Experienced Ohio real estate disputes attorney protecting your rights. Skilled representation for real estate disputes in Ohio. Schedule consultation: (614) 285-5482',
+  description: 'Experienced Ohio real estate disputes attorney protecting your rights in property disputes. Schedule consultation: (614) 285-5482',
   keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney'],
   openGraph: {
     title: 'Real Estate Disputes Lawyer in Ohio | Jwayyed Law LLC',

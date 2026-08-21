@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Drug Possession Defense Ohio | Jwayyed Law LLC',
-  description: 'Facing drug possession charges in Ohio? Jwayyed Law LLC defends cocaine, heroin, fentanyl, meth, and marijuana possession under R.C. 2925.11. Call (614) 285-5482.',
+  description: 'Facing drug possession charges in Ohio? Jwayyed Law LLC defends cocaine, heroin, fentanyl, and meth possession under R.C. 2925.11. Call (614) 285-5482.',
   keywords: [
     'drug possession lawyer Ohio',
     'drug possession defense attorney Columbus',

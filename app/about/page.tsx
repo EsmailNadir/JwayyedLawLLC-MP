@@ -3,7 +3,7 @@ import AboutClient from './AboutClient';
 
 export const metadata: Metadata = {
   title: 'About Jwayyed Law LLC | Ohio Criminal Defense & OVI Attorney',
-  description: 'Learn about Jwayyed Law LLC — experienced Ohio defense attorney Jwayyed Jwayyed serving Columbus and all of Ohio. OVI, criminal defense, personal injury, estate planning.',
+  description: 'Learn about Jwayyed Law LLC — Ohio defense attorney Jwayyed Jwayyed serving Columbus statewide. OVI, criminal defense, personal injury, estate planning.',
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'About Jwayyed Law LLC | Ohio Criminal Defense & OVI Attorney',

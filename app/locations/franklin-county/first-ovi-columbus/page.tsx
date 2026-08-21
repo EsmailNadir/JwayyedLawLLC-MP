@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
-  description: 'First OVI offense in Columbus? Mandatory 3-day jail or DIP, $565–$1,075 fine, 1–3 year suspension under HB 37. ALS appeal (30-day deadline). (614) 285-5482.',
+  description: 'First OVI offense in Columbus? Mandatory 3-day jail or DIP, $565–$1,075 fine, 1–3 year suspension under HB 37. ALS appeal (30-day limit). (614) 285-5482.',
   keywords: [
     'first OVI Columbus Ohio',
     'first offense DUI Columbus',
