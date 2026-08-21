@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Civil Protection Orders Lawyer in Ohio | Jwayyed Law LLC',
-  description: 'Experienced Ohio civil protection orders attorney protecting your rights. Skilled representation for protection orders in Ohio. Schedule consultation: (614) 285-5482',
+  description: 'Experienced Ohio civil protection orders attorney protecting your rights in protection order matters. Schedule consultation: (614) 285-5482',
   keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney'],
   openGraph: {
     title: 'Civil Protection Orders Lawyer in Ohio | Jwayyed Law LLC',

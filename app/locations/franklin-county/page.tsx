@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Franklin County OVI & Criminal Defense | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases across Franklin County — Columbus, Dublin, Hilliard, Westerville, Bexley, Grove City, and all Franklin County suburbs. Call (614) 285-5482.',
+    'OVI, criminal defense & personal injury across Franklin County — Columbus, Dublin, Hilliard, Westerville & nearby. Jwayyed Law LLC. (614) 285-5482.',
   keywords: [
     'Franklin County criminal defense attorney',
     'Franklin County OVI lawyer',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'Franklin County Municipal Court attorney',
   ],
   openGraph: {
-    title: 'Franklin County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Franklin County OVI & Criminal Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

@@ -1,6 +1,7 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
 import TidioChatLabelHide from "@/components/TidioChatLabelHide";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     default: "Jwayyed Law LLC | Ohio Attorney — OVI, Criminal & Estate Law",
     template: "%s | Jwayyed Law LLC"
   },
-  description: "Ohio OVI, criminal defense, estate planning & business law attorney. Serving Columbus, Franklin County, Dayton & statewide. Free consultation: (614) 285-5482.",
+  description: "Ohio OVI, criminal defense, estate planning & business law attorney. Columbus, Franklin County, Dayton & statewide. Free consultation: (614) 285-5482.",
   keywords: [
     "Ohio attorney",
     "attorney in Ohio",
@@ -159,7 +160,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           "https://www.yelp.com/biz/jwayyed-law-columbus",
           "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
           "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html"
-        ]
+        ],
+        "hasMap": "https://www.google.com/maps/place/Jwayyed+Law+LLC/@40.1191818,-83.0170041,17z"
       },
       {
         "@type": "WebSite",
@@ -191,7 +193,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               "@type": "Organization",
               "name": "Capital University Law School"
             }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "license",
+            "description": "Licensed attorney, State of Ohio (Bar #0098679)",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Supreme Court of Ohio"
+            }
           }
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Ohio State Bar Association"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/jwayyed-jwayyed"
         ],
         "description": "Former Municipal Prosecutor and Former Assistant Law Director for the City of Circleville. OSBA Leadership Academy 2023."
       }
@@ -221,6 +239,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           strategy="afterInteractive"
         />
         <TidioChatLabelHide />
+
+        {/* GA4 measurement floor (skill 2i) */}
+        <Script
+          id="ga4-src"
+          src="https://www.googletagmanager.com/gtag/js?id=G-S37MJ180WG"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S37MJ180WG');`}
+        </Script>
+        <Analytics />
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Butler County Personal Injury Attorney | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Butler County, Ohio. Hamilton, Oxford, West Chester, Fairfield, Middletown. Car accidents, slip and fall. Call (614) 285-5482.',
+  description: 'Personal injury attorney serving Butler County. Hamilton, Oxford, West Chester, Fairfield, Middletown. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Butler County', 'injury lawyer Hamilton Ohio', 'Butler County accident attorney', 'car accident lawyer Butler County', 'personal injury West Chester Ohio', 'Oxford Ohio injury attorney'],
   openGraph: {
     title: 'Butler County Personal Injury Attorney | Jwayyed Law LLC',
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     question: `How do contingency fees work for personal injury cases in Ohio?`,
-    answer: `At Jwayyed Law LLC, personal injury cases are handled on a contingency fee basis — you pay no attorney fees unless we recover compensation for you. The fee is a percentage of the recovery, agreed upon at the outset. This means you can pursue your claim regardless of your financial situation. If there is no recovery, you owe no attorney fees. Costs such as filing fees and expert witness expenses are discussed upfront. Contingency arrangements align our interests with yours — we are motivated to maximize your recovery.`,
+    answer: `At Jwayyed Law LLC, personal injury cases are handled on a contingency fee basis. The fee is a percentage of the recovery, agreed upon at the outset. This means you can pursue your claim regardless of your financial situation. Costs such as filing fees and expert witness expenses are discussed upfront. Contingency arrangements align our interests with yours — we are motivated to maximize your recovery.`,
   },
 ];
 
@@ -124,7 +124,7 @@ export default function PersonalInjuryButlerCountyPage() {
               Ohio&apos;s collateral source rule, codified at ORC 2315.36, affects how damages are calculated in Butler County personal injury cases. This rule addresses whether payments from health insurance, disability benefits, or other collateral sources are deducted from the defendant&apos;s liability. Understanding how these rules interact with your specific damages — including medical bills, lost wages, and pain and suffering — is essential to maximizing your recovery. Our attorney evaluates every component of your losses and builds a claim that reflects the true extent of your damages.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Butler County personal injury cases valued over $15,000 are filed at the Butler County Common Pleas Court at 315 High Street, Hamilton, OH 45011. We handle all aspects of your case — from the initial investigation through settlement negotiations or trial. Personal injury representation is provided on a contingency fee basis, meaning no fees unless we recover for you. Contact us at{' '}
+              Butler County personal injury cases valued over $15,000 are filed at the Butler County Common Pleas Court at 315 High Street, Hamilton, OH 45011. We handle all aspects of your case — from the initial investigation through settlement negotiations or trial. Personal injury representation is provided on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> throughout Ohio.
             </p>

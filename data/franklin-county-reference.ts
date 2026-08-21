@@ -517,7 +517,7 @@ export const MISDEMEANOR_SENTENCING = {
 
 export const FIRM_NAP = {
   name: 'Jwayyed Law LLC',
-  address: '100 E. Campus View Blvd Suite #250, Columbus, OH 43235',
+  address: '100 E. Campus View Blvd, Suite 250, Columbus, OH 43235',
   phone: '(614) 285-5482',
   phoneRaw: '+16142855482',
   geo: { lat: 40.030016, lng: -83.023834 },

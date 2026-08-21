@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'LLC Formation Lawyer Ohio | ORC Chapter 1706 | Jwayyed Law LLC',
+  title: 'LLC Formation Lawyer Ohio | ORC 1706 | Jwayyed Law LLC',
   description: 'Ohio LLC formation attorney helping clients form LLCs under ORC Chapter 1706. Articles of Organization, operating agreements, registered agents.',
   keywords: ['LLC formation lawyer Columbus OH', 'LLC formation attorney Ohio', 'Ohio LLC operating agreement attorney', 'ORC 1706 LLC lawyer', 'business formation attorney Columbus'],
   openGraph: {
-    title: 'LLC Formation Lawyer Ohio | ORC Chapter 1706 | Jwayyed Law LLC',
+    title: 'LLC Formation Lawyer Ohio | ORC 1706 | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/business/llc-formation',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

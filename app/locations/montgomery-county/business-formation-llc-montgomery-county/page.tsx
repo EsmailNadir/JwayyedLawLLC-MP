@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Montgomery County | Jwayyed Law LLC',
+  title: 'Montgomery County Business & LLC Formation | Jwayyed Law LLC',
   description: 'Business attorney serving Montgomery County, Dayton, Kettering, Miamisburg, Trotwood, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Montgomery County', 'LLC formation Dayton Ohio', 'Montgomery County business attorney', 'LLC formation Kettering Ohio', 'small business attorney Dayton Ohio'],
   openGraph: {
-    title: 'Business & LLC Formation | Montgomery County | Jwayyed Law LLC',
+    title: 'Montgomery County Business & LLC Formation | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -123,7 +123,7 @@ export default function BusinessFormationLLCMontgomeryCountyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Ohio business formation is handled through the Ohio Secretary of State, so Jwayyed Law LLC can assist Montgomery County clients regardless of location in Ohio. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
+              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

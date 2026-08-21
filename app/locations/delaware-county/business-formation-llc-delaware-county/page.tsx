@@ -123,7 +123,7 @@ export default function BusinessFormationLLCDelawareCountyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Ohio business formation is administered through the Ohio Secretary of State, so our attorney can assist Delaware County clients regardless of their specific location. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
+              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>
         </div>

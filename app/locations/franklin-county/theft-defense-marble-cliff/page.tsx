@@ -3,7 +3,7 @@ import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
   title: 'Marble Cliff Theft Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Marble Cliff, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Theft & shoplifting defense attorney serving Marble Cliff, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Marble Cliff theft lawyer', 'Marble Cliff theft attorney', 'Marble Cliff Ohio theft defense', 'Franklin County theft Marble Cliff'],
   openGraph: {
     title: 'Marble Cliff Theft Defense Attorney | Jwayyed Law LLC',

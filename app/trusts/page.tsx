@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {
     title: 'Ohio Trusts Attorney | Jwayyed Law LLC',
-    description: 'Trusts and estate planning in Columbus, Cincinnati, Dayton, and throughout Ohio. Asset protection trusts, revocable living trusts, and more. Schedule a consultation today.',
+    description: 'Trusts and estate planning across Ohio — asset protection, revocable living, and special needs trusts. Columbus, Cincinnati & Dayton. (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

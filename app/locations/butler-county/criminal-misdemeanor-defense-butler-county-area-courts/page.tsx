@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal misdemeanor defense attorney in Butler County, Ohio. Area Courts and Hamilton Municipal Court. Assault, domestic violence, theft. Call (614) 285-5482.',
+  description: 'Criminal misdemeanor defense attorney in Butler County. Area Courts and Hamilton Municipal Court. Assault, domestic violence, theft. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Butler County', 'misdemeanor attorney Butler County Area Court', 'Butler County criminal lawyer', 'Hamilton Ohio misdemeanor defense', 'Oxford Ohio criminal attorney', 'West Chester misdemeanor lawyer'],
   openGraph: {
     title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',

@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Franklin County, Ohio | Jwayyed Law LLC',
+  title: 'Franklin County Personal Injury Lawyer | Jwayyed Law LLC',
   description: 'Personal injury attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and surrounding Ohio communities.',
   keywords: ['personal injury Franklin County', 'injury lawyer Columbus Ohio', 'Franklin County accident attorney', 'car accident lawyer Columbus Ohio', 'personal injury Dublin Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Franklin County, Ohio | Jwayyed Law LLC',
+    title: 'Franklin County Personal Injury Lawyer | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/personal-injury-franklin-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -155,7 +155,7 @@ export default function PersonalInjuryFranklinCountyPage() {
             </p>
 
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Jwayyed Law LLC handles personal injury cases on a contingency fee basis — no fees unless we recover for you. If you were injured anywhere in Franklin County, contact us at{' '}
+              Jwayyed Law LLC handles personal injury cases on a contingency fee basis. If you were injured anywhere in Franklin County, contact us at{' '}
               <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.

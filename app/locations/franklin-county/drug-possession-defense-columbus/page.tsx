@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Columbus Drug Possession Defense Attorney | Jwayyed Law LLC',
-  description: 'Drug possession defense in Columbus, Ohio. R.C. 2925.11, ILC, HART Court, suppression motions. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
+  description: 'Drug possession defense in Columbus, Ohio. R.C. 2925.11, ILC, HART Court, suppression motions. Franklin County Municipal Court. (614) 285-5482.',
   keywords: [
     'Columbus drug possession lawyer',
     'Columbus drug defense attorney',

@@ -7,11 +7,11 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus High-Tier OVI Defense | BAC 0.17%+ | Jwayyed Law LLC',
-  description: 'High-tier OVI in Columbus (BAC 0.17% or above)? Enhanced 6-day mandatory minimum under HB 37. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
+  title: 'Columbus High-Tier OVI Defense | BAC 0.17% | Jwayyed Law LLC',
+  description: 'High-tier OVI in Columbus (BAC 0.17% or above)? Enhanced 6-day mandatory minimum under HB 37. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Columbus high tier OVI lawyer', 'high BAC DUI Columbus Ohio', '0.17 OVI Columbus', 'aggravated OVI Columbus', 'high tier OVI Franklin County defense'],
   openGraph: {
-    title: 'Columbus High-Tier OVI Defense | BAC 0.17%+ | Jwayyed Law LLC',
+    title: 'Columbus High-Tier OVI Defense | BAC 0.17% | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/high-tier-ovi-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

@@ -3,7 +3,7 @@ import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
   title: 'Upper Arlington Assault Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Upper Arlington, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney in Upper Arlington, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Upper Arlington assault lawyer', 'Upper Arlington assault attorney', 'Upper Arlington Ohio assault defense'],
   openGraph: {
     title: 'Upper Arlington Assault Defense | Jwayyed Law LLC',

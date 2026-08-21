@@ -126,7 +126,7 @@ export default function BusinessFormationLLCButlerCountyPage() {
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
               Beyond formation, Jwayyed Law LLC assists Butler County business clients with contract drafting and review, business dispute resolution, partnership and operating agreement amendments, and compliance matters. Starting your business correctly protects your personal assets, establishes the right tax structure, and prevents disputes before they arise. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/business-formation" className="text-[#b87333] underline hover:opacity-80">business formation practice</Link> throughout Ohio.
+              <Link href="/business/business-formation" className="text-[#b87333] underline hover:opacity-80">business formation practice</Link> throughout Ohio.
             </p>
           </div>
         </div>

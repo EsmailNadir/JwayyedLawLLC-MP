@@ -136,7 +136,7 @@ export default function NursingHomeAbusePage() {
               Why Choose Jwayyed Law LLC
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we understand that nursing home abuse cases are deeply personal. Families trust these facilities with their most vulnerable loved ones, and a betrayal of that trust is devastating. We investigate facilities thoroughly — reviewing medical records, staffing logs, state inspection reports, and care plans — to build the strongest possible case. We represent nursing home abuse victims and their families on a contingency fee basis, meaning no fees unless we recover.
+              At Jwayyed Law LLC, we understand that nursing home abuse cases are deeply personal. Families trust these facilities with their most vulnerable loved ones, and a betrayal of that trust is devastating. We investigate facilities thoroughly — reviewing medical records, staffing logs, state inspection reports, and care plans — to build the strongest possible case. We represent nursing home abuse victims and their families on a contingency fee basis.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We also handle related matters including{' '}

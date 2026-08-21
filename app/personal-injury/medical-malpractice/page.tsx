@@ -136,7 +136,7 @@ export default function MedicalMalpracticePage() {
               Why Choose Jwayyed Law LLC
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Medical malpractice cases require meticulous preparation, qualified expert witnesses, and an attorney who understands both Ohio's procedural requirements and the medical facts underlying your claim. At Jwayyed Law LLC, we handle malpractice cases on a contingency fee basis — you pay nothing unless we recover for you. We work with qualified medical experts, obtain and analyze all relevant records, and pursue the maximum compensation available under Ohio law.
+              Medical malpractice cases require meticulous preparation, qualified expert witnesses, and an attorney who understands both Ohio's procedural requirements and the medical facts underlying your claim. At Jwayyed Law LLC, we handle malpractice cases on a contingency fee basis. We work with qualified medical experts, obtain and analyze all relevant records, and pursue the maximum compensation available under Ohio law.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We also handle related matters including{' '}

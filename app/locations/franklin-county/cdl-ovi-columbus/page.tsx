@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Columbus CDL OVI Defense Attorney | Jwayyed Law LLC',
-  description: 'CDL / commercial driver OVI in Columbus? 0.04% threshold, federal disqualification, career consequences. Jwayyed Law LLC. Franklin County. Call (614) 285-5482.',
+  description: 'CDL / commercial driver OVI in Columbus? 0.04% threshold, federal disqualification, career consequences. Franklin County. Call (614) 285-5482.',
   keywords: ['Columbus CDL OVI lawyer', 'commercial driver DUI Columbus', 'CDL OVI defense Ohio', 'truck driver OVI Columbus', 'Franklin County CDL OVI attorney'],
   openGraph: {
     title: 'Columbus CDL OVI Defense Attorney | Jwayyed Law LLC',

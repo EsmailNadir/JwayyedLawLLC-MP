@@ -5,7 +5,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 export const metadata: Metadata = {
   title: 'Our Staff | Meet the Legal Team | Jwayyed Law LLC',
   description:
-    'Meet the dedicated legal team at Jwayyed Law LLC. Experienced attorneys, legal assistants, and interns serving clients throughout Ohio with expertise in criminal defense, personal injury, and business law.',
+    'Meet the legal team at Jwayyed Law LLC — attorneys and staff serving Ohio in criminal defense, OVI, personal injury, and business law. (614) 285-5482.',
   keywords: [
     'legal team Columbus Ohio',
     'Ohio law firm staff',

@@ -160,7 +160,7 @@ export default function BusinessFormationLLCFranklinCountyPage() {
               or{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>{' '}
               to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business-law" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs and business owners.
+              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>
         </div>

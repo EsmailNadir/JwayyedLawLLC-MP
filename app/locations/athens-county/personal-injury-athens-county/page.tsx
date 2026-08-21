@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `How does a contingency fee arrangement work for personal injury cases?`,
-    answer: `At Jwayyed Law LLC, personal injury cases are typically handled on a contingency fee basis — meaning you owe no attorney fees unless we recover compensation for you. If we win your case through settlement or verdict, the attorney's fee is a percentage of the recovery. This arrangement ensures that injured people in Athens County and throughout Ohio can access quality legal representation regardless of their financial situation. We discuss fee arrangements openly during your initial consultation.`,
+    answer: `At Jwayyed Law LLC, personal injury cases are typically handled on a contingency fee basis. The attorney's fee is a percentage of any recovery. This arrangement ensures that injured people in Athens County and throughout Ohio can access quality legal representation regardless of their financial situation. We discuss fee arrangements openly during your initial consultation.`,
   },
   {
     question: `Where are personal injury cases filed in Athens County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryAthensCountyPage() {
               The Athens County area presents unique injury scenarios. Ohio University&apos;s presence means pedestrian and bicycle accidents are common near campus, and injuries in rental housing — from negligent landlords who fail to maintain safe conditions — are an ongoing concern. Rural roads and agricultural areas around Nelsonville and Albany carry risks of serious collisions and equipment-related injuries. We handle the full range of personal injury matters and tailor our approach to the specific facts of your case and the local community context.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury cases in Athens County are filed at the Athens County Common Pleas Court at 1 S. Court St, Athens, OH 45701. Jwayyed Law LLC handles cases on a contingency fee basis — you pay no attorney fees unless we recover compensation for you. To discuss your injury claim, contact us at{' '}
+              Personal injury cases in Athens County are filed at the Athens County Common Pleas Court at 1 S. Court St, Athens, OH 45701. Jwayyed Law LLC handles cases on a contingency fee basis. To discuss your injury claim, contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> and how we serve clients across Ohio.
             </p>

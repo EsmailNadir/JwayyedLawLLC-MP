@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Clinton County Criminal Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal misdemeanor defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
+  description: 'Criminal misdemeanor defense attorney for Wilmington and Clinton County. Wilmington Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
   keywords: ['criminal defense Wilmington Ohio', 'misdemeanor attorney Clinton County', 'Wilmington Municipal Court criminal lawyer', 'Clinton County misdemeanor defense'],
   openGraph: {
     title: 'Clinton County Criminal Defense Attorney | Jwayyed Law LLC',

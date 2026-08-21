@@ -3,7 +3,7 @@ import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
   title: 'Hilliard Assault Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Hilliard, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney in Hilliard, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Hilliard assault lawyer', 'Hilliard assault attorney', 'Hilliard Ohio assault defense'],
   openGraph: {
     title: 'Hilliard Assault Defense Attorney | Jwayyed Law LLC',

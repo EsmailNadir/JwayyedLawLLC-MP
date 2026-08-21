@@ -6,9 +6,9 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Clinton County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+  title: 'Clinton County Criminal Defense & OVI | Jwayyed Law LLC',
   description:
-    'Jwayyed Law LLC defends OVI, criminal misdemeanor, and personal injury cases in Clinton County — Wilmington, Blanchester, Sabina, and surrounding communities. Wilmington Municipal Court. Call (614) 285-5482.',
+    'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Clinton County — Wilmington, Blanchester, Sabina. Call (614) 285-5482.',
   keywords: [
     'Clinton County OVI attorney',
     'Clinton County criminal defense lawyer',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Wilmington Ohio criminal defense attorney',
   ],
   openGraph: {
-    title: 'Clinton County Criminal Defense & OVI Lawyer | Jwayyed Law LLC',
+    title: 'Clinton County Criminal Defense & OVI | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/clinton-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

@@ -6,11 +6,11 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer in Pickaway County, Ohio | Jwayyed Law LLC',
-  description: 'Personal injury attorney serving Pickaway County, Circleville, Ashville, and Commercial Point, Ohio. Car accidents, slip and fall, and serious injury claims. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer | Pickaway County | Jwayyed Law LLC',
+  description: 'Personal injury attorney serving Pickaway County, Circleville, and Ashville, Ohio. Car accidents, slip and fall, and serious injuries. Call (614) 285-5482.',
   keywords: ['personal injury Pickaway County', 'injury lawyer Circleville Ohio', 'Pickaway County accident attorney', 'car accident US 23 Ohio', 'personal injury Ashville Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer in Pickaway County, Ohio | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer | Pickaway County | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `Do I need to pay attorney fees to start a personal injury case?`,
-    answer: `No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis — meaning you pay no attorney fees unless and until we recover money for you. The fee is a percentage of the recovery, deducted when the case concludes by settlement or verdict. This arrangement makes skilled legal representation accessible to injury victims in Pickaway County and across Ohio regardless of their current financial situation. There are no hourly fees or upfront retainers for personal injury representation.`,
+    answer: `No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the recovery, deducted when the case concludes by settlement or verdict. This arrangement makes skilled legal representation accessible to injury victims in Pickaway County and across Ohio.`,
   },
   {
     question: `Where are personal injury lawsuits filed in Pickaway County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryPickawayCountyPage() {
               Beyond highway accidents, Pickaway County personal injury claims include slip and fall cases at retail establishments in Circleville, premises liability incidents related to the county&apos;s mix of agricultural and commercial properties, dog bite injuries under ORC 955.28, and workplace accidents involving third-party negligence. We also represent families in wrongful death cases when a negligently caused injury proves fatal. Every matter is handled individually and pursued with full commitment.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Pickaway County personal injury cases are filed at the Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113. Jwayyed Law LLC handles personal injury cases on a contingency fee basis — you pay no fees unless we win. Contact us at{' '}
+              Pickaway County personal injury cases are filed at the Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> across Ohio.
             </p>

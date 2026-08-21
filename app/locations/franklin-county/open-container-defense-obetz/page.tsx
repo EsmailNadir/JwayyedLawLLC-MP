@@ -3,7 +3,7 @@ import OpenContainerTemplate from '@/components/franklin-templates/OpenContainer
 
 export const metadata: Metadata = {
   title: 'Obetz Open Container Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Obetz, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Open container defense attorney in Obetz, Ohio — ORC 4301.62 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Obetz open container lawyer', 'Obetz open container defense', 'Obetz Ohio open container'],
   openGraph: {
     title: 'Obetz Open Container Defense | Jwayyed Law LLC',

@@ -3,7 +3,7 @@ import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
   title: 'New Albany Theft Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving New Albany, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Theft & shoplifting defense attorney serving New Albany, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['New Albany theft lawyer', 'New Albany shoplifting attorney', 'New Albany Ohio theft defense', 'Franklin County theft New Albany'],
   openGraph: {
     title: 'New Albany Theft Defense Attorney | Jwayyed Law LLC',

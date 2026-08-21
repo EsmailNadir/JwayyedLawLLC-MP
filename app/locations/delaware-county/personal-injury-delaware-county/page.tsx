@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: `Do I have to pay attorney fees upfront to hire Jwayyed Law LLC?`,
-    answer: `No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. You owe no attorney fees unless we secure a recovery for you through settlement or trial verdict. The attorney's fee is a percentage of the total recovery, deducted at the time the case resolves. This arrangement means injured individuals and families in Delaware County can access skilled legal representation immediately, without worrying about hourly costs or upfront retainers.`,
+    answer: `No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The attorney's fee is a percentage of the total recovery, deducted at the time the case resolves. This arrangement means injured individuals and families in Delaware County can access skilled legal representation immediately, without worrying about hourly costs or upfront retainers.`,
   },
   {
     question: `Where are personal injury lawsuits filed in Delaware County?`,
@@ -121,7 +121,7 @@ export default function PersonalInjuryDelawareCountyPage() {
               Delaware County&apos;s suburban growth also means construction zone accidents, defective sidewalks, dangerous parking lots, and premises liability incidents at retail and commercial properties occur frequently. We handle all categories of personal injury claims, including car and truck accidents, motorcycle crashes, slip and fall, dog bite injuries under ORC 955.28, and wrongful death matters. Every case is handled with individual attention and a focus on securing maximum compensation.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              Personal injury cases in Delaware County are filed at the Delaware County Common Pleas Court, 91 N. Sandusky St, Delaware, OH 43015. We handle cases on a contingency fee basis — no fees unless we win. Contact us at{' '}
+              Personal injury cases in Delaware County are filed at the Delaware County Common Pleas Court, 91 N. Sandusky St, Delaware, OH 43015. We handle cases on a contingency fee basis. Contact us at{' '}
               <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also review our{' '}
               <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice overview</Link> for more information.
             </p>

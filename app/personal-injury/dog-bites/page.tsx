@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     question: `Do I need a lawyer for a dog bite case?`,
-    answer: `Having an attorney significantly improves your outcome. Dog bite insurers regularly dispute the severity of injuries, raise provocation defenses, or offer quick lowball settlements before you understand the full extent of your damages — especially for scarring that may require future reconstructive surgery. An experienced attorney documents your injuries, gathers evidence, retains medical experts when needed, and negotiates aggressively on your behalf. At Jwayyed Law LLC, we handle dog bite cases on a contingency fee basis, meaning you pay nothing unless we recover for you.`,
+    answer: `Having an attorney significantly improves your outcome. Dog bite insurers regularly dispute the severity of injuries, raise provocation defenses, or offer quick lowball settlements before you understand the full extent of your damages — especially for scarring that may require future reconstructive surgery. An experienced attorney documents your injuries, gathers evidence, retains medical experts when needed, and negotiates aggressively on your behalf. At Jwayyed Law LLC, we handle dog bite cases on a contingency fee basis.`,
   },
 ];
 
@@ -136,7 +136,7 @@ export default function DogBitesPage() {
               Why Choose Jwayyed Law LLC
             </h3>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we represent dog bite victims throughout Ohio on a contingency fee basis — you pay nothing unless we win. We understand Ohio's strict liability law, the defenses insurers raise, and how to document and value injuries including long-term scarring and psychological harm. We handle all communications with the dog owner's insurance company so you can focus on your recovery.
+              At Jwayyed Law LLC, we represent dog bite victims throughout Ohio on a contingency fee basis. We understand Ohio's strict liability law, the defenses insurers raise, and how to document and value injuries including long-term scarring and psychological harm. We handle all communications with the dog owner's insurance company so you can focus on your recovery.
             </p>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
               We also handle related personal injury matters including{' '}

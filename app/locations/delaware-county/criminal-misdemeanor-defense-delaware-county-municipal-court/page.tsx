@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Delaware County Criminal Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal misdemeanor defense attorney for Delaware, Powell, Dublin, and Delaware County, Ohio. Delaware County Municipal Court. Assault, theft. Call (614) 285-5482.',
+  description: 'Criminal misdemeanor defense attorney for Delaware, Powell, Dublin, Ohio. Delaware County Municipal Court. Assault, theft. Call (614) 285-5482.',
   keywords: ['criminal defense Delaware Ohio', 'misdemeanor attorney Delaware County', 'Delaware County Municipal Court criminal lawyer', 'Powell Ohio misdemeanor defense', 'Dublin criminal defense attorney'],
   openGraph: {
     title: 'Delaware County Criminal Defense Attorney | Jwayyed Law LLC',

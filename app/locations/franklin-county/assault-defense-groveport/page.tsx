@@ -3,7 +3,7 @@ import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
   title: 'Groveport Assault Defense Attorney | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Groveport, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Assault defense attorney in Groveport, Ohio — ORC 2903.13 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Groveport assault lawyer', 'Groveport assault attorney', 'Groveport Ohio assault defense'],
   openGraph: {
     title: 'Groveport Assault Defense Attorney | Jwayyed Law LLC',

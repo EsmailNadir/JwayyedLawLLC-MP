@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
   title: 'Columbus Open Container Defense Attorney | Jwayyed Law LLC',
-  description: 'Open container citation in Columbus? Vehicle citations, public space charges under R.C. 4301.62. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
+  description: 'Open container citation in Columbus? Vehicle and public-space charges under R.C. 4301.62. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Columbus open container lawyer', 'open container Columbus Ohio', 'open container vehicle Columbus', 'R.C. 4301.62 Columbus defense', 'Franklin County open container attorney'],
   openGraph: {
     title: 'Columbus Open Container Defense Attorney | Jwayyed Law LLC',

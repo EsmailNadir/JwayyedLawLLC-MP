@@ -3,7 +3,7 @@ import OpenContainerTemplate from '@/components/franklin-templates/OpenContainer
 
 export const metadata: Metadata = {
   title: 'Westerville Open Container Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Westerville, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney serving Westerville, Ohio. Assault, domestic violence, drug, and theft charges — Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Westerville open container lawyer', 'Westerville open container defense', 'Westerville Ohio open container'],
   openGraph: {
     title: 'Westerville Open Container Defense | Jwayyed Law LLC',

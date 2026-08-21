@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Assault Defense Attorney | Franklin County | Jwayyed Law LLC',
+  title: 'Columbus Assault Defense Attorney | Jwayyed Law LLC',
   description: 'Assault defense in Columbus, Ohio. R.C. 2903.13, self-defense, felony escalation. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: [
     'Columbus assault lawyer',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'ORC 2903.13 Columbus lawyer',
   ],
   openGraph: {
-    title: 'Columbus Assault Defense Attorney | Franklin County | Jwayyed Law LLC',
+    title: 'Columbus Assault Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/assault-defense-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

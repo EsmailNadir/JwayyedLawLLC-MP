@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Arbitration LawyerArbitration Attorney | Jwayyed Law LLC',
+  title: 'Ohio Arbitration Lawyer | Columbus | Jwayyed Law LLC',
   description: 'Experienced Ohio arbitration attorney representing businesses and individuals in AAA, JAMS, and private arbitration proceedings.',
   keywords: [
     'arbitration lawyer Columbus OH',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'employment arbitration lawyer Ohio',
   ],
   openGraph: {
-    title: 'Ohio Arbitration LawyerArbitration Attorney | Jwayyed Law LLC',
+    title: 'Ohio Arbitration Lawyer | Columbus | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/other-services/arbitration',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },

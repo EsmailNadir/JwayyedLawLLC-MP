@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'Dublin Disorderly Conduct Defense | Jwayyed Law LLC',
-  description: 'Criminal defense attorney serving Dublin, Ohio. Assault, domestic violence, drug charges, theft, and more — Franklin County Municipal Court. Call (614) 285-5482.',
+  description: 'Criminal defense attorney in Dublin, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Dublin disorderly conduct lawyer', 'Dublin disorderly conduct attorney', 'Dublin Ohio disorderly conduct defense'],
   openGraph: {
     title: 'Dublin Disorderly Conduct Defense | Jwayyed Law LLC',
