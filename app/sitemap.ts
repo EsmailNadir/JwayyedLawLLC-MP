@@ -161,6 +161,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/courts/fairborn-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.court },
     { url: '/courts/montgomery-county', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.court },
     { url: '/courts/dayton-municipal-court', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.court },
+    { url: '/courts/johnstown-mayors-court', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.court },
 
     // Location Pages
     { url: '/locations/pickaway-county', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.location },

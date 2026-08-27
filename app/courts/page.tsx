@@ -88,6 +88,14 @@ export default function CourtsPage() {
               <Link href="/courts/fairborn-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Fairborn Municipal Court</Link>
               <Link href="/courts/dayton-municipal-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Dayton Municipal Court</Link>
             </div>
+            <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mt-8 mb-4">Mayor&apos;s Courts</h4>
+            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+              Ohio mayor&apos;s courts operate under R.C. Chapter 1905 and handle local ordinance violations, traffic citations, and qualifying first-offense OVI charges arising inside a municipality&apos;s limits. A conviction there carries the same weight as one entered in municipal court, and appeals must be filed within ten days.
+            </p>
+            <div className="grid md:grid-cols-2 gap-3 mb-8">
+              <Link href="/courts/johnstown-mayors-court" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Johnstown Mayor&apos;s Court (Licking County)</Link>
+              <Link href="/locations/franklin-county/mayors-courts-franklin-county" className="block p-3 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group text-gray-700 group-hover:text-[#b87333]">Franklin County Mayor&apos;s Courts</Link>
+            </div>
             <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mt-8 mb-4">Location-Specific Practice Areas</h4>
             <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
               We serve clients in these counties for criminal defense, OVI/DUI, personal injury, and business formation. Select a practice area and county below:
