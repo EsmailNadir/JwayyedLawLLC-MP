@@ -37,18 +37,6 @@ function ServicesSection({
   intro: string;
   services: ServiceCard[];
 }) {
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': breadcrumbItems.map(
-      (item: { label: string; href: string }, idx: number) => ({
-        '@type': 'ListItem',
-        'position': idx + 1,
-        'name': item.label,
-        'item': `https://www.jjlawohio.com${item.href}`,
-      })
-    ),
-  };
 
   return (
     <section className="py-10 sm:py-12 border-b border-gray-100 last:border-b-0">
