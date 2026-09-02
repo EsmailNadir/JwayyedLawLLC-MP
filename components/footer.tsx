@@ -53,13 +53,18 @@ export default function Footer() {
           <span className="h-4 w-px bg-white/20" aria-hidden="true" />
           <div className="flex items-center gap-1.5 opacity-70">
             <span className="text-[#b87333] text-xs">★★★★★</span>
-            <span className="text-xs text-gray-400">5.0 · 100+ Google Reviews</span>
+            <span className="text-xs text-gray-400">4.9 · 100+ Google Reviews</span>
           </div>
         </div>
         <p className="leading-relaxed">
           Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice. Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
         </p>
-        <p className="text-[#b87333]/70">© Copyright 2026 Jwayyed Law LLC (JJ Law Ohio). All Rights Reserved.</p>
+        <p className="text-[#b87333]/70">
+          © Copyright 2026 Jwayyed Law LLC (JJ Law Ohio). All Rights Reserved. ·{' '}
+          <Link href="/privacy" className="text-gray-400 hover:text-[#b87333] transition-colors underline">
+            Privacy Policy
+          </Link>
+        </p>
       </div>
     </footer>
   );

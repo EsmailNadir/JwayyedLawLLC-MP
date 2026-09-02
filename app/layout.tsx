@@ -120,8 +120,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 40.0938,
-          "longitude": -83.0174
+          "latitude": 40.1191818,
+          "longitude": -83.0170041
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -159,7 +159,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           "https://www.linkedin.com/in/jwayyed-jwayyed",
           "https://www.yelp.com/biz/jwayyed-law-columbus",
           "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
-          "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html"
+          "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html",
+          "https://www.tiktok.com/@jjlawohio"
         ],
         "hasMap": "https://www.google.com/maps/place/Jwayyed+Law+LLC/@40.1191818,-83.0170041,17z"
       },
@@ -175,6 +176,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       },
       {
         "@type": "Person",
+        "@id": `${siteUrl}/our-law-firm/our-attorneys#jwayyed-jwayyed`,
         "name": "Jwayyed Jwayyed",
         "jobTitle": "Attorney at Law",
         "alumniOf": {

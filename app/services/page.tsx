@@ -27,16 +27,6 @@ export const metadata: Metadata = {
 
 const breadcrumbItems = [{ label: 'Our Services', href: '/services' }];
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: breadcrumbItems.map((item, idx) => ({
-    '@type': 'ListItem',
-    position: idx + 1,
-    name: item.label,
-    item: `https://www.jjlawohio.com${item.href}`,
-  })),
-};
 
 function ServicesSection({
   heading,
@@ -95,10 +85,6 @@ function ServicesSection({
 export default function ServicesPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Our Legal Services"
