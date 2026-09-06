@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blog-posts';
+import { teamMembers } from '@/data/team-members';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
@@ -21,6 +22,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
   }));
 
+  // Dynamically generate attorney bio sitemap entries from data (mirrors blogRoutes —
+  // was previously 3 hardcoded slugs that excluded attorney-jwayyed entirely and would
+  // silently miss any future team member; see audits/engine/.../findings/technical.md)
+  const attorneyRoutes = teamMembers
+    .filter((m) => m.fullBio)
+    .map((m) => ({
+      url: `/our-law-firm/our-attorneys/${m.slug}`,
+      priority: 0.6,
+      changeFrequency: 'monthly' as const,
+      lastModified: d.attorneys,
+    }));
+
   const routes = [
     // Main pages
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const, lastModified: d.home },
@@ -34,9 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/our-law-firm', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.home },
     { url: '/our-law-firm/about-us', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/our-attorneys', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    { url: '/our-law-firm/our-attorneys/raneem-ali', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    { url: '/our-law-firm/our-attorneys/jonathan-cowan', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    { url: '/our-law-firm/our-attorneys/mateo-improvola', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
+    ...attorneyRoutes,
     { url: '/our-law-firm/case-results', priority: 0.7, changeFrequency: 'weekly' as const, lastModified: d.blog },
     { url: '/our-law-firm/document-templates', priority: 0.6, changeFrequency: 'monthly' as const, lastModified: d.blog },
     { url: '/our-law-firm/blog', priority: 0.8, changeFrequency: 'weekly' as const, lastModified: d.blog },

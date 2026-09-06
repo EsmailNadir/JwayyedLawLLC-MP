@@ -45,7 +45,7 @@ const OVIReviews: React.FC = () => {
                       <Star key={i} className="w-3.5 h-3.5 fill-[#b87333] text-[#b87333]" />
                     ))}
                   </div>
-                  <span className="text-sm font-bold text-slate-900">5.0</span>
+                  <span className="text-sm font-bold text-slate-900">4.9</span>
                 </div>
                 <p className="text-xs text-slate-500">100+ Google Reviews</p>
               </div>
