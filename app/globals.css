@@ -1,8 +1,107 @@
 @import "tailwindcss";
 
+/* ===========================================================================
+   BRAND TOKENS — leather, brass and parchment
+
+   The earlier palette leaned on a teal-and-violet mesh, which is the standard
+   machine-generated look: the indigo-to-purple, purple-to-cyan gradient that
+   now reads as a template rather than a brand. This palette is built from
+   something the firm already owns instead — its copper mark, which is a brass.
+
+   Brass then sits where luxury convention puts a metallic: sparingly, on
+   CTAs, rules and seals. The dark surfaces come from the two heritage anchors
+   that carry weight without any blue in them — forest green (the Savile Row
+   and British motoring green) and oxblood (the leather-goods red). Light
+   surfaces are parchment. There is no cool hue anywhere in the system.
+   =========================================================================== */
+
+@theme {
+  /* Brass — the brand's signal colour */
+  --color-copper-50: #fdf6ef;
+  --color-copper-100: #f9e8d5;
+  --color-copper-200: #f0cfa9;
+  --color-copper-300: #e8c8a0;
+  --color-copper-400: #d9964f;
+  --color-copper-500: #b87333;
+  --color-copper-600: #a0622b;
+  --color-copper-700: #7d4a20;
+
+  /* Forest — the primary heritage anchor */
+  --color-forest-400: #2f8a67;
+  --color-forest-500: #1c6b4f;
+  --color-forest-600: #14523d;
+  --color-forest-700: #0f4231;
+  --color-forest-900: #0a3d2e;
+
+  /* Oxblood */
+  --color-oxblood-600: #63201c;
+  --color-oxblood-700: #4a0e0e;
+  --color-oxblood-800: #2e100e;
+  --color-oxblood-900: #1d0a09;
+
+  /* ---------------------------------------------------------------------
+     shadcn semantic layer.
+     The imported ui/ components are written against these names
+     (bg-card, text-muted-foreground, border-border, bg-background…). The
+     project had no such layer, so without these the components would render
+     with undefined colours. They are mapped onto the brand palette rather
+     than shadcn's defaults so the imported pieces inherit the site's look
+     instead of importing a second, competing one.
+     --------------------------------------------------------------------- */
+  --color-background: #fdfaf4;
+  --color-foreground: #1c1511;
+  --color-card: #ffffff;
+  --color-card-foreground: #1c1511;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1c1511;
+  --color-primary: #b87333;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f8f2e8;
+  --color-secondary-foreground: #2a2019;
+  --color-muted: #f1e9dc;
+  --color-muted-foreground: #6d5b4b;
+  --color-accent: #f8f2e8;
+  --color-accent-foreground: #2a2019;
+  --color-border: #e7dccb;
+  --color-input: #e7dccb;
+  --color-ring: #b87333;
+
+  /* Ink — warm near-blacks. The scale keeps its names so nothing downstream
+     changes; only the hue moves off navy and onto espresso, which sits far
+     better against parchment and brass. */
+  --color-ink-700: #3a2d24;
+  --color-ink-800: #2a2019;
+  --color-ink-900: #1c1511;
+  --color-ink-950: #120d0a;
+
+  /* Parchment */
+  --color-paper-50: #fdfaf4;
+  --color-paper-100: #f8f2e8;
+  --color-paper-200: #efe5d6;
+}
+
+/* Marquee tracks.
+   This must be `@theme inline`, not `@theme`. The values reference
+   `--duration`, which the Marquee component sets per instance at runtime. A
+   plain `@theme` block resolves its values at the point the theme is emitted,
+   finds no `--duration` in scope, and drops the declaration — the utility is
+   then never generated and the track sits perfectly still. `inline` writes the
+   value directly into the utility, so the `var()` resolves on the element. */
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+}
+
 html,
 body {
+  /* `clip` rather than `hidden`. Both suppress sideways scrolling, but `hidden`
+     turns these elements into scroll containers, and that silently disables
+     `position: sticky` on the header — it scrolled away with the page instead
+     of pinning. `clip` does not establish a scroll container, so the sticky
+     header works. The `hidden` line stays first as the fallback for engines
+     without `clip`. */
   overflow-x: hidden;
+  overflow-x: clip;
   font-family: var(--font-dm-sans), 'DM Sans', 'Arial', sans-serif;
 }
 
@@ -18,26 +117,251 @@ body:has(.bg-gray-100) {
   scroll-margin-top: 100px;
 }
 
-@media (max-width: 1023px) {
-  body.mobile-drawer-open nav[aria-label="Breadcrumb"] {
-    display: none !important;
+/* ===========================================================================
+   SURFACES — flat fields, not gradient meshes
+
+   These replaced a stack of oversized multi-hue radial blooms. The hue was
+   changed twice (teal/violet, then forest) and read as machine-generated both
+   times, because the tell is the technique rather than the palette: a soft
+   many-hued radial mesh behind a hero is the single most reproduced AI-site
+   signature there is.
+
+   So the mesh is gone. Each band is now one confident colour, with at most a
+   single-hue vertical gradient for depth, and separation carried by a brass
+   hairline at the seam. Depth comes from contrast between bands and from the
+   cards sitting on them, not from glow. Liveliness comes from motion.
+   =========================================================================== */
+
+/* Hairline used at band seams in place of a soft gradient falloff. */
+.edge-brass {
+  box-shadow: inset 0 1px 0 rgba(184, 115, 51, 0.28);
+}
+
+/* Deep espresso. The default dark band and the footer floor. */
+.aurora-deep {
+  background-color: var(--color-ink-950);
+  background-image: linear-gradient(180deg, #241a13 0%, #120d0a 100%);
+}
+
+/* Slightly warmer espresso, for a dark band that needs a touch more brass. */
+.aurora-warm {
+  background-color: var(--color-ink-900);
+  background-image: linear-gradient(180deg, #2c2016 0%, #17100b 100%);
+}
+
+/* Oxblood. The one saturated field on the page — a bound-leather red-brown that
+   carries the testimonial wall. Flat and committed rather than blurred. */
+.aurora-vivid {
+  background-color: var(--color-oxblood-800);
+  background-image: linear-gradient(180deg, #3a1512 0%, #1d0a09 100%);
+}
+
+/* Parchment. Flat; the warmth is in the paper colour itself. */
+.aurora-paper {
+  background-color: var(--color-paper-50);
+}
+
+/* Retained so callers keep working; now a flat parchment tint rather than a
+   radial bloom. */
+.bloom-copper {
+  background-color: var(--color-paper-100);
+}
+
+/* Tailwind v4 defaults an un-coloured `border` utility to currentColor, which
+   would give the imported shadcn components dark borders inheriting their text
+   colour. shadcn's own setup solves this the same way. Explicit border-*
+   classes elsewhere still win. */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+/* Marquee tracks. Each track translates a full length plus one gap, so the
+   repeated copies meet seamlessly. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+/* ===========================================================================
+   CARD SURFACES
+
+   These were frosted-glass panes with a specular glow. Two reasons they are
+   now solid: a translucent pane over a flat field has nothing to refract and
+   simply reads as muddy, and "glassmorphism card with a faint glow" is the
+   second half of the same machine-generated signature the gradients were.
+
+   What is left is an editorial card — one flat fill, a hairline border, a
+   restrained shadow. The same language as the imported shadcn `Card`, so the
+   new components and the existing sections read as one set.
+   =========================================================================== */
+
+/* These deliberately do not set `position`. They are plain single-class rules
+   defined after Tailwind's import, so a `position` here would beat utilities
+   like `absolute` on any element carrying the class. Callers position the
+   element themselves. */
+.glass {
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(240, 207, 169, 0.18);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+/* Light-surface variant. */
+.glass-light {
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow:
+    0 1px 2px rgba(58, 45, 36, 0.06),
+    0 6px 16px -10px rgba(58, 45, 36, 0.18);
+}
+
+/* Navigation dropdowns — deliberately opaque, not glass.
+   These panels overlay the hero video and its very large white headline. Even
+   at 97% alpha that headline read through the panel as a legible watermark
+   behind the menu links, which looks like a rendering fault rather than a
+   material. Menus are therefore solid, and take their character from the
+   rounded shape, the specular top edge and the drop shadow. Dropping the
+   backdrop-filter also removes a large blurred surface compositing over
+   playing video on every open. */
+.glass-menu {
+  border-radius: 22px;
+  background-color: var(--color-paper-50);
+  background-image: linear-gradient(152deg, #ffffff 0%, #faf6f0 100%);
+  border: 1px solid rgba(184, 115, 51, 0.18);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 1),
+    0 20px 50px -16px rgba(11, 16, 38, 0.45),
+    0 4px 12px -4px rgba(11, 16, 38, 0.18);
+}
+
+/* The backdrop-filter fallback that used to live here is gone with the glass:
+   these surfaces are opaque now, so there is nothing to degrade. */
+
+/* The specular sheen overlay was the "faint glow" half of the glassmorphism
+   look and is deliberately gone. The class is kept as an inert no-op so the
+   many call sites do not all have to change, and so that adding it back later
+   is a one-place decision. */
+.glass-sheen {
+  /* intentionally empty */
+}
+
+/* ===========================================================================
+   MOTION
+
+   Two kinds, both decorative and both disabled outright under
+   prefers-reduced-motion rather than merely shortened.
+
+   1. Load-in (`.rise-in`) — plain CSS animations for the hero, which is
+      already on screen when the page opens and so has no scroll to key off.
+   2. Scroll-linked reveals (`.reveal`, `.reveal-stagger`) — driven by a view
+      timeline rather than JavaScript, so there is no observer, no scroll
+      handler, and nothing runs on the main thread. These sit inside an
+      `@supports` guard: where view timelines are unavailable the rules never
+      apply, and the content is simply visible with no animation and no risk of
+      it being stranded at opacity 0.
+   =========================================================================== */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise-in {
+    animation: rise-in 0.85s cubic-bezier(0.22, 0.68, 0.28, 1) backwards;
+    animation-delay: var(--rise-delay, 0ms);
   }
 
-  #tidio-chat-iframe,
-  #tidio-chat {
-    bottom: 24px !important;
-    right: 20px !important;
+  /* Slow drift across the hero footage. Long enough to be felt rather than
+     noticed, and paused entirely for reduced-motion users. */
+  @keyframes hero-drift {
+    from {
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+    to {
+      transform: scale(1.08) translate3d(0, -1.2%, 0);
+    }
   }
 
-  /* accessiBe/common accessibility launcher selectors */
-  #acsb-trigger,
-  #acsb-trigger-frame,
-  .acsb-trigger,
-  .acsb-widget,
-  [data-acsb] {
-    bottom: 16px !important;
-    right: 12px !important;
+  .hero-drift {
+    animation: hero-drift 32s ease-in-out infinite alternate;
+    will-change: transform;
   }
+
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    @keyframes reveal-rise {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    .reveal,
+    .reveal-stagger > * {
+      animation: reveal-rise auto linear both;
+      animation-timeline: view();
+      /* Finishes well before the element reaches the middle of the screen, so
+         content is settled by the time it is being read. */
+      animation-range: entry 4% entry 46%;
+    }
+
+    /* Offsetting each child's range along the same timeline staggers a row
+       without per-element delays or any script. */
+    .reveal-stagger > *:nth-child(2) {
+      animation-range: entry 10% entry 52%;
+    }
+
+    .reveal-stagger > *:nth-child(3) {
+      animation-range: entry 16% entry 58%;
+    }
+
+    .reveal-stagger > *:nth-child(4) {
+      animation-range: entry 10% entry 52%;
+    }
+
+    .reveal-stagger > *:nth-child(5) {
+      animation-range: entry 16% entry 58%;
+    }
+
+    .reveal-stagger > *:nth-child(6) {
+      animation-range: entry 22% entry 64%;
+    }
+  }
+}
+
+@keyframes aurora-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate3d(2%, -2%, 0) scale(1.08);
+    opacity: 1;
+  }
+}
+
+.aurora-drift {
+  animation: aurora-drift 18s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 /* Announcement bar slide-down on load */
@@ -64,6 +388,34 @@ body:has(.bg-gray-100) {
   50% {
     opacity: 1;
     transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-drift {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  body.mobile-drawer-open nav[aria-label="Breadcrumb"] {
+    display: none !important;
+  }
+
+  #tidio-chat-iframe,
+  #tidio-chat {
+    bottom: 24px !important;
+    right: 20px !important;
+  }
+
+  /* accessiBe/common accessibility launcher selectors */
+  #acsb-trigger,
+  #acsb-trigger-frame,
+  .acsb-trigger,
+  .acsb-widget,
+  [data-acsb] {
+    bottom: 16px !important;
+    right: 12px !important;
   }
 }
 

@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Fuse from 'fuse.js';
+import { siteNav, auxiliaryNav, type NavNode } from '@/data/navigation';
 
 // ============================================================================
 // TYPES
@@ -15,28 +16,11 @@ interface SearchItem {
   subcategory?: string;
 }
 
-interface SubLink {
-  name: string;
-  href: string;
-}
-
-interface SubDropdown {
-  name: string;
-  links: SubLink[];
-}
-
-interface NavItem {
-  name: string;
-  href: string;
-  subLinks?: SubLink[];
-  subDropdowns?: SubDropdown[];
-}
-
 // ============================================================================
 // BUILD SEARCH INDEX FROM NAV ITEMS
 // ============================================================================
 
-function buildSearchIndex(navItems: NavItem[]): SearchItem[] {
+function buildSearchIndex(navItems: NavNode[]): SearchItem[] {
   const items: SearchItem[] = [];
 
   navItems.forEach((item) => {
@@ -76,212 +60,6 @@ function buildSearchIndex(navItems: NavItem[]): SearchItem[] {
   return items;
 }
 
-// ============================================================================
-// NAV ITEMS DATA (same as your navbar)
-// ============================================================================
-
-const navItems: NavItem[] = [
-  {
-    name: 'Criminal Defense',
-    href: '/criminal-defense',
-    subLinks: [
-      { name: 'Ohio Criminal Defense Attorney', href: '/criminal-defense' },
-      { name: 'Assault Charges', href: '/criminal-defense/assault-charges' },
-      { name: 'Domestic Violence', href: '/criminal-defense/domestic-violence' },
-      { name: 'Criminal Mischief', href: '/criminal-defense/criminal-mischief' },
-      { name: 'Criminal Trespass', href: '/criminal-defense/criminal-trespass' },
-      { name: 'Petty Theft', href: '/criminal-defense/petty-theft' },
-      { name: 'Resisting Arrest', href: '/criminal-defense/resisting-arrest' },
-      { name: 'Obstruction of Official Business', href: '/criminal-defense/obstruction-of-official-business' },
-      { name: 'Speeding Tickets', href: '/criminal-defense/speeding-tickets' },
-      { name: 'Driving Under Suspension', href: '/criminal-defense/driving-under-suspension' },
-      { name: "No Operator's License", href: '/criminal-defense/no-operators-license' },
-      { name: 'Criminal Damaging', href: '/criminal-defense/criminal-damaging' },
-      { name: 'Expungement / Record Sealing', href: '/criminal-defense/expungement-record-sealing' },
-      { name: 'Criminal Defense – Locations We Serve', href: '/criminal-defense' },
-    ],
-  },
-  {
-    name: 'OVI / DUI',
-    href: '/ovi-dui-defense',
-    subLinks: [
-      { name: 'Ohio OVI Attorney', href: '/ovi-dui-defense' },
-      { name: 'First OVI', href: '/ovi-dui-defense/first-ovi' },
-      { name: 'Second OVI', href: '/ovi-dui-defense/second-ovi' },
-      { name: 'Third OVI', href: '/ovi-dui-defense/third-ovi' },
-      { name: 'High-Tier OVI', href: '/ovi-dui-defense/high-tier-ovi' },
-      { name: 'Refusal OVI', href: '/ovi-dui-defense/refusal-ovi' },
-      { name: 'Underage OVI', href: '/ovi-dui-defense/underage-ovi' },
-      { name: 'Commercial DUI (CDL)', href: '/ovi-dui-defense/commercial-dui-cdl' },
-      { name: 'OVI with Accident', href: '/ovi-dui-defense/ovi-with-accident' },
-      { name: 'Driving Under OVI Suspension', href: '/ovi-dui-defense/driving-under-ovi-suspension' },
-      { name: 'Limited Driving Privileges', href: '/ovi-dui-defense/limited-driving-privileges' },
-      { name: 'OVI – Locations We Serve', href: '/ovi-dui-defense' },
-    ],
-  },
-  {
-    name: 'Personal Injury',
-    href: '/personal-injury',
-    subLinks: [
-      { name: 'Ohio Personal Injury Attorney', href: '/personal-injury' },
-      { name: 'Car Accidents', href: '/personal-injury/car-accidents' },
-      { name: 'Truck Accidents', href: '/personal-injury/truck-accidents' },
-      { name: 'Motorcycle Accidents', href: '/personal-injury/motorcycle-accidents' },
-      { name: 'Pedestrian Accidents', href: '/personal-injury/pedestrian-accidents' },
-      { name: 'Slip and Fall', href: '/personal-injury/slip-and-fall' },
-      { name: 'Premises Liability', href: '/personal-injury/premises-liability' },
-      { name: 'Dog Bites', href: '/personal-injury/dog-bites' },
-      { name: 'Medical Malpractice', href: '/personal-injury/medical-malpractice' },
-      { name: 'Nursing Home Abuse', href: '/personal-injury/nursing-home-abuse' },
-      { name: 'Workplace Injuries', href: '/personal-injury/workplace-injuries' },
-      { name: 'Wrongful Death', href: '/personal-injury/wrongful-death' },
-      { name: 'Catastrophic Injuries', href: '/personal-injury/catastrophic-injuries' },
-      { name: 'Personal Injury – Locations We Serve', href: '/personal-injury' },
-    ],
-  },
-  {
-    name: 'Civil',
-    href: '/civil',
-    subLinks: [
-      { name: 'Ohio Civil Attorney', href: '/civil' },
-      { name: 'Breach of Contract', href: '/civil/breach-of-contract' },
-      { name: 'Real Estate Disputes', href: '/civil/real-estate-disputes' },
-      { name: 'Evictions', href: '/civil/evictions' },
-      { name: 'Construction Disputes', href: '/civil/construction-disputes' },
-      { name: 'Debt Collection Defense', href: '/civil/debt-collection-defense' },
-      { name: 'Employment Disputes', href: '/civil/employment-disputes' },
-      { name: 'Civil Protection Orders', href: '/civil/civil-protection-orders' },
-      { name: 'Appeals', href: '/civil/appeals' },
-      { name: 'Civil – Locations We Serve', href: '/civil' },
-    ],
-  },
-  {
-    name: 'Business',
-    href: '/business',
-    subLinks: [
-      { name: 'Ohio Business Attorney', href: '/business' },
-      { name: 'Business Formation', href: '/business/business-formation' },
-      { name: 'LLC Formation', href: '/business/llc-formation' },
-      { name: 'Contract Drafting & Review', href: '/business/contract-drafting-review' },
-      { name: 'Business Litigation', href: '/business/business-litigation' },
-      { name: 'Partnership Disputes', href: '/business/partnership-disputes' },
-      { name: 'Shareholder Disputes', href: '/business/shareholder-disputes' },
-      { name: 'Non-Compete Agreements', href: '/business/non-compete-agreements' },
-      { name: 'Employment Agreements', href: '/business/employment-agreements' },
-      { name: 'Business Compliance', href: '/business/business-compliance' },
-      { name: 'Business Dissolution', href: '/business/business-dissolution' },
-      { name: 'Business – Locations We Serve', href: '/business' },
-    ],
-  },
-  {
-    name: 'Other Services',
-    href: '/other-services',
-    subDropdowns: [
-      {
-        name: 'Estate Planning',
-        links: [
-          { name: 'Estate Planning & Wills', href: '/other-services/estate-planning-wills' },
-          { name: 'Trusts', href: '/trusts' },
-          { name: 'Powers of Attorney', href: '/other-services/powers-of-attorney' },
-          { name: 'Guardianships', href: '/other-services/guardianships' },
-        ],
-      },
-      {
-        name: 'Probate',
-        links: [
-          { name: 'Probate Administration', href: '/other-services/probate-administration' },
-          { name: 'Will Contests', href: '/other-services/will-contests' },
-          { name: 'Estate Disputes', href: '/other-services/estate-disputes' },
-        ],
-      },
-      {
-        name: 'Dispute Resolution',
-        links: [
-          { name: 'Mediation', href: '/other-services/mediation' },
-          { name: 'Arbitration', href: '/other-services/arbitration' },
-        ],
-      },
-    ],
-  },
-  {
-    name: 'Courts',
-    href: '/courts',
-    subDropdowns: [
-      {
-        name: 'Franklin County',
-        links: [
-          { name: 'Franklin County Municipal Court', href: '/courts/franklin-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Delaware County',
-        links: [
-          { name: 'Delaware County Municipal Court', href: '/courts/delaware-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Pickaway County',
-        links: [
-          { name: 'Circleville Municipal Court', href: '/courts/circleville-municipal-court' },
-        ],
-      },
-      {
-        name: 'Athens County',
-        links: [
-          { name: 'Athens Municipal Court', href: '/courts/athens-municipal-court' },
-        ],
-      },
-      {
-        name: 'Morrow County',
-        links: [
-          { name: 'Morrow County Municipal Court', href: '/courts/morrow-county-municipal-court' },
-        ],
-      },
-      {
-        name: 'Clinton County',
-        links: [
-          { name: 'Clinton County Courts', href: '/courts/clinton-county' },
-          { name: 'Wilmington Municipal Court', href: '/courts/wilmington-municipal-court' },
-        ],
-      },
-      {
-        name: 'Butler County',
-        links: [
-          { name: 'Butler County Courts', href: '/courts/butler-county' },
-          { name: 'Area I Court (Oxford)', href: '/courts/butler-county#area-i-court' },
-          { name: 'Area II Court (Hamilton)', href: '/courts/butler-county#area-ii-court' },
-          { name: 'Area III Court (West Chester)', href: '/courts/butler-county#area-iii-court' },
-          { name: 'Hamilton Municipal Court', href: '/courts/hamilton-municipal-court' },
-        ],
-      },
-      {
-        name: 'Greene County',
-        links: [
-          { name: 'Fairborn Municipal Court', href: '/courts/fairborn-municipal-court' },
-        ],
-      },
-      {
-        name: 'Montgomery County',
-        links: [
-          { name: 'Dayton Municipal Court', href: '/courts/dayton-municipal-court' },
-        ],
-      },
-    ],
-  },
-  {
-    name: 'Our Firm',
-    href: '/our-law-firm/our-attorneys',
-    subLinks: [
-      { name: 'About Us', href: '/our-law-firm/about-us' },
-      { name: 'Our Staff', href: '/our-law-firm/our-attorneys' },
-      { name: 'Blog', href: '/our-law-firm/blog' },
-    ],
-  },
-  {
-    name: 'Contact',
-    href: '/contact',
-  },
-];
 
 // Blog articles for search indexing
 const blogSearchItems: SearchItem[] = [
@@ -334,7 +112,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
   }, [autoFocus]);
 
   // Build search index once (nav items + blog articles + team members)
-  const searchIndex = useMemo(() => [...buildSearchIndex(navItems), ...blogSearchItems, ...teamSearchItems], []);
+  const searchIndex = useMemo(
+    () => [...buildSearchIndex([...siteNav, ...auxiliaryNav]), ...blogSearchItems, ...teamSearchItems],
+    []
+  );
 
   // Initialize Fuse.js
   const fuse = useMemo(() => {

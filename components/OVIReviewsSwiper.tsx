@@ -94,7 +94,7 @@ const MAX_REVIEW_LENGTH = 230;
 const REVIEW_START_LENGTH = 120;
 const REVIEW_END_LENGTH = 80;
 
-function truncateReview(text: string): string {
+export function truncateReview(text: string): string {
   if (text.length <= MAX_REVIEW_LENGTH) return text;
   // Pull each cut back to a word boundary so the ellipsis never lands mid-word.
   const head = text.slice(0, REVIEW_START_LENGTH);
