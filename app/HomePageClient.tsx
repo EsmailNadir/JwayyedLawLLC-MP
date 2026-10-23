@@ -20,6 +20,7 @@ import {
   CheckCircle2,
   MapPin,
 } from 'lucide-react';
+import NCDDBadge from '@/components/NCDDBadge';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -402,7 +403,7 @@ export default function HomePageClient() {
       {/* ======================= TESTIMONIALS ======================= */}
       <section className="w-full py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-3 mb-4">
               <span className="h-px w-8 bg-[#b87333]" />
               <span className="text-xs tracking-[0.3em] uppercase text-[#b87333] font-semibold">
@@ -413,7 +414,7 @@ export default function HomePageClient() {
             <h2 className="[font-family:var(--font-playfair),'Playfair_Display',serif] text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
               What clients say
             </h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4">
               {/* Google Reviews card */}
               <a
                 href="https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews"
@@ -454,6 +455,8 @@ export default function HomePageClient() {
                   <p className="text-xs text-slate-500">Better Business Bureau</p>
                 </div>
               </a>
+
+              <NCDDBadge variant="card" />
             </div>
           </div>
 
