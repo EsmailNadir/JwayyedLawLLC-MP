@@ -61,7 +61,7 @@ export default async function StaffProfilePage({
 
   const breadcrumbItems = [
     { label: 'Our Law Firm', href: '/our-law-firm' },
-    { label: 'Our Staff', href: '/our-law-firm/our-attorneys' },
+    { label: 'Our Attorney', href: '/our-law-firm/our-attorneys' },
     { label: member.name, href: `/our-law-firm/our-attorneys/${slug}` },
   ];
 
@@ -200,7 +200,7 @@ export default async function StaffProfilePage({
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              Back to Our Staff
+              Back to Our Attorney
             </Link>
           </div>
         </div>

@@ -26,7 +26,7 @@ const FOOTER_LINKS = [
   { href: '/our-law-firm/blog', label: 'Blog' },
   { href: '/our-law-firm/document-templates', label: 'Document Templates' },
   { href: '/our-law-firm/case-results', label: 'Case Results' },
-  { href: '/our-law-firm/our-attorneys', label: 'Our Team' },
+  { href: '/our-law-firm/our-attorneys', label: 'Our Attorney' },
   { href: '/contact', label: 'Contact' },
 ];
 
