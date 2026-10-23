@@ -24,7 +24,6 @@ const mainNavItems: { name: string; href: string }[] = [
 
 const PHONE = '(614) 285-5482';
 const PHONE_TEL = 'tel:+16142855482';
-const CHAT_WIDGET_SELECTOR = '#tidio-chat, #tidio-chat-iframe';
 const ACCESSIBILITY_WIDGET_SELECTOR = '#acsb-trigger, #acsb-trigger-frame, .acsb-trigger, .acsb-widget, [data-acsb]';
 
 function isActiveRoute(pathname: string | null, href: string): boolean {
@@ -67,36 +66,6 @@ export default function Navbar() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [searchOpen, closeSearch]);
-
-  useEffect(() => {
-    const syncWidgetVisibility = () => {
-      const isMobileViewport = window.innerWidth < 1024;
-      const hasChatWidget = !!document.querySelector(CHAT_WIDGET_SELECTOR);
-
-      document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
-        (el as HTMLElement).style.display = isMobileViewport && hasChatWidget ? 'none' : '';
-      });
-
-      if (!isMobileViewport) {
-        document.querySelectorAll(CHAT_WIDGET_SELECTOR).forEach((el) => {
-          (el as HTMLElement).style.display = '';
-        });
-      }
-    };
-
-    syncWidgetVisibility();
-    const observer = new MutationObserver(syncWidgetVisibility);
-    observer.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener('resize', syncWidgetVisibility);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('resize', syncWidgetVisibility);
-      document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
-        (el as HTMLElement).style.display = '';
-      });
-    };
-  }, []);
 
   useEffect(() => {
     if (!mobileMenuOpen) return;
@@ -276,13 +245,13 @@ function MobileDrawer({
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     document.body.classList.toggle('mobile-drawer-open', isOpen);
-    document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
+    document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
       (el as HTMLElement).style.display = isOpen ? 'none' : '';
     });
     return () => {
       document.body.style.overflow = '';
       document.body.classList.remove('mobile-drawer-open');
-      document.querySelectorAll(`${CHAT_WIDGET_SELECTOR}, ${ACCESSIBILITY_WIDGET_SELECTOR}`).forEach((el) => {
+      document.querySelectorAll(ACCESSIBILITY_WIDGET_SELECTOR).forEach((el) => {
         (el as HTMLElement).style.display = '';
       });
     };

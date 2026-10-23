@@ -57,7 +57,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mb-3">Cookies</h2>
-          <p>Our website uses cookies and similar technologies for analytics (Google Analytics) and live chat (Tidio). You can control cookie settings through your browser. Disabling cookies may affect some site functionality.</p>
+          <p>Our website uses cookies and similar technologies for analytics (Google Analytics). You can control cookie settings through your browser. Disabling cookies may affect some site functionality.</p>
         </section>
 
         <section>
@@ -65,7 +65,6 @@ export default function PrivacyPage() {
           <p>We use the following third-party services that may collect data according to their own privacy policies:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>Google Analytics (analytics.google.com) — usage analytics</li>
-            <li>Tidio (tidio.com) — live chat</li>
             <li>Calendly (calendly.com) — appointment scheduling</li>
             <li>Formspree (formspree.io) — contact form processing</li>
           </ul>

@@ -1,6 +1,5 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
-import TidioChatLabelHide from "@/components/TidioChatLabelHide";
 import Analytics from "@/components/Analytics";
 import "./globals.css";
 import { ReactNode } from "react";
@@ -235,12 +234,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </main>
 
         <Footer/>
-
-        <Script
-          src="//code.tidio.co/5sutrftwltrkg4rhvjyhg9rth2qvbppx.js"
-          strategy="afterInteractive"
-        />
-        <TidioChatLabelHide />
 
         {/* GA4 measurement floor (skill 2i) */}
         <Script
