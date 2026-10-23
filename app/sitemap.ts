@@ -40,7 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/contact', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.home },
     { url: '/services', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.service },
     { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
-    { url: '/about/legal-assistant', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const, lastModified: d.home },
 
     // Our Law Firm

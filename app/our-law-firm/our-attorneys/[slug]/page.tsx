@@ -207,6 +207,7 @@ export default async function StaffProfilePage({
       </section>
 
       {/* ── Other Team Members ─────────────────────────────────────── */}
+      {otherMembers.length > 0 && (
       <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
@@ -245,6 +246,7 @@ export default async function StaffProfilePage({
           </div>
         </div>
       </section>
+      )}
 
       {/* ── Contact CTA ────────────────────────────────────────────── */}
       <ContactCTA />

@@ -21,6 +21,11 @@ const nextConfig = {
   generateEtags: false,
   async redirects() {
     return [
+      // Staff profiles removed from the site; send old links to the team page.
+      { source: '/our-law-firm/our-attorneys/raneem-ali', destination: '/our-law-firm/our-attorneys', permanent: true },
+      { source: '/our-law-firm/our-attorneys/jonathan-cowan', destination: '/our-law-firm/our-attorneys', permanent: true },
+      { source: '/our-law-firm/our-attorneys/mateo-improvola', destination: '/our-law-firm/our-attorneys', permanent: true },
+      { source: '/about/legal-assistant', destination: '/our-law-firm/our-attorneys', permanent: true },
       { source: '/civil/landlord-tenant-disputes', destination: '/civil', permanent: true },
       { source: '/civil/defamation', destination: '/civil', permanent: true },
       { source: '/other-services/immigration', destination: '/other-services', permanent: true },
