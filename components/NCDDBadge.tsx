@@ -16,7 +16,7 @@ const ALT = 'National College for DUI Defense General Member badge';
  *
  * - `inline`: the footer trust row.
  * - `card`: matches the Google and BBB cards above the review carousels.
- * - `glass`: the dark trust cards used on dark sections and the footer.
+ * - `glass`: a flat tile for the trust row on the home page's navy field.
  */
 export default function NCDDBadge({
   variant = 'inline',
@@ -33,7 +33,7 @@ export default function NCDDBadge({
         target="_blank"
         rel="noopener noreferrer"
         title="View Attorney Jwayyed's NCDD profile"
-        className="relative glass glass-sheen flex items-center gap-3 px-4 py-3 flex-1 min-w-0 hover:-translate-y-0.5 transition-transform"
+        className="flex items-center gap-4 px-5 py-4 flex-1 min-w-0 bg-navy-800 hover:bg-navy-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
       >
         <Image
           src="/assets/ncdd-general-member-badge.png"
@@ -41,11 +41,11 @@ export default function NCDDBadge({
           width={200}
           height={200}
           sizes="40px"
-          className="relative h-10 w-10 flex-shrink-0"
+          className="h-11 w-11 flex-shrink-0"
         />
-        <span className="relative text-left">
-          <span className="block text-sm font-bold text-white">NCDD Member</span>
-          <span className="block text-xs text-white/75">National College for DUI Defense</span>
+        <span className="text-left">
+          <span className="block font-medium text-white">NCDD member</span>
+          <span className="block text-[length:var(--step-small)] text-mist">National College for DUI Defense</span>
         </span>
       </a>
     );

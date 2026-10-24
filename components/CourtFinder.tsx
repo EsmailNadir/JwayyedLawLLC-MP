@@ -34,7 +34,7 @@ export default function CourtFinder() {
   const court = COURTS[index];
 
   return (
-    <div className="bg-[#d9964f] text-[#0f1f10] px-5 sm:px-8 py-8 sm:py-10 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-end">
+    <div className="bg-[#d9964f] text-[#0b1a2e] px-5 sm:px-8 py-8 sm:py-10 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-end">
       <div>
         <label htmlFor={id} className="block text-[length:var(--step-lead)] font-medium leading-tight">
           Which court is on your ticket?
@@ -43,7 +43,7 @@ export default function CourtFinder() {
           id={id}
           value={index}
           onChange={(e) => setIndex(Number(e.target.value))}
-          className="mt-4 w-full min-h-[52px] bg-[#0f1f10] text-white text-[length:var(--step-body)] px-4 pr-10 cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+          className="mt-4 w-full min-h-[52px] bg-[#0b1a2e] text-white text-[length:var(--step-body)] px-4 pr-10 cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
         >
           {COURTS.map((c, i) => (
             <option key={c.href} value={i}>
@@ -59,14 +59,14 @@ export default function CourtFinder() {
         <div className="mt-5 flex flex-col sm:flex-row gap-3">
           <Link
             href={court.href}
-            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 bg-[#0f1f10] text-white font-medium hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 bg-[#0b1a2e] text-white font-medium hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
           >
             What to expect at this court
             <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
           </Link>
           <a
             href={PHONE_TEL}
-            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 border-2 border-[#0f1f10] font-medium hover:bg-[#0f1f10] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 border-2 border-[#0b1a2e] font-medium hover:bg-[#0b1a2e] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             Call about a case here

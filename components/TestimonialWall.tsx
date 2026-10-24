@@ -1,6 +1,7 @@
 'use client';
 
-import { Star } from 'lucide-react';
+import { useState } from 'react';
+import { Pause, Play, Star } from 'lucide-react';
 import { Marquee } from '@/components/ui/3d-testimonials';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -14,6 +15,10 @@ import { oviReviews, truncateReview } from '@/components/OVIReviewsSwiper';
  * invented faces to named real clients would misrepresent them. Initials are
  * used instead, which is both honest and the shadcn Avatar's own fallback.
  */
+
+/** Transparency masks that fade the wall's own edges (no colour is drawn). */
+const FADE_Y = '[mask-image:linear-gradient(to_bottom,transparent,black_18%,black_82%,transparent)]'; // taste-skill-ignore
+const FADE_X = '[mask-image:linear-gradient(to_right,transparent,black_12%,black_70%,transparent)]'; // taste-skill-ignore
 
 /** Enough to feel endless without mounting all ninety reviews. */
 const WALL_SIZE = 24;
@@ -34,16 +39,16 @@ const columns = Array.from({ length: COLUMNS }, (_, col) =>
 
 function ReviewCard({ name, text, rating }: { name: string; text: string; rating: number }) {
   return (
-    <Card className="w-[248px] border-copper-200/60 bg-paper-50 shadow-sm">
+    <Card className="w-[264px] border-0 bg-white shadow-none">
       <CardContent className="p-4">
         <div className="flex items-center gap-2.5">
-          <Avatar className="size-9 border border-copper-200">
-            <AvatarFallback className="bg-copper-100 text-[11px] font-semibold text-copper-700">
+          <Avatar className="size-9">
+            <AvatarFallback className="bg-copper-100 text-[15px] font-semibold text-copper-700">
               {initials(name)}
             </AvatarFallback>
           </Avatar>
           <div className="flex min-w-0 flex-col">
-            <figcaption className="truncate text-sm font-semibold text-ink-900">{name}</figcaption>
+            <figcaption className="truncate text-[15px] font-semibold text-navy-950">{name}</figcaption>
             <div className="flex items-center gap-0.5" aria-hidden="true">
               {Array.from({ length: rating }, (_, i) => (
                 <Star key={i} className="h-3 w-3 fill-copper-500 text-copper-500" />
@@ -51,7 +56,7 @@ function ReviewCard({ name, text, rating }: { name: string; text: string; rating
             </div>
           </div>
         </div>
-        <blockquote className="mt-3 text-[13px] leading-relaxed text-ink-700">
+        <blockquote className="mt-3 text-[15px] leading-relaxed text-navy-950/80">
           &ldquo;{truncateReview(text)}&rdquo;
         </blockquote>
       </CardContent>
@@ -60,14 +65,27 @@ function ReviewCard({ name, text, rating }: { name: string; text: string; rating
 }
 
 export default function TestimonialWall() {
+  // The wall scrolls without end, so it needs a way to stop that is not
+  // hover: touch screens have no hover, and keyboard focus alone is not
+  // discoverable. Hover and focus still pause it as well.
+  const [paused, setPaused] = useState(false);
+
   return (
     <div
-      className="relative flex h-[420px] w-full items-center justify-center overflow-hidden sm:h-[520px] [perspective:340px]"
+      className={`relative flex h-[420px] w-full items-center justify-center overflow-hidden sm:h-[520px] [perspective:340px] ${
+        paused ? '[&_.animate-marquee-vertical]:[animation-play-state:paused]' : ''
+      }`}
       aria-label="Client reviews"
     >
       {/* Rotation kept modest. The upstream demo tilts 20deg on three axes,
           which looks striking with placeholder text and is tiring to read with
           real ones — these are quotes a visitor is meant to actually read. */}
+      {/* The wall fades out at its edges through masks on the wall itself,
+          rather than colored overlay boxes, so it dissolves into whatever
+          field it sits on. The rotated block is wider than its container, so
+          each mask holds full opacity well in from the edge. */}
+      <div className={`absolute inset-0 flex items-center justify-center ${FADE_Y}`}>
+        <div className={`flex h-full w-full items-center justify-center ${FADE_X}`}>
       <div
         className="flex flex-row items-center gap-4"
         style={{
@@ -91,28 +109,17 @@ export default function TestimonialWall() {
           </Marquee>
         ))}
       </div>
+        </div>
+      </div>
 
-      {/* Fades to the oxblood field this sits on, not to a theme token — the
-          shadcn `background` token is parchment and would band badly here.
-          The rotated block is wider than its container, so without a solid
-          first stop the side fades leave cards guillotined mid-word at the
-          clip edge. Each therefore holds full opacity before falling off. */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#37130f] via-[#37130f]/70 to-transparent"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#1f0b0a] via-[#1f0b0a]/70 to-transparent"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#33120f] to-transparent sm:w-24"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#2a0f0c] from-55% to-transparent sm:w-52"
-        aria-hidden="true"
-      />
+      <button
+        type="button"
+        onClick={() => setPaused((p) => !p)}
+        className="motion-reduce:hidden absolute top-3 right-3 z-10 inline-flex items-center justify-center w-11 h-11 bg-navy-950 text-white hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
+        aria-label={paused ? 'Play scrolling reviews' : 'Pause scrolling reviews'}
+      >
+        {paused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}
+      </button>
     </div>
   );
 }

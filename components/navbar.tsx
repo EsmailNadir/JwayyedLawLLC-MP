@@ -21,7 +21,7 @@ const HOVER_CLOSE_DELAY_MS = 140;
 /** Dropdown panels really float over the page, so they alone carry a shadow. */
 const MENU_SHADOW = 'shadow-[0_24px_48px_-24px_rgba(0,0,0,0.55)]'; // taste-skill-ignore
 
-/** Ring used on every control on the pine bar. */
+/** Ring used on every control on the navy bar. */
 const FOCUS = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400';
 
 function isActiveRoute(pathname: string | null, href: string): boolean {
@@ -41,9 +41,9 @@ function isBranchActive(pathname: string | null, node: NavNode): boolean {
 // ============================================================================
 // MAIN NAVBAR
 //
-// A plain pine bar on every page: wordmark, the five menu entries as plain
-// text links, search, and the phone number as the one filled action. No pill,
-// no blur, no rule under it; on light pages the pine field is its own edge.
+// A plain bar: wordmark, the five menu entries as plain text links, search,
+// and the phone number as the one filled action. No pill, no blur, no rule
+// under it. Over the home hero it is transparent; elsewhere solid navy.
 // ============================================================================
 
 export default function Navbar() {
@@ -51,8 +51,13 @@ export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [pinned, setPinned] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+
+  // Transparent over the home page's video hero; solid navy once scrolled,
+  // while search is open, and on every other page.
+  const overlay = pathname === '/' && !isScrolled && !searchOpen;
 
   const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
   const closeSearch = useCallback(() => setSearchOpen(false), []);
@@ -115,6 +120,13 @@ export default function Navbar() {
   useEffect(() => clearHoverTimer, [clearHoverTimer]);
 
   useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
     setSearchOpen(false);
     setOpenMenu(null);
     setPinned(false);
@@ -151,11 +163,11 @@ export default function Navbar() {
     router.prefetch('/contact');
   }, [mobileMenuOpen, router]);
 
-  const iconButton = `inline-flex items-center justify-center w-11 h-11 text-white hover:bg-pine-800 active:bg-pine-900 transition-colors ${FOCUS}`;
+  const iconButton = `inline-flex items-center justify-center w-11 h-11 text-white hover:bg-white/15 active:bg-white/25 transition-colors ${FOCUS}`;
 
   return (
     <>
-      <header className="jw sticky top-0 z-50 w-full bg-pine-950 text-white">
+      <header className={`jw sticky top-0 z-50 w-full text-white transition-colors duration-300 ${overlay ? 'bg-transparent' : 'bg-navy-950'}`}>
         <div ref={navRef} className="max-w-[1440px] mx-auto px-5 sm:px-8">
           <div className="flex items-center justify-between h-16 xl:h-20 gap-6">
             <Link href="/" className={`flex-shrink-0 flex items-center ${FOCUS}`} aria-label="Jwayyed Law LLC home">
@@ -204,7 +216,7 @@ export default function Navbar() {
 
               <a
                 href={PHONE_TEL}
-                className={`max-xl:hidden inline-flex items-center gap-2 min-h-[44px] px-5 bg-copper-400 text-pine-950 text-[length:var(--step-small)] font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors ${FOCUS} focus-visible:ring-white`}
+                className={`max-xl:hidden inline-flex items-center gap-2 min-h-[44px] px-5 bg-copper-400 text-navy-950 text-[length:var(--step-small)] font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors ${FOCUS} focus-visible:ring-white`}
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />
                 {PHONE}
@@ -231,7 +243,7 @@ export default function Navbar() {
 
         {/* Search panel. Hidden and inert when closed so its input is not
             reachable by Tab while unseen. */}
-        <div id="site-search-panel" className={searchOpen ? 'hidden xl:block bg-pine-900' : 'hidden'} inert={!searchOpen}>
+        <div id="site-search-panel" className={searchOpen ? 'hidden xl:block bg-navy-900' : 'hidden'} inert={!searchOpen}>
           <div className="max-w-[1440px] mx-auto px-5 sm:px-8 py-4">
             <div className="max-w-2xl mx-auto">
               <SearchBar onNavigate={closeSearch} />
@@ -340,16 +352,16 @@ function NavItem({
         id={panelId}
         ref={panelRef}
         onKeyDown={handlePanelKeyDown}
-        className={`${isOpen ? 'block jw-menu-in' : 'hidden'} absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ${panelWidth} bg-white text-pine-950 p-3 z-[60] ${MENU_SHADOW}`}
+        className={`${isOpen ? 'block jw-menu-in' : 'hidden'} absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ${panelWidth} bg-white text-navy-950 p-3 z-[60] ${MENU_SHADOW}`}
       >
         <Link
           href={node.href}
           onClick={onClose}
-          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-pine-950/[0.06] hover:bg-pine-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700"
+          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-navy-950/[0.06] hover:bg-navy-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700"
         >
           <span>
             <span className="block text-[length:var(--step-small)] font-medium">{node.name}</span>
-            {node.tagline && <span className="block text-[length:var(--step-small)] text-pine-950/70 mt-0.5">{node.tagline}</span>}
+            {node.tagline && <span className="block text-[length:var(--step-small)] text-navy-950/70 mt-0.5">{node.tagline}</span>}
           </span>
           <ArrowUpRight className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
         </Link>
@@ -358,7 +370,7 @@ function NavItem({
           <div className="grid grid-cols-3 gap-x-2 gap-y-2 p-1">
             {node.subDropdowns!.map((group) => (
               <div key={group.name} className="min-w-0">
-                <div className="text-[length:var(--step-small)] font-medium px-3 pt-2 pb-1 text-pine-950/60">{group.name}</div>
+                <div className="text-[length:var(--step-small)] font-medium px-3 pt-2 pb-1 text-navy-950/60">{group.name}</div>
                 <ul>
                   {group.links.map((link) => (
                     <li key={`${group.name}-${link.href}-${link.name}`}>
@@ -401,7 +413,7 @@ function PanelLink({
       onClick={onClose}
       aria-current={active ? 'page' : undefined}
       className={`block px-3 py-2 text-[length:var(--step-small)] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700 ${
-        active ? 'text-copper-700 font-medium bg-copper-500/10' : 'text-pine-950 hover:bg-pine-950/[0.06]'
+        active ? 'text-copper-700 font-medium bg-copper-500/10' : 'text-navy-950 hover:bg-navy-950/[0.06]'
       }`}
     >
       {label.replace(/ →$/, '')}
@@ -504,7 +516,7 @@ function MobileDrawer({
         ref={panelRef}
         // `hidden` when closed (display: none), so nothing in it is laid out,
         // reachable or read; it slides in on open when motion is allowed.
-        className={`jw fixed top-0 right-0 h-full w-[88%] max-w-[400px] bg-white text-pine-950 z-[120] flex-col ${
+        className={`jw fixed top-0 right-0 h-full w-[88%] max-w-[400px] bg-white text-navy-950 z-[120] flex-col ${
           isOpen ? 'flex jw-drawer-in' : 'hidden'
         }`}
         role="dialog"
@@ -512,7 +524,7 @@ function MobileDrawer({
         aria-label="Site menu"
         inert={!isOpen}
       >
-        <div className="flex items-center justify-between pl-5 pr-2 h-16 bg-pine-950 text-white flex-shrink-0">
+        <div className="flex items-center justify-between pl-5 pr-2 h-16 bg-navy-950 text-white flex-shrink-0">
           <Link href="/" onClick={onClose} aria-label="Jwayyed Law LLC home" className={`flex items-center ${FOCUS}`}>
             <Image src="/assets/jwayyed-logo-light.png" alt="Jwayyed Law LLC" width={2521} height={407} sizes="150px" className="h-6 w-auto" />
           </Link>
@@ -520,7 +532,7 @@ function MobileDrawer({
             ref={closeButtonRef}
             type="button"
             onClick={onClose}
-            className={`w-11 h-11 flex items-center justify-center text-white hover:bg-pine-800 transition-colors ${FOCUS}`}
+            className={`w-11 h-11 flex items-center justify-center text-white hover:bg-navy-800 transition-colors ${FOCUS}`}
             aria-label="Close menu"
           >
             <X className="w-5 h-5" aria-hidden="true" />
@@ -531,7 +543,7 @@ function MobileDrawer({
           <a
             href={PHONE_TEL}
             onClick={onClose}
-            className={`flex items-center justify-center gap-2.5 w-full min-h-[52px] bg-copper-400 text-pine-950 font-medium tabular-nums hover:bg-pine-950 hover:text-white transition-colors ${linkFocus}`}
+            className={`flex items-center justify-center gap-2.5 w-full min-h-[52px] bg-copper-400 text-navy-950 font-medium tabular-nums hover:bg-navy-950 hover:text-white transition-colors ${linkFocus}`}
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             Call {PHONE}
@@ -539,7 +551,7 @@ function MobileDrawer({
           <Link
             href="/contact"
             onClick={onClose}
-            className={`mt-2 mb-5 flex items-center justify-center w-full min-h-[52px] border-2 border-pine-950 font-medium hover:bg-pine-950 hover:text-white transition-colors ${linkFocus}`}
+            className={`mt-2 mb-5 flex items-center justify-center w-full min-h-[52px] border-2 border-navy-950 font-medium hover:bg-navy-950 hover:text-white transition-colors ${linkFocus}`}
           >
             {CTA_LABEL}
           </Link>
@@ -556,7 +568,7 @@ function MobileDrawer({
               const hasChildren = children.length > 0;
 
               return (
-                <div key={node.href} className={isExpanded ? 'bg-pine-950/[0.05]' : ''}>
+                <div key={node.href} className={isExpanded ? 'bg-navy-950/[0.05]' : ''}>
                   <div className="flex items-stretch">
                     <Link
                       href={node.href}
@@ -574,7 +586,7 @@ function MobileDrawer({
                         onClick={() => setExpanded((cur) => (cur === node.name ? null : node.name))}
                         aria-expanded={isExpanded}
                         aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${node.name}`}
-                        className={`w-12 flex items-center justify-center text-pine-950/70 hover:text-pine-950 transition-colors ${linkFocus}`}
+                        className={`w-12 flex items-center justify-center text-navy-950/70 hover:text-navy-950 transition-colors ${linkFocus}`}
                       >
                         <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                       </button>
@@ -604,7 +616,7 @@ function MobileDrawer({
             })}
           </nav>
 
-          <p className="mt-5 text-[length:var(--step-small)] text-pine-950/70 flex-shrink-0">Open Monday to Friday, 9am to 5pm.</p>
+          <p className="mt-5 text-[length:var(--step-small)] text-navy-950/70 flex-shrink-0">Open Monday to Friday, 9am to 5pm.</p>
         </div>
       </div>
     </>

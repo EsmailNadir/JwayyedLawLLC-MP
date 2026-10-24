@@ -241,7 +241,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:bg-white focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-[#0f1f10] focus:outline-2 focus:outline-[#d9964f]"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:bg-white focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-[#0b1a2e] focus:outline-2 focus:outline-[#d9964f]"
         >
           Skip to main content
         </a>
