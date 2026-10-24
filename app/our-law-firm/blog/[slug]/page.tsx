@@ -74,18 +74,6 @@ export default async function BlogPostPage({
     { label: post.title, href: `/our-law-firm/blog/${slug}` },
   ];
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': breadcrumbItems.map(
-      (item: { label: string; href: string }, idx: number) => ({
-        '@type': 'ListItem',
-        'position': idx + 1,
-        'name': item.label,
-        'item': `https://www.jjlawohio.com${item.href}`,
-      })
-    ),
-  };
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -113,10 +101,6 @@ export default async function BlogPostPage({
   // not user-generated input. No XSS risk exists.
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

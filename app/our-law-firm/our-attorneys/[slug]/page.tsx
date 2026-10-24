@@ -61,22 +61,10 @@ export default async function StaffProfilePage({
 
   const breadcrumbItems = [
     { label: 'Our Law Firm', href: '/our-law-firm' },
-    { label: 'Our Staff', href: '/our-law-firm/our-attorneys' },
+    { label: 'Our Attorney', href: '/our-law-firm/our-attorneys' },
     { label: member.name, href: `/our-law-firm/our-attorneys/${slug}` },
   ];
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': breadcrumbItems.map(
-      (item: { label: string; href: string }, idx: number) => ({
-        '@type': 'ListItem',
-        'position': idx + 1,
-        'name': item.label,
-        'item': `https://www.jjlawohio.com${item.href}`,
-      })
-    ),
-  };
 
   const personSchema = {
     '@context': 'https://schema.org',
@@ -100,10 +88,6 @@ export default async function StaffProfilePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Breadcrumbs items={breadcrumbItems} />
 
@@ -216,13 +200,14 @@ export default async function StaffProfilePage({
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              Back to Our Staff
+              Back to Our Attorney
             </Link>
           </div>
         </div>
       </section>
 
       {/* ── Other Team Members ─────────────────────────────────────── */}
+      {otherMembers.length > 0 && (
       <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
@@ -261,6 +246,7 @@ export default async function StaffProfilePage({
           </div>
         </div>
       </section>
+      )}
 
       {/* ── Contact CTA ────────────────────────────────────────────── */}
       <ContactCTA />

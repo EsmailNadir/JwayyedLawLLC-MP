@@ -56,7 +56,7 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 
 ### Layout, navigation, and third-party widgets
 
-- `app/layout.tsx` wraps every page with `AnnouncementBar`, `Navbar`, `<main>`, `Footer`, and the Tidio chat script (loaded via `next/script` `afterInteractive`). `TidioChatLabelHide` is a client component that suppresses Tidio's default label.
+- `app/layout.tsx` wraps every page with `AnnouncementBar`, `Navbar`, `<main>`, and `Footer`, and loads GA4 via `next/script`. There is no live-chat widget (Tidio was removed).
 - `components/navbar.tsx` is the source of truth for the top-level nav (8 items, no dropdowns). Update `mainNavItems` there when adding a new top-level section.
 - `components/SearchBar.tsx` builds an in-memory Fuse.js search index from nav items at runtime. If you add navigable destinations that should be searchable, expose them through the nav structure SearchBar consumes.
 - Common page primitives: `PageHero`, `Breadcrumbs`, `FAQ`, `ContactCTA`, `ServiceCard`. Practice-area pages follow a consistent pattern: `<Breadcrumbs/> + <PageHero/> + service grid (from data/services.ts) + <FAQ/> + <ContactCTA/>`. Match this pattern when adding new landing pages.
@@ -65,7 +65,6 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 
 - **Contact form**: posts to Formspree (`https://formspree.io/f/xyzjyzgv`) directly from `app/contact/page.tsx`. No backend code.
 - **Scheduling**: `components/calendly.tsx` injects the Calendly widget script and embeds `https://calendly.com/jjlawohio`.
-- **Chat**: Tidio script in `app/layout.tsx`. The navbar manages widget visibility on mobile (hides the accessibility widget when chat is present).
 
 ### Styling
 

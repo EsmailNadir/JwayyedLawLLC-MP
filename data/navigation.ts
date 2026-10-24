@@ -217,7 +217,7 @@ export const siteNav: NavNode[] = [
     tagline: 'The people handling your matter.',
     subLinks: [
       { name: 'About Us', href: '/our-law-firm/about-us' },
-      { name: 'Our Staff', href: '/our-law-firm/our-attorneys' },
+      { name: 'Our Attorney', href: '/our-law-firm/our-attorneys' },
       { name: 'Case Results', href: '/our-law-firm/case-results' },
       { name: 'Document Templates', href: '/our-law-firm/document-templates' },
       { name: 'Blog', href: '/our-law-firm/blog' },

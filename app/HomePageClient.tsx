@@ -21,6 +21,7 @@ import {
   CheckCircle2,
   MapPin,
 } from 'lucide-react';
+import NCDDBadge from '@/components/NCDDBadge';
 import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialWall from '@/components/TestimonialWall';
 import { ReviewSummaryCard } from '@/components/ui/card-2';
@@ -454,6 +455,8 @@ export default function HomePageClient() {
                   <p className="text-xs text-white/75">Better Business Bureau</p>
                 </div>
               </a>
+
+              <NCDDBadge variant="glass" />
 
               <div className="relative glass glass-sheen flex items-center gap-4 px-5 py-4 flex-1 min-w-0">
                 <Image

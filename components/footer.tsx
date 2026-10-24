@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, MapPin, Clock, Mail, ArrowRight, Star } from 'lucide-react';
+import NCDDBadge from '@/components/NCDDBadge';
 import { BTN_PRIMARY, BTN_MD } from '@/components/uiClasses';
 
 const PHONE_DISPLAY = '(614) 285-5482';
@@ -48,7 +49,7 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
   {
     heading: 'Firm & Local',
     links: [
-      { href: '/our-law-firm/our-attorneys', label: 'Our Team' },
+      { href: '/our-law-firm/our-attorneys', label: 'Our Attorney' },
       { href: '/our-law-firm/case-results', label: 'Case Results' },
       { href: '/our-law-firm/blog', label: 'Blog' },
       { href: '/our-law-firm/document-templates', label: 'Document Templates' },
@@ -136,7 +137,7 @@ export default function Footer() {
         </div>
 
         {/* Trust row */}
-        <div className="mt-12 grid gap-3 sm:grid-cols-3">
+        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <a
             href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick"
             target="_blank"
@@ -155,6 +156,8 @@ export default function Footer() {
             />
             <span className="relative text-xs text-white/80">A+ Accredited Business</span>
           </a>
+
+          <NCDDBadge variant="glass" />
 
           <a
             href="https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews"

@@ -3,20 +3,20 @@ import { Metadata } from 'next';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
 export const metadata: Metadata = {
-  title: 'Our Staff | Meet the Legal Team | Jwayyed Law LLC',
+  title: 'Attorney Jwayyed',
   description:
-    'Meet the legal team at Jwayyed Law LLC — attorneys and staff serving Ohio in criminal defense, OVI, personal injury, and business law. (614) 285-5482.',
+    'Meet Attorney Jwayyed of Jwayyed Law LLC, serving Ohio in criminal defense, OVI, personal injury, and business law. (614) 285-5482.',
   keywords: [
-    'legal team Columbus Ohio',
-    'Ohio law firm staff',
-    'Jwayyed Law team',
-    'legal professionals Ohio',
-    'Columbus attorneys',
+    'Attorney Jwayyed',
+    'Columbus OVI attorney',
+    'Ohio criminal defense lawyer',
+    'Jwayyed Law LLC attorney',
+    'Columbus attorney',
   ],
   openGraph: {
-    title: 'Our Staff | Jwayyed Law LLC',
+    title: 'Attorney Jwayyed | Jwayyed Law LLC',
     description:
-      'Meet the dedicated legal team at Jwayyed Law LLC serving clients throughout Ohio.',
+      'Meet Attorney Jwayyed, serving clients throughout Ohio.',
     url: `${siteUrl}/our-law-firm/our-attorneys`,
   },
   alternates: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function OurStaffLayout({
+export default function OurAttorneyLayout({
   children,
 }: {
   children: React.ReactNode;
