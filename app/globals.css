@@ -18,16 +18,21 @@
 @theme {
   /* ---------------------------------------------------------------------
      Home, navbar and footer ("the name as a monument").
-     Deep navy is the ground, white the ink, copper-400 the one accent: it
-     reads 7.0:1 on navy-950, so it carries small text and the primary
-     action. Fields alternate navy, white and a lighter navy step; nothing
-     fades into anything. Mist is the secondary ink (8.4:1 on navy-950).
+     Navy is the primary colour, alternating with white and ice grounds;
+     sky is the accent. Mist is the secondary ink on navy (8.4:1).
      --------------------------------------------------------------------- */
   --color-navy-950: #0b1a2e;
   --color-navy-900: #12253d;
   --color-navy-800: #1b3150;
   --color-navy-700: #26406a;
   --color-mist: #a8b5c4;
+  /* Sky is the second colour: buttons, links and highlights on navy
+     (7.8:1 on navy-950, and navy text on sky reads the same). On white it
+     deepens to sky-deep (6.5:1). Ice is the light ground between the navy
+     bands, so the page is mostly blue without being only blue. */
+  --color-sky: #6cb4ee;
+  --color-sky-deep: #1f5fa8;
+  --color-ice: #f2f6fb;
   --font-jw: var(--font-cabinet), 'Helvetica Neue', Arial, sans-serif;
 
   /* Brass — the brand's signal colour */

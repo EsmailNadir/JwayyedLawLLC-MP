@@ -43,7 +43,7 @@ function ReviewCard({ name, text, rating }: { name: string; text: string; rating
       <CardContent className="p-4">
         <div className="flex items-center gap-2.5">
           <Avatar className="size-9">
-            <AvatarFallback className="bg-copper-100 text-[15px] font-semibold text-copper-700">
+            <AvatarFallback className="bg-ice text-[15px] font-semibold text-sky-deep">
               {initials(name)}
             </AvatarFallback>
           </Avatar>
@@ -51,7 +51,7 @@ function ReviewCard({ name, text, rating }: { name: string; text: string; rating
             <figcaption className="truncate text-[15px] font-semibold text-navy-950">{name}</figcaption>
             <div className="flex items-center gap-0.5" aria-hidden="true">
               {Array.from({ length: rating }, (_, i) => (
-                <Star key={i} className="h-3 w-3 fill-copper-500 text-copper-500" />
+                <Star key={i} className="h-3 w-3 fill-sky-deep text-sky-deep" />
               ))}
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function TestimonialWall() {
       <button
         type="button"
         onClick={() => setPaused((p) => !p)}
-        className="motion-reduce:hidden absolute top-3 right-3 z-10 inline-flex items-center justify-center w-11 h-11 bg-navy-950 text-white hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
+        className="motion-reduce:hidden absolute top-3 right-3 z-10 inline-flex items-center justify-center w-11 h-11 bg-navy-950 text-white hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
         aria-label={paused ? 'Play scrolling reviews' : 'Pause scrolling reviews'}
       >
         {paused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}

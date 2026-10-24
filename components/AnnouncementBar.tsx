@@ -64,7 +64,7 @@ export default function AnnouncementBar() {
           <span className="sm:hidden">Best of 2026, BusinessRate.</span>
           <Link
             href="/our-law-firm/about-us#accolades"
-            className="text-copper-400 hover:text-white underline underline-offset-4 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
+            className="text-sky hover:text-white underline underline-offset-4 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
           >
             <span className="sm:hidden">See it</span>
             <span className="hidden sm:inline">See the award</span>
@@ -74,7 +74,7 @@ export default function AnnouncementBar() {
         <button
           type="button"
           onClick={handleDismiss}
-          className="absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
+          className="absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
           aria-label="Close announcement"
         >
           <X className="w-4 h-4" strokeWidth={2.5} aria-hidden="true" />

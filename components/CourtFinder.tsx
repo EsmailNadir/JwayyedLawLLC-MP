@@ -34,7 +34,7 @@ export default function CourtFinder() {
   const court = COURTS[index];
 
   return (
-    <div className="bg-[#d9964f] text-[#0b1a2e] px-5 sm:px-8 py-8 sm:py-10 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-end">
+    <div className="bg-navy-950 text-white px-5 sm:px-8 py-8 sm:py-10 grid gap-8">
       <div>
         <label htmlFor={id} className="block text-[length:var(--step-lead)] font-medium leading-tight">
           Which court is on your ticket?
@@ -43,7 +43,7 @@ export default function CourtFinder() {
           id={id}
           value={index}
           onChange={(e) => setIndex(Number(e.target.value))}
-          className="mt-4 w-full min-h-[52px] bg-[#0b1a2e] text-white text-[length:var(--step-body)] px-4 pr-10 cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+          className="mt-4 w-full min-h-[52px] bg-white text-navy-950 text-[length:var(--step-body)] px-4 pr-10 cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky"
         >
           {COURTS.map((c, i) => (
             <option key={c.href} value={i}>
@@ -55,26 +55,26 @@ export default function CourtFinder() {
 
       <div aria-live="polite">
         <p className="text-[length:var(--step-lead)] font-medium leading-tight">{court.name}</p>
-        <p className="mt-1 text-[length:var(--step-body)]">{court.place}. Jwayyed Law appears here.</p>
+        <p className="mt-1 text-[length:var(--step-body)] text-mist">{court.place}. Jwayyed Law appears here.</p>
         <div className="mt-5 flex flex-col sm:flex-row gap-3">
           <Link
             href={court.href}
-            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 bg-[#0b1a2e] text-white font-medium hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 bg-sky text-navy-950 font-medium hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
           >
             What to expect at this court
             <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
           </Link>
           <a
             href={PHONE_TEL}
-            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 border-2 border-[#0b1a2e] font-medium hover:bg-[#0b1a2e] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 border-2 border-white/60 font-medium hover:border-white hover:bg-white hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             Call about a case here
           </a>
         </div>
-        <p className="mt-4 text-[length:var(--step-small)]">
+        <p className="mt-4 text-[length:var(--step-small)] text-mist">
           Not listed?{' '}
-          <Link href="/courts" className="underline underline-offset-4 font-medium">
+          <Link href="/courts" className="underline underline-offset-4 font-medium text-sky hover:text-white">
             See every court we cover
           </Link>
         </p>

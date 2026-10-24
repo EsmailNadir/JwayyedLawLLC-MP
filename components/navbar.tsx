@@ -22,7 +22,7 @@ const HOVER_CLOSE_DELAY_MS = 140;
 const MENU_SHADOW = 'shadow-[0_24px_48px_-24px_rgba(0,0,0,0.55)]'; // taste-skill-ignore
 
 /** Ring used on every control on the navy bar. */
-const FOCUS = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400';
+const FOCUS = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
 
 function isActiveRoute(pathname: string | null, href: string): boolean {
   if (!pathname) return false;
@@ -216,7 +216,7 @@ export default function Navbar() {
 
               <a
                 href={PHONE_TEL}
-                className={`max-xl:hidden inline-flex items-center gap-2 min-h-[44px] px-5 bg-copper-400 text-navy-950 text-[length:var(--step-small)] font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors ${FOCUS} focus-visible:ring-white`}
+                className={`max-xl:hidden inline-flex items-center gap-2 min-h-[44px] px-5 bg-sky text-navy-950 text-[length:var(--step-small)] font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors ${FOCUS} focus-visible:ring-white`}
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />
                 {PHONE}
@@ -297,8 +297,8 @@ function NavItem({
   // the label. The one filled shape in the bar stays the phone button.
   const shared =
     `relative inline-flex items-center gap-1 px-3 py-2.5 text-[length:var(--step-small)] font-medium transition-colors cursor-pointer ` +
-    `after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-copper-400 after:origin-left after:transition-transform after:duration-200 ` +
-    `${active ? 'text-copper-400 after:scale-x-100' : 'text-white hover:text-white after:scale-x-0 hover:after:scale-x-100'} ${FOCUS}`;
+    `after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-sky after:origin-left after:transition-transform after:duration-200 ` +
+    `${active ? 'text-sky after:scale-x-100' : 'text-white hover:text-white after:scale-x-0 hover:after:scale-x-100'} ${FOCUS}`;
 
   const focusFirstLink = useCallback(() => {
     panelRef.current?.querySelector<HTMLAnchorElement>('a[href]')?.focus();
@@ -357,7 +357,7 @@ function NavItem({
         <Link
           href={node.href}
           onClick={onClose}
-          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-navy-950/[0.06] hover:bg-navy-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700"
+          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-navy-950/[0.06] hover:bg-navy-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep"
         >
           <span>
             <span className="block text-[length:var(--step-small)] font-medium">{node.name}</span>
@@ -412,8 +412,8 @@ function PanelLink({
       href={href}
       onClick={onClose}
       aria-current={active ? 'page' : undefined}
-      className={`block px-3 py-2 text-[length:var(--step-small)] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700 ${
-        active ? 'text-copper-700 font-medium bg-copper-500/10' : 'text-navy-950 hover:bg-navy-950/[0.06]'
+      className={`block px-3 py-2 text-[length:var(--step-small)] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep ${
+        active ? 'text-sky-deep font-medium bg-sky-deep/10' : 'text-navy-950 hover:bg-navy-950/[0.06]'
       }`}
     >
       {label.replace(/ →$/, '')}
@@ -501,7 +501,7 @@ function MobileDrawer({
     setExpanded(current?.name ?? null);
   }, [isOpen, pathname]);
 
-  const linkFocus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-copper-700';
+  const linkFocus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sky-deep';
 
   return (
     <>
@@ -543,7 +543,7 @@ function MobileDrawer({
           <a
             href={PHONE_TEL}
             onClick={onClose}
-            className={`flex items-center justify-center gap-2.5 w-full min-h-[52px] bg-copper-400 text-navy-950 font-medium tabular-nums hover:bg-navy-950 hover:text-white transition-colors ${linkFocus}`}
+            className={`flex items-center justify-center gap-2.5 w-full min-h-[52px] bg-sky text-navy-950 font-medium tabular-nums hover:bg-navy-950 hover:text-white transition-colors ${linkFocus}`}
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             Call {PHONE}
@@ -575,7 +575,7 @@ function MobileDrawer({
                       onClick={onClose}
                       aria-current={isActiveRoute(pathname, node.href) ? 'page' : undefined}
                       className={`flex-1 px-3 py-3.5 text-lg font-medium transition-colors ${linkFocus} ${
-                        branchActive ? 'text-copper-700' : 'hover:text-copper-700'
+                        branchActive ? 'text-sky-deep' : 'hover:text-sky-deep'
                       }`}
                     >
                       {node.name}
@@ -602,7 +602,7 @@ function MobileDrawer({
                             onClick={onClose}
                             aria-current={isActiveRoute(pathname, link.href) ? 'page' : undefined}
                             className={`block px-5 py-2.5 text-[length:var(--step-small)] transition-colors ${linkFocus} ${
-                              isActiveRoute(pathname, link.href) ? 'text-copper-700 font-medium' : 'hover:text-copper-700'
+                              isActiveRoute(pathname, link.href) ? 'text-sky-deep font-medium' : 'hover:text-sky-deep'
                             }`}
                           >
                             {link.name.replace(/ →$/, '')}

@@ -48,7 +48,7 @@ export const ReviewSummaryCard: React.FC<ReviewSummaryCardProps> = ({
         {Array.from({ length: maxRating }, (_, i) => (
           <Star
             key={i}
-            className={cn('h-6 w-6', rating >= i + 0.5 ? 'text-copper-500' : 'text-muted-foreground/50')}
+            className={cn('h-6 w-6', rating >= i + 0.5 ? 'text-sky-deep' : 'text-muted-foreground/50')}
             fill="currentColor"
           />
         ))}

@@ -75,23 +75,23 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
   },
 ];
 
-const LINK = 'hover:text-copper-700 hover:underline underline-offset-4 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700';
+const LINK = 'hover:text-sky hover:underline underline-offset-4 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
 
 /**
- * The close of every page: the name first, at full width, in the inverse of
- * the navy bar above it; then the ways to reach the firm, the link columns,
+ * The close of every page: the name first, at full width, in the navy close
+ * after the sky call band; then the ways to reach the firm, the link columns,
  * the trust marks and the legal line.
  */
 export default function Footer() {
   return (
-    <footer className="jw bg-white text-navy-950 overflow-hidden">
+    <footer className="jw bg-navy-950 text-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-8">
         <p className="jw-display whitespace-nowrap text-[clamp(3.5rem,15.2vw,13.5rem)] leading-[0.82]" aria-hidden="true">
           Jwayyed Law
         </p>
 
         <div className="mt-16 sm:mt-20 grid gap-14 lg:grid-cols-12 lg:gap-8">
-          <ul className="lg:col-span-5 grid content-start gap-3 text-[length:var(--step-lead)] leading-tight font-medium text-copper-700">
+          <ul className="lg:col-span-5 grid content-start gap-3 text-[length:var(--step-lead)] leading-tight font-medium text-sky">
             <li>
               <a href={PHONE_TEL} className={`tabular-nums ${LINK}`}>
                 {PHONE_DISPLAY}
@@ -112,7 +112,7 @@ export default function Footer() {
                 100 E. Campus View Blvd, Suite 250, Columbus
               </a>
             </li>
-            <li className="text-navy-950 text-[length:var(--step-body)] font-normal pt-2">Monday to Friday, 9am to 5pm</li>
+            <li className="text-white/80 text-[length:var(--step-body)] font-normal pt-2">Monday to Friday, 9am to 5pm</li>
           </ul>
 
           <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10 text-[length:var(--step-small)]">
@@ -120,11 +120,11 @@ export default function Footer() {
               <nav key={column.heading} aria-label={column.heading}>
                 {/* Not a heading element: the nav landmark is already labelled,
                     and extra h2s here would dilute each page's outline. */}
-                <div className="font-medium text-navy-950/60 mb-3">{column.heading}</div>
+                <div className="font-medium text-mist mb-3">{column.heading}</div>
                 <ul className="grid gap-1">
                   {column.links.map(({ href, label }) => (
                     <li key={href}>
-                      <Link href={href} className={`inline-block py-1 ${LINK}`}>
+                      <Link href={href} className={`inline-block py-1 text-white/85 ${LINK}`}>
                         {label}
                       </Link>
                     </li>
@@ -155,7 +155,7 @@ export default function Footer() {
             />
             A+ accredited
           </a>
-          <NCDDBadge variant="inline" tone="light" />
+          <NCDDBadge variant="inline" tone="dark" />
           <span className="inline-flex items-center gap-3 font-medium">
             <Image
               src="/assets/jwayyed-law-llc-plaque.png"
@@ -170,7 +170,7 @@ export default function Footer() {
         </div>
 
         {/* Legal */}
-        <div className="mt-14 grid gap-4 text-[length:var(--step-small)] text-navy-950/70 lg:grid-cols-12">
+        <div className="mt-14 grid gap-4 text-[length:var(--step-small)] text-white/70 lg:grid-cols-12">
           <div className="lg:col-span-9 grid gap-2">
             <p className="max-w-[90ch]">
               Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice.
@@ -183,11 +183,7 @@ export default function Footer() {
               </Link>
             </p>
             <p>
-              Pictures:{' '}
-              <a href="https://commons.wikimedia.org/wiki/File:Franklin_County_Courthouse_illustration.jpg" className={`underline ${LINK}`}>
-                Franklin County Courthouse illustration
-              </a>{' '}
-              (1873), public domain;{' '}
+              Picture:{' '}
               <a href="https://commons.wikimedia.org/w/index.php?curid=221770" className={`underline ${LINK}`}>
                 Ohio Statehouse
               </a>
@@ -195,7 +191,7 @@ export default function Footer() {
               <a href="https://creativecommons.org/licenses/by-sa/3.0/" className={`underline ${LINK}`}>
                 CC BY-SA 3.0
               </a>
-              ; both via Wikimedia Commons.
+              , via Wikimedia Commons.
             </p>
           </div>
           <div className="lg:col-span-3 lg:text-right">
