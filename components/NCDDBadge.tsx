@@ -18,7 +18,14 @@ const ALT = 'National College for DUI Defense General Member badge';
  * - `card`: matches the Google and BBB cards above the review carousels.
  * - `glass`: the dark trust cards used on dark sections and the footer.
  */
-export default function NCDDBadge({ variant = 'inline' }: { variant?: 'inline' | 'card' | 'glass' }) {
+export default function NCDDBadge({
+  variant = 'inline',
+  tone = 'dark',
+}: {
+  variant?: 'inline' | 'card' | 'glass';
+  /** For `inline`: the ground it sits on, which sets the label colour. */
+  tone?: 'dark' | 'light';
+}) {
   if (variant === 'glass') {
     return (
       <a
@@ -51,7 +58,7 @@ export default function NCDDBadge({ variant = 'inline' }: { variant?: 'inline' |
         target="_blank"
         rel="noopener noreferrer"
         title="View Attorney Jwayyed's NCDD profile"
-        className="flex items-center gap-4 bg-white border border-slate-200 rounded-xl px-5 py-4 shadow-sm min-w-[220px] hover:border-slate-300 hover:shadow-md transition-all duration-200"
+        className="flex items-center gap-4 bg-white border border-slate-200 rounded-xl px-5 py-4 min-w-[220px] hover:border-slate-400 transition-colors duration-200"
       >
         <Image
           src="/assets/ncdd-general-member-badge.png"
@@ -75,7 +82,7 @@ export default function NCDDBadge({ variant = 'inline' }: { variant?: 'inline' |
       target="_blank"
       rel="noopener noreferrer"
       title="View Attorney Jwayyed's NCDD profile"
-      className="flex items-center gap-2.5 opacity-70 hover:opacity-100 transition-opacity"
+      className={`flex items-center gap-2.5 transition-opacity ${tone === 'light' ? 'hover:opacity-80' : 'opacity-70 hover:opacity-100'}`}
     >
       <Image
         src="/assets/ncdd-general-member-badge.png"
@@ -85,7 +92,7 @@ export default function NCDDBadge({ variant = 'inline' }: { variant?: 'inline' |
         sizes="32px"
         className="h-8 w-8 flex-shrink-0"
       />
-      <span className="text-xs text-gray-400">NCDD Member</span>
+      <span className={tone === 'light' ? 'text-[length:var(--step-small)] font-medium' : 'text-[length:var(--step-small)] text-white/80'}>NCDD Member</span>
     </a>
   );
 }

@@ -4,17 +4,25 @@ import React, { useState, useEffect, useCallback, useRef, useId } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { Phone, Search, X, Menu, ArrowUpRight, ChevronDown } from 'lucide-react';
+import { Phone, Search, X, Menu, ChevronDown, ArrowUpRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import { primaryNav, type NavNode } from '@/data/navigation';
 
 const PHONE = '(614) 285-5482';
 const PHONE_TEL = 'tel:+16142855482';
+const CTA_LABEL = 'Schedule a consultation';
 const ACCESSIBILITY_WIDGET_SELECTOR = '#acsb-trigger, #acsb-trigger-frame, .acsb-trigger, .acsb-widget, [data-acsb]';
+const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select, [tabindex]:not([tabindex="-1"])';
 
 // Mouse travel from a trigger to its panel crosses a few pixels of dead space,
 // so closing is delayed rather than immediate on mouseleave.
 const HOVER_CLOSE_DELAY_MS = 140;
+
+/** Dropdown panels really float over the page, so they alone carry a shadow. */
+const MENU_SHADOW = 'shadow-[0_24px_48px_-24px_rgba(0,0,0,0.55)]'; // taste-skill-ignore
+
+/** Ring used on every control on the pine bar. */
+const FOCUS = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400';
 
 function isActiveRoute(pathname: string | null, href: string): boolean {
   if (!pathname) return false;
@@ -33,22 +41,18 @@ function isBranchActive(pathname: string | null, node: NavNode): boolean {
 // ============================================================================
 // MAIN NAVBAR
 //
-// The bar floats transparently over the home page's video hero and turns into
-// an opaque paper bar once scrolled. Every other route gets the opaque bar from
-// the start, because their heroes are light and white-on-light is unreadable.
+// A plain pine bar on every page: wordmark, the five menu entries as plain
+// text links, search, and the phone number as the one filled action. No pill,
+// no blur, no rule under it; on light pages the pine field is its own edge.
 // ============================================================================
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [pinned, setPinned] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-
-  const isHome = pathname === '/';
-  const overlay = isHome && !isScrolled && !searchOpen;
 
   const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
   const closeSearch = useCallback(() => setSearchOpen(false), []);
@@ -111,13 +115,6 @@ export default function Navbar() {
   useEffect(() => clearHoverTimer, [clearHoverTimer]);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 24);
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
     setSearchOpen(false);
     setOpenMenu(null);
     setPinned(false);
@@ -154,132 +151,90 @@ export default function Navbar() {
     router.prefetch('/contact');
   }, [mobileMenuOpen, router]);
 
+  const iconButton = `inline-flex items-center justify-center w-11 h-11 text-white hover:bg-pine-800 active:bg-pine-900 transition-colors ${FOCUS}`;
+
   return (
     <>
-      <header className="sticky top-0 z-50 w-full">
-        <div
-          className={`transition-colors duration-300 ${
-            overlay
-              ? 'bg-transparent'
-              : 'bg-paper-50/85 supports-[backdrop-filter]:bg-paper-50/70 backdrop-blur-xl border-b border-copper-500/15 shadow-sm shadow-ink-900/5'
-          }`}
-        >
-          <div ref={navRef} className="max-w-[1440px] mx-auto px-4 lg:px-8">
-            <div className="flex items-center justify-between h-16 xl:h-20 gap-4">
-              {/* Wordmark */}
-              <Link href="/" className="flex-shrink-0 flex items-center gap-2.5" aria-label="Jwayyed Law LLC home">
-                <Image
-                  src={overlay ? '/assets/jwayyed-logo-light.png' : '/assets/jwayyed-logo-dark.png'}
-                  alt="Jwayyed Law LLC"
-                  width={2521}
-                  height={407}
-                  priority
-                  sizes="200px"
-                  className="h-7 xl:h-8 w-auto"
-                />
-                <span
-                  className={`hidden sm:inline text-[0.6rem] tracking-[0.25em] uppercase font-semibold pl-2.5 border-l ${
-                    overlay ? 'text-copper-200 border-white/25' : 'text-copper-600 border-copper-500/25'
-                  }`}
-                >
-                  Ohio
-                </span>
-              </Link>
+      <header className="jw sticky top-0 z-50 w-full bg-pine-950 text-white">
+        <div ref={navRef} className="max-w-[1440px] mx-auto px-5 sm:px-8">
+          <div className="flex items-center justify-between h-16 xl:h-20 gap-6">
+            <Link href="/" className={`flex-shrink-0 flex items-center ${FOCUS}`} aria-label="Jwayyed Law LLC home">
+              <Image
+                src="/assets/jwayyed-logo-light.png"
+                alt="Jwayyed Law LLC"
+                width={2521}
+                height={407}
+                priority
+                sizes="200px"
+                className="h-7 xl:h-8 w-auto"
+              />
+            </Link>
 
-              {/* Centre pill */}
-              <nav
-                className={`hidden xl:flex items-center rounded-full p-1 border transition-colors duration-300 ${
-                  overlay
-                    ? 'bg-white/10 border-white/15 supports-[backdrop-filter]:backdrop-blur-xl'
-                    : 'bg-ink-900/[0.05] border-ink-900/10'
-                }`}
-                aria-label="Primary"
-              >
-                <ul className="flex items-center gap-0.5">
-                  {primaryNav.map((item) => (
-                    <NavItem
-                      key={item.href}
-                      node={item}
-                      pathname={pathname}
-                      overlay={overlay}
-                      isOpen={openMenu === item.name}
-                      onOpenHover={() => openWithHover(item.name)}
-                      onCloseHover={closeWithHover}
-                      onToggle={() => toggleMenu(item.name)}
-                      onClose={closeMenu}
-                    />
-                  ))}
-                </ul>
-              </nav>
-
-              {/* Right actions */}
-              <div className="flex items-center gap-2 flex-shrink-0">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSearchOpen((v) => !v);
-                    closeMenu();
-                  }}
-                  className={`hidden xl:inline-flex items-center justify-center w-10 h-10 rounded-full border transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400 ${
-                    overlay
-                      ? 'border-white/15 bg-white/10 text-white hover:bg-white/20'
-                      : 'border-ink-900/10 bg-ink-900/[0.05] text-ink-800 hover:bg-ink-900/10'
-                  }`}
-                  aria-label={searchOpen ? 'Close search' : 'Open search'}
-                  aria-expanded={searchOpen}
-                  aria-controls="site-search-panel"
-                >
-                  {searchOpen ? <X className="w-4.5 h-4.5" /> : <Search className="w-4.5 h-4.5" />}
-                </button>
-
-                <Link
-                  href="/contact"
-                  className="max-xl:hidden inline-flex items-center gap-1.5 rounded-full bg-copper-200 hover:bg-copper-100 text-ink-900 text-[13px] font-semibold px-5 py-2.5 ring-1 ring-copper-500/25 shadow-sm transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500 focus-visible:ring-offset-2"
-                >
-                  Book consultation
-                  <ArrowUpRight
-                    className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    aria-hidden="true"
+            <nav className="hidden xl:block" aria-label="Primary">
+              <ul className="flex items-center gap-2">
+                {primaryNav.map((item) => (
+                  <NavItem
+                    key={item.href}
+                    node={item}
+                    pathname={pathname}
+                    isOpen={openMenu === item.name}
+                    onOpenHover={() => openWithHover(item.name)}
+                    onCloseHover={closeWithHover}
+                    onToggle={() => toggleMenu(item.name)}
+                    onClose={closeMenu}
                   />
-                </Link>
+                ))}
+              </ul>
+            </nav>
 
-                {/* Mobile / tablet */}
-                <a
-                  href={PHONE_TEL}
-                  className={`xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-full transition-colors min-h-[44px] min-w-[44px] ${
-                    overlay ? 'text-white hover:bg-white/15' : 'text-copper-600 hover:bg-copper-500/10'
-                  }`}
-                  aria-label={`Call ${PHONE}`}
-                >
-                  <Phone className="w-5 h-5" aria-hidden="true" />
-                </a>
-                <button
-                  className={`xl:hidden inline-flex items-center justify-center w-11 h-11 rounded-full transition-colors min-h-[44px] min-w-[44px] active:scale-[0.97] ${
-                    overlay ? 'text-white hover:bg-white/15' : 'text-ink-800 hover:bg-ink-900/[0.06]'
-                  }`}
-                  onClick={() => setMobileMenuOpen(true)}
-                  aria-label="Open menu"
-                  aria-expanded={mobileMenuOpen}
-                  style={{ touchAction: 'manipulation' }}
-                >
-                  <Menu className="w-6 h-6" aria-hidden="true" />
-                </button>
-              </div>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchOpen((v) => !v);
+                  closeMenu();
+                }}
+                className={`hidden xl:inline-flex ${iconButton}`}
+                aria-label={searchOpen ? 'Close search' : 'Search the site'}
+                aria-expanded={searchOpen}
+                aria-controls="site-search-panel"
+              >
+                {searchOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Search className="w-5 h-5" aria-hidden="true" />}
+              </button>
+
+              <a
+                href={PHONE_TEL}
+                className={`max-xl:hidden inline-flex items-center gap-2 min-h-[44px] px-5 bg-copper-400 text-pine-950 text-[length:var(--step-small)] font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors ${FOCUS} focus-visible:ring-white`}
+              >
+                <Phone className="w-4 h-4" aria-hidden="true" />
+                {PHONE}
+              </a>
+
+              {/* Mobile / tablet */}
+              <a href={PHONE_TEL} className={`xl:hidden ${iconButton}`} aria-label={`Call ${PHONE}`}>
+                <Phone className="w-5 h-5" aria-hidden="true" />
+              </a>
+              <button
+                type="button"
+                className={`xl:hidden ${iconButton}`}
+                onClick={() => setMobileMenuOpen(true)}
+                aria-label="Open menu"
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-site-menu"
+                style={{ touchAction: 'manipulation' }}
+              >
+                <Menu className="w-6 h-6" aria-hidden="true" />
+              </button>
             </div>
           </div>
+        </div>
 
-          {/* Search panel */}
-          <div
-            id="site-search-panel"
-            className={`hidden xl:block overflow-hidden transition-[max-height,opacity] duration-300 ease-out ${
-              searchOpen ? 'max-h-32 opacity-100 border-t border-copper-500/15' : 'max-h-0 opacity-0'
-            }`}
-            aria-hidden={!searchOpen}
-          >
-            <div className="max-w-[1440px] mx-auto px-4 lg:px-8 py-4">
-              <div className="max-w-2xl mx-auto">
-                <SearchBar onNavigate={closeSearch} />
-              </div>
+        {/* Search panel. Hidden and inert when closed so its input is not
+            reachable by Tab while unseen. */}
+        <div id="site-search-panel" className={searchOpen ? 'hidden xl:block bg-pine-900' : 'hidden'} inert={!searchOpen}>
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 py-4">
+            <div className="max-w-2xl mx-auto">
+              <SearchBar onNavigate={closeSearch} />
             </div>
           </div>
         </div>
@@ -291,20 +246,19 @@ export default function Navbar() {
 }
 
 // ============================================================================
-// PILL ITEM + DROPDOWN
+// NAV ITEM + DROPDOWN
 //
 // A disclosure rather than an ARIA menu: the panels hold ordinary links, so
 // they expose aria-expanded/aria-controls and leave Tab to walk the links,
 // instead of claiming role="menu" without the arrow-key contract that implies.
 //
-// Panels stay mounted and hide with `invisible`, which keeps their links in the
-// HTML for crawlers while removing them from the tab order and a11y tree.
+// Closed panels are `hidden`: their links stay in the server HTML for
+// crawlers, and are out of the tab order and accessibility tree.
 // ============================================================================
 
 function NavItem({
   node,
   pathname,
-  overlay,
   isOpen,
   onOpenHover,
   onCloseHover,
@@ -313,7 +267,6 @@ function NavItem({
 }: {
   node: NavNode;
   pathname: string | null;
-  overlay: boolean;
   isOpen: boolean;
   onOpenHover: () => void;
   onCloseHover: () => void;
@@ -328,18 +281,12 @@ function NavItem({
   const hasMenu = !!node.subDropdowns?.length || !!node.subLinks?.length;
   const hasGroups = !!node.subDropdowns?.length;
 
-  // The filled pill that marks the current section, matching the design's
-  // treatment of the active item.
-  const pill = active
-    ? overlay
-      ? 'bg-white text-ink-900 shadow-sm'
-      : 'bg-ink-900 text-white shadow-sm'
-    : overlay
-      ? 'text-white/85 hover:text-white hover:bg-white/10'
-      : 'text-ink-700 hover:text-ink-900 hover:bg-ink-900/[0.06]';
-
+  // The current section takes the copper ink; hover draws a copper bar under
+  // the label. The one filled shape in the bar stays the phone button.
   const shared =
-    'relative inline-flex items-center gap-1 rounded-full px-4 py-2 text-[13px] font-medium transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400';
+    `relative inline-flex items-center gap-1 px-3 py-2.5 text-[length:var(--step-small)] font-medium transition-colors cursor-pointer ` +
+    `after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-copper-400 after:origin-left after:transition-transform after:duration-200 ` +
+    `${active ? 'text-copper-400 after:scale-x-100' : 'text-white hover:text-white after:scale-x-0 hover:after:scale-x-100'} ${FOCUS}`;
 
   const focusFirstLink = useCallback(() => {
     panelRef.current?.querySelector<HTMLAnchorElement>('a[href]')?.focus();
@@ -348,7 +295,7 @@ function NavItem({
   if (!hasMenu) {
     return (
       <li>
-        <Link href={node.href} className={`${shared} ${pill}`} aria-current={active ? 'page' : undefined}>
+        <Link href={node.href} className={shared} aria-current={active ? 'page' : undefined}>
           {node.name}
         </Link>
       </li>
@@ -371,7 +318,7 @@ function NavItem({
     }
   };
 
-  const panelWidth = hasGroups ? 'w-[min(52rem,calc(100vw-3rem))]' : 'w-[19rem]';
+  const panelWidth = hasGroups ? 'w-[min(54rem,calc(100vw-3rem))]' : 'w-[20rem]';
 
   return (
     <li className="relative" onMouseEnter={onOpenHover} onMouseLeave={onCloseHover}>
@@ -382,47 +329,36 @@ function NavItem({
         onKeyDown={handleTriggerKeyDown}
         aria-expanded={isOpen}
         aria-controls={panelId}
-        className={`${shared} ${pill}`}
+        className={shared}
       >
         {node.name}
-        <ChevronDown
-          className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-          aria-hidden="true"
-        />
+        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
       </button>
 
+      {/* A real floating menu, so it is the one thing on the bar with a shadow. */}
       <div
         id={panelId}
         ref={panelRef}
         onKeyDown={handlePanelKeyDown}
-        className={`absolute top-[calc(100%+14px)] left-1/2 -translate-x-1/2 ${panelWidth} glass-menu rounded-3xl p-2.5 z-[60] transition-[opacity,transform] duration-200 ease-out ${
-          isOpen ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1'
-        }`}
+        className={`${isOpen ? 'block jw-menu-in' : 'hidden'} absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ${panelWidth} bg-white text-pine-950 p-3 z-[60] ${MENU_SHADOW}`}
       >
         <Link
           href={node.href}
           onClick={onClose}
-          className="flex items-start gap-3 rounded-2xl px-4 py-3 mb-1 bg-gradient-to-br from-copper-500/12 to-copper-400/5 hover:from-copper-500/20 hover:to-copper-400/10 transition-colors group/overview focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
+          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-pine-950/[0.06] hover:bg-pine-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700"
         >
-          <div className="min-w-0">
-            <div className="flex items-center gap-1.5 text-[13px] font-semibold text-ink-900">
-              {node.name} overview
-              <ArrowUpRight
-                className="w-3.5 h-3.5 text-copper-600 transition-transform duration-200 group-hover/overview:translate-x-0.5 group-hover/overview:-translate-y-0.5"
-                aria-hidden="true"
-              />
-            </div>
-            {node.tagline && <p className="text-[11.5px] leading-snug text-ink-700/70 mt-0.5">{node.tagline}</p>}
-          </div>
+          <span>
+            <span className="block text-[length:var(--step-small)] font-medium">{node.name}</span>
+            {node.tagline && <span className="block text-[length:var(--step-small)] text-pine-950/70 mt-0.5">{node.tagline}</span>}
+          </span>
+          <ArrowUpRight className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
         </Link>
 
         {hasGroups ? (
-          <div className="grid grid-cols-3 gap-x-2 gap-y-1 p-1">
+          <div className="grid grid-cols-3 gap-x-2 gap-y-2 p-1">
             {node.subDropdowns!.map((group) => (
               <div key={group.name} className="min-w-0">
-                <div className="text-[10px] font-semibold tracking-[0.14em] uppercase text-copper-600 px-3 pt-2 pb-1">
-                  {group.name}
-                </div>
+                <div className="text-[length:var(--step-small)] font-medium px-3 pt-2 pb-1 text-pine-950/60">{group.name}</div>
                 <ul>
                   {group.links.map((link) => (
                     <li key={`${group.name}-${link.href}-${link.name}`}>
@@ -463,19 +399,23 @@ function PanelLink({
     <Link
       href={href}
       onClick={onClose}
-      className={`block rounded-lg px-3 py-[7px] text-[12.5px] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500 ${
-        active
-          ? 'text-copper-600 font-semibold bg-copper-500/10'
-          : 'text-ink-700 hover:text-copper-600 hover:bg-copper-500/[0.07]'
+      aria-current={active ? 'page' : undefined}
+      className={`block px-3 py-2 text-[length:var(--step-small)] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700 ${
+        active ? 'text-copper-700 font-medium bg-copper-500/10' : 'text-pine-950 hover:bg-pine-950/[0.06]'
       }`}
     >
-      {label}
+      {label.replace(/ →$/, '')}
     </Link>
   );
 }
 
 // ============================================================================
 // MOBILE DRAWER
+//
+// A modal dialog, so it behaves like one: closed, it is `hidden` and
+// `inert` (sliding it off-screen alone left its controls in the Tab order);
+// open, focus moves into it, Tab is held inside, Escape closes it, and focus
+// returns to whatever opened it.
 // ============================================================================
 
 function MobileDrawer({
@@ -488,6 +428,8 @@ function MobileDrawer({
   pathname: string | null;
 }) {
   const previousPathnameRef = useRef(pathname);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   useEffect(() => {
@@ -506,6 +448,37 @@ function MobileDrawer({
   }, [isOpen]);
 
   useEffect(() => {
+    if (!isOpen) return;
+    const opener = document.activeElement as HTMLElement | null;
+    closeButtonRef.current?.focus();
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+        return;
+      }
+      if (e.key !== 'Tab' || !panelRef.current) return;
+      const items = Array.from(panelRef.current.querySelectorAll<HTMLElement>(FOCUSABLE));
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      opener?.focus?.();
+    };
+  }, [isOpen, onClose]);
+
+  useEffect(() => {
     if (previousPathnameRef.current !== pathname && isOpen) onClose();
     previousPathnameRef.current = pathname;
   }, [pathname, isOpen, onClose]);
@@ -516,64 +489,66 @@ function MobileDrawer({
     setExpanded(current?.name ?? null);
   }, [isOpen, pathname]);
 
+  const linkFocus = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-copper-700';
+
   return (
     <>
       <div
-        className={`fixed inset-0 bg-ink-950/60 backdrop-blur-sm z-[110] transition-opacity duration-300 ${
-          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
+        className={`fixed inset-0 bg-black/60 z-[110] ${isOpen ? 'block jw-menu-in' : 'hidden'}`}
         onClick={onClose}
         aria-hidden="true"
       />
 
       <div
-        className={`fixed top-0 right-0 h-full w-[88%] max-w-[380px] bg-paper-50 z-[120] transform transition-transform duration-300 ease-out shadow-2xl flex flex-col ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+        id="mobile-site-menu"
+        ref={panelRef}
+        // `hidden` when closed (display: none), so nothing in it is laid out,
+        // reachable or read; it slides in on open when motion is allowed.
+        className={`jw fixed top-0 right-0 h-full w-[88%] max-w-[400px] bg-white text-pine-950 z-[120] flex-col ${
+          isOpen ? 'flex jw-drawer-in' : 'hidden'
         }`}
         role="dialog"
         aria-modal="true"
         aria-label="Site menu"
+        inert={!isOpen}
       >
-        <div className="flex items-center justify-between px-5 py-4 aurora-deep text-white flex-shrink-0">
-          <Link href="/" onClick={onClose} aria-label="Jwayyed Law LLC home" className="flex items-center">
-            <Image
-              src="/assets/jwayyed-logo-light.png"
-              alt="Jwayyed Law LLC"
-              width={2521}
-              height={407}
-              sizes="150px"
-              className="h-6 w-auto"
-            />
+        <div className="flex items-center justify-between pl-5 pr-2 h-16 bg-pine-950 text-white flex-shrink-0">
+          <Link href="/" onClick={onClose} aria-label="Jwayyed Law LLC home" className={`flex items-center ${FOCUS}`}>
+            <Image src="/assets/jwayyed-logo-light.png" alt="Jwayyed Law LLC" width={2521} height={407} sizes="150px" className="h-6 w-auto" />
           </Link>
           <button
+            ref={closeButtonRef}
+            type="button"
             onClick={onClose}
-            className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors active:scale-[0.97] flex-shrink-0"
+            className={`w-11 h-11 flex items-center justify-center text-white hover:bg-pine-800 transition-colors ${FOCUS}`}
             aria-label="Close menu"
           >
             <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-5 flex flex-col">
+        <div className="flex-1 overflow-y-auto overscroll-contain p-5 flex flex-col">
           <a
             href={PHONE_TEL}
             onClick={onClose}
-            className="flex items-center gap-3 px-4 py-3 mb-4 rounded-2xl border border-copper-500/30 bg-gradient-to-br from-copper-500/10 to-copper-400/5 hover:from-copper-500/16 transition-colors"
+            className={`flex items-center justify-center gap-2.5 w-full min-h-[52px] bg-copper-400 text-pine-950 font-medium tabular-nums hover:bg-pine-950 hover:text-white transition-colors ${linkFocus}`}
           >
-            <span className="w-9 h-9 rounded-full bg-gradient-to-br from-copper-400 to-copper-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-copper-700/30">
-              <Phone className="w-4 h-4" aria-hidden="true" />
-            </span>
-            <div className="leading-tight">
-              <div className="text-[0.65rem] tracking-[0.2em] uppercase text-ink-700/60 font-semibold">Call us</div>
-              <div className="text-copper-600 font-semibold text-base">{PHONE}</div>
-            </div>
+            <Phone className="w-4 h-4" aria-hidden="true" />
+            Call {PHONE}
           </a>
+          <Link
+            href="/contact"
+            onClick={onClose}
+            className={`mt-2 mb-5 flex items-center justify-center w-full min-h-[52px] border-2 border-pine-950 font-medium hover:bg-pine-950 hover:text-white transition-colors ${linkFocus}`}
+          >
+            {CTA_LABEL}
+          </Link>
 
-          <div className="mb-6">
+          <div className="mb-5">
             <SearchBar onNavigate={onClose} />
           </div>
 
-          <nav className="space-y-0.5 flex-1" aria-label="Mobile primary">
+          <nav className="flex-1 grid gap-1 content-start" aria-label="Mobile primary">
             {primaryNav.map((node) => {
               const branchActive = isBranchActive(pathname, node);
               const isExpanded = expanded === node.name;
@@ -581,14 +556,15 @@ function MobileDrawer({
               const hasChildren = children.length > 0;
 
               return (
-                <div key={node.href} className="rounded-2xl overflow-hidden">
+                <div key={node.href} className={isExpanded ? 'bg-pine-950/[0.05]' : ''}>
                   <div className="flex items-stretch">
                     <Link
                       href={node.href}
                       onClick={onClose}
-                      className={`flex-1 px-4 py-3.5 font-medium rounded-l-2xl transition-colors ${
-                        branchActive ? 'bg-copper-500/12 text-copper-600' : 'text-ink-900 hover:bg-copper-500/[0.07]'
-                      } ${hasChildren ? '' : 'rounded-r-2xl'}`}
+                      aria-current={isActiveRoute(pathname, node.href) ? 'page' : undefined}
+                      className={`flex-1 px-3 py-3.5 text-lg font-medium transition-colors ${linkFocus} ${
+                        branchActive ? 'text-copper-700' : 'hover:text-copper-700'
+                      }`}
                     >
                       {node.name}
                     </Link>
@@ -598,32 +574,26 @@ function MobileDrawer({
                         onClick={() => setExpanded((cur) => (cur === node.name ? null : node.name))}
                         aria-expanded={isExpanded}
                         aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${node.name}`}
-                        className={`w-12 flex items-center justify-center rounded-r-2xl transition-colors ${
-                          branchActive ? 'bg-copper-500/12 text-copper-600' : 'text-ink-700/60 hover:bg-copper-500/[0.07]'
-                        }`}
+                        className={`w-12 flex items-center justify-center text-pine-950/70 hover:text-pine-950 transition-colors ${linkFocus}`}
                       >
-                        <ChevronDown
-                          className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
-                          aria-hidden="true"
-                        />
+                        <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                       </button>
                     )}
                   </div>
 
                   {hasChildren && isExpanded && (
-                    <ul className="pl-3 pr-1 pb-2 pt-1 space-y-0.5 border-l-2 border-copper-500/25 ml-4 mt-1">
+                    <ul className="pb-3">
                       {children.map((link) => (
                         <li key={`${node.name}-${link.href}-${link.name}`}>
                           <Link
                             href={link.href}
                             onClick={onClose}
-                            className={`block px-3 py-2.5 text-sm rounded-lg transition-colors ${
-                              isActiveRoute(pathname, link.href)
-                                ? 'text-copper-600 font-semibold bg-copper-500/10'
-                                : 'text-ink-700/85 hover:text-copper-600 hover:bg-copper-500/[0.07]'
+                            aria-current={isActiveRoute(pathname, link.href) ? 'page' : undefined}
+                            className={`block px-5 py-2.5 text-[length:var(--step-small)] transition-colors ${linkFocus} ${
+                              isActiveRoute(pathname, link.href) ? 'text-copper-700 font-medium' : 'hover:text-copper-700'
                             }`}
                           >
-                            {link.name}
+                            {link.name.replace(/ →$/, '')}
                           </Link>
                         </li>
                       ))}
@@ -634,21 +604,7 @@ function MobileDrawer({
             })}
           </nav>
 
-          <Link
-            href="/contact"
-            onClick={onClose}
-            className="mt-5 inline-flex items-center justify-center gap-2 w-full rounded-full bg-copper-200 hover:bg-copper-100 text-ink-900 font-semibold py-3.5 ring-1 ring-copper-500/25 transition-colors group flex-shrink-0"
-          >
-            Book consultation
-            <ArrowUpRight
-              className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              aria-hidden="true"
-            />
-          </Link>
-
-          <div className="mt-4 text-center text-xs text-ink-700/60 flex-shrink-0">
-            Mon–Fri 9:00 AM – 5:00 PM · Serving All of Ohio
-          </div>
+          <p className="mt-5 text-[length:var(--step-small)] text-pine-950/70 flex-shrink-0">Open Monday to Friday, 9am to 5pm.</p>
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { X } from 'lucide-react';
 
@@ -54,44 +54,27 @@ export default function AnnouncementBar() {
 
   return (
     <div
-      role="banner"
+      role="region"
       aria-label="Award announcement"
-      className={`announcement-bar-wrapper overflow-hidden transition-[max-height] duration-300 ease-out ${isDismissing ? 'max-h-0' : hasAnimatedIn ? 'max-h-[38px]' : 'max-h-0'}`}
+      className={`jw overflow-hidden transition-[max-height] duration-300 ease-out ${isDismissing ? 'max-h-0' : hasAnimatedIn ? 'max-h-[44px]' : 'max-h-0'}`}
     >
-      <div className="relative bg-gradient-to-r from-[#0f0f0f] via-[#1a1a2e] to-[#0f0f0f] border-b border-[#b87333]/30 text-white text-xs sm:text-sm h-[38px] flex items-center justify-center pl-[40px] sm:pl-6 pr-20 sm:pr-14">
-        {/* Shimmer overlay */}
-        <div
-          className="absolute inset-0 pointer-events-none overflow-hidden"
-          aria-hidden="true"
-        >
-          <div
-            className="absolute inset-0 w-1/3 bg-gradient-to-r from-transparent via-[#b87333]/20 to-transparent"
-            style={{ animation: 'announcement-shimmer 4s ease-in-out infinite' }}
-          />
-        </div>
-
-        <div className="relative z-10 flex items-center justify-center gap-2 text-center max-w-5xl mx-auto">
-          <span aria-hidden="true" className="flex-shrink-0">🏆</span>
-          {/* Desktop: full message */}
-          <span className="hidden sm:inline whitespace-nowrap">
-            Jwayyed Law LLC named <strong>Best of 2026</strong> by BusinessRate — Powered by Google Reviews.
-          </span>
-          {/* Mobile: short single line */}
-          <span className="sm:hidden whitespace-nowrap">
-            Named <strong>Best of 2026</strong> by BusinessRate.
-          </span>
+      <div className="relative bg-black text-white text-[length:var(--step-small)] h-[44px] flex items-center justify-center pl-4 pr-14">
+        <p className="flex items-center justify-center gap-2 text-center whitespace-nowrap">
+          <span className="hidden sm:inline">Jwayyed Law LLC named Best of 2026 by BusinessRate, powered by Google reviews.</span>
+          <span className="sm:hidden">Best of 2026, BusinessRate.</span>
           <Link
             href="/our-law-firm/about-us#accolades"
-            className="text-[#b87333] hover:text-[#d4a574] underline underline-offset-2 font-medium flex-shrink-0 ml-1"
+            className="text-copper-400 hover:text-white underline underline-offset-4 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
           >
-            View Accolades →
+            <span className="sm:hidden">See it</span>
+            <span className="hidden sm:inline">See the award</span>
           </Link>
-        </div>
+        </p>
 
         <button
           type="button"
           onClick={handleDismiss}
-          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] w-11 h-11 flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#b87333]/50 focus:ring-offset-2 focus:ring-offset-[#0f0f0f]"
+          className="absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-400"
           aria-label="Close announcement"
         >
           <X className="w-4 h-4" strokeWidth={2.5} aria-hidden="true" />

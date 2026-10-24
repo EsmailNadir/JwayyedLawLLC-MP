@@ -16,6 +16,18 @@
    =========================================================================== */
 
 @theme {
+  /* ---------------------------------------------------------------------
+     Home, navbar and footer ("the name as a monument").
+     Pine is the ground, white the ink, copper-400 the one accent: it reads
+     6.9:1 on pine, so it carries small text and the primary action. Fields
+     alternate pine, white and black; nothing fades into anything.
+     --------------------------------------------------------------------- */
+  --color-pine-950: #0f1f10;
+  --color-pine-900: #162a17;
+  --color-pine-800: #1e3820;
+  --color-moss: #a7b0a6;
+  --font-jw: var(--font-cabinet), 'Helvetica Neue', Arial, sans-serif;
+
   /* Brass — the brand's signal colour */
   --color-copper-50: #fdf6ef;
   --color-copper-100: #f9e8d5;
@@ -410,5 +422,125 @@ body:has(.bg-gray-100) {
   [data-acsb] {
     bottom: 16px !important;
     right: 12px !important;
+  }
+}
+
+
+/* ===========================================================================
+   HOME — type steps and motion
+   Five sizes do all the work on the home page: small, body, lead, head and
+   the monument. Every entrance lives inside prefers-reduced-motion:
+   no-preference, so the reduced page is the finished page and nothing is
+   ever left hidden when motion is off or scroll timelines are unsupported.
+   =========================================================================== */
+
+.jw {
+  --step-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.25rem, 1rem + 4vw, 4.5rem);
+  --step-monument: clamp(4.25rem, 10.5vw, 10.5rem);
+  font-family: var(--font-jw);
+}
+
+.jw-display {
+  font-family: var(--font-jw);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+  font-kerning: normal;
+}
+
+@keyframes jw-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@keyframes jw-shutter {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes jw-settle {
+  from {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes jw-drift {
+  from {
+    transform: scale(1.14) translateY(-3%);
+  }
+  to {
+    transform: scale(1) translateY(3%);
+  }
+}
+
+@keyframes jw-drawer-in {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes jw-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Signature move: the photograph inside the name opens like a shutter. */
+  .jw-shutter {
+    animation: jw-shutter 1.1s cubic-bezier(0.7, 0, 0.2, 1) 0.15s both;
+  }
+  .jw-shutter img {
+    animation: jw-settle 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s both;
+  }
+
+  /* Load-in for the hero's other parts, staggered. */
+  .jw-load {
+    animation: jw-rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: var(--jw-delay, 0ms);
+  }
+
+  .jw-menu-in {
+    animation: jw-menu-in 0.18s ease-out both;
+  }
+
+  .jw-drawer-in {
+    animation: jw-drawer-in 0.28s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  @supports (animation-timeline: view()) {
+    /* Section parts rise in as the section enters: heading, then text, then
+       picture. Offsetting each child's range staggers them without script. */
+    .jw-enter > * {
+      animation: jw-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+    .jw-enter > *:nth-child(2) {
+      animation-range: entry 6% entry 51%;
+    }
+    .jw-enter > *:nth-child(3) {
+      animation-range: entry 12% entry 57%;
+    }
+    .jw-enter > *:nth-child(n + 4) {
+      animation-range: entry 18% entry 63%;
+    }
+
+    /* The one moving picture: the Statehouse drifts with the scroll. */
+    .jw-drift {
+      animation: jw-drift linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
   }
 }

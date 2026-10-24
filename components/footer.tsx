@@ -1,17 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, MapPin, Clock, Mail, ArrowRight, Star } from 'lucide-react';
 import NCDDBadge from '@/components/NCDDBadge';
-import { BTN_PRIMARY, BTN_MD } from '@/components/uiClasses';
 
 const PHONE_DISPLAY = '(614) 285-5482';
 const PHONE_TEL = 'tel:+16142855482';
-const ADDRESS = '100 E. Campus View Blvd, Suite 250, Columbus, OH 43235';
+const EMAIL = 'jwayyedlawllc@outlook.com';
 
 /**
- * Grouped rather than a single flat list. Every destination from the previous
- * flat footer is still present — they are load-bearing internal links for
- * local SEO — but columns make the block scannable instead of a wall.
+ * Every destination from the earlier footers and the old home page's county
+ * list is still here: these are load-bearing internal links for local SEO.
  */
 const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
@@ -31,6 +28,7 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
       { href: '/personal-injury/car-accidents', label: 'Car Accidents' },
       { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall' },
       { href: '/civil', label: 'Civil Litigation' },
+      { href: '/civil/appeals', label: 'Civil Appeals' },
       { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
     ],
   },
@@ -44,6 +42,21 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
       { href: '/trusts/revocable-living-trusts', label: 'Living Trusts' },
       { href: '/other-services/probate', label: 'Probate' },
       { href: '/other-services/estate-planning-wills', label: 'Wills' },
+      { href: '/other-services', label: 'Other Services' },
+    ],
+  },
+  {
+    heading: 'Counties',
+    links: [
+      { href: '/locations/franklin-county', label: 'Franklin County' },
+      { href: '/locations/delaware-county', label: 'Delaware County' },
+      { href: '/locations/butler-county', label: 'Butler County' },
+      { href: '/locations/greene-county', label: 'Greene County' },
+      { href: '/locations/montgomery-county', label: 'Montgomery County' },
+      { href: '/locations/pickaway-county', label: 'Pickaway County' },
+      { href: '/locations/athens-county', label: 'Athens County' },
+      { href: '/locations/morrow-county', label: 'Morrow County' },
+      { href: '/locations/clinton-county', label: 'Clinton County' },
     ],
   },
   {
@@ -53,6 +66,7 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
       { href: '/our-law-firm/case-results', label: 'Case Results' },
       { href: '/our-law-firm/blog', label: 'Blog' },
       { href: '/our-law-firm/document-templates', label: 'Document Templates' },
+      { href: '/courts', label: 'Courts' },
       { href: '/courts/franklin-county', label: 'Franklin County Courts' },
       { href: '/locations/franklin-county/ovi-dui-defense-columbus', label: 'Columbus OVI Attorney' },
       { href: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court', label: 'Franklin County OVI' },
@@ -61,144 +75,134 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
   },
 ];
 
+const LINK = 'hover:text-copper-700 hover:underline underline-offset-4 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-700';
+
+/**
+ * The close of every page: the name first, at full width, in the inverse of
+ * the pine bar above it; then the ways to reach the firm, the link columns,
+ * the trust marks and the legal line.
+ */
 export default function Footer() {
   return (
-    <footer className="aurora-deep text-white/70 border-t border-copper-500/25">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-14 pb-8">
-        <div className="grid gap-10 lg:gap-8 lg:grid-cols-[minmax(0,1.15fr)_repeat(4,minmax(0,1fr))]">
-          {/* Brand + contact */}
-          <div>
-            <Link href="/" aria-label="Jwayyed Law LLC home" className="inline-flex">
-              <Image
-                src="/assets/jwayyed-logo-light.png"
-                alt="Jwayyed Law LLC"
-                width={2521}
-                height={407}
-                sizes="200px"
-                className="h-8 w-auto"
-              />
-            </Link>
-            <p className="mt-4 text-sm leading-relaxed text-white/75 max-w-xs">
-              Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and
-              estate matters.
-            </p>
+    <footer className="jw bg-white text-pine-950 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-8">
+        <p className="jw-display whitespace-nowrap text-[clamp(3.5rem,15.2vw,13.5rem)] leading-[0.82]" aria-hidden="true">
+          Jwayyed Law
+        </p>
 
-            <ul className="mt-6 space-y-3 text-sm">
-              <li>
-                <a
-                  href={PHONE_TEL}
-                  className="inline-flex items-center gap-2.5 text-white hover:text-copper-300 transition-colors font-semibold"
-                >
-                  <span className="w-8 h-8 rounded-xl bg-gradient-to-br from-copper-400 to-copper-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-copper-600/30">
-                    <Phone className="w-4 h-4" aria-hidden="true" />
-                  </span>
-                  {PHONE_DISPLAY}
-                </a>
-              </li>
-              <li className="flex items-start gap-2.5 text-white/75">
-                <MapPin className="w-4 h-4 text-copper-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span className="leading-relaxed">{ADDRESS}</span>
-              </li>
-              <li className="flex items-center gap-2.5 text-white/75">
-                <Clock className="w-4 h-4 text-copper-400 flex-shrink-0" aria-hidden="true" />
-                <span>Mon–Fri · 9:00 AM – 5:00 PM</span>
-              </li>
-            </ul>
+        <div className="mt-16 sm:mt-20 grid gap-14 lg:grid-cols-12 lg:gap-8">
+          <ul className="lg:col-span-5 grid content-start gap-3 text-[length:var(--step-lead)] leading-tight font-medium text-copper-700">
+            <li>
+              <a href={PHONE_TEL} className={`tabular-nums ${LINK}`}>
+                {PHONE_DISPLAY}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${EMAIL}`} className={`break-all ${LINK}`}>
+                {EMAIL}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=100+E+Campus+View+Blvd+Suite+250+Columbus+OH+43235"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={LINK}
+              >
+                100 E. Campus View Blvd, Suite 250, Columbus
+              </a>
+            </li>
+            <li className="text-pine-950 text-[length:var(--step-body)] font-normal pt-2">Monday to Friday, 9am to 5pm</li>
+          </ul>
 
-            <Link href="/contact" className={`mt-6 ${BTN_PRIMARY} ${BTN_MD} group`}>
-              <Mail className="w-4 h-4" aria-hidden="true" />
-              Schedule a Consultation
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-            </Link>
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10 text-[length:var(--step-small)]">
+            {FOOTER_COLUMNS.map((column) => (
+              <nav key={column.heading} aria-label={column.heading}>
+                {/* Not a heading element: the nav landmark is already labelled,
+                    and extra h2s here would dilute each page's outline. */}
+                <div className="font-medium text-pine-950/60 mb-3">{column.heading}</div>
+                <ul className="grid gap-1">
+                  {column.links.map(({ href, label }) => (
+                    <li key={href}>
+                      <Link href={href} className={`inline-block py-1 ${LINK}`}>
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
           </div>
-
-          {/* Link columns */}
-          {FOOTER_COLUMNS.map((column) => (
-            <nav key={column.heading} aria-label={column.heading}>
-              {/* Not a heading element: the nav landmark is already labelled, and
-                  extra h2s here would dilute each page's heading outline. */}
-              <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-copper-300 mb-4">
-                {column.heading}
-              </div>
-              <ul className="space-y-2.5">
-                {column.links.map(({ href, label }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="text-sm text-white/75 hover:text-copper-300 transition-colors leading-snug"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
         </div>
 
-        {/* Trust row */}
-        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Trust marks */}
+        <div className="mt-16 flex flex-wrap items-center gap-x-10 gap-y-5 text-[length:var(--step-small)]">
           <a
             href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick"
             target="_blank"
             rel="nofollow noreferrer"
-            className="relative glass glass-sheen flex items-center gap-3 px-4 py-3 hover:-translate-y-0.5 transition-transform"
+            className={`inline-flex items-center gap-3 font-medium ${LINK}`}
           >
             {/* Remote seal served by BBB; next/image would need a loader for it. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png"
-              style={{ border: 0 }}
               alt="Jwayyed Law LLC BBB Business Review"
-              width={90}
-              height={19}
-              className="relative object-contain flex-shrink-0"
+              width={110}
+              height={23}
+              loading="lazy"
+              className="object-contain flex-shrink-0"
             />
-            <span className="relative text-xs text-white/80">A+ Accredited Business</span>
+            A+ accredited
           </a>
-
-          <NCDDBadge variant="glass" />
-
-          <a
-            href="https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative glass glass-sheen flex items-center gap-3 px-4 py-3 hover:-translate-y-0.5 transition-transform"
-          >
-            <span className="relative flex items-center gap-0.5" aria-hidden="true">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-copper-300 text-copper-300" />
-              ))}
-            </span>
-            <span className="relative text-xs text-white/80">
-              <span className="font-semibold text-white">5.0</span> · 100+ Google Reviews
-            </span>
-          </a>
-
-          <div className="relative glass glass-sheen flex items-center gap-3 px-4 py-3">
+          <NCDDBadge variant="inline" tone="light" />
+          <span className="inline-flex items-center gap-3 font-medium">
             <Image
               src="/assets/jwayyed-law-llc-plaque.png"
-              alt="Jwayyed Law LLC — BusinessRate Best of 2026 award winner"
+              alt="Jwayyed Law LLC, BusinessRate Best of 2026 award winner"
               width={1540}
               height={1900}
-              sizes="34px"
-              className="relative h-10 w-auto rounded-sm flex-shrink-0"
+              sizes="32px"
+              className="h-10 w-auto flex-shrink-0"
             />
-            <span className="relative text-xs text-white/80">
-              <span className="font-semibold text-white">Best of 2026</span> · BusinessRate
-            </span>
-          </div>
+            BusinessRate Best of 2026
+          </span>
         </div>
 
         {/* Legal */}
-        <div className="mt-10 pt-6 border-t border-white/10 space-y-3 text-center">
-          <p className="text-xs leading-relaxed text-white/60 max-w-4xl mx-auto">
-            Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice.
-            Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
-          </p>
-          <p className="text-xs text-copper-300/70">
-            © Copyright 2026 Jwayyed Law LLC (JJ Law Ohio). All Rights Reserved.
-          </p>
+        <div className="mt-14 grid gap-4 text-[length:var(--step-small)] text-pine-950/70 lg:grid-cols-12">
+          <div className="lg:col-span-9 grid gap-2">
+            <p className="max-w-[90ch]">
+              Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice.
+              Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
+            </p>
+            <p>
+              © 2026 Jwayyed Law LLC (JJ Law Ohio). All rights reserved.{' '}
+              <Link href="/privacy" className={`underline underline-offset-4 ${LINK}`}>
+                Privacy Policy
+              </Link>
+            </p>
+            <p>
+              Pictures:{' '}
+              <a href="https://commons.wikimedia.org/wiki/File:Franklin_County_Courthouse_illustration.jpg" className={`underline ${LINK}`}>
+                Franklin County Courthouse illustration
+              </a>{' '}
+              (1873), public domain;{' '}
+              <a href="https://commons.wikimedia.org/w/index.php?curid=221770" className={`underline ${LINK}`}>
+                Ohio Statehouse
+              </a>
+              ,{' '}
+              <a href="https://creativecommons.org/licenses/by-sa/3.0/" className={`underline ${LINK}`}>
+                CC BY-SA 3.0
+              </a>
+              ; both via Wikimedia Commons.
+            </p>
+          </div>
+          <div className="lg:col-span-3 lg:text-right">
+            <a href="#main-content" className={`underline underline-offset-4 ${LINK}`}>
+              Back to top
+            </a>
+          </div>
         </div>
       </div>
     </footer>
