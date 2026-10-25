@@ -34,7 +34,7 @@ export default function CourtFinder() {
   const court = COURTS[index];
 
   return (
-    <div className="bg-navy-950 text-white px-5 sm:px-8 py-8 sm:py-10 grid gap-8">
+    <div className="jw-mark bg-navy-950 text-white px-5 sm:px-8 py-8 sm:py-10 grid gap-8">
       <div>
         <label htmlFor={id} className="block text-[length:var(--step-lead)] font-medium leading-tight">
           Which court is on your ticket?

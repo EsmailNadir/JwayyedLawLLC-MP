@@ -527,7 +527,7 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= STATEMENT + CREDENTIALS (navy) ======================= */}
-      <section className={`${SECTION} bg-navy-950 text-white`} aria-labelledby="about-heading">
+      <section className={`jw-mark ${SECTION} bg-navy-950 text-white`} aria-labelledby="about-heading">
         <div className={FRAME}>
           <h2 id="about-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
             <Words text="The other side of the courtroom" />
@@ -601,7 +601,11 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= REVIEWS (navy) ======================= */}
-      <section className={`${SECTION} bg-navy-900 text-white overflow-hidden`} aria-labelledby="reviews-heading">
+      <section
+        className={`jw-mark ${SECTION} bg-navy-900 text-white overflow-hidden`}
+        style={{ '--jw-mark-fade': 'radial-gradient(ellipse 70% 55% at 50% 0%, #000 20%, transparent 100%)' } as React.CSSProperties}
+        aria-labelledby="reviews-heading"
+      >
         <div className={FRAME}>
           <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16">
             <h2 id="reviews-heading" className="reveal-title jw-display text-[length:var(--step-head)]">

@@ -84,7 +84,7 @@ const LINK = 'hover:text-sky hover:underline underline-offset-4 transition-color
  */
 export default function Footer() {
   return (
-    <footer className="jw bg-navy-950 text-white overflow-hidden">
+    <footer className="jw jw-mark bg-navy-950 text-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-8">
         <p className="jw-display whitespace-nowrap text-[clamp(3.5rem,15.2vw,13.5rem)] leading-[0.82]" aria-hidden="true">
           Jwayyed Law

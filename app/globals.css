@@ -701,3 +701,26 @@ body:has(.bg-gray-100) {
     transform: translateX(-18px);
   }
 }
+
+/*
+ * The firm's JL column mark, repeated faintly across navy fields. The tile
+ * (two marks on a diagonal) is cut from the logo itself. It is a static
+ * background on a pseudo-element: painted once, never animated, so it costs
+ * nothing while scrolling. --jw-mark-fade sets which way it fades out, so
+ * each field keeps a clean side for its text.
+ */
+.jw-mark {
+  position: relative;
+  isolation: isolate;
+}
+.jw-mark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/assets/jl-monogram-tile.png') 0 0 / 160px auto repeat;
+  opacity: var(--jw-mark-opacity, 0.07);
+  -webkit-mask-image: var(--jw-mark-fade, linear-gradient(to left, #000 15%, transparent 85%));
+  mask-image: var(--jw-mark-fade, linear-gradient(to left, #000 15%, transparent 85%));
+}
