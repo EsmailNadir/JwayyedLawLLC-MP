@@ -26,7 +26,7 @@ export default function Analytics() {
         });
         return;
       }
-      const booking = target?.closest('a[href*="calendly"], a[href*="/contact"], a[data-booking]') as HTMLAnchorElement | null;
+      const booking = target?.closest('a[href*="/contact"], a[data-booking]') as HTMLAnchorElement | null;
       if (booking) {
         fire('booking_click', { page_path: window.location.pathname });
       }

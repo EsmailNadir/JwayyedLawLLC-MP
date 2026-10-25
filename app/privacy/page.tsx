@@ -81,7 +81,6 @@ export default function PrivacyPage() {
             <p>We use the following third-party services that may collect data according to their own privacy policies:</p>
             <ul>
               <li>Google Analytics (analytics.google.com): usage analytics</li>
-              <li>Calendly (calendly.com): appointment scheduling</li>
               <li>Formspree (formspree.io): contact form processing</li>
               <li>Cloudflare Turnstile (cloudflare.com): spam protection on the contact form</li>
               <li>OpenFreeMap (openfreemap.org): map tiles for the office map on the contact page, which receives your IP address when the map loads</li>

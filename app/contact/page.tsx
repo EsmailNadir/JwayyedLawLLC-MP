@@ -7,7 +7,7 @@ import ConsultationPanel from '@/components/contact/ConsultationPanel';
 import OfficeMap from '@/components/contact/OfficeMap';
 
 export const metadata: Metadata = {
-  title: 'Contact Jwayyed Law LLC | Schedule a Consultation',
+  title: { absolute: 'Contact Jwayyed Law LLC | Schedule a Consultation' },
   description:
     'Schedule a consultation with Jwayyed Law LLC for OVI/DUI, criminal, injury, civil, business or estate matters anywhere in Ohio. Call (614) 285-5482.',
   keywords: [
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 /*
  * Contact. One idea runs through it: the shortest path to the attorney.
- * The number is the headline, the office status is live, the booking and
- * the message share one panel, and the map is the firm's own navy.
+ * The number is the headline, the office status is live, the message form
+ * sits beside the phone number, and the map is the firm's own navy.
  */
 
 const PHONE_DISPLAY = '(614) 285-5482';
@@ -121,17 +121,11 @@ export default function ContactPage() {
 
             <div className="jw-enter mt-10 flex flex-col sm:flex-row gap-3" style={{ '--d': '400ms' } as React.CSSProperties}>
               <a
-                href="#book"
+                href="#message"
                 className="group inline-flex items-center justify-center gap-2 min-h-[56px] px-8 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
               >
-                Book a consultation
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
-              </a>
-              <a
-                href="#message"
-                className={`inline-flex items-center justify-center min-h-[56px] px-8 border border-white/50 font-semibold hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
-              >
                 Send a message
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -190,30 +184,28 @@ export default function ContactPage() {
               {ADDRESS_LINE_1}
             </p>
             <p className="mt-3 text-navy-950/75 max-w-[36ch]">
-              {ADDRESS_LINE_2}. By appointment only, so please call or book before you come in.
+              {ADDRESS_LINE_2}. By appointment only, so please call before you come in.
             </p>
           </a>
         </div>
       </section>
 
-      {/* ======================= BOOK OR WRITE (ice) ======================= */}
+      {/* ======================= WRITE (ice) ======================= */}
       <section
         id="consult"
         className="jw-mark jw-mark--navy bg-ice py-20 sm:py-28 scroll-mt-20"
         style={{ '--jw-mark-fade': 'radial-gradient(ellipse 55% 70% at 100% 0%, #000 10%, transparent 100%)', '--jw-mark-opacity': 0.06 } as React.CSSProperties}
         aria-labelledby="consult-heading"
       >
-        {/* Anchors for the two tabs; the panel reads the hash. */}
-        <span id="book" className="block scroll-mt-24" aria-hidden="true" />
         <span id="message" className="block scroll-mt-24" aria-hidden="true" />
         <div className={FRAME}>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end mb-10 sm:mb-12">
             <h2 id="consult-heading" className="jw-display lg:col-span-7 text-[length:var(--step-head)] leading-[1.08]">
-              Pick a time, or tell us what happened.
+              Tell us what happened.
             </h2>
             <p className="lg:col-span-5 text-navy-950/75">
-              Booking shows the attorney&rsquo;s real availability. A message is read by the attorney and answered within
-              one business day.
+              A message is read by the attorney and answered within one business day. To set up a consultation, call
+              or send a message.
             </p>
           </div>
           <ConsultationPanel />
@@ -282,7 +274,7 @@ export default function ContactPage() {
               <p className="mt-3 text-navy-950/80">
                 <strong className="text-navy-950">In an emergency, call 911.</strong> Contacting the firm, by any means,
                 does not create an attorney-client relationship; that begins only when a representation agreement is
-                signed. Please do not send confidential or time-sensitive details by email or online booking.
+                signed. Please do not send confidential or time-sensitive details by email or the message form.
               </p>
             </div>
           </div>

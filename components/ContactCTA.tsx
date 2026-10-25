@@ -11,7 +11,7 @@ interface ContactCTAProps {
 /**
  * The close of every inner page, in the same sky band as the home page's
  * closing call: a plain invitation on the left, the number set large on the
- * right with the booking button under it, and the email and office beneath.
+ * right with the consultation button under it, and the email and office beneath.
  */
 export default function ContactCTA({
   phoneNumber = '(614) 285-5482',

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Marketing website for **Jwayyed Law LLC** (a.k.a. JJ Law Ohio), a Columbus-based Ohio law firm. Built with Next.js App Router (Next 16) + React 19 + TypeScript + Tailwind v4. Content-as-code: there is no CMS or database — every page, service description, blog post, and case result lives in TS files in `app/` or `data/`.
 
-The site exists to rank in Ohio for legal-consumer searches (criminal defense, OVI/DUI, personal injury, civil, business, trusts/estate, probate) and convert visitors via Calendly + Formspree. SEO and structured data are first-class concerns; treat them as part of "the feature," not a polish step.
+The site exists to rank in Ohio for legal-consumer searches (criminal defense, OVI/DUI, personal injury, civil, business, trusts/estate, probate) and convert visitors via phone calls and a Formspree message form. SEO and structured data are first-class concerns; treat them as part of "the feature," not a polish step.
 
 ## Commands
 
@@ -64,7 +64,7 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 ### Forms and scheduling
 
 - **Contact form**: posts to Formspree (`https://formspree.io/f/xyzjyzgv`) directly from `app/contact/page.tsx`. No backend code.
-- **Scheduling**: `components/calendly.tsx` injects the Calendly widget script and embeds `https://calendly.com/jjlawohio`.
+- **Scheduling**: there is no online booking (Calendly was removed; the firm does not use it). Consultations are set up by phone or the contact form.
 
 ### Styling
 
@@ -79,4 +79,4 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 
 ### Client vs. server components
 
-Pages default to server components (so `metadata` exports work). Components that need state, effects, or browser APIs (`Navbar`, `SearchBar`, `Calendly`, `HomePageClient`, `PageHero`) are explicitly marked `'use client'`. The home route splits into `app/page.tsx` (server, exports `metadata`) and `app/HomePageClient.tsx` (client, all the interactive UI) — follow this split when a page needs both metadata and client behavior.
+Pages default to server components (so `metadata` exports work). Components that need state, effects, or browser APIs (`Navbar`, `SearchBar`, `HomePageClient`, `PageHero`) are explicitly marked `'use client'`. The home route splits into `app/page.tsx` (server, exports `metadata`) and `app/HomePageClient.tsx` (client, all the interactive UI) — follow this split when a page needs both metadata and client behavior.

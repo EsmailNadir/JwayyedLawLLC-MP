@@ -4,16 +4,11 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, Check, Phone } from 'lucide-react';
 
 /**
- * Two ways to start, in one place: book a time on the firm's Calendly, or
- * write a message (Formspree). Tabs rather than two stacked sections, so the
- * visitor makes one choice and sees one thing.
- *
- * Calendly's script and iframe are heavy, so they load only once the panel
- * nears the screen, never on page load. Links to #message open the form tab.
+ * The contact page's message form (Formspree), with the phone number beside
+ * it for anyone who would rather call.
  */
 
 const FORMSPREE = 'https://formspree.io/f/xyzjyzgv';
-const CALENDLY = 'https://calendly.com/jjlawohio';
 const PHONE_DISPLAY = '(614) 285-5482';
 const PHONE_TEL = 'tel:+16142855482';
 
@@ -26,8 +21,6 @@ const MATTERS = [
   'Estate planning, trusts or probate',
   'Something else',
 ];
-
-type Tab = 'book' | 'message';
 
 /*
  * Spam protection for the message form, in layers:
@@ -86,54 +79,6 @@ function loadTurnstile(): Promise<TurnstileApi> {
 const FIELD =
   'mt-2 w-full min-h-[52px] bg-white border border-navy-950/20 px-4 text-navy-950 placeholder:text-navy-950/40 focus-visible:outline-none focus-visible:border-sky-deep focus-visible:ring-2 focus-visible:ring-sky-deep/30';
 const LABEL = 'block text-[length:var(--step-small)] font-medium text-navy-950';
-
-function CalendlyEmbed() {
-  const box = useRef<HTMLDivElement>(null);
-  const [near, setNear] = useState(false);
-
-  useEffect(() => {
-    const el = box.current;
-    if (!el) return;
-    if (!('IntersectionObserver' in window)) {
-      setNear(true);
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setNear(true);
-          io.disconnect();
-        }
-      },
-      { rootMargin: '600px 0px' }
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!near || document.querySelector('script[data-calendly]')) return;
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    script.dataset.calendly = 'true';
-    document.body.appendChild(script);
-  }, [near]);
-
-  return (
-    <div ref={box} className="relative min-h-[700px] bg-white">
-      {/* Shows until Calendly's iframe paints over it. */}
-      <p className="absolute inset-x-0 top-24 text-center text-navy-950/60">Loading the calendar…</p>
-      {near && (
-        <div
-          className="calendly-inline-widget relative"
-          data-url={`${CALENDLY}?hide_gdpr_banner=1&primary_color=1f5fa8`}
-          style={{ minWidth: '280px', height: '700px' }}
-        />
-      )}
-    </div>
-  );
-}
 
 function MessageForm({ active }: { active: boolean }) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
@@ -317,54 +262,13 @@ function MessageForm({ active }: { active: boolean }) {
 }
 
 export default function ConsultationPanel() {
-  const [tab, setTab] = useState<Tab>('book');
-  const ids = { book: useId(), message: useId() };
-  const tabs = useRef<Record<Tab, HTMLButtonElement | null>>({ book: null, message: null });
-
-  useEffect(() => {
-    const fromHash = () => {
-      if (window.location.hash === '#message') setTab('message');
-      if (window.location.hash === '#book') setTab('book');
-    };
-    fromHash();
-    window.addEventListener('hashchange', fromHash);
-    return () => window.removeEventListener('hashchange', fromHash);
-  }, []);
-
-  const onKey = (e: React.KeyboardEvent) => {
-    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-    const next: Tab = tab === 'book' ? 'message' : 'book';
-    setTab(next);
-    tabs.current[next]?.focus();
-  };
-
-  const tabClass = (t: Tab) =>
-    `relative flex-1 sm:flex-none min-h-[56px] px-6 sm:px-8 text-left font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sky-deep ${
-      tab === t ? 'bg-white text-navy-950' : 'bg-navy-950/[0.06] text-navy-950/70 hover:text-navy-950 hover:bg-navy-950/[0.1]'
-    }`;
-
   return (
     <div>
-      <div role="tablist" aria-label="How would you like to start?" className="flex" onKeyDown={onKey}>
-        {(['book', 'message'] as Tab[]).map((t) => (
-          <button
-            key={t}
-            ref={(el) => {
-              tabs.current[t] = el;
-            }}
-            type="button"
-            role="tab"
-            id={`${ids[t]}-tab`}
-            aria-selected={tab === t}
-            aria-controls={`${ids[t]}-panel`}
-            tabIndex={tab === t ? 0 : -1}
-            onClick={() => setTab(t)}
-            className={tabClass(t)}
-          >
-            {tab === t && <span className="absolute inset-x-0 top-0 h-[3px] bg-sky-deep" aria-hidden="true" />}
-            {t === 'book' ? 'Book a time' : 'Send a message'}
-          </button>
-        ))}
+      <div className="flex">
+        <h3 className="relative min-h-[56px] inline-flex items-center px-6 sm:px-8 bg-white font-semibold text-navy-950">
+          <span className="absolute inset-x-0 top-0 h-[3px] bg-sky-deep" aria-hidden="true" />
+          Send a message
+        </h3>
         <a
           href={PHONE_TEL}
           className="hidden md:inline-flex ml-auto items-center gap-2 px-2 text-navy-950/75 hover:text-sky-deep font-medium tabular-nums transition-colors"
@@ -373,14 +277,7 @@ export default function ConsultationPanel() {
           Or call {PHONE_DISPLAY}
         </a>
       </div>
-
-      {/* Both panels stay mounted so Calendly keeps its state when switching. */}
-      <div role="tabpanel" id={`${ids.book}-panel`} aria-labelledby={`${ids.book}-tab`} hidden={tab !== 'book'}>
-        <CalendlyEmbed />
-      </div>
-      <div role="tabpanel" id={`${ids.message}-panel`} aria-labelledby={`${ids.message}-tab`} hidden={tab !== 'message'}>
-        <MessageForm active={tab === 'message'} />
-      </div>
+      <MessageForm active />
     </div>
   );
 }
