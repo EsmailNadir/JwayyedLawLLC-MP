@@ -7,7 +7,6 @@ import { Metadata } from "next";
 import Footer from "@/components/footer";
 import Script from "next/script";
 import { DM_Sans, Playfair_Display } from "next/font/google";
-import localFont from "next/font/local";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -21,18 +20,6 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   display: "swap",
   weight: ["400", "600", "700", "800"],
-});
-
-// Display and text face for the home page, navbar and footer. Self-hosted
-// (Fontshare, ITF Free Font License) so no third-party font request is made.
-const cabinet = localFont({
-  src: [
-    { path: "./fonts/CabinetGrotesk-400.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/CabinetGrotesk-500.woff2", weight: "500", style: "normal" },
-    { path: "./fonts/CabinetGrotesk-800.woff2", weight: "800", style: "normal" },
-  ],
-  variable: "--font-cabinet",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -231,7 +218,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   };
 
   return (
-    <html lang="en" className={`h-full ${dmSans.variable} ${playfair.variable} ${cabinet.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`h-full ${dmSans.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

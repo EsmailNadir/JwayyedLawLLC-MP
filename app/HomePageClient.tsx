@@ -3,18 +3,20 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight, MapPin, Clock, Pause, Phone, Play, Star, Mail } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Pause, Phone, Play, Star } from 'lucide-react';
 import CourtFinder from '@/components/CourtFinder';
 import NCDDBadge from '@/components/NCDDBadge';
+import OfficeStatus from '@/components/OfficeStatus';
 import TestimonialWall from '@/components/TestimonialWall';
 import { ReviewSummaryCard } from '@/components/ui/card-2';
 import { siteNav } from '@/data/navigation';
 
 /*
- * Direction: "the name as a monument" (tasteskill draw, seed 1023544020),
- * revised with the client: primarily navy with sky as the second colour,
- * the firm's footage behind the name under a transparent navbar, and the
- * original review wall. Live thing: "Which court is on your ticket?".
+ * Home page. Navy with sky as the second colour, Playfair headings over DM
+ * Sans text (the same pair as the inner pages), the firm's footage behind the
+ * opening line, and three things particular to this firm: results shown as
+ * the charge struck through and replaced by the outcome, a live office-hours
+ * status, and "Which court is on your ticket?".
  */
 
 const PHONE_DISPLAY = '(614) 285-5482';
@@ -26,23 +28,20 @@ const RATING = '4.9';
 
 /** Shared frame: one pair of outer margins for the whole page. */
 const FRAME = 'max-w-[1440px] mx-auto px-5 sm:px-8';
-const SECTION = 'py-[clamp(88px,10vw,176px)]';
+const SECTION = 'py-[clamp(88px,10vw,168px)]';
 const RING_DARK = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
 const RING_LIGHT = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep';
 
-/**
- * Practice areas, in the order people most often call about them. Names,
- * one-line descriptions and page links all come from the site navigation,
- * so this list cannot drift from the menus.
- */
+/** Practice areas in the order people most often call about them; titles,
+ *  taglines and page links come from the site navigation. */
 const AREAS = ['OVI / DUI', 'Criminal Defense', 'Personal Injury', 'Civil', 'Business', 'Other Services'];
 const AREA_TITLE: Record<string, string> = {
-  'OVI / DUI': 'OVI / DUI defense',
-  'Criminal Defense': 'Criminal defense',
-  'Personal Injury': 'Personal injury',
-  Civil: 'Civil litigation',
-  Business: 'Business law',
-  'Other Services': 'Estate planning and probate',
+  'OVI / DUI': 'OVI / DUI Defense',
+  'Criminal Defense': 'Criminal Defense',
+  'Personal Injury': 'Personal Injury',
+  Civil: 'Civil Litigation',
+  Business: 'Business Law',
+  'Other Services': 'Estate Planning & Probate',
 };
 
 function area(navName: string) {
@@ -56,27 +55,23 @@ function area(navName: string) {
   };
 }
 
-const RECORD: { group: string; rows: { when: string; what: string; who: string; note: string }[] }[] = [
+const CREDENTIALS = [
+  'Former Municipal Prosecutor',
+  'Former Assistant Law Director, City of Circleville',
+  'Licensed in Ohio since 2019, Bar #0098679',
+  'J.D., Capital University Law School',
+  'OSBA Leadership Academy, 2023',
+  'National College for DUI Defense, General Member',
+];
+
+/** Each result is the charge as filed, struck through, and what it became. */
+const RESULTS = [
+  { charge: 'OVI', outcome: 'Reckless operation', detail: 'License kept, no jail time, and the fine cut to a third.' },
+  { charge: 'Speeding + OVI', outcome: 'Dismissed', detail: 'Evidence challenged on procedural grounds. Record kept clean.' },
   {
-    group: 'Credentials',
-    rows: [
-      { when: '2019', what: 'Licensed to practise law in Ohio', who: 'Supreme Court of Ohio', note: 'Bar #0098679' },
-      { when: '', what: 'Juris Doctor', who: 'Capital University Law School', note: 'J.D.' },
-      { when: '', what: 'Municipal Prosecutor', who: 'Former role', note: 'Prosecution' },
-      { when: '', what: 'Assistant Law Director', who: 'City of Circleville', note: 'Former role' },
-      { when: '2023', what: 'Leadership Academy', who: 'Ohio State Bar Association', note: 'Selected' },
-      { when: '2026', what: 'Best of 2026', who: 'BusinessRate', note: 'Award' },
-      { when: '', what: 'General Member', who: 'National College for DUI Defense', note: 'Member' },
-      { when: '', what: 'Accredited business', who: 'Better Business Bureau', note: 'A+' },
-    ],
-  },
-  {
-    group: 'Recent results',
-    rows: [
-      { when: 'OVI', what: 'OVI reduced to reckless operation', who: 'License kept, no jail', note: 'Fine cut to a third' },
-      { when: 'OVI', what: 'Speeding and OVI dismissed', who: 'Procedural challenge', note: 'Record kept clean' },
-      { when: 'CDL', what: 'CDL violation reduced', who: 'Suspension avoided', note: 'One business day' },
-    ],
+    charge: 'CDL violation',
+    outcome: 'Moving violation',
+    detail: 'Resolved in one business day, avoiding a suspension and the hit to the client’s job.',
   },
 ];
 
@@ -91,11 +86,64 @@ function Stars({ className }: { className: string }) {
 }
 
 /**
- * The firm's own footage, playing full-bleed behind the first screen. Only
- * one file is fetched: the phone cut or the desktop cut, chosen in the
- * browser. Under reduced motion nothing downloads and the still portrait
- * stands in. It can be paused, since it loops for longer than five seconds
- * beside the headline.
+ * Turns on the page's entrances. Without script, or with reduced motion,
+ * `.jw-anim` is never added and everything renders in its finished state.
+ *
+ * Reveals are driven by a plain position check on load, scroll and resize
+ * rather than IntersectionObserver alone: some embedded browsers never
+ * deliver observer callbacks, which would leave content hidden. Anything
+ * above the fold line, including blocks already scrolled past, is shown.
+ */
+function useReveal(root: React.RefObject<HTMLDivElement | null>) {
+  const [anim, setAnim] = useState(false);
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    setAnim(true);
+  }, []);
+  useEffect(() => {
+    if (!anim || !root.current) return;
+    let pending = Array.from(root.current.querySelectorAll<HTMLElement>('.jw-reveal, .jw-enter, .jw-unveil, .jw-result'));
+    const check = () => {
+      const line = window.innerHeight * 0.9;
+      pending = pending.filter((el) => {
+        if (el.getBoundingClientRect().top < line) {
+          el.classList.add('is-in');
+          return false;
+        }
+        return true;
+      });
+      if (pending.length === 0) stop();
+    };
+    const stop = () => {
+      window.removeEventListener('scroll', check);
+      window.removeEventListener('resize', check);
+    };
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+    return stop;
+  }, [anim, root]);
+  return anim;
+}
+
+/** A heading set as masked lines that rise into place. */
+function Lines({ lines }: { lines: React.ReactNode[] }) {
+  return (
+    <>
+      {lines.map((line, i) => (
+        <span key={i} className="jw-line">
+          <span style={{ '--i': i } as React.CSSProperties}>{line}</span>
+        </span>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The firm's own footage, full-bleed behind the opening line. Only one file
+ * is fetched (phone or desktop cut, chosen in the browser); under reduced
+ * motion nothing downloads and the still portrait stands in. Pausable, since
+ * it loops for longer than five seconds beside the headline.
  */
 function HeroVideo() {
   const ref = useRef<HTMLVideoElement>(null);
@@ -125,7 +173,7 @@ function HeroVideo() {
 
   return (
     <>
-      <div className="absolute inset-0" aria-hidden="true">
+      <div className="jw-hero-media absolute inset-0" aria-hidden="true">
         <Image
           src="/assets/attorney-main.jpg"
           alt=""
@@ -150,14 +198,15 @@ function HeroVideo() {
             <source src={src} type="video/mp4" />
           </video>
         )}
-        {/* Neutral scrim so the white name holds contrast over moving footage. */}
-        <div className="absolute inset-0 bg-black/60" />
       </div>
+      {/* Neutral scrim, heavier at the bottom where the text sits. */}
+      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent" aria-hidden="true" />
       {src && (
         <button
           type="button"
           onClick={() => setPaused((p) => !p)}
-          className={`absolute z-20 right-5 sm:right-8 top-[calc(4rem+16px)] xl:top-[calc(5rem+16px)] inline-flex items-center justify-center w-11 h-11 bg-black/50 text-white hover:bg-black transition-colors ${RING_DARK}`}
+          className={`absolute z-20 right-5 sm:right-8 bottom-6 inline-flex items-center justify-center w-11 h-11 border border-white/30 text-white/85 hover:text-white hover:border-white transition-colors ${RING_DARK}`}
           aria-label={paused ? 'Play background video' : 'Pause background video'}
         >
           {paused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}
@@ -168,52 +217,62 @@ function HeroVideo() {
 }
 
 export default function HomePageClient() {
+  const root = useRef<HTMLDivElement>(null);
+  const anim = useReveal(root);
+
   return (
-    <div className="jw bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.5]">
+    <div ref={root} className={`jw bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.6] ${anim ? 'jw-anim' : ''}`}>
       {/* ======================= HERO =======================
           Pulled up under the header, which renders transparently over the
           footage while the page is at the top. */}
-      <section className="relative -mt-16 xl:-mt-20 min-h-[calc(100svh-44px)] flex flex-col overflow-hidden bg-navy-950 text-white">
+      <section className="jw-hero relative -mt-16 xl:-mt-20 min-h-[calc(100svh-44px)] flex items-center overflow-hidden bg-navy-950 text-white">
         <HeroVideo />
-        <div className={`relative z-10 ${FRAME} w-full flex-1 flex flex-col justify-center pt-24 xl:pt-28 pb-12`}>
-          <h1 className="jw-display text-[19vw] sm:text-[length:var(--step-monument)] text-center">
-            <span className="jw-load block">Jwayyed Law</span>
+        <div className={`relative z-10 ${FRAME} w-full pt-28 xl:pt-32 pb-20 text-center`}>
+          <h1 className="jw-display text-[length:var(--step-display)] leading-[1.04] text-balance">
+            <Lines lines={['Defending Your Rights.', <span key="b" className="text-sky">Building Your Future.</span>]} />
           </h1>
-        </div>
-
-        <div className={`relative z-10 ${FRAME} w-full pb-8 sm:pb-10 grid gap-6 lg:grid-cols-12 lg:items-end`}>
           <p
-            className="jw-load lg:col-span-5 text-[length:var(--step-lead)] leading-snug max-w-[34ch]"
-            style={{ '--jw-delay': '180ms' } as React.CSSProperties}
+            className="jw-load mt-7 mx-auto max-w-[44rem] text-[length:var(--step-lead)] leading-snug text-white/85 text-pretty"
+            style={{ '--jw-delay': '420ms' } as React.CSSProperties}
           >
-            Ohio OVI and criminal defense from a former municipal prosecutor. Also injury, business and estate law.
+            Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and
+            estate matters.
           </p>
           <div
-            className="jw-load lg:col-span-7 flex flex-col sm:flex-row sm:flex-wrap sm:items-center lg:justify-end gap-4 sm:gap-x-6"
-            style={{ '--jw-delay': '260ms' } as React.CSSProperties}
+            className="jw-load mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
+            style={{ '--jw-delay': '540ms' } as React.CSSProperties}
+          >
+            <Link
+              href="/contact"
+              className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[54px] px-8 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            >
+              Schedule a Consultation
+              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            </Link>
+            <a
+              href={PHONE_TEL}
+              className={`inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[54px] px-8 border border-white/50 font-semibold tabular-nums hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
+            >
+              <Phone className="w-4 h-4" aria-hidden="true" />
+              Call {PHONE_DISPLAY}
+            </a>
+          </div>
+          <div
+            className="jw-load mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3"
+            style={{ '--jw-delay': '660ms' } as React.CSSProperties}
           >
             <a
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 whitespace-nowrap text-[length:var(--step-small)] text-white/85 hover:text-white transition-colors ${RING_DARK}`}
+              className={`inline-flex items-center gap-2 text-[length:var(--step-small)] text-white/85 hover:text-white transition-colors ${RING_DARK}`}
             >
               <Stars className="w-4 h-4 fill-sky text-sky" />
-              {RATING} from 100+ Google reviews
+              <span>
+                <span className="font-semibold text-white">{RATING}</span> from 100+ Google reviews
+              </span>
             </a>
-            <Link
-              href="/contact"
-              className={`text-[length:var(--step-small)] font-medium underline underline-offset-4 decoration-2 hover:text-sky transition-colors ${RING_DARK}`}
-            >
-              Schedule online
-            </Link>
-            <a
-              href={PHONE_TEL}
-              className="inline-flex items-center justify-center gap-2 min-h-[52px] px-7 whitespace-nowrap bg-sky text-navy-950 font-medium tabular-nums hover:bg-white active:translate-y-px transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
-            >
-              <Phone className="w-[18px] h-[18px]" aria-hidden="true" />
-              Call {PHONE_DISPLAY}
-            </a>
+            <OfficeStatus tone="dark" />
           </div>
         </div>
       </section>
@@ -221,38 +280,38 @@ export default function HomePageClient() {
       {/* ======================= PRACTICE AREAS (white) ======================= */}
       <section className={`${SECTION} bg-white`} aria-labelledby="practice-heading">
         <div className={FRAME}>
-          <div className="jw-enter grid gap-6 lg:grid-cols-12 lg:items-end">
-            <h2 id="practice-heading" className="jw-display lg:col-span-7 text-[length:var(--step-head)]">
-              Practice areas
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <h2 id="practice-heading" className="jw-reveal jw-display lg:col-span-7 text-[length:var(--step-head)]">
+              <Lines lines={['Practice areas']} />
             </h2>
-            <p className="lg:col-span-5 text-[length:var(--step-lead)] leading-snug text-navy-950/75">
-              Six areas of Ohio law. You speak with the attorney handling your case, not a screening service.
+            <p className="jw-enter lg:col-span-5 text-[length:var(--step-lead)] leading-snug text-navy-950/75">
+              <span>Six areas of Ohio law. You speak with the attorney handling your case, not a screening service.</span>
             </p>
           </div>
 
-          <ul className="jw-enter mt-16 grid gap-x-12 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="jw-enter mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
             {AREAS.map((name) => {
               const a = area(name);
               return (
-                <li key={name}>
-                  <Link
-                    href={a.href}
-                    className={`group inline-flex items-baseline gap-2 text-[length:var(--step-lead)] font-medium leading-tight hover:text-sky-deep transition-colors ${RING_LIGHT}`}
-                  >
-                    {a.title}
+                <li key={name} className="group/area">
+                  <Link href={a.href} className={`group inline-flex items-center gap-2 ${RING_LIGHT}`}>
+                    <span className="jw-display text-[length:var(--step-lead)] bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] group-hover:bg-[length:100%_1px] transition-[background-size] duration-500">
+                      {a.title}
+                    </span>
                     <ArrowUpRight
-                      className="w-5 h-5 self-center text-sky-deep transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="w-5 h-5 text-sky-deep transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       aria-hidden="true"
                     />
                   </Link>
                   <p className="mt-2 text-navy-950/70">{a.tagline}</p>
-                  <ul className="mt-4 flex flex-wrap gap-2">
+                  <ul className="mt-5 grid gap-2.5 text-[length:var(--step-small)]">
                     {a.links.map((l) => (
                       <li key={l.href + l.name}>
                         <Link
                           href={l.href}
-                          className={`inline-flex items-center min-h-[40px] px-3.5 bg-ice text-[length:var(--step-small)] hover:bg-sky-deep hover:text-white transition-colors ${RING_LIGHT}`}
+                          className={`group/link inline-flex items-center gap-2 text-navy-950/85 hover:text-sky-deep transition-colors ${RING_LIGHT}`}
                         >
+                          <span className="h-px w-3 bg-sky-deep/50 transition-[width] duration-300 group-hover/link:w-5" aria-hidden="true" />
                           {l.name.replace(/ →$/, '')}
                         </Link>
                       </li>
@@ -263,13 +322,13 @@ export default function HomePageClient() {
             })}
           </ul>
 
-          <p className="mt-14 text-navy-950/75">
+          <p className="mt-16 text-navy-950/75">
             Not sure where your matter fits?{' '}
-            <a href={PHONE_TEL} className={`font-medium text-sky-deep underline underline-offset-4 tabular-nums ${RING_LIGHT}`}>
+            <a href={PHONE_TEL} className={`font-semibold text-sky-deep underline underline-offset-4 tabular-nums ${RING_LIGHT}`}>
               Call {PHONE_DISPLAY}
             </a>{' '}
             or{' '}
-            <Link href="/services" className={`font-medium text-sky-deep underline underline-offset-4 ${RING_LIGHT}`}>
+            <Link href="/services" className={`font-semibold text-sky-deep underline underline-offset-4 ${RING_LIGHT}`}>
               see every service
             </Link>
             .
@@ -279,9 +338,9 @@ export default function HomePageClient() {
 
       {/* ======================= ABOUT (navy) ======================= */}
       <section className={`${SECTION} bg-navy-950 text-white`} aria-labelledby="about-heading">
-        <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16 items-center`}>
-          <div className="jw-enter lg:col-span-5">
-            <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden bg-navy-900">
+        <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-20 items-center`}>
+          <div className="lg:col-span-5">
+            <div className="jw-unveil relative aspect-[4/5] w-full max-w-md overflow-hidden bg-navy-900">
               <Image
                 src="/assets/IMG_5570.JPG"
                 alt="Attorney Jwayyed"
@@ -293,125 +352,94 @@ export default function HomePageClient() {
             </div>
           </div>
 
-          <div className="jw-enter lg:col-span-7">
-            <h2 id="about-heading" className="jw-display text-[length:var(--step-head)] max-w-[16ch]">
-              Former prosecutor. Now on your side.
+          <div className="lg:col-span-7">
+            <h2 id="about-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
+              <Lines lines={['Former prosecutor.', 'Now on your side.']} />
             </h2>
-            <p className="mt-8 text-[length:var(--step-lead)] leading-snug max-w-[40ch]">
-              Jwayyed Jwayyed served as a municipal prosecutor and as assistant law director for the City of Circleville
-              before founding Jwayyed Law. He knows how the other side builds a case, and he uses that for you.
-            </p>
-            <p className="mt-6 text-white/80 max-w-[60ch]">
-              Licensed in Ohio since 2019 (Bar #0098679), with a J.D. from Capital University Law School. Selected for the
-              Ohio State Bar Association Leadership Academy in 2023. He speaks English and Arabic, and you work with him
-              directly.
-            </p>
-            <dl className="mt-10 grid grid-cols-3 gap-6 max-w-xl text-[length:var(--step-small)]">
-              <div>
-                <dt className="text-mist">Office</dt>
-                <dd className="font-medium">Columbus, Ohio</dd>
-              </div>
-              <div>
-                <dt className="text-mist">Licensed</dt>
-                <dd className="font-medium">Since 2019</dd>
-              </div>
-              <div>
-                <dt className="text-mist">Languages</dt>
-                <dd className="font-medium">English, Arabic</dd>
-              </div>
-            </dl>
-            <Link
-              href="/our-law-firm/about-us"
-              className={`mt-10 inline-flex items-center gap-2 min-h-[48px] px-6 border-2 border-sky text-sky font-medium hover:bg-sky hover:text-navy-950 transition-colors ${RING_DARK}`}
-            >
-              Read his full story
-              <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
-            </Link>
+            <div className="jw-enter">
+              <p className="mt-8 text-[length:var(--step-lead)] leading-snug max-w-[42ch]">
+                Jwayyed Jwayyed served as a municipal prosecutor and as assistant law director for the City of
+                Circleville before founding Jwayyed Law. He knows how the other side builds a case, and he uses that for
+                you.
+              </p>
+              <ul className="mt-10 grid gap-x-10 gap-y-3 sm:grid-cols-2 text-[length:var(--step-small)] text-white/85">
+                {CREDENTIALS.map((c) => (
+                  <li key={c} className="flex items-start gap-3">
+                    <Check className="w-4 h-4 mt-1 flex-shrink-0 text-sky" aria-hidden="true" />
+                    {c}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-8 text-white/75 max-w-[60ch]">
+                He speaks English and Arabic, and you work with him directly from the first call.
+              </p>
+              <Link
+                href="/our-law-firm/about-us"
+                className={`group mt-10 inline-flex items-center gap-2 min-h-[50px] px-6 border border-sky text-sky font-semibold hover:bg-sky hover:text-navy-950 transition-colors ${RING_DARK}`}
+              >
+                Read his full story
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ======================= RECORD (ice) ======================= */}
-      <section className={`${SECTION} bg-ice`} aria-labelledby="record-heading">
+      {/* ======================= RESULTS (ice) =======================
+          Each result is the charge as filed, crossed out as the section
+          comes into view, and what it became. */}
+      <section className={`${SECTION} bg-ice`} aria-labelledby="results-heading">
         <div className={FRAME}>
-          <h2 id="record-heading" className="jw-enter jw-display text-[length:var(--step-head)]">
-            <span className="block">On the</span>
-            <span className="block pl-[16.6%]">record</span>
-          </h2>
-
-          <div className="jw-enter mt-16 sm:mt-20">
-            {/* Desktop and tablet: a real table, rows told apart by tone. */}
-            <table className="hidden md:table w-full border-collapse text-left tabular-nums">
-              <caption className="sr-only">Credentials and recent results for Attorney Jwayyed</caption>
-              <thead className="sr-only">
-                <tr>
-                  <th scope="col">Year or area</th>
-                  <th scope="col">Record</th>
-                  <th scope="col">From or detail</th>
-                  <th scope="col">Note</th>
-                </tr>
-              </thead>
-              {RECORD.map((g) => (
-                <tbody key={g.group}>
-                  <tr>
-                    <th scope="rowgroup" colSpan={4} className="pt-10 pb-4 text-[length:var(--step-lead)] font-medium text-sky-deep">
-                      {g.group}
-                    </th>
-                  </tr>
-                  {g.rows.map((r, i) => (
-                    <tr key={r.what} className={i % 2 === 0 ? 'bg-white' : ''}>
-                      <td className="py-3.5 pl-4 pr-6 w-[12%] text-navy-950/60">{r.when}</td>
-                      <td className="py-3.5 pr-6 w-[38%] font-medium">{r.what}</td>
-                      <td className="py-3.5 pr-6 w-[32%] text-navy-950/80">{r.who}</td>
-                      <td className="py-3.5 pr-4 w-[18%] text-right text-navy-950/80">{r.note}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              ))}
-            </table>
-
-            {/* Phone: each row a short block. */}
-            <div className="md:hidden grid gap-10">
-              {RECORD.map((g) => (
-                <div key={g.group}>
-                  <p className="text-[length:var(--step-lead)] font-medium text-sky-deep mb-3">{g.group}</p>
-                  {g.rows.map((r, i) => (
-                    <div key={r.what} className={`px-4 py-3 ${i % 2 === 0 ? 'bg-white' : ''}`}>
-                      <p className="font-medium">
-                        {r.when && <span className="text-navy-950/60 mr-2">{r.when}</span>}
-                        {r.what}
-                      </p>
-                      <p className="text-navy-950/80">{r.who}</p>
-                      <p className="text-navy-950/60">{r.note}</p>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-8 text-[length:var(--step-small)] text-navy-950/70">
-              Past results do not guarantee a future outcome.{' '}
-              <Link href="/our-law-firm/case-results" className={`text-sky-deep font-medium underline underline-offset-4 ${RING_LIGHT}`}>
-                See all case results
-              </Link>
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <h2 id="results-heading" className="jw-reveal jw-display lg:col-span-7 text-[length:var(--step-head)]">
+              <Lines lines={['Recent results']} />
+            </h2>
+            <p className="jw-enter lg:col-span-5 text-navy-950/75">
+              <span>A sample of charges reduced or dismissed for clients across Ohio. Past results do not guarantee a future outcome.</span>
             </p>
           </div>
+
+          <ol className="mt-14 grid gap-4">
+            {RESULTS.map((r) => (
+              <li key={r.charge} className="jw-result grid gap-4 bg-white px-6 sm:px-10 py-8 sm:py-10 lg:grid-cols-12 lg:items-center">
+                <p className="jw-display lg:col-span-7 text-[clamp(1.75rem,1.2rem+2vw,3rem)] leading-tight flex flex-wrap items-center gap-x-4 gap-y-1">
+                  <span className="jw-strike text-navy-950/45">
+                    <span className="sr-only">Charged with </span>
+                    {r.charge}
+                  </span>
+                  <ArrowRight className="w-7 h-7 text-sky-deep flex-shrink-0" aria-hidden="true" />
+                  <span className="jw-outcome text-sky-deep">
+                    <span className="sr-only">resolved as </span>
+                    {r.outcome}
+                  </span>
+                </p>
+                <p className="lg:col-span-5 text-navy-950/80">{r.detail}</p>
+              </li>
+            ))}
+          </ol>
+
+          <Link
+            href="/our-law-firm/case-results"
+            className={`group mt-10 inline-flex items-center gap-2 font-semibold text-sky-deep ${RING_LIGHT}`}
+          >
+            See all case results
+            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+          </Link>
         </div>
       </section>
 
       {/* ======================= REVIEWS (navy) =======================
-          The layout from the original redesign: the trust marks under the
+          The layout from the original redesign: trust marks under the
           heading, then the rating card beside the scrolling wall of real
-          Google reviews, the figure stating the claim and the wall proving
-          it. */}
+          Google reviews. */}
       <section className={`${SECTION} bg-navy-900 text-white overflow-hidden`} aria-labelledby="reviews-heading">
         <div className={FRAME}>
-          <div className="jw-enter text-center max-w-5xl mx-auto mb-12 sm:mb-16">
-            <h2 id="reviews-heading" className="jw-display text-[length:var(--step-head)]">
-              What clients say
+          <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16">
+            <h2 id="reviews-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
+              <Lines lines={['What clients say']} />
             </h2>
 
-            <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-left">
+            <div className="jw-enter mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-left">
               <a
                 href={GOOGLE_REVIEWS_URL}
                 target="_blank"
@@ -427,7 +455,7 @@ export default function HomePageClient() {
                 <span>
                   <span className="flex items-center gap-1.5">
                     <Stars className="w-3.5 h-3.5 fill-sky text-sky" />
-                    <span className="font-medium">{RATING}</span>
+                    <span className="font-semibold">{RATING}</span>
                   </span>
                   <span className="block text-[length:var(--step-small)] text-mist">100+ Google reviews</span>
                 </span>
@@ -449,7 +477,7 @@ export default function HomePageClient() {
                   className="object-contain flex-shrink-0"
                 />
                 <span>
-                  <span className="block font-medium">A+ accredited</span>
+                  <span className="block font-semibold">A+ accredited</span>
                   <span className="block text-[length:var(--step-small)] text-mist">Better Business Bureau</span>
                 </span>
               </a>
@@ -466,7 +494,7 @@ export default function HomePageClient() {
                   className="h-12 w-auto flex-shrink-0"
                 />
                 <span>
-                  <span className="block font-medium">Best of 2026</span>
+                  <span className="block font-semibold">Best of 2026</span>
                   <span className="block text-[length:var(--step-small)] text-mist">BusinessRate award</span>
                 </span>
               </div>
@@ -486,7 +514,7 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* ======================= THE PLACE (the page's one rest) ======================= */}
+      {/* ======================= THE PLACE ======================= */}
       <figure className="relative h-[60svh] min-h-[380px] overflow-hidden bg-navy-950">
         <Image
           src="/assets/found/ohio-statehouse.jpg"
@@ -503,68 +531,73 @@ export default function HomePageClient() {
       {/* ======================= CONTACT + COURTS (white) ======================= */}
       <section className={`${SECTION} bg-white`} aria-labelledby="contact-heading">
         <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16`}>
-          <div className="jw-enter lg:col-span-5">
-            <h2 id="contact-heading" className="jw-display text-[length:var(--step-head)]">
-              Find us
+          <div className="lg:col-span-5">
+            <h2 id="contact-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
+              <Lines lines={['Find us']} />
             </h2>
-            <ul className="mt-10 grid gap-6">
-              <li className="flex gap-4">
-                <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
-                <a href={MAP_URL} target="_blank" rel="noopener noreferrer" className={`hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
-                  <span className="block text-[length:var(--step-lead)] font-medium leading-snug">100 E. Campus View Blvd, Suite 250</span>
-                  <span className="block text-navy-950/75">Columbus, OH 43235</span>
-                </a>
-              </li>
-              <li className="flex gap-4">
-                <Phone className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
-                <a href={PHONE_TEL} className={`text-[length:var(--step-lead)] font-medium tabular-nums hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
-                  {PHONE_DISPLAY}
-                </a>
-              </li>
-              <li className="flex gap-4">
-                <Mail className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
-                <a href={`mailto:${EMAIL}`} className={`break-all hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
-                  {EMAIL}
-                </a>
-              </li>
-              <li className="flex gap-4">
-                <Clock className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
-                <span>Monday to Friday, 9am to 5pm</span>
-              </li>
-            </ul>
-            <Link
-              href="/contact"
-              className={`mt-10 inline-flex items-center gap-2 min-h-[48px] px-6 bg-navy-950 text-white font-medium hover:bg-sky-deep transition-colors ${RING_LIGHT} focus-visible:ring-offset-2`}
-            >
-              Write to us
-              <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
-            </Link>
+            <div className="jw-enter">
+              <div className="mt-6">
+                <OfficeStatus tone="light" />
+              </div>
+              <ul className="mt-8 grid gap-6">
+                <li className="flex gap-4">
+                  <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
+                  <a href={MAP_URL} target="_blank" rel="noopener noreferrer" className={`hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
+                    <span className="block text-[length:var(--step-lead)] font-semibold leading-snug">100 E. Campus View Blvd, Suite 250</span>
+                    <span className="block text-navy-950/75">Columbus, OH 43235</span>
+                  </a>
+                </li>
+                <li className="flex gap-4">
+                  <Phone className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
+                  <a href={PHONE_TEL} className={`text-[length:var(--step-lead)] font-semibold tabular-nums hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
+                    {PHONE_DISPLAY}
+                  </a>
+                </li>
+                <li className="flex gap-4">
+                  <Mail className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
+                  <a href={`mailto:${EMAIL}`} className={`break-all hover:text-sky-deep transition-colors ${RING_LIGHT}`}>
+                    {EMAIL}
+                  </a>
+                </li>
+                <li className="flex gap-4">
+                  <Clock className="w-5 h-5 mt-1 flex-shrink-0 text-sky-deep" aria-hidden="true" />
+                  <span>Monday to Friday, 9am to 5pm</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="jw-enter lg:col-span-7 lg:pt-4">
-            <CourtFinder />
+            <div>
+              <CourtFinder />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ======================= CALL (one word is the button) ======================= */}
-      <a
-        href={PHONE_TEL}
-        className="group relative block min-h-[40svh] sm:min-h-[52svh] bg-sky text-navy-950 hover:bg-navy-950 hover:text-sky focus-visible:bg-navy-950 focus-visible:text-sky focus-visible:outline-none transition-colors"
-        aria-label={`Call Jwayyed Law at ${PHONE_DISPLAY}`}
-      >
-        <span className={`${FRAME} absolute inset-x-0 top-0 pt-5 flex items-start justify-between gap-6`}>
-          <span className="text-[length:var(--step-body)] max-w-[28ch]">
-            Talk to Attorney Jwayyed now: <span className="whitespace-nowrap">{PHONE_DISPLAY}</span>.
-          </span>
-          <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-12 sm:h-12 flex-shrink-0" aria-hidden="true">
-            <path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" strokeWidth="4" />
-          </svg>
-        </span>
-        <span className={`${FRAME} absolute inset-x-0 bottom-0 pb-6 jw-display text-[clamp(7rem,27vw,26rem)] leading-[0.78]`} aria-hidden="true">
-          Call
-        </span>
-      </a>
+      {/* ======================= CLOSING (sky) ======================= */}
+      <section className="bg-sky text-navy-950" aria-labelledby="closing-heading">
+        <div className={`${FRAME} py-[clamp(72px,8vw,128px)] grid gap-10 lg:grid-cols-12 lg:items-end`}>
+          <h2 id="closing-heading" className="jw-reveal jw-display lg:col-span-7 text-[1.875rem] sm:text-[length:var(--step-head)]">
+            <Lines lines={['Facing a charge or a claim?', 'Talk to an attorney today.']} />
+          </h2>
+          <div className="jw-enter lg:col-span-5 flex flex-col gap-5 lg:items-end">
+            <a
+              href={PHONE_TEL}
+              className="jw-display text-[clamp(2rem,1.4rem+2.2vw,3.25rem)] tabular-nums hover:underline underline-offset-8 decoration-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-950"
+            >
+              {PHONE_DISPLAY}
+            </a>
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-2 min-h-[52px] px-7 bg-navy-950 text-white font-semibold hover:bg-white hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy-950"
+            >
+              Schedule a Consultation
+              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
