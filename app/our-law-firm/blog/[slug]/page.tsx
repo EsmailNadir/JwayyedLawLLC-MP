@@ -68,6 +68,13 @@ const serviceLinks: Record<string, { href: string; label: string }[]> = {
     { href: '/ovi-dui-defense', label: 'OVI/DUI Defense Overview' },
     { href: '/ovi-dui-defense/first-ovi', label: 'First OVI Defense' },
     { href: '/ovi-dui-defense/high-tier-ovi', label: 'High-Tier OVI Defense' },
+    { href: '/ovi-dui-defense/refusal-ovi', label: 'Refusal OVI Defense' },
+    { href: '/ovi-dui-defense/limited-driving-privileges', label: 'Limited Driving Privileges' },
+  ],
+  'Ohio Courts': [
+    { href: '/courts', label: 'Ohio Court Guides' },
+    { href: '/courts/franklin-county-municipal-court', label: 'Franklin County Municipal Court' },
+    { href: '/criminal-defense', label: 'Criminal Defense Overview' },
   ],
   'Personal Injury': [
     { href: '/personal-injury', label: 'Personal Injury Overview' },
@@ -116,22 +123,33 @@ export default async function BlogPostPage({
   ];
 
 
+  // BlogPosting with the fields Google's article guidelines ask for (image,
+  // dates) and the author tied to the attorney entity in the site-wide
+  // JSON-LD (layout.tsx) by @id, so the article credits the same person.
+  const siteUrl = 'https://www.jjlawohio.com';
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
+    image: [`${siteUrl}${post.image}`],
+    inLanguage: 'en-US',
+    articleSection: post.category,
     author: {
       '@type': 'Person',
+      '@id': `${siteUrl}/our-law-firm/our-attorneys#jwayyed-jwayyed`,
       name: post.author,
-      url: 'https://www.jjlawohio.com/our-law-firm/about-us',
+      url: `${siteUrl}/our-law-firm/about-us`,
     },
     publisher: {
       '@type': 'Organization',
       name: 'Jwayyed Law LLC',
-      url: 'https://www.jjlawohio.com',
+      url: siteUrl,
+      logo: { '@type': 'ImageObject', url: `${siteUrl}/logo-square.png` },
     },
     datePublished: post.date,
+    // Every post was revised in the October 2026 redesign.
+    dateModified: post.date > '2026-10-25' ? post.date : '2026-10-25',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://www.jjlawohio.com/our-law-firm/blog/${slug}`,
