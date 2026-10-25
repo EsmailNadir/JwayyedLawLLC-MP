@@ -5,10 +5,12 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
-  description: 'Ohio ILIT attorney serving Columbus, Cincinnati, and Dayton. Remove life insurance from your taxable estate under IRC 2042. Crummey powers, 3-year rule.',
+  description:
+    'Remove life insurance from your taxable estate with an Ohio ILIT under IRC 2042. Crummey powers, the 3-year rule and annual administration explained.',
   keywords: [
     'irrevocable life insurance trust Columbus OH',
     'ILIT attorney Ohio',
@@ -22,9 +24,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'ILIT Lawyer Ohio | Life Insurance Trusts | Jwayyed Law LLC',
+    description: 'Keep life insurance out of your taxable estate with an irrevocable life insurance trust. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-life-insurance-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/trusts/irrevocable-life-insurance-trusts' },
 };
 
@@ -35,121 +38,185 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is an Irrevocable Life Insurance Trust (ILIT)?`,
-    answer: `An ILIT is an irrevocable trust that owns one or more life insurance policies. Because the trust — not you — owns the policy, the death benefit is excluded from your taxable estate under IRC 2042. When you die, the proceeds are paid to the trust rather than directly to your estate, which means they are not subject to federal estate tax. The trustee then distributes the proceeds to your beneficiaries according to the trust's terms. Ohio has no state estate tax, but federal estate tax applies to estates exceeding the federal exemption (currently $13.61 million in 2024, scheduled to drop after 2025).`,
+    question: 'What is an Irrevocable Life Insurance Trust (ILIT)?',
+    answer:
+      "An ILIT is an irrevocable trust that owns one or more life insurance policies. Because the trust owns the policy and you do not, the death benefit is excluded from your taxable estate under IRC 2042. At your death the proceeds are paid to the trust rather than your estate, so they are not subject to federal estate tax, and the trustee distributes them under the trust's terms. Ohio has no state estate tax, but federal estate tax applies to estates over the federal exemption (currently $13.61 million in 2024, scheduled to drop after 2025).",
   },
   {
-    question: `How does an ILIT save estate taxes?`,
-    answer: `Under IRC 2042, life insurance proceeds are included in the insured's taxable estate if the insured held any "incidents of ownership" in the policy at death — including the right to change beneficiaries, borrow against the policy, or cancel it. By transferring the policy to an ILIT (or having the trust purchase the policy from the outset), you give up all incidents of ownership. If you survive the transfer by three years (the IRC 2035 three-year rule), the proceeds are excluded from your estate. For a $5 million life insurance policy and an estate already at the federal exemption threshold, keeping that policy out of your estate can save up to $2 million in federal estate tax.`,
+    question: 'How does an ILIT save estate taxes?',
+    answer:
+      'Under IRC 2042, life insurance proceeds are in your taxable estate if you held any "incidents of ownership" at death, including the right to change beneficiaries, borrow against the policy or cancel it. Transferring the policy to an ILIT, or having the trust buy it from the start, gives up all of them. If you survive a transfer by three years (the IRC 2035 three-year rule), the proceeds are excluded. For a $5 million policy and an estate already at the federal exemption, keeping that policy out of the estate can save up to $2 million in federal estate tax.',
   },
   {
-    question: `What are Crummey powers and why do they matter?`,
-    answer: `Crummey powers (named after the 1968 case Crummey v. Commissioner) are temporary withdrawal rights given to ILIT beneficiaries each time the grantor makes a premium gift to the trust. They matter because gifts to a trust are normally future-interest gifts, which do not qualify for the annual gift tax exclusion ($18,000 per recipient in 2024). By giving each beneficiary a 30-day window to withdraw their proportionate share of each premium payment, the gift becomes a present-interest gift and qualifies for the annual exclusion. The trustee sends written "Crummey notices" to beneficiaries each year documenting this right. Beneficiaries typically do not exercise the right to withdraw, but the notice must be genuine and the window must be real.`,
+    question: 'What are Crummey powers and why do they matter?',
+    answer:
+      'Crummey powers (named after the 1968 case Crummey v. Commissioner) are temporary withdrawal rights given to ILIT beneficiaries each time you make a premium gift to the trust. Gifts to a trust are normally future-interest gifts, which do not qualify for the annual gift tax exclusion ($18,000 per recipient in 2024). Giving each beneficiary a 30-day window to withdraw their share makes the gift a present-interest gift that qualifies. The trustee sends written Crummey notices each year documenting the right. Beneficiaries usually do not withdraw, but the notice must be genuine and the window real.',
   },
   {
-    question: `Can I be the trustee of my own ILIT?`,
-    answer: `No. If you serve as trustee of your ILIT, the IRS will argue you retained incidents of ownership over the policy through your trustee powers, causing the death benefit to be pulled back into your estate under IRC 2042. The trustee must be someone other than the insured — typically a spouse (though this raises its own issues), an adult child, a trusted friend, or a corporate trustee. The trustee must be independent enough that they could in theory exercise their trustee powers in a way that would adversely affect you.`,
+    question: 'Can I be the trustee of my own ILIT?',
+    answer:
+      'No. If you serve as trustee, the IRS will argue you kept incidents of ownership through your trustee powers, which pulls the death benefit back into your estate under IRC 2042. The trustee must be someone other than the insured: typically a spouse (which raises its own issues), an adult child, a trusted friend or a corporate trustee. The trustee must be independent enough that, in theory, they could use their powers in a way that adversely affects you.',
   },
   {
-    question: `What is the three-year rule under IRC 2035?`,
-    answer: `If you transfer an existing life insurance policy to an ILIT (rather than having the trust purchase a new policy), IRC 2035 requires you to survive the transfer by three years for the proceeds to be excluded from your estate. If you die within three years of transferring the policy, the full death benefit is pulled back into your taxable estate as if the transfer never happened. This rule applies to transfers of life insurance; it does not apply if the trust purchases the policy directly from the insurer. For clients who already own significant policies and want to establish an ILIT, the three-year risk must be carefully considered and weighed against the potential estate tax savings.`,
+    question: 'What is the three-year rule under IRC 2035?',
+    answer:
+      'If you transfer an existing policy to an ILIT, rather than having the trust buy a new one, IRC 2035 requires you to survive the transfer by three years for the proceeds to be excluded. If you die within three years, the full death benefit is pulled back into your taxable estate as if the transfer never happened. The rule does not apply if the trust buys the policy directly from the insurer. If you already own large policies, weigh the three-year risk against the potential estate tax savings.',
   },
   {
-    question: `Can you cancel a life insurance policy held in an ILIT?`,
-    answer: `The trustee — not you — has the authority to surrender or cancel a policy held in an ILIT. You cannot instruct the trustee to cancel the policy, change the policy terms, or take a loan against the cash value, as doing so would give you incidents of ownership and defeat the estate tax exclusion under IRC 2042. If the trust runs out of funds to pay premiums and the trustee cannot get enough contributions from the grantor (via Crummey gifts) to keep the policy in force, the trustee may have to use the policy's cash value to pay premiums, convert the policy to a reduced paid-up policy, or, as a last resort, surrender the policy.`,
+    question: 'Can you cancel a life insurance policy held in an ILIT?',
+    answer:
+      "The trustee has the authority to surrender or cancel the policy. You do not. You cannot tell the trustee to cancel the policy, change its terms or borrow against the cash value, because that would give you incidents of ownership and defeat the exclusion under IRC 2042. If the trust runs short of premium money and your Crummey gifts cannot keep the policy in force, the trustee may use the policy's cash value to pay premiums, convert it to a reduced paid-up policy, or, as a last resort, surrender it.",
   },
   {
-    question: `What are the ongoing administration requirements for an ILIT?`,
-    answer: `An ILIT requires disciplined annual administration. Each year, the grantor makes a gift to the trust in an amount sufficient to cover the insurance premium. The trustee sends Crummey notices to all beneficiaries documenting their withdrawal rights. After the withdrawal window closes (typically 30 days), the trustee uses the trust funds to pay the insurance premium. The trustee should maintain detailed records of all notices, acknowledgments, and premium payments. Failure to follow these formalities can cause the IRS to disregard the Crummey structure and treat the premiums as direct gifts that do not qualify for the annual exclusion.`,
+    question: 'What are the ongoing administration requirements for an ILIT?',
+    answer:
+      'Each year you gift enough to the trust to cover the premium. The trustee sends Crummey notices to every beneficiary documenting their withdrawal rights. After the withdrawal window closes (typically 30 days), the trustee pays the premium from trust funds. The trustee should keep records of all notices, acknowledgments and premium payments. Skipping these formalities can lead the IRS to disregard the Crummey structure and treat the premiums as direct gifts that do not qualify for the annual exclusion.',
   },
   {
-    question: `How is an ILIT different from a revocable living trust?`,
-    answer: `A revocable living trust can hold life insurance policies as an asset and can serve as the beneficiary of a policy, but it provides no estate tax benefit — assets in a revocable trust are fully included in your taxable estate because you retain the right to revoke or amend the trust. An ILIT is irrevocable: once established, you cannot take the policy back or change the trust's terms without the consent of the beneficiaries and a court order. In exchange for giving up that control, the policy proceeds are excluded from your estate and avoid probate. The key tradeoff is control for estate tax savings.`,
+    question: 'How is an ILIT different from a revocable living trust?',
+    answer:
+      "A revocable living trust can hold a policy or be named its beneficiary, but it gives no estate tax benefit: its assets are fully in your taxable estate because you can revoke or amend it. An ILIT is irrevocable. Once it is set up, you cannot take the policy back or change the trust's terms without the beneficiaries' consent and a court order. In exchange, the proceeds are excluded from your estate and avoid probate. You trade control for estate tax savings.",
   },
 ];
 
-export default function IrrevocableLifeInsuranceTrustsPage() {
+const RELATED = [
+  { href: '/trusts', title: 'All trust services', subtitle: 'Every type of trust the firm sets up' },
+  { href: '/trusts/irrevocable-trusts', title: 'Irrevocable trusts', subtitle: 'GRATs, SLATs, CRTs and Medicaid trusts' },
+  { href: '/trusts/dynasty-trusts', title: 'Dynasty trusts', subtitle: 'Wealth held for several generations' },
+  { href: '/other-services/estate-planning-wills', title: 'Estate planning and wills', subtitle: 'The documents an ILIT sits alongside' },
+];
 
+export default function IrrevocableLifeInsuranceTrustsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Irrevocable Life Insurance Trusts (ILIT) Lawyer"
-        description="Life insurance death benefits are included in your taxable estate under IRC 2042 unless owned by an ILIT. Our Columbus attorneys help Ohio families remove life insurance from their estates, fund premiums with Crummey gifts, and use ILIT proceeds to pay estate taxes or purchase estate assets."
+        title="Irrevocable life insurance trusts (ILITs) in Ohio"
+        description="Under IRC 2042, a life insurance death benefit counts in your taxable estate unless you held no incidents of ownership. An ILIT owns the policy instead, so the proceeds pass outside your estate."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Irrevocable Life Insurance Trusts in Ohio: Removing Life Insurance from Your Taxable Estate
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Many Ohio families are surprised to learn that life insurance death benefits are generally included in the insured\'s federal taxable estate under IRC 2042 if the insured held any "incidents of ownership" in the policy at death. For a business owner or professional with $2–3 million in term or permanent life insurance, this can push an otherwise non-taxable estate over the federal exemption threshold — resulting in a significant and avoidable estate tax bill. An Irrevocable Life Insurance Trust (ILIT) solves this problem by shifting ownership of the policy from you to the trust, removing the death benefit from your estate while keeping the proceeds available to support your family or fund your estate\'s liquidity needs. Jwayyed Law LLC helps clients throughout Columbus, Cincinnati, Dayton, and surrounding Ohio communities design and administer ILITs as part of a comprehensive estate plan.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio does not impose a state estate tax (it was repealed effective January 1, 2013), so ILIT planning is exclusively a federal estate tax strategy for Ohio residents. The federal estate tax exemption is $13.61 million per individual in 2024, but this exemption is scheduled to sunset after December 31, 2025, to approximately $7 million (adjusted for inflation) absent congressional action. For Ohio families with significant life insurance, business interests, or investment portfolios, now is the time to evaluate ILIT planning while the exemption is at its historic high.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under IRC 2042, life insurance proceeds are included in the insured\'s gross estate if (1) the proceeds are payable to the insured\'s estate or executor, or (2) the insured possessed any incidents of ownership in the policy at death. Incidents of ownership include the right to change beneficiaries, to borrow against the policy\'s cash value, to cancel or surrender the policy, or to assign the policy. This is an extremely broad definition — even holding the policy in a revocable living trust does not remove it from your estate because you remain the trust owner with the ability to revoke.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '3 years', label: 'you must survive after transferring an existing policy (IRC 2035)' },
+          { figure: '30 days', label: 'typical Crummey withdrawal window for each premium gift' },
+          { figure: '$18,000', label: 'annual gift tax exclusion per beneficiary (2024 amount, indexed for inflation)' },
+          { figure: '9 months', label: 'after death, when heirs may have to pay estate taxes' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              How Crummey Powers Make the ILIT Work
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An ILIT is irrevocable and the trust itself owns the policy. To keep the policy in force, someone must pay the premiums. Typically, you (as the grantor) make annual gifts to the trust in an amount equal to the premium. The challenge is that gifts to a trust are treated as gifts of a future interest — they do not qualify for the annual gift tax exclusion of $18,000 per beneficiary (2024 amount, indexed for inflation) unless the beneficiaries have the present right to demand the gifted funds.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Crummey powers solve this problem. Each time you make a premium gift to the trust, the trustee sends formal written notices — Crummey notices — to each trust beneficiary, informing them that they have the right to withdraw their proportionate share of the contribution within a defined window (typically 30 days). Because beneficiaries have this present-right demand power, the contribution qualifies as a present-interest gift and uses your annual exclusion. In practice, beneficiaries almost never exercise the right to withdraw because doing so would reduce the trust assets and ultimately their inheritance — but the right must be genuine, the notices must be real, and the 30-day window must actually be available. The IRS scrutinizes ILIT Crummey notices carefully, and failure to follow through can cause the premium gifts to be treated as taxable gifts that use your lifetime exemption.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you have multiple beneficiaries, each one\'s annual exclusion can be leveraged. A couple with three adult children as ILIT beneficiaries can contribute up to $54,000 per year (three children × $18,000) free of gift tax using their annual exclusions. This allows substantial premium funding without eating into the lifetime exemption, making the ILIT an especially efficient vehicle for high-face-value permanent life insurance policies.
-            </p>
+      <Section
+        title="How life insurance ends up in your taxable estate"
+        intro={
+          <p>
+            Under IRC 2042, life insurance proceeds are in your gross estate if (1) they are payable to your estate or executor, or
+            (2) you held any incidents of ownership in the policy at death.
+          </p>
+        }
+      >
+        <p>
+          Incidents of ownership include the right to change beneficiaries, borrow against the cash value, cancel or surrender the
+          policy, or assign it. The definition is broad. Holding the policy in a revocable living trust does not remove it from your
+          estate, because you still own that trust and can revoke it.
+        </p>
+        <p>
+          For a business owner or professional with $2 to 3 million in term or permanent life insurance, that can push an
+          otherwise non-taxable estate over the federal exemption. An ILIT moves ownership of the policy from you to the trust, so the
+          death benefit leaves your estate and stays available to support your family or give your estate cash. Jwayyed Law LLC
+          designs and administers ILITs for clients in Columbus, Cincinnati, Dayton and surrounding Ohio communities.
+        </p>
+        <FactTable
+          title="Estate tax figures for ILIT planning"
+          rows={[
+            { label: 'Ohio estate tax', value: 'None. Repealed effective January 1, 2013, so ILIT planning is a federal estate tax strategy only.' },
+            { label: 'Federal exemption, 2024', value: '$13.61 million per individual.' },
+            {
+              label: 'Scheduled change',
+              value: 'The exemption is scheduled to sunset after December 31, 2025, to approximately $7 million (adjusted for inflation) absent congressional action.',
+            },
+            { label: 'Example savings', value: 'A $5 million policy kept out of an estate already at the exemption can save up to $2 million in federal estate tax.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Transferring an Existing Policy vs. Trust-Purchased Policy: The Three-Year Rule
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The most elegant way to use an ILIT is to have the trust purchase a new policy directly from the insurer from the outset. Because the trust was always the owner and applicant, you never held incidents of ownership and the three-year rule of IRC 2035 does not apply. If you die the next day, the death benefit is still excluded from your estate.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you already own a life insurance policy and want to transfer it to an ILIT, IRC 2035 creates a three-year lookback. If you die within three years of transferring the policy to the trust, the full death benefit is pulled back into your taxable estate as if the transfer never happened. The three-year rule applies only to life insurance transfers (and a few other transfers specifically included in the estate tax); it does not apply to transfers of most other assets. Despite this risk, the potential long-term estate tax savings often justify the transfer — particularly for younger, healthier insureds who are likely to survive the three-year period. For very ill or elderly clients, having the trust purchase a new policy (if insurable) is the safer approach.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Second-to-die (survivorship) life insurance policies — which pay out upon the death of the second of two insureds, typically spouses — are particularly well-suited for ILITs. Estate tax is generally deferred until the second spouse dies (due to the unlimited marital deduction), so the policy payout aligns with when the estate tax bill comes due. Second-to-die policies are also less expensive than single-life policies of equivalent face value. When the survivor dies, the ILIT receives the death benefit free of estate tax and can use the proceeds to purchase illiquid assets from the estate (such as real estate or a closely held business interest) at fair market value, providing estate liquidity without a forced sale.
-            </p>
+      <Section title="How Crummey powers fund the premiums" tone="ice">
+        <p>
+          The trust owns the policy, so someone has to pay the premiums. Usually you gift the premium amount to the trust each year.
+          Gifts to a trust are future-interest gifts, which do not qualify for the annual exclusion of $18,000 per beneficiary (2024
+          amount, indexed for inflation) unless the beneficiaries have a present right to demand the money. Crummey powers give them
+          that right.
+        </p>
+        <Steps
+          steps={[
+            { title: 'You gift the premium', body: 'You make a gift to the trust equal to the premium.' },
+            {
+              title: 'The trustee sends Crummey notices',
+              body: 'Each beneficiary is told in writing they may withdraw their share of the contribution within a set window, typically 30 days.',
+            },
+            { title: 'The window closes', body: 'Beneficiaries almost never withdraw, since that would shrink their inheritance. The right must still be genuine and the window actually available.' },
+            { title: 'The trustee pays the premium', body: 'From trust funds, keeping records of every notice, acknowledgment and payment.' },
+          ]}
+        />
+        <p>
+          Each beneficiary&rsquo;s exclusion counts. A couple with three adult children as beneficiaries can contribute up to
+          $54,000 per year (three children times $18,000) free of gift tax, without touching the lifetime exemption. The IRS
+          scrutinizes Crummey notices, and if the formalities slip, the premium gifts can be treated as taxable gifts that use your
+          lifetime exemption.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Using ILIT Proceeds to Fund Estate Taxes and Purchase Estate Assets
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              One of the most powerful uses of ILIT proceeds is estate liquidity planning. If your estate consists largely of illiquid assets — a family farm in central Ohio, a closely held manufacturing business in Columbus, or investment real estate — your heirs may be forced to sell those assets at a discount to pay estate taxes within nine months of your death. An ILIT provides a pool of liquid funds that the trustee can use to purchase those illiquid assets from your estate at fair market value or to loan funds to your estate. The ILIT itself is not part of your estate, so these proceeds are available tax-free to address the tax bill without a forced liquidation.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Properly establishing and administering an ILIT requires careful attention to the Ohio Trust Code under ORC Chapter 5801, the IRC 2042 incidents-of-ownership rules, IRC 2035's three-year rule, and the Crummey notice requirements. Our Columbus estate planning attorneys at Jwayyed Law LLC draft the trust document, prepare the annual Crummey notice templates, and advise your trustee on ongoing administration so that the ILIT delivers the estate tax benefits it was designed to provide. Call us at (614) 285-5482 to get started.
-            </p>
+      <Section title="New policy or existing policy">
+        <PointGrid
+          points={[
+            {
+              title: 'The trust buys a new policy',
+              body: 'The trust is the owner and applicant from the start, so you never held incidents of ownership and the IRC 2035 three-year rule does not apply. If you die the next day, the death benefit is still excluded.',
+            },
+            {
+              title: 'You transfer a policy you own',
+              body: 'If you die within three years of the transfer, the full death benefit is pulled back into your taxable estate. The rule covers life insurance transfers (and a few other transfers named in the estate tax), not most other assets.',
+            },
+            {
+              title: 'Who should transfer',
+              body: 'For younger, healthier insureds likely to survive three years, the long-term savings often justify the transfer.',
+            },
+            {
+              title: 'Who should buy new',
+              body: 'For very ill or elderly clients, having the trust buy a new policy (if they are insurable) is the safer approach.',
+            },
+          ]}
+        />
+        <Callout title="Second-to-die policies">
+          A survivorship policy pays on the death of the second of two insureds, usually spouses. The unlimited marital deduction
+          generally defers estate tax until the second death, so the payout arrives when the tax comes due, and these policies cost
+          less than single-life policies of the same face value.
+        </Callout>
+      </Section>
 
-            <LocationsWeServe title="Irrevocable Life Insurance Trusts" />
+      <Section title="Using ILIT proceeds to pay estate taxes" tone="ice">
+        <p>
+          If your estate is mostly illiquid (a family farm in central Ohio, a closely held manufacturing business in Columbus,
+          investment real estate), your heirs may have to sell at a discount to pay estate taxes within nine months of your death.
+          The ILIT gives the trustee a pool of cash to buy those assets from the estate at fair market value, or to lend money to the
+          estate. The ILIT is outside your estate, so the proceeds are available tax-free and no forced sale is needed.
+        </p>
+        <h3>What the firm does</h3>
+        <p>
+          An ILIT has to satisfy the Ohio Trust Code under ORC Chapter 5801, the IRC 2042 incidents-of-ownership rules, the IRC
+          2035 three-year rule and the Crummey notice requirements. Jwayyed Law LLC drafts the trust document, prepares the annual
+          Crummey notice templates and advises your trustee on ongoing administration. Call (614) 285-5482 to get started.
+        </p>
+      </Section>
 
-            <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                All Trust Services
-              </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Irrevocable Trusts
-              </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Dynasty Trusts
-              </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Estate Planning &amp; Wills
-              </Link>
-            </div>
+      <LocationsWeServe title="Irrevocable Life Insurance Trusts" />
 
-          </div>
-        </div>
-      </section>
+      <Section title="Related trust pages" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+        <p>
+          See also <Link href="/trusts/revocable-living-trusts">revocable living trusts</Link>, which hold a policy without any
+          estate tax benefit.
+        </p>
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Motorcycle Accident Lawyer in Ohio',
-  description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio.',
+  description:
+    'Motorcycle accident claims in Ohio: the 2-year deadline, how helmet use and lane filtering affect fault, and the damages riders can recover.',
   keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
   openGraph: {
     title: 'Motorcycle Accident Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Injury claims for motorcycle riders and passengers throughout Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/motorcycle-accidents',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/motorcycle-accidents' },
 };
 
@@ -25,188 +28,176 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'Why are motorcycle accidents more serious than car accidents?',
-    answer: 'Motorcycle accidents are typically more serious than car accidents because motorcyclists lack the protection of a vehicle, making them more vulnerable to serious injuries, fatalities, and catastrophic injuries including traumatic brain injury, spinal cord injury, and severe fractures. Motorcycle accidents often result in higher medical costs, longer recovery periods, and greater pain and suffering.',
+    answer:
+      'Riders have no vehicle around them, so they are more exposed to serious, catastrophic and fatal injuries, including traumatic brain injury, spinal cord injury and severe fractures. Motorcycle crashes often mean higher medical costs, longer recovery and more pain and suffering.',
   },
   {
     question: 'What compensation can I recover from a motorcycle accident?',
-    answer: 'Motorcycle accident compensation in Ohio may include economic damages (medical expenses, lost wages, property damage, future medical costs, loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment, loss of consortium), and potentially punitive damages for egregious conduct. Motorcycle accident cases often involve higher compensation due to severe injuries.',
+    answer:
+      'Compensation can include economic damages (medical expenses, lost wages, property damage, future medical costs and loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment and loss of consortium) and possibly punitive damages for egregious conduct. Because rider injuries are often severe, the damages are often higher.',
   },
   {
-    question: 'What is Ohio\'s helmet law for motorcycles?',
-    answer: 'Ohio does not require motorcycle helmets for riders 18 years or older under Ohio Revised Code 4511.53. However, riders under 18 must wear helmets. The absence of a helmet requirement does not prevent recovery for injuries, but insurance companies may attempt to reduce compensation. An attorney can help protect your rights regardless of helmet use.',
+    question: "What is Ohio's helmet law for motorcycles?",
+    answer:
+      'Under Ohio Revised Code 4511.53, riders 18 years or older are not required to wear a helmet. Riders under 18 must wear one. Not wearing a helmet does not prevent you from recovering for your injuries, though insurance companies may try to use it to reduce your compensation.',
   },
   {
     question: 'How long do motorcycle accident cases take?',
-    answer: 'Motorcycle accident case duration varies significantly depending on case complexity, injury severity, insurance company cooperation, and whether the case goes to trial. Simple cases may resolve in months, while complex cases involving severe injuries may take years. An attorney can provide a realistic timeline based on your specific case circumstances.',
+    answer:
+      'It depends on how complex the case is, how severe the injuries are, how the insurance company responds and whether the case goes to trial. Simple cases may resolve in months; complex cases with severe injuries may take years. An attorney can give you a realistic timeline once they know the facts.',
   },
   {
     question: 'Do I need a motorcycle accident attorney?',
-    answer: 'While you can handle a motorcycle accident claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+    answer:
+      'You can handle a claim yourself. An attorney knows the legal requirements and how insurers handle claims, and takes on the documentation, the communication with the insurance companies, the settlement negotiation and, if needed, the court case.',
   },
   {
-    question: `Does Ohio's helmet law affect a motorcycle accident injury claim?`,
-    answer: `Under ORC 4511.53, Ohio does not require motorcycle riders age 18 or older to wear a helmet, though riders under 18 must wear one. The fact that you were not wearing a helmet does not automatically bar your claim — Ohio's modified comparative negligence system (ORC 2315.33) still applies. However, insurance companies and defense attorneys routinely argue that the absence of a helmet contributed to head or brain injuries and seek to reduce your compensation by assigning you a percentage of fault. An attorney can work with medical experts to counter these arguments and establish that your injuries were caused by the collision itself, not by the absence of a helmet.`,
+    question: "Does Ohio's helmet law affect a motorcycle accident injury claim?",
+    answer:
+      "Under ORC 4511.53, riders age 18 or older do not have to wear a helmet; riders under 18 do. Riding without a helmet does not automatically bar your claim, and Ohio's modified comparative negligence system (ORC 2315.33) still applies. Insurers and defense attorneys routinely argue that the missing helmet contributed to head or brain injuries and try to assign you a percentage of fault. An attorney can work with medical experts to show that the collision itself caused your injuries.",
   },
   {
-    question: `What is lane filtering and how does it affect fault in a motorcycle accident in Ohio?`,
-    answer: `Lane filtering — the practice of a motorcycle moving between lanes of slow or stopped traffic — is not explicitly authorized under Ohio law. Ohio Revised Code 4511.272 permits lane sharing between two motorcycles riding side by side in the same lane, but it does not permit a motorcycle to pass between lanes of moving or stopped vehicles. If a motorcyclist was filtering at the time of a crash, an insurance company or defense attorney will likely argue that the rider was at least partially at fault for the accident. Under Ohio's modified comparative negligence rule (ORC 2315.33), this could reduce your recovery. An attorney can assess exactly what happened, analyze applicable traffic laws, and build the strongest possible case regarding fault allocation.`,
+    question: 'What is lane filtering and how does it affect fault in a motorcycle accident in Ohio?',
+    answer:
+      'Lane filtering means riding between lanes of slow or stopped traffic. Ohio law does not explicitly authorize it. Ohio Revised Code 4511.272 permits two motorcycles to ride side by side in the same lane, but does not permit a motorcycle to pass between lanes of moving or stopped vehicles. If you were filtering when the crash happened, expect the insurer or defense to argue you were at least partly at fault, which could reduce your recovery under ORC 2315.33. An attorney can work out exactly what happened and how the traffic laws apply.',
   },
   {
-    question: `Why are motorcycle accident injuries often more severe and how does that affect damages?`,
-    answer: `Motorcyclists have no surrounding vehicle structure, airbags, or seatbelts to absorb crash forces. As a result, motorcycle accident injuries are disproportionately severe — commonly including traumatic brain injury (TBI), spinal cord injuries, road rash causing permanent scarring, multiple fractures, and internal injuries. These catastrophic injuries typically require extensive surgeries, lengthy hospitalizations, and long-term or lifelong rehabilitation. This severity directly increases every category of recoverable damages: past and future medical expenses are higher, lost wages and loss of earning capacity may be substantial if the victim cannot return to their prior occupation, and non-economic damages for pain, suffering, and loss of enjoyment of life are significantly greater. An attorney can retain medical and economic experts to fully document and quantify these damages to pursue maximum compensation.`,
+    question: 'Why are motorcycle accident injuries often more severe and how does that affect damages?',
+    answer:
+      'Riders have no vehicle structure, airbags or seatbelts to absorb the force of a crash. Common injuries include traumatic brain injury (TBI), spinal cord injuries, road rash that leaves permanent scarring, multiple fractures and internal injuries. These often need extensive surgery, long hospital stays and long-term or lifelong rehabilitation. That severity raises every category of damages: medical expenses past and future, lost wages and loss of earning capacity if you cannot return to your prior work, and non-economic damages for pain, suffering and loss of enjoyment of life. An attorney can retain medical and economic experts to document and quantify these losses.',
   },
 ];
 
-export default function MotorcycleAccidentsPage() {
+const RELATED = [
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/truck-accidents', title: 'Truck accidents', subtitle: 'Commercial vehicle and semi-truck collision claims' },
+  { href: '/personal-injury/pedestrian-accidents', title: 'Pedestrian accidents', subtitle: 'Claims for pedestrians struck by vehicles' },
+  { href: '/personal-injury/catastrophic-injuries', title: 'Catastrophic injuries', subtitle: 'Severe and life-altering injury claims' },
+];
 
+export default function MotorcycleAccidentsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Motorcycle Accident Lawyer"
-        description="Experienced legal representation for motorcycle accident victims seeking compensation. Fighting for the compensation you deserve."
+        title="Motorcycle accident claims in Ohio"
+        description="Riding without a helmet does not bar an injury claim in Ohio, though insurers will use it to argue fault. You generally have 2 years from the date of injury to file."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Motorcycle Accident Claims in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Motorcycle accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in serious injuries, fatalities, and catastrophic injuries due to the lack of vehicle protection. At Jwayyed Law LLC, we provide experienced representation for motorcycle accident victims under Ohio Revised Code Chapter 2305. Our attorney understands the unique aspects of motorcycle accident cases and the compensation process necessary to help you recover.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Motorcyclists lack the protection of a vehicle, making them extremely vulnerable to serious injuries including traumatic brain injury, spinal cord injury, severe fractures, and fatalities. Motorcycle accidents often result in higher medical costs, longer recovery periods, and greater pain and suffering than typical car accidents. Understanding your rights, the unique aspects of motorcycle accident cases, and the compensation process is essential for maximizing recovery. Early intervention by a skilled motorcycle accident attorney can significantly impact the outcome, ensuring proper documentation, investigation, and maximum compensation.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '2 years', label: 'to file an injury claim, from the date of injury' },
+          { figure: '18', label: 'the age under which Ohio riders must wear a helmet (ORC 4511.53)' },
+          { figure: 'ORC 2315.33', label: 'reduces your recovery by your share of fault' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for motorcycle accident personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Motorcycle accident cases often involve complex liability issues including driver negligence, road conditions, and motorcycle-specific factors. Insurance companies often attempt to minimize claims or argue that motorcyclists are partially at fault, making experienced representation essential.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Motorcycle Accident Claims Process</h3>
+      <Section
+        title="What a motorcycle accident claim covers"
+        intro={
+          <p>
+            Motorcycle crashes in Columbus, Cincinnati, Dayton and across Ohio often cause catastrophic or fatal injuries. Claims are
+            brought under Ohio Revised Code Chapter 2305.
+          </p>
+        }
+      >
+        <p>
+          Riders face traumatic brain injury, spinal cord injury and severe fractures, with higher medical costs, longer recovery and
+          more pain and suffering than a typical car accident.
+        </p>
+        <p>
+          Liability can involve driver negligence, road conditions and motorcycle-specific factors. Insurers often argue that the
+          rider was partly at fault.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the motorcycle accident claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="Deadlines and damages" tone="ice">
+        <FactTable title="Filing deadline" rows={[{ label: 'Injury claims', value: '2 years from the date of injury.' }]} />
+        <FactTable
+          title="What you can recover"
+          rows={[
+            {
+              label: 'Economic',
+              value:
+                'Medical expenses, past and future (surgeries, rehabilitation, therapy, medications, long-term care); lost wages and loss of earning capacity; property damage (motorcycle repair or replacement, damaged gear); home modifications for disabilities; and other financial losses tied to the accident.',
+            },
+            {
+              label: 'Non-economic',
+              value:
+                'Pain and suffering, emotional distress, loss of enjoyment of life, loss of consortium (spousal relationship), disfigurement and scarring, and mental anguish.',
+            },
+            {
+              label: 'Punitive',
+              value:
+                'For egregious conduct such as drunk driving, reckless driving or intentional harm. Rare, and requires clear and convincing evidence of malicious or reckless behavior.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Immediate Investigation and Documentation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Immediately after a motorcycle accident, evidence must be preserved including photos of the scene, vehicles, motorcycle damage, your injuries, road conditions, witness contact information, police reports, and helmet condition if applicable. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
-              </p>
-            </div>
+      <Section title="Rider issues that affect fault">
+        <PointGrid
+          points={[
+            {
+              title: 'Helmet use (ORC 4511.53)',
+              body: 'Not required at 18 or older; required under 18. Riding without one does not bar the claim, but insurers argue it contributed to head injuries.',
+            },
+            {
+              title: 'Lane filtering',
+              body: 'Not explicitly authorized in Ohio. ORC 4511.272 allows two motorcycles side by side in one lane, not passing between lanes of vehicles.',
+            },
+            { title: 'Comparative fault (ORC 2315.33)', body: 'Any share of fault assigned to you reduces your recovery.' },
+            { title: 'Driver negligence and road conditions', body: 'The other driver’s conduct and the condition of the road are investigated alongside the rider’s.' },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Medical Treatment and Documentation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Seeking prompt medical treatment is essential both for your health and your claim. Motorcycle accidents often result in serious injuries requiring extensive medical treatment. Medical records document injuries, treatment, and prognosis. An attorney can help coordinate medical treatment, ensure all injuries are documented, and work with medical providers to establish causation and prognosis. Complete medical documentation is necessary to prove damages including future medical costs and loss of earning capacity.
-              </p>
-            </div>
+      <Section title="How a motorcycle claim moves forward" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Investigation and documentation',
+              body: 'Photos of the scene, vehicles, motorcycle damage, your injuries and road conditions; witness contacts; police reports; and helmet condition if applicable.',
+            },
+            {
+              title: 'Medical treatment and records',
+              body: 'Records document the injury, treatment and prognosis, and prove damages such as future medical costs and loss of earning capacity.',
+            },
+            {
+              title: 'Insurance negotiation',
+              body: 'Most motorcycle claims resolve through negotiation. Preparing for litigation strengthens the negotiating position.',
+            },
+            {
+              title: 'Litigation and trial',
+              body: 'If talks fail: a lawsuit, discovery (exchanging evidence), depositions, expert testimony including accident reconstruction, and possibly trial. Most cases settle before trial.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most motorcycle accident claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims, deny liability, or argue that motorcyclists are partially at fault. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="What the firm does on a motorcycle claim">
+        <PointGrid
+          points={[
+            { title: 'Investigates', body: 'Photos, witness statements, police reports and surveillance footage, plus documentation of every injury and loss.' },
+            { title: 'Coordinates medical documentation', body: 'Works with your providers to document every injury and establish causation and prognosis.' },
+            { title: 'Handles the insurers', body: 'All communication and settlement negotiation with the insurance companies.' },
+            { title: 'Brings in experts', body: 'Medical, accident reconstruction and economic experts to establish causation, damages and liability.' },
+            { title: 'Answers fault arguments', body: 'Responds to helmet and lane-filtering arguments with the evidence of what caused the injuries.' },
+            { title: 'Litigates when needed', body: 'Files suit, conducts discovery, takes depositions and represents you in court if settlement talks fail.' },
+          ]}
+        />
+        <p>
+          If you were hurt in a motorcycle accident anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule
+          a consultation, or see the firm&rsquo;s <Link href="/personal-injury">personal injury practice</Link>.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony including accident reconstruction experts, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="Related injury claims" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Motorcycle Accident Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced motorcycle accident attorney provides comprehensive representation throughout every stage of your claim:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos, witness statements, police reports, surveillance footage, and documenting all injuries and damages</li>
-              <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
-              <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation, establish liability, and protect your rights throughout the claims process</li>
-              <li><strong>Comprehensive Documentation:</strong> Prepare all documentation, medical records, evidence, and expert reports necessary to support your claim and maximize compensation</li>
-              <li><strong>Expert Consultation:</strong> Consult with medical experts, accident reconstruction experts, economic experts, or other specialists to establish causation, damages, and liability</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
-              <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and property damage</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Compensation Available</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Motorcycle accident compensation in Ohio may include various types of damages, often higher than typical car accidents due to severe injuries:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications, long-term care)</li>
-                <li>Lost wages and loss of earning capacity</li>
-                <li>Property damage (motorcycle repair or replacement, damaged gear)</li>
-                <li>Rehabilitation and therapy costs</li>
-                <li>Home modifications for disabilities</li>
-                <li>Other financial losses directly related to the accident</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Pain and suffering</li>
-                <li>Emotional distress</li>
-                <li>Loss of enjoyment of life</li>
-                <li>Loss of consortium (spousal relationship)</li>
-                <li>Disfigurement and scarring</li>
-                <li>Mental anguish</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In cases involving egregious conduct such as drunk driving, reckless driving, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated motorcycle accident representation throughout Ohio. We understand that motorcycle accidents can be catastrophic and life-changing. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the unique aspects of motorcycle accident cases, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been injured in a motorcycle accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Time is critical—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Learn more about our <Link href="/personal-injury" className="text-sky-deep underline hover:text-navy-950">personal injury practice</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-            <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-          </Link>
-          <Link href="/personal-injury/truck-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Truck Accidents</span>
-            <span className="text-sm text-navy-950/70">Commercial vehicle and semi-truck collision claims</span>
-          </Link>
-          <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Pedestrian Accidents</span>
-            <span className="text-sm text-navy-950/70">Claims for pedestrians struck by vehicles</span>
-          </Link>
-          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
-            <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
-          </Link>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

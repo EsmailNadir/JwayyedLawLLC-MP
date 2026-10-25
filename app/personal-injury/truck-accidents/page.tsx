@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Truck Accident Lawyer in Ohio',
-  description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio.',
+  description:
+    'Truck accident claims in Ohio: the 2-year deadline, federal hours-of-service rules, black box evidence and every party who may be liable.',
   keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
   openGraph: {
     title: 'Truck Accident Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Commercial truck accident injury claims throughout Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/truck-accidents',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/truck-accidents' },
 };
 
@@ -25,189 +28,194 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'Why are truck accidents more serious than car accidents?',
-    answer: 'Truck accidents are typically more serious than car accidents due to the size and weight of commercial trucks, which can cause catastrophic injuries, fatalities, and extensive property damage. Truck accidents often involve complex issues including federal regulations, driver fatigue, cargo loading, maintenance issues, and multiple potentially liable parties including trucking companies, drivers, and cargo loaders.',
+    answer:
+      'Because of the size and weight of commercial trucks, which can cause catastrophic injuries, fatalities and extensive property damage. Truck cases also tend to involve federal regulations, driver fatigue, cargo loading, maintenance problems, and several parties who may be liable, including trucking companies, drivers and cargo loaders.',
   },
   {
     question: 'Who can be liable for a truck accident in Ohio?',
-    answer: 'Multiple parties may be liable for truck accidents in Ohio including the truck driver (if negligent), the trucking company (if negligent hiring, training, or supervision), the truck owner (if negligent maintenance or equipment), cargo loaders (if improper loading caused the accident), manufacturers (if defective equipment), and government entities (if dangerous road conditions). An attorney can help identify all potentially liable parties.',
+    answer:
+      'Several parties may be liable: the truck driver (if negligent), the trucking company (for negligent hiring, training or supervision), the truck owner (for negligent maintenance or equipment), cargo loaders (if improper loading caused the crash), manufacturers (for defective equipment) and government entities (for dangerous road conditions). An attorney can identify every party that may be responsible.',
   },
   {
     question: 'What compensation can I recover from a truck accident?',
-    answer: 'Truck accident compensation in Ohio may include economic damages (medical expenses, lost wages, property damage, future medical costs, loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment, loss of consortium), and potentially punitive damages for egregious conduct. Truck accident cases often involve higher compensation due to severe injuries.',
+    answer:
+      'Compensation can include economic damages (medical expenses, lost wages, property damage, future medical costs and loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment and loss of consortium) and possibly punitive damages for egregious conduct. Because truck crashes often cause severe injuries, the damages in these cases are often higher.',
   },
   {
     question: 'What federal regulations apply to truck accidents?',
-    answer: 'Federal regulations under the Federal Motor Carrier Safety Administration (FMCSA) apply to commercial trucking including hours of service requirements, driver qualifications, vehicle maintenance requirements, cargo securement, and drug and alcohol testing. Violations of these regulations can establish negligence in truck accident cases. An attorney can help investigate regulatory violations.',
+    answer:
+      'Federal Motor Carrier Safety Administration (FMCSA) regulations cover hours of service, driver qualifications, vehicle maintenance, cargo securement, and drug and alcohol testing. A violation can establish negligence in a truck accident case, and an attorney can investigate whether one occurred.',
   },
   {
     question: 'How long do truck accident cases take?',
-    answer: 'Truck accident case duration varies significantly depending on case complexity, injury severity, number of parties involved, and whether the case goes to trial. Simple cases may resolve in months, while complex cases involving severe injuries and multiple parties may take years. An attorney can provide a realistic timeline based on your specific case circumstances.',
+    answer:
+      'It depends on how complex the case is, how severe the injuries are, how many parties are involved and whether it goes to trial. Simple cases may resolve in months; complex cases with severe injuries and several parties may take years. An attorney can give you a realistic timeline once they know the facts.',
   },
   {
-    question: `What federal regulations govern commercial truck drivers?`,
-    answer: `Commercial truck drivers and carriers operating in interstate commerce are subject to extensive federal regulations enforced by the Federal Motor Carrier Safety Administration (FMCSA). Most importantly, 49 CFR Part 395 establishes hours-of-service (HOS) rules that limit how long a driver may operate without rest — generally 11 driving hours within a 14-hour window after 10 consecutive hours off duty, with a mandatory 30-minute break after 8 hours of driving. Drivers are required to maintain electronic logging device (ELD) records of their duty status. Violations of HOS rules are a leading cause of fatigued-driving crashes. Other key regulations cover driver qualifications (49 CFR Part 391), vehicle inspection and maintenance (49 CFR Part 396), and drug and alcohol testing (49 CFR Part 382). Evidence of regulatory violations can establish negligence per se in a truck accident claim.`,
+    question: 'What federal regulations govern commercial truck drivers?',
+    answer:
+      'Drivers and carriers in interstate commerce are regulated by the Federal Motor Carrier Safety Administration (FMCSA). The most important rules are the hours-of-service (HOS) limits in 49 CFR Part 395: generally 11 driving hours within a 14-hour window after 10 consecutive hours off duty, with a mandatory 30-minute break after 8 hours of driving. Drivers must keep electronic logging device (ELD) records of their duty status. HOS violations are a leading cause of fatigued-driving crashes. Other key rules cover driver qualifications (49 CFR Part 391), vehicle inspection and maintenance (49 CFR Part 396), and drug and alcohol testing (49 CFR Part 382). Evidence of a violation can establish negligence per se.',
   },
   {
-    question: `What is the deadline to preserve black box (ECM) data after a truck accident?`,
-    answer: `Commercial trucks are equipped with an Engine Control Module (ECM) or "black box" that records critical pre-crash data including vehicle speed, brake application, throttle position, and engine RPM. Trucking companies and their insurers are often quick to download and control this data — or allow it to be overwritten — after a crash. There is no fixed statutory deadline, but data can be lost within days if the truck returns to service. An attorney should send a preservation letter (spoliation notice) to the trucking company immediately after the accident demanding that all electronic data, driver logs, maintenance records, and communications be preserved. Failure to preserve evidence after proper notice can result in spoliation sanctions at trial.`,
+    question: 'What is the deadline to preserve black box (ECM) data after a truck accident?',
+    answer:
+      'Commercial trucks carry an Engine Control Module (ECM), or "black box," that records pre-crash data such as speed, brake application, throttle position and engine RPM. Trucking companies and their insurers often move quickly to download and control this data, or let it be overwritten. There is no fixed statutory deadline, but the data can be lost within days if the truck goes back into service. An attorney should send the trucking company a preservation letter (spoliation notice) right after the crash, demanding that all electronic data, driver logs, maintenance records and communications be kept. Failing to preserve evidence after proper notice can lead to spoliation sanctions at trial.',
   },
   {
-    question: `How does liability work when a truck driver is an independent contractor vs. an employee?`,
-    answer: `Trucking companies sometimes classify drivers as independent contractors to avoid direct vicarious liability. However, Ohio and federal courts look beyond labels to determine the actual relationship. Under the FMCSA's regulations, a motor carrier that holds the operating authority remains legally responsible for a driver operating under its authority regardless of how the employment relationship is characterized. Additionally, Ohio courts may impose liability on trucking companies under theories of negligent hiring, negligent entrustment, or negligent supervision even when the driver is a true independent contractor. An attorney can investigate the contractual relationship, the carrier's operating authority, and the specific circumstances of the crash to identify all liable parties and maximize your recovery.`,
+    question: 'How does liability work when a truck driver is an independent contractor instead of an employee?',
+    answer:
+      "Trucking companies sometimes classify drivers as independent contractors to avoid direct vicarious liability. Ohio and federal courts look past the label to the actual relationship. Under FMCSA regulations, a motor carrier that holds the operating authority remains legally responsible for a driver operating under that authority, however the relationship is described. Ohio courts may also hold trucking companies liable for negligent hiring, negligent entrustment or negligent supervision even when the driver is a true independent contractor. An attorney can look at the contract, the carrier's operating authority and the facts of the crash to identify every liable party.",
   },
 ];
 
-export default function TruckAccidentsPage() {
+const RELATED = [
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/motorcycle-accidents', title: 'Motorcycle accidents', subtitle: 'Claims for injured motorcyclists across Ohio' },
+  { href: '/personal-injury/catastrophic-injuries', title: 'Catastrophic injuries', subtitle: 'Severe and life-altering injury claims' },
+  { href: '/personal-injury/wrongful-death', title: 'Wrongful death', subtitle: 'Claims against negligent parties for fatal injuries' },
+];
 
+export default function TruckAccidentsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Truck Accident Lawyer"
-        description="Experienced legal representation for truck accident victims seeking compensation. Fighting for the compensation you deserve."
+        title="Truck accident claims in Ohio"
+        description="A commercial truck can weigh up to 80,000 pounds, and a crash often involves federal rules and several liable parties. You generally have 2 years from the date of injury to file."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Truck Accident Claims in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Truck accidents in Columbus, Cincinnati, Dayton, or throughout Ohio often result in catastrophic injuries, fatalities, and extensive property damage due to the size and weight of commercial trucks. At Jwayyed Law LLC, we provide experienced representation for truck accident victims under Ohio Revised Code Chapter 2305 and federal trucking regulations. Our attorney understands the complexities of truck accident cases and the compensation process necessary to help you recover.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Commercial trucks can weigh up to 80,000 pounds, making collisions with passenger vehicles extremely dangerous. Truck accidents often involve complex liability issues including driver fatigue, violations of federal hours-of-service regulations, improper cargo loading, equipment failures, and negligent hiring or training by trucking companies. Understanding these complexities and identifying all potentially liable parties is essential for maximizing recovery.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '2 years', label: 'to file an injury claim, from the date of injury' },
+          { figure: '80,000 lbs', label: 'what a commercial truck can weigh' },
+          { figure: '11 hours', label: 'federal driving limit within a 14-hour window (49 CFR Part 395)' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for truck accident personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Truck accident cases often involve multiple parties, complex investigations, and extensive documentation. Early intervention by a skilled truck accident attorney can significantly impact the outcome, ensuring proper investigation, identification of all liable parties, and maximum compensation.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Truck Accident Claims Process</h3>
+      <Section
+        title="What makes a truck accident claim different"
+        intro={
+          <p>
+            Truck crashes in Columbus, Cincinnati, Dayton and across Ohio often cause catastrophic injuries, fatalities and extensive
+            property damage. Claims are brought under Ohio Revised Code Chapter 2305 and federal trucking regulations.
+          </p>
+        }
+      >
+        <p>
+          Liability is often complicated. Common issues include driver fatigue, violations of federal hours-of-service rules, improper
+          cargo loading, equipment failures, and negligent hiring or training by the trucking company. Several insurance policies may
+          apply: the driver&rsquo;s, the trucking company&rsquo;s, cargo insurance and umbrella policies.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the truck accident claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="Deadlines, rules and damages" tone="ice">
+        <FactTable
+          title="Deadlines"
+          rows={[
+            { label: 'Injury claims', value: '2 years from the date of injury.' },
+            {
+              label: 'Black box (ECM) data',
+              value: 'No fixed statutory deadline, but data can be lost within days. A preservation letter (spoliation notice) should go out right away.',
+            },
+          ]}
+        />
+        <FactTable
+          title="Federal hours-of-service rules (49 CFR Part 395)"
+          rows={[
+            { label: 'Driving limit', value: 'Generally 11 driving hours within a 14-hour window.' },
+            { label: 'Rest', value: '10 consecutive hours off duty before the window starts.' },
+            { label: 'Break', value: 'A mandatory 30-minute break after 8 hours of driving.' },
+            { label: 'Records', value: 'Electronic logging device (ELD) records of duty status.' },
+          ]}
+          note="Other rules cover driver qualifications (49 CFR Part 391), inspection and maintenance (49 CFR Part 396), and drug and alcohol testing (49 CFR Part 382)."
+        />
+        <FactTable
+          title="What you can recover"
+          rows={[
+            {
+              label: 'Economic',
+              value:
+                'Medical expenses, past and future (surgeries, rehabilitation, therapy, medications, long-term care); lost wages and loss of earning capacity; property damage (vehicle repair or replacement); home modifications for disabilities; and other financial losses tied to the accident.',
+            },
+            {
+              label: 'Non-economic',
+              value:
+                'Pain and suffering, emotional distress, loss of enjoyment of life, loss of consortium (spousal relationship), disfigurement and scarring, and mental anguish.',
+            },
+            {
+              label: 'Punitive',
+              value: 'May be available for egregious conduct such as driver fatigue violations, drug or alcohol use, or intentional harm.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Immediate Investigation and Evidence Preservation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Immediately after a truck accident, evidence must be preserved including photos of the scene, vehicles, cargo, injuries, and road conditions, witness contact information, police reports, truck driver information, trucking company information, and electronic logging device (ELD) data. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
-              </p>
-            </div>
+      <Section title="Who can be liable">
+        <PointGrid
+          points={[
+            { title: 'The truck driver', body: 'When the driver was negligent.' },
+            { title: 'The trucking company', body: 'For negligent hiring, training, supervision or maintenance.' },
+            { title: 'The truck owner', body: 'For negligent maintenance or equipment.' },
+            { title: 'Cargo loaders', body: 'When improper loading caused the crash.' },
+            { title: 'Manufacturers', body: 'For defective equipment.' },
+            { title: 'Government entities', body: 'For dangerous road conditions.' },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Regulatory Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Federal Motor Carrier Safety Administration (FMCSA) regulations apply to commercial trucking including hours of service requirements, driver qualifications, vehicle maintenance requirements, cargo securement, and drug and alcohol testing. Violations of these regulations can establish negligence. An attorney can investigate regulatory violations, obtain driver logs, maintenance records, and company safety records to establish liability.
-              </p>
-            </div>
+      <Section title="How a truck accident claim moves forward" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Evidence preservation',
+              body: 'Photos of the scene, vehicles, cargo, injuries and road conditions; witness contacts; police reports; driver and trucking company information; and ELD data.',
+            },
+            {
+              title: 'Regulatory investigation',
+              body: 'Driver logs, maintenance records and company safety records are obtained to check for FMCSA violations, which can establish negligence.',
+            },
+            { title: 'Identifying every liable party', body: 'Claims are brought against each party that may be responsible.' },
+            {
+              title: 'Negotiation and litigation',
+              body: 'Insurers often minimize claims or deny liability. Most cases settle during negotiation, and preparing for litigation strengthens the negotiating position.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Identifying All Liable Parties</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Multiple parties may be liable for truck accidents including the truck driver (if negligent), the trucking company (if negligent hiring, training, supervision, or maintenance), the truck owner (if negligent maintenance or equipment), cargo loaders (if improper loading caused the accident), manufacturers (if defective equipment), and government entities (if dangerous road conditions). An attorney can identify all potentially liable parties and pursue claims against each to maximize recovery.
-              </p>
-            </div>
+      <Section title="What the firm does on a truck accident claim">
+        <PointGrid
+          points={[
+            {
+              title: 'Investigates',
+              body: 'Photos, witness statements, police reports, surveillance footage, ELD data, driver logs and maintenance records.',
+            },
+            {
+              title: 'Checks the regulations',
+              body: 'Hours of service, driver qualifications, maintenance, cargo securement, and drug and alcohol testing.',
+            },
+            { title: 'Coordinates medical documentation', body: 'Works with your providers to document every injury and establish causation and prognosis.' },
+            { title: 'Handles the insurers', body: 'All communication and negotiation with each insurance company involved.' },
+            {
+              title: 'Brings in experts',
+              body: 'Accident reconstruction, trucking safety, medical and economic experts to establish causation, damages and liability.',
+            },
+            { title: 'Litigates when needed', body: 'Files suit, conducts discovery, takes depositions and represents you in court if settlement talks fail.' },
+          ]}
+        />
+        <p>
+          If you were hurt in a truck accident anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
+          consultation. See the firm&rsquo;s <Link href="/personal-injury">personal injury practice</Link> or read the guide on{' '}
+          <Link href="/our-law-firm/blog/steps-after-car-accident-ohio">what to do after an accident in Ohio</Link>.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Negotiation and Litigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Truck accident cases often involve multiple insurance policies including truck driver insurance, trucking company insurance, cargo insurance, and umbrella policies. Insurance companies often attempt to minimize claims or deny liability. An experienced attorney understands insurance tactics, can negotiate effectively with multiple insurers, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="Related injury claims" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Truck Accident Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced truck accident attorney provides comprehensive representation throughout every stage of your claim:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos, witness statements, police reports, surveillance footage, ELD data, driver logs, maintenance records, and documenting all injuries and damages</li>
-              <li><strong>Regulatory Investigation:</strong> Investigate federal FMCSA regulations, hours of service violations, driver qualifications, vehicle maintenance requirements, cargo securement violations, and drug and alcohol testing to establish negligence</li>
-              <li><strong>Identifying All Liable Parties:</strong> Identify all potentially liable parties including truck drivers, trucking companies, truck owners, cargo loaders, manufacturers, and government entities to maximize recovery</li>
-              <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
-              <li><strong>Insurance Negotiation:</strong> Handle all communication with multiple insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation, establish liability against all responsible parties, and protect your rights throughout the claims process</li>
-              <li><strong>Expert Consultation:</strong> Consult with accident reconstruction experts, trucking safety experts, medical experts, economic experts, or other specialists to establish causation, damages, and liability</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
-              <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and property damage</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Compensation Available</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Truck accident compensation in Ohio may include various types of damages, often higher than typical car accidents due to severe injuries:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications, long-term care)</li>
-                <li>Lost wages and loss of earning capacity</li>
-                <li>Property damage (vehicle repair or replacement)</li>
-                <li>Rehabilitation and therapy costs</li>
-                <li>Home modifications for disabilities</li>
-                <li>Other financial losses directly related to the accident</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Pain and suffering</li>
-                <li>Emotional distress</li>
-                <li>Loss of enjoyment of life</li>
-                <li>Loss of consortium (spousal relationship)</li>
-                <li>Disfigurement and scarring</li>
-                <li>Mental anguish</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In cases involving egregious conduct such as driver fatigue violations, drug or alcohol use, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are more common in truck accident cases due to the severity of violations and injuries.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated truck accident representation throughout Ohio. We understand that truck accidents can be catastrophic and involve complex issues. Our attorney works diligently to investigate cases, identify all liable parties, negotiate with insurance companies, and maximize compensation for our clients.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, regulatory expertise, strategic case development, and aggressive advocacy. We understand the complexities of truck accident cases, federal regulations, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been injured in a truck accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Time is critical in truck accident cases—evidence must be preserved, regulatory violations must be documented, and the statute of limitations must be met. Learn more about our <Link href="/personal-injury" className="text-sky-deep underline hover:text-navy-950">personal injury practice</Link> or read our guide on <Link href="/our-law-firm/blog/steps-after-car-accident-ohio" className="text-sky-deep underline hover:text-navy-950">what to do after an accident in Ohio</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-            <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-          </Link>
-          <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Motorcycle Accidents</span>
-            <span className="text-sm text-navy-950/70">Representing injured motorcyclists across Ohio</span>
-          </Link>
-          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
-            <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
-          </Link>
-          <Link href="/personal-injury/wrongful-death" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Wrongful Death</span>
-            <span className="text-sm text-navy-950/70">Holding negligent parties accountable for fatal injuries</span>
-          </Link>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

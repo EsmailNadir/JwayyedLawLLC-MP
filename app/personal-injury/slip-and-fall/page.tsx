@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Slip and Fall Lawyer in Ohio',
-  description: 'Experienced Ohio slip and fall attorney helping victims recover compensation. Skilled representation for slip and fall injuries in Ohio.',
+  description:
+    'Slip and fall claims in Ohio: what you must prove about the hazard, the open and obvious defense, the 2-year deadline and what you can recover.',
   keywords: ['slip and fall lawyer Columbus OH', 'slip and fall attorney Ohio', 'premises liability lawyer', 'Franklin County slip and fall attorney'],
   openGraph: {
     title: 'Slip and Fall Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Slip and fall injury claims under Ohio premises liability law.',
     url: 'https://www.jjlawohio.com/personal-injury/slip-and-fall',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/slip-and-fall' },
 };
 
@@ -25,188 +28,173 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is premises liability in Ohio?',
-    answer: 'Premises liability in Ohio (current as of 2026) involves property owners\' and occupiers\' duty to maintain safe conditions for visitors and to warn of known dangers. Property owners and occupiers may be liable for injuries caused by dangerous conditions on their property including slip and fall hazards, inadequate lighting, broken stairs, and other hazards.',
+    answer:
+      "Premises liability in Ohio (current as of 2026) is the duty property owners and occupiers owe visitors to keep conditions safe and to warn of known dangers. Owners and occupiers may be liable for injuries caused by dangerous conditions on their property, including slip and fall hazards, inadequate lighting and broken stairs.",
   },
   {
     question: 'What compensation can I recover from a slip and fall accident?',
-    answer: 'Slip and fall accident compensation in Ohio may include economic damages (medical expenses, lost wages, property damage, future medical costs, loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment, loss of consortium), and potentially punitive damages for egregious conduct. Compensation depends on injury severity, impact on your life, and available insurance coverage or assets.',
+    answer:
+      'Compensation can include economic damages (medical expenses, lost wages, property damage, future medical costs and loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment and loss of consortium) and possibly punitive damages for egregious conduct. The amount depends on how severe the injury is, how it affects your life, and what insurance coverage or assets are available.',
   },
   {
     question: 'How do I prove fault in a slip and fall case?',
-    answer: 'Proving fault in slip and fall cases requires demonstrating that the property owner or occupier knew or should have known of the dangerous condition and failed to remedy it or warn of it. Evidence may include photos of the hazard, witness statements, maintenance records, incident reports, and expert testimony. An attorney can help gather evidence and build your case.',
+    answer:
+      'You have to show that the property owner or occupier knew or should have known about the dangerous condition and failed to fix it or warn about it. Evidence can include photos of the hazard, witness statements, maintenance records, incident reports and expert testimony.',
   },
   {
     question: 'What is the statute of limitations for slip and fall claims?',
-    answer: 'Under Ohio Revised Code 2305.10, the statute of limitations for slip and fall personal injury claims in Ohio is generally 2 years from the date of injury. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer:
+      'Under Ohio Revised Code 2305.10, you generally have 2 years from the date of injury to bring a slip and fall injury claim. Missing the deadline bars recovery, so talk to an attorney quickly.',
   },
   {
     question: 'Do I need a slip and fall attorney?',
-    answer: 'While you can handle a slip and fall claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand premises liability law, insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary.',
+    answer:
+      'You can handle a claim yourself. An attorney knows premises liability law and how insurers handle these claims, and takes on the documentation, the communication with the insurance companies, the settlement negotiation and, if needed, the court case.',
   },
   {
-    question: `What is the "open and obvious" doctrine in Ohio premises liability cases and how can it be overcome?`,
-    answer: `Under Ohio law, a property owner generally has no duty to warn of or remedy a hazard that is "open and obvious" — meaning one that a reasonable person exercising ordinary care would readily observe and appreciate. Courts have held that open and obvious conditions break the chain of the owner's duty. However, this defense can be overcome in several ways: if the property owner should have anticipated that visitors would be distracted or would not notice the hazard despite its obvious nature (the "attendant circumstances" exception), or if the hazard was not truly open and obvious given the specific conditions at the time. An attorney can analyze the specific facts of your fall and develop arguments to overcome this common defense.`,
+    question: 'What is the "open and obvious" doctrine in Ohio premises liability cases and how can it be overcome?',
+    answer:
+      'Under Ohio law, a property owner generally has no duty to warn of or fix a hazard that is "open and obvious," meaning a reasonable person using ordinary care would readily see and appreciate it. Courts have held that open and obvious conditions break the chain of the owner\'s duty. The defense can be overcome if the owner should have expected visitors to be distracted or to miss the hazard despite how obvious it was (the "attendant circumstances" exception), or if the hazard was not truly open and obvious under the conditions at the time. An attorney can look at the facts of your fall and build the argument.',
   },
   {
-    question: `What evidence should I collect after a slip and fall accident?`,
-    answer: `Strong evidence is critical in slip and fall cases. As soon as possible after the incident, you should: photograph the exact hazard (wet floor, uneven surface, broken step, inadequate lighting) and the surrounding area before it is corrected; report the incident to the property owner or manager and request a copy of the incident report; obtain the names and contact information of any witnesses; preserve the clothing and footwear you were wearing; seek medical treatment promptly so your injuries are documented; and save all medical records, bills, and receipts. An attorney can send a spoliation letter demanding that the property owner preserve surveillance video and maintenance logs before that evidence is lost.`,
+    question: 'What evidence should I collect after a slip and fall accident?',
+    answer:
+      'As soon as you can: photograph the exact hazard (wet floor, uneven surface, broken step, poor lighting) and the area around it before it is fixed; report the incident to the owner or manager and ask for a copy of the incident report; get the names and contact details of witnesses; keep the clothing and footwear you were wearing; get medical treatment promptly so your injuries are documented; and save all medical records, bills and receipts. An attorney can send a spoliation letter demanding that the owner preserve surveillance video and maintenance logs before they are lost.',
   },
   {
-    question: `What is the difference between invitee, licensee, and trespasser status in Ohio premises liability?`,
-    answer: `Ohio law recognizes three categories of entrants that determine the duty of care a property owner owes. An invitee is someone invited onto the property for the owner's commercial benefit (e.g., a store customer) — the owner owes the highest duty: reasonable care to inspect, maintain, and warn. A licensee enters with the owner's permission but for their own purposes (e.g., a social guest) — the owner must warn of known hidden dangers but need not inspect. A trespasser enters without permission — the owner generally owes only a duty not to willfully or wantonly injure them, though ORC 2305.321 provides special protections for child trespassers under the attractive nuisance doctrine. Identifying your status at the time of the fall is one of the first steps in evaluating your premises liability claim.`,
+    question: 'What is the difference between invitee, licensee and trespasser status in Ohio premises liability?',
+    answer:
+      "Ohio recognizes three kinds of entrants, and each is owed a different duty of care. An invitee is on the property for the owner's commercial benefit (a store customer, for example), and the owner owes the highest duty: reasonable care to inspect, maintain and warn. A licensee enters with permission but for their own purposes (a social guest, for example), and the owner must warn of known hidden dangers but need not inspect. A trespasser enters without permission, and the owner generally owes only a duty not to willfully or wantonly injure them, though ORC 2305.321 gives child trespassers special protection under the attractive nuisance doctrine. Your status at the time of the fall is one of the first things to establish.",
   },
 ];
 
-export default function SlipAndFallPage() {
+const RELATED = [
+  { href: '/personal-injury/premises-liability', title: 'Premises liability', subtitle: 'Property owner negligence and unsafe conditions' },
+  { href: '/personal-injury/workplace-injuries', title: 'Workplace injuries', subtitle: "On-the-job injuries and workers' compensation" },
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/dog-bites', title: 'Dog bites', subtitle: 'Animal attack liability under Ohio law' },
+];
 
+export default function SlipAndFallPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Slip and Fall Lawyer"
-        description="Experienced legal representation for slip and fall accident victims seeking compensation. Fighting for the compensation you deserve."
+        title="Slip and fall claims in Ohio"
+        description="To recover after a fall, you have to show the property owner knew or should have known about the hazard. You generally have 2 years from the date of injury to file."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Slip and Fall Claims in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Slip and fall accidents in Columbus, Cincinnati, Dayton, or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Premises liability law in Ohio requires property owners and occupiers to maintain safe conditions for visitors and to warn of known dangers. Slip and fall accidents often occur due to wet floors, uneven surfaces, inadequate lighting, broken stairs, or other hazards. Understanding your rights, the legal requirements for proving fault, and the compensation process is essential for maximizing recovery. Early intervention by a skilled slip and fall attorney can significantly impact the outcome, ensuring proper documentation, investigation, and maximum compensation.
-            </p>
+      <Section
+        title="What a slip and fall claim covers"
+        intro={
+          <p>
+            Ohio premises liability law requires property owners and occupiers to keep conditions safe for visitors and to warn of
+            known dangers. Injury claims are brought under Ohio Revised Code 2305.10 (current as of 2026).
+          </p>
+        }
+      >
+        <p>
+          Falls happen on wet floors, uneven surfaces, broken stairs and in poorly lit areas. They can cause broken bones, head
+          injuries, spinal cord injuries and other injuries that need extensive medical treatment.
+        </p>
+        <p>Insurance companies often minimize these claims, deny liability, or argue that you were partly at fault.</p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for slip and fall personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Slip and fall cases require thorough investigation, documentation of hazards, and evidence that the property owner knew or should have known of the dangerous condition. Insurance companies often attempt to minimize claims or deny liability, making experienced representation essential.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Slip and Fall Claims Process</h3>
+      <Section title="Deadlines and damages" tone="ice">
+        <FactTable
+          title="Filing deadline"
+          rows={[{ label: 'Injury claims', value: '2 years from the date of injury, under ORC 2305.10. Missing it bars recovery.' }]}
+        />
+        <FactTable
+          title="What you can recover"
+          rows={[
+            {
+              label: 'Economic',
+              value:
+                'Medical expenses, past and future (surgeries, rehabilitation, therapy, medications); lost wages and loss of earning capacity; property damage (damaged clothing or personal items); home modifications for disabilities; and other financial losses tied to the fall.',
+            },
+            {
+              label: 'Non-economic',
+              value:
+                'Pain and suffering, emotional distress, loss of enjoyment of life, loss of consortium (spousal relationship), disfigurement and scarring, and mental anguish.',
+            },
+            {
+              label: 'Punitive',
+              value:
+                'For egregious conduct such as intentionally failing to fix a known hazard, or gross negligence. Rare, and requires clear and convincing evidence of malicious or reckless behavior.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the slip and fall claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="What you have to prove">
+        <PointGrid
+          points={[
+            {
+              title: 'The owner knew or should have known',
+              body: 'The owner or occupier knew, or should have known, about the dangerous condition and failed to fix it or warn about it.',
+            },
+            {
+              title: 'Your status on the property',
+              body: 'Invitees are owed reasonable care to inspect, maintain and warn. Licensees are owed a warning of known hidden dangers. Trespassers are generally owed only a duty not to be willfully or wantonly injured.',
+            },
+            {
+              title: 'Beating the open and obvious defense',
+              body: 'Owners generally have no duty over hazards a reasonable person would readily see. The "attendant circumstances" exception, or proof that the hazard was not truly obvious at the time, can overcome it.',
+            },
+            {
+              title: 'The evidence',
+              body: 'Photos of the hazard, witness statements, maintenance records, incident reports, expert testimony and evidence of similar prior incidents.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Immediate Investigation and Documentation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Immediately after a slip and fall accident, evidence must be preserved including photos of the hazard, surrounding area, lighting conditions, your injuries, witness contact information, incident reports, and maintenance records if available. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
-              </p>
-            </div>
+      <Section title="How a slip and fall claim moves forward" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Investigation and documentation',
+              body: 'Photos of the hazard, the surrounding area, the lighting and your injuries; witness contacts; incident reports; and maintenance records if available.',
+            },
+            { title: 'Proving premises liability', body: 'Building the evidence that the owner knew or should have known of the condition.' },
+            {
+              title: 'Insurance negotiation',
+              body: 'Most slip and fall claims resolve through negotiation. Preparing for litigation strengthens the negotiating position.',
+            },
+            {
+              title: 'Litigation and trial',
+              body: 'If talks fail: a lawsuit, discovery (exchanging evidence), depositions, expert testimony including safety experts, and possibly trial. Most cases settle before trial.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Proving Premises Liability</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Proving fault in slip and fall cases requires demonstrating that the property owner or occupier knew or should have known of the dangerous condition and failed to remedy it or warn of it. Evidence may include photos of the hazard, witness statements, maintenance records, incident reports, expert testimony, and evidence of similar prior incidents. An attorney can help gather evidence and build your case.
-              </p>
-            </div>
+      <Section title="What the firm does on a slip and fall claim">
+        <PointGrid
+          points={[
+            { title: 'Investigates', body: 'The hazard, the surrounding area, lighting, your injuries, witness statements, incident reports and maintenance records.' },
+            { title: 'Analyzes liability', body: 'Determines fault, identifies every party that may be liable and establishes what the owner knew.' },
+            { title: 'Coordinates medical documentation', body: 'Works with your providers to document every injury and establish causation and prognosis.' },
+            { title: 'Handles the insurers', body: 'All communication and settlement negotiation with the insurance companies.' },
+            { title: 'Brings in experts', body: 'Safety, medical and economic experts to establish causation, damages and liability.' },
+            { title: 'Litigates when needed', body: 'Files suit, conducts discovery, takes depositions and represents you in court if settlement talks fail.' },
+          ]}
+        />
+        <p>
+          If you were hurt in a fall anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
+          consultation. See the firm&rsquo;s <Link href="/personal-injury">personal injury practice</Link>, or read about{' '}
+          <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners">Ohio slip and fall laws</Link> and{' '}
+          <Link href="/our-law-firm/blog/slipped-fell-at-store-can-i-sue">whether you can sue after slipping at a store</Link>.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most slip and fall claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims, deny liability, or argue that you were partially at fault. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="Related injury claims" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony including safety experts, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Slip and Fall Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced slip and fall attorney provides comprehensive representation throughout every stage of your claim:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos of the hazard, surrounding area, lighting conditions, your injuries, witness statements, incident reports, and maintenance records</li>
-              <li><strong>Premises Liability Analysis:</strong> Analyze premises liability issues, determine fault, identify all potentially liable parties, and establish that the property owner knew or should have known of the dangerous condition</li>
-              <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
-              <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation, establish liability, and protect your rights throughout the claims process</li>
-              <li><strong>Expert Consultation:</strong> Consult with safety experts, medical experts, economic experts, or other specialists to establish causation, damages, and liability</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
-              <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and other losses</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Compensation Available</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Slip and fall accident compensation in Ohio may include various types of damages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications)</li>
-                <li>Lost wages and loss of earning capacity</li>
-                <li>Property damage (damaged clothing or personal items)</li>
-                <li>Rehabilitation and therapy costs</li>
-                <li>Home modifications for disabilities</li>
-                <li>Other financial losses directly related to the accident</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Pain and suffering</li>
-                <li>Emotional distress</li>
-                <li>Loss of enjoyment of life</li>
-                <li>Loss of consortium (spousal relationship)</li>
-                <li>Disfigurement and scarring</li>
-                <li>Mental anguish</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In cases involving egregious conduct such as intentional failure to remedy known hazards or gross negligence, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated slip and fall accident representation throughout Ohio. We understand that slip and fall accidents can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, document hazards, negotiate with insurance companies, and maximize compensation for our clients.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, premises liability expertise, strategic case development, and aggressive advocacy. We understand the complexities of slip and fall cases, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and analyze premises liability issues. Learn more about our <Link href="/personal-injury" className="text-sky-deep underline hover:text-navy-950">personal injury practice</Link> or read our articles on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-sky-deep underline hover:text-navy-950">Ohio slip and fall laws</Link> and <Link href="/our-law-firm/blog/slipped-fell-at-store-can-i-sue" className="text-sky-deep underline hover:text-navy-950">whether you can sue after slipping at a store</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/personal-injury/premises-liability" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Premises Liability</span>
-            <span className="text-sm text-navy-950/70">Property owner negligence and unsafe conditions</span>
-          </Link>
-          <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Workplace Injuries</span>
-            <span className="text-sm text-navy-950/70">On-the-job injuries and workers&apos; compensation</span>
-          </Link>
-          <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-            <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-          </Link>
-          <Link href="/personal-injury/dog-bites" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Dog Bites</span>
-            <span className="text-sm text-navy-950/70">Animal attack liability under Ohio law</span>
-          </Link>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

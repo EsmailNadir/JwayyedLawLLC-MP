@@ -1,14 +1,15 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 import { personalInjuryServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Personal Injury Attorney',
-  description: 'Experienced personal injury attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Car accidents, slip and fall, workplace injuries, and more.',
+  description:
+    'Personal injury claims in Columbus, Cincinnati, Dayton and across Ohio: the 2-year filing deadline, fault rules and the damages you can recover.',
   keywords: [
     'Ohio personal injury attorney',
     'Columbus personal injury attorney',
@@ -18,455 +19,232 @@ export const metadata: Metadata = {
     'car accident lawyer Ohio',
     'slip and fall attorney',
     'workplace injury lawyer',
-    'wrongful death attorney'
+    'wrongful death attorney',
   ],
   openGraph: {
     title: 'Ohio Personal Injury Attorney | Jwayyed Law LLC',
-    description: 'Personal injury representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
+    description: 'Personal injury representation in Columbus, Cincinnati, Dayton and throughout Ohio. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/personal-injury',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/personal-injury',
   },
 };
 
-const breadcrumbItems = [
-  { label: 'Personal Injury', href: '/personal-injury' },
-];
+const breadcrumbItems = [{ label: 'Personal Injury', href: '/personal-injury' }];
 
 const faqs = [
   {
     question: 'What is the statute of limitations for personal injury claims in Ohio?',
-    answer: 'Under Ohio Revised Code 2305.10, the statute of limitations for personal injury claims in Ohio is generally 2 years from the date of injury. However, exceptions may apply for medical malpractice claims (1 year from discovery), claims against government entities (2 years with special notice requirements), or claims involving minors. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer:
+      'Under Ohio Revised Code 2305.10, you generally have 2 years from the date of injury to file. Exceptions apply to medical malpractice claims (1 year from discovery), claims against government entities (2 years, with special notice requirements) and claims involving minors. Missing the deadline bars recovery, so talk to an attorney as soon as you can.',
   },
   {
     question: 'What types of compensation are available in personal injury cases?',
-    answer: 'Personal injury compensation in Ohio may include economic damages (medical expenses, lost wages, property damage, future medical costs, loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment, loss of consortium), and in rare cases, punitive damages for egregious conduct. Compensation depends on injury severity, impact on your life, and available insurance coverage or assets.',
+    answer:
+      'Compensation in Ohio can include economic damages (medical expenses, lost wages, property damage, future medical costs and loss of earning capacity), non-economic damages (pain and suffering, emotional distress, loss of enjoyment and loss of consortium) and, in rare cases, punitive damages for egregious conduct. How much you recover depends on how severe the injury is, how it affects your life, and what insurance coverage or assets are available.',
   },
   {
     question: 'What is comparative negligence in Ohio?',
-    answer: 'Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are partially at fault for your injury, your compensation is reduced by your percentage of fault. However, if you are 51% or more at fault, you cannot recover compensation. This means even if you were partially negligent, you may still recover compensation if you are less than 51% at fault. An attorney can help protect your rights and maximize your recovery.',
+    answer:
+      'Ohio follows a modified comparative negligence rule under ORC 2315.33. If you were partly at fault, your compensation is reduced by your percentage of fault. If you are 51% or more at fault, you cannot recover. So you can still recover if you are less than 51% at fault. An attorney can push back on fault arguments and protect your recovery.',
   },
   {
     question: 'Do I need a personal injury attorney for my claim?',
-    answer: 'While you can handle a personal injury claim yourself, an experienced attorney can significantly improve your chances of recovery and maximize compensation. Attorneys understand insurance tactics, negotiation strategies, and legal requirements. They handle documentation, communicate with insurance companies, negotiate settlements, and represent you in court if necessary. Most personal injury attorneys work on a contingency fee basis.',
+    answer:
+      'You can handle a claim yourself. An attorney handles the documentation, deals with the insurance companies, negotiates the settlement and represents you in court if it comes to that, and knows the legal requirements and how insurers handle claims. Most personal injury attorneys work on a contingency fee basis.',
   },
   {
     question: 'How long does a personal injury case take?',
-    answer: 'Personal injury case duration varies significantly depending on case complexity, injury severity, insurance company cooperation, and whether the case goes to trial. Simple cases may resolve in months, while complex cases may take years. Most cases settle before trial, but preparation and negotiation can take substantial time. An attorney can provide a realistic timeline based on your specific case circumstances.',
+    answer:
+      'It depends on how complex the case is, how severe the injury is, how the insurance company responds and whether the case goes to trial. Simple cases may resolve in months; complex cases may take years. Most cases settle before trial, but preparation and negotiation still take time. An attorney can give you a realistic timeline once they know the facts.',
   },
   {
-    question: `What is Ohio's modified comparative negligence rule and how does it affect my case?`,
-    answer: `Ohio follows a modified comparative negligence rule under ORC 2315.33. If you share some fault for your injury, your total compensation is reduced by your percentage of fault. Critically, the 50% bar applies: if your contributory fault is greater than 50%, you are completely barred from recovering any damages. For example, if a jury awards $100,000 but finds you 30% at fault, you recover $70,000. An experienced attorney can gather evidence, counter inflated fault allegations by the defense, and protect your right to maximum recovery.`,
+    question: "What is Ohio's modified comparative negligence rule and how does it affect my case?",
+    answer:
+      'Under ORC 2315.33, if you share some fault for your injury, your total compensation is reduced by your percentage of fault. The 50% bar applies: if your fault is greater than 50%, you cannot recover any damages. For example, if a jury awards $100,000 and finds you 30% at fault, you recover $70,000. An attorney can gather evidence and counter inflated fault claims from the defense.',
   },
   {
-    question: `What damages are available in Ohio personal injury cases?`,
-    answer: `Ohio personal injury victims may recover two broad categories of damages. Economic damages — such as past and future medical expenses, lost wages, and loss of earning capacity — are not capped. Non-economic damages (pain and suffering, emotional distress, loss of consortium) are also generally uncapped in standard negligence cases; however, ORC 2323.43 imposes caps on non-economic damages in medical malpractice cases. Punitive damages may be awarded in cases involving actual malice or egregious conduct. An attorney can evaluate all available damages categories and build the documentation needed to maximize your recovery.`,
+    question: 'What damages are available in Ohio personal injury cases?',
+    answer:
+      'There are two broad categories. Economic damages, such as past and future medical expenses, lost wages and loss of earning capacity, are not capped. Non-economic damages (pain and suffering, emotional distress, loss of consortium) are also generally uncapped in standard negligence cases, but ORC 2323.43 caps non-economic damages in medical malpractice cases. Punitive damages may be awarded where there was actual malice or egregious conduct. An attorney can identify every category that applies and build the documentation for each.',
   },
   {
-    question: `Why should I avoid giving a recorded statement to the insurance adjuster?`,
-    answer: `Insurance adjusters are trained to use recorded statements to minimize or deny claims. A statement made before you fully understand the extent of your injuries can be used to argue that you downplayed symptoms, admitted partial fault, or contradicted later medical findings. Ohio law does not require you to give a recorded statement to the at-fault party's insurer. You should speak with a personal injury attorney before making any recorded statement. Your attorney can communicate with the insurer on your behalf and ensure nothing you say is used against you.`,
+    question: 'Why should I avoid giving a recorded statement to the insurance adjuster?',
+    answer:
+      "Adjusters use recorded statements to reduce or deny claims. If you give one before you know the full extent of your injuries, it can be used to argue that you downplayed symptoms, admitted partial fault or contradicted later medical findings. Ohio law does not require you to give a recorded statement to the at-fault party's insurer. Speak with a personal injury attorney first. Your attorney can communicate with the insurer for you.",
   },
 ];
 
-export default function PersonalInjuryPage() {
+const COUNTIES = [
+  { href: '/locations/franklin-county/personal-injury-franklin-county', title: 'Franklin County', subtitle: 'Columbus and surrounding areas' },
+  { href: '/locations/delaware-county/personal-injury-delaware-county', title: 'Delaware County', subtitle: 'Delaware and Powell' },
+  { href: '/locations/butler-county/personal-injury-butler-county', title: 'Butler County', subtitle: 'Hamilton, Oxford and West Chester' },
+  { href: '/locations/greene-county/personal-injury-greene-county', title: 'Greene County', subtitle: 'Fairborn and Xenia' },
+  { href: '/locations/montgomery-county/personal-injury-montgomery-county', title: 'Montgomery County', subtitle: 'Dayton and surrounding areas' },
+  { href: '/locations/pickaway-county/personal-injury-pickaway-county', title: 'Pickaway County', subtitle: 'Circleville and surrounding areas' },
+  { href: '/locations/athens-county/personal-injury-athens-county', title: 'Athens County', subtitle: 'Athens and surrounding areas' },
+  { href: '/locations/morrow-county/personal-injury-morrow-county', title: 'Morrow County', subtitle: 'Mount Gilead, Cardington and surrounding areas' },
+  { href: '/locations/clinton-county/personal-injury-clinton-county', title: 'Clinton County', subtitle: 'Wilmington and surrounding areas' },
+];
 
+export default function PersonalInjuryPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Personal Injury Attorney"
-        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Experienced representation for accident victims seeking compensation."
+        title="Ohio personal injury claims"
+        description="If someone else's negligence injured you in Ohio, you generally have 2 years from the date of injury to file. The firm represents injury victims in Columbus, Cincinnati, Dayton and across the state."
       />
 
-      {/* Sub-Services Grid */}
-      <section className="py-8 bg-ice border-b border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            Personal Injury Services
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {personalInjuryServices.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="flex items-center justify-between p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-medium text-navy-950 group-hover:text-sky-deep transition-colors text-sm">{service.title}</span>
-                <span className="text-white/80 group-hover:text-sky-deep transition-colors ml-2 text-xs shrink-0">→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Section title="Find your claim" intro={<p>Each page covers the deadlines, the damages and the process for that kind of claim.</p>}>
+        <LinkGrid links={personalInjuryServices.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+      </Section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Personal Injury Representation in Columbus, Cincinnati, Dayton & Throughout Ohio
-            </h2>
-            
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you have been injured in an accident in Columbus, Cincinnati, Dayton, or throughout Ohio due to someone else's negligence, you may be entitled to compensation for your injuries, medical expenses, lost wages, and pain and suffering. At Jwayyed Law LLC, we provide experienced personal injury representation for accident victims under Ohio Revised Code Chapter 2305. Our attorney understands Ohio personal injury laws, insurance requirements, and the compensation process necessary to help you recover.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '2 years', label: 'to file most personal injury claims, from the date of injury (ORC 2305.10)' },
+          { figure: '1 year', label: 'for medical malpractice claims, from discovery' },
+          { figure: '51%', label: 'share of fault at which you can no longer recover (ORC 2315.33)' },
+          { figure: '$25,000', label: "Ohio's minimum bodily injury coverage per person" },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Personal injury claims arise from various accidents including car accidents, truck accidents, motorcycle accidents, slip and fall incidents, workplace injuries, medical malpractice, and wrongful death. Ohio follows a modified comparative negligence rule, meaning your compensation may be reduced by your percentage of fault, but you can still recover if you are less than 51% at fault.
-            </p>
+      <Section
+        title="What a personal injury claim covers"
+        tone="ice"
+        intro={
+          <p>
+            If you were hurt because someone else was negligent, you may be entitled to compensation for your injuries, medical
+            expenses, lost wages, and pain and suffering. Claims are brought under Ohio Revised Code Chapter 2305.
+          </p>
+        }
+      >
+        <p>
+          Claims arise from car, truck and motorcycle accidents, slip and fall incidents, workplace injuries, medical malpractice and
+          wrongful death. Each type has its own Ohio Revised Code sections, insurance rules and case law.
+        </p>
+        <p>
+          Insurance companies often minimize claims or deny liability. Early work on a claim matters because evidence has to be
+          preserved, treatment has to be documented, and the filing deadline keeps running.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The personal injury claims process in Ohio involves investigation, documentation, negotiation with insurance companies, and potentially litigation. Understanding your rights, the claims process, and available compensation is essential for maximizing recovery. Insurance companies often minimize claims or deny liability, making experienced legal representation crucial. Early intervention by a skilled personal injury attorney can significantly impact the outcome, ensuring proper documentation, maximizing compensation, and protecting your rights throughout the process.
-            </p>
+      <Section title="Ohio rules that shape your claim">
+        <FactTable
+          title="Filing deadlines (statute of limitations)"
+          rows={[
+            { label: 'Most injury claims', value: '2 years from the date of injury, under ORC 2305.10.' },
+            { label: 'Medical malpractice', value: '1 year from discovery.' },
+            { label: 'Government entities', value: 'Special notice required within 2 years.' },
+            { label: 'Minors', value: 'Exceptions may apply.' },
+          ]}
+          note="The clock starts on the date of injury or the date the injury was discovered, depending on the circumstances. Missing the deadline bars recovery entirely."
+        />
+        <FactTable
+          title="Fault: modified comparative negligence (ORC 2315.33)"
+          rows={[
+            { label: 'Partly at fault', value: 'Your compensation is reduced by your percentage of fault.' },
+            { label: '51% or more at fault', value: 'You cannot recover. Put another way, fault greater than 50% bars recovery.' },
+            { label: 'Example', value: 'A jury awards $100,000 and finds you 30% at fault. You recover $70,000.' },
+          ]}
+        />
+        <FactTable
+          title="Ohio minimum auto insurance"
+          rows={[
+            { label: 'Bodily injury', value: '$25,000 per person and $50,000 per accident.' },
+            { label: 'Property damage', value: '$25,000.' },
+          ]}
+          note="Many drivers carry higher limits or umbrella policies. Uninsured/underinsured motorist coverage and other policies may also apply."
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Personal injury cases require thorough investigation, medical documentation, expert testimony, and strategic negotiation or litigation. The statute of limitations for most personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Medical malpractice claims have a 1-year statute of limitations from discovery. Missing these deadlines bars recovery entirely. An experienced attorney can ensure all deadlines are met, evidence is preserved, and your claim is properly documented and pursued.
-            </p>
+      <Section title="Damages you can recover" tone="ice">
+        <FactTable
+          title="Types of compensation"
+          rows={[
+            {
+              label: 'Economic',
+              value:
+                'Medical expenses (past and future), lost wages and loss of earning capacity, property damage, rehabilitation and therapy, home modifications for disabilities, and other financial losses tied to the injury. Not capped.',
+            },
+            {
+              label: 'Non-economic',
+              value:
+                'Pain and suffering, emotional distress, loss of enjoyment of life, loss of consortium (spousal relationship), disfigurement and scarring, and mental anguish. Generally not capped, except in medical malpractice cases (ORC 2323.43).',
+            },
+            {
+              label: 'Punitive',
+              value:
+                'For egregious conduct, recklessness or intentional harm, to punish the wrongdoer and deter similar conduct. Rare, and requires clear and convincing evidence of malicious or reckless behavior.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Personal Injury – Locations We Serve
-            </h3>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              We represent injury victims in the following Ohio counties and communities. Each county has its own page; click through for more information.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/personal-injury-franklin-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Franklin County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Columbus & surrounding areas</span>
-              </Link>
-              <Link href="/locations/delaware-county/personal-injury-delaware-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Delaware County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Delaware & surrounding areas</span>
-              </Link>
-              <Link href="/locations/butler-county/personal-injury-butler-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Butler County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
-              </Link>
-              <Link href="/locations/greene-county/personal-injury-greene-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Greene County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Fairborn & surrounding areas</span>
-              </Link>
-              <Link href="/locations/montgomery-county/personal-injury-montgomery-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Montgomery County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Dayton & surrounding areas</span>
-              </Link>
-              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Pickaway County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Circleville & surrounding areas</span>
-              </Link>
-              <Link href="/locations/athens-county/personal-injury-athens-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Athens County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Athens & surrounding areas</span>
-              </Link>
-              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Morrow County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
-              </Link>
-              <Link href="/locations/clinton-county/personal-injury-clinton-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Clinton County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Wilmington & surrounding areas</span>
-              </Link>
-            </div>
+      <Section title="How an injury claim moves forward">
+        <Steps
+          steps={[
+            {
+              title: 'Investigation and evidence',
+              body: 'Photos of the scene, vehicles and injuries, witness contact information, police reports and medical records are preserved right away. This evidence establishes liability and damages.',
+            },
+            {
+              title: 'Medical treatment and records',
+              body: 'Prompt treatment matters for your health and your claim. Medical records document the injury, the treatment and the prognosis, and link the injury to the accident.',
+            },
+            {
+              title: 'Insurance negotiation',
+              body: 'Most claims are resolved by negotiating with the insurance companies. Preparing the case for litigation strengthens the negotiating position.',
+            },
+            {
+              title: 'Litigation and trial',
+              body: 'If negotiation fails, a lawsuit is filed. Litigation involves discovery (exchanging evidence), depositions, expert testimony and possibly trial. Most cases settle before trial.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Personal Injury Claims Process
-            </h3>
+      <Section title="What the firm does on an injury claim" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Investigates',
+              body: 'Gathers photos, witness statements, police reports and surveillance footage, and documents every injury and loss.',
+            },
+            {
+              title: 'Coordinates medical documentation',
+              body: 'Makes sure every injury is documented and works with your providers to establish causation and prognosis.',
+            },
+            {
+              title: 'Handles the insurers',
+              body: 'Takes over all communication with the insurance companies and negotiates the settlement.',
+            },
+            {
+              title: 'Brings in experts',
+              body: 'Medical, accident reconstruction, economic and other experts to establish causation, damages and liability.',
+            },
+            {
+              title: 'Litigates when needed',
+              body: 'Files the lawsuit, conducts discovery, takes depositions and represents you in court if settlement talks fail.',
+            },
+            {
+              title: 'Pursues every source of coverage',
+              body: 'Identifies the available insurance policies and brings claims against every responsible party.',
+            },
+          ]}
+        />
+        <Callout title="Fees">The firm works on a contingency fee basis.</Callout>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the personal injury claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="Personal injury claims in your county">
+        <p>The firm represents injury victims in these Ohio counties. Each county has its own page.</p>
+        <LinkGrid links={COUNTIES} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Initial Investigation and Documentation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Immediately after an accident, evidence must be preserved including photos of the scene, vehicles, and injuries, witness contact information, police reports, and medical records. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Medical Treatment and Documentation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Seeking prompt medical treatment is essential both for your health and your claim. Medical records document injuries, treatment, and prognosis. An attorney can help coordinate medical treatment, ensure all injuries are documented, and work with medical providers to establish causation between the accident and injuries. Complete medical documentation is necessary to prove damages.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most personal injury claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims or deny liability. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Personal Injury Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced personal injury attorney provides comprehensive representation throughout every stage of your claim:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate your accident, gather evidence including photos, witness statements, police reports, and surveillance footage, and document all injuries and damages</li>
-              <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
-              <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation, establish liability, and protect your rights throughout the claims process</li>
-              <li><strong>Comprehensive Documentation:</strong> Prepare all documentation, medical records, evidence, and expert reports necessary to support your claim and maximize compensation</li>
-              <li><strong>Expert Consultation:</strong> Consult with medical experts, accident reconstruction experts, economic experts, or other specialists to establish causation, damages, and liability</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
-              <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and property damage</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Personal Injury Practice Areas
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm handles all types of personal injury cases, providing experienced representation across the full spectrum of accident and injury claims. We understand that each type of case requires specific knowledge of relevant laws, insurance requirements, and compensation structures:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Car Accidents</h4>
-                <p className="text-sm text-navy-950/70">Compensation for car accident injuries, property damage, and related losses</p>
-              </Link>
-              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Truck Accidents</h4>
-                <p className="text-sm text-navy-950/70">Representation for commercial truck accident victims involving complex liability</p>
-              </Link>
-              <Link href="/personal-injury/motorcycle-accidents" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Motorcycle Accidents</h4>
-                <p className="text-sm text-navy-950/70">Compensation for motorcycle accident injuries and damages</p>
-              </Link>
-              <Link href="/personal-injury/pedestrian-accidents" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Pedestrian Accidents</h4>
-                <p className="text-sm text-navy-950/70">Representation for pedestrians injured by vehicles</p>
-              </Link>
-              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Slip and Fall</h4>
-                <p className="text-sm text-navy-950/70">Premises liability claims for slip and fall injuries</p>
-              </Link>
-              <Link href="/personal-injury/premises-liability" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Premises Liability</h4>
-                <p className="text-sm text-navy-950/70">Claims for injuries on unsafe property</p>
-              </Link>
-              <Link href="/personal-injury/dog-bites" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Dog Bites</h4>
-                <p className="text-sm text-navy-950/70">Compensation for dog bite and animal attack injuries</p>
-              </Link>
-              <Link href="/personal-injury/medical-malpractice" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Medical Malpractice</h4>
-                <p className="text-sm text-navy-950/70">Claims for medical negligence and malpractice</p>
-              </Link>
-              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Workplace Injuries</h4>
-                <p className="text-sm text-navy-950/70">Third-party claims for workplace accidents</p>
-              </Link>
-              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Wrongful Death</h4>
-                <p className="text-sm text-navy-950/70">Compensation for families who lost loved ones due to negligence</p>
-              </Link>
-              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Catastrophic Injuries</h4>
-                <p className="text-sm text-navy-950/70">Representation for severe, life-altering injuries</p>
-              </Link>
-            </div>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Each practice area requires specific knowledge of relevant Ohio Revised Code sections, insurance requirements, and case law. Our attorney stays current with changes in Ohio personal injury law and understands how these laws are applied throughout Ohio courts. We develop strategies tailored to the specific type of accident or injury you suffered, drawing on our experience with similar cases and knowledge of local court practices.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Understanding Ohio Personal Injury Laws
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio personal injury law is complex and includes several important legal principles that affect your claim:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Statute of Limitations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Under Ohio Revised Code 2305.10, personal injury claims must generally be filed within 2 years of the injury. Medical malpractice claims have a 1-year statute of limitations from discovery. Claims against government entities require special notice within 2 years. Missing the deadline bars recovery entirely, making it crucial to act quickly and consult an attorney immediately. The statute of limitations begins running from the date of injury or discovery of injury, depending on the circumstances.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Modified Comparative Negligence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are partially at fault for your injury, your compensation is reduced by your percentage of fault. However, if you are 51% or more at fault, you cannot recover any compensation. This means even if you were partially negligent, you may still recover compensation if you are less than 51% at fault. An attorney can help protect your rights, establish the other party's fault, and maximize your recovery even when you share some fault.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Damage Caps and Compensation Types</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio law generally does not cap non-economic damages (pain and suffering, emotional distress) in most personal injury cases. However, medical malpractice cases have damage caps. Economic damages are not capped and can include all medical expenses (past and future), lost wages, loss of earning capacity, property damage, and other financial losses. Punitive damages may be available in cases involving egregious conduct. An attorney can help identify all available damages and maximize your compensation.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Requirements and Coverage</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio requires minimum auto insurance coverage of $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage. However, many drivers carry higher coverage or have umbrella policies. Understanding available insurance coverage, uninsured/underinsured motorist coverage, and how to access multiple insurance policies is crucial for maximizing recovery. An attorney can identify all available insurance coverage and pursue claims against all responsible parties.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Types of Compensation Available
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Personal injury compensation in Ohio may include various types of damages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Medical expenses (past and future)</li>
-                <li>Lost wages and loss of earning capacity</li>
-                <li>Property damage</li>
-                <li>Rehabilitation and therapy costs</li>
-                <li>Home modifications for disabilities</li>
-                <li>Other financial losses directly related to the injury</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Pain and suffering</li>
-                <li>Emotional distress</li>
-                <li>Loss of enjoyment of life</li>
-                <li>Loss of consortium (spousal relationship)</li>
-                <li>Disfigurement and scarring</li>
-                <li>Mental anguish</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In cases involving egregious conduct, recklessness, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Personal Injury
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated personal injury representation throughout Ohio. We understand that accidents can be life-changing and that insurance companies often minimize claims. Our attorney works diligently to investigate cases, document injuries, negotiate with insurance companies, and maximize compensation for our clients.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of personal injury cases, from car accidents to workplace injuries to wrongful death. Our firm works on a contingency fee basis. This arrangement ensures our interests are aligned with yours—we only succeed when you succeed. We maintain open communication with clients, ensuring you understand the process, your options, and case progress throughout your claim.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been injured in an accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and develop a strategy tailored to your situation. Time is critical in personal injury cases—evidence must be preserved, medical treatment must be documented, and the statute of limitations must be met. Do not delay in seeking experienced legal representation to protect your rights and maximize your recovery.
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-      {/* County Service Locations */}
-      <section className="py-12 bg-ice border-t border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            Personal Injury Attorney — Ohio Counties We Serve
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link
-                key="/locations/franklin-county/personal-injury-franklin-county"
-                href="/locations/franklin-county/personal-injury-franklin-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Franklin County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/delaware-county/personal-injury-delaware-county"
-                href="/locations/delaware-county/personal-injury-delaware-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Delaware County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware & Powell</span>
-              </Link>
-              <Link
-                key="/locations/pickaway-county/personal-injury-pickaway-county"
-                href="/locations/pickaway-county/personal-injury-pickaway-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Pickaway County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/greene-county/personal-injury-greene-county"
-                href="/locations/greene-county/personal-injury-greene-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Greene County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn & Xenia</span>
-              </Link>
-              <Link
-                key="/locations/montgomery-county/personal-injury-montgomery-county"
-                href="/locations/montgomery-county/personal-injury-montgomery-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Montgomery County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/morrow-county/personal-injury-morrow-county"
-                href="/locations/morrow-county/personal-injury-morrow-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Morrow County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Mount Gilead & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/butler-county/personal-injury-butler-county"
-                href="/locations/butler-county/personal-injury-butler-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Butler County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton, Oxford & West Chester</span>
-              </Link>
-              <Link
-                key="/locations/athens-county/personal-injury-athens-county"
-                href="/locations/athens-county/personal-injury-athens-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Athens County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/clinton-county/personal-injury-clinton-county"
-                href="/locations/clinton-county/personal-injury-clinton-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Clinton County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington & surrounding areas</span>
-              </Link>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

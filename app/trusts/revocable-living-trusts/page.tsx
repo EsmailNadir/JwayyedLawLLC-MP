@@ -5,10 +5,12 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Revocable Living Trusts Lawyer in Ohio',
-  description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets.',
+  description:
+    'Set up an Ohio revocable living trust to avoid probate and keep your estate private. Funding, the pour-over will and successor trustees explained.',
   keywords: [
     'revocable living trust Columbus OH',
     'living trust attorney Ohio',
@@ -21,10 +23,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Revocable Living Trusts Lawyer in Ohio | Jwayyed Law LLC',
-    description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets. Call (614) 285-5482.',
+    description:
+      'Set up an Ohio revocable living trust to avoid probate and keep your estate private. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/revocable-living-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/trusts/revocable-living-trusts' },
 };
 
@@ -35,114 +38,183 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is a revocable living trust under Ohio law?`,
-    answer: `A revocable living trust is a legal arrangement governed by the Ohio Trust Code (ORC Chapters 5801–5811) in which you — as the grantor — transfer ownership of your assets to the trust during your lifetime while retaining the right to amend or revoke it at any time under ORC 5805.06. You typically serve as your own trustee, maintaining full control of the assets. Upon your death or incapacity, a successor trustee you have named steps in to manage and distribute the trust property according to your written instructions — entirely outside of probate court.`,
+    question: 'What is a revocable living trust under Ohio law?',
+    answer:
+      'It is a trust governed by the Ohio Trust Code (ORC Chapters 5801 to 5811). As the grantor, you transfer your assets to the trust during your lifetime and keep the right to amend or revoke it at any time under ORC 5805.06. You usually serve as your own trustee and keep full control. When you die or become incapacitated, the successor trustee you named manages and distributes the trust property under your written instructions, outside probate court.',
   },
   {
-    question: `How does a revocable living trust avoid probate in Ohio?`,
-    answer: `Probate in Ohio is the court-supervised process of validating a will and authorizing distribution of assets through the Franklin County or other county probate court. Because trust assets are legally owned by the trust — not by you individually at death — they are not subject to that court process. A properly funded revocable trust allows your successor trustee to transfer real estate, bank accounts, investments, and other property to beneficiaries within weeks rather than the six-to-twelve months Ohio probate often takes, and without filing fees that can range from one to four percent of the estate.`,
+    question: 'How does a revocable living trust avoid probate in Ohio?',
+    answer:
+      'Probate in Ohio is the court-supervised process of validating a will and authorizing distribution of assets through the Franklin County or another county probate court. Trust assets are owned by the trust, not by you individually at death, so they are not part of that process. A properly funded revocable trust lets your successor trustee transfer real estate, bank accounts, investments and other property to beneficiaries within weeks, rather than the six to twelve months Ohio probate often takes, and without fees that can run from one to four percent of the estate.',
   },
   {
-    question: `What is a pour-over will and why do I need one with my trust?`,
-    answer: `A pour-over will is a companion document that captures any assets you forgot to transfer into the trust during your lifetime and directs them into the trust at death, so they are ultimately distributed according to the trust's terms. Those assets will still pass through probate, but the will ensures nothing is left out of your overall plan. Ohio law requires a valid will to comply with ORC 2107.03 formalities — two witnesses and notarization — and Jwayyed Law LLC always drafts a pour-over will alongside every revocable living trust.`,
+    question: 'What is a pour-over will and why do I need one with my trust?',
+    answer:
+      "A pour-over will catches any assets you did not transfer into the trust during your lifetime and directs them into the trust at death, so the trust's terms govern them. Those assets still pass through probate, but nothing is left out of the plan. A valid Ohio will must meet the ORC 2107.03 formalities (two witnesses and notarization). Jwayyed Law LLC drafts a pour-over will alongside every revocable living trust.",
   },
   {
-    question: `What does "funding the trust" mean and what happens if I forget?`,
-    answer: `Funding means re-titling assets in the name of your trust — for example, changing your real estate deed to read "John Smith, Trustee of the John Smith Revocable Living Trust dated January 1, 2025" and updating beneficiary designations on bank and investment accounts. An unfunded or partially funded trust is the most common estate planning mistake. Assets that were never transferred into the trust must go through probate. Our firm helps clients complete funding by preparing Ohio deeds, drafting assignment documents for business interests, and providing account change instructions.`,
+    question: 'What does "funding the trust" mean and what happens if I forget?',
+    answer:
+      'Funding means retitling assets in the name of the trust: for example, changing a deed to read "John Smith, Trustee of the John Smith Revocable Living Trust dated January 1, 2025" and updating beneficiary designations on bank and investment accounts. An unfunded or partly funded trust is the most common estate planning mistake, because any asset never transferred into the trust must go through probate. The firm helps clients finish funding by preparing Ohio deeds, drafting assignments for business interests and providing account change instructions.',
   },
   {
-    question: `Can I change or revoke my revocable living trust?`,
-    answer: `Yes. Under ORC 5805.06, a revocable trust may be amended, restated, or entirely revoked by the grantor at any time while the grantor has legal capacity, unless the trust instrument provides otherwise. A full restatement — replacing the entire trust document — is often cleaner than multiple amendments when circumstances change significantly. Upon revocation, assets retitled in the trust's name must be retitled back to you individually. Changes require no court approval and can be completed quickly with the help of an attorney.`,
+    question: 'Can I change or revoke my revocable living trust?',
+    answer:
+      'Yes. Under ORC 5805.06 you can amend, restate or revoke a revocable trust at any time while you have legal capacity, unless the trust instrument says otherwise. When circumstances change a lot, a full restatement (replacing the whole document) is often cleaner than a string of amendments. If you revoke the trust, assets titled in its name must be retitled back to you. No court approval is needed.',
   },
   {
-    question: `How does a revocable living trust compare to a will?`,
-    answer: `Both documents direct who receives your property at death, but they operate very differently. A will must be probated — filed with the county probate court, published in a legal notice, and supervised by a judge. It becomes a public record. A revocable trust passes assets privately and immediately upon death or incapacity. A trust also provides incapacity planning: if you become disabled, your successor trustee manages your affairs without a court-appointed guardian. The trade-off is cost — a trust-based plan costs more to draft and requires the ongoing work of funding, but typically saves significantly in probate costs and delays.`,
+    question: 'How does a revocable living trust compare to a will?',
+    answer:
+      'Both say who receives your property at death. A will must be probated: filed with the county probate court, published in a legal notice and supervised by a judge, and it becomes a public record. A revocable trust passes assets privately and right away on death or incapacity. A trust also covers incapacity: if you become disabled, your successor trustee manages your affairs without a court-appointed guardian. The trade-off is cost. A trust-based plan costs more to draft and needs funding, but it usually saves on probate costs and delay.',
   },
   {
-    question: `Who should serve as successor trustee?`,
-    answer: `A successor trustee takes over management of trust assets if you die or become incapacitated. This person or institution should be trustworthy, organized, and willing to follow detailed legal and financial responsibilities. Common choices include an adult child, sibling, trusted friend, or a corporate trustee such as a bank trust department. Under ORC 5808.01, trustees have duties of loyalty, prudent administration, and impartiality among beneficiaries. Our firm counsels clients on successor trustee selection and can prepare detailed letters of instruction to guide the trustee through their duties.`,
+    question: 'Who should serve as successor trustee?',
+    answer:
+      'The successor trustee takes over the trust assets if you die or become incapacitated, so choose someone trustworthy, organized and willing to carry out detailed legal and financial duties. Common choices are an adult child, a sibling, a trusted friend or a corporate trustee such as a bank trust department. Under ORC 5808.01, trustees owe duties of loyalty, prudent administration and impartiality among beneficiaries. The firm advises on the choice and can prepare letters of instruction to guide the trustee.',
   },
   {
-    question: `Does a revocable living trust protect assets from creditors or reduce estate taxes?`,
-    answer: `No — and this is one of the most common misconceptions. Because you retain full control and the right to revoke the trust, the IRS and Ohio courts treat trust assets as your personal assets. Creditors can reach them during your lifetime, and they are included in your taxable estate. A revocable trust provides probate avoidance and privacy, not asset protection or estate tax reduction. Ohio eliminated its state estate tax in 2013, so for most Ohio residents the focus is on federal estate tax planning (applicable for estates over $13.99 million in 2025) and probate avoidance — the latter being exactly what a revocable trust delivers.`,
+    question: 'Does a revocable living trust protect assets from creditors or reduce estate taxes?',
+    answer:
+      'No. Because you keep full control and the right to revoke, the IRS and Ohio courts treat trust assets as yours. Creditors can reach them during your lifetime and they are included in your taxable estate. A revocable trust gives you probate avoidance and privacy. Ohio eliminated its state estate tax in 2013, so for most Ohio residents the concerns are federal estate tax (for estates over $13.99 million in 2025) and probate avoidance, which is what a revocable trust delivers.',
   },
 ];
 
-export default function RevocableLivingTrustsPage() {
+const RELATED = [
+  { href: '/trusts/special-needs-trusts', title: 'Special needs trusts', subtitle: 'Protecting benefits eligibility for a disabled loved one' },
+  { href: '/trusts/irrevocable-trusts', title: 'Irrevocable trusts', subtitle: 'Estate tax planning and Medicaid planning options' },
+  { href: '/trusts/asset-protection-trusts', title: 'Asset protection trusts', subtitle: 'Ohio Legacy Trusts under ORC Chapter 5816' },
+  { href: '/other-services/powers-of-attorney', title: 'Powers of attorney', subtitle: 'Financial and healthcare decision-making authority' },
+];
 
+export default function RevocableLivingTrustsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Revocable Living Trusts Lawyer"
-        description="Helping Ohio families avoid probate, protect privacy, and ensure a seamless transfer of assets through a properly drafted and funded revocable living trust."
+        title="Revocable living trusts in Ohio"
+        description="A funded revocable trust passes your home, accounts and investments to your family without probate, which in Ohio often takes six to twelve months. You keep control and can revoke it at any time."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Revocable Living Trusts in Ohio: What They Are and Why They Matter
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A revocable living trust is one of the most versatile and widely used estate planning tools available to Ohio residents. Governed by the Ohio Trust Code — ORC Chapters 5801 through 5811 — a revocable trust allows you to transfer ownership of your home, bank accounts, investments, and other property into a legal arrangement that you control completely during your lifetime. You serve as your own trustee, manage the assets exactly as you did before, and can amend or revoke the trust at any time under ORC 5805.06. The difference only becomes apparent when you die or become incapacitated: your named successor trustee steps in and distributes your estate according to your written instructions — without probate, without court supervision, and without delays measured in months or years.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Probate in Ohio — the court process of validating a will and supervising asset distribution — runs through county probate courts. In Franklin County, for example, a modest estate can take six to eighteen months to close, and statutory fees paid to the executor and attorney are set by ORC 2113.35 and can consume one to four percent of the gross estate. A fully funded revocable trust bypasses this process entirely. Assets titled in the trust name pass immediately to beneficiaries, saving both time and money. The trust document is also private — unlike a probated will, which becomes a public court record that anyone can search.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For Ohio residents with real estate in multiple counties or multiple states, a revocable trust is particularly valuable. Without a trust, your family may need to open ancillary probate proceedings in each state where you own real property — a process that multiplies the cost and delay of settling your estate. A trust eliminates that problem because the trustee simply executes a new deed on behalf of the trust in each jurisdiction, without court involvement.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              The Three Parties: Grantor, Trustee, and Beneficiary
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Every revocable living trust involves three roles. The <strong>grantor</strong> (also called settlor or trustor) is the person who creates and funds the trust. The <strong>trustee</strong> holds legal title to the trust assets and manages them according to the trust terms; during your lifetime, you serve as your own trustee. The <strong>beneficiary</strong> is the person or entity who receives the economic benefit — during your life, you are the primary beneficiary, and after your death, your named heirs receive distributions. These roles can be held by the same person simultaneously, which is why a revocable trust feels seamless during your lifetime: nothing changes about how you use or access your property.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The successor trustee — the person who takes over when you die or become incapacitated — is arguably the most important decision in your estate plan. This individual must be willing to manage financial accounts, sell or transfer real estate, file tax returns, and distribute assets to beneficiaries in strict compliance with the trust document. Ohio law imposes fiduciary duties on trustees under ORC Chapter 5808, including duties of loyalty, prudent administration, and impartiality among beneficiaries. Choosing the right person and preparing clear, detailed instructions are critical steps we work through with every client.
-            </p>
+      <Section
+        title="What a revocable living trust does"
+        intro={
+          <p>
+            The Ohio Trust Code, ORC Chapters 5801 through 5811, governs revocable trusts. You move your home, bank accounts,
+            investments and other property into the trust, serve as your own trustee and can amend or revoke it at any time under
+            ORC 5805.06.
+          </p>
+        }
+      >
+        <p>
+          Nothing changes in how you use your property while you are alive and well. The difference shows when you die or become
+          incapacitated: the successor trustee you named distributes your estate under your written instructions, with no probate
+          and no court supervision.
+        </p>
+        <p>
+          Probate in Ohio runs through the county probate courts. In Franklin County, for example, a modest estate can take six to
+          eighteen months to close, and the executor and attorney fees set by ORC 2113.35 can consume one to four percent of the gross
+          estate. Assets titled in a funded trust pass straight to beneficiaries. The trust document also stays private, while a
+          probated will becomes a public court record anyone can search.
+        </p>
+        <p>
+          If you own real estate in more than one state, the trust matters more. Without one, your family may have to open ancillary
+          probate in each state where you own real property. With one, the trustee signs a new deed for the trust in each place, with
+          no court involved.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Funding the Trust: The Step Most People Skip
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A revocable living trust that has not been funded is essentially a blank container — it provides no probate-avoidance benefit because there are no assets titled in the trust\'s name. Funding requires re-titling every significant asset: executing and recording new Ohio deeds for real property, updating account titles at banks and brokerage firms, assigning business interests (LLC membership interests, partnership interests), and changing beneficiary designations on accounts that pass outside of probate anyway (like life insurance and IRAs — these typically name the trust as beneficiary only if there is a specific planning reason to do so). Our firm handles deed preparation for Ohio real estate as part of our trust planning service and provides a comprehensive funding checklist to guide clients through every remaining asset.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Every client who establishes a revocable living trust with Jwayyed Law LLC also receives a <strong>pour-over will</strong> — a backup document that captures any assets inadvertently left outside the trust and directs them into the trust at death. Those assets will pass through a simplified probate process called summary release from administration if they are small enough, or a full probate otherwise, but the pour-over will ensures they are ultimately governed by your trust\'s distribution instructions. Think of the pour-over will as your safety net.
-            </p>
+      <Section title="What a revocable trust will not do" tone="ice">
+        <p>
+          Many Ohio families believe a revocable trust protects assets from creditors or cuts estate taxes. It does neither. You keep
+          full power to revoke the trust and take the assets back, so creditors (including nursing homes and Medicaid) can reach them
+          during your lifetime, and the IRS counts them in your taxable estate.
+        </p>
+        <FactTable
+          title="Tax and creditor rules for a revocable trust"
+          rows={[
+            { label: 'Ohio estate tax', value: 'None. Ohio eliminated its state estate tax in 2013.' },
+            { label: 'Federal estate tax', value: 'Only a concern for estates over the federal exemption ($13.99 million in 2025).' },
+            { label: 'Taxable estate', value: 'Trust assets are included, because you can revoke the trust.' },
+            { label: 'Creditors', value: 'Can reach trust assets during your lifetime, including nursing homes and Medicaid.' },
+          ]}
+        />
+        <p>
+          A revocable trust is a probate-avoidance and incapacity-planning tool. For creditor protection you need a different
+          structure, such as an <Link href="/trusts/asset-protection-trusts">Ohio Legacy Trust</Link> or a properly structured LLC.
+          For Medicaid planning, the vehicle is an <Link href="/trusts/irrevocable-trusts">irrevocable trust</Link> planned around the
+          five-year lookback.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Common Misconceptions About Revocable Trusts
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Many Ohio families believe a revocable living trust protects assets from creditors or reduces estate taxes. Neither is true. Because you retain full power to revoke the trust and reclaim the assets, creditors — including nursing homes and Medicaid — can reach trust assets during your lifetime, and the IRS includes them in your taxable estate. Ohio eliminated its state estate tax in 2013, so estate tax is only a concern for estates exceeding the federal exemption ($13.99 million in 2025). Revocable trusts are primarily probate-avoidance and incapacity-planning tools. For creditor protection, you need a different structure — such as an <Link href="/trusts/asset-protection-trusts" className="text-sky-deep underline hover:text-navy-950">Ohio Legacy Trust</Link> or a properly structured LLC. For Medicaid planning, an <Link href="/trusts/irrevocable-trusts" className="text-sky-deep underline hover:text-navy-950">irrevocable trust</Link> with a five-year lookback consideration is the appropriate vehicle.
-            </p>
+      <Section title="Grantor, trustee and beneficiary">
+        <PointGrid
+          points={[
+            {
+              title: 'Grantor',
+              body: 'Also called the settlor or trustor. The person who creates and funds the trust.',
+            },
+            {
+              title: 'Trustee',
+              body: 'Holds legal title to the trust assets and manages them under the trust terms. During your lifetime, that is you.',
+            },
+            {
+              title: 'Beneficiary',
+              body: 'Receives the economic benefit. During your life you are the primary beneficiary; after your death, your named heirs receive distributions.',
+            },
+            {
+              title: 'Successor trustee',
+              body: 'Takes over when you die or become incapacitated. Manages accounts, sells or transfers real estate, files tax returns and distributes assets exactly as the trust says.',
+            },
+          ]}
+        />
+        <p>
+          One person can hold the first three roles at once. The successor trustee is the choice that matters most. Ohio law imposes
+          fiduciary duties on trustees under ORC Chapter 5808, including loyalty, prudent administration and impartiality among
+          beneficiaries. The firm works through that choice, and the written instructions that go with it, with every client.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Trusts" />
+      <Section title="Setting up and funding the trust" tone="ice">
+        <p>
+          A trust that has not been funded holds nothing, so it avoids no probate. Funding means retitling every significant asset in
+          the trust&rsquo;s name.
+        </p>
+        <Steps
+          steps={[
+            { title: 'Draft the trust', body: 'The trust document names you as trustee, your beneficiaries and your successor trustee.' },
+            {
+              title: 'Deed your real estate',
+              body: 'Execute and record new Ohio deeds for real property. The firm prepares deeds for Ohio real estate as part of trust planning.',
+            },
+            { title: 'Retitle accounts', body: 'Update account titles at banks and brokerage firms.' },
+            { title: 'Assign business interests', body: 'Assign LLC membership interests and partnership interests to the trust.' },
+            {
+              title: 'Review beneficiary designations',
+              body: 'Life insurance and IRAs already pass outside probate. They usually name the trust as beneficiary only when there is a specific planning reason.',
+            },
+            {
+              title: 'Sign the pour-over will',
+              body: 'It catches anything left outside the trust and directs it into the trust at death.',
+            },
+          ]}
+        />
+        <p>
+          The firm gives every client a funding checklist for the remaining assets, and every client who sets up a revocable trust
+          with Jwayyed Law LLC also receives a <strong>pour-over will</strong>. Assets it catches still go through probate: a
+          simplified process called summary release from administration if they are small enough, a full probate otherwise. Either
+          way, your trust&rsquo;s distribution instructions govern them.
+        </p>
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Special Needs Trusts</span>
-                <span className="text-sm text-navy-950/70">Protecting benefits eligibility for disabled loved ones</span>
-              </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Trusts</span>
-                <span className="text-sm text-navy-950/70">Estate tax planning and Medicaid planning options</span>
-              </Link>
-              <Link href="/trusts/asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Asset Protection Trusts</span>
-                <span className="text-sm text-navy-950/70">Ohio Legacy Trusts under ORC Chapter 5816</span>
-              </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Powers of Attorney</span>
-                <span className="text-sm text-navy-950/70">Financial and healthcare decision-making authority</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LocationsWeServe title="Trusts" />
+
+      <Section title="Related planning" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+        <Callout title="Changing your plan later">
+          Under ORC 5805.06 you can amend, restate or revoke the trust while you have capacity, with no court approval.
+        </Callout>
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

@@ -68,6 +68,35 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | other-services/arbitration | 90-day window to vacate cited to ORC 2711.10 | The time limit is in 2711.13 | Medium |
 | other-services/dispute-resolution | "Studies consistently show settlement in 70 to 85 percent of cases" | Unsourced statistic | Low |
 
+## Personal injury
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| personal-injury/catastrophic-injuries | ORC 2323.43 caps non-economic damages "in most tort cases" ($250k / 3x, max $350k/$500k; $500k/$1M for catastrophic) | 2323.43 is the medical malpractice cap; the general tort cap is ORC 2315.18, which exempts catastrophic injuries; the landing FAQ itself says 2323.43 is malpractice only | High |
+| slip-and-fall, premises-liability | ORC 2305.321 cited as attractive-nuisance protection on one page and recreational-user immunity on the other | At least one is wrong; recreational-user immunity is believed to be ORC 1533.181 | Medium |
+| personal-injury/premises-liability | Comparative negligence at ORC 2315.19; one FAQ gives landlord duties under 5321.02 | Current section is 2315.33; landlord duties are 5321.04 (5321.02 is anti-retaliation, as another FAQ on the page says) | Medium |
+| personal-injury/dog-bites | Bite reporting under ORC 955.261; "dangerous dog under 955.22 / vicious dog under 955.11" | 955.261 is mainly quarantine; definitions are in 955.11 | Medium |
+| personal-injury/nursing-home-abuse | Mandatory reporting under ORC 5101.61 | Nursing-home reporting is mainly ORC 3721.22 | Medium |
+| personal-injury/wrongful-death | Punitive damages may be available | Generally not in the wrongful death action itself, only the survival claim | High |
+| personal-injury/motorcycle-accidents | Helmets required "under 18 only"; lane sharing at ORC 4511.272 | ORC 4511.53 also covers first-year riders and their passengers; citation unconfirmed | Medium |
+| personal-injury/medical-malpractice | "Ohio courts apply a statewide standard of care" | Specialists are held to a national standard | Medium |
+
+## Trusts
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| ILIT, irrevocable, QTIP, charitable, dynasty, revocable | Federal estate tax exemption $13.61M (2024) / $13.99M (2025), "falls to about $7M after 2025", $18,000 annual exclusion | Out of date for 2026; the 2025 federal tax law is believed to have set the exemption at $15M from 2026, so the sunset language is wrong | High |
+| trusts/medicaid-asset-protection-trusts | $2,829 income cap; $9,500 penalty divisor | 2024 figures | High |
+| trusts/special-needs-trusts | ABLE age limit 26; food payments trigger in-kind support; a disabled person cannot set up their own first-party trust | ABLE age may now be 46 (2026); SSI stopped counting food in 2024; the 2016 Cures Act allows self-settled first-party trusts | High |
+| trusts (landing) | Ohio has no domestic asset protection trust statute | Contradicts the asset-protection page and others describing the Ohio Legacy Trust (ORC Chapter 5816, 2013) | High |
+| spendthrift, asset-protection | Ohio Legacy Trust creditor limit: 5 years on one page, 18-month seasoning on the other | Inconsistent | Medium |
+| trusts/asset-protection-trusts | "Uniform Fraudulent Transfer Act (ORC 1336.04)"; $145,425 homestead exemption | Landing calls Chapter 1336 the Uniform Voidable Transactions Act; homestead figure may be outdated | Medium |
+| irrevocable, QTIP, spendthrift | ORC 5801.10 defines an irrevocable trust; cy pres at 5804.09; Prudent Investor Act at 5810.02 (others say Chapter 5809); spendthrift exceptions at 5805.06(A)/(B) | Citations to check | Medium |
+| trusts/dynasty-trusts | Rule against perpetuities abolished 2012 by ORC 5801.04(A)(2); "$5M at 7% for 50 years could exceed $150M" | Ohio allowed opting out earlier; the math gives about $147M | Low |
+| trusts/revocable-living-trusts | An Ohio will needs "two witnesses and notarization" (ORC 2107.03); probate 6 to 12 months (FAQ) vs 6 to 18 months (body) | Ohio does not require notarization; inconsistent durations | Medium |
+| trusts/irrevocable-trusts | "Ohio eliminated its gift tax in 2013" | Ohio never had a gift tax (the estate tax was repealed in 2013) | Medium |
+| QTIP, land-trusts | "Portability since 2013"; "each land trust is a separate legal entity" | Check | Low |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |

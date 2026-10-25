@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Ohio Medical Malpractice Lawyer',
-  description: 'Ohio medical malpractice attorney handling misdiagnosis, surgical errors, and birth injuries under ORC 2305.113. Non-economic damage caps explained.',
+  description:
+    'Ohio medical malpractice claims under ORC 2305.113: the 1-year deadline, the affidavit of merit, damage caps and what you must prove.',
   keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney', 'ORC 2305.113 malpractice'],
   openGraph: {
     title: 'Ohio Medical Malpractice Lawyer | Columbus | Jwayyed Law LLC',
+    description: 'Claims for misdiagnosis, surgical errors, birth injuries and other medical negligence in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/medical-malpractice',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/medical-malpractice' },
 };
 
@@ -25,124 +28,178 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is medical malpractice in Ohio?`,
-    answer: `Medical malpractice occurs when a healthcare provider — a physician, surgeon, nurse, hospital, or other licensed professional — fails to meet the accepted standard of care and that failure causes injury or death to a patient. The standard of care is what a reasonably competent healthcare provider in the same specialty would have done under the same circumstances. Common forms of malpractice include misdiagnosis or delayed diagnosis, surgical errors, medication errors, birth injuries, anesthesia errors, and failure to obtain informed consent. Not every bad medical outcome is malpractice — you must show the provider fell below the standard of care and that the breach caused your harm.`,
+    question: 'What is medical malpractice in Ohio?',
+    answer:
+      'Medical malpractice happens when a healthcare provider (a physician, surgeon, nurse, hospital or other licensed professional) fails to meet the accepted standard of care and that failure injures or kills a patient. The standard of care is what a reasonably competent provider in the same specialty would have done in the same circumstances. Common forms include misdiagnosis or delayed diagnosis, surgical errors, medication errors, birth injuries, anesthesia errors and failure to obtain informed consent. A bad outcome alone is not malpractice: you must show the provider fell below the standard of care and that this caused your harm.',
   },
   {
-    question: `What is Ohio's statute of limitations for medical malpractice?`,
-    answer: `Under Ohio Revised Code 2305.113, you generally have one year from the date the cause of action accrued — typically when you discovered or should have discovered the injury — to file a medical malpractice lawsuit. An absolute four-year outer limit (statute of repose) runs from the date of the act or omission, regardless of discovery. One important tool: if you send written notice of your intent to sue to the defendant before the one-year period expires, you can get a 180-day extension to file. Exceptions exist for minors and for cases involving foreign objects left inside the body. Given how short the one-year window is, you should consult an attorney immediately if you suspect malpractice.`,
+    question: "What is Ohio's statute of limitations for medical malpractice?",
+    answer:
+      'Under Ohio Revised Code 2305.113, you generally have 1 year from the date the cause of action accrued, usually when you discovered or should have discovered the injury, to file. An absolute 4-year outer limit (statute of repose) runs from the date of the act or omission, regardless of discovery. If you send the defendant written notice of your intent to sue before the 1-year period runs out, you can get a 180-day extension to file. Exceptions exist for minors and for foreign objects left inside the body. The window is short, so talk to an attorney right away if you suspect malpractice.',
   },
   {
-    question: `What is the affidavit of merit requirement in Ohio medical malpractice cases?`,
-    answer: `Ohio Civil Rule 10(D)(2) requires that when you file a medical malpractice complaint, you must attach an affidavit of merit signed by a qualified medical expert. The expert must review the medical records and attest that there is merit to your claim — specifically that the named defendant deviated from the applicable standard of care. Failure to attach the affidavit can result in dismissal of your case. This requirement exists to screen out frivolous claims and means that retaining a qualified expert early in the process is essential. An experienced malpractice attorney will identify and retain the right expert before the complaint is filed.`,
+    question: 'What is the affidavit of merit requirement in Ohio medical malpractice cases?',
+    answer:
+      'Ohio Civil Rule 10(D)(2) requires a medical malpractice complaint to include an affidavit of merit signed by a qualified medical expert. The expert reviews the medical records and attests that the claim has merit, specifically that the named defendant deviated from the standard of care. Without it, the case can be dismissed. The rule exists to screen out frivolous claims, and it means the right expert has to be retained before the complaint is filed.',
   },
   {
-    question: `What are Ohio's damage caps for medical malpractice?`,
-    answer: `Under Ohio Revised Code 2323.43, non-economic damages (pain and suffering, emotional distress, loss of consortium) in medical malpractice cases are capped at the greater of $250,000 or three times the plaintiff's economic damages, with a maximum of $350,000 per plaintiff or $500,000 per occurrence. For catastrophic injuries — defined as permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent functional injury preventing the plaintiff from independently caring for themselves — the cap rises to $500,000 per plaintiff or $1,000,000 per occurrence. Economic damages (medical bills, lost wages, future care costs) are not capped and are fully recoverable.`,
+    question: "What are Ohio's damage caps for medical malpractice?",
+    answer:
+      "Under Ohio Revised Code 2323.43, non-economic damages (pain and suffering, emotional distress, loss of consortium) in malpractice cases are capped at the greater of $250,000 or three times the plaintiff's economic damages, up to $350,000 per plaintiff or $500,000 per occurrence. For catastrophic injuries (permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent functional injury that prevents the plaintiff from independently caring for themselves), the cap rises to $500,000 per plaintiff or $1,000,000 per occurrence. Economic damages (medical bills, lost wages, future care costs) are not capped.",
   },
   {
-    question: `What types of medical errors constitute malpractice?`,
-    answer: `Common medical malpractice claims in Ohio include: misdiagnosis or delayed diagnosis of cancer, heart attack, stroke, or infection; surgical errors such as wrong-site surgery, retained surgical instruments ("never events"), or perforation of organs; medication errors including wrong drug, wrong dose, or dangerous drug interactions; birth injuries such as cerebral palsy or Erb's palsy caused by improper delivery techniques; anesthesia errors causing brain damage or death; and failure to obtain informed consent before a procedure. Hospital systems may be liable for employed physicians under respondeat superior, while independent contractor physicians are individually liable.`,
+    question: 'What types of medical errors constitute malpractice?',
+    answer:
+      'Common claims in Ohio include misdiagnosis or delayed diagnosis of cancer, heart attack, stroke or infection; surgical errors such as wrong-site surgery, retained surgical instruments ("never events") or organ perforation; medication errors including wrong drug, wrong dose or dangerous interactions; birth injuries such as cerebral palsy or Erb\'s palsy from improper delivery; anesthesia errors causing brain damage or death; and failure to obtain informed consent. Hospital systems may be liable for employed physicians under respondeat superior, while independent contractor physicians are individually liable.',
   },
   {
-    question: `How do you prove medical malpractice in Ohio?`,
-    answer: `Proving medical malpractice requires establishing four elements: (1) the defendant owed you a duty of care (a doctor-patient relationship existed); (2) the defendant breached that duty by deviating from the standard of care; (3) the breach caused your injury; and (4) you suffered damages as a result. Because medical standards are technical, Ohio requires expert testimony on the standard of care and breach. You must also obtain your medical records — you have a right to access them under HIPAA. Building a strong malpractice case requires a thorough review of all records, expert consultation, and often independent medical examinations.`,
+    question: 'How do you prove medical malpractice in Ohio?',
+    answer:
+      'You must establish four elements: (1) the defendant owed you a duty of care (a doctor-patient relationship existed); (2) the defendant breached it by deviating from the standard of care; (3) the breach caused your injury; and (4) you suffered damages. Because medical standards are technical, Ohio requires expert testimony on the standard of care and breach. You will also need your medical records, which you have a right to access under HIPAA. A strong case needs a full records review, expert consultation and often independent medical examinations.',
   },
   {
-    question: `What is the standard of care in Ohio medical malpractice?`,
-    answer: `The standard of care is the level of care, skill, and treatment that a reasonably competent healthcare professional with similar training and experience would provide under the same or similar circumstances. It is not perfection — medicine involves judgment and uncertainty. The standard is evaluated within the relevant specialty: a cardiologist is held to the standard of a reasonably competent cardiologist, not a general practitioner. Expert witnesses — typically physicians in the same specialty — testify about what the standard required and how the defendant fell short. Ohio courts apply a statewide standard of care rather than a local community standard.`,
+    question: 'What is the standard of care in Ohio medical malpractice?',
+    answer:
+      'It is the level of care, skill and treatment a reasonably competent healthcare professional with similar training and experience would provide in the same or similar circumstances. It is not perfection, because medicine involves judgment and uncertainty. The standard is set within the specialty: a cardiologist is held to the standard of a reasonably competent cardiologist, not a general practitioner. Expert witnesses, usually physicians in the same specialty, testify about what the standard required and how the defendant fell short. Ohio courts apply a statewide standard of care rather than a local community standard.',
   },
   {
-    question: `How long does a medical malpractice case take in Ohio?`,
-    answer: `Medical malpractice cases in Ohio are typically among the longest personal injury cases to resolve. The process involves obtaining and reviewing extensive medical records, retaining expert witnesses, filing the complaint with the required affidavit of merit, completing discovery (depositions of experts and treating physicians), and often lengthy pretrial motions. Most malpractice cases take two to four years from filing to resolution — either settlement or trial. Cases involving disputed causation or complex medical issues take longer. Early consultation with an attorney is critical given Ohio's short one-year statute of limitations.`,
+    question: 'How long does a medical malpractice case take in Ohio?',
+    answer:
+      "Malpractice cases are among the longest personal injury cases. They involve getting and reviewing extensive medical records, retaining experts, filing the complaint with the affidavit of merit, discovery (depositions of experts and treating physicians) and often long pretrial motions. Most take two to four years from filing to settlement or trial, and longer when causation is disputed or the medicine is complex. With Ohio's 1-year statute of limitations, talk to an attorney early.",
   },
 ];
 
-export default function MedicalMalpracticePage() {
+const RELATED = [
+  { href: '/personal-injury/nursing-home-abuse', title: 'Nursing home abuse', subtitle: 'Elder abuse and neglect in care facilities' },
+  { href: '/personal-injury/catastrophic-injuries', title: 'Catastrophic injuries', subtitle: 'Severe and life-altering injury claims' },
+  { href: '/personal-injury/wrongful-death', title: 'Wrongful death', subtitle: 'Claims against negligent parties for fatal injuries' },
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+];
 
+export default function MedicalMalpracticePage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Medical Malpractice Lawyer"
-        description="When healthcare providers fall below the standard of care, the consequences can be devastating. We hold negligent doctors and hospitals accountable and fight for the full compensation you deserve."
+        title="Medical malpractice claims in Ohio"
+        description="Ohio gives you 1 year to file most medical malpractice claims under ORC 2305.113, and the complaint must include an expert's affidavit of merit."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Medical Malpractice in Ohio: Standards, Caps, and Your Rights
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Medical malpractice occurs when a physician, surgeon, hospital, or other licensed healthcare provider deviates from the accepted standard of care and that deviation causes harm to a patient. Ohio's primary medical malpractice statute is ORC 2305.113, which governs the statute of limitations and notice requirements. Ohio also imposes significant procedural requirements — including the affidavit of merit under Ohio Civil Rule 10(D)(2) — that make medical malpractice litigation among the most technically demanding areas of personal injury law. At Jwayyed Law LLC, we help victims navigate Ohio's complex malpractice framework to pursue the compensation they deserve.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              To succeed in a medical malpractice claim, you must prove that (1) a doctor-patient relationship existed, (2) the provider breached the applicable standard of care, (3) the breach directly caused your injury, and (4) you suffered measurable damages. Because medicine involves complex judgment, Ohio courts require expert testimony on the standard of care and its breach. Expert witnesses must be licensed healthcare professionals in the same specialty as the defendant. This expert requirement is why early attorney involvement is so important — finding and retaining qualified experts takes time, and the one-year statute of limitations under ORC 2305.113 leaves little margin for delay.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio imposes statutory caps on non-economic damages in medical malpractice cases under ORC 2323.43. For most claims, non-economic damages (pain and suffering, emotional distress, loss of consortium) are capped at the greater of $250,000 or three times the plaintiff's economic losses, with a maximum of $350,000 per plaintiff or $500,000 per occurrence. For catastrophic injuries — permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent injury preventing self-care — the cap increases to $500,000 per plaintiff or $1,000,000 per occurrence. Critically, these caps do not limit economic damages: all past and future medical bills, lost income, and care costs remain fully recoverable without limit.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations under ORC 2305.113 is just one year from when the cause of action accrued, with an absolute four-year outer limit. If you send written notice of intent to sue before the one-year period expires, you may obtain a 180-day extension to file. These timelines are unforgiving — missing them permanently bars your claim. Special rules apply for minors and for "foreign object" cases (such as a surgical sponge left inside the body). Consulting an attorney promptly after discovering a potential malpractice injury is essential.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Common medical malpractice claims in Ohio include misdiagnosis and delayed diagnosis of cancer, cardiac events, strokes, and infections; surgical errors and "never events" such as wrong-site surgery or retained instruments; medication errors; birth injuries including cerebral palsy and Erb's palsy caused by negligent delivery; anesthesia errors; and failure to obtain informed consent. Hospitals may be liable for employed physicians under the doctrine of respondeat superior. Independent contractor physicians are individually liable. Understanding who to name as defendants — and why — requires careful review of hospital credentialing records and employment agreements.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Medical Malpractice Cases We Handle
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li>Misdiagnosis and delayed diagnosis (cancer, heart attack, stroke, infection)</li>
-              <li>Surgical errors and "never events" (wrong-site surgery, retained instruments)</li>
-              <li>Medication errors — wrong drug, wrong dose, dangerous interactions</li>
-              <li>Birth injuries: cerebral palsy, Erb's palsy, hypoxic-ischemic encephalopathy</li>
-              <li>Anesthesia errors causing brain injury, cardiac arrest, or death</li>
-              <li>Failure to obtain informed consent before procedures</li>
-              <li>Failure to order appropriate diagnostic tests</li>
-              <li>Emergency room errors and delayed treatment</li>
-            </ul>
+      <KeyFacts
+        facts={[
+          { figure: '1 year', label: 'to file, from when the claim accrued (ORC 2305.113)' },
+          { figure: '4 years', label: 'absolute outer limit from the act or omission' },
+          { figure: '180 days', label: 'extension available by sending notice of intent to sue in time' },
+          { figure: '$350,000', label: 'standard per-plaintiff cap on non-economic damages (ORC 2323.43)' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Why Choose Jwayyed Law LLC
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Medical malpractice cases require meticulous preparation, qualified expert witnesses, and an attorney who understands both Ohio's procedural requirements and the medical facts underlying your claim. At Jwayyed Law LLC, we handle malpractice cases on a contingency fee basis. We work with qualified medical experts, obtain and analyze all relevant records, and pursue the maximum compensation available under Ohio law.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We also handle related matters including{' '}
-              <Link href="/personal-injury/catastrophic-injuries" className="text-sky-deep underline hover:opacity-80">catastrophic injury claims</Link>,{' '}
-              <Link href="/personal-injury/nursing-home-abuse" className="text-sky-deep underline hover:opacity-80">nursing home abuse and neglect</Link>, and other{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury matters</Link> throughout Ohio.
-            </p>
+      <Section
+        title="What counts as medical malpractice"
+        intro={
+          <p>
+            Malpractice is when a physician, surgeon, hospital or other licensed healthcare provider deviates from the accepted standard
+            of care and that deviation harms a patient.
+          </p>
+        }
+      >
+        <p>
+          ORC 2305.113 is Ohio&rsquo;s main malpractice statute and governs the statute of limitations and notice requirements. Ohio
+          also has procedural rules, including the affidavit of merit under Ohio Civil Rule 10(D)(2), that make malpractice one of the
+          most technically demanding areas of personal injury law.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'Diagnosis', body: 'Misdiagnosis and delayed diagnosis (cancer, heart attack, stroke, infection), and failure to order appropriate tests.' },
+            { title: 'Surgery', body: 'Surgical errors and "never events" such as wrong-site surgery and retained instruments.' },
+            { title: 'Medication', body: 'Wrong drug, wrong dose and dangerous interactions.' },
+            { title: 'Birth injuries', body: "Cerebral palsy, Erb's palsy and hypoxic-ischemic encephalopathy from negligent delivery." },
+            { title: 'Anesthesia', body: 'Errors causing brain injury, cardiac arrest or death.' },
+            { title: 'Consent and emergencies', body: 'Failure to obtain informed consent, and emergency room errors and delayed treatment.' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link> to discuss your medical malpractice case.
-            </p>
+      <Section title="Deadlines and damage caps" tone="ice">
+        <FactTable
+          title="Filing deadlines (ORC 2305.113)"
+          rows={[
+            { label: 'Statute of limitations', value: '1 year from when the cause of action accrued, usually when you discovered or should have discovered the injury.' },
+            { label: 'Statute of repose', value: 'An absolute 4-year outer limit from the date of the act or omission.' },
+            { label: 'Notice of intent', value: 'Written notice sent before the 1-year period expires can extend the time to file by 180 days.' },
+            { label: 'Exceptions', value: 'Special rules for minors and "foreign object" cases, such as a surgical sponge left inside the body.' },
+          ]}
+          note="Missing these deadlines permanently bars the claim."
+        />
+        <FactTable
+          title="Non-economic damage caps (ORC 2323.43)"
+          rows={[
+            {
+              label: 'Most claims',
+              value: "The greater of $250,000 or three times the plaintiff's economic losses, up to $350,000 per plaintiff or $500,000 per occurrence.",
+            },
+            {
+              label: 'Catastrophic injuries',
+              value:
+                '$500,000 per plaintiff or $1,000,000 per occurrence, for permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent injury preventing self-care.',
+            },
+            { label: 'Economic damages', value: 'Not capped. Past and future medical bills, lost income and care costs are fully recoverable.' },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Personal Injury" />
+      <Section title="What you have to prove">
+        <PointGrid
+          points={[
+            { title: 'A duty of care', body: 'A doctor-patient relationship existed.' },
+            { title: 'A breach', body: 'The provider deviated from the standard of a reasonably competent provider in the same specialty.' },
+            { title: 'Causation', body: 'The breach directly caused your injury.' },
+            { title: 'Damages', body: 'You suffered measurable damages as a result.' },
+          ]}
+        />
+        <p>
+          Ohio courts require expert testimony on the standard of care and its breach, and the experts must be licensed healthcare
+          professionals in the same specialty as the defendant. Finding and retaining them takes time, and the 1-year deadline leaves
+          little margin.
+        </p>
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/nursing-home-abuse" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Nursing Home Abuse</span>
-                <span className="text-sm text-navy-950/70">Elder abuse and neglect in care facilities</span>
-              </Link>
-              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
-                <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
-              </Link>
-              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Wrongful Death</span>
-                <span className="text-sm text-navy-950/70">Holding negligent parties accountable for fatal injuries</span>
-              </Link>
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="How a malpractice claim moves forward" tone="ice">
+        <Steps
+          steps={[
+            { title: 'Get the records', body: 'Obtain and review all of your medical records. You have a right to them under HIPAA.' },
+            { title: 'Expert review', body: 'A qualified expert in the same specialty reviews the records.' },
+            { title: 'Name the right defendants', body: 'Hospital credentialing records and employment agreements show who is liable: hospitals for employed physicians under respondeat superior, independent contractor physicians individually.' },
+            { title: 'File with an affidavit of merit', body: 'The complaint must include the expert affidavit required by Civil Rule 10(D)(2).' },
+            { title: 'Discovery and resolution', body: 'Depositions of experts and treating physicians, pretrial motions, then settlement or trial. Most cases take two to four years from filing.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on a malpractice claim">
+        <PointGrid
+          points={[
+            { title: 'Works with medical experts', body: 'Qualified experts to review the care and support the affidavit of merit.' },
+            { title: 'Analyzes the records', body: 'Obtains and analyzes all relevant medical records.' },
+            { title: 'Meets the procedural rules', body: "Ohio's deadlines, notice requirements and filing rules." },
+            { title: 'Pursues full compensation', body: 'Every category of damages available under Ohio law.' },
+          ]}
+        />
+        <Callout title="Fees">Jwayyed Law LLC handles malpractice cases on a contingency fee basis.</Callout>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. The firm also
+          handles <Link href="/personal-injury/catastrophic-injuries">catastrophic injury claims</Link>,{' '}
+          <Link href="/personal-injury/nursing-home-abuse">nursing home abuse and neglect</Link> and other{' '}
+          <Link href="/personal-injury">personal injury matters</Link> throughout Ohio.
+        </p>
+      </Section>
+
+      <Section title="Related injury claims" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
+      <LocationsWeServe title="Personal Injury" />
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

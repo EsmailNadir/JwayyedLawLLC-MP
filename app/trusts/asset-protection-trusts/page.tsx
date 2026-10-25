@@ -1,14 +1,15 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Asset Protection Trusts Lawyer in Ohio',
-  description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors.',
+  description:
+    'Ohio Legacy Trusts under ORC Chapter 5816 protect your assets from future creditors while you stay a discretionary beneficiary. Requirements and timing.',
   keywords: [
     'asset protection trust Ohio',
     'Ohio Legacy Trust attorney',
@@ -21,10 +22,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Asset Protection Trusts Lawyer in Ohio | Jwayyed Law LLC',
-    description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Call (614) 285-5482.',
+    description: 'Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/asset-protection-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/trusts/asset-protection-trusts' },
 };
 
@@ -35,104 +36,185 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is the Ohio Legacy Trust and how does it work?`,
-    answer: `The Ohio Legacy Trust (OLT) is Ohio's domestic asset protection trust (DAPT), authorized under ORC Chapter 5816. It is a self-settled irrevocable trust in which the grantor can be a discretionary beneficiary — meaning you can transfer assets into a trust that protects them from future creditors while you remain eligible to receive distributions from that same trust at the trustee's discretion. The trust must be irrevocable, must contain a spendthrift provision prohibiting the beneficiary's creditors from reaching trust assets, and must be governed by Ohio law. A qualified trustee — at least one of whom must be an Ohio resident individual or an Ohio-authorized trust company — must administer the trust. The trustee has sole discretion over distributions and cannot be instructed by the grantor to make a distribution.`,
+    question: 'What is the Ohio Legacy Trust and how does it work?',
+    answer:
+      "The Ohio Legacy Trust (OLT) is Ohio's domestic asset protection trust (DAPT), authorized under ORC Chapter 5816. It is a self-settled irrevocable trust in which you can be a discretionary beneficiary: you transfer assets into a trust that protects them from future creditors and stay eligible for distributions at the trustee's discretion. The trust must be irrevocable, contain a spendthrift provision and be governed by Ohio law. At least one qualified trustee must be an Ohio resident individual or an Ohio-authorized trust company. The trustee has sole discretion over distributions and cannot be instructed by you to make one.",
   },
   {
-    question: `What is the 18-month seasoning period for Ohio Legacy Trusts?`,
-    answer: `Under ORC 5816.05, creditor protection under an Ohio Legacy Trust does not take effect immediately upon transfer. A qualifying transfer must "season" for 18 months (one year and six months) before it is protected from creditors whose claims arose before the transfer. More precisely, the protection applies to claims that arose after the transfer once the seasoning period has elapsed, and to pre-transfer creditors only if the transfer was not a fraudulent conveyance. For maximum protection, an Ohio Legacy Trust should be established and funded well in advance of any known or reasonably foreseeable creditor threat — not as a last-minute response to pending litigation.`,
+    question: 'What is the 18-month seasoning period for Ohio Legacy Trusts?',
+    answer:
+      'Under ORC 5816.05, protection does not start the moment you transfer assets. A qualifying transfer must "season" for 18 months (one year and six months) before it is protected from creditors whose claims arose before the transfer. More precisely, protection applies to claims arising after the transfer once the seasoning period has passed, and to pre-transfer creditors only if the transfer was not a fraudulent conveyance. Set up and fund the trust well before any known or foreseeable creditor threat, not in response to pending litigation.',
   },
   {
-    question: `What are "qualified dispositions" under ORC Chapter 5816?`,
-    answer: `A "qualified disposition" under ORC 5816.02 is a transfer of property to an Ohio Legacy Trust by the settlor, directly or indirectly, that satisfies the statutory requirements: the trust is irrevocable; contains a spendthrift provision; designates at least one qualified trustee; is governed by Ohio law; and is made with the intent to defraud no one. At the time of the transfer, the settlor must also execute a qualified affidavit — a sworn statement confirming, among other things, that the transfer does not render the settlor insolvent, that no pending or threatened litigation exists, and that the assets transferred are not proceeds of any wrongful act. The qualified affidavit is a critical procedural requirement that must be completed contemporaneously with the transfer.`,
+    question: 'What are "qualified dispositions" under ORC Chapter 5816?',
+    answer:
+      'Under ORC 5816.02, a qualified disposition is a transfer of property to an Ohio Legacy Trust by the settlor, directly or indirectly, that meets the statute: the trust is irrevocable, has a spendthrift provision, names at least one qualified trustee, is governed by Ohio law, and the transfer is made with intent to defraud no one. At the time of transfer you must also sign a qualified affidavit, a sworn statement confirming among other things that the transfer does not make you insolvent, that no litigation is pending or threatened, and that the assets are not proceeds of a wrongful act. The affidavit must be completed at the same time as the transfer.',
   },
   {
-    question: `What assets can be transferred into an Ohio Legacy Trust?`,
-    answer: `Ohio places no categorical restriction on the type of assets that can be transferred into an OLT. Common assets include: cash and investment accounts, real estate (by deed), business interests (LLC membership interests, partnership interests, shares), intellectual property, and other personal property. However, practical limitations apply. Real estate subject to a mortgage may require lender consent under a due-on-sale clause. Retirement accounts (IRAs, 401(k)s) cannot be transferred into a trust without triggering immediate taxation — they should be coordinated through beneficiary designations rather than retitling. Transfers made within 30 days of incurring a debt are treated differently than transfers made on a longer time horizon. An experienced attorney should review every asset before transfer.`,
+    question: 'What assets can be transferred into an Ohio Legacy Trust?',
+    answer:
+      'Ohio does not restrict the type of asset. Common ones are cash and investment accounts, real estate (by deed), business interests (LLC membership interests, partnership interests, shares), intellectual property and other personal property. Practical limits apply. Mortgaged real estate may need lender consent under a due-on-sale clause. Retirement accounts (IRAs, 401(k)s) cannot be moved into a trust without immediate taxation, so coordinate them through beneficiary designations instead. Transfers made within 30 days of incurring a debt are treated differently from transfers made with a longer horizon. Have an attorney review every asset before it is transferred.',
   },
   {
-    question: `What are the fraudulent transfer limitations on Ohio Legacy Trusts?`,
-    answer: `An Ohio Legacy Trust does not shield assets from fraudulent transfers. Under Ohio's Uniform Fraudulent Transfer Act (ORC 1336.04), a transfer is fraudulent if made with actual intent to hinder, delay, or defraud any creditor, or if made without receiving reasonably equivalent value at a time when the transferor was insolvent. Creditors who prove a fraudulent conveyance can void the transfer. Ohio Legacy Trusts are designed for prospective planning — protecting assets from creditors whose claims arise in the future — not for sheltering assets from known, present claims. If a lawsuit is already filed or threatened, attempting to fund an OLT may constitute a fraudulent transfer and expose the settlor and attorney to significant liability.`,
+    question: 'What are the fraudulent transfer limitations on Ohio Legacy Trusts?',
+    answer:
+      "An Ohio Legacy Trust does not protect a fraudulent transfer. Under Ohio's Uniform Fraudulent Transfer Act (ORC 1336.04), a transfer is fraudulent if made with actual intent to hinder, delay or defraud a creditor, or made without reasonably equivalent value while the transferor was insolvent. A creditor who proves it can void the transfer. The trust is for claims that arise in the future, not known, present claims. Funding it after a lawsuit is filed or threatened may be a fraudulent transfer and can expose both the settlor and the attorney to significant liability.",
   },
   {
-    question: `How does an Ohio Legacy Trust compare to an LLC for asset protection?`,
-    answer: `Both LLCs and Ohio Legacy Trusts are legitimate asset protection tools, but they work differently. An LLC (limited liability company) protects the LLC's business assets from the personal creditors of its members, and protects personal assets from the business's liabilities — but only when properly structured and maintained. An Ohio Legacy Trust protects assets transferred into the trust from the grantor's personal creditors, with the 18-month seasoning limitation. For many clients, a combined strategy is optimal: business assets held in a properly structured LLC, and excess personal investment assets held in an Ohio Legacy Trust. Neither tool is a guarantee, and both require careful ongoing compliance. Our firm assists clients with both structures as part of a comprehensive asset protection plan.`,
+    question: 'How does an Ohio Legacy Trust compare to an LLC for asset protection?',
+    answer:
+      "Both are legitimate tools and they work differently. An LLC protects the company's assets from its members' personal creditors, and protects personal assets from the business's liabilities, when it is properly structured and maintained. An Ohio Legacy Trust protects the assets transferred into it from your personal creditors, subject to the 18-month seasoning limit. Many clients use both: business assets in a properly structured LLC and excess personal investments in an Ohio Legacy Trust. Neither is a guarantee, and both need ongoing compliance. The firm sets up both structures.",
   },
   {
-    question: `Is an Ohio Legacy Trust appropriate for Medicaid planning?`,
-    answer: `No. An Ohio Legacy Trust is not an appropriate Medicaid planning tool and should not be confused with Medicaid asset protection trusts. For Medicaid planning, an irrevocable Medicaid trust must be structured so that the grantor retains no beneficial interest and has no ability to receive distributions of principal — requirements fundamentally at odds with the Ohio Legacy Trust's defining feature of allowing the grantor to be a discretionary beneficiary. Using an OLT in Medicaid planning would likely result in the trust assets being counted as available resources by Ohio Medicaid. If your goal is Medicaid planning for long-term care, speak with us about a properly structured irrevocable trust or the Medicaid five-year lookback planning strategies.`,
+    question: 'Is an Ohio Legacy Trust appropriate for Medicaid planning?',
+    answer:
+      "No. Do not confuse it with a Medicaid asset protection trust. A Medicaid trust must leave you no beneficial interest and no ability to receive principal, which conflicts with the Legacy Trust's defining feature: that you can be a discretionary beneficiary. Ohio Medicaid would likely count the assets in an OLT as available resources. For long-term care planning, ask about a properly structured irrevocable trust and planning around the Medicaid five-year lookback.",
   },
   {
-    question: `How do I establish an Ohio Legacy Trust with Jwayyed Law LLC?`,
-    answer: `Establishing an Ohio Legacy Trust requires careful planning and precise drafting. The process begins with a comprehensive review of your assets, liabilities, and goals. We then draft the trust document with all statutory requirements — irrevocability, spendthrift provision, Ohio law governing provision, qualified trustee designation — and prepare the qualified affidavit required by ORC 5816.05. We coordinate with you to identify and transfer qualifying assets into the trust, preparing deeds, assignment agreements, and account transfer letters as needed. We also advise on how the trust interacts with your overall estate plan, including your revocable living trust, will, and beneficiary designations. Call our Columbus office at (614) 285-5482 to schedule a consultation.`,
+    question: 'How do I establish an Ohio Legacy Trust with Jwayyed Law LLC?',
+    answer:
+      'The firm starts with a review of your assets, liabilities and goals. It then drafts the trust with every statutory requirement (irrevocability, a spendthrift provision, Ohio governing law, a qualified trustee) and prepares the qualified affidavit required by ORC 5816.05. It works with you to transfer qualifying assets, preparing deeds, assignment agreements and account transfer letters, and advises on how the trust fits your revocable living trust, will and beneficiary designations. Call the Columbus office at (614) 285-5482 to schedule a consultation.',
   },
 ];
 
-export default function AssetProtectionTrustsPage() {
+const RELATED = [
+  { href: '/trusts/irrevocable-trusts', title: 'Irrevocable trusts', subtitle: 'Estate tax planning, Medicaid planning and more' },
+  { href: '/trusts/revocable-living-trusts', title: 'Revocable living trusts', subtitle: 'Probate avoidance and incapacity planning' },
+  { href: '/trusts/spendthrift-trusts', title: 'Spendthrift trusts', subtitle: 'Protecting beneficiaries from their own creditors' },
+  { href: '/trusts/medicaid-asset-protection-trusts', title: 'Medicaid asset protection trusts', subtitle: 'Long-term care planning with the five-year lookback' },
+];
 
+export default function AssetProtectionTrustsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Asset Protection Trusts Lawyer"
-        description="Helping Ohio individuals and business owners establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors and unforeseen liability."
+        title="Asset protection trusts in Ohio"
+        description="An Ohio Legacy Trust under ORC Chapter 5816 shields assets from future creditors while you remain a discretionary beneficiary. Protection starts after an 18-month seasoning period."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Ohio Legacy Trusts: Domestic Asset Protection Under ORC Chapter 5816
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio is one of a growing number of states that authorizes domestic asset protection trusts (DAPTs) — trusts in which the grantor can be a discretionary beneficiary of the very trust that protects assets from the grantor\'s creditors. Ohio\'s version is called the Ohio Legacy Trust (OLT), and it is governed by ORC Chapter 5816, the Ohio Legacy Trust Act. Before Ohio joined this group of states, residents who wanted this type of protection had to use offshore trusts or trusts in states like Nevada or Delaware, often at significant complexity and expense. The Ohio Legacy Trust Act, effective in 2013, brought that option home — allowing Ohioans to establish powerful creditor protection structures under familiar Ohio law, administered by Ohio trustees, with the full benefit of Ohio\'s spendthrift trust provisions under ORC Chapter 5805.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The core concept of an Ohio Legacy Trust is straightforward: you transfer assets into an irrevocable trust, name at least one qualified Ohio trustee to administer it, and include a spendthrift provision that prohibits your creditors from reaching the trust assets. Unlike a traditional irrevocable trust — where the grantor must give up all beneficial interest — an OLT allows you to remain a <em>discretionary</em> beneficiary. The trustee has sole discretion to make or withhold distributions to you; you cannot demand a distribution or direct the trustee. Because you lack the ability to compel distributions, creditors cannot step into your shoes to compel them either. After an 18-month seasoning period under ORC 5816.05, the trust assets are protected from claims that arose after the transfer date.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Legacy Trusts are most appropriate for individuals who have accumulated significant assets and want to protect them against future unforeseen liability — a professional (physician, attorney, contractor, business owner) exposed to malpractice or commercial litigation risk, a real estate investor with multiple properties, or an individual who wants to ensure that a catastrophic judgment or divorce settlement cannot wipe out a lifetime of savings. The planning must be done prospectively and in good faith. The trust cannot be used to shelter assets from existing or reasonably anticipated creditors, and transfers made with intent to hinder, delay, or defraud a creditor remain voidable under Ohio\'s fraudulent transfer law (ORC Chapter 1336).
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Statutory Requirements and the Qualified Affidavit
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              To qualify for protection under ORC Chapter 5816, an Ohio Legacy Trust must satisfy several mandatory requirements. The trust must be <strong>irrevocable</strong> — the grantor cannot retain the right to take assets back. It must contain a <strong>spendthrift provision</strong> that prevents both voluntary and involuntary assignment of the grantor\'s beneficial interest. At least one <strong>qualified trustee</strong> must be either an Ohio resident individual or a trust company authorized to conduct trust business in Ohio — and that trustee must maintain custody of assets, maintain trust records, and prepare accountings. The trust must be expressly governed by <strong>Ohio law</strong>.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Before or simultaneously with each transfer into the trust, the grantor must execute a <strong>qualified affidavit</strong> under ORC 5816.05, swearing that: the transfer does not render the grantor insolvent or unable to pay debts as they come due; the grantor is not about to file for bankruptcy and has not filed within the preceding 5 years; no pending or threatened civil or criminal actions exist against the grantor (with certain exceptions); the transferred assets were not derived from any unlawful activity; and the grantor is not in default on any child support obligation. Failure to execute a proper qualified affidavit can void the statutory protections for that transfer. This is not a form document — it must be tailored to the grantor\'s specific circumstances and executed with the assistance of legal counsel.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '18 months', label: 'seasoning period before a transfer is protected (ORC 5816.05)' },
+          { figure: '2013', label: 'year the Ohio Legacy Trust Act took effect' },
+          { figure: '$145,425', label: 'home equity protected by the Ohio homestead exemption (ORC 2329.66)' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Ohio Legacy Trust vs. Other Asset Protection Strategies
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio residents have several asset protection options, and an Ohio Legacy Trust is one piece of a broader strategy. Retirement accounts (IRAs and 401(k)s) enjoy strong federal and state creditor protection and should be maximized before considering a trust transfer. Ohio homestead exemption protects up to $145,425 in home equity from most creditor claims under ORC 2329.66. A properly structured LLC provides liability protection for business assets and separates personal assets from business risk. Life insurance cash value and annuities enjoy statutory protection under ORC 3911.10 and 3911.14. An Ohio Legacy Trust complements these tools by protecting the investment assets — brokerage accounts, real estate beyond the homestead, business sale proceeds — that do not fit into other protected categories. An experienced attorney can help you map your entire asset picture against these protections and design a coordinated strategy.
-            </p>
+      <Section
+        title="How an Ohio Legacy Trust works"
+        intro={
+          <p>
+            Ohio authorizes domestic asset protection trusts (DAPTs), in which you can be a discretionary beneficiary of the trust that
+            protects your assets from your creditors. Ohio&rsquo;s version is the Ohio Legacy Trust, governed by ORC Chapter 5816.
+          </p>
+        }
+      >
+        <p>
+          Before the Ohio Legacy Trust Act took effect in 2013, Ohioans who wanted this protection had to use offshore trusts or trusts
+          in states like Nevada or Delaware, often with significant complexity and expense. Now the trust can be set up under Ohio
+          law, run by Ohio trustees, with the benefit of Ohio&rsquo;s spendthrift provisions in ORC Chapter 5805.
+        </p>
+        <p>
+          You transfer assets into an irrevocable trust, name at least one qualified Ohio trustee and include a spendthrift
+          provision. A traditional irrevocable trust requires you to give up every beneficial interest; an OLT lets you remain a{' '}
+          <em>discretionary</em> beneficiary. The trustee alone decides whether to make or withhold distributions. You cannot compel
+          one, so your creditors cannot either. After the 18-month seasoning period under ORC 5816.05, the assets are protected from
+          claims that arose after the transfer date.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Trusts" />
+      <Section title="Who an Ohio Legacy Trust is for" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Professionals with liability risk',
+              body: 'Physicians, attorneys, contractors and business owners exposed to malpractice or commercial litigation.',
+            },
+            { title: 'Real estate investors', body: 'Owners of multiple properties.' },
+            {
+              title: 'Anyone guarding savings',
+              body: 'People who want to make sure a catastrophic judgment or divorce settlement cannot wipe out a lifetime of savings.',
+            },
+          ]}
+        />
+        <Callout title="Plan before there is a claim">
+          The trust cannot shelter assets from existing or reasonably anticipated creditors. Transfers made with intent to hinder,
+          delay or defraud a creditor remain voidable under Ohio&rsquo;s fraudulent transfer law (ORC Chapter 1336).
+        </Callout>
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Trusts</span>
-                <span className="text-sm text-navy-950/70">Estate tax planning, Medicaid planning, and more</span>
-              </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
-                <span className="text-sm text-navy-950/70">Probate avoidance and incapacity planning</span>
-              </Link>
-              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Spendthrift Trusts</span>
-                <span className="text-sm text-navy-950/70">Protecting beneficiaries from their own creditors</span>
-              </Link>
-              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Medicaid Asset Protection Trusts</span>
-                <span className="text-sm text-navy-950/70">Long-term care planning with the five-year lookback</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="What the statute requires">
+        <FactTable
+          title="Ohio Legacy Trust requirements under ORC Chapter 5816"
+          rows={[
+            { label: 'Irrevocable', value: 'You cannot keep the right to take assets back.' },
+            { label: 'Spendthrift provision', value: 'Prevents both voluntary and involuntary assignment of your beneficial interest.' },
+            {
+              label: 'Qualified trustee',
+              value: 'At least one must be an Ohio resident individual or a trust company authorized to do trust business in Ohio, and must hold custody of assets, keep trust records and prepare accountings.',
+            },
+            { label: 'Governing law', value: 'The trust must be expressly governed by Ohio law.' },
+            { label: 'Seasoning', value: '18 months before a transfer is protected (ORC 5816.05).' },
+          ]}
+        />
+        <h3>The qualified affidavit</h3>
+        <p>
+          Before or at the same time as each transfer, you sign a qualified affidavit under ORC 5816.05. It swears that:
+        </p>
+        <ul>
+          <li>the transfer does not make you insolvent or unable to pay debts as they come due;</li>
+          <li>you are not about to file for bankruptcy and have not filed within the preceding 5 years;</li>
+          <li>no civil or criminal actions are pending or threatened against you (with certain exceptions);</li>
+          <li>the assets did not come from unlawful activity; and</li>
+          <li>you are not in default on any child support obligation.</li>
+        </ul>
+        <p>
+          A defective affidavit can void the statutory protection for that transfer, so it is tailored to your circumstances and
+          signed with counsel.
+        </p>
+      </Section>
+
+      <Section title="Setting up and funding the trust" tone="ice">
+        <Steps
+          steps={[
+            { title: 'Review', body: 'A review of your assets, liabilities and goals.' },
+            {
+              title: 'Draft',
+              body: 'The trust document with every statutory requirement: irrevocability, a spendthrift provision, Ohio governing law and a qualified trustee.',
+            },
+            { title: 'Sign the qualified affidavit', body: 'Required by ORC 5816.05 with each transfer.' },
+            { title: 'Transfer assets', body: 'Deeds, assignment agreements and account transfer letters as needed.' },
+            { title: 'Coordinate the plan', body: 'Fit the trust to your revocable living trust, will and beneficiary designations.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Other Ohio asset protection tools">
+        <p>An Ohio Legacy Trust is one piece of a wider plan. Map every asset against the protections that already exist.</p>
+        <PointGrid
+          points={[
+            {
+              title: 'Retirement accounts',
+              body: 'IRAs and 401(k)s have strong federal and state creditor protection and should be maximized before a trust transfer.',
+            },
+            { title: 'Homestead exemption', body: 'Protects up to $145,425 in home equity from most creditor claims under ORC 2329.66.' },
+            { title: 'LLCs', body: 'A properly structured LLC protects business assets and separates personal assets from business risk.' },
+            { title: 'Life insurance and annuities', body: 'Cash value and annuities have statutory protection under ORC 3911.10 and 3911.14.' },
+          ]}
+        />
+        <p>
+          The Legacy Trust then covers what fits nowhere else: brokerage accounts, real estate beyond the homestead and business sale
+          proceeds.
+        </p>
+      </Section>
+
+      <LocationsWeServe title="Trusts" />
+
+      <Section title="Related trust pages" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

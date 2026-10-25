@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Wrongful Death Lawyer in Ohio',
-  description: 'Experienced Ohio wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio.',
+  description:
+    'Ohio wrongful death claims under ORC Chapter 2125: who files, the 2-year deadline from the date of death, and the damages families can recover.',
   keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
   openGraph: {
     title: 'Wrongful Death Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Wrongful death claims for families throughout Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/wrongful-death',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/wrongful-death' },
 };
 
@@ -25,187 +28,183 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is wrongful death in Ohio?',
-    answer: 'Wrongful death under Ohio Revised Code Chapter 2125 (current as of 2026) occurs when someone\'s death is caused by another person\'s negligence, recklessness, or intentional misconduct. Wrongful death claims may arise from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse, defective products, and other incidents. Wrongful death claims are filed by the personal representative of the deceased person\'s estate on behalf of surviving family members.',
+    answer:
+      "Under Ohio Revised Code Chapter 2125 (current as of 2026), a wrongful death is a death caused by another person's negligence, recklessness or intentional misconduct. Claims can arise from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse, defective products and other incidents. The claim is filed by the personal representative of the deceased person's estate on behalf of the surviving family.",
   },
   {
     question: 'Who can file a wrongful death claim in Ohio?',
-    answer: 'Under Ohio Revised Code 2125.02, wrongful death claims in Ohio must be filed by the personal representative of the deceased person\'s estate on behalf of surviving family members including spouses, children, parents, and other dependents. The personal representative is typically named in the will or appointed by the probate court. An attorney can help determine who can file and guide you through the process.',
+    answer:
+      "Under Ohio Revised Code 2125.02, the claim must be filed by the personal representative of the deceased person's estate, on behalf of surviving family members including spouses, children, parents and other dependents. The personal representative is usually named in the will or appointed by the probate court. An attorney can work out who can file and take you through the process.",
   },
   {
     question: 'What compensation can I recover from a wrongful death claim?',
-    answer: 'Wrongful death compensation in Ohio may include economic damages (medical expenses, funeral expenses, lost wages, loss of future earnings, loss of services), non-economic damages (loss of consortium, loss of companionship, loss of guidance, mental anguish), and potentially punitive damages for egregious conduct. Compensation depends on the deceased person\'s earning capacity, age, health, and impact on surviving family members.',
+    answer:
+      "Compensation can include economic damages (medical expenses, funeral expenses, lost wages, loss of future earnings and loss of services), non-economic damages (loss of consortium, companionship and guidance, and mental anguish) and possibly punitive damages for egregious conduct. The amount depends on the deceased person's earning capacity, age and health, and on the effect of the death on the surviving family.",
   },
   {
     question: 'What is the statute of limitations for wrongful death claims?',
-    answer: 'Under Ohio Revised Code 2125.02, the statute of limitations for wrongful death claims in Ohio is generally 2 years from the date of death. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately. The statute of limitations may be tolled in some circumstances.',
+    answer:
+      'Under Ohio Revised Code 2125.02, a wrongful death claim generally must be filed within 2 years from the date of death. Missing the deadline bars recovery, so talk to an attorney quickly. The deadline may be tolled in some circumstances.',
   },
   {
     question: 'Do I need a wrongful death attorney?',
-    answer: 'Wrongful death cases are complex and require experienced representation. Wrongful death attorneys understand wrongful death law, can file claims on behalf of estates, handle complex litigation, and maximize compensation for surviving family members. Most attorneys work on a contingency fee basis and offer consultations. Experienced representation is essential to protect your rights and maximize recovery.',
+    answer:
+      'Wrongful death cases are complex. An attorney who knows wrongful death law can file the claim for the estate, handle the litigation and pursue full compensation for the surviving family. Most attorneys work on a contingency fee basis and offer consultations.',
   },
   {
-    question: `Who can bring a wrongful death claim in Ohio?`,
-    answer: `Under ORC 2125.02, an Ohio wrongful death claim must be brought by the personal representative of the deceased person's estate — not directly by surviving family members. The personal representative is typically named in the will; if no will exists, or if no personal representative has been appointed, the probate court will appoint one. The claim is brought on behalf of the surviving beneficiaries who are entitled to share in the recovery, which under ORC 2125.02 includes the surviving spouse, children, and parents of the deceased. Other next of kin or dependents may also qualify. An attorney can help the family navigate the probate process to establish the estate and ensure the claim is properly filed within the statutory deadline.`,
+    question: 'Who can bring a wrongful death claim in Ohio?',
+    answer:
+      "Under ORC 2125.02, the claim must be brought by the personal representative of the deceased person's estate, not directly by family members. The personal representative is usually named in the will. If there is no will, or no personal representative has been appointed, the probate court appoints one. The claim is brought for the surviving beneficiaries entitled to share in the recovery, which under ORC 2125.02 includes the surviving spouse, children and parents. Other next of kin or dependents may also qualify. An attorney can help the family open the estate in probate and file the claim within the deadline.",
   },
   {
-    question: `What is the statute of limitations for wrongful death claims in Ohio?`,
-    answer: `Under ORC 2125.02, the statute of limitations for a wrongful death claim in Ohio is two years from the date of the decedent's death — not from the date of the underlying accident or injury. If the personal representative fails to file the lawsuit within two years of the date of death, the claim is permanently barred and the surviving family members lose their right to compensation. Unlike some personal injury statutes, there is generally no discovery rule extension for wrongful death. Given the complexity of establishing an estate and conducting a thorough investigation, families should contact an attorney as soon as possible after a loved one's death.`,
+    question: 'What is the statute of limitations for wrongful death claims in Ohio?',
+    answer:
+      "Under ORC 2125.02, the deadline is 2 years from the date of the decedent's death, not from the date of the accident or injury. If the personal representative does not file within 2 years of the death, the claim is permanently barred and the family loses the right to compensation. Unlike some personal injury statutes, there is generally no discovery rule extension for wrongful death. Opening an estate and investigating take time, so contact an attorney as soon as you can.",
   },
   {
-    question: `What damages are available in an Ohio wrongful death claim?`,
-    answer: `ORC 2125.02 sets out the damages recoverable in an Ohio wrongful death action. Recoverable damages include: funeral and burial expenses; medical expenses incurred before death; lost support (the economic support the deceased would have provided to beneficiaries); loss of services (household, childcare, and other services the deceased provided); loss of society — meaning the loss of the deceased's companionship, care, assistance, attention, protection, advice, guidance, and education to each beneficiary; and the mental anguish suffered by surviving beneficiaries. Economic damages such as lost support and lost services are calculated based on the deceased's earning history, life expectancy, and the needs of the surviving family. Non-economic damages like loss of society and mental anguish are determined by the jury based on the evidence. An attorney can retain economic and life-care experts to fully document and present all categories of loss.`,
+    question: 'What damages are available in an Ohio wrongful death claim?',
+    answer:
+      "ORC 2125.02 sets out the recoverable damages: funeral and burial expenses; medical expenses incurred before death; lost support (the economic support the deceased would have provided to the beneficiaries); loss of services (household, childcare and other services the deceased provided); loss of society, meaning the loss of the deceased's companionship, care, assistance, attention, protection, advice, guidance and education to each beneficiary; and the mental anguish of the surviving beneficiaries. Lost support and lost services are calculated from the deceased's earning history, life expectancy and the family's needs. The jury decides non-economic damages such as loss of society and mental anguish from the evidence. An attorney can retain economic and life-care experts to document every category of loss.",
   },
 ];
 
-export default function WrongfulDeathPage() {
+const RELATED = [
+  { href: '/personal-injury/catastrophic-injuries', title: 'Catastrophic injuries', subtitle: 'Severe and life-altering injury claims' },
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/truck-accidents', title: 'Truck accidents', subtitle: 'Commercial vehicle and semi-truck collision claims' },
+  { href: '/personal-injury/medical-malpractice', title: 'Medical malpractice', subtitle: 'Healthcare provider negligence claims' },
+];
 
+export default function WrongfulDeathPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Wrongful Death Lawyer"
-        description="Experienced legal representation for wrongful death families seeking compensation. Fighting for the compensation your family deserves."
+        title="Wrongful death claims in Ohio"
+        description="An Ohio wrongful death claim is filed by the personal representative of the estate, and it generally must be filed within 2 years of the date of death."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Wrongful Death Claims in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Wrongful death in Columbus, Cincinnati, Dayton, or throughout Ohio occurs when someone's death is caused by another person's negligence, recklessness, or intentional misconduct. At Jwayyed Law LLC, we provide experienced representation for wrongful death families under Ohio Revised Code Chapter 2125. Our attorney understands wrongful death law and the compensation process necessary to help families recover and hold responsible parties accountable.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Wrongful death claims may arise from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse, defective products, and other incidents. These cases are complex and require experienced representation to navigate the legal process, file claims on behalf of estates, and maximize compensation for surviving family members. Understanding your rights, the legal requirements, and the compensation process is essential for protecting your family's interests and holding responsible parties accountable.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '2 years', label: 'to file, counted from the date of death (ORC 2125.02)' },
+          { figure: 'Chapter 2125', label: 'the Ohio Revised Code chapter that governs wrongful death' },
+          { figure: 'Probate court', label: 'appoints the personal representative who files, if the will names none' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for wrongful death claims in Ohio is 2 years from the date of death under Ohio Revised Code 2125.02. Missing the deadline bars recovery entirely, making it crucial to act quickly. Wrongful death claims must be filed by the personal representative of the deceased person's estate on behalf of surviving family members. An experienced wrongful death attorney can help determine who can file, guide you through the process, and ensure all deadlines are met.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Wrongful Death Claims Process</h3>
+      <Section
+        title="What a wrongful death claim is"
+        intro={
+          <p>
+            A wrongful death claim arises when someone&rsquo;s death is caused by another person&rsquo;s negligence, recklessness or
+            intentional misconduct. Ohio Revised Code Chapter 2125 governs these claims.
+          </p>
+        }
+      >
+        <p>
+          These claims come from car accidents, truck accidents, medical malpractice, workplace accidents, nursing home abuse,
+          defective products and other incidents. The investigation may turn up several responsible parties, including drivers,
+          employers, manufacturers or government entities.
+        </p>
+        <p>
+          Family members do not file the claim themselves. The personal representative of the deceased person&rsquo;s estate files it
+          on behalf of the surviving spouse, children, parents and other dependents.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the wrongful death claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="Deadlines, who files and damages" tone="ice">
+        <FactTable
+          title="Deadline and filing (ORC 2125.02)"
+          rows={[
+            { label: 'Deadline', value: '2 years from the date of death, not from the date of the accident or injury.' },
+            { label: 'Discovery rule', value: 'Generally no discovery rule extension. The deadline may be tolled in some circumstances.' },
+            {
+              label: 'Who files',
+              value:
+                'The personal representative of the estate, usually named in the will. If there is none, the probate court appoints one.',
+            },
+            {
+              label: 'Beneficiaries',
+              value: 'The surviving spouse, children and parents. Other next of kin or dependents may also qualify.',
+            },
+          ]}
+          note="Missing the deadline permanently bars the claim."
+        />
+        <FactTable
+          title="What the family can recover"
+          rows={[
+            {
+              label: 'Economic',
+              value:
+                "Medical expenses before death; funeral and burial expenses; lost wages from the date of injury to the date of death; loss of future earnings and lost support (based on the deceased's earning capacity, age, health and life expectancy); loss of services (household services, childcare and similar); and other financial losses tied to the death.",
+            },
+            {
+              label: 'Non-economic',
+              value:
+                'Loss of consortium (spousal relationship), loss of companionship, loss of guidance and support, loss of society and comfort, and mental anguish and emotional distress. The jury decides these from the evidence.',
+            },
+            {
+              label: 'Punitive',
+              value:
+                'For egregious conduct such as drunk driving, reckless behavior or intentional harm. Rare, and requires clear and convincing evidence of malicious or reckless behavior.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Estate Administration</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Wrongful death claims must be filed by the personal representative of the deceased person's estate. If no personal representative exists, one must be appointed by the probate court. The personal representative is typically named in the will or appointed by the court. An attorney can help determine who can file, guide you through the probate process if necessary, and ensure the estate is properly established to file the claim.
-              </p>
-            </div>
+      <Section title="How a wrongful death claim moves forward">
+        <Steps
+          steps={[
+            {
+              title: 'Estate administration',
+              body: 'The estate is opened and a personal representative is in place to file. If none exists, the probate court appoints one.',
+            },
+            {
+              title: 'Investigation and evidence',
+              body: 'Police reports, medical records, accident reports, witness statements and surveillance footage are gathered and preserved to identify every responsible party.',
+            },
+            {
+              title: 'Filing the claim',
+              body: 'Within 2 years of the date of death. The complaint names every responsible party, alleges the negligence or misconduct, and seeks damages for the family.',
+            },
+            {
+              title: 'Settlement or trial',
+              body: 'Most wrongful death cases settle. Litigation involves discovery (exchanging evidence), depositions, expert testimony and possibly trial.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Investigation and Evidence Gathering</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Thorough investigation is essential to identify all responsible parties and gather evidence. This includes reviewing police reports, medical records, accident reports, witness statements, surveillance footage, and other evidence. An attorney can coordinate investigation, identify all potentially liable parties, and ensure all evidence is properly preserved. This investigation may reveal multiple responsible parties including drivers, employers, manufacturers, or government entities.
-              </p>
-            </div>
+      <Section title="What the firm does on a wrongful death claim" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Guides the estate', body: 'Works out who can file, takes you through probate if needed and makes sure the estate is set up to bring the claim.' },
+            {
+              title: 'Investigates',
+              body: 'Police reports, medical records, accident reports, witness statements and surveillance footage, and identifies every party that may be liable.',
+            },
+            { title: 'Files for the estate', body: 'Brings the claim for the estate and the surviving family, meeting every legal requirement and deadline.' },
+            { title: 'Brings in experts', body: 'Medical, accident reconstruction, economic and life-care experts to establish causation, damages and liability.' },
+            { title: 'Handles the insurers', body: 'All communication and settlement negotiation with the insurance companies.' },
+            { title: 'Litigates', body: 'Discovery, depositions, expert testimony and trial representation if needed.' },
+          ]}
+        />
+        <Callout title="The 2-year deadline runs from the date of death">
+          Opening an estate and investigating both take time. Evidence is easier to preserve early.
+        </Callout>
+        <p>
+          If you lost a loved one because of someone else&rsquo;s negligence, <Link href="/contact">contact Jwayyed Law LLC</Link> to
+          schedule a consultation. See the firm&rsquo;s <Link href="/personal-injury">personal injury practice</Link> or read about{' '}
+          <Link href="/our-law-firm/blog/how-long-sue-after-injury-ohio">Ohio&rsquo;s statute of limitations for injury claims</Link>.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Filing the Wrongful Death Claim</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Wrongful death claims must be filed within 2 years of the date of death. The claim is filed by the personal representative on behalf of surviving family members. The complaint must identify all responsible parties, allege negligence or misconduct, and seek compensation for damages. An attorney can draft and file the complaint, ensure all deadlines are met, and protect your family's interests throughout the process.
-              </p>
-            </div>
+      <Section title="Related injury claims">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Settlement</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most wrongful death cases are resolved through settlement negotiations, but some proceed to trial. Litigation involves discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation. Most cases settle before trial, but preparation for trial strengthens negotiation position.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Wrongful Death Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced wrongful death attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Estate Administration Guidance:</strong> Help determine who can file the claim, guide you through probate if necessary, and ensure the estate is properly established to file the wrongful death claim</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly investigate the incident including reviewing police reports, medical records, accident reports, witness statements, surveillance footage, and identifying all potentially liable parties</li>
-              <li><strong>Estate Representation:</strong> File wrongful death claims on behalf of estates and surviving family members, ensuring all legal requirements are met and deadlines are satisfied</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to maximize compensation for surviving family members, identify all responsible parties, and hold them accountable</li>
-              <li><strong>Expert Consultation:</strong> Consult with medical experts, accident reconstruction experts, economic experts, or other specialists to establish causation, damages, and liability</li>
-              <li><strong>Insurance Negotiation:</strong> Handle all communication with insurance companies, negotiate fair settlements, and protect you from insurance tactics designed to minimize claims</li>
-              <li><strong>Complex Litigation:</strong> Handle complex wrongful death litigation including discovery, depositions, expert testimony, and trial representation if necessary</li>
-              <li><strong>Maximize Recovery:</strong> Work to ensure surviving family members receive full compensation for all damages including medical expenses, funeral expenses, lost wages, loss of future earnings, loss of services, loss of consortium, and other damages</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Compensation Available</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Wrongful death compensation in Ohio may include various types of damages for surviving family members:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Medical expenses (past medical expenses before death)</li>
-                <li>Funeral and burial expenses</li>
-                <li>Lost wages (from date of injury to date of death)</li>
-                <li>Loss of future earnings (based on deceased person's earning capacity, age, health, and life expectancy)</li>
-                <li>Loss of services (household services, childcare, etc.)</li>
-                <li>Other financial losses directly related to the death</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Loss of consortium (spousal relationship)</li>
-                <li>Loss of companionship</li>
-                <li>Loss of guidance and support</li>
-                <li>Mental anguish and emotional distress</li>
-                <li>Loss of society and comfort</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In cases involving egregious conduct such as drunk driving, reckless behavior, or intentional harm, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated wrongful death representation throughout Ohio. We understand that losing a loved one is devastating and that families need compensation and closure. Our attorney works diligently to investigate cases, hold responsible parties accountable, and maximize compensation for surviving family members while providing compassionate representation during this difficult time.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy with compassionate client service. We understand the complexities of wrongful death cases, the emotional toll on families, and the importance of holding responsible parties accountable. This knowledge allows us to develop effective strategies tailored to your specific case while providing the support and guidance your family needs during this difficult time.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have lost a loved one due to someone else&apos;s negligence in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. The statute of limitations is 2 years from the date of death, and early intervention ensures evidence is preserved. Learn more about our <Link href="/personal-injury" className="text-sky-deep underline hover:text-navy-950">personal injury practice</Link> or read about <Link href="/our-law-firm/blog/how-long-sue-after-injury-ohio" className="text-sky-deep underline hover:text-navy-950">Ohio&apos;s statute of limitations for injury claims</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
-            <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
-          </Link>
-          <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-            <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-          </Link>
-          <Link href="/personal-injury/truck-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Truck Accidents</span>
-            <span className="text-sm text-navy-950/70">Commercial vehicle and semi-truck collision claims</span>
-          </Link>
-          <Link href="/personal-injury/medical-malpractice" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-            <span className="jw-serif font-bold text-navy-950 block mb-1">Medical Malpractice</span>
-            <span className="text-sm text-navy-950/70">Healthcare provider negligence claims</span>
-          </Link>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

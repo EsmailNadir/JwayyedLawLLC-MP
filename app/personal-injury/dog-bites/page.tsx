@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Ohio Dog Bite Lawyer',
-  description: 'Ohio dog bite attorney fighting for victims under ORC 955.28 strict liability. Recover medical bills, scarring, lost wages, and pain and suffering.',
+  description:
+    'Ohio dog owners are strictly liable for bites under ORC 955.28. What you can recover, the 2-year deadline and the two defenses owners can raise.',
   keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney', 'ORC 955.28 dog bite claim'],
   openGraph: {
     title: 'Ohio Dog Bite Lawyer | Columbus | Jwayyed Law LLC',
+    description: 'Dog bite claims under Ohio strict liability law, ORC 955.28.',
     url: 'https://www.jjlawohio.com/personal-injury/dog-bites',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/dog-bites' },
 };
 
@@ -25,124 +28,205 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `Does Ohio have strict liability for dog bites?`,
-    answer: `Yes. Under Ohio Revised Code 955.28, dog owners are strictly liable for injuries their dogs cause. This means the owner is liable regardless of whether the dog had any prior history of viciousness or whether the owner knew the dog was dangerous — the so-called "one bite rule" that applies in some states does not protect Ohio dog owners. If the dog bites, scratches, or attacks and causes injury, the owner is responsible. This strict liability standard makes Ohio one of the stronger states for dog bite victims.`,
+    question: 'Does Ohio have strict liability for dog bites?',
+    answer:
+      'Yes. Under Ohio Revised Code 955.28, dog owners are strictly liable for injuries their dogs cause. The owner is liable whether or not the dog had a history of viciousness and whether or not the owner knew it was dangerous. The "one bite rule" used in some states does not protect Ohio dog owners. If the dog bites, scratches or attacks and causes injury, the owner is responsible.',
   },
   {
-    question: `What if I was partially at fault for the dog bite — does provocation matter?`,
-    answer: `Provocation and trespassing are the two main defenses under ORC 955.28. If the victim provoked the dog or was trespassing on private property at the time of the bite, the owner may avoid liability or have it reduced. Ohio follows a comparative fault framework under ORC 2315.33, meaning if you are found partially at fault — for example, you teased the dog — your damages may be reduced by your percentage of fault. If you were lawfully present (on a public sidewalk, visiting as a guest, etc.) and did not provoke the dog, you have a strong strict liability claim.`,
+    question: 'What if I was partially at fault for the dog bite? Does provocation matter?',
+    answer:
+      'Provocation and trespassing are the two main defenses under ORC 955.28. If you provoked the dog or were trespassing on private property when it bit you, the owner may avoid liability or have it reduced. Ohio also applies comparative fault under ORC 2315.33: if you were partly at fault (for example, you teased the dog), your damages may be reduced by your percentage of fault. If you were lawfully present, such as on a public sidewalk or as a guest, and did not provoke the dog, you have a strong strict liability claim.',
   },
   {
-    question: `How long do I have to file a dog bite claim in Ohio?`,
-    answer: `Under Ohio Revised Code 2305.10, the statute of limitations for personal injury claims — including dog bites — is two years from the date of the injury. If you miss this deadline, you permanently lose your right to sue. One important exception: if the victim is a minor child, the two-year clock does not begin running until the child turns 18, so parents have time to act on their child's behalf. Do not wait to consult an attorney — evidence, witness memories, and insurance coverage can all change over time.`,
+    question: 'How long do I have to file a dog bite claim in Ohio?',
+    answer:
+      "Under Ohio Revised Code 2305.10, you have 2 years from the date of the injury to file a personal injury claim, including a dog bite. Miss the deadline and you lose the right to sue. If the victim is a minor, the 2-year clock does not start until the child turns 18, so parents have time to act on the child's behalf. Evidence, witness memories and insurance coverage can all change over time, so do not wait to talk to an attorney.",
   },
   {
-    question: `What damages can I recover after a dog bite in Ohio?`,
-    answer: `Dog bite victims in Ohio can recover both economic and non-economic damages. Economic damages include emergency room and hospital bills, follow-up medical care, plastic or reconstructive surgery for scarring, physical therapy, prescription medications, and lost wages if the injury kept you from work. Non-economic damages include pain and suffering, emotional distress and PTSD, permanent scarring and disfigurement, and loss of enjoyment of life. In cases involving particularly reckless or malicious conduct, punitive damages may also be available.`,
+    question: 'What damages can I recover after a dog bite in Ohio?',
+    answer:
+      'Both economic and non-economic damages. Economic damages include emergency room and hospital bills, follow-up care, plastic or reconstructive surgery for scarring, physical therapy, prescriptions, and lost wages if the injury kept you from work. Non-economic damages include pain and suffering, emotional distress and PTSD, permanent scarring and disfigurement, and loss of enjoyment of life. Where the conduct was particularly reckless or malicious, punitive damages may also be available.',
   },
   {
-    question: `Who pays for dog bite injuries — does the dog owner's homeowner's insurance cover it?`,
-    answer: `In most cases, yes. A dog owner's homeowner's or renter's insurance policy typically covers dog bite liability claims. This means there is often a real source of compensation even if the dog owner does not have substantial personal assets. Your attorney will identify and notify the applicable insurance carrier, preserve the claim, and negotiate a fair settlement. If the dog owner has no insurance, other avenues — such as a direct lawsuit — may be necessary.`,
+    question: "Who pays for dog bite injuries? Does the dog owner's homeowner's insurance cover it?",
+    answer:
+      "In most cases, yes. A dog owner's homeowner's or renter's insurance policy typically covers dog bite liability, so there is often a source of compensation even when the owner has few personal assets. Your attorney will identify and notify the insurance carrier, preserve the claim and negotiate the settlement. If the owner has no insurance, a direct lawsuit or another route may be needed.",
   },
   {
-    question: `What should I do immediately after a dog bite?`,
-    answer: `First, seek medical attention right away — dog bites can cause serious infections including cellulitis and rabies exposure, and prompt treatment is critical. Get the name and contact information of the dog owner and any witnesses. Photograph your injuries and the location of the attack. Report the bite to your local animal control agency. Under ORC 955.261, animal bites in Ohio must be reported to the local health department. Save all medical records and bills. Contact a dog bite attorney before giving any statements to the dog owner's insurance company.`,
+    question: 'What should I do immediately after a dog bite?',
+    answer:
+      "Get medical attention right away: dog bites can cause serious infections, including cellulitis, and rabies exposure. Get the name and contact information of the dog owner and any witnesses. Photograph your injuries and the place of the attack. Report the bite to your local animal control agency; under ORC 955.261, animal bites in Ohio must be reported to the local health department. Save all medical records and bills, and talk to a dog bite attorney before giving any statement to the owner's insurance company.",
   },
   {
-    question: `Do I need to report a dog bite in Ohio?`,
-    answer: `Yes. Ohio Revised Code 955.261 requires that animal bites be reported to the local health department. Animal control authorities may investigate the incident, quarantine the dog to monitor for rabies, and the dog may be designated as a "dangerous dog" under ORC 955.22 or a "vicious dog" under ORC 955.11 if it has a history of attacks. These official records can be valuable evidence in your civil claim. Reporting also protects others in the community from the same dog.`,
+    question: 'Do I need to report a dog bite in Ohio?',
+    answer:
+      'Yes. Ohio Revised Code 955.261 requires animal bites to be reported to the local health department. Animal control may investigate, quarantine the dog to monitor for rabies, and designate it a "dangerous dog" under ORC 955.22 or a "vicious dog" under ORC 955.11 if it has a history of attacks. These official records can be useful evidence in your civil claim, and reporting protects others from the same dog.',
   },
   {
-    question: `Do I need a lawyer for a dog bite case?`,
-    answer: `Having an attorney significantly improves your outcome. Dog bite insurers regularly dispute the severity of injuries, raise provocation defenses, or offer quick lowball settlements before you understand the full extent of your damages — especially for scarring that may require future reconstructive surgery. An experienced attorney documents your injuries, gathers evidence, retains medical experts when needed, and negotiates aggressively on your behalf. At Jwayyed Law LLC, we handle dog bite cases on a contingency fee basis.`,
+    question: 'Do I need a lawyer for a dog bite case?',
+    answer:
+      'Dog bite insurers often dispute how severe the injuries are, raise provocation defenses, or offer quick low settlements before you know the full extent of your damages, especially for scarring that may need future reconstructive surgery. An attorney documents your injuries, gathers evidence, retains medical experts when needed and negotiates for you. Jwayyed Law LLC handles dog bite cases on a contingency fee basis.',
   },
 ];
 
-export default function DogBitesPage() {
+const RELATED = [
+  { href: '/personal-injury/premises-liability', title: 'Premises liability', subtitle: 'Property owner negligence and unsafe conditions' },
+  { href: '/personal-injury/slip-and-fall', title: 'Slip and fall injuries', subtitle: 'Premises liability claims for unsafe conditions' },
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/catastrophic-injuries', title: 'Catastrophic injuries', subtitle: 'Severe and life-altering injury claims' },
+];
 
+export default function DogBitesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Dog Bite Lawyer"
-        description="Ohio's strict liability law holds dog owners accountable regardless of the dog's history. We fight for full compensation for your injuries, scarring, and suffering."
+        title="Dog bite claims in Ohio"
+        description="Under ORC 955.28, an Ohio dog owner is liable for a bite whether or not the dog had ever been aggressive before. You generally have 2 years to file."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Ohio Dog Bite Law: Strict Liability Under ORC 955.28
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio is a strict liability state for dog bites. Under Ohio Revised Code 955.28, a dog owner is liable for any injury, death, or loss to a person or property caused by the dog — regardless of whether the owner had any prior knowledge that the dog was dangerous or had ever acted aggressively before. This is a significant departure from the "one bite rule" followed in some other states, where an owner might escape liability for a first attack. In Ohio, if the dog bites, the owner is responsible. The only defenses are that the victim provoked the dog or was trespassing at the time of the attack. ORC 955.22 authorizes local authorities to designate a dog as a "dangerous dog," and ORC 955.11 provides the definitions governing these designations.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Dog bites cause a wide range of injuries — from minor puncture wounds to life-altering trauma. Common injuries include deep lacerations, puncture wounds, crushing injuries from powerful bites, serious infections (including cellulitis and potential rabies exposure), facial scarring and disfigurement, nerve damage, tendon and ligament injuries, and psychological trauma including PTSD. Children are particularly vulnerable because they are often bitten on the face or neck and may require multiple reconstructive surgeries. When children are victims, parents or guardians may bring claims on their behalf, and the statute of limitations under ORC 2305.10 is tolled until the child reaches age 18.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's comparative fault framework under ORC 2315.33 applies to dog bite claims. If the victim provoked the dog — by hitting, taunting, or threatening it — or was trespassing on private property, the owner may raise those facts as a defense. A court or jury will assess the relative fault of each party, and the victim's damages will be reduced by their percentage of fault. If the victim is found more than 50% at fault, recovery is barred entirely. Most dog bite cases involve victims lawfully present in a public space or as invited guests on private property, meaning these defenses often do not apply.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Damages available in Ohio dog bite cases include all medical expenses — emergency treatment, surgery, hospitalization, follow-up care, physical therapy, and future plastic or reconstructive surgery for permanent scarring. Lost wages and loss of earning capacity are recoverable if the injury prevents you from working. Non-economic damages cover pain and suffering, emotional distress and PTSD, permanent scarring and disfigurement, and loss of enjoyment of life. Dog bite claims are often covered by the dog owner's homeowner's or renter's insurance policy, providing a real source of compensation. The statute of limitations under ORC 2305.10 gives victims two years from the date of the injury to file suit. Acting quickly preserves evidence, witness testimony, and insurance coverage.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              After a dog bite, immediate steps matter: seek medical care right away to treat wounds and assess infection risk, document the dog owner's identity and insurance, photograph your injuries and the scene, and report the bite to animal control and the local health department as required by ORC 955.261. Do not give recorded statements to the dog owner's insurance company before consulting an attorney — insurers will use your words against you.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Dog Bite Claims We Handle
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li>Dog bites causing lacerations, puncture wounds, and crushing injuries</li>
-              <li>Facial bites requiring reconstructive or plastic surgery</li>
-              <li>Dog attacks on children and minors</li>
-              <li>Infections following dog bites (cellulitis, rabies exposure)</li>
-              <li>Nerve damage and permanent loss of function</li>
-              <li>Psychological trauma and PTSD from dog attacks</li>
-              <li>Dog attacks causing permanent disfigurement and scarring</li>
-              <li>Claims against dog owners covered by homeowner's or renter's insurance</li>
-            </ul>
+      <KeyFacts
+        facts={[
+          { figure: 'ORC 955.28', label: 'makes dog owners strictly liable for injuries their dogs cause' },
+          { figure: '2 years', label: 'to file, from the date of the injury (ORC 2305.10)' },
+          { figure: 'Age 18', label: "when the 2-year clock starts for a child's claim" },
+          { figure: '50%', label: 'more fault than this bars recovery (ORC 2315.33)' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Why Choose Jwayyed Law LLC
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we represent dog bite victims throughout Ohio on a contingency fee basis. We understand Ohio's strict liability law, the defenses insurers raise, and how to document and value injuries including long-term scarring and psychological harm. We handle all communications with the dog owner's insurance company so you can focus on your recovery.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We also handle related personal injury matters including{' '}
-              <Link href="/personal-injury/premises-liability" className="text-sky-deep underline hover:opacity-80">premises liability</Link>,{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">motor vehicle accidents</Link>, and other{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury claims</Link> across Ohio.
-            </p>
+      <Section
+        title="How Ohio dog bite law works"
+        tone="ice"
+        intro={
+          <p>
+            Ohio is a strict liability state for dog bites. Under Ohio Revised Code 955.28, a dog owner is liable for any injury, death
+            or loss to a person or property caused by the dog.
+          </p>
+        }
+      >
+        <p>
+          The owner is liable even without any prior knowledge that the dog was dangerous, and even if it had never acted aggressively.
+          Some other states follow a &ldquo;one bite rule&rdquo; that can let an owner escape liability for a first attack. Ohio does
+          not. The only defenses are that the victim provoked the dog or was trespassing at the time.
+        </p>
+        <p>
+          ORC 955.22 authorizes local authorities to designate a dog as a &ldquo;dangerous dog,&rdquo; and ORC 955.11 provides the
+          definitions for those designations.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link> to discuss your dog bite case. Read our article on <Link href="/our-law-firm/blog/dog-bite-laws-ohio-owner-liability" className="text-sky-deep underline hover:text-navy-950">Ohio dog bite laws and owner liability</Link>.
-            </p>
+      <Section title="Deadlines and damages">
+        <FactTable
+          title="Filing deadlines"
+          rows={[
+            { label: 'Adult victims', value: '2 years from the date of the injury, under ORC 2305.10.' },
+            {
+              label: 'Child victims',
+              value: 'Parents or guardians may bring the claim. The statute of limitations is tolled until the child reaches age 18.',
+            },
+            { label: 'Reporting the bite', value: 'Animal bites must be reported to the local health department (ORC 955.261).' },
+          ]}
+        />
+        <FactTable
+          title="What you can recover"
+          rows={[
+            {
+              label: 'Medical costs',
+              value:
+                'Emergency treatment, surgery, hospitalization, follow-up care, physical therapy, and future plastic or reconstructive surgery for permanent scarring.',
+            },
+            { label: 'Lost income', value: 'Lost wages and loss of earning capacity if the injury keeps you from working.' },
+            {
+              label: 'Non-economic',
+              value: 'Pain and suffering, emotional distress and PTSD, permanent scarring and disfigurement, and loss of enjoyment of life.',
+            },
+            { label: 'Punitive', value: 'May be available where the conduct was particularly reckless or malicious.' },
+          ]}
+          note="Dog bite claims are often covered by the owner's homeowner's or renter's insurance policy."
+        />
+      </Section>
 
-            <LocationsWeServe title="Personal Injury" />
+      <Section tone="ice" title="Injuries these claims involve">
+        <p>
+          Dog bites range from puncture wounds to life-altering trauma. Children are especially vulnerable because they are often
+          bitten on the face or neck and may need several reconstructive surgeries.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'Wounds', body: 'Deep lacerations, puncture wounds and crushing injuries from powerful bites.' },
+            { title: 'Facial injuries', body: 'Facial bites that require reconstructive or plastic surgery, and permanent disfigurement and scarring.' },
+            { title: 'Infections', body: 'Serious infections, including cellulitis, and potential rabies exposure.' },
+            { title: 'Lasting damage', body: 'Nerve damage, tendon and ligament injuries, and permanent loss of function.' },
+            { title: 'Attacks on children', body: 'Dog attacks on children and minors, brought by parents or guardians.' },
+            { title: 'Psychological harm', body: 'Psychological trauma, including PTSD, after a dog attack.' },
+          ]}
+        />
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/premises-liability" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Premises Liability</span>
-                <span className="text-sm text-navy-950/70">Property owner negligence and unsafe conditions</span>
-              </Link>
-              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Slip & Fall Injuries</span>
-                <span className="text-sm text-navy-950/70">Premises liability claims for unsafe conditions</span>
-              </Link>
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-              </Link>
-              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
-                <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="What to do after a dog bite">
+        <Steps
+          steps={[
+            { title: 'Get medical care', body: 'Treat the wounds right away and have the infection risk assessed.' },
+            { title: 'Identify the owner', body: "Record the dog owner's identity and insurance, and the contact details of any witnesses." },
+            { title: 'Document it', body: 'Photograph your injuries and the scene. Save all medical records and bills.' },
+            { title: 'Report the bite', body: 'Report it to animal control and the local health department, as ORC 955.261 requires.' },
+            {
+              title: 'Talk to an attorney first',
+              body: "Do not give a recorded statement to the dog owner's insurance company before you do. Insurers will use your words against you.",
+            },
+          ]}
+        />
+      </Section>
+
+      <Section tone="ice" title="Defenses the owner can raise">
+        <PointGrid
+          points={[
+            {
+              title: 'Provocation',
+              body: 'Hitting, taunting or threatening the dog. If proven, the owner may avoid liability or have it reduced.',
+            },
+            { title: 'Trespassing', body: 'Being on private property without permission when the bite happened.' },
+            {
+              title: 'Comparative fault (ORC 2315.33)',
+              body: 'A court or jury weighs each side’s fault, and your damages are reduced by your share. More than 50% at fault bars recovery entirely.',
+            },
+            {
+              title: 'When the defenses do not apply',
+              body: 'Most victims were lawfully in a public space or invited onto private property as guests, so these defenses often fail.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on a dog bite claim">
+        <PointGrid
+          points={[
+            { title: 'Documents and values the injuries', body: 'Including long-term scarring and psychological harm.' },
+            { title: 'Handles the insurer', body: "All communication with the dog owner's insurance company, so you can focus on recovering." },
+            { title: 'Answers the defenses', body: 'Responds to the provocation and severity arguments insurers raise.' },
+            { title: 'Retains experts', body: 'Medical experts when the injuries call for them.' },
+          ]}
+        />
+        <Callout title="Fees">
+          Jwayyed Law LLC represents dog bite victims throughout Ohio on a contingency fee basis.
+        </Callout>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. For more,
+          read <Link href="/our-law-firm/blog/dog-bite-laws-ohio-owner-liability">Ohio dog bite laws and owner liability</Link>.
+        </p>
+      </Section>
+
+      <Section tone="ice" title="Related injury claims">
+        <p>
+          The firm also handles <Link href="/personal-injury/premises-liability">premises liability</Link>,{' '}
+          <Link href="/personal-injury">motor vehicle accidents</Link> and other{' '}
+          <Link href="/personal-injury">personal injury claims</Link> across Ohio.
+        </p>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
+      <LocationsWeServe title="Personal Injury" />
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

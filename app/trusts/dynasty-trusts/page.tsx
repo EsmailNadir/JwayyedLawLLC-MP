@@ -1,14 +1,15 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Dynasty Trusts Lawyer in Ohio',
-  description: 'Ohio dynasty trust attorney helping Columbus, Cincinnati, and Dayton families build perpetual trusts. Ohio abolished the rule against perpetuities in 2012.',
+  description:
+    'Ohio abolished the rule against perpetuities for trusts in 2012, so a dynasty trust can last indefinitely. GST exemption, spendthrift terms and trustees.',
   keywords: [
     'dynasty trusts Columbus OH',
     'dynasty trust attorney Ohio',
@@ -22,9 +23,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Dynasty Trusts Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Perpetual dynasty trusts for Ohio families, built around the federal GST exemption. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/dynasty-trusts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/trusts/dynasty-trusts' },
 };
 
@@ -35,111 +37,173 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is a dynasty trust?`,
-    answer: `A dynasty trust is a long-term irrevocable trust designed to hold and grow family wealth across multiple generations while minimizing estate, gift, and generation-skipping transfer (GST) taxes. Assets placed in a dynasty trust are not included in any beneficiary's taxable estate, so the same dollars can pass from grandchildren to great-grandchildren to great-great-grandchildren without triggering estate tax at each generational level. Ohio is one of the most favorable states in the country for dynasty trusts because it abolished the rule against perpetuities in 2012, allowing dynasty trusts to last indefinitely.`,
+    question: 'What is a dynasty trust?',
+    answer:
+      "A dynasty trust is a long-term irrevocable trust that holds and grows family wealth across several generations while minimizing estate, gift and generation-skipping transfer (GST) taxes. Its assets are not in any beneficiary's taxable estate, so the same dollars can pass from grandchildren to great-grandchildren to great-great-grandchildren without estate tax at each generation. Ohio is one of the most favorable states for dynasty trusts because it abolished the rule against perpetuities in 2012, so these trusts can last indefinitely.",
   },
   {
-    question: `How long can a dynasty trust last in Ohio?`,
-    answer: `In Ohio, a dynasty trust can last indefinitely — there is no mandatory termination date. Ohio abolished the traditional common-law rule against perpetuities for interests in trusts when it amended ORC 5801.04(A)(2) effective in 2012. This means you can create a trust that holds assets in perpetuity, benefiting not just your children and grandchildren but every descendant in your family line. This contrasts with states that still apply the common-law RAP (approximately 90 years) or a version of the Uniform Statutory Rule Against Perpetuities.`,
+    question: 'How long can a dynasty trust last in Ohio?',
+    answer:
+      'Indefinitely. There is no mandatory termination date. Ohio abolished the common-law rule against perpetuities for interests in trusts when it amended ORC 5801.04(A)(2) effective in 2012. A trust can hold assets in perpetuity for every descendant in your family line, not just children and grandchildren. States that still apply the common-law rule (approximately 90 years) or a version of the Uniform Statutory Rule Against Perpetuities do not allow this.',
   },
   {
-    question: `What is the generation-skipping transfer (GST) tax and how does a dynasty trust help?`,
-    answer: `The GST tax is a federal tax imposed on transfers to persons who are more than one generation below you — typically grandchildren or more remote descendants. The GST tax rate equals the highest estate tax rate (currently 40%). Each person has a lifetime GST exemption ($13.61 million in 2024). When you fund a dynasty trust and allocate your GST exemption to it, all future growth inside the trust is shielded from GST tax permanently. A trust funded with $5 million today and growing at 7% annually for 50 years could exceed $150 million — all of which would pass to your descendants free of both estate tax and GST tax if your exemption was properly allocated at funding.`,
+    question: 'What is the generation-skipping transfer (GST) tax and how does a dynasty trust help?',
+    answer:
+      'The GST tax is a federal tax on transfers to people more than one generation below you, usually grandchildren or more remote descendants. Its rate equals the top estate tax rate (currently 40%). Each person has a lifetime GST exemption ($13.61 million in 2024). If you allocate your exemption to a dynasty trust when you fund it, all future growth in the trust is permanently shielded from GST tax. A trust funded with $5 million today and growing at 7% a year for 50 years could exceed $150 million, all of which would pass to your descendants free of estate and GST tax if the exemption was properly allocated at funding.',
   },
   {
-    question: `Who should consider a dynasty trust?`,
-    answer: `Dynasty trusts are most valuable for families with estates likely to exceed the federal estate tax exemption after the scheduled 2025 sunset — projected to fall to approximately $7 million per individual. They also benefit families with younger high-earning professionals, business owners expecting a liquidity event, or anyone who values asset protection and creditor protection for their descendants. A family with $5–10 million or more in net worth and a desire to preserve generational wealth should discuss dynasty trust planning with an Ohio estate attorney.`,
+    question: 'Who should consider a dynasty trust?',
+    answer:
+      'Families whose estates are likely to exceed the federal exemption after the scheduled 2025 sunset, projected to fall to approximately $7 million per individual. Also younger high-earning professionals, business owners expecting a liquidity event, and anyone who wants asset and creditor protection for their descendants. A family with $5 to 10 million or more in net worth that wants to preserve wealth across generations should look at dynasty trust planning.',
   },
   {
-    question: `Who serves as trustee of a dynasty trust, and how does trustee succession work?`,
-    answer: `Trustee selection is critical for a trust designed to last indefinitely. Most dynasty trust clients use a combination of a family member (or trust protector) and an independent corporate trustee. The trust document should include detailed trustee succession provisions — specifying how successor trustees are named if a trustee resigns, dies, or becomes incapacitated. A trust protector (an independent third party with limited powers to modify the trust, change trustees, or update distribution standards) is strongly recommended for any trust expected to last more than one generation.`,
+    question: 'Who serves as trustee of a dynasty trust, and how does trustee succession work?',
+    answer:
+      'For a trust meant to last indefinitely, most clients combine a family member (or trust protector) with an independent corporate trustee. The trust should spell out how successor trustees are named when a trustee resigns, dies or becomes incapacitated. A trust protector, an independent third party with limited powers to modify the trust, change trustees or update distribution standards, is strongly recommended for any trust expected to last more than one generation.',
   },
   {
-    question: `How do distributions work in a dynasty trust?`,
-    answer: `Distribution standards in a dynasty trust are set by the grantor in the trust document. Common approaches include mandatory distributions for health, education, maintenance, and support (HEMS standard); fully discretionary distributions at the trustee's sole discretion; or tiered distributions that increase as beneficiaries demonstrate financial responsibility. Because distributions from the trust are includable in the recipient's income (to the extent of distributable net income), the trustee must also consider each beneficiary's tax bracket when making distribution decisions. Accumulating income inside the trust may result in higher tax at the compressed trust tax rates, so distribution timing matters.`,
+    question: 'How do distributions work in a dynasty trust?',
+    answer:
+      "The grantor sets the standards in the trust document. Common approaches are mandatory distributions for health, education, maintenance and support (HEMS), fully discretionary distributions at the trustee's sole discretion, or tiered distributions that grow as beneficiaries show financial responsibility. Distributions are taxable income to the recipient (to the extent of distributable net income), so the trustee should consider each beneficiary's tax bracket. Income kept in the trust may be taxed more heavily at the compressed trust rates, so timing matters.",
   },
   {
-    question: `Can a dynasty trust be modified or terminated after it is created?`,
-    answer: `Ohio law provides several mechanisms to modify or terminate irrevocable trusts. Under ORC 5804.11, a trustee and all qualified beneficiaries can agree to modify a trust's administrative terms. Under ORC 5804.12, a court can modify a trust if circumstances have changed in a way the grantor did not anticipate. A trust protector clause can also grant a named individual the power to modify certain terms without court involvement. Full termination is generally difficult, which is why the dynasty trust's initial drafting is so important — the trust should contemplate foreseeable family circumstances and include enough flexibility to adapt over generations.`,
+    question: 'Can a dynasty trust be modified or terminated after it is created?',
+    answer:
+      "Ohio law gives several routes. Under ORC 5804.11, the trustee and all qualified beneficiaries can agree to modify the trust's administrative terms. Under ORC 5804.12, a court can modify a trust if circumstances changed in a way the grantor did not anticipate. A trust protector clause can let a named person modify certain terms without going to court. Full termination is generally difficult, so the initial drafting should anticipate foreseeable family changes and build in room to adapt over generations.",
   },
   {
-    question: `How does an Ohio dynasty trust compare to a Delaware dynasty trust?`,
-    answer: `Delaware has long been the leading state for dynasty trusts because of its favorable directed trust statutes and no state income tax on trust income accumulated for non-Delaware beneficiaries. Ohio has largely caught up: it has abolished the RAP, has strong asset protection statutes (including the Ohio Legacy Trust Act under ORC Chapter 5816), and does not impose a state estate tax. Ohio residents typically achieve equivalent results using an Ohio-sited dynasty trust without needing to establish a Delaware entity and hire a Delaware corporate trustee. For very large estates with complex asset protection needs, a multi-state approach may still be advisable — but most Ohio families are well-served by an Ohio dynasty trust.`,
+    question: 'How does an Ohio dynasty trust compare to a Delaware dynasty trust?',
+    answer:
+      'Delaware has long led for dynasty trusts because of its directed trust statutes and no state income tax on trust income accumulated for non-Delaware beneficiaries. Ohio has largely caught up: it abolished the rule against perpetuities, has strong asset protection statutes (including the Ohio Legacy Trust Act, ORC Chapter 5816) and has no state estate tax. Ohio residents can usually get equivalent results with an Ohio-sited trust, without a Delaware entity or Delaware corporate trustee. For very large estates with complex asset protection needs, a multi-state approach may still make sense.',
   },
 ];
 
-export default function DynastyTrustsPage() {
+const RELATED = [
+  { href: '/trusts', title: 'All trust services', subtitle: 'Every type of trust the firm sets up' },
+  { href: '/trusts/irrevocable-trusts', title: 'Irrevocable trusts', subtitle: 'ILITs, GRATs, SLATs and modification options' },
+  { href: '/trusts/spendthrift-trusts', title: 'Spendthrift trusts', subtitle: 'How the creditor protection works' },
+  { href: '/other-services/estate-planning-wills', title: 'Estate planning and wills', subtitle: 'The wider plan a dynasty trust anchors' },
+];
 
+export default function DynastyTrustsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Dynasty Trusts Lawyer"
-        description="Ohio abolished the rule against perpetuities in 2012, allowing perpetual dynasty trusts. Our Columbus attorneys help families preserve multi-generational wealth, allocate GST exemptions, and build trust structures that outlast any generation."
+        title="Dynasty trusts in Ohio"
+        description="Ohio abolished the rule against perpetuities for trusts in 2012, so a dynasty trust here can hold family wealth indefinitely. With your GST exemption allocated, its growth stays free of the 40% GST tax."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Dynasty Trusts in Ohio: Perpetual Wealth Preservation
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A dynasty trust is the most powerful multi-generational estate planning tool available under current federal and Ohio law. By combining Ohio\'s abolishment of the rule against perpetuities, the federal generation-skipping transfer (GST) tax exemption, and robust spendthrift protection under the Ohio Trust Code, a properly structured dynasty trust can keep assets growing inside the trust — shielded from estate taxes, creditors, and divorcing spouses — for every generation of your family in perpetuity. Jwayyed Law LLC counsels families throughout Columbus, Cincinnati, Dayton, and the rest of Ohio on establishing dynasty trusts that serve as the cornerstone of a comprehensive legacy plan.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio eliminated the traditional rule against perpetuities for trusts through an amendment to ORC 5801.04(A)(2), which took effect in 2012. Under the prior common-law rule, a trust interest had to vest within 21 years after the death of a measuring life in being at the trust\'s creation — effectively limiting most trusts to roughly 80–100 years. Ohio\'s repeal of this rule for trusts means an Ohio dynasty trust can hold assets indefinitely, generation after generation, without any mandatory termination date. This puts Ohio among the leading trust-friendly jurisdictions in the United States alongside Delaware, South Dakota, and Nevada.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The federal GST tax exemption makes dynasty trusts work from a tax perspective. In 2024, each individual has a $13.61 million GST exemption (indexed for inflation). When you fund a dynasty trust and your estate planning attorney properly allocates your GST exemption to the trust at the time of funding, the entire trust — including all future appreciation and income — is permanently exempt from the 40% GST tax. Assets transferred to the trust are also removed from your taxable estate for federal estate tax purposes. For a family with $10 million or more in wealth, the compounding of tax-free growth across multiple generations can be transformational.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '2012', label: 'year Ohio abolished the rule against perpetuities for trusts' },
+          { figure: '40%', label: 'federal GST tax rate, equal to the top estate tax rate' },
+          { figure: '$13.61 million', label: 'lifetime GST exemption per individual in 2024' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Asset Protection, Spendthrift Provisions, and Beneficiary Protections
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              One of the most important non-tax benefits of a dynasty trust is creditor and divorce protection for beneficiaries across all generations. Ohio\'s spendthrift trust provisions under ORC 5805.01 prevent a beneficiary from voluntarily assigning their interest in the trust and prevent creditors from reaching trust assets before they are distributed. As long as assets remain inside the trust, they are generally beyond the reach of a beneficiary\'s creditors — whether those creditors are credit card companies, judgment creditors from litigation, or a divorcing spouse seeking to equitably divide marital property.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Distribution standards in a dynasty trust are set by the grantor in the trust document and enforced by the trustee. A well-drafted dynasty trust uses the Health, Education, Maintenance, and Support (HEMS) standard as a minimum baseline but may layer additional discretionary standards, incentive provisions (such as distributions matched to earned income), or milestone distributions (such as age-based percentages). The goal is to provide meaningful financial support to beneficiaries while preserving the bulk of the trust principal for future generations.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For dynasty trusts expected to last generations, we strongly recommend including a <strong>trust protector</strong> — an independent third party with limited but meaningful powers. A trust protector can remove and replace trustees, modify administrative or distributive provisions in response to changes in law or family circumstances, add or remove beneficiaries in specified circumstances, and convert the trust between Ohio and another state\'s law if that becomes advantageous. Trust protectors provide the flexibility that keeps a dynasty trust functional across the decades and generations it is designed to serve.
-            </p>
+      <Section
+        title="What a dynasty trust does"
+        intro={
+          <p>
+            A dynasty trust combines three things: Ohio&rsquo;s repeal of the rule against perpetuities, the federal GST tax
+            exemption and spendthrift protection under the Ohio Trust Code.
+          </p>
+        }
+      >
+        <p>
+          Together they let assets keep growing inside the trust, out of reach of estate taxes, creditors and divorcing spouses, for
+          every generation of your family. Jwayyed Law LLC advises families in Columbus, Cincinnati, Dayton and across Ohio on setting
+          up dynasty trusts.
+        </p>
+        <p>
+          Ohio eliminated the rule against perpetuities for trusts through an amendment to ORC 5801.04(A)(2) that took effect in 2012.
+          Under the old common-law rule, a trust interest had to vest within 21 years after the death of a measuring life in being when
+          the trust was created, which limited most trusts to roughly 80 to 100 years. That puts Ohio among the trust-friendly
+          jurisdictions alongside Delaware, South Dakota and Nevada.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Funding a Dynasty Trust: Assets, Timing, and Trustee Succession
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Dynasty trusts are typically funded with gifts during life, transfers at death, or a combination. Because the trust is irrevocable, assets transferred to it are no longer yours — which means no estate tax inclusion and no creditor exposure. Common funding strategies include outright gifts up to the annual exclusion ($18,000 per beneficiary in 2024), gifts using the lifetime exemption ($13.61 million in 2024), or life insurance owned by the trust (an Irrevocable Life Insurance Trust structure). When the federal exemption is high, as it is now, locking in that exemption by funding a dynasty trust before the scheduled 2025 sunset is a critical planning consideration for high-net-worth Ohio families.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Trustee succession planning is essential for a perpetual trust. The trust document should clearly specify the order of succession, the process for naming a new trustee when a trustee resigns or dies, and whether beneficiaries or a trust protector have the authority to change trustees. Many dynasty trust clients begin with a family member as individual trustee and a bank or trust company as co-trustee, then transition to full corporate trustee management as the trust grows and the founding generation passes. Ohio has numerous qualified corporate trust companies that can serve as professional dynasty trust trustees.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Ohio\'s favorable trust laws, combined with the federal GST exemption and the current historically high estate tax exemption, make this an exceptional moment to establish a dynasty trust. Whether you are a business owner planning for a sale, a professional with a growing investment portfolio, or a family that has already accumulated significant wealth, Jwayyed Law LLC can help you design a dynasty trust that will serve your family for generations to come. Call us at (614) 285-5482 to schedule a consultation.
-            </p>
+      <Section title="The GST exemption and federal tax figures" tone="ice">
+        <p>
+          The GST exemption is what makes the tax side work. If your attorney allocates your exemption to the trust when you fund it,
+          the whole trust, including all future appreciation and income, is permanently exempt from GST tax. The assets also leave
+          your taxable estate.
+        </p>
+        <FactTable
+          title="Federal figures for dynasty trust planning"
+          rows={[
+            { label: 'GST tax rate', value: '40%, equal to the highest estate tax rate.' },
+            { label: 'GST exemption, 2024', value: '$13.61 million per individual (indexed for inflation).' },
+            { label: 'Lifetime gift exemption, 2024', value: '$13.61 million.' },
+            { label: 'Annual exclusion, 2024', value: '$18,000 per beneficiary.' },
+            { label: 'Scheduled sunset', value: 'The exemption is projected to fall to approximately $7 million per individual after 2025.' },
+            {
+              label: 'Growth example',
+              value: '$5 million growing at 7% a year for 50 years could exceed $150 million, passing free of estate and GST tax if the exemption was properly allocated.',
+            },
+          ]}
+          note="Families with $10 million or more in wealth see the largest effect from tax-free compounding across generations."
+        />
+      </Section>
 
-            <LocationsWeServe title="Dynasty Trusts" />
+      <Section title="Funding the trust">
+        <Steps
+          steps={[
+            { title: 'Draft the trust', body: 'Set the distribution standards, the trustee line and a trust protector.' },
+            {
+              title: 'Choose the funding',
+              body: 'Gifts during life, transfers at death, or both: annual exclusion gifts ($18,000 per beneficiary in 2024), gifts using the lifetime exemption ($13.61 million in 2024), or life insurance owned by the trust in an ILIT structure.',
+            },
+            { title: 'Allocate your GST exemption', body: 'At the time of funding, so the entire trust and its future growth are exempt.' },
+            {
+              title: 'Plan trustee succession',
+              body: 'The order of succession, how a new trustee is named when one resigns or dies, and whether beneficiaries or a trust protector can change trustees.',
+            },
+          ]}
+        />
+        <p>
+          Once assets are in the irrevocable trust they are no longer yours, so they are out of your estate and away from your
+          creditors. With the exemption high, funding before the scheduled 2025 sunset was a central planning question for
+          high-net-worth Ohio families. Many clients start with a family member as trustee and a bank or trust company as co-trustee,
+          then move to full corporate management as the trust grows and the founding generation passes. Ohio has many qualified
+          corporate trust companies that can serve.
+        </p>
+      </Section>
 
-            <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                All Trust Services
-              </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Irrevocable Trusts
-              </Link>
-              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Spendthrift Trusts
-              </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
-                Estate Planning &amp; Wills
-              </Link>
-            </div>
+      <Section title="Protecting beneficiaries across generations" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Spendthrift protection',
+              body: 'Under ORC 5805.01 a beneficiary cannot assign their interest and creditors cannot reach assets before distribution. That covers credit card companies, judgment creditors and a divorcing spouse seeking to divide marital property.',
+            },
+            {
+              title: 'Distribution standards',
+              body: 'A HEMS baseline, with optional discretionary standards, incentive terms (such as distributions matched to earned income) or milestone distributions (such as age-based percentages). The aim is real support while preserving most of the principal.',
+            },
+            {
+              title: 'Trust protector',
+              body: 'An independent third party who can remove and replace trustees, change administrative or distribution terms when the law or the family changes, add or remove beneficiaries in set circumstances, and move the trust between Ohio and another state’s law.',
+            },
+            {
+              title: 'Who it suits',
+              body: 'Business owners planning a sale, professionals with growing investment portfolios, and families that have already built significant wealth.',
+            },
+          ]}
+        />
+        <Callout title="Recommended for any multi-generation trust">
+          The firm strongly recommends a trust protector for dynasty trusts expected to last generations. Call (614) 285-5482 to
+          schedule a consultation.
+        </Callout>
+      </Section>
 
-          </div>
-        </div>
-      </section>
+      <LocationsWeServe title="Dynasty Trusts" />
+
+      <Section title="Related trust pages" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

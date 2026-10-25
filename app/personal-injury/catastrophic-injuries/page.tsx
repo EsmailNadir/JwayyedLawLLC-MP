@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Ohio Catastrophic Injury Lawyer',
-  description: 'Ohio catastrophic injury attorney for TBI, spinal cord injury, paralysis, and severe burns. ORC 2323.43 elevated damage caps, life care planning.',
+  description:
+    'Catastrophic injury claims in Ohio for TBI, spinal cord injury, paralysis and severe burns: the ORC 2323.43 damage caps, life care plans and deadlines.',
   keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'TBI attorney Ohio', 'Franklin County catastrophic injury attorney'],
   openGraph: {
     title: 'Ohio Catastrophic Injury Lawyer | Columbus | Jwayyed Law LLC',
+    description: 'Claims for brain injury, spinal cord injury, paralysis, burns and other catastrophic injuries in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/catastrophic-injuries',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/personal-injury/catastrophic-injuries' },
 };
 
@@ -25,124 +28,188 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is a catastrophic injury under Ohio law?`,
-    answer: `Ohio Revised Code 2323.43 defines catastrophic injuries — for purposes of elevated non-economic damage caps — as injuries involving permanent and substantial physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent functional injury that prevents the plaintiff from independently caring for themselves and performing life-sustaining activities. Common catastrophic injuries include traumatic brain injury (TBI), spinal cord injury and paralysis (paraplegia and quadriplegia), severe burns over large body areas, limb amputations, multiple severe fractures with lasting disability, severe facial disfigurement, and permanent loss of sight or hearing. These injuries require a fundamentally different approach to damages than typical personal injury claims.`,
+    question: 'What is a catastrophic injury under Ohio law?',
+    answer:
+      'For the purpose of its higher non-economic damage caps, Ohio Revised Code 2323.43 treats as catastrophic an injury involving permanent and substantial physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent functional injury that prevents the plaintiff from independently caring for themselves and performing life-sustaining activities. Common examples are traumatic brain injury (TBI), spinal cord injury and paralysis (paraplegia and quadriplegia), severe burns over large areas of the body, limb amputations, multiple severe fractures with lasting disability, severe facial disfigurement, and permanent loss of sight or hearing. Damages in these cases are built very differently from a typical injury claim.',
   },
   {
-    question: `What are Ohio's damage caps for catastrophic injuries under ORC 2323.43?`,
-    answer: `Ohio Revised Code 2323.43 limits non-economic damages (pain and suffering, emotional distress, loss of consortium) in most tort cases to the greater of $250,000 or three times economic damages, with a maximum of $350,000 per plaintiff or $500,000 per occurrence. However, when the injury qualifies as catastrophic — permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or permanent inability to care for oneself — the cap rises significantly to $500,000 per plaintiff or $1,000,000 per occurrence. Economic damages (medical bills, future care costs, lost earnings, home modifications, assistive devices) are never capped and are fully recoverable. In medical malpractice cases involving catastrophic injuries, the same elevated caps apply under ORC 2323.43.`,
+    question: "What are Ohio's damage caps for catastrophic injuries under ORC 2323.43?",
+    answer:
+      'Ohio Revised Code 2323.43 limits non-economic damages (pain and suffering, emotional distress, loss of consortium) in most tort cases to the greater of $250,000 or three times economic damages, up to $350,000 per plaintiff or $500,000 per occurrence. When the injury qualifies as catastrophic (permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or permanent inability to care for oneself), the cap rises to $500,000 per plaintiff or $1,000,000 per occurrence. Economic damages (medical bills, future care costs, lost earnings, home modifications, assistive devices) are never capped. In medical malpractice cases involving catastrophic injuries, the same higher caps apply under ORC 2323.43.',
   },
   {
-    question: `What is a life care plan and why is it important in a catastrophic injury case?`,
-    answer: `A life care plan is a comprehensive document prepared by a certified life care planner — typically a nurse or rehabilitation specialist with specialized training — that projects all of the future medical, therapeutic, and personal care needs of a catastrophically injured person over their expected lifetime. It itemizes costs for future surgeries and hospitalizations, physician visits and specialist care, physical and occupational therapy, medications, durable medical equipment (wheelchairs, prosthetics, assistive technology), home health aides and personal care attendants, home modifications (ramps, lifts, accessible bathrooms), and transportation. In litigation, the life care plan is the foundation for the future damages claim — without it, the full scope of future economic losses cannot be presented to a jury or conveyed to an insurance adjuster. Life care plans are essential in every catastrophic injury case.`,
+    question: 'What is a life care plan and why is it important in a catastrophic injury case?',
+    answer:
+      'A life care plan is prepared by a certified life care planner, usually a nurse or rehabilitation specialist with specialized training. It projects every future medical, therapy and personal care need over the injured person\'s expected lifetime and itemizes the cost: future surgeries and hospital stays, physician and specialist visits, physical and occupational therapy, medications, durable medical equipment (wheelchairs, prosthetics, assistive technology), home health aides and personal care attendants, home modifications (ramps, lifts, accessible bathrooms) and transportation. It is the foundation of the future damages claim. Without it, the full scope of future economic losses cannot be shown to a jury or an adjuster.',
   },
   {
-    question: `How are future damages calculated in a catastrophic injury case?`,
-    answer: `Future damages in catastrophic injury cases are calculated by combining projections from multiple expert witnesses. A life care planner establishes the projected costs and duration of all future care needs. An economist then calculates the present value of those future costs — because a lump sum payment today that will be invested must account for inflation and the time value of money. A vocational rehabilitation expert assesses how the injury has affected the plaintiff's ability to work and earn income, projecting lifetime lost earnings. Medical experts testify about future surgeries, complications, and life expectancy impacts. Bringing together all of these experts and coordinating their opinions into a coherent, compelling damages presentation is one of the most important skills in catastrophic injury litigation.`,
+    question: 'How are future damages calculated in a catastrophic injury case?',
+    answer:
+      "Several experts contribute. A life care planner sets the projected cost and duration of all future care. An economist calculates the present value of those costs, accounting for inflation and the time value of money, since a lump sum paid today will be invested. A vocational rehabilitation expert assesses how the injury affects the ability to work and projects lifetime lost earnings. Medical experts testify about future surgeries, complications and effects on life expectancy. Their opinions have to be coordinated into a single, consistent damages presentation.",
   },
   {
-    question: `What expert witnesses are needed for a catastrophic injury case?`,
-    answer: `Catastrophic injury cases typically require a team of expert witnesses: (1) treating and independent medical experts in the relevant specialties (neurology, orthopedics, rehabilitation medicine, physiatry) to testify about the injury, its permanence, and future medical needs; (2) a certified life care planner to project all future care costs; (3) an economist to calculate the present value of future losses and lost earning capacity; (4) a vocational rehabilitation expert to assess employability and wage loss; and (5) liability experts depending on the type of case (accident reconstruction experts, engineering experts, medical experts for malpractice). Building and coordinating this expert team, obtaining qualified witnesses who can withstand cross-examination, and presenting their testimony effectively is a hallmark of an experienced catastrophic injury attorney.`,
+    question: 'What expert witnesses are needed for a catastrophic injury case?',
+    answer:
+      'Usually a team: (1) treating and independent medical experts in the relevant specialties (neurology, orthopedics, rehabilitation medicine, physiatry) on the injury, its permanence and future medical needs; (2) a certified life care planner to project future care costs; (3) an economist to calculate the present value of future losses and lost earning capacity; (4) a vocational rehabilitation expert on employability and wage loss; and (5) liability experts suited to the case, such as accident reconstruction, engineering or, in malpractice cases, medical experts. The experts must be qualified and able to hold up on cross-examination.',
   },
   {
-    question: `How long does a catastrophic injury case take to resolve in Ohio?`,
-    answer: `Catastrophic injury cases in Ohio typically take two to five years to resolve — and sometimes longer for the most complex cases. Several factors drive this timeline: the need to fully understand the long-term prognosis before settling (you should not settle until your medical condition has stabilized and your future needs are fully understood); the time required to retain and prepare multiple expert witnesses; the breadth of discovery in cases with large damages; and extended litigation over liability and causation. Structured settlements — where a portion of the award is paid in future periodic payments rather than a lump sum — are commonly used in catastrophic injury cases and require additional negotiation and court approval in some circumstances. Rushing to settle before the full extent of your damages is understood can permanently compromise your recovery.`,
+    question: 'How long does a catastrophic injury case take to resolve in Ohio?',
+    answer:
+      'Typically two to five years, and sometimes longer for the most complex cases. The timeline is driven by the need to understand the long-term prognosis before settling (you should not settle until your condition has stabilized and your future needs are clear), the time it takes to retain and prepare several experts, broad discovery in high-damages cases, and extended fights over liability and causation. Structured settlements, which pay part of the award in future periodic payments instead of a lump sum, are common in these cases and require more negotiation and, in some circumstances, court approval. Settling before the full extent of your damages is known can permanently reduce your recovery.',
   },
   {
-    question: `What is Ohio's statute of limitations for catastrophic injury cases?`,
-    answer: `Under Ohio Revised Code 2305.10, the general statute of limitations for personal injury claims in Ohio — including catastrophic injury cases — is two years from the date of the injury. The discovery rule may apply when the full extent of a latent injury is not known on the date of the incident, extending the limitations period from the date the injury was or reasonably should have been discovered. For catastrophic injuries arising from medical malpractice, ORC 2305.113's one-year statute of limitations applies instead. For injuries caused by a political subdivision of Ohio (a city, county, or school district), the political subdivision immunity statute under ORC Chapter 2744 imposes different rules and may require advance written notice. Given how high the stakes are in catastrophic injury cases, consulting an attorney as early as possible is essential.`,
+    question: "What is Ohio's statute of limitations for catastrophic injury cases?",
+    answer:
+      'Under Ohio Revised Code 2305.10, the general deadline for personal injury claims, including catastrophic injuries, is 2 years from the date of the injury. The discovery rule may apply when the full extent of a latent injury is not known on the date of the incident, so the period runs from when the injury was or reasonably should have been discovered. For catastrophic injuries from medical malpractice, the 1-year statute of limitations in ORC 2305.113 applies instead. For injuries caused by an Ohio political subdivision (a city, county or school district), the immunity statute in ORC Chapter 2744 sets different rules and may require advance written notice. With this much at stake, talk to an attorney early.',
   },
   {
-    question: `Can I recover damages from a government entity that caused my catastrophic injury in Ohio?`,
-    answer: `Yes, but Ohio's Political Subdivision Tort Liability Act under ORC Chapter 2744 creates significant hurdles. Political subdivisions (cities, counties, townships, school districts) are generally immune from civil liability unless the injury falls within one of the statutory exceptions — such as the operation or maintenance of a motor vehicle, the proprietary functions of the subdivision, or the negligent performance of a governmental function where immunity has been waived. The rules are complex: the type of activity (governmental vs. proprietary), the specific nature of the claim, and whether individual employees acted with malice or in bad faith all affect liability. Claims against state agencies (as opposed to political subdivisions) must be brought in the Ohio Court of Claims. If you were seriously injured by the negligence of a government entity, an attorney must evaluate which immunity exceptions apply before any deadline passes.`,
+    question: 'Can I recover damages from a government entity that caused my catastrophic injury in Ohio?',
+    answer:
+      "Yes, but Ohio's Political Subdivision Tort Liability Act, ORC Chapter 2744, creates real hurdles. Political subdivisions (cities, counties, townships, school districts) are generally immune unless the injury falls within a statutory exception, such as the operation or maintenance of a motor vehicle, the subdivision's proprietary functions, or the negligent performance of a governmental function where immunity has been waived. Whether the activity was governmental or proprietary, the nature of the claim, and whether individual employees acted with malice or in bad faith all affect liability. Claims against state agencies (as opposed to political subdivisions) must be brought in the Ohio Court of Claims. An attorney needs to work out which exceptions apply before any deadline passes.",
   },
 ];
 
-export default function CatastrophicInjuriesPage() {
+const RELATED = [
+  { href: '/personal-injury/car-accidents', title: 'Car accidents', subtitle: 'Motor vehicle collision claims throughout Ohio' },
+  { href: '/personal-injury/truck-accidents', title: 'Truck accidents', subtitle: 'Commercial vehicle and semi-truck collision claims' },
+  { href: '/personal-injury/wrongful-death', title: 'Wrongful death', subtitle: 'Claims against negligent parties for fatal injuries' },
+  { href: '/personal-injury/workplace-injuries', title: 'Workplace injuries', subtitle: "On-the-job injuries and workers' compensation" },
+];
 
+export default function CatastrophicInjuriesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Catastrophic Injury Lawyer"
-        description="Traumatic brain injury, spinal cord injury, paralysis, and severe burns demand a comprehensive legal strategy. We fight for the lifetime compensation catastrophically injured Ohioans need."
+        title="Catastrophic injury claims in Ohio"
+        description="Brain injury, spinal cord injury, paralysis and severe burns can need decades of care. Economic damages are never capped, and the non-economic cap for a catastrophic injury rises to $500,000 per plaintiff."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Catastrophic Injury Claims in Ohio: Damages, Experts, and Long-Term Recovery
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Catastrophic injuries are life-altering events. A traumatic brain injury, spinal cord injury resulting in paralysis, severe burn injury, amputation, or other permanent disabling condition changes every aspect of a person's life — and requires decades of ongoing medical care, rehabilitation, and personal support. Ohio law recognizes the elevated nature of these injuries through ORC 2323.43, which imposes a higher non-economic damages cap for claims involving permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent inability to independently care for oneself. At Jwayyed Law LLC, we approach catastrophic injury cases with the thoroughness and resources these high-stakes claims demand.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Establishing the full measure of damages in a catastrophic injury case requires a team of expert witnesses working together to paint a complete picture of the plaintiff's past and future losses. A certified life care planner develops a comprehensive projection of all future care needs — from surgeries and hospitalizations to home health aides, assistive technology, and home modifications. An economist translates those projected costs into present value, accounting for inflation and investment returns. A vocational rehabilitation expert quantifies the lifetime impact on earning capacity. Medical specialists testify about the permanence of the injury, expected complications, and life expectancy effects. Without this expert foundation, no jury or adjuster can accurately value a catastrophic injury case, and the victim risks being dramatically undercompensated.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's non-economic damage caps under ORC 2323.43 apply to catastrophic injury claims with a higher ceiling than standard tort claims. For injuries qualifying as catastrophic — permanent deformity, loss of limb use, organ system loss, or permanent inability to self-care — non-economic damages are capped at $500,000 per plaintiff or $1,000,000 per occurrence, compared to the standard $350,000/$500,000 cap. Critically, economic damages are never capped. Future medical expenses, future lost earnings, costs of personal care attendants, home modifications, prosthetics, wheelchairs, and other long-term needs are all fully recoverable without limit. This makes the thoroughness of the life care plan and economic analysis decisive to the overall value of the case.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Structured settlements — where a portion of the recovery is paid in future periodic installments rather than as a lump sum — are common in catastrophic injury cases. They can provide tax advantages, protect against the risk of depleting a large award over a lifetime of care, and be structured to match anticipated future expense milestones (such as future surgeries or the transition from parental care to residential placement). Structured settlements require careful negotiation and involve life insurance companies issuing annuity policies. An attorney experienced in catastrophic injury cases can guide you through the structured settlement analysis to ensure the structure meets your actual long-term needs.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Resolving liens is a critical step at the end of every catastrophic injury case. Medicare, Medicaid, private health insurers, and Ohio BWC (in workers' comp cases) all have a right to be repaid from the personal injury settlement for benefits they paid related to the injury. These liens can be substantial in catastrophic injury cases — Medicare may have paid hundreds of thousands in medical bills. Failing to address these liens can result in legal liability for the plaintiff and attorney. Negotiating lien reductions — particularly Medicare liens governed by federal statute — requires specific expertise and can significantly increase the net recovery available to the injured person.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Types of Catastrophic Injuries We Handle
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li>Traumatic brain injury (TBI) — mild, moderate, and severe; diffuse axonal injury</li>
-              <li>Spinal cord injury — paraplegia, quadriplegia, incomplete spinal cord injuries</li>
-              <li>Severe burns requiring skin grafting, long-term hospitalization, and reconstruction</li>
-              <li>Traumatic amputation and loss of limb requiring prosthetics and long-term rehab</li>
-              <li>Multiple severe fractures with lasting orthopedic disability</li>
-              <li>Permanent loss of vision or hearing</li>
-              <li>Severe facial disfigurement requiring reconstructive surgery</li>
-              <li>Birth injuries causing permanent neurological impairment (cerebral palsy, HIE)</li>
-            </ul>
+      <KeyFacts
+        facts={[
+          { figure: '$500,000', label: 'non-economic cap per plaintiff for a catastrophic injury under ORC 2323.43' },
+          { figure: '$1,000,000', label: 'non-economic cap per occurrence for a catastrophic injury' },
+          { figure: 'No cap', label: 'on economic damages: medical bills, future care, lost earnings' },
+          { figure: '2 years', label: 'to file, from the date of the injury (ORC 2305.10)' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Why Choose Jwayyed Law LLC
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Catastrophic injury cases demand patience, resources, and experience. At Jwayyed Law LLC, we take catastrophic injury cases seriously — retaining the right experts, waiting for medical stabilization before evaluating settlement, and building the strongest possible case for maximum lifetime compensation. We handle catastrophic injury claims on a contingency fee basis.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We also handle related matters including{' '}
-              <Link href="/personal-injury/medical-malpractice" className="text-sky-deep underline hover:opacity-80">medical malpractice</Link>,{' '}
-              <Link href="/personal-injury/workplace-injuries" className="text-sky-deep underline hover:opacity-80">workplace injury claims</Link>, and{' '}
-              <Link href="/personal-injury/nursing-home-abuse" className="text-sky-deep underline hover:opacity-80">nursing home abuse and neglect</Link> throughout Ohio.
-            </p>
+      <Section
+        title="What makes an injury catastrophic"
+        intro={
+          <p>
+            A traumatic brain injury, paralysis, a severe burn or an amputation changes every part of a person&rsquo;s life and can
+            require decades of medical care, rehabilitation and personal support.
+          </p>
+        }
+      >
+        <p>
+          ORC 2323.43 sets a higher non-economic damages cap for claims involving permanent physical deformity, loss of use of a limb,
+          loss of a bodily organ system, or a permanent inability to care for oneself independently.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'Traumatic brain injury', body: 'Mild, moderate and severe TBI, including diffuse axonal injury.' },
+            { title: 'Spinal cord injury', body: 'Paraplegia, quadriplegia and incomplete spinal cord injuries.' },
+            { title: 'Severe burns', body: 'Burns that need skin grafting, long hospital stays and reconstruction.' },
+            { title: 'Amputation', body: 'Traumatic amputation and loss of a limb requiring prosthetics and long-term rehab.' },
+            { title: 'Fractures and disfigurement', body: 'Multiple severe fractures with lasting disability, and severe facial disfigurement needing reconstructive surgery.' },
+            {
+              title: 'Sensory and birth injuries',
+              body: 'Permanent loss of vision or hearing, and birth injuries causing permanent neurological impairment (cerebral palsy, HIE).',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link> to discuss your case. Learn more about <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations" className="text-sky-deep underline hover:text-navy-950">Ohio&apos;s statute of limitations for personal injury claims</Link>.
-            </p>
+      <Section title="Damage caps and deadlines" tone="ice">
+        <FactTable
+          title="Non-economic damage caps (ORC 2323.43)"
+          rows={[
+            {
+              label: 'Standard tort cap',
+              value: 'The greater of $250,000 or three times economic damages, up to $350,000 per plaintiff or $500,000 per occurrence.',
+            },
+            { label: 'Catastrophic injury', value: '$500,000 per plaintiff or $1,000,000 per occurrence.' },
+            { label: 'Medical malpractice', value: 'The same higher caps apply to catastrophic injuries under ORC 2323.43.' },
+            {
+              label: 'Economic damages',
+              value: 'Never capped. Future medical expenses, lost earnings, personal care attendants, home modifications, prosthetics and wheelchairs are fully recoverable.',
+            },
+          ]}
+        />
+        <FactTable
+          title="Filing deadlines"
+          rows={[
+            { label: 'Personal injury', value: '2 years from the date of the injury (ORC 2305.10).' },
+            { label: 'Latent injuries', value: 'The discovery rule may start the clock when the injury was or reasonably should have been discovered.' },
+            { label: 'Medical malpractice', value: '1 year under ORC 2305.113.' },
+            {
+              label: 'Government entities',
+              value: 'ORC Chapter 2744 sets different rules for political subdivisions and may require advance written notice. Claims against state agencies go to the Ohio Court of Claims.',
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Personal Injury" />
+      <Section title="How the damages are proven">
+        <Steps
+          steps={[
+            {
+              title: 'Life care plan',
+              body: 'A certified life care planner projects every future care need, from surgeries and hospitalizations to home health aides, assistive technology and home modifications.',
+            },
+            { title: 'Present value', body: 'An economist converts the projected costs to present value, accounting for inflation and investment returns.' },
+            { title: 'Earning capacity', body: 'A vocational rehabilitation expert quantifies the lifetime effect on earnings.' },
+            {
+              title: 'Medical testimony',
+              body: 'Specialists testify about the permanence of the injury, expected complications and effects on life expectancy.',
+            },
+          ]}
+        />
+        <p>Without this expert foundation, no jury or adjuster can accurately value a catastrophic injury, and the victim risks being badly undercompensated.</p>
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
-                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
-              </Link>
-              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Truck Accidents</span>
-                <span className="text-sm text-navy-950/70">Commercial vehicle and semi-truck collision claims</span>
-              </Link>
-              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Wrongful Death</span>
-                <span className="text-sm text-navy-950/70">Holding negligent parties accountable for fatal injuries</span>
-              </Link>
-              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Workplace Injuries</span>
-                <span className="text-sm text-navy-950/70">On-the-job injuries and workers&apos; compensation</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Settlement: structures and liens" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Structured settlements',
+              body: 'Part of the recovery is paid in future installments. This can bring tax advantages, guard against using up a large award over a lifetime of care, and match future expenses such as later surgeries or a move from parental care to residential placement. Life insurance companies issue the annuity policies.',
+            },
+            {
+              title: 'Liens',
+              body: "Medicare, Medicaid, private health insurers and Ohio BWC (in workers' comp cases) have a right to be repaid from the settlement. Medicare alone may have paid hundreds of thousands in bills. Ignoring liens can create legal liability for the plaintiff and attorney, and negotiating reductions, especially for Medicare liens governed by federal statute, can raise the net recovery.",
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on a catastrophic injury claim">
+        <PointGrid
+          points={[
+            { title: 'Retains the experts', body: 'Medical, life care planning, economic, vocational and liability experts.' },
+            { title: 'Waits for stabilization', body: 'Evaluates settlement only once your medical condition has stabilized.' },
+            { title: 'Analyzes structured settlements', body: 'Checks that any structure matches your actual long-term needs.' },
+            { title: 'Resolves liens', body: 'Negotiates Medicare, Medicaid, private insurer and BWC liens.' },
+          ]}
+        />
+        <Callout title="Fees">Jwayyed Law LLC handles catastrophic injury claims on a contingency fee basis.</Callout>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. Read about{' '}
+          <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations">Ohio&rsquo;s statute of limitations for personal injury claims</Link>. The firm also
+          handles <Link href="/personal-injury/medical-malpractice">medical malpractice</Link>,{' '}
+          <Link href="/personal-injury/workplace-injuries">workplace injury claims</Link> and{' '}
+          <Link href="/personal-injury/nursing-home-abuse">nursing home abuse and neglect</Link> throughout Ohio.
+        </p>
+      </Section>
+
+      <Section title="Related injury claims" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
+      <LocationsWeServe title="Personal Injury" />
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
