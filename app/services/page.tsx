@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ContactCTA from '@/components/ContactCTA';
+import { LinkGrid, Section } from '@/components/practice';
 import {
   criminalDefenseServices,
   oviServices,
@@ -15,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: 'Our Legal Services',
   description:
-    'Explore legal services offered by Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, and more.',
+    'Legal services from Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, estate planning and probate.',
   openGraph: {
     title: 'Our Legal Services | Jwayyed Law LLC',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -28,90 +30,83 @@ export const metadata: Metadata = {
 const breadcrumbItems = [{ label: 'Our Services', href: '/services' }];
 
 
-function ServicesSection({
-  heading,
-  intro,
-  services,
-}: {
-  heading: string;
-  intro: string;
-  services: ServiceCard[];
-}) {
-
-  return (
-    <section className="py-10 sm:py-12 border-b border-navy-950/10 last:border-b-0">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-3">
-          {heading}
-        </h2>
-        <p className="text-sm sm:text-base text-navy-950/80 mb-5">
-          {intro}
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {services.map((service) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-            >
-              <h3 className="font-semibold text-navy-950 mb-1">
-                {service.title}
-              </h3>
-              {service.description && (
-                <p className="text-sm text-navy-950/70">
-                  {service.description}
-                </p>
-              )}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+const AREAS: { id: string; heading: string; intro: string; href: string; services: ServiceCard[] }[] = [
+  {
+    id: 'criminal-defense',
+    heading: 'Criminal defense',
+    intro: 'Misdemeanor criminal defense throughout Ohio, including assault, theft, traffic-related offenses and record sealing.',
+    href: '/criminal-defense',
+    services: criminalDefenseServices,
+  },
+  {
+    id: 'ovi-dui-defense',
+    heading: 'OVI / DUI defense',
+    intro: 'OVI/DUI defense for first, second and third offenses, including high-tier OVI and license issues.',
+    href: '/ovi-dui-defense',
+    services: oviServices,
+  },
+  {
+    id: 'personal-injury',
+    heading: 'Personal injury',
+    intro: 'Representation for people injured in car, truck and motorcycle crashes, falls and other serious accidents.',
+    href: '/personal-injury',
+    services: personalInjuryServices,
+  },
+  {
+    id: 'civil',
+    heading: 'Civil litigation',
+    intro: 'Civil disputes involving contracts, real estate, landlord-tenant issues, debt collection defense and more.',
+    href: '/civil',
+    services: civilServices,
+  },
+  {
+    id: 'business',
+    heading: 'Business law',
+    intro: 'Business formation, contracts, compliance and dispute resolution for Ohio businesses.',
+    href: '/business',
+    services: businessServices,
+  },
+  {
+    id: 'other-services',
+    heading: 'Estate planning, probate and more',
+    intro: 'Estate planning, probate and dispute resolution to protect your family and assets.',
+    href: '/other-services',
+    services: otherServices,
+  },
+];
 
 export default function ServicesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Our Legal Services"
-        description="Comprehensive legal representation across Ohio in criminal defense, OVI/DUI, personal injury, civil litigation, business law, and more."
+        title="Legal services across Ohio"
+        description="Criminal defense, OVI/DUI, personal injury, civil litigation, business law, and estate planning and probate."
       />
 
-      <main className="bg-white py-10 sm:py-12">
-        <ServicesSection
-          heading="Criminal Defense"
-          intro="Misdemeanor criminal defense throughout Ohio, including assault, theft, traffic-related offenses, and record sealing."
-          services={criminalDefenseServices}
-        />
-        <ServicesSection
-          heading="OVI / DUI Defense"
-          intro="Strategic OVI/DUI defense for first, second, and third offenses, including high-tier OVI and license issues."
-          services={oviServices}
-        />
-        <ServicesSection
-          heading="Personal Injury"
-          intro="Representation for injury victims in car, truck, and motorcycle crashes, falls, and other serious accidents."
-          services={personalInjuryServices}
-        />
-        <ServicesSection
-          heading="Civil Litigation"
-          intro="Civil disputes involving contracts, real estate, landlord-tenant issues, debt collection defense, and more."
-          services={civilServices}
-        />
-        <ServicesSection
-          heading="Business Law"
-          intro="Business formation, contracts, compliance, and dispute resolution for Ohio businesses."
-          services={businessServices}
-        />
-        <ServicesSection
-          heading="Other Legal Services"
-          intro="Estate planning, probate, and dispute resolution services tailored to protect your family and assets."
-          services={otherServices}
-        />
-      </main>
+      {/* Jump list to each area */}
+      <nav aria-label="Practice areas on this page" className="bg-navy-900 text-white">
+        <ul className="max-w-[1440px] mx-auto px-5 sm:px-8 py-6 flex flex-wrap gap-x-8 gap-y-3">
+          {AREAS.map((a) => (
+            <li key={a.id}>
+              <a href={`#${a.id}`} className="font-medium text-white/85 hover:text-sky transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                {a.heading}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {AREAS.map((a, i) => (
+        <Section key={a.id} id={a.id} title={a.heading} tone={i % 2 ? 'ice' : 'white'} intro={<p>{a.intro}</p>}>
+          <LinkGrid links={a.services.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+          <p>
+            <Link href={a.href}>Overview of {a.heading.toLowerCase()}</Link>
+          </p>
+        </Section>
+      ))}
+
+      <ContactCTA />
     </>
   );
 }
-
