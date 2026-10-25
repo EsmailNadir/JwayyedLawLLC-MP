@@ -5,10 +5,13 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { FCMC } from '@/data/franklin-county-reference';
 
 export const metadata: Metadata = {
   title: 'Columbus Assault Defense Attorney',
-  description: 'Assault defense in Columbus, Ohio. R.C. 2903.13, self-defense, felony escalation. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
+  description:
+    'Assault in Columbus is a first-degree misdemeanor under R.C. 2903.13, heard at Franklin County Municipal Court. Self-defense and felony escalation explained.',
   keywords: [
     'Columbus assault lawyer',
     'assault defense attorney Columbus Ohio',
@@ -20,6 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Columbus Assault Defense Attorney | Jwayyed Law LLC',
+    description: 'Assault charges at Franklin County Municipal Court: penalties, felony escalation, self-defense and expungement.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/assault-defense-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -29,125 +33,183 @@ export const metadata: Metadata = {
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
   { label: 'Franklin County', href: '/courts/franklin-county' },
-  { label: 'Assault Defense — Columbus', href: '/locations/franklin-county/assault-defense-columbus' },
+  { label: 'Assault Defense in Columbus', href: '/locations/franklin-county/assault-defense-columbus' },
 ];
 
 const faqs = [
   {
     question: 'What is assault under Ohio law and where are Columbus assault cases heard?',
-    answer: 'Ohio Revised Code 2903.13 defines assault as knowingly causing or attempting to cause physical harm to another, or recklessly causing serious physical harm. Baseline assault is an M1 misdemeanor — up to 180 days jail, $1,000 fine. Columbus assault cases are heard at Franklin County Municipal Court, 375 S. High Street (floors 12–15). Felony assault escalations — assault on a peace officer, EMS, teacher, or hospital worker — are bound over to Franklin County Court of Common Pleas.',
+    answer:
+      'Ohio Revised Code 2903.13 defines assault as knowingly causing or attempting to cause physical harm to another, or recklessly causing serious physical harm. Basic assault is an M1 misdemeanor: up to 180 days in jail and a $1,000 fine. Columbus assault cases are heard at Franklin County Municipal Court, 375 S. High Street (floors 12 to 15). Felony assault charges, such as assault on a peace officer, EMS worker, teacher or hospital worker, are bound over to the Franklin County Court of Common Pleas.',
   },
   {
     question: 'What are the felony escalations for assault in Columbus?',
-    answer: 'R.C. 2903.13(C) escalates Columbus assault charges to felonies when the victim is in a protected category: assault on a Columbus police officer, OSP trooper, firefighter, or EMS worker during official duties (F4); assault on a caretaker against a functionally impaired person (F4, or F3 with prior); assault on corrections officers or youth services employees at a state DRC institution (F3), or local jail staff and probation officers (F5); assault on a teacher or school bus driver on school property (F5, or F4 with prior); and assault on hospital employees or judges/prosecutors during official duties (F5, or F4 with prior).',
+    answer:
+      'R.C. 2903.13(C) makes assault a felony when the victim is in a protected category. Assault on a Columbus police officer, OSP trooper, firefighter or EMS worker during official duties is F4. Assault by a caretaker on a functionally impaired person is F4, or F3 with a prior. Assault on corrections officers or youth services employees at a state DRC institution is F3; on local jail staff and probation officers, F5. Assault on a teacher or school bus driver on school property is F5, or F4 with a prior. Assault on hospital employees, or on judges and prosecutors during official duties, is F5, or F4 with a prior.',
   },
   {
     question: 'Is self-defense a valid defense to assault charges in Columbus?',
-    answer: 'Yes. Under ORC 2901.05, self-defense is a complete affirmative defense to assault. Since 2019 amendments, the prosecution bears the burden of disproving self-defense beyond a reasonable doubt once the defendant presents evidence raising it. For Columbus assault cases, we evaluate who initiated the confrontation, whether the force used was proportionate to the threat, and what video and physical evidence shows about the sequence of events. Body-cam footage from the Columbus Division of Police often captures key moments of the encounter.',
+    answer:
+      'Yes. Under ORC 2901.05, self-defense is a complete affirmative defense to assault. Since the 2019 amendments, once the defendant presents evidence raising self-defense, the prosecution must disprove it beyond a reasonable doubt. The firm looks at who started the confrontation, whether the force matched the threat, and what video and physical evidence show about the order of events. Body-cam footage from the Columbus Division of Police often captures key moments.',
   },
   {
     question: 'Can a Columbus assault conviction be expunged?',
-    answer: 'Most first-offense M1 assault convictions under R.C. 2903.13 are eligible for expungement under ORC 2953.32 after a 1-year waiting period from final discharge. However, assault convictions that are part of a DV-adjacent scenario — even if not formally charged as domestic violence — may be scrutinized on an expungement application. Our firm evaluates expungement eligibility from the outset of every assault case to inform plea strategy.',
+    answer:
+      'Most first-offense M1 assault convictions under R.C. 2903.13 can be expunged under ORC 2953.32 after a 1-year waiting period from final discharge. An assault that arose from a situation close to domestic violence, even if not charged as DV, may get closer scrutiny on an expungement application. The firm considers expungement eligibility from the start of every assault case, because it shapes plea strategy.',
   },
   {
     question: 'What if the alleged victim in a Columbus assault case does not want to press charges?',
-    answer: 'The Columbus Division of Police and the Franklin County prosecutor — not the alleged victim — decide whether to proceed with an assault case. The alleged victim\'s unwillingness to testify weakens the prosecution\'s case but does not automatically end it. The state can sometimes proceed using body-cam footage, 911 recordings, and other evidence. Our firm evaluates the strength of the independent evidence and uses any lack of victim cooperation as a factor in negotiating a favorable resolution.',
+    answer:
+      "The Columbus Division of Police and the Franklin County prosecutor decide whether an assault case goes forward, not the alleged victim. A victim who will not testify weakens the case but does not end it automatically. The state can sometimes proceed on body-cam footage, 911 recordings and other evidence. The firm weighs how strong that independent evidence is and uses the victim's lack of cooperation in negotiations.",
   },
   {
     question: 'Why hire Jwayyed Law LLC for a Columbus assault charge?',
-    answer: 'Jwayyed Law LLC defends assault charges throughout Columbus and Franklin County. Assault cases are fact-intensive and often turn on witness credibility, video evidence, and whether self-defense applies. Our firm obtains all evidence, evaluates the prosecution\'s case critically, and builds a defense rooted in the actual record. Call (614) 285-5482 to discuss your situation before your arraignment.',
+    answer:
+      'Jwayyed Law LLC defends assault charges throughout Columbus and Franklin County. Assault cases turn on facts: witness credibility, video, and whether self-defense applies. The firm gets all of the evidence, tests the prosecution\'s case and builds the defense on the actual record. Call (614) 285-5482 before your arraignment.',
   },
 ];
 
-export default function ColumbusAssaultPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Assault Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/assault-defense-columbus"};
+const RELATED = [
+  { href: '/criminal-defense/assault-charges', title: 'Assault charges in Ohio', subtitle: 'The statewide rules for assault' },
+  { href: '/locations/franklin-county/domestic-violence-defense-columbus', title: 'Domestic violence in Columbus', subtitle: 'When the alleged victim is a family or household member' },
+  { href: '/locations/franklin-county/disorderly-conduct-defense-columbus', title: 'Disorderly conduct in Columbus', subtitle: 'A common reduced charge' },
+  { href: '/locations/franklin-county/expungement-columbus', title: 'Expungement in Columbus', subtitle: 'Sealing a conviction after the waiting period' },
+  { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Court guide' },
+];
 
+export default function ColumbusAssaultPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Assault Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/assault-defense-columbus"};
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Assault Defense Attorney"
-        description="Assault charge in Columbus, Ohio? Jwayyed Law LLC provides experienced defense at Franklin County Municipal Court. Self-defense, felony escalation defense. Call (614) 285-5482."
+        title="Assault defense in Columbus"
+        description="Assault is a first-degree misdemeanor in Ohio, with up to 180 days in jail. Against a police officer or other protected person it becomes a felony."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Assault Defense in Columbus, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus is Ohio&apos;s largest city, and the Columbus Division of Police responds to thousands of assault calls each year across the city&apos;s diverse neighborhoods — from the Short North and Arena District to the Eastside and Westside residential neighborhoods, from bar fights near campus to road rage incidents on I-270. An assault charge under Ohio Revised Code 2903.13 is a first-degree misdemeanor at baseline — up to 180 days in jail, a $1,000 fine, and a permanent criminal record accessible to every employer and landlord who runs a background check. More significantly, assault on a Columbus police officer, OSP trooper, or other protected person escalates to a felony, carrying the full weight of Franklin County Court of Common Pleas prosecution. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense/assault-charges" className="text-sky-deep underline hover:opacity-80">assault defense</Link>{' '}
-              at Franklin County Municipal Court and throughout Columbus. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              before your arraignment.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus assault charges arise from a wide variety of circumstances: bar confrontations in the Short North or German Village, disputes at OSU game-day events, road rage incidents on I-70 or High Street, neighborhood altercations, and confrontations that police classify as assault even when the defendant acted in self-defense or did not initiate the contact. Each situation requires a tailored defense based on the specific facts, the available evidence, and the identity and role of the alleged victim.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '180 days', label: 'maximum jail for M1 assault' },
+          { figure: '$1,000', label: 'maximum fine for M1 assault' },
+          { figure: 'F4', label: 'assault on a police officer, firefighter or EMS worker on duty' },
+          { figure: '1 year', label: 'waiting period before most assault convictions can be expunged' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Assault Under R.C. 2903.13 — What the Prosecution Must Prove
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Revised Code 2903.13 requires the prosecution to prove that the defendant knowingly caused or attempted to cause physical harm to another person, or recklessly caused serious physical harm. The word &ldquo;knowingly&rdquo; is legally significant: the prosecution must prove the defendant was aware that his or her conduct would cause or probably cause the result. Accidental contact, involuntary reactions, and situations where the defendant lacked the required awareness do not satisfy the statute. Our firm evaluates whether the prosecution can actually establish this mental state given the specific facts of the Columbus encounter.
-            </p>
+      <Section
+        title="Where a Columbus assault case is heard"
+        intro={
+          <p>
+            Misdemeanor assault charged in Columbus goes to {FCMC.name}. Felony assault is bound over to the Franklin County Court of
+            Common Pleas.
+          </p>
+        }
+      >
+        <FactTable
+          title={FCMC.name}
+          rows={[
+            { label: 'Address', value: FCMC.address },
+            { label: 'Courtrooms', value: FCMC.floors },
+            { label: 'Clerk', value: FCMC.clerkPhone },
+            { label: 'What it hears', value: 'M1 assault and other misdemeanors charged in Columbus.' },
+          ]}
+        />
+        <p>
+          Columbus assault charges come from bar confrontations in the Short North, German Village and near campus, disputes at OSU
+          game-day events, road rage on I-270, I-70 or High Street, and neighborhood altercations. Police sometimes call it assault
+          even when the person charged acted in self-defense or did not start the contact. The defense depends on those facts, the
+          evidence and who the alleged victim is.
+        </p>
+        <p>
+          The firm defends <Link href="/criminal-defense/assault-charges">assault charges</Link> at Franklin County Municipal Court and
+          throughout Columbus. Call <a href="tel:6142855482">(614) 285-5482</a> before your arraignment.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Self-Defense in Columbus Assault Cases
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Self-defense under ORC 2901.05 is the most commonly asserted defense in Columbus assault cases — particularly bar fights, road rage confrontations, and mutual altercations where the defendant did not initiate the contact. Since Ohio&apos;s 2019 self-defense amendments, the prosecution bears the burden of disproving self-defense beyond a reasonable doubt once the defendant presents sufficient evidence that the defense applies. We evaluate whether the defendant reasonably believed force was necessary, whether the defendant was the initial aggressor, and whether the force used was proportionate to the threat.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Body-cam footage from the Columbus Division of Police is often the most important evidence in Columbus assault cases. Officers typically arrive after the confrontation has ended and capture the immediate aftermath — injuries, statements, and the physical scene. We obtain all body-cam footage, available surveillance footage from nearby businesses, and witness information before making any recommendation about strategy. In cases where the video clearly shows who initiated the confrontation, self-defense may be the strongest available argument.
-            </p>
+      <Section title="Assault penalties and felony escalation" tone="ice">
+        <FactTable
+          title="Assault under R.C. 2903.13"
+          rows={[
+            { label: 'Degree', value: 'First-degree misdemeanor (M1).' },
+            { label: 'Jail', value: 'Up to 180 days.' },
+            { label: 'Fine', value: 'Up to $1,000.' },
+            { label: 'Record', value: 'A criminal record that employers and landlords see on a background check.' },
+          ]}
+        />
+        <FactTable
+          title="Felony assault under R.C. 2903.13(C)"
+          rows={[
+            { label: 'Police, OSP, fire, EMS', value: 'F4 when the victim is on official duty.' },
+            { label: 'Caretaker', value: 'F4 for assault on a functionally impaired person; F3 with a prior.' },
+            { label: 'State DRC staff', value: 'F3 for corrections officers or youth services employees.' },
+            { label: 'Jail and probation staff', value: 'F5.' },
+            { label: 'Teachers and bus drivers', value: 'F5 on school property; F4 with a prior.' },
+            { label: 'Hospital staff, judges, prosecutors', value: 'F5 during official duties; F4 with a prior.' },
+          ]}
+          note="Assault on a Columbus Division of Police officer or OSP trooper on duty is a fourth-degree felony, prosecuted in the Court of Common Pleas."
+        />
+        <p>
+          The firm checks whether the alleged victim was actually acting in an official capacity. An officer who was off duty, acting
+          outside the scope of the job, or responding personally rather than professionally may not qualify for the felony charge.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Felony Assault Escalations in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              When the alleged victim of a Columbus assault is a law enforcement officer, firefighter, EMS worker, school employee, hospital staff member, or other protected person under R.C. 2903.13(C), the charge escalates from a misdemeanor to a felony. Assault on a Columbus Division of Police officer or OSP trooper in the performance of official duties is a fourth-degree felony — processed in Franklin County Court of Common Pleas rather than Franklin County Municipal Court. Our firm scrutinizes whether the alleged victim was actually acting in an official capacity at the time of the incident — officers who are off-duty, acting outside the scope of their duties, or responding in a personal rather than professional capacity may not qualify for the enhanced felony charge.
-            </p>
+      <Section title="What the prosecution must prove">
+        <p>
+          R.C. 2903.13 requires proof that you knowingly caused or attempted to cause physical harm to another person, or recklessly
+          caused serious physical harm. &ldquo;Knowingly&rdquo; means you were aware your conduct would cause, or probably cause, that
+          result. Accidental contact, involuntary reactions, and situations where you lacked that awareness do not meet the statute.
+        </p>
+        <h3>Self-defense</h3>
+        <p>
+          Self-defense under ORC 2901.05 is the most common defense in Columbus assault cases, especially bar fights, road rage and
+          mutual altercations. Since the 2019 amendments, once you present enough evidence of self-defense, the prosecution must
+          disprove it beyond a reasonable doubt. The questions are whether you reasonably believed force was necessary, whether you were
+          the initial aggressor, and whether the force matched the threat.
+        </p>
+        <p>
+          Columbus Division of Police body-cam footage is often the most important evidence. Officers usually arrive after the
+          confrontation and record the aftermath: injuries, statements and the scene. The firm gets all body-cam footage, surveillance
+          video from nearby businesses and witness information before recommending a strategy. When video shows who started it,
+          self-defense may be the strongest argument.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement of an Assault Conviction in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Most first-offense misdemeanor assault convictions under R.C. 2903.13 are eligible for expungement under R.C. 2953.32 after a one-year waiting period from final discharge of the sentence. Once sealed, the assault conviction is removed from the public criminal record and will not appear on standard employer or landlord background checks. This is an important long-term benefit of any Columbus assault defense that results in a conviction — and it is why avoiding a domestic violence charge (R.C. 2919.25) rather than simple assault matters: domestic violence convictions are not expungeable under Ohio law, while simple assault convictions generally are.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The charge classification in a Columbus assault case — whether the disposition is as M1 assault, M4 disorderly conduct, or DV — has lasting expungement consequences. Our firm evaluates plea outcomes with the expungement timeline in mind from the very first hearing, so that the resolution of the current case does not create a permanent obstacle to clearing the record later.
-            </p>
+      <Section title="Expungement and how the charge is resolved" tone="ice">
+        <p>
+          Most first-offense misdemeanor assault convictions under R.C. 2903.13 can be expunged under R.C. 2953.32 one year after final
+          discharge. Once sealed, the conviction no longer appears on standard employer or landlord background checks. Domestic
+          violence convictions (R.C. 2919.25) cannot be expunged under Ohio law, while simple assault convictions generally can, which
+          is why avoiding a DV charge matters.
+        </p>
+        <p>
+          Whether the case ends as M1 assault, M4 disorderly conduct or DV has lasting expungement consequences. The firm weighs plea
+          outcomes against the expungement timeline from the first hearing.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How We Can Help
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Evidence analysis:</strong> Body-cam footage, surveillance, police reports, and medical records before any hearing</li>
-              <li><strong>Self-defense evaluation:</strong> Full factual investigation into who initiated the confrontation</li>
-              <li><strong>Felony escalation challenge:</strong> Contesting protected-victim status where the facts do not support felony charges</li>
-              <li><strong>Mental state challenge:</strong> Evaluating whether the prosecution can prove knowing conduct as required by R.C. 2903.13</li>
-              <li><strong>Charge reduction:</strong> Negotiating reductions to disorderly conduct or other lesser offenses where supported by the facts</li>
-              <li><strong>Diversion options:</strong> Pursuing first-offender diversion for dismissal without conviction where available</li>
-            </ul>
+      <Section title="What the firm does on a Columbus assault charge">
+        <PointGrid
+          points={[
+            { title: 'Evidence review', body: 'Body-cam footage, surveillance video, police reports and medical records before any hearing.' },
+            { title: 'Self-defense investigation', body: 'A full look at who started the confrontation.' },
+            { title: 'Felony escalation', body: 'Contesting protected-victim status when the facts do not support a felony.' },
+            { title: 'Mental state', body: 'Whether the prosecution can prove knowing conduct as R.C. 2903.13 requires.' },
+            { title: 'Charge reduction', body: 'Negotiating a reduction to disorderly conduct or another lesser offense when the facts support it.' },
+            { title: 'Diversion', body: 'First-offender diversion, which can end in dismissal without a conviction, where available.' },
+          ]}
+        />
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been charged with assault in Columbus or anywhere in Franklin County, contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
-              Assault charges move quickly — early involvement is essential.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="Related pages" tone="ice">
+        <LinkGrid links={RELATED} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />

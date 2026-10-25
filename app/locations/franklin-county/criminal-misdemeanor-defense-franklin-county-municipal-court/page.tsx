@@ -5,13 +5,16 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Franklin County Criminal Defense Attorney',
-  description: 'Criminal misdemeanor defense at Franklin County Municipal Court (375 S. High St). Assault, theft, domestic violence, drug possession. (614) 285-5482.',
+  description:
+    'Misdemeanor defense at Franklin County Municipal Court, 375 S. High St.: assault, theft, domestic violence and drug charges, penalties, diversion and ILC.',
   keywords: ['Franklin County Municipal Court criminal defense', 'Franklin County Municipal Court lawyer', 'Columbus misdemeanor defense attorney', 'Franklin County Municipal Court misdemeanor', 'criminal defense 375 S High St Columbus'],
   openGraph: {
     title: 'Franklin County Criminal Defense Attorney | Jwayyed Law LLC',
+    description: 'Misdemeanor charges at Franklin County Municipal Court: the court, the penalties and the alternatives to conviction.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -21,125 +24,169 @@ export const metadata: Metadata = {
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
   { label: 'Franklin County', href: '/courts/franklin-county' },
-  { label: 'Criminal Defense — Franklin County Municipal Court', href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
+  { label: 'Criminal Defense at Franklin County Municipal Court', href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
 ];
 
 const faqs = [
   {
     question: 'What types of criminal cases does Franklin County Municipal Court handle?',
-    answer: 'Franklin County Municipal Court (375 S. High St., Columbus) handles all misdemeanor criminal cases arising in Franklin County, including assault (R.C. 2903.13), domestic violence (R.C. 2919.25), theft and shoplifting (R.C. 2913.02), drug possession (R.C. 2925.11), disorderly conduct (R.C. 2917.11), open container (R.C. 4301.62), criminal trespass (R.C. 2911.21), criminal damaging (R.C. 2909.06), menacing (R.C. 2903.22), and violations of protection orders (R.C. 2919.27). It also handles cases transferred from Franklin County suburb mayor\'s courts when charges exceed a mayor\'s court\'s jurisdiction.',
+    answer:
+      "Franklin County Municipal Court (375 S. High St., Columbus) handles all misdemeanor criminal cases arising in Franklin County. That includes assault (R.C. 2903.13), domestic violence (R.C. 2919.25), theft and shoplifting (R.C. 2913.02), drug possession (R.C. 2925.11), disorderly conduct (R.C. 2917.11), open container (R.C. 4301.62), criminal trespass (R.C. 2911.21), criminal damaging (R.C. 2909.06), menacing (R.C. 2903.22) and violations of protection orders (R.C. 2919.27). It also takes cases transferred from suburban mayor's courts when a charge is beyond a mayor's court's jurisdiction.",
   },
   {
     question: 'What are the misdemeanor penalties at Franklin County Municipal Court?',
-    answer: 'Misdemeanor penalties at Franklin County Municipal Court follow the Ohio Revised Code sentencing structure. First-degree misdemeanors (M1): up to 180 days in jail and fines up to $1,000. Second-degree misdemeanors (M2): up to 90 days and fines up to $750. Third-degree misdemeanors (M3): up to 60 days and fines up to $500. Fourth-degree misdemeanors (M4): up to 30 days and fines up to $250. Minor misdemeanors: no jail time, fines up to $150. The court also has broad sentencing options including probation, community service, treatment programs, and other alternatives to incarceration.',
+    answer:
+      'The court follows the Ohio Revised Code sentencing structure. First-degree misdemeanors (M1): up to 180 days in jail and fines up to $1,000. Second-degree misdemeanors (M2): up to 90 days and fines up to $750. Third-degree misdemeanors (M3): up to 60 days and fines up to $500. Fourth-degree misdemeanors (M4): up to 30 days and fines up to $250. Minor misdemeanors: no jail, fines up to $150. The court can also order probation, community service, treatment programs and other alternatives to jail.',
   },
   {
     question: 'Where is Franklin County Municipal Court located and when does it operate?',
-    answer: 'Franklin County Municipal Court is located at 375 S. High Street, Columbus, OH 43215, on floors 12 through 15 of the Franklin County Common Pleas courthouse. The court\'s phone number is (614) 645-8186. The clerk\'s office is open Monday through Friday, 8:00 a.m. to 5:00 p.m. Criminal arraignments are typically held on weekday mornings. Our firm appears regularly at Franklin County Municipal Court and is familiar with the court\'s scheduling and procedures.',
+    answer:
+      "Franklin County Municipal Court is at 375 S. High Street, Columbus, OH 43215, on floors 12 through 15 of the Franklin County Common Pleas courthouse. The court's phone number is (614) 645-8186. The clerk's office is open Monday through Friday, 8:00 a.m. to 5:00 p.m. Criminal arraignments are usually held on weekday mornings. The firm appears regularly at the court and knows its scheduling and procedures.",
   },
   {
     question: 'What is Intervention in Lieu of Conviction (ILC) at Franklin County Municipal Court?',
-    answer: 'Intervention in Lieu of Conviction (ILC) under R.C. 2951.041 is a diversion program available at Franklin County Municipal Court for first-time offenders charged with drug-related offenses or offenses driven by substance use or mental health issues. Upon successful completion of the ILC program — including treatment, drug testing, and any other court conditions — the charge is dismissed without a conviction. ILC eligibility requires prosecutor consent and court approval. Our firm evaluates ILC availability in every drug possession and substance-related misdemeanor case at FCMC.',
+    answer:
+      'Intervention in Lieu of Conviction (ILC) under R.C. 2951.041 is a diversion program at Franklin County Municipal Court for first-time offenders charged with drug-related offenses or offenses driven by substance use or mental health issues. If you complete the program (treatment, drug testing and any other conditions the court sets), the charge is dismissed without a conviction. ILC requires the prosecutor\'s consent and the court\'s approval. The firm checks ILC availability in every drug possession and substance-related misdemeanor case at FCMC.',
   },
   {
     question: 'Can I get a misdemeanor conviction expunged in Franklin County?',
-    answer: 'Yes. Most misdemeanor convictions from Franklin County Municipal Court are eligible for expungement under R.C. 2953.32. Waiting periods from final discharge: minor misdemeanors — six months; M4 through M1 misdemeanors — one year. The expanded provisions of H.B. 96 (effective September 30, 2025) increased the number of convictions that can be sealed and reduced barriers to eligibility. OVI convictions and domestic violence convictions are not eligible for expungement under Ohio law. Our firm handles expungement petitions at Franklin County Municipal Court.',
+    answer:
+      'Yes. Most misdemeanor convictions from Franklin County Municipal Court can be expunged under R.C. 2953.32. Waiting periods from final discharge: six months for minor misdemeanors, one year for M4 through M1 misdemeanors. H.B. 96 (effective September 30, 2025) raised the number of convictions that can be sealed and lowered barriers to eligibility. OVI and domestic violence convictions cannot be expunged under Ohio law. The firm files expungement petitions at Franklin County Municipal Court.',
   },
   {
     question: 'How does Franklin County Municipal Court handle domestic violence cases?',
-    answer: 'Domestic violence charges at Franklin County Municipal Court are prosecuted by the Columbus City Attorney\'s office (for Columbus arrests) or the Franklin County Prosecutor (for unincorporated Franklin County arrests). Prosecution typically proceeds regardless of whether the alleged victim wishes to proceed. Ohio law also requires the court to inquire about firearms possession and may impose firearm restrictions. A domestic violence conviction permanently triggers the Lautenberg Amendment firearm prohibition under 18 U.S.C. § 922(g)(9). Our firm pursues non-DV resolutions — including disorderly conduct pleas — in appropriate cases to protect clients from these permanent consequences.',
+    answer:
+      "Domestic violence charges there are prosecuted by the Columbus City Attorney's office for Columbus arrests, or the Franklin County Prosecutor for arrests in unincorporated Franklin County. Prosecution usually goes forward whether or not the alleged victim wants it to. Ohio law also requires the court to ask about firearms possession, and it may impose firearm restrictions. A domestic violence conviction permanently triggers the Lautenberg Amendment firearm ban under 18 U.S.C. § 922(g)(9). The firm pursues non-DV resolutions, including disorderly conduct pleas, in appropriate cases.",
   },
   {
     question: 'Why hire Jwayyed Law LLC for a Franklin County Municipal Court criminal case?',
-    answer: 'Franklin County Municipal Court is Ohio\'s busiest misdemeanor court, processing thousands of criminal cases per year. Cases move quickly, deadlines are strict, and the prosecutors and court have established practices that defense counsel must understand to achieve the best outcomes. Jwayyed Law LLC practices regularly at Franklin County Municipal Court and knows the local prosecutors, judges, and court procedures. Whether the charge is assault, theft, domestic violence, drug possession, or disorderly conduct, we pursue every available avenue — dismissal, diversion, reduction, or suppression — to protect your record. Call (614) 285-5482.',
+    answer:
+      'Cases at Franklin County Municipal Court move quickly, deadlines are strict, and the prosecutors and the court have established practices that defense counsel needs to know. Jwayyed Law LLC practices regularly at the court and knows its prosecutors, judges and procedures. Whether the charge is assault, theft, domestic violence, drug possession or disorderly conduct, the firm pursues dismissal, diversion, reduction or suppression to protect your record. Call (614) 285-5482.',
   },
   {
     question: 'Do I need a lawyer for a minor misdemeanor at Franklin County Municipal Court?',
-    answer: 'Even for minor misdemeanor charges, representation is valuable. A minor misdemeanor conviction creates a criminal record that appears on background checks, affects professional licensing, and can be used against you in future proceedings. A defense attorney can often secure dismissal, diversion, or a plea arrangement that avoids a conviction record entirely — outcomes that are far more difficult to achieve without counsel. For any criminal charge at Franklin County Municipal Court, consulting with an attorney before your first court date costs nothing and protects your options.',
+    answer:
+      'It helps. A minor misdemeanor conviction is a criminal record: it appears on background checks, affects professional licensing and can be used against you later. A defense attorney can often get a dismissal, diversion or a plea arrangement that avoids a conviction record, which is much harder without counsel. Talk to an attorney before your first court date.',
   },
 ];
 
-export default function FCMCCriminalDefensePage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Criminal Defense in Franklin County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court"};
+const CHARGES = [
+  { href: '/locations/franklin-county/assault-defense-columbus', title: 'Assault (R.C. 2903.13)', subtitle: 'M1, with felony escalation when the victim is in a protected class' },
+  { href: '/locations/franklin-county/domestic-violence-defense-columbus', title: 'Domestic violence (R.C. 2919.25)', subtitle: 'M1 baseline; a conviction brings the permanent Lautenberg firearm ban' },
+  { href: '/locations/franklin-county/theft-defense-columbus', title: 'Theft and shoplifting (R.C. 2913.02)', subtitle: 'M1 for amounts up to $1,000; civil demand letters and employer consequences' },
+  { href: '/locations/franklin-county/drug-possession-defense-columbus', title: 'Drug possession (R.C. 2925.11)', subtitle: 'Misdemeanor amounts, ILC eligibility and Fourth Amendment suppression' },
+  { href: '/locations/franklin-county/marijuana-possession-columbus', title: 'Marijuana possession', subtitle: 'Above adult-use limits, under-21 possession and weight challenges' },
+  { href: '/locations/franklin-county/disorderly-conduct-defense-columbus', title: 'Disorderly conduct (R.C. 2917.11)', subtitle: 'MM baseline; M4 if intoxicated or persistent' },
+  { href: '/locations/franklin-county/open-container-defense-columbus', title: 'Open container (R.C. 4301.62)', subtitle: 'Vehicle and public-place citations, and ORA zone edge cases' },
+];
 
+export default function FCMCCriminalDefensePage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Criminal Defense in Franklin County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court"};
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Franklin County Municipal Court Criminal Defense Attorney"
-        description="Misdemeanor charges at Franklin County Municipal Court (375 S. High St.)? Assault, theft, domestic violence, drug possession. Jwayyed Law LLC. Call (614) 285-5482."
+        title="Misdemeanor defense at Franklin County Municipal Court"
+        description="Every misdemeanor charged in Franklin County is heard at 375 S. High Street, whether filed there or transferred from a mayor's court. A first-degree misdemeanor carries up to 180 days in jail."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Criminal Misdemeanor Defense at Franklin County Municipal Court
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County Municipal Court at 375 S. High Street, Columbus is Ohio&apos;s busiest misdemeanor court — processing tens of thousands of criminal cases each year from Columbus and every Franklin County municipality. Every misdemeanor criminal charge in Franklin County eventually passes through this courthouse, whether filed directly or transferred from a suburb mayor&apos;s court. Assault, domestic violence, theft, shoplifting, drug possession, disorderly conduct, open container, criminal damaging — these charges are handled daily in the courtrooms on floors 12 through 15. A conviction at Franklin County Municipal Court is a real criminal conviction with lasting record consequences. Jwayyed Law LLC provides experienced criminal misdemeanor defense at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              as soon as you receive a summons or are released from custody.
-            </p>
+      <Section
+        title="Franklin County Municipal Court at a glance"
+        intro={
+          <p>
+            A conviction here is a real criminal conviction with lasting record consequences. Call{' '}
+            <a href="tel:6142855482">(614) 285-5482</a> as soon as you get a summons or are released from custody.
+          </p>
+        }
+      >
+        <FactTable
+          title="Franklin County Municipal Court"
+          rows={[
+            { label: 'Address', value: '375 S. High Street, Columbus, OH 43215' },
+            { label: 'Courtrooms', value: 'Floors 12 through 15 of the Franklin County courthouse complex.' },
+            { label: 'Phone', value: '(614) 645-8186' },
+            { label: "Clerk's office", value: 'Monday through Friday, 8:00 a.m. to 5:00 p.m.' },
+            { label: 'Arraignments', value: 'Usually weekday mornings.' },
+            { label: 'Criminal cases', value: 'All misdemeanor criminal cases arising in Franklin County.' },
+            { label: 'OVI', value: 'All Administrative License Suspension (ALS) appeals, which must be filed within 30 days of an OVI arrest.' },
+            { label: 'Civil', value: 'Civil cases up to $15,000 and small claims up to $6,000.' },
+          ]}
+        />
+        <h3>Where the cases come from</h3>
+        <p>
+          The court takes transfers from the thirteen active suburban mayor&rsquo;s courts (Bexley, Canal Winchester, Dublin, Grove City,
+          Groveport, Hilliard, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall and Worthington). Cases from
+          Columbus, Grandview Heights, Marble Cliff and New Albany go directly to the Municipal Court. See{' '}
+          <Link href="/locations/franklin-county/mayors-courts-franklin-county">mayor&rsquo;s courts in Franklin County</Link>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Franklin County Municipal Court — Court Overview
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County Municipal Court is located at 375 S. High Street, Columbus, OH 43215, occupying floors 12 through 15 of the Franklin County courthouse complex. The court&apos;s main number is (614) 645-8186, and the clerk&apos;s office is open Monday through Friday, 8:00 a.m. to 5:00 p.m. The court exercises jurisdiction over all misdemeanor criminal cases arising in Franklin County, including transfers from the thirteen active suburb mayor&apos;s courts (Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington) as well as all cases from Columbus, Grandview Heights, Marble Cliff, and New Albany, which route directly to the Municipal Court.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The court is also the venue for all Administrative License Suspension (ALS) appeals, which must be filed within 30 days of an OVI arrest. Franklin County Municipal Court handles civil cases up to $15,000 and small claims up to $6,000, but the criminal and OVI dockets are the primary focus of our practice at this courthouse.
-            </p>
+      <Section title="Charges the firm defends here" tone="ice">
+        <p>
+          Assault, domestic violence, theft, shoplifting, drug possession, disorderly conduct, open container and criminal damaging are
+          heard daily in the courtrooms on floors 12 through 15.
+        </p>
+        <LinkGrid links={CHARGES} columns={2} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Criminal Charges We Defend at Franklin County Municipal Court
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Jwayyed Law LLC defends the full range of misdemeanor criminal charges at Franklin County Municipal Court:
-            </p>
-            <ul className="text-navy-950/80 mb-6 leading-relaxed space-y-2 list-disc pl-6">
-              <li><Link href="/locations/franklin-county/assault-defense-columbus" className="text-sky-deep underline hover:opacity-80">Assault</Link> (R.C. 2903.13) — M1 misdemeanor with M1 mandatory minimum, felony escalation if victim is protected class</li>
-              <li><Link href="/locations/franklin-county/domestic-violence-defense-columbus" className="text-sky-deep underline hover:opacity-80">Domestic Violence</Link> (R.C. 2919.25) — M1 baseline, permanent Lautenberg Amendment firearm prohibition upon conviction</li>
-              <li><Link href="/locations/franklin-county/theft-defense-columbus" className="text-sky-deep underline hover:opacity-80">Theft and Shoplifting</Link> (R.C. 2913.02) — M1 for amounts up to $1,000, civil demand letters, retail employer consequences</li>
-              <li><Link href="/locations/franklin-county/drug-possession-defense-columbus" className="text-sky-deep underline hover:opacity-80">Drug Possession</Link> (R.C. 2925.11) — misdemeanor amounts, ILC eligibility, Fourth Amendment suppression issues</li>
-              <li><Link href="/locations/franklin-county/marijuana-possession-columbus" className="text-sky-deep underline hover:opacity-80">Marijuana Possession</Link> — above adult-use limits, under-21 possession, weight determination challenges</li>
-              <li><Link href="/locations/franklin-county/disorderly-conduct-defense-columbus" className="text-sky-deep underline hover:opacity-80">Disorderly Conduct</Link> (R.C. 2917.11) — MM baseline, M4 if intoxicated or persistent</li>
-              <li><Link href="/locations/franklin-county/open-container-defense-columbus" className="text-sky-deep underline hover:opacity-80">Open Container</Link> (R.C. 4301.62) — vehicle and public place citations, ORA zone edge cases</li>
-            </ul>
+      <Section title="Misdemeanor penalties in Ohio">
+        <FactTable
+          title="Maximum sentences by degree"
+          rows={[
+            { label: 'First-degree misdemeanor (M1)', value: 'Up to 180 days in jail; fine up to $1,000.' },
+            { label: 'Second-degree misdemeanor (M2)', value: 'Up to 90 days; fine up to $750.' },
+            { label: 'Third-degree misdemeanor (M3)', value: 'Up to 60 days; fine up to $500.' },
+            { label: 'Fourth-degree misdemeanor (M4)', value: 'Up to 30 days; fine up to $250.' },
+            { label: 'Minor misdemeanor', value: 'No jail; fine up to $150.' },
+          ]}
+          note="The court can also order probation, community service, treatment programs and other alternatives to jail."
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Diversion, ILC, and Alternatives to Conviction at FCMC
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County Municipal Court operates several programs that allow eligible first-time offenders to avoid a permanent criminal conviction. Intervention in Lieu of Conviction (ILC) under R.C. 2951.041 is available for drug-related or substance-driven offenses where the defendant agrees to complete a treatment program. Successful ILC completion results in case dismissal. Pre-trial diversion is separately available through the prosecutor&apos;s office for certain first-time, low-level offenses. Our firm evaluates ILC and diversion eligibility in every criminal case and pursues these alternatives where they serve the client&apos;s interests.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County Municipal Court also operates specialty dockets — including a drug court, mental health docket, and veterans court — for defendants whose criminal conduct is driven by underlying health or service-related issues. These dockets offer intensive supervision and support in exchange for avoiding incarceration. Our firm evaluates specialty docket eligibility and advocates for placement in appropriate cases.
-            </p>
+      <Section title="Ways to avoid a conviction at FCMC" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Intervention in Lieu of Conviction',
+              body: 'ILC under R.C. 2951.041 covers drug-related or substance-driven offenses when you agree to complete treatment. Finishing it ends in dismissal.',
+            },
+            {
+              title: 'Pre-trial diversion',
+              body: "Offered separately through the prosecutor's office for some first-time, low-level offenses.",
+            },
+            {
+              title: 'Specialty dockets',
+              body: 'A drug court, a mental health docket and a veterans court for people whose charges stem from health or service-related issues. They offer close supervision and support in place of jail.',
+            },
+            {
+              title: 'Expungement later',
+              body: (
+                <>
+                  Most misdemeanor convictions here can be sealed. See{' '}
+                  <Link href="/locations/franklin-county/expungement-franklin-county">expungement in Franklin County</Link>.
+                </>
+              ),
+            },
+          ]}
+        />
+        <p>The firm checks ILC, diversion and specialty docket eligibility in every case and argues for placement where it fits.</p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Franklin County Municipal Court Cases Require Experienced Counsel
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County Municipal Court processes one of the highest volumes of criminal cases of any court in Ohio. The court moves efficiently — arraignments, pretrial hearings, and trial dates follow tight schedules. Prosecutors at this court are experienced and handle high caseloads; they respond well to defense counsel who have reviewed the case thoroughly and come to negotiations with a clear factual and legal position. Defense attorneys who appear regularly at FCMC understand the specific procedures, docket assignment practices, and how particular judges handle suppression motions, plea negotiations, and sentencing.
-            </p>
+      <Section title="How the court works">
+        <p>
+          Franklin County Municipal Court handles one of the highest volumes of criminal cases of any court in Ohio, and it moves on
+          tight schedules for arraignments, pretrial hearings and trial dates. Prosecutors carry heavy caseloads and respond to defense
+          counsel who have reviewed the case and come to negotiations with a clear factual and legal position. Attorneys who appear
+          there regularly know its procedures, how dockets are assigned, and how particular judges handle suppression motions, plea
+          negotiations and sentencing.
+        </p>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
-              Our firm defends the full range of criminal misdemeanor charges at Franklin County Municipal Court.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />

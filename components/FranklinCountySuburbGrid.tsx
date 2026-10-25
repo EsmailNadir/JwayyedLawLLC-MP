@@ -100,7 +100,7 @@ export default function FranklinCountySuburbGrid() {
         >
           {/* Handle bar */}
           <div className="flex justify-center pt-3 pb-1">
-            <div className="w-10 h-1 bg-navy-950/10 rounded-full" />
+            <div className="w-10 h-1 bg-navy-950/10" />
           </div>
 
           <div className="px-6 pb-8 pt-3">
@@ -117,7 +117,7 @@ export default function FranklinCountySuburbGrid() {
               </div>
               <button
                 onClick={close}
-                className="ml-4 mt-1 text-navy-950/50 hover:text-navy-950/70 transition-colors p-1 rounded-full hover:bg-ice"
+                className="ml-4 mt-1 text-navy-950/50 hover:text-navy-950/70 transition-colors p-1 hover:bg-ice"
                 aria-label="Close"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

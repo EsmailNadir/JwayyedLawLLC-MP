@@ -5,10 +5,13 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
+import { FCMC } from '@/data/franklin-county-reference';
 
 export const metadata: Metadata = {
   title: 'Columbus Theft & Shoplifting Defense',
-  description: 'Theft & shoplifting defense in Columbus, Ohio. R.C. 2913.02, petty & felony theft. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
+  description:
+    'Theft under $1,000 in Columbus is petty theft, an M1 under R.C. 2913.02 heard at Franklin County Municipal Court. Larger amounts are felonies.',
   keywords: [
     'Columbus theft lawyer',
     'Columbus shoplifting attorney',
@@ -20,6 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Columbus Theft & Shoplifting Defense | Jwayyed Law LLC',
+    description: 'Courts, penalty tiers, diversion and defenses for theft and shoplifting charges in Columbus.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/theft-defense-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -29,125 +33,165 @@ export const metadata: Metadata = {
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
   { label: 'Franklin County', href: '/courts/franklin-county' },
-  { label: 'Theft Defense — Columbus', href: '/locations/franklin-county/theft-defense-columbus' },
+  { label: 'Theft Defense in Columbus', href: '/locations/franklin-county/theft-defense-columbus' },
 ];
 
 const faqs = [
   {
     question: 'Where are Columbus theft cases heard?',
-    answer: 'Misdemeanor theft and shoplifting charges from Columbus are heard at Franklin County Municipal Court, 375 S. High Street (floors 12–15), (614) 645-8186. Petty theft (under $1,000) is tried as an M1 misdemeanor there. Felony theft ($1,000 or more) is arraigned at Franklin County Municipal Court and then bound over to Franklin County Court of Common Pleas for trial. An attorney can appear at both venues.',
+    answer:
+      'Misdemeanor theft and shoplifting charges from Columbus are heard at Franklin County Municipal Court, 375 S. High Street (floors 12 to 15), (614) 645-8186. Petty theft (under $1,000) is tried there as an M1 misdemeanor. Felony theft ($1,000 or more) is arraigned at the Municipal Court and then bound over to the Franklin County Court of Common Pleas for trial. An attorney can appear in both.',
   },
   {
     question: 'What is petty theft in Columbus and what are the penalties?',
-    answer: 'Under R.C. 2913.02, petty theft is theft of property or services valued under $1,000 — a first-degree misdemeanor carrying up to 180 days in jail and a $1,000 fine. This is the most common theft charge for Columbus shoplifting incidents. Theft of $1,000–$7,499 is an F5 felony (up to 12 months prison, $2,500 fine). Amounts above $7,500 escalate further through F4, F3, F2, and F1 felonies. The degree is determined by the fair market value of the property at the time of the offense.',
+    answer:
+      'Under R.C. 2913.02, petty theft is theft of property or services worth under $1,000: a first-degree misdemeanor with up to 180 days in jail and a $1,000 fine. It is the most common charge for Columbus shoplifting. Theft of $1,000 to $7,499 is an F5 felony (up to 12 months in prison, $2,500 fine). Above $7,500 the charge rises through F4, F3, F2 and F1. The degree depends on the fair market value of the property at the time of the offense.',
   },
   {
     question: 'Can a Columbus theft charge be dismissed or diverted?',
-    answer: 'Many first-time Columbus theft defendants — particularly for low-value shoplifting charges — qualify for diversion or conditional dismissal. Franklin County prosecutor programs typically require restitution, community service, and no new arrests during a probationary period. Successful completion results in dismissal of the charge with no conviction on the record. First-offender diversion is far better than any plea, and our firm pursues it aggressively before recommending any other resolution.',
+    answer:
+      'Often, yes. Many first-time defendants, especially on low-value shoplifting charges, qualify for diversion or conditional dismissal. Franklin County prosecutor programs usually require restitution, community service and no new arrests during a probationary period. Completing the program leads to dismissal with no conviction on your record. The firm pursues diversion before recommending any other resolution.',
   },
   {
     question: 'Does a theft conviction in Columbus affect employment?',
-    answer: 'Yes. Theft convictions — even first-offense misdemeanor petty theft — are flagged in background checks used by virtually every employer. Retail employment, financial services, healthcare, and government positions often automatically disqualify applicants with theft records. Many professional licensing boards in Ohio treat theft convictions as grounds for investigation or license denial. This is why our firm focuses on diversion and dismissal options before any plea in Columbus theft cases.',
+    answer:
+      'Yes. Theft convictions, even a first misdemeanor petty theft, show up on the background checks nearly every employer runs. Retail, financial services, healthcare and government employers often disqualify applicants with theft records outright, and many Ohio licensing boards treat theft as grounds for investigation or license denial. That is why the firm looks at diversion and dismissal before any plea.',
   },
   {
     question: 'Can a Columbus theft conviction be expunged?',
-    answer: 'Misdemeanor theft convictions are eligible for expungement under ORC 2953.32 after a 1-year waiting period from final discharge, provided the defendant meets all other eligibility requirements. Felony theft convictions of the F4 or F5 degree may also be eligible after applicable waiting periods. Our firm evaluates expungement eligibility at the outset of every case to inform plea strategy — because a plea that retains expungement eligibility is meaningfully better than one that does not.',
+    answer:
+      'Misdemeanor theft convictions can be expunged under ORC 2953.32 after a 1-year waiting period from final discharge, if you meet the other eligibility rules. F4 and F5 theft convictions may also qualify after their waiting periods. The firm checks expungement eligibility at the start of the case, because a plea that keeps it available is worth more than one that does not.',
   },
   {
     question: 'What defenses apply to Columbus theft charges?',
-    answer: 'Columbus theft defenses include: challenging whether the defendant had the intent to permanently deprive the owner of the property (R.C. 2913.02\'s required mental state); challenging the valuation of the property used to determine the degree of the offense; challenging video or witness identification; examining whether a civil demand settlement was paid and its effect; and Fourth Amendment challenges to any search that produced evidence. Obtaining all surveillance footage, loss prevention reports, and police documentation is the first step.',
+    answer:
+      "Defenses include challenging intent to permanently deprive the owner (the mental state R.C. 2913.02 requires), challenging the property valuation that sets the degree, challenging video or witness identification, looking at whether a civil demand settlement was paid and what it means, and Fourth Amendment challenges to any search. The first step is getting all surveillance footage, loss prevention reports and police documentation.",
   },
   {
     question: 'Why hire Jwayyed Law LLC for a Columbus theft charge?',
-    answer: 'Jwayyed Law LLC provides experienced theft and shoplifting defense in Columbus and throughout Franklin County. Theft convictions affect employment and licensing far longer than the immediate penalties. Our firm knows when a Columbus theft case can be diverted, reduced, or dismissed — and fights for that outcome before any plea is entered. Call (614) 285-5482 to discuss your situation.',
+    answer:
+      'Jwayyed Law LLC defends theft and shoplifting charges in Columbus and throughout Franklin County. A theft conviction affects jobs and licenses long after the sentence. The firm looks for a diversion, reduction or dismissal before any plea is entered. Call (614) 285-5482 to discuss your situation.',
   },
 ];
 
-export default function ColumbusTheftPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Theft Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-columbus"};
+const RELATED = [
+  { href: '/criminal-defense/petty-theft', title: 'Theft and shoplifting defense in Ohio', subtitle: 'The statewide rules' },
+  { href: '/locations/franklin-county/expungement-columbus', title: 'Expungement in Columbus', subtitle: 'Sealing a theft conviction' },
+  { href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court', title: 'Misdemeanor defense at FCMC', subtitle: 'How misdemeanor cases move in this court' },
+  { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Court guide' },
+];
 
+export default function ColumbusTheftPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Theft Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-columbus"};
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Theft / Shoplifting Defense Attorney"
-        description="Theft or shoplifting charge in Columbus, Ohio? Jwayyed Law LLC defends petty theft and felony theft at Franklin County Municipal Court. Call (614) 285-5482."
+        title="Theft and shoplifting defense in Columbus"
+        description="Theft of property worth under $1,000 is petty theft, a first-degree misdemeanor with up to 180 days in jail. At $1,000 it becomes a felony."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Theft and Shoplifting Defense in Columbus, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus is Ohio&apos;s largest retail market, with major shopping districts along Easton Town Center, Polaris Fashion Place, Short North, the Continent, and Westland — and retail loss prevention operations at every major Columbus retailer that result in hundreds of theft and shoplifting arrests each year. A theft charge under Ohio Revised Code 2913.02, even for a first-time misdemeanor involving a relatively small-value item, creates a permanent public criminal record accessible to employers, landlords, and professional licensing boards. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense/petty-theft" className="text-sky-deep underline hover:opacity-80">theft and shoplifting defense</Link>{' '}
-              for Columbus residents charged in Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              to discuss your situation.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus theft arrests occur across a wide range of circumstances — shoplifting from major retailers, theft from employers, theft from vehicles, theft from persons, and property taken by deception. Loss prevention officers at Easton, Polaris, and other Columbus retail areas can detain suspected shoplifters and call Columbus Division of Police to make formal arrests. The charge follows the defendant from the arrest into a Franklin County Municipal Court case that, if not handled correctly, results in a permanent criminal record.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '$1,000', label: 'the line between petty theft (M1) and felony theft' },
+          { figure: '180 days', label: 'maximum jail for petty theft, with a $1,000 fine' },
+          { figure: '1 year', label: 'wait from final discharge to expunge a misdemeanor theft' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Theft Under R.C. 2913.02 — Degrees and Penalties
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Revised Code 2913.02 defines theft as knowingly obtaining or exerting control over property or services of another person, either without consent, by deception, threat, or intimidation. The critical element is <em>purposeful deprivation</em> — the prosecution must prove the defendant knowingly took the property with intent to permanently deprive the owner of it. Accidentally taking merchandise, good-faith price disputes, and situations where the defendant did not intend to permanently deprive the owner are defenses to the intent element.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The degree of a Columbus theft charge is determined by the value of the property: theft under $1,000 is petty theft, a first-degree misdemeanor (M1 — up to 180 days jail, $1,000 fine); $1,000–$7,499 is F5 (up to 12 months prison, $2,500 fine); $7,500–$149,999 is F4; $150,000–$749,999 is F3; $750,000–$1,499,999 is F2; and $1,500,000 or more is F1. Certain specific property types trigger enhanced charges regardless of dollar amount — theft of a firearm, a motor vehicle, an elderly person&apos;s property, and certain other categories carry enhanced degrees under R.C. 2913.02(B).
-            </p>
+      <Section
+        title="Where a Columbus theft case is heard"
+        intro={<p>Every Columbus theft charge starts at {FCMC.name}. Felony theft then moves to Common Pleas.</p>}
+      >
+        <FactTable
+          title={FCMC.name}
+          rows={[
+            { label: 'Address', value: FCMC.address },
+            { label: 'Courtrooms', value: FCMC.floors },
+            { label: 'Clerk', value: FCMC.clerkPhone },
+            { label: 'What it hears', value: 'M1 petty theft from arraignment through pretrial, plea and sentencing; the arraignment of felony theft.' },
+          ]}
+        />
+        <FactTable
+          title="Franklin County Court of Common Pleas"
+          rows={[{ label: 'What it hears', value: 'Felony theft ($1,000 or more), bound over from the Municipal Court for trial.' }]}
+        />
+        <p>
+          The firm handles both courts and keeps the same representation across them. Call <a href="tel:6142855482">(614) 285-5482</a>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Franklin County Municipal Court — Columbus Theft Proceedings
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Misdemeanor theft cases from Columbus are processed at Franklin County Municipal Court, 375 S. High Street. For M1 petty theft, arraignment and all subsequent proceedings — pretrial, plea, and sentencing — occur there. For felony theft ($1,000 or more), arraignment occurs at Franklin County Municipal Court but the case is then bound over to Franklin County Court of Common Pleas for trial. Our firm handles both venues and ensures continuity of representation across both courts.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Franklin County prosecutors handling Columbus theft cases evaluate diversion eligibility for first-time offenders, particularly for low-value misdemeanor theft. Diversion agreements typically require restitution to the retail victim, community service, and no new arrests. Successful completion results in dismissal of the charge — no conviction, no permanent record. Our firm identifies and pursues diversion availability before any plea is entered.
-            </p>
+      <Section title="How Columbus theft arrests happen" tone="ice">
+        <p>
+          Columbus is Ohio&rsquo;s largest retail market, with shopping districts at Easton Town Center, Polaris Fashion Place, the Short
+          North, the Continent and Westland, and loss prevention at every major retailer leads to hundreds of theft and shoplifting
+          arrests each year. Arrests also come from theft from employers, from vehicles and from persons, and from property taken by
+          deception.
+        </p>
+        <p>
+          Loss prevention officers at Easton, Polaris and other retail areas can detain a suspected shoplifter and call the Columbus
+          Division of Police to make the arrest. The case then goes to Franklin County Municipal Court, and if it is not handled well it
+          ends in a permanent public record that employers, landlords and licensing boards can see.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Defense Strategies for Columbus Theft Cases
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our Columbus theft defense begins with obtaining all available evidence: store surveillance footage (often recorded at multiple angles), loss prevention incident reports, police body-cam footage, and receipts or payment records. We evaluate the quality of any video identification evidence — Columbus retail surveillance footage often provides clear or contested images of the defendant&apos;s identity. We scrutinize the stated value of the property used to determine the degree of the charge, since even a modest reduction in the assessed value can drop a felony to a misdemeanor.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              In cases where the defendant did not intend to permanently deprive the owner — an absent-minded departure from the store, a pricing dispute, or taking an item believed to be abandoned or available — we build the factual defense around the mental state element of R.C. 2913.02. Theft requires purposeful deprivation, not mere negligence. Where the intent element is genuinely in question, pressing for trial or dismissal may be more valuable than any plea offer.
-            </p>
+      <Section title="Theft degrees and penalties under R.C. 2913.02">
+        <p>
+          Theft is knowingly obtaining or exerting control over another&rsquo;s property or services without consent, or by deception,
+          threat or intimidation. The prosecution must prove <em>purposeful deprivation</em>: that you took the property intending to
+          deprive the owner of it permanently.
+        </p>
+        <FactTable
+          title="Theft by value of the property"
+          rows={[
+            { label: 'Under $1,000', value: 'Petty theft, a first-degree misdemeanor (M1): up to 180 days in jail, $1,000 fine.' },
+            { label: '$1,000 to $7,499', value: 'F5: up to 12 months in prison, $2,500 fine.' },
+            { label: '$7,500 to $149,999', value: 'F4.' },
+            { label: '$150,000 to $749,999', value: 'F3.' },
+            { label: '$750,000 to $1,499,999', value: 'F2.' },
+            { label: '$1,500,000 or more', value: 'F1.' },
+          ]}
+          note="Some property raises the degree whatever its value: a firearm, a motor vehicle, an elderly person's property and other categories under R.C. 2913.02(B)."
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How We Can Help
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Evidence analysis:</strong> Surveillance footage, loss prevention reports, police documentation reviewed before any hearing</li>
-              <li><strong>Diversion and dismissal:</strong> Pursuing first-offender diversion for dismissal without conviction</li>
-              <li><strong>Intent challenges:</strong> Evaluating whether the prosecution can prove purposeful deprivation</li>
-              <li><strong>Valuation challenges:</strong> Contesting the stated value of property to reduce the degree of offense</li>
-              <li><strong>Identification challenges:</strong> Evaluating surveillance footage quality and the basis for the defendant&apos;s identification</li>
-              <li><strong>Expungement planning:</strong> Advising on ORC 2953.32 sealing eligibility from the start</li>
-            </ul>
+      <Section title="How the firm defends a theft case" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Gather the evidence',
+              body: 'Store surveillance footage (often from several angles), loss prevention incident reports, police body-cam footage and receipts or payment records, before any hearing.',
+            },
+            {
+              title: 'Pursue diversion',
+              body: 'Franklin County prosecutors consider diversion for first-time offenders, especially on low-value misdemeanor theft. It usually requires restitution, community service and no new arrests, and ends in dismissal with no conviction.',
+            },
+            { title: 'Challenge the case', body: 'If diversion is not available, the defenses below decide whether to negotiate or go to trial.' },
+          ]}
+        />
+        <PointGrid
+          points={[
+            {
+              title: 'Intent',
+              body: 'An absent-minded walk out of the store, a pricing dispute or taking something believed abandoned is not theft. Theft needs purposeful deprivation, not negligence, and where intent is truly in question, trial or dismissal may beat any offer.',
+            },
+            { title: 'Value', body: 'Even a modest cut in the assessed value can drop a felony to a misdemeanor.' },
+            { title: 'Identification', body: 'Retail surveillance images can be clear or contested, and the basis for identifying you is tested.' },
+            { title: 'Expungement planning', body: 'ORC 2953.32 sealing eligibility is part of the plan from the start.' },
+          ]}
+        />
+        <p>
+          The best time to act is before a plea and before the record is permanent. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
+          <Link href="/contact">schedule a consultation</Link>.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing theft or shoplifting charges in Columbus or anywhere in Franklin County, contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
-              Early action — before a plea is entered and before the record becomes permanent — is when an attorney can make the most difference.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="Related pages">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />

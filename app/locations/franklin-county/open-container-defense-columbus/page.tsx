@@ -5,13 +5,17 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { FCMC } from '@/data/franklin-county-reference';
 
 export const metadata: Metadata = {
   title: 'Columbus Open Container Defense Attorney',
-  description: 'Open container citation in Columbus? Vehicle and public-space charges under R.C. 4301.62. Franklin County Municipal Court. (614) 285-5482.',
+  description:
+    'An open container citation in Columbus under R.C. 4301.62 is a minor misdemeanor with a fine up to $150, heard at Franklin County Municipal Court.',
   keywords: ['Columbus open container lawyer', 'open container Columbus Ohio', 'open container vehicle Columbus', 'R.C. 4301.62 Columbus defense', 'Franklin County open container attorney'],
   openGraph: {
     title: 'Columbus Open Container Defense Attorney | Jwayyed Law LLC',
+    description: 'Vehicle and public-space open container charges, the downtown ORA and defenses in Columbus.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/open-container-defense-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -21,120 +25,158 @@ export const metadata: Metadata = {
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
   { label: 'Franklin County', href: '/courts/franklin-county' },
-  { label: 'Open Container — Columbus', href: '/locations/franklin-county/open-container-defense-columbus' },
+  { label: 'Open Container in Columbus', href: '/locations/franklin-county/open-container-defense-columbus' },
 ];
 
 const faqs = [
   {
     question: 'What is the open container law in Ohio and Columbus?',
-    answer: 'Ohio\'s open container law under R.C. 4301.62 prohibits the possession of an open container of beer or intoxicating liquor in a motor vehicle, in public places, and in certain other locations. An "open container" includes any bottle, can, or other container whose seal has been broken. Violation of R.C. 4301.62 in a vehicle is a minor misdemeanor — a fine with no jail time. However, open container charges may arise in connection with OVI stops, adding a citation alongside the more serious criminal charge.',
+    answer:
+      'R.C. 4301.62 prohibits having an open container of beer or intoxicating liquor in a motor vehicle, in public places and in certain other locations. An "open container" is any bottle, can or other container whose seal has been broken. A violation in a vehicle is a minor misdemeanor: a fine and no jail time. Open container charges often come out of OVI stops, as a citation added to the more serious charge.',
   },
   {
     question: 'Is there an open container exception for passengers in Columbus?',
-    answer: 'Ohio law (R.C. 4301.62(B)(3)) provides an exception that allows passengers in the living quarters of a motor home or recreational vehicle, or in a hired car like a limousine or chartered bus, to possess an open container. There is no general passenger exception for standard vehicles — a passenger in the front or back seat of a car with an open container violates R.C. 4301.62. Columbus rideshare vehicles (Uber, Lyft) do not qualify for the hired-car exception unless they are specifically operated as a limousine-type service.',
+    answer:
+      'Ohio law (R.C. 4301.62(B)(3)) lets passengers in the living quarters of a motor home or recreational vehicle, or in a hired car such as a limousine or chartered bus, have an open container. There is no general passenger exception for ordinary vehicles: a passenger in the front or back seat of a car with an open container violates R.C. 4301.62. Rideshare vehicles (Uber, Lyft) in Columbus do not qualify for the hired-car exception unless they operate as a limousine-type service.',
   },
   {
     question: 'Can Columbus have open container areas or entertainment districts?',
-    answer: 'Columbus has established designated entertainment areas where open containers are permitted under the Ohio Revised Code open container exemption for outdoor refreshment areas (ORA) under R.C. 4301.82. Downtown Columbus has an ORA designation that allows patrons of participating establishments to carry open drinks within the designated district during specified hours. However, the ORA exemption applies only within the designated geographic boundary and during permitted hours — open containers are not permitted in vehicles even within an ORA zone.',
+    answer:
+      'Yes. Columbus has designated areas where open containers are allowed under the outdoor refreshment area (ORA) exemption in R.C. 4301.82. Downtown Columbus has an ORA that lets patrons of participating establishments carry open drinks within the district during set hours. The exemption covers only that boundary and those hours, and never applies inside a vehicle, even within the ORA.',
   },
   {
     question: 'Does an open container citation in Columbus go on my criminal record?',
-    answer: 'A minor misdemeanor open container conviction under R.C. 4301.62 is technically a criminal conviction and does appear on background checks. However, it is the lowest-level criminal offense in Ohio — no jail time and a fine of up to $150. It is eligible for expungement under R.C. 2953.32 after a six-month waiting period from final discharge (the waiting period for minor misdemeanors under H.B. 96, effective September 30, 2025). For defendants without other criminal history, an open container conviction is typically more of an administrative nuisance than a career-altering event, but it still warrants defense to avoid even a minor record.',
+    answer:
+      'Yes. A minor misdemeanor open container conviction under R.C. 4301.62 is a criminal conviction and shows on background checks. It is the lowest-level criminal offense in Ohio: no jail and a fine of up to $150. It can be expunged under R.C. 2953.32 after a 6-month waiting period from final discharge (the minor misdemeanor waiting period under H.B. 96, effective September 30, 2025). For someone with no other record it is more nuisance than career risk, but it is still worth defending to avoid even a minor record.',
   },
   {
     question: 'How does an open container charge relate to an OVI stop in Columbus?',
-    answer: 'An open container violation inside the vehicle during an OVI stop is relevant in two ways: (1) it is evidence that the defendant had access to alcohol while driving, which supports the OVI charge; and (2) it is a separate citation that can be charged alongside the OVI. For the OVI defense, our firm addresses the open container citation as part of the overall case strategy — challenging whether the container\'s presence actually establishes consumption while driving, and whether the stop that led to both charges was constitutionally valid.',
+    answer:
+      "In two ways. It is evidence that you had access to alcohol while driving, which supports the OVI charge, and it is a separate citation charged alongside the OVI. The firm handles it as part of the OVI defense, challenging whether the container's presence shows drinking while driving and whether the stop behind both charges was constitutional.",
   },
   {
     question: 'Why hire Jwayyed Law LLC for a Columbus open container charge?',
-    answer: 'Even a minor misdemeanor open container conviction creates a record. When an open container citation is part of an OVI stop, it becomes part of the overall defense strategy — not a standalone nuisance charge. Jwayyed Law LLC defends open container charges at Franklin County Municipal Court and advises on expungement after disposition. When the charge accompanies an OVI, we address both charges together. Call (614) 285-5482.',
+    answer:
+      'Even a minor misdemeanor conviction creates a record, and when the citation comes from an OVI stop it is part of that defense. Jwayyed Law LLC defends open container charges at Franklin County Municipal Court and advises on expungement afterward. When the charge comes with an OVI, the firm handles both together. Call (614) 285-5482.',
   },
 ];
 
-export default function ColumbusOpenContainerPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Open Container Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/open-container-defense-columbus"};
+const RELATED = [
+  { href: '/locations/franklin-county/ovi-dui-defense-columbus', title: 'OVI defense in Columbus', subtitle: 'When the citation came from an OVI stop' },
+  { href: '/locations/franklin-county/disorderly-conduct-defense-columbus', title: 'Disorderly conduct in Columbus', subtitle: 'Another common entertainment-district charge' },
+  { href: '/locations/franklin-county/expungement-columbus', title: 'Expungement in Columbus', subtitle: 'Sealing a minor misdemeanor' },
+  { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Court guide' },
+  { href: '/criminal-defense/open-container', title: 'Open container in Ohio', subtitle: 'The statewide rules' },
+];
 
+export default function ColumbusOpenContainerPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Open Container Defense in Columbus", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/open-container-defense-columbus"};
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus Open Container Defense Attorney"
-        description="Open container citation in Columbus? Vehicle or public place charges under R.C. 4301.62. Jwayyed Law LLC at Franklin County Municipal Court. Call (614) 285-5482."
+        title="Open container defense in Columbus"
+        description="An open container in a vehicle or outside the downtown ORA is a minor misdemeanor under R.C. 4301.62, with a fine up to $150 and a criminal record."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Open Container Defense in Columbus, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An open container citation in Columbus under R.C. 4301.62 may appear minor — and in isolation, it often is. But open container charges regularly arise in two contexts that make defense important: as a standalone citation in one of Columbus&apos;s entertainment districts or during a traffic stop, and as a companion charge to an OVI arrest. When an open container citation accompanies an OVI, it is not just a nuisance ticket — it is evidence supporting the prosecution&apos;s case and must be addressed as part of the overall defense strategy. Even standing alone, a minor misdemeanor open container conviction creates a criminal record that appears on background checks and is eligible for expungement only after a six-month waiting period from final discharge. Jwayyed Law LLC defends open container charges at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
-            </p>
+      <Section
+        title="Where a Columbus open container citation is heard"
+        intro={<p>Open container citations in Columbus go to {FCMC.name}.</p>}
+      >
+        <FactTable
+          title={FCMC.name}
+          rows={[
+            { label: 'Address', value: FCMC.address },
+            { label: 'Courtrooms', value: FCMC.floors },
+            { label: 'Clerk', value: FCMC.clerkPhone },
+            { label: 'What it hears', value: 'Open container citations, alone or with an OVI charge.' },
+          ]}
+        />
+        <p>
+          The citation usually comes up in one of two ways: on its own in an entertainment district or at a traffic stop, or alongside an
+          OVI arrest. With an OVI it is evidence for the prosecution and part of the defense. On its own it still creates a record that
+          can be expunged only after a 6-month waiting period from final discharge. Call <a href="tel:6142855482">(614) 285-5482</a>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Ohio&apos;s Open Container Law — R.C. 4301.62
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              R.C. 4301.62 prohibits any person from having an open container of beer or intoxicating liquor in a motor vehicle. An &ldquo;open container&rdquo; is any container whose seal has been broken — whether the container is full, half-empty, or nearly empty. The container must be in the passenger compartment of the vehicle, not in a locked trunk or locked glove compartment. Under R.C. 4301.62(B)(4), a sealed container stored in the vehicle trunk or in a locked area behind the last upright seat of a vehicle without a trunk (such as an SUV) does not violate the statute.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The vehicle open container prohibition applies to both drivers and passengers. It applies whether the vehicle is moving or parked on a public street. It does not apply to vehicles parked on private property (such as a private parking lot) — though the boundary between &ldquo;public street&rdquo; and &ldquo;private property&rdquo; is sometimes disputed. The penalty for a first offense is a minor misdemeanor, carrying a fine up to $150. A second violation within one year escalates to an M4 misdemeanor.
-            </p>
+      <Section title="What R.C. 4301.62 prohibits in a vehicle" tone="ice">
+        <FactTable
+          title="Open container in a vehicle (R.C. 4301.62)"
+          rows={[
+            { label: 'Open container', value: 'Any container with a broken seal, whether full, half-empty or nearly empty.' },
+            { label: 'Where', value: 'The passenger compartment. Not a locked trunk or locked glove compartment.' },
+            {
+              label: 'Sealed and stored',
+              value: 'Under R.C. 4301.62(B)(4), a sealed container in the trunk, or in a locked area behind the last upright seat of a vehicle with no trunk (such as an SUV), is not a violation.',
+            },
+            { label: 'Who', value: 'Drivers and passengers.' },
+            { label: 'When', value: 'Moving or parked on a public street. Not parked on private property, such as a private lot, though that line is sometimes disputed.' },
+            { label: 'Penalty', value: 'First offense: minor misdemeanor, fine up to $150. A second violation within 1 year becomes an M4 misdemeanor.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Columbus&apos;s Outdoor Refreshment Area — ORA Exceptions
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus&apos;s downtown entertainment core is designated as an Outdoor Refreshment Area (ORA) under R.C. 4301.82. Within the ORA boundary, participating licensed establishments may issue special cups allowing patrons to carry open alcoholic beverages on public sidewalks and pedestrian areas within the designated zone during specified hours. This creates a legal context where open containers are permitted in public spaces — but only within the ORA boundaries, only during permitted hours, and never inside motor vehicles.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Short North and Arena District events frequently occur within or adjacent to ORA zones. Columbus visitors who are unaware of the geographic ORA boundaries may inadvertently carry an open container outside the designated zone — technically violating R.C. 4301.62 even though they were legally carrying the same container moments before. These are highly defensible citations: the lack of clear boundary marking, the defendant&apos;s good-faith belief they were within the ORA zone, and the minor nature of the offense all weigh in favor of dismissal or diversion.
-            </p>
+      <Section title="The downtown Outdoor Refreshment Area">
+        <p>
+          Downtown Columbus is designated an Outdoor Refreshment Area (ORA) under R.C. 4301.82. Inside the boundary, participating licensed
+          establishments can issue special cups that let patrons carry open drinks on public sidewalks and pedestrian areas during set
+          hours. Outside the boundary, outside those hours, and in any vehicle, the exemption does not apply.
+        </p>
+        <p>
+          Short North and Arena District events often take place in or next to ORA zones. Someone who does not know where the boundary
+          runs can walk out of it with a drink they were carrying legally moments before. These citations are often defensible: unclear
+          boundary markings, a good-faith belief you were inside the zone and the minor nature of the offense all favor dismissal or
+          diversion.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Open Container as an OVI-Related Charge in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Columbus OVI stops frequently produce open container citations in addition to the OVI charge. The open container evidence — a beer can on the center console, a wine bottle in the cup holder — is relevant because it tends to show recent alcohol consumption in the vehicle. Prosecutors will rely on the open container at trial to corroborate that the defendant was drinking while driving, not merely before getting in the vehicle.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm addresses the open container charge as an integrated part of the OVI defense. If the traffic stop was invalid, suppression of all evidence from the stop — including the open container — can be sought. If the container was in the trunk or a locked area not visible to the officer, the initial basis for the charge deserves scrutiny. And if the OVI charge is successfully challenged, the companion open container citation typically resolves as well. We do not treat open container as a throwaway charge when it accompanies an OVI — it is evidence in the larger case.
-            </p>
+      <Section title="Open container at an OVI stop" tone="ice">
+        <p>
+          Columbus OVI stops often produce an open container citation too. A can on the center console or a bottle in the cup holder tends
+          to show drinking in the vehicle, and prosecutors use it at trial to argue you drank while driving and not just before.
+        </p>
+        <p>
+          The firm treats it as part of the OVI defense. If the stop was invalid, suppression of everything from it, including the
+          container, can be sought. If the container was in the trunk or a locked area the officer could not see, the basis for the
+          charge is open to question. If the OVI is defeated, the open container citation usually resolves with it.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Defense Strategies for Columbus Open Container Charges
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Most open container cases in Columbus are straightforward on their face — the officer saw a container, the defendant was present, and the charge follows. But even these cases have defense opportunities. Our firm reviews: whether the container was actually &ldquo;open&rdquo; under the statutory definition (a broken seal is required — a sealed bottle does not qualify); whether the container was in a location within the vehicle that is excluded from the statute (trunk, locked glove compartment, behind the last upright seat in an SUV); whether the defendant was actually the person in possession when multiple occupants are present; and whether the underlying traffic stop was constitutionally valid. A stop that lacked reasonable suspicion produces suppressible evidence — and suppression typically ends the case.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For first-time defendants in Columbus with no prior criminal history, diversion is frequently available — a conditional dismissal that closes the case without a conviction after a brief period of good behavior and possibly a nominal community service requirement. These outcomes are routinely achievable through an attorney&apos;s pretrial negotiation at Franklin County Municipal Court for minor misdemeanor matters, and our firm pursues this outcome in every eligible open container case.
-            </p>
+      <Section title="Defenses to an open container charge">
+        <p>Most cases look simple: the officer saw a container and you were there. There are still questions to ask.</p>
+        <PointGrid
+          points={[
+            { title: 'Was it open?', body: 'The statute needs a broken seal. A sealed bottle does not qualify.' },
+            { title: 'Where was it?', body: 'The trunk, a locked glove compartment and the area behind the last upright seat of an SUV are excluded.' },
+            { title: 'Whose was it?', body: 'With several people in the car, whether you were the one in possession.' },
+            { title: 'Was the stop lawful?', body: 'A stop without reasonable suspicion produces suppressible evidence, and suppression usually ends the case.' },
+          ]}
+        />
+        <p>
+          For first-time defendants with no record, diversion is often available: a conditional dismissal that closes the case without a
+          conviction after a short period of good behavior and possibly some community service. It is routinely reached through pretrial
+          negotiation at Franklin County Municipal Court for minor misdemeanors, and the firm pursues it in every eligible case.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement of Open Container Convictions in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A minor misdemeanor open container conviction is eligible for expungement under R.C. 2953.32 after a six-month waiting period from final discharge — the minor misdemeanor waiting period under H.B. 96 (effective September 30, 2025). Under the expanded expungement provisions of H.B. 96 (effective September 30, 2025), first-time minor misdemeanor convictions are among the most straightforwardly eligible for sealing. Our firm handles expungement petitions at Franklin County Court of Common Pleas and advises clients on timing and eligibility. If an open container conviction is on your record and the waiting period has passed, contact us to begin the expungement process.
-            </p>
+      <Section title="Expunging an open container conviction" tone="ice">
+        <p>
+          A minor misdemeanor open container conviction can be expunged under R.C. 2953.32 after a 6-month waiting period from final
+          discharge, the minor misdemeanor waiting period under H.B. 96 (effective September 30, 2025). First-time minor misdemeanors are
+          among the most clearly eligible convictions for sealing. The firm handles expungement petitions at the Franklin County Court of
+          Common Pleas and advises on timing and eligibility. If the waiting period has passed, you can start now.
+        </p>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
-              Whether your open container charge is standalone or part of an OVI stop, defense counsel matters.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="Related pages">
+        <LinkGrid links={RELATED} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />

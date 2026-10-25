@@ -141,6 +141,24 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | what-to-expect-circleville-municipal-court-pickaway-county | Court at 151 E. Franklin St. | Address unverified | Medium |
 | dog bite article | Two-year limit | Strict-liability claims under 955.28 may have a longer limit | Low |
 
+## Franklin County location pages and suburb templates
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| first-ovi-columbus, ovi-dui-defense-columbus, FCMC OVI page, high-tier-ovi-columbus | HB 37 allows waiving the 15-day hard suspension only with an ignition interlock | The statewide first-OVI page says it may be waived without one if there is no prior Physical Control conviction | High |
+| franklin-county hub, mayors-courts-franklin-county, criminal-misdemeanor-FCMC, data/franklin-county-reference.ts | New Albany has / has no mayor's court; "thirteen" vs "fourteen" active mayor's courts | Pages and data disagree | High |
+| franklin-county hub vs other pages | ALS appeal 30 days "from the date of the ALS" vs from the arrest | Inconsistent (statute: from the initial appearance) | High |
+| felony-ovi-columbus, expungement-franklin-county, personal-injury-franklin-county, app/courts/franklin-county | Common Pleas at 373, 375 or 369 S. High St. | Three addresses for one court | High |
+| open-container, disorderly-conduct, marijuana-possession (Columbus) vs hub | Expungements filed in Common Pleas vs FCMC | Inconsistent | Medium |
+| expungement-franklin-county vs expungement-columbus | Some F2s sealable after 7 years, up to five felonies; R.C. 4510.35 for the OVI exclusion vs F1/F2 generally ineligible; 60 days to object and to hearing | Inconsistent; citations to check | High |
+| criminal-misdemeanor-FCMC | Drug court, mental health docket, veterans court | The data lists HART, MAVS and CATCH | Medium |
+| felony-ovi, third-ovi, second-ovi, high-tier, refusal, underage, cdl, ovi-with-accident, marijuana-ovi (Columbus) | Several penalty statements: third OVI "remains a first-degree misdemeanor"; 90-day high-tier ALS; first refusal gets the high-tier 6-day minimum; underage OVI expungeable; 49 CFR 392.5 for the CDL 0.04% limit; State v. Ilg on metabolites; mixed aggravated vehicular assault degrees | Each conflicts with the statewide pages or the reference data | High |
+| marijuana-possession, drug-possession, disorderly-conduct, open-container, theft, domestic-violence, assault (Columbus) | Four ounces "a potential felony"; bulk amounts; second paraphernalia an M2; HART completion always means dismissal; intoxication "automatically" M4; second open container M4 within 1 year; pregnant-victim DV; teacher assault "F4 with a prior" | Conflict with each page's own thresholds or the reference data | High |
+| suburb templates (Drug, OVI, Mayor's Court, Open Container, DV, Assault) | Drug FAQ thresholds vs body; "minor misdemeanor marijuana (2.5 to 10 oz)"; mayor's courts hear "minor misdemeanor OVI"; ALS "always filed in FCMC" (Dublin lists ALS hearings); reckless operation "can sometimes be sealed"; mayor's court presided over "rather than a licensed attorney"; open container as a 4506-4511 traffic violation; no federal path to restore firearm rights after DV | Each looks wrong or conflicts with the reference data | High |
+| ovi-dui-defense-columbus, OVI template | "Ohio Bar Association" investigates or licenses attorneys; FCMC "the busiest municipal court in Ohio" | The Supreme Court of Ohio regulates lawyers; unverified | Medium |
+| wrapper metadata | Grove City DV description names Grove City Mayor's Court; many descriptions say FCMC for suburbs whose cases start in a mayor's court | Conflicts with the template body | Medium |
+| personal-injury-franklin-county, business-formation-llc-franklin-county | UM/UIM at ORC 3345.21; insurers "must offer" UM/UIM; barred at "50% or more" fault; statutory agent at 1705.06 | Wrong section; Ohio's bar is greater than 50%; likely 1706.09 | Medium |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |

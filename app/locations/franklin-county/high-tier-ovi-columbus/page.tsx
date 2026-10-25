@@ -5,13 +5,17 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { FCMC } from '@/data/franklin-county-reference';
 
 export const metadata: Metadata = {
-  title: 'Columbus High-Tier OVI Defense | BAC 0.17%',
-  description: 'High-tier OVI in Columbus (BAC 0.17% or above)? Enhanced 6-day mandatory minimum under HB 37. Franklin County Municipal Court. (614) 285-5482.',
+  title: 'Columbus High-Tier OVI Defense: BAC 0.17%',
+  description:
+    'A BAC of 0.17% or above makes a Columbus OVI high tier, doubling the first-offense mandatory minimum to 6 days under HB 37.',
   keywords: ['Columbus high tier OVI lawyer', 'high BAC DUI Columbus Ohio', '0.17 OVI Columbus', 'aggravated OVI Columbus', 'high tier OVI Franklin County defense'],
   openGraph: {
-    title: 'Columbus High-Tier OVI Defense | BAC 0.17% | Jwayyed Law LLC',
+    title: 'Columbus High-Tier OVI Defense: BAC 0.17% | Jwayyed Law LLC',
+    description: 'Penalties, BAC challenges and the ALS appeal for a high-tier OVI at Franklin County Municipal Court.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/high-tier-ovi-columbus',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -21,114 +25,166 @@ export const metadata: Metadata = {
 const breadcrumbItems = [
   { label: 'Courts', href: '/courts' },
   { label: 'Franklin County', href: '/courts/franklin-county' },
-  { label: 'High-Tier OVI — Columbus', href: '/locations/franklin-county/high-tier-ovi-columbus' },
+  { label: 'High-Tier OVI in Columbus', href: '/locations/franklin-county/high-tier-ovi-columbus' },
 ];
 
 const faqs = [
   {
     question: 'What is high-tier OVI in Columbus and when does it apply?',
-    answer: 'High-tier OVI applies in Columbus when the BAC is 0.17% or above (breath), or equivalent high concentrations in blood or urine testing. Ohio\'s HB 37 (effective April 9, 2025) preserved the high-tier designation and its enhanced mandatory minimums. High-tier also applies to certain drug concentration levels in blood testing for Schedule I controlled substances and marijuana metabolites under R.C. 4511.19(A)(1)(h)-(j).',
+    answer:
+      "High-tier OVI applies when the BAC is 0.17% or above on a breath test, or an equivalent high concentration in blood or urine. Ohio's HB 37 (effective April 9, 2025) kept the high-tier designation and its higher mandatory minimums. High tier also covers certain drug concentrations in blood for Schedule I controlled substances and marijuana metabolites under R.C. 4511.19(A)(1)(h)-(j).",
   },
   {
     question: 'What are the mandatory penalties for a high-tier OVI in Columbus?',
-    answer: 'A first high-tier OVI (BAC 0.17%+) in Columbus under HB 37 carries: mandatory minimum 6 days — either 3 days in jail plus 3 days in a certified Driver Intervention Program, or 6 days straight in jail if no DIP is available; fines of $565–$1,075; and a 1–3 year license suspension. This is double the 3-day mandatory minimum for a standard first OVI, and a court cannot impose less than the mandatory minimum regardless of circumstances.',
+    answer:
+      'A first high-tier OVI (BAC 0.17%+) under HB 37 carries a mandatory minimum of 6 days: 3 days in jail plus 3 days in a certified Driver Intervention Program, or 6 days in jail if no DIP is available. Fines are $565 to $1,075 and the license suspension is 1 to 3 years. That is double the 3-day minimum for a standard first OVI, and the court cannot go below it.',
   },
   {
     question: 'Can a high-tier BAC result be challenged in Columbus?',
-    answer: 'Yes. Breathalyzer results above 0.17% can be challenged on accuracy and reliability grounds. Ohio breath test instruments have certified operational procedures and mandatory calibration intervals. Maintenance records showing improper calibration, irregular testing intervals, or instrument malfunctions can undermine the reliability of any BAC reading — particularly near-threshold readings (0.17%–0.19%). Blood test results are challengeable on chain-of-custody and laboratory procedure grounds. Our firm subpoenas all relevant records before evaluating any BAC evidence.',
+    answer:
+      'Yes. Breath results above 0.17% can be challenged on accuracy and reliability. Ohio breath instruments have certified operating procedures and mandatory calibration intervals. Records showing improper calibration, irregular testing intervals or a malfunction can undermine a reading, especially one near the threshold (0.17% to 0.19%). Blood results can be challenged on chain of custody and lab procedure. The firm subpoenas the records before weighing the BAC evidence.',
   },
   {
     question: 'Is the DIP option available for a high-tier Columbus OVI?',
-    answer: 'Yes, but with a different structure. For a high-tier first OVI, the DIP alternative is: 3 days in jail plus 3 days in a certified Driver Intervention Program — not the 3-day DIP alone that suffices for low-tier. If no DIP is available in Franklin County, the court must impose 6 days straight in jail. Our firm evaluates DIP availability at the time of your case and advises on whether the DIP alternative is appropriate for your specific situation.',
+    answer:
+      'Yes, in a different form. For a high-tier first OVI, the DIP alternative is 3 days in jail plus 3 days in a certified Driver Intervention Program, not the 3-day DIP alone that satisfies a low-tier case. If no DIP is available in Franklin County, the court must impose 6 days in jail. The firm checks DIP availability at the time of your case and advises on whether it fits.',
   },
   {
     question: 'Does a high-tier OVI in Columbus affect ignition interlock eligibility?',
-    answer: 'Under HB 37, a high-tier OVI defendant who agrees to install a certified ignition interlock device can have the 15-day hard suspension waiting period waived for limited driving privileges — the same as a low-tier defendant. However, high-tier OVI defendants may face stricter interlock requirements and longer interlock maintenance periods. Our firm advises on the specific interlock conditions that apply to your case.',
+    answer:
+      'Under HB 37, a high-tier defendant who agrees to a certified ignition interlock can have the 15-day hard suspension waived for limited driving privileges, the same as a low-tier defendant. High-tier defendants may face stricter interlock requirements and longer interlock periods. The firm advises on the conditions that apply to your case.',
   },
   {
     question: 'Why hire Jwayyed Law LLC for a Columbus high-tier OVI?',
-    answer: 'A high-tier OVI in Columbus carries enhanced mandatory minimums that make a conviction substantially more disruptive than a standard first OVI. Challenging the accuracy of a 0.17%+ BAC result — through calibration records, instrument error analysis, and rising BAC arguments — is a critical part of high-tier OVI defense. Jwayyed Law LLC files ALS appeals within the 30-day deadline and builds the defense strategy around the specific BAC evidence in your case. Call (614) 285-5482.',
+    answer:
+      'A high-tier conviction is much more disruptive than a standard first OVI. Challenging a 0.17%+ result through calibration records, instrument error analysis and rising BAC is central to the defense. Jwayyed Law LLC files ALS appeals within the 30-day deadline and builds the defense around the BAC evidence in your case. Call (614) 285-5482.',
   },
 ];
 
-export default function ColumbusHighTierOVIPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — High-Tier OVI Defense in Columbus", "serviceType": "OVI DUI Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/high-tier-ovi-columbus"};
+const RELATED = [
+  { href: '/locations/franklin-county/ovi-dui-defense-columbus', title: 'OVI defense in Columbus', subtitle: 'Every OVI charge in Franklin County' },
+  { href: '/locations/franklin-county/first-ovi-columbus', title: 'First OVI in Columbus', subtitle: 'Low-tier penalties for comparison' },
+  { href: '/locations/franklin-county/refusal-ovi-columbus', title: 'Refusal OVI in Columbus', subtitle: 'When no test was taken' },
+  { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Court guide' },
+  { href: '/ovi-dui-defense/high-tier-ovi', title: 'High-tier OVI in Ohio', subtitle: 'The statewide rules for a BAC of 0.17% or more' },
+  { href: '/ovi-dui-defense/limited-driving-privileges', title: 'Limited driving privileges', subtitle: 'Interlocks and driving during a suspension' },
+];
 
+export default function ColumbusHighTierOVIPage() {
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: High-Tier OVI Defense in Columbus", "serviceType": "OVI DUI Defense", "areaServed": {"@type": "City", "name": "Columbus", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/high-tier-ovi-columbus"};
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Columbus High-Tier OVI Defense Attorney (BAC 0.17%+)"
-        description="High-tier OVI in Columbus? 6-day mandatory minimum, enhanced penalties under HB 37. Jwayyed Law LLC challenges BAC accuracy and defends high-tier charges. Call (614) 285-5482."
+        title="High-tier OVI defense in Columbus"
+        description="A BAC of 0.17% or above doubles the mandatory minimum for a first OVI from 3 days to 6. The gap between 0.16% and 0.17% is why the accuracy of the test matters so much."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              High-Tier OVI Defense in Columbus, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A Columbus OVI arrest where the BAC registers 0.17% or above triggers Ohio&apos;s high-tier OVI designation under R.C. 4511.19 — and with it, enhanced mandatory minimums that double the required jail time for a first offense. Under HB 37 (effective April 9, 2025), a first high-tier OVI in Columbus carries a mandatory 6-day minimum: 3 days in jail plus 3 days in a certified Driver Intervention Program (or 6 days straight if no DIP is available). The difference between a 0.16% BAC and a 0.17% BAC is the difference between 3-day and 6-day mandatory minimums — which is why challenging the accuracy of the BAC result is a central part of every high-tier OVI defense. Jwayyed Law LLC defends high-tier OVI charges at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '0.17%', label: 'BAC (or 0.17 grams per 210 liters of breath) that makes an OVI high tier' },
+          { figure: '6 days', label: 'mandatory minimum for a first high-tier OVI' },
+          { figure: '$565 to $1,075', label: 'fine range' },
+          { figure: '30 days', label: 'from arrest to appeal the ALS' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              High-Tier OVI Threshold — What Triggers the Enhanced Penalties
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The high-tier designation applies when the breath test result is 0.17 grams per 210 liters (the breath equivalent of 0.17% BAC) or above. For blood tests, the threshold is 0.17% whole blood or equivalent. Ohio also applies high-tier designations to certain drug concentration levels in blood under R.C. 4511.19(A)(1)(h)–(j). The threshold is based on the tested result — not necessarily the actual BAC at the time of driving, which may have been lower if the BAC was still rising at the time of testing.
-            </p>
+      <Section
+        title="Where a Columbus high-tier OVI is heard"
+        intro={<p>Columbus high-tier OVI charges are handled at {FCMC.name}.</p>}
+      >
+        <FactTable
+          title={FCMC.name}
+          rows={[
+            { label: 'Address', value: FCMC.address },
+            { label: 'Courtrooms', value: FCMC.floors },
+            { label: 'Clerk', value: FCMC.clerkPhone },
+            { label: 'Breath instrument', value: 'Most commonly the Intoxilyzer 8000, used by the Columbus Division of Police and other Franklin County agencies.' },
+          ]}
+        />
+        <p>
+          Jwayyed Law LLC defends high-tier OVI charges at Franklin County Municipal Court. Call <a href="tel:6142855482">(614) 285-5482</a>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Challenging the High-Tier BAC Result in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The most valuable defense in a Columbus high-tier OVI is challenging the accuracy of the 0.17%+ BAC result. Ohio breathalyzer instruments — most commonly the Intoxilyzer 8000 used by the Columbus Division of Police and other Franklin County agencies — have certified margins of error and mandatory calibration and maintenance requirements. A near-threshold result (0.17%–0.19%) may fall within the instrument&apos;s error margin when calibration records are analyzed. We subpoena all maintenance and calibration logs for the specific instrument used and compare them against Ohio Department of Health certification standards.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The rising BAC defense is also relevant in high-tier cases. If the defendant&apos;s BAC was still rising between the time of driving and the time of testing — a normal physiological process when alcohol absorption is ongoing — the actual BAC at the moment of driving may have been below 0.17%. This defense is most effective when there is a significant time gap between the stop and the test, and when the tested result is close to the 0.17% threshold.
-            </p>
+      <Section title="What makes an OVI high tier" tone="ice">
+        <p>
+          Under R.C. 4511.19, the high tier applies at a breath result of 0.17 grams per 210 liters (the breath equivalent of 0.17% BAC) or
+          above, or 0.17% in whole blood or the equivalent. It also applies to certain drug concentrations in blood under R.C.
+          4511.19(A)(1)(h)-(j). The threshold is based on the tested result, which can be higher than your BAC while driving if it was still
+          rising at the time of the test.
+        </p>
+        <FactTable
+          title="First high-tier OVI under HB 37 (effective April 9, 2025)"
+          rows={[
+            { label: 'Jail', value: '6 days: 3 days in jail plus 3 days in a certified Driver Intervention Program, or 6 days in jail if no DIP is available.' },
+            { label: 'Fine', value: '$565 to $1,075.' },
+            { label: 'License', value: '1 to 3 years suspension.' },
+            { label: 'Low tier, for comparison', value: '3 days, which can be met in a certified DIP with no jail time.' },
+          ]}
+        />
+        <p>
+          The difference between 0.16% and 0.17% is one one-hundredth of a percent (0.01%), and it decides whether the minimum is 3 days or 6.
+          For results between 0.17% and 0.20%, the instrument&rsquo;s certified margin of error may span the threshold. A successful
+          challenge can cut the mandatory minimum in half.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Administrative License Suspension for High-Tier OVI in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The Administrative License Suspension (ALS) triggered by a high-tier OVI arrest in Columbus operates identically to a standard OVI ALS: 90 days for consent (test taken, BAC at or above 0.08%), 1 year for refusal. The ALS is imposed immediately upon arrest and is separate from any criminal case outcome. The 30-day appeal deadline in Franklin County Municipal Court applies equally to high-tier cases. Our firm files the ALS appeal within days of being retained, requests a stay of the suspension so the client can continue driving while the appeal is pending, and challenges every procedural and substantive defect in the ALS process.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under HB 37, defendants who agree to install a certified ignition interlock device may have the 15-day hard suspension period waived for limited driving privileges. For high-tier defendants, the interlock is also likely to be required as a condition of any limited privileges during a criminal suspension. Our firm evaluates interlock eligibility and advises on the interaction between the ALS and any criminal suspension from the outset of the case.
-            </p>
+      <Section title="Challenging a high-tier BAC result">
+        <PointGrid
+          points={[
+            {
+              title: 'Calibration and maintenance',
+              body: 'The Intoxilyzer 8000 has certified margins of error and mandatory calibration and maintenance requirements. A result of 0.17% to 0.19% may fall within the error margin. The firm subpoenas the logs for the specific instrument and compares them with Ohio Department of Health certification standards.',
+            },
+            {
+              title: 'Rising BAC',
+              body: 'If alcohol was still being absorbed, your BAC while driving may have been below 0.17%. This works best when there is a real gap between the stop and the test and the result is close to the threshold.',
+            },
+            { title: 'Blood tests', body: 'Chain of custody and laboratory procedure.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              High-Tier vs. Standard OVI — Why the 0.01% Difference Matters
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The distinction between a 0.16% BAC result and a 0.17% result is one one-hundredth of a percent — but it is the difference between 3 days mandatory minimum and 6 days mandatory minimum. At the standard tier, a first OVI defendant can satisfy the mandatory minimum with 3 days in a certified Driver Intervention Program and no jail time. At the high tier, the mandatory minimum is 3 days jail plus 3 days DIP (or 6 days straight jail if no DIP is available). For a first-time defendant with employment and family obligations, the difference between these two outcomes is enormous. This is why BAC accuracy challenges — particularly for results between 0.17% and 0.20% — are so important in high-tier defense. The instrument&apos;s certified margin of error at that level may span the threshold, and a successful challenge to the threshold crossing can reduce the mandatory minimum by half.
-            </p>
+      <Section title="The license after a high-tier arrest" tone="ice">
+        <FactTable
+          title="Administrative License Suspension"
+          rows={[
+            { label: 'Test taken (BAC 0.08%+)', value: '90 days.' },
+            { label: 'Refusal', value: '1 year.' },
+            { label: 'Appeal', value: 'Within 30 days in Franklin County Municipal Court, with a stay requested.' },
+          ]}
+          note="The ALS starts at arrest and is separate from the criminal case."
+        />
+        <p>
+          Under HB 37, a defendant who agrees to a certified ignition interlock may have the 15-day hard suspension waived for limited driving
+          privileges. A high-tier defendant is also likely to need an interlock as a condition of privileges during a criminal suspension. The
+          firm advises on how the ALS and any criminal suspension interact from the start.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Collateral Consequences of a High-Tier OVI Conviction in Columbus
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Beyond the enhanced mandatory minimums, a high-tier OVI conviction in Columbus carries the same collateral consequences as any OVI — plus the added stigma of the elevated BAC on the permanent record. Unlike most Ohio criminal convictions, an OVI conviction under R.C. 4511.19 is <strong>not eligible for expungement</strong> — it will remain on the defendant&apos;s criminal record permanently, visible on background checks at any point in the future. It will also appear on driving record reports reviewed by insurance carriers, employers in transportation and logistics, and government agencies with security clearance requirements. Auto insurance rates typically double or triple for years following an OVI conviction, and the high-tier BAC designation may cause some carriers to decline coverage entirely. Professional licenses that require character reviews — attorney, nurse, doctor, teacher, licensed contractor — all require disclosure of OVI convictions, and the high BAC compounds the impact of that disclosure before licensing boards. The 10-year look-back period means a high-tier first conviction stays relevant if a second OVI occurs within a decade. Our firm evaluates these collateral consequences from the beginning of every high-tier OVI case and factors them into the overall defense strategy.
-            </p>
+      <Section title="What a high-tier conviction costs">
+        <p>
+          An OVI conviction under R.C. 4511.19 is not eligible for expungement, so it stays on your record and on background checks. It also
+          appears on driving records reviewed by insurers, transportation and logistics employers, and agencies with security clearance
+          requirements. Insurance rates often double or triple for years, and some carriers may decline coverage because of the high BAC.
+        </p>
+        <p>
+          Attorneys, nurses, doctors, teachers and licensed contractors must disclose OVI convictions, and a high BAC adds weight before a
+          licensing board. The 10-year lookback keeps a high-tier first conviction relevant if a second OVI follows within a decade.
+        </p>
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>. The 30-day ALS appeal
+          deadline applies.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
-              The 30-day ALS appeal deadline applies — act immediately.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="Related pages" tone="ice">
+        <LinkGrid links={RELATED} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />
