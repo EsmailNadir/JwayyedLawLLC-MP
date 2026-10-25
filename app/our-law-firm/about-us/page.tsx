@@ -1,18 +1,26 @@
 import type { Metadata } from 'next';
-import AboutPageClient from './AboutPageClient';
+import AboutView from '@/components/about/AboutView';
 
 export const metadata: Metadata = {
-  title: 'About Our Law Firm | Jwayyed Law LLC Ohio',
-  description: 'Learn about Jwayyed Law LLC — attorney Jwayyed Jwayyed, bar #0098679, serving Columbus and Ohio in OVI, criminal defense, personal injury, and estate law.',
+  title: 'About Our Firm',
+  description:
+    'Jwayyed Law LLC and Attorney Jwayyed Jwayyed (Ohio Bar #0098679): a former prosecutor representing clients in OVI, criminal, injury and estate matters across Ohio.',
   alternates: { canonical: '/our-law-firm/about-us' },
   openGraph: {
-    title: 'About Our Law Firm | Jwayyed Law LLC Ohio',
-    description: 'Attorney Jwayyed Jwayyed, bar #0098679 — experienced Ohio counsel in OVI, criminal defense, personal injury, and estate planning.',
+    title: 'About Our Firm | Jwayyed Law LLC',
+    description: 'Attorney Jwayyed Jwayyed, Ohio Bar #0098679: former prosecutor, now representing clients across Ohio.',
     url: 'https://www.jjlawohio.com/our-law-firm/about-us',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
 };
 
 export default function AboutUsPage() {
-  return <AboutPageClient />;
+  return (
+    <AboutView
+      breadcrumbs={[
+        { label: 'Our Law Firm', href: '/our-law-firm' },
+        { label: 'About Us', href: '/our-law-firm/about-us' },
+      ]}
+    />
+  );
 }

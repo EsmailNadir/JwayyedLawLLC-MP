@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
-import AboutClient from './AboutClient';
+import AboutView from '@/components/about/AboutView';
 
 export const metadata: Metadata = {
-  title: 'About Jwayyed Law LLC | Ohio Criminal Defense & OVI Attorney',
-  description: 'Learn about Jwayyed Law LLC — Ohio defense attorney Jwayyed Jwayyed serving Columbus statewide. OVI, criminal defense, personal injury, estate planning.',
+  title: 'About Attorney Jwayyed Jwayyed',
+  description:
+    'Ohio attorney Jwayyed Jwayyed: former prosecutor for eight Ohio communities, licensed since 2019, defending clients in Columbus and statewide.',
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'About Jwayyed Law LLC | Ohio Criminal Defense & OVI Attorney',
-    description: 'Learn about Jwayyed Law LLC — experienced Ohio defense attorney serving Columbus and all of Ohio.',
+    title: 'About Attorney Jwayyed Jwayyed | Jwayyed Law LLC',
+    description: 'Former prosecutor for eight Ohio communities, now representing clients across Ohio.',
     url: 'https://www.jjlawohio.com/about',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return <AboutView breadcrumbs={[{ label: 'About Attorney Jwayyed', href: '/about' }]} />;
 }
