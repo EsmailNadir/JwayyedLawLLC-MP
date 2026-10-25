@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Construction Disputes Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Construction Disputes Lawyer in Ohio',
   description: 'Experienced Ohio construction disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
   keywords: ['construction disputes lawyer Columbus OH', 'construction attorney Ohio', 'contractor disputes lawyer', 'Franklin County construction attorney'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights OVI Defense | Jwayyed Law LLC',
+  title: 'Grandview Heights OVI Defense',
   description: 'OVI arrest in Grandview Heights? ALS appeal 30-day deadline. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights OVI lawyer', 'Grandview Heights DUI attorney', 'Grandview Heights Ohio OVI defense', 'Franklin County OVI Grandview Heights'],
   openGraph: {

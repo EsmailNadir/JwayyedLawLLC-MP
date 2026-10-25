@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Business Attorney | Jwayyed Law LLC',
+  title: 'Delaware County Business Attorney',
   description: 'Business attorney serving Delaware County, Ohio. LLC formation, business law, Delaware, Powell, Dublin, Lewis Center. Call (614) 285-5482.',
   keywords: ['business lawyer Delaware County', 'LLC formation Delaware Ohio', 'Delaware County business attorney', 'LLC formation Powell Ohio', 'small business attorney Lewis Center Ohio'],
   openGraph: {

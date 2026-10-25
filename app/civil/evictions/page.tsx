@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Eviction Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Eviction Lawyer in Ohio',
   description: 'Experienced Ohio eviction attorney representing landlords and tenants in eviction proceedings. Schedule consultation: (614) 285-5482',
   keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney'],
   openGraph: {

@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens County OVI Attorney | Jwayyed Law LLC',
+  title: 'Athens County OVI Attorney',
   description: 'OVI/DUI defense attorney in Athens County, Ohio. Athens Municipal Court. HB 37 penalties, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI defense Athens County', 'DUI attorney Athens Municipal Court', 'Athens County OVI lawyer', 'Athens DUI defense'],
   openGraph: {

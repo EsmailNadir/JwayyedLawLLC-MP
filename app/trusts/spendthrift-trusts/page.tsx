@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Spendthrift Trusts Lawyer Ohio | Jwayyed Law LLC',
+  title: 'Spendthrift Trusts Lawyer Ohio',
   description: 'Ohio spendthrift trust attorney serving Columbus, Cincinnati, and Dayton. ORC 5805.01 creditor protection, exceptions for child support and alimony.',
   keywords: [
     'spendthrift trust Columbus OH',

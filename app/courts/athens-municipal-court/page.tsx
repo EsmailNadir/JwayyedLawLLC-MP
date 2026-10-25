@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Athens Municipal Court Attorney',
   description: 'Experienced attorney for Athens Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Athens County, Ohio.',
   keywords: ['Athens Municipal Court attorney', 'Athens County OVI lawyer', 'Athens misdemeanor defense', 'Ohio University OVI defense', 'Athens Ohio criminal attorney'],
   openGraph: {

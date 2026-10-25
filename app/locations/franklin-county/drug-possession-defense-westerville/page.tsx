@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Westerville Drug Possession Defense',
   description: 'Drug possession charge in Westerville? ILC eligibility, suppression. Westerville Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Westerville drug possession lawyer', 'Westerville drug charge defense', 'Westerville Ohio drug possession'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Workplace Injury Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Workplace Injury Lawyer',
   description: 'Ohio workplace injury and workers compensation attorney. ORC 4123, BWC claims, third-party lawsuits, and employer retaliation. Call (614) 285-5482.',
   keywords: ['workplace injury lawyer Columbus OH', 'workers compensation attorney Ohio', 'BWC claim lawyer', 'Franklin County workplace injury attorney', 'ORC 4123 workers comp Ohio'],
   openGraph: {

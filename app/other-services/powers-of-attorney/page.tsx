@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Powers of Attorney Lawyer | Columbus | Jwayyed Law LLC',
+  title: 'Powers of Attorney Lawyer | Columbus',
   description: 'Ohio attorney drafting durable financial and healthcare powers of attorney under ORC Chapter 1337. Plan ahead and avoid guardianship. Call (614) 285-5482.',
   keywords: [
     'power of attorney attorney Columbus OH',

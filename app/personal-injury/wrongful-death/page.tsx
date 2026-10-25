@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wrongful Death Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Wrongful Death Lawyer in Ohio',
   description: 'Experienced Ohio wrongful death attorney helping families recover compensation. Skilled representation for wrongful death cases in Ohio.',
   keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Obetz Theft Defense Attorney | Jwayyed Law LLC',
+  title: 'Obetz Theft Defense Attorney',
   description: 'Theft & shoplifting defense attorney serving Obetz, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Obetz theft lawyer', 'Obetz theft attorney', 'Obetz Ohio theft defense', 'Franklin County theft Obetz'],
   openGraph: {

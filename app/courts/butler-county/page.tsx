@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Butler County Court Representation | Jwayyed Law LLC',
+  title: 'Butler County Court Representation',
   description: 'Experienced legal representation in Butler County courts including Area Courts I, II, III and Hamilton Municipal Court. OVI defense, criminal defense.',
   keywords: [
     'Butler County court attorney',

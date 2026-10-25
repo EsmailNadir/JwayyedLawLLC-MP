@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Whitehall Drug Possession Defense',
   description: 'Drug possession charge in Whitehall? ILC eligibility, suppression. Whitehall Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Whitehall drug possession lawyer', 'Whitehall drug charge defense', 'Whitehall Ohio drug possession'],
   openGraph: {

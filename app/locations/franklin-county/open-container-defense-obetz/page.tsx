@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Obetz Open Container Defense | Jwayyed Law LLC',
+  title: 'Obetz Open Container Defense',
   description: 'Open container defense attorney in Obetz, Ohio — ORC 4301.62 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Obetz open container lawyer', 'Obetz open container defense', 'Obetz Ohio open container'],
   openGraph: {

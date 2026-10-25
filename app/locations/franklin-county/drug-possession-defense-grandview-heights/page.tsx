@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Grandview Heights Drug Possession Defense',
   description: 'Drug possession charge in Grandview Heights? ILC eligibility, suppression. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights drug possession lawyer', 'Grandview Heights drug charge defense', 'Grandview Heights Ohio drug possession'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'High-Tier OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'High-Tier OVI Defense Lawyer in Ohio',
   description: 'Experienced Ohio high-tier OVI defense attorney protecting your rights. Skilled representation for high BAC OVI/DUI charges in Ohio.',
   keywords: ['high-tier OVI lawyer Ohio', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney'],
   openGraph: {

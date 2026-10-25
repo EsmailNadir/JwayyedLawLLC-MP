@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Butler County Criminal Defense & OVI | Jwayyed Law LLC',
+  title: 'Butler County Criminal Defense & OVI',
   description:
     'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Butler County — Hamilton, Middletown, Fairfield, Oxford. Call (614) 285-5482.',
   keywords: [

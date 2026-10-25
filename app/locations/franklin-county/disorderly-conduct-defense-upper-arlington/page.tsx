@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Upper Arlington Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Upper Arlington Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Upper Arlington? R.C. 2917.11. Upper Arlington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Upper Arlington disorderly conduct lawyer', 'Upper Arlington disorderly conduct defense', 'Upper Arlington Ohio disorderly conduct'],
   openGraph: {

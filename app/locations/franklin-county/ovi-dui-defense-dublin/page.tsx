@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Dublin OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Dublin OVI Defense Attorney',
   description: 'OVI arrest in Dublin? ALS appeal 30-day deadline. Dublin Mayor\'s Court and FCMC. U.S. 33 and S.R. 161 enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Dublin OVI lawyer', 'Dublin DUI attorney', 'Dublin Ohio OVI defense', 'Dublin Ohio drunk driving', 'Franklin County OVI Dublin'],
   openGraph: {

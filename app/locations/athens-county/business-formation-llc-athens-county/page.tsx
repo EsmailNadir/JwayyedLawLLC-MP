@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens County Business Attorney | Jwayyed Law LLC',
+  title: 'Athens County Business Attorney',
   description: 'Business attorney serving Athens County, Ohio. LLC formation, operating agreements, contracts, and business law. Call (614) 285-5482.',
   keywords: ['business lawyer Athens County', 'LLC formation Athens Ohio', 'Athens County business attorney', 'LLC formation Ohio University area', 'small business attorney Athens Ohio'],
   openGraph: {

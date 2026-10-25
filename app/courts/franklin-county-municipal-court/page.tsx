@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Franklin County Municipal Court Attorney',
   description: 'OVI, criminal defense, and civil representation in Franklin County Municipal Court at 375 S. High St., Columbus. Call Jwayyed Law LLC — (614) 285-5482.',
   keywords: [
     'Franklin County Municipal Court attorney',

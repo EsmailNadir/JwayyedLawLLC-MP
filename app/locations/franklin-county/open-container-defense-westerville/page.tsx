@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Open Container Defense | Jwayyed Law LLC',
+  title: 'Westerville Open Container Defense',
   description: 'Criminal defense attorney serving Westerville, Ohio. Assault, domestic violence, drug, and theft charges — Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Westerville open container lawyer', 'Westerville open container defense', 'Westerville Ohio open container'],
   openGraph: {

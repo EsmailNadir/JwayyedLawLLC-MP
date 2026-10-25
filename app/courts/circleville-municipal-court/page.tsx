@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Circleville Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Circleville Municipal Court Attorney',
   description: 'Experienced attorney for Circleville Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Pickaway County, Ohio.',
   keywords: ['Circleville Municipal Court attorney', 'Pickaway County OVI lawyer', 'Circleville misdemeanor defense', 'Circleville Ohio criminal attorney', 'Pickaway County DUI attorney'],
   openGraph: {

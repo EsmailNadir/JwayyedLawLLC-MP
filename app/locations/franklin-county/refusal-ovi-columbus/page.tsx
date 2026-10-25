@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law LLC',
+  title: 'Columbus OVI Refusal Defense Attorney',
   description: 'Refused breath or blood test in Columbus? 1-year ALS for refusal, enhanced OVI penalties. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Columbus OVI refusal lawyer', 'refused breath test Columbus Ohio', 'implied consent OVI Columbus', 'Columbus DUI refusal attorney', 'OVI refusal Franklin County defense'],
   openGraph: {

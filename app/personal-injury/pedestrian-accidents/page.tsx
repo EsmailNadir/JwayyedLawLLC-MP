@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Pedestrian Accident Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Pedestrian Accident Lawyer in Ohio',
   description: 'Experienced Ohio pedestrian accident attorney helping victims recover compensation. Skilled representation for pedestrian accident injuries in Ohio.',
   keywords: ['pedestrian accident lawyer Columbus OH', 'pedestrian accident attorney Ohio', 'pedestrian lawyer', 'Franklin County pedestrian accident attorney'],
   openGraph: {

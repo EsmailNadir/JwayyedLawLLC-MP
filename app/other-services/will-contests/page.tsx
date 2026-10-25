@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+  title: 'Will Contests Lawyer in Ohio | Columbus',
   description: 'Ohio attorney handling will contests — contesting and defending wills on grounds of lack of capacity, undue influence, fraud, and improper execution.',
   keywords: [
     'will contest lawyer Columbus OH',

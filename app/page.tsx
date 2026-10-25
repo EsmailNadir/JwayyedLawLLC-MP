@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Ohio Attorney | OVI & Criminal Defense | Jwayyed Law LLC',
+  title: 'Ohio Attorney | OVI & Criminal Defense',
   description: 'Jwayyed Law LLC: OVI/DUI and criminal defense attorney serving all of Ohio. Call (614) 285-5482 to schedule a consultation.',
   keywords: [
     'criminal defense attorney Columbus Ohio',

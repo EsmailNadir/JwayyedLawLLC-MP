@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Theft Defense Attorney Ohio | Jwayyed Law LLC',
+  title: 'Theft Defense Attorney Ohio',
   description: 'Ohio theft defense attorney for petty theft and shoplifting charges under ORC 2913.02. Serving all Ohio counties. Call (614) 285-5482.',
   keywords: [
     'petty theft lawyer Ohio',

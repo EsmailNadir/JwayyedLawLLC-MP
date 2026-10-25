@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Expungement Attorney | Jwayyed Law LLC',
+  title: 'Columbus Expungement Attorney',
   description: 'Seal your criminal record in Columbus. R.C. 2953.32 expungement for misdemeanor and felony convictions. Franklin County Municipal Court. (614) 285-5482.',
   keywords: [
     'Columbus expungement lawyer',

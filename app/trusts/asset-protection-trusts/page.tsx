@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Asset Protection Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Asset Protection Trusts Lawyer in Ohio',
   description: 'Ohio attorney helping individuals establish Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors.',
   keywords: [
     'asset protection trust Ohio',

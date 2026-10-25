@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Debt Collection Defense Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Debt Collection Defense Lawyer in Ohio',
   description: 'Experienced Ohio debt collection defense attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
   keywords: ['debt collection defense lawyer Columbus OH', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
   openGraph: {

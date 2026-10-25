@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Marijuana Possession Defense Ohio | Jwayyed Law LLC',
+  title: 'Marijuana Possession Defense Ohio',
   description: 'Marijuana possession charge in Ohio? Know what is legal and what is still criminal under Issue 2 and HB 86. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: [
     'marijuana possession lawyer Ohio',

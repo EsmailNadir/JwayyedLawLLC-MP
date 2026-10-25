@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Worthington Open Container Defense | Jwayyed Law LLC',
+  title: 'Worthington Open Container Defense',
   description: 'Open container defense attorney serving Worthington, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Worthington open container lawyer', 'Worthington open container defense', 'Worthington Ohio open container'],
   openGraph: {

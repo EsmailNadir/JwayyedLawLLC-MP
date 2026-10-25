@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer | Montgomery County | Jwayyed Law LLC',
+  title: 'Personal Injury Lawyer | Montgomery County',
   description: 'Personal injury attorney serving Montgomery County, Dayton, and Kettering, Ohio. Car accidents, slip and fall, and serious injuries. Call (614) 285-5482.',
   keywords: ['personal injury Montgomery County', 'injury lawyer Dayton Ohio', 'Montgomery County accident attorney', 'car accident lawyer Dayton Ohio', 'personal injury Kettering Ohio'],
   openGraph: {

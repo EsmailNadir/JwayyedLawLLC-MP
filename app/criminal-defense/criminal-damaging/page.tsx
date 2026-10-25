@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Damaging Defense Ohio | Jwayyed Law LLC',
+  title: 'Criminal Damaging Defense Ohio',
   description: 'Ohio criminal damaging defense attorney for ORC 2909.06 charges statewide. Call Jwayyed Law LLC at (614) 285-5482 for a consultation.',
   keywords: [
     'criminal damaging lawyer Ohio',

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Reynoldsburg OVI Defense Attorney',
   description: 'OVI arrest in Reynoldsburg? ALS appeal 30-day deadline. Reynoldsburg Mayor\'s Court and FCMC. I-70 and U.S. 40 enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Reynoldsburg OVI lawyer', 'Reynoldsburg DUI attorney', 'Reynoldsburg Ohio OVI defense', 'Franklin County OVI Reynoldsburg'],
   openGraph: {

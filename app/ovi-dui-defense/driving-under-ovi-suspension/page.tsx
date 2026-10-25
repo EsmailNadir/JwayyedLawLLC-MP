@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Driving Under OVI Suspension | Jwayyed Law LLC',
+  title: 'Driving Under OVI Suspension',
   description: 'Experienced Ohio driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio.',
   keywords: ['driving under suspension attorney Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'ORC 4510.14 defense'],
   openGraph: {

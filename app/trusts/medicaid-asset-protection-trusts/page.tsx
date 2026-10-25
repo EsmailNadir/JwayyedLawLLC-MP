@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Medicaid Asset Protection Trusts Ohio | Jwayyed Law LLC',
+  title: 'Medicaid Asset Protection Trusts Ohio',
   description: 'Ohio Medicaid Asset Protection Trust attorney helping Columbus, Cincinnati, and Dayton families protect assets from Medicaid spend-down.',
   keywords: [
     'medicaid asset protection trust Columbus OH',

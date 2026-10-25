@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Westerville Assault Defense Attorney',
   description: 'Criminal defense attorney in Westerville, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Westerville assault lawyer', 'Westerville assault attorney', 'Westerville Ohio assault defense'],
   openGraph: {

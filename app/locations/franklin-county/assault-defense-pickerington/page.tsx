@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Pickerington Assault Defense Attorney',
   description: 'Criminal defense attorney in Pickerington, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Pickerington assault lawyer', 'Pickerington assault attorney', 'Pickerington Ohio assault defense'],
   openGraph: {

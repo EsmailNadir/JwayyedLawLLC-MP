@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Partnership Disputes Lawyer Ohio | Jwayyed Law LLC',
+  title: 'Partnership Disputes Lawyer Ohio',
   description: 'Ohio partnership disputes attorney handling fiduciary breaches, profit-sharing conflicts, judicial dissolution.',
   keywords: ['partnership disputes lawyer Columbus OH', 'Ohio partnership dispute attorney', 'ORC 1776 attorney', 'partnership dissolution Ohio', 'fiduciary duty partner Ohio', 'Franklin County partnership attorney'],
   openGraph: {

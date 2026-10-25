@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Pickaway County OVI & Criminal Defense | Jwayyed Law LLC',
+  title: 'Pickaway County OVI & Criminal Defense',
   description:
     'OVI, criminal, and personal injury defense in Pickaway County — Circleville, Ashville, and Williamsport. Circleville Municipal Court. Call (614) 285-5482.',
   keywords: [

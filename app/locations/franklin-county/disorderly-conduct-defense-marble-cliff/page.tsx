@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Marble Cliff Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Marble Cliff Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Marble Cliff? R.C. 2917.11. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Marble Cliff disorderly conduct lawyer', 'Marble Cliff disorderly conduct defense', 'Marble Cliff Ohio disorderly conduct'],
   openGraph: {

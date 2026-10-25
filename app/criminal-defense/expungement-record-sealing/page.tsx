@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Expungement Attorney Ohio | Jwayyed Law LLC',
+  title: 'Expungement Attorney Ohio',
   description: 'Ohio expungement attorney sealing criminal records under ORC 2953.32. Misdemeanors, low-level felonies, dismissed charges. Call (614) 285-5482.',
   keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County'],
   openGraph: {

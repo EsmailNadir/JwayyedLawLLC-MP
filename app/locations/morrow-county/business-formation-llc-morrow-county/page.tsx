@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Morrow County | Jwayyed Law LLC',
+  title: 'Business & LLC Formation | Morrow County',
   description: 'Business attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. LLC formation, business law, farm LLCs.',
   keywords: ['business lawyer Morrow County', 'LLC formation Mt. Gilead Ohio', 'Morrow County business attorney', 'farm LLC Ohio', 'small business attorney Cardington Ohio'],
   openGraph: {

@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Obstruction of Official Business Ohio | Jwayyed Law LLC',
+  title: 'Obstruction of Official Business Ohio',
   description: 'Ohio obstruction of official business defense attorney for ORC 2921.31 charges statewide. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'obstruction of official business lawyer Ohio',

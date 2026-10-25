@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Fairborn & Xenia | Jwayyed Law LLC',
+  title: 'Criminal Defense Lawyer | Fairborn & Xenia',
   description: 'Criminal defense attorney serving Greene County, Ohio — Fairborn Municipal Court. Assault, drug, theft & OVI charges. Call (614) 285-5482.',
   keywords: ['criminal defense Fairborn Ohio', 'misdemeanor attorney Greene County', 'Fairborn Municipal Court criminal lawyer', 'Xenia misdemeanor defense', 'military criminal defense Ohio'],
   openGraph: {

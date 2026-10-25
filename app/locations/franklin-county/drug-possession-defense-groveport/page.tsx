@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Groveport Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Groveport Drug Possession Defense',
   description: 'Drug possession charge in Groveport? ILC eligibility, suppression. Groveport Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Groveport drug possession lawyer', 'Groveport drug charge defense', 'Groveport Ohio drug possession'],
   openGraph: {

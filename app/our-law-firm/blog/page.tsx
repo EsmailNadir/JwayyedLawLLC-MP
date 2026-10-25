@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import BlogPageClient from './BlogPageClient';
 
 export const metadata: Metadata = {
-  title: 'Ohio Legal Blog | Criminal Defense & OVI | Jwayyed Law LLC',
+  title: 'Ohio Legal Blog | Criminal Defense & OVI',
   description: 'Read the latest Ohio legal insights from Jwayyed Law LLC — covering criminal defense, OVI/DUI, personal injury, business law, and estate planning.',
   alternates: {
     canonical: '/our-law-firm/blog',

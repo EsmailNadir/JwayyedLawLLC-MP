@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Dayton Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Dayton Municipal Court Attorney',
   description: 'Experienced attorney for Dayton Municipal Court. OVI/DUI defense, misdemeanor criminal charges, traffic violations, and civil matters in Montgomery County.',
   keywords: ['Dayton Municipal Court attorney', 'Montgomery County OVI lawyer', 'Dayton misdemeanor defense', 'Dayton Ohio criminal attorney', 'Montgomery County DUI lawyer'],
   openGraph: {

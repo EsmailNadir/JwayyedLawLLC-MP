@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Canal Winchester Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Canal Winchester Mayor's Court Attorney",
   description: "Charged in Canal Winchester Mayor's Court? OVI, traffic, misdemeanor defense. Jwayyed Law LLC. Call (614) 285-5482.",
   keywords: ["Canal Winchester mayor's court lawyer", "Canal Winchester mayor's court attorney", "Canal Winchester Ohio mayor's court defense"],
   openGraph: {

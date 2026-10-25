@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Estate Planning & Wills Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Estate Planning & Wills Lawyer',
   description: 'Experienced Ohio estate planning attorney drafting wills, powers of attorney, and healthcare directives for Columbus-area families.',
   keywords: [
     'estate planning lawyer Columbus OH',

@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Domestic Violence Defense Ohio | Jwayyed Law LLC',
+  title: 'Domestic Violence Defense Ohio',
   description: 'Ohio domestic violence defense attorney for DV charges and protection orders statewide. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'domestic violence lawyer Ohio',

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Delaware County Municipal Court Attorney',
   description: 'Experienced attorney for Delaware County Municipal Court in Delaware, Ohio. OVI/DUI defense, misdemeanor criminal charges, and traffic violations.',
   keywords: ['Delaware County Municipal Court attorney', 'Delaware County OVI lawyer', 'Delaware County misdemeanor defense', 'Delaware Ohio criminal attorney', 'OVI lawyer Delaware Ohio'],
   openGraph: {

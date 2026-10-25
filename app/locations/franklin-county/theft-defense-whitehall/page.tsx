@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Theft Defense Attorney | Jwayyed Law LLC',
+  title: 'Whitehall Theft Defense Attorney',
   description: 'Theft charge in Whitehall? Whitehall Mayor\'s Court and FCMC. E. Main Street corridor enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Whitehall theft lawyer', 'Whitehall shoplifting attorney', 'Whitehall Ohio theft defense', 'Franklin County theft Whitehall'],
   openGraph: {

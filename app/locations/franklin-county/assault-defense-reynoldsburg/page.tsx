@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Reynoldsburg Assault Defense Attorney',
   description: 'Criminal defense attorney in Reynoldsburg, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Reynoldsburg assault lawyer', 'Reynoldsburg assault attorney', 'Reynoldsburg Ohio assault defense'],
   openGraph: {

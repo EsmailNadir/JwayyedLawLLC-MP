@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Employment Agreement Lawyer Ohio | Jwayyed Law LLC',
+  title: 'Employment Agreement Lawyer Ohio',
   description: 'Ohio employment agreement attorney drafting and reviewing employment contracts, offer letters, severance agreements.',
   keywords: ['employment agreement lawyer Columbus OH', 'Ohio employment contract attorney', 'at-will employment Ohio', 'severance agreement Ohio', 'independent contractor misclassification Ohio', 'ORC 4111 employment lawyer'],
   openGraph: {

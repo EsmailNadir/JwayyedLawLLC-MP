@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Butler County OVI Attorney | Jwayyed Law LLC',
+  title: 'Butler County OVI Attorney',
   description: 'OVI/DUI defense attorney for Hamilton, Oxford, West Chester, and Butler County, Ohio. Area Courts and Hamilton Municipal Court. Call (614) 285-5482.',
   keywords: ['OVI lawyer Hamilton Ohio', 'DUI attorney Butler County', 'OVI defense Butler County', 'Butler County Area Court OVI', 'Oxford Ohio OVI attorney', 'West Chester OVI lawyer'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'New Albany Drug Possession Defense | Jwayyed Law LLC',
+  title: 'New Albany Drug Possession Defense',
   description: 'Drug possession charge in New Albany? ILC eligibility, suppression. New Albany Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['New Albany drug possession lawyer', 'New Albany drug charge defense', 'New Albany Ohio drug possession'],
   openGraph: {

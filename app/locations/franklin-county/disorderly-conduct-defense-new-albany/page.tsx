@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'New Albany Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'New Albany Disorderly Conduct Defense',
   description: 'Disorderly conduct defense attorney in New Albany, Ohio — ORC 2917.11 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['New Albany disorderly conduct lawyer', 'New Albany disorderly conduct defense', 'New Albany Ohio disorderly conduct'],
   openGraph: {

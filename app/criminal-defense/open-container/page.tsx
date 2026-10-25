@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Open Container Defense Ohio | Jwayyed Law LLC',
+  title: 'Open Container Defense Ohio',
   description: 'Open container citation in Ohio? Jwayyed Law LLC defends R.C. 4301.62 charges in Franklin County and throughout central Ohio. Call (614) 285-5482.',
   keywords: [
     'open container lawyer Ohio',

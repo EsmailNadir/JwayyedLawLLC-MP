@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Columbus Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Columbus? Minor misdemeanor or M4. Short North, OSU, Arena District arrests. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Columbus disorderly conduct lawyer', 'disorderly conduct Columbus Ohio', 'disorderly conduct attorney Franklin County', 'Short North disorderly Columbus', 'Columbus disorderly conduct defense'],
   openGraph: {

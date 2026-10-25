@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI Defense Lawyer | Circleville | Jwayyed Law LLC',
+  title: 'OVI Defense Lawyer | Circleville',
   description: 'Experienced OVI/DUI defense attorney in Pickaway County - Circleville Municipal Court. Skilled representation for OVI/DUI charges in Pickaway County, Ohio.',
   keywords: ['OVI defense Pickaway County', 'DUI attorney Circleville Municipal Court', 'Pickaway County OVI lawyer', 'Circleville DUI defense'],
   openGraph: {

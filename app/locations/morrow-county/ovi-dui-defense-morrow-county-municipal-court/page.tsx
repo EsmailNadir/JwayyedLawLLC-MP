@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Jwayyed Law LLC',
+  title: 'OVI / DUI Lawyer for Mount Gilead, Ohio',
   description: 'OVI/DUI defense attorney for Mount Gilead and Morrow County, Ohio. Morrow County Municipal Court. First OVI, second OVI, and misdemeanor OVI defense.',
   keywords: ['OVI lawyer Mount Gilead Ohio', 'DUI attorney Morrow County', 'OVI defense Morrow County', 'Morrow County Municipal Court OVI'],
   openGraph: {

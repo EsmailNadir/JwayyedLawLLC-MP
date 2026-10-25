@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grove City Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Grove City Disorderly Conduct Defense',
   description: 'Criminal defense attorney in Grove City, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Grove City disorderly conduct lawyer', 'Grove City disorderly conduct defense', 'Grove City Ohio disorderly conduct'],
   openGraph: {

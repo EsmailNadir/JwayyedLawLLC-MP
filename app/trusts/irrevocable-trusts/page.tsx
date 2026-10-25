@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Irrevocable Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Irrevocable Trusts Lawyer in Ohio',
   description: 'Ohio attorney helping clients establish irrevocable trusts for estate tax planning, Medicaid planning, and asset protection.',
   keywords: [
     'irrevocable trust Columbus OH',

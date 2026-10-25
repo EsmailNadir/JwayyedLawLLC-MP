@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Assault Defense | Jwayyed Law LLC',
+  title: 'Grandview Heights Assault Defense',
   description: 'Assault charge in Grandview Heights? R.C. 2903.13. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights assault lawyer', 'Grandview Heights assault attorney', 'Grandview Heights Ohio assault defense'],
   openGraph: {

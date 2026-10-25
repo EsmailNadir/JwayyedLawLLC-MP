@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer | Morrow County | Jwayyed Law LLC',
+  title: 'Personal Injury Lawyer | Morrow County',
   description: 'Personal injury attorney serving Morrow County, Mt. Gilead, Cardington, Marengo, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Morrow County', 'injury lawyer Mt. Gilead Ohio', 'Morrow County accident attorney', 'car accident lawyer Cardington Ohio', 'slip and fall Morrow County'],
   openGraph: {

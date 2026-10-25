@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Montgomery County OVI & Criminal Defense | Jwayyed Law LLC',
+  title: 'Montgomery County OVI & Criminal Defense',
   description:
     'OVI, criminal defense & personal injury across Montgomery County — Dayton, Kettering, Huber Heights & nearby. Dayton Municipal Court. (614) 285-5482.',
   keywords: [

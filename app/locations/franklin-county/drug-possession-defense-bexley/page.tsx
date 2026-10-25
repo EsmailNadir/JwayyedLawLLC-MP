@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Bexley Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Bexley Drug Possession Defense',
   description: 'Drug possession charge in Bexley? ILC eligibility, suppression defenses. Bexley Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Bexley drug possession lawyer', 'Bexley drug charge attorney', 'Bexley Ohio drug possession defense', 'Franklin County drug Bexley', 'Bexley marijuana possession'],
   openGraph: {

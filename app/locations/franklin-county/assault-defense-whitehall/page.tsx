@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Whitehall Assault Defense Attorney',
   description: 'Criminal defense attorney in Whitehall, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Whitehall assault lawyer', 'Whitehall assault attorney', 'Whitehall Ohio assault defense'],
   openGraph: {

@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Greene County Court Representation | Jwayyed Law LLC',
+  title: 'Greene County Court Representation',
   description: 'OVI defense, criminal defense, and civil representation in Greene County courts including Fairborn Municipal Court and Xenia Municipal Court.',
   keywords: [
     'Greene County OVI attorney',

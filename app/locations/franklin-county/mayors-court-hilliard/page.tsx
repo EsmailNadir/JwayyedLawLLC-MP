@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Hilliard Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Hilliard Mayor's Court Attorney",
   description: "Charged in Hilliard Mayor's Court? OVI, traffic, and misdemeanor defense. Jwayyed Law LLC appears in Hilliard Mayor's Court. Call (614) 285-5482.",
   keywords: ["Hilliard mayor's court lawyer", "Hilliard mayor's court attorney", "Hilliard Ohio mayor's court defense"],
   openGraph: {

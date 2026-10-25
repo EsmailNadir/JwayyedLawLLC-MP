@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Reynoldsburg Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Reynoldsburg Mayor's Court Attorney",
   description: "Charged in Reynoldsburg Mayor's Court? OVI, traffic, misdemeanor defense. Jwayyed Law LLC. Call (614) 285-5482.",
   keywords: ["Reynoldsburg mayor's court lawyer", "Reynoldsburg mayor's court attorney", "Reynoldsburg Ohio mayor's court defense"],
   openGraph: {

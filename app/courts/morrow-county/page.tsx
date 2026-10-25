@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Morrow County Court Representation | Jwayyed Law LLC',
+  title: 'Morrow County Court Representation',
   description: 'Experienced legal representation in Morrow County courts including Morrow County Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Morrow County court attorney',

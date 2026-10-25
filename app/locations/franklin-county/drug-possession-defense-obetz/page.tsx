@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Obetz Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Obetz Drug Possession Defense',
   description: 'Drug possession charge in Obetz? ILC eligibility, suppression. Obetz Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Obetz drug possession lawyer', 'Obetz drug charge defense', 'Obetz Ohio drug possession'],
   openGraph: {

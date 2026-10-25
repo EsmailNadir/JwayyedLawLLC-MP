@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'OVI With Accident Ohio | Jwayyed Law LLC',
+  title: 'OVI With Accident Ohio',
   description: 'Experienced Ohio OVI with accident defense attorney protecting your rights. Skilled representation for OVI/DUI charges involving accidents in Ohio.',
   keywords: ['OVI with accident attorney Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney'],
   openGraph: {

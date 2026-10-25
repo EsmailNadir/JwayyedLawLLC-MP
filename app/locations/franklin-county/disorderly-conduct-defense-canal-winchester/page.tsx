@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Canal Winchester Disorderly Conduct | Jwayyed Law LLC',
+  title: 'Canal Winchester Disorderly Conduct',
   description: 'Disorderly conduct charge in Canal Winchester? R.C. 2917.11. Canal Winchester Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Canal Winchester disorderly conduct lawyer', 'Canal Winchester disorderly conduct attorney', 'Canal Winchester Ohio disorderly conduct defense'],
   openGraph: {

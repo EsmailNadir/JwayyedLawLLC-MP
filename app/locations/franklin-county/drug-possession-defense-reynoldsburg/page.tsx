@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Reynoldsburg Drug Possession Defense',
   description: 'Drug possession charge in Reynoldsburg? ILC eligibility, suppression. Reynoldsburg Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Reynoldsburg drug possession lawyer', 'Reynoldsburg drug charge defense', 'Reynoldsburg Ohio drug possession'],
   openGraph: {

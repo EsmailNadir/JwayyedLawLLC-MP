@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Fairborn & Xenia | Jwayyed Law LLC',
+  title: 'OVI / DUI Lawyer for Fairborn & Xenia',
   description: 'OVI/DUI defense attorney for Fairborn, Beavercreek, Xenia, and Greene County, Ohio. Fairborn Municipal Court and Xenia Municipal Court.',
   keywords: ['OVI lawyer Fairborn Ohio', 'DUI attorney Greene County', 'OVI defense Beavercreek Ohio', 'Fairborn Municipal Court OVI', 'military OVI attorney Ohio'],
   openGraph: {

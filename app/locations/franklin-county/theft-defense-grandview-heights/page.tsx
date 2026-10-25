@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Theft Defense | Jwayyed Law LLC',
+  title: 'Grandview Heights Theft Defense',
   description: 'Theft or shoplifting charge in Grandview Heights? Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights theft lawyer', 'Grandview Heights shoplifting attorney', 'Grandview Heights Ohio theft defense', 'Franklin County theft Grandview Heights'],
   openGraph: {

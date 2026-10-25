@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { civilServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Civil Attorney | Jwayyed Law LLC',
+  title: 'Ohio Civil Attorney',
   description: 'Experienced civil attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Contract disputes, real estate, landlord-tenant, evictions, and more.',
   keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer'],
   openGraph: {

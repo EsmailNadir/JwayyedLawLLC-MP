@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Open Container Defense | Jwayyed Law LLC',
+  title: 'Grandview Heights Open Container Defense',
   description: 'Open container citation in Grandview Heights? R.C. 4301.62. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights open container lawyer', 'Grandview Heights open container defense', 'Grandview Heights Ohio open container'],
   openGraph: {

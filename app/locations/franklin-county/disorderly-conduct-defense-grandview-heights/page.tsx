@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Disorderly Conduct | Jwayyed Law LLC',
+  title: 'Grandview Heights Disorderly Conduct',
   description: 'Disorderly conduct charge in Grandview Heights? R.C. 2917.11. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights disorderly conduct lawyer', 'Grandview Heights disorderly conduct defense', 'Grandview Heights Ohio disorderly conduct'],
   openGraph: {

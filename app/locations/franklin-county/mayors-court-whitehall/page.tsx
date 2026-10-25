@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Whitehall Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Whitehall Mayor's Court Attorney",
   description: "Charged in Whitehall Mayor's Court? OVI, traffic, misdemeanor defense. Jwayyed Law LLC. Call (614) 285-5482.",
   keywords: ["Whitehall mayor's court lawyer", "Whitehall mayor's court attorney", "Whitehall Ohio mayor's court defense"],
   openGraph: {

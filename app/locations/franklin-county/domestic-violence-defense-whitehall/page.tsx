@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Whitehall Domestic Violence Defense',
   description: 'Domestic violence charge in Whitehall? Lautenberg firearm consequences. Whitehall Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Whitehall domestic violence lawyer', 'Whitehall DV attorney', 'Whitehall Ohio domestic violence defense'],
   openGraph: {

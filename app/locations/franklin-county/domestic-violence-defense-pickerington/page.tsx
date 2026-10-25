@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Pickerington Domestic Violence Defense',
   description: 'Domestic violence charge in Pickerington? Lautenberg firearm consequences. Pickerington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Pickerington domestic violence lawyer', 'Pickerington DV attorney', 'Pickerington Ohio domestic violence defense'],
   openGraph: {

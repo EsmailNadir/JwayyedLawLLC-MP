@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Clinton County OVI Attorney | Jwayyed Law LLC',
+  title: 'Clinton County OVI Attorney',
   description: 'OVI/DUI defense attorney for Wilmington and Clinton County, Ohio. Wilmington Municipal Court. HB 37 penalties, ALS appeals. Call (614) 285-5482.',
   keywords: ['OVI lawyer Wilmington Ohio', 'DUI attorney Clinton County', 'OVI defense Clinton County', 'Wilmington Municipal Court OVI'],
   openGraph: {

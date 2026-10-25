@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Dog Bite Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Dog Bite Lawyer',
   description: 'Ohio dog bite attorney fighting for victims under ORC 955.28 strict liability. Recover medical bills, scarring, lost wages, and pain and suffering.',
   keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney', 'ORC 955.28 dog bite claim'],
   openGraph: {

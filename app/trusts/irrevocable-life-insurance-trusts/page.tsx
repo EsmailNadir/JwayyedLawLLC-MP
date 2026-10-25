@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'ILIT Lawyer Ohio | Life Insurance Trusts | Jwayyed Law LLC',
+  title: 'ILIT Lawyer Ohio | Life Insurance Trusts',
   description: 'Ohio ILIT attorney serving Columbus, Cincinnati, and Dayton. Remove life insurance from your taxable estate under IRC 2042. Crummey powers, 3-year rule.',
   keywords: [
     'irrevocable life insurance trust Columbus OH',

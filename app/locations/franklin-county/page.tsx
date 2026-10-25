@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Franklin County OVI & Criminal Defense | Jwayyed Law LLC',
+  title: 'Franklin County OVI & Criminal Defense',
   description:
     'OVI, criminal defense & personal injury across Franklin County — Columbus, Dublin, Hilliard, Westerville & nearby. Jwayyed Law LLC. (614) 285-5482.',
   keywords: [

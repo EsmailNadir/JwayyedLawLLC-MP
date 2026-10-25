@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Bexley Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Bexley Mayor's Court Attorney",
   description: "Charged in Bexley Mayor's Court? OVI, traffic, misdemeanor defense. Jwayyed Law LLC appears in Bexley Mayor's Court. Call (614) 285-5482.",
   keywords: ["Bexley mayor's court lawyer", "Bexley mayor's court attorney", "Bexley Ohio mayor's court defense", "Bexley municipal court defense"],
   openGraph: {

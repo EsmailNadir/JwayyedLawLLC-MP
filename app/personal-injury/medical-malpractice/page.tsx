@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Medical Malpractice Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Medical Malpractice Lawyer',
   description: 'Ohio medical malpractice attorney handling misdiagnosis, surgical errors, and birth injuries under ORC 2305.113. Non-economic damage caps explained.',
   keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney', 'ORC 2305.113 malpractice'],
   openGraph: {

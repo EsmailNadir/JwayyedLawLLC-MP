@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Catastrophic Injury Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Catastrophic Injury Lawyer',
   description: 'Ohio catastrophic injury attorney for TBI, spinal cord injury, paralysis, and severe burns. ORC 2323.43 elevated damage caps, life care planning.',
   keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'TBI attorney Ohio', 'Franklin County catastrophic injury attorney'],
   openGraph: {

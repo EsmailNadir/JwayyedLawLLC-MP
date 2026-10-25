@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Groveport Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Groveport Assault Defense Attorney',
   description: 'Assault defense attorney in Groveport, Ohio — ORC 2903.13 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Groveport assault lawyer', 'Groveport assault attorney', 'Groveport Ohio assault defense'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Nursing Home Abuse Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Nursing Home Abuse Lawyer',
   description: 'Ohio nursing home abuse and neglect attorney protecting vulnerable residents under ORC Chapter 3721. Pressure ulcers, physical abuse.',
   keywords: ['nursing home abuse lawyer Columbus OH', 'nursing home abuse attorney Ohio', 'elder abuse lawyer', 'Franklin County nursing home abuse attorney', 'ORC 3721 nursing home neglect'],
   openGraph: {

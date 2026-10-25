@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { businessServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Business Attorney | Jwayyed Law LLC',
+  title: 'Ohio Business Attorney',
   description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation.',
   keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
   openGraph: {

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Butler County Personal Injury Attorney | Jwayyed Law LLC',
+  title: 'Butler County Personal Injury Attorney',
   description: 'Personal injury attorney serving Butler County. Hamilton, Oxford, West Chester, Fairfield, Middletown. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Butler County', 'injury lawyer Hamilton Ohio', 'Butler County accident attorney', 'car accident lawyer Butler County', 'personal injury West Chester Ohio', 'Oxford Ohio injury attorney'],
   openGraph: {

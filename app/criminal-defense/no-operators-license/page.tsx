@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'No Operators License Ohio | Jwayyed Law LLC',
+  title: 'No Operators License Ohio',
   description: 'Ohio defense attorney for no operator\'s license charges under ORC 4510.12. Serving all Ohio counties. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'no operators license lawyer Ohio',

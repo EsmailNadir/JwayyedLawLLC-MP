@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Arbitration Lawyer | Columbus | Jwayyed Law LLC',
+  title: 'Ohio Arbitration Lawyer | Columbus',
   description: 'Experienced Ohio arbitration attorney representing businesses and individuals in AAA, JAMS, and private arbitration proceedings.',
   keywords: [
     'arbitration lawyer Columbus OH',

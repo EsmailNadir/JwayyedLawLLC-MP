@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Attorney — Columbus, Ohio | Jwayyed Law LLC',
+  title: 'Franklin County Attorney — Columbus, Ohio',
   description: 'OVI defense, criminal misdemeanor defense, civil litigation, business, and estate planning in Franklin County and Columbus, Ohio. Call (614) 285-5482.',
   keywords: [
     'Franklin County attorney Columbus Ohio',

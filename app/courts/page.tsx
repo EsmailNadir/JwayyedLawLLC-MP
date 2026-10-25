@@ -5,7 +5,7 @@ import ContactCTA from '@/components/ContactCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ohio Courts | Jwayyed Law LLC',
+  title: 'Ohio Courts',
   description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI.',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {

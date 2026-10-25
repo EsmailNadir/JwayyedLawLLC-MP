@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Dublin Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Dublin Drug Possession Defense',
   description: 'Drug possession charge in Dublin? ILC eligibility, suppression defenses. Dublin Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Dublin drug possession lawyer', 'Dublin drug charge attorney', 'Dublin Ohio drug possession defense', 'Franklin County drug Dublin'],
   openGraph: {

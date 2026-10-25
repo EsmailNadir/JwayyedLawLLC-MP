@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Westerville Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Westerville? R.C. 2917.11. Westerville Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Westerville disorderly conduct lawyer', 'Westerville disorderly conduct defense', 'Westerville Ohio disorderly conduct'],
   openGraph: {

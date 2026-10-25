@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Athens County Court Representation | Jwayyed Law LLC',
+  title: 'Athens County Court Representation',
   description: 'Experienced legal representation in Athens County courts including Athens Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Athens County court attorney',

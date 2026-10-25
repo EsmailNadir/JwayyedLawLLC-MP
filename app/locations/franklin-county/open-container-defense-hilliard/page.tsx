@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Hilliard Open Container Defense | Jwayyed Law LLC',
+  title: 'Hilliard Open Container Defense',
   description: 'Open container defense attorney in Hilliard, Ohio — ORC 4301.62 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Hilliard open container lawyer', 'Hilliard open container defense', 'Hilliard Ohio open container'],
   openGraph: {

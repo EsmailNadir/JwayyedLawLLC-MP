@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Disorderly Conduct Defense Ohio | Jwayyed Law LLC',
+  title: 'Disorderly Conduct Defense Ohio',
   description: 'Charged with disorderly conduct in Ohio? Jwayyed Law LLC defends R.C. 2917.11 charges across Franklin County and central Ohio. Call (614) 285-5482.',
   keywords: [
     'disorderly conduct lawyer Ohio',

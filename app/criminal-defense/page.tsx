@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Criminal Defense Attorney | Jwayyed Law LLC',
+  title: 'Ohio Criminal Defense Attorney',
   description: 'Ohio criminal defense attorney defending misdemeanor charges statewide. Assault, drug crimes, domestic violence, theft & more. Call (614) 285-5482.',
   keywords: [
     'Ohio criminal defense attorney',

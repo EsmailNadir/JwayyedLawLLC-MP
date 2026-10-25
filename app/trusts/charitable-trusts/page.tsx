@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Charitable Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Charitable Trusts Lawyer in Ohio',
   description: 'Ohio charitable trust attorney helping Columbus, Cincinnati, and Dayton clients set up charitable remainder trusts (CRTs), charitable lead trusts (CLTs).',
   keywords: [
     'charitable trusts Columbus OH',

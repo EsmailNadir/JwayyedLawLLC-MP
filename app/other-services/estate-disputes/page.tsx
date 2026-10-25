@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Estate Disputes & Litigation Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Estate Disputes & Litigation Lawyer',
   description: 'Experienced Ohio estate disputes attorney representing beneficiaries, heirs, and trustees in will contests, executor misconduct, trust disputes.',
   keywords: [
     'estate disputes lawyer Columbus OH',

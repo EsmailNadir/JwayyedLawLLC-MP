@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'OVI / DUI Lawyer for Dayton, Ohio | Jwayyed Law LLC',
+  title: 'OVI / DUI Lawyer for Dayton, Ohio',
   description: 'OVI/DUI defense attorney for Dayton, Kettering, Huber Heights, and Montgomery County, Ohio. Dayton Municipal Court and Kettering Municipal Court. HB 37.',
   keywords: ['OVI lawyer Dayton Ohio', 'DUI attorney Montgomery County', 'OVI defense Kettering Ohio', 'Dayton Municipal Court OVI', 'Montgomery County OVI attorney'],
   openGraph: {

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Jwayyed Law LLC',
+  title: 'Privacy Policy',
   description: 'Privacy policy for jjlawohio.com. Learn how Jwayyed Law LLC collects, uses, and protects your personal information.',
   alternates: { canonical: '/privacy' },
   robots: { index: true, follow: false },

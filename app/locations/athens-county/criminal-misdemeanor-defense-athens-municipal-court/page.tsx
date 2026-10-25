@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
+  title: 'Athens County Criminal Defense Attorney',
   description: 'Criminal misdemeanor defense attorney in Athens County, Ohio. Athens Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Athens County', 'misdemeanor attorney Athens Municipal Court', 'Athens County criminal lawyer', 'Athens misdemeanor defense'],
   openGraph: {

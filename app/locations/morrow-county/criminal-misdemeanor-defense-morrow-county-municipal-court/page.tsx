@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Morrow County | Jwayyed Law LLC',
+  title: 'Criminal Defense Lawyer | Morrow County',
   description: 'Criminal defense attorney serving Morrow County, Ohio — Morrow County Municipal Court. Assault, theft, drug charges, and more. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Morrow County', 'misdemeanor attorney Morrow County Municipal Court', 'Morrow County criminal lawyer', 'Morrow County misdemeanor defense'],
   openGraph: {

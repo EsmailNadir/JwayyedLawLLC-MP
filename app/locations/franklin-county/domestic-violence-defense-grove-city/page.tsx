@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grove City Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Grove City Domestic Violence Defense',
   description: 'Domestic violence charge in Grove City? Lautenberg firearm consequences. Grove City Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grove City domestic violence lawyer', 'Grove City DV attorney', 'Grove City Ohio domestic violence defense'],
   openGraph: {

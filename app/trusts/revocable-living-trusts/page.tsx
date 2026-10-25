@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Revocable Living Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Revocable Living Trusts Lawyer in Ohio',
   description: 'Ohio attorney helping you set up a revocable living trust to avoid probate, protect privacy, and ensure a smooth transfer of assets.',
   keywords: [
     'revocable living trust Columbus OH',

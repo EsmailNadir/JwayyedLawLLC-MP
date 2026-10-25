@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Westerville Domestic Violence Defense',
   description: 'Domestic violence charge in Westerville? Lautenberg firearm consequences. Westerville Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Westerville domestic violence lawyer', 'Westerville DV attorney', 'Westerville Ohio domestic violence defense'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'QTIP Trusts Lawyer Ohio | Jwayyed Law LLC',
+  title: 'QTIP Trusts Lawyer Ohio',
   description: 'Ohio QTIP trust attorney serving Columbus, Cincinnati, and Dayton. Qualified Terminable Interest Property trusts under IRC 2056(b)(7) for blended families.',
   keywords: [
     'QTIP trust Columbus OH',

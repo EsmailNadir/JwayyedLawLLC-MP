@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus High-Tier OVI Defense | BAC 0.17% | Jwayyed Law LLC',
+  title: 'Columbus High-Tier OVI Defense | BAC 0.17%',
   description: 'High-tier OVI in Columbus (BAC 0.17% or above)? Enhanced 6-day mandatory minimum under HB 37. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Columbus high tier OVI lawyer', 'high BAC DUI Columbus Ohio', '0.17 OVI Columbus', 'aggravated OVI Columbus', 'high tier OVI Franklin County defense'],
   openGraph: {

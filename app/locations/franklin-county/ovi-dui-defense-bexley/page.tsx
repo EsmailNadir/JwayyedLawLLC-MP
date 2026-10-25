@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Bexley OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Bexley OVI Defense Attorney',
   description: 'OVI/DUI arrest in Bexley? ALS appeal deadline 30 days. Bexley Mayor\'s Court and Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Bexley OVI lawyer', 'Bexley DUI attorney', 'Bexley Ohio OVI defense', 'Franklin County OVI Bexley', 'Bexley drunk driving defense'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Pickerington OVI Defense Attorney',
   description: 'OVI arrest in Pickerington? ALS appeal 30-day deadline. Pickerington Mayor\'s Court and FCMC. I-270 and S.R. 256 enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Pickerington OVI lawyer', 'Pickerington DUI attorney', 'Pickerington Ohio OVI defense', 'Franklin County OVI Pickerington'],
   openGraph: {

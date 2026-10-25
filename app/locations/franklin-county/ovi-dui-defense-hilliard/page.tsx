@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Hilliard OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Hilliard OVI Defense Attorney',
   description: 'OVI arrest in Hilliard? ALS appeal 30-day deadline. Hilliard Mayor\'s Court and FCMC. I-270 and Cemetery Rd enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Hilliard OVI lawyer', 'Hilliard DUI attorney', 'Hilliard Ohio OVI defense', 'Franklin County OVI Hilliard'],
   openGraph: {

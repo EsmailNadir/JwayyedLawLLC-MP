@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Marijuana OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Columbus Marijuana OVI Defense Attorney',
   description: 'Marijuana OVI in Columbus? Per se limits under R.C. 4511.19, no impairment required. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Columbus marijuana OVI lawyer', 'cannabis DUI Columbus Ohio', 'marijuana drug OVI Columbus', 'weed OVI Columbus attorney', 'Franklin County marijuana impaired driving defense'],
   openGraph: {

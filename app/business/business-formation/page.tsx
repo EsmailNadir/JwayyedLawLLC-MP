@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business Formation Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Business Formation Lawyer in Ohio',
   description: 'Experienced Ohio business formation attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation.',
   keywords: ['business formation lawyer Ohio', 'Columbus business formation attorney', 'Cincinnati business formation attorney', 'Dayton business formation attorney', 'LLC formation lawyer Ohio'],
   openGraph: {

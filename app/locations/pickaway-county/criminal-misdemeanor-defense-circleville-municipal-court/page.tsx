@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Circleville | Jwayyed Law LLC',
+  title: 'Criminal Defense Lawyer | Circleville',
   description: 'Criminal misdemeanor defense attorney in Pickaway County — Circleville Municipal Court. Assault, theft, drug, and traffic charges. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Pickaway County', 'misdemeanor attorney Circleville Municipal Court', 'Pickaway County criminal lawyer', 'Circleville misdemeanor defense'],
   openGraph: {

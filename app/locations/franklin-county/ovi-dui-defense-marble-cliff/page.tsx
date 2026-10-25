@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Marble Cliff OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Marble Cliff OVI Defense Attorney',
   description: 'OVI arrest in Marble Cliff? ALS appeal 30-day deadline. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Marble Cliff OVI lawyer', 'Marble Cliff DUI attorney', 'Marble Cliff Ohio OVI defense', 'Franklin County OVI Marble Cliff'],
   openGraph: {

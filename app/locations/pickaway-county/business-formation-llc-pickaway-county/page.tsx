@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Pickaway County | Jwayyed Law LLC',
+  title: 'Business & LLC Formation | Pickaway County',
   description: 'Business attorney serving Pickaway County, Circleville, Ashville, Commercial Point, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Pickaway County', 'LLC formation Circleville Ohio', 'Pickaway County business attorney', 'small business attorney Ashville Ohio', 'LLC formation Ohio south Columbus'],
   openGraph: {

@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Legal Document Templates | Ohio | Jwayyed Law LLC',
+  title: 'Legal Document Templates | Ohio',
   description:
     'Free Ohio legal document templates: personal injury demand letters, cease and desist, OVI evidence preservation, and more. Consult an attorney first.',
   keywords: [

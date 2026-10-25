@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Dynasty Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Dynasty Trusts Lawyer in Ohio',
   description: 'Ohio dynasty trust attorney helping Columbus, Cincinnati, and Dayton families build perpetual trusts. Ohio abolished the rule against perpetuities in 2012.',
   keywords: [
     'dynasty trusts Columbus OH',

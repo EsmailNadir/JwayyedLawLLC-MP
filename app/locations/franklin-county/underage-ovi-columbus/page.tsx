@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Underage OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Columbus Underage OVI Defense Attorney',
   description: 'Underage OVI in Columbus (under 21)? Zero-tolerance 0.02% threshold, R.C. 4511.19(B). Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Columbus underage OVI lawyer', 'under 21 DUI Columbus Ohio', 'underage drunk driving Columbus', 'minor OVI Columbus attorney', 'zero tolerance OVI Ohio Columbus'],
   openGraph: {

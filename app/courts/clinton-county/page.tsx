@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Clinton County Court Representation | Jwayyed Law LLC',
+  title: 'Clinton County Court Representation',
   description: 'OVI defense, criminal defense, and civil representation in Clinton County courts including Wilmington Municipal Court and Clinton County Common Pleas.',
   keywords: [
     'Clinton County OVI attorney',

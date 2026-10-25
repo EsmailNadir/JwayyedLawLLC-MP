@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington Open Container Defense | Jwayyed Law LLC',
+  title: 'Pickerington Open Container Defense',
   description: 'Open container citation in Pickerington? R.C. 4301.62. Pickerington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Pickerington open container lawyer', 'Pickerington open container defense', 'Pickerington Ohio open container'],
   openGraph: {

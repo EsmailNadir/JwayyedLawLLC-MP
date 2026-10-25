@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Columbus Assault Defense Attorney',
   description: 'Assault defense in Columbus, Ohio. R.C. 2903.13, self-defense, felony escalation. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: [
     'Columbus assault lawyer',

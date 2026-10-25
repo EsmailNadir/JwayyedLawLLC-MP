@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
+  title: 'Estate Planning & Probate Lawyer Ohio',
   description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and communities across Ohio.',
   keywords: ['estate planning attorney Columbus Ohio', 'probate lawyer Ohio', 'dispute resolution attorney Columbus', 'Ohio will attorney', 'trust attorney Columbus OH'],
   openGraph: {

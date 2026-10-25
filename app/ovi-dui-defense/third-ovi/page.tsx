@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 
 export const metadata: Metadata = {
-  title: 'Third OVI Attorney Ohio | Jwayyed Law LLC',
+  title: 'Third OVI Attorney Ohio',
   description: 'Experienced Ohio third OVI defense attorney protecting your rights. Skilled representation for third OVI/DUI charges in Ohio. (614) 285-5482.',
   keywords: ['third OVI attorney Ohio', 'third OVI defense attorney Ohio', 'third DUI attorney'],
   openGraph: {

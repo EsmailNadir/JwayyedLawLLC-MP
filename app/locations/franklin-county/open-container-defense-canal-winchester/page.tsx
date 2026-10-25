@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Canal Winchester Open Container Defense | Jwayyed Law LLC',
+  title: 'Canal Winchester Open Container Defense',
   description: 'Open container citation in Canal Winchester? R.C. 4301.62 vehicle and public place charges. Canal Winchester Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Canal Winchester open container lawyer', 'Canal Winchester open container defense', 'Canal Winchester Ohio open container', 'Franklin County open container Canal Winchester'],
   openGraph: {

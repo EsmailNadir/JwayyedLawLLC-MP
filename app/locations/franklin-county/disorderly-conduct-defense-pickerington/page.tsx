@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Pickerington Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Pickerington? R.C. 2917.11. Pickerington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Pickerington disorderly conduct lawyer', 'Pickerington disorderly conduct defense', 'Pickerington Ohio disorderly conduct'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import { personalInjuryServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Personal Injury Attorney | Jwayyed Law LLC',
+  title: 'Ohio Personal Injury Attorney',
   description: 'Experienced personal injury attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Car accidents, slip and fall, workplace injuries, and more.',
   keywords: [
     'Ohio personal injury attorney',

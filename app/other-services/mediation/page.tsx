@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Mediation Attorney in Ohio | Columbus | Jwayyed Law LLC',
+  title: 'Mediation Attorney in Ohio | Columbus',
   description: 'Ohio attorney providing mediation services for civil, business, landlord-tenant, and estate disputes. Confidential.',
   keywords: [
     'mediation attorney Columbus OH',

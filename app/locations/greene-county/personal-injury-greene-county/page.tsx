@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Greene County Personal Injury Lawyer | Jwayyed Law LLC',
+  title: 'Greene County Personal Injury Lawyer',
   description: 'Personal injury attorney serving Greene County, Xenia, Fairborn, Beavercreek, and surrounding Ohio communities. Car accidents, slip and fall.',
   keywords: ['personal injury Greene County', 'injury lawyer Xenia Ohio', 'Greene County accident attorney', 'car accident lawyer Fairborn Ohio', 'personal injury Beavercreek Ohio'],
   openGraph: {

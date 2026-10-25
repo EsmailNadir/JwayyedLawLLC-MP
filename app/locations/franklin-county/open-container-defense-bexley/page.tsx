@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Bexley Open Container Defense Attorney | Jwayyed Law LLC',
+  title: 'Bexley Open Container Defense Attorney',
   description: 'Open container citation in Bexley? R.C. 4301.62 vehicle and public place charges. Bexley Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Bexley open container lawyer', 'Bexley open container attorney', 'Bexley Ohio open container defense', 'Franklin County open container Bexley'],
   openGraph: {

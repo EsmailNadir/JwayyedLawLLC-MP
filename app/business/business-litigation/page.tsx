@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Business Litigation Lawyer Ohio | ORC 2307 | Jwayyed Law LLC',
+  title: 'Business Litigation Lawyer Ohio | ORC 2307',
   description: 'Ohio business litigation attorney handling contract disputes, fraud, business torts, unfair competition, TROs, and appeals in Ohio Common Pleas Court.',
   keywords: ['business litigation lawyer Columbus OH', 'Ohio business dispute attorney', 'ORC 2307 attorney', 'contract dispute Ohio', 'business fraud lawyer Ohio', 'Franklin County business litigation', 'temporary restraining order Ohio'],
   openGraph: {

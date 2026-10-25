@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Trespass Defense Ohio | Jwayyed Law LLC',
+  title: 'Criminal Trespass Defense Ohio',
   description: 'Ohio criminal trespass defense attorney for ORC 2911.21 charges statewide. Protect your rights. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'criminal trespass lawyer Ohio',

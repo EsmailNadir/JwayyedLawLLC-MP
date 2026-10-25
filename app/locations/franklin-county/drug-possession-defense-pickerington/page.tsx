@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Pickerington Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Pickerington Drug Possession Defense',
   description: 'Drug possession charge in Pickerington? ILC eligibility, suppression. Pickerington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Pickerington drug possession lawyer', 'Pickerington drug charge defense', 'Pickerington Ohio drug possession'],
   openGraph: {

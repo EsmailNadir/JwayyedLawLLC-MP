@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Bexley Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Bexley Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Bexley? R.C. 2917.11 minor misdemeanor to M4. Bexley Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Bexley disorderly conduct lawyer', 'Bexley disorderly conduct attorney', 'Bexley Ohio disorderly conduct defense', 'Franklin County disorderly Bexley'],
   openGraph: {

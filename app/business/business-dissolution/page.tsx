@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Business Dissolution Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Business Dissolution Lawyer in Ohio',
   description: 'Experienced Ohio business dissolution attorney helping you close your business properly. Skilled representation for business dissolution in Ohio.',
   keywords: ['business dissolution lawyer Columbus OH', 'business dissolution attorney Ohio', 'close business lawyer', 'Franklin County business dissolution attorney'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Criminal Defense Attorney | Jwayyed Law LLC',
+  title: 'Franklin County Criminal Defense Attorney',
   description: 'Criminal misdemeanor defense at Franklin County Municipal Court (375 S. High St). Assault, theft, domestic violence, drug possession. (614) 285-5482.',
   keywords: ['Franklin County Municipal Court criminal defense', 'Franklin County Municipal Court lawyer', 'Columbus misdemeanor defense attorney', 'Franklin County Municipal Court misdemeanor', 'criminal defense 375 S High St Columbus'],
   openGraph: {

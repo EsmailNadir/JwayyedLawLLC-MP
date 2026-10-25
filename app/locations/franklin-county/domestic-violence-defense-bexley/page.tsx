@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Bexley Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Bexley Domestic Violence Defense',
   description: 'Domestic violence charge in Bexley? Lautenberg firearm consequences. Bexley Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Bexley domestic violence lawyer', 'Bexley DV attorney', 'Bexley Ohio domestic violence defense', 'Franklin County DV Bexley', 'Bexley domestic violence defense'],
   openGraph: {

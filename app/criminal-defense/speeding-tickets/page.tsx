@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Speeding Ticket Attorney Ohio | Jwayyed Law LLC',
+  title: 'Speeding Ticket Attorney Ohio',
   description: 'Ohio speeding ticket attorney defending traffic violations statewide. Protect your driving record and minimize points. Call (614) 285-5482.',
   keywords: [
     'speeding ticket lawyer Ohio',

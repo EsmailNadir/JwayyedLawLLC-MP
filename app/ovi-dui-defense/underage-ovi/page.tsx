@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Underage OVI Defense Ohio | Jwayyed Law LLC',
+  title: 'Underage OVI Defense Ohio',
   description: 'Experienced Ohio underage OVI defense attorney protecting your rights. Skilled representation for underage OVI/DUI charges in Ohio.',
   keywords: ['underage OVI attorney Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'OVUAC Ohio'],
   openGraph: {

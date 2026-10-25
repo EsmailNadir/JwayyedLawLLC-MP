@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Marijuana Possession Attorney | Jwayyed Law LLC',
+  title: 'Columbus Marijuana Possession Attorney',
   description: 'Marijuana possession charge in Columbus? Amounts above legal limits under R.C. 2925.11. Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['Columbus marijuana possession lawyer', 'cannabis possession Columbus Ohio', 'weed charge Columbus attorney', 'marijuana defense Franklin County', 'Columbus drug possession marijuana'],
   openGraph: {

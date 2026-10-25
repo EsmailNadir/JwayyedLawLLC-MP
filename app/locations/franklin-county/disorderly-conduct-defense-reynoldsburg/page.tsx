@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Reynoldsburg Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Reynoldsburg? R.C. 2917.11. Reynoldsburg Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Reynoldsburg disorderly conduct lawyer', 'Reynoldsburg disorderly conduct defense', 'Reynoldsburg Ohio disorderly conduct'],
   openGraph: {

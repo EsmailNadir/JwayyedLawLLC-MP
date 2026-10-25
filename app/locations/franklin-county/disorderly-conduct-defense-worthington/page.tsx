@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Worthington Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Worthington Disorderly Conduct Defense',
   description: 'Disorderly conduct charge in Worthington? R.C. 2917.11. Worthington Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Worthington disorderly conduct lawyer', 'Worthington disorderly conduct defense', 'Worthington Ohio disorderly conduct'],
   openGraph: {

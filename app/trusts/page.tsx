@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ohio Trusts Attorney | Jwayyed Law LLC',
+  title: 'Ohio Trusts Attorney',
   description: 'Experienced Ohio trusts attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Revocable living trusts, asset protection trusts.',
   keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {

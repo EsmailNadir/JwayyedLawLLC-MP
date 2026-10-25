@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Land Trusts Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Land Trusts Lawyer in Ohio',
   description: 'Ohio land trust attorney helping Columbus, Cincinnati, and Dayton real estate investors and owners use land trusts under ORC 5301.255 for privacy.',
   keywords: [
     'land trusts Columbus OH',

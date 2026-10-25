@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Montgomery County Court Representation | Jwayyed Law LLC',
+  title: 'Montgomery County Court Representation',
   description: 'OVI defense, criminal defense, and civil representation in Montgomery County courts including Dayton Municipal Court and Kettering Municipal Court.',
   keywords: [
     'Montgomery County OVI attorney',

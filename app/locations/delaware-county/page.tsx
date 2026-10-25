@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Criminal Defense & OVI | Jwayyed Law LLC',
+  title: 'Delaware County Criminal Defense & OVI',
   description:
     'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Delaware County — Delaware, Powell, Dublin, Sunbury. Call (614) 285-5482.',
   keywords: [

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Motorcycle Accident Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Motorcycle Accident Lawyer in Ohio',
   description: 'Experienced Ohio motorcycle accident attorney helping victims recover compensation. Skilled representation for motorcycle accident injuries in Ohio.',
   keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
   openGraph: {

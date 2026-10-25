@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Montgomery County Business & LLC Formation | Jwayyed Law LLC',
+  title: 'Montgomery County Business & LLC Formation',
   description: 'Business attorney serving Montgomery County, Dayton, Kettering, Miamisburg, Trotwood, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Montgomery County', 'LLC formation Dayton Ohio', 'Montgomery County business attorney', 'LLC formation Kettering Ohio', 'small business attorney Dayton Ohio'],
   openGraph: {

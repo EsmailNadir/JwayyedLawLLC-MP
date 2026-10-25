@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Obetz Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Obetz Mayor's Court Attorney",
   description: "Charged in Obetz Mayor's Court? OVI, traffic, and misdemeanor defense. Jwayyed Law LLC appears in Obetz Mayor's Court. Call (614) 285-5482.",
   keywords: ["Obetz mayor's court lawyer", "Obetz mayor's court attorney", "Obetz Ohio mayor's court defense"],
   openGraph: {

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Greene County | Jwayyed Law LLC',
+  title: 'Business & LLC Formation | Greene County',
   description: 'Business attorney serving Greene County, Xenia, Fairborn, Beavercreek, Yellow Springs, and surrounding Ohio communities. LLC formation, business law.',
   keywords: ['business lawyer Greene County', 'LLC formation Xenia Ohio', 'Greene County business attorney', 'LLC formation Fairborn Ohio', 'small business attorney Beavercreek Ohio'],
   openGraph: {

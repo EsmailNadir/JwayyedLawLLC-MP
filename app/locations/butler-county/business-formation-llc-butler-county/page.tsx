@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Butler County Business Attorney | Jwayyed Law LLC',
+  title: 'Butler County Business Attorney',
   description: 'Business attorney serving Butler County, Ohio. LLC formation, business law, Hamilton, Oxford, West Chester. Call (614) 285-5482.',
   keywords: ['business lawyer Butler County', 'LLC formation Hamilton Ohio', 'Butler County business attorney', 'business formation Ohio', 'LLC attorney West Chester Ohio', 'Oxford Ohio business lawyer'],
   openGraph: {

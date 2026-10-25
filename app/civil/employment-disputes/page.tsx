@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Employment Disputes Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Employment Disputes Lawyer in Ohio',
   description: 'Experienced Ohio employment disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
   keywords: ['employment disputes lawyer Columbus OH', 'employment attorney Ohio', 'wrongful termination lawyer', 'Franklin County employment attorney'],
   openGraph: {

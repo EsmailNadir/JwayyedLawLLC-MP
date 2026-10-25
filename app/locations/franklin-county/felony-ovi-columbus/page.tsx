@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Felony OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Columbus Felony OVI Defense Attorney',
   description: 'Felony OVI in Columbus? 4th offense F4 felony OVI, Franklin County Court of Common Pleas. Mandatory prison. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Columbus felony OVI lawyer', 'felony DUI Columbus Ohio', '4th offense OVI Columbus', 'Columbus felony OVI attorney', 'Franklin County felony OVI defense'],
   openGraph: {

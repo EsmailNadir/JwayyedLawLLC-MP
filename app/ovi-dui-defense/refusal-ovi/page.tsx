@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'OVI Refusal Attorney Ohio | Jwayyed Law LLC',
+  title: 'OVI Refusal Attorney Ohio',
   description: 'Experienced Ohio OVI refusal defense attorney protecting your rights. Skilled representation for OVI refusal charges in Ohio. (614) 285-5482.',
   keywords: ['refusal OVI attorney Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
   openGraph: {

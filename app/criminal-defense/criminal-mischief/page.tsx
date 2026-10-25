@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
+  title: 'Criminal Mischief Defense Ohio',
   description: 'Ohio criminal mischief defense attorney for ORC 2909.07 charges statewide. Call Jwayyed Law LLC at (614) 285-5482 for a consultation.',
   keywords: [
     'criminal mischief lawyer Ohio',

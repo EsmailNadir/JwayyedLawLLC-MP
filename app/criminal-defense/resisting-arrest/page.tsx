@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Resisting Arrest Defense Ohio | Jwayyed Law LLC',
+  title: 'Resisting Arrest Defense Ohio',
   description: 'Ohio resisting arrest defense attorney for ORC 2921.33 charges statewide. Protect your rights. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'resisting arrest lawyer Ohio',

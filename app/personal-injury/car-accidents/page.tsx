@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Car Accident Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Car Accident Lawyer in Ohio',
   description: 'Experienced Ohio car accident attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you recover compensation.',
   keywords: ['car accident lawyer Columbus OH', 'car accident attorney Ohio', 'automobile accident lawyer', 'Franklin County car accident attorney'],
   openGraph: {

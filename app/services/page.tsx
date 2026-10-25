@@ -13,7 +13,7 @@ import {
 } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Our Legal Services | Jwayyed Law LLC',
+  title: 'Our Legal Services',
   description:
     'Explore legal services offered by Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, and more.',
   openGraph: {

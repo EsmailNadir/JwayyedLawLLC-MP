@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
+  title: 'Driving Under Suspension Ohio',
   description: 'Ohio driving under suspension defense attorney for ORC 4510.11, 4510.14, and 4510.16 charges statewide. Call (614) 285-5482.',
   keywords: [
     'driving under suspension lawyer Ohio',

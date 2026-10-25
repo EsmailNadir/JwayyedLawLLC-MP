@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Appeals Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Appeals Lawyer in Ohio',
   description: 'Experienced Ohio appeals attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you appeal court decisions.',
   keywords: ['appeals lawyer Columbus OH', 'appeals attorney Ohio', 'appellate lawyer', 'Franklin County appeals attorney'],
   openGraph: {

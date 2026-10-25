@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Third OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
+  title: 'Third OVI Defense Attorney Columbus Ohio',
   description: 'Third OVI in Columbus? Mandatory 30 days, vehicle forfeiture, 2–12 year suspension. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['third OVI Columbus Ohio', 'third offense DUI Columbus', 'Columbus 3rd OVI lawyer', '3rd OVI defense Columbus', 'third OVI penalty Ohio'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Marble Cliff Open Container Defense | Jwayyed Law LLC',
+  title: 'Marble Cliff Open Container Defense',
   description: 'Open container citation in Marble Cliff? R.C. 4301.62. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Marble Cliff open container lawyer', 'Marble Cliff open container defense', 'Marble Cliff Ohio open container'],
   openGraph: {

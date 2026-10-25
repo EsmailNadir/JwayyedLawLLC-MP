@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg Open Container Defense | Jwayyed Law LLC',
+  title: 'Reynoldsburg Open Container Defense',
   description: 'Open container citation in Reynoldsburg? R.C. 4301.62. Reynoldsburg Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Reynoldsburg open container lawyer', 'Reynoldsburg open container defense', 'Reynoldsburg Ohio open container'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus OVI With Accident Defense | Jwayyed Law LLC',
+  title: 'Columbus OVI With Accident Defense',
   description: 'OVI with accident in Columbus? Aggravated vehicular assault (F4/F3), civil liability exposure. Franklin County. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Columbus OVI with accident lawyer', 'OVI accident Columbus Ohio', 'vehicular assault Columbus attorney', 'aggravated vehicular assault Columbus', 'drunk driving accident Columbus defense'],
   openGraph: {

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Truck Accident Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Truck Accident Lawyer in Ohio',
   description: 'Experienced Ohio truck accident attorney helping victims recover compensation. Skilled representation for commercial truck accident injuries in Ohio.',
   keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
   openGraph: {

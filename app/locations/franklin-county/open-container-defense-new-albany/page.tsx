@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'New Albany Open Container Defense | Jwayyed Law LLC',
+  title: 'New Albany Open Container Defense',
   description: 'Open container defense attorney in New Albany, Ohio — ORC 4301.62 charges at Franklin County Municipal Court. Jwayyed Law LLC. (614) 285-5482.',
   keywords: ['New Albany open container lawyer', 'New Albany open container defense', 'New Albany Ohio open container'],
   openGraph: {

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Guardianships Lawyer in Ohio | Columbus | Jwayyed Law LLC',
+  title: 'Guardianships Lawyer in Ohio | Columbus',
   description: 'Ohio attorney helping families establish guardianships for incapacitated adults and minors through probate court.',
   keywords: [
     'guardianship lawyer Columbus OH',

@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Special Needs Trusts Lawyer | Columbus | Jwayyed Law LLC',
+  title: 'Special Needs Trusts Lawyer | Columbus',
   description: 'Ohio attorney helping families establish special needs trusts to protect loved ones with disabilities while preserving Medicaid and SSI eligibility.',
   keywords: [
     'special needs trust Columbus OH',

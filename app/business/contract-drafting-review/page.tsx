@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Contract Drafting & Review Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Contract Drafting & Review Lawyer in Ohio',
   description: 'Experienced Ohio contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio.',
   keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
   openGraph: {

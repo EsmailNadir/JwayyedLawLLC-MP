@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer | Pickaway County | Jwayyed Law LLC',
+  title: 'Personal Injury Lawyer | Pickaway County',
   description: 'Personal injury attorney serving Pickaway County, Circleville, and Ashville, Ohio. Car accidents, slip and fall, and serious injuries. Call (614) 285-5482.',
   keywords: ['personal injury Pickaway County', 'injury lawyer Circleville Ohio', 'Pickaway County accident attorney', 'car accident US 23 Ohio', 'personal injury Ashville Ohio'],
   openGraph: {

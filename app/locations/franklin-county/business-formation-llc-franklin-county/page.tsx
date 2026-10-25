@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Business & LLC Formation | Franklin County | Jwayyed Law LLC',
+  title: 'Business & LLC Formation | Franklin County',
   description: 'Business attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and Worthington. LLC formation, business law.',
   keywords: ['business lawyer Franklin County', 'LLC formation Columbus Ohio', 'Franklin County business attorney', 'LLC formation Dublin Ohio', 'small business attorney Columbus Ohio'],
   openGraph: {

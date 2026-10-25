@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Columbus Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Columbus Domestic Violence Defense',
   description: 'Domestic violence defense in Columbus, Ohio. Lautenberg firearm prohibition, DV not expungeable. Franklin County Municipal Court. (614) 285-5482.',
   keywords: [
     'Columbus domestic violence lawyer',

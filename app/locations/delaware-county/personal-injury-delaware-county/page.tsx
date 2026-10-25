@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Personal Injury Attorney | Jwayyed Law LLC',
+  title: 'Delaware County Personal Injury Attorney',
   description: 'Personal injury attorney serving Delaware County, Ohio. Delaware, Powell, Dublin, Lewis Center. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Delaware County', 'injury lawyer Delaware Ohio', 'Delaware County accident attorney', 'car accident lawyer Powell Ohio', 'personal injury Westerville Ohio'],
   openGraph: {

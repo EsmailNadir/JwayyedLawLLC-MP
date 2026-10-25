@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Westerville Theft Defense Attorney | Jwayyed Law LLC',
+  title: 'Westerville Theft Defense Attorney',
   description: 'Theft charge in Westerville? Westerville Mayor\'s Court and FCMC. Otterbein University area and retail enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Westerville theft lawyer', 'Westerville shoplifting attorney', 'Westerville Ohio theft defense', 'Franklin County theft Westerville'],
   openGraph: {

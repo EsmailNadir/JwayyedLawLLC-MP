@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Limited Driving Privileges | OVI Ohio | Jwayyed Law LLC',
+  title: 'Limited Driving Privileges | OVI Ohio',
   description: 'Ohio OVI attorney helping you get limited driving privileges after suspension. Get back on the road legally. Call Jwayyed Law LLC: (614) 285-5482.',
   keywords: ['limited driving privileges attorney Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio'],
   openGraph: {

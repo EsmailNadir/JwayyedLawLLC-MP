@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Clinton County Personal Injury Attorney | Jwayyed Law LLC',
+  title: 'Clinton County Personal Injury Attorney',
   description: 'Personal injury attorney serving Clinton County, Ohio. Wilmington, Sabina, Blanchester. Car accidents, slip and fall. Call (614) 285-5482.',
   keywords: ['personal injury Clinton County', 'injury lawyer Wilmington Ohio', 'Clinton County accident attorney', 'car accident lawyer Wilmington Ohio', 'slip and fall Clinton County'],
   openGraph: {

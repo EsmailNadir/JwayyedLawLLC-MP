@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Morrow County Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Morrow County Municipal Court Attorney',
   description: 'Experienced attorney for Morrow County Municipal Court in Mount Gilead, Ohio. OVI/DUI defense, misdemeanor criminal charges.',
   keywords: ['Morrow County Municipal Court attorney', 'Morrow County OVI lawyer', 'Mount Gilead misdemeanor defense', 'Morrow County criminal attorney', 'OVI lawyer Mount Gilead Ohio'],
   openGraph: {

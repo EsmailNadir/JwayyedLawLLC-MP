@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Assault Defense Attorney Ohio | Jwayyed Law LLC',
+  title: 'Assault Defense Attorney Ohio',
   description: 'Ohio assault defense attorney for misdemeanor assault and battery charges. Serving all Ohio counties. Call (614) 285-5482 for a consultation.',
   keywords: [
     'assault charges lawyer Ohio',

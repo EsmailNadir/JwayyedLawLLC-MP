@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Dispute Resolution Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Dispute Resolution Lawyer in Ohio',
   description: 'Experienced Ohio dispute resolution attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you resolve conflicts.',
   keywords: ['dispute resolution lawyer Columbus OH', 'mediation attorney Ohio', 'arbitration lawyer', 'Franklin County dispute resolution attorney'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Upper Arlington Theft Defense | Jwayyed Law LLC',
+  title: 'Upper Arlington Theft Defense',
   description: 'Theft & shoplifting defense attorney serving Upper Arlington, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Upper Arlington theft lawyer', 'Upper Arlington shoplifting attorney', 'Upper Arlington Ohio theft defense', 'Franklin County theft Upper Arlington'],
   openGraph: {

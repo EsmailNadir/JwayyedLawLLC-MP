@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Dublin Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Dublin Domestic Violence Defense',
   description: 'Domestic violence charge in Dublin? Lautenberg firearm consequences. Dublin Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Dublin domestic violence lawyer', 'Dublin DV attorney', 'Dublin Ohio domestic violence defense', 'Franklin County DV Dublin'],
   openGraph: {

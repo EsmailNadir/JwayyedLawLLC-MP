@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Pickaway County Court Representation | Jwayyed Law LLC',
+  title: 'Pickaway County Court Representation',
   description: 'Experienced legal representation in Pickaway County courts including Circleville Municipal Court and Common Pleas. OVI defense, criminal defense.',
   keywords: [
     'Pickaway County court attorney',

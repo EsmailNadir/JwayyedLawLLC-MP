@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Estate Planning Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Estate Planning Lawyer in Ohio',
   description: 'Experienced Ohio estate planning attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your legacy.',
   keywords: ['estate planning lawyer Columbus OH', 'estate planning attorney Ohio', 'wills trusts lawyer', 'Franklin County estate planning attorney'],
   openGraph: {

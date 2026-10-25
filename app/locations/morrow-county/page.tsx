@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Morrow County OVI & Criminal Defense | Jwayyed Law LLC',
+  title: 'Morrow County OVI & Criminal Defense',
   description:
     'OVI, criminal, and personal injury defense in Morrow County — Mt. Gilead, Cardington, and Marengo. Morrow County Municipal Court. Call (614) 285-5482.',
   keywords: [

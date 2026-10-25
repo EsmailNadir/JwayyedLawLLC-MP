@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Delaware County Court Representation | Jwayyed Law LLC',
+  title: 'Delaware County Court Representation',
   description: 'OVI, criminal defense, and civil representation in Delaware County courts including Delaware County Municipal Court and Common Pleas Court. Serving Powell.',
   keywords: [
     'Delaware County OVI attorney',

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Whitehall OVI Defense Attorney',
   description: 'OVI arrest in Whitehall? ALS appeal 30-day deadline. Whitehall Mayor\'s Court and FCMC. I-270 and Main Street enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Whitehall OVI lawyer', 'Whitehall DUI attorney', 'Whitehall Ohio OVI defense', 'Franklin County OVI Whitehall'],
   openGraph: {

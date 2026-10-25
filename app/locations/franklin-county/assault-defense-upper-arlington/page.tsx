@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Upper Arlington Assault Defense | Jwayyed Law LLC',
+  title: 'Upper Arlington Assault Defense',
   description: 'Criminal defense attorney in Upper Arlington, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Upper Arlington assault lawyer', 'Upper Arlington assault attorney', 'Upper Arlington Ohio assault defense'],
   openGraph: {

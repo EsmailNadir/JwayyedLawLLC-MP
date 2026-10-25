@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Dublin Assault Defense Attorney | Jwayyed Law LLC',
+  title: 'Dublin Assault Defense Attorney',
   description: 'Assault charge in Dublin? R.C. 2903.13 M1 misdemeanor. Dublin Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Dublin assault lawyer', 'Dublin assault attorney', 'Dublin Ohio assault defense', 'Franklin County assault Dublin'],
   openGraph: {

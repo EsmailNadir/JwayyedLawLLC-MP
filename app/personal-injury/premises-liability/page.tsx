@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Premises Liability Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Premises Liability Lawyer',
   description: 'Ohio premises liability and slip and fall attorney. Invitee duty, open and obvious doctrine, ORC 2315.33 comparative fault, ORC 5321 landlord duties.',
   keywords: ['premises liability lawyer Columbus OH', 'slip and fall attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney', 'ORC 2315.33 comparative fault Ohio'],
   openGraph: {

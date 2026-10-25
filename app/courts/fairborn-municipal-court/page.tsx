@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Fairborn Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Fairborn Municipal Court Attorney',
   description: 'Experienced attorney for Fairborn Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Greene County, Ohio.',
   keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense', 'Wright-Patterson AFB OVI defense', 'Beavercreek criminal attorney'],
   openGraph: {

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Clinton County Business Attorney | Jwayyed Law LLC',
+  title: 'Clinton County Business Attorney',
   description: 'Business attorney serving Clinton County, Ohio. LLC formation, business law, Wilmington, Sabina, Blanchester. Call (614) 285-5482.',
   keywords: ['business lawyer Clinton County', 'LLC formation Wilmington Ohio', 'Clinton County business attorney', 'small business attorney Wilmington Ohio', 'LLC formation Ohio'],
   openGraph: {

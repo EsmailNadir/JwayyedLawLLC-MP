@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Canal Winchester OVI Defense | Jwayyed Law LLC',
+  title: 'Canal Winchester OVI Defense',
   description: 'OVI arrest in Canal Winchester? ALS appeal 30-day deadline. Canal Winchester Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Canal Winchester OVI lawyer', 'Canal Winchester DUI attorney', 'Canal Winchester Ohio OVI defense', 'Franklin County OVI Canal Winchester'],
   openGraph: {

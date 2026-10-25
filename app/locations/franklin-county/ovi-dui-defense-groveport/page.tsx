@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'Groveport OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'Groveport OVI Defense Attorney',
   description: 'OVI arrest in Groveport? ALS appeal 30-day deadline. Groveport Mayor\'s Court and FCMC. Rickenbacker and I-270 enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Groveport OVI lawyer', 'Groveport DUI attorney', 'Groveport Ohio OVI defense', 'Franklin County OVI Groveport'],
   openGraph: {

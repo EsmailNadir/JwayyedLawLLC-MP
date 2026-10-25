@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Wilmington Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Wilmington Municipal Court Attorney',
   description: 'Experienced attorney for Wilmington Municipal Court (Clinton County Municipal Court). OVI/DUI defense, misdemeanor charges.',
   keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington Ohio misdemeanor defense', 'Clinton County criminal attorney', 'Clinton County DUI lawyer'],
   openGraph: {

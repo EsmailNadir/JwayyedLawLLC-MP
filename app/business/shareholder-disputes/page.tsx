@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Shareholder Disputes Lawyer Ohio | Jwayyed Law LLC',
+  title: 'Shareholder Disputes Lawyer Ohio',
   description: 'Ohio shareholder disputes attorney handling minority oppression, breach of fiduciary duty, deadlock, books-and-records demands, derivative suits.',
   keywords: ['shareholder disputes lawyer Columbus OH', 'minority shareholder oppression Ohio', 'ORC 1701 attorney', 'corporate dissolution Ohio', 'derivative suit Ohio', 'Franklin County shareholder attorney'],
   openGraph: {

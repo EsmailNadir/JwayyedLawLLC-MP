@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DisorderlyConductTemplate from '@/components/franklin-templates/DisorderlyConductTemplate';
 
 export const metadata: Metadata = {
-  title: 'Dublin Disorderly Conduct Defense | Jwayyed Law LLC',
+  title: 'Dublin Disorderly Conduct Defense',
   description: 'Criminal defense attorney in Dublin, Ohio — assault, domestic violence, drug & theft charges. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Dublin disorderly conduct lawyer', 'Dublin disorderly conduct attorney', 'Dublin Ohio disorderly conduct defense'],
   openGraph: {

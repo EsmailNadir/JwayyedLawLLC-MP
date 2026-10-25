@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Groveport Open Container Defense | Jwayyed Law LLC',
+  title: 'Groveport Open Container Defense',
   description: 'Criminal defense attorney serving Groveport, Ohio. Assault, domestic violence, drug, and theft charges — Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Groveport open container lawyer', 'Groveport open container defense', 'Groveport Ohio open container'],
   openGraph: {

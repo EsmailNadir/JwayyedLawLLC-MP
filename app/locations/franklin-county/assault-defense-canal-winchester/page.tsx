@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import AssaultTemplate from '@/components/franklin-templates/AssaultTemplate';
 
 export const metadata: Metadata = {
-  title: 'Canal Winchester Assault Defense | Jwayyed Law LLC',
+  title: 'Canal Winchester Assault Defense',
   description: 'Assault charge in Canal Winchester? R.C. 2903.13 M1 misdemeanor. Canal Winchester Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Canal Winchester assault lawyer', 'Canal Winchester assault attorney', 'Canal Winchester Ohio assault defense', 'Franklin County assault Canal Winchester'],
   openGraph: {

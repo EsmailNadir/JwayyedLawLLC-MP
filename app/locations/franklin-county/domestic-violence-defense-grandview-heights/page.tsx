@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Grandview Heights Domestic Violence | Jwayyed Law LLC',
+  title: 'Grandview Heights Domestic Violence',
   description: 'Domestic violence charge in Grandview Heights? Lautenberg firearm consequences. Franklin County Municipal Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Grandview Heights domestic violence lawyer', 'Grandview Heights DV attorney', 'Grandview Heights Ohio domestic violence defense'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
-  title: 'New Albany OVI Defense Attorney | Jwayyed Law LLC',
+  title: 'New Albany OVI Defense Attorney',
   description: 'OVI arrest in New Albany? ALS appeal 30-day deadline. New Albany Mayor\'s Court and FCMC. Johnstown Rd and I-270 enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['New Albany OVI lawyer', 'New Albany DUI attorney', 'New Albany Ohio OVI defense', 'Franklin County OVI New Albany'],
   openGraph: {

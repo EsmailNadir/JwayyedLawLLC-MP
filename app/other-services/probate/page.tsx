@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Probate Lawyer | Columbus | Jwayyed Law LLC',
+  title: 'Ohio Probate Lawyer | Columbus',
   description: 'Experienced Ohio probate attorney guiding executors and beneficiaries through Franklin County Probate Court. Estate administration, creditor claims.',
   keywords: [
     'probate lawyer Columbus OH',

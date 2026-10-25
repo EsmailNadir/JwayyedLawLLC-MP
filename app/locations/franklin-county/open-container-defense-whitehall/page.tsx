@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import OpenContainerTemplate from '@/components/franklin-templates/OpenContainerTemplate';
 
 export const metadata: Metadata = {
-  title: 'Whitehall Open Container Defense | Jwayyed Law LLC',
+  title: 'Whitehall Open Container Defense',
   description: 'Open container defense attorney serving Whitehall, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Whitehall open container lawyer', 'Whitehall open container defense', 'Whitehall Ohio open container'],
   openGraph: {

@@ -7,7 +7,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Probate Administration Lawyer in Ohio | Jwayyed Law LLC',
+  title: 'Probate Administration Lawyer in Ohio',
   description: 'Experienced Ohio probate administration attorney helping you navigate probate. Skilled representation for probate administration in Ohio.',
   keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'probate administration', 'Franklin County probate attorney'],
   openGraph: {

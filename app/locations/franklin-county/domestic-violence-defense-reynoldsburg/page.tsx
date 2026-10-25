@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DomesticViolenceTemplate from '@/components/franklin-templates/DomesticViolenceTemplate';
 
 export const metadata: Metadata = {
-  title: 'Reynoldsburg Domestic Violence Defense | Jwayyed Law LLC',
+  title: 'Reynoldsburg Domestic Violence Defense',
   description: 'Domestic violence charge in Reynoldsburg? Lautenberg firearm consequences. Reynoldsburg Mayor\'s Court. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Reynoldsburg domestic violence lawyer', 'Reynoldsburg DV attorney', 'Reynoldsburg Ohio domestic violence defense'],
   openGraph: {

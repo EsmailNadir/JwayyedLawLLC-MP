@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DrugPossessionTemplate from '@/components/franklin-templates/DrugPossessionTemplate';
 
 export const metadata: Metadata = {
-  title: 'Marble Cliff Drug Possession Defense | Jwayyed Law LLC',
+  title: 'Marble Cliff Drug Possession Defense',
   description: 'Drug possession charge in Marble Cliff? Franklin County Municipal Court. ILC eligibility. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Marble Cliff drug possession lawyer', 'Marble Cliff drug charge defense', 'Marble Cliff Ohio drug possession'],
   openGraph: {

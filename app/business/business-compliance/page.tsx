@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Ohio Business Compliance Lawyer | Jwayyed Law LLC',
+  title: 'Ohio Business Compliance Lawyer',
   description: 'Ohio business compliance attorney helping LLCs and corporations meet Ohio Secretary of State requirements, maintain corporate formalities.',
   keywords: ['business compliance lawyer Columbus OH', 'Ohio LLC compliance attorney', 'corporate formalities Ohio', 'Ohio Secretary of State filing attorney', 'Ohio CAT tax attorney', 'pierce corporate veil Ohio', 'ORC 1705 attorney'],
   openGraph: {

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
-  title: 'Canal Winchester Theft Defense | Jwayyed Law LLC',
+  title: 'Canal Winchester Theft Defense',
   description: 'Theft or shoplifting charge in Canal Winchester? Canal Winchester Mayor\'s Court and FCMC. Jwayyed Law LLC. Call (614) 285-5482.',
   keywords: ['Canal Winchester theft lawyer', 'Canal Winchester shoplifting attorney', 'Canal Winchester Ohio theft defense', 'Franklin County theft Canal Winchester'],
   openGraph: {

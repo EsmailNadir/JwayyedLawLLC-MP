@@ -7,7 +7,7 @@ import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
 
 export const metadata: Metadata = {
-  title: 'Second OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
+  title: 'Second OVI Defense Attorney Columbus Ohio',
   description: 'Second OVI in Columbus? Mandatory 10 days jail, vehicle immobilization, 1–7 year suspension under HB 37. Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['second OVI Columbus Ohio', 'second offense DUI Columbus', 'Columbus second OVI lawyer', '2nd OVI defense Columbus', 'second OVI penalty Ohio 2025'],
   openGraph: {

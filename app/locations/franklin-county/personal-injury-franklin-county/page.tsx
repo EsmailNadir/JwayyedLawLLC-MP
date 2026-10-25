@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Franklin County Personal Injury Lawyer | Jwayyed Law LLC',
+  title: 'Franklin County Personal Injury Lawyer',
   description: 'Personal injury attorney serving Franklin County, Columbus, Dublin, Westerville, Hilliard, Gahanna, Grove City, and surrounding Ohio communities.',
   keywords: ['personal injury Franklin County', 'injury lawyer Columbus Ohio', 'Franklin County accident attorney', 'car accident lawyer Columbus Ohio', 'personal injury Dublin Ohio'],
   openGraph: {

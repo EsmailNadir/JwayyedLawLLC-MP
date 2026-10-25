@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Athens County Personal Injury Attorney | Jwayyed Law LLC',
+  title: 'Athens County Personal Injury Attorney',
   description: 'Personal injury attorney serving Athens County, Ohio. Car accidents, slip and fall, and injury claims. Call (614) 285-5482.',
   keywords: ['personal injury Athens County', 'injury lawyer Athens Ohio', 'Athens County accident attorney', 'car accident lawyer Athens Ohio', 'slip and fall Athens County'],
   openGraph: {

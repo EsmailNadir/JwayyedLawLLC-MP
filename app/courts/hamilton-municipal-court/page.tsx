@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
-  title: 'Hamilton Municipal Court Attorney | Jwayyed Law LLC',
+  title: 'Hamilton Municipal Court Attorney',
   description: 'Experienced attorney for Hamilton Municipal Court in Hamilton, Ohio. OVI/DUI defense, misdemeanor criminal charges.',
   keywords: ['Hamilton Municipal Court attorney', 'Butler County OVI lawyer', 'Hamilton Ohio misdemeanor defense', 'Hamilton Ohio criminal attorney', 'Butler County DUI lawyer'],
   openGraph: {

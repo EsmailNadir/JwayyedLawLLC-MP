@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MayorsCourtTemplate from '@/components/franklin-templates/MayorsCourtTemplate';
 
 export const metadata: Metadata = {
-  title: "Westerville Mayor's Court Attorney | Jwayyed Law LLC",
+  title: "Westerville Mayor's Court Attorney",
   description: "Charged in Westerville Mayor's Court? OVI, traffic, misdemeanor defense. Jwayyed Law LLC. Call (614) 285-5482.",
   keywords: ["Westerville mayor's court lawyer", "Westerville mayor's court attorney", "Westerville Ohio mayor's court defense"],
   openGraph: {

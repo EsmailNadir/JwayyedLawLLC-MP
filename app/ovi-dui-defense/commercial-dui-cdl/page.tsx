@@ -8,7 +8,7 @@ import LocationsWeServe from '@/components/LocationsWeServe';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'CDL & Commercial OVI Ohio | Jwayyed Law LLC',
+  title: 'CDL & Commercial OVI Ohio',
   description: 'Experienced Ohio commercial DUI defense attorney protecting your CDL. Skilled representation for CDL holders facing OVI/DUI charges in Ohio.',
   keywords: ['commercial DUI attorney Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense'],
   openGraph: {
