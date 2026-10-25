@@ -60,13 +60,13 @@ const TRUST = [
   'BusinessRate Best of 2026',
   'Former municipal prosecutor',
   'Licensed in Ohio since 2019',
-  'Ohio Bar #0098679',
+  'Ohio Bar #0098678',
 ];
 
 const CREDENTIALS = [
   'Former Municipal Prosecutor',
   'Former Assistant Law Director, City of Circleville',
-  'Licensed in Ohio since 2019, Bar #0098679',
+  'Licensed in Ohio since 2019, Bar #0098678',
   'J.D., Capital University Law School',
   'OSBA Leadership Academy, 2023',
   'National College for DUI Defense, General Member',

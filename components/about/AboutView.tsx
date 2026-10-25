@@ -34,7 +34,7 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
       <Breadcrumbs items={breadcrumbs} />
       <PageHero
         title="Attorney Jwayyed Jwayyed"
-        description="A lifelong Ohioan and former prosecutor who now represents clients across Ohio. Licensed since 2019, Ohio Bar #0098679."
+        description="A lifelong Ohioan and former prosecutor who now represents clients across Ohio. Licensed since 2019, Ohio Bar #0098678."
       />
 
       {/* Portrait and story */}
@@ -67,7 +67,7 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
               </p>
               <p>
                 In law school he interned at the Franklin County Public Defender&rsquo;s Office and at Safe Auto Insurance, working
-                both public and private sides of the law. Since he was licensed in 2019 (Ohio Bar #0098679), he has worked at the
+                both public and private sides of the law. Since he was licensed in 2019 (Ohio Bar #0098678), he has worked at the
                 Columbus City Attorney&rsquo;s Office and at Frost Brown Todd, a major regional law firm. He served as Municipal
                 Prosecutor and Assistant Law Director for the City of Circleville, and as Legal Director for a civil rights
                 organization, where his cases involved discrimination in employment and education. In 2023 he was selected for the
@@ -122,11 +122,11 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
         <Steps
           steps={[
             { title: 'Law school', body: 'Interned at the Franklin County Public Defender’s Office and at Safe Auto Insurance.' },
-            { title: 'Licensed in Ohio, 2019', body: 'Ohio Bar #0098679.' },
+            { title: 'Licensed in Ohio, 2019', body: 'Ohio Bar #0098678.' },
             { title: 'Columbus City Attorney’s Office', body: 'Followed by Frost Brown Todd, a major regional law firm.' },
             { title: 'Prosecutor and Assistant Law Director', body: 'Municipal Prosecutor and Assistant Law Director for the City of Circleville, and prosecutor for the communities above.' },
             { title: 'Legal Director, civil rights organization', body: 'Cases involving discrimination in employment and education.' },
-            { title: 'OSBA Leadership Academy, 2023', body: 'Selected as 1 of 17 attorneys statewide.' },
+            { title: 'OSBA Leadership Academy, 2023', body: 'One of 27 attorneys in the 2023 class.' },
             { title: 'Jwayyed Law LLC', body: 'His own practice, representing clients across Ohio.' },
           ]}
         />
@@ -167,11 +167,11 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
               points={[
                 {
                   title: 'OSBA Leadership Academy, 2023',
-                  body: 'Received the most nominations in the Academy’s history and was selected as 1 of 17 attorneys statewide.',
+                  body: 'Received the most nominations in the Academy’s history and was one of 27 attorneys in the 2023 class.',
                 },
                 {
                   title: 'CALI Award, 2017',
-                  body: 'Excellence in Interviewing and Counseling, awarded to the top student in the course across 100+ participating US law schools.',
+                  body: 'CALI Award for Excellence for the top grade in Interviewing and Counseling at Capital University Law School.',
                 },
                 { title: 'Education', body: 'Juris Doctor, Capital University Law School. B.A. in Political Science, University of Akron.' },
                 { title: 'Memberships', body: 'Columbus Bar Association. Ohio State Bar Association. National College for DUI Defense.' },

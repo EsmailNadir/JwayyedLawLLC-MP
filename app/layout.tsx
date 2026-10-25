@@ -121,7 +121,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 40.1191818,
-          "longitude": -83.0170041
+          "longitude": -83.0144292
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -162,7 +162,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         "sameAs": [
           "https://www.instagram.com/jjlawohio",
           "https://www.linkedin.com/in/jwayyed-jwayyed",
-          "https://www.yelp.com/biz/jwayyed-law-columbus",
+          "https://www.yelp.com/biz/jwayyed-law-columbus-2",
           "https://www.lawinfo.com/lawfirm/ohio/columbus/jwayyed-law-llc/d37691c8-a156-4eb7-aaa0-79b96d4f5c8c.html",
           "https://www.avvo.com/attorneys/43235-oh-jwayyed-jwayyed-5103671.html",
           "https://www.tiktok.com/@jjlawohio"
@@ -204,7 +204,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {
             "@type": "EducationalOccupationalCredential",
             "credentialCategory": "license",
-            "description": "Licensed attorney, State of Ohio (Bar #0098679)",
+            "description": "Licensed attorney, State of Ohio (Bar #0098678)",
             "recognizedBy": {
               "@type": "Organization",
               "name": "Supreme Court of Ohio"
