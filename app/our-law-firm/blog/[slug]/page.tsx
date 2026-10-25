@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 import { blogPosts, getPostBySlug, getRelatedPosts } from '@/data/blog-posts';
@@ -53,6 +54,44 @@ function formatDate(dateStr: string) {
     day: 'numeric',
   });
 }
+
+/** Practice pages to suggest beside a post, by its category. */
+const serviceLinks: Record<string, { href: string; label: string }[]> = {
+  'Criminal Defense': [
+    { href: '/criminal-defense', label: 'Criminal Defense Overview' },
+    { href: '/criminal-defense/expungement-record-sealing', label: 'Expungement & Record Sealing' },
+    { href: '/criminal-defense/assault-charges', label: 'Assault Defense' },
+  ],
+  'OVI/DUI': [
+    { href: '/ovi-dui-defense', label: 'OVI/DUI Defense Overview' },
+    { href: '/ovi-dui-defense/first-ovi', label: 'First OVI Defense' },
+    { href: '/ovi-dui-defense/high-tier-ovi', label: 'High-Tier OVI Defense' },
+  ],
+  'Personal Injury': [
+    { href: '/personal-injury', label: 'Personal Injury Overview' },
+    { href: '/personal-injury/car-accidents', label: 'Car Accident Attorney' },
+    { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall Claims' },
+  ],
+  'Estate Planning': [
+    { href: '/other-services/estate-planning', label: 'Estate Planning' },
+    { href: '/other-services/will-contests', label: 'Will Contests' },
+    { href: '/trusts', label: 'Trusts Overview' },
+  ],
+  'Business Law': [
+    { href: '/business', label: 'Business Law Overview' },
+    { href: '/business/llc-formation', label: 'LLC Formation' },
+    { href: '/business/contract-drafting-review', label: 'Contract Drafting & Review' },
+  ],
+  'Civil Litigation': [
+    { href: '/civil', label: 'Civil Litigation Overview' },
+    { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
+  ],
+  'Trusts': [
+    { href: '/trusts', label: 'Trusts Overview' },
+    { href: '/trusts/revocable-living-trusts', label: 'Revocable Living Trusts' },
+    { href: '/other-services/estate-planning', label: 'Estate Planning' },
+  ],
+};
 
 export default async function BlogPostPage({
   params,
@@ -107,228 +146,113 @@ export default async function BlogPostPage({
       />
       <Breadcrumbs items={breadcrumbItems} />
 
-      {/* ── Article Header ─────────────────────────────────────────── */}
-      <header className="relative overflow-hidden py-16 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-950 to-navy-950" />
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '24px 24px',
-          }}
-        />
-        <div className="absolute -top-24 -right-24 w-80 h-80 bg-sky-deep/12 rounded-full blur-3xl" />
-
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="bg-navy-950 text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
-              {post.category}
-            </span>
-            <time
-              dateTime={post.date}
-              className="text-navy-950/50 text-sm font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
-            >
-              {formatDate(post.date)}
-            </time>
-          </div>
-          <h1 className="jw-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-            {post.title}
-          </h1>
-          <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-lg text-white/80 leading-relaxed max-w-3xl">
-            {post.excerpt}
-          </p>
-
-          {/* Author */}
-          <div className="flex items-center gap-3 mt-8 pt-6 border-t border-white/10">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sky-deep to-navy-950 flex items-center justify-center">
-              <span className="text-white text-sm font-bold">JL</span>
-            </div>
-            <div className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
-              <span className="block text-white font-medium text-sm">
-                {post.author}
-              </span>
-              <span className="block text-navy-950/50 text-xs">
-                Columbus, Ohio
-              </span>
-            </div>
+      <header className="jw jw-mark bg-navy-950 text-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-8 sm:pt-12 pb-16 sm:pb-20">
+          <div className="max-w-4xl">
+            <p className="jw-enter flex flex-wrap items-center gap-x-4 gap-y-1 text-[length:var(--step-small)]">
+              <span className="font-semibold text-sky">{post.category}</span>
+              <time dateTime={post.date} className="text-mist">
+                {formatDate(post.date)}
+              </time>
+            </p>
+            <h1 className="jw-enter jw-display mt-5 text-[clamp(2.1rem,1.4rem+3vw,4rem)] leading-[1.06] text-balance" style={{ '--d': '80ms' } as React.CSSProperties}>
+              {post.title}
+            </h1>
+            <p className="jw-enter mt-6 max-w-[46rem] text-[length:var(--step-lead)] leading-snug text-white/80" style={{ '--d': '160ms' } as React.CSSProperties}>
+              {post.excerpt}
+            </p>
+            <p className="jw-enter mt-8 text-[length:var(--step-small)] text-mist" style={{ '--d': '240ms' } as React.CSSProperties}>
+              By <Link href="/our-law-firm/about-us" className="text-white underline underline-offset-4 hover:text-sky">{post.author}</Link>, Columbus, Ohio
+            </p>
           </div>
         </div>
       </header>
 
-      {/* ── Article Body ───────────────────────────────────────────── */}
-      <article className="py-12 sm:py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Static HTML content from data/blog-posts.ts (not user input) */}
-          <div
-            className="
-              prose prose-lg max-w-none
-              font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
-              prose-headings:jw-serif
-              prose-headings:text-navy-950
-              prose-headings:font-bold
-              prose-h2:text-2xl
-              prose-h2:mt-10
-              prose-h2:mb-4
-              prose-h2:border-l-4
-              prose-h2:border-sky-deep
-              prose-h2:pl-4
-              prose-p:text-navy-950/70
-              prose-p:leading-relaxed
-              prose-li:text-navy-950/70
-              prose-strong:text-navy-950
-              prose-ul:space-y-2
-              prose-a:text-sky-deep
-              prose-a:no-underline
-              hover:prose-a:underline
-            "
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-
-          {/* Disclaimer */}
-          <div className="mt-12 p-6 bg-ice border border-navy-950/10">
-            <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sm text-navy-950/60 leading-relaxed italic">
-              This article is for informational purposes only and does not
-              constitute legal advice. For legal counsel regarding your specific
-              situation, contact Jwayyed Law, LLC.
+      <article className="bg-white text-navy-950 py-14 sm:py-20">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-8 lg:col-start-1 min-w-0">
+            {/* Static HTML from data/blog-posts.ts (not user input). */}
+            <div className="jw-prose text-[length:var(--step-body)]" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <p className="mt-12 max-w-[70ch] border-l-4 border-sky-deep bg-ice px-6 py-5 text-[length:var(--step-small)] text-navy-950/75">
+              This article is for informational purposes only and does not constitute legal advice. For legal counsel regarding your
+              specific situation, contact Jwayyed Law, LLC.
+            </p>
+            <p className="mt-8">
+              <Link
+                href="/our-law-firm/blog"
+                className="inline-flex items-center gap-2 font-semibold text-sky-deep hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep"
+              >
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                All articles
+              </Link>
             </p>
           </div>
-
-          {/* Back to blog */}
-          <div className="mt-8">
-            <Link
-              href="/our-law-firm/blog"
-              className="inline-flex items-center gap-2 text-sky-deep hover:text-navy-950 font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to All Articles
-            </Link>
-          </div>
+          {serviceLinks[post.category] && (
+            <aside className="lg:col-span-4" aria-label="Related services">
+              <div className="lg:sticky lg:top-28 bg-ice p-6 sm:p-8">
+                <p className="jw-serif text-[1.35rem] leading-tight">Related services</p>
+                <ul className="mt-5 grid gap-px bg-navy-950/10 border border-navy-950/10">
+                  {serviceLinks[post.category].map((l) => (
+                    <li key={l.href} className="bg-white">
+                      <Link
+                        href={l.href}
+                        className="group flex items-center justify-between gap-3 px-4 py-3 font-medium hover:text-sky-deep transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sky-deep"
+                      >
+                        {l.label}
+                        <ArrowRight className="w-4 h-4 flex-shrink-0 text-sky-deep transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="tel:+16142855482"
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 min-h-[52px] bg-navy-950 text-white font-semibold tabular-nums hover:bg-sky-deep transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky"
+                >
+                  Call (614) 285-5482
+                </a>
+              </div>
+            </aside>
+          )}
         </div>
       </article>
 
-      {/* ── Related Practice Areas ─────────────────────────────────── */}
-      {(() => {
-        const serviceLinks: Record<string, { href: string; label: string }[]> = {
-          'Criminal Defense': [
-            { href: '/criminal-defense', label: 'Criminal Defense Overview' },
-            { href: '/criminal-defense/expungement-record-sealing', label: 'Expungement & Record Sealing' },
-            { href: '/criminal-defense/assault-charges', label: 'Assault Defense' },
-          ],
-          'OVI/DUI': [
-            { href: '/ovi-dui-defense', label: 'OVI/DUI Defense Overview' },
-            { href: '/ovi-dui-defense/first-ovi', label: 'First OVI Defense' },
-            { href: '/ovi-dui-defense/high-tier-ovi', label: 'High-Tier OVI Defense' },
-          ],
-          'Personal Injury': [
-            { href: '/personal-injury', label: 'Personal Injury Overview' },
-            { href: '/personal-injury/car-accidents', label: 'Car Accident Attorney' },
-            { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall Claims' },
-          ],
-          'Estate Planning': [
-            { href: '/other-services/estate-planning', label: 'Estate Planning' },
-            { href: '/other-services/will-contests', label: 'Will Contests' },
-            { href: '/trusts', label: 'Trusts Overview' },
-          ],
-          'Business Law': [
-            { href: '/business', label: 'Business Law Overview' },
-            { href: '/business/llc-formation', label: 'LLC Formation' },
-            { href: '/business/contract-drafting-review', label: 'Contract Drafting & Review' },
-          ],
-          'Civil Litigation': [
-            { href: '/civil', label: 'Civil Litigation Overview' },
-            { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
-          ],
-          'Trusts': [
-            { href: '/trusts', label: 'Trusts Overview' },
-            { href: '/trusts/revocable-living-trusts', label: 'Revocable Living Trusts' },
-            { href: '/other-services/estate-planning', label: 'Estate Planning' },
-          ],
-        };
-        const links = serviceLinks[post.category];
-        if (!links) return null;
-        return (
-          <section className="py-10 bg-white border-t border-navy-950/10">
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="jw-serif text-xl font-bold text-navy-950 mb-4">
-                Related Services
-              </h2>
-              <div className="flex flex-wrap gap-3">
-                {links.map((l) => (
+      {relatedPosts.length > 0 && (
+        <section className="bg-ice text-navy-950 py-16 sm:py-24" aria-labelledby="related-articles">
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-8">
+            <h2 id="related-articles" className="jw-display text-[clamp(1.875rem,1.3rem+2vw,3rem)] leading-[1.08]">
+              Related articles
+            </h2>
+            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((related) => (
+                <li key={related.slug}>
                   <Link
-                    key={l.href}
-                    href={l.href}
-                    className="inline-block px-4 py-2 bg-ice border border-navy-950/10 text-sm font-medium text-navy-950/80 hover:border-sky-deep hover:text-sky-deep transition-colors duration-200 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+                    href={`/our-law-firm/blog/${related.slug}`}
+                    className="group block h-full bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep"
                   >
-                    {l.label}
+                    <div className="relative aspect-[16/9] overflow-hidden bg-navy-950">
+                      <Image
+                        src={related.image}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition-[scale] duration-700 ease-out group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <p className="text-[length:var(--step-small)] font-semibold text-sky-deep">{related.category}</p>
+                      <h3 className="mt-2 jw-serif text-[1.3rem] leading-snug group-hover:text-sky-deep transition-colors">{related.title}</h3>
+                      <p className="mt-2 text-navy-950/70 line-clamp-2">{related.excerpt}</p>
+                      <time dateTime={related.date} className="mt-4 block text-[length:var(--step-small)] text-navy-950/60">
+                        {formatDate(related.date)}
+                      </time>
+                    </div>
                   </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
-      {/* ── Related Posts ───────────────────────────────────────────── */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-10">
-            Related Articles
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {relatedPosts.map((related) => (
-              <Link
-                key={related.slug}
-                href={`/our-law-firm/blog/${related.slug}`}
-                className="group bg-white border border-navy-950/10 overflow-hidden hover:shadow-gray-200/50 transition-all duration-500 hover:-translate-y-1"
-              >
-                {/* Image thumbnail */}
-                <div className="relative h-44 overflow-hidden">
-                  <Image
-                    src={related.image}
-                    alt={related.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                    quality={80}
-                  />
-                  <div className="absolute top-4 left-4 z-10">
-                    <span className="bg-navy-950 text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
-                      {related.category}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <h3 className="jw-serif text-lg font-bold text-navy-950 mb-2 leading-snug group-hover:text-sky-deep transition-colors duration-300">
-                    {related.title}
-                  </h3>
-                  <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-navy-950/60 text-sm line-clamp-2 leading-relaxed">
-                    {related.excerpt}
-                  </p>
-                  <div className="mt-4 text-xs text-navy-950/50 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
-                    <time dateTime={related.date}>
-                      {formatDate(related.date)}
-                    </time>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ── Contact CTA ────────────────────────────────────────────── */}
       <ContactCTA />

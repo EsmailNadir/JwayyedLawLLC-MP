@@ -864,6 +864,15 @@ body:has(.bg-gray-100) {
   .jw-prose > ul:not(.not-prose) > li::marker {
     color: #1f5fa8;
   }
+  .jw-prose > h2 {
+    font-family: var(--font-jw-display);
+    font-weight: 600;
+    font-size: clamp(1.6rem, 1.3rem + 1vw, 2.1rem);
+    line-height: 1.15;
+    color: #0b1a2e;
+    margin-top: 2.2em;
+    max-width: 70ch;
+  }
   .jw-prose > h3 {
     font-family: var(--font-jw-display);
     font-weight: 600;
