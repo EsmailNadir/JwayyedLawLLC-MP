@@ -131,8 +131,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             "Thursday",
             "Friday"
           ],
-          "opens": "10:00",
-          "closes": "18:00"
+          "opens": "09:00",
+          "closes": "17:00"
         },
         "priceRange": "$$",
         "areaServed": [

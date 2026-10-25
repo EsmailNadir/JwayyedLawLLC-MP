@@ -1,15 +1,22 @@
 import type { Metadata } from 'next';
-import React from 'react';
 import Link from 'next/link';
-import { Phone, MapPin, Clock, Calendar, ArrowRight, ShieldCheck } from 'lucide-react';
-import PageHero from '@/components/PageHero';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import Calendly from '@/components/calendly';
-import ObfuscatedEmail from '@/components/ObfuscatedEmail';
+import Image from 'next/image';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import OfficeStatus from '@/components/OfficeStatus';
+import ConsultationPanel from '@/components/contact/ConsultationPanel';
+import OfficeMap from '@/components/contact/OfficeMap';
 
 export const metadata: Metadata = {
   title: 'Contact Jwayyed Law LLC | Free Consultation',
-  description: 'Contact Jwayyed Law LLC to schedule a free consultation. Serving all of Ohio — OVI/DUI, criminal defense, estate planning & more. Call (614) 285-5482.',
+  description:
+    'Contact Jwayyed Law LLC to schedule a free consultation. Serving all of Ohio: OVI/DUI, criminal defense, personal injury, civil, business and estate matters. Call (614) 285-5482.',
+  keywords: [
+    'contact attorney Ohio',
+    'schedule consultation Ohio',
+    'Columbus lawyer consultation',
+    'Ohio OVI attorney contact',
+    'Jwayyed Law LLC',
+  ],
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Contact Jwayyed Law LLC | Free Consultation',
@@ -19,194 +26,290 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbItems = [{ label: 'Contact', href: '/contact' }];
+/*
+ * Contact. One idea runs through it: the shortest path to the attorney.
+ * The number is the headline, the office status is live, the booking and
+ * the message share one panel, and the map is the firm's own navy.
+ */
 
-const ContactPage = () => {
+const PHONE_DISPLAY = '(614) 285-5482';
+const PHONE_TEL = 'tel:+16142855482';
+const EMAIL = 'jwayyedlawllc@outlook.com';
+const ADDRESS_LINE_1 = '100 E. Campus View Blvd, Suite 250';
+const ADDRESS_LINE_2 = 'Columbus, OH 43235';
+const DESTINATION = encodeURIComponent('100 E Campus View Blvd Suite 250, Columbus, OH 43235');
+const GOOGLE_DIRECTIONS = `https://www.google.com/maps/dir/?api=1&destination=${DESTINATION}`;
+const APPLE_DIRECTIONS = `https://maps.apple.com/?daddr=${DESTINATION}`;
 
-  return (
-    <>
-      <Breadcrumbs items={breadcrumbItems} />
-      <PageHero
-        title="Contact Our Ohio Law Firm"
-        description="Serving Columbus, Cincinnati, Dayton, and clients throughout all of Ohio. Reach out to schedule a consultation or ask a question about your legal matter."
-        showCTA={false}
-      />
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
-      {/* Practice Areas We Can Help With */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-2">
-        <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 text-center mb-6 max-w-3xl mx-auto leading-relaxed">
-          Jwayyed Law LLC provides experienced legal representation throughout Ohio — serving Columbus, Cincinnati, Dayton, and clients in every Ohio county. Whether you need help with a criminal charge, an injury claim, a business matter, or an estate plan, our attorneys are ready to listen and advise you on your options.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
-          <Link href="/criminal-defense" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Criminal Defense</Link>
-          <Link href="/ovi-dui-defense" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">OVI / DUI Defense</Link>
-          <Link href="/personal-injury" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Personal Injury</Link>
-          <Link href="/civil" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Civil Litigation</Link>
-          <Link href="/business" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Business Law</Link>
-          <Link href="/trusts" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Trusts</Link>
-          <Link href="/other-services/estate-planning" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Estate Planning</Link>
-          <Link href="/other-services/probate" className="block p-3 text-center border border-gray-200 rounded-lg hover:border-[#b87333] hover:shadow-sm transition-all text-sm font-medium text-gray-800">Probate</Link>
-        </div>
-      </section>
-
-      {/* How to Reach Us — Primary Contact Methods */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-        <div className="text-center mb-8 md:mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#b87333]/10 text-[#b87333] text-xs font-semibold uppercase tracking-wider mb-3 font-['Inter',_'Arial',_sans-serif]">
-            <ShieldCheck className="w-3.5 h-3.5" aria-hidden="true" />
-            Confidential Consultation
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-3">
-            How to Reach Us
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-['Inter',_'Arial',_sans-serif] leading-relaxed">
-            Choose the option that works best for you. Every inquiry is reviewed by our team and returned within one business day.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* Call Now — PRIMARY action */}
-          <a
-            href="tel:+16142855482"
-            aria-label="Call Jwayyed Law at (614) 285-5482"
-            className="group relative bg-[#b87333] text-white rounded-2xl p-7 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-[#b87333] focus:outline-none focus:ring-2 focus:ring-[#b87333]/40 focus:ring-offset-2"
-          >
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white/15 mb-5 transition-colors duration-300 group-hover:bg-white/20">
-              <Phone className="w-7 h-7" aria-hidden="true" />
-            </div>
-            <h3 className="text-2xl font-['Playfair_Display',_'Georgia',_serif] font-semibold mb-2">
-              Call Now
-            </h3>
-            <p className="text-white/90 text-sm mb-5 leading-relaxed font-['Inter',_'Arial',_sans-serif]">
-              Speak directly with our team. The fastest way to discuss urgent matters or get same-day answers.
-            </p>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold tracking-wide font-['Inter',_'Arial',_sans-serif]">
-                (614) 285-5482
-              </span>
-              <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-            </div>
-            <div className="mt-3 text-xs text-white/75 font-['Inter',_'Arial',_sans-serif]">
-              Mon–Fri · 10:00 AM – 6:00 PM
-            </div>
-          </a>
-
-          {/* Email — obfuscated client component */}
-          <ObfuscatedEmail />
-
-          {/* Visit Our Office */}
-          <a
-            href="https://www.google.com/maps/place/100+E+Campus+View+Blvd+%23250,+Columbus,+OH+43235"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Get directions to our Columbus office"
-            className="group relative bg-white text-gray-900 rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-[#b87333]/40 focus:outline-none focus:ring-2 focus:ring-[#b87333]/40 focus:ring-offset-2"
-          >
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#b87333]/10 mb-5 transition-colors duration-300 group-hover:bg-[#b87333]/15">
-              <MapPin className="w-7 h-7 text-[#b87333]" aria-hidden="true" />
-            </div>
-            <h3 className="text-2xl font-['Playfair_Display',_'Georgia',_serif] font-semibold mb-2">
-              Visit Our Office
-            </h3>
-            <p className="text-gray-600 text-sm mb-5 leading-relaxed font-['Inter',_'Arial',_sans-serif]">
-              100 E. Campus View Blvd, Suite 250
-              <br />
-              Columbus, OH 43235
-            </p>
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-semibold text-[#b87333] tracking-wide font-['Inter',_'Arial',_sans-serif]">
-                Get Directions
-              </span>
-              <ArrowRight className="w-5 h-5 text-[#b87333] transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-            </div>
-            <div className="mt-3 text-xs text-gray-500 font-['Inter',_'Arial',_sans-serif]">
-              By appointment only
-            </div>
-          </a>
-        </div>
-
-        {/* Office Hours Strip */}
-        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-700 font-['Inter',_'Arial',_sans-serif]">
-          <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4 text-[#b87333]" aria-hidden="true" />
-            <span><span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Office Hours:</span> Mon–Fri, 10:00 AM – 6:00 PM</span>
-          </div>
-          <span className="hidden sm:inline text-gray-300">|</span>
-          <span className="text-gray-600">Saturday &amp; Sunday: Closed</span>
-        </div>
-      </section>
-
-      {/* Calendly — Online Scheduling */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-12 md:py-16 border-y border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6 md:mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#b87333]/10 text-[#b87333] text-xs font-semibold uppercase tracking-wider mb-3 font-['Inter',_'Arial',_sans-serif]">
-              <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
-              Online Scheduling
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-3">
-              Book Your Consultation
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto font-['Inter',_'Arial',_sans-serif] leading-relaxed">
-              Pick a time that works for you. Available slots update automatically — no email tag required.
-            </p>
-          </div>
-          <Calendly />
-        </div>
-      </section>
-
-      {/* Google Maps */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl sm:text-3xl font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
-            Find Our Office
-          </h2>
-          <p className="text-gray-600 text-sm font-['Inter',_'Arial',_sans-serif]">
-            100 E. Campus View Boulevard, Suite 250, Columbus, OH 43235
-          </p>
-        </div>
-        <div className="w-full h-[300px] md:h-[450px] rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            title="Map showing Jwayyed Law LLC office location in Columbus, Ohio"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0585776308626!2d-83.02383492346433!3d40.03001627151842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388e8c8c6b7d91%3A0xe7d5dd9b3e2335c!2s100%20E%20Campus%20View%20Blvd%20%23250%2C%20Columbus%2C%20OH%2043235!5e0!3m2!1sen!2sus!4v1703024773199!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-
-      {/* Disclaimers */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
-        <div className="space-y-5">
-          {/* Client Communication Notice */}
-          <div className="bg-amber-50/80 border border-amber-100 text-amber-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed font-['Inter',_'Arial',_sans-serif]">
-            <h3 className="font-semibold mb-1.5">Client Communication Notice:</h3>
-            <p className="mb-2.5">
-              <strong>By Appointment Only.</strong> Walk-ins are not available. Please request your consultation by phone, email, or by booking online above. All consultation requests are subject to attorney availability and confirmation.
-            </p>
-            <p>
-              All phone calls, voicemails, and emails are reviewed and returned within one (1) business day. Please note: Calls without voicemails may not be returned. To ensure a prompt response, kindly leave a detailed message with your name, number, and reason for calling. Timely, respectful communication is a top priority of the firm.
-            </p>
-          </div>
-
-          {/* Emergency and Consultation Disclaimer */}
-          <div className="bg-red-50/60 border border-red-100 text-red-900 p-5 sm:p-6 rounded-xl text-sm leading-relaxed font-['Inter',_'Arial',_sans-serif]">
-            <h3 className="font-semibold mb-1.5">Important Notice:</h3>
-            <p className="mb-2.5">
-              <strong>If this is an emergency, please call 911 immediately.</strong> This website should not be used for urgent matters requiring immediate assistance.
-            </p>
-            <p>
-              <strong>Consultation Disclaimer:</strong> Sending an email, leaving a voicemail, or scheduling a consultation does not create an attorney-client relationship. Attorney-client privilege and confidentiality do not apply until a formal representation agreement has been signed by both parties. Do not send confidential or time-sensitive information by email or through online scheduling.
-            </p>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+/** Same BreadcrumbList the shared Breadcrumbs component emits. */
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: `${SITE_URL}/contact` },
+  ],
 };
 
-export default ContactPage;
+const FRAME = 'max-w-[1440px] mx-auto px-5 sm:px-8';
+const RING_DARK = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
+const RING_LIGHT = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep';
+
+const MATTERS = [
+  { label: 'OVI / DUI defense', href: '/ovi-dui-defense' },
+  { label: 'Criminal defense', href: '/criminal-defense' },
+  { label: 'Personal injury', href: '/personal-injury' },
+  { label: 'Civil litigation', href: '/civil' },
+  { label: 'Business law', href: '/business' },
+  { label: 'Trusts', href: '/trusts' },
+  { label: 'Estate planning', href: '/other-services/estate-planning-wills' },
+  { label: 'Probate', href: '/other-services/probate' },
+];
+
+export default function ContactPage() {
+  return (
+    <div className="jw bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.6]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      {/* ======================= OPENING (navy) ======================= */}
+      <section className="jw-mark bg-navy-950 text-white overflow-hidden" aria-labelledby="contact-title">
+        <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:items-end pt-10 sm:pt-14 pb-16 sm:pb-24`}>
+          <div className="lg:col-span-7">
+            <nav aria-label="Breadcrumb" className="jw-enter text-[length:var(--step-small)] text-mist">
+              <ol className="flex items-center gap-2">
+                <li>
+                  <Link href="/" className={`hover:text-white transition-colors ${RING_DARK}`}>
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li aria-current="page" className="text-white">
+                  Contact
+                </li>
+              </ol>
+            </nav>
+
+            <h1 id="contact-title" className="jw-enter jw-display mt-10 text-[length:var(--step-display)] leading-[1.04]" style={{ '--d': '80ms' } as React.CSSProperties}>
+              Talk to an attorney today.
+            </h1>
+            <p className="jw-enter mt-6 max-w-[40rem] text-[length:var(--step-lead)] leading-snug text-white/85" style={{ '--d': '160ms' } as React.CSSProperties}>
+              Free consultations for criminal, OVI, injury, civil, business and estate matters anywhere in Ohio. You
+              speak with the attorney who will handle your case.
+            </p>
+
+            <a
+              href={PHONE_TEL}
+              className={`jw-enter group mt-12 inline-flex flex-wrap items-baseline gap-x-5 gap-y-2 ${RING_DARK}`}
+              style={{ '--d': '240ms' } as React.CSSProperties}
+            >
+              <span className="jw-display text-[clamp(2.75rem,1.6rem+5vw,6rem)] leading-none tabular-nums text-sky group-hover:text-white transition-colors">
+                {PHONE_DISPLAY}
+              </span>
+              <span className="inline-flex items-center gap-2 text-[length:var(--step-small)] font-medium text-white/80 group-hover:text-white transition-colors">
+                Tap to call
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              </span>
+            </a>
+
+            <div className="jw-enter mt-6 min-h-[1.6em]" style={{ '--d': '320ms' } as React.CSSProperties}>
+              <OfficeStatus tone="dark" />
+            </div>
+
+            <div className="jw-enter mt-10 flex flex-col sm:flex-row gap-3" style={{ '--d': '400ms' } as React.CSSProperties}>
+              <a
+                href="#book"
+                className="group inline-flex items-center justify-center gap-2 min-h-[56px] px-8 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+              >
+                Book a consultation
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              </a>
+              <a
+                href="#message"
+                className={`inline-flex items-center justify-center min-h-[56px] px-8 border border-white/50 font-semibold hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
+              >
+                Send a message
+              </a>
+            </div>
+          </div>
+
+          <figure className="jw-enter lg:col-span-5 relative" style={{ '--d': '200ms' } as React.CSSProperties}>
+            <div className="relative aspect-[4/5] max-h-[620px] overflow-hidden bg-navy-900">
+              <Image
+                src="/assets/attorney-main.jpg"
+                alt="Attorney Jwayyed in a courthouse hallway"
+                fill
+                priority
+                sizes="(min-width:1024px) 40vw, 100vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" aria-hidden="true" />
+            </div>
+            <figcaption className="absolute left-0 bottom-0 p-6 sm:p-8">
+              <span className="block jw-display text-[clamp(1.4rem,1.1rem+1vw,2rem)] leading-tight">Attorney Jwayyed</span>
+              <span className="block mt-1 text-white/80 text-[length:var(--step-small)]">Former municipal prosecutor. Licensed in Ohio since 2019.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* ======================= THREE WAYS IN ======================= */}
+      <section className="bg-white" aria-labelledby="ways-heading">
+        <h2 id="ways-heading" className="sr-only">
+          Ways to reach the firm
+        </h2>
+        <div className={`${FRAME} grid md:grid-cols-3`}>
+          <a href={PHONE_TEL} className={`group block py-10 md:py-14 md:pr-10 border-b md:border-b-0 md:border-r border-navy-950/10 ${RING_LIGHT}`}>
+            <p className="jw-display text-[clamp(1.75rem,1.3rem+1.2vw,2.5rem)] leading-tight">Call</p>
+            <p className="mt-4 text-[length:var(--step-lead)] font-semibold tabular-nums text-sky-deep group-hover:text-navy-950 transition-colors">
+              {PHONE_DISPLAY}
+            </p>
+            <p className="mt-3 text-navy-950/75 max-w-[36ch]">
+              Monday to Friday, 9am to 5pm. After hours, leave a voicemail with your name, number and the reason for
+              your call.
+            </p>
+          </a>
+          <a
+            href={`mailto:${EMAIL}?subject=${encodeURIComponent('Inquiry from jjlawohio.com')}`}
+            className={`group block py-10 md:py-14 md:px-10 border-b md:border-b-0 md:border-r border-navy-950/10 ${RING_LIGHT}`}
+          >
+            <p className="jw-display text-[clamp(1.75rem,1.3rem+1.2vw,2.5rem)] leading-tight">Write</p>
+            <p className="mt-4 text-[length:var(--step-lead)] font-semibold text-sky-deep group-hover:text-navy-950 transition-colors break-all">
+              {EMAIL}
+            </p>
+            <p className="mt-3 text-navy-950/75 max-w-[36ch]">
+              Best for questions that are not urgent. Every email is returned within one business day.
+            </p>
+          </a>
+          <a href={GOOGLE_DIRECTIONS} target="_blank" rel="noopener noreferrer" className={`group block py-10 md:py-14 md:pl-10 ${RING_LIGHT}`}>
+            <p className="jw-display text-[clamp(1.75rem,1.3rem+1.2vw,2.5rem)] leading-tight">Visit</p>
+            <p className="mt-4 text-[length:var(--step-lead)] font-semibold text-sky-deep group-hover:text-navy-950 transition-colors">
+              {ADDRESS_LINE_1}
+            </p>
+            <p className="mt-3 text-navy-950/75 max-w-[36ch]">
+              {ADDRESS_LINE_2}. By appointment only, so please call or book before you come in.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      {/* ======================= BOOK OR WRITE (ice) ======================= */}
+      <section
+        id="consult"
+        className="jw-mark jw-mark--navy bg-ice py-20 sm:py-28 scroll-mt-20"
+        style={{ '--jw-mark-fade': 'radial-gradient(ellipse 55% 70% at 100% 0%, #000 10%, transparent 100%)', '--jw-mark-opacity': 0.06 } as React.CSSProperties}
+        aria-labelledby="consult-heading"
+      >
+        {/* Anchors for the two tabs; the panel reads the hash. */}
+        <span id="book" className="block scroll-mt-24" aria-hidden="true" />
+        <span id="message" className="block scroll-mt-24" aria-hidden="true" />
+        <div className={FRAME}>
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end mb-10 sm:mb-12">
+            <h2 id="consult-heading" className="jw-display lg:col-span-7 text-[length:var(--step-head)] leading-[1.08]">
+              Pick a time, or tell us what happened.
+            </h2>
+            <p className="lg:col-span-5 text-navy-950/75">
+              Booking shows the attorney&rsquo;s real availability. A message is read by the attorney and answered within
+              one business day.
+            </p>
+          </div>
+          <ConsultationPanel />
+        </div>
+      </section>
+
+      {/* ======================= THE OFFICE (map) ======================= */}
+      <section className="relative bg-navy-950 text-white" aria-labelledby="office-heading">
+        <OfficeMap className="h-[56svh] min-h-[380px] lg:h-[78svh] lg:min-h-[520px] lg:max-h-[820px]" />
+        {/* Over the map on wide screens; under it on phones, where a card on
+            top would hide the map entirely. */}
+        <div className="lg:pointer-events-none lg:absolute lg:inset-0">
+          <div className={`${FRAME} h-full flex lg:items-center`}>
+            <div className="pointer-events-auto jw-mark w-full lg:max-w-[26rem] bg-navy-950/95 py-10 lg:p-9 lg:border-t-2 border-sky">
+              <h2 id="office-heading" className="jw-display text-[clamp(1.75rem,1.3rem+1.4vw,2.5rem)] leading-tight">
+                The office
+              </h2>
+              <address className="mt-5 not-italic text-[length:var(--step-lead)] leading-snug">
+                {ADDRESS_LINE_1}
+                <br />
+                {ADDRESS_LINE_2}
+              </address>
+              <p className="mt-4 text-white/75">Monday to Friday, 9am to 5pm. By appointment only; walk-ins are not available.</p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a
+                  href={GOOGLE_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 min-h-[48px] px-5 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+                >
+                  Google Maps
+                  <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+                </a>
+                <a
+                  href={APPLE_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-2 min-h-[48px] px-5 border border-white/50 font-semibold hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
+                >
+                  Apple Maps
+                  <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================= BEFORE YOU REACH OUT ======================= */}
+      <section className="bg-white py-20 sm:py-28" aria-labelledby="notice-heading">
+        <div className={`${FRAME} grid gap-12 lg:grid-cols-12`}>
+          <h2 id="notice-heading" className="jw-display lg:col-span-4 text-[length:var(--step-head)] leading-[1.08]">
+            Good to know
+          </h2>
+          <div className="lg:col-span-8 grid gap-10 sm:grid-cols-2">
+            <div>
+              <h3 className="font-semibold text-[length:var(--step-lead)]">How the firm responds</h3>
+              <p className="mt-3 text-navy-950/80">
+                Consultations are by appointment only. Every call, voicemail and email is returned within one business
+                day. Calls without a voicemail may not be returned, so please leave your name, number and the reason
+                for your call.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-[length:var(--step-lead)]">Emergencies and confidentiality</h3>
+              <p className="mt-3 text-navy-950/80">
+                <strong className="text-navy-950">In an emergency, call 911.</strong> Contacting the firm, by any means,
+                does not create an attorney-client relationship; that begins only when a representation agreement is
+                signed. Please do not send confidential or time-sensitive details by email or online booking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================= MATTERS (sky) ======================= */}
+      <section className="jw-mark jw-mark--navy bg-sky text-navy-950" style={{ '--jw-mark-opacity': 0.09 } as React.CSSProperties} aria-labelledby="matters-heading">
+        <div className={`${FRAME} py-16 sm:py-20 grid gap-10 lg:grid-cols-12 lg:items-start`}>
+          <div className="lg:col-span-4">
+            <h2 id="matters-heading" className="jw-display text-[clamp(1.875rem,1.4rem+1.6vw,2.75rem)] leading-tight">
+              Matters the firm handles
+            </h2>
+            <p className="mt-4 max-w-[36ch]">Columbus, Cincinnati, Dayton, and clients in every Ohio county.</p>
+          </div>
+          <ul className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+            {MATTERS.map((m) => (
+              <li key={m.href}>
+                <Link
+                  href={m.href}
+                  className="group flex items-center justify-between gap-4 py-4 border-b border-navy-950/20 text-[length:var(--step-lead)] font-medium hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-950"
+                >
+                  {m.label}
+                  <ArrowRight className="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </div>
+  );
+}
