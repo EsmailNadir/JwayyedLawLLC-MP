@@ -134,7 +134,48 @@ export default function OVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="Ohio OVI penalties by offense">
+      <Section
+        title="What to do in the first days after an OVI arrest in Ohio"
+        intro={
+          <p>
+            Start with the license: the administrative license suspension appeal has a 30-day deadline, and missing it ends the right
+            to challenge the suspension. Then avoid anything that adds a second charge or weakens the defense.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'The ALS can take your license at the time of arrest. An appeal filed in time, with a request for a stay, can let you keep driving while it is pending.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Do not drive on the suspension',
+              body: (
+                <>
+                  Driving while suspended for an OVI is its own charge under ORC 4510.14. Driving is lawful again only under a court order
+                  granting <Link href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</Link>, or once the
+                  suspension ends.
+                </>
+              ),
+            },
+            {
+              title: 'Keep your paperwork',
+              body: 'The paper ALS notice from the officer and any court papers. For privileges, courts typically want proof of insurance (often an SR-22) and evidence of need, such as an employer letter or school enrollment.',
+            },
+            {
+              title: 'Note any prior OVI',
+              body: 'The date and court of any earlier OVI. Priors inside the 10-year lookback change the penalties, and a prior that does not qualify may not count at all.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio OVI penalties by offense" tone="ice">
         <p>Offenses are counted within a 10-year lookback. Each level has its own mandatory minimums.</p>
         <FactTable
           title="First OVI (within 10 years)"
@@ -193,7 +234,34 @@ export default function OVIDefensePage() {
         </Callout>
       </Section>
 
-      <Section title="Two cases from one arrest" tone="ice">
+      <Section
+        title="What an Ohio OVI can cost"
+        intro={
+          <p>
+            The fine is only part of the cost. An OVI conviction also brings the reinstatement fee, interlock charges when one is
+            required, and years of higher insurance.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow an OVI conviction"
+          rows={[
+            { label: 'Fine', value: '$565 to $1,075 (first), $715 to $1,625 (second), $1,040 to $2,750 (third), plus court costs.' },
+            { label: 'Reinstatement fee', value: '$315 when you are eligible.' },
+            {
+              label: 'Ignition interlock',
+              value: 'Required for privileges on a second or third alcohol-related OVI, and possible on a first. Installation typically $75 to $150 and monthly monitoring typically $60 to $80, paid by the driver.',
+            },
+            { label: 'Insurance', value: 'Rates often rise 2 to 3 times for 3 to 5 years; after repeat offenses coverage may be dropped.' },
+            { label: 'Proof of insurance', value: 'Courts typically require current insurance, often an SR-22, before you drive on privileges.' },
+            { label: 'Vehicle', value: '90-day immobilization on a second OVI and forfeiture on a third, if the vehicle is registered to you.' },
+          ]}
+          note="Fine and fee figures are the statutory amounts. Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="What happens at each stage of an OVI case" tone="ice">
+        <p>One arrest starts two cases: the administrative license suspension and the criminal case. They run at the same time.</p>
         <h3>The administrative license suspension (ALS)</h3>
         <p>
           Within 30 days of the arrest, the ALS appeal must be filed or the right to challenge it is lost. The hearing asks whether the
@@ -203,13 +271,23 @@ export default function OVIDefensePage() {
         <h3>The criminal case</h3>
         <Steps
           steps={[
-            { title: 'Arraignment', body: 'You enter a plea, usually not guilty.' },
+            {
+              title: 'Arraignment',
+              body: 'Usually the first court appearance. The judge reads the charges, explains your rights and asks for your plea, which is usually not guilty. The court may also set bond conditions and future dates.',
+            },
             {
               title: 'Discovery',
               body: 'The prosecution must hand over its evidence, including police reports, breathalyzer maintenance records, dashcam footage and witness statements.',
             },
-            { title: 'Pretrial motions', body: 'Motions can challenge the evidence or ask for dismissal.' },
-            { title: 'Resolution', body: 'Most cases resolve through negotiation. Trial is an option.' },
+            {
+              title: 'Pretrial motions',
+              body: 'Motions can challenge the stop, the chemical test and the field sobriety tests, or ask for dismissal. Evidence from an unlawful stop may be suppressed.',
+            },
+            { title: 'Plea or trial', body: 'Most cases resolve through negotiation. Trial is an option.' },
+            {
+              title: 'Sentencing',
+              body: 'After a conviction, the court sets the sentence inside the ranges for the offense level, starting from the mandatory minimums in the tables above.',
+            },
           ]}
         />
       </Section>
@@ -245,7 +323,46 @@ export default function OVIDefensePage() {
         </Callout>
       </Section>
 
-      <Section title="Common OVI defenses" tone="ice">
+      <Section
+        title="How OVI cases in Ohio can end"
+        tone="ice"
+        intro={
+          <p>
+            An OVI case can end in a dismissal, a reduced charge, a negotiated plea or a verdict at trial. The evidence, the stop, the
+            test and your prior record decide which is realistic.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'If the stop was unlawful or the testing was flawed, the evidence may be suppressed and the charges dismissed.',
+            },
+            {
+              title: 'A reduced charge',
+              body: (
+                <>
+                  A <Link href="/ovi-dui-defense/first-ovi">first OVI</Link> can sometimes be reduced to reckless operation. A high-tier
+                  charge can sometimes drop to a standard OVI. A second or third OVI may drop a level when a prior conviction does not
+                  qualify.
+                </>
+              ),
+            },
+            {
+              title: 'A negotiated sentence',
+              body: 'Alternative sentencing, including treatment programs, jail plus monitored house arrest on repeat offenses, or dismissal once conditions are met.',
+            },
+            { title: 'Trial', body: 'Cross-examining the officers and the state’s experts, and calling experts for the defense.' },
+          ]}
+        />
+        <p>
+          The license case can end on its own track. Winning the ALS appeal can mean immediate reinstatement, whatever happens later in
+          the criminal case.
+        </p>
+      </Section>
+
+      <Section title="Common OVI defenses">
         <PointGrid
           points={[
             {
@@ -263,6 +380,66 @@ export default function OVIDefensePage() {
             {
               title: 'Field sobriety tests',
               body: 'The walk-and-turn, one-leg-stand and horizontal gaze nystagmus tests are subjective and can be thrown off by medical conditions, weather, the road surface or improper administration.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="When an OVI hits harder: drivers with more at stake"
+        tone="ice"
+        intro={
+          <p>
+            For some drivers the consequences outside court are bigger than the sentence. These are the situations where that is most
+            often true.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Commercial drivers',
+              body: (
+                <>
+                  Any OVI conviction, even in your own car, disqualifies a CDL for one year (three with HAZMAT), and a second conviction
+                  disqualifies it for life. See <Link href="/ovi-dui-defense/commercial-dui-cdl">CDL and commercial OVI</Link>.
+                </>
+              ),
+            },
+            {
+              title: 'Drivers under 21',
+              body: (
+                <>
+                  A BAC of just 0.02% can bring an OVUAC charge, and at 0.08% it becomes a full adult OVI. See{' '}
+                  <Link href="/ovi-dui-defense/underage-ovi">underage OVI</Link>.
+                </>
+              ),
+            },
+            {
+              title: 'Licensed professionals',
+              body: 'Licenses in nursing, law and aviation may need the conviction reported and can face discipline. Licenses in commercial driving, transportation and security may be denied or revoked.',
+            },
+            {
+              title: 'Non-citizens and travelers',
+              body: 'An OVI conviction can carry immigration consequences for non-citizens, and Canada may deny entry even for an arrest without a conviction.',
+            },
+            {
+              title: 'Drivers in a crash',
+              body: (
+                <>
+                  If someone is seriously hurt or killed, the charge can become a felony. See{' '}
+                  <Link href="/ovi-dui-defense/ovi-with-accident">OVI with accident</Link>.
+                </>
+              ),
+            },
+            {
+              title: 'Drivers already suspended',
+              body: (
+                <>
+                  Driving on an OVI suspension is a separate charge. See{' '}
+                  <Link href="/ovi-dui-defense/driving-under-ovi-suspension">driving under OVI suspension</Link>.
+                </>
+              ),
             },
           ]}
         />

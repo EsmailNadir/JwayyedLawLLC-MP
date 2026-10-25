@@ -131,7 +131,43 @@ export default function HighTierOVIPage() {
         </p>
       </Section>
 
-      <Section title="High-tier OVI penalties in Ohio" tone="ice">
+      <Section
+        title="What to do after a high-tier OVI arrest"
+        tone="ice"
+        intro={
+          <p>
+            File the ALS appeal before its 30-day deadline, then find out exactly which test was used and what it read. In a high-tier
+            case the number itself is often what the defense turns on.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'An appeal filed within 30 days, with a request for a stay, can let you keep driving while it is pending. After that, the right to challenge the suspension is lost.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest, the drinking or the test with anyone unless your attorney is there.',
+            },
+            {
+              title: 'Find out which test was used',
+              body: 'The high-tier line differs by test: 0.17% BAC on a breath test, 0.17 grams per 100 milliliters of whole blood, or 0.238 grams per 100 milliliters of urine. A result close to the threshold may leave room to argue machine error or calibration.',
+            },
+            {
+              title: 'Tell your attorney the timing',
+              body: 'The rising BAC defense depends on timing and consumption: when you drank, when you were stopped and when the test was taken. Those details are easiest to pin down early.',
+            },
+            {
+              title: 'Do not drive on the suspension',
+              body: 'Driving while suspended for an OVI is a separate charge under ORC 4510.14. Limited privileges need a court order and may require an ignition interlock.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="High-tier OVI penalties in Ohio">
         <p>Under Ohio Revised Code 4511.19, high-tier convictions carry penalties well above a standard OVI.</p>
         <FactTable
           title="First high-tier OVI (current 2026 Ohio law, HB 37)"
@@ -176,7 +212,34 @@ export default function HighTierOVIPage() {
         </p>
       </Section>
 
-      <Section title="How a high-tier OVI case moves">
+      <Section
+        title="What a high-tier OVI can cost"
+        tone="ice"
+        intro={
+          <p>
+            Beyond the fine, a high-tier conviction brings a mandatory assessment and treatment program, the reinstatement fee and,
+            often, interlock charges.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow a high-tier OVI conviction"
+          rows={[
+            { label: 'Fine', value: '$565 to $1,075 on a first offense, $715 to $1,625 on a second.' },
+            { label: 'Reinstatement fee', value: '$315.' },
+            { label: 'Assessment and treatment', value: 'A mandatory alcohol assessment and treatment program on every high-tier offense.' },
+            {
+              label: 'Ignition interlock',
+              value: 'When required for privileges or at reinstatement: installation typically $75 to $150, and monthly monitoring typically $60 to $80, paid by the driver.',
+            },
+            { label: 'Proof of insurance', value: 'Courts typically require current insurance, often an SR-22, before you drive on privileges.' },
+            { label: 'Time', value: 'At least 6 days in jail on a first offense, 20 on a second and 60 on a third.' },
+          ]}
+          note="Fine and fee figures are the statutory amounts. Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="What happens at each stage of a high-tier OVI case">
         <h3>The license suspension (ALS)</h3>
         <p>
           Within 30 days of arrest, you must file an appeal of the ALS or lose the right to challenge it. For high tier, the ALS
@@ -189,10 +252,20 @@ export default function HighTierOVIPage() {
         </p>
         <Steps
           steps={[
-            { title: 'Arraignment', body: 'You enter a plea, usually not guilty.' },
-            { title: 'Discovery', body: 'The prosecution must hand over all of its evidence.' },
-            { title: 'Pretrial motions', body: 'Motions can challenge the evidence or ask for dismissal.' },
-            { title: 'Resolution', body: 'Most cases resolve through plea negotiations. Trial is an option.' },
+            { title: 'Arraignment', body: 'The judge reads the charge and you enter a plea, usually not guilty, so your attorney can review the evidence.' },
+            {
+              title: 'Discovery',
+              body: 'The prosecution must hand over all of its evidence, including the test result, breathalyzer maintenance and calibration records, and dashcam and bodycam footage.',
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'Motions can challenge the stop, the breath or blood test and the field sobriety tests, or ask for dismissal. Suppressing the test result changes what the state can prove about the tier.',
+            },
+            { title: 'Plea or trial', body: 'Most cases resolve through plea negotiations. Trial is an option.' },
+            {
+              title: 'Sentencing',
+              body: 'After a conviction, the court must impose at least the high-tier mandatory minimum, which it cannot waive, along with the fine, the suspension and the assessment and treatment program.',
+            },
           ]}
         />
         <h3>Limited driving privileges</h3>
@@ -203,7 +276,36 @@ export default function HighTierOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to a high-tier OVI" tone="ice">
+      <Section
+        title="How a high-tier OVI case can end"
+        tone="ice"
+        intro={
+          <p>
+            A high-tier charge can be dismissed, reduced to a standard OVI or reckless operation, resolved with alternative sentencing,
+            or tried. Because the mandatory minimums cannot be waived, the room to negotiate depends on how strong the defense is.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Reduction to a standard OVI',
+              body: 'Prosecutors are generally less willing to drop a high-tier charge to low tier without a strong factual reason, such as a credible challenge to the breath result, a strong rising BAC defense or a problem with the stop or arrest.',
+            },
+            { title: 'Reckless operation', body: 'In some cases the defects in the evidence support a reduction to reckless operation instead of an OVI.' },
+            {
+              title: 'Dismissal',
+              body: 'If the stop was illegal, the evidence that followed may be suppressed. A successful rising BAC defense can also lead to dismissal.',
+            },
+            {
+              title: 'Alternative sentencing or trial',
+              body: 'Negotiation can bring alternative sentencing, including treatment, or dismissal on completed conditions. If the case does not resolve, it is tried.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Defenses to a high-tier OVI">
         <PointGrid
           points={[
             {
@@ -226,7 +328,7 @@ export default function HighTierOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a high-tier OVI">
+      <Section title="What the firm does on a high-tier OVI" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the ALS hearing.' },
@@ -241,7 +343,7 @@ export default function HighTierOVIPage() {
         />
       </Section>
 
-      <Section title="High-tier OVI defense across Ohio" tone="ice">
+      <Section title="High-tier OVI defense across Ohio">
         <p>Each county page covers its courts and what to expect locally.</p>
         <LinkGrid links={COURTS} />
         <h3>Related OVI pages</h3>

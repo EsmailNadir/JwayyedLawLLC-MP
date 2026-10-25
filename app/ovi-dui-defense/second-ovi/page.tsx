@@ -137,7 +137,43 @@ export default function SecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="Second OVI penalties in Ohio" tone="ice">
+      <Section
+        title="What to do after a second OVI arrest"
+        tone="ice"
+        intro={
+          <p>
+            Protect the license first: the ALS appeal has a 30-day deadline. Then pin down the prior OVI, because its date and record
+            decide whether this can be charged as a second offense at all.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'The suspension served at arrest stays in place unless it is appealed. An appeal filed in time, with a request for a stay, can let you keep driving until the hearing. Miss the deadline and the right to contest the suspension is gone.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Gather what you know about the prior OVI',
+              body: 'The date of the earlier offense, the court that handled it and any paperwork you kept. Only a prior inside the 10-year lookback counts for second-offense sentencing, and an out-of-state or poorly documented prior may not count at all.',
+            },
+            {
+              title: 'Plan for the hard suspension',
+              body: 'You cannot drive at all for 45 days after a test over the limit, or 90 days after a refusal. Driving on the suspension is a separate charge under ORC 4510.14, so arrange rides to work and court now.',
+            },
+            {
+              title: 'Prepare for the interlock and the vehicle',
+              body: 'Privileges after an alcohol-related second OVI require an ignition interlock, and a vehicle registered to you faces 90-day immobilization on conviction. Knowing this early helps plan transport and work.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Second OVI penalties in Ohio">
         <p>
           The following reflects current Ohio law as of 2026. Penalties for a second OVI within 10 years are set by the Ohio Revised
           Code and were updated by HB 37 (effective April 2025). They apply whether the offense is alcohol-only, drug-only, or both.
@@ -195,7 +231,39 @@ export default function SecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="How a second OVI case moves">
+      <Section
+        title="What a second OVI can cost"
+        tone="ice"
+        intro={
+          <p>
+            A second OVI costs more than the fine. Expect the reinstatement fee, interlock charges, high-risk insurance and time
+            without a car.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow a second OVI conviction"
+          rows={[
+            { label: 'Fine', value: '$715 to $1,625, plus court costs.' },
+            { label: 'Reinstatement fee', value: '$315 when you are eligible to get your license back.' },
+            {
+              label: 'Ignition interlock',
+              value:
+                'Required for privileges after an alcohol-related second OVI. Installation typically $75 to $150, and monthly monitoring typically $60 to $80, paid by the driver.',
+            },
+            { label: 'Insurance', value: 'Coverage often rises sharply or is dropped, which forces high-risk coverage.' },
+            { label: 'Proof of insurance', value: 'Courts typically require current insurance, often an SR-22, before you drive on privileges.' },
+            { label: 'Vehicle', value: '90-day immobilization if it is registered to you, and restricted (yellow) plates on any vehicle you drive.' },
+            {
+              label: 'Time',
+              value: 'At least 10 consecutive days in jail (20 at the high level or for a refusal), or the jail plus house arrest alternative, and 45 or 90 days with no driving at all.',
+            },
+          ]}
+          note="Fine and fee figures are the statutory amounts. Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="What happens at each stage of a second OVI case">
         <p>Second OVI cases move on two fronts: the BMV&apos;s administrative license suspension and the criminal case in municipal or county court.</p>
         <h3>The license suspension (ALS)</h3>
         <p>
@@ -211,14 +279,54 @@ export default function SecondOVIPage() {
             { title: 'Discovery', body: 'The state must turn over its evidence: reports, video, test results, and calibration and maintenance records.' },
             { title: 'Pretrial motions', body: 'Motions to suppress evidence (an illegal stop, faulty testing) or to dismiss the case.' },
             {
-              title: 'Resolution',
+              title: 'Plea or trial',
               body: 'Many second OVI cases resolve through negotiation: reduced charges, alternative sentencing (jail plus house arrest, treatment), or dismissal under certain conditions. Without an acceptable offer, the case goes to trial before a judge or jury.',
+            },
+            {
+              title: 'Sentencing',
+              body: 'After a conviction, the court must impose at least the mandatory minimum jail term (10 or 20 consecutive days, or the jail plus house arrest alternative when allowed) and cannot waive or suspend it. It also sets the fine, the 1 to 7 year suspension, the assessment, the yellow plates and the 90-day immobilization.',
             },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to a second OVI" tone="ice">
+      <Section
+        title="How a second OVI case can end"
+        tone="ice"
+        intro={
+          <p>
+            A second OVI can be dismissed, reduced to a first offense, resolved by a negotiated plea or tried. The prior conviction and
+            the evidence from the stop decide which of these is realistic.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Reduction to a first offense',
+              body: 'If the prior OVI is invalid, outside the 10-year lookback or not properly documented, the charge may be treated as a first offense: less jail, a shorter suspension and different rules for privileges and the interlock.',
+            },
+            {
+              title: 'Dismissal',
+              body: 'Rare, but possible when evidence is suppressed because of an illegal stop, defective chemical testing or another constitutional violation.',
+            },
+            {
+              title: 'A negotiated sentence',
+              body: 'Even without a dismissal, negotiated outcomes such as jail plus monitored house arrest, or treatment in place of some jail, can reduce the time actually served.',
+            },
+            {
+              title: 'Trial',
+              body: 'Without an acceptable offer, a judge or jury decides. The defense challenges the state’s evidence and cross-examines the officers and experts.',
+            },
+          ]}
+        />
+        <p>
+          The firm works through each path with you: whether to fight the ALS, push for a reduction, accept a negotiated resolution or
+          go to trial, and the pros and cons of each.
+        </p>
+      </Section>
+
+      <Section title="Defenses to a second OVI">
         <p>Which defense applies depends on your prior record and on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -242,7 +350,7 @@ export default function SecondOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a second OVI">
+      <Section title="What the firm does on a second OVI" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Before the 30-day deadline, with a request to stay the suspension when appropriate, and represents you at the ALS hearing.' },
@@ -256,7 +364,7 @@ export default function SecondOVIPage() {
         />
       </Section>
 
-      <Section title="Limited driving privileges after a second OVI" tone="ice">
+      <Section title="Limited driving privileges after a second OVI">
         <p>
           Limited privileges let you drive for specific purposes (work, school, treatment, medical care) during the suspension. First
           you serve a hard suspension with no driving: 45 days if you took the test and were over the limit, or 90 days if you refused.
@@ -269,7 +377,7 @@ export default function SecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="Second OVI defense across Ohio">
+      <Section title="Second OVI defense across Ohio" tone="ice">
         <p>The firm represents clients facing second OVI charges in these counties. Each county page covers its courts.</p>
         <LinkGrid links={COURTS} />
         <h3>Related OVI pages</h3>

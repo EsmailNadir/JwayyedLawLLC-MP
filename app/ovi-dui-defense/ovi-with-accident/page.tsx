@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'OVI With Accident Defense in Ohio',
@@ -113,7 +113,43 @@ export default function OVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="Ohio OVI accident charges" tone="ice">
+      <Section
+        title="What to do after an OVI crash"
+        tone="ice"
+        intro={
+          <p>
+            Get the evidence secured and the ALS appeal filed before its 30-day deadline. In a crash case the investigation needs to
+            start on day one, because some of the most important evidence can be lost.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Secure the evidence',
+              body: 'Event data recorder downloads, surveillance footage and scene evidence can be lost or overwritten. The firm moves to secure them immediately.',
+            },
+            {
+              title: 'Do not discuss the crash',
+              body: 'Do not talk about the accident, the drinking or the test with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'The administrative license suspension runs separately from the criminal charges. A timely appeal can bring a stay of the suspension.',
+            },
+            {
+              title: 'Note any hospital blood draw',
+              body: 'After a serious accident, law enforcement may order one. How it was drawn, the chain of custody and the test accuracy can all be challenged.',
+            },
+            {
+              title: 'Plan for the civil side',
+              body: 'An injured person can sue. Your liability insurer may defend you up to your policy limits, and the criminal defense should be coordinated with civil counsel from the start.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio OVI accident charges">
         <FactTable
           title="Charge hierarchy"
           rows={[
@@ -125,6 +161,11 @@ export default function OVIWithAccidentPage() {
             { label: 'Leaving the scene (ORC 4549.02)', value: 'A separate charge: M1 (property only), F5 (injury), or F3 (serious harm or death).' },
           ]}
         />
+        <h3>Which court hears the case</h3>
+        <p>
+          A misdemeanor OVI is heard in municipal or county court. Once a felony is charged, the case is heard in Common Pleas
+          Court, and the OVI may be prosecuted at the same time.
+        </p>
         <h3>Leaving the scene</h3>
         <p>
           ORC 4549.02 requires every driver in an accident with injury, death or property damage to stop immediately, exchange
@@ -134,7 +175,7 @@ export default function OVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="The evidence in an OVI accident case">
+      <Section title="The evidence in an OVI accident case" tone="ice">
         <p>
           Accident cases carry far more evidence than a standard OVI. Beyond BAC results and officer observations, expect the
           following. For what to do at the roadside, read{' '}
@@ -159,7 +200,7 @@ export default function OVIWithAccidentPage() {
         />
       </Section>
 
-      <Section title="Causation and other defenses" tone="ice">
+      <Section title="Causation and other defenses">
         <p>
           Prosecutors must prove both that the driver was impaired and that the impairment caused the accident and the harm. The
           defense can show that road conditions, another driver, a vehicle malfunction or another independent factor caused or
@@ -174,7 +215,7 @@ export default function OVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="Civil exposure after an OVI accident">
+      <Section title="Civil exposure after an OVI accident" tone="ice">
         <p>
           An injured person, or the estate of someone killed, can sue in Ohio civil court for medical expenses, lost income, pain and
           suffering and other damages. An OVI conviction is admissible in that case as evidence of negligence per se: the jury can be
@@ -185,7 +226,7 @@ export default function OVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on an OVI accident case" tone="ice">
+      <Section title="What the firm does on an OVI accident case">
         <PointGrid
           points={[
             { title: 'Investigates immediately', body: 'Secures scene evidence, EDR data and surveillance footage before it is lost or overwritten.' },

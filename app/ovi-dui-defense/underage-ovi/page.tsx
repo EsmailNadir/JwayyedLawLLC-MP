@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Underage OVI Defense in Ohio',
@@ -189,7 +189,50 @@ export default function UnderageOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on an underage case">
+      <Section
+        title="How an underage OVI or OVUAC case can end"
+        intro={
+          <p>
+            An underage case can end in a dismissal, a reduction to a lesser charge, diversion or a conviction. For a young driver, the
+            difference between these outcomes shows up for years on applications and background checks.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'When the stop lacked reasonable suspicion, the test was not properly given or a constitutional right was violated, the evidence may not hold up.',
+            },
+            {
+              title: 'OVI reduced to OVUAC',
+              body: 'A full OVI at 0.08% or higher carries adult mandatory minimums. OVUAC is a fourth-degree misdemeanor with no mandatory jail, so a successful challenge to the reading near 0.08% matters.',
+            },
+            {
+              title: 'OVUAC reduced to a traffic offense',
+              body: 'A non-criminal traffic offense avoids a criminal conviction, which can protect college, scholarship and licensing applications.',
+            },
+            { title: 'Diversion', body: 'Where available, a program that may lead to dismissal once completed.' },
+          ]}
+        />
+        <h3>What parents can do first</h3>
+        <Steps
+          steps={[
+            { title: 'Act early', body: 'The outcome at disposition shapes the record, so bring in an attorney before the first court date.' },
+            {
+              title: 'Know which court',
+              body: 'Drivers aged 18 to 20 go to adult criminal court. Drivers under 18 go to juvenile court, where records are handled differently.',
+            },
+            { title: 'Keep the young driver from discussing the case', body: 'With law enforcement or anyone else, unless the attorney is there.' },
+            {
+              title: 'Check disclosure rules',
+              body: 'Find out what the school, scholarship, ROTC or study abroad program asks about pending charges and convictions.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on an underage case" tone="ice">
         <PointGrid
           points={[
             { title: 'Challenges the stop', body: 'Whether law enforcement had lawful reasonable suspicion to pull the vehicle over.' },
@@ -207,7 +250,7 @@ export default function UnderageOVIPage() {
 
       <LocationsWeServe title="OVI/DUI Defense" />
 
-      <Section title="Related OVI pages" tone="ice">
+      <Section title="Related OVI pages">
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 

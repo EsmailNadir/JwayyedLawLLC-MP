@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Driving Under OVI Suspension',
@@ -119,7 +119,43 @@ export default function DrivingUnderOVISuspensionPage() {
         </p>
       </Section>
 
-      <Section title="Driving under OVI suspension penalties" tone="ice">
+      <Section
+        title="What to do after a driving under OVI suspension charge"
+        tone="ice"
+        intro={
+          <p>
+            Stop driving until a court order allows it, and find out exactly which suspensions are in effect. Most defenses to this
+            charge start with the suspension paperwork.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Stop driving until a court allows it',
+              body: 'Until a court grants limited driving privileges in a formal order, any driving, even for work or a medical emergency, is driving under OVI suspension. Each new violation creates its own record.',
+            },
+            {
+              title: 'Find out which suspensions are in effect',
+              body: 'An ALS, a court-ordered suspension or both, when each started and ends, and what privileges, if any, the court has authorized. Confusion about your status is not a defense; the exact dates and terms are what the defense works from.',
+            },
+            {
+              title: 'Gather the paperwork',
+              body: 'The paper ALS notice from the officer, the court order imposing any suspension, and any limited privileges order. Driving within the limits of a valid privileges order was lawful.',
+            },
+            {
+              title: 'Deal with the vehicle',
+              body: 'The vehicle may be immobilized or towed, even if it belongs to a family member or employer. An immobilization or forfeiture order can be contested.',
+            },
+            {
+              title: 'Tell your attorney about the OVI case',
+              body: 'If the original OVI is still pending, a new charge can hurt bail conditions, plea negotiations and sentencing there. Both cases should be handled together.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Driving under OVI suspension penalties">
         <FactTable
           title="Penalties under ORC 4510.14"
           rows={[
@@ -141,7 +177,7 @@ export default function DrivingUnderOVISuspensionPage() {
         </p>
       </Section>
 
-      <Section title="The two kinds of OVI suspension">
+      <Section title="The two kinds of OVI suspension" tone="ice">
         <p>Two types of OVI-related suspension can lead to a DUOVIS charge, and both can be in effect at once.</p>
         <PointGrid
           points={[
@@ -162,7 +198,7 @@ export default function DrivingUnderOVISuspensionPage() {
         </p>
       </Section>
 
-      <Section title="HB 37 and staying legal on the road" tone="ice">
+      <Section title="HB 37 and staying legal on the road">
         <p>
           HB 37, effective April 9, 2025, changed how limited privileges interact with OVI suspensions. In a first-offense non-refusal
           case, a court may now waive the mandatory 15-day hard suspension and grant privileges immediately if you agree to install a
@@ -180,7 +216,7 @@ export default function DrivingUnderOVISuspensionPage() {
         </Callout>
       </Section>
 
-      <Section title="Defenses to a DUOVIS charge">
+      <Section title="Defenses to a DUOVIS charge" tone="ice">
         <p>
           Courts have very little room to depart from the mandatory minimum. The ways to avoid it are to defeat the charge or to
           negotiate a reduction to a non-DUOVIS offense where the minimum does not apply.
@@ -195,7 +231,7 @@ export default function DrivingUnderOVISuspensionPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a DUOVIS charge" tone="ice">
+      <Section title="What the firm does on a DUOVIS charge">
         <PointGrid
           points={[
             { title: 'Challenges the underlying suspension', body: 'Checks that the ALS or court suspension was validly imposed and procedurally proper.' },

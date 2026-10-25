@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
-import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Third OVI Attorney in Ohio',
@@ -137,7 +137,43 @@ export default function ThirdOVIPage() {
         </p>
       </Section>
 
-      <Section title="Third OVI penalties in Ohio" tone="ice">
+      <Section
+        title="What to do after a third OVI arrest"
+        tone="ice"
+        intro={
+          <p>
+            File the ALS appeal before its 30-day deadline, and start checking both prior OVIs right away. A third offense needs two
+            qualifying priors inside the 10-year lookback, and if either one fails, the penalties drop.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'The suspension served at arrest stays in place unless it is appealed. An appeal filed in time, with a request for a stay, can let you keep driving until the hearing. Miss the deadline and the right to contest the suspension is gone.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Gather what you know about both priors',
+              body: 'The dates of the earlier offenses, the courts that handled them and any paperwork you kept. A prior outside the 10-year window, from another state and not properly counted, or not a qualifying OVI conviction may not count toward a third offense.',
+            },
+            {
+              title: 'Plan for a long hard suspension',
+              body: 'You cannot drive at all for 180 days after a test over the limit, or one year after a refusal. Driving on the suspension is a separate charge under ORC 4510.14, so arrange transport to work and court now.',
+            },
+            {
+              title: 'Think about the vehicle',
+              body: 'A vehicle registered to you faces criminal forfeiture on a third OVI conviction. Forfeiture applies only to a third offense, so a successful challenge to a prior can keep the vehicle.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Third OVI penalties in Ohio">
         <p>
           The following reflects current Ohio law as of 2026. Penalties for a third OVI within 10 years are set by the Ohio Revised
           Code and were updated by HB 37 (effective April 2025). They apply whether the offense is alcohol-only, drug-only, or both.
@@ -195,7 +231,39 @@ export default function ThirdOVIPage() {
         </p>
       </Section>
 
-      <Section title="How a third OVI case moves">
+      <Section
+        title="What a third OVI can cost"
+        tone="ice"
+        intro={
+          <p>
+            On a third OVI the vehicle itself is at stake, on top of fines, fees, interlock charges and high-risk insurance.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow a third OVI conviction"
+          rows={[
+            { label: 'Fine', value: '$1,040 to $2,750, plus court costs.' },
+            { label: 'Reinstatement fee', value: '$315 when you are eligible to get your license back.' },
+            { label: 'Vehicle', value: 'Criminal forfeiture if it is registered to you, and restricted (yellow) plates on any vehicle you drive.' },
+            {
+              label: 'Ignition interlock',
+              value:
+                'Required for privileges after an alcohol-related third OVI. Installation typically $75 to $150, and monthly monitoring typically $60 to $80, paid by the driver.',
+            },
+            { label: 'Insurance', value: 'Coverage often rises sharply or is dropped, which forces high-risk coverage.' },
+            { label: 'Proof of insurance', value: 'Courts typically require current insurance, often an SR-22, before you drive on privileges.' },
+            { label: 'Treatment', value: 'A mandatory alcohol/drug addiction program.' },
+            {
+              label: 'Time',
+              value: 'At least 30 consecutive days in jail (60 at the high level or for a refusal), or the jail plus house arrest alternative, and 180 days or one year with no driving.',
+            },
+          ]}
+          note="Fine and fee figures are the statutory amounts. Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="What happens at each stage of a third OVI case">
         <p>
           Third OVI cases move on two fronts: the BMV&apos;s administrative license suspension and the criminal case. As a first-degree
           misdemeanor, a third OVI is heard in municipal or county court.
@@ -214,14 +282,58 @@ export default function ThirdOVIPage() {
             { title: 'Discovery', body: 'The state must turn over its evidence: reports, video, test results, and calibration and maintenance records.' },
             { title: 'Pretrial motions', body: 'Motions to suppress evidence (an illegal stop, faulty testing) or to dismiss the case.' },
             {
-              title: 'Resolution',
+              title: 'Plea or trial',
               body: 'Many third OVI cases resolve through negotiation: reduced charges (to a second or first offense if a prior is successfully challenged), alternative sentencing (jail plus house arrest, treatment), or dismissal under certain conditions. Without an acceptable offer, the case goes to trial before a judge or jury.',
+            },
+            {
+              title: 'Sentencing',
+              body: 'After a conviction, the court must impose at least the mandatory minimum jail term (30 or 60 consecutive days, or the jail plus house arrest alternative when allowed) and cannot waive it. It also sets the fine, the 2 to 12 year suspension, the addiction program, the yellow plates and forfeiture of a vehicle registered to you.',
             },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to a third OVI" tone="ice">
+      <Section
+        title="How a third OVI case can end"
+        tone="ice"
+        intro={
+          <p>
+            A third OVI can be dismissed, reduced to a second or first offense, resolved by a negotiated plea or tried. The two priors
+            and the evidence from the stop decide which is realistic.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Reduction to a second or first offense',
+              body: 'If one or both priors are invalid, outside the lookback or not properly documented, the charge may drop a level: less jail, a shorter suspension, no vehicle forfeiture and different rules for privileges.',
+            },
+            {
+              title: 'Dismissal',
+              body: 'Possible when the stop lacked reasonable suspicion, the arrest lacked probable cause or the testing was flawed, and the court suppresses the evidence that followed.',
+            },
+            {
+              title: 'A negotiated sentence',
+              body: 'Alternative sentencing, such as jail plus monitored house arrest or treatment, can reduce the time actually served even when the charge stands.',
+            },
+            {
+              title: 'Trial',
+              body: 'Without an acceptable offer, a judge or jury decides. The defense challenges the state’s evidence and cross-examines the officers and experts.',
+            },
+          ]}
+        />
+        <p>
+          The firm works through each path with you: whether to fight the ALS, push for a reduction to a second or first offense,
+          accept a negotiated resolution or go to trial, and the pros and cons of each.
+        </p>
+        <Callout title="Where the felony line sits">
+          A fourth OVI within 10 years, or 5 OVIs within 20 years, becomes a fourth-degree felony. How a third case ends also sets
+          what any later charge would be.
+        </Callout>
+      </Section>
+
+      <Section title="Defenses to a third OVI">
         <p>Which defense applies depends on your prior record and on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -245,7 +357,7 @@ export default function ThirdOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a third OVI">
+      <Section title="What the firm does on a third OVI" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Before the 30-day deadline, with a request to stay the suspension when appropriate, and represents you at the ALS hearing.' },
@@ -259,7 +371,7 @@ export default function ThirdOVIPage() {
         />
       </Section>
 
-      <Section title="Limited driving privileges after a third OVI" tone="ice">
+      <Section title="Limited driving privileges after a third OVI">
         <p>
           Limited privileges let you drive for specific purposes (work, school, treatment, medical care) during the suspension. First
           you serve a hard suspension with no driving: 180 days if you took the test and were over the limit, or one year if you
@@ -272,7 +384,7 @@ export default function ThirdOVIPage() {
         </p>
       </Section>
 
-      <Section title="Third OVI defense across Ohio">
+      <Section title="Third OVI defense across Ohio" tone="ice">
         <p>The firm represents clients facing third OVI charges in these counties. Each county page covers its courts.</p>
         <LinkGrid links={COURTS} />
         <h3>Related OVI pages</h3>

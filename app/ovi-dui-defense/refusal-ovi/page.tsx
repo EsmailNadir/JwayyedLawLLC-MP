@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'OVI Refusal Attorney in Ohio',
@@ -80,7 +80,6 @@ const RELATED = [
 export default function RefusalOVIPage() {
   return (
     <>
-      <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI refusal defense in Ohio"
@@ -173,7 +172,40 @@ export default function RefusalOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a refusal OVI" tone="ice">
+      <Section
+        title="What happens in court after a refusal arrest"
+        tone="ice"
+        intro={
+          <p>
+            A refusal case moves on two tracks at once: the ALS appeal and the criminal OVI case. In the criminal case, the refusal
+            itself becomes part of the evidence.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'The ALS appeal',
+              body: 'Filed within 30 days under ORC 4511.197 in the court with jurisdiction over the offense, with a request for a stay. The grounds include no reasonable grounds for the stop, an improper advisement, or a refusal that was not valid.',
+            },
+            { title: 'Arraignment', body: 'You enter a plea in the criminal case, usually not guilty, so the evidence can be reviewed.' },
+            {
+              title: 'Discovery',
+              body: 'Police reports and video of the stop and the test request. They can show what the officer observed and whether you were properly advised of the consequences of refusal.',
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'Challenges to the stop and the arrest, and to whether the refusal evidence should be admitted at all.',
+            },
+            {
+              title: 'Plea or trial',
+              body: 'Negotiation can aim for a reduced charge or a plea that avoids the mandatory jail tied to a refusal conviction. At trial, prosecutors may comment on the refusal, and the defense answers with other explanations and cross-examination on the advisement.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on a refusal OVI">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'A timely challenge to the administrative suspension, with a request for a stay, within 30 days of arrest.' },
@@ -198,6 +230,7 @@ export default function RefusalOVIPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <OVIReviews />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

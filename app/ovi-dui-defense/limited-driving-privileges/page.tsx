@@ -146,7 +146,51 @@ export default function LimitedDrivingPrivilegesPage() {
         </p>
       </Section>
 
-      <Section title="How to apply for limited driving privileges">
+      <Section
+        title="What to do during the hard suspension"
+        intro={
+          <p>
+            Do not drive at all, and use the waiting period to get the motion ready so it can be heard as soon as you are eligible.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Do not drive for any reason',
+              body: 'No driving is permitted during a hard suspension, not even for work or a medical emergency. Driving now is driving under OVI suspension under ORC 4510.14.',
+            },
+            {
+              title: 'File the ALS appeal in time',
+              body: 'A challenge to the administrative suspension within 30 days can shorten the overall suspension.',
+            },
+            {
+              title: 'Collect the supporting documents',
+              body: 'Proof of current insurance (often an SR-22 filed with the Ohio BMV), an employer letter, school enrollment or a treatment schedule: whatever shows why you need to drive and when.',
+            },
+            {
+              title: 'Line up the interlock',
+              body: 'If an ignition interlock will be a condition, it must come from a provider certified by the Ohio BMV and be installed in any vehicle you will drive.',
+            },
+            {
+              title: 'Write down your schedule',
+              body: 'The motion must list each purpose, the proposed days and hours, and the conditions you accept. Driving outside the limits the court sets, even for a similar purpose, is driving under suspension.',
+            },
+          ]}
+        />
+        <FactTable
+          title="What driving on privileges costs"
+          rows={[
+            { label: 'Reinstatement fee', value: '$315, paid before any driving.' },
+            { label: 'Proof of insurance', value: 'Current auto insurance, often an SR-22 financial responsibility form filed with the Ohio BMV.' },
+            { label: 'Interlock installation', value: 'Typically $75 to $150, paid by the driver.' },
+            { label: 'Interlock monitoring', value: 'Typically $60 to $80 a month, for as long as the requirement lasts.' },
+          ]}
+          note="Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="How to apply for limited driving privileges" tone="ice">
         <Steps
           steps={[
             {
@@ -167,7 +211,7 @@ export default function LimitedDrivingPrivilegesPage() {
         <p>A complete motion with supporting documents speeds up approval.</p>
       </Section>
 
-      <Section title="Conditions that come with privileges" tone="ice">
+      <Section title="Conditions that come with privileges">
         <PointGrid
           points={[
             { title: 'Ignition interlock', body: 'Often required, and mandatory on repeat offenses.' },
@@ -188,7 +232,7 @@ export default function LimitedDrivingPrivilegesPage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a privileges application">
+      <Section title="What the firm does on a privileges application" tone="ice">
         <PointGrid
           points={[
             { title: 'Checks eligibility', body: 'Which hard suspension period applies and when LDP can first be sought.' },
@@ -203,7 +247,7 @@ export default function LimitedDrivingPrivilegesPage() {
 
       <LocationsWeServe title="OVI/DUI Defense" />
 
-      <Section title="Related OVI pages" tone="ice">
+      <Section title="Related OVI pages">
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 

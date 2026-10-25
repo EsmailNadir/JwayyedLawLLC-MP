@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'CDL and Commercial OVI Defense in Ohio',
@@ -122,7 +122,43 @@ export default function CommercialDUICDLPage() {
         </p>
       </Section>
 
-      <Section title="CDL OVI penalties in Ohio" tone="ice">
+      <Section
+        title="What to do right after an OVI arrest if you hold a CDL"
+        tone="ice"
+        intro={
+          <p>
+            File the ALS appeal before its 30-day deadline and get the criminal defense started at once. For a CDL holder, the goal is
+            to avoid an OVI conviction, because the disqualification follows the conviction.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'A timely ALS appeal, with a request for a stay, challenges the administrative suspension and may also affect the CDL disqualification proceedings.',
+            },
+            {
+              title: 'Respect any out-of-service order',
+              body: 'After a test at 0.04% or above in a commercial vehicle, you cannot operate any CMV for at least 24 hours. Out-of-service events are tracked in the FMCSA’s Safety Measurement System and can affect the carrier’s safety rating.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Know your employer’s policy',
+              body: 'Many carriers act on an arrest, before any conviction. The federal duty to notify your employer runs from a conviction: within 30 days under 49 CFR 383.31. The firm can advise on timing and content.',
+            },
+            {
+              title: 'Get the testing records reviewed',
+              body: 'The defense looks at the breathalyzer calibration and maintenance records and the operator’s certification, which the firm can subpoena.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="CDL OVI penalties in Ohio">
         <FactTable
           title="First OVI conviction: CDL consequences (HB 37, effective April 9, 2025)"
           rows={[
@@ -161,7 +197,7 @@ export default function CommercialDUICDLPage() {
         </p>
       </Section>
 
-      <Section title="How a CDL OVI case is defended">
+      <Section title="How a CDL OVI case is defended" tone="ice">
         <p>
           A CDL OVI case runs on two tracks: the administrative ALS challenge and the criminal OVI defense. The ALS appeal must be
           filed within 30 days of arrest, with a request to stay the suspension until the outcome.
@@ -178,7 +214,7 @@ export default function CommercialDUICDLPage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a CDL OVI" tone="ice">
+      <Section title="What the firm does on a CDL OVI">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within 30 days, to challenge the administrative suspension and seek a stay.' },

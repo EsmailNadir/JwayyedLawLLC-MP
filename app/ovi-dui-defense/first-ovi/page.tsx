@@ -134,7 +134,43 @@ export default function FirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="First OVI penalties in Ohio" tone="ice">
+      <Section
+        title="What to do in the first days after a first OVI arrest"
+        tone="ice"
+        intro={
+          <p>
+            Deal with the license suspension first, because its appeal has a 30-day deadline. Then keep the criminal case from getting
+            harder while the evidence is gathered.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Mark the 30-day ALS deadline',
+              body: 'The administrative license suspension can take your license at the time of arrest. An appeal filed within 30 days, with a request for a stay, can let you keep driving while it is pending. Once the deadline passes, the right to challenge the suspension is lost.',
+            },
+            {
+              title: 'Do not discuss the case',
+              body: 'Do not talk about the arrest, the drinking or the test with law enforcement or anyone else unless your attorney is there.',
+            },
+            {
+              title: 'Do not drive until a court allows it',
+              body: 'Driving while your license is suspended for an OVI is a separate charge under ORC 4510.14. Limited privileges come only through a court order, after 15 days on a first OVI (30 days after a refusal) unless the judge waives the wait.',
+            },
+            {
+              title: 'Keep your paperwork together',
+              body: 'Hold on to the paper ALS notice the officer gave you and any court papers. For a privileges application, courts typically want proof of insurance (often an SR-22) and evidence of need, such as an employer letter or school enrollment.',
+            },
+            {
+              title: 'Have the evidence reviewed early',
+              body: 'Police reports, dashcam and bodycam footage and breathalyzer maintenance records show whether the stop and the test hold up. That review shapes both the ALS appeal and the criminal defense.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="First OVI penalties in Ohio">
         <p>Under ORC 4511.19 a first OVI carries mandatory minimum penalties. The level of the offense decides which ones apply.</p>
         <FactTable
           title="Low-level first OVI (BAC .08% to under .17%)"
@@ -189,8 +225,36 @@ export default function FirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="How a first OVI case moves">
-        <p>A first OVI runs on two tracks that need attention right away.</p>
+      <Section
+        title="What a first OVI can cost"
+        tone="ice"
+        intro={
+          <p>
+            The fine is only one cost. A first OVI conviction also brings fees, possible interlock charges and years of higher
+            insurance.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow a first OVI conviction"
+          rows={[
+            { label: 'Fine', value: '$565 to $1,075, plus court costs.' },
+            { label: 'Reinstatement fee', value: '$315 when you are eligible to get your license back.' },
+            {
+              label: 'Ignition interlock',
+              value:
+                'If the court orders one or makes it a condition of privileges: installation typically $75 to $150, and monthly monitoring typically $60 to $80, paid by the driver.',
+            },
+            { label: 'Insurance', value: 'Rates often rise 2 to 3 times for 3 to 5 years.' },
+            { label: 'Proof of insurance', value: 'Courts typically require current insurance, often an SR-22, before you drive on privileges.' },
+            { label: 'Time', value: 'Jail or a 3-day Driver Intervention Program, and a 1 to 3 year suspension that affects how you get to work.' },
+          ]}
+          note="Fine and fee figures are the statutory amounts under HB 37. Interlock costs are typical provider charges."
+        />
+      </Section>
+
+      <Section title="What happens at each stage of a first OVI case">
+        <p>A first OVI runs on two tracks that need attention right away: the license suspension and the criminal case.</p>
         <h3>The license suspension (ALS)</h3>
         <p>
           Within 30 days of the arrest, the ALS appeal must be filed or the right to challenge it is lost. The hearing asks whether the
@@ -200,15 +264,67 @@ export default function FirstOVIPage() {
         <h3>The criminal case</h3>
         <Steps
           steps={[
-            { title: 'Arraignment', body: 'You enter a plea, usually not guilty.' },
-            { title: 'Discovery', body: 'The prosecution must hand over all of its evidence.' },
-            { title: 'Pretrial motions', body: 'Motions can challenge the evidence or ask for dismissal.' },
-            { title: 'Resolution', body: 'Most cases resolve through negotiation. Trial is an option.' },
+            {
+              title: 'Arraignment',
+              body: 'Usually your first court appearance. The judge reads the charges, explains your rights and asks for your plea. In nearly all first OVI cases your attorney enters a not-guilty plea, which leaves time to review the evidence. The court may also set bond conditions and future dates.',
+            },
+            {
+              title: 'Discovery',
+              body: 'The prosecution must hand over all of its evidence: police reports, breathalyzer maintenance records, dashcam footage and witness statements.',
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'Motions can challenge the stop, the breath or blood test and the field sobriety tests, or ask for dismissal. If the stop was unlawful, the evidence that followed may be suppressed, which can end the case.',
+            },
+            {
+              title: 'Plea or trial',
+              body: 'Most cases resolve through negotiation, sometimes to a reduced charge such as reckless operation. If no acceptable offer comes, the case goes to trial.',
+            },
+            {
+              title: 'Sentencing',
+              body: 'After a conviction, the court sets the sentence inside the ranges above: jail or the Driver Intervention Program, the fine, the 1 to 3 year suspension, and whether to order an interlock, treatment or restricted plates.',
+            },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to a first OVI" tone="ice">
+      <Section
+        title="How a first OVI case can end"
+        tone="ice"
+        intro={
+          <p>
+            A first OVI can end in a dismissal, a reduced charge, a negotiated plea or a verdict at trial. Which one is realistic depends
+            on the evidence, the stop and the test, and your record.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'When a motion succeeds, for example because the stop lacked reasonable suspicion or the test was not done correctly, the state may be left without the evidence it needs.',
+            },
+            {
+              title: 'Reduction to reckless operation',
+              body: 'Reckless operation under ORC 4511.20 is a minor misdemeanor for a first offense, carries no mandatory jail and does not count as a prior OVI for lookback purposes. Prosecutors do not offer it automatically.',
+            },
+            {
+              title: 'A plea with a lighter sentence',
+              body: 'At the low level, the court may allow a 3-day Driver Intervention Program instead of jail, or waive jail with an ignition interlock. Negotiation can also bring alternative sentencing.',
+            },
+            {
+              title: 'Trial',
+              body: 'If the case does not resolve, it is tried. The state must prove impairment or a prohibited BAC, and the defense can cross-examine the officers and the state’s experts.',
+            },
+          ]}
+        />
+        <p>
+          The license side can end separately. Winning the ALS appeal can restore your license and can strengthen the criminal defense,
+          whatever happens later in the criminal case.
+        </p>
+      </Section>
+
+      <Section title="Defenses to a first OVI">
         <p>Which defense applies depends on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -232,7 +348,7 @@ export default function FirstOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a first OVI">
+      <Section title="What the firm does on a first OVI" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the hearing.' },
@@ -250,7 +366,7 @@ export default function FirstOVIPage() {
 
       <OVIReviews />
 
-      <Section title="Limited driving privileges" tone="ice">
+      <Section title="Limited driving privileges">
         <p>
           After a first OVI you can apply for limited driving privileges after 15 days, or 30 days if you refused the chemical test.
           The judge may waive the 15-day wait if you have no prior &ldquo;Physical Control&rdquo; conviction within 10 years. If you
@@ -264,7 +380,7 @@ export default function FirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="First OVI defense across Ohio">
+      <Section title="First OVI defense across Ohio" tone="ice">
         <p>Each county page covers its courts and what to expect locally.</p>
         <LinkGrid links={COURTS} />
         <h3>Related OVI pages</h3>
