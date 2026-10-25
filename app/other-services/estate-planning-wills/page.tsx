@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { AttorneyVideo, Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Ohio Estate Planning & Wills Lawyer',
@@ -96,6 +96,12 @@ export default function EstatePlanningWillsPage() {
       <PageHero
         title="Wills and estate planning in Ohio"
         description="An Ohio will must be signed in front of two competent witnesses to be admitted to probate. It tells the Probate Court who receives your property, who manages the estate and who cares for your minor children."
+      />
+
+      <AttorneyVideo
+        src="/videos/estate-planning.mp4"
+        title="Attorney Jwayyed on estate planning"
+        intro={<p>What a will, a trust and the rest of an estate plan do for your family.</p>}
       />
 
       <Section

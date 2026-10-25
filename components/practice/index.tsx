@@ -165,3 +165,32 @@ export function Callout({ title, children }: { title: string; children: React.Re
     </aside>
   );
 }
+
+/**
+ * The attorney on camera, explaining a practice area. Click to play with
+ * sound; nothing past the metadata downloads until then, so the ~20 MB file
+ * costs nothing on page load.
+ */
+export function AttorneyVideo({ src, title, intro }: { src: string; title: string; intro?: React.ReactNode }) {
+  return (
+    <section className="bg-navy-950 text-white py-16 sm:py-24">
+      <div className={`${FRAME} grid gap-8 lg:gap-12 lg:grid-cols-12 lg:items-center`}>
+        <div className="lg:col-span-4">
+          <h2 className="jw-display text-[clamp(1.875rem,1.3rem+2vw,3rem)] leading-[1.08] text-balance">{title}</h2>
+          {intro && <div className="mt-5 text-white/80 text-[length:var(--step-lead)] leading-snug">{intro}</div>}
+        </div>
+        <div className="lg:col-span-8 min-w-0">
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            className="w-full aspect-video bg-black"
+            aria-label={title}
+          >
+            <source src={src} type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+  );
+}

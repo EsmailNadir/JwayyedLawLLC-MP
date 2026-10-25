@@ -293,5 +293,4 @@ export const primaryNav: NavNode[] = [
     tagline: 'The people handling your matter.',
     subLinks: node('Our Firm').subLinks,
   },
-  { name: 'Reviews', href: '/our-law-firm/case-results' },
 ];

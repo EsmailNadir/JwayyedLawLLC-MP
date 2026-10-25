@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { AttorneyVideo, Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Estate Planning Lawyer in Ohio',
@@ -83,6 +83,12 @@ export default function EstatePlanningPage() {
       <PageHero
         title="Estate planning in Ohio"
         description="Without a will, ORC 2105.06 decides who inherits your property. An estate plan sets out who receives what, who manages it, and who decides for you if you cannot."
+      />
+
+      <AttorneyVideo
+        src="/videos/estate-planning.mp4"
+        title="Attorney Jwayyed on estate planning"
+        intro={<p>What a will, a trust and the rest of an estate plan do for your family.</p>}
       />
 
       <Section

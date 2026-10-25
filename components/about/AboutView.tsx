@@ -180,6 +180,19 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
             <div className="mt-2">
               <NCDDBadge variant="card" />
             </div>
+            <figure className="mt-10 max-w-[20rem]">
+              <video
+                src="/videos/osba-speech.mp4"
+                className="w-full aspect-[9/16] object-cover bg-navy-950"
+                controls
+                playsInline
+                preload="metadata"
+                aria-label="Attorney Jwayyed speaking at an Ohio State Bar Association event"
+              />
+              <figcaption className="mt-3 text-[length:var(--step-small)] text-navy-950/65">
+                Speaking at an Ohio State Bar Association event.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

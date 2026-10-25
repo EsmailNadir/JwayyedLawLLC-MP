@@ -115,7 +115,8 @@ function Words({ text, className = '', start = 0 }: { text: string; className?: 
 /**
  * The firm's own footage, full-bleed behind the opening line. Only one file
  * is fetched (phone or desktop cut, chosen in the browser); under reduced
- * motion nothing downloads and the still portrait stands in. Pausable.
+ * motion nothing downloads. No still image stands in while it loads or if it
+ * fails; the hero stays plain navy. Pausable.
  */
 function HeroVideo() {
   const ref = useRef<HTMLVideoElement>(null);
@@ -145,16 +146,7 @@ function HeroVideo() {
 
   return (
     <>
-      <div className="hero-media jw-hero-drift absolute inset-0" aria-hidden="true">
-        <Image
-          src="/assets/attorney-main.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-          style={{ objectPosition: '50% 20%' }}
-        />
+      <div className="hero-media jw-hero-drift absolute inset-0 bg-navy-950" aria-hidden="true">
         {src && (
           <video
             key={src}
@@ -164,7 +156,6 @@ function HeroVideo() {
             playsInline
             autoPlay
             preload="auto"
-            poster="/assets/attorney-main.jpg"
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={src} type="video/mp4" />

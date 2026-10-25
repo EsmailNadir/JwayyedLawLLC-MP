@@ -3,7 +3,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
-import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
+import { AttorneyVideo, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 import { businessServices } from '@/data/services';
 
 export const metadata: Metadata = {
@@ -84,6 +84,12 @@ export default function BusinessPage() {
       <PageHero
         title="Business law in Ohio"
         description="Forming an Ohio LLC or corporation, drafting the contracts it runs on, staying compliant, and resolving disputes between owners, partners and shareholders."
+      />
+
+      <AttorneyVideo
+        src="/videos/business-contract.mp4"
+        title="Attorney Jwayyed on business contracts"
+        intro={<p>Why the contracts behind a business matter, and how the firm drafts and reviews them.</p>}
       />
 
       <Section title="Find your matter" intro={<p>Each page covers the Ohio rules, the process and the options for that matter.</p>}>

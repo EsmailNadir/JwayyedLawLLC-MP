@@ -5,7 +5,7 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
-import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
+import { AttorneyVideo, Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
@@ -160,6 +160,12 @@ export default function CriminalDefensePage() {
       <PageHero
         title="Criminal defense in Columbus and across Ohio"
         description="Misdemeanor charges in courts across Ohio, from assault and theft to traffic and license offenses. A first-degree misdemeanor alone carries up to 180 days in jail and a $1,000 fine."
+      />
+
+      <AttorneyVideo
+        src="/videos/criminal-defense.mp4"
+        title="Attorney Jwayyed on criminal defense"
+        intro={<p>A former prosecutor on how he approaches a criminal case.</p>}
       />
 
       <Section title="Find your charge" intro={<p>Each page covers the statute, the penalties, the process and the defenses for that charge.</p>}>
