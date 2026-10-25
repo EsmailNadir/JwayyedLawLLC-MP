@@ -30,6 +30,7 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | criminal-defense/resisting-arrest | (B) described as using force against the officer | ORC 2921.33(B) concerns physical harm to the officer | Medium |
 | criminal-defense/obstruction-of-official-business | Mandatory post-release control for an F5 | Generally discretionary | Medium |
 | criminal-defense/speeding-tickets | Minor-misdemeanor speeding called "civil in nature"; overlapping 4-point tiers; "15-30%" insurance increase | Minor misdemeanors are criminal; tiers overlap; figure unsourced | Medium |
+| criminal-defense (landing) | Felony conviction means "permanent loss" of gun rights under federal law; felony voting rights lost "until restoration" | Federal law allows restoration in some cases (expungement, pardon, rights restored); now repeated in a new section on the landing page | Medium |
 | criminal-defense (landing) | FAQ says misdemeanors carry "up to 12 months in jail" | The page's own table caps misdemeanors at 180 days | High |
 
 ## OVI / DUI

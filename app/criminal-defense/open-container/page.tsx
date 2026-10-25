@@ -162,7 +162,47 @@ export default function OpenContainerPage() {
         <p>The firm checks whether diversion is available in every open container case.</p>
       </Section>
 
-      <Section title="What the firm does on an open container case">
+      <Section
+        title="What to do after an open container citation"
+        intro={
+          <p>
+            Do not plead guilty or pay the citation until you know whether diversion or a dismissal is available. A guilty plea is a
+            conviction and a permanent criminal record.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Check which court and when',
+              body: "The citation names the court, often a mayor's court or a municipal court, and the date you must appear or respond.",
+            },
+            {
+              title: 'Write down where the container was',
+              body: 'Note where it sat in the car, who had it, and whether the seal was broken. Possession and the definition of "open" are two of the main defenses, and both depend on those details.',
+            },
+            {
+              title: 'Write down why you were stopped',
+              body: 'What the officer said the reason for the stop was. If the stop was unlawful, the open container evidence can be suppressed.',
+            },
+            {
+              title: 'Watch for companion charges',
+              body: (
+                <>
+                  If the same stop led to an OVI charge, that case has its own deadline: the administrative license suspension appeal
+                  must be filed within 30 days of the arrest. See <Link href="/ovi-dui-defense/first-ovi">first OVI defense</Link>.
+                </>
+              ),
+            },
+            {
+              title: 'Ask about diversion before court',
+              body: 'For a first offense with no prior record, a conditional dismissal is often available. The firm checks this in every case.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on an open container case" tone="ice">
         <PointGrid
           points={[
             { title: 'Seeks diversion or dismissal', body: 'Conditional dismissal for eligible first-time defendants.' },

@@ -184,15 +184,64 @@ export default function CriminalDefensePage() {
           negotiates with prosecutors and tries the case when that is the better course.
         </p>
         <p>
-          A criminal record follows you after the sentence is served. Many employers run background checks and may refuse to hire
-          someone with a conviction. Licenses in healthcare, education, law enforcement, finance and real estate may be denied or
-          revoked. Landlords may reject applications. Financial aid can be affected, gun rights may be lost for certain serious
-          convictions, and non-citizens can face deportation.
+          A criminal record follows you after the sentence is served. These collateral consequences last long after the jail time is
+          finished and the fines are paid:
+        </p>
+        <PointGrid
+          points={[
+            {
+              title: 'Employment',
+              body: 'Many employers run background checks and may refuse to hire someone with a conviction, particularly a felony or an offense involving dishonesty.',
+            },
+            {
+              title: 'Professional licenses',
+              body: 'Licenses in healthcare, education, law enforcement, finance, real estate and other regulated fields may be denied or revoked.',
+            },
+            { title: 'Housing', body: 'Landlords often run background checks and may reject applications from people with a criminal record.' },
+            {
+              title: 'Education',
+              body: 'A conviction can affect financial aid eligibility, admission to certain programs and professional school applications.',
+            },
+            {
+              title: 'Gun rights',
+              body: 'A felony conviction results in permanent loss of the right to possess firearms under federal law. Gun rights may be lost for certain other serious convictions.',
+            },
+            {
+              title: 'Immigration',
+              body: 'For non-citizens, a conviction can lead to deportation, denial of naturalization or inadmissibility.',
+            },
+            { title: 'Voting', body: 'A felony conviction results in loss of voting rights until they are restored.' },
+            { title: 'Custody', body: 'A conviction can significantly affect custody and visitation decisions in family court.' },
+            { title: 'Insurance', body: 'Certain convictions raise insurance premiums.' },
+            {
+              title: 'A lasting record',
+              body: 'A criminal record stays visible to employers, landlords and anyone else running a background check unless it is sealed or expunged.',
+            },
+          ]}
+        />
+        <h3>Traffic and license charges are criminal cases too</h3>
+        <p>
+          A speeding ticket is a conviction once it is paid, and it adds 2 or 4 points to your Ohio driving record; 12 points within
+          two years brings a six-month license suspension. For a CDL holder, two serious violations within three years mean a 60-day
+          disqualification. Driving without a valid license under ORC 4510.12 carries a fine of up to $150 plus court costs on a first
+          offense, and a conviction creates a criminal record. See{' '}
+          <Link href="/criminal-defense/speeding-tickets">speeding tickets</Link> and{' '}
+          <Link href="/criminal-defense/no-operators-license">no operator&apos;s license</Link> for the details.
+        </p>
+        <h3>Charges that arrive together</h3>
+        <p>
+          A single police encounter often produces several charges. Resisting arrest and obstruction of official business are
+          commonly filed alongside the offense that started the encounter, and together they can mean stacked fines and several
+          entries on your record. The firm defends all of them in one strategy, because the outcome on one charge affects the others.
         </p>
       </Section>
 
       <Section title="Ohio criminal penalties by degree">
-        <p>Ohio Revised Code Chapter 2929 sets penalties by the degree of the offense. These are maximum sentences.</p>
+        <p>
+          Ohio Revised Code Chapter 2929 sets penalties by the degree of the offense. These are maximum sentences. Within them, your
+          prior criminal history, the severity of the offense, the impact on any victim and the presence of a weapon can all affect
+          the sentence a judge imposes.
+        </p>
         <FactTable
           title="Misdemeanors"
           rows={[
@@ -223,35 +272,132 @@ export default function CriminalDefensePage() {
         </p>
         <Callout title="Some sentences cannot be reduced">
           Certain offenses carry mandatory minimums that cannot be suspended or reduced. Some drug trafficking amounts trigger a
-          mandatory 5-year minimum prison term, and some violent offenses carry mandatory prison. They matter when weighing a plea offer.
+          mandatory 5-year minimum prison term, and some violent offenses carry mandatory prison. They matter when weighing a plea offer, and an attorney can explain how
+          any mandatory minimum applies to your case and work to avoid or limit it where possible.
         </Callout>
       </Section>
 
-      <Section title="How a criminal case moves through court" tone="ice">
+      <Section
+        title="What to do in the first days after a criminal charge in Ohio"
+        tone="ice"
+        intro={
+          <p>
+            Use your right to remain silent, keep your court date, write down what happened, and talk to a criminal defense attorney
+            before you make any decision about a plea. Early action can lead to a dismissal, reduced penalties or a better plea.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Stay silent and ask for an attorney',
+              body: 'You have the right to remain silent and the right to an attorney, and if you cannot afford one the court will appoint one. Anything you say can be used against you, so do not answer questions about the case without an attorney present.',
+            },
+            {
+              title: 'Do not discuss the case with anyone but your attorney',
+              body: 'That includes friends, family, the other people involved, store security and social media. Statements you make outside court can become evidence.',
+            },
+            {
+              title: 'Write down what happened',
+              body: 'While your memory is fresh, note the time and place, what was said, the names and badge numbers of the officers, and anyone who saw it. Many defenses turn on details that are hard to recall weeks later.',
+            },
+            {
+              title: 'Keep documents and evidence',
+              body: 'Your citation or charging papers, bond paperwork, receipts, messages, photographs, and any video you or a witness recorded. If you were injured, get treatment and keep the medical records.',
+            },
+            {
+              title: 'Note your court date and release conditions',
+              body: 'Missing a court date can lead to a bench warrant and more charges. Follow any bond conditions the court set at arraignment.',
+            },
+            {
+              title: 'Tell your attorney what else is at stake',
+              body: 'If you hold a professional license, drive for a living, are not a U.S. citizen or have a prior record, say so at the start. Those facts shape which outcome matters most for you.',
+            },
+          ]}
+        />
+        <Callout title="An OVI charge has its own 30-day deadline">
+          If you were arrested for OVI, the administrative license suspension runs separately from the criminal case, and the appeal
+          must be filed within 30 days of the arrest. See <Link href="/ovi-dui-defense/first-ovi">first OVI defense in Ohio</Link>.
+        </Callout>
+      </Section>
+
+      <Section
+        title="How a criminal case moves through court"
+        intro={
+          <p>
+            Most Ohio criminal cases move through the same stages: arraignment, discovery, pretrial motions, plea negotiations and, if
+            the case does not resolve, trial and sentencing. Decisions at each stage shape the next.
+          </p>
+        }
+      >
         <Steps
           steps={[
             {
               title: 'Arrest and arraignment',
-              body: 'The charges are read, bail is set and you enter a plea, usually not guilty, which preserves your rights. An attorney can argue for lower bail, release on recognizance or house arrest, and request police reports, witness statements and other evidence early.',
+              body: 'The charges are read, bail is set and you enter a plea, usually not guilty, which preserves your rights. An attorney can argue for lower bail, release on recognizance or house arrest, and request police reports, witness statements and other evidence early. The not guilty plea gives your attorney time to investigate and prepare the defense.',
             },
             {
               title: 'Discovery and investigation',
-              body: 'The prosecution must hand over the evidence it plans to use. Your attorney reviews it, investigates independently, interviews witnesses and examines forensic evidence and surveillance footage. Forensic, medical or use-of-force experts may be consulted.',
+              body: 'The prosecution must hand over the evidence it plans to use. Your attorney reviews it, investigates independently, interviews witnesses and examines forensic evidence and surveillance footage. Forensic, medical or use-of-force experts may be consulted. This is where weaknesses in the prosecution’s case, constitutional violations and evidence that supports a defense usually come to light.',
             },
             {
               title: 'Pretrial motions',
-              body: 'A motion to suppress if evidence was obtained illegally, your rights were violated at arrest or statements were coerced. A motion to dismiss for insufficient evidence, an expired statute of limitations or procedural error. A motion to compel discovery the prosecution has not provided.',
+              body: 'A motion to suppress if evidence was obtained illegally, your rights were violated at arrest or statements were coerced. A motion to dismiss for insufficient evidence, an expired statute of limitations or procedural error. A motion to compel discovery the prosecution has not provided. These motions can end in dismissal or keep damaging evidence out of the case.',
             },
             {
               title: 'Plea negotiations',
-              body: 'Most criminal cases resolve here. Options include a reduced charge (for example, aggravated to simple), a better plea agreement, alternative sentencing such as diversion or treatment instead of jail, or dismissal once conditions are met.',
+              body: 'Most criminal cases resolve here. Options include a reduced charge (for example, aggravated to simple), a better plea agreement, alternative sentencing such as diversion or treatment instead of jail, or dismissal once conditions are met. What is realistic depends on local court practice, the prosecutor’s policies and the strength of the case.',
             },
             {
               title: 'Trial',
               body: 'Your attorney presents the defense, cross-examines the prosecution’s witnesses, calls experts when needed and argues to the jury. A not guilty verdict ends the charges.',
             },
+            {
+              title: 'Sentencing',
+              body: 'If there is a conviction, by plea or verdict, the judge weighs the aggravating and mitigating factors under ORC 2929.12. Your attorney presents mitigating evidence and argues for the minimum sentence or an alternative such as probation or treatment.',
+            },
+            {
+              title: 'Record sealing and other relief',
+              body: 'After the sentence, eligible records can be sealed or expunged under ORC Chapter 2953. Sentence modification and appeals are available in some cases.',
+            },
           ]}
         />
+      </Section>
+
+      <Section
+        title="How criminal cases in Ohio can end"
+        tone="ice"
+        intro={<p>Most criminal cases end through negotiation, not trial. A case can also end in dismissal, diversion or a verdict.</p>}
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'Through a pretrial motion for insufficient evidence, an expired statute of limitations or a procedural error, or after evidence is suppressed because it was obtained illegally.',
+            },
+            {
+              title: 'A reduced charge',
+              body: 'For example, an aggravated offense reduced to the simple version, which lowers the degree and the possible penalties.',
+            },
+            {
+              title: 'Diversion or treatment',
+              body: 'Diversion programs or treatment in place of jail, often with the charge dismissed once the conditions are completed.',
+            },
+            {
+              title: 'A plea agreement',
+              body: 'A negotiated plea that limits the penalties and the long-term consequences of the conviction.',
+            },
+            { title: 'A verdict at trial', body: 'A not guilty verdict ends the charges. A conviction moves the case to sentencing.' },
+            {
+              title: 'Alternative sentencing',
+              body: 'If there is a conviction, probation, treatment programs or the minimum sentence in place of the maximum.',
+            },
+          ]}
+        />
+        <p>
+          A conviction does not have to be permanent. Many misdemeanor records can be sealed after a waiting period; see{' '}
+          <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link> for the rules.
+        </p>
       </Section>
 
       <Section title="Common defenses in criminal cases">
@@ -260,15 +406,15 @@ export default function CriminalDefensePage() {
           points={[
             {
               title: 'Constitutional defenses',
-              body: 'An illegal search or seizure (Fourth Amendment), a coerced confession or violation of the right to remain silent (Fifth Amendment), or denial of counsel (Sixth Amendment) can lead to suppressed evidence or dismissal.',
+              body: 'An illegal search or seizure (Fourth Amendment), a coerced confession or violation of the right to remain silent (Fifth Amendment), or denial of counsel (Sixth Amendment) can lead to suppressed evidence or dismissal. An attorney identifies the violation and files the motion to suppress or dismiss.',
             },
             {
               title: 'Factual defenses',
-              body: 'Alibi, self-defense, defense of others, lack of intent, mistaken identity or insufficient evidence. These depend on investigation and how the evidence is presented.',
+              body: 'These challenge the prosecution’s version of events: alibi (you were elsewhere), self-defense (you acted to protect yourself), defense of others, lack of intent, mistaken identity or insufficient evidence. They depend on investigation, gathering evidence and how it is presented to the court or jury.',
             },
             {
               title: 'Procedural defenses',
-              body: 'The statute of limitations (charges filed too late), double jeopardy (being tried twice for the same offense) or prosecutorial misconduct. These can end in dismissal.',
+              body: 'These challenge how the case was handled: the statute of limitations (charges filed too late), double jeopardy (being tried twice for the same offense) or prosecutorial misconduct. They can end in dismissal.',
             },
           ]}
         />

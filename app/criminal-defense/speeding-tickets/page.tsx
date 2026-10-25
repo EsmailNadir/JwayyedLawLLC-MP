@@ -123,9 +123,24 @@ export default function SpeedingTicketsPage() {
         <p>
           Ohio speed law sets both absolute limits (the posted limits) and prima facie limits, which are presumed reasonable speeds for
           different road types. ORC 4511.21 also says no one may drive faster or slower than is reasonable or proper for the traffic,
-          the road surface and width, and other conditions, and it sets limits for residential, business and highway zones. The firm
+          the road surface and width, and other conditions, and it sets limits for residential, business and highway zones. Because prima facie limits are presumed
+          reasonable speeds for a type of road, the traffic and road conditions at the time of the stop are part of the case. Some posted limits also
+          have to be backed by a valid speed survey. The firm
           handles speeding cases throughout Ohio, from a few miles over to tickets that threaten a license or a CDL.
         </p>
+        <h3>Who a speeding ticket hits hardest</h3>
+        <ul>
+          <li>
+            Drivers who already have points. A ticket that pushes you to 6 points brings a BMV warning letter; one that reaches 12
+            within two years brings a six-month suspension.
+          </li>
+          <li>
+            CDL holders. Speeding 15 mph or more over in a commercial vehicle is a serious violation, and two in three years mean a
+            disqualification.
+          </li>
+          <li>Drivers with more than one violation. Premiums rise further, and some insurers may not renew the policy.</li>
+          <li>Drivers cited in a construction or school zone, where fines are higher and courts are less lenient.</li>
+        </ul>
       </Section>
 
       <Section title="Kinds of speeding tickets" tone="ice">
@@ -133,11 +148,11 @@ export default function SpeedingTicketsPage() {
           points={[
             {
               title: 'Basic speeding, ORC 4511.21',
-              body: 'Driving above the posted limit or too fast for conditions. Usually a minor misdemeanor, with a fine and no jail for a first offense. It still adds points and can raise insurance. Fines generally rise with the speed over the limit.',
+              body: 'Driving above the posted limit or too fast for conditions. Usually a minor misdemeanor, with a fine and no jail for a first offense. Even a minor misdemeanor conviction still adds points to your driving record and can raise insurance. Fines generally rise with the speed over the limit.',
             },
             {
               title: 'Construction zone speeding',
-              body: 'Higher penalties. With workers present, fines are doubled and other penalties may apply, and officers patrol these zones often. Defenses include whether workers were present, whether signs were posted and whether the zone was properly set up.',
+              body: 'Higher penalties. With workers present, fines are doubled and other penalties may apply, and officers patrol these zones often. A construction zone ticket can mean much higher fines and a bigger mark on your driving record. Defenses include whether workers were present, whether signs were posted and whether the zone was properly set up.',
             },
             {
               title: 'School zone speeding',
@@ -149,10 +164,22 @@ export default function SpeedingTicketsPage() {
             },
           ]}
         />
+        <h3>When a speeding ticket turns into a criminal charge</h3>
+        <p>
+          Most speeding tickets are minor misdemeanors with a fine and no possible jail. That changes in aggravated circumstances. At
+          35 mph or more over the limit, or with racing or other aggravating facts, an officer may charge reckless operation under ORC
+          4511.20 instead: driving in willful or wanton disregard of the safety of others. Reckless operation is a minor misdemeanor
+          for a first offense and a fourth-degree misdemeanor for a second offense within one year, and it can mean possible jail,
+          higher fines and a more serious record than a speeding conviction.
+        </p>
       </Section>
 
       <Section title="Ohio's point system and speeding penalties">
-        <p>The Ohio Bureau of Motor Vehicles (BMV) runs a 12-point system for driving violations.</p>
+        <p>
+          The Ohio Bureau of Motor Vehicles (BMV) runs a 12-point system for driving violations. Every traffic conviction puts points
+          on your record, and they add up with every other violation in the counting period, so a single ticket matters more when you
+          already have points.
+        </p>
         <FactTable
           title="Points under ORC 4510.036"
           rows={[
@@ -198,9 +225,53 @@ export default function SpeedingTicketsPage() {
           A CDL disqualification can mean job loss, trouble finding new work and real financial hardship for a commercial driver and
           their family. For a CDL holder, the fine is the smallest part of a speeding ticket.
         </Callout>
+        <p>
+          Contesting the ticket is how a commercial driver protects the career, and that includes tickets written in a personal
+          vehicle. The firm defends CDL holders under the federal and state rules that apply to commercial drivers.
+        </p>
       </Section>
 
-      <Section title="How a speeding case moves through traffic court">
+      <Section
+        title="Should you just pay a speeding ticket in Ohio?"
+        intro={
+          <p>
+            Usually not before you know what it will cost. Paying is an admission of guilt: it becomes a conviction on your driving
+            record, the BMV assesses points, and your insurer sees it at renewal.
+          </p>
+        }
+      >
+        <p>
+          Your citation lists a court date and how to respond. You can usually pay it, ask for a hearing, or in some courts enter a
+          written plea. Whatever you choose, respond before the deadline, because missing it can bring extra penalties, a warrant or a
+          license suspension for failure to appear. These are the steps to take first.
+        </p>
+        <Steps
+          steps={[
+            {
+              title: 'Find your deadline and do not pay yet',
+              body: 'Note the court date and response deadline on the ticket. Once paid, the conviction is on your record and the chance to negotiate is gone.',
+            },
+            {
+              title: 'Check how many points you already have',
+              body: 'At 6 points the BMV sends a warning letter, and 12 points within two years brings a six-month suspension. If you are near either line, the points on this ticket decide more than a fine does.',
+            },
+            {
+              title: 'Write down the stop while you remember it',
+              body: 'Where you were, the posted limit and the signs you passed, the traffic and road conditions, and how the officer said your speed was measured (radar, lidar or pacing). In a construction or school zone, note whether workers were present and whether the flashing lights were on.',
+            },
+            {
+              title: 'If you hold a CDL, count the stakes first',
+              body: 'Two serious violations within three years mean a 60-day disqualification, and you must notify your employer of any traffic conviction within 30 days. A ticket in your own car can count too.',
+            },
+            {
+              title: 'Talk to a traffic defense attorney',
+              body: 'An attorney can request the radar or lidar records, calibration certificates and speed survey, and can often appear in court for you so you miss less work.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a speeding case moves through traffic court" tone="ice">
         <p>Traffic cases are heard in municipal courts and mayor&apos;s courts throughout Ohio.</p>
         <Steps
           steps={[
@@ -210,11 +281,11 @@ export default function SpeedingTicketsPage() {
             },
             {
               title: 'Arraignment and plea',
-              body: 'A not guilty plea preserves your right to contest the ticket and leaves time to get discovery and prepare. An attorney can often appear for you, so you miss less work.',
+              body: 'A not guilty plea preserves your right to contest the ticket and leaves time for your attorney to review the evidence, request discovery and build a defense. An attorney can often appear for you, so you miss less work.',
             },
             {
               title: 'Discovery',
-              body: "Your attorney can request the officer's notes, radar or lidar records, calibration certificates and speed survey documents. Problems with calibration, officer training or the speed survey can support a strong defense.",
+              body: "Your attorney can request the officer's notes, radar or lidar records, calibration certificates and speed survey documents. This review is where most defenses are found: problems with calibration, officer training or the speed survey can support a strong defense.",
             },
             {
               title: 'Negotiation',
@@ -222,26 +293,26 @@ export default function SpeedingTicketsPage() {
             },
             {
               title: 'Trial',
-              body: 'The prosecution must prove beyond a reasonable doubt that you were speeding. Your attorney cross-examines the officer and challenges the speed equipment. Traffic trials in Ohio are usually bench trials before a judge, though some offenses allow a jury.',
+              body: 'The prosecution must prove beyond a reasonable doubt that you were speeding. Your attorney cross-examines the citing officer, challenges the accuracy of the speed equipment, presents the evidence for your defense and argues for a not guilty verdict. Traffic trials in Ohio are usually bench trials before a judge, though some offenses allow a jury.',
             },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to a speeding ticket" tone="ice">
+      <Section title="Defenses to a speeding ticket">
         <PointGrid
           points={[
             {
               title: 'Radar and lidar calibration',
-              body: 'Ohio law requires radar and lidar devices to be tested and calibrated to the manufacturer’s specifications. Missing or incomplete calibration records, or a device past due for calibration, can make the reading unreliable. An attorney can request the records and expert analysis.',
+              body: 'Ohio law requires radar and lidar devices to be tested and calibrated to the manufacturer’s specifications. Missing or incomplete calibration records, or a device past due for calibration, can make the reading unreliable. An attorney can request the records and expert analysis to show whether the equipment was working properly.',
             },
             {
               title: 'Officer training',
-              body: 'The officer must be trained and certified on that specific device and follow proper procedure. Training and certification records can be obtained in discovery and checked for gaps or an expired certification.',
+              body: 'The officer must be trained and certified on that specific device and follow proper procedure. Training and certification records can be obtained in discovery and checked for gaps, an expired certification, or a failure to follow the operating procedure for the device.',
             },
             {
               title: 'The speed survey',
-              body: 'Some speed limits must be backed by a valid speed survey (a traffic study) that follows Ohio Department of Transportation guidelines. A missing, outdated or improperly conducted survey can undercut the posted limit.',
+              body: 'Some speed limits must be backed by a valid speed survey (a traffic study) that follows Ohio Department of Transportation guidelines. A missing, outdated or improperly conducted survey can undercut the posted limit, because failing to follow those guidelines weakens the limit itself.',
             },
             {
               title: 'An emergency',
@@ -253,6 +324,42 @@ export default function SpeedingTicketsPage() {
             },
           ]}
         />
+      </Section>
+
+      <Section
+        title="How a speeding ticket can be resolved"
+        tone="ice"
+        intro={<p>Many speeding cases end through negotiation, and the goal is usually fewer points or none.</p>}
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'A non-moving violation',
+              body: 'A reduction to a non-moving violation carries no points and keeps a moving violation off the record your insurer reviews.',
+            },
+            {
+              title: 'A lower speed',
+              body: 'Amending the speed on the ticket can mean fewer points.',
+            },
+            {
+              title: 'A driving course or a fine on a lesser offense',
+              body: 'Some courts accept a driving safety course, or a fine on a lesser offense, in exchange for a reduced charge.',
+            },
+            {
+              title: 'Dismissal',
+              body: 'When the evidence is weak, such as missing calibration records, inadequate officer training or a defective speed survey, the charge may be dismissed.',
+            },
+            {
+              title: 'Not guilty at trial',
+              body: 'At a bench trial, the judge decides whether the prosecution proved the speed beyond a reasonable doubt.',
+            },
+          ]}
+        />
+        <p>
+          Which of these is realistic depends on the court, the prosecutor&apos;s policies, your driving history and the strength of the
+          evidence. Tickets in construction and school zones are treated less leniently, so the evidence about signs, workers and zone
+          hours matters more there.
+        </p>
       </Section>
 
       <Section title="What the firm does on a speeding ticket">
@@ -269,7 +376,9 @@ export default function SpeedingTicketsPage() {
           ]}
         />
         <p>
-          If you got a speeding ticket anywhere in Ohio, do not just pay it. <Link href="/contact">Contact Jwayyed Law LLC</Link> to
+          The firm handles basic speeding tickets, construction and school zone violations and excessive speed cases, and explains the
+          likely consequences for your record, insurance and license before you decide how to respond. If you got a speeding ticket
+          anywhere in Ohio, do not just pay it. <Link href="/contact">Contact Jwayyed Law LLC</Link> to
           schedule a consultation. You can also read about the firm&apos;s <Link href="/criminal-defense">criminal defense practice</Link>{' '}
           or <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio">protecting your rights during a traffic stop in Ohio</Link>.
         </p>

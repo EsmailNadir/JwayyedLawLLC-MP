@@ -121,6 +121,11 @@ export default function PettyTheftPage() {
           the victim&apos;s status and your prior record can raise it.
         </p>
         <p>
+          The prosecution must prove you acted knowingly and with the purpose to deprive the owner. That makes intent the center of
+          many cases, especially shoplifting charges where someone forgot an item or was distracted, along with the value of the
+          property, which sets the level of the charge.
+        </p>
+        <p>
           Petty theft is a misdemeanor, but a theft conviction can follow you for years, especially with employers who weigh honesty
           and trustworthiness. Many petty theft cases resolve before trial, particularly for first-time offenders, through diversion,
           a reduced charge or a dismissal.
@@ -186,26 +191,94 @@ export default function PettyTheftPage() {
         </Callout>
       </Section>
 
-      <Section title="What a theft conviction costs beyond the sentence" tone="ice">
+      <Section
+        title="What a theft conviction costs beyond the sentence"
+        tone="ice"
+        intro={
+          <p>
+            A theft conviction speaks to honesty, so it weighs heavily in a background check. These effects last long after the sentence is served and the fines are paid.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Work',
+              body: 'Many employers will not hire someone with a theft conviction, especially for jobs handling money, merchandise or sensitive information.',
+            },
+            {
+              title: 'Professional licenses',
+              body: 'Licenses in accounting, finance, law, healthcare and education may be denied or revoked. Boards for nursing, pharmacy, education, real estate, insurance and financial services run background checks and often take theft seriously even when the amount is small.',
+            },
+            {
+              title: 'Housing, banking and clearances',
+              body: 'Housing applications are often rejected, banks may refuse to open accounts, and security clearances can be denied.',
+            },
+            {
+              title: 'Immigration',
+              body: 'For non-citizens, a theft conviction can trigger deportation as a crime involving moral turpitude.',
+            },
+            {
+              title: 'Civil liability',
+              body: 'A retailer can pursue civil damages under ORC 2307.61 separately from the criminal case, and parents of a minor who shoplifts can be held civilly liable.',
+            },
+            {
+              title: 'Future charges',
+              body: 'Every prior theft-related conviction counts when a later charge is set, so one conviction raises the level of the next.',
+            },
+          ]}
+        />
         <p>
-          A theft conviction speaks to honesty, so it weighs heavily in a background check. Many employers will not hire someone with a
-          theft conviction, especially for jobs handling money, merchandise or sensitive information. Licenses in accounting, finance,
-          law, healthcare and education may be denied or revoked. Housing applications are often rejected, banks may refuse to open
-          accounts, and security clearances can be denied. For non-citizens, a theft conviction can trigger deportation as a crime
-          involving moral turpitude. These effects last long after the sentence is served and the fines are paid.
+          If you hold or are pursuing a professional license, tell your attorney at the start. Avoiding a conviction through
+          diversion, a reduced charge or dismissal matters most for you, and the firm can advise you on any licensing board inquiry.
         </p>
       </Section>
 
-      <Section title="How a petty theft case moves through court">
+      <Section
+        title="What to do after a shoplifting or petty theft charge"
+        intro={
+          <p>
+            Say nothing more to police or store security, sign nothing, and keep anything that supports your side. Then contact a
+            criminal defense attorney before your arraignment.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Stop talking about what happened',
+              body: 'Use your right to remain silent. Do not make statements to police, store security or loss prevention officers without an attorney present. Any statement you made is part of what the prosecution hands over in discovery.',
+            },
+            {
+              title: 'Do not sign an admission or answer a civil demand alone',
+              body: 'Do not sign an admission of guilt. A civil demand letter from the retailer is separate from the criminal case; the firm can advise you on how to respond to it without hurting your defense.',
+            },
+            {
+              title: 'Keep your evidence',
+              body: 'Save receipts, bank or card records, text messages and the names and contact details of anyone who was with you. They can support a defense of lack of intent, consent or mistaken identity.',
+            },
+            {
+              title: 'Write down what happened',
+              body: 'Where the items were, when you were stopped, what was said and by whom. If you forgot an item in a cart or pocket or were distracted, the sequence of events is the defense.',
+            },
+            {
+              title: 'Talk to a criminal defense attorney',
+              body: 'Many first-time theft cases are resolved through diversion or a reduced charge, and an attorney can ask for those options early and challenge the evidence if the facts support it.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a petty theft case moves through court" tone="ice">
         <Steps
           steps={[
             {
               title: 'Citation, arrest or summons, then arraignment',
-              body: 'The case can start with a citation at the scene, an arrest or a summons. At arraignment the charges are read, bond conditions are set and you enter a plea. Misdemeanor theft defendants are often released on their own recognizance. A not guilty plea preserves your rights and leaves time to investigate.',
+              body: 'The case can start with a citation at the scene, an arrest or a summons. At arraignment the charges are read, bond conditions are set and you enter a plea. Misdemeanor theft defendants are often released on their own recognizance, and an attorney can argue for favorable release conditions. A not guilty plea preserves your rights and leaves time to investigate.',
             },
             {
               title: 'Discovery and investigation',
-              body: 'The prosecution must hand over its evidence: police reports, loss prevention reports, surveillance footage, witness statements and any statements you made. Reviewing it can expose gaps in the footage, a weak valuation, chain of custody problems, or support for defenses like lack of intent, mistaken identity or consent.',
+              body: 'The prosecution must hand over its evidence: police reports, loss prevention reports, surveillance footage, witness statements and any statements you made. Your attorney analyzes the footage for inconsistencies, challenges the valuation and verifies the chain of custody. Reviewing it can expose gaps in the footage, a weak valuation, chain of custody problems, or support for defenses like lack of intent, mistaken identity or consent.',
             },
             {
               title: 'Negotiation and diversion',
@@ -213,13 +286,13 @@ export default function PettyTheftPage() {
             },
             {
               title: 'Trial',
-              body: 'The prosecution must prove every element beyond a reasonable doubt, including that you knowingly obtained or exerted control over the property without consent and with the purpose to deprive the owner. At trial your attorney cross-examines the state’s witnesses, challenges the surveillance evidence and disputes the valuation.',
+              body: 'The prosecution must prove every element beyond a reasonable doubt, including that you knowingly obtained or exerted control over the property without consent and with the purpose to deprive the owner. At trial your attorney presents the evidence for your defense, cross-examines the state’s witnesses, challenges the surveillance evidence, disputes the valuation and argues for acquittal.',
             },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to petty theft" tone="ice">
+      <Section title="Defenses to petty theft">
         <PointGrid
           points={[
             {
@@ -232,7 +305,7 @@ export default function PettyTheftPage() {
             },
             {
               title: 'Mistaken identity',
-              body: 'Identification in retail theft cases can be unreliable, especially when it rests only on surveillance footage. Challenging footage quality and witness identifications, or presenting alibi evidence, can lead to dismissal or acquittal.',
+              body: 'Identification in retail theft cases can be unreliable, especially when it rests only on surveillance footage. Challenging footage quality and witness identifications, or presenting alibi evidence, can lead to dismissal or acquittal. If you were not the person who committed the theft, this is the defense.',
             },
             {
               title: 'Insufficient evidence',
@@ -241,6 +314,41 @@ export default function PettyTheftPage() {
             {
               title: 'Disputing the value',
               body: 'Not a complete defense, but an overstated value can be challenged with independent valuations. A successful challenge can reduce a first-degree misdemeanor to a minor misdemeanor.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="How petty theft cases can end"
+        tone="ice"
+        intro={<p>Most petty theft cases resolve before trial, and a first-time charge can end without a theft conviction on the record.</p>}
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Diversion, then dismissal',
+              body: 'Many Ohio courts offer diversion or intervention for first-time theft offenders. It usually means theft prevention education, community service, restitution and a probationary period, and the charge is dismissed when you complete it.',
+            },
+            {
+              title: 'Dismissal',
+              body: 'When the evidence cannot prove intent, identification or the lack of consent, the charge can be dismissed outright.',
+            },
+            {
+              title: 'A reduced charge',
+              body: 'A negotiated reduction, or a lower value after a successful valuation challenge, can lower the classification and the penalties.',
+            },
+            {
+              title: 'A plea that limits the consequences',
+              body: 'When a plea makes sense, the terms can be negotiated to limit the penalties and, where possible, protect your record.',
+            },
+            {
+              title: 'Acquittal at trial',
+              body: 'If the prosecution cannot prove every element beyond a reasonable doubt, the verdict is not guilty.',
+            },
+            {
+              title: 'Sealing after a conviction',
+              body: 'A misdemeanor theft conviction is generally eligible for record sealing after the waiting period, as described below.',
             },
           ]}
         />

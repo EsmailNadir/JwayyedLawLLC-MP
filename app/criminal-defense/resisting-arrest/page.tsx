@@ -121,7 +121,8 @@ export default function ResistingArrestPage() {
         </p>
         <p>
           You have constitutional rights during a police encounter: to remain silent, to refuse consent to a search, and to be free from
-          unreasonable seizure. Using those rights is not resisting arrest. Because the charge usually travels with others, the defense
+          unreasonable seizure. Using those rights is not resisting arrest. The defense starts by
+          separating what you actually did from what the report calls resistance, and by testing whether the arrest itself was lawful. Because the charge usually travels with others, the defense
           has to address every charge together, from arraignment through discovery, pretrial motions, negotiation and, if needed, trial.
         </p>
       </Section>
@@ -143,7 +144,9 @@ export default function ResistingArrestPage() {
         <p>
           Beyond a reasonable doubt: (1) an arrest was being made, (2) the arrest was lawful, (3) you resisted or interfered with it,
           and (4) the resistance was reckless or involved force. Each element can be challenged, and if one cannot be proven the charge
-          should be dismissed.
+          should be dismissed. The lawfulness of the arrest is an element in its own right: the officer must have had proper authority
+          and probable cause. The mental state matters too, because the prosecution must show you were aware of a substantial risk that
+          your conduct would hinder the arrest and consciously disregarded it.
         </p>
       </Section>
 
@@ -175,6 +178,13 @@ export default function ResistingArrestPage() {
           conduct (ORC 2917.11) and the offense that led to the arrest. Together they can mean consecutive jail terms, stacked fines and
           several entries on your record.
         </p>
+        <h3>Resisting arrest or obstruction?</h3>
+        <p>
+          The two are often filed together after a confrontational encounter. Resisting arrest needs an actual arrest, or the execution
+          of a search warrant, and physical interference with it. Obstruction of official business (ORC 2921.31) is broader and covers
+          interference with any public official&apos;s authorized act. It is a second-degree misdemeanor, the same range as standard
+          resisting arrest, but it becomes a fifth-degree felony if it creates a risk of physical harm to any person.
+        </p>
         <Callout title="It affects the other charges too">
           Prosecutors may be less willing to offer a good plea on the other charges when resisting arrest is in the case, and judges may
           hold resistance against you at sentencing. Winning the resisting charge can strengthen your position on the rest by casting
@@ -190,13 +200,52 @@ export default function ResistingArrestPage() {
         </p>
       </Section>
 
-      <Section title="How a resisting arrest case moves through court">
+      <Section
+        title="What to do after a resisting arrest charge in Ohio"
+        intro={
+          <p>
+            Stay silent about the arrest, write down what happened, and get any injuries treated and recorded. Then contact a criminal
+            defense attorney before your first court date.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Say nothing about the arrest',
+              body: 'Use your right to remain silent. Make no statements to police about what happened, and do not discuss the incident with anyone except your attorney. Anything you say can be used against you on every charge in the case.',
+            },
+            {
+              title: 'Write down what happened',
+              body: 'Record everything you remember: the officers’ names and badge numbers, any witnesses, what was said, and what each person did and in what order. Resisting cases often turn on a few seconds of physical contact, so the sequence matters.',
+            },
+            {
+              title: 'Treat and document any injuries',
+              body: 'If you were hurt during the arrest, get medical attention and keep the records and photographs. Injuries can support a defense that your reaction was reflexive or a response to pain, and medical records are part of discovery.',
+            },
+            {
+              title: 'Keep any video',
+              body: 'If you or a bystander recorded the arrest, keep the original. It can be compared with the body camera and dash camera footage your attorney will request.',
+            },
+            {
+              title: 'Talk to a criminal defense attorney',
+              body: 'An attorney can review the circumstances of the arrest, ask for the footage before it is lost, and build one strategy for the resisting charge and the underlying charges.',
+            },
+          ]}
+        />
+        <Callout title="Challenge an unlawful arrest in court, not at the scene">
+          Ohio courts have held that the proper remedy for an unlawful arrest is to challenge it through legal proceedings afterward, not
+          by physically resisting. If the arrest was unlawful, that becomes a defense your attorney raises in motions and at trial.
+        </Callout>
+      </Section>
+
+      <Section title="How a resisting arrest case moves through court" tone="ice">
         <p>Because resisting arrest usually comes with other charges, the court handles them together.</p>
         <Steps
           steps={[
             {
               title: 'Arrest and arraignment',
-              body: 'All charges are read, bail is set and you enter a plea. A not guilty plea on every charge preserves your rights. If you were injured during the arrest, document it now.',
+              body: 'All charges are read, bail is set and you enter a plea. A not guilty plea on every charge preserves your rights. Your attorney can argue for reasonable bail conditions and starts building the defense right away. If you were injured during the arrest, document it now.',
             },
             {
               title: 'Discovery and investigation',
@@ -204,7 +253,7 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Pretrial motions',
-              body: 'A motion to suppress if the arrest was unlawful, your rights were violated or evidence was improperly obtained. A motion to dismiss if the arrest lacked probable cause. A motion to compel the body camera or dash camera footage.',
+              body: 'A motion to suppress if the arrest was unlawful, your rights were violated or evidence was improperly obtained. A motion to dismiss if the arrest lacked probable cause. A motion to compel the body camera or dash camera footage, so the most objective evidence is available for your defense.',
             },
             {
               title: 'Negotiation',
@@ -212,22 +261,22 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Trial',
-              body: 'Your attorney cross-examines the arresting officer, plays the video, calls witnesses and argues for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that the arrest was lawful and your conduct was reckless resistance.',
+              body: 'Your attorney cross-examines the arresting officer, plays the video, calls witnesses and argues for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that the arrest was lawful and your conduct was reckless resistance. Your attorney presents the defense evidence and challenges each of those elements.',
             },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to resisting arrest" tone="ice">
+      <Section title="Defenses to resisting arrest">
         <PointGrid
           points={[
             {
               title: 'The arrest was unlawful',
-              body: 'ORC 2921.33 requires a lawful arrest. If the officer lacked probable cause or proper authority, or violated your constitutional rights, the resisting charge may be invalid. This is raised in pretrial motions and at trial.',
+              body: 'ORC 2921.33 requires a lawful arrest. If the officer lacked probable cause or proper authority, or violated your constitutional rights, the resisting charge may be invalid. The firm investigates how the arrest happened and raises this in pretrial motions and at trial.',
             },
             {
               title: 'There was no resistance',
-              body: 'Asking why you are being arrested, protesting verbally or asserting your rights is not resisting arrest. The physical conduct must rise to reckless resistance or interference. Body camera footage often shows the alleged resistance was minimal or did not happen.',
+              body: 'Asking why you are being arrested, protesting verbally or asserting your rights is not resisting arrest. The physical conduct must rise to reckless resistance or interference. If what you did was passive, verbal or an exercise of your constitutional rights, the charge may be invalid. Body camera footage often shows the alleged resistance was minimal or did not happen.',
             },
             {
               title: 'The reaction was reflexive',
@@ -235,11 +284,46 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'The officer used excessive force',
-              body: 'Ohio law does not give a blanket right to resist excessive force. Evidence of it can still undercut the prosecution, create reasonable doubt, and support a defense that you were reacting to pain or acting in self-defense.',
+              body: 'Ohio law does not give a blanket right to resist excessive force. Evidence of it can still undercut the prosecution, create reasonable doubt, and support a defense that you were reacting to pain or acting in self-defense. The point is to show your actions were reactive rather than reckless.',
             },
             {
               title: 'The evidence is thin',
               body: "When the case rests only on the officer's testimony, with no video, independent witnesses or corroboration, the sufficiency of the proof can be challenged. Footage that contradicts the officer can be decisive.",
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="How resisting arrest cases can end"
+        tone="ice"
+        intro={<p>Resisting arrest is usually resolved together with the charge that led to the arrest, and it does not have to end in a conviction.</p>}
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dropped for a plea on the underlying offense',
+              body: 'Prosecutors often agree to dismiss the resisting charge in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
+            },
+            {
+              title: 'Dismissed in a global resolution',
+              body: 'The resisting count can be dismissed as part of resolving all the charges at once.',
+            },
+            {
+              title: 'Dismissed on a pretrial motion',
+              body: 'If the arrest lacked probable cause, the resisting charge is invalid and can be dismissed. Winning on the arrest can also strengthen your position on the other charges.',
+            },
+            {
+              title: 'Reduced or folded into a plea',
+              body: 'A reduced charge or a plea agreement that covers every count can limit the stacked penalties.',
+            },
+            {
+              title: 'Acquittal at trial',
+              body: 'If the prosecution cannot prove a lawful arrest and reckless resistance beyond a reasonable doubt, the verdict is not guilty.',
+            },
+            {
+              title: 'Sealing after a conviction',
+              body: 'A misdemeanor resisting conviction is generally eligible for record sealing after the waiting period, as described below.',
             },
           ]}
         />
@@ -252,6 +336,7 @@ export default function ResistingArrestPage() {
             { title: 'Gets the video', body: "Obtains and reviews every body camera and dash camera recording, looking for gaps against the officer's account." },
             { title: 'Tests the arrest', body: 'Whether the officer had probable cause and proper authority and followed correct procedure.' },
             { title: 'Investigates', body: 'Reviews the evidence, interviews witnesses and gets medical records of any injuries.' },
+            { title: 'Builds the defense', body: 'Challenges the lawfulness of the arrest, shows the conduct was not resistance, or shows your actions were reflexive rather than intentional.' },
             { title: 'Defends every charge together', body: 'One strategy for the resisting charge and the underlying charges.' },
             { title: 'Negotiates', body: 'To dismiss the resisting charge, reduce charges or reach a better plea on all of them.' },
             { title: 'Tries the case', body: "With the video evidence and a cross-examination of the arresting officer." },
@@ -269,7 +354,8 @@ export default function ResistingArrestPage() {
         <p>
           Under Ohio Revised Code 2953.32, a resisting arrest conviction may be eligible for sealing or expungement. As a misdemeanor, it
           is generally eligible after the waiting period if you meet the requirements, and a sealed record is hidden from most background
-          checks.
+          checks. That helps restore the employment opportunities and other areas a record affects. The firm can review your eligibility
+          and handle the application.
         </p>
         <LinkGrid links={RELATED} columns={2} />
       </Section>

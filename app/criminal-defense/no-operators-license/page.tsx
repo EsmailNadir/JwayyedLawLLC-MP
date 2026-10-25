@@ -132,7 +132,7 @@ export default function NoOperatorsLicensePage() {
           points={[
             {
               title: 'Never had a license',
-              body: "You have never held a valid Ohio license or one from another state. The prosecution must prove you were driving and had no valid license at the time. A first offense is usually limited to fines; later offenses carry heavier penalties, including possible jail.",
+              body: "You have never held a valid Ohio license or one from another state. This is the most straightforward version of the charge: the prosecution must prove you were driving and had no valid license at the time. A first offense is usually limited to fines; later offenses carry heavier penalties, including possible jail.",
             },
             {
               title: 'An expired license',
@@ -144,7 +144,7 @@ export default function NoOperatorsLicensePage() {
             },
             {
               title: 'A foreign license',
-              body: "A valid license from another country stops counting once you have lived in Ohio past the recognition period. Ohio generally requires new residents to get an Ohio license within 30 days of establishing residency. Visitors may use a foreign license for a limited time; longer stays require an Ohio license.",
+              body: "A valid license from another country stops counting once you have lived in Ohio past the recognition period. Ohio generally requires new residents to get an Ohio license within 30 days of establishing residency. Visitors may use a foreign license for a limited time; longer stays require an Ohio license. Whether your foreign license still counted on the day of the stop depends on when you became a resident.",
             },
           ]}
         />
@@ -180,33 +180,120 @@ export default function NoOperatorsLicensePage() {
             },
           ]}
         />
-        <h3>Other costs of a conviction</h3>
+        <h3>What a first no license charge can cost in total</h3>
         <p>
-          Your vehicle may be towed and impounded at the stop, with towing and storage fees that can run to hundreds of dollars. If you
-          were also driving without insurance, you face more charges and an FRA suspension. A criminal record can affect employment,
-          since many employers run background checks, and for non-citizens a criminal conviction can have immigration consequences.
+          The fine is the smallest part of the bill. The court costs, the tow and the work of getting licensed usually add more than the
+          fine itself.
+        </p>
+        <FactTable
+          title="Typical costs after a first no operator's license citation"
+          rows={[
+            { label: 'Fine', value: 'Up to $150.' },
+            { label: 'Court costs', value: 'Vary by court; typically $100-$200 or more on top of the fine.' },
+            { label: 'Towing and storage', value: 'If the vehicle was towed and impounded at the stop, the fees can run to hundreds of dollars.' },
+            { label: 'Getting licensed', value: 'A standard four-year Ohio license costs about $25.75, plus any reinstatement fees needed to clear holds on your BMV record.' },
+            { label: 'No insurance', value: 'If you were also driving without insurance, more charges and an FRA suspension.' },
+          ]}
+          note="A repeat offense raises the possible fine and adds possible jail, as the tables above show."
+        />
+        <h3>Who is hit hardest by a conviction</h3>
+        <p>
+          A criminal record can affect employment, since many employers run background checks. For non-citizens, a criminal conviction
+          can have immigration consequences. And because a later offense within three years carries
+          heavier penalties, a first conviction raises the stakes of every stop that follows until you are licensed.
         </p>
       </Section>
 
-      <Section title="How a no license case moves through court" tone="ice">
+      <Section
+        title="What to do after a no operator's license citation"
+        tone="ice"
+        intro={
+          <p>
+            Keep your court date, find out exactly what the BMV shows about your license, and start getting licensed. Those three steps
+            do the most for the outcome.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Put the court date first',
+              body: 'The date is on your citation. Appear, or have an attorney appear for you. Missing it can lead to a bench warrant, more charges and a license suspension, which turns a fine-only case into a harder one.',
+            },
+            {
+              title: 'Find out what your BMV record shows',
+              body: 'Your full BMV record shows whether you held a valid license, whether it expired, and whether a suspension, hold or block is on file. It also shows whether the charge should be no license or driving under suspension, and it can expose a BMV error.',
+            },
+            {
+              title: 'Gather your documents',
+              body: 'Keep the citation, any out-of-state or foreign license you held, proof of insurance, and tow or impound paperwork. If you plan to apply for an Ohio license, start collecting proof of identity, your Social Security number and two proofs of Ohio residency.',
+            },
+            {
+              title: 'Write down what happened at the stop',
+              body: 'Note why the officer said you were stopped, where it happened and who was there. Those details decide whether the stop can be challenged and whether you were on a road used by the public.',
+            },
+            {
+              title: 'Start getting licensed before court',
+              body: 'A valid license obtained since the citation is one of the strongest things you can bring to the pretrial. If a suspension or unpaid ticket blocks it, clearing that comes first.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a no license case moves through court">
         <p>These cases are usually heard in municipal courts throughout Ohio.</p>
         <Steps
           steps={[
             {
               title: 'Citation and court date',
-              body: 'You receive a citation with a court date. Appear, or have an attorney appear for you. Missing it can lead to a bench warrant, more charges and a license suspension.',
+              body: 'When you are stopped and found driving without a valid license, you receive a citation with a court date. Appear, or have an attorney appear for you. Missing it can lead to a bench warrant, more charges and a license suspension. Talk to an attorney before that date so you know your options and the defense can start.',
             },
             {
               title: 'Arraignment',
-              body: 'The charge is read and you enter a plea. A not guilty plea leaves time to review the evidence, investigate defenses, negotiate and help you get a valid license. In many courts an attorney can appear for you at arraignment.',
+              body: 'The charge is read and you enter a plea. A not guilty plea leaves time to review the evidence, investigate defenses, negotiate and help you get a valid license. That time often matters most: a license obtained before the next date can change the result. In many courts an attorney can appear for you at arraignment.',
             },
             {
               title: 'Pretrial and negotiation',
-              body: 'Often the stage that decides the case. A license obtained since the citation strengthens your position. Common outcomes include a reduction to a non-criminal minor misdemeanor, dismissal on proof of a valid license, lower fines or a driving course.',
+              body: 'Often the stage that decides the case. Your attorney negotiates with the prosecutor for a resolution, and a license obtained since the citation strengthens your position. Common outcomes include a reduction to a non-criminal minor misdemeanor, dismissal on proof of a valid license, lower fines or a driving course.',
             },
             {
               title: 'Trial or resolution',
-              body: 'At trial the prosecution must prove beyond a reasonable doubt that you were driving and had no valid license. If you plead or are found guilty, your attorney argues for the lightest sentence available.',
+              body: 'At trial the prosecution must prove beyond a reasonable doubt that you were driving and had no valid license. Your attorney can challenge the evidence, present the defenses and argue for a not guilty verdict. If you accept a negotiated plea or are found guilty, your attorney argues for the lightest sentence available.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="How a no operator's license case can end"
+        tone="ice"
+        intro={<p>Most of these cases end at the pretrial, through negotiation. What you have done about your license by then shapes the offer.</p>}
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal on proof of a valid license',
+              body: 'Many prosecutors and judges will dismiss the case once you show a valid license. It is not guaranteed and depends on the court, the prosecutor, your driving history and the facts of the stop.',
+            },
+            {
+              title: 'Reduction to a non-criminal minor misdemeanor',
+              body: 'Many prosecutors and judges will reduce the charge to a non-criminal minor misdemeanor when you show the licensing problem is fixed.',
+            },
+            {
+              title: 'Lower fines or a driving course',
+              body: 'Other common outcomes are reduced fines or completing a driving course in place of a harsher penalty.',
+            },
+            {
+              title: 'Dismissal after a successful challenge',
+              body: 'If the stop was unlawful and the evidence is suppressed, or the records show you held a valid license, the charge may be dismissed.',
+            },
+            {
+              title: 'A not guilty verdict at trial',
+              body: 'The prosecution must prove beyond a reasonable doubt that you were driving and had no valid license at the time.',
+            },
+            {
+              title: 'A plea with the lightest sentence',
+              body: 'When a conviction cannot be avoided, the argument turns to the sentence, including alternatives to jail for a repeat offense.',
             },
           ]}
         />
@@ -217,30 +304,33 @@ export default function NoOperatorsLicensePage() {
           points={[
             {
               title: 'A valid out-of-state or foreign license',
-              body: 'If you held a valid license from another state or country at the time of the stop, that may be a complete defense. Ohio recognizes other states’ licenses under reciprocity, and some foreign licenses for limited periods.',
+              body: 'If you held a valid license from another state or country at the time of the stop, that may be a complete defense. Ohio recognizes other states’ licenses under reciprocity, and some foreign licenses for limited periods. The defense needs documents that prove the license was valid on the date of the stop, which the firm can help obtain.',
             },
             {
               title: 'BMV record errors',
-              body: 'BMV records can wrongly show no valid license, or an administrative error can cancel a license improperly. Reviewing the records can expose the mistake.',
+              body: 'The BMV database can contain errors. Records can wrongly show no valid license when you had one, or an administrative error can cancel a license improperly. Reviewing the records line by line can expose the mistake.',
             },
             {
               title: 'You did not know',
-              body: 'Not knowing your license had expired is not a complete defense, but it can count in mitigation, especially if the expiration was recent or BMV notices never reached you. It can move the prosecutor toward a better offer.',
+              body: 'Not knowing your license had expired is not a complete defense, but it can count in mitigation, especially if the expiration was recent, you had no reason to know the license was invalid, or BMV notices never reached you. It can move the prosecutor toward a better offer.',
             },
             {
               title: 'An unlawful traffic stop',
-              body: 'If the stop lacked reasonable suspicion or probable cause, the evidence may be suppressed under the Fourth Amendment, and without it the charge may be dismissed.',
+              body: 'If the stop lacked reasonable suspicion or probable cause, the evidence may be suppressed under the Fourth Amendment. Without a lawful stop the officer would not have learned your license status, so the charge may be dismissed. The firm reviews the stop and files a suppression motion when the facts support one.',
             },
             {
               title: 'Not on a road used by the public',
-              body: 'ORC 4510.12 covers a highway or public or private property used by the public for vehicle travel. Driving only on private property not used by the public may be a defense, depending on the location.',
+              body: 'ORC 4510.12 covers a highway or public or private property used by the public for vehicle travel. Driving only on private property not used by the public may be a defense. Whether it applies depends on the exact location and whether it counts as property used by the public.',
             },
           ]}
         />
       </Section>
 
       <Section title="Getting an Ohio driver's license" tone="ice">
-        <p>A valid license before your court date can improve the outcome. The process:</p>
+        <p>
+          A valid license before your court date can improve the outcome, and it is the step most within your control. Here is what
+          getting an Ohio driver&apos;s license involves:
+        </p>
         <FactTable
           title="Ohio driver's license requirements"
           rows={[
@@ -284,7 +374,9 @@ export default function NoOperatorsLicensePage() {
         />
         <p>
           Driving without a license often comes from not being able to afford fees, not understanding the process or an administrative
-          tangle. The firm works on the underlying problem while defending the charge. If you are charged anywhere in Ohio,{' '}
+          tangle. The firm works on the underlying problem while defending the charge, from a first offense to a repeat violation. Depending
+          on your case, the path forward may be getting licensed, correcting a BMV record, or challenging the charge in court, and the firm
+          explains each option, the possible consequences and the steps that improve your position before you decide. If you are charged anywhere in Ohio,{' '}
           <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. You can also read about the firm&apos;s{' '}
           <Link href="/criminal-defense">criminal defense practice</Link> or{' '}
           <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio">protecting your rights during a traffic stop in Ohio</Link>.
