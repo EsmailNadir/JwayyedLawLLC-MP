@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Breach of Contract Lawyer in Ohio',
-  description: 'Experienced Ohio breach of contract attorney handling contract disputes and protecting your rights. Schedule a consultation: (614) 285-5482',
+  description:
+    'Breach of contract claims in Ohio: 6 years to sue on a written contract, 4 on an oral one, and the damages you can recover. Call (614) 285-5482.',
   keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Breach of Contract Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'The elements, deadlines and remedies for a breach of contract claim in Ohio.',
     url: 'https://www.jjlawohio.com/civil/breach-of-contract',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil/breach-of-contract' },
 };
 
@@ -26,182 +29,174 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What constitutes breach of contract in Ohio?',
-    answer: 'Breach of contract under Ohio law occurs when one party fails to perform their obligations under a contract without legal justification. Breach may include failure to perform, defective performance, late performance, or refusal to perform. To establish breach of contract, you must prove a valid contract existed, the other party breached the contract, and you suffered damages as a result.',
+    answer:
+      'A breach happens when one party fails to perform its obligations under a contract without legal justification. That can mean failing to perform, performing defectively, performing late or refusing to perform. To prove it, you must show a valid contract existed, the other party breached it, and you suffered damages as a result.',
   },
   {
     question: 'What are the remedies for breach of contract in Ohio?',
-    answer: 'Breach of contract remedies in Ohio may include monetary damages (compensatory damages to compensate for losses, consequential damages for foreseeable losses, liquidated damages if specified in contract), specific performance (court order requiring performance), rescission (contract cancellation), and restitution (return of payments or benefits). Remedies depend on contract type, breach severity, and circumstances.',
+    answer:
+      'Remedies can include money damages (compensatory damages for your losses, consequential damages for foreseeable losses, and liquidated damages if the contract specifies them), specific performance (a court order requiring performance), rescission (cancelling the contract) and restitution (returning payments or benefits). Which ones apply depends on the type of contract, how serious the breach was and the circumstances.',
   },
   {
     question: 'What is the statute of limitations for breach of contract in Ohio?',
-    answer: 'Under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026), the statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer:
+      'Under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026), you have 6 years to sue on a written contract and 4 years on an oral contract. Missing the deadline bars recovery, so talk to an attorney soon after the breach.',
   },
   {
     question: 'Do I need a breach of contract attorney?',
-    answer: 'While you can handle a breach of contract claim yourself, an experienced attorney can significantly improve your chances of success and maximize recovery. Attorneys understand contract law, can analyze contracts, identify breaches, calculate damages, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly or contingency fee arrangements.',
+    answer:
+      'You can handle a claim yourself. An attorney can analyze the contract, identify the breach, calculate damages, negotiate a settlement and represent you in court if it comes to that. Most attorneys work on hourly or contingency fee arrangements.',
   },
   {
     question: 'Can I recover attorney fees for breach of contract?',
-    answer: 'Attorney fees for breach of contract in Ohio are generally not recoverable unless specified in the contract, authorized by statute, or awarded as part of punitive damages for egregious conduct. Contracts often include attorney fee provisions requiring the losing party to pay attorney fees. An attorney can help review your contract and determine if attorney fees are recoverable.',
+    answer:
+      'Generally not, unless the contract provides for them, a statute authorizes them, or they are awarded as part of punitive damages for egregious conduct. Many contracts include a clause requiring the losing party to pay attorney fees. An attorney can check whether yours does.',
   },
   {
-    question: `What are the elements of a breach of contract claim in Ohio?`,
-    answer: `To prevail on a breach of contract claim in Ohio, a plaintiff must establish four elements by a preponderance of the evidence: (1) the existence of a valid, enforceable contract between the parties; (2) performance by the plaintiff of their obligations under the contract, or a valid excuse for non-performance; (3) a breach by the defendant—failure to perform a contractual duty; and (4) damages suffered by the plaintiff as a direct and proximate result of the breach. Without all four elements, the claim will fail. An experienced attorney can analyze your contract and facts to determine whether each element can be proven.`,
+    question: 'What are the elements of a breach of contract claim in Ohio?',
+    answer:
+      'A plaintiff must prove four elements by a preponderance of the evidence: (1) a valid, enforceable contract between the parties; (2) the plaintiff performed its obligations, or had a valid excuse for not performing; (3) the defendant breached, by failing to perform a contractual duty; and (4) the plaintiff suffered damages as a direct and proximate result of the breach. Without all four, the claim fails.',
   },
   {
-    question: `What is the statute of limitations for breach of contract in Ohio?`,
-    answer: `Under Ohio Revised Code 2305.06, the statute of limitations for breach of a written contract is six years from the date the breach occurred. Under ORC 2305.07 as amended in June 2021, the statute of limitations for breach of an oral contract was reduced to four years. Missing these deadlines generally bars recovery entirely, regardless of how strong your underlying claim may be. It is critical to consult an attorney promptly after a breach occurs to preserve your rights and ensure all filing deadlines are met.`,
+    question: 'How long do I have to sue for breach of a written or oral contract in Ohio?',
+    answer:
+      'Under Ohio Revised Code 2305.06, you have 6 years from the date of the breach to sue on a written contract. Under ORC 2305.07, as amended in June 2021, the limit for an oral contract was reduced to 4 years. Missing these deadlines generally bars recovery entirely, however strong the claim.',
   },
   {
-    question: `What damages are available for breach of contract in Ohio?`,
-    answer: `Ohio recognizes several categories of damages for breach of contract. Compensatory (expectation) damages are the most common—placing the non-breaching party in the position they would have been in had the contract been performed. Consequential damages may be recovered for losses that were foreseeable at the time of contracting. Specific performance may be ordered by a court when monetary damages are inadequate, such as for contracts involving unique goods or real property. Rescission and restitution may be available when the contract is voided due to material breach or fraud. Punitive damages are rare in contract cases and require a showing of egregious conduct beyond the breach itself.`,
+    question: 'What damages are available for breach of contract in Ohio?',
+    answer:
+      'Compensatory (expectation) damages are the most common: they put you where you would have been had the contract been performed. Consequential damages cover losses that were foreseeable when the contract was made. A court may order specific performance when money is not enough, as with unique goods or real property. Rescission and restitution may be available when the contract is voided for a material breach or fraud. Punitive damages are rare in contract cases and need egregious conduct beyond the breach itself.',
   },
 ];
 
-export default function BreachOfContractPage() {
+const RELATED = [
+  { href: '/civil/construction-disputes', title: 'Construction disputes', subtitle: 'Mechanics’ liens, defective workmanship and payment disputes on construction projects' },
+  { href: '/civil/employment-disputes', title: 'Employment disputes', subtitle: 'Wrongful termination, discrimination and workplace retaliation claims' },
+  { href: '/civil/real-estate-disputes', title: 'Real estate disputes', subtitle: 'Title disputes, boundary issues, quiet title actions and property litigation' },
+  { href: '/civil/debt-collection-defense', title: 'Debt collection defense', subtitle: 'Defending a collection lawsuit and unfair collection practices' },
+];
 
+export default function BreachOfContractPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Breach of Contract Lawyer"
-        description="Experienced legal representation for breach of contract disputes. Protecting your rights and fighting for the compensation you deserve."
+        title="Breach of contract claims in Ohio"
+        description="You have 6 years to sue on a written contract in Ohio and 4 years on an oral one. After that, the claim is barred however strong it is."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Breach of Contract Claims in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Breach of contract disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can result in significant financial losses when parties fail to perform their contractual obligations. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for breach of contract claims under Ohio Revised Code 2305.06 and 2305.07. Our attorney understands contract law and the remedies necessary to protect your rights and recover damages.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Contracts are legally binding agreements between parties, and when one party fails to perform their obligations, the other party may suffer financial losses. Breach of contract can occur through failure to perform, defective performance, late performance, or refusal to perform. Understanding your rights, available remedies, and the legal process is essential for protecting your interests and recovering damages. For an overview of how contractual obligations intersect with landlord-tenant relationships, see our article on <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">Ohio landlord repair duties and tenant rights</Link>.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '6 years', label: 'to sue on a written contract (ORC 2305.06)' },
+          { figure: '4 years', label: 'to sue on an oral contract (ORC 2305.07, amended June 2021)' },
+          { figure: '4 elements', label: 'you must prove: contract, your performance, breach, damages' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for breach of contract claims in Ohio is 6 years for written contracts and 4 years for oral contracts under Ohio Revised Code 2305.06 and 2305.07 (current as of 2026). Missing the deadline bars recovery entirely, making it crucial to act quickly. Early intervention by a skilled contract attorney can significantly impact the outcome, ensuring proper documentation, calculation of damages, and protection of your rights throughout the process. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact us today</Link> to discuss your breach of contract matter.
-            </p>
+      <Section
+        title="What counts as a breach"
+        intro={
+          <p>
+            A breach happens when a party fails to perform what the contract requires, without legal justification. It can mean not
+            performing at all, performing defectively, performing late or refusing to perform.
+          </p>
+        }
+      >
+        <p>
+          The firm handles breach of contract claims in Columbus, Cincinnati, Dayton and throughout Ohio as part of its{' '}
+          <Link href="/civil">civil litigation practice</Link>. Claims are governed by Ohio Revised Code 2305.06 and 2305.07 for timing.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'A valid contract', body: 'An enforceable agreement between the parties.' },
+            { title: 'Your performance', body: 'You did what the contract required, or had a valid excuse for not doing it.' },
+            { title: 'The breach', body: 'The other party failed to perform a contractual duty.' },
+            { title: 'Damages', body: 'You lost money as a direct and proximate result of the breach.' },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Civil" />
+      <Section title="Filing deadlines" tone="ice">
+        <FactTable
+          title="Statute of limitations for contract claims"
+          rows={[
+            { label: 'Written contract', value: '6 years from the breach (ORC 2305.06).' },
+            { label: 'Oral contract', value: '4 years (ORC 2305.07, reduced in June 2021).' },
+          ]}
+          note="Current as of 2026. Missing the deadline bars recovery entirely."
+        />
+        <p>
+          Acting early also preserves the documents and the evidence of damages. To discuss a contract dispute,{' '}
+          <Link href="/contact">contact the firm</Link>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Breach of Contract Claims Process</h3>
+      <LocationsWeServe title="Civil" />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the breach of contract claims process helps you prepare for what lies ahead:
-            </p>
+      <Section title="What you can recover" tone="ice">
+        <FactTable
+          title="Money damages"
+          rows={[
+            { label: 'Compensatory', value: 'Direct losses from the breach: the cost to complete performance, lost profits and expenses incurred.' },
+            { label: 'Consequential', value: 'Foreseeable losses that follow from the breach, such as lost opportunities and business losses.' },
+            { label: 'Liquidated', value: 'Damages the contract sets in advance. Enforceable if reasonable and not punitive.' },
+            { label: 'Punitive', value: 'Rare. Available only for egregious conduct or fraud.' },
+          ]}
+        />
+        <FactTable
+          title="Equitable remedies"
+          rows={[
+            { label: 'Specific performance', value: 'A court order to perform the contract, when money damages are inadequate.' },
+            { label: 'Rescission', value: 'Cancelling the contract and returning the parties to where they were. Available for a material breach or fraud.' },
+            { label: 'Restitution', value: 'Return of payments or benefits received under a rescinded contract.' },
+          ]}
+        />
+        <Callout title="Attorney fees">
+          In Ohio you generally cannot recover attorney fees for a breach unless the contract provides for them, a statute authorizes
+          them, or they come with punitive damages for egregious conduct. Many contracts include a clause making the losing party pay.
+        </Callout>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Contract Analysis and Breach Identification</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The process begins with analyzing the contract to identify breaches, determine contract validity, and calculate damages. An attorney can review contracts, identify breaches, assess contract enforceability, calculate damages including direct and consequential damages, and determine available remedies. This analysis is crucial for building a strong case.
-              </p>
-            </div>
+      <Section title="How a contract claim moves forward">
+        <Steps
+          steps={[
+            {
+              title: 'Contract analysis',
+              body: 'Reviewing the contract to confirm it is valid and enforceable, identify the breach, calculate direct and consequential damages, and see which remedies apply.',
+            },
+            {
+              title: 'Demand and negotiation',
+              body: 'A demand letter sets out the breach and the damages and usually opens settlement talks. Most contract disputes settle at this stage.',
+            },
+            {
+              title: 'Litigation',
+              body: 'If talks fail: a complaint, discovery, depositions, expert testimony and possibly trial. Most cases still settle before trial.',
+            },
+            {
+              title: 'Enforcement',
+              body: 'A judgment can be collected through wage garnishment, bank levies or property liens.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Demand and Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Before filing a lawsuit, sending a demand letter outlining the breach and damages is often the first step. This can lead to settlement negotiations. An attorney can draft demand letters, negotiate with opposing parties, and work toward resolution without litigation. Most contract disputes settle during negotiation, but preparation for litigation strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="What the firm does on a contract dispute" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Analyzes the contract', body: 'Validity, enforceability, the terms and obligations, the breach and any defenses the other side may raise.' },
+            { title: 'Calculates damages', body: 'Direct, consequential and liquidated damages, plus lost profits or opportunities.' },
+            { title: 'Sends the demand', body: 'A demand letter that sets out the breach and the damages and opens negotiation.' },
+            { title: 'Negotiates', body: 'Settlement talks, mediation or other alternative dispute resolution, with a clear read of each offer.' },
+            { title: 'Litigates', body: 'Files suit when needed, runs discovery, takes depositions and represents you in court.' },
+            { title: 'Enforces the judgment', body: 'Wage garnishment, bank levies or property liens when collection is needed.' },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation Process</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If settlement negotiations fail, litigation may be necessary. This involves filing a complaint, discovery (exchanging evidence), depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum recovery at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
-              </p>
-            </div>
+      <Section title="Related civil matters">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Remedies and Enforcement</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                After obtaining a judgment, enforcement may be necessary through various collection methods including wage garnishment, bank levies, or property liens. An attorney can help enforce judgments and collect damages when necessary.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Breach of Contract Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced breach of contract attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Contract Analysis:</strong> Thoroughly analyze contracts to identify breaches, assess contract validity and enforceability, determine contract terms and obligations, and identify potential defenses</li>
-              <li><strong>Damage Calculation:</strong> Calculate all damages including direct damages (losses directly from breach), consequential damages (foreseeable losses), liquidated damages (if specified in contract), and lost profits or opportunities</li>
-              <li><strong>Legal Strategy Development:</strong> Develop strategies to prove breach, establish damages, and maximize recovery based on contract type, breach severity, and circumstances</li>
-              <li><strong>Demand Letters:</strong> Draft demand letters outlining breaches and damages, initiating settlement negotiations, and demonstrating seriousness of claim</li>
-              <li><strong>Negotiation and Settlement:</strong> Negotiate with opposing parties to reach favorable settlements, participate in mediation or alternative dispute resolution, and evaluate settlement offers</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
-              <li><strong>Remedy Enforcement:</strong> Enforce judgments through various collection methods including wage garnishment, bank levies, or property liens when necessary</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Breach of Contract Remedies</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Breach of contract remedies in Ohio may include various types of relief:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Monetary Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>Compensatory Damages:</strong> Direct losses from breach including costs to complete performance, lost profits, and expenses incurred</li>
-                <li><strong>Consequential Damages:</strong> Foreseeable losses resulting from breach including lost opportunities, business losses, and indirect damages</li>
-                <li><strong>Liquidated Damages:</strong> Damages specified in contract if breach occurs, enforceable if reasonable and not punitive</li>
-                <li><strong>Punitive Damages:</strong> Rare, available only for egregious conduct or fraud</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Equitable Remedies</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>Specific Performance:</strong> Court order requiring breaching party to perform contract obligations, available when monetary damages are inadequate</li>
-                <li><strong>Rescission:</strong> Contract cancellation, returning parties to pre-contract position, available for material breaches or fraud</li>
-                <li><strong>Restitution:</strong> Return of payments or benefits received under contract, available when contract is rescinded</li>
-              </ul>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Attorney Fees</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Attorney fees for breach of contract in Ohio are generally not recoverable unless specified in the contract, authorized by statute, or awarded as part of punitive damages for egregious conduct. Contracts often include attorney fee provisions requiring the losing party to pay attorney fees. An attorney can help review your contract and determine if attorney fees are recoverable.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated breach of contract representation throughout Ohio. We understand that contract disputes can cause significant financial losses. Our attorney works diligently to analyze contracts, identify breaches, negotiate settlements, and maximize recovery for our clients.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough contract analysis, strategic case development, and aggressive advocacy. We understand contract law, civil procedure rules, and judicial preferences in Columbus and throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize recovery. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are involved in a breach of contract dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your contract, explain your rights, discuss potential remedies, calculate damages, and develop a strategy tailored to your situation. Time is critical in contract cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/construction-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Construction Disputes</span>
-                <span className="text-sm text-navy-950/70">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
-              </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Disputes</span>
-                <span className="text-sm text-navy-950/70">Wrongful termination, discrimination, and workplace retaliation claims</span>
-              </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Real Estate Disputes</span>
-                <span className="text-sm text-navy-950/70">Title disputes, boundary issues, quiet title actions, and property litigation</span>
-              </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Debt Collection Defense</span>
-                <span className="text-sm text-navy-950/70">Defend against unfair debt collection practices and protect your rights</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

@@ -1,20 +1,23 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Contract Drafting & Review Lawyer in Ohio',
-  description: 'Experienced Ohio contract drafting and review attorney protecting your business. Skilled representation for business contracts in Ohio.',
+  description:
+    'Business contract drafting and review in Ohio: the clauses every agreement needs, the UCC rules for goods, and what to check before you sign.',
   keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Contract Drafting & Review Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Drafting, reviewing and negotiating business contracts under Ohio law.',
     url: 'https://www.jjlawohio.com/business/contract-drafting-review',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/business/contract-drafting-review' },
 };
 
@@ -25,107 +28,167 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `Why should I have a contract reviewed by an attorney before signing?`,
-    answer: `A contract reviewed by an experienced attorney can identify unfavorable terms, hidden liabilities, ambiguous language, and provisions that shift significant risk to you — before you are legally bound by them. Many business owners and individuals sign contracts without fully understanding their obligations or the consequences of a breach. An attorney understands how courts interpret contract language, can identify terms that are difficult to enforce or that have unexpected consequences under Ohio law, and can negotiate modifications to protect your interests. Poorly drafted or one-sided contracts routinely lead to disputes and litigation that cost far more to resolve than a thorough upfront review would have.`,
+    question: 'Why should I have a contract reviewed by an attorney before signing?',
+    answer:
+      'A review finds unfavorable terms, hidden liabilities, ambiguous language and provisions that shift risk to you, before you are bound by them. An attorney knows how courts read contract language, can spot terms that are hard to enforce or have unexpected consequences under Ohio law, and can negotiate changes. One-sided or poorly drafted contracts regularly lead to disputes that cost far more than the review would have.',
   },
   {
-    question: `What is the statute of limitations for contract disputes in Ohio?`,
-    answer: `Under ORC 2305.06, the statute of limitations for an action on a written contract in Ohio is six years from the date the cause of action accrues (typically the date of breach). For oral contracts, ORC 2305.07 provides a six-year limitation period as well for most actions, though specific types of claims may have different periods. For contracts involving the sale of goods governed by Ohio UCC Article 2 (ORC Chapter 1302), the statute of limitations for breach of contract is four years under ORC 1302.98. Missing these deadlines can permanently bar your right to sue. Knowing which statute applies to your particular contract is one of many reasons to consult an attorney about any significant contract dispute promptly.`,
+    question: 'What is the statute of limitations for contract disputes in Ohio?',
+    answer:
+      'Under ORC 2305.06, you have 6 years from the date the claim accrues (usually the date of breach) to sue on a written contract. For oral contracts, ORC 2305.07 also provides a 6-year period for most actions, though some claims have different periods. For the sale of goods under Ohio UCC Article 2 (ORC Chapter 1302), the limit is 4 years under ORC 1302.98. Missing a deadline can permanently bar the claim.',
   },
   {
-    question: `What makes a contract enforceable in Ohio?`,
-    answer: `Under Ohio common law, an enforceable contract requires four essential elements: (1) offer — one party proposes definite terms; (2) acceptance — the other party agrees to those terms without material modification; (3) consideration — each party gives something of value (money, a promise to perform, forbearance from an action); and (4) mutual assent — the parties must agree on the essential terms. Additionally, both parties must have legal capacity to contract (age of majority, mental competence), and the contract's purpose must be legal. Contracts involving the sale of goods over $500 are generally required to be in writing to be enforceable under Ohio UCC Article 2 (ORC 1302.04, the statute of frauds). Certain other contracts — such as those for real estate or those that cannot be performed within one year — must also be in writing.`,
+    question: 'What makes a contract enforceable in Ohio?',
+    answer:
+      "Under Ohio common law, four elements: (1) offer, a proposal of definite terms; (2) acceptance of those terms without material change; (3) consideration, something of value from each side (money, a promise to perform, or not doing something); and (4) mutual assent on the essential terms. Both parties must also have legal capacity (age of majority and mental competence), and the contract's purpose must be legal. Contracts for the sale of goods over $500 generally must be in writing under Ohio UCC Article 2 (ORC 1302.04, the statute of frauds). So must certain others, such as real estate contracts and contracts that cannot be performed within 1 year.",
   },
   {
-    question: `What are common mistakes in DIY or template contracts?`,
-    answer: `Common problems with do-it-yourself or downloaded template contracts include: using generic language that does not fit the specific transaction or Ohio law; missing essential provisions such as a clear payment schedule, termination rights, or dispute resolution clause; failing to address what happens if a party cannot perform (force majeure); omitting intellectual property ownership provisions in service or development agreements; neglecting to include limitation of liability clauses that cap your exposure; using overly broad or unenforceable non-compete language; and failing to specify which state's law governs the contract. Template contracts are also frequently out of date and may not reflect current Ohio case law or statutory requirements. An attorney-drafted contract is tailored to your specific situation and much more likely to hold up if disputed.`,
+    question: 'What are common mistakes in DIY or template contracts?',
+    answer:
+      "Generic language that does not fit the transaction or Ohio law; missing terms such as a payment schedule, termination rights or a dispute resolution clause; no force majeure clause for when a party cannot perform; no intellectual property ownership terms in service or development agreements; no limitation of liability cap; overly broad or unenforceable non-compete language; and no governing law clause. Templates are also often out of date with current Ohio case law and statutes.",
   },
   {
-    question: `What is an indemnification clause and why does it matter?`,
-    answer: `An indemnification (or indemnity) clause is a contractual provision in which one party agrees to defend and hold harmless the other party against certain claims, losses, or liabilities arising from the contract or the indemnifying party's actions. Indemnification clauses can shift substantial financial risk between contracting parties. A broad indemnification clause might require you to pay the other party's legal fees and damages even for claims only tangentially related to your work. Ohio courts generally enforce indemnification clauses, but language must be clear and unambiguous — courts construe ambiguous indemnity provisions against the party seeking indemnification. Having an attorney review or draft your indemnification provisions ensures the allocation of risk reflects your intent and is enforceable under Ohio law.`,
+    question: 'What is an indemnification clause and why does it matter?',
+    answer:
+      "In an indemnification clause, one party agrees to defend and hold the other harmless against certain claims, losses or liabilities arising from the contract or the indemnifying party's actions. It can shift substantial financial risk. A broad clause might make you pay the other side's legal fees and damages even for claims only loosely connected to your work. Ohio courts generally enforce these clauses, but the language must be clear: ambiguous indemnity provisions are construed against the party seeking indemnification.",
   },
   {
-    question: `How do non-compete clauses work in Ohio contracts?`,
-    answer: `Non-compete clauses (also called restrictive covenants) restrict a party — typically an employee or a business seller — from competing with the other party within a defined geographic area for a defined period after the contract ends. Ohio courts will enforce non-compete agreements if they are reasonable in scope, geographic area, and duration, and if they protect a legitimate business interest (such as trade secrets, customer relationships, or specialized training). Courts will not enforce overly broad restrictions. Under Ohio's "blue pencil" doctrine, courts may modify an unenforceable non-compete to make it reasonable rather than voiding it entirely. For a detailed discussion of non-compete enforceability in employment and business contexts, see our page on <Link href="/business/non-compete-agreements" className="text-sky-deep underline hover:opacity-80">non-compete agreements</Link>. Having an attorney draft or review your non-compete provisions is essential to ensure they will hold up if challenged.`,
+    question: 'How do non-compete clauses work in Ohio contracts?',
+    answer:
+      'A non-compete (restrictive covenant) bars a party, usually an employee or a business seller, from competing within a defined area for a defined period after the contract ends. Ohio courts enforce them if they are reasonable in scope, geography and duration and protect a legitimate business interest such as trade secrets, customer relationships or specialized training. Overly broad restrictions are not enforced. Under Ohio\'s "blue pencil" doctrine, a court may narrow an unreasonable non-compete instead of voiding it. The firm\'s non-compete agreements page covers enforceability in more detail.',
   },
   {
-    question: `What is an integration or merger clause?`,
-    answer: `An integration clause (also called a merger clause) is a provision stating that the written contract is the complete and final agreement between the parties and supersedes all prior or contemporaneous oral discussions, representations, and agreements. Integration clauses invoke Ohio's parol evidence rule — under which courts will generally not admit evidence of prior oral or written discussions to add to, vary, or contradict the terms of a fully integrated written contract. This means that if you had verbal promises or understandings that are not written into the contract, an integration clause may prevent you from enforcing them. Integration clauses protect both parties from claims based on alleged pre-contract representations, but they also mean that everything important must be captured in the written document. Always read the entire contract — including the boilerplate — before signing.`,
+    question: 'What is an integration or merger clause?',
+    answer:
+      "It states that the written contract is the complete and final agreement and supersedes all earlier or contemporaneous discussions, representations and agreements. It invokes Ohio's parol evidence rule: courts generally will not admit evidence of earlier oral or written discussions to add to, change or contradict a fully integrated written contract. Verbal promises that are not in the contract may be unenforceable. Read the whole contract, boilerplate included, before signing.",
   },
   {
-    question: `What happens when a contract contains a dispute resolution clause?`,
-    answer: `Many business contracts include clauses specifying how disputes arising under the contract will be resolved. Common provisions include mandatory mediation before litigation, binding arbitration (often excluding jury trials), a choice of venue selecting a specific county or state court, and a choice of law provision selecting a specific state's law to govern the contract. Under ORC 2711.01, arbitration clauses in Ohio contracts are generally valid and enforceable. If a contract contains a mandatory arbitration clause, a party who files a lawsuit in court may have the case stayed and referred to arbitration. It is critical to understand these provisions before signing — they can significantly affect your rights and remedies if a dispute arises. For more on dispute resolution options, see our page on <Link href="/other-services/dispute-resolution" className="text-sky-deep underline hover:opacity-80">dispute resolution in Ohio</Link>.`,
+    question: 'What happens when a contract contains a dispute resolution clause?',
+    answer:
+      "Common provisions include mandatory mediation before litigation, binding arbitration (often with no jury trial), a venue clause naming a specific county or state court, and a choice of law clause. Under ORC 2711.01, arbitration clauses in Ohio contracts are generally valid and enforceable. If the contract requires arbitration, a lawsuit filed in court may be stayed and sent to arbitration. These clauses can change your rights and remedies, so understand them before you sign. The firm's dispute resolution page covers the options.",
   },
 ];
 
-export default function ContractDraftingReviewPage() {
+const RELATED = [
+  { href: '/business/business-formation', title: 'Business formation', subtitle: 'The foundational documents a new Ohio business needs' },
+  { href: '/business/employment-agreements', title: 'Employment agreements', subtitle: 'Employment contracts under Ohio at-will law' },
+  { href: '/business/non-compete-agreements', title: 'Non-compete agreements', subtitle: 'Enforcing or challenging restrictive covenants in Ohio' },
+  { href: '/business/business-litigation', title: 'Business litigation', subtitle: 'Pursuing or defending a contract dispute in Ohio courts' },
+  { href: '/other-services/dispute-resolution', title: 'Dispute resolution in Ohio', subtitle: 'Mediation, arbitration and other options' },
+];
 
+export default function ContractDraftingReviewPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Contract Drafting & Review Lawyer"
-        description="Experienced legal assistance with contract drafting and review. Protecting your business interests in every contract throughout Ohio."
+        title="Contract drafting and review in Ohio"
+        description="A business contract sets who owes what, who carries the risk and how disputes get resolved. In Ohio, a written contract claim can be brought for 6 years, and a sale of goods for $500 or more must be in writing."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Contract Drafting & Review in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Contracts are the foundation of every business relationship — from service agreements and vendor contracts to commercial leases and operating agreements. A well-drafted contract clearly defines the rights and obligations of each party, allocates risk fairly, and provides a roadmap for resolving disputes if they arise. A poorly drafted contract, by contrast, can expose your business to unexpected liabilities, unclear obligations, and costly litigation. Contract drafting and review is a core component of our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">Ohio business law services</Link>. At Jwayyed Law LLC, we assist businesses and individuals in Columbus, Cincinnati, Dayton, and throughout Ohio with drafting, reviewing, and negotiating contracts under Ohio law. Whether a contract involves the sale of goods — governed by Ohio UCC Article 2 at ORC Chapter 1302 — or a services agreement governed by Ohio common law, our attorney can help you understand what you are signing and ensure your interests are protected.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio contract law distinguishes between contracts for the sale of goods and contracts for services. Contracts for the sale of goods are governed by Ohio Revised Code Chapter 1302, Ohio's codification of UCC Article 2. Among its provisions, ORC 1302.04 (the statute of frauds) requires contracts for the sale of goods for $500 or more to be in writing to be enforceable, and ORC 1302.98 imposes a four-year statute of limitations for breach of a sales contract. Contracts for services — such as construction, consulting, or employment agreements — are governed by Ohio common law, with a six-year statute of limitations for written contracts under ORC 2305.06. Understanding which body of law applies to your contract is an important first step in drafting and reviewing any agreement, as it affects default rules on warranties, remedies, and modifications.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An effective Ohio contract should include a clear set of essential provisions tailored to the specific transaction. At minimum, most business contracts should address: the term and scope of the agreement (what work is being done and for how long); payment terms (amount, schedule, and remedies for non-payment); intellectual property ownership (who owns work product created under the agreement); confidentiality obligations; termination rights (including for cause and without cause); a limitation of liability clause capping each party's maximum financial exposure; an indemnification provision allocating responsibility for third-party claims; a dispute resolution clause (mediation, arbitration, or litigation venue); a governing law provision selecting Ohio or another state's law; and an integration clause stating that the written contract is the complete agreement. Force majeure clauses — which excuse performance due to unforeseeable events beyond a party's control — became particularly important following the COVID-19 pandemic and should be considered in any long-term contract.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              One principle of Ohio contract law that business owners frequently overlook is the parol evidence rule. When a written contract contains an integration clause — stating that the written agreement is the complete and final expression of the parties' agreement — Ohio courts will generally refuse to admit evidence of prior or contemporaneous oral discussions to vary, add to, or contradict the written terms. This means that if a vendor promised you something verbally before you signed a contract, but that promise is not in the contract, the integration clause may prevent you from enforcing it in court. The practical lesson: everything that matters to your business relationship should be in writing, and you should have an attorney review any contract before you sign it to make sure all key terms are captured and that you understand every provision you are agreeing to.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Common types of contracts that Ohio businesses frequently need drafted or reviewed include service agreements, vendor and supplier contracts, commercial lease agreements, <Link href="/business/employment-agreements" className="text-sky-deep underline hover:text-navy-950">employment agreements</Link>, independent contractor agreements, non-disclosure agreements (NDAs), <Link href="/business/non-compete-agreements" className="text-sky-deep underline hover:text-navy-950">non-compete agreements</Link>, operating agreements for LLCs, buy-sell agreements, and letter of intent (LOI) documents for business acquisitions. Each contract type has its own typical structure, standard provisions, and common pitfalls. An experienced Ohio business attorney can identify provisions that are unusual or one-sided, negotiate modifications, and draft language that protects your specific interests. If you are involved in a contract dispute that has already arisen, see our page on <Link href="/business/business-litigation" className="text-sky-deep underline hover:opacity-80">business litigation</Link> for information on enforcement and litigation options. For businesses exploring <Link href="/business/business-formation" className="text-sky-deep underline hover:opacity-80">business formation</Link>, we can also help with the foundational documents your entity will need from the start.
-            </p>
 
-            <LocationsWeServe title="Business Law" />
+      <Section
+        title="Goods, services and the law that governs them"
+        intro={
+          <p>
+            Ohio treats contracts for the sale of goods and contracts for services differently, and the difference changes the default
+            rules on warranties, remedies and modifications.
+          </p>
+        }
+      >
+        <p>
+          Contract drafting and review is a core part of the firm&rsquo;s <Link href="/business">Ohio business law services</Link>, for
+          businesses and individuals in Columbus, Cincinnati, Dayton and throughout Ohio: service agreements, vendor contracts,
+          commercial leases, operating agreements and more.
+        </p>
+        <FactTable
+          title="Which rules apply"
+          rows={[
+            { label: 'Sale of goods', value: 'Ohio Revised Code Chapter 1302, Ohio’s version of UCC Article 2.' },
+            { label: 'Statute of frauds', value: 'ORC 1302.04: a sale of goods for $500 or more must be in writing to be enforceable.' },
+            { label: 'Goods: time to sue', value: '4 years for breach of a sales contract (ORC 1302.98).' },
+            { label: 'Services', value: 'Ohio common law (construction, consulting and employment agreements, for example).' },
+            { label: 'Written contract: time to sue', value: '6 years (ORC 2305.06).' },
+            { label: 'Oral contract: time to sue', value: '6 years for most actions (ORC 2305.07).' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Contract Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
-              <li><strong>Contract Drafting:</strong> Draft contracts tailored to your specific transaction, industry, and business needs — not generic templates</li>
-              <li><strong>Contract Review:</strong> Identify unfavorable terms, ambiguous language, hidden liabilities, and missing provisions before you sign</li>
-              <li><strong>Negotiation:</strong> Negotiate modifications to one-sided provisions and advocate for terms that protect your interests</li>
-              <li><strong>Risk Assessment:</strong> Evaluate limitation of liability, indemnification, and insurance provisions to understand your maximum financial exposure</li>
-              <li><strong>Non-Compete and NDA Review:</strong> Assess the enforceability of restrictive covenant provisions under Ohio law</li>
-              <li><strong>Dispute Resolution Provisions:</strong> Advise on arbitration clauses, venue selection, and choice-of-law provisions and their practical consequences</li>
-              <li><strong>Contract Updates:</strong> Revise and update existing contracts to reflect current Ohio law, changed circumstances, or lessons learned from past disputes</li>
-            </ul>
+      <Section title="What makes a contract enforceable" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Offer', body: 'One party proposes definite terms.' },
+            { title: 'Acceptance', body: 'The other agrees without material change.' },
+            { title: 'Consideration', body: 'Each side gives something of value: money, a promise to perform, or forbearance.' },
+            { title: 'Mutual assent', body: 'Agreement on the essential terms, by parties with legal capacity, for a legal purpose.' },
+          ]}
+        />
+        <p>
+          Real estate contracts and contracts that cannot be performed within 1 year must also be in writing.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Contract Drafting & Review</h3>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Our firm provides dedicated contract drafting and review assistance throughout Ohio. We understand that contracts are essential for protecting your business and that the cost of getting a contract wrong can far exceed the cost of having it reviewed correctly from the start. Our attorney works closely with each client to understand their business, their goals, and the specific risks they face, then drafts or reviews contracts accordingly. Whether you need a straightforward service agreement or a complex multi-party commercial contract, we are here to make sure you are protected. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> at (614) 285-5482 to schedule a consultation about your contract needs.
-            </p>
+      <LocationsWeServe title="Business Law" />
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/business-formation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Formation</span>
-                <span className="text-sm text-navy-950/70">Start your Ohio business with the right legal foundation</span>
-              </Link>
-              <Link href="/business/employment-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Agreements</span>
-                <span className="text-sm text-navy-950/70">Draft and review employment contracts under Ohio at-will law</span>
-              </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Non-Compete Agreements</span>
-                <span className="text-sm text-navy-950/70">Enforce or challenge restrictive covenants under Ohio law</span>
-              </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Litigation</span>
-                <span className="text-sm text-navy-950/70">Pursue or defend contract disputes in Ohio courts</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Clauses most business contracts need" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Term and scope', body: 'What work is being done and for how long.' },
+            { title: 'Payment', body: 'Amount, schedule and remedies for non-payment.' },
+            { title: 'Intellectual property', body: 'Who owns work product created under the agreement.' },
+            { title: 'Confidentiality', body: 'What each side must keep private.' },
+            { title: 'Termination', body: 'Rights to end the contract, for cause and without cause.' },
+            { title: 'Limitation of liability', body: 'A cap on each party’s maximum financial exposure.' },
+            { title: 'Indemnification', body: 'Who answers for third-party claims. Ambiguous indemnity language is construed against the party seeking indemnification.' },
+            { title: 'Dispute resolution and governing law', body: 'Mediation, arbitration or a litigation venue, and which state’s law applies. Arbitration clauses are generally enforceable under ORC 2711.01.' },
+            { title: 'Integration', body: 'States that the written contract is the complete agreement.' },
+            { title: 'Force majeure', body: 'Excuses performance after unforeseeable events beyond a party’s control. It drew new attention after the COVID-19 pandemic and belongs in any long-term contract.' },
+          ]}
+        />
+        <Callout title="Get every promise in writing">
+          With an integration clause in place, Ohio&rsquo;s parol evidence rule generally keeps out earlier oral discussions. A vendor&rsquo;s
+          verbal promise that is not in the signed contract may not be enforceable.
+        </Callout>
+      </Section>
+
+      <Section title="How a contract review works">
+        <Steps
+          steps={[
+            { title: 'Understand the deal', body: 'Your business, your goals and the risks this contract carries.' },
+            { title: 'Review or draft', body: 'Flag unusual, one-sided or missing provisions, or draft terms fitted to the transaction.' },
+            { title: 'Negotiate', body: 'Push back on one-sided terms and propose language that protects you.' },
+            { title: 'Sign and revisit', body: 'Update the contract as Ohio law, your circumstances or past disputes call for.' },
+          ]}
+        />
+        <p>
+          Contracts the firm commonly drafts or reviews include service agreements, vendor and supplier contracts, commercial leases,{' '}
+          <Link href="/business/employment-agreements">employment agreements</Link>, independent contractor agreements, NDAs,{' '}
+          <Link href="/business/non-compete-agreements">non-compete agreements</Link>, LLC operating agreements, buy-sell agreements and
+          letters of intent for acquisitions. If a dispute has already started, see{' '}
+          <Link href="/business/business-litigation">business litigation</Link>. If you are starting out, see{' '}
+          <Link href="/business/business-formation">business formation</Link>.
+        </p>
+      </Section>
+
+      <Section title="What the firm does on a contract" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Drafts', body: 'Contracts fitted to your transaction and industry, not generic templates.' },
+            { title: 'Reviews', body: 'Unfavorable terms, ambiguous language, hidden liabilities and missing provisions, before you sign.' },
+            { title: 'Negotiates', body: 'Changes to one-sided provisions.' },
+            { title: 'Assesses risk', body: 'Limitation of liability, indemnification and insurance terms, and your maximum exposure.' },
+            { title: 'Checks restrictive covenants', body: 'Whether non-compete and NDA terms are enforceable under Ohio law.' },
+            { title: 'Updates old contracts', body: 'For current Ohio law, changed circumstances or lessons from past disputes.' },
+          ]}
+        />
+        <p>
+          <Link href="/contact">Contact Jwayyed Law LLC</Link> at (614) 285-5482 to schedule a consultation about a contract.
+        </p>
+      </Section>
+
+      <Section title="Related pages">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

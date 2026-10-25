@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Employment Agreement Lawyer Ohio',
-  description: 'Ohio employment agreement attorney drafting and reviewing employment contracts, offer letters, severance agreements.',
+  description:
+    'Ohio employment agreements, offer letters, severance agreements and contractor agreements, drafted and reviewed against at-will law and Ohio wage rules.',
   keywords: ['employment agreement lawyer Columbus OH', 'Ohio employment contract attorney', 'at-will employment Ohio', 'severance agreement Ohio', 'independent contractor misclassification Ohio', 'ORC 4111 employment lawyer'],
   openGraph: {
     title: 'Employment Agreement Lawyer Ohio | Jwayyed Law LLC',
+    description: 'Employment contracts in an at-will state, for Ohio employers and employees.',
     url: 'https://www.jjlawohio.com/business/employment-agreements',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/business/employment-agreements' },
 };
 
@@ -25,114 +28,166 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `Is Ohio an at-will employment state?`,
-    answer: `Yes. Ohio follows the at-will employment doctrine, which means that in the absence of a written employment contract specifying otherwise, either an employer or an employee can terminate the employment relationship at any time, for any reason or no reason, without prior notice. Ohio courts have recognized this doctrine for well over a century. However, at-will employment has important exceptions: (1) statutory exceptions under federal and Ohio law prohibit termination based on protected characteristics (race, sex, age, disability, etc.) or protected activity (whistleblowing, workers' compensation claims, jury duty); (2) implied contract exceptions, where Ohio courts have found that employee handbooks or oral promises create contractual obligations limiting at-will termination; and (3) public policy exceptions, recognized in Greeley v. Miami Valley Maintenance Contractors, Inc. (Ohio 1990), where termination violates a clearly expressed public policy. An employment agreement can define exactly how and when employment may be terminated, replacing the at-will default with agreed-upon procedures.`,
+    question: 'Is Ohio an at-will employment state?',
+    answer:
+      "Yes. Without a written contract saying otherwise, either side can end the employment at any time, for any reason or no reason, without notice. Ohio courts have applied this rule for well over a century. The exceptions: (1) federal and Ohio statutes bar firing for protected characteristics (race, sex, age, disability and others) or protected activity (whistleblowing, workers' compensation claims, jury duty); (2) implied contracts, when a handbook or oral promise limits at-will termination; and (3) the public policy exception from Greeley v. Miami Valley Maintenance Contractors, Inc. (Ohio 1990). An employment agreement can replace the at-will default with agreed procedures.",
   },
   {
-    question: `What key provisions should an Ohio employment agreement include?`,
-    answer: `A well-drafted Ohio employment agreement should address: (1) Job title and scope of duties — clearly defining the role to avoid later disputes about performance expectations; (2) Compensation structure — base salary, bonus eligibility, commission formulas, and payment timing compliant with ORC Chapter 4113 (Ohio Wage Payment Act); (3) Benefits — health insurance, retirement plans, vacation/PTO, and how accrued PTO is treated on termination (Ohio does not require payout of accrued vacation unless the agreement so provides); (4) Employment term — "at-will" versus a fixed or "for cause" termination standard; (5) Termination procedures — notice requirements, severance provisions, and what triggers termination "for cause"; (6) Restrictive covenants — non-compete, non-solicitation, and non-disclosure provisions (see our non-compete page for Ohio enforceability standards); (7) IP assignment — who owns inventions, work product, and creative materials developed on company time; (8) Dispute resolution — arbitration clause, choice of law (Ohio), and venue; and (9) Integration clause — confirming the written agreement is the entire agreement, preventing reliance on prior oral promises.`,
+    question: 'What key provisions should an Ohio employment agreement include?',
+    answer:
+      '(1) Job title and duties; (2) compensation (base salary, bonus eligibility, commission formulas and payment timing that complies with ORC Chapter 4113, the Ohio Wage Payment Act); (3) benefits, including how accrued PTO is treated at termination (Ohio does not require payout of accrued vacation unless the agreement provides for it); (4) the employment term, at-will or fixed or "for cause"; (5) termination procedures, notice, severance and what counts as cause; (6) restrictive covenants (non-compete, non-solicitation and non-disclosure; see the non-compete page for Ohio enforceability); (7) IP assignment; (8) dispute resolution, choice of law (Ohio) and venue; and (9) an integration clause.',
   },
   {
-    question: `What wage and hour laws must Ohio employers comply with in employment agreements?`,
-    answer: `Ohio employment agreements must comply with several wage and hour requirements. Under ORC Chapter 4111, Ohio's minimum wage (currently $10.45/hour for non-tipped employees as of 2024, indexed annually) applies to all covered employees; the agreement cannot waive minimum wage rights. Under ORC Chapter 4113 (the Ohio Wage Payment Act), employers must pay wages on regular paydays established in advance, and may not make unauthorized deductions. Ohio also has specific rules about final paychecks: wages due on termination must be paid on the next regular payday, not immediately. For exempt salaried employees, the agreement should comply with federal FLSA salary-basis requirements to avoid misclassification exposure. Commission structures and bonus programs should be carefully drafted to specify when bonuses are "earned" — Ohio courts have ruled that promised bonuses can become vested contractual obligations even in at-will employment if the employee satisfied the conditions for earning them before termination.`,
+    question: 'What wage and hour laws must Ohio employers comply with in employment agreements?',
+    answer:
+      "Under ORC Chapter 4111, Ohio's minimum wage (currently $10.45/hour for non-tipped employees as of 2024, indexed annually) applies to covered employees, and an agreement cannot waive it. Under ORC Chapter 4113, wages must be paid on regular paydays set in advance, without unauthorized deductions. Wages due at termination must be paid on the next regular payday, not immediately. For exempt salaried employees, the agreement should meet federal FLSA salary-basis rules to avoid misclassification. Bonus and commission terms should say when the pay is \"earned\": Ohio courts have held that a promised bonus can become a vested contractual obligation, even in at-will employment, once the employee met the conditions before termination.",
   },
   {
-    question: `What is the difference between an offer letter and a formal employment agreement?`,
-    answer: `An offer letter is a preliminary document confirming the terms of a job offer — typically salary, start date, job title, and whether employment is at-will. It is usually shorter and less formal than a full employment agreement. Ohio courts have held, however, that sufficiently specific offer letters can create binding contractual obligations. A formal employment agreement is a comprehensive document that governs the entire employment relationship, including restrictive covenants, IP assignment, dispute resolution, termination procedures, and detailed compensation terms. Which document is appropriate depends on the employee's role and the employer's need to protect business interests. For senior executives, salespeople with customer relationships, or employees with access to trade secrets, a full employment agreement with well-drafted restrictive covenants is strongly advisable. For entry-level positions, a simple at-will offer letter may suffice — but even then, a confidentiality agreement is often prudent.`,
+    question: 'What is the difference between an offer letter and a formal employment agreement?',
+    answer:
+      "An offer letter confirms the basic terms of a job offer (salary, start date, title, and whether employment is at-will) and is shorter and less formal. Ohio courts have held that a sufficiently specific offer letter can create binding obligations. A formal employment agreement governs the whole relationship, including restrictive covenants, IP assignment, dispute resolution, termination procedures and detailed pay terms. Senior executives, salespeople with customer relationships and employees with trade secret access should have a full agreement. An entry-level role may need only an at-will offer letter, though a confidentiality agreement is often wise.",
   },
   {
-    question: `How should Ohio employers structure severance agreements?`,
-    answer: `Severance agreements in Ohio are contracts in which the employer provides additional compensation (beyond final wages) in exchange for the departing employee's release of legal claims. To be enforceable, a severance agreement must be supported by adequate consideration — payment or benefits beyond what the employee is already owed. For employees age 40 or older, federal law (the Older Workers Benefit Protection Act, OWBPA) imposes specific requirements: the agreement must expressly reference the Age Discrimination in Employment Act (ADEA), give the employee 21 days to consider it (45 days if part of a group termination), provide a 7-day revocation period after signing, and be written in plain language. Ohio employers frequently include non-disparagement clauses, cooperation obligations, and reaffirmation of restrictive covenants in severance agreements. Employees should always have legal counsel review a severance agreement before signing — release of claims is permanent and covers potentially valuable legal rights.`,
+    question: 'How should Ohio employers structure severance agreements?',
+    answer:
+      "A severance agreement gives the departing employee extra pay or benefits, beyond what is already owed, in exchange for a release of legal claims; that extra consideration is what makes it enforceable. For employees 40 or older, the federal Older Workers Benefit Protection Act (OWBPA) requires that the agreement expressly reference the ADEA, give 21 days to consider it (45 days in a group termination), allow a 7-day revocation period after signing, and be in plain language. Ohio employers often add non-disparagement, cooperation and reaffirmed restrictive covenants. Employees should have counsel review a severance agreement first: the release is permanent.",
   },
   {
-    question: `What are the risks of misclassifying workers as independent contractors in Ohio?`,
-    answer: `Misclassifying an employee as an independent contractor is one of the most costly mistakes Ohio employers make. Ohio applies a multi-factor test (similar to the IRS common-law test) to determine whether a worker is truly an independent contractor or an employee. Factors include: the degree of control the employer exercises over the work; whether the worker is engaged in a distinct occupation or business; the permanency of the relationship; whether the employer supplies the tools and workspace; and the method of payment. Misclassification exposes Ohio employers to: back payroll taxes and penalties with the IRS and Ohio Department of Taxation; liability for unpaid overtime under the federal FLSA and ORC 4111.03; workers' compensation and unemployment insurance liability; and civil lawsuits by misclassified workers. Independent contractor agreements should be carefully drafted to reflect a genuine independent contractor relationship — but the actual working arrangement must also match.`,
+    question: 'What are the risks of misclassifying workers as independent contractors in Ohio?',
+    answer:
+      "Ohio applies a multi-factor test, similar to the IRS common-law test: how much control the employer has over the work, whether the worker runs a distinct business, how permanent the relationship is, who supplies the tools and workspace, and how the worker is paid. Misclassification can bring back payroll taxes and penalties from the IRS and the Ohio Department of Taxation, unpaid overtime under the federal FLSA and ORC 4111.03, workers' compensation and unemployment insurance liability, and lawsuits by the workers. The contractor agreement must reflect a real independent relationship, and the actual arrangement must match it.",
   },
   {
-    question: `Can an employee handbook create an enforceable contract in Ohio?`,
-    answer: `Potentially yes, and this is one of the most important reasons Ohio employers should have legal counsel draft and review their employee handbooks. Ohio courts have recognized that a handbook can create implied contractual obligations — particularly if it contains specific promises about termination procedures, discipline, or job security — unless the handbook includes a clear, conspicuous disclaimer stating that it is not a contract. A proper disclaimer should appear at the beginning of the handbook and should be separately acknowledged in writing by the employee. Without such a disclaimer, statements like "employees will be terminated only for cause after progressive discipline" have been held to override the at-will default. Employers should also review handbooks whenever policies change to ensure the written policies match actual practice.`,
+    question: 'Can an employee handbook create an enforceable contract in Ohio?',
+    answer:
+      'Potentially, yes. Ohio courts have found implied contractual obligations in handbooks, particularly specific promises about termination procedures, discipline or job security, unless the handbook has a clear, conspicuous disclaimer that it is not a contract. The disclaimer should appear at the start and be separately acknowledged in writing by the employee. Without one, a statement like "employees will be terminated only for cause after progressive discipline" has been held to override the at-will default. Review the handbook whenever policies change so it matches actual practice.',
   },
   {
-    question: `How does intellectual property assignment work in Ohio employment agreements?`,
-    answer: `Ohio law generally provides that work created by an employee within the scope of employment is owned by the employer as a "work made for hire" under federal copyright law. However, this default rule has gaps: inventions and works created outside of employment duties, or developed using the employee's own time and resources, may belong to the employee. A well-drafted IP assignment clause in an Ohio employment agreement explicitly assigns to the employer all inventions, work product, discoveries, and improvements made during employment that relate to the employer's business — and may extend the assignment obligation for a specified period after termination for ideas that stem from employment. Ohio has no statute (unlike some states) restricting the scope of IP assignment clauses, but overly broad clauses may face scrutiny. Employers should balance comprehensive IP protection with the practical need to attract employees who maintain their own creative or inventive activities.`,
+    question: 'How does intellectual property assignment work in Ohio employment agreements?',
+    answer:
+      'Work an employee creates within the scope of employment is generally owned by the employer as a "work made for hire" under federal copyright law. There are gaps: inventions and works made outside the job, or on the employee\'s own time and resources, may belong to the employee. An IP assignment clause expressly assigns to the employer all inventions, work product, discoveries and improvements made during employment that relate to its business, and may reach ideas that stem from the job for a set period after it ends. Ohio has no statute limiting these clauses, but overly broad ones may face scrutiny.',
   },
 ];
 
-export default function EmploymentAgreementsPage() {
+const RELATED = [
+  { href: '/business/contract-drafting-review', title: 'Contract drafting and review', subtitle: 'Business contracts of every kind under Ohio law' },
+  { href: '/business/non-compete-agreements', title: 'Non-compete agreements', subtitle: 'Restrictive covenants under Ohio’s Raimonde standard' },
+  { href: '/business/business-litigation', title: 'Business litigation', subtitle: 'Employment and business disputes in Ohio courts' },
+  { href: '/business/business-compliance', title: 'Business compliance', subtitle: 'Ohio employment law and regulatory obligations' },
+];
 
+export default function EmploymentAgreementsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Employment Agreement Lawyer"
-        description="Drafting, reviewing, and negotiating employment contracts, offer letters, severance agreements, and independent contractor agreements under Ohio law."
+        title="Employment agreements in Ohio"
+        description="Ohio is an at-will state: without a written agreement, either side can end the job at any time. An employment agreement replaces that default with terms both sides know in advance."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Employment Agreements in Ohio: Protecting Your Rights and Your Business
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The employment relationship in Ohio is fundamentally shaped by a single legal default: at-will employment. Under Ohio's well-established at-will doctrine, either party can end the employment relationship at any time, for virtually any reason, without notice — unless an employment agreement says otherwise. That "unless" carries enormous weight. A carefully drafted employment agreement can replace unpredictable at-will defaults with clear, negotiated terms: when and how employment can be terminated, what compensation and benefits the employee is owed, how disputes will be resolved, and what restrictions apply when the relationship ends. A poorly drafted agreement — or no written agreement at all — leaves both employers and employees exposed to disputes, costly litigation, and outcomes they never intended. Employment agreements are a key part of our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">Ohio business law practice</Link>. At Jwayyed Law LLC, we assist employers and employees throughout Columbus and Ohio with drafting, reviewing, and negotiating employment agreements that reflect their actual understanding and legal rights.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's at-will employment doctrine has important statutory and common-law exceptions that every employer and employee should understand. Federal and Ohio civil rights statutes prohibit termination based on race, color, religion, sex, national origin, age (40 and older), disability, pregnancy, and other protected characteristics. Ohio's whistleblower protection statute (<strong>ORC 4113.52</strong>) protects employees who report certain employer violations to appropriate authorities. Ohio courts have also recognized a public policy exception to at-will employment, established in <em>Greeley v. Miami Valley Maintenance Contractors, Inc.</em> (1990) and its progeny: an employer cannot terminate an employee in violation of a clear public policy expressed in the Ohio Constitution, Ohio statutes, or administrative regulations — such as firing an employee for filing a workers' compensation claim, serving on a jury, or reporting a workplace safety violation. Understanding these exceptions is critical for employers structuring termination decisions and for employees evaluating whether a termination was unlawful.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Compensation structure is one of the most heavily negotiated aspects of Ohio employment agreements, and getting it right requires attention to both contract law and regulatory requirements. Ohio's minimum wage is governed by <strong>ORC Chapter 4111</strong> and is indexed to inflation annually under the Ohio Constitution. Wage payment timing and permissible deductions are regulated under <strong>ORC Chapter 4113</strong> (the Ohio Wage Payment Act). Commission and bonus structures require particular care: Ohio courts have held that once an employee satisfies the conditions for earning a commission or bonus, the payment becomes a vested contractual right — meaning an employer cannot terminate an employee on the eve of a large commission payment and avoid liability. Employment agreements should explicitly address when bonuses and commissions are "earned" to avoid ambiguity and litigation.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For employers, employment agreements are also a critical vehicle for protecting business interests through restrictive covenants. Non-compete, non-solicitation, and non-disclosure provisions should be carefully tailored to satisfy Ohio's reasonableness standard under <em>Raimonde v. Van Vlerah</em>, and should be integrated with the employer's broader intellectual property protections. Intellectual property assignment clauses ensure that inventions, work product, and creative output developed during employment are owned by the employer — filling gaps in the "work made for hire" doctrine under federal copyright law. Dispute resolution clauses specifying arbitration, Ohio choice of law, and Franklin County (or another appropriate Ohio county) as the agreed venue can significantly affect how efficiently disputes are resolved and what procedural rights each party has. All of these provisions interact, and the agreement needs to be considered as a whole.
-            </p>
+      <Section
+        title="At-will employment and its exceptions"
+        intro={
+          <p>
+            Unless an agreement says otherwise, Ohio employment can end at any time, for virtually any reason, without notice. A clear
+            agreement sets termination, pay, benefits, dispute resolution and post-employment restrictions instead.
+          </p>
+        }
+      >
+        <p>
+          The firm drafts, reviews and negotiates employment agreements for employers and employees in Columbus and throughout Ohio as
+          part of its <Link href="/business">Ohio business law practice</Link>. A poorly drafted agreement, or none at all, leaves both
+          sides open to disputes they never intended.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'Protected characteristics', body: 'Federal and Ohio civil rights laws bar firing based on race, color, religion, sex, national origin, age (40 and older), disability, pregnancy and other characteristics.' },
+            { title: 'Whistleblowing', body: 'ORC 4113.52 protects employees who report certain employer violations to the proper authorities.' },
+            {
+              title: 'Public policy',
+              body: 'Under Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), no firing in violation of a clear public policy in the Ohio Constitution, statutes or regulations, such as for a workers’ compensation claim, jury service or a safety report.',
+            },
+            { title: 'Implied contract', body: 'Handbooks and oral promises can limit at-will termination.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Types of Employment Agreements We Draft and Review
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Executive employment agreements:</strong> Comprehensive contracts for C-suite and senior management, including "for cause" termination definitions, severance structures, equity or bonus provisions, and post-employment restrictions.</li>
-              <li><strong>Standard employment agreements:</strong> Written employment contracts for professional employees that replace at-will defaults with agreed-upon termination procedures and compensation terms.</li>
-              <li><strong>Offer letters:</strong> Reviewed and drafted to include appropriate at-will disclaimers while clearly confirming material compensation terms — avoiding the implied-contract liability created by poorly worded letters.</li>
-              <li><strong>Severance agreements and release of claims:</strong> Drafted to satisfy federal OWBPA requirements for employees 40 and older; reviewed on behalf of departing employees to evaluate adequacy of consideration and scope of the release.</li>
-              <li><strong>Independent contractor agreements:</strong> Structured to reflect genuine independent contractor relationships and withstand IRS and Ohio Department of Taxation scrutiny on worker classification.</li>
-              <li><strong>Employee handbook review:</strong> Ensuring handbooks include proper at-will disclaimers, that policies match actual practice, and that the handbook does not inadvertently create implied contractual obligations.</li>
-              <li><strong>Separation and transition agreements:</strong> Governing post-termination arrangements, including cooperation obligations, references, and ongoing benefit continuation.</li>
-            </ul>
+      <Section title="Pay rules the agreement must follow" tone="ice">
+        <FactTable
+          title="Ohio wage and hour requirements"
+          rows={[
+            { label: 'Minimum wage (ORC Chapter 4111)', value: '$10.45/hour for non-tipped employees as of 2024, indexed to inflation annually under the Ohio Constitution. Cannot be waived.' },
+            { label: 'Wage payment (ORC Chapter 4113)', value: 'Regular paydays set in advance and no unauthorized deductions.' },
+            { label: 'Final pay', value: 'On the next regular payday after termination.' },
+            { label: 'Accrued vacation', value: 'Ohio does not require payout unless the agreement provides for it.' },
+            { label: 'Exempt employees', value: 'Must meet federal FLSA salary-basis rules.' },
+            { label: 'Overtime', value: 'Under the federal FLSA and ORC 4111.03.' },
+          ]}
+        />
+        <Callout title="Say when bonuses and commissions are earned">
+          Ohio courts have held that once an employee meets the conditions for a bonus or commission, it becomes a vested contractual
+          right. An employer cannot fire someone on the eve of a large commission and avoid paying it.
+        </Callout>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Wrongful Termination Risk and How Agreements Reduce It
-            </h3>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              For Ohio employers, a well-structured employment agreement — paired with documented performance management and a compliant employee handbook — is one of the most effective tools for reducing wrongful termination risk. When an agreement defines "cause" for termination, specifies the procedures required before termination (warnings, performance improvement plans, or HR review), and includes a valid arbitration clause, it simultaneously protects against improvised termination decisions and provides a defined, private forum for resolving disputes that do arise.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For Ohio employees facing termination or negotiating a departure, understanding what the employment agreement actually says — as opposed to what HR representatives say it says — is essential. Many employees do not realize they have negotiating leverage, particularly if they have specialized knowledge, customer relationships the employer wants to protect, or potential legal claims the employer prefers to resolve privately. An attorney review before signing a severance agreement or a non-compete can make a significant financial difference. For related services, see our pages on <Link href="/business/non-compete-agreements" className="text-sky-deep underline hover:text-navy-950">Ohio non-compete agreements</Link> and <Link href="/business/contract-drafting-review" className="text-sky-deep underline hover:text-navy-950">contract drafting and review</Link>. To discuss your employment agreement needs, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact our office</Link> to schedule a consultation.
-            </p>
+      <LocationsWeServe title="Business Law" />
 
-            <LocationsWeServe title="Business Law" />
+      <Section title="Protecting the employer's business" tone="ice">
+        <p>
+          Non-compete, non-solicitation and non-disclosure terms must satisfy Ohio&rsquo;s reasonableness standard under{' '}
+          <em>Raimonde v. Van Vlerah</em> and fit with the employer&rsquo;s wider IP protections. An IP assignment clause fills the gaps
+          in the federal &ldquo;work made for hire&rdquo; doctrine. Clauses choosing arbitration, Ohio law and a venue such as Franklin
+          County affect how fast disputes resolve and what procedural rights each side has. These provisions interact, so the agreement
+          has to be read as a whole.
+        </p>
+        <FactTable
+          title="Severance for employees 40 and older (OWBPA)"
+          rows={[
+            { label: 'Consideration', value: 'Pay or benefits beyond what the employee is already owed.' },
+            { label: 'ADEA reference', value: 'The agreement must expressly reference the Age Discrimination in Employment Act.' },
+            { label: 'Time to consider', value: '21 days, or 45 days in a group termination.' },
+            { label: 'Revocation', value: '7 days after signing.' },
+            { label: 'Language', value: 'Plain language.' },
+          ]}
+        />
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Contract Drafting & Review</span>
-                <span className="text-sm text-navy-950/70">Draft and review all types of business contracts under Ohio law</span>
-              </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Non-Compete Agreements</span>
-                <span className="text-sm text-navy-950/70">Draft and enforce restrictive covenants under Ohio's Raimonde standard</span>
-              </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Litigation</span>
-                <span className="text-sm text-navy-950/70">Litigate employment and business disputes in Ohio courts</span>
-              </Link>
-              <Link href="/business/business-compliance" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Compliance</span>
-                <span className="text-sm text-navy-950/70">Meet Ohio employment law and regulatory compliance obligations</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Agreements the firm drafts and reviews">
+        <PointGrid
+          points={[
+            { title: 'Executive agreements', body: '"For cause" definitions, severance, equity or bonus terms and post-employment restrictions for senior management.' },
+            { title: 'Standard employment agreements', body: 'Agreed termination procedures and pay terms in place of at-will defaults for professional employees.' },
+            { title: 'Offer letters', body: 'Proper at-will disclaimers and clear pay terms, without the implied-contract risk of loose wording.' },
+            { title: 'Severance and releases', body: 'Drafted to meet OWBPA, or reviewed for a departing employee for adequate consideration and release scope.' },
+            { title: 'Independent contractor agreements', body: 'Built to reflect a real contractor relationship that withstands IRS and Ohio Department of Taxation scrutiny.' },
+            { title: 'Handbook review', body: 'At-will disclaimers, policies that match practice, and no accidental implied contracts.' },
+            { title: 'Separation and transition agreements', body: 'Cooperation, references and continued benefits after termination.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Reducing wrongful termination risk" tone="ice">
+        <p>
+          For employers, an agreement that defines cause, sets the steps before termination (warnings, improvement plans or HR review)
+          and includes a valid arbitration clause, paired with documented performance management and a compliant handbook, guards
+          against improvised firings and gives a private forum for disputes.
+        </p>
+        <p>
+          For employees, what the agreement actually says matters more than what HR says it says. Specialized knowledge, customer
+          relationships or potential claims the employer would rather settle privately can give you leverage. A review before signing a
+          severance agreement or non-compete can make a real financial difference.
+        </p>
+        <p>
+          See also <Link href="/business/non-compete-agreements">Ohio non-compete agreements</Link> and{' '}
+          <Link href="/business/contract-drafting-review">contract drafting and review</Link>. To discuss an employment agreement,{' '}
+          <Link href="/contact">contact the office</Link> to schedule a consultation.
+        </p>
+      </Section>
+
+      <Section title="Related business matters">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

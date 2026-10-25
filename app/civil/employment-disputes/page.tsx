@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Employment Disputes Lawyer in Ohio',
-  description: 'Experienced Ohio employment disputes attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Protecting your rights.',
+  description:
+    'Wrongful termination, discrimination, harassment and retaliation claims in Ohio, with the EEOC, OCRC and court filing deadlines that apply.',
   keywords: ['employment disputes lawyer Columbus OH', 'employment attorney Ohio', 'wrongful termination lawyer', 'Franklin County employment attorney'],
   openGraph: {
     title: 'Employment Disputes Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Employee claims under Ohio and federal law, and the deadlines for filing them.',
     url: 'https://www.jjlawohio.com/civil/employment-disputes',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil/employment-disputes' },
 };
 
@@ -25,110 +28,182 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is wrongful termination in Ohio?`,
-    answer: `Ohio is an at-will employment state, which means that in most situations an employer can terminate an employee for any reason — or no reason — without legal liability. However, wrongful termination occurs when an employer fires an employee in violation of a statute, contract, or public policy. The Ohio Supreme Court recognized a public policy exception to at-will employment in Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), which protects employees from discharge for exercising a legal right or duty — such as filing a workers' compensation claim, serving on jury duty, or reporting illegal activity. Wrongful termination can also arise from violations of the Ohio Civil Rights Act (ORC Chapter 4112), federal anti-discrimination statutes, or the terms of an employment contract.`,
+    question: 'What is wrongful termination in Ohio?',
+    answer:
+      "Ohio is an at-will employment state: in most situations an employer can fire an employee for any reason, or no reason, without liability. A termination is wrongful when it violates a statute, a contract or public policy. In Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), the Ohio Supreme Court recognized a public policy exception that protects employees fired for exercising a legal right or duty, such as filing a workers' compensation claim, serving on a jury or reporting illegal activity. Wrongful termination can also come from violations of the Ohio Civil Rights Act (ORC Chapter 4112), federal anti-discrimination statutes or the terms of an employment contract.",
   },
   {
-    question: `How do I file a discrimination complaint in Ohio?`,
-    answer: `Ohio employees who believe they have been discriminated against have two primary administrative routes. The Ohio Civil Rights Commission (OCRC) accepts discrimination charges under ORC Chapter 4112 and must be filed within 2 years of the discriminatory act. Alternatively — or in addition — employees may file a charge with the Equal Employment Opportunity Commission (EEOC) under federal law. Because Ohio is a deferral state, EEOC charges must be filed within 300 days of the discriminatory act (compared to 180 days in non-deferral states). Filing with the EEOC is generally required before bringing a federal lawsuit. An attorney can help you navigate the administrative process, preserve claims in both forums, and evaluate which pathway is most advantageous for your situation.`,
+    question: 'How do I file a discrimination complaint in Ohio?',
+    answer:
+      'There are two main administrative routes. A charge with the Ohio Civil Rights Commission (OCRC) under ORC Chapter 4112 must be filed within 2 years of the discriminatory act. A charge with the Equal Employment Opportunity Commission (EEOC) under federal law must be filed within 300 days, because Ohio is a deferral state (the limit is 180 days in non-deferral states). You can file with either or both. An EEOC charge is generally required before a federal lawsuit. An attorney can preserve your claims in both forums and help you choose the better route.',
   },
   {
-    question: `What is the Ohio Civil Rights Act and what does it protect?`,
-    answer: `The Ohio Civil Rights Act (ORC Chapter 4112) is Ohio's primary employment anti-discrimination law. It prohibits employers from discriminating against employees and job applicants on the basis of race, color, religion, sex, national origin, disability, age (for individuals 40 and older), military status, ancestry, and pregnancy. The Act covers employers with four or more employees and applies to hiring, firing, compensation, job assignments, promotions, and other terms and conditions of employment. ORC 4112.99 allows employees to bring a civil lawsuit directly in court within 2 years of the discriminatory act, in addition to the administrative route through the OCRC. Discrimination claims under ORC Chapter 4112 can result in back pay, front pay, compensatory damages, and attorney fees.`,
+    question: 'What is the Ohio Civil Rights Act and what does it protect?',
+    answer:
+      "ORC Chapter 4112 is Ohio's main employment anti-discrimination law. It bars discrimination against employees and applicants based on race, color, religion, sex, national origin, disability, age (40 and older), military status, ancestry and pregnancy. It covers employers with four or more employees and applies to hiring, firing, pay, job assignments, promotions and other terms of employment. ORC 4112.99 allows a civil lawsuit directly in court within 2 years of the discriminatory act, alongside the OCRC route. Remedies can include back pay, front pay, compensatory damages and attorney fees.",
   },
   {
-    question: `What is Ohio's whistleblower protection law?`,
-    answer: `Ohio's Whistleblower Protection Act, ORC 4113.52, protects employees who report certain illegal activities by their employers. Under ORC 4113.52, an employee who reasonably believes a violation of state or federal law has occurred, is occurring, or will occur must first notify the employer in writing and give the employer 24 hours to correct the violation before reporting to a government agency. If the employer retaliates against the employee for making such a report — through termination, demotion, pay reduction, or other adverse action — the employee may bring a civil claim for reinstatement, back pay, and attorney fees. The lawsuit must be filed within 180 days of the retaliatory act. Federal whistleblower protections under various industry-specific statutes may provide additional remedies and different procedures.`,
+    question: "What is Ohio's whistleblower protection law?",
+    answer:
+      "Ohio's Whistleblower Protection Act, ORC 4113.52, protects employees who report certain illegal activity by their employer. An employee who reasonably believes a violation of state or federal law has occurred, is occurring or will occur must first notify the employer in writing and give it 24 hours to correct the violation before reporting to a government agency. If the employer retaliates (termination, demotion, a pay cut or other adverse action), the employee may sue for reinstatement, back pay and attorney fees. The lawsuit must be filed within 180 days of the retaliatory act. Federal industry-specific whistleblower laws may add remedies with different procedures.",
   },
   {
-    question: `What are the filing deadlines for employment discrimination claims in Ohio?`,
-    answer: `Missing filing deadlines in employment discrimination cases is typically fatal to the claim, so understanding the applicable deadlines is critical. For EEOC charges under federal law (Title VII, ADEA, ADA), Ohio employees must file within 300 days of the discriminatory act because Ohio is a deferral state. For OCRC charges under Ohio's Civil Rights Act (ORC Chapter 4112), the filing deadline is within 2 years of the discriminatory act. If you choose to file a direct civil lawsuit in Ohio court under ORC 4112.99, that lawsuit must also be filed within 2 years. For FMLA retaliation claims under 29 U.S.C. § 2617, the statute of limitations is 2 years (3 years for willful violations). For workers' compensation retaliation claims under ORC 4123.90, the deadline is 180 days.`,
+    question: 'What are the filing deadlines for employment discrimination claims in Ohio?',
+    answer:
+      "Missing a deadline is usually fatal to the claim. EEOC charges under Title VII, the ADEA or the ADA: within 300 days of the discriminatory act, because Ohio is a deferral state. OCRC charges under ORC Chapter 4112: within 2 years. A direct lawsuit in Ohio court under ORC 4112.99: within 2 years. FMLA retaliation claims under 29 U.S.C. § 2617: 2 years (3 years for willful violations). Workers' compensation retaliation claims under ORC 4123.90: 180 days.",
   },
   {
-    question: `What is a hostile work environment in Ohio?`,
-    answer: `A hostile work environment is a form of workplace harassment that violates Ohio and federal law when it is based on a protected characteristic — such as race, sex, age, disability, or national origin — and is severe or pervasive enough to create an abusive work environment. Under ORC Chapter 4112 and Title VII, isolated incidents or petty slights generally do not meet the threshold; the conduct must be sufficiently severe or pervasive that a reasonable person would find the environment hostile or abusive, and the victim must subjectively find it hostile. Courts consider the frequency, severity, whether the conduct is physically threatening or humiliating, and whether it interferes with the employee's work performance. Employers can be held liable for hostile work environments created by supervisors or coworkers if they knew or should have known about the conduct and failed to take corrective action.`,
+    question: 'What is a hostile work environment in Ohio?',
+    answer:
+      "It is workplace harassment based on a protected characteristic, such as race, sex, age, disability or national origin, that is severe or pervasive enough to create an abusive work environment. Under ORC Chapter 4112 and Title VII, isolated incidents and petty slights generally do not qualify. A reasonable person must find the environment hostile or abusive, and so must the victim. Courts look at how often it happened, how severe it was, whether it was physically threatening or humiliating, and whether it interfered with the employee's work. An employer can be liable for harassment by supervisors or coworkers if it knew or should have known and failed to correct it.",
   },
   {
-    question: `Can I be fired for filing a workers' compensation claim in Ohio?`,
-    answer: `No. Ohio law under ORC 4123.90 explicitly prohibits employers from retaliating against an employee for filing a workers' compensation claim, participating in a workers' compensation proceeding, or exercising any other right under Ohio's workers' compensation laws. Retaliation in violation of ORC 4123.90 can include termination, demotion, reduction in pay, or other adverse employment actions. An employee who is retaliated against for filing a workers' compensation claim may bring a civil lawsuit to recover reinstatement, back pay, and other damages. The lawsuit must be filed within 180 days of the retaliatory act. This protection is part of the broader public policy exception to at-will employment recognized by the Ohio Supreme Court in Greeley v. Miami Valley.`,
+    question: "Can I be fired for filing a workers' compensation claim in Ohio?",
+    answer:
+      "No. ORC 4123.90 bars employers from retaliating against an employee for filing a workers' compensation claim, taking part in a workers' compensation proceeding, or exercising any other right under Ohio's workers' compensation laws. Retaliation can include termination, demotion, a pay cut or other adverse action. The employee may sue for reinstatement, back pay and other damages, and the lawsuit must be filed within 180 days of the retaliatory act. This protection is part of the public policy exception to at-will employment recognized in Greeley v. Miami Valley.",
   },
   {
-    question: `Do I need an attorney for an employment dispute in Ohio?`,
-    answer: `Employment disputes involve complex federal and state laws, strict administrative filing deadlines, and the practical challenge of taking on an employer who has legal counsel and institutional resources. An experienced employment attorney can evaluate your claims, identify the strongest legal theories, navigate the administrative process at the EEOC or OCRC, conduct discovery, negotiate settlements, and represent you in court or arbitration. Given that EEOC charges must be filed within 300 days and some state law claims have even shorter deadlines, consulting an attorney promptly after an adverse employment action is important. Jwayyed Law LLC helps employees throughout Ohio understand their rights and pursue employment claims effectively.`,
+    question: 'Do I need an attorney for an employment dispute in Ohio?',
+    answer:
+      'Employment disputes involve federal and state laws, strict administrative deadlines, and an employer that has its own lawyers. An attorney can evaluate your claims, identify the strongest legal theories, handle the EEOC or OCRC process, conduct discovery, negotiate a settlement and represent you in court or arbitration. EEOC charges must be filed within 300 days and some state claims have shorter deadlines, so talk to an attorney soon after an adverse employment action.',
   },
 ];
 
-export default function EmploymentDisputesPage() {
+const RELATED = [
+  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Enforcing or defending contract obligations and recovering damages' },
+  { href: '/civil/debt-collection-defense', title: 'Debt collection defense', subtitle: 'Defending a collection lawsuit and unfair collection practices' },
+  { href: '/civil', title: 'Defamation and other civil matters', subtitle: 'Protecting your reputation against false and harmful statements' },
+  { href: '/civil/appeals', title: 'Appeals', subtitle: 'Challenging a court decision in the Ohio appellate courts' },
+];
 
+export default function EmploymentDisputesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Employment Disputes Lawyer"
-        description="Experienced legal representation for employment disputes. Protecting your rights in the workplace."
+        title="Employment disputes in Ohio"
+        description="Wrongful termination, discrimination, harassment and retaliation claims for Ohio employees. An EEOC charge must be filed within 300 days of the discriminatory act."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Employment Disputes in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Employment disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve wrongful termination, workplace discrimination, harassment, retaliation, whistleblower claims, and violations of wage and hour laws. Ohio is an at-will employment state, but that does not mean employers can do whatever they want — both the Ohio Civil Rights Act (ORC Chapter 4112) and a robust set of federal laws including Title VII, the ADEA, the ADA, and the FMLA provide meaningful protections for Ohio employees. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC represents employees who have been mistreated in the workplace and helps them navigate the complex administrative and judicial processes available under Ohio and federal law. Employment disputes may also involve <Link href="/business/employment-agreements" className="text-sky-deep underline hover:text-navy-950">employment agreement</Link> issues such as non-compete clauses and severance terms.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Ohio Civil Rights Act and Protected Classes</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio&apos;s Civil Rights Act (ORC Chapter 4112) prohibits employment discrimination based on race, color, religion, sex, national origin, disability, age (40 and older), military status, ancestry, and pregnancy. It applies to employers with four or more employees and covers all aspects of the employment relationship — hiring, firing, promotions, compensation, job assignments, and other terms and conditions of employment. ORC 4112.99 allows employees to bring a direct civil lawsuit within 2 years of the discriminatory act, in addition to filing an administrative charge with the Ohio Civil Rights Commission (OCRC). Federal counterparts — Title VII (race, sex, religion, national origin), the Age Discrimination in Employment Act (ADEA, 29 U.S.C. § 623), and the Americans with Disabilities Act (ADA, 42 U.S.C. § 12101) — provide parallel federal protections with their own procedures and remedies.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '300 days', label: 'to file an EEOC charge (Ohio is a deferral state)' },
+          { figure: '2 years', label: 'to file with the OCRC or sue under ORC 4112.99' },
+          { figure: '180 days', label: 'to sue for whistleblower or workers’ compensation retaliation' },
+          { figure: '4 employees', label: 'is enough for the Ohio Civil Rights Act to apply' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Wrongful Termination and the Public Policy Exception</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              While Ohio&apos;s at-will employment doctrine gives employers broad authority to terminate employees, the Ohio Supreme Court established an important public policy exception in Greeley v. Miami Valley Maintenance Contractors, Inc. (1990). Under this exception, an employer cannot fire an employee for exercising a right expressly granted by law, for complying with a legal duty, for refusing to engage in illegal conduct, or for reporting illegal activity. Common examples include termination for filing a workers&apos; compensation claim (ORC 4123.90), for jury duty service, or for reporting wage theft or safety violations. Proving a public policy wrongful termination claim requires identifying a clear public policy in an Ohio statute, constitutional provision, or administrative regulation that was violated by the termination.
-            </p>
+      <Section
+        title="What Ohio and federal law protect"
+        intro={
+          <p>
+            Ohio is an at-will state, but the Ohio Civil Rights Act (ORC Chapter 4112) and federal laws including Title VII, the ADEA,
+            the ADA and the FMLA still limit what an employer can do.
+          </p>
+        }
+      >
+        <p>
+          The firm represents employees in Columbus, Cincinnati, Dayton and throughout Ohio in wrongful termination, discrimination,
+          harassment, retaliation, whistleblower and wage and hour disputes, as part of its{' '}
+          <Link href="/civil">civil litigation practice</Link>. Some disputes also turn on an{' '}
+          <Link href="/business/employment-agreements">employment agreement</Link>, such as a non-compete clause or severance terms.
+        </p>
+        <FactTable
+          title="The Ohio Civil Rights Act (ORC Chapter 4112)"
+          rows={[
+            { label: 'Protected classes', value: 'Race, color, religion, sex, national origin, disability, age (40 and older), military status, ancestry and pregnancy.' },
+            { label: 'Covered employers', value: 'Four or more employees.' },
+            { label: 'What it covers', value: 'Hiring, firing, promotions, pay, job assignments and other terms and conditions of employment.' },
+            { label: 'Remedies', value: 'Back pay, front pay, compensatory damages and attorney fees.' },
+          ]}
+          note="Federal parallels: Title VII (race, sex, religion, national origin), the ADEA (29 U.S.C. § 623) and the ADA (42 U.S.C. § 12101), each with its own procedures and remedies."
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">EEOC, OCRC, and Filing Deadlines</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Filing deadlines in employment discrimination cases are strictly enforced and missing them permanently bars the claim. Ohio employees pursuing federal discrimination claims must file a charge with the EEOC within 300 days of the discriminatory act (Ohio is a deferral state, which extends the normal 180-day federal deadline). Employees pursuing state law discrimination claims through the OCRC must file within 2 years. If an employee wants to file a direct civil lawsuit in Ohio court under ORC 4112.99, the 2-year limitations period also applies. FMLA retaliation claims under 29 U.S.C. § 2617 have a 2-year limitations period (3 years for willful violations), and workers&apos; compensation retaliation claims under ORC 4123.90 must be filed within 180 days. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> promptly after an adverse employment action to preserve all available claims.
-            </p>
+      <Section title="Filing deadlines" tone="ice">
+        <FactTable
+          title="Deadlines for employment claims"
+          rows={[
+            { label: 'EEOC charge', value: '300 days from the discriminatory act (180 days in non-deferral states). Generally required before a federal lawsuit.' },
+            { label: 'OCRC charge', value: '2 years.' },
+            { label: 'Lawsuit under ORC 4112.99', value: '2 years.' },
+            { label: 'FMLA retaliation (29 U.S.C. § 2617)', value: '2 years, or 3 years for willful violations.' },
+            { label: 'Whistleblower suit (ORC 4113.52)', value: '180 days from the retaliatory act.' },
+            { label: 'Workers’ compensation retaliation (ORC 4123.90)', value: '180 days.' },
+          ]}
+          note="These deadlines are strictly enforced. Missing one permanently bars the claim."
+        />
+        <p>
+          <Link href="/contact">Contact Jwayyed Law LLC</Link> soon after an adverse employment action to preserve every claim you have.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Whistleblower and Retaliation Protections</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio employees are protected from retaliation for engaging in legally protected activities. Ohio&apos;s Whistleblower Protection Act (ORC 4113.52) protects employees who report employer violations of state or federal law, subject to specific notice requirements. ORC 4123.90 protects employees who file workers&apos; compensation claims or participate in workers&apos; compensation proceedings. Federal law provides additional retaliation protections: Title VII and Ohio&apos;s Civil Rights Act prohibit retaliation for filing discrimination charges or participating in discrimination proceedings; the FMLA (29 U.S.C. § 2615) prohibits retaliation for taking protected leave; and the ADEA protects employees who oppose age discrimination. Retaliation claims can arise even when the underlying discrimination claim is not ultimately proven — the employee need only show they had a reasonable, good-faith belief that a protected activity was occurring.
-            </p>
+      <LocationsWeServe title="Civil" />
 
-            <LocationsWeServe title="Civil" />
+      <Section title="Claims an employee can bring" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Wrongful termination (public policy)',
+              body: 'Under Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), an employer cannot fire you for exercising a legal right, complying with a legal duty, refusing to break the law or reporting illegal activity. Examples: filing a workers’ compensation claim (ORC 4123.90), jury duty, or reporting wage theft or safety violations. The claim needs a clear public policy in an Ohio statute, constitutional provision or regulation.',
+            },
+            {
+              title: 'Discrimination',
+              body: 'Adverse treatment based on a protected class under ORC Chapter 4112 or federal law.',
+            },
+            {
+              title: 'Hostile work environment',
+              body: 'Harassment based on a protected characteristic that is severe or pervasive enough to be abusive. Isolated incidents and petty slights generally do not qualify.',
+            },
+            {
+              title: 'Whistleblower retaliation',
+              body: 'ORC 4113.52 protects employees who report violations of state or federal law, after written notice to the employer and 24 hours to correct it.',
+            },
+            {
+              title: 'Other retaliation',
+              body: 'Title VII and the Ohio Civil Rights Act bar retaliation for discrimination charges; the FMLA (29 U.S.C. § 2615) for protected leave; the ADEA for opposing age discrimination. A reasonable, good-faith belief is enough even if the underlying claim is not proven.',
+            },
+            {
+              title: 'Workers’ compensation retaliation',
+              body: 'ORC 4123.90 protects employees who file a claim or take part in a workers’ compensation proceeding.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an Employment Disputes Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
-              <li><strong>Claims Evaluation:</strong> Analyze employment issues, identify viable legal theories, and evaluate the strength of your claims</li>
-              <li><strong>EEOC and OCRC Charges:</strong> File timely administrative charges with the EEOC (within 300 days) and OCRC (within 2 years)</li>
-              <li><strong>Negotiations:</strong> Negotiate severance agreements, settlements, and reinstatement</li>
-              <li><strong>Litigation:</strong> Represent you in court or arbitration to pursue employment claims</li>
-              <li><strong>Retaliation Claims:</strong> Pursue claims for wrongful termination, retaliation, and workers&apos; compensation retaliation under ORC 4123.90</li>
-              <li><strong>Whistleblower Claims:</strong> Advise on and pursue claims under Ohio&apos;s Whistleblower Protection Act (ORC 4113.52)</li>
-            </ul>
+      <Section title="How a discrimination claim proceeds">
+        <Steps
+          steps={[
+            { title: 'Evaluate the claim', body: 'Identify the legal theories that fit and the deadlines that apply to each.' },
+            { title: 'File the charge', body: 'With the EEOC within 300 days, the OCRC within 2 years, or both.' },
+            { title: 'Negotiate', body: 'Severance, settlement or reinstatement, often during the administrative process.' },
+            { title: 'Litigate', body: 'A lawsuit in court or a claim in arbitration if the dispute does not resolve.' },
+          ]}
+        />
+        <Callout title="Notice comes first for whistleblowers">
+          Under ORC 4113.52, written notice to the employer and a 24-hour chance to correct the violation come before a report to a
+          government agency.
+        </Callout>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
-                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
-              </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Debt Collection Defense</span>
-                <span className="text-sm text-navy-950/70">Defend against unfair debt collection practices and protect your rights</span>
-              </Link>
-              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Defamation</span>
-                <span className="text-sm text-navy-950/70">Protect your reputation against false and harmful statements</span>
-              </Link>
-              <Link href="/civil/appeals" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Appeals</span>
-                <span className="text-sm text-navy-950/70">Challenge unfavorable court decisions in Ohio appellate courts</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="What the firm does for employees" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Evaluates your claims', body: 'Which legal theories are viable and how strong they are.' },
+            { title: 'Files the charges', body: 'Timely EEOC (300 days) and OCRC (2 years) charges.' },
+            { title: 'Negotiates', body: 'Severance agreements, settlements and reinstatement.' },
+            { title: 'Litigates', body: 'Represents you in court or arbitration.' },
+            { title: 'Pursues retaliation claims', body: 'Wrongful termination, retaliation and workers’ compensation retaliation under ORC 4123.90.' },
+            { title: 'Handles whistleblower claims', body: 'Advice and claims under ORC 4113.52.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Related civil matters">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

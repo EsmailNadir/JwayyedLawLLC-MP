@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Eviction Lawyer in Ohio',
-  description: 'Experienced Ohio eviction attorney representing landlords and tenants in eviction proceedings. Schedule consultation: (614) 285-5482',
+  description:
+    'Ohio evictions for landlords and tenants: the 3-day notice, the court hearing, the writ of possession and tenant defenses. Call (614) 285-5482.',
   keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney'],
   openGraph: {
     title: 'Eviction Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Notice, filing, hearing and defenses in an Ohio eviction, for landlords and tenants.',
     url: 'https://www.jjlawohio.com/civil/evictions',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil/evictions' },
 };
 
@@ -26,179 +29,190 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is the eviction process in Ohio?',
-    answer: 'Eviction process in Ohio under Ohio Revised Code Chapter 1923 requires landlords to file an eviction action (forcible entry and detainer) in court, serve notice on tenants, obtain a court order, and have the sheriff execute the eviction. Self-help eviction (changing locks, removing property) is illegal. Eviction proceedings move quickly and require immediate legal representation to protect tenant rights.',
+    answer:
+      'Under Ohio Revised Code Chapter 1923, a landlord must file an eviction action (forcible entry and detainer) in court, serve the tenant, get a court order and have the sheriff carry out the eviction. Self-help eviction, such as changing the locks or removing property, is illegal. Evictions move quickly, so get legal help as soon as the case starts.',
   },
   {
     question: 'What are grounds for eviction in Ohio?',
-    answer: 'Grounds for eviction in Ohio under ORC Chapter 1923 include nonpayment of rent, lease violations, property damage, illegal activity, expiration of lease term, and holdover tenancy. Landlords must have legal grounds for eviction and follow proper procedures. Retaliatory eviction (eviction in retaliation for exercising tenant rights) is illegal and may result in landlord liability.',
+    answer:
+      'Under ORC Chapter 1923, grounds include nonpayment of rent, lease violations, property damage, illegal activity, the end of the lease term and a holdover tenancy. The landlord must have legal grounds and follow the proper procedure. Evicting a tenant in retaliation for exercising tenant rights is illegal and can make the landlord liable.',
   },
   {
     question: 'Can tenants fight eviction in Ohio?',
-    answer: 'Yes, tenants can fight eviction in Ohio by raising defenses including lack of proper notice, defective eviction proceedings, habitability violations, retaliatory eviction, discrimination, payment of rent, or other legal defenses. Tenants have the right to defend against eviction and protect their rights. An attorney can help identify defenses and protect tenant rights.',
+    answer:
+      'Yes. Defenses include lack of proper notice, defective eviction proceedings, habitability violations, retaliatory eviction, discrimination, payment of rent and other legal defenses. An attorney can identify which ones apply.',
   },
   {
     question: 'What is the timeline for eviction in Ohio?',
-    answer: 'Eviction timeline in Ohio depends on circumstances: Landlords must provide proper notice (3 days for nonpayment, 30 days for lease violations), file eviction action in court, serve notice on tenants, obtain court order, and have sheriff execute eviction. Eviction proceedings can take weeks to months depending on defenses raised. An attorney can help understand timeline and protect rights.',
+    answer:
+      'The landlord must give proper notice (3 days for nonpayment, 30 days for lease violations), file the eviction action, serve the tenant, get a court order and have the sheriff carry it out. Depending on the defenses raised, the process can take weeks to months.',
   },
   {
     question: 'Do I need an eviction attorney?',
-    answer: 'Eviction proceedings move quickly and require experienced representation. Eviction attorneys understand Ohio eviction law, can protect tenant rights, defend against eviction, handle eviction proceedings for landlords, negotiate settlements, and represent you in court. Most attorneys work on hourly fee arrangements and offer consultations. Experienced representation is essential to protect your rights.',
+    answer:
+      'Evictions move quickly. An attorney can defend a tenant, handle the proceeding for a landlord, negotiate a settlement and represent you in court. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
-    question: `What notice is required before filing an eviction in Ohio?`,
-    answer: `Under Ohio Revised Code 1923.04, landlords must provide written notice to tenants before filing an eviction action. For nonpayment of rent, the landlord must provide a three-day written notice to vacate. For other lease violations, the required notice period is governed by the lease terms or applicable statute—commonly 30 days for month-to-month tenancies. The notice must be properly served on the tenant, either by personal delivery, leaving a copy at the residential unit, or mailing. Defective notice—whether incorrect content, improper service, or insufficient time—can result in dismissal of the eviction action.`,
+    question: 'What notice is required before filing an eviction in Ohio?',
+    answer:
+      'Under Ohio Revised Code 1923.04, the landlord must give the tenant written notice before filing. For nonpayment of rent it is a 3-day written notice to vacate. For other lease violations, the lease or the applicable statute sets the period, commonly 30 days for a month-to-month tenancy. The notice must be served properly: by personal delivery, by leaving a copy at the unit, or by mail. Defective notice (wrong content, improper service or not enough time) can get the case dismissed.',
   },
   {
-    question: `What is the eviction timeline in Ohio from filing to writ of possession?`,
-    answer: `After proper notice expires, an Ohio landlord files a forcible entry and detainer action in the municipal or county court. A hearing is typically scheduled within seven to ten days of filing. If the court rules in the landlord's favor, a judgment is entered and a writ of execution (writ of possession) can be issued after the applicable appeal period. The sheriff then executes the writ and removes the tenant. From the date of filing, the entire process commonly takes three to six weeks in uncontested cases, but can take longer if the tenant raises defenses, requests continuances, or appeals the judgment.`,
+    question: 'What is the eviction timeline in Ohio from filing to writ of possession?',
+    answer:
+      "After the notice expires, the landlord files a forcible entry and detainer action in municipal or county court. A hearing is typically set within 7 to 10 days of filing. If the court rules for the landlord, judgment is entered and a writ of execution (writ of possession) can issue after the appeal period. The sheriff then carries out the writ and removes the tenant. In uncontested cases the whole process commonly takes 3 to 6 weeks from filing. It can take longer if the tenant raises defenses, asks for continuances or appeals.",
   },
   {
-    question: `What are tenant defenses to eviction in Ohio?`,
-    answer: `Ohio tenants have several recognized defenses to eviction. Improper or defective notice under ORC 1923.04 can result in dismissal. Retaliatory eviction is prohibited under ORC 5321.02—a landlord may not evict a tenant in retaliation for reporting code violations, joining a tenant organization, or exercising other protected rights. Habitability violations under ORC 5321.07 may provide a defense or counterclaim when the landlord has failed to maintain the premises in a fit and habitable condition. A landlord's acceptance of rent after serving a notice to vacate may waive the notice and require the process to start over. An attorney can identify applicable defenses and present them effectively in court.`,
+    question: 'What are tenant defenses to eviction in Ohio?',
+    answer:
+      "Improper or defective notice under ORC 1923.04 can get the case dismissed. Retaliatory eviction is prohibited under ORC 5321.02: a landlord may not evict a tenant for reporting code violations, joining a tenant organization or exercising other protected rights. Habitability violations under ORC 5321.07 may give a defense or counterclaim when the landlord has not kept the premises fit and habitable. And a landlord who accepts rent after serving a notice to vacate may waive the notice and have to start over.",
   },
 ];
 
-export default function EvictionsPage() {
+const RELATED = [
+  { href: '/civil', title: 'All civil matters', subtitle: 'Including landlord-tenant disputes, security deposit claims, habitability issues and lease enforcement' },
+  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Enforcing or defending contract obligations and recovering damages' },
+  { href: '/civil/real-estate-disputes', title: 'Real estate disputes', subtitle: 'Title disputes, boundary issues, quiet title actions and property litigation' },
+  { href: '/civil/debt-collection-defense', title: 'Debt collection defense', subtitle: 'Defending a collection lawsuit and unfair collection practices' },
+];
 
+export default function EvictionsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Eviction Lawyer"
-        description="Experienced legal representation for eviction proceedings. Protecting your rights whether you are a landlord or tenant."
+        title="Evictions in Ohio"
+        description="An Ohio eviction can start with a 3-day notice and reach a hearing within 7 to 10 days of filing. The firm represents both landlords and tenants."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Eviction Proceedings in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Eviction proceedings in Columbus, Cincinnati, Dayton, or throughout Ohio require landlords to follow strict legal procedures under Ohio Revised Code Chapter 1923. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for eviction proceedings representing both landlords and tenants. Our attorney understands Ohio eviction law and can protect your rights whether you are seeking eviction or defending against eviction. Evictions are closely related to <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">landlord-tenant disputes</Link>, and understanding your rights under ORC Chapter 5321 is essential.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Eviction proceedings move quickly and can have immediate devastating effects on tenants including loss of housing, removal of property, and damage to credit. Landlords must follow proper procedures including providing proper notice, filing eviction actions in court, and obtaining court orders. Self-help eviction (changing locks, removing property, cutting utilities) is illegal and may result in landlord liability. Understanding eviction procedures, available defenses, and your rights is essential for protecting your interests. For more on tenant rights, read our articles on <Link href="/civil/evictions" className="text-sky-deep underline hover:text-navy-950">Ohio landlord repair duties</Link> and <Link href="/civil/evictions" className="text-sky-deep underline hover:text-navy-950">Ohio security deposit laws</Link>.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '3 days', label: 'written notice to vacate for nonpayment of rent' },
+          { figure: '30 days', label: 'notice commonly required for other lease violations' },
+          { figure: '7 to 10 days', label: 'from filing to the hearing, typically' },
+          { figure: '3 to 6 weeks', label: 'from filing to removal in an uncontested case' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The eviction process begins with proper notice (3 days for nonpayment, 30 days for lease violations), followed by filing an eviction action in court, serving notice on tenants, obtaining a court order, and having the sheriff execute the eviction. Tenants can defend against eviction by raising defenses including lack of proper notice, habitability violations, retaliatory eviction, or payment of rent. Early intervention by an experienced eviction attorney can significantly impact the outcome, potentially preventing eviction or minimizing consequences. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> immediately if you are facing an eviction proceeding.
-            </p>
+      <Section
+        title="How Ohio evictions work"
+        intro={
+          <p>
+            Ohio evictions follow Ohio Revised Code Chapter 1923, and the landlord must follow each step. Tenant rights come from ORC
+            Chapter 5321.
+          </p>
+        }
+      >
+        <p>
+          The firm represents landlords seeking an eviction and tenants defending one, in Columbus, Cincinnati, Dayton and throughout
+          Ohio, as part of its <Link href="/civil">civil litigation practice</Link>. Evictions are closely tied to wider landlord-tenant
+          disputes such as repair duties and security deposits.
+        </p>
+        <p>
+          For a tenant, an eviction can mean losing housing, having property removed and damaged credit, and it can happen fast. Grounds
+          include nonpayment of rent, lease violations, property damage, illegal activity, the end of the lease term and a holdover
+          tenancy.
+        </p>
+        <Callout title="Self-help eviction is illegal">
+          A landlord may not change the locks, remove the tenant&rsquo;s property or cut off utilities without a court order. Doing so
+          can make the landlord liable for damages.
+        </Callout>
+      </Section>
 
-            <LocationsWeServe title="Civil" />
+      <Section title="Notice requirements" tone="ice">
+        <FactTable
+          title="Notice before filing (ORC 1923.04)"
+          rows={[
+            { label: 'Nonpayment of rent', value: '3-day written notice to vacate.' },
+            { label: 'Other lease violations', value: '30 days, or the period the lease or statute sets (commonly 30 days for a month-to-month tenancy).' },
+            { label: 'Service', value: 'Personal delivery, leaving a copy at the unit, or mail.' },
+            { label: 'Defective notice', value: 'Wrong content, improper service or too little time can get the case dismissed.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Eviction Process</h3>
+      <LocationsWeServe title="Civil" />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the eviction process helps you prepare for what lies ahead:
-            </p>
+      <Section title="From filing to the sheriff" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Notice',
+              body: 'The landlord serves the required written notice and waits for it to expire.',
+            },
+            {
+              title: 'Filing',
+              body: 'The landlord files a forcible entry and detainer action in Municipal Court or Common Pleas Court, depending on jurisdiction. The complaint must state the grounds and be served on the tenant, who can respond and raise defenses.',
+            },
+            {
+              title: 'Hearing',
+              body: 'Typically set within 7 to 10 days of filing. This is where the tenant raises defenses.',
+            },
+            {
+              title: 'Judgment and writ',
+              body: 'If the landlord wins, judgment is entered and a writ of possession can issue after the appeal period.',
+            },
+            {
+              title: 'Execution',
+              body: 'The sheriff carries out the writ and removes the tenant and property. Tenants have limited time to remove property after the order.',
+            },
+          ]}
+        />
+        <p>Defenses, continuances or an appeal can stretch the process from weeks to months.</p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Proper Notice Requirements</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Landlords must provide proper notice before filing eviction actions. Under Ohio Revised Code 1923.04, notice requirements vary: 3 days for nonpayment of rent, 30 days for lease violations, or other periods depending on circumstances. Notice must be properly served and contain required information. Defective notice can result in dismissal of eviction actions.
-              </p>
-            </div>
+      <Section title="Tenant defenses to eviction">
+        <PointGrid
+          points={[
+            {
+              title: 'Lack of proper notice',
+              body: 'Notice that is defective, improperly served or missing required information can lead to dismissal.',
+            },
+            {
+              title: 'Habitability violations',
+              body: 'When the landlord fails to keep the premises habitable (no heat, no water, needed repairs not made), ORC 5321.07 may give a defense or counterclaim. Tenants may also be able to withhold rent or make repairs and deduct the cost.',
+            },
+            {
+              title: 'Retaliatory eviction',
+              body: 'Illegal under Ohio Revised Code 5321.02 when it punishes a tenant for reporting code violations or joining a tenant organization. The landlord may be liable for damages.',
+            },
+            {
+              title: 'Payment of rent',
+              body: 'Paying rent or curing the lease violation before an eviction order issues may get the case dismissed. Landlords must accept proper payment.',
+            },
+            {
+              title: 'Rent accepted after notice',
+              body: 'A landlord who accepts rent after serving a notice to vacate may waive the notice and have to start over.',
+            },
+            {
+              title: 'Other defenses',
+              body: 'Defective proceedings and discrimination can also defeat an eviction.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Filing Eviction Actions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                After providing proper notice, landlords must file eviction actions (forcible entry and detainer) in the appropriate court (Municipal Court or Common Pleas Court depending on jurisdiction). The complaint must allege grounds for eviction and be properly served on tenants. Tenants have the right to respond and raise defenses.
-              </p>
-            </div>
+      <Section title="What the firm does in an eviction" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'For landlords', body: 'Drafts and files the eviction action, serves notice properly and represents you in court to obtain the order.' },
+            { title: 'For tenants', body: 'Raises the defenses that apply, from notice defects to habitability, retaliation, discrimination or payment of rent.' },
+            { title: 'Negotiates', body: 'Payment plans, lease modifications or move-out agreements that resolve the dispute without an eviction when possible.' },
+            { title: 'Builds the record', body: 'Gathers documents and evidence to support your position at the hearing.' },
+            { title: 'Represents you in court', body: 'Presents the evidence and the defenses at the hearing.' },
+            { title: 'Handles appeals', body: 'Appeals an eviction order when needed.' },
+          ]}
+        />
+        <p>
+          If you are facing an eviction proceeding, <Link href="/contact">contact Jwayyed Law LLC</Link> right away to schedule a
+          consultation.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Court Proceedings</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Eviction proceedings move quickly with hearings typically scheduled within days or weeks. Tenants can raise defenses including lack of proper notice, habitability violations, retaliatory eviction, discrimination, payment of rent, or other legal defenses. An attorney can help identify defenses, prepare responses, and represent you in court.
-              </p>
-            </div>
+      <Section title="Related civil matters">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Execution of Eviction</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the court orders eviction, the sheriff executes the eviction by removing tenants and property. Self-help eviction (changing locks, removing property without court order) is illegal and may result in landlord liability for damages. Tenants have limited time to remove property after eviction orders.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an Eviction Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced eviction attorney provides comprehensive representation for both landlords and tenants:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Eviction Proceedings for Landlords:</strong> Handle eviction proceedings following proper procedures, draft and file eviction actions, serve notice properly, and represent landlords in court to obtain eviction orders</li>
-              <li><strong>Eviction Defense for Tenants:</strong> Defend tenants against eviction, raise defenses including lack of proper notice, habitability violations, retaliatory eviction, discrimination, or payment of rent, and protect tenant rights throughout the process</li>
-              <li><strong>Negotiation and Settlement:</strong> Negotiate settlements including payment plans, lease modifications, or move-out agreements to resolve disputes without eviction when possible</li>
-              <li><strong>Court Representation:</strong> Represent you in court to protect your rights, present evidence, raise defenses, and advocate for favorable outcomes</li>
-              <li><strong>Documentation and Evidence:</strong> Prepare documentation, gather evidence, and build cases to support your position in eviction proceedings</li>
-              <li><strong>Appeals:</strong> Handle appeals of eviction orders if necessary to protect your rights</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common Eviction Defenses</h3>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Lack of Proper Notice</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Landlords must provide proper notice before filing eviction actions. If notice is defective, improperly served, or lacks required information, eviction actions may be dismissed. An attorney can challenge notice defects and protect tenant rights.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Habitability Violations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If landlords fail to maintain habitable premises (lack of heat, water, necessary repairs), tenants can raise habitability violations as defenses to eviction. Tenants may also be able to withhold rent or make repairs and deduct costs. An attorney can help identify habitability violations and raise them as defenses.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Retaliatory Eviction</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Retaliatory eviction (eviction in retaliation for exercising tenant rights such as reporting code violations or joining tenant organizations) is illegal under Ohio Revised Code 5321.02. Tenants can raise retaliatory eviction as a defense, and landlords may face liability for damages.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Payment of Rent</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If tenants pay rent or cure lease violations before eviction orders are issued, eviction actions may be dismissed. Tenants can raise payment of rent as a defense, and landlords must accept proper payment. An attorney can help ensure rent is properly paid and raise payment as a defense.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated eviction representation throughout Ohio. We understand that eviction proceedings move quickly and can affect your housing and rights. Our attorney works diligently to handle eviction proceedings for landlords, defend tenants against eviction, and protect your rights throughout the process.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough understanding of Ohio eviction law, strategic defense development, and aggressive advocacy when necessary. We understand the local court systems, judicial preferences, and common issues in eviction proceedings. This knowledge allows us to develop effective strategies tailored to your specific situation and protect your interests. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing eviction proceedings in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in eviction cases—proceedings move quickly, and early intervention by experienced counsel can significantly impact the outcome, potentially preventing eviction or minimizing consequences. Do not delay in seeking experienced legal representation to protect your housing and rights.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Landlord-Tenant Disputes</span>
-                <span className="text-sm text-navy-950/70">Security deposit claims, habitability issues, and lease enforcement</span>
-              </Link>
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
-                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
-              </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Real Estate Disputes</span>
-                <span className="text-sm text-navy-950/70">Title disputes, boundary issues, quiet title actions, and property litigation</span>
-              </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Debt Collection Defense</span>
-                <span className="text-sm text-navy-950/70">Defend against unfair debt collection practices and protect your rights</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

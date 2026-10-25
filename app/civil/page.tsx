@@ -4,19 +4,20 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 import { civilServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Civil Attorney',
-  description: 'Experienced civil attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Contract disputes, real estate, landlord-tenant, evictions, and more.',
+  description:
+    'Civil disputes in Columbus, Cincinnati, Dayton and across Ohio: contracts, real estate, evictions, debt collection and more, with the filing deadlines that apply.',
   keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer'],
   openGraph: {
     title: 'Ohio Civil Attorney | Jwayyed Law LLC',
-    description: 'Civil litigation representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
+    description: 'Civil litigation in Columbus, Cincinnati, Dayton and throughout Ohio. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/civil',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil' },
 };
 
@@ -25,224 +26,164 @@ const breadcrumbItems = [{ label: 'Civil', href: '/civil' }];
 const faqs = [
   {
     question: 'What is civil litigation in Ohio?',
-    answer: 'Civil litigation in Ohio involves legal disputes between parties seeking monetary damages or other remedies, as opposed to criminal charges. Common civil cases include contract disputes, real estate disputes, landlord-tenant disputes, evictions, debt collection defense, employment disputes, and defamation. Civil cases are decided based on preponderance of evidence rather than beyond a reasonable doubt.',
+    answer:
+      'Civil litigation is a legal dispute between parties over money damages or another remedy, as opposed to a criminal charge. Common civil cases include contract disputes, real estate disputes, landlord-tenant disputes, evictions, debt collection defense, employment disputes and defamation. Civil cases are decided on a preponderance of the evidence, not beyond a reasonable doubt.',
   },
   {
     question: 'What is the statute of limitations for civil cases in Ohio?',
-    answer: 'Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Contract disputes: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer:
+      'It depends on the type of case, under ORC Chapter 2305. Written contracts: 6 years. Oral contracts: 4 years (ORC 2305.06 and 2305.07, as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so talk to an attorney as soon as a dispute starts.',
   },
   {
     question: 'Do I need a civil attorney for my dispute?',
-    answer: 'While you can represent yourself in civil cases, an experienced civil attorney can significantly improve your chances of success and maximize recovery. Attorneys understand civil procedure, evidence rules, negotiation strategies, and court requirements. They handle documentation, communicate with opposing parties, negotiate settlements, and represent you in court if necessary. Most civil attorneys work on hourly or contingency fee arrangements.',
+    answer:
+      'You can represent yourself in a civil case. An attorney knows civil procedure, the rules of evidence and court requirements, handles the documents, deals with the other side, negotiates settlements and represents you in court if needed. Most civil attorneys work on hourly or contingency fee arrangements.',
   },
   {
     question: 'What is the difference between civil and criminal cases?',
-    answer: 'Civil cases involve disputes between parties seeking monetary damages or other remedies, while criminal cases involve the state prosecuting individuals for crimes. Civil cases are decided based on preponderance of evidence, while criminal cases require proof beyond a reasonable doubt. Civil cases result in monetary judgments, while criminal cases can result in fines, probation, or incarceration.',
+    answer:
+      'A civil case is a dispute between parties over money damages or another remedy. A criminal case is the state prosecuting someone for a crime. Civil cases are decided on a preponderance of the evidence; criminal cases need proof beyond a reasonable doubt. Civil cases end in money judgments, while criminal cases can end in fines, probation or incarceration.',
   },
   {
     question: 'How long does a civil case take?',
-    answer: 'Civil case duration varies significantly depending on case complexity, court schedule, and whether the case goes to trial. Simple cases may resolve in months, while complex cases may take years. Most cases settle before trial, but preparation and negotiation can take substantial time. An attorney can provide a realistic timeline based on your specific case circumstances.',
+    answer:
+      'It depends on how complex the case is, the court’s schedule and whether it goes to trial. Simple cases may resolve in months; complex ones may take years. Most cases settle before trial, but preparation and negotiation still take time. An attorney can give you a realistic timeline for your case.',
   },
   {
-    question: `What is the difference between a jury trial and a bench trial in Ohio civil cases?`,
-    answer: `In Ohio civil cases, a party has the right to a jury trial for legal claims (such as breach of contract or personal injury) involving amounts over $1,000 under Article I, Section 5 of the Ohio Constitution and Ohio Civil Rule 38. A jury trial involves a panel of six or eight jurors who decide disputed facts and apply the law as instructed by the judge. A bench trial (also called a court trial) is presided over by a judge alone who decides both the facts and the law. Equitable claims—such as requests for specific performance, injunctions, or other non-monetary relief—are generally tried to a bench, not a jury.`,
+    question: 'What is the difference between a jury trial and a bench trial in Ohio civil cases?',
+    answer:
+      'In Ohio civil cases, a party has the right to a jury trial for legal claims (such as breach of contract or personal injury) involving amounts over $1,000, under Article I, Section 5 of the Ohio Constitution and Ohio Civil Rule 38. A jury of six or eight jurors decides the disputed facts and applies the law as the judge instructs. In a bench trial (also called a court trial) the judge alone decides both the facts and the law. Equitable claims, such as requests for specific performance, injunctions or other non-monetary relief, are generally tried to the bench, not a jury.',
   },
   {
-    question: `How does Ohio's preponderance of evidence standard work in civil cases?`,
-    answer: `In Ohio civil litigation, the party bearing the burden of proof—typically the plaintiff—must establish their claims by a preponderance of the evidence. This means that the evidence must show it is more likely than not (greater than 50%) that the claimed facts are true. This is a significantly lower bar than the beyond-a-reasonable-doubt standard required in criminal cases. In practice, a single credible witness, a persuasive document, or a modest weight of circumstantial evidence can tip the scales in a civil case. Some specific civil claims, such as fraud, require proof by clear and convincing evidence, a higher standard than preponderance but still lower than beyond a reasonable doubt.`,
+    question: "How does Ohio's preponderance of evidence standard work in civil cases?",
+    answer:
+      'The party with the burden of proof, usually the plaintiff, must prove its claims by a preponderance of the evidence: it must be more likely than not (greater than 50%) that the claimed facts are true. That is a much lower bar than beyond a reasonable doubt in criminal cases. A single credible witness, a persuasive document or a modest weight of circumstantial evidence can tip the scales. Some claims, such as fraud, need clear and convincing evidence, which is higher than a preponderance but still lower than beyond a reasonable doubt.',
   },
   {
-    question: `What is a default judgment in Ohio and how can it be vacated?`,
-    answer: `Under Ohio Civil Rule 55, a default judgment may be entered against a defendant who fails to appear or respond to a properly served complaint within the time allowed by the rules. Once entered, a default judgment has the same legal effect as any other judgment and can be enforced through wage garnishment, bank levies, or liens on property. A defendant seeking to vacate a default judgment may file a motion under Ohio Civil Rule 60(B), which allows relief from judgment for reasons including mistake, excusable neglect, newly discovered evidence, fraud, or any other reason justifying relief. The motion must be filed within a reasonable time and, for certain grounds, within one year of the judgment.`,
+    question: 'What is a default judgment in Ohio and how can it be vacated?',
+    answer:
+      'Under Ohio Civil Rule 55, a default judgment may be entered against a defendant who fails to appear or respond to a properly served complaint within the time the rules allow. It has the same effect as any other judgment and can be enforced through wage garnishment, bank levies or liens on property. To vacate it, the defendant can file a motion under Ohio Civil Rule 60(B), which allows relief for mistake, excusable neglect, newly discovered evidence, fraud or any other reason justifying relief. The motion must be filed within a reasonable time and, for certain grounds, within 1 year of the judgment.',
   },
 ];
 
 export default function CivilPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Civil Attorney"
-        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Civil disputes, contracts, real estate, landlord-tenant matters, and more."
+        title="Civil disputes in Ohio"
+        description="Contract, real estate, eviction, debt and employment disputes in Columbus, Cincinnati, Dayton and across Ohio. Some claims must be filed within 1 year."
       />
 
-      {/* Sub-Services Grid */}
-      <section className="py-8 bg-ice border-b border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            Civil Legal Services
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {civilServices.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="flex items-center justify-between p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-medium text-navy-950 group-hover:text-sky-deep transition-colors text-sm">{service.title}</span>
-                <span className="text-white/80 group-hover:text-sky-deep transition-colors ml-2 text-xs shrink-0">→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Section title="Find your matter" intro={<p>Each page covers the deadlines, the process and the options for that kind of dispute.</p>}>
+        <LinkGrid links={civilServices.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+        <p>
+          Contract disputes and breaches can arise under ORC Chapter 1301. Evictions are handled for both landlords and tenants, and
+          appeals cover civil cases decided in the trial courts.
+        </p>
+      </Section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Civil Litigation in Columbus, Cincinnati, Dayton & Throughout Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We serve civil clients in Columbus, Cincinnati, Dayton, and throughout Ohio. Civil litigation involves legal disputes between parties seeking monetary damages or other remedies. At Jwayyed Law LLC, we provide experienced civil representation for various civil matters under Ohio Revised Code. Our attorney understands Ohio civil laws, court procedures, and strategies necessary to protect your rights and achieve favorable outcomes.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '6 years', label: 'to sue on a written contract' },
+          { figure: '4 years', label: 'for an oral contract or property damage' },
+          { figure: '2 years', label: 'for a personal injury claim' },
+          { figure: '1 year', label: 'for defamation' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Civil cases differ from criminal cases in that they involve disputes between private parties rather than the state prosecuting individuals. Civil litigation can involve contract disputes, real estate matters, landlord-tenant disputes, evictions, debt collection, employment disputes, defamation, and other civil wrongs. Understanding the civil litigation process, available remedies, and strategies for resolution is essential for protecting your rights and interests.
-            </p>
+      <Section
+        title="What a civil case is"
+        tone="ice"
+        intro={
+          <p>
+            A civil case is a dispute between private parties over money damages or another remedy. The state is not prosecuting
+            anyone.
+          </p>
+        }
+      >
+        <p>
+          The firm takes civil clients in Columbus, Cincinnati, Dayton and throughout Ohio, under the Ohio Revised Code. Civil cases
+          include contract disputes, real estate matters, landlord-tenant disputes, evictions, debt collection, employment disputes,
+          defamation and other civil wrongs.
+        </p>
+        <p>
+          Civil cases are decided on a preponderance of the evidence: more likely than not. That is a lower standard than the proof
+          beyond a reasonable doubt that criminal cases require, so a civil case can be won without overwhelming evidence. It still
+          has to be prepared and presented well.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The civil litigation process in Ohio involves filing complaints, discovery (exchanging evidence), pretrial motions, settlement negotiations, and potentially trial. Each stage requires strategic decision-making and experienced legal representation. Early intervention by a skilled civil attorney can significantly impact the outcome, potentially resulting in favorable settlements, dismissed cases, or successful trial verdicts. Most civil cases settle before trial, but preparation for trial strengthens negotiation position.
-            </p>
+      <LocationsWeServe title="Civil" />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Civil cases are decided based on preponderance of evidence (more likely than not) rather than beyond a reasonable doubt required in criminal cases. This lower standard means civil cases can be won even when evidence is not overwhelming. However, civil litigation requires thorough preparation, strategic planning, and effective advocacy. An experienced civil attorney can navigate the complex civil procedure rules, develop winning strategies, and maximize your chances of success.
-            </p>
+      <Section title="Filing deadlines and the rules that decide a case" tone="ice">
+        <FactTable
+          title="Statutes of limitations (ORC Chapter 2305)"
+          rows={[
+            { label: 'Written contracts', value: '6 years (ORC 2305.06, as amended June 2021).' },
+            { label: 'Oral contracts', value: '4 years (ORC 2305.07, as amended June 2021).' },
+            { label: 'Property damage', value: '4 years.' },
+            { label: 'Personal injury', value: '2 years.' },
+            { label: 'Defamation', value: '1 year.' },
+          ]}
+          note="Missing the deadline bars recovery. Talk to an attorney as soon as the dispute starts."
+        />
+        <FactTable
+          title="Burden of proof and remedies"
+          rows={[
+            { label: 'Standard of proof', value: 'Preponderance of the evidence (more likely than not). Fraud and some other claims need clear and convincing evidence.' },
+            { label: 'Money damages', value: 'Compensatory and punitive.' },
+            { label: 'Injunctive relief', value: 'A court order requiring or prohibiting certain actions.' },
+            { label: 'Specific performance', value: 'An order requiring a party to perform the contract.' },
+            { label: 'Declaratory judgment', value: 'A ruling that determines the parties’ rights.' },
+          ]}
+          note="The right remedy depends on the type of case and the circumstances."
+        />
+      </Section>
 
-            <LocationsWeServe title="Civil" />
+      <Section title="How a civil lawsuit moves through an Ohio court">
+        <Steps
+          steps={[
+            {
+              title: 'Filing the complaint',
+              body: 'The complaint states the claims and the relief sought. The defendant must be properly served and has a limited time to respond. Counterclaims and defenses come back in the answer.',
+            },
+            {
+              title: 'Discovery',
+              body: 'Both sides exchange evidence, take depositions, request documents and investigate. Improper discovery requests can be challenged.',
+            },
+            {
+              title: 'Pretrial motions and settlement',
+              body: 'Motions can resolve issues, dismiss claims or limit evidence. Most civil cases settle at this stage, through negotiation or mediation.',
+            },
+            {
+              title: 'Trial and judgment',
+              body: 'If the case does not settle, a judge or jury decides it. A judgment can then be enforced through collection methods such as wage garnishment, bank levies or property liens.',
+            },
+          ]}
+        />
+        <p>Preparing for trial from the start strengthens the position at the negotiating table, even though most cases settle.</p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Civil Litigation Process</h3>
+      <Section title="What the firm does on a civil case" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Evaluates the case', body: 'Strengths and weaknesses, the legal claims available, and the potential recovery or exposure.' },
+            { title: 'Sets the strategy', body: 'Whether the goal is recovering damages, defending against claims or resolving the dispute.' },
+            { title: 'Drafts the filings', body: 'Complaints, answers, motions, discovery requests and other documents the case needs.' },
+            { title: 'Runs discovery', body: 'Depositions, document requests and interrogatories to build the case and learn the other side’s.' },
+            { title: 'Negotiates', body: 'Settlement talks, mediation or other alternative dispute resolution, and an honest read of each offer.' },
+            { title: 'Tries the case and enforces the judgment', body: 'Trial representation, then wage garnishment, bank levies or property liens when collection is needed.' },
+          ]}
+        />
+        <p>
+          Statutes of limitations run and evidence goes stale, so it helps to act early. Contact the firm to schedule a consultation
+          about a civil dispute in Columbus, Cincinnati, Dayton or anywhere in Ohio.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the civil litigation process helps you prepare for what lies ahead:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Filing the Complaint</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The process begins with filing a complaint stating your claims and the relief sought. The defendant must be properly served with the complaint and has a limited time to respond. An attorney can draft the complaint, ensure proper service, and respond to any counterclaims or defenses raised by the defendant.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery Phase</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, both parties exchange evidence, take depositions, request documents, and conduct investigations. This phase is crucial for building your case and understanding the other party's position. An experienced attorney can conduct effective discovery, protect against improper discovery requests, and use discovery to strengthen your case.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions and Settlement Negotiations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Pretrial motions can resolve issues, dismiss claims, or limit evidence. Most civil cases settle during this phase through negotiation or mediation. An attorney can file strategic motions, negotiate effectively, and evaluate settlement offers to determine if they are in your best interest.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial and Judgment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If settlement negotiations fail, the case proceeds to trial where a judge or jury decides the outcome. An experienced attorney can present compelling evidence, cross-examine witnesses effectively, and argue for maximum recovery. After trial, judgments can be enforced through various collection methods.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Civil Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced civil attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Case Evaluation:</strong> Thoroughly evaluate your case, assess strengths and weaknesses, identify legal claims, and determine potential recovery or exposure</li>
-              <li><strong>Legal Strategy Development:</strong> Develop comprehensive strategies to achieve your goals, whether that's recovering damages, defending against claims, or resolving disputes</li>
-              <li><strong>Document Preparation:</strong> Draft complaints, answers, motions, discovery requests, and other legal documents necessary for your case</li>
-              <li><strong>Discovery Management:</strong> Conduct effective discovery including depositions, document requests, and interrogatories to build your case and understand the opposition</li>
-              <li><strong>Negotiation and Settlement:</strong> Negotiate with opposing parties to reach favorable settlements, participate in mediation or alternative dispute resolution, and evaluate settlement offers</li>
-              <li><strong>Trial Representation:</strong> Provide effective trial advocacy with compelling arguments, strategic presentation of evidence, and protection of your rights throughout trial</li>
-              <li><strong>Post-Trial Enforcement:</strong> Enforce judgments through various collection methods including wage garnishment, bank levies, or property liens when necessary</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Civil Practice Areas</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm handles all types of civil litigation matters, providing experienced representation across the full spectrum of civil disputes:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Breach of Contract</h4>
-                <p className="text-sm text-navy-950/70">Representation for contract disputes and breaches under ORC Chapter 1301</p>
-              </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Real Estate Disputes</h4>
-                <p className="text-sm text-navy-950/70">Legal assistance for real estate and property disputes</p>
-              </Link>
-              <Link href="/civil/evictions" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Evictions</h4>
-                <p className="text-sm text-navy-950/70">Eviction representation for landlords and tenants</p>
-              </Link>
-              <Link href="/civil/construction-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Construction Disputes</h4>
-                <p className="text-sm text-navy-950/70">Representation for construction and contractor disputes</p>
-              </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Debt Collection Defense</h4>
-                <p className="text-sm text-navy-950/70">Defense against debt collection and creditor claims</p>
-              </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Employment Disputes</h4>
-                <p className="text-sm text-navy-950/70">Representation for employment-related disputes</p>
-              </Link>
-              <Link href="/civil/civil-protection-orders" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Civil Protection Orders</h4>
-                <p className="text-sm text-navy-950/70">Assistance with protection orders and restraining orders</p>
-              </Link>
-              <Link href="/civil/appeals" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Appeals</h4>
-                <p className="text-sm text-navy-950/70">Appellate representation for civil cases</p>
-              </Link>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Understanding Ohio Civil Law</h3>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Statute of Limitations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Statute of limitations for civil cases in Ohio under ORC Chapter 2305 vary by case type: Written contracts: 6 years (ORC 2305.06 as amended June 2021). Oral contracts: 4 years (ORC 2305.07 as amended June 2021). Property damage: 4 years. Personal injury: 2 years. Defamation: 1 year. Missing the deadline bars recovery, so it is crucial to act quickly and consult an attorney immediately.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Burden of Proof</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Civil cases require proof by preponderance of evidence (more likely than not), which is a lower standard than criminal cases requiring proof beyond a reasonable doubt. This means civil cases can be won even when evidence is not overwhelming, but thorough preparation and effective presentation are still essential.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Available Remedies</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Civil cases can result in monetary damages (compensatory and punitive), injunctive relief (court orders requiring or prohibiting certain actions), specific performance (requiring contract performance), or declaratory judgments (determining rights). The appropriate remedy depends on the type of case and circumstances.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated civil representation throughout Ohio. We understand that civil disputes require experienced representation. Our attorney works diligently to investigate cases, develop strategies, negotiate settlements, and represent clients in court when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic case development, and aggressive advocacy. We understand the local court systems, civil procedure rules, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize your chances of success. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement versus litigation.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are involved in a civil dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential outcomes, and develop a strategy tailored to your situation. Time is critical in civil cases—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your rights and interests.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

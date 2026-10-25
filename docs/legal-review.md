@@ -97,6 +97,25 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | trusts/irrevocable-trusts | "Ohio eliminated its gift tax in 2013" | Ohio never had a gift tax (the estate tax was repealed in 2013) | Medium |
 | QTIP, land-trusts | "Portability since 2013"; "each land trust is a separate legal entity" | Check | Low |
 
+## Civil and business
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| debt-collection-defense, construction-disputes, contract-drafting-review | Oral contracts: 6 years under ORC 2305.07 | Other pages say 4 years since the June 2021 amendment | High |
+| business (landing), llc-formation, business-compliance | CAT: $150,000 threshold; 0.26% "above $1 million with a minimum tax"; threshold "raised from $150,000" with a $3M exclusion | Current law excludes $3M (2024) and $6M (2025+) with no minimum tax | High |
+| business-compliance, business-dissolution | ORC Chapter 1705 treated as the LLC law (1705.06, 1705.22, 1705.43) | Chapter 1705 was repealed in 2022; Chapter 1706 governs | High |
+| civil/debt-collection-defense | Exemptions under ORC 2329.66: $145,425 homestead, $4,000 vehicle, $625/$13,400 household goods, $2,550 tools | Looks like a pre-2022 schedule | High |
+| business/employment-agreements | Minimum wage "$10.45/hour as of 2024" | Stale for 2026 | Medium |
+| civil/appeals | Greene County in the 12th District; Morrow in the 9th; Supreme Court review under "App.R. 26" | Greene is in the 2nd, Morrow in the 5th; citation wrong | High |
+| civil/construction-disputes | Notice of Commencement / Furnishing roles reversed (1311.04/1311.06); 6-year enforcement at 1311.15; only the 75-day lien deadline; HCSS Act "4722.02, $25" | Mechanics' lien details look off; residential deadline is 60 days | High |
+| business-formation, partnership-disputes | Partnerships under Chapters 1775/1776 vs 1776/1782 | 1776/1782 believed correct | Medium |
+| business/business-formation | Statutory agent at ORC 1706.05 | Likely 1706.09 | Low |
+| civil/civil-protection-orders | Second violation "within five years" is a fifth-degree felony | No five-year window believed in the statute | Medium |
+| civil/evictions | Tenants "may withhold rent or repair and deduct"; landlords "must accept proper payment" | Ohio uses rent escrow (ORC 5321.07), not withholding or repair-and-deduct | High |
+| business/shareholder-disputes | Dissenters' rights at 1701.76; oppression as a ground under 1701.91 | Likely 1701.85; check the 1701.91 grounds | Medium |
+| business/business-litigation | Punitive cap "greater of 2x compensatory or $350,000" | Check against ORC 2315.21 | Medium |
+| civil (landing) | Jury right for claims "over $1,000"; breach of contract under ORC Chapter 1301 | Check | Low |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |

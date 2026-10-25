@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Real Estate Disputes Lawyer in Ohio',
-  description: 'Experienced Ohio real estate disputes attorney protecting your rights in property disputes. Schedule consultation: (614) 285-5482',
+  description:
+    'Boundary, title, easement and purchase agreement disputes in Ohio, including quiet title, partition and adverse possession. Call (614) 285-5482.',
   keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney'],
   openGraph: {
     title: 'Real Estate Disputes Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Title, boundary, easement and purchase agreement disputes in Ohio, and the deadlines that apply.',
     url: 'https://www.jjlawohio.com/civil/real-estate-disputes',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil/real-estate-disputes' },
 };
 
@@ -26,173 +29,173 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What types of real estate disputes can arise in Ohio?',
-    answer: 'Real estate disputes in Ohio may include boundary disputes, easement disputes, title disputes, purchase agreement disputes, seller disclosure disputes, inspection disputes, closing disputes, construction disputes, property damage disputes, quiet title actions, adverse possession claims, and landlord-tenant disputes. Real estate disputes often involve complex property law and require experienced representation.',
+    answer:
+      'They include boundary disputes, easement disputes, title disputes, purchase agreement disputes, seller disclosure disputes, inspection disputes, closing disputes, construction disputes, property damage disputes, quiet title actions, adverse possession claims and landlord-tenant disputes.',
   },
   {
     question: 'What is a quiet title action in Ohio?',
-    answer: 'Quiet title actions under Ohio Revised Code 5303.01 involve court proceedings to resolve title disputes and establish clear ownership of property. Quiet title actions may be necessary when there are competing claims to property, title defects, liens, or other clouds on title. Quiet title actions can resolve ownership disputes and establish clear title.',
+    answer:
+      'A quiet title action under Ohio Revised Code 5303.01 is a court proceeding that resolves a title dispute and establishes clear ownership. It may be needed when there are competing claims to the property, title defects, liens or other clouds on title.',
   },
   {
     question: 'What is the statute of limitations for real estate disputes?',
-    answer: 'Statute of limitations for real estate disputes in Ohio vary by claim type: Breach of contract: 6 years for written contracts, 4 years for oral contracts (ORC 2305.06, 2305.07 as amended June 2021). Property damage: 4 years. Fraud: 4 years from discovery. Missing deadlines bars recovery, so it is crucial to act quickly and consult an attorney immediately.',
+    answer:
+      'It depends on the claim. Breach of contract: 6 years for a written contract, 4 years for an oral contract (ORC 2305.06 and 2305.07, as amended June 2021). Property damage: 4 years. Fraud: 4 years from discovery. Missing a deadline bars recovery, so talk to an attorney early.',
   },
   {
     question: 'Do I need a real estate disputes attorney?',
-    answer: 'Real estate disputes are complex and require experienced representation. Real estate attorneys understand property law, can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements, and represent you in court if necessary. Most attorneys work on hourly fee arrangements and offer consultations.',
+    answer:
+      'An attorney can analyze title issues, resolve boundary disputes, handle quiet title actions, negotiate settlements and represent you in court if needed. Most attorneys work on hourly fee arrangements and offer consultations.',
   },
   {
     question: 'Can real estate disputes be resolved without litigation?',
-    answer: 'Yes, many real estate disputes can be resolved through negotiation, mediation, or arbitration without litigation. Alternative dispute resolution can save time and money while resolving disputes. However, some disputes require litigation to resolve title issues, quiet title actions, or other complex matters. An attorney can help determine the best approach.',
+    answer:
+      'Yes. Many are resolved through negotiation, mediation or arbitration, which can save time and money. Some, such as quiet title actions and other title issues, need litigation. An attorney can help you decide which route fits.',
   },
   {
-    question: `What types of real estate disputes are handled in Ohio courts?`,
-    answer: `Ohio courts handle a wide range of real estate disputes including title disputes (competing claims to ownership), boundary disputes between neighboring property owners, easement issues involving rights of access or use, partition actions under ORC Chapter 5307 where co-owners cannot agree on the use or sale of property, adverse possession claims under ORC 2305.04, seller disclosure violations under ORC 5302.30, purchase agreement breaches, construction defect claims, and landlord-tenant disputes. Each type of dispute involves distinct legal standards and procedures, and many can be resolved through negotiation or alternative dispute resolution before reaching trial.`,
+    question: 'What types of real estate disputes are handled in Ohio courts?',
+    answer:
+      'Ohio courts hear title disputes (competing claims to ownership), boundary disputes between neighbors, easement issues over rights of access or use, partition actions under ORC Chapter 5307 when co-owners cannot agree on the use or sale of property, adverse possession claims under ORC 2305.04, seller disclosure violations under ORC 5302.30, purchase agreement breaches, construction defect claims and landlord-tenant disputes. Each has its own legal standards and procedures, and many resolve through negotiation or alternative dispute resolution before trial.',
   },
   {
-    question: `What is adverse possession in Ohio and how long does it take?`,
-    answer: `Adverse possession under Ohio Revised Code 2305.04 is a legal doctrine allowing a person to acquire title to another's property by occupying it openly, notoriously, continuously, exclusively, and hostilely—meaning without the true owner's permission—for a period of 21 years. All five elements must be present throughout the entire statutory period. Ohio courts strictly enforce the 21-year requirement, and any permissive use, abandonment of possession, or interruption by the true owner restarts the clock. A successful adverse possession claim requires a quiet title action filed in the Court of Common Pleas to formally establish legal ownership.`,
+    question: 'What is adverse possession in Ohio and how long does it take?',
+    answer:
+      "Under Ohio Revised Code 2305.04, a person can acquire title to another's property by occupying it openly, notoriously, continuously, exclusively and hostilely (without the true owner's permission) for 21 years. All five elements must be present for the whole period. Ohio courts strictly enforce the 21-year requirement, and any permissive use, abandonment of possession or interruption by the true owner restarts the clock. A successful claim still needs a quiet title action in the Court of Common Pleas to establish legal ownership.",
   },
   {
-    question: `What is a partition action in Ohio and when is it used?`,
-    answer: `A partition action under ORC Chapter 5307 is a legal proceeding used when two or more co-owners of real property—such as tenants in common or joint tenants—cannot agree on what to do with the property. Either co-owner may file a complaint in the Court of Common Pleas requesting partition. The court may order physical partition of the property if practicable, or if physical partition is not feasible, order the property sold at a sheriff's sale with the proceeds divided among the co-owners according to their ownership interests. Partition actions are common in estate situations, divorce-adjacent property disputes, and investment property co-ownership disagreements.`,
+    question: 'What is a partition action in Ohio and when is it used?',
+    answer:
+      "A partition action under ORC Chapter 5307 is used when two or more co-owners of real property, such as tenants in common or joint tenants, cannot agree on what to do with it. Any co-owner may file a complaint in the Court of Common Pleas. The court may divide the property physically if that is practicable. If not, it may order a sheriff's sale and divide the proceeds by ownership interest. Partition actions are common in estates, property disputes connected to a divorce, and disagreements between co-investors.",
   },
 ];
 
-export default function RealEstateDisputesPage() {
+const RELATED = [
+  { href: '/civil/construction-disputes', title: 'Construction disputes', subtitle: 'Mechanics’ liens, defective workmanship and payment disputes on construction projects' },
+  { href: '/civil', title: 'All civil matters', subtitle: 'Including landlord-tenant disputes, security deposit claims and habitability issues' },
+  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Enforcing or defending contract obligations and recovering damages' },
+  { href: '/civil/evictions', title: 'Evictions', subtitle: 'Landlord eviction proceedings and tenant eviction defense in Ohio' },
+];
 
+export default function RealEstateDisputesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Real Estate Disputes Lawyer"
-        description="Experienced legal representation for real estate disputes. Protecting your property rights and interests."
+        title="Real estate disputes in Ohio"
+        description="Boundary lines, title defects, easements and broken purchase agreements. A contract claim over property must be filed within 6 years if the contract was written, 4 if oral."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Real Estate Disputes in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Real estate disputes can involve valuable property interests and complex legal issues including boundary disputes, easement disputes, title defects, purchase agreement breaches, seller disclosure issues, construction disputes, and property damage claims. Understanding your rights, available remedies, and the legal process is essential for protecting your property interests and resolving disputes efficiently. Early intervention by a skilled real estate disputes attorney can significantly impact the outcome, ensuring proper documentation, negotiation, and protection of your rights.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '6 years', label: 'to sue on a written real estate contract' },
+          { figure: '4 years', label: 'for an oral contract, property damage, or fraud from discovery' },
+          { figure: '21 years', label: 'of continuous possession for an adverse possession claim' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> to discuss your real estate dispute and protect your rights.
-            </p>
+      <Section
+        title="Kinds of real estate disputes"
+        intro={
+          <p>
+            Real estate disputes often involve valuable property and turn on surveys, deeds, title records and contracts. The firm
+            handles them in Columbus, Cincinnati, Dayton and throughout Ohio as part of its{' '}
+            <Link href="/civil">civil litigation practice</Link>.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Boundary disputes',
+              body: 'Neighbors disagree about property lines, fences or structures. Resolving them may take surveys, title research and property records, then negotiation or litigation.',
+            },
+            {
+              title: 'Title disputes',
+              body: 'Competing claims to the property, title defects, liens or other clouds on title. A quiet title action under Ohio Revised Code 5303.01 can establish clear ownership.',
+            },
+            {
+              title: 'Purchase agreement disputes',
+              body: 'Breach of contract, seller disclosure issues, inspection disputes, closing disputes or financing issues. These can delay or stop a sale.',
+            },
+            {
+              title: 'Easement disputes',
+              body: 'Rights to use another person’s property for a specific purpose, such as access or utilities. They turn on the easement agreement and the property records.',
+            },
+            {
+              title: 'Partition',
+              body: 'Co-owners who cannot agree on the use or sale of property can ask the Court of Common Pleas to divide it or order it sold (ORC Chapter 5307).',
+            },
+            {
+              title: 'Adverse possession',
+              body: 'A claim to title based on 21 years of open, notorious, continuous, exclusive and hostile possession (ORC 2305.04).',
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Civil" />
+      <Section title="Deadlines and governing statutes" tone="ice">
+        <FactTable
+          title="Statutes of limitations"
+          rows={[
+            { label: 'Written contract', value: '6 years (ORC 2305.06, as amended June 2021).' },
+            { label: 'Oral contract', value: '4 years (ORC 2305.07, as amended June 2021).' },
+            { label: 'Property damage', value: '4 years.' },
+            { label: 'Fraud', value: '4 years from discovery.' },
+          ]}
+          note="Missing a deadline may bar recovery."
+        />
+        <FactTable
+          title="Statutes that govern common claims"
+          rows={[
+            { label: 'Quiet title', value: 'ORC 5303.01.' },
+            { label: 'Partition', value: 'ORC Chapter 5307, filed in the Court of Common Pleas.' },
+            { label: 'Adverse possession', value: 'ORC 2305.04: 21 years, all five elements throughout. Permissive use, abandonment or interruption restarts the clock.' },
+            { label: 'Seller disclosure', value: 'ORC 5302.30.' },
+          ]}
+        />
+        <p>
+          To discuss a property dispute, <Link href="/contact">contact Jwayyed Law LLC</Link>.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common Real Estate Disputes</h3>
+      <LocationsWeServe title="Civil" />
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Boundary Disputes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Boundary disputes arise when property owners disagree about property lines, fences, or structures. These disputes may require surveys, title research, and legal action to resolve. An attorney can analyze property records, surveys, and evidence to determine boundaries and resolve disputes through negotiation or litigation.
-              </p>
-            </div>
+      <Section title="How a real estate dispute is resolved" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Investigation',
+              body: 'Reviewing property records, surveys, title documents, contracts and other evidence, and running title searches.',
+            },
+            {
+              title: 'Negotiation',
+              body: 'Many disputes settle without a lawsuit. Mediation or arbitration can save time and money, and a settlement is put in writing.',
+            },
+            {
+              title: 'Litigation or quiet title',
+              body: 'If negotiation fails: a lawsuit, quiet title action or other proceeding, with discovery, depositions, expert testimony and possibly trial.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Title Disputes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Title disputes involve competing claims to property, title defects, liens, or other clouds on title. Quiet title actions under Ohio Revised Code 5303.01 can resolve title disputes and establish clear ownership. An attorney can analyze title issues, file quiet title actions, and resolve title disputes.
-              </p>
-            </div>
+      <Section title="What the firm does on a property dispute">
+        <PointGrid
+          points={[
+            { title: 'Analyzes the property issue', body: 'Title problems, boundary and easement disputes and other property law questions, to set out your rights and options.' },
+            { title: 'Researches title', body: 'Title searches and a review of property records, surveys and documents.' },
+            { title: 'Files quiet title actions', body: 'Under Ohio Revised Code 5303.01, to establish clear ownership.' },
+            { title: 'Reviews the contracts', body: 'Purchase agreements, easement agreements and other documents behind the dispute.' },
+            { title: 'Negotiates and mediates', body: 'Settlement talks, mediation or arbitration, and drafting the settlement agreement.' },
+            { title: 'Litigates', body: 'Files suit when needed, runs discovery, takes depositions and represents you in court.' },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Purchase Agreement Disputes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Purchase agreement disputes may involve breach of contract, seller disclosure issues, inspection disputes, closing disputes, or financing issues. These disputes can delay or prevent property transactions. An attorney can analyze purchase agreements, negotiate disputes, and protect your interests.
-              </p>
-            </div>
+      <Section title="Related civil matters" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Easement Disputes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Easement disputes involve rights to use another person&apos;s property for specific purposes (access, utilities, etc.). These disputes may require analysis of easement agreements, property records, and legal action to resolve. An attorney can analyze easement issues and resolve disputes.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Real Estate Disputes Process</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the real estate disputes process helps you prepare for what lies ahead:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Investigation and Analysis</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The process begins with investigating the dispute, analyzing property records, surveys, title documents, contracts, and evidence. An attorney can review documents, conduct title searches, analyze property records, and identify issues. This analysis is crucial for understanding the dispute and developing strategies.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Negotiation and Settlement</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Many real estate disputes can be resolved through negotiation without litigation. An attorney can negotiate with opposing parties, draft settlement agreements, and work toward resolution. Alternative dispute resolution including mediation or arbitration can save time and money while resolving disputes.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Quiet Title Actions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If negotiation fails, litigation may be necessary. This involves filing lawsuits, quiet title actions, or other legal proceedings. Litigation may include discovery, depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process and protect your property rights.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Real Estate Disputes Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced real estate disputes attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Property Law Analysis:</strong> Analyze property issues, title problems, boundary disputes, easement disputes, and other property law matters to understand your rights and options</li>
-              <li><strong>Title Research:</strong> Conduct title searches, review property records, surveys, and documents to identify issues and resolve title disputes</li>
-              <li><strong>Quiet Title Actions:</strong> File quiet title actions under Ohio Revised Code 5303.01 to resolve title disputes and establish clear ownership of property</li>
-              <li><strong>Contract Review:</strong> Review purchase agreements, easement agreements, and other contracts to identify issues and protect your interests</li>
-              <li><strong>Negotiation and Settlement:</strong> Negotiate with opposing parties to resolve disputes, draft settlement agreements, and work toward resolution without litigation when possible</li>
-              <li><strong>Alternative Dispute Resolution:</strong> Participate in mediation or arbitration to resolve disputes efficiently and cost-effectively</li>
-              <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court to protect your property rights</li>
-            </ul>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated real estate disputes representation throughout Ohio. We understand that real estate disputes can be complex and affect valuable property interests. Our attorney works diligently to analyze property issues, resolve disputes, and protect your property rights.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough understanding of property law, strategic dispute resolution, and aggressive advocacy when necessary. We understand the local court systems, judicial preferences, and common issues in real estate disputes. This knowledge allows us to develop effective strategies tailored to your specific situation and protect your interests. We work closely with clients to understand their goals, explain legal options, and make informed decisions about dispute resolution strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are involved in a real estate dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/construction-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Construction Disputes</span>
-                <span className="text-sm text-navy-950/70">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
-              </Link>
-              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Landlord-Tenant Disputes</span>
-                <span className="text-sm text-navy-950/70">Eviction defense, security deposit claims, and habitability issues</span>
-              </Link>
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
-                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
-              </Link>
-              <Link href="/civil/evictions" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Evictions</span>
-                <span className="text-sm text-navy-950/70">Landlord eviction proceedings and tenant eviction defense in Ohio</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

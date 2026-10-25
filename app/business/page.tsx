@@ -3,19 +3,20 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
-import Link from 'next/link';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 import { businessServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Ohio Business Attorney',
-  description: 'Experienced business attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, LLC formation, contracts, business litigation.',
+  description:
+    'Business law in Columbus, Cincinnati, Dayton and across Ohio: forming an LLC or corporation, contracts, compliance, disputes and dissolution.',
   keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
   openGraph: {
     title: 'Ohio Business Attorney | Jwayyed Law LLC',
-    description: 'Business law representation in Columbus, Cincinnati, Dayton, and throughout Ohio. Schedule consultation available.',
+    description: 'Business law in Columbus, Cincinnati, Dayton and throughout Ohio. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/business',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/business' },
 };
 
@@ -24,322 +25,143 @@ const breadcrumbItems = [{ label: 'Business', href: '/business' }];
 const faqs = [
   {
     question: 'What is required to form a business in Ohio?',
-    answer: 'Business formation in Ohio requires filing articles of incorporation or organization with the Ohio Secretary of State, obtaining necessary licenses and permits, establishing operating agreements or bylaws, obtaining an EIN from the IRS, and complying with state and federal requirements. Business structure (LLC, corporation, partnership) affects formation requirements. An attorney can help determine the best structure and guide you through formation.',
+    answer:
+      'You file articles of incorporation or organization with the Ohio Secretary of State, get the licenses and permits you need, adopt an operating agreement or bylaws, get an EIN from the IRS, and meet other state and federal requirements. The structure you choose (LLC, corporation or partnership) changes what is required.',
   },
   {
     question: 'What is the difference between an LLC and corporation in Ohio?',
-    answer: 'LLCs (Limited Liability Companies) and corporations in Ohio offer liability protection but differ in structure, taxation, and management. LLCs provide flexibility in management and taxation (can be taxed as pass-through entities), while corporations offer more formal structure and ability to raise capital through stock. Choosing between structures depends on your business needs, tax goals, and growth plans. An attorney can help determine the best structure for your business.',
+    answer:
+      'Both offer liability protection. They differ in structure, taxation and management. An LLC is flexible in how it is managed and taxed (it can be taxed as a pass-through entity). A corporation has a more formal structure and can raise capital by issuing stock. The right choice depends on your business, your tax goals and your growth plans.',
   },
   {
     question: 'Do I need a business attorney for contract drafting?',
-    answer: 'While you can draft contracts yourself, an experienced business attorney can help ensure contracts are legally enforceable, protect your interests, and minimize disputes. Attorneys understand contract law, identify potential issues, negotiate favorable terms, and draft clear, comprehensive contracts. Poorly drafted contracts can lead to disputes, litigation, and financial losses, making legal assistance valuable.',
+    answer:
+      'You can draft contracts yourself. An attorney makes sure they are enforceable, spots problems, negotiates terms and writes them clearly. Poorly drafted contracts lead to disputes, litigation and financial losses.',
   },
   {
     question: 'What is business litigation?',
-    answer: 'Business litigation involves legal disputes related to business operations, including contract disputes, partnership disputes, shareholder disputes, employment disputes, breach of fiduciary duty, business torts, and intellectual property disputes. Business litigation can be complex and requires experienced representation to protect business interests and minimize disruption to operations.',
+    answer:
+      'Legal disputes arising from business operations: contract disputes, partnership disputes, shareholder disputes, employment disputes, breach of fiduciary duty, business torts and intellectual property disputes.',
   },
   {
     question: 'What should I do if my business is involved in a dispute?',
-    answer: 'If your business is involved in a dispute, consult an experienced business attorney immediately. Gather relevant documents, preserve evidence, avoid making statements that could harm your position, and document all communications. An attorney can evaluate your case, develop strategies, negotiate settlements, and represent your business in court if necessary. Early legal intervention can often prevent disputes from escalating.',
+    answer:
+      'Talk to a business attorney right away. Gather the relevant documents, preserve evidence, avoid statements that could hurt your position, and document every communication. Early legal advice can often keep a dispute from escalating.',
   },
   {
-    question: `What is a fiduciary duty in Ohio business law and who owes it?`,
-    answer: `A fiduciary duty is an obligation to act in the best interests of another party rather than in one's own self-interest. In Ohio LLC law, ORC 1706.30 governs the duties of members and managers, including the duty of loyalty (avoiding conflicts of interest and self-dealing) and the duty of care (acting in good faith and in a manner reasonably believed to be in the best interests of the company). For Ohio corporations, ORC 1701.59 imposes duties of care and loyalty on directors and officers. Breach of fiduciary duty can expose members, managers, directors, or officers to personal liability for losses caused to the business or its other owners.`,
+    question: 'What is a fiduciary duty in Ohio business law and who owes it?',
+    answer:
+      "A fiduciary duty is an obligation to act in another party's best interests rather than your own. For Ohio LLCs, ORC 1706.30 sets the duties of members and managers, including the duty of loyalty (avoiding conflicts of interest and self-dealing) and the duty of care (acting in good faith and in a way reasonably believed to be in the company's best interests). For Ohio corporations, ORC 1701.59 imposes duties of care and loyalty on directors and officers. A breach can make members, managers, directors or officers personally liable for the losses it causes.",
   },
   {
-    question: `What is piercing the corporate veil in Ohio and how is it prevented?`,
-    answer: `Piercing the corporate veil is a legal doctrine that allows courts to hold individual owners personally liable for business debts or judgments when the business entity has been used improperly. Under ORC 1706.26 and Ohio common law, courts will pierce the veil when the entity was used to perpetrate fraud, when there was a failure to observe corporate or LLC formalities, when the business was inadequately capitalized, or when the personal and business finances were commingled. To prevent veil-piercing, owners should maintain separate business bank accounts, keep accurate records, avoid using business assets for personal expenses, ensure adequate capitalization, and comply with all governance requirements such as annual meetings and proper recordkeeping.`,
+    question: 'What is piercing the corporate veil in Ohio and how is it prevented?',
+    answer:
+      'Piercing the veil lets a court hold owners personally liable for business debts or judgments when the entity was misused. Under ORC 1706.26 and Ohio common law, courts pierce the veil when the entity was used to commit fraud, formalities were ignored, the business was undercapitalized, or personal and business finances were mixed. To prevent it, keep separate business bank accounts and accurate records, do not use business assets for personal expenses, capitalize the business adequately, and meet governance requirements such as annual meetings.',
   },
   {
-    question: `What is the Ohio Commercial Activity Tax (CAT) and which businesses must register?`,
-    answer: `The Ohio Commercial Activity Tax (CAT) is a tax on the privilege of doing business in Ohio, imposed on taxable gross receipts from business activities in the state. Governed by ORC Chapter 5751, the CAT applies to most businesses with taxable gross receipts exceeding $150,000 annually—regardless of profitability or business structure. Businesses at or below $150,000 in taxable gross receipts are generally exempt. The CAT rate is 0.26% on taxable gross receipts above the threshold. Ohio LLCs, corporations, partnerships, and sole proprietors may all be subject to the CAT depending on their gross receipts. Businesses must register with the Ohio Department of Taxation and file returns on an annual or quarterly basis depending on their gross receipts level.`,
+    question: 'What is the Ohio Commercial Activity Tax (CAT) and which businesses must register?',
+    answer:
+      'The CAT, under ORC Chapter 5751, is a tax on the privilege of doing business in Ohio, imposed on taxable gross receipts from business activity in the state. It applies to most businesses with taxable gross receipts over $150,000 a year, whether or not they are profitable and whatever their structure. Businesses at or below $150,000 are generally exempt. The rate is 0.26% on taxable gross receipts above the threshold. LLCs, corporations, partnerships and sole proprietors may all owe it. Businesses register with the Ohio Department of Taxation and file annually or quarterly depending on their gross receipts.',
   },
 ];
 
-export default function BusinessPage() {
+const COUNTIES = [
+  { href: '/locations/franklin-county/business-formation-llc-franklin-county', title: 'Franklin County', subtitle: 'Columbus and surrounding areas' },
+  { href: '/locations/delaware-county/business-formation-llc-delaware-county', title: 'Delaware County', subtitle: 'Delaware and Powell' },
+  { href: '/locations/butler-county/business-formation-llc-butler-county', title: 'Butler County', subtitle: 'Hamilton, Oxford and West Chester' },
+  { href: '/locations/greene-county/business-formation-llc-greene-county', title: 'Greene County', subtitle: 'Fairborn and Xenia' },
+  { href: '/locations/montgomery-county/business-formation-llc-montgomery-county', title: 'Montgomery County', subtitle: 'Dayton and surrounding areas' },
+  { href: '/locations/pickaway-county/business-formation-llc-pickaway-county', title: 'Pickaway County', subtitle: 'Circleville and surrounding areas' },
+  { href: '/locations/athens-county/business-formation-llc-athens-county', title: 'Athens County', subtitle: 'Athens and surrounding areas' },
+  { href: '/locations/morrow-county/business-formation-llc-morrow-county', title: 'Morrow County', subtitle: 'Mount Gilead, Cardington and surrounding areas' },
+  { href: '/locations/clinton-county/business-formation-llc-clinton-county', title: 'Clinton County', subtitle: 'Wilmington and surrounding areas' },
+];
 
+export default function BusinessPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Business Attorney"
-        description="Serving Columbus, Cincinnati, Dayton, and throughout Ohio. Business formation, contracts, litigation, and all business law matters."
+        title="Business law in Ohio"
+        description="Forming an Ohio LLC or corporation, drafting the contracts it runs on, staying compliant, and resolving disputes between owners, partners and shareholders."
       />
 
-      {/* Sub-Services Grid */}
-      <section className="py-8 bg-ice border-b border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            Business Legal Services
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {businessServices.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="flex items-center justify-between p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-medium text-navy-950 group-hover:text-sky-deep transition-colors text-sm">{service.title}</span>
-                <span className="text-white/80 group-hover:text-sky-deep transition-colors ml-2 text-xs shrink-0">→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Section title="Find your matter" intro={<p>Each page covers the Ohio rules, the process and the options for that matter.</p>}>
+        <LinkGrid links={businessServices.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+        <p>
+          Business formation covers LLCs, corporations and partnerships under Ohio law. Business transactions such as purchases, sales
+          and mergers are handled with the same care for documentation.
+        </p>
+      </Section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Business Law Representation in Columbus, Cincinnati, Dayton & Throughout Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We serve business clients in Columbus, Cincinnati, Dayton, and throughout Ohio. Business law matters require experienced legal representation to protect your business interests, ensure compliance, and minimize legal risks. At Jwayyed Law LLC, we provide experienced business law representation for various business matters under Ohio Revised Code (current as of 2026). Our attorney understands Ohio business laws, regulations, and strategies necessary to protect your business.
-            </p>
+      <Section
+        title="What business law covers"
+        tone="ice"
+        intro={
+          <p>
+            The firm advises business clients in Columbus, Cincinnati, Dayton and throughout Ohio under the Ohio Revised Code (current as
+            of 2026).
+          </p>
+        }
+      >
+        <p>
+          The work runs from formation through contract drafting and review, business litigation, partnership and shareholder disputes,
+          employment and non-compete agreements, compliance and dissolution. The structure you choose (LLC, corporation or partnership)
+          shapes your liability protection, taxes, management and ability to raise capital. Well-drafted contracts, operating agreements
+          and employment agreements head off many disputes before they start.
+        </p>
+        <p>
+          Disputes come from contract breaches, partner disagreements, shareholder conflicts, employment issues and compliance problems.
+          They can disrupt operations, damage relationships and cost real money. They can be resolved through negotiation or, when
+          needed, litigation.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Business law encompasses a wide range of legal matters including business formation, contract drafting and review, business litigation, partnership disputes, shareholder disputes, employment agreements, non-compete agreements, business compliance, and business dissolution. Understanding the legal requirements, potential risks, and available strategies is essential for protecting your business and ensuring long-term success.
-            </p>
+      <Section title="Ohio business structures and requirements">
+        <FactTable
+          title="Choosing and forming an entity"
+          rows={[
+            { label: 'Structures', value: 'LLCs, corporations (C-corp and S-corp), partnerships (general, limited and limited liability) and sole proprietorships.' },
+            { label: 'Formation', value: 'Articles of incorporation or organization filed with the Ohio Secretary of State, licenses and permits, an operating agreement or bylaws, and an EIN from the IRS.' },
+            { label: 'Ongoing compliance', value: 'Annual reports, tax filings, license renewals, employment law and corporate governance requirements.' },
+            { label: 'Risk of falling behind', value: 'Penalties, loss of liability protection or dissolution of the business.' },
+          ]}
+        />
+        <FactTable
+          title="Rules every Ohio owner should know"
+          rows={[
+            { label: 'LLC fiduciary duties', value: 'ORC 1706.30: duty of loyalty and duty of care for members and managers.' },
+            { label: 'Corporate fiduciary duties', value: 'ORC 1701.59: duties of care and loyalty for directors and officers.' },
+            { label: 'Veil piercing', value: 'ORC 1706.26 and common law: fraud, ignored formalities, undercapitalization or commingled finances.' },
+            { label: 'Commercial Activity Tax', value: 'ORC Chapter 5751: 0.26% on taxable gross receipts above $150,000 a year.' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio business law is complex and includes various requirements for business formation, operation, and compliance. Choosing the right business structure (LLC, corporation, partnership) affects liability protection, taxation, management flexibility, and ability to raise capital. Properly drafted contracts, operating agreements, and employment agreements can prevent disputes and protect business interests. Early legal guidance can help avoid costly mistakes and legal problems.
-            </p>
+      <Section title="What the firm does for businesses" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Forms the business', body: 'Helps choose the structure, files with the Ohio Secretary of State and drafts the operating agreement or bylaws.' },
+            { title: 'Drafts and reviews contracts', body: 'Clear, enforceable terms, problems flagged before signing, and negotiation of the terms.' },
+            { title: 'Keeps you compliant', body: 'Ohio business law, regulations, licensing, tax obligations and employment law.' },
+            { title: 'Resolves disputes', body: 'Negotiation, mediation, arbitration or litigation when needed.' },
+            { title: 'Handles employment matters', body: 'Employment agreements, non-competes, employment policies and employment disputes.' },
+            { title: 'Documents transactions', body: 'Business purchases, sales and mergers.' },
+            { title: 'Winds the business down', body: 'Dissolution and a proper winding up.' },
+          ]}
+        />
+        <p>
+          To schedule a consultation about a business matter in Columbus, Cincinnati, Dayton or anywhere in Ohio, contact Jwayyed Law
+          LLC.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Business disputes can arise from various sources including contract breaches, partnership disagreements, shareholder conflicts, employment issues, or regulatory compliance problems. These disputes can disrupt business operations, damage relationships, and result in significant financial losses. An experienced business attorney can help prevent disputes through proper planning, resolve disputes through negotiation or litigation, and protect business interests throughout the process.
-            </p>
+      <Section title="Business law in these Ohio counties" intro={<p>Each county page covers forming an LLC or business there.</p>}>
+        <LinkGrid links={COUNTIES} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Business – Locations We Serve</h3>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              We serve business clients in the following Ohio counties and communities. Each county has its own page; click through for more information.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/business-formation-llc-franklin-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Franklin County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Columbus & surrounding areas</span>
-              </Link>
-              <Link href="/locations/delaware-county/business-formation-llc-delaware-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Delaware County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Delaware & surrounding areas</span>
-              </Link>
-              <Link href="/locations/butler-county/business-formation-llc-butler-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Butler County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
-              </Link>
-              <Link href="/locations/greene-county/business-formation-llc-greene-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Greene County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Fairborn & surrounding areas</span>
-              </Link>
-              <Link href="/locations/montgomery-county/business-formation-llc-montgomery-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Montgomery County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Dayton & surrounding areas</span>
-              </Link>
-              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Pickaway County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Circleville & surrounding areas</span>
-              </Link>
-              <Link href="/locations/athens-county/business-formation-llc-athens-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Athens County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Athens & surrounding areas</span>
-              </Link>
-              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Morrow County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
-              </Link>
-              <Link href="/locations/clinton-county/business-formation-llc-clinton-county" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Clinton County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Wilmington & surrounding areas</span>
-              </Link>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Business Attorney Can Help</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced business attorney provides comprehensive representation for various business needs:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Business Formation:</strong> Help choose the right business structure (LLC, corporation, partnership), file formation documents with the Ohio Secretary of State, draft operating agreements or bylaws, and ensure compliance with formation requirements</li>
-              <li><strong>Contract Drafting and Review:</strong> Draft clear, comprehensive contracts that protect your interests, review contracts for potential issues, negotiate favorable terms, and ensure contracts are legally enforceable</li>
-              <li><strong>Business Compliance:</strong> Ensure compliance with Ohio business laws, regulations, licensing requirements, tax obligations, and employment laws to minimize legal risks</li>
-              <li><strong>Dispute Resolution:</strong> Resolve business disputes through negotiation, mediation, arbitration, or litigation when necessary, protecting business interests and minimizing disruption</li>
-              <li><strong>Employment Matters:</strong> Draft employment agreements, non-compete agreements, and employment policies, and handle employment disputes</li>
-              <li><strong>Business Transactions:</strong> Assist with business purchases, sales, mergers, and other transactions, ensuring proper documentation and protecting interests</li>
-              <li><strong>Business Dissolution:</strong> Guide businesses through dissolution processes, ensuring proper winding up and compliance with legal requirements</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Business Practice Areas</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm handles all types of business law matters, providing experienced representation across the full spectrum of business legal needs:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/business/business-formation" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Business Formation</h4>
-                <p className="text-sm text-navy-950/70">LLC, corporation, and partnership formation under Ohio law</p>
-              </Link>
-              <Link href="/business/llc-formation" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">LLC Formation</h4>
-                <p className="text-sm text-navy-950/70">Limited Liability Company formation and structuring</p>
-              </Link>
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Contract Drafting & Review</h4>
-                <p className="text-sm text-navy-950/70">Drafting and reviewing business contracts and agreements</p>
-              </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Business Litigation</h4>
-                <p className="text-sm text-navy-950/70">Representation for business disputes and litigation</p>
-              </Link>
-              <Link href="/business/partnership-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Partnership Disputes</h4>
-                <p className="text-sm text-navy-950/70">Resolution of partnership conflicts and disputes</p>
-              </Link>
-              <Link href="/business/shareholder-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Shareholder Disputes</h4>
-                <p className="text-sm text-navy-950/70">Representation for corporate shareholder conflicts</p>
-              </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Non-Compete Agreements</h4>
-                <p className="text-sm text-navy-950/70">Drafting and enforcement of non-compete agreements</p>
-              </Link>
-              <Link href="/business/employment-agreements" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Employment Agreements</h4>
-                <p className="text-sm text-navy-950/70">Drafting employment contracts and agreements</p>
-              </Link>
-              <Link href="/business/business-compliance" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Business Compliance</h4>
-                <p className="text-sm text-navy-950/70">Ensuring compliance with business laws and regulations</p>
-              </Link>
-              <Link href="/business/business-dissolution" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Business Dissolution</h4>
-                <p className="text-sm text-navy-950/70">Guidance through business dissolution and winding up</p>
-              </Link>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Understanding Ohio Business Law</h3>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Business Structures in Ohio</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio recognizes various business structures including LLCs (Limited Liability Companies), corporations (C-corp and S-corp), partnerships (general, limited, limited liability), and sole proprietorships. Each structure offers different liability protection, tax treatment, management flexibility, and formation requirements. Choosing the right structure depends on your business goals, tax situation, and growth plans. An attorney can help evaluate options and choose the best structure for your business.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Formation Requirements</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Business formation in Ohio requires filing articles of incorporation or organization with the Ohio Secretary of State, obtaining necessary licenses and permits, establishing operating agreements or bylaws, obtaining an EIN from the IRS, and complying with state and federal requirements. Proper formation ensures liability protection, tax benefits, and legal compliance. An attorney can guide you through the formation process and ensure all requirements are met.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Ongoing Compliance</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Businesses must maintain ongoing compliance with Ohio business laws including annual reports, tax filings, licensing renewals, employment law compliance, and corporate governance requirements. Failure to maintain compliance can result in penalties, loss of liability protection, or business dissolution. An attorney can help ensure ongoing compliance and avoid legal problems.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated business law representation throughout Ohio. We understand that business matters require experienced representation. Our attorney works diligently to help businesses form, grow, and resolve disputes while protecting business interests and ensuring compliance.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough understanding of business law, strategic planning, and practical solutions. We understand the local business environment, regulatory requirements, and common business challenges in Columbus, Cincinnati, Dayton, and throughout Ohio. This knowledge allows us to provide effective legal guidance tailored to your specific business needs. We work closely with clients to understand their goals, explain legal options, and make informed decisions about business structure, contracts, and dispute resolution.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you need business legal assistance in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your situation, explain your options, discuss legal requirements, and develop a strategy tailored to your business needs. Whether you're forming a new business, drafting contracts, resolving disputes, or ensuring compliance, experienced legal representation can protect your business and ensure long-term success.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* County Service Locations */}
-      <section className="py-12 bg-ice border-t border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            Business Attorney — Ohio Counties We Serve
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link
-                key="/locations/franklin-county/business-formation-llc-franklin-county"
-                href="/locations/franklin-county/business-formation-llc-franklin-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Franklin County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/delaware-county/business-formation-llc-delaware-county"
-                href="/locations/delaware-county/business-formation-llc-delaware-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Delaware County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware & Powell</span>
-              </Link>
-              <Link
-                key="/locations/pickaway-county/business-formation-llc-pickaway-county"
-                href="/locations/pickaway-county/business-formation-llc-pickaway-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Pickaway County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/greene-county/business-formation-llc-greene-county"
-                href="/locations/greene-county/business-formation-llc-greene-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Greene County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn & Xenia</span>
-              </Link>
-              <Link
-                key="/locations/montgomery-county/business-formation-llc-montgomery-county"
-                href="/locations/montgomery-county/business-formation-llc-montgomery-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Montgomery County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/morrow-county/business-formation-llc-morrow-county"
-                href="/locations/morrow-county/business-formation-llc-morrow-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Morrow County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Mount Gilead & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/butler-county/business-formation-llc-butler-county"
-                href="/locations/butler-county/business-formation-llc-butler-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Butler County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton, Oxford & West Chester</span>
-              </Link>
-              <Link
-                key="/locations/athens-county/business-formation-llc-athens-county"
-                href="/locations/athens-county/business-formation-llc-athens-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Athens County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens & surrounding areas</span>
-              </Link>
-              <Link
-                key="/locations/clinton-county/business-formation-llc-clinton-county"
-                href="/locations/clinton-county/business-formation-llc-clinton-county"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Clinton County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington & surrounding areas</span>
-              </Link>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

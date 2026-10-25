@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Appeals Lawyer in Ohio',
-  description: 'Experienced Ohio appeals attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Helping you appeal court decisions.',
+  description:
+    'Appealing a court decision in Ohio: the 30-day notice of appeal deadline, standards of review, briefs under App.R. 16 and which district hears your case.',
   keywords: ['appeals lawyer Columbus OH', 'appeals attorney Ohio', 'appellate lawyer', 'Franklin County appeals attorney'],
   openGraph: {
     title: 'Appeals Lawyer in Ohio | Jwayyed Law LLC',
+    description: 'Civil appeals in the Ohio District Courts of Appeals and the Ohio Supreme Court.',
     url: 'https://www.jjlawohio.com/civil/appeals',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/civil/appeals' },
 };
 
@@ -25,109 +28,163 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is an appeal in Ohio?`,
-    answer: `An appeal under Ohio Revised Code Chapter 2505 involves challenging a court decision by requesting a higher court to review the lower court's decision for legal errors. Appeals focus on legal issues rather than facts — appellate courts do not hear new testimony or evidence but instead review whether the lower court made legal errors that materially affected the outcome. Assignments of error must be precisely identified in your appellate brief, and errors not objected to at trial are generally waived. Experienced appellate representation is essential to identify and preserve viable issues.`,
+    question: 'What is an appeal in Ohio?',
+    answer:
+      "An appeal under Ohio Revised Code Chapter 2505 asks a higher court to review a lower court's decision for legal errors. Appellate courts do not hear new testimony or evidence. They review whether the lower court made legal errors that materially affected the outcome. Assignments of error must be identified precisely in the appellate brief, and errors not objected to at trial are generally waived.",
   },
   {
-    question: `What is the deadline for filing an appeal in Ohio?`,
-    answer: `Under Ohio App.R. 4 and ORC 2505.07, the deadline to file a notice of appeal in Ohio is generally 30 days from the entry of the final judgment or order being appealed. Missing this deadline almost always bars the appeal entirely — courts have very limited authority to grant extensions. If you received an adverse ruling, you should consult an appellate attorney immediately. The 30-day clock begins when the judgment is journalized by the clerk, not when you receive notice of it.`,
+    question: 'What is the deadline for filing an appeal in Ohio?',
+    answer:
+      'Under Ohio App.R. 4 and ORC 2505.07, the notice of appeal is generally due within 30 days of the entry of the final judgment or order being appealed. Missing it almost always bars the appeal, and courts have very limited power to extend it. The 30-day clock starts when the clerk journalizes the judgment, not when you receive notice of it. If you received an adverse ruling, talk to an appellate attorney right away.',
   },
   {
-    question: `What is the difference between de novo review and abuse of discretion?`,
-    answer: `Ohio appellate courts apply different standards of review depending on the type of decision being challenged. De novo review applies to pure questions of law — the appellate court reviews the legal issue fresh, without deference to the trial court. Abuse of discretion review applies to discretionary trial court decisions such as evidentiary rulings, sentencing decisions, and case management orders; the appellate court will only reverse if the trial court acted unreasonably, arbitrarily, or unconscionably. Manifest weight of the evidence review applies when a party argues the jury or trial court's factual findings were against the weight of evidence. Understanding which standard applies is critical to building a viable appeal.`,
+    question: 'What is the difference between de novo review and abuse of discretion?',
+    answer:
+      "De novo review applies to pure questions of law: the appellate court looks at the issue fresh, with no deference to the trial court. Abuse of discretion review applies to discretionary decisions such as evidentiary rulings, sentencing decisions and case management orders; the court reverses only if the trial court acted unreasonably, arbitrarily or unconscionably. Manifest weight of the evidence review applies when a party argues the factual findings went against the weight of the evidence. The standard that applies shapes the whole appeal.",
   },
   {
-    question: `Which courts handle appeals in Ohio?`,
-    answer: `Ohio has a three-tier appellate structure. Trial-level decisions from Municipal Courts and Common Pleas Courts are appealed to one of Ohio's 12 District Courts of Appeals. The 10th District Court of Appeals handles Franklin County; the 12th District covers Butler, Clinton, Greene, and Warren Counties; the 2nd District covers Montgomery County (Dayton area); the 4th District covers Athens and Pickaway Counties; and the 9th District covers Morrow County and several others. From the District Courts of Appeals, parties may seek discretionary review at the Ohio Supreme Court, which generally accepts only cases involving constitutional questions or significant issues of public or legal interest.`,
+    question: 'Which courts handle appeals in Ohio?',
+    answer:
+      "Ohio has a three-tier structure. Decisions from Municipal Courts and Common Pleas Courts are appealed to one of Ohio's 12 District Courts of Appeals. The 10th District handles Franklin County; the 12th District covers Butler, Clinton, Greene and Warren Counties; the 2nd District covers Montgomery County (the Dayton area); the 4th District covers Athens and Pickaway Counties; and the 9th District covers Morrow County and several others. After that, parties may seek discretionary review at the Ohio Supreme Court, which generally accepts only cases involving constitutional questions or significant issues of public or legal interest.",
   },
   {
-    question: `How are appellate briefs written in Ohio?`,
-    answer: `Ohio App.R. 16 governs the content and format of appellate briefs. The appellant's brief must contain a table of contents, statement of facts, assignments of error, and argument sections that address each assignment of error with citations to the record and relevant legal authority. The appellee then files an answer brief. The appellant may file a reply brief. Word limits, formatting requirements, and filing deadlines are strict. A well-crafted brief that precisely identifies legal error with compelling legal analysis is the foundation of any successful appeal.`,
+    question: 'How are appellate briefs written in Ohio?',
+    answer:
+      "Ohio App.R. 16 governs their content and format. The appellant's brief must have a table of contents, a statement of facts, assignments of error, and an argument on each assignment of error with citations to the record and legal authority. The appellee then files an answer brief, and the appellant may file a reply brief. Word limits, formatting rules and filing deadlines are strict.",
   },
   {
-    question: `How long does an appeal take in Ohio?`,
-    answer: `Ohio appellate cases typically take 12 to 24 months from the filing of the notice of appeal to a final decision, though this varies by district and case complexity. After the notice of appeal is filed, time is needed to assemble the record, brief the case, and schedule oral argument. Emergency appeals or interlocutory appeals may proceed faster. The Ohio Supreme Court, if it accepts review, may add another year or more. While appeals are pending, trial court judgments may or may not be stayed depending on the circumstances and whether a supersedeas bond is posted.`,
+    question: 'How long does an appeal take in Ohio?',
+    answer:
+      'Typically 12 to 24 months from the notice of appeal to a final decision, depending on the district and the complexity of the case. The record has to be assembled, the case briefed and oral argument scheduled. Emergency or interlocutory appeals may move faster. If the Ohio Supreme Court accepts review, that may add another year or more. While the appeal is pending, the trial court judgment may or may not be stayed, depending on the circumstances and whether a supersedeas bond is posted.',
   },
   {
-    question: `Can new evidence be introduced on appeal?`,
-    answer: `Generally, no. Ohio appellate courts do not accept new evidence. The appellate court reviews only the record that was created in the trial court — the transcripts, exhibits, and pleadings filed below. This is why it is critical to preserve your arguments at the trial level by making timely and specific objections. Evidence or arguments not raised in the trial court are typically considered waived and cannot be raised for the first time on appeal, except in very limited circumstances such as plain error.`,
+    question: 'Can new evidence be introduced on appeal?',
+    answer:
+      'Generally, no. The appellate court reviews only the record made in the trial court: the transcripts, exhibits and pleadings. That is why timely, specific objections at trial matter. Evidence or arguments not raised in the trial court are usually waived and cannot be raised for the first time on appeal, except in very limited circumstances such as plain error.',
   },
   {
-    question: `How much does an appeal cost in Ohio?`,
-    answer: `Ohio appeals are generally handled on an hourly fee basis given the substantial professional time involved in assembling the record, researching legal issues, drafting briefs, and arguing before the court. Costs include filing fees, transcript preparation fees (which can be significant in long trials), and attorney fees. Because appeals require specialized skills distinct from trial practice, it is important to work with an attorney experienced in appellate procedure. Jwayyed Law LLC offers consultations to discuss your appellate options and fee structure.`,
+    question: 'How much does an appeal cost in Ohio?',
+    answer:
+      'Ohio appeals are generally handled on an hourly fee basis, because assembling the record, researching the issues, drafting briefs and arguing take substantial time. Costs include filing fees, transcript preparation fees (which can be significant after a long trial) and attorney fees. Jwayyed Law LLC offers consultations to discuss your appellate options and the fee structure.',
   },
 ];
 
-export default function AppealsPage() {
+const RELATED = [
+  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Enforcing or defending contract obligations and recovering damages' },
+  { href: '/civil/employment-disputes', title: 'Employment disputes', subtitle: 'Wrongful termination, discrimination and workplace retaliation claims' },
+  { href: '/civil/real-estate-disputes', title: 'Real estate disputes', subtitle: 'Title disputes, boundary issues, quiet title actions and property litigation' },
+  { href: '/criminal-defense', title: 'Criminal defense', subtitle: 'Criminal appeals and post-conviction relief in Ohio courts' },
+];
 
+export default function AppealsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Appeals Lawyer"
-        description="Experienced legal representation for appeals. Helping you challenge court decisions and protect your rights."
+        title="Civil appeals in Ohio"
+        description="A notice of appeal in Ohio is generally due within 30 days of the final judgment entry. Miss it and the right to appeal is almost always gone."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Appeals in Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              When a trial court rules against you in Columbus, Cincinnati, Dayton, or anywhere in Ohio, you may have the right to appeal that decision to a higher court. Appeals under Ohio Revised Code Chapter 2505 and the Ohio Rules of Appellate Procedure allow parties to challenge legal errors that affected the outcome of their case. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced appellate representation and understands that the appellate process demands a different skill set than trial practice — one focused on legal analysis, precise writing, and an in-depth understanding of standards of review.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Ohio's Appellate Court Structure</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's court system has three levels of appellate review. Trial-level decisions from Municipal Courts and Common Pleas Courts are first appealed to the appropriate District Court of Appeals. The 10th District Court of Appeals sits in Columbus and handles Franklin County cases. Neighboring districts include the 12th District (Butler, Warren, Greene, and Clinton Counties), the 2nd District (Montgomery County/Dayton area), the 4th District (Athens and Pickaway Counties), and the 9th District (Morrow County and others). From the District Courts of Appeals, parties may seek discretionary review at the Ohio Supreme Court under Ohio App.R. 26. The Ohio Supreme Court accepts only a fraction of cases and generally limits review to constitutional questions or cases of significant public interest.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '30 days', label: 'to file the notice of appeal, from journalization of the judgment' },
+          { figure: '12', label: 'District Courts of Appeals in Ohio' },
+          { figure: '12 to 24 months', label: 'typical time from notice of appeal to decision' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Critical Deadlines and Preservation of Error</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio App.R. 4 requires that a notice of appeal be filed within 30 days of the trial court's final judgment entry. ORC 2505.07 codifies this deadline, and missing it almost always results in a complete loss of appellate rights. Beyond the filing deadline, a critical but often overlooked principle is the duty to preserve errors at trial. Ohio appellate courts will not review errors — including improper jury instructions, evidentiary rulings, or constitutional violations — that were not properly raised and objected to in the trial court. An appellate attorney can evaluate the trial record to identify which errors were preserved and which, if any, may qualify for plain error review despite the lack of a timely objection.
-            </p>
+      <Section
+        title="What an appeal can and cannot do"
+        intro={
+          <p>
+            An appeal asks a higher court to correct legal errors that affected the outcome. It is not a second trial: no new testimony
+            and no new evidence.
+          </p>
+        }
+      >
+        <p>
+          Appeals run under Ohio Revised Code Chapter 2505 and the Ohio Rules of Appellate Procedure. The firm handles civil appeals
+          from Columbus, Cincinnati, Dayton and anywhere in Ohio as part of its <Link href="/civil">civil litigation practice</Link>.
+          Appellate work rests on legal analysis, precise writing and the standards of review.
+        </p>
+        <Callout title="Errors must be preserved at trial">
+          Ohio appellate courts will not review errors, including improper jury instructions, evidentiary rulings or constitutional
+          violations, that were not raised and objected to in the trial court. Plain error review is the narrow exception.
+        </Callout>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Standards of Review and Appellate Briefs</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Success on appeal depends heavily on identifying the correct standard of review for each issue raised. Ohio appellate courts apply de novo review to pure questions of law (giving no deference to the trial court), abuse of discretion review to discretionary rulings, and manifest weight of the evidence review to factual determinations. Appellate briefs are governed by Ohio App.R. 16, which requires a precise statement of assignments of error, a statement of facts supported by citations to the record, and legal arguments with authority. Oral argument, when allowed, provides one additional opportunity to address the panel's questions and reinforce the strongest arguments in your brief.
-            </p>
+      <Section title="Which court hears your appeal" tone="ice">
+        <FactTable
+          title="Ohio appellate structure"
+          rows={[
+            { label: 'Trial courts', value: 'Municipal Courts and Common Pleas Courts.' },
+            { label: '10th District', value: 'Sits in Columbus. Franklin County.' },
+            { label: '12th District', value: 'Butler, Warren, Greene and Clinton Counties.' },
+            { label: '2nd District', value: 'Montgomery County (the Dayton area).' },
+            { label: '4th District', value: 'Athens and Pickaway Counties.' },
+            { label: '9th District', value: 'Morrow County and others.' },
+            { label: 'Ohio Supreme Court', value: 'Discretionary review under Ohio App.R. 26. Accepts a fraction of cases, generally constitutional questions or cases of significant public interest.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">When to Appeal vs. When to Accept</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Not every adverse judgment is worth appealing. Appeals are expensive, time-consuming, and succeed only when a genuine legal error affected the outcome. Before deciding to appeal, an experienced appellate attorney should review the trial record to identify preserved legal errors, assess the strength of available assignments of error, and weigh the likelihood of success against the cost of pursuing the appeal. In some cases — particularly where liability is clear but damages were reduced by a questionable legal ruling — an appeal may be strongly warranted. In others, negotiating a post-judgment settlement or seeking reconsideration in the trial court may be a more efficient path. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> for an honest assessment of your appellate prospects. Appeals also arise in <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense</Link> cases, where preserving trial-level objections is equally critical.
-            </p>
+      <LocationsWeServe title="Civil" />
 
-            <LocationsWeServe title="Civil" />
+      <Section title="How an Ohio appeal proceeds" tone="ice">
+        <Steps
+          steps={[
+            { title: 'Notice of appeal', body: 'Within 30 days of the final judgment entry (App.R. 4, ORC 2505.07).' },
+            { title: 'The record', body: 'Transcripts, exhibits and pleadings from the trial court are assembled.' },
+            {
+              title: 'Briefs',
+              body: 'Under App.R. 16: the appellant’s brief with assignments of error, a statement of facts cited to the record and argument with authority; the appellee’s answer brief; and an optional reply.',
+            },
+            { title: 'Oral argument', body: 'When allowed, a chance to answer the panel’s questions and press the strongest arguments.' },
+            { title: 'Decision and further review', body: 'The district court rules. A party may then ask the Ohio Supreme Court to take the case.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an Appeals Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
-              <li><strong>Appeal Evaluation:</strong> Review the trial record and identify preserved, meritorious assignments of error</li>
-              <li><strong>Brief Preparation:</strong> Draft appellate briefs under Ohio App.R. 16 presenting compelling legal arguments</li>
-              <li><strong>Oral Arguments:</strong> Present oral arguments before District Courts of Appeals or the Ohio Supreme Court</li>
-              <li><strong>Appellate Procedure:</strong> Manage strict deadlines, record preparation, and all appellate filings</li>
-              <li><strong>Strategic Advice:</strong> Provide an honest assessment of whether appealing is in your best interest</li>
-            </ul>
+      <Section title="Standards of review">
+        <PointGrid
+          points={[
+            { title: 'De novo', body: 'Pure questions of law. No deference to the trial court.' },
+            { title: 'Abuse of discretion', body: 'Discretionary rulings such as evidence and case management. Reversal only if the trial court acted unreasonably, arbitrarily or unconscionably.' },
+            { title: 'Manifest weight', body: 'Factual findings that went against the weight of the evidence.' },
+            { title: 'Plain error', body: 'A narrow route for errors that were not objected to at trial.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
-                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
-              </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Disputes</span>
-                <span className="text-sm text-navy-950/70">Wrongful termination, discrimination, and workplace retaliation claims</span>
-              </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Real Estate Disputes</span>
-                <span className="text-sm text-navy-950/70">Title disputes, boundary issues, quiet title actions, and property litigation</span>
-              </Link>
-              <Link href="/criminal-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Defense</span>
-                <span className="text-sm text-navy-950/70">Criminal appeals and post-conviction relief in Ohio courts</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Whether to appeal" tone="ice">
+        <p>
+          Not every adverse judgment is worth appealing. Appeals are expensive and slow, and they succeed only when a real legal error
+          affected the outcome. The trial record has to be reviewed to find preserved errors and weigh the chance of success against
+          the cost. An appeal may be well worth it when liability is clear but damages were reduced by a questionable legal ruling. In
+          other cases a post-judgment settlement or a request for reconsideration in the trial court is the better path.
+        </p>
+        <p>
+          <Link href="/contact">Contact Jwayyed Law LLC</Link> for an honest assessment of your appeal. Appeals also arise in{' '}
+          <Link href="/criminal-defense">criminal defense</Link> cases, where trial objections matter just as much.
+        </p>
+      </Section>
+
+      <Section title="What the firm does on an appeal">
+        <PointGrid
+          points={[
+            { title: 'Evaluates the appeal', body: 'Reviews the trial record for preserved assignments of error with merit.' },
+            { title: 'Writes the briefs', body: 'Under Ohio App.R. 16.' },
+            { title: 'Argues', body: 'Before the District Courts of Appeals or the Ohio Supreme Court.' },
+            { title: 'Manages procedure', body: 'Deadlines, record preparation and every appellate filing.' },
+            { title: 'Gives a straight answer', body: 'Whether appealing is in your interest at all.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Related pages" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
