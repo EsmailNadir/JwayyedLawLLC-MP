@@ -438,13 +438,12 @@ body:has(.bg-gray-100) {
    HOME — type steps and motion
 
    Type: Playfair Display for headings and DM Sans for text, the same pair the
-   rest of the site uses, so the home page and the inner pages read as one
-   firm. Five sizes do the work: small, body, lead, head and display.
+   rest of the site uses. Five sizes do the work.
 
-   Motion: every entrance is opt-in. The page script adds `.jw-anim` to the
-   root only when motion is allowed; without it (no script, reduced motion)
-   every element is simply shown in its finished state. Reveals are driven by
-   IntersectionObserver (`.is-in`), so they work in every browser.
+   Motion is GSAP (app/HomePageClient.tsx), set up only inside
+   gsap.matchMedia('(prefers-reduced-motion: no-preference)'). With reduced
+   motion or without script nothing is hidden or moved: the page renders in
+   its finished state. CSS here covers the trust marquee and the menus.
    =========================================================================== */
 
 .jw {
@@ -452,8 +451,7 @@ body:has(.bg-gray-100) {
   --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
   --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
   --step-head: clamp(2.25rem, 1.2rem + 3.4vw, 4rem);
-  --step-display: clamp(2.75rem, 1.4rem + 5vw, 6rem);
-  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --step-display: clamp(2.15rem, 1.2rem + 4.6vw, 5.75rem);
   font-family: var(--font-jw);
 }
 
@@ -464,24 +462,25 @@ body:has(.bg-gray-100) {
   line-height: 1.05;
 }
 
-/* A heading line that rises out of its own mask. */
-.jw-line {
-  display: block;
+/* One word of an animated heading: the outer span clips, the inner rises. */
+.jw-word {
+  display: inline-block;
   overflow: hidden;
-  padding-bottom: 0.08em;
+  vertical-align: bottom;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
 }
-.jw-line > span {
-  display: block;
+.jw-word > span {
+  display: inline-block;
 }
 
-/* A charge crossed out by its result. The bar is always drawn; the animated
-   state below only starts it at zero. */
+/* A charge crossed out by its result. The bar is a real element so GSAP can
+   draw it; without motion it is simply there. */
 .jw-strike {
   position: relative;
   display: inline-block;
 }
-.jw-strike::after {
-  content: '';
+.jw-strike-bar {
   position: absolute;
   left: -0.04em;
   right: -0.04em;
@@ -491,31 +490,12 @@ body:has(.bg-gray-100) {
   transform-origin: left center;
 }
 
-@keyframes jw-line-up {
+@keyframes jw-marquee {
   from {
-    transform: translateY(105%);
-  }
-}
-
-@keyframes jw-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-}
-
-@keyframes jw-hero-zoom {
-  from {
-    transform: scale(1.08);
-  }
-}
-
-@keyframes jw-drift {
-  from {
-    transform: scale(1.14) translateY(-3%);
+    transform: translateX(0);
   }
   to {
-    transform: scale(1) translateY(3%);
+    transform: translateX(-50%);
   }
 }
 
@@ -537,93 +517,14 @@ body:has(.bg-gray-100) {
     animation: jw-menu-in 0.18s ease-out both;
   }
   .jw-drawer-in {
-    animation: jw-drawer-in 0.28s var(--ease-out, ease-out) both;
+    animation: jw-drawer-in 0.28s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   }
-
-  /* ---- Hero: footage settles in, headline lines rise, the rest follows. */
-  .jw-anim .jw-hero-media {
-    animation: jw-hero-zoom 2.4s var(--ease-out) both;
+  /* The trust strip drifts; hovering or focusing it holds it still. */
+  .jw-marquee-track {
+    animation: jw-marquee 42s linear infinite;
   }
-  .jw-anim .jw-hero .jw-line > span {
-    animation: jw-line-up 1s var(--ease-out) both;
-    animation-delay: calc(var(--i, 0) * 120ms + 150ms);
-  }
-  .jw-anim .jw-load {
-    animation: jw-fade-up 0.9s var(--ease-out) both;
-    animation-delay: var(--jw-delay, 0ms);
-  }
-
-  /* ---- Scroll reveals: headings rise from their mask, children stagger. */
-  .jw-anim .jw-reveal .jw-line > span {
-    transform: translateY(105%);
-    transition: transform 1s var(--ease-out);
-    transition-delay: calc(var(--i, 0) * 110ms);
-  }
-  .jw-anim .jw-reveal.is-in .jw-line > span {
-    transform: none;
-  }
-
-  .jw-anim .jw-enter > * {
-    opacity: 0;
-    transform: translateY(24px);
-    transition:
-      opacity 0.8s var(--ease-out),
-      transform 0.8s var(--ease-out);
-  }
-  .jw-anim .jw-enter.is-in > * {
-    opacity: 1;
-    transform: none;
-  }
-  .jw-anim .jw-enter.is-in > *:nth-child(2) { transition-delay: 80ms; }
-  .jw-anim .jw-enter.is-in > *:nth-child(3) { transition-delay: 160ms; }
-  .jw-anim .jw-enter.is-in > *:nth-child(4) { transition-delay: 240ms; }
-  .jw-anim .jw-enter.is-in > *:nth-child(5) { transition-delay: 320ms; }
-  .jw-anim .jw-enter.is-in > *:nth-child(6) { transition-delay: 400ms; }
-  .jw-anim .jw-enter.is-in > *:nth-child(n + 7) { transition-delay: 460ms; }
-
-  /* ---- Photographs open from the bottom edge as they enter. */
-  .jw-anim .jw-unveil {
-    clip-path: inset(100% 0 0 0);
-    transition: clip-path 1.2s cubic-bezier(0.7, 0, 0.2, 1);
-  }
-  .jw-anim .jw-unveil img {
-    transform: scale(1.12);
-    transition: transform 1.6s var(--ease-out);
-  }
-  .jw-anim .jw-unveil.is-in {
-    clip-path: inset(0 0 0 0);
-  }
-  .jw-anim .jw-unveil.is-in img {
-    transform: none;
-  }
-
-  /* ---- Results: the charge is struck through, then the outcome arrives. */
-  .jw-anim .jw-result .jw-strike::after {
-    transform: scaleX(0);
-    transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1) 0.25s;
-  }
-  .jw-anim .jw-result.is-in .jw-strike::after {
-    transform: scaleX(1);
-  }
-  .jw-anim .jw-result .jw-outcome {
-    opacity: 0;
-    transform: translateX(-12px);
-    transition:
-      opacity 0.6s var(--ease-out) 0.75s,
-      transform 0.6s var(--ease-out) 0.75s;
-  }
-  .jw-anim .jw-result.is-in .jw-outcome {
-    opacity: 1;
-    transform: none;
-  }
-
-  /* ---- The Statehouse moves with the scroll where scroll timelines exist;
-     elsewhere it simply stays still. */
-  @supports (animation-timeline: view()) {
-    .jw-drift {
-      animation: jw-drift linear both;
-      animation-timeline: view();
-      animation-range: cover 0% cover 100%;
-    }
+  .jw-marquee:hover .jw-marquee-track,
+  .jw-marquee:focus-within .jw-marquee-track {
+    animation-play-state: paused;
   }
 }

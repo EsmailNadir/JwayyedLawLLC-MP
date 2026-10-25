@@ -3,6 +3,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Pause, Phone, Play, Star } from 'lucide-react';
 import CourtFinder from '@/components/CourtFinder';
 import NCDDBadge from '@/components/NCDDBadge';
@@ -11,12 +14,15 @@ import TestimonialWall from '@/components/TestimonialWall';
 import { ReviewSummaryCard } from '@/components/ui/card-2';
 import { siteNav } from '@/data/navigation';
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 /*
- * Home page. Navy with sky as the second colour, Playfair headings over DM
- * Sans text (the same pair as the inner pages), the firm's footage behind the
- * opening line, and three things particular to this firm: results shown as
- * the charge struck through and replaced by the outcome, a live office-hours
- * status, and "Which court is on your ticket?".
+ * Home page. Structure and motion follow the notes in
+ * docs/homepage-design-research.md (Kirkland & Ellis, Latham & Watkins,
+ * Morgan & Morgan, Stripe): a cinematic hero, a trust strip straight under
+ * it, a bento of reasons to call, practice areas with a pinned title and
+ * image panels, a statement that brightens word by word, results shown as
+ * charges struck through, the review wall, and a closing call to action.
  */
 
 const PHONE_DISPLAY = '(614) 285-5482';
@@ -26,34 +32,37 @@ const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?q=Jwayyed+Law+LLC+Colu
 const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=100+E+Campus+View+Blvd+Suite+250+Columbus+OH+43235';
 const RATING = '4.9';
 
-/** Shared frame: one pair of outer margins for the whole page. */
 const FRAME = 'max-w-[1440px] mx-auto px-5 sm:px-8';
-const SECTION = 'py-[clamp(88px,10vw,168px)]';
+const SECTION = 'py-[clamp(96px,11vw,184px)]';
 const RING_DARK = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
 const RING_LIGHT = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep';
 
-/** Practice areas in the order people most often call about them; titles,
- *  taglines and page links come from the site navigation. */
-const AREAS = ['OVI / DUI', 'Criminal Defense', 'Personal Injury', 'Civil', 'Business', 'Other Services'];
-const AREA_TITLE: Record<string, string> = {
-  'OVI / DUI': 'OVI / DUI Defense',
-  'Criminal Defense': 'Criminal Defense',
-  'Personal Injury': 'Personal Injury',
-  Civil: 'Civil Litigation',
-  Business: 'Business Law',
-  'Other Services': 'Estate Planning & Probate',
-};
+/** Practice areas, each with the firm's own photograph for its panel. */
+const AREAS: { nav: string; title: string; image: string; alt: string }[] = [
+  { nav: 'OVI / DUI', title: 'OVI / DUI Defense', image: '/assets/dui-blog.jpg', alt: 'View from a driver’s seat at night' },
+  { nav: 'Criminal Defense', title: 'Criminal Defense', image: '/assets/criminal.jpg', alt: 'Columns of a courthouse' },
+  { nav: 'Personal Injury', title: 'Personal Injury', image: '/assets/injury.jpg', alt: 'Columns and skylight of a public hall' },
+  { nav: 'Civil', title: 'Civil Litigation', image: '/assets/courthouse-blog.jpg', alt: 'The word Ohio carved in courthouse stone' },
+  { nav: 'Business', title: 'Business Law', image: '/assets/contracts.webp', alt: 'A contract with a pen, a gavel and scales' },
+  { nav: 'Other Services', title: 'Estate Planning & Probate', image: '/assets/estatePlanning.webp', alt: 'A gavel on a desk' },
+];
 
-function area(navName: string) {
+function areaLinks(navName: string) {
   const node = siteNav.find((n) => n.name === navName);
   const links = node?.subLinks ? node.subLinks.slice(1) : (node?.subDropdowns ?? []).flatMap((g) => g.links);
-  return {
-    title: AREA_TITLE[navName] ?? navName,
-    href: node?.href ?? '/services',
-    tagline: node?.tagline ?? '',
-    links: links.slice(0, 4),
-  };
+  return { href: node?.href ?? '/services', tagline: node?.tagline ?? '', links: links.slice(0, 4) };
 }
+
+const TRUST = [
+  'Rated 4.9 on Google',
+  '100+ client reviews',
+  'BBB A+ accredited',
+  'National College for DUI Defense member',
+  'BusinessRate Best of 2026',
+  'Former municipal prosecutor',
+  'Licensed in Ohio since 2019',
+  'Ohio Bar #0098679',
+];
 
 const CREDENTIALS = [
   'Former Municipal Prosecutor',
@@ -64,7 +73,6 @@ const CREDENTIALS = [
   'National College for DUI Defense, General Member',
 ];
 
-/** Each result is the charge as filed, struck through, and what it became. */
 const RESULTS = [
   { charge: 'OVI', outcome: 'Reckless operation', detail: 'License kept, no jail time, and the fine cut to a third.' },
   { charge: 'Speeding + OVI', outcome: 'Dismissed', detail: 'Evidence challenged on procedural grounds. Record kept clean.' },
@@ -74,6 +82,9 @@ const RESULTS = [
     detail: 'Resolved in one business day, avoiding a suspension and the hit to the client’s job.',
   },
 ];
+
+const STATEMENT =
+  'He spent years on the other side of the courtroom. He knows how a case is built against you, where it is weak, and what a prosecutor will accept. Now that knowledge works for you.';
 
 function Stars({ className }: { className: string }) {
   return (
@@ -85,55 +96,18 @@ function Stars({ className }: { className: string }) {
   );
 }
 
-/**
- * Turns on the page's entrances. Without script, or with reduced motion,
- * `.jw-anim` is never added and everything renders in its finished state.
- *
- * Reveals are driven by a plain position check on load, scroll and resize
- * rather than IntersectionObserver alone: some embedded browsers never
- * deliver observer callbacks, which would leave content hidden. Anything
- * above the fold line, including blocks already scrolled past, is shown.
- */
-function useReveal(root: React.RefObject<HTMLDivElement | null>) {
-  const [anim, setAnim] = useState(false);
-  useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    setAnim(true);
-  }, []);
-  useEffect(() => {
-    if (!anim || !root.current) return;
-    let pending = Array.from(root.current.querySelectorAll<HTMLElement>('.jw-reveal, .jw-enter, .jw-unveil, .jw-result'));
-    const check = () => {
-      const line = window.innerHeight * 0.9;
-      pending = pending.filter((el) => {
-        if (el.getBoundingClientRect().top < line) {
-          el.classList.add('is-in');
-          return false;
-        }
-        return true;
-      });
-      if (pending.length === 0) stop();
-    };
-    const stop = () => {
-      window.removeEventListener('scroll', check);
-      window.removeEventListener('resize', check);
-    };
-    window.addEventListener('scroll', check, { passive: true });
-    window.addEventListener('resize', check);
-    check();
-    return stop;
-  }, [anim, root]);
-  return anim;
-}
-
-/** A heading set as masked lines that rise into place. */
-function Lines({ lines }: { lines: React.ReactNode[] }) {
+/** Splits text into clipped words that GSAP raises one after another. */
+function Words({ text, className = '' }: { text: string; className?: string }) {
+  const words = text.split(' ');
   return (
     <>
-      {lines.map((line, i) => (
-        <span key={i} className="jw-line">
-          <span style={{ '--i': i } as React.CSSProperties}>{line}</span>
-        </span>
+      {words.map((w, i) => (
+        <React.Fragment key={i}>
+          <span className={`jw-word ${className}`}>
+            <span>{w}</span>
+          </span>
+          {i < words.length - 1 ? ' ' : null}
+        </React.Fragment>
       ))}
     </>
   );
@@ -142,8 +116,7 @@ function Lines({ lines }: { lines: React.ReactNode[] }) {
 /**
  * The firm's own footage, full-bleed behind the opening line. Only one file
  * is fetched (phone or desktop cut, chosen in the browser); under reduced
- * motion nothing downloads and the still portrait stands in. Pausable, since
- * it loops for longer than five seconds beside the headline.
+ * motion nothing downloads and the still portrait stands in. Pausable.
  */
 function HeroVideo() {
   const ref = useRef<HTMLVideoElement>(null);
@@ -173,7 +146,7 @@ function HeroVideo() {
 
   return (
     <>
-      <div className="jw-hero-media absolute inset-0" aria-hidden="true">
+      <div className="hero-media absolute inset-0 will-change-transform" aria-hidden="true">
         <Image
           src="/assets/attorney-main.jpg"
           alt=""
@@ -199,9 +172,9 @@ function HeroVideo() {
           </video>
         )}
       </div>
-      {/* Neutral scrim, heavier at the bottom where the text sits. */}
-      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent" aria-hidden="true" />
+      {/* Neutral scrim, deeper toward the edges and the foot. */}
+      <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(11,26,46,0.75)_100%)]" aria-hidden="true" />
       {src && (
         <button
           type="button"
@@ -216,51 +189,216 @@ function HeroVideo() {
   );
 }
 
+/** A call bar on phones once the hero has scrolled away (Morgan & Morgan
+ *  keep the number in reach at all times). */
+function MobileCallBar() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    // Shown once the hero is gone; tucked away again near the foot of the
+    // page so it never covers the footer's contact lines and legal notice.
+    const onScroll = () => {
+      const nearEnd = window.scrollY + window.innerHeight > document.documentElement.scrollHeight - 480;
+      setShow(window.scrollY > window.innerHeight * 0.85 && !nearEnd);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return (
+    <div
+      className={`sm:hidden fixed inset-x-0 bottom-0 z-40 bg-navy-950/95 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-3 transition-transform duration-300 ${
+        show ? 'translate-y-0' : 'translate-y-full'
+      }`}
+      inert={!show}
+    >
+      <a href={PHONE_TEL} className="flex-1 inline-flex items-center justify-center gap-2 min-h-[48px] bg-sky text-navy-950 font-semibold tabular-nums">
+        <Phone className="w-4 h-4" aria-hidden="true" />
+        Call {PHONE_DISPLAY}
+      </a>
+      <Link href="/contact" className="inline-flex items-center justify-center min-h-[48px] px-4 border border-white/40 text-white font-semibold">
+        Schedule
+      </Link>
+    </div>
+  );
+}
+
 export default function HomePageClient() {
   const root = useRef<HTMLDivElement>(null);
-  const anim = useReveal(root);
+
+  /*
+   * All motion lives here and only under no-preference. Every tween is a
+   * `from` or a scroll-scrubbed `fromTo` set up at runtime, so the markup
+   * itself is always the finished page: without script or with reduced
+   * motion, nothing is hidden or offset. gsap.matchMedia reverts it all if
+   * the preference changes.
+   */
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia();
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        const q = gsap.utils.selector(root);
+
+        // ---- Hero: footage settles, words rise, the rest follows. On the
+        // way out the copy lifts and fades while the footage drifts.
+        gsap.from(q('.hero-media'), { scale: 1.15, duration: 2.6, ease: 'power3.out' });
+        gsap.from(q('.hero-title .jw-word > span'), {
+          yPercent: 115,
+          duration: 1.1,
+          ease: 'power4.out',
+          stagger: 0.07,
+          delay: 0.15,
+        });
+        gsap.from(q('.hero-follow'), { y: 28, opacity: 0, duration: 1, ease: 'power3.out', stagger: 0.12, delay: 0.75 });
+        gsap.to(q('.hero-copy'), {
+          y: -90,
+          opacity: 0,
+          ease: 'none',
+          scrollTrigger: { trigger: q('.hero')[0], start: 'top top', end: 'bottom top', scrub: true },
+        });
+        gsap.to(q('.hero-media'), {
+          yPercent: 14,
+          ease: 'none',
+          scrollTrigger: { trigger: q('.hero')[0], start: 'top top', end: 'bottom top', scrub: true },
+        });
+
+        // ---- Section headings: words rise as the heading enters.
+        q('.reveal-title').forEach((el) => {
+          gsap.from(el.querySelectorAll('.jw-word > span'), {
+            yPercent: 115,
+            duration: 1,
+            ease: 'power4.out',
+            stagger: 0.06,
+            scrollTrigger: { trigger: el, start: 'top 85%' },
+          });
+        });
+
+        // ---- Blocks rise in, children staggered.
+        q('.reveal-group').forEach((el) => {
+          gsap.from(el.children, {
+            y: 48,
+            opacity: 0,
+            duration: 0.9,
+            ease: 'power3.out',
+            stagger: 0.1,
+            scrollTrigger: { trigger: el, start: 'top 82%' },
+          });
+        });
+
+        // ---- Bento: cards lift in one after another; the photo eases in.
+        gsap.from(q('.bento-card'), {
+          y: 70,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          stagger: 0.12,
+          scrollTrigger: { trigger: q('.bento')[0], start: 'top 78%' },
+        });
+        gsap.fromTo(
+          q('.bento-photo img'),
+          { scale: 1.2 },
+          { scale: 1, ease: 'none', scrollTrigger: { trigger: q('.bento')[0], start: 'top bottom', end: 'bottom top', scrub: true } }
+        );
+
+        // ---- Figures count up from zero when they come into view. The
+        // server HTML always holds the real figure.
+        q('[data-count]').forEach((el) => {
+          const to = Number(el.getAttribute('data-count'));
+          const decimals = Number(el.getAttribute('data-decimals') ?? 0);
+          const obj = { v: 0 };
+          gsap.to(obj, {
+            v: to,
+            duration: 1.6,
+            ease: 'power2.out',
+            scrollTrigger: { trigger: el, start: 'top 88%' },
+            onStart: () => {
+              el.textContent = (0).toFixed(decimals);
+            },
+            onUpdate: () => {
+              el.textContent = obj.v.toFixed(decimals);
+            },
+          });
+        });
+
+        // ---- Practice panels grow from 88% and their photographs drift.
+        q('.area-panel').forEach((el) => {
+          gsap.fromTo(
+            el,
+            { scale: 0.88, opacity: 0.35 },
+            { scale: 1, opacity: 1, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'top 55%', scrub: true } }
+          );
+          const img = el.querySelector('img');
+          if (img) {
+            gsap.fromTo(
+              img,
+              { yPercent: -8 },
+              { yPercent: 8, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } }
+            );
+          }
+        });
+
+        // ---- The statement brightens word by word with the scroll.
+        gsap.fromTo(
+          q('.statement .jw-word > span'),
+          { opacity: 0.18 },
+          {
+            opacity: 1,
+            ease: 'none',
+            stagger: 0.08,
+            scrollTrigger: { trigger: q('.statement')[0], start: 'top 78%', end: 'bottom 50%', scrub: true },
+          }
+        );
+
+        // ---- Results: the charge is struck through, then the outcome arrives.
+        q('.result-row').forEach((row) => {
+          const tl = gsap.timeline({ scrollTrigger: { trigger: row, start: 'top 82%' } });
+          tl.from(row, { y: 40, opacity: 0, duration: 0.7, ease: 'power3.out' })
+            .from(row.querySelector('.jw-strike-bar'), { scaleX: 0, duration: 0.6, ease: 'power2.inOut' }, '-=0.1')
+            .from(row.querySelectorAll('.result-outcome'), { x: -18, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.1');
+        });
+
+        // ---- The Statehouse moves against the scroll.
+        gsap.fromTo(
+          q('.statehouse img'),
+          { yPercent: -10, scale: 1.12 },
+          { yPercent: 10, scale: 1, ease: 'none', scrollTrigger: { trigger: q('.statehouse')[0], start: 'top bottom', end: 'bottom top', scrub: true } }
+        );
+      });
+      return () => mm.revert();
+    },
+    { scope: root }
+  );
 
   return (
-    <div ref={root} className={`jw bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.6] ${anim ? 'jw-anim' : ''}`}>
-      {/* ======================= HERO =======================
-          Pulled up under the header, which renders transparently over the
-          footage while the page is at the top. */}
-      <section className="jw-hero relative -mt-16 xl:-mt-20 min-h-[calc(100svh-44px)] flex items-center overflow-hidden bg-navy-950 text-white">
+    <div ref={root} className="jw overflow-x-clip bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.6]">
+      {/* ======================= HERO ======================= */}
+      <section className="hero relative -mt-16 xl:-mt-20 min-h-[calc(100svh-44px)] flex items-center overflow-hidden bg-navy-950 text-white">
         <HeroVideo />
-        <div className={`relative z-10 ${FRAME} w-full pt-28 xl:pt-32 pb-20 text-center`}>
-          <h1 className="jw-display text-[length:var(--step-display)] leading-[1.04] text-balance">
-            <Lines lines={['Defending Your Rights.', <span key="b" className="text-sky">Building Your Future.</span>]} />
+        <div className={`hero-copy relative z-10 ${FRAME} w-full pt-28 xl:pt-32 pb-24 text-center`}>
+          <h1 className="hero-title jw-display mx-auto max-w-6xl text-[length:var(--step-display)] leading-[1.06]">
+            <Words text="Defending Your Rights." />
+            <br className="hidden sm:block" /> <Words text="Building Your Future." className="text-sky" />
           </h1>
-          <p
-            className="jw-load mt-7 mx-auto max-w-[44rem] text-[length:var(--step-lead)] leading-snug text-white/85 text-pretty"
-            style={{ '--jw-delay': '420ms' } as React.CSSProperties}
-          >
+          <p className="hero-follow mt-7 mx-auto max-w-[46rem] text-[length:var(--step-lead)] leading-snug text-white/85 text-pretty">
             Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and
             estate matters.
           </p>
-          <div
-            className="jw-load mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
-            style={{ '--jw-delay': '540ms' } as React.CSSProperties}
-          >
+          <div className="hero-follow mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[54px] px-8 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+              className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[56px] px-8 bg-sky text-navy-950 font-semibold hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
             >
               Schedule a Consultation
-              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
             </Link>
             <a
               href={PHONE_TEL}
-              className={`inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[54px] px-8 border border-white/50 font-semibold tabular-nums hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
+              className={`inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[56px] px-8 border border-white/50 font-semibold tabular-nums hover:bg-white hover:text-navy-950 transition-colors ${RING_DARK}`}
             >
               <Phone className="w-4 h-4" aria-hidden="true" />
               Call {PHONE_DISPLAY}
             </a>
           </div>
-          <div
-            className="jw-load mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3"
-            style={{ '--jw-delay': '660ms' } as React.CSSProperties}
-          >
+          <div className="hero-follow mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3">
             <a
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
@@ -277,41 +415,175 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* ======================= PRACTICE AREAS (white) ======================= */}
-      <section className={`${SECTION} bg-white`} aria-labelledby="practice-heading">
+      {/* ======================= TRUST STRIP ======================= */}
+      <div className="jw-marquee bg-navy-900 text-white/85 overflow-hidden" aria-label="Credentials and recognition">
+        <div className="jw-marquee-track flex w-max">
+          {[0, 1].map((copy) => (
+            <ul key={copy} className="flex items-center shrink-0" aria-hidden={copy === 1 ? true : undefined}>
+              {TRUST.map((t) => (
+                <li key={t} className="flex items-center gap-6 px-6 py-5 text-[length:var(--step-small)] whitespace-nowrap">
+                  <span className="h-1.5 w-1.5 rotate-45 bg-sky" aria-hidden="true" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
+
+      {/* ======================= WHY CALL (bento) ======================= */}
+      <section className={`${SECTION} bg-white`} aria-labelledby="why-heading">
         <div className={FRAME}>
-          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <h2 id="practice-heading" className="jw-reveal jw-display lg:col-span-7 text-[length:var(--step-head)]">
-              <Lines lines={['Practice areas']} />
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end mb-14">
+            <h2 id="why-heading" className="reveal-title jw-display lg:col-span-8 text-[length:var(--step-head)]">
+              <Words text="Why clients call Jwayyed Law first" />
             </h2>
-            <p className="jw-enter lg:col-span-5 text-[length:var(--step-lead)] leading-snug text-navy-950/75">
-              <span>Six areas of Ohio law. You speak with the attorney handling your case, not a screening service.</span>
-            </p>
           </div>
 
-          <ul className="jw-enter mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
-            {AREAS.map((name) => {
-              const a = area(name);
+          <div className="bento grid gap-4 grid-flow-dense md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+            <Link
+              href="/our-law-firm/about-us"
+              className={`bento-card bento-photo group relative md:col-span-2 lg:row-span-2 min-h-[420px] overflow-hidden bg-navy-950 text-white ${RING_LIGHT}`}
+            >
+              <Image
+                src="/assets/attorney-main.jpg"
+                alt="Attorney Jwayyed in a courthouse hallway"
+                fill
+                sizes="(min-width:1024px) 50vw, 100vw"
+                className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" aria-hidden="true" />
+              <div className="absolute inset-x-0 bottom-0 p-7 sm:p-10">
+                <p className="jw-display text-[clamp(1.75rem,1.2rem+1.6vw,2.75rem)] leading-tight">
+                  Former prosecutor.
+                  <br />
+                  Now on your side.
+                </p>
+                <p className="mt-3 text-white/80 max-w-md">
+                  Former municipal prosecutor and assistant law director for the City of Circleville.
+                </p>
+                <span className="mt-5 inline-flex items-center gap-2 font-semibold text-sky">
+                  Meet Attorney Jwayyed
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                </span>
+              </div>
+            </Link>
+
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`bento-card group flex flex-col justify-between gap-8 p-7 bg-navy-950 text-white hover:bg-navy-900 transition-colors ${RING_LIGHT}`}
+            >
+              <Stars className="w-5 h-5 fill-sky text-sky" />
+              <div>
+                <p className="jw-display text-[clamp(3rem,2rem+3vw,4.5rem)] leading-none tabular-nums">
+                  <span data-count="4.9" data-decimals="1">
+                    4.9
+                  </span>
+                </p>
+                <p className="mt-2 text-white/80">
+                  From{' '}
+                  <span data-count="100" className="tabular-nums">
+                    100
+                  </span>
+                  + Google reviews
+                </p>
+              </div>
+            </a>
+
+            <Link
+              href="/courts"
+              className={`bento-card group flex flex-col justify-between gap-8 p-7 bg-ice hover:bg-[#e6eef8] transition-colors ${RING_LIGHT}`}
+            >
+              <ArrowUpRight className="w-6 h-6 text-sky-deep transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true" />
+              <div>
+                <p className="jw-display text-[clamp(3rem,2rem+3vw,4.5rem)] leading-none tabular-nums">
+                  <span data-count="11">11</span>
+                </p>
+                <p className="mt-2 text-navy-950/80">Ohio courts with their own guide on this site</p>
+              </div>
+            </Link>
+
+            <div className="bento-card flex flex-col justify-between gap-8 p-7 bg-sky text-navy-950">
+              <Phone className="w-6 h-6" aria-hidden="true" />
+              <div>
+                <p className="jw-display text-[length:var(--step-lead)] leading-tight">Direct access</p>
+                <p className="mt-2">You speak with the attorney handling your case, not a screening service.</p>
+              </div>
+            </div>
+
+            <div className="bento-card flex flex-col justify-between gap-8 p-7 bg-navy-900 text-white">
+              <Check className="w-6 h-6 text-sky" aria-hidden="true" />
+              <div>
+                <p className="jw-display text-[length:var(--step-lead)] leading-tight">Clear fees</p>
+                <p className="mt-2 text-white/80">Reasonable, predictable rates, explained before you commit to anything.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================= PRACTICE AREAS (pinned title) ======================= */}
+      <section className={`${SECTION} bg-ice`} aria-labelledby="practice-heading">
+        <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16`}>
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-32">
+              <h2 id="practice-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
+                <Words text="Practice areas" />
+              </h2>
+              <div className="reveal-group">
+                <p className="mt-6 text-[length:var(--step-lead)] leading-snug text-navy-950/75">
+                  Six areas of Ohio law, each with its own guide to your options and next steps.
+                </p>
+                <p className="mt-8 text-navy-950/75">
+                  Not sure where your matter fits?
+                  <br />
+                  <a href={PHONE_TEL} className={`font-semibold text-sky-deep underline underline-offset-4 tabular-nums ${RING_LIGHT}`}>
+                    Call {PHONE_DISPLAY}
+                  </a>
+                </p>
+                <Link
+                  href="/services"
+                  className={`group mt-8 inline-flex items-center gap-2 min-h-[50px] px-6 bg-navy-950 text-white font-semibold hover:bg-sky-deep transition-colors ${RING_LIGHT}`}
+                >
+                  See every service
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <ul className="lg:col-span-8 grid gap-6">
+            {AREAS.map((a) => {
+              const { href, tagline, links } = areaLinks(a.nav);
               return (
-                <li key={name} className="group/area">
-                  <Link href={a.href} className={`group inline-flex items-center gap-2 ${RING_LIGHT}`}>
-                    <span className="jw-display text-[length:var(--step-lead)] bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] group-hover:bg-[length:100%_1px] transition-[background-size] duration-500">
-                      {a.title}
-                    </span>
-                    <ArrowUpRight
-                      className="w-5 h-5 text-sky-deep transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      aria-hidden="true"
-                    />
+                <li key={a.nav} className="area-panel origin-center bg-white">
+                  <Link href={href} className={`group block ${RING_LIGHT}`}>
+                    <div className="relative aspect-[16/7] overflow-hidden bg-navy-950">
+                      <Image
+                        src={a.image}
+                        alt={a.alt}
+                        fill
+                        sizes="(min-width:1024px) 60vw, 100vw"
+                        className="object-cover scale-110 opacity-70 mix-blend-luminosity transition-transform duration-700 ease-out group-hover:scale-[1.16]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent" aria-hidden="true" />
+                      <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 flex items-end justify-between gap-6 text-white">
+                        <div>
+                          <h3 className="jw-display text-[clamp(1.6rem,1.1rem+1.6vw,2.5rem)] leading-tight">{a.title}</h3>
+                          <p className="mt-1 text-white/80 max-w-xl">{tagline}</p>
+                        </div>
+                        <span className="hidden sm:inline-flex flex-shrink-0 items-center justify-center w-12 h-12 bg-sky text-navy-950 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                          <ArrowUpRight className="w-5 h-5" aria-hidden="true" />
+                        </span>
+                      </div>
+                    </div>
                   </Link>
-                  <p className="mt-2 text-navy-950/70">{a.tagline}</p>
-                  <ul className="mt-5 grid gap-2.5 text-[length:var(--step-small)]">
-                    {a.links.map((l) => (
+                  <ul className="px-6 sm:px-8 py-5 flex flex-wrap gap-x-7 gap-y-2 text-[length:var(--step-small)]">
+                    {links.map((l) => (
                       <li key={l.href + l.name}>
-                        <Link
-                          href={l.href}
-                          className={`group/link inline-flex items-center gap-2 text-navy-950/85 hover:text-sky-deep transition-colors ${RING_LIGHT}`}
-                        >
-                          <span className="h-px w-3 bg-sky-deep/50 transition-[width] duration-300 group-hover/link:w-5" aria-hidden="true" />
+                        <Link href={l.href} className={`text-navy-950/80 hover:text-sky-deep underline-offset-4 hover:underline ${RING_LIGHT}`}>
                           {l.name.replace(/ →$/, '')}
                         </Link>
                       </li>
@@ -321,94 +593,64 @@ export default function HomePageClient() {
               );
             })}
           </ul>
-
-          <p className="mt-16 text-navy-950/75">
-            Not sure where your matter fits?{' '}
-            <a href={PHONE_TEL} className={`font-semibold text-sky-deep underline underline-offset-4 tabular-nums ${RING_LIGHT}`}>
-              Call {PHONE_DISPLAY}
-            </a>{' '}
-            or{' '}
-            <Link href="/services" className={`font-semibold text-sky-deep underline underline-offset-4 ${RING_LIGHT}`}>
-              see every service
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
-      {/* ======================= ABOUT (navy) ======================= */}
+      {/* ======================= STATEMENT + CREDENTIALS (navy) ======================= */}
       <section className={`${SECTION} bg-navy-950 text-white`} aria-labelledby="about-heading">
-        <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-20 items-center`}>
-          <div className="lg:col-span-5">
-            <div className="jw-unveil relative aspect-[4/5] w-full max-w-md overflow-hidden bg-navy-900">
-              <Image
-                src="/assets/IMG_5570.JPG"
-                alt="Attorney Jwayyed"
-                fill
-                sizes="(min-width:1024px) 36vw, 100vw"
-                className="object-cover"
-                style={{ objectPosition: '50% 18%' }}
-              />
-            </div>
-          </div>
-
-          <div className="lg:col-span-7">
-            <h2 id="about-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
-              <Lines lines={['Former prosecutor.', 'Now on your side.']} />
-            </h2>
-            <div className="jw-enter">
-              <p className="mt-8 text-[length:var(--step-lead)] leading-snug max-w-[42ch]">
-                Jwayyed Jwayyed served as a municipal prosecutor and as assistant law director for the City of
-                Circleville before founding Jwayyed Law. He knows how the other side builds a case, and he uses that for
-                you.
-              </p>
-              <ul className="mt-10 grid gap-x-10 gap-y-3 sm:grid-cols-2 text-[length:var(--step-small)] text-white/85">
-                {CREDENTIALS.map((c) => (
-                  <li key={c} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-1 flex-shrink-0 text-sky" aria-hidden="true" />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-8 text-white/75 max-w-[60ch]">
-                He speaks English and Arabic, and you work with him directly from the first call.
-              </p>
+        <div className={FRAME}>
+          <h2 id="about-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
+            <Words text="The other side of the courtroom" />
+          </h2>
+          <p className="statement mt-10 max-w-5xl text-[clamp(1.5rem,1.1rem+1.4vw,2.25rem)] leading-[1.35]">
+            <Words text={STATEMENT} />
+          </p>
+          <div className="mt-16 grid gap-12 lg:grid-cols-12">
+            <ul className="reveal-group lg:col-span-8 grid gap-x-10 gap-y-4 sm:grid-cols-2 text-white/85">
+              {CREDENTIALS.map((c) => (
+                <li key={c} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-sky" aria-hidden="true" />
+                  {c}
+                </li>
+              ))}
+            </ul>
+            <div className="reveal-group lg:col-span-4 lg:justify-self-end">
+              <p className="text-white/75">He speaks English and Arabic.</p>
               <Link
                 href="/our-law-firm/about-us"
-                className={`group mt-10 inline-flex items-center gap-2 min-h-[50px] px-6 border border-sky text-sky font-semibold hover:bg-sky hover:text-navy-950 transition-colors ${RING_DARK}`}
+                className={`group mt-6 inline-flex items-center gap-2 min-h-[50px] px-6 border border-sky text-sky font-semibold hover:bg-sky hover:text-navy-950 transition-colors ${RING_DARK}`}
               >
                 Read his full story
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ======================= RESULTS (ice) =======================
-          Each result is the charge as filed, crossed out as the section
-          comes into view, and what it became. */}
-      <section className={`${SECTION} bg-ice`} aria-labelledby="results-heading">
+      {/* ======================= RESULTS (white) ======================= */}
+      <section className={`${SECTION} bg-white`} aria-labelledby="results-heading">
         <div className={FRAME}>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <h2 id="results-heading" className="jw-reveal jw-display lg:col-span-7 text-[length:var(--step-head)]">
-              <Lines lines={['Recent results']} />
+            <h2 id="results-heading" className="reveal-title jw-display lg:col-span-7 text-[length:var(--step-head)]">
+              <Words text="Recent results" />
             </h2>
-            <p className="jw-enter lg:col-span-5 text-navy-950/75">
+            <p className="reveal-group lg:col-span-5 text-navy-950/75">
               <span>A sample of charges reduced or dismissed for clients across Ohio. Past results do not guarantee a future outcome.</span>
             </p>
           </div>
 
           <ol className="mt-14 grid gap-4">
             {RESULTS.map((r) => (
-              <li key={r.charge} className="jw-result grid gap-4 bg-white px-6 sm:px-10 py-8 sm:py-10 lg:grid-cols-12 lg:items-center">
+              <li key={r.charge} className="result-row grid gap-4 bg-ice px-6 sm:px-10 py-8 sm:py-10 lg:grid-cols-12 lg:items-center">
                 <p className="jw-display lg:col-span-7 text-[clamp(1.75rem,1.2rem+2vw,3rem)] leading-tight flex flex-wrap items-center gap-x-4 gap-y-1">
                   <span className="jw-strike text-navy-950/45">
                     <span className="sr-only">Charged with </span>
                     {r.charge}
+                    <span className="jw-strike-bar" aria-hidden="true" />
                   </span>
-                  <ArrowRight className="w-7 h-7 text-sky-deep flex-shrink-0" aria-hidden="true" />
-                  <span className="jw-outcome text-sky-deep">
+                  <ArrowRight className="result-outcome w-7 h-7 text-sky-deep flex-shrink-0" aria-hidden="true" />
+                  <span className="result-outcome text-sky-deep">
                     <span className="sr-only">resolved as </span>
                     {r.outcome}
                   </span>
@@ -423,23 +665,20 @@ export default function HomePageClient() {
             className={`group mt-10 inline-flex items-center gap-2 font-semibold text-sky-deep ${RING_LIGHT}`}
           >
             See all case results
-            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
           </Link>
         </div>
       </section>
 
-      {/* ======================= REVIEWS (navy) =======================
-          The layout from the original redesign: trust marks under the
-          heading, then the rating card beside the scrolling wall of real
-          Google reviews. */}
+      {/* ======================= REVIEWS (navy) ======================= */}
       <section className={`${SECTION} bg-navy-900 text-white overflow-hidden`} aria-labelledby="reviews-heading">
         <div className={FRAME}>
           <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16">
-            <h2 id="reviews-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
-              <Lines lines={['What clients say']} />
+            <h2 id="reviews-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
+              <Words text="What clients say" />
             </h2>
 
-            <div className="jw-enter mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-left">
+            <div className="reveal-group mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-left">
               <a
                 href={GOOGLE_REVIEWS_URL}
                 target="_blank"
@@ -501,7 +740,7 @@ export default function HomePageClient() {
             </div>
           </div>
 
-          <div className="jw-enter grid items-center gap-8 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
+          <div className="reveal-group grid items-center gap-8 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
             <ReviewSummaryCard
               rating={Number(RATING)}
               reviewCount={100}
@@ -515,14 +754,8 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= THE PLACE ======================= */}
-      <figure className="relative h-[60svh] min-h-[380px] overflow-hidden bg-navy-950">
-        <Image
-          src="/assets/found/ohio-statehouse.jpg"
-          alt="The Ohio Statehouse in Columbus"
-          fill
-          sizes="100vw"
-          className="jw-drift object-cover"
-        />
+      <figure className="statehouse relative h-[64svh] min-h-[400px] overflow-hidden bg-navy-950">
+        <Image src="/assets/found/ohio-statehouse.jpg" alt="The Ohio Statehouse in Columbus" fill sizes="100vw" className="object-cover" />
         <figcaption className={`${FRAME} absolute inset-x-0 bottom-0 pb-6 text-[length:var(--step-small)] text-white`}>
           <span className="bg-navy-950 px-3 py-1.5">The Ohio Statehouse, Columbus.</span>
         </figcaption>
@@ -532,10 +765,10 @@ export default function HomePageClient() {
       <section className={`${SECTION} bg-white`} aria-labelledby="contact-heading">
         <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16`}>
           <div className="lg:col-span-5">
-            <h2 id="contact-heading" className="jw-reveal jw-display text-[length:var(--step-head)]">
-              <Lines lines={['Find us']} />
+            <h2 id="contact-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
+              <Words text="Find us" />
             </h2>
-            <div className="jw-enter">
+            <div className="reveal-group">
               <div className="mt-6">
                 <OfficeStatus tone="light" />
               </div>
@@ -567,7 +800,7 @@ export default function HomePageClient() {
             </div>
           </div>
 
-          <div className="jw-enter lg:col-span-7 lg:pt-4">
+          <div className="reveal-group lg:col-span-7 lg:pt-4">
             <div>
               <CourtFinder />
             </div>
@@ -577,27 +810,33 @@ export default function HomePageClient() {
 
       {/* ======================= CLOSING (sky) ======================= */}
       <section className="bg-sky text-navy-950" aria-labelledby="closing-heading">
-        <div className={`${FRAME} py-[clamp(72px,8vw,128px)] grid gap-10 lg:grid-cols-12 lg:items-end`}>
-          <h2 id="closing-heading" className="jw-reveal jw-display lg:col-span-7 text-[1.875rem] sm:text-[length:var(--step-head)]">
-            <Lines lines={['Facing a charge or a claim?', 'Talk to an attorney today.']} />
+        <div className={`${FRAME} py-[clamp(88px,9vw,152px)] grid gap-10 lg:grid-cols-12 lg:items-end`}>
+          <h2 id="closing-heading" className="reveal-title jw-display lg:col-span-7 text-[1.875rem] sm:text-[length:var(--step-head)]">
+            <Words text="Facing a charge or a claim?" />
+            <br />
+            <Words text="Talk to an attorney today." />
           </h2>
-          <div className="jw-enter lg:col-span-5 flex flex-col gap-5 lg:items-end">
+          <div className="reveal-group lg:col-span-5 flex flex-col gap-5 lg:items-end">
             <a
               href={PHONE_TEL}
               className="jw-display text-[clamp(2rem,1.4rem+2.2vw,3.25rem)] tabular-nums hover:underline underline-offset-8 decoration-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-950"
             >
               {PHONE_DISPLAY}
             </a>
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 min-h-[52px] px-7 bg-navy-950 text-white font-semibold hover:bg-white hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy-950"
-            >
-              Schedule a Consultation
-              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-            </Link>
+            <div>
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 min-h-[54px] px-7 bg-navy-950 text-white font-semibold hover:bg-white hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-navy-950"
+              >
+                Schedule a Consultation
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+
+      <MobileCallBar />
     </div>
   );
 }
