@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Speeding Ticket Attorney Ohio',
   description:
-    'Ohio speeding tickets under ORC 4511.21: points, fines, CDL disqualification and the defenses to radar and lidar readings. Call (614) 285-5482.',
+    'Ohio speeding tickets under ORC 4511.21: what a ticket costs, points, CDL disqualification and the defenses to radar and lidar readings. Call (614) 285-5482.',
   keywords: [
     'speeding ticket lawyer Ohio',
     'traffic defense attorney Ohio',
@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     'Ohio speeding ticket attorney',
     'CDL speeding defense',
     'construction zone speeding',
+    'speeding ticket attorney',
+    'how much a speeding ticket costs in Ohio',
+    'how long a speeding ticket stays on your record in Ohio',
   ],
   openGraph: {
     title: 'Speeding Ticket Attorney Ohio | Jwayyed Law LLC',
@@ -66,9 +69,9 @@ const faqs = [
       'Under federal and Ohio rules, speeding 15 mph or more over the limit in a commercial vehicle is a serious traffic violation. Two serious violations within three years mean a 60-day CDL disqualification; three within three years mean a 120-day disqualification. A ticket in your personal vehicle can also affect your CDL. For a commercial driver, a speeding ticket puts your job at stake and is worth contesting.',
   },
   {
-    question: 'How many points does a speeding ticket add to my Ohio driving record?',
+    question: 'How many points does a speeding ticket add, and how long does it stay on your record in Ohio?',
     answer:
-      'Under ORC 4510.036, most speeding violations add 2 points, for speeds up to 30 mph over the posted limit. Speeding 30 mph or more over the limit adds 4 points. Points count over a two-year rolling period. At 6 points the Ohio BMV sends a warning letter, and 12 points triggers a six-month license suspension. Insurers also read points as higher risk and raise premiums. An attorney may be able to negotiate a non-moving or lesser violation with fewer or no points.',
+      'Under ORC 4510.036, most speeding violations add 2 points, for speeds up to 30 mph over the posted limit. Speeding 30 mph or more over the limit adds 4 points. Points stay on your record and count for two years from the date of the violation. At 6 points the Ohio BMV sends a warning letter, and 12 points triggers a six-month license suspension. Insurers also read points as higher risk and raise premiums. An attorney may be able to negotiate a non-moving or lesser violation with fewer or no points.',
   },
   {
     question: 'Can speeding tickets be reduced or dismissed in Ohio?',
@@ -108,7 +111,7 @@ export default function SpeedingTicketsPage() {
       />
 
       <Section
-        title="What a speeding ticket really costs"
+        title="How much a speeding ticket costs in Ohio"
         intro={
           <p>
             Under Ohio Revised Code 4511.21, a speeding ticket brings a fine, points on your record, higher insurance premiums and the
@@ -265,14 +268,14 @@ export default function SpeedingTicketsPage() {
               body: 'Two serious violations within three years mean a 60-day disqualification, and you must notify your employer of any traffic conviction within 30 days. A ticket in your own car can count too.',
             },
             {
-              title: 'Talk to a traffic defense attorney',
+              title: 'Talk to a speeding ticket attorney',
               body: 'An attorney can request the radar or lidar records, calibration certificates and speed survey, and can often appear in court for you so you miss less work.',
             },
           ]}
         />
       </Section>
 
-      <Section title="How a speeding case moves through traffic court" tone="ice">
+      <Section title="The traffic court process for a speeding ticket" tone="ice">
         <p>Traffic cases are heard in municipal courts and mayor&apos;s courts throughout Ohio.</p>
         <Steps
           steps={[
@@ -300,7 +303,7 @@ export default function SpeedingTicketsPage() {
         />
       </Section>
 
-      <Section title="Defenses to a speeding ticket">
+      <Section title="Speeding ticket defense strategies">
         <PointGrid
           points={[
             {

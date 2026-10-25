@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer for Fairborn & Xenia',
   description:
     'Misdemeanor defense at Fairborn and Xenia Municipal Courts for Greene County, including military personnel near Wright-Patterson AFB. (614) 285-5482.',
-  keywords: ['criminal defense Fairborn Ohio', 'misdemeanor attorney Greene County', 'Fairborn Municipal Court criminal lawyer', 'Xenia misdemeanor defense', 'military criminal defense Ohio'],
+  keywords: ['criminal defense Fairborn Ohio', 'misdemeanor attorney Greene County', 'Fairborn Municipal Court criminal lawyer', 'Xenia misdemeanor defense', 'military criminal defense Ohio', 'Greene County criminal defense attorney', 'Fairborn Municipal Court misdemeanor penalties'],
   openGraph: {
     title: 'Criminal Defense Lawyer for Fairborn & Xenia | Jwayyed Law LLC',
     description: 'Misdemeanor defense in Fairborn and Xenia Municipal Courts: which court hears your case, penalties and military consequences.',
@@ -98,7 +98,7 @@ export default function GreeneCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal misdemeanor defense in Greene County"
+        title="Greene County criminal misdemeanor defense attorney"
         description="A Greene County misdemeanor goes to Fairborn Municipal Court or Xenia Municipal Court, depending on where it happened. For Wright-Patterson personnel, a conviction can also reach a clearance."
       />
 
@@ -146,7 +146,7 @@ export default function GreeneCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Charges the courts hear">
+      <Section title="Ohio misdemeanor criminal charges the courts hear">
         <PointGrid
           points={[
             { title: 'Assault and aggravated assault', body: 'Including self-defense and defense-of-others claims.' },
@@ -158,7 +158,7 @@ export default function GreeneCriminalMisdemeanorDefensePage() {
           ]}
         />
         <FactTable
-          title="Maximum penalties by degree"
+          title="Maximum misdemeanor penalties by degree"
           rows={[
             { label: 'First-degree misdemeanor', value: 'Up to 180 days in jail and a $1,000 fine.' },
             { label: 'Second-degree misdemeanor', value: 'Up to 90 days and $750.' },
@@ -170,7 +170,7 @@ export default function GreeneCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="How the firm defends the case" tone="ice">
+      <Section title="How the firm defends Greene County criminal cases" tone="ice">
         <PointGrid
           points={[
             { title: 'The evidence', body: 'Police reports, body-cam footage, witness statements and physical evidence.' },

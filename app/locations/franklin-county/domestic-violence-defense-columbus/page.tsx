@@ -52,7 +52,7 @@ const faqs = [
       'The Lautenberg Amendment (18 U.S.C. § 922(g)(9)) permanently bars anyone convicted of a misdemeanor crime of domestic violence, including a first-offense M4 threat conviction, from possessing or buying firearms or ammunition under federal law. The ban is lifetime, applies in every occupation (law enforcement and military included), and cannot be restored under Ohio law. For Columbus residents who own firearms, work in law enforcement or security, or serve in the military, it is often the most severe consequence of a DV conviction.',
   },
   {
-    question: 'Can a domestic violence conviction in Columbus be expunged?',
+    question: 'Can a Columbus domestic violence conviction be expunged under Ohio law?',
     answer:
       'No. Ohio Revised Code 2953.36 lists domestic violence convictions under R.C. 2919.25 as ineligible for expungement or record sealing. A DV conviction stays on your record no matter how long ago it happened or how clean the rest of your record is. A non-DV resolution, such as a plea to disorderly conduct, may be eligible for expungement. That is a central reason to contest a DV charge.',
   },
@@ -89,7 +89,7 @@ export default function ColumbusDomesticViolencePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Domestic violence defense in Columbus"
+        title="Columbus domestic violence defense attorney"
         description="A domestic violence conviction in Ohio cannot be expunged and brings a lifetime federal firearm ban. In Columbus the case is heard at Franklin County Municipal Court."
       />
 
@@ -201,7 +201,7 @@ export default function ColumbusDomesticViolencePage() {
         />
       </Section>
 
-      <Section title="Defenses in a Columbus DV case">
+      <Section title="Defenses in Columbus domestic violence cases">
         <PointGrid
           points={[
             {
@@ -228,7 +228,7 @@ export default function ColumbusDomesticViolencePage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a Columbus DV charge" tone="ice">
+      <Section title="What the firm does on Columbus domestic violence charges" tone="ice">
         <PointGrid
           points={[
             { title: 'Arraignment', body: 'Appears at arraignment to address bond conditions and the scope of the protection order from day one.' },

@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Delaware County Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Delaware County Municipal Court, 70 N. Union St, Delaware, Ohio, about 25 miles north of Columbus.',
-  keywords: ['Delaware County Municipal Court attorney', 'Delaware County OVI lawyer', 'Delaware County misdemeanor defense', 'Delaware Ohio criminal attorney', 'OVI lawyer Delaware Ohio'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Delaware County Municipal Court, 70 N. Union St, Delaware, Ohio, about 25 miles north of Columbus.',
+  keywords: ['Delaware County Municipal Court attorney', 'Delaware County OVI lawyer', 'Delaware County misdemeanor defense', 'Delaware Ohio criminal attorney', 'OVI lawyer Delaware Ohio', 'Delaware Ohio DUI attorney', 'Delaware Ohio criminal defense attorney'],
   openGraph: {
     title: 'Delaware County Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Delaware County Municipal Court.',
@@ -103,7 +103,7 @@ export default function DelawareCountyMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Delaware County" tone="ice">
+      <Section title="OVI defense at Delaware County Municipal Court" tone="ice">
         <p>
           State highway enforcement is active on US 23, SR 36/37 and SR 315. OVI arrests often happen in the US 23 corridor and near
           the entertainment districts in Powell and Lewis Center.
@@ -135,10 +135,10 @@ export default function DelawareCountyMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Delaware County">
+      <Section title="Misdemeanor defense in Delaware County">
         <p>
-          The court hears domestic violence (ORC 2919.25), assault, theft, disorderly conduct and drug possession, among other
-          misdemeanors.
+          Delaware County Municipal Court hears misdemeanor cases including domestic violence (ORC 2919.25), assault, theft,
+          disorderly conduct and drug possession.
         </p>
         <FactTable
           title="Penalties and sealing"

@@ -11,8 +11,8 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Columbus OVI Refusal Defense Attorney',
   description:
-    'Refused the breath or blood test in Columbus? A first refusal brings a 1-year ALS and higher OVI minimums. You have 30 days to appeal.',
-  keywords: ['Columbus OVI refusal lawyer', 'refused breath test Columbus Ohio', 'implied consent OVI Columbus', 'Columbus DUI refusal attorney', 'OVI refusal Franklin County defense'],
+    'Refused the breath or blood test in Columbus? A first refusal brings a 1-year administrative license suspension and higher OVI minimums. You have 30 days to appeal.',
+  keywords: ['Columbus OVI refusal lawyer', 'refused breath test Columbus Ohio', 'implied consent OVI Columbus', 'Columbus DUI refusal attorney', 'OVI refusal Franklin County defense', 'refusal OVI cases Columbus', 'OVI defense attorney Columbus', 'ALS hearing'],
   openGraph: {
     title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law LLC',
     description: 'The 1-year refusal ALS, the appeal and the defense of a refusal OVI at Franklin County Municipal Court.',
@@ -160,7 +160,7 @@ export default function ColumbusRefusalOVIPage() {
         <p>A successful appeal can reduce or end the 1-year suspension and restore driving while the criminal case is pending.</p>
       </Section>
 
-      <Section title="Defending a refusal OVI without BAC evidence" tone="ice">
+      <Section title="Refusal OVI defense without BAC evidence" tone="ice">
         <p>
           Without a BAC reading, the prosecution relies on what the officer saw and the field sobriety tests. Those tests are subjective,
           and departures from NHTSA standards, poor surface conditions, medical conditions and the officer&rsquo;s credibility can all be

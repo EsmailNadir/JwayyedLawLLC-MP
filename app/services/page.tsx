@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: 'Our Legal Services',
   description:
     'Legal services from Jwayyed Law LLC across Ohio: criminal defense, OVI/DUI, personal injury, civil litigation, business law, estate planning and probate.',
+  keywords: ['Ohio criminal defense attorney', 'OVI DUI defense Ohio', 'Ohio personal injury lawyer', 'Ohio civil litigation attorney', 'Ohio business attorney', 'Ohio estate planning and probate lawyer'],
   openGraph: {
     title: 'Our Legal Services | Jwayyed Law LLC',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],

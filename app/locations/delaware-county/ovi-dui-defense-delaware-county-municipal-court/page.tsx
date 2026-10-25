@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Delaware County OVI Attorney',
   description:
-    'OVI/DUI defense at Delaware County Municipal Court for Delaware, Powell, Dublin and Westerville: US 23 and US 36 stops, HB 37, ALS appeals. (614) 285-5482.',
-  keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio'],
+    'Delaware County OVI defense for OVI and DUI charges at Delaware County Municipal Court for Delaware, Powell, Dublin and Westerville: US 23 and US 36 stops, HB 37, ALS appeals. (614) 285-5482.',
+  keywords: ['OVI lawyer Delaware Ohio', 'DUI attorney Delaware County', 'OVI defense Powell Ohio', 'Delaware County Municipal Court OVI', 'OVI lawyer Dublin Ohio', 'Delaware County OVI defense', 'DUI attorney Delaware Ohio', 'OVI defense attorney Delaware County', 'ALS hearing'],
   openGraph: {
     title: 'Delaware County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Delaware County Municipal Court: penalties under HB 37, the 30-day ALS appeal and professional license consequences.',
@@ -63,7 +63,7 @@ const faqs = [
       "It can. OVI convictions can affect licenses regulated by Ohio boards, including medical, nursing, legal, real estate and commercial driving licenses. Delaware County's higher-income professional population often faces these consequences, and the firm weighs them alongside the criminal case.",
   },
   {
-    question: 'Why hire Jwayyed Law LLC for a Delaware County OVI?',
+    question: 'Why hire Jwayyed Law LLC as your Delaware County OVI and DUI attorney?',
     answer:
       'The firm defends OVI/DUI charges in Delaware County Municipal Court. It files ALS appeals within the 30-day deadline under ORC 4511.191, gets all of the evidence and builds the defense around your case and the court’s procedures. Call (614) 285-5482 to schedule a consultation.',
   },
@@ -99,7 +99,7 @@ export default function DelawareOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense in Delaware County"
-        description="Every misdemeanor OVI in Delaware County, from Powell and Lewis Center to Sunbury, is heard at Delaware County Municipal Court. You have 30 days from arrest to appeal the license suspension there."
+        description="Every misdemeanor OVI charge in Delaware County, from Powell and Lewis Center to Sunbury, is heard at Delaware County Municipal Court. You have 30 days from arrest to appeal the license suspension there."
       />
 
       <Section
@@ -129,7 +129,7 @@ export default function DelawareOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37" tone="ice">
+      <Section title="Delaware County Municipal Court OVI penalties under HB 37" tone="ice">
         <p>HB 37, effective April 9, 2025, revised the mandatory minimum penalties under ORC 4511.19.</p>
         <FactTable
           title="First OVI"
@@ -171,7 +171,7 @@ export default function DelawareOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses in Delaware County" tone="ice">
+      <Section title="Delaware County OVI defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'The stop', body: 'Whether it was supported by reasonable articulable suspicion.' },

@@ -8,8 +8,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'OVI Defense Lawyer in Circleville',
   description:
-    'OVI/DUI defense at Circleville Municipal Court for Pickaway County, including US 23 stops: HB 37 penalties and the 30-day ALS appeal.',
-  keywords: ['OVI defense Pickaway County', 'DUI attorney Circleville Municipal Court', 'Pickaway County OVI lawyer', 'Circleville DUI defense'],
+    'Circleville OVI defense attorney for OVI and DUI charges at Circleville Municipal Court, including US 23 stops: HB 37 penalties and the 30-day ALS appeal.',
+  keywords: ['OVI defense Pickaway County', 'DUI attorney Circleville Municipal Court', 'Pickaway County OVI lawyer', 'Circleville DUI defense', 'Circleville OVI defense', 'OVI attorney Circleville', 'DUI defense attorney Pickaway County', 'ALS suspension'],
   openGraph: {
     title: 'OVI Defense Lawyer in Circleville | Jwayyed Law LLC',
     description: 'OVI defense at Circleville Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
@@ -47,7 +47,7 @@ const faqs = [
       'Use your right to remain silent and do not discuss the case without your attorney present. Contact an OVI defense attorney right away: you have only 30 days to appeal the administrative license suspension.',
   },
   {
-    question: 'Do I need a local attorney for OVI in Pickaway County?',
+    question: 'Do I need a local OVI or DUI defense attorney in Pickaway County?',
     answer:
       'You can hire any Ohio attorney. An attorney who knows Circleville Municipal Court, its procedures and the local prosecutors knows how the court schedules OVI cases, what it expects in filings and how pretrial conferences tend to run.',
   },
@@ -98,7 +98,7 @@ export default function PickawayOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense at Circleville Municipal Court"
-        description="OVI cases from anywhere in Pickaway County, including stops on US 23, are heard at Circleville Municipal Court. You have 30 days from arrest to appeal the license suspension there."
+        description="OVI charges from anywhere in Pickaway County, including stops on US 23, are heard at Circleville Municipal Court. You have 30 days from arrest to appeal the license suspension there."
       />
 
       <Section
@@ -135,7 +135,7 @@ export default function PickawayOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties in Pickaway County" tone="ice">
+      <Section title="Circleville Municipal Court OVI penalties" tone="ice">
         <p>Pickaway County applies the statewide penalties in ORC 4511.19, as updated by HB 37 (effective April 2025).</p>
         <FactTable
           title="First OVI"
@@ -180,7 +180,7 @@ export default function PickawayOVIDefensePage() {
           suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS starts immediately if you refuse a chemical test or test
           over the legal limit.
         </p>
-        <Callout title="30 days to appeal the suspension">
+        <Callout title="30 days to appeal the ALS suspension">
           The ALS appeal must be filed within 30 days of the arrest in Circleville Municipal Court, the court of jurisdiction for ALS
           appeals in this region. The firm files it right away, asks for a stay of the suspension and challenges it on procedure and
           testing. Winning keeps you driving to work and treatment while the criminal case continues.
@@ -222,7 +222,7 @@ export default function PickawayOVIDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a Pickaway County OVI">
+      <Section title="How a Circleville OVI defense lawyer handles your case">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within 30 days, with a request to stay the suspension.' },

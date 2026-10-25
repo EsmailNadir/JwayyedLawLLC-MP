@@ -42,7 +42,7 @@ export default function TheftTemplate({ suburb }: Props) {
     },
     {
       question: `Does a theft conviction show up on a background check?`,
-      answer: `Yes. A theft or shoplifting conviction in Ohio, even a first-degree misdemeanor, creates a permanent public criminal record that employers, landlords, and professional licensing boards can see. Background checks routinely flag theft convictions, and many employers automatically turn down applicants with them. A dismissal, a diversion, or even a reduction to a lesser charge can make a real difference to your job and housing prospects. An attorney can check whether you qualify for a first-offender diversion program in ${suburb}.`,
+      answer: `Yes. A theft or shoplifting conviction in Ohio, even a first-degree misdemeanor, can leave a permanent public criminal record, unless it is later sealed, that employers, landlords, and professional licensing boards can see. Background checks routinely flag theft convictions, and many employers automatically turn down applicants with theft records. A dismissal, a diversion, or even a reduction to a lesser charge can make a real difference to your job and housing prospects. An attorney can check whether you qualify for a first-offender diversion program in ${suburb}.`,
     },
     {
       question: `Can a theft charge in ${suburb} be reduced or dismissed?`,
@@ -66,8 +66,8 @@ export default function TheftTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Theft and shoplifting charges in ${suburb}, Ohio`}
-        description={`Petty theft (property under $1,000) is a first-degree misdemeanor; $1,000 or more is a felony. Charges from ${suburb} start in ${courtName}.`}
+        title={`Theft defense attorney in ${suburb}, Ohio`}
+        description={`Facing theft or shoplifting charges in ${suburb}? Petty theft (property under $1,000) is a first-degree misdemeanor; $1,000 or more is a felony. Charges from ${suburb} start in ${courtName}.`}
       />
 
       <Section
@@ -100,7 +100,7 @@ export default function TheftTemplate({ suburb }: Props) {
         <ProsecutorNote title={formerProsecutorTitle} />
         <p>
           Loss prevention officers at major retailers can detain shoplifting suspects and call police, and the resulting charges
-          are prosecuted even for first-time offenders. The firm handles these cases from early negotiation with the prosecutor
+          are prosecuted even when it is a first-offense petty theft charge. The firm handles these cases from early negotiation with the prosecutor
           through trial.
         </p>
       </Section>
@@ -137,7 +137,7 @@ export default function TheftTemplate({ suburb }: Props) {
 
       <Section title="Diversion and plea options">
         <p>
-          Many first-time theft defendants in Franklin County, especially in low-value shoplifting cases, qualify for diversion or
+          Many first-time theft defendants in Franklin County, especially for low-value shoplifting charges, qualify for diversion or
           a conditional dismissal. These programs usually require restitution, a short community service commitment, and no new
           arrests during a probationary period. Completing one dismisses the charge with no conviction on the record. The firm
           checks diversion eligibility for every new client, because a dismissed charge is better than any conviction.
@@ -168,7 +168,7 @@ export default function TheftTemplate({ suburb }: Props) {
         <p>The firm weighs these consequences when advising whether to fight a charge, accept a plea or pursue diversion.</p>
       </Section>
 
-      <Section title={`What the firm does in ${suburb} theft cases`}>
+      <Section title={`Theft and shoplifting defense in ${suburb}`}>
         <PointGrid
           points={[
             { title: 'Evidence review', body: 'Surveillance footage, loss prevention reports, witness statements and all police documentation.' },

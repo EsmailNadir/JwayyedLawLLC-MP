@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Athens County Criminal Defense Attorney',
   description:
     'Misdemeanor defense at Athens Municipal Court: assault, theft, drug and disorderly conduct charges near Ohio University. Call (614) 285-5482.',
-  keywords: ['criminal misdemeanor defense Athens County', 'misdemeanor attorney Athens Municipal Court', 'Athens County criminal lawyer', 'Athens misdemeanor defense'],
+  keywords: ['criminal misdemeanor defense Athens County', 'misdemeanor attorney Athens Municipal Court', 'Athens County criminal lawyer', 'Athens misdemeanor defense', 'Athens criminal misdemeanor defense attorney', 'sealing criminal records Athens County'],
   openGraph: {
     title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Athens Municipal Court, from disorderly conduct near campus to assault and theft.',
@@ -93,7 +93,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Misdemeanor defense at Athens Municipal Court"
+        title="Athens County criminal defense attorney at Athens Municipal Court"
         description="Misdemeanor charges from anywhere in Athens County go to Athens Municipal Court. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine."
       />
 
@@ -128,7 +128,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Misdemeanor cases the court hears" tone="ice">
+      <Section title="Criminal misdemeanor charges the court hears" tone="ice">
         <PointGrid
           points={[
             {
@@ -151,7 +151,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties in Ohio">
+      <Section title="Municipal court misdemeanor penalties in Ohio">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -162,7 +162,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
           ]}
           note="These are maximums. Reduced charges, alternative sentencing, community service or dismissal are possible in some cases."
         />
-        <h3>Expungement and record sealing</h3>
+        <h3>Expungement or record sealing</h3>
         <p>
           Misdemeanor convictions in Athens County may be eligible for expungement or sealing under Ohio Revised Code 2953.31 once
           the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the
@@ -170,7 +170,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses and what the firm does" tone="ice">
+      <Section title="Athens County criminal defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'Evidence challenges', body: 'Admissibility, police procedure, search and seizure, and witness credibility.' },
@@ -185,7 +185,7 @@ export default function AthensCriminalMisdemeanorDefensePage() {
           ]}
         />
         <p>
-          On each case the firm reviews the evidence, police reports and charging documents, files pretrial motions to suppress
+          On each case, the firm&rsquo;s criminal misdemeanor defense attorney reviews the evidence, police reports and charging documents, files pretrial motions to suppress
           evidence or dismiss charges, negotiates with Athens County prosecutors, tries the case when it cannot be resolved, and helps
           with expungement afterward.
         </p>

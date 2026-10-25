@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Truck Accident Lawyer in Ohio',
   description:
     'Truck accident claims in Ohio: the 2-year deadline, federal hours-of-service rules, black box evidence and every party who may be liable.',
-  keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney'],
+  keywords: ['truck accident lawyer Columbus OH', 'truck accident attorney Ohio', 'commercial truck lawyer', 'Franklin County truck accident attorney', 'truck accident lawyer Ohio', 'truck accident claims process'],
   openGraph: {
     title: 'Truck Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Commercial truck accident injury claims throughout Ohio.',
@@ -163,7 +163,7 @@ export default function TruckAccidentsPage() {
         />
       </Section>
 
-      <Section title="How a truck accident claim moves forward" tone="ice">
+      <Section title="The truck accident claims process" tone="ice">
         <Steps
           steps={[
             {
@@ -183,7 +183,7 @@ export default function TruckAccidentsPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a truck accident claim">
+      <Section title="What a truck accident lawyer does on your case">
         <PointGrid
           points={[
             {

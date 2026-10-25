@@ -8,8 +8,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'OVI / DUI Lawyer for Mount Gilead, Ohio',
   description:
-    'OVI/DUI defense at Morrow County Municipal Court for Mount Gilead, Cardington and rural US 42 stops: first and second OVI under HB 37.',
-  keywords: ['OVI lawyer Mount Gilead Ohio', 'DUI attorney Morrow County', 'OVI defense Morrow County', 'Morrow County Municipal Court OVI'],
+    'Morrow County OVI defense attorney for OVI and DUI charges at Morrow County Municipal Court for Mount Gilead, Cardington and rural US 42 stops: first and second OVI under HB 37.',
+  keywords: ['OVI lawyer Mount Gilead Ohio', 'DUI attorney Morrow County', 'OVI defense Morrow County', 'Morrow County Municipal Court OVI', 'Mount Gilead OVI defense', 'OVI attorney Morrow County', 'DUI lawyer Mount Gilead', 'DUI defense attorney Morrow County', 'ALS suspension'],
   openGraph: {
     title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Jwayyed Law LLC',
     description: 'OVI defense at Morrow County Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
@@ -47,7 +47,7 @@ const faqs = [
       'Use your right to remain silent and do not discuss the case without your attorney present. Contact an OVI defense attorney right away: you have only 30 days to appeal the administrative license suspension.',
   },
   {
-    question: 'Do I need a local attorney for OVI in Morrow County?',
+    question: 'Do I need a local OVI attorney or DUI lawyer in Morrow County?',
     answer:
       'You can hire any Ohio attorney. An attorney who knows Morrow County Municipal Court, its procedures and the local prosecutors knows how the court schedules OVI cases, what it expects in filings and how pretrial conferences tend to run.',
   },
@@ -98,7 +98,7 @@ export default function MorrowOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense for Mount Gilead and Morrow County"
-        description="OVI cases from Mount Gilead, Cardington and the rest of Morrow County are heard at Morrow County Municipal Court. You have 30 days from arrest to appeal the license suspension there."
+        description="OVI charges from Mount Gilead, Cardington and the rest of Morrow County are heard at Morrow County Municipal Court. You have 30 days from arrest to appeal the license suspension there."
       />
 
       <Section
@@ -139,7 +139,7 @@ export default function MorrowOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties in Morrow County" tone="ice">
+      <Section title="Morrow County Municipal Court OVI penalties" tone="ice">
         <p>Morrow County applies the statewide penalties in ORC 4511.19, as updated by HB 37 (effective April 2025).</p>
         <FactTable
           title="First OVI"
@@ -184,7 +184,7 @@ export default function MorrowOVIDefensePage() {
           suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS starts immediately if you refuse a chemical test or test
           over the legal limit.
         </p>
-        <Callout title="30 days to appeal the suspension">
+        <Callout title="30 days to appeal the ALS suspension">
           The ALS appeal must be filed within 30 days of the arrest in Morrow County Municipal Court, the court of jurisdiction for
           ALS appeals in this region. The firm files it right away, asks for a stay of the suspension and challenges it on procedure
           and testing. Winning keeps you driving to work and treatment while the criminal case continues.
@@ -226,7 +226,7 @@ export default function MorrowOVIDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a Morrow County OVI">
+      <Section title="How a Morrow County OVI attorney handles your case">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within 30 days, with a request to stay the suspension.' },

@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Franklin County Attorney: Columbus, Ohio',
   description:
-    'The Franklin County courts in Columbus, with addresses, and the OVI, criminal, civil, business and estate cases the firm handles there. Call (614) 285-5482.',
+    'The Franklin County courts in Columbus, with addresses, and the OVI defense, criminal misdemeanor defense, civil, business and probate cases the firm handles. Call (614) 285-5482.',
   keywords: [
     'Franklin County attorney Columbus Ohio',
     'Columbus OVI lawyer',
@@ -59,7 +59,7 @@ const faqs = [
   {
     question: 'How does probate work in Franklin County Probate Court?',
     answer:
-      'Franklin County Probate Court is at 373 S. High Street, Columbus, OH 43215. When a Franklin County resident dies, assets titled solely in their name typically pass through probate under ORC Chapter 2113. The executor named in the will (or a court-appointed administrator if there is no will) opens the estate, inventories assets, publishes notice to creditors, pays lawful debts and taxes, and distributes what remains to the heirs. Probate in Ohio generally takes 6 to 12 months for a straightforward estate. Trusts, beneficiary designations and joint ownership can reduce or avoid probate. The firm handles both probate administration and the estate planning that simplifies it.',
+      'Franklin County Probate Court is at 373 S. High Street, Columbus, OH 43215. When a Franklin County resident dies, assets titled solely in their name typically pass through probate under ORC Chapter 2113. The executor named in the will (or a court-appointed administrator if there is no will) opens the estate, inventories assets, publishes notice to creditors, pays lawful debts and taxes, and distributes what remains to the heirs. The probate process in Ohio generally takes 6 to 12 months for a straightforward estate. Trusts, beneficiary designations and joint ownership can reduce or avoid probate. The firm handles both probate administration and the estate planning that simplifies it.',
   },
   {
     question: 'How does the eviction process work in Franklin County Municipal Court?',
@@ -223,7 +223,7 @@ export default function FranklinCountyCourtsPage() {
         </p>
       </Section>
 
-      <Section title="OVI arrests in Franklin County" tone="ice">
+      <Section title="OVI defense in Franklin County" tone="ice">
         <p>
           OVI arrests are common along I-270, I-71, I-70, US-33, US-23 and the major suburban corridors. The arresting agency may be
           Columbus Police, the Franklin County Sheriff, the Ohio State Highway Patrol or a suburban police department. Either way, the
@@ -254,8 +254,8 @@ export default function FranklinCountyCourtsPage() {
         </p>
       </Section>
 
-      <Section title="Misdemeanor charges in Franklin County">
-        <p>Franklin County Municipal Court hears misdemeanor charges for Columbus and every Franklin County municipality.</p>
+      <Section title="Criminal misdemeanor defense in Franklin County">
+        <p>Franklin County Municipal Court hears misdemeanor criminal charges for Columbus and every Franklin County municipality.</p>
         <FactTable
           title="Common charges"
           rows={[
@@ -272,7 +272,7 @@ export default function FranklinCountyCourtsPage() {
           note="For cases involving drug addiction or mental illness, the court's HART and MAVS dockets may offer treatment-based alternatives to prosecution."
         />
         <p>
-          A misdemeanor conviction creates a permanent record that employers, landlords and professional licensing boards can see.
+          A misdemeanor conviction creates a permanent criminal record that employers, landlords and professional licensing boards can see.
           Reviewing all the evidence, spotting constitutional issues and knowing the local prosecutor&rsquo;s practices can lead to a
           dismissal, a reduced charge, or a diversion program that leaves no permanent record. The firm gets all available evidence
           before weighing any plea offer.

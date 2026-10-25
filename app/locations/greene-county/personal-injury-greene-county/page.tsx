@@ -85,7 +85,7 @@ export default function PersonalInjuryGreeneCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Greene County"
+        title="Greene County personal injury lawyer"
         description="Injury lawsuits from Xenia, Fairborn, Beavercreek, Centerville and Yellow Springs are filed at the Greene County Common Pleas Court in Xenia. Most must be filed within two years."
       />
 
@@ -115,7 +115,7 @@ export default function PersonalInjuryGreeneCountyPage() {
 
       <Section title="Ohio deadlines and fault rules" tone="ice">
         <FactTable
-          title="The rules that decide an Ohio injury claim"
+          title="How Ohio law decides an injury case"
           rows={[
             { label: 'Filing deadline', value: 'Two years from the date of injury for most claims (ORC 2305.10). Missing it usually bars the claim.' },
             { label: 'Medical malpractice', value: 'One-year statute, with a four-year statute of repose.' },
@@ -130,15 +130,15 @@ export default function PersonalInjuryGreeneCountyPage() {
         <p>The firm starts by preserving evidence, getting witness statements and documenting the full extent of your damages.</p>
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Greene County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Car accidents', body: 'Crashes on US 35, SR 675, SR 444 and local roads.' },
-            { title: 'Slip and fall and premises', body: 'Stores, restaurants, parking lots and public spaces.' },
+            { title: 'Slip and fall cases', body: 'Stores, restaurants, parking lots and public spaces.' },
             { title: 'Dog bites', body: 'Claims under ORC 955.28.' },
             { title: 'Workplace third-party claims', body: 'Including contractors and workers on base property.' },
             { title: 'Motorcycle and bicycle', body: 'Riders injured by negligent drivers.' },
-            { title: 'Wrongful death', body: 'For families after a fatal injury.' },
+            { title: 'Wrongful death claims', body: 'For families after a fatal injury.' },
           ]}
         />
         <p>

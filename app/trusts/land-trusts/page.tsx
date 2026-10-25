@@ -205,7 +205,7 @@ export default function LandTrustsPage() {
 
       <Section title="Land trust or revocable living trust" tone="ice">
         <p>
-          Both avoid probate for real estate. The difference is privacy: a revocable living trust deed usually names the grantor and
+          Both avoid the probate process for real estate. The difference is privacy: a revocable living trust deed usually names the grantor and
           is public record, while a land trust deed does not name the beneficiary. A revocable trust also covers all your assets in
           one document, alongside your pour-over will, durable power of attorney and healthcare directive.
         </p>

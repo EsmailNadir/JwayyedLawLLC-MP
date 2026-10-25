@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   keywords: [
     'medicaid asset protection trust Columbus OH',
     'MAPT attorney Ohio',
+    'asset protection trusts lawyer Ohio',
+    'Medicaid estate recovery claim Ohio',
     'medicaid planning attorney Ohio',
     'medicaid 5-year lookback Ohio',
     'Ohio Medicaid estate recovery ORC 5163.21',

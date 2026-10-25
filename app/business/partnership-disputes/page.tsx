@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Partnership Disputes Lawyer Ohio',
   description:
     'Ohio partnership disputes under ORC Chapter 1776: fiduciary breaches, profit-sharing conflicts, expulsion, buyouts and judicial dissolution.',
-  keywords: ['partnership disputes lawyer Columbus OH', 'Ohio partnership dispute attorney', 'ORC 1776 attorney', 'partnership dissolution Ohio', 'fiduciary duty partner Ohio', 'Franklin County partnership attorney'],
+  keywords: ['partnership disputes lawyer Columbus OH', 'Ohio partnership dispute attorney', 'ORC 1776 attorney', 'partnership dissolution Ohio', 'fiduciary duty partner Ohio', 'Franklin County partnership attorney', 'Ohio partnership disputes lawyer'],
   openGraph: {
     title: 'Partnership Disputes Lawyer Ohio | Jwayyed Law LLC',
     description: 'Disputes between Ohio partners, from fiduciary claims to dissolution.',
@@ -132,7 +132,7 @@ export default function PartnershipDisputesPage() {
             { title: 'Profit-sharing and capital accounts', body: 'How earnings are allocated, how contributions are valued, and whether draws comply with the agreement.' },
             { title: 'Breach of fiduciary duty', body: 'Self-dealing, diverted opportunities, competing with the partnership or concealing material information.' },
             { title: 'Expulsion and wrongful dissociation', body: 'Whether an expulsion followed the agreement and ORC 1776.51, or an exit was wrongful dissociation with liability under ORC 1776.80.' },
-            { title: 'Books and records', body: 'Demands for a full accounting and inspection of financial records under ORC 1776.34.' },
+            { title: 'Partnership financial records', body: 'Demands for a full accounting and inspection of financial records under ORC 1776.34.' },
             { title: 'Buy-sell enforcement and valuation', body: 'Whether a buyout was triggered and what the departing partner’s interest is worth. Without an agreement, ORC 1776.54 sets the buyout price.' },
             { title: 'Judicial dissolution and winding up', body: 'Petitions under ORC 1776.66 and winding up under ORC 1776.69 through 1776.78.' },
             { title: 'Derivative actions', body: 'Suits for the partnership against a wrongdoing partner or a third party under Ohio Civil Rule 23.1.' },
@@ -167,7 +167,7 @@ export default function PartnershipDisputesPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does for partners">
+      <Section title="What an Ohio partnership disputes lawyer does for partners">
         <PointGrid
           points={[
             { title: 'Reads the agreement first', body: 'Then assesses the claims under ORC Chapter 1776 and Ohio case law.' },

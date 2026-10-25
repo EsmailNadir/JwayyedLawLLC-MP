@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Montgomery County Court Representation',
   description:
-    'Dayton and Kettering Municipal Courts, Montgomery County Common Pleas and Huber Heights Mayor’s Court: which court hears your case and what the firm handles.',
+    'OVI defense and criminal defense in Dayton and Kettering Municipal Courts, Montgomery County Common Pleas and Huber Heights Mayor’s Court: which court hears your case.',
   keywords: [
     'Montgomery County OVI attorney',
     'Dayton Municipal Court lawyer',
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     'Kettering DUI attorney',
     'Huber Heights criminal defense',
     'Montgomery County Common Pleas',
+    'OVI defense Montgomery County',
+    'Montgomery County felony defense',
   ],
   openGraph: {
     title: 'Montgomery County Court Representation | Jwayyed Law LLC',
@@ -67,7 +69,7 @@ const faqs = [
       "They are separate courts with different judges, staff, prosecutors (the Kettering City Prosecutor and the Dayton City Prosecutor) and local procedures. Both apply the same Ohio Revised Code, but how judges approach sentencing, what plea offers prosecutors usually make and how pretrial conferences run differ by court. Kettering Municipal Court serves a suburban community and its docket may move at a different pace than Dayton's higher-volume court. If your charge arose in Kettering, Centerville, Oakwood or another community in Kettering's jurisdiction, your case is in Kettering Municipal Court.",
   },
   {
-    question: 'Can a Montgomery County OVI or criminal conviction be sealed or expunged?',
+    question: 'Can a Montgomery County OVI or criminal conviction be sealed, and who can see sealed records in Ohio?',
     answer:
       "Ohio's expanded sealing law (Senate Bill 288, effective October 2023) permits sealing of many misdemeanor convictions under ORC 2953.32, usually one year after completing the sentence, including probation. Some categories are permanently excluded: OVI convictions (ORC 2953.36), domestic violence convictions, most traffic offenses and specified sex offenses. If your conviction qualifies, the application is filed in the court of conviction: Dayton Municipal Court, Kettering Municipal Court or Montgomery County Common Pleas Court. The judge holds a hearing and weighs your rehabilitation against the state's interest. Once sealed, the conviction is generally hidden from private employers and landlords. The firm evaluates eligibility and handles the full process.",
   },
@@ -148,8 +150,8 @@ export default function MontgomeryCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges in Montgomery County" tone="ice">
-        <p>An OVI defense under ORC 4511.19 starts with a systematic review of every element of the state&rsquo;s case.</p>
+      <Section title="OVI defense in Montgomery County" tone="ice">
+        <p>An OVI defense in Dayton or Kettering under Ohio OVI law (ORC 4511.19) starts with a systematic review of every element of the state&rsquo;s case.</p>
         <PointGrid
           points={[
             {
@@ -170,7 +172,7 @@ export default function MontgomeryCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor and felony charges">
+      <Section title="Misdemeanor and felony defense">
         <p>
           Montgomery County courts carry heavy misdemeanor caseloads: domestic violence, assault, theft and drug possession. Under ORC
           2935.26, officers may issue a citation instead of an arrest for most misdemeanors that are not first-degree, but first-degree
@@ -200,8 +202,8 @@ export default function MontgomeryCountyCourtsPage() {
         <LinkGrid links={SERVICES} columns={2} />
         <p>
           The firm serves clients throughout Montgomery County, including Dayton (the county seat), Kettering, Trotwood, Huber Heights,
-          Fairborn, Centerville, Englewood, Miamisburg and Vandalia. The attorney personally handles every case and appears directly in
-          Dayton and Kettering Municipal Courts. Call <strong>(614) 285-5482</strong> to schedule a consultation.
+          Fairborn, Centerville, Englewood, Miamisburg and Vandalia. The attorney personally handles every case, from Dayton OVI defense to
+          felony charges, and appears directly in Dayton and Kettering Municipal Courts. Call <strong>(614) 285-5482</strong> to schedule a consultation.
         </p>
         <h3>Neighboring counties</h3>
         <LinkGrid

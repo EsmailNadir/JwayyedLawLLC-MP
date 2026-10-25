@@ -10,8 +10,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'Business Dissolution Lawyer in Ohio',
   description:
-    'Dissolving an Ohio LLC or corporation: the filings, winding up, creditor notice, final taxes, and why administrative dissolution does not protect owners.',
-  keywords: ['business dissolution lawyer Columbus OH', 'business dissolution attorney Ohio', 'close business lawyer', 'Franklin County business dissolution attorney'],
+    'Business dissolution in Ohio for LLCs and corporations: the filings, winding up, creditor notice, final taxes, and why administrative dissolution does not protect owners.',
+  keywords: ['business dissolution lawyer Columbus OH', 'business dissolution attorney Ohio', 'close business lawyer', 'Franklin County business dissolution attorney', 'Ohio business dissolution lawyer', 'dissolve an LLC in Ohio', 'LLC dissolution Ohio', 'corporate dissolution Ohio'],
   openGraph: {
     title: 'Business Dissolution Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Closing an Ohio business properly, from the dissolution filing to the final distribution.',
@@ -38,7 +38,7 @@ const faqs = [
       'Voluntary dissolution is chosen by the owners: members of an LLC under ORC 1706.472, or shareholders of a corporation under ORC 1701.86. Judicial dissolution is ordered by a court, usually when owners cannot agree, when a minority owner petitions over oppressive or fraudulent conduct by those in control, or when the business cannot pay its debts as they come due. A common pleas court may order judicial dissolution of an LLC under ORC 1705.43 or a corporation under ORC 1701.91. Voluntary dissolution is far simpler and cheaper.',
   },
   {
-    question: 'How do I dissolve an LLC versus a corporation in Ohio?',
+    question: 'How do I dissolve an LLC in Ohio, and how is a corporation different?',
     answer:
       'For an LLC, the members authorize dissolution as the operating agreement requires, then file Articles of Dissolution with the Ohio Secretary of State with the fee. Winding up under ORC 1706.476 means collecting assets, paying debts and liabilities, and distributing what remains to members under the operating agreement. For a corporation, the board and shareholders approve under ORC 1701.86, then file a Certificate of Dissolution (or Articles of Dissolution). Corporate winding up is governed by ORC 1701.88. Both must file final tax returns and cancel registrations.',
   },
@@ -90,7 +90,7 @@ export default function BusinessDissolutionPage() {
         title="Voluntary and judicial dissolution"
         intro={
           <p>
-            Formally dissolving an Ohio entity means following the Ohio Revised Code. Skipping steps can leave owners with liabilities,
+            Business dissolution in Ohio means following the Ohio Revised Code. Skipping steps can leave owners with liabilities,
             tax obligations and penalties long after the doors close.
           </p>
         }
@@ -134,12 +134,12 @@ export default function BusinessDissolutionPage() {
           The Ohio Secretary of State imposes administrative dissolution when an entity fails ongoing requirements such as keeping a
           statutory agent, filing annual reports or paying fees. The entity loses its good standing but does not get the liability
           protection of a properly wound-up voluntary dissolution. Reinstatement means curing the failures and paying reinstatement
-          fees. To close for good, dissolve voluntarily. For staying in good standing, see{' '}
+          fees. To close for good, file for voluntary dissolution. For staying in good standing, see{' '}
           <Link href="/business/business-compliance">business compliance</Link>.
         </p>
       </Section>
 
-      <Section title="Before you dissolve">
+      <Section title="Before business dissolution">
         <PointGrid
           points={[
             { title: 'Consider a sale', body: 'A sale transfers the business as a going concern and may return much more to the owners than dissolving and distributing assets.' },
@@ -163,7 +163,7 @@ export default function BusinessDissolutionPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a dissolution" tone="ice">
+      <Section title="What a business dissolution attorney does" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the documents', body: 'Articles or a Certificate of Dissolution under ORC 1706.472 or ORC 1701.86.' },
@@ -175,7 +175,7 @@ export default function BusinessDissolutionPage() {
           ]}
         />
         <p>
-          If you are considering closing an Ohio LLC or corporation, <Link href="/contact">contact Jwayyed Law LLC</Link> at (614)
+          If you are considering dissolution of an Ohio LLC or corporation, <Link href="/contact">contact Jwayyed Law LLC</Link> at (614)
           285-5482 to schedule a consultation.
         </p>
       </Section>

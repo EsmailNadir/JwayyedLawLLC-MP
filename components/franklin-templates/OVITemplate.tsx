@@ -71,7 +71,7 @@ export default function OVITemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`OVI defense in ${suburb}, Ohio`}
+        title={`OVI / DUI defense attorney in ${suburb}, Ohio`}
         description={
           hasMayorsCourt
             ? `OVI charges from ${suburb} start in ${suburb} Mayor's Court. The license suspension appeal goes to Franklin County Municipal Court, and you have 30 days from the arrest to file it.`
@@ -181,7 +181,7 @@ export default function OVITemplate({ suburb }: Props) {
         </p>
       </Section>
 
-      <Section title="The 30-day license suspension appeal">
+      <Section title="The 30-day administrative license suspension appeal">
         <p>
           When a {suburb} driver is arrested for OVI, the officer serves a notice of Administrative License Suspension under ORC
           4511.191. The ALS is a civil action, separate from the criminal case. It takes effect the moment the notice is served and
@@ -207,7 +207,7 @@ export default function OVITemplate({ suburb }: Props) {
         />
       </Section>
 
-      <Section title={`Defenses in a ${suburb} OVI case`} tone="ice">
+      <Section title={`${suburb} OVI defense strategies`} tone="ice">
         <PointGrid
           points={[
             {
@@ -240,17 +240,17 @@ export default function OVITemplate({ suburb }: Props) {
             { title: 'ALS appeal (30-day deadline)', body: 'Emergency filing, a stay of suspension, and procedural and substantive challenges under ORC 4511.191.' },
             { title: 'First OVI defense', body: 'Stop validity, field sobriety test administration, breathalyzer calibration records, rising BAC and diversion options.' },
             { title: 'Second and third OVI defense', body: 'Penalty mitigation, continuous alcohol monitoring alternatives and vehicle immobilization challenges.' },
-            { title: 'High-tier OVI (BAC 0.17%+)', body: 'Defenses to the enhanced mandatory minimums and the interlock requirements.' },
+            { title: 'High-tier OVI (BAC 0.17%+)', body: 'Defending high-tier OVI charges against the enhanced penalty mandatory minimums and the interlock requirements.' },
             { title: 'CDL OVI defense', body: 'Federal disqualification consequences and the effect on a commercial license.' },
-            { title: 'Limited driving privileges', body: 'Petitions for work, school and medical driving during a suspension.' },
+            { title: 'Limited driving privileges', body: 'Privileges petitions to the court for work, school and medical driving during a suspension.' },
             { title: 'Reckless operation reduction', body: 'Negotiating an R.C. 4511.20 plea to preserve expungement eligibility.' },
           ]}
         />
         <p>
-          If you were arrested for OVI in {suburb} or anywhere in Franklin County, call <a href={tel}>{FIRM_NAP.phone}</a> or{' '}
+          If you were arrested for OVI in {suburb} or anywhere in Franklin County and need a DUI defense attorney, call <a href={tel}>{FIRM_NAP.phone}</a> or{' '}
           <Link href="/contact">schedule a consultation online</Link>. The 30-day ALS deadline runs from the arrest and cannot be
           extended, so every day of waiting narrows your options. See the firm&apos;s{' '}
-          <Link href="/ovi-dui-defense">OVI and DUI defense</Link> practice for more.
+          <Link href="/ovi-dui-defense">OVI / DUI defense</Link> practice for more.
         </p>
       </Section>
 

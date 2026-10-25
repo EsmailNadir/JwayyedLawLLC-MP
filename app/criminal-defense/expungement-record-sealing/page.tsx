@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Expungement Attorney Ohio',
   description:
     'Sealing a criminal record in Ohio under ORC 2953.32: who qualifies, the waiting periods and the court process. Call Jwayyed Law LLC at (614) 285-5482.',
-  keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County'],
+  keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County', 'Ohio expungement and record sealing', 'expungement and record sealing attorney', 'record sealing process'],
   openGraph: {
     title: 'Expungement Attorney Ohio | Jwayyed Law LLC',
     description: 'Eligibility, waiting periods and the court process for sealing or expunging a criminal record in Ohio.',
@@ -166,7 +166,7 @@ export default function ExpungementRecordSealingPage() {
         </p>
       </Section>
 
-      <Section title="How the sealing process works" tone="ice">
+      <Section title="How the record sealing process works" tone="ice">
         <Steps
           steps={[
             {
@@ -195,7 +195,7 @@ export default function ExpungementRecordSealingPage() {
 
       <Section title="Related reading and services">
         <p>
-          If you have a criminal record in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to find out whether sealing is
+          If you have a criminal record in Ohio, <Link href="/contact">contact an expungement and record sealing attorney at Jwayyed Law LLC</Link> to find out whether sealing is
           available to you. Read the firm&rsquo;s articles on{' '}
           <Link href="/our-law-firm/blog/ohio-new-expungement-laws-clear-record">Ohio&rsquo;s new expungement laws</Link> and{' '}
           <Link href="/our-law-firm/blog/what-is-expungement-ohio-2024">how expungement works in Ohio</Link>. Related services include{' '}

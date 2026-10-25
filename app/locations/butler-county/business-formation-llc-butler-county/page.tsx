@@ -60,7 +60,7 @@ const faqs = [
   {
     question: 'Do I need an attorney to form an LLC in Butler County, Ohio?',
     answer:
-      "Ohio law does not require one, and the Secretary of State's online portal lets you file Articles of Organization yourself. Do-it-yourself formation often goes wrong, though: the wrong entity type, no operating agreement, misunderstood liability protection, a mishandled EIN and tax registration, or generic templates that do not fit the business. An attorney structures the business correctly from the start so your personal assets are protected.",
+      "Ohio business law does not require an attorney, and the Secretary of State's online portal lets you file Articles of Organization yourself. Do-it-yourself formation often goes wrong, though: the wrong entity type, no operating agreement, misunderstood liability protection, a mishandled EIN and tax registration, or generic templates that do not fit the business. An attorney structures the business correctly from the start so your personal assets are protected.",
   },
   {
     question: 'What are the most common mistakes in DIY LLC formation in Ohio?',
@@ -85,7 +85,7 @@ export default function BusinessFormationLLCButlerCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business and LLC formation in Butler County"
+        title="Butler County business formation and LLC attorney"
         description="LLC formation, operating agreements and business law for Hamilton, Oxford, West Chester, Mason and Fairfield. An Ohio LLC costs $99 to file with the Secretary of State."
       />
 

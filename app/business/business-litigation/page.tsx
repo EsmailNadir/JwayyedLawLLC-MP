@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Business Litigation Lawyer Ohio | ORC 2307',
   description:
     'Ohio business litigation for plaintiffs and defendants: contract disputes, fraud, trade secrets, tortious interference and emergency TROs in Common Pleas Court.',
-  keywords: ['business litigation lawyer Columbus OH', 'Ohio business dispute attorney', 'ORC 2307 attorney', 'contract dispute Ohio', 'business fraud lawyer Ohio', 'Franklin County business litigation', 'temporary restraining order Ohio'],
+  keywords: ['business litigation lawyer Columbus OH', 'Ohio business dispute attorney', 'ORC 2307 attorney', 'contract dispute Ohio', 'business fraud lawyer Ohio', 'Franklin County business litigation', 'temporary restraining order Ohio', 'Ohio business litigation lawyer', 'breach of contract claims Ohio'],
   openGraph: {
     title: 'Business Litigation Lawyer Ohio | ORC 2307 | Jwayyed Law LLC',
     description: 'Business disputes in Ohio courts, from the demand letter to trial and appeal.',
@@ -122,10 +122,10 @@ export default function BusinessLitigationPage() {
         />
       </Section>
 
-      <Section title="Claims the firm handles" tone="ice">
+      <Section title="Ohio business litigation claims the firm handles" tone="ice">
         <PointGrid
           points={[
-            { title: 'Breach of contract', body: 'Purchase agreements, service, construction and licensing contracts. The Ohio UCC (ORC Chapter 1302) governs the sale of goods.' },
+            { title: 'Breach of contract claims', body: 'Purchase agreements, service, construction and licensing contracts. The Ohio UCC (ORC Chapter 1302) governs the sale of goods.' },
             { title: 'Fraud and misrepresentation', body: 'Being induced into a deal by intentional or negligent false statements. Common-law and statutory claims may both apply.' },
             { title: 'Breach of fiduciary duty', body: 'Against directors, LLC managers, partners and officers who breached duties of loyalty and care. Often paired with accounting and disgorgement claims.' },
             { title: 'Trade secret misappropriation', body: 'Under the Ohio Uniform Trade Secrets Act (ORC 1333.61 through 1333.69).' },
@@ -161,7 +161,7 @@ export default function BusinessLitigationPage() {
         </Callout>
       </Section>
 
-      <Section title="How a business case moves through an Ohio court">
+      <Section title="How Ohio business cases move through court">
         <p>
           A straightforward commercial case in Franklin County Common Pleas Court might resolve in 9 to 18 months. A complex case with
           heavy discovery, several parties and experts can take 3 years or more.

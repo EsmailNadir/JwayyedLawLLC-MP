@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Pedestrian Accident Lawyer in Ohio',
   description:
     'Hit by a vehicle in Ohio? Driver yield rules under ORC 4511.46, how shared fault works, the 2-year deadline and what you can recover.',
-  keywords: ['pedestrian accident lawyer Columbus OH', 'pedestrian accident attorney Ohio', 'pedestrian lawyer', 'Franklin County pedestrian accident attorney'],
+  keywords: ['pedestrian accident lawyer Columbus OH', 'pedestrian accident attorney Ohio', 'pedestrian lawyer', 'Franklin County pedestrian accident attorney', 'pedestrian accident lawyer Ohio', 'pedestrian accident claims process'],
   openGraph: {
     title: 'Pedestrian Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Injury claims for pedestrians struck by vehicles in Ohio.',
@@ -93,7 +93,7 @@ export default function PedestrianAccidentsPage() {
       />
 
       <Section
-        title="What a pedestrian accident claim covers"
+        title="Understanding pedestrian accident claims"
         intro={
           <p>
             Pedestrians struck by vehicles in Columbus, Cincinnati, Dayton and across Ohio often suffer catastrophic or fatal injuries.
@@ -165,7 +165,7 @@ export default function PedestrianAccidentsPage() {
         />
       </Section>
 
-      <Section title="How a pedestrian claim moves forward" tone="ice">
+      <Section title="The pedestrian accident claims process" tone="ice">
         <Steps
           steps={[
             {
@@ -185,7 +185,7 @@ export default function PedestrianAccidentsPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a pedestrian claim">
+      <Section title="What a pedestrian accident attorney does on your case">
         <PointGrid
           points={[
             { title: 'Investigates', body: 'Photos, witness statements, police reports and surveillance footage, plus documentation of every injury and loss.' },

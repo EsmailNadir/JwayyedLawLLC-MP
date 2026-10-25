@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'CDL and Commercial OVI Defense in Ohio',
   description:
     'A CDL holder charged with OVI in Ohio faces a 1-year disqualification on a first conviction, in any vehicle. The 0.04% limit, reporting rules and defenses.',
-  keywords: ['commercial DUI attorney Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense'],
+  keywords: ['commercial DUI attorney Ohio', 'CDL OVI defense attorney Ohio', 'CDL attorney Ohio', 'CDL disqualification defense', 'CDL OVI charges', 'OVI defense attorney', 'Ohio OVI law', 'ALS hearing'],
   openGraph: {
     title: 'CDL and Commercial OVI Defense in Ohio | Jwayyed Law LLC',
     description: 'CDL disqualification, the 0.04% commercial BAC limit, employer reporting and defenses for CDL holders charged with OVI in Ohio.',
@@ -98,10 +98,10 @@ export default function CommercialDUICDLPage() {
       />
 
       <Section
-        title="What an OVI charge means for a CDL"
+        title="What OVI charges mean for a CDL"
         intro={
           <p>
-            The standard BAC limit is 0.08% under ORC 4511.19. A CDL holder driving a commercial motor vehicle (CMV) can be charged at
+            Under Ohio OVI law, the standard BAC limit is 0.08% under ORC 4511.19. A CDL holder driving a commercial motor vehicle (CMV) can be charged at
             just 0.04% under ORC 4511.19(A)(1)(f).
           </p>
         }
@@ -215,7 +215,7 @@ export default function CommercialDUICDLPage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a CDL OVI">
+      <Section title="How an OVI defense attorney handles a CDL case">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within 30 days, to challenge the administrative suspension and seek a stay.' },

@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   keywords: [
     'dynasty trusts Columbus OH',
     'dynasty trust attorney Ohio',
+    'Ohio estate attorney',
+    'Ohio trust laws',
     'perpetual trust Ohio',
     'multi-generational wealth trust Ohio',
     'GST tax exemption Ohio',

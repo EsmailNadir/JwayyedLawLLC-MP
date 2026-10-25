@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     'marijuana possession ORC 2925.11',
     'Franklin County marijuana lawyer',
     'Ohio adult use marijuana possession',
+    'marijuana possession defense attorney',
+    'marijuana OVI defense',
   ],
   openGraph: {
     title: 'Marijuana Possession Defense Ohio | Jwayyed Law LLC',
@@ -163,7 +165,7 @@ export default function MarijuanaPossessionPage() {
         />
       </Section>
 
-      <Section title="How a marijuana charge is defended" tone="ice">
+      <Section title="How a marijuana possession case is defended" tone="ice">
         <Steps
           steps={[
             {
@@ -188,14 +190,14 @@ export default function MarijuanaPossessionPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a marijuana case">
+      <Section title="What a marijuana possession defense attorney does">
         <PointGrid
           points={[
             { title: 'Checks the legal limits', body: "Whether the possession was within Ohio's adult-use limits and the charge should be dismissed." },
             { title: 'Moves to suppress', body: 'Challenges whether the smell of marijuana alone justified the search under post-legalization Ohio case law.' },
             { title: 'Pursues ILC and diversion', body: 'Treatment-based dismissal for eligible clients.' },
             { title: 'Contests the weight', body: 'Challenges the lab-reported weight used to set the degree of the offense.' },
-            { title: 'Defends marijuana OVI', body: 'Challenges per se THC limits and the evidence of actual impairment.' },
+            { title: 'Defends marijuana OVI', body: 'In an OVI charge involving marijuana, challenges per se THC limits and the evidence of actual impairment.' },
             {
               title: 'Plans for expungement',
               body: 'Advises on ORC 2953.32 eligibility for any conviction, including prior convictions for amounts now within the legal limits.',

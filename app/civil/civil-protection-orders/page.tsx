@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Civil Protection Orders Lawyer in Ohio',
   description:
     'Seeking or defending an Ohio civil protection order: the ex parte order, the full hearing within 10 days, and orders lasting up to five years.',
-  keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney'],
+  keywords: ['civil protection orders lawyer Columbus OH', 'protection order attorney Ohio', 'CPO lawyer', 'Franklin County protection order attorney', 'civil protection orders attorney Ohio', 'protection order defense'],
   openGraph: {
     title: 'Civil Protection Orders Lawyer in Ohio | Jwayyed Law LLC',
     description: 'CPOs and civil stalking protection orders in Ohio, for petitioners and respondents.',
@@ -161,7 +161,7 @@ export default function CivilProtectionOrdersPage() {
 
       <LocationsWeServe title="Civil" />
 
-      <Section title="Defending against a protection order" tone="ice">
+      <Section title="Protection order defense for respondents" tone="ice">
         <p>
           A respondent served with an ex parte CPO can contest it at the full hearing, which often takes place within 10 days of
           service. That leaves little time to prepare.
@@ -193,7 +193,7 @@ export default function CivilProtectionOrdersPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a protection order" tone="ice">
+      <Section title="How a civil protection orders lawyer helps" tone="ice">
         <PointGrid
           points={[
             { title: 'Files petitions', body: 'CPO or CSPO petitions, with emergency ex parte orders when needed.' },

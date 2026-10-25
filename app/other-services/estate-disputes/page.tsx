@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     'estate disputes lawyer Columbus OH',
     'estate dispute attorney Ohio',
+    'Ohio estate disputes lawyer',
+    'Medicaid estate recovery claim Ohio',
     'executor misconduct attorney Ohio',
     'will contest lawyer Columbus',
     'trust dispute attorney Ohio',
@@ -198,7 +200,7 @@ export default function EstateDisputesPage() {
         </Callout>
       </Section>
 
-      <Section title="Medicaid recovery and inherited real estate" tone="ice">
+      <Section title="Medicaid estate recovery claims and inherited real estate" tone="ice">
         <PointGrid
           points={[
             {

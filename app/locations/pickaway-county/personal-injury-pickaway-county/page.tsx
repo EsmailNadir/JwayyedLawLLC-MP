@@ -85,7 +85,7 @@ export default function PersonalInjuryPickawayCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Pickaway County"
+        title="Pickaway County personal injury lawyer"
         description="Injury lawsuits from Circleville, Ashville and the US 23 corridor are filed at the Pickaway County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
 
@@ -115,7 +115,7 @@ export default function PersonalInjuryPickawayCountyPage() {
 
       <Section title="Ohio deadlines and fault rules" tone="ice">
         <FactTable
-          title="The rules that decide an Ohio injury claim"
+          title="How Ohio personal injury law decides a claim"
           rows={[
             {
               label: 'Filing deadline',
@@ -136,15 +136,15 @@ export default function PersonalInjuryPickawayCountyPage() {
         </p>
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Pickaway County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Highway crashes', body: 'US 23 collisions, including those involving commercial vehicles.' },
-            { title: 'Slip and fall', body: 'Falls at retail establishments in Circleville.' },
+            { title: 'Slip and fall cases', body: 'Falls at retail establishments in Circleville.' },
             { title: 'Premises liability', body: 'Injuries on the county’s agricultural and commercial properties.' },
             { title: 'Dog bites', body: 'Strict liability claims under ORC 955.28.' },
             { title: 'Workplace accidents', body: 'Where a third party’s negligence caused the injury.' },
-            { title: 'Wrongful death', body: 'For families when a negligently caused injury proves fatal.' },
+            { title: 'Wrongful death cases', body: 'For families when a negligently caused injury proves fatal.' },
           ]}
         />
         <p>

@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'OVI / DUI Lawyer for Fairborn & Xenia',
   description:
-    'OVI/DUI defense at Fairborn and Xenia Municipal Courts for Fairborn, Beavercreek, Xenia and Wright-Patterson AFB personnel, under HB 37.',
-  keywords: ['OVI lawyer Fairborn Ohio', 'DUI attorney Greene County', 'OVI defense Beavercreek Ohio', 'Fairborn Municipal Court OVI', 'military OVI attorney Ohio'],
+    'Greene County OVI defense for OVI and DUI charges at Fairborn and Xenia Municipal Courts for Fairborn, Beavercreek, Xenia and Wright-Patterson AFB personnel, under HB 37.',
+  keywords: ['OVI lawyer Fairborn Ohio', 'DUI attorney Greene County', 'OVI defense Beavercreek Ohio', 'Fairborn Municipal Court OVI', 'military OVI attorney Ohio', 'Greene County OVI defense', 'DUI lawyer Fairborn', 'Xenia OVI attorney', 'ALS hearing'],
   openGraph: {
     title: 'OVI / DUI Lawyer for Fairborn & Xenia | Jwayyed Law LLC',
     description: 'OVI defense in Fairborn and Xenia Municipal Courts, including military consequences near Wright-Patterson AFB.',
@@ -63,7 +63,7 @@ const faqs = [
       'Yes. Both Fairborn and Xenia Municipal Courts can grant limited driving privileges for work, school, medical and court-ordered program purposes. Under HB 37, first-time defendants who accept ignition interlock may avoid the standard waiting period entirely. For military personnel, commuting to Wright-Patterson AFB can be argued as a work-related need. The firm petitions for privileges as quickly as possible.',
   },
   {
-    question: 'Why hire Jwayyed Law LLC for a Greene County OVI?',
+    question: 'Why hire Jwayyed Law LLC as your Greene County OVI and DUI lawyer?',
     answer:
       'The firm defends OVI/DUI charges in both Fairborn Municipal Court and Xenia Municipal Court, accounts for the military consequences facing personnel near Wright-Patterson AFB, files ALS appeals under ORC 4511.191 right away and builds the defense from a full review of the evidence. Call (614) 285-5482 to schedule a consultation.',
   },
@@ -131,7 +131,7 @@ export default function GreeneOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37" tone="ice">
+      <Section title="Fairborn and Xenia Municipal Court OVI penalties under HB 37" tone="ice">
         <p>HB 37, effective April 9, 2025, sets the mandatory minimums under ORC 4511.19 in both courts.</p>
         <FactTable
           title="First OVI"
@@ -170,7 +170,7 @@ export default function GreeneOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses in Greene County courts" tone="ice">
+      <Section title="Greene County OVI defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'The stop', body: 'Whether it was supported by reasonable articulable suspicion.' },

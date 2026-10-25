@@ -11,8 +11,8 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Columbus OVI With Accident Defense',
   description:
-    'An OVI with an accident in Columbus can bring felony vehicular assault charges in Common Pleas and a civil lawsuit alongside the OVI case.',
-  keywords: ['Columbus OVI with accident lawyer', 'OVI accident Columbus Ohio', 'vehicular assault Columbus attorney', 'aggravated vehicular assault Columbus', 'drunk driving accident Columbus defense'],
+    'Columbus OVI accident defense: an OVI with an accident can bring felony vehicular assault charges in Common Pleas and a civil lawsuit alongside the OVI case.',
+  keywords: ['Columbus OVI with accident lawyer', 'OVI accident Columbus Ohio', 'vehicular assault Columbus attorney', 'aggravated vehicular assault Columbus', 'drunk driving accident Columbus defense', 'Columbus OVI accident defense', 'OVI with accident defense', 'felony vehicular assault cases'],
   openGraph: {
     title: 'Columbus OVI With Accident Defense | Jwayyed Law LLC',
     description: 'Felony charges, civil exposure and the 30-day ALS appeal after an OVI accident in Columbus.',
@@ -132,7 +132,7 @@ export default function ColumbusOVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="How the defense is built">
+      <Section title="How an OVI with accident defense is built">
         <p>An accident case raises several issues at once, and each needs its own answer.</p>
         <Steps
           steps={[
@@ -164,11 +164,11 @@ export default function ColumbusOVIWithAccidentPage() {
         <p>
           The injured person will likely pursue your liability insurance and, if coverage falls short, a judgment against you. A guilty plea
           to OVI and aggravated vehicular assault creates a civil presumption of negligence that makes a large verdict more likely, so plea
-          and admission decisions in the criminal case have to account for the civil exposure.
+          and admission decisions in the criminal defense have to account for the civil exposure.
         </p>
       </Section>
 
-      <Section title="What the firm does on a Columbus OVI accident">
+      <Section title="How an OVI defense attorney handles a Columbus accident case">
         <PointGrid
           points={[
             { title: 'ALS appeal', body: 'Filed within the 30-day deadline as soon as the firm is retained.' },

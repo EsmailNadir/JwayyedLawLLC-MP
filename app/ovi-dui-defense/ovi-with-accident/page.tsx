@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'OVI With Accident Defense in Ohio',
   description:
     'An OVI crash that injures or kills someone can bring felony vehicular assault or homicide charges in Ohio. The charges, evidence and defenses.',
-  keywords: ['OVI with accident attorney Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney'],
+  keywords: ['OVI with accident attorney Ohio', 'DUI accident defense attorney Ohio', 'vehicular assault Ohio', 'aggravated vehicular assault attorney', 'OVI with accident charges', 'OVI with injury', 'OVI defense attorney', 'felony OVI charges'],
   openGraph: {
     title: 'OVI With Accident Defense in Ohio | Jwayyed Law LLC',
     description: 'Vehicular assault, vehicular homicide, leaving the scene and civil exposure after an OVI accident in Ohio.',
@@ -97,11 +97,11 @@ export default function OVIWithAccidentPage() {
       />
 
       <Section
-        title="What changes when there is an accident"
+        title="Understanding OVI with accident charges"
         intro={
           <p>
             A first OVI under ORC 4511.19 is a first-degree misdemeanor. Under HB 37 (effective April 9, 2025) it carries 3 to 180
-            days in jail, fines of $565 to $1,075 and a 1 to 3 year license suspension. An accident can turn it into a felony.
+            days in jail, fines of $565 to $1,075 and a 1 to 3 year license suspension. An accident can turn OVI charges into felony charges.
           </p>
         }
       >
@@ -109,7 +109,7 @@ export default function OVIWithAccidentPage() {
           If the crash causes serious physical harm to another person, charges under ORC 2903.08 for vehicular assault (F4) or
           aggravated vehicular assault (F3) may be filed with, or instead of, the misdemeanor OVI. If it causes a death, prosecutors can
           seek vehicular homicide (M1), vehicular manslaughter (F3), or aggravated vehicular homicide (F1 or F2) under ORC 2903.06. These
-          felonies carry prison terms, substantial fines and lasting consequences. The firm defends these cases across Ohio as part of
+          felony charges carry prison terms, substantial fines and lasting consequences. The firm defends these cases across Ohio as part of
           its <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>.
         </p>
       </Section>
@@ -227,7 +227,7 @@ export default function OVIWithAccidentPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on an OVI accident case">
+      <Section title="How an OVI defense attorney handles an accident case">
         <PointGrid
           points={[
             { title: 'Investigates immediately', body: 'Secures scene evidence, EDR data and surveillance footage before it is lost or overwritten.' },
@@ -235,7 +235,7 @@ export default function OVIWithAccidentPage() {
             { title: 'Challenges the BAC evidence', body: 'Hospital blood draw procedures, chain of custody and test accuracy.' },
             { title: 'Argues causation', body: 'That independent factors, not impairment, caused the accident.' },
             { title: 'Negotiates', body: 'Reduced charges where the evidence supports it.' },
-            { title: 'Coordinates with civil counsel', body: 'So the criminal strategy protects your interests in both proceedings.' },
+            { title: 'Coordinates the criminal defense with civil counsel', body: 'So the criminal strategy protects your interests in both proceedings.' },
           ]}
         />
         <p>

@@ -85,12 +85,12 @@ export default function PersonalInjuryButlerCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Butler County"
+        title="Butler County personal injury attorney"
         description="Butler County injury cases over $15,000 are filed at the Common Pleas Court, 315 High Street in Hamilton. Most Ohio injury claims must be filed within two years."
       />
 
       <Section
-        title="Injuries in Butler County"
+        title="Butler County accident and injury claims"
         intro={
           <p>
             Butler County is one of Ohio&rsquo;s most populated counties. Its roads, including I-75, SR 129 (Princeton Pike), US 27,
@@ -101,7 +101,7 @@ export default function PersonalInjuryButlerCountyPage() {
         <PointGrid
           points={[
             { title: 'I-75 corridor', body: 'A major commercial trucking route between Cincinnati and Dayton, where car and truck crashes are common and often severe.' },
-            { title: 'West Chester and Mason', body: 'Retail corridors along SR 129 and US 42 bring slip and fall and premises claims at shopping centers, grocery stores and restaurants.' },
+            { title: 'West Chester and Mason', body: 'Retail corridors along SR 129 and US 42 bring slip and fall and premises liability cases at shopping centers, grocery stores and restaurants.' },
             { title: 'Oxford', body: 'Miami University students walking and cycling near traffic create pedestrian injury exposure.' },
             { title: 'Hamilton and Middletown', body: 'Manufacturing injuries may support claims against third parties even when workers’ compensation applies.' },
           ]}
@@ -118,7 +118,7 @@ export default function PersonalInjuryButlerCountyPage() {
 
       <Section title="Ohio deadlines and damages rules" tone="ice">
         <FactTable
-          title="The rules that decide an Ohio injury claim"
+          title="How Ohio law decides an injury case"
           rows={[
             { label: 'Filing deadline', value: 'Two years for most claims (ORC 2305.10(A)). Missing it forfeits any recovery.' },
             {

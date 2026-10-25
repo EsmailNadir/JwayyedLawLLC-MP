@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Franklin County Criminal Defense Attorney',
   description:
     'Misdemeanor defense at Franklin County Municipal Court, 375 S. High St.: assault, theft, domestic violence and drug charges, penalties, diversion and ILC.',
-  keywords: ['Franklin County Municipal Court criminal defense', 'Franklin County Municipal Court lawyer', 'Columbus misdemeanor defense attorney', 'Franklin County Municipal Court misdemeanor', 'criminal defense 375 S High St Columbus'],
+  keywords: ['Franklin County Municipal Court criminal defense', 'Franklin County Municipal Court lawyer', 'Columbus misdemeanor defense attorney', 'Franklin County Municipal Court misdemeanor', 'criminal defense 375 S High St Columbus', 'Franklin County Municipal Court criminal defense attorney', 'criminal misdemeanor defense Columbus'],
   openGraph: {
     title: 'Franklin County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor charges at Franklin County Municipal Court: the court, the penalties and the alternatives to conviction.',
@@ -88,7 +88,7 @@ export default function FCMCCriminalDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Misdemeanor defense at Franklin County Municipal Court"
+        title="Franklin County Municipal Court criminal defense attorney"
         description="Every misdemeanor charged in Franklin County is heard at 375 S. High Street, whether filed there or transferred from a mayor's court. A first-degree misdemeanor carries up to 180 days in jail."
       />
 
@@ -123,7 +123,7 @@ export default function FCMCCriminalDefensePage() {
         </p>
       </Section>
 
-      <Section title="Charges the firm defends here" tone="ice">
+      <Section title="Criminal charges the firm defends here" tone="ice">
         <p>
           Assault, domestic violence, theft, shoplifting, drug possession, disorderly conduct, open container and criminal damaging are
           heard daily in the courtrooms on floors 12 through 15.
@@ -131,7 +131,7 @@ export default function FCMCCriminalDefensePage() {
         <LinkGrid links={CHARGES} columns={2} />
       </Section>
 
-      <Section title="Misdemeanor penalties in Ohio">
+      <Section title="Municipal court misdemeanor penalties in Ohio">
         <FactTable
           title="Maximum sentences by degree"
           rows={[

@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     'slip and fall attorney',
     'workplace injury lawyer',
     'wrongful death attorney',
+    'Ohio personal injury laws',
+    'personal injury claims process',
   ],
   openGraph: {
     title: 'Ohio Personal Injury Attorney | Jwayyed Law LLC',
@@ -122,8 +124,8 @@ export default function PersonalInjuryPage() {
         }
       >
         <p>
-          Claims arise from car, truck and motorcycle accidents, slip and fall incidents, workplace injuries, medical malpractice and
-          wrongful death. Each type has its own Ohio Revised Code sections, insurance rules and case law.
+          Claims arise from car, truck and motorcycle accidents, slip and fall incidents and other premises liability claims, workplace injuries, medical malpractice
+          claims and wrongful death. Each type has its own Ohio Revised Code sections, insurance rules and case law.
         </p>
         <p>
           Insurance companies often minimize claims or deny liability. Early work on a claim matters because evidence has to be
@@ -131,7 +133,7 @@ export default function PersonalInjuryPage() {
         </p>
       </Section>
 
-      <Section title="Ohio rules that shape your claim">
+      <Section title="Ohio personal injury laws that shape your claim">
         <FactTable
           title="Filing deadlines (statute of limitations)"
           rows={[
@@ -151,7 +153,7 @@ export default function PersonalInjuryPage() {
           ]}
         />
         <FactTable
-          title="Ohio minimum auto insurance"
+          title="Ohio minimum auto insurance requirements"
           rows={[
             { label: 'Bodily injury', value: '$25,000 per person and $50,000 per accident.' },
             { label: 'Property damage', value: '$25,000.' },
@@ -183,7 +185,7 @@ export default function PersonalInjuryPage() {
         />
       </Section>
 
-      <Section title="How an injury claim moves forward">
+      <Section title="The personal injury claims process">
         <Steps
           steps={[
             {
@@ -206,7 +208,7 @@ export default function PersonalInjuryPage() {
         />
       </Section>
 
-      <Section title="What the firm does on an injury claim" tone="ice">
+      <Section title="What a personal injury attorney does on your claim" tone="ice">
         <PointGrid
           points={[
             {

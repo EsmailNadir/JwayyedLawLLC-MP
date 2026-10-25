@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Columbus High-Tier OVI Defense: BAC 0.17%',
   description:
     'A BAC of 0.17% or above makes a Columbus OVI high tier, doubling the first-offense mandatory minimum to 6 days under HB 37.',
-  keywords: ['Columbus high tier OVI lawyer', 'high BAC DUI Columbus Ohio', '0.17 OVI Columbus', 'aggravated OVI Columbus', 'high tier OVI Franklin County defense'],
+  keywords: ['Columbus high tier OVI lawyer', 'high BAC DUI Columbus Ohio', '0.17 OVI Columbus', 'aggravated OVI Columbus', 'high tier OVI Franklin County defense', 'high-tier OVI defense attorney Columbus', 'rising BAC defense', 'OVI defense attorney'],
   openGraph: {
     title: 'Columbus High-Tier OVI Defense: BAC 0.17% | Jwayyed Law LLC',
     description: 'Penalties, BAC challenges and the ALS appeal for a high-tier OVI at Franklin County Municipal Court.',
@@ -132,7 +132,7 @@ export default function ColumbusHighTierOVIPage() {
         </p>
       </Section>
 
-      <Section title="Challenging a high-tier BAC result">
+      <Section title="High-tier OVI defense: challenging the BAC result">
         <PointGrid
           points={[
             {
@@ -140,7 +140,7 @@ export default function ColumbusHighTierOVIPage() {
               body: 'The Intoxilyzer 8000 has certified margins of error and mandatory calibration and maintenance requirements. A result of 0.17% to 0.19% may fall within the error margin. The firm subpoenas the logs for the specific instrument and compares them with Ohio Department of Health certification standards.',
             },
             {
-              title: 'Rising BAC',
+              title: 'Rising BAC defense',
               body: 'If alcohol was still being absorbed, your BAC while driving may have been below 0.17%. This works best when there is a real gap between the stop and the test and the result is close to the threshold.',
             },
             { title: 'Blood tests', body: 'Chain of custody and laboratory procedure.' },
@@ -167,7 +167,7 @@ export default function ColumbusHighTierOVIPage() {
 
       <Section title="What a high-tier conviction costs">
         <p>
-          An OVI conviction under R.C. 4511.19 is not eligible for expungement, so it stays on your record and on background checks. It also
+          An OVI conviction under R.C. 4511.19 is not eligible for expungement, so it stays on your criminal record and on background checks. It also
           appears on driving records reviewed by insurers, transportation and logistics employers, and agencies with security clearance
           requirements. Insurance rates often double or triple for years, and some carriers may decline coverage because of the high BAC.
         </p>

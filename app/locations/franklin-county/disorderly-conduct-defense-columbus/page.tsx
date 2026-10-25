@@ -78,7 +78,7 @@ export default function ColumbusDisorderlyConductPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Disorderly conduct defense in Columbus"
+        title="Columbus disorderly conduct defense attorney"
         description="Disorderly conduct under R.C. 2917.11 starts as a minor misdemeanor with a $150 fine, and becomes an M4 with up to 30 days in jail in some situations."
       />
 
@@ -102,7 +102,7 @@ export default function ColumbusDisorderlyConductPage() {
         </p>
       </Section>
 
-      <Section title="Where the citations come from" tone="ice">
+      <Section title="Where Columbus disorderly conduct cases come from" tone="ice">
         <PointGrid
           points={[
             {
@@ -148,7 +148,7 @@ export default function ColumbusDisorderlyConductPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to disorderly conduct" tone="ice">
+      <Section title="Defenses to a disorderly conduct charge" tone="ice">
         <p>Minor misdemeanor citations are often dismissed or reduced when challenged early.</p>
         <PointGrid
           points={[
@@ -158,7 +158,7 @@ export default function ColumbusDisorderlyConductPage() {
             { title: 'Diversion', body: "Franklin County Municipal Court's pre-trial diversion program is open to first-time offenders on minor charges and ends in dismissal once the conditions are met. The firm pursues it first in every eligible case." },
           ]}
         />
-        <h3>Speech and the First Amendment</h3>
+        <h3>Speech-based charges and the First Amendment</h3>
         <p>
           Many Columbus citations come from verbal confrontations. The bans on an &ldquo;offensively coarse utterance&rdquo; and
           &ldquo;abusive language likely to provoke a violent response&rdquo; reach only &ldquo;fighting words&rdquo;: speech that by its

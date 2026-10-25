@@ -11,7 +11,7 @@ import { criminalDefenseServices } from '@/data/services';
 export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer in Columbus, Ohio',
   description:
-    'Columbus criminal defense for misdemeanor charges across Ohio: assault, domestic violence, theft, traffic and license charges. Call (614) 285-5482.',
+    'Columbus criminal defense attorney for misdemeanor charges across Ohio: assault, domestic violence, theft, traffic and license charges. Call (614) 285-5482.',
   keywords: [
     'Columbus criminal defense lawyer',
     'criminal defense attorney Columbus Ohio',
@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     'theft defense attorney',
     'misdemeanor defense attorney',
     'Ohio criminal attorney',
+    'facing criminal charges Ohio',
+    'assault and battery charges',
+    'theft charges attorney',
   ],
   openGraph: {
     title: 'Criminal Defense Lawyer in Columbus, Ohio | Jwayyed Law LLC',
@@ -42,7 +45,7 @@ const faqs = [
   {
     question: 'What should I do if I am arrested in Ohio?',
     answer:
-      'Stay calm and use your constitutional rights. You have the right to remain silent, and you should not answer questions without an attorney present. You have the right to an attorney, and if you cannot afford one, the court will appoint one. Contact a criminal defense attorney as soon as you can, and do not discuss your case with anyone except your attorney.',
+      'Stay calm and use your constitutional rights. You have the right to remain silent, and you should not answer questions without a criminal defense attorney present. You have the right to an attorney, and if you cannot afford one, the court will appoint one. Contact a criminal defense attorney as soon as you can, and do not discuss your case with anyone except your attorney.',
   },
   {
     question: 'What is the difference between a misdemeanor and a felony in Ohio?',
@@ -177,7 +180,7 @@ export default function CriminalDefensePage() {
         tone="ice"
         intro={
           <p>
-            Jwayyed Law LLC defends people charged with misdemeanor crimes under the Ohio Revised Code, in courts across the state.
+            Jwayyed Law LLC defends people facing misdemeanor criminal charges under the Ohio Revised Code, in courts across the state.
           </p>
         }
       >
@@ -187,7 +190,7 @@ export default function CriminalDefensePage() {
           negotiates with prosecutors and tries the case when that is the better course.
         </p>
         <p>
-          A criminal record follows you after the sentence is served. These collateral consequences last long after the jail time is
+          A permanent criminal record follows you after the sentence is served. These collateral consequences last long after the jail time is
           finished and the fines are paid:
         </p>
         <PointGrid
@@ -275,7 +278,7 @@ export default function CriminalDefensePage() {
         </p>
         <Callout title="Some sentences cannot be reduced">
           Certain offenses carry mandatory minimums that cannot be suspended or reduced. Some drug trafficking amounts trigger a
-          mandatory 5-year minimum prison term, and some violent offenses carry mandatory prison. They matter when weighing a plea offer, and an attorney can explain how
+          mandatory 5-year minimum prison term, and some violent offenses carry mandatory prison. They matter when weighing a plea offer, and a criminal defense attorney can explain how
           any mandatory minimum applies to your case and work to avoid or limit it where possible.
         </Callout>
       </Section>
@@ -325,7 +328,7 @@ export default function CriminalDefensePage() {
       </Section>
 
       <Section
-        title="How a criminal case moves through court"
+        title="The criminal court process in Ohio"
         intro={
           <p>
             Most Ohio criminal cases move through the same stages: arraignment, discovery, pretrial motions, plea negotiations and, if
@@ -423,7 +426,7 @@ export default function CriminalDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a criminal case" tone="ice">
+      <Section title="What a criminal defense attorney does on your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Protects your rights from arrest', body: 'The right to remain silent, the right to counsel and protection against illegal searches and seizures.' },
@@ -439,8 +442,8 @@ export default function CriminalDefensePage() {
           ]}
         />
         <p>
-          The firm handles cases from arrest through trial and post-conviction relief. If you are charged anywhere in Ohio,{' '}
-          <Link href="/contact">schedule a consultation</Link> to go over your rights, the possible defenses and a plan for your case.
+          The firm handles cases from arrest through trial and post-conviction relief. If you are facing criminal charges anywhere in Ohio,{' '}
+          <Link href="/contact">schedule a consultation</Link> with an Ohio criminal defense attorney to go over your rights, the possible defenses and a plan for your case.
           Early action can lead to a dismissal, reduced penalties or a better plea.
         </p>
       </Section>

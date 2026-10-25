@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'What practice areas does the firm handle in Pickaway County?',
     answer:
-      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'The Pickaway County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Circleville Municipal Court?',
@@ -92,7 +92,7 @@ export default function PickawayCountyLocationsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Pickaway County criminal defense and OVI"
+        title="Pickaway County criminal defense and OVI attorney"
         description="Criminal and OVI cases in Pickaway County are heard at Circleville Municipal Court, 115 E. Main St. The firm's attorney previously served as Circleville's Municipal Prosecutor."
       />
 

@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     'estate planning lawyer Columbus OH',
     'wills attorney Ohio',
+    'estate planning wills lawyer',
+    'Ohio estate planning attorneys',
     'Ohio will requirements ORC 2107',
     'holographic will Ohio',
     'self-proving will Ohio',
@@ -74,7 +76,7 @@ const faqs = [
       'Your executor (called a "personal representative" in some states) takes the estate through probate: collecting assets, paying debts, filing taxes and distributing property. Choose someone trustworthy, organized and able to give the process time, who will carry out your wishes under family pressure. That is not necessarily the oldest child or the most financially successful relative. Ohio does not require executors to be Ohio residents, but a local executor avoids practical complications. Always name an alternate in case your first choice cannot or will not serve.',
   },
   {
-    question: 'Does a will avoid probate in Ohio?',
+    question: 'Does a will avoid the probate process in Ohio?',
     answer:
       'No. A will is a set of instructions for the Probate Court, and assets that pass under it still go through probate. To avoid probate you need non-probate transfers: a revocable living trust, joint tenancy, payable-on-death designations, transfer-on-death registrations, or beneficiary designations on retirement accounts and life insurance. The will covers whatever those do not, so it is an important backstop, but on its own it does not spare your family the time and expense of probate.',
   },

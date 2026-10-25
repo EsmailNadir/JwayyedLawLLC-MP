@@ -11,7 +11,7 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Columbus OVI Defense Attorney',
   description:
-    'Columbus OVI cases are heard at Franklin County Municipal Court, 375 S. High Street. Penalties under HB 37, the 30-day ALS appeal and defenses.',
+    'Columbus OVI defense for OVI and DUI charges at Franklin County Municipal Court, 375 S. High Street: HB 37 penalties, the 30-day ALS hearing and defenses.',
   keywords: [
     'Columbus OVI lawyer',
     'Columbus DUI attorney',
@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     'Columbus DUI defense attorney',
     'OVI lawyer Columbus Ohio',
     'Columbus Ohio drunk driving lawyer',
+    'Columbus OVI attorney',
+    'DUI defense attorney Columbus',
+    'Columbus second OVI defense',
+    'ALS hearing Columbus',
   ],
   openGraph: {
     title: 'Columbus OVI Defense Attorney | Jwayyed Law LLC',
@@ -68,7 +72,7 @@ const faqs = [
       "Yes. OVI convictions are reportable to Ohio licensing boards and can lead to investigations by the State Medical Board, the Ohio Board of Nursing, the Ohio Bar Association, the Ohio Real Estate Commission, and the BMV for CDL holders. The firm weighs licensing consequences alongside the criminal case and works toward outcomes, such as a reduction to reckless operation under ORC 4511.20, that limit the long-term effect on your career.",
   },
   {
-    question: 'Why hire Jwayyed Law LLC for a Columbus OVI?',
+    question: 'Why hire Jwayyed Law LLC for Columbus OVI defense?',
     answer:
       'Jwayyed Law LLC defends OVI cases throughout Columbus and Franklin County. The firm appears regularly at Franklin County Municipal Court, knows its dockets and the prosecutors who handle OVI cases, and files ALS appeals within the 30-day deadline, which cannot be extended. Call (614) 285-5482 as soon as you can after the arrest.',
   },
@@ -95,7 +99,7 @@ export default function ColumbusOVIPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI and DUI defense in Columbus"
+        title="Columbus OVI and DUI defense attorney"
         description="An OVI arrest in Columbus means a case at Franklin County Municipal Court, 375 S. High Street. The license suspension starts at arrest, and you have 30 days to appeal it."
       />
 
@@ -151,7 +155,7 @@ export default function ColumbusOVIPage() {
         </ul>
       </Section>
 
-      <Section title="OVI penalties in Columbus under HB 37">
+      <Section title="Franklin County Municipal Court OVI penalties under HB 37">
         <p>
           House Bill 37, effective April 9, 2025, restructured the mandatory minimums under R.C. 4511.19. A judge cannot go below them;
           avoiding them takes a successful defense or a reduced charge.
@@ -202,7 +206,7 @@ export default function ColumbusOVIPage() {
         />
       </Section>
 
-      <Section title="Defending a Columbus OVI">
+      <Section title="Columbus OVI defense strategies">
         <PointGrid
           points={[
             {
@@ -214,12 +218,12 @@ export default function ColumbusOVIPage() {
               body: 'NHTSA sets standards for the HGN, walk-and-turn and one-leg stand tests. Deviations in the instructions, the terrain or the scoring make a test unreliable. The firm compares the recording against those standards frame by frame.',
             },
             { title: 'Breath and blood tests', body: 'Maintenance and calibration records for the breath instrument; chain-of-custody documents and lab records for blood.' },
-            { title: 'Rising BAC', body: 'Near 0.08% or 0.17%, your BAC may have been below the threshold while driving and risen by the time of the test.' },
+            { title: 'Rising BAC defense', body: 'Near 0.08% or 0.17%, your BAC may have been below the threshold while driving and risen by the time of the test.' },
           ]}
         />
       </Section>
 
-      <Section title="What the firm does on a Columbus OVI" tone="ice">
+      <Section title="How a Columbus OVI defense attorney handles your case" tone="ice">
         <PointGrid
           points={[
             { title: 'ALS appeal', body: 'Filed within the 30-day deadline with a stay requested, on procedural and substantive grounds under ORC 4511.191.' },
@@ -231,7 +235,7 @@ export default function ColumbusOVIPage() {
           ]}
         />
         <p>
-          The firm handles each case from the ALS appeal through pretrial motions, hearings and trial if needed, as part of its{' '}
+          As a Columbus OVI and DUI defense attorney, the firm handles each case from the ALS appeal through pretrial motions, hearings and trial if needed, as part of its{' '}
           <Link href="/ovi-dui-defense">OVI and DUI defense practice</Link>. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
           <Link href="/contact">schedule a consultation online</Link>.
         </p>

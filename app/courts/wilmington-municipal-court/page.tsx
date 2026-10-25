@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Wilmington Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Wilmington Municipal Court (Clinton County Municipal Court), 69 N South Street, serving all of Clinton County.',
-  keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington Ohio misdemeanor defense', 'Clinton County criminal attorney', 'Clinton County DUI lawyer'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Wilmington Municipal Court (Clinton County Municipal Court), 69 N South Street, serving all of Clinton County.',
+  keywords: ['Wilmington Municipal Court attorney', 'Clinton County OVI lawyer', 'Wilmington Ohio misdemeanor defense', 'Clinton County criminal attorney', 'Clinton County DUI lawyer', 'Clinton County Municipal Court attorney', 'Wilmington DUI attorney', 'Wilmington criminal defense attorney'],
   openGraph: {
     title: 'Wilmington Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Wilmington Municipal Court in Clinton County.',
@@ -97,7 +97,7 @@ export default function WilmingtonMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Clinton County" tone="ice">
+      <Section title="OVI defense at Wilmington Municipal Court" tone="ice">
         <p>
           OVI arrests in Clinton County often come from US 68 and SR 73 enforcement. On rural roads, an accident with an animal, bad
           road conditions or farm equipment can be mistaken for an impairment-related event.
@@ -129,8 +129,8 @@ export default function WilmingtonMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Clinton County">
-        <p>The court also hears misdemeanor assault, domestic violence (ORC 2919.25), theft, drug possession and disorderly conduct.</p>
+      <Section title="Misdemeanor defense in Clinton County">
+        <p>Clinton County Municipal Court also hears misdemeanor assault, domestic violence (ORC 2919.25), theft, drug possession and disorderly conduct.</p>
         <FactTable
           title="Penalties"
           rows={[{ label: 'M1 maximum', value: 'Up to 180 days in jail and a $1,000 fine (ORC 2929.21)' }]}
@@ -143,7 +143,8 @@ export default function WilmingtonMunicipalCourtPage() {
 
       <Section title="Related pages" tone="ice">
         <p>
-          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> for representation in Wilmington Municipal Court.
+          If you need a Wilmington DUI attorney or criminal defense attorney for a case in Wilmington Municipal Court, call (614)
+          285-5482 or use the <Link href="/contact">contact page</Link>.
         </p>
         <LinkGrid
           links={[

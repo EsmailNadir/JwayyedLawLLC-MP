@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Business Formation Lawyer in Ohio',
   description:
     'Forming a business in Ohio: choosing an LLC, corporation or partnership, the $99 state filing, statutory agents and the documents to adopt.',
-  keywords: ['business formation lawyer Ohio', 'Columbus business formation attorney', 'Cincinnati business formation attorney', 'Dayton business formation attorney', 'LLC formation lawyer Ohio'],
+  keywords: ['business formation lawyer Ohio', 'Columbus business formation attorney', 'Cincinnati business formation attorney', 'Dayton business formation attorney', 'LLC formation lawyer Ohio', 'business formation process Ohio', 'Ohio business formation costs'],
   openGraph: {
     title: 'Business Formation Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Choosing a structure and forming a business in Ohio, step by step.',
@@ -122,7 +122,7 @@ export default function BusinessFormationPage() {
         />
       </Section>
 
-      <Section title="Costs and requirements" tone="ice">
+      <Section title="Ohio business formation costs and requirements" tone="ice">
         <FactTable
           title="Forming an Ohio business"
           rows={[
@@ -136,7 +136,7 @@ export default function BusinessFormationPage() {
         />
       </Section>
 
-      <Section title="How formation works">
+      <Section title="The business formation process">
         <Steps
           steps={[
             { title: 'Pick the structure', body: 'Based on your goals, tax situation and growth plans.' },
@@ -161,7 +161,7 @@ export default function BusinessFormationPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a new business" tone="ice">
+      <Section title="What a business formation lawyer does on a new business" tone="ice">
         <PointGrid
           points={[
             { title: 'Helps choose the structure', body: 'Weighing liability protection, taxation, management and capital needs.' },

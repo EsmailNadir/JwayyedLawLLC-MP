@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     'mediation attorney Columbus OH',
     'mediation services Ohio',
+    'Ohio mediation attorney',
+    'mediation costs Ohio',
     'Ohio Uniform Mediation Act',
     'civil mediation Columbus',
     'business mediation Ohio',

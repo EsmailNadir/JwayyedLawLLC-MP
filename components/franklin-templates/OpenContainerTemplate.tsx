@@ -60,8 +60,8 @@ export default function OpenContainerTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Open container charges in ${suburb}, Ohio`}
-        description={`An open container citation under R.C. 4301.62 is a minor misdemeanor with a $150 maximum fine, and it creates a criminal record. Citations from ${suburb} are heard in ${courtName}.`}
+        title={`Open container defense attorney in ${suburb}, Ohio`}
+        description={`An open container citation under R.C. 4301.62 is a minor misdemeanor with a $150 maximum fine, and a conviction can leave a permanent public criminal record unless it is later sealed. Citations from ${suburb} are heard in ${courtName}.`}
       />
 
       <Section
@@ -152,7 +152,7 @@ export default function OpenContainerTemplate({ suburb }: Props) {
         />
       </Section>
 
-      <Section title="What a conviction costs">
+      <Section title="What an open container conviction actually costs">
         <p>
           The $150 fine is the smallest part. An open container conviction under R.C. 4301.62 is a criminal misdemeanor and leaves a
           permanent public record in Ohio that employers, landlords, and professional licensing boards see on background checks.
@@ -180,7 +180,7 @@ export default function OpenContainerTemplate({ suburb }: Props) {
           occupants), the firm evaluates the charge on its merits. Sometimes the prosecution cannot prove beyond a reasonable doubt
           that the specific defendant possessed the container.
         </p>
-        <h3>What the firm does</h3>
+        <h3>What the firm does in {suburb} open container cases</h3>
         <PointGrid
           points={[
             { title: 'Diversion and dismissal', body: 'Pursuing conditional dismissal for first-time defendants to avoid a permanent conviction.' },
@@ -188,13 +188,13 @@ export default function OpenContainerTemplate({ suburb }: Props) {
             { title: 'Possession challenge', body: 'Contesting attribution of the container to one defendant when several occupants were present.' },
             { title: 'Definition challenge', body: 'Confirming the container actually met the statutory definition of “open container.”' },
             { title: 'Expungement planning', body: 'Advising on R.C. 2953.32 eligibility for any conviction.' },
-            { title: 'Companion charge defense', body: 'Coordinating with any OVI, drug possession or other charges from the same stop.' },
+            { title: 'Companion charge defense', body: 'Coordinating open container defense with any OVI, drug possession or other charges from the same stop.' },
           ]}
         />
         <p>
           If you received an open container citation in {suburb} or anywhere in Franklin County, call{' '}
           <a href={tel}>{FIRM_NAP.phone}</a> or <Link href="/contact">schedule a consultation online</Link>. Most first-offense
-          cases can be resolved without a conviction.
+          open container cases can be resolved without a conviction.
         </p>
       </Section>
 

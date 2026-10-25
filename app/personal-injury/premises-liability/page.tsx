@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Premises Liability Lawyer',
   description:
     'Premises liability in Ohio: the duty owed to invitees, the open and obvious doctrine, landlord duties under ORC Chapter 5321 and the 2-year deadline.',
-  keywords: ['premises liability lawyer Columbus OH', 'slip and fall attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney', 'ORC 2315.33 comparative fault Ohio'],
+  keywords: ['premises liability lawyer Columbus OH', 'slip and fall attorney Ohio', 'negligent security lawyer', 'Franklin County premises liability attorney', 'Ohio premises liability lawyer', 'ORC 2315.33 comparative fault Ohio'],
   openGraph: {
     title: 'Ohio Premises Liability Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Injury claims against property owners, businesses and landlords in Ohio.',
@@ -138,7 +138,7 @@ export default function PremisesLiabilityPage() {
         />
       </Section>
 
-      <Section title="Defenses and how they are answered">
+      <Section title="Defenses in premises liability cases and how they are answered">
         <PointGrid
           points={[
             {
@@ -173,7 +173,7 @@ export default function PremisesLiabilityPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a premises claim">
+      <Section title="What a premises liability attorney does on your case">
         <PointGrid
           points={[
             { title: 'Preserves evidence fast', body: 'Surveillance footage is routinely overwritten within days, so preservation comes first.' },

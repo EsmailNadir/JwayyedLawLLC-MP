@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Clinton County OVI Attorney',
   description:
-    'OVI/DUI defense at Wilmington Municipal Court, 69 N. South St, for Wilmington and Clinton County: HB 37 penalties and ALS appeals. Call (614) 285-5482.',
-  keywords: ['OVI lawyer Wilmington Ohio', 'DUI attorney Clinton County', 'OVI defense Clinton County', 'Wilmington Municipal Court OVI'],
+    'Wilmington OVI defense for OVI and DUI charges at Wilmington Municipal Court, 69 N. South St, for Wilmington and Clinton County: HB 37 penalties and ALS appeals. Call (614) 285-5482.',
+  keywords: ['OVI lawyer Wilmington Ohio', 'DUI attorney Clinton County', 'OVI defense Clinton County', 'Wilmington Municipal Court OVI', 'Wilmington OVI defense', 'DUI attorney Wilmington Ohio', 'Clinton County DUI charges', 'ALS hearing'],
   openGraph: {
     title: 'Clinton County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Wilmington Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
@@ -63,7 +63,7 @@ const faqs = [
       'OVI convictions are generally not eligible for expungement or record sealing under ORC 2953.31 in Ohio, which is why fighting the charge from the start matters. Charges that are dismissed or reduced to a non-OVI offense such as reckless operation may be eligible for expungement after the applicable waiting periods. An attorney can check your eligibility once the case is resolved.',
   },
   {
-    question: 'Why should I hire Jwayyed Law LLC for an OVI in Clinton County?',
+    question: 'Why should I hire Jwayyed Law LLC as my DUI attorney for OVI charges in Clinton County?',
     answer:
       'The firm handles OVI/DUI defense in Wilmington Municipal Court and throughout Clinton County. It files the ALS appeal within the 30-day deadline, reviews all of the evidence and builds the defense around the facts of your case. Call (614) 285-5482 to schedule a consultation.',
   },
@@ -99,7 +99,7 @@ export default function ClintonOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense in Wilmington and Clinton County"
-        description="Every misdemeanor OVI in Clinton County is heard at Wilmington Municipal Court, 69 N. South St. The license suspension starts at arrest, and you have 30 days to appeal it."
+        description="Every misdemeanor OVI case in Clinton County is heard at Wilmington Municipal Court, 69 N. South St. The license suspension starts at arrest, and you have 30 days to appeal it."
       />
 
       <Section
@@ -130,7 +130,7 @@ export default function ClintonOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37" tone="ice">
+      <Section title="Wilmington Municipal Court OVI penalties under HB 37" tone="ice">
         <p>HB 37, effective April 9, 2025, updated the mandatory minimum penalties under ORC 4511.19.</p>
         <FactTable
           title="First OVI"
@@ -183,7 +183,7 @@ export default function ClintonOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses in Wilmington Municipal Court" tone="ice">
+      <Section title="Wilmington OVI defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'The stop', body: 'No reasonable suspicion for the traffic stop under the Fourth Amendment.' },

@@ -11,7 +11,7 @@ import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/comp
 export const metadata: Metadata = {
   title: 'Criminal Damaging Defense Ohio',
   description:
-    'Charged with criminal damaging under ORC 2909.06? Penalties, when it becomes a felony, and the defenses that apply. Call (614) 285-5482.',
+    'Charged with criminal damaging under ORC 2909.06? Penalties, when it becomes a felony, and the criminal damaging defenses that apply. Call (614) 285-5482.',
   keywords: [
     'criminal damaging lawyer Ohio',
     'criminal damaging ORC 2909.06',
@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     'second degree misdemeanor Ohio',
     'Ohio criminal damaging lawyer',
     'criminal damaging penalties Ohio',
-    'property crime defense attorney'
+    'property crime defense attorney',
+    'criminal damaging defense attorney',
+    'facing criminal damaging charges',
   ],
   openGraph: {
     title: 'Criminal Damaging Defense Ohio | Jwayyed Law LLC',
@@ -202,7 +204,7 @@ export default function CriminalDamagingPage() {
         />
       </Section>
 
-      <Section title="How a criminal damaging case moves" tone="ice">
+      <Section title="The criminal court process for criminal damaging" tone="ice">
         <Steps
           steps={[
             {
@@ -231,7 +233,7 @@ export default function CriminalDamagingPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to criminal damaging">
+      <Section title="Criminal damaging defense strategies">
         <PointGrid
           points={[
             {
@@ -253,7 +255,7 @@ export default function CriminalDamagingPage() {
       <Section title="What the firm does on a criminal damaging case" tone="ice">
         <p>
           The firm investigates the case, builds the defense, negotiates with the prosecutor and represents you at trial when the case
-          goes there. If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
+          goes there. If you are facing criminal damaging charges anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
           consultation.
         </p>
         <p>

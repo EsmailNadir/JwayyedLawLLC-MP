@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'Dayton Municipal Court Attorney',
   description:
-    'OVI, misdemeanor, traffic and civil cases at Dayton Municipal Court, 301 W Third St, including its driving under suspension docket.',
-  keywords: ['Dayton Municipal Court attorney', 'Montgomery County OVI lawyer', 'Dayton misdemeanor defense', 'Dayton Ohio criminal attorney', 'Montgomery County DUI lawyer'],
+    'OVI defense, misdemeanor criminal charges, traffic and civil cases at Dayton Municipal Court, 301 W Third St, including its driving under suspension docket.',
+  keywords: ['Dayton Municipal Court attorney', 'Montgomery County OVI lawyer', 'Dayton misdemeanor defense', 'Dayton Ohio criminal attorney', 'Montgomery County DUI lawyer', 'Dayton DUI attorney', 'Dayton criminal defense attorney', 'Montgomery County misdemeanor defense'],
   openGraph: {
     title: 'Dayton Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor, traffic and civil cases at Dayton Municipal Court in downtown Dayton.',
@@ -97,7 +97,7 @@ export default function DaytonMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Dayton" tone="ice">
+      <Section title="OVI defense at Dayton Municipal Court" tone="ice">
         <FactTable
           title="First OVI under ORC 4511.19 and HB 37 (effective April 9, 2025)"
           rows={[
@@ -125,9 +125,9 @@ export default function DaytonMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Driving under suspension and misdemeanor charges">
+      <Section title="Driving under suspension and misdemeanor criminal charges">
         <p>
-          The court&rsquo;s driving under suspension docket is particularly active. These charges often come alongside an OVI and need
+          The court&rsquo;s driving under suspension docket is particularly active. These charges often come alongside OVI charges and need
           their own defense.
         </p>
         <FactTable
@@ -141,7 +141,7 @@ export default function DaytonMunicipalCourtPage() {
             { label: 'Assault', value: 'ORC 2903.13' },
             { label: 'Domestic violence', value: 'ORC 2919.25' },
             { label: 'Theft', value: 'ORC 2913.02' },
-            { label: 'Drug misdemeanors', value: 'Marijuana under 100 grams (minor misdemeanor, ORC 2925.11); paraphernalia (ORC 2925.14)' },
+            { label: 'Misdemeanor drug possession', value: 'Marijuana under 100 grams (minor misdemeanor, ORC 2925.11); paraphernalia (ORC 2925.14)' },
             { label: 'M1 maximum', value: 'Up to 180 days in jail and $1,000 in fines (ORC 2929.21)' },
           ]}
           note="Disorderly conduct, criminal trespass and other misdemeanors are also heard here. Larger drug quantities and trafficking are felonies in Common Pleas Court."
@@ -160,7 +160,8 @@ export default function DaytonMunicipalCourtPage() {
 
       <Section title="Related pages" tone="ice">
         <p>
-          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> for representation in Dayton Municipal Court.
+          If you need a Dayton DUI attorney or criminal defense attorney for a case in Dayton Municipal Court, call (614) 285-5482
+          or use the <Link href="/contact">contact page</Link>.
         </p>
         <LinkGrid
           links={[

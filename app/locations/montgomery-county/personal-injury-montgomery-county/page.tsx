@@ -85,7 +85,7 @@ export default function PersonalInjuryMontgomeryCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Montgomery County"
+        title="Montgomery County personal injury lawyer"
         description="Injury lawsuits from Dayton, Kettering, Trotwood, Huber Heights, Englewood, Miamisburg and Vandalia are filed at the Montgomery County Common Pleas Court. Most must be filed within two years."
       />
 
@@ -116,7 +116,7 @@ export default function PersonalInjuryMontgomeryCountyPage() {
 
       <Section title="Ohio deadlines and fault rules" tone="ice">
         <FactTable
-          title="The rules that decide an Ohio injury claim"
+          title="How Ohio law decides an injury case"
           rows={[
             { label: 'Filing deadline', value: 'Two years from the date of injury (ORC 2305.10). Miss it and the case is dismissed, whatever its merits.' },
             { label: 'Medical malpractice', value: 'One-year statute, with a four-year repose period.' },
@@ -130,14 +130,14 @@ export default function PersonalInjuryMontgomeryCountyPage() {
         />
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Montgomery County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Car and truck accidents', body: 'Crashes on I-75, I-70, US 35 and county roads.' },
             { title: 'Slip and fall and premises', body: 'Stores, restaurants, parking lots and commercial properties.' },
-            { title: 'Dog bites', body: 'Claims under ORC 955.28.' },
-            { title: 'Workplace third-party claims', body: 'Injuries involving third-party equipment or contractors.' },
-            { title: 'Pedestrian and bicycle', body: 'Accidents on city and suburban streets.' },
+            { title: 'Dog bite claims', body: 'Claims under ORC 955.28.' },
+            { title: 'Workplace third-party negligence cases', body: 'Injuries involving third-party equipment or contractors.' },
+            { title: 'Pedestrian and bicycle accident claims', body: 'Accidents on city and suburban streets.' },
             { title: 'Catastrophic injury and wrongful death', body: 'The most serious cases, for injured people and families.' },
           ]}
         />

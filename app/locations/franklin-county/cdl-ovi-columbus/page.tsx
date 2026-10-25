@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Columbus CDL OVI Defense Attorney',
   description:
     'Commercial drivers face a 0.04% BAC limit, and an OVI in any vehicle brings a 1-year federal CDL disqualification. Defense for Columbus CDL holders.',
-  keywords: ['Columbus CDL OVI lawyer', 'commercial driver DUI Columbus', 'CDL OVI defense Ohio', 'truck driver OVI Columbus', 'Franklin County CDL OVI attorney'],
+  keywords: ['Columbus CDL OVI lawyer', 'commercial driver DUI Columbus', 'CDL OVI defense Ohio', 'truck driver OVI Columbus', 'Franklin County CDL OVI attorney', 'CDL OVI defense Columbus', 'CDL OVI charges'],
   openGraph: {
     title: 'Columbus CDL OVI Defense Attorney | Jwayyed Law LLC',
     description: 'The 0.04% threshold, federal disqualification and the ALS appeal for CDL holders charged in Columbus.',
@@ -140,7 +140,7 @@ export default function ColumbusCDLOVIPage() {
 
       <Section title="Two separate suspension tracks">
         <p>
-          Ohio&rsquo;s Administrative License Suspension and any criminal suspension affect all driving under your Ohio privileges. Federal CDL
+          Ohio&rsquo;s Administrative License Suspension and any criminal license suspension on the underlying OVI charge affect all driving under your Ohio privileges. Federal CDL
           disqualification, imposed by the Federal Motor Carrier Safety Administration under 49 U.S.C. § 31311, stops commercial driving
           regardless of your Ohio privileges. You can lift the ALS and avoid a criminal suspension and still be disqualified if convicted, so
           both tracks are handled at once.
@@ -152,7 +152,7 @@ export default function ColumbusCDLOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defending a CDL OVI" tone="ice">
+      <Section title="CDL OVI defense in Columbus" tone="ice">
         <PointGrid
           points={[
             {

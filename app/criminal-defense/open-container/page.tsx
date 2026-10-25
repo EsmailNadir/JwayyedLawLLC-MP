@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     'Franklin County open container lawyer',
     'open container in vehicle Ohio',
     'open container minor misdemeanor Ohio',
+    'Ohio open container law',
+    'open container defense attorney',
   ],
   openGraph: {
     title: 'Open Container Defense Ohio | Jwayyed Law LLC',
@@ -93,7 +95,7 @@ export default function OpenContainerPage() {
         </p>
       </Section>
 
-      <Section title="What R.C. 4301.62 prohibits" tone="ice">
+      <Section title="What Ohio open container law prohibits under R.C. 4301.62" tone="ice">
         <FactTable
           title="Open container violation"
           rows={[
@@ -197,13 +199,13 @@ export default function OpenContainerPage() {
             },
             {
               title: 'Ask about diversion before court',
-              body: 'For a first offense with no prior record, a conditional dismissal is often available. The firm checks this in every case.',
+              body: 'In first-time open container cases with no prior criminal record, a conditional dismissal is often available. The firm checks this in every case.',
             },
           ]}
         />
       </Section>
 
-      <Section title="What the firm does on an open container case" tone="ice">
+      <Section title="What an open container defense attorney does" tone="ice">
         <PointGrid
           points={[
             { title: 'Seeks diversion or dismissal', body: 'Conditional dismissal for eligible first-time defendants.' },

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Ohio Business Attorney',
   description:
     'Business law in Columbus, Cincinnati, Dayton and across Ohio: forming an LLC or corporation, contracts, compliance, disputes and dissolution.',
-  keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer'],
+  keywords: ['Ohio business attorney', 'Columbus business attorney', 'Cincinnati business attorney', 'Dayton business attorney', 'Ohio business lawyer', 'LLC formation attorney', 'business litigation lawyer', 'Ohio business laws', 'business formation requirements Ohio', 'Ohio contract law attorney', 'business dissolution attorney Ohio'],
   openGraph: {
     title: 'Ohio Business Attorney | Jwayyed Law LLC',
     description: 'Business law in Columbus, Cincinnati, Dayton and throughout Ohio. Schedule a consultation.',
@@ -95,7 +95,7 @@ export default function BusinessPage() {
       </Section>
 
       <Section
-        title="What business law covers"
+        title="What Ohio business laws cover"
         tone="ice"
         intro={
           <p>
@@ -117,7 +117,7 @@ export default function BusinessPage() {
         </p>
       </Section>
 
-      <Section title="Ohio business structures and requirements">
+      <Section title="Ohio business structures and business formation requirements">
         <FactTable
           title="Choosing and forming an entity"
           rows={[
@@ -138,7 +138,7 @@ export default function BusinessPage() {
         />
       </Section>
 
-      <Section title="What the firm does for businesses" tone="ice">
+      <Section title="What an Ohio business attorney does for your company" tone="ice">
         <PointGrid
           points={[
             { title: 'Forms the business', body: 'Helps choose the structure, files with the Ohio Secretary of State and drafts the operating agreement or bylaws.' },

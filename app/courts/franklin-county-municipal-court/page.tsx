@@ -10,13 +10,15 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Franklin County Municipal Court Attorney',
   description:
-    'OVI, criminal and civil cases at Franklin County Municipal Court, 375 S. High St., Columbus: what the court hears and how cases move. Call (614) 285-5482.',
+    'OVI defense, criminal misdemeanor defense and civil cases at Franklin County Municipal Court, 375 S. High St., Columbus: what the court hears and how cases move. Call (614) 285-5482.',
   keywords: [
     'Franklin County Municipal Court attorney',
     'Columbus Municipal Court OVI lawyer',
     'criminal defense Franklin County Municipal Court',
     'eviction attorney Columbus',
     'Franklin County Municipal Court criminal lawyer',
+    'Franklin County expungement',
+    'Franklin County Municipal Court OVI defense attorney',
   ],
   openGraph: {
     title: 'Franklin County Municipal Court Attorney | Jwayyed Law LLC',
@@ -120,7 +122,7 @@ export default function FranklinCountyMunicipalCourtPage() {
         </p>
       </Section>
 
-      <Section title="OVI cases at Franklin County Municipal Court" tone="ice">
+      <Section title="OVI defense at Franklin County Municipal Court" tone="ice">
         <p>
           OVI charges under <Link href="/ovi-dui-defense">Ohio Revised Code 4511.19</Link> are among the most frequently litigated
           matters in this court. The penalties were revised under HB 37, effective April 9, 2025.
@@ -166,8 +168,8 @@ export default function FranklinCountyMunicipalCourtPage() {
         <p>For clients whose careers depend on it, the firm also looks at how an OVI affects professional licenses regulated by Ohio boards.</p>
       </Section>
 
-      <Section title="Misdemeanor charges heard here">
-        <p>The court handles the full range of misdemeanor charges for Columbus and every Franklin County municipality.</p>
+      <Section title="Criminal misdemeanor defense">
+        <p>The court handles the full range of misdemeanor criminal charges for Columbus and every Franklin County municipality.</p>
         <FactTable
           title="Common charges"
           rows={[
@@ -190,7 +192,7 @@ export default function FranklinCountyMunicipalCourtPage() {
           Because the caseload is heavy, the firm gathers the evidence before weighing any plea offer: body-cam footage, incident
           reports, witness statements and any forensic evidence. Franklin County prosecutors routinely offer diversion programs to
           first-time offenders in appropriate cases. Whether to take diversion or push for dismissal or trial depends on the case. A
-          misdemeanor conviction creates a permanent record that employers, landlords and licensing boards can see.
+          misdemeanor conviction creates a permanent criminal record that employers, landlords and licensing boards can see.
         </p>
       </Section>
 
@@ -261,7 +263,7 @@ export default function FranklinCountyMunicipalCourtPage() {
           points={[
             {
               title: 'OVI / DUI defense',
-              body: 'ALS appeals (30-day deadline), first, second and third offenses, high-tier OVI, CDL OVI, limited driving privileges.',
+              body: 'ALS appeals (30-day deadline), first, second and third offense defense, high-tier OVI, CDL OVI, limited driving privileges.',
             },
             {
               title: 'Criminal misdemeanor defense',

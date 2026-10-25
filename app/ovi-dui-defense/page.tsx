@@ -12,7 +12,7 @@ import { oviServices } from '@/data/services';
 export const metadata: Metadata = {
   title: 'OVI & DUI Defense Lawyer in Columbus, Ohio',
   description:
-    'Columbus OVI/DUI defense for first, second, third and felony charges across Ohio: penalties, the 30-day license appeal and defenses. Call (614) 285-5482.',
+    'Columbus OVI and DUI defense attorney for first, second, third and felony OVI charges across Ohio: penalties, the 30-day ALS hearing appeal and defenses. Call (614) 285-5482.',
   keywords: [
     'Columbus OVI lawyer',
     'Columbus DUI attorney',
@@ -22,6 +22,13 @@ export const metadata: Metadata = {
     'OVI defense Ohio',
     'DUI defense attorney Ohio',
     'first OVI defense',
+    'OVI attorney',
+    'OVI lawyer',
+    'DUI lawyer',
+    'DUI attorney',
+    'what is OVI in Ohio',
+    'Ohio OVI laws',
+    'OVI with injury',
   ],
   openGraph: {
     title: 'OVI & DUI Defense Lawyer in Columbus, Ohio | Jwayyed Law LLC',
@@ -40,7 +47,7 @@ const faqs = [
   {
     question: 'What is the difference between OVI and DUI in Ohio?',
     answer:
-      'Ohio uses the term OVI (Operating a Vehicle Impaired) instead of DUI (Driving Under the Influence). OVI under Ohio Revised Code 4511.19 means operating a vehicle while impaired by alcohol, drugs, or both. The terms are often used interchangeably, but OVI is the legal term in Ohio. An OVI can be charged on a BAC of 0.08% or higher, or on evidence of impairment whatever the BAC.',
+      'Ohio uses the term OVI (Operating a Vehicle Impaired) instead of DUI (Driving Under the Influence). OVI under Ohio Revised Code 4511.19 means operating a vehicle while impaired by alcohol, drugs, or both. The terms are often used interchangeably (a DUI lawyer and an OVI lawyer handle the same charge), but OVI is the legal term in Ohio. An OVI can be charged on a BAC of 0.08% or higher, or on evidence of impairment whatever the BAC.',
   },
   {
     question: 'What are the penalties for a first OVI in Ohio?',
@@ -50,7 +57,7 @@ const faqs = [
   {
     question: 'Can I refuse a breathalyzer test in Ohio?',
     answer:
-      "You can, but refusing has serious consequences. Under Ohio's implied consent law (ORC 4511.191), refusing a chemical test brings an automatic license suspension of 1 year for a first offense, and longer for later offenses. The refusal can also be used as evidence against you and may lead to higher penalties. There are circumstances where a refusal may be legally justified. If you refused testing, talk to an attorney right away.",
+      "You can, but refusing has serious consequences. Under Ohio's implied consent law (ORC 4511.191), refusing a chemical test brings an automatic license suspension of 1 year for a first offense, and longer for later offenses. The refusal can also be used as evidence against you and may lead to higher penalties. There are circumstances where a refusal may be legally justified. If you refused testing, talk to a DUI attorney right away.",
   },
   {
     question: 'What is a high-tier OVI in Ohio?',
@@ -65,7 +72,7 @@ const faqs = [
   {
     question: 'What are the OVI lookback periods in Ohio?',
     answer:
-      'Ohio uses two lookback windows under ORC 4511.19. A 10-year lookback counts prior offenses for sentencing: a prior OVI conviction within 10 years of the current offense date decides whether you face first, second or third offense penalties. A 20-year lookback applies in limited situations, such as whether a refusal is treated as high tier when there is a prior OVI within 20 years. There is no separate "6-year" lookback in current Ohio OVI law for penalty enhancement. An attorney can review your record to see which convictions fall inside each window and whether any priors can be challenged.',
+      'Ohio uses two lookback windows under ORC 4511.19. A 10-year lookback counts prior offenses for sentencing: a prior OVI conviction within 10 years of the current offense date decides whether you face first, second or third offense penalties. A 20-year lookback applies in limited situations, such as whether a refusal is treated as high tier when there is a prior OVI within 20 years. There is no separate "6-year" lookback in current Ohio OVI law for penalty enhancement. An OVI defense attorney can review your record to see which convictions fall inside each window and whether any priors can be challenged.',
   },
   {
     question: 'What is an ALS and how do you appeal it in Ohio?',
@@ -97,7 +104,7 @@ export default function OVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI and DUI defense in Columbus and across Ohio"
-        description="OVI charges at every level, from a first offense to a felony, in courts across Ohio. An arrest starts two cases at once, and the license suspension appeal has a 30-day deadline."
+        description="An OVI defense attorney for OVI charges at every level, from a first offense to a felony, in courts across Ohio. An arrest starts two cases at once, and the license suspension appeal has a 30-day deadline."
       />
 
       <Section title="Find your charge" intro={<p>Each page covers the penalties, the process and the defenses for that charge.</p>}>
@@ -114,12 +121,12 @@ export default function OVIDefensePage() {
       />
 
       <Section
-        title="What OVI means in Ohio"
+        title="What is OVI in Ohio?"
         tone="ice"
         intro={
           <p>
             OVI, Operating a Vehicle Impaired, is Ohio&rsquo;s term for DUI, charged under Ohio Revised Code 4511.19. The firm defends
-            OVI cases under current law, including HB 37 (Liv&rsquo;s Law, effective April 2025; current as of 2026).
+            OVI cases under current Ohio OVI laws, including HB 37 (Liv&rsquo;s Law, effective April 2025; current as of 2026).
           </p>
         }
       >
@@ -299,7 +306,7 @@ export default function OVIDefensePage() {
         <p>
           Ohio&rsquo;s implied consent law, ORC 4511.191, requires an automatic license suspension when you are charged with OVI. It is
           separate from the criminal penalties and starts at arrest if you refuse testing or fail a chemical test. You have 30 days to
-          appeal it and request a stay, and an attorney can challenge the suspension at the hearing.
+          appeal it and request a stay, and an OVI defense attorney can challenge the suspension at the hearing.
         </p>
         <FactTable
           title="ALS suspension periods"
@@ -430,7 +437,7 @@ export default function OVIDefensePage() {
               title: 'Drivers in a crash',
               body: (
                 <>
-                  If someone is seriously hurt or killed, the charge can become a felony. See{' '}
+                  If someone is seriously hurt or killed, an OVI with injury can become a felony. See{' '}
                   <Link href="/ovi-dui-defense/ovi-with-accident">OVI with accident</Link>.
                 </>
               ),
@@ -448,10 +455,10 @@ export default function OVIDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on an OVI case">
+      <Section title="How an OVI attorney handles your case">
         <PointGrid
           points={[
-            { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the hearing.' },
+            { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the ALS hearing.' },
             {
               title: 'Investigates',
               body: 'Police reports, dashcam and bodycam footage, breathalyzer maintenance records and field sobriety procedures, looking for illegal stops and improper testing.',
@@ -469,7 +476,7 @@ export default function OVIDefensePage() {
           ]}
         />
         <p>
-          The firm handles OVI cases from arrest through trial and post-conviction relief, including first, second, third and felony
+          Whether you are looking for an OVI attorney or a DUI defense attorney, the work is the same. The firm handles OVI cases from arrest through trial and post-conviction relief, including first, second, third and felony
           offenses. If a case goes to trial, that means cross-examining the officers and the state&rsquo;s experts and calling experts of
           its own.
         </p>
@@ -477,7 +484,7 @@ export default function OVIDefensePage() {
 
       <OVIReviews />
 
-      <Section title="OVI defense in your county" tone="ice">
+      <Section title="County OVI and DUI defense" tone="ice">
         <p>Each county page covers its courts and local procedure.</p>
         <LinkGrid links={COUNTIES} />
         <h3>Related practice areas</h3>

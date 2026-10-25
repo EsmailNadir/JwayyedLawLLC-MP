@@ -61,8 +61,8 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Domestic violence charges in ${suburb}, Ohio`}
-        description={`Domestic violence charges from ${suburb} are heard in Franklin County Municipal Court. A conviction carries a permanent federal firearm ban and cannot be expunged.`}
+        title={`Domestic violence defense attorney in ${suburb}, Ohio`}
+        description={`Facing domestic violence charges in ${suburb}? They are heard in Franklin County Municipal Court. A conviction carries a permanent federal firearm ban and cannot be expunged.`}
       />
 
       <Section
@@ -152,7 +152,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
         </p>
       </Section>
 
-      <Section title="Defenses to a domestic violence charge" tone="ice">
+      <Section title="Defenses to domestic violence charges" tone="ice">
         <p>
           The firm starts with a factual investigation before any hearing: police reports, body-cam footage, 911 recordings, any
           medical records and photographs. Witnesses are interviewed independently of the police investigation.
@@ -179,7 +179,7 @@ export default function DomesticViolenceTemplate({ suburb }: Props) {
         />
       </Section>
 
-      <Section title={`What the firm does in ${suburb} DV cases`}>
+      <Section title={`How the firm handles ${suburb} domestic violence cases`}>
         <PointGrid
           points={[
             { title: 'Emergency representation', body: 'Attending the arraignment to address bond conditions and protection order terms from day one.' },

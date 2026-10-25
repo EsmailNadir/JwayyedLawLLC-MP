@@ -85,7 +85,7 @@ export default function BusinessFormationLLCAthensCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business and LLC formation in Athens County"
+        title="Athens County business formation and LLC attorney"
         description="LLC formation and business counsel for Athens, Albany, Nelsonville, The Plains and the Ohio University community, under Ohio's LLC Act, Chapter 1706."
       />
 
@@ -115,7 +115,7 @@ export default function BusinessFormationLLCAthensCountyPage() {
         </p>
       </Section>
 
-      <Section title="Ohio LLC law in brief" tone="ice">
+      <Section title="Ohio business law for LLCs, in brief" tone="ice">
         <FactTable
           title="The rules that apply"
           rows={[

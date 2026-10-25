@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     'IRC 2042 life insurance',
     'second-to-die ILIT Ohio',
     'ILIT lawyer Columbus',
+    'Columbus estate planning attorneys',
     'estate planning life insurance trust Ohio',
     '3-year rule life insurance transfer Ohio',
   ],

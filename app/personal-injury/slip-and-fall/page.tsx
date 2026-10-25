@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Slip and Fall Lawyer in Ohio',
   description:
     'Slip and fall claims in Ohio: what you must prove about the hazard, the open and obvious defense, the 2-year deadline and what you can recover.',
-  keywords: ['slip and fall lawyer Columbus OH', 'slip and fall attorney Ohio', 'premises liability lawyer', 'Franklin County slip and fall attorney'],
+  keywords: ['slip and fall lawyer Columbus OH', 'slip and fall attorney Ohio', 'premises liability lawyer', 'Franklin County slip and fall attorney', 'slip and fall lawyer Ohio', 'premises liability claim Ohio'],
   openGraph: {
     title: 'Slip and Fall Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Slip and fall injury claims under Ohio premises liability law.',
@@ -127,7 +127,7 @@ export default function SlipAndFallPage() {
         />
       </Section>
 
-      <Section title="What you have to prove">
+      <Section title="What you have to prove under Ohio premises liability law">
         <PointGrid
           points={[
             {
@@ -150,7 +150,7 @@ export default function SlipAndFallPage() {
         />
       </Section>
 
-      <Section title="How a slip and fall claim moves forward" tone="ice">
+      <Section title="How slip and fall cases move forward" tone="ice">
         <Steps
           steps={[
             {
@@ -170,7 +170,7 @@ export default function SlipAndFallPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a slip and fall claim">
+      <Section title="What a slip and fall lawyer does on your premises liability claim">
         <PointGrid
           points={[
             { title: 'Investigates', body: 'The hazard, the surrounding area, lighting, your injuries, witness statements, incident reports and maintenance records.' },

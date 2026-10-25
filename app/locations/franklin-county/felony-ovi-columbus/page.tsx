@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Columbus Felony OVI Defense Attorney',
   description:
     'A fourth OVI within 10 years is an F4 felony. Columbus cases start at Franklin County Municipal Court and move to the Court of Common Pleas.',
-  keywords: ['Columbus felony OVI lawyer', 'felony DUI Columbus Ohio', '4th offense OVI Columbus', 'Columbus felony OVI attorney', 'Franklin County felony OVI defense'],
+  keywords: ['Columbus felony OVI lawyer', 'felony DUI Columbus Ohio', '4th offense OVI Columbus', 'Columbus felony OVI attorney', 'Franklin County felony OVI defense', 'OVI defense attorney Columbus', 'felony OVI charge', 'lifetime license suspension OVI'],
   openGraph: {
     title: 'Columbus Felony OVI Defense Attorney | Jwayyed Law LLC',
     description: 'Mandatory prison, the move to Common Pleas and the defenses for a felony OVI in Columbus.',
@@ -152,7 +152,7 @@ export default function ColumbusFelonyOVIPage() {
             { label: 'License', value: 'Possible lifetime suspension.' },
           ]}
         />
-        <h3>The license and the ALS</h3>
+        <h3>The OVI suspension and the ALS</h3>
         <p>
           A felony OVI arrest triggers the same Administrative License Suspension under R.C. 4511.191 as a misdemeanor, with the same
           30-day appeal deadline from the date of arrest. The firm files the appeal on retention and asks for a stay. Missing the deadline
@@ -166,7 +166,7 @@ export default function ColumbusFelonyOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defending a Columbus felony OVI" tone="ice">
+      <Section title="How an OVI defense attorney fights a felony charge in Columbus" tone="ice">
         <PointGrid
           points={[
             {

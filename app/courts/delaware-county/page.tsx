@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'Delaware County Court Representation',
   description:
-    'Delaware County Municipal Court and Common Pleas Court in Delaware, Ohio: addresses, what each hears, and the OVI, criminal and civil cases the firm handles.',
+    'Delaware County Municipal Court and Common Pleas Court in Delaware, Ohio: addresses, what each hears, and the OVI defense, criminal defense and civil cases the firm handles.',
   keywords: [
     'Delaware County OVI attorney',
     'Delaware County criminal defense',
@@ -125,9 +125,9 @@ export default function DelawareCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges in Delaware County" tone="ice">
+      <Section title="OVI defense in Delaware County" tone="ice">
         <FactTable
-          title="Legal limits under ORC 4511.19"
+          title="Legal limits under Ohio OVI law (ORC 4511.19)"
           rows={[
             { label: 'Adults', value: 'BAC of 0.08% or higher' },
             { label: 'Commercial drivers', value: '0.04%' },
@@ -154,11 +154,11 @@ export default function DelawareCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Delaware County">
+      <Section title="Misdemeanor criminal defense in Delaware County">
         <p>
           Delaware County Municipal Court hears the full range of misdemeanors, including domestic violence under ORC 2919.25, assault
           under ORC 2903.13, theft under ORC 2913.02, drug possession under ORC 2925.11 and disorderly conduct under ORC 2917.11. A
-          conviction can bring fines, jail, probation and a permanent record that affects employment, housing and professional
+          conviction can bring fines, jail, probation and a permanent criminal record that affects employment, housing and professional
           licensing.
         </p>
         <FactTable

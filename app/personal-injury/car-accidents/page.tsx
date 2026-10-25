@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Car Accident Lawyer in Ohio',
   description:
     'Hurt in a car accident in Ohio? The 2-year injury deadline, the fault rule, what you can recover and how claims move from insurance to court.',
-  keywords: ['car accident lawyer Columbus OH', 'car accident attorney Ohio', 'automobile accident lawyer', 'Franklin County car accident attorney'],
+  keywords: ['car accident lawyer Columbus OH', 'car accident attorney Ohio', 'automobile accident lawyer', 'Franklin County car accident attorney', 'car accident lawyer Ohio', 'car accident claims process'],
   openGraph: {
     title: 'Car Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Car accident injury claims in Columbus, Cincinnati, Dayton and throughout Ohio.',
@@ -93,11 +93,11 @@ export default function CarAccidentsPage() {
       />
 
       <Section
-        title="What a car accident claim covers"
+        title="Understanding car accident claims"
         intro={
           <p>
             A crash in Columbus, Cincinnati, Dayton or anywhere in Ohio can mean serious injuries, property damage and real financial
-            losses. Claims are brought under Ohio Revised Code Chapter 2305.
+            losses. Claims are brought under Ohio personal injury laws, mainly Revised Code Chapter 2305.
           </p>
         }
       >
@@ -144,7 +144,7 @@ export default function CarAccidentsPage() {
         />
       </Section>
 
-      <Section title="How a car accident claim moves forward">
+      <Section title="The car accident claims process">
         <Steps
           steps={[
             {
@@ -157,7 +157,7 @@ export default function CarAccidentsPage() {
             },
             {
               title: 'Insurance negotiation',
-              body: 'Most car accident claims resolve through negotiation. Adjusters often minimize claims, deny liability or make low early offers. Preparing for litigation strengthens the negotiating position.',
+              body: 'Most car accident cases resolve through negotiation. Adjusters often minimize claims, deny liability or make low early offers. Preparing for litigation strengthens the negotiating position.',
             },
             {
               title: 'Litigation and trial',
@@ -167,7 +167,7 @@ export default function CarAccidentsPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a car accident claim" tone="ice">
+      <Section title="What a car accident attorney does on your claim" tone="ice">
         <PointGrid
           points={[
             { title: 'Investigates', body: 'Photos, witness statements, police reports and surveillance footage, plus documentation of every injury and loss.' },

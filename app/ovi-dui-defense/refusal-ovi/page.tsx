@@ -12,8 +12,8 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'OVI Refusal Attorney in Ohio',
   description:
-    'Refused the breath or chemical test in Ohio? The 1-year license suspension, the 30-day appeal deadline, HB 37 refusal rules and your defenses.',
-  keywords: ['refusal OVI attorney Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney'],
+    'Refused the breath or chemical test in Ohio? Refusal OVI defense: the 1-year license suspension, the 30-day ALS hearing deadline, HB 37 rules and your defenses.',
+  keywords: ['refusal OVI attorney Ohio', 'OVI refusal defense attorney Ohio', 'breathalyzer refusal attorney', 'refusal OVI defense', 'refusal OVI charges', 'OVI defense attorney', 'Ohio OVI law', 'ALS hearing'],
   openGraph: {
     title: 'OVI Refusal Attorney in Ohio | Jwayyed Law LLC',
     description: 'License suspension, the 30-day ALS appeal, penalties and defenses after refusing an OVI chemical test in Ohio.',
@@ -97,7 +97,7 @@ export default function RefusalOVIPage() {
       />
 
       <Section
-        title="What refusing the test means"
+        title="Understanding refusal OVI charges"
         intro={
           <p>
             When an officer suspects OVI, they will ask for a chemical test (breath, blood, urine or oral fluid) under Ohio&apos;s
@@ -112,7 +112,7 @@ export default function RefusalOVIPage() {
           <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>.
         </p>
         <p>
-          A refusal does not prevent a conviction. ORC 4511.19(A)(1)(a) allows an OVI conviction on observed impairment alone: officer
+          A refusal does not prevent a conviction. Under Ohio OVI law, ORC 4511.19(A)(1)(a) allows an OVI conviction on observed impairment alone: officer
           testimony about driving, physical appearance, the odor of alcohol and field sobriety performance. Prosecutors can also comment
           on the refusal at trial and argue it shows consciousness of guilt, and Ohio courts have consistently upheld this practice. A
           refusal conviction carries a mandatory 3-day jail minimum, and the driver intervention program (DIP) available in standard
@@ -126,7 +126,7 @@ export default function RefusalOVIPage() {
         </p>
       </Section>
 
-      <Section title="The license suspension and HB 37" tone="ice">
+      <Section title="The license suspension, HB 37 and appealing the ALS suspension" tone="ice">
         <p>
           An ALS for refusal under ORC 4511.191 is one year for a first offense and two years for a second refusal within ten years.
           The clock starts at arrest, not at conviction.
@@ -158,7 +158,7 @@ export default function RefusalOVIPage() {
         </Callout>
       </Section>
 
-      <Section title="Defenses after a refusal">
+      <Section title="Refusal OVI defense strategies">
         <p>
           The firm reviews the whole sequence: the traffic stop, the officer&apos;s observations, the SFST request, the chemical test
           request and any advisements given.
@@ -206,7 +206,7 @@ export default function RefusalOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a refusal OVI">
+      <Section title="How an OVI defense attorney handles a refusal case">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'A timely challenge to the administrative suspension, with a request for a stay, within 30 days of arrest.' },

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Wrongful Death Lawyer in Ohio',
   description:
     'Ohio wrongful death claims under ORC Chapter 2125: who files, the 2-year deadline from the date of death, and the damages families can recover.',
-  keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney'],
+  keywords: ['wrongful death lawyer Columbus OH', 'wrongful death attorney Ohio', 'death claim lawyer', 'Franklin County wrongful death attorney', 'wrongful death lawyer Ohio', 'wrongful death claims process'],
   openGraph: {
     title: 'Wrongful Death Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Wrongful death claims for families throughout Ohio.',
@@ -93,7 +93,7 @@ export default function WrongfulDeathPage() {
       />
 
       <Section
-        title="What a wrongful death claim is"
+        title="Understanding wrongful death claims"
         intro={
           <p>
             A wrongful death claim arises when someone&rsquo;s death is caused by another person&rsquo;s negligence, recklessness or
@@ -152,12 +152,12 @@ export default function WrongfulDeathPage() {
         />
       </Section>
 
-      <Section title="How a wrongful death claim moves forward">
+      <Section title="The wrongful death claims process">
         <Steps
           steps={[
             {
               title: 'Estate administration',
-              body: 'The estate is opened and a personal representative is in place to file. If none exists, the probate court appoints one.',
+              body: 'The estate is opened through the probate process and a personal representative is in place to file. If none exists, the probate court appoints one.',
             },
             {
               title: 'Investigation and evidence',

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Franklin County Municipal Court OVI',
   description:
     'OVI defense at Franklin County Municipal Court, 375 S. High St. The ALS appeal deadline is 30 days from arrest. Penalties under HB 37 and every OVI charge.',
-  keywords: ['Franklin County Municipal Court OVI lawyer', 'Franklin County OVI defense attorney', 'Columbus OVI Municipal Court', 'Franklin County DUI defense 375 S High St', 'Franklin County Municipal Court ALS appeal'],
+  keywords: ['Franklin County Municipal Court OVI lawyer', 'Franklin County OVI defense attorney', 'Columbus OVI Municipal Court', 'Franklin County DUI defense 375 S High St', 'Franklin County Municipal Court ALS appeal', 'Franklin County DUI defense', 'municipal court OVI cases', 'ALS hearing'],
   openGraph: {
     title: 'Franklin County Municipal Court OVI | Jwayyed Law LLC',
     description: 'How an OVI moves through Franklin County Municipal Court, from the ALS appeal to trial.',
@@ -149,7 +149,7 @@ export default function FCMCOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37">
+      <Section title="Franklin County Municipal Court OVI penalties under HB 37">
         <p>
           R.C. 4511.19, as amended by HB 37 effective April 9, 2025, sets mandatory jail, driver intervention programs and license
           suspensions up to three years for a first offense, with higher minimums at high tier (BAC 0.17%+) or after a refusal.
@@ -169,7 +169,7 @@ export default function FCMCOVIDefensePage() {
         <LinkGrid links={CHARGES} />
       </Section>
 
-      <Section title="How the firm defends an OVI here">
+      <Section title="How an OVI defense attorney defends OVI charges here">
         <p>
           The firm requests the police report, body-cam and dash-cam footage, field sobriety test documents, breath or blood test records,
           and the calibration and maintenance records for the specific Intoxilyzer 8000 used. The Columbus Division of Police and the Ohio

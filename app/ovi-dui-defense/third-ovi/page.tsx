@@ -11,8 +11,8 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Third OVI Attorney in Ohio',
   description:
-    'Charged with a third OVI in Ohio? Mandatory jail, the 2 to 12 year suspension, vehicle forfeiture and the defenses that apply.',
-  keywords: ['third OVI attorney Ohio', 'third OVI defense attorney Ohio', 'third DUI attorney'],
+    'Facing third OVI charges in Ohio? A third OVI defense attorney on mandatory jail, the 2 to 12 year suspension, the ALS hearing, vehicle forfeiture and defenses.',
+  keywords: ['third OVI attorney Ohio', 'third OVI defense attorney Ohio', 'third DUI attorney', 'OVI attorney', 'third OVI charges', 'ALS hearing', 'Ohio OVI laws'],
   openGraph: {
     title: 'Third OVI Attorney in Ohio | Jwayyed Law LLC',
     description: 'Penalties, vehicle forfeiture, the 30-day ALS appeal and defenses for a third OVI charge in Ohio.',
@@ -110,10 +110,10 @@ export default function ThirdOVIPage() {
       <OVIReviews />
 
       <Section
-        title="What a third OVI charge means"
+        title="Understanding third OVI charges"
         intro={
           <p>
-            A third OVI within 10 years, under Ohio Revised Code 4511.19, is still a first-degree misdemeanor. The penalties are much
+            A third OVI within 10 years, under Ohio OVI laws in Ohio Revised Code 4511.19, is still a first-degree misdemeanor. The penalties are much
             heavier than for a first or second offense.
           </p>
         }
@@ -222,7 +222,7 @@ export default function ThirdOVIPage() {
             { label: 'Appeal deadline', value: 'Request the ALS hearing within 30 days of arrest or give up the right to contest the suspension.' },
           ]}
         />
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences for your job, license and your record</h3>
         <p>
           Many employers are reluctant to hire or keep someone with multiple OVIs, and jobs that require driving or a clean record are
           most at risk. Professional licenses (for example nursing, law and aviation) may need to be reported and can face discipline.
@@ -269,7 +269,7 @@ export default function ThirdOVIPage() {
           Third OVI cases move on two fronts: the BMV&apos;s administrative license suspension and the criminal case. As a first-degree
           misdemeanor, a third OVI is heard in municipal or county court.
         </p>
-        <h3>The license suspension (ALS)</h3>
+        <h3>The ALS license suspension process</h3>
         <p>
           At arrest, the officer usually serves an immediate suspension based on a test over the limit or a refusal. You have 30 days
           to request an ALS hearing. At the hearing, your attorney can argue that the stop, arrest or testing was improper and ask for
@@ -334,7 +334,7 @@ export default function ThirdOVIPage() {
         </Callout>
       </Section>
 
-      <Section title="Defenses to a third OVI">
+      <Section title="Third OVI defense strategies">
         <p>Which defense applies depends on your prior record and on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -358,7 +358,7 @@ export default function ThirdOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a third OVI" tone="ice">
+      <Section title="How a third OVI defense attorney handles your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Before the 30-day deadline, with a request to stay the suspension when appropriate, and represents you at the ALS hearing.' },

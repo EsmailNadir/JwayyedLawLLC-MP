@@ -11,8 +11,8 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Second OVI Defense Attorney Columbus Ohio',
   description:
-    'A second OVI within 10 years in Columbus means 10 days in jail, 90-day vehicle immobilization and a 1 to 7 year suspension under HB 37.',
-  keywords: ['second OVI Columbus Ohio', 'second offense DUI Columbus', 'Columbus second OVI lawyer', '2nd OVI defense Columbus', 'second OVI penalty Ohio 2025'],
+    'Second OVI defense in Columbus. Under Ohio OVI law and HB 37, a second OVI within 10 years means 10 days in jail, 90-day immobilization and a 1 to 7 year license suspension.',
+  keywords: ['second OVI Columbus Ohio', 'second offense DUI Columbus', 'Columbus second OVI lawyer', '2nd OVI defense Columbus', 'second OVI penalty Ohio 2025', 'second OVI defense attorney Columbus', 'Columbus OVI mandatory penalties', 'Ohio OVI law'],
   openGraph: {
     title: 'Second OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
     description: 'Penalties, the monitoring alternative, immobilization hardship and defenses for a second OVI in Columbus.',
@@ -111,7 +111,7 @@ export default function ColumbusSecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="Second OVI penalties under HB 37" tone="ice">
+      <Section title="Columbus second OVI mandatory penalties under HB 37" tone="ice">
         <p>
           The 10-year lookback under the HB 37 amendments counts from the sentence date of the prior OVI, not the arrest date.
         </p>
@@ -133,7 +133,7 @@ export default function ColumbusSecondOVIPage() {
         />
       </Section>
 
-      <Section title="Defending a second OVI on two fronts">
+      <Section title="Second OVI defense on two fronts">
         <PointGrid
           points={[
             {
@@ -168,7 +168,7 @@ export default function ColumbusSecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a second Columbus OVI">
+      <Section title="How a second OVI defense attorney handles a Columbus case">
         <PointGrid
           points={[
             { title: 'ALS appeal', body: 'Filed within the 30-day deadline from arrest.' },

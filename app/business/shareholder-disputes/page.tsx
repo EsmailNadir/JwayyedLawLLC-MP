@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Shareholder Disputes Lawyer Ohio',
   description:
     'Ohio shareholder disputes under ORC Chapter 1701: minority oppression, director duties, deadlock, records demands, derivative suits and buyouts.',
-  keywords: ['shareholder disputes lawyer Columbus OH', 'minority shareholder oppression Ohio', 'ORC 1701 attorney', 'corporate dissolution Ohio', 'derivative suit Ohio', 'Franklin County shareholder attorney'],
+  keywords: ['shareholder disputes lawyer Columbus OH', 'minority shareholder oppression Ohio', 'ORC 1701 attorney', 'corporate dissolution Ohio', 'derivative suit Ohio', 'Franklin County shareholder attorney', 'Ohio shareholder disputes lawyer'],
   openGraph: {
     title: 'Shareholder Disputes Lawyer Ohio | Jwayyed Law LLC',
     description: 'Rights and remedies for shareholders of Ohio corporations, especially close corporations.',
@@ -164,7 +164,7 @@ export default function ShareholderDisputesPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does for shareholders">
+      <Section title="What an Ohio shareholder disputes lawyer does">
         <PointGrid
           points={[
             { title: 'Assesses every path', body: 'Negotiation, mediation, arbitration or litigation, and which fits your goals.' },

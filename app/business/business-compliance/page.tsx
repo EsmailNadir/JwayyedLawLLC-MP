@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Business Compliance Lawyer',
   description:
     'Ongoing compliance for Ohio LLCs and corporations: statutory agents, corporate formalities, CAT and tax registration, licensing and employment law.',
-  keywords: ['business compliance lawyer Columbus OH', 'Ohio LLC compliance attorney', 'corporate formalities Ohio', 'Ohio Secretary of State filing attorney', 'Ohio CAT tax attorney', 'pierce corporate veil Ohio', 'ORC 1705 attorney'],
+  keywords: ['business compliance lawyer Columbus OH', 'Ohio LLC compliance attorney', 'corporate formalities Ohio', 'Ohio Secretary of State filing attorney', 'Ohio CAT tax attorney', 'pierce corporate veil Ohio', 'ORC 1705 attorney', 'Ohio business compliance lawyer', 'Ohio statutory agent requirements'],
   openGraph: {
     title: 'Ohio Business Compliance Lawyer | Jwayyed Law LLC',
     description: 'What Ohio LLCs and corporations must keep doing after formation to protect the liability shield.',
@@ -111,7 +111,7 @@ export default function BusinessCompliancePage() {
           title="Filing obligations"
           rows={[
             { label: 'Annual reports', value: 'Not currently required for existing entities; Ohio eliminated mandatory annual reports.' },
-            { label: 'Statutory agent', value: 'Required at all times, with a physical Ohio street address (ORC 1705.06 for LLCs, ORC 1701.07 for corporations). No P.O. Boxes.' },
+            { label: 'Statutory agent', value: 'The person or business that accepts lawsuits and official state mail for the company. Required at all times, with a physical Ohio street address (ORC 1705.06 for LLCs, ORC 1701.07 for corporations). No P.O. Boxes.' },
             { label: 'Agent changes', value: 'Updated within 30 days on Form 521 with the Ohio Secretary of State.' },
             { label: 'Amendments', value: 'Changes to the name, principal office, articles of incorporation or articles of organization.' },
             { label: 'Biennial reports', value: 'If required for certain professional associations.' },

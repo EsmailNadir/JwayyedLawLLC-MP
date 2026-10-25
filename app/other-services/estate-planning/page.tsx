@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Estate Planning Lawyer in Ohio',
   description:
     'Ohio estate planning: wills, living trusts, powers of attorney, living wills and TOD deeds, and the Ohio statutes behind each one.',
-  keywords: ['estate planning lawyer Columbus OH', 'estate planning attorney Ohio', 'wills trusts lawyer', 'Franklin County estate planning attorney'],
+  keywords: ['estate planning lawyer Columbus OH', 'estate planning attorney Ohio', 'Ohio estate planning lawyer', 'Ohio probate process', 'wills trusts lawyer', 'Franklin County estate planning attorney'],
   openGraph: {
     title: 'Estate Planning Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Wills, living trusts, powers of attorney and TOD deeds under Ohio law.',
@@ -179,7 +179,7 @@ export default function EstatePlanningPage() {
         </p>
       </Section>
 
-      <Section title="Assets that pass outside probate">
+      <Section title="Assets that pass outside the probate process">
         <p>
           Many assets pass automatically through beneficiary designations, titling or transfer-on-death features. Your documents,
           beneficiary designations and asset titles need to line up, or an asset can end up outside the plan.
@@ -202,7 +202,7 @@ export default function EstatePlanningPage() {
       <Section title="Estate planning services" tone="ice">
         <LinkGrid links={SERVICES} columns={2} />
         <Callout title="Schedule a consultation">
-          Call Jwayyed Law LLC at (614) 285-5482 to schedule an estate planning consultation. The firm drafts a plan to fit your
+          Call Jwayyed Law LLC at (614) 285-5482 to schedule a consultation with an Ohio estate planning lawyer. The firm drafts a plan to fit your
           family and assets, from a will and power of attorney to a trust-based plan.
         </Callout>
       </Section>

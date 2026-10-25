@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     'public intoxication Ohio attorney',
     'disorderly conduct minor misdemeanor Ohio',
     'disorderly conduct M4 Ohio',
+    'Ohio disorderly conduct charges',
+    'facing disorderly conduct charges',
   ],
   openGraph: {
     title: 'Disorderly Conduct Defense Ohio | Jwayyed Law LLC',
@@ -162,7 +164,7 @@ export default function DisorderlyConductPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a disorderly conduct charge" tone="ice">
+      <Section title="What a disorderly conduct defense attorney does" tone="ice">
         <PointGrid
           points={[
             { title: 'Diversion and dismissal', body: 'Pursues a conditional dismissal for first-time defendants.' },
@@ -177,7 +179,7 @@ export default function DisorderlyConductPage() {
           ]}
         />
         <p>
-          If you are charged in <Link href="/locations/franklin-county">Franklin County</Link>,{' '}
+          If you are facing disorderly conduct charges in <Link href="/locations/franklin-county">Franklin County</Link>,{' '}
           <Link href="/locations/delaware-county">Delaware County</Link> or anywhere in Ohio, call{' '}
           <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>. Even a minor
           misdemeanor conviction leaves a permanent record, so talk to an attorney before you enter any plea.

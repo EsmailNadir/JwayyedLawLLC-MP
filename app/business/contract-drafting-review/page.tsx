@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Contract Drafting & Review Lawyer in Ohio',
   description:
     'Business contract drafting and review in Ohio: the clauses every agreement needs, the UCC rules for goods, and what to check before you sign.',
-  keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney'],
+  keywords: ['contract drafting lawyer Columbus OH', 'contract review attorney Ohio', 'business contract lawyer', 'Franklin County contract attorney', 'contract drafting and review lawyer Ohio', 'Ohio contract law attorney', 'Ohio business attorney'],
   openGraph: {
     title: 'Contract Drafting & Review Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Drafting, reviewing and negotiating business contracts under Ohio law.',
@@ -113,7 +113,7 @@ export default function ContractDraftingReviewPage() {
         />
       </Section>
 
-      <Section title="What makes a contract enforceable" tone="ice">
+      <Section title="What makes a contract enforceable under Ohio contract law" tone="ice">
         <PointGrid
           points={[
             { title: 'Offer', body: 'One party proposes definite terms.' },
@@ -169,7 +169,7 @@ export default function ContractDraftingReviewPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a contract" tone="ice">
+      <Section title="What a contract attorney does on your agreement" tone="ice">
         <PointGrid
           points={[
             { title: 'Drafts', body: 'Contracts fitted to your transaction and industry, not generic templates.' },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer in Morrow County',
   description:
     'Misdemeanor defense at Morrow County Municipal Court in Mount Gilead: trespass, assault, theft and drug charges. Call (614) 285-5482.',
-  keywords: ['criminal misdemeanor defense Morrow County', 'misdemeanor attorney Morrow County Municipal Court', 'Morrow County criminal lawyer', 'Morrow County misdemeanor defense'],
+  keywords: ['criminal misdemeanor defense Morrow County', 'misdemeanor attorney Morrow County Municipal Court', 'Morrow County criminal lawyer', 'Morrow County misdemeanor defense', 'Morrow County criminal defense lawyer', 'sealing criminal records Morrow County'],
   openGraph: {
     title: 'Criminal Defense Lawyer in Morrow County | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Morrow County Municipal Court for Mount Gilead, Cardington, Edison and Marengo.',
@@ -93,7 +93,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Misdemeanor defense at Morrow County Municipal Court"
+        title="Morrow County criminal defense lawyer for misdemeanor charges"
         description="Misdemeanor charges from anywhere in Morrow County go to Morrow County Municipal Court in Mount Gilead. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine."
       />
 
@@ -128,7 +128,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Misdemeanor cases the court hears" tone="ice">
+      <Section title="Criminal misdemeanor charges the court hears" tone="ice">
         <PointGrid
           points={[
             {
@@ -151,7 +151,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties in Ohio">
+      <Section title="Municipal court misdemeanor penalties in Ohio">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -162,7 +162,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
           ]}
           note="These are maximums. Reduced charges, alternative sentencing, community service or dismissal are possible in some cases."
         />
-        <h3>Expungement and record sealing</h3>
+        <h3>Expungement or record sealing</h3>
         <p>
           Misdemeanor convictions in Morrow County may be eligible for expungement or sealing under Ohio Revised Code 2953.31 once the
           sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the
@@ -170,7 +170,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses and what the firm does" tone="ice">
+      <Section title="Morrow County criminal defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'Evidence challenges', body: 'Admissibility, police procedure, search and seizure, and witness credibility.' },
@@ -185,7 +185,7 @@ export default function MorrowCriminalMisdemeanorDefensePage() {
           ]}
         />
         <p>
-          On each case the firm reviews the evidence, police reports and charging documents, files pretrial motions to suppress
+          On each case, the firm&rsquo;s criminal misdemeanor defense attorney reviews the evidence, police reports and charging documents, files pretrial motions to suppress
           evidence or dismiss charges, negotiates with Morrow County prosecutors, tries the case when it cannot be resolved, and helps
           with expungement afterward.
         </p>

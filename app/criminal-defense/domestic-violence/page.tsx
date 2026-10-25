@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Domestic Violence Defense Ohio',
   description:
-    'Charged with domestic violence in Ohio? Penalties under ORC 2919.25, protection orders, gun rights and defenses. Call Jwayyed Law LLC at (614) 285-5482.',
+    'Facing domestic violence charges in Ohio? Penalties under ORC 2919.25, protection orders, gun rights and defenses. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'domestic violence lawyer Ohio',
     'domestic violence defense attorney Ohio',
@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     'protection order defense',
     'domestic violence charges Ohio',
     'Ohio domestic violence lawyer',
-    'Ohio domestic violence attorney'
+    'Ohio domestic violence attorney',
+    'facing domestic violence charges',
+    'Ohio domestic violence laws',
+    'domestic violence charges self-defense',
   ],
   openGraph: {
     title: 'Domestic Violence Defense Ohio | Jwayyed Law LLC',
@@ -105,7 +108,7 @@ export default function DomesticViolencePage() {
       />
 
       <Section
-        title="What a domestic violence charge means"
+        title="Understanding domestic violence charges in Ohio"
         intro={
           <p>
             Domestic violence under Ohio Revised Code 2919.25 is an allegation of physical harm, attempted harm or threats against a
@@ -182,7 +185,7 @@ export default function DomesticViolencePage() {
           misdemeanor conviction. The restriction is permanent and cannot be restored. It applies immediately on conviction and covers
           hunting, sport shooting and self-defense.
         </p>
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences beyond criminal penalties</h3>
         <p>
           Many employers refuse to hire people with a domestic violence conviction. Professional licenses can be restricted, housing
           gets harder, and non-citizens face immigration consequences. The largest effect is often in family court, which weighs a
@@ -240,7 +243,7 @@ export default function DomesticViolencePage() {
         />
       </Section>
 
-      <Section title="How a domestic violence case moves">
+      <Section title="The criminal court process for domestic violence charges">
         <Steps
           steps={[
             {
@@ -313,7 +316,7 @@ export default function DomesticViolencePage() {
         </p>
       </Section>
 
-      <Section title="Defenses to a domestic violence charge">
+      <Section title="Defenses to domestic violence charges">
         <PointGrid
           points={[
             {
@@ -377,7 +380,7 @@ export default function DomesticViolencePage() {
 
       <Section title="Related pages">
         <p>
-          If you are charged with domestic violence anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> right away.
+          If you are facing domestic violence charges anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> right away.
           See the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> for other charges.
         </p>
         <LinkGrid links={RELATED} columns={2} />

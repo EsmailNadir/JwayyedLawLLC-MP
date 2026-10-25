@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Case Results',
   description:
     'Anonymized outcomes from Jwayyed Law LLC in OVI/DUI, criminal defense and personal injury cases in Ohio. Past results do not guarantee a future outcome.',
-  keywords: ['law firm case results', 'attorney success rate', 'Ohio law firm results'],
+  keywords: ['law firm case results', 'attorney success rate', 'Ohio law firm results', 'Ohio OVI charges case results', 'assault charges dismissed Ohio', 'Ohio criminal defense results'],
   openGraph: {
     title: 'Case Results | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/our-law-firm/case-results',

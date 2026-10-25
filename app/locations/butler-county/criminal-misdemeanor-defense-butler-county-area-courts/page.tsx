@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Butler County Criminal Defense Attorney',
   description:
     'Misdemeanor defense in Butler County Area Courts and Hamilton Municipal Court: assault, domestic violence and theft. Call (614) 285-5482.',
-  keywords: ['criminal misdemeanor defense Butler County', 'misdemeanor attorney Butler County Area Court', 'Butler County criminal lawyer', 'Hamilton Ohio misdemeanor defense', 'Oxford Ohio criminal attorney', 'West Chester misdemeanor lawyer'],
+  keywords: ['criminal misdemeanor defense Butler County', 'misdemeanor attorney Butler County Area Court', 'Butler County criminal lawyer', 'Hamilton Ohio misdemeanor defense', 'Oxford Ohio criminal attorney', 'West Chester misdemeanor lawyer', 'Butler County Area Courts criminal defense', 'Butler County criminal defense attorney'],
   openGraph: {
     title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense in Area Courts I, II and III and Hamilton Municipal Court.',
@@ -94,7 +94,7 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Misdemeanor defense in Butler County courts"
+        title="Butler County criminal defense attorney for misdemeanor charges"
         description="Butler County misdemeanors are prosecuted in Area Court I, II or III or Hamilton Municipal Court, depending on where the offense occurred. Even an M4 carries up to 30 days in jail."
       />
 
@@ -120,7 +120,7 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Common charges and their levels" tone="ice">
+      <Section title="Common misdemeanor charges and their levels" tone="ice">
         <FactTable
           title="Frequent Butler County charges"
           rows={[
@@ -151,7 +151,7 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
           separate civil proceeding.
         </p>
         <p>
-          Beyond the sentence, any conviction creates a record that shows on background checks, can affect jobs, professional
+          Beyond the sentence, any conviction creates a criminal record that shows on background checks, can affect jobs, professional
           licenses and immigration status, and can enhance penalties for future charges. Domestic violence convictions carry federal
           firearms restrictions under the Lautenberg Amendment, and drug convictions can affect student loan and housing eligibility.
         </p>
@@ -179,7 +179,7 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
           ]}
         />
         <p>
-          The firm checks diversion and expungement eligibility at the outset. Use <Link href="/contact">the contact page</Link> or
+          If you are facing a misdemeanor charge, the firm checks diversion and expungement eligibility at the outset. Use <Link href="/contact">the contact page</Link> or
           call (614) 285-5482.
         </p>
       </Section>

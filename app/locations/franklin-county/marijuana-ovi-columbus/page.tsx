@@ -11,8 +11,8 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Columbus Marijuana OVI Defense Attorney',
   description:
-    'A marijuana OVI in Columbus can rest on a per se THC limit under R.C. 4511.19, with no proof of impairment. The case goes to Franklin County Municipal Court.',
-  keywords: ['Columbus marijuana OVI lawyer', 'cannabis DUI Columbus Ohio', 'marijuana drug OVI Columbus', 'weed OVI Columbus attorney', 'Franklin County marijuana impaired driving defense'],
+    'A marijuana OVI charge in Columbus can rest on a per se THC limit under R.C. 4511.19, with no proof of impairment. The case goes to Franklin County Municipal Court.',
+  keywords: ['Columbus marijuana OVI lawyer', 'cannabis DUI Columbus Ohio', 'marijuana drug OVI Columbus', 'weed OVI Columbus attorney', 'Franklin County marijuana impaired driving defense', 'marijuana OVI charge', 'Ohio marijuana OVI laws', 'OVI defense attorney Columbus'],
   openGraph: {
     title: 'Columbus Marijuana OVI Defense Attorney | Jwayyed Law LLC',
     description: 'Per se THC limits, DRE evaluations, blood and urine tests and the ALS appeal in a Columbus marijuana OVI.',
@@ -113,7 +113,7 @@ export default function ColumbusMarijuanaOVIPage() {
         </p>
       </Section>
 
-      <Section title="Ohio's per se marijuana limits" tone="ice">
+      <Section title="Ohio's marijuana OVI laws: per se limits" tone="ice">
         <p>
           These limits work like the alcohol BAC limit: a result above the threshold supports an OVI charge without other proof of
           impairment.
@@ -192,7 +192,7 @@ export default function ColumbusMarijuanaOVIPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a Columbus marijuana OVI" tone="ice">
+      <Section title="How an OVI defense attorney handles marijuana OVI cases" tone="ice">
         <PointGrid
           points={[
             { title: 'ALS appeal', body: 'Filed as soon as the firm is retained, with a stay of the suspension requested.' },

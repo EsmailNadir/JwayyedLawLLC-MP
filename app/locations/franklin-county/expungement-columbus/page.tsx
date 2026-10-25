@@ -89,7 +89,7 @@ export default function ColumbusExpungementPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Expungement and record sealing in Columbus"
+        title="Columbus expungement attorney for record sealing"
         description="Most misdemeanors and F3 to F5 felonies can be sealed under R.C. 2953.32 after a waiting period. HB 96, effective September 30, 2025, widened who qualifies."
       />
 
@@ -122,7 +122,7 @@ export default function ColumbusExpungementPage() {
         />
         <p>
           A conviction in either court leaves a public record that employers, landlords and professional licensing boards see on
-          background checks, often for years or decades. R.C. 2953.32 lets you seal eligible convictions so they drop out of the
+          background checks, often for years or decades. R.C. 2953.32 lets you seal your criminal record for eligible convictions so they drop out of the
           background check systems most employers and landlords use. The firm handles{' '}
           <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link> petitions in both courts. Call{' '}
           <a href="tel:6142855482">(614) 285-5482</a> to review your eligibility.
@@ -177,7 +177,7 @@ export default function ColumbusExpungementPage() {
         </p>
       </Section>
 
-      <Section title="How sealing works in Franklin County" tone="ice">
+      <Section title="The Columbus expungement process in Franklin County" tone="ice">
         <Steps
           steps={[
             {
@@ -199,7 +199,7 @@ export default function ColumbusExpungementPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a Columbus expungement">
+      <Section title="What a Columbus expungement attorney does on your case">
         <PointGrid
           points={[
             { title: 'Eligibility review', body: 'Your full criminal history under the current R.C. 2953.32 rules, including HB 96.' },

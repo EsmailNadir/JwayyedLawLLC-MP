@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Motorcycle Accident Lawyer in Ohio',
   description:
     'Motorcycle accident claims in Ohio: the 2-year deadline, how helmet use and lane filtering affect fault, and the damages riders can recover.',
-  keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney'],
+  keywords: ['motorcycle accident lawyer Columbus OH', 'motorcycle accident attorney Ohio', 'motorcycle lawyer', 'Franklin County motorcycle accident attorney', 'motorcycle accident lawyer Ohio', 'motorcycle accident claims process'],
   openGraph: {
     title: 'Motorcycle Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Injury claims for motorcycle riders and passengers throughout Ohio.',
@@ -93,7 +93,7 @@ export default function MotorcycleAccidentsPage() {
       />
 
       <Section
-        title="What a motorcycle accident claim covers"
+        title="Understanding motorcycle accident claims"
         intro={
           <p>
             Motorcycle crashes in Columbus, Cincinnati, Dayton and across Ohio often cause catastrophic or fatal injuries. Claims are
@@ -152,7 +152,7 @@ export default function MotorcycleAccidentsPage() {
         />
       </Section>
 
-      <Section title="How a motorcycle claim moves forward" tone="ice">
+      <Section title="The motorcycle accident claims process" tone="ice">
         <Steps
           steps={[
             {
@@ -175,7 +175,7 @@ export default function MotorcycleAccidentsPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a motorcycle claim">
+      <Section title="What a motorcycle accident attorney does on your case">
         <PointGrid
           points={[
             { title: 'Investigates', body: 'Photos, witness statements, police reports and surveillance footage, plus documentation of every injury and loss.' },

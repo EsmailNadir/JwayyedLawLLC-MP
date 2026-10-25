@@ -85,7 +85,7 @@ export default function PersonalInjuryDelawareCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Delaware County"
+        title="Delaware County personal injury lawyer"
         description="Injury lawsuits from Delaware, Powell, Westerville, Dublin, Lewis Center and Sunbury are filed at the Delaware County Common Pleas Court. Most must be filed within two years."
       />
 
@@ -133,12 +133,12 @@ export default function PersonalInjuryDelawareCountyPage() {
         <p>The firm starts on the case as soon as it is retained, preserving evidence, interviewing witnesses and documenting damages.</p>
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Delaware County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Car and truck accidents', body: 'Including crashes on US 23, SR 36 and SR 37.' },
             { title: 'Motorcycle crashes', body: 'Riders hurt by negligent drivers.' },
-            { title: 'Slip and fall and premises', body: 'Sidewalks, parking lots and retail and commercial properties.' },
+            { title: 'Slip and fall and premises liability claims', body: 'Sidewalks, parking lots and retail and commercial properties.' },
             { title: 'Construction zones', body: 'Crashes and injuries in work zones on growing roads.' },
             { title: 'Dog bites', body: 'Claims under ORC 955.28.' },
             { title: 'Wrongful death', body: 'For families after a fatal injury.' },

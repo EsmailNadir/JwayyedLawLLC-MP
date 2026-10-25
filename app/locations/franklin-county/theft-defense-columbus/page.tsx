@@ -89,7 +89,7 @@ export default function ColumbusTheftPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Theft and shoplifting defense in Columbus"
+        title="Columbus theft and shoplifting defense attorney"
         description="Theft of property worth under $1,000 is petty theft, a first-degree misdemeanor with up to 180 days in jail. At $1,000 it becomes a felony."
       />
 
@@ -157,7 +157,7 @@ export default function ColumbusTheftPage() {
         />
       </Section>
 
-      <Section title="How the firm defends a theft case" tone="ice">
+      <Section title="How the firm defends Columbus theft cases" tone="ice">
         <Steps
           steps={[
             {
@@ -166,7 +166,7 @@ export default function ColumbusTheftPage() {
             },
             {
               title: 'Pursue diversion',
-              body: 'Franklin County prosecutors consider diversion for first-time offenders, especially on low-value misdemeanor theft. It usually requires restitution, community service and no new arrests, and ends in dismissal with no conviction.',
+              body: 'Franklin County prosecutors consider diversion for first-time offenders, especially in low-value misdemeanor theft cases. It usually requires restitution, community service and no new arrests, and ends in dismissal with no conviction.',
             },
             { title: 'Challenge the case', body: 'If diversion is not available, the defenses below decide whether to negotiate or go to trial.' },
           ]}
@@ -183,7 +183,7 @@ export default function ColumbusTheftPage() {
           ]}
         />
         <p>
-          The best time to act is before a plea and before the record is permanent. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
+          The best time to act is before a plea and before the criminal record is permanent. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
           <Link href="/contact">schedule a consultation</Link>.
         </p>
       </Section>

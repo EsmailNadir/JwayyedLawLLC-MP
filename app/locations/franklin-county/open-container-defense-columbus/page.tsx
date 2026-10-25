@@ -77,7 +77,7 @@ export default function ColumbusOpenContainerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Open container defense in Columbus"
+        title="Columbus open container defense attorney"
         description="An open container in a vehicle or outside the downtown ORA is a minor misdemeanor under R.C. 4301.62, with a fine up to $150 and a criminal record."
       />
 
@@ -101,7 +101,7 @@ export default function ColumbusOpenContainerPage() {
         </p>
       </Section>
 
-      <Section title="What R.C. 4301.62 prohibits in a vehicle" tone="ice">
+      <Section title="What Ohio's open container law prohibits in a vehicle" tone="ice">
         <FactTable
           title="Open container in a vehicle (R.C. 4301.62)"
           rows={[

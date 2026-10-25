@@ -64,8 +64,8 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Drug possession charges in ${suburb}, Ohio`}
-        description={`Drug charges from ${suburb} range from a minor misdemeanor marijuana citation with a $150 maximum fine to felony possession. They start in ${courtName}.`}
+        title={`Drug possession defense attorney in ${suburb}, Ohio`}
+        description={`Facing drug possession charges in ${suburb}? They range from a minor misdemeanor marijuana citation with a $150 maximum fine to felony charges, and they start in ${courtName}.`}
       />
 
       <Section
@@ -95,8 +95,8 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
         <FcmcTable hears="Misdemeanor drug charges, felony drug arraignments, the HART Court recovery docket for opioid-involved defendants, and ILC (Intervention in Lieu of Conviction) for eligible first-time drug defendants" />
         <ProsecutorNote title={formerProsecutorTitle} />
         <p>
-          The {policeAgency} enforces Ohio drug laws, and traffic stops on {keyRoads[0]} and elsewhere in {suburb} regularly lead
-          to drug charges when officers search incident to arrest or with claimed consent. The firm starts every drug case with the
+          The {policeAgency} enforces Ohio drug laws, and traffic stops on {keyRoads[0]} and elsewhere in {suburb} regularly produce
+          drug possession charges when officers search incident to arrest or with claimed consent. The firm starts every drug case with the
           origin of the search or seizure, because a suppressed search often ends the whole case.
         </p>
       </Section>
@@ -118,7 +118,7 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
             { label: 'Concentrate', value: <>Up to <strong>15 grams</strong></> },
             { label: 'Home cultivation', value: <>Up to <strong>6 marijuana plants</strong> per adult</> },
           ]}
-          note="Persons under 21 are not covered and face the standard possession laws. Consumption in public spaces, motor vehicles, or near schools is prohibited and subject to civil penalties."
+          note="Persons under 21 are not covered and face the standard criminal possession laws. Consumption in public spaces, motor vehicles, or near schools is prohibited and subject to civil penalties."
         />
         <FactTable
           title="Marijuana possession above the legal limit"
@@ -162,7 +162,7 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
         />
       </Section>
 
-      <Section title="Suppression and diversion" tone="ice">
+      <Section title="Suppression and diversion in drug possession cases" tone="ice">
         <PointGrid
           points={[
             {
@@ -185,7 +185,7 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
         />
       </Section>
 
-      <Section title={`What the firm does in ${suburb} drug cases`}>
+      <Section title={`How the firm handles ${suburb} drug possession cases`}>
         <PointGrid
           points={[
             { title: 'Suppression motions', body: 'Challenging the stop, search, or seizure that produced the drug evidence under the Fourth Amendment.' },

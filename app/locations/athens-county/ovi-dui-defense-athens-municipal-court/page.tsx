@@ -8,8 +8,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'Athens County OVI Attorney',
   description:
-    'OVI/DUI defense at Athens Municipal Court for Athens, Nelsonville, The Plains and Albany: HB 37 penalties and the 30-day ALS appeal. Call (614) 285-5482.',
-  keywords: ['OVI defense Athens County', 'DUI attorney Athens Municipal Court', 'Athens County OVI lawyer', 'Athens DUI defense'],
+    'Athens OVI defense attorney for OVI and DUI charges at Athens Municipal Court for Athens, Nelsonville, The Plains and Albany: HB 37 penalties and the 30-day ALS appeal. Call (614) 285-5482.',
+  keywords: ['OVI defense Athens County', 'DUI attorney Athens Municipal Court', 'Athens County OVI lawyer', 'Athens DUI defense', 'Athens OVI defense', 'OVI attorney Athens Ohio', 'DUI defense attorney Athens County', 'ALS suspension'],
   openGraph: {
     title: 'Athens County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Athens Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
@@ -47,7 +47,7 @@ const faqs = [
       'Use your right to remain silent and do not discuss the case without your attorney present. Contact an OVI defense attorney right away: you have only 30 days to appeal the administrative license suspension.',
   },
   {
-    question: 'Do I need a local attorney for OVI in Athens County?',
+    question: 'Do I need a local OVI or DUI defense attorney in Athens County?',
     answer:
       'You can hire any Ohio attorney. An attorney who knows Athens Municipal Court, its procedures and the local prosecutors knows how the court schedules OVI cases, what it expects in filings and how pretrial conferences tend to run.',
   },
@@ -98,7 +98,7 @@ export default function AthensOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense at Athens Municipal Court"
-        description="OVI cases from anywhere in Athens County are heard at Athens Municipal Court in Athens. The license suspension starts at arrest, and you have 30 days to appeal it there."
+        description="OVI charges from anywhere in Athens County are heard at Athens Municipal Court in Athens. The license suspension starts at arrest, and you have 30 days to appeal it there."
       />
 
       <Section
@@ -133,7 +133,7 @@ export default function AthensOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties in Athens County" tone="ice">
+      <Section title="Athens Municipal Court OVI penalties" tone="ice">
         <p>Athens County applies the statewide penalties in ORC 4511.19, as updated by HB 37 (effective April 2025).</p>
         <FactTable
           title="First OVI"
@@ -178,7 +178,7 @@ export default function AthensOVIDefensePage() {
           (ALS) through the Ohio Bureau of Motor Vehicles. The ALS starts immediately if you refuse a chemical test or test over the
           legal limit.
         </p>
-        <Callout title="30 days to appeal the suspension">
+        <Callout title="30 days to appeal the ALS suspension">
           The ALS appeal must be filed within 30 days of the arrest in Athens County Municipal Court, the court of jurisdiction for
           ALS appeals in this region. The firm files it right away, asks for a stay of the suspension and challenges it on procedure
           and testing. Winning keeps you driving to work and treatment while the criminal case continues.
@@ -220,7 +220,7 @@ export default function AthensOVIDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on an Athens County OVI">
+      <Section title="How an Athens OVI attorney handles your case">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within 30 days, with a request to stay the suspension.' },

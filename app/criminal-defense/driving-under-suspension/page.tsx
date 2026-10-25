@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Driving Under Suspension Ohio',
   description:
-    'Charged with driving under suspension in Ohio? Penalties under ORC 4510.11, 4510.14 and 4510.16, defenses and reinstatement. Call (614) 285-5482.',
+    'Charged with driving under suspension in Ohio? Penalties under ORC 4510.11, 4510.14 and 4510.16, additional license suspension, defenses and reinstatement. Call (614) 285-5482.',
   keywords: [
     'driving under suspension lawyer Ohio',
     'DUS defense attorney Ohio',
@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     'OVI suspension driving',
     'FRA suspension attorney',
     'license suspension lawyer Ohio',
-    'Ohio DUS attorney'
+    'Ohio DUS attorney',
+    'driving under FRA suspension',
+    'what is an FRA suspension',
+    'driving under suspension ORC 4510.11',
   ],
   openGraph: {
     title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
@@ -102,7 +105,7 @@ export default function DrivingUnderSuspensionPage() {
         facts={[
           { figure: '3 days', label: 'mandatory consecutive jail for a first OVI-related DUS (or 30 days of house arrest)' },
           { figure: '$250 to $1,000', label: 'fine range for a DUS conviction' },
-          { figure: '1 to 5 years', label: 'added license suspension for an OVI-related DUS' },
+          { figure: '1 to 5 years', label: 'additional license suspension for an OVI-related DUS' },
         ]}
       />
 
@@ -111,7 +114,7 @@ export default function DrivingUnderSuspensionPage() {
         intro={
           <p>
             Under Ohio Revised Code 4510.11, driving while your license is suspended, revoked or canceled is a criminal misdemeanor.
-            It carries jail, fines and more suspension time.
+            It carries jail, fines and additional license suspension time.
           </p>
         }
       >
@@ -151,7 +154,7 @@ export default function DrivingUnderSuspensionPage() {
             {
               label: 'FRA DUS (ORC 4510.16)',
               value:
-                'A Financial Responsibility Act suspension: no proof of insurance after an accident, failure to keep required SR-22 insurance, or another financial responsibility failure. A first-degree misdemeanor with up to 180 days in jail, a fine of $250 to $1,000 and more suspension. The court may order the vehicle immobilized or impounded.',
+                'A Financial Responsibility Act suspension: no proof of insurance after an accident, failure to keep required SR-22 insurance, or another financial responsibility failure. Driving under an FRA suspension is a first-degree misdemeanor with up to 180 days in jail, a fine of $250 to $1,000 and more suspension. The court may order the vehicle immobilized or impounded.',
             },
             {
               label: 'Child support suspension',
@@ -235,7 +238,7 @@ export default function DrivingUnderSuspensionPage() {
         <FactTable
           title="FRA DUS (ORC 4510.16)"
           rows={[
-            { label: 'First offense', value: 'First-degree misdemeanor: up to 180 days in jail, a fine of $250 to $1,000, and added suspension.' },
+            { label: 'First offense', value: 'First-degree misdemeanor: up to 180 days in jail, a fine of $250 to $1,000, and additional license suspension.' },
             { label: 'Vehicle', value: 'Immobilization for up to 30 days may be ordered.' },
             { label: 'Later offenses within five years', value: 'Longer jail time and added suspension.' },
             {
@@ -244,7 +247,7 @@ export default function DrivingUnderSuspensionPage() {
             },
           ]}
         />
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences beyond criminal penalties</h3>
         <p>
           Added suspension time affects work, school and family obligations. A criminal record affects job applications, housing and
           professional licensing. Insurance rates rise, and coverage can become hard or expensive to get. For CDL holders, a DUS

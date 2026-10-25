@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Athens County Court Representation',
   description:
-    'Athens Municipal Court and Athens County Common Pleas Court: addresses, what each hears, and the OVI, criminal, injury and business cases the firm handles.',
+    'Athens Municipal Court and Athens County Common Pleas Court: addresses, what each hears, and the OVI defense, misdemeanor criminal defense, personal injury and business cases the firm handles.',
   keywords: [
     'Athens County court attorney',
     'OVI lawyer Athens Ohio',
@@ -158,7 +158,7 @@ export default function AthensCountyCourtsPage() {
         </p>
       </Section>
 
-      <Section title="OVI charges in Athens County" tone="ice">
+      <Section title="OVI defense in Athens County" tone="ice">
         <p>
           OVI charges under <Link href="/ovi-dui-defense">ORC 4511.19</Link> are among the most frequently prosecuted offenses in
           Athens County, in large part because of the college campus.
@@ -179,10 +179,10 @@ export default function AthensCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor charges in Athens County">
+      <Section title="Misdemeanor criminal defense in Athens County">
         <p>
           Many of the misdemeanor cases in Athens Municipal Court involve students and young adults: disorderly conduct, criminal
-          trespassing, petty theft, minor in possession of alcohol (MIP), drug paraphernalia possession and domestic violence. Under
+          trespassing, petty theft, minor in possession of alcohol (MIP), drug paraphernalia possession and domestic violence charges. Under
           ORC 2935.26, officers may issue a citation instead of an arrest for minor misdemeanors. For first- and second-degree
           misdemeanors, a formal court process is typical.
         </p>

@@ -11,7 +11,7 @@ import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/comp
 export const metadata: Metadata = {
   title: 'Criminal Mischief Defense Ohio',
   description:
-    'Charged with criminal mischief under ORC 2909.07? Penalties, the types of the offense, defenses and record sealing. Call (614) 285-5482.',
+    'Charged with criminal mischief under ORC 2909.07? Penalties, the types of the offense, criminal mischief defense and record sealing. Call (614) 285-5482.',
   keywords: [
     'criminal mischief lawyer Ohio',
     'property damage defense attorney',
@@ -21,7 +21,9 @@ export const metadata: Metadata = {
     'criminal damaging defense lawyer',
     'Ohio property damage lawyer',
     'criminal mischief penalties Ohio',
-    'property crime defense attorney'
+    'property crime defense attorney',
+    'criminal mischief defense attorney',
+    'facing criminal mischief charges',
   ],
   openGraph: {
     title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
@@ -240,7 +242,7 @@ export default function CriminalMischiefPage() {
           Courts usually order restitution to cover repair or replacement. The owner can also file a separate civil suit for damages,
           possibly including treble damages under Ohio law.
         </p>
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences beyond criminal penalties</h3>
         <p>
           Employers running background checks may view a property crime conviction unfavorably. Housing applications may be rejected,
           professional licenses in some fields may be affected, and educational opportunities and financial aid can suffer. For
@@ -322,7 +324,7 @@ export default function CriminalMischiefPage() {
         />
       </Section>
 
-      <Section title="How a criminal mischief case moves">
+      <Section title="The criminal court process for criminal mischief">
         <Steps
           steps={[
             {
@@ -362,7 +364,7 @@ export default function CriminalMischiefPage() {
         />
       </Section>
 
-      <Section title="Defenses to criminal mischief">
+      <Section title="Criminal mischief defense strategies">
         <PointGrid
           points={[
             {
@@ -417,7 +419,7 @@ export default function CriminalMischiefPage() {
         />
       </Section>
 
-      <Section title="Sealing a criminal mischief conviction">
+      <Section title="Clearing your criminal record after a criminal mischief conviction">
         <p>
           Under Ohio Revised Code 2953.32, a criminal mischief conviction may be sealed or expunged. As a misdemeanor it is generally
           eligible after the waiting period if you meet the requirements. A sealed record is hidden from most background checks, which
@@ -425,7 +427,7 @@ export default function CriminalMischiefPage() {
           application. See <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link>.
         </p>
         <p>
-          If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. For
+          If you are facing criminal mischief charges anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. For
           more, see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}
           <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio">misdemeanor vs. felony charges in Ohio</Link>.
         </p>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Workplace Injury Lawyer',
   description:
     'Hurt at work in Ohio? BWC claims under ORC Chapter 4123, the 1-year filing deadline, third-party lawsuits and retaliation claims. Call (614) 285-5482.',
-  keywords: ['workplace injury lawyer Columbus OH', 'workers compensation attorney Ohio', 'BWC claim lawyer', 'Franklin County workplace injury attorney', 'ORC 4123 workers comp Ohio'],
+  keywords: ['workplace injury lawyer Columbus OH', 'workers compensation attorney Ohio', 'BWC claim lawyer', 'Franklin County workplace injury attorney', 'Ohio workplace injury law', 'ORC 4123 workers comp Ohio'],
   openGraph: {
     title: 'Ohio Workplace Injury Lawyer | Columbus | Jwayyed Law LLC',
     description: "Ohio workers' compensation claims and third-party workplace injury lawsuits.",
@@ -178,7 +178,7 @@ export default function WorkplaceInjuriesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a workplace injury">
+      <Section title="How a workplace injury lawyer handles your case">
         <PointGrid
           points={[
             {

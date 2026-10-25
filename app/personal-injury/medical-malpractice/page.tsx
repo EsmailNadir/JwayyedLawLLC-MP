@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Medical Malpractice Lawyer',
   description:
     'Ohio medical malpractice claims under ORC 2305.113: the 1-year deadline, the affidavit of merit, damage caps and what you must prove.',
-  keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney', 'ORC 2305.113 malpractice'],
+  keywords: ['medical malpractice lawyer Columbus OH', 'medical malpractice attorney Ohio', 'medical negligence lawyer', 'Franklin County medical malpractice attorney', 'medical malpractice lawsuit Ohio', 'common medical malpractice claims', 'ORC 2305.113 malpractice'],
   openGraph: {
     title: 'Ohio Medical Malpractice Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Claims for misdiagnosis, surgical errors, birth injuries and other medical negligence in Ohio.',
@@ -164,7 +164,7 @@ export default function MedicalMalpracticePage() {
         </p>
       </Section>
 
-      <Section title="How a malpractice claim moves forward" tone="ice">
+      <Section title="How a medical malpractice lawsuit moves forward" tone="ice">
         <Steps
           steps={[
             { title: 'Get the records', body: 'Obtain and review all of your medical records. You have a right to them under HIPAA.' },
@@ -176,7 +176,7 @@ export default function MedicalMalpracticePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a malpractice claim">
+      <Section title="What a medical malpractice lawyer does on your claim">
         <PointGrid
           points={[
             { title: 'Works with medical experts', body: 'Qualified experts to review the care and support the affidavit of merit.' },

@@ -118,7 +118,7 @@ export default function AppealsPage() {
           title="Ohio appellate structure"
           rows={[
             { label: 'Trial courts', value: 'Municipal Courts and Common Pleas Courts.' },
-            { label: '10th District', value: 'Sits in Columbus. Franklin County.' },
+            { label: '10th District', value: 'Sits in Columbus. Hears Franklin County cases.' },
             { label: '12th District', value: 'Butler, Warren, Greene and Clinton Counties.' },
             { label: '2nd District', value: 'Montgomery County (the Dayton area).' },
             { label: '4th District', value: 'Athens and Pickaway Counties.' },

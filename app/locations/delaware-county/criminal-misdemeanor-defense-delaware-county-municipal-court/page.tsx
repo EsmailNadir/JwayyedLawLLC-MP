@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Delaware County Criminal Defense Attorney',
   description:
     'Misdemeanor defense at Delaware County Municipal Court for Delaware, Powell and Dublin: assault, theft and license consequences. Call (614) 285-5482.',
-  keywords: ['criminal defense Delaware Ohio', 'misdemeanor attorney Delaware County', 'Delaware County Municipal Court criminal lawyer', 'Powell Ohio misdemeanor defense', 'Dublin criminal defense attorney'],
+  keywords: ['criminal defense Delaware Ohio', 'misdemeanor attorney Delaware County', 'Delaware County Municipal Court criminal lawyer', 'Powell Ohio misdemeanor defense', 'Dublin criminal defense attorney', 'Delaware County criminal defense attorney', 'sealing criminal records Delaware County'],
   openGraph: {
     title: 'Delaware County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Delaware County Municipal Court, with professional licensing consequences in view.',
@@ -94,7 +94,7 @@ export default function DelawareCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal misdemeanor defense in Delaware County"
+        title="Delaware County criminal misdemeanor defense attorney"
         description="Every misdemeanor in Delaware County is heard at Delaware County Municipal Court in Delaware. For licensed professionals, a conviction there can also bring a board review."
       />
 
@@ -143,7 +143,7 @@ export default function DelawareCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties in Delaware County">
+      <Section title="Delaware County Municipal Court misdemeanor penalties">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -155,16 +155,16 @@ export default function DelawareCriminalMisdemeanorDefensePage() {
           ]}
           note="These are maximums and can often be reduced through diversion or a plea agreement."
         />
-        <h3>Expungement</h3>
+        <h3>Expungement of misdemeanor records</h3>
         <p>
           A misdemeanor conviction in Delaware County Municipal Court may qualify for expungement and sealing under Ohio Revised Code
-          2953.31. The record is sealed from public view and removed from most background checks, and on most applications you can
+          2953.31. The criminal record is sealed from public view and removed from most background checks, and on most applications you can
           truthfully answer that you have no conviction. Waiting periods and eligibility depend on the offense and your record.
           Domestic violence convictions and most traffic offenses are not eligible.
         </p>
       </Section>
 
-      <Section title="How the firm defends the case" tone="ice">
+      <Section title="How the firm defends a Delaware County criminal case" tone="ice">
         <PointGrid
           points={[
             { title: 'The evidence', body: 'Police reports, body-cam and dash-cam footage, witness statements and physical evidence.' },

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Breach of Contract Lawyer in Ohio',
   description:
     'Breach of contract claims in Ohio: 6 years to sue on a written contract, 4 on an oral one, and the damages you can recover. Call (614) 285-5482.',
-  keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'Franklin County contract attorney'],
+  keywords: ['breach of contract lawyer Columbus OH', 'contract dispute attorney Ohio', 'contract lawyer', 'contract attorney Ohio', 'Ohio contract law', 'Franklin County contract attorney'],
   openGraph: {
     title: 'Breach of Contract Lawyer in Ohio | Jwayyed Law LLC',
     description: 'The elements, deadlines and remedies for a breach of contract claim in Ohio.',
@@ -94,7 +94,7 @@ export default function BreachOfContractPage() {
       />
 
       <Section
-        title="What counts as a breach"
+        title="What counts as a breach of contract under Ohio law"
         intro={
           <p>
             A breach happens when a party fails to perform what the contract requires, without legal justification. It can mean not
@@ -157,7 +157,7 @@ export default function BreachOfContractPage() {
         </Callout>
       </Section>
 
-      <Section title="How a contract claim moves forward">
+      <Section title="The breach of contract claims process">
         <Steps
           steps={[
             {
@@ -180,7 +180,7 @@ export default function BreachOfContractPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a contract dispute" tone="ice">
+      <Section title="How a contract attorney handles your dispute" tone="ice">
         <PointGrid
           points={[
             { title: 'Analyzes the contract', body: 'Validity, enforceability, the terms and obligations, the breach and any defenses the other side may raise.' },

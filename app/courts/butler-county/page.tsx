@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Butler County Court Representation',
   description:
-    'Butler County Area Courts I, II and III and Hamilton Municipal Court: addresses, phone numbers, which court hears your case, and what the firm handles.',
+    'Butler County Area Courts I, II and III and Hamilton Municipal Court: addresses, phone numbers, which court hears your case, and OVI defense and criminal cases there.',
   keywords: [
     'Butler County court attorney',
     'Hamilton Municipal Court attorney',
@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     'Butler County Area Court attorney',
     'West Chester criminal defense attorney',
     'Oxford OVI lawyer',
+    'Butler County OVI defense',
+    'Butler County DUI attorney',
   ],
   openGraph: {
     title: 'Butler County Court Representation | Jwayyed Law LLC',
@@ -187,7 +189,7 @@ export default function ButlerCountyCourtsPage() {
         <p>The firm represents clients in all four courts. It does not handle immigration, juvenile or probate matters in these courts.</p>
       </Section>
 
-      <Section title="OVI charges in Butler County" tone="ice">
+      <Section title="OVI defense in Butler County" tone="ice">
         <p>
           Ohio imposes mandatory minimum penalties on OVI convictions under <Link href="/ovi-dui-defense">ORC 4511.19</Link>.
         </p>
@@ -210,11 +212,11 @@ export default function ButlerCountyCourtsPage() {
         <p>The firm files ALS appeals promptly and challenges the traffic stop, the field sobriety testing and the chemical testing.</p>
       </Section>
 
-      <Section title="Misdemeanor charges in Butler County">
+      <Section title="Misdemeanor criminal defense in Butler County">
         <p>
           The Area Courts and Hamilton Municipal Court hear hundreds of misdemeanor cases each year: disorderly conduct, domestic
           violence, petty theft, drug paraphernalia and driving-related offenses among them. A first-degree misdemeanor carries up to
-          180 days in jail and $1,000 in fines, and a conviction creates a permanent record (ORC 2935.26) that affects employment,
+          180 days in jail and $1,000 in fines, and a conviction creates a permanent criminal record (ORC 2935.26) that affects employment,
           housing and professional licensing.
         </p>
         <p>

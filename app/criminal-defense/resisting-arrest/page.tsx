@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Resisting Arrest Defense Ohio',
   description:
-    'Resisting arrest under ORC 2921.33 is a second-degree misdemeanor, or first-degree if force is used. Penalties, defenses and the court process. Call (614) 285-5482.',
+    'Resisting arrest under ORC 2921.33 is a second-degree misdemeanor, or first-degree if force is used. Penalties, resisting arrest defenses and the criminal court process. Call (614) 285-5482.',
   keywords: [
     'resisting arrest lawyer Ohio',
     'resisting arrest defense attorney',
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     'Ohio resisting arrest lawyer',
     'fleeing police charges attorney',
     'criminal defense resisting arrest',
+    'resisting arrest second-degree misdemeanor',
   ],
   openGraph: {
     title: 'Resisting Arrest Defense Ohio | Jwayyed Law LLC',
@@ -128,7 +129,7 @@ export default function ResistingArrestPage() {
         </p>
       </Section>
 
-      <Section title="The two levels of the offense" tone="ice">
+      <Section title="The two levels of resisting arrest" tone="ice">
         <PointGrid
           points={[
             {
@@ -141,11 +142,11 @@ export default function ResistingArrestPage() {
             },
           ]}
         />
-        <h3>What the prosecution must prove</h3>
+        <h3>What the prosecution must prove for resisting arrest</h3>
         <p>
           Beyond a reasonable doubt: (1) an arrest was being made, (2) the arrest was lawful, (3) you resisted or interfered with it,
-          and (4) the resistance was reckless or involved force. Each element can be challenged, and if one cannot be proven the charge
-          should be dismissed. The lawfulness of the arrest is an element in its own right: the officer must have had proper authority
+          and (4) the resistance was reckless or involved force. Each element can be challenged, and if one cannot be proven the resisting
+          arrest charge should be dismissed. The lawfulness of the arrest is an element in its own right: the officer must have had proper authority
           and probable cause. The mental state matters too, because the prosecution must show you were aware of a substantial risk that
           your conduct would hinder the arrest and consciously disregarded it.
         </p>
@@ -173,7 +174,7 @@ export default function ResistingArrestPage() {
             { label: 'If the officer is hurt', value: 'A separate charge such as assault on a peace officer under ORC 2903.13 may be filed.' },
           ]}
         />
-        <h3>Charges that often come with it</h3>
+        <h3>Charges that often accompany resisting arrest</h3>
         <p>
           Common companions are obstruction of official business (ORC 2921.31), assault on a peace officer (ORC 2903.13), disorderly
           conduct (ORC 2917.11) and the offense that led to the arrest. Together they can mean consecutive jail terms, stacked fines and
@@ -193,7 +194,7 @@ export default function ResistingArrestPage() {
         </Callout>
       </Section>
 
-      <Section title="What a conviction costs beyond the sentence" tone="ice">
+      <Section title="Consequences beyond criminal penalties" tone="ice">
         <p>
           A resisting arrest conviction can limit work in law enforcement, security, government and other jobs that call for cooperation
           with authorities, and it may affect professional licensing. Employers may read it as a sign of a confrontational disposition.
@@ -218,7 +219,7 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Write down what happened',
-              body: 'Record everything you remember: the officers’ names and badge numbers, any witnesses, what was said, and what each person did and in what order. Resisting cases often turn on a few seconds of physical contact, so the sequence matters.',
+              body: 'Record everything you remember: the officers’ names and badge numbers, any witnesses, what was said, and what each person did and in what order. Resisting arrest cases often turn on a few seconds of physical contact, so the sequence matters.',
             },
             {
               title: 'Treat and document any injuries',
@@ -230,7 +231,7 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Talk to a criminal defense attorney',
-              body: 'An attorney can review the circumstances of the arrest, ask for the footage before it is lost, and build one strategy for the resisting charge and the underlying charges.',
+              body: 'An attorney can review the circumstances of the arrest, ask for the footage before it is lost, and build one strategy for the resisting arrest charge and the underlying charges.',
             },
           ]}
         />
@@ -240,7 +241,7 @@ export default function ResistingArrestPage() {
         </Callout>
       </Section>
 
-      <Section title="How a resisting arrest case moves through court" tone="ice">
+      <Section title="The criminal court process for resisting arrest" tone="ice">
         <p>Because resisting arrest usually comes with other charges, the court handles them together.</p>
         <Steps
           steps={[
@@ -258,7 +259,7 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Negotiation',
-              body: 'The resisting charge can be dismissed as part of a global resolution, reduced, or folded into a plea agreement. Prosecutors often agree to drop it in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
+              body: 'The resisting arrest charge can be dismissed as part of a global resolution, reduced, or folded into a plea agreement. Prosecutors often agree to drop it in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
             },
             {
               title: 'Trial',
@@ -268,12 +269,12 @@ export default function ResistingArrestPage() {
         />
       </Section>
 
-      <Section title="Defenses to resisting arrest">
+      <Section title="Resisting arrest defense strategies">
         <PointGrid
           points={[
             {
               title: 'The arrest was unlawful',
-              body: 'ORC 2921.33 requires a lawful arrest. If the officer lacked probable cause or proper authority, or violated your constitutional rights, the resisting charge may be invalid. The firm investigates how the arrest happened and raises this in pretrial motions and at trial.',
+              body: 'ORC 2921.33 requires a lawful arrest. If the officer lacked probable cause or proper authority, or violated your constitutional rights, the resisting arrest charge may be invalid. The firm investigates how the arrest happened and raises this in pretrial motions and at trial.',
             },
             {
               title: 'There was no resistance',
@@ -304,15 +305,15 @@ export default function ResistingArrestPage() {
           points={[
             {
               title: 'Dropped for a plea on the underlying offense',
-              body: 'Prosecutors often agree to dismiss the resisting charge in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
+              body: 'Prosecutors often agree to dismiss the resisting arrest charge in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
             },
             {
               title: 'Dismissed in a global resolution',
-              body: 'The resisting count can be dismissed as part of resolving all the charges at once.',
+              body: 'The resisting arrest count can be dismissed as part of resolving all the charges at once.',
             },
             {
               title: 'Dismissed on a pretrial motion',
-              body: 'If the arrest lacked probable cause, the resisting charge is invalid and can be dismissed. Winning on the arrest can also strengthen your position on the other charges.',
+              body: 'If the arrest lacked probable cause, the resisting arrest charge is invalid and can be dismissed. Winning on the arrest can also strengthen your position on the other charges.',
             },
             {
               title: 'Reduced or folded into a plea',
@@ -324,7 +325,7 @@ export default function ResistingArrestPage() {
             },
             {
               title: 'Sealing after a conviction',
-              body: 'A misdemeanor resisting conviction is generally eligible for record sealing after the waiting period, as described below.',
+              body: 'A misdemeanor resisting arrest conviction is generally eligible for record sealing after the waiting period, as described below.',
             },
           ]}
         />
@@ -338,8 +339,8 @@ export default function ResistingArrestPage() {
             { title: 'Tests the arrest', body: 'Whether the officer had probable cause and proper authority and followed correct procedure.' },
             { title: 'Investigates', body: 'Reviews the evidence, interviews witnesses and gets medical records of any injuries.' },
             { title: 'Builds the defense', body: 'Challenges the lawfulness of the arrest, shows the conduct was not resistance, or shows your actions were reflexive rather than intentional.' },
-            { title: 'Defends every charge together', body: 'One strategy for the resisting charge and the underlying charges.' },
-            { title: 'Negotiates', body: 'To dismiss the resisting charge, reduce charges or reach a better plea on all of them.' },
+            { title: 'Defends every charge together', body: 'One strategy for the resisting arrest charge and the underlying charges.' },
+            { title: 'Negotiates', body: 'To dismiss the resisting arrest charge, reduce charges or reach a better plea on all of them.' },
             { title: 'Tries the case', body: "With the video evidence and a cross-examination of the arresting officer." },
             { title: 'Seals the record', body: 'Handles record sealing and expungement applications under ORC 2953.32 for eligible clients.' },
           ]}

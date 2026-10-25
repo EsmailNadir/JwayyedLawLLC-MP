@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   keywords: [
     'arbitration lawyer Columbus OH',
     'arbitration attorney Ohio',
+    'Ohio arbitration lawyer',
     'ORC 2711 arbitration attorney',
     'AAA arbitration Columbus Ohio',
     'JAMS arbitration Ohio',

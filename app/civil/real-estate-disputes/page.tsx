@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Real Estate Disputes Lawyer in Ohio',
   description:
     'Boundary, title, easement and purchase agreement disputes in Ohio, including quiet title, partition and adverse possession. Call (614) 285-5482.',
-  keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney'],
+  keywords: ['real estate disputes lawyer Columbus OH', 'real estate attorney Ohio', 'property disputes lawyer', 'Franklin County real estate attorney', 'real estate disputes lawyer Ohio'],
   openGraph: {
     title: 'Real Estate Disputes Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Title, boundary, easement and purchase agreement disputes in Ohio, and the deadlines that apply.',
@@ -179,7 +179,7 @@ export default function RealEstateDisputesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a property dispute">
+      <Section title="How a real estate disputes lawyer handles your case">
         <PointGrid
           points={[
             { title: 'Analyzes the property issue', body: 'Title problems, boundary and easement disputes and other property law questions, to set out your rights and options.' },

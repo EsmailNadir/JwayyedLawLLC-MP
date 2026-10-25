@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Theft Defense Attorney Ohio',
   description:
-    'Petty theft and shoplifting charges under ORC 2913.02: penalties by value, the court process, defenses and record sealing. Call (614) 285-5482.',
+    'Petty theft and shoplifting charges under ORC 2913.02: penalties by value, the criminal court process, petty theft defense and record sealing. Call (614) 285-5482.',
   keywords: [
     'petty theft lawyer Ohio',
     'shoplifting defense attorney',
@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     'Ohio theft defense lawyer',
     'petty theft penalties Ohio',
     'first offense theft attorney',
+    'first offense shoplifting Ohio',
+    'misdemeanor theft charges',
+    'theft defense attorney',
   ],
   openGraph: {
     title: 'Theft Defense Attorney Ohio | Jwayyed Law LLC',
@@ -117,7 +120,7 @@ export default function PettyTheftPage() {
         }
       >
         <p>
-          It covers shoplifting from stores, taking personal property, using services without paying and other kinds of theft. Ohio&apos;s
+          Petty theft covers shoplifting from stores, taking personal property, using services without paying and other kinds of theft. Ohio&apos;s
           theft laws sit in Revised Code Chapter 2913. The value of the property mostly decides the penalty, and the type of property,
           the victim&apos;s status and your prior record can raise it.
         </p>
@@ -127,7 +130,7 @@ export default function PettyTheftPage() {
           property, which sets the level of the charge.
         </p>
         <p>
-          Petty theft is a misdemeanor, but a theft conviction can follow you for years, especially with employers who weigh honesty
+          Petty theft is a misdemeanor, but a petty theft conviction can follow you for years, especially with employers who weigh honesty
           and trustworthiness. Many petty theft cases resolve before trial, particularly for first-time offenders, through diversion,
           a reduced charge or a dismissal.
         </p>
@@ -178,7 +181,7 @@ export default function PettyTheftPage() {
         <h3>Enhancements</h3>
         <p>
           Prior theft convictions raise the penalty. A second theft of property under $150 becomes a first-degree misdemeanor, and
-          several priors can lift even a small theft to a felony. The court counts every prior theft-related conviction when setting the
+          several priors can lift even a small petty theft to felony charges. The court counts every prior theft-related conviction when setting the
           charge level, so a first theft charge is worth defending to avoid a later enhancement.
         </p>
         <p>
@@ -193,7 +196,7 @@ export default function PettyTheftPage() {
       </Section>
 
       <Section
-        title="What a theft conviction costs beyond the sentence"
+        title="What a petty theft conviction costs beyond the sentence"
         tone="ice"
         intro={
           <p>
@@ -264,18 +267,18 @@ export default function PettyTheftPage() {
             },
             {
               title: 'Talk to a criminal defense attorney',
-              body: 'Many first-time theft cases are resolved through diversion or a reduced charge, and an attorney can ask for those options early and challenge the evidence if the facts support it.',
+              body: 'Many first offense shoplifting and petty theft cases are resolved through diversion or a reduced charge, and an attorney can ask for those options early and challenge the evidence if the facts support it.',
             },
           ]}
         />
       </Section>
 
-      <Section title="How a petty theft case moves through court" tone="ice">
+      <Section title="The criminal court process for petty theft" tone="ice">
         <Steps
           steps={[
             {
               title: 'Citation, arrest or summons, then arraignment',
-              body: 'The case can start with a citation at the scene, an arrest or a summons. At arraignment the charges are read, bond conditions are set and you enter a plea. Misdemeanor theft defendants are often released on their own recognizance, and an attorney can argue for favorable release conditions. A not guilty plea preserves your rights and leaves time to investigate.',
+              body: 'The case can start with a citation at the scene, an arrest or a summons. At arraignment the charges are read, bond conditions are set and you enter a plea. Defendants facing misdemeanor theft charges are often released on their own recognizance, and an attorney can argue for favorable release conditions. A not guilty plea preserves your rights and leaves time to investigate.',
             },
             {
               title: 'Discovery and investigation',
@@ -293,7 +296,7 @@ export default function PettyTheftPage() {
         />
       </Section>
 
-      <Section title="Defenses to petty theft">
+      <Section title="Petty theft defense strategies">
         <PointGrid
           points={[
             {
@@ -355,7 +358,7 @@ export default function PettyTheftPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a theft case">
+      <Section title="What the firm does on a petty theft case">
         <PointGrid
           points={[
             { title: 'Protects your rights early', body: 'Advises you on dealing with police and loss prevention, and on avoiding self-incriminating statements.' },
@@ -370,14 +373,14 @@ export default function PettyTheftPage() {
           ]}
         />
         <p>
-          The firm handles theft cases throughout Ohio, from shoplifting to more serious misdemeanor theft, and knows which courts offer
+          The firm handles petty theft cases throughout Ohio, from shoplifting to more serious misdemeanor theft charges, and knows which courts offer
           diversion for first-time offenders. If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to
           schedule a consultation. You can also read about the firm&apos;s <Link href="/criminal-defense">criminal defense practice</Link>{' '}
           or the article on <Link href="/our-law-firm/blog/shoplifting-ohio-first-offense">shoplifting charges for a first offense in Ohio</Link>.
         </p>
       </Section>
 
-      <Section title="Record sealing after a theft conviction" tone="ice">
+      <Section title="Record sealing after a petty theft conviction" tone="ice">
         <p>
           Under Ohio Revised Code 2953.32, a petty theft conviction may be eligible for sealing or expungement. As a misdemeanor, it is
           generally eligible after the waiting period if you meet the requirements. Sealing hides the conviction from most background

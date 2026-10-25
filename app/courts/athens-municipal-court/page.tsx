@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/compo
 export const metadata: Metadata = {
   title: 'Athens Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Athens Municipal Court, 8 E Washington St, next to Ohio University, including student charges.',
-  keywords: ['Athens Municipal Court attorney', 'Athens County OVI lawyer', 'Athens misdemeanor defense', 'Ohio University OVI defense', 'Athens Ohio criminal attorney'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Athens Municipal Court, 8 E Washington St, next to Ohio University, including student charges.',
+  keywords: ['Athens Municipal Court attorney', 'Athens County OVI lawyer', 'Athens misdemeanor defense', 'Ohio University OVI defense', 'Athens Ohio criminal attorney', 'Athens Ohio DUI attorney', 'Athens Ohio criminal defense attorney'],
   openGraph: {
     title: 'Athens Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Athens Municipal Court, including Ohio University students.',
@@ -60,7 +60,7 @@ const faqs = [
   {
     question: 'Do I need an attorney for Athens Municipal Court matters?',
     answer:
-      'For any criminal or OVI matter, it is strongly advisable. Municipal court misdemeanor convictions carry jail time, fines, license suspension and a permanent record. Challenging the legality of the traffic stop, the calibration of breath testing devices or the validity of field sobriety tests takes legal knowledge. An attorney can negotiate plea agreements, file suppression motions and represent you at trial.',
+      'For any criminal or OVI matter, it is strongly advisable. Municipal court misdemeanor convictions carry jail time, fines, license suspension and a permanent criminal record. Challenging the legality of the traffic stop, the calibration of breath testing devices or the validity of field sobriety tests takes legal knowledge. An attorney can negotiate plea agreements, file suppression motions and represent you at trial.',
   },
   {
     question: 'What should I bring to my Athens Municipal Court arraignment?',
@@ -112,7 +112,7 @@ export default function AthensMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Athens" tone="ice">
+      <Section title="OVI defense at Athens Municipal Court" tone="ice">
         <p>
           An OVI charge can rest on a breath test result above the 0.08% legal limit or on an officer&rsquo;s observation of
           impairment. Either way, the evidence needs careful review.
@@ -147,7 +147,7 @@ export default function AthensMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Athens County">
+      <Section title="Misdemeanor criminal defense in Athens County">
         <p>
           Beyond OVI, the court hears assault (ORC 2903.13), theft (ORC 2913.02), drug possession misdemeanors, disorderly conduct,
           criminal trespass and domestic violence.
@@ -168,7 +168,7 @@ export default function AthensMunicipalCourtPage() {
 
       <Section title="Related pages" tone="ice">
         <p>
-          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> if you are facing charges in Athens Municipal Court.
+          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> if you are facing OVI charges or criminal charges in Athens Municipal Court.
         </p>
         <LinkGrid
           links={[

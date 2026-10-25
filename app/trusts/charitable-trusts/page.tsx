@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     'CRT CRAT CRUT lawyer Columbus',
     'donor-advised funds Ohio',
     'charitable trust attorney Ohio',
+    'Columbus estate planning attorneys',
     'Ohio attorney general charitable trust',
     'capital gains bypass trust Ohio',
     'estate planning charitable giving Ohio',

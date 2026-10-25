@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Employment Agreement Lawyer Ohio',
   description:
     'Ohio employment agreements, offer letters, severance agreements and contractor agreements, drafted and reviewed against at-will law and Ohio wage rules.',
-  keywords: ['employment agreement lawyer Columbus OH', 'Ohio employment contract attorney', 'at-will employment Ohio', 'severance agreement Ohio', 'independent contractor misclassification Ohio', 'ORC 4111 employment lawyer'],
+  keywords: ['employment agreement lawyer Columbus OH', 'Ohio employment contract attorney', 'at-will employment Ohio', 'severance agreement Ohio', 'independent contractor misclassification Ohio', 'ORC 4111 employment lawyer', 'Ohio employment contract law'],
   openGraph: {
     title: 'Employment Agreement Lawyer Ohio | Jwayyed Law LLC',
     description: 'Employment contracts in an at-will state, for Ohio employers and employees.',

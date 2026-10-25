@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Butler County OVI Attorney',
   description:
-    'OVI/DUI defense in Butler County Area Courts I, II and III and Hamilton Municipal Court, for Hamilton, Oxford and West Chester. Call (614) 285-5482.',
-  keywords: ['OVI lawyer Hamilton Ohio', 'DUI attorney Butler County', 'OVI defense Butler County', 'Butler County Area Court OVI', 'Oxford Ohio OVI attorney', 'West Chester OVI lawyer'],
+    'Butler County OVI defense attorney for OVI and DUI charges in Butler County Area Courts I, II and III and Hamilton Municipal Court, for Hamilton, Oxford and West Chester. Call (614) 285-5482.',
+  keywords: ['OVI lawyer Hamilton Ohio', 'DUI attorney Butler County', 'OVI defense Butler County', 'Butler County Area Court OVI', 'Oxford Ohio OVI attorney', 'West Chester OVI lawyer', 'Butler County OVI defense attorney', 'Hamilton Ohio DUI attorney', 'ALS hearing'],
   openGraph: {
     title: 'Butler County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense in the Butler County area courts: which court hears your case, HB 37 penalties and the 30-day ALS appeal.',
@@ -58,7 +58,7 @@ const faqs = [
       "Butler County officers, including the Butler County Sheriff, Hamilton Police, Oxford Police, West Chester Township Police and the Ohio State Highway Patrol, typically give the three NHTSA Standardized Field Sobriety Tests: Horizontal Gaze Nystagmus (HGN), Walk-and-Turn and One-Leg Stand. They are only scientifically reliable when given in strict compliance with NHTSA protocols. Improper instructions, uneven surfaces, poor lighting, officer error or a defendant's medical conditions can all invalidate the results. The firm reviews body camera footage and police reports for departures from procedure.",
   },
   {
-    question: 'How does a local attorney help with OVI defense in Butler County courts?',
+    question: 'How does a local OVI defense attorney help in Butler County courts?',
     answer:
       'Butler County Area Courts I (Oxford), II (Hamilton) and III (West Chester), and Hamilton Municipal Court at 700 Hanover Street, each have their own practices, procedures and judges. Knowing who is presiding, how local prosecutors evaluate OVI cases, what plea offers are typical and how scheduling and motions work in each court shapes the strategy, whether that is a motion to suppress, a negotiated reduction or trial. Jwayyed Law LLC represents OVI defendants in all Butler County courts.',
   },
@@ -126,7 +126,7 @@ export default function ButlerOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37" tone="ice">
+      <Section title="Butler County OVI penalties under HB 37" tone="ice">
         <p>Penalties follow Ohio Revised Code 4511.19 as updated by HB 37, effective April 9, 2025.</p>
         <FactTable
           title="First OVI"
@@ -162,7 +162,7 @@ export default function ButlerOVIDefensePage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm reviews" tone="ice">
+      <Section title="What a Butler County OVI defense attorney reviews" tone="ice">
         <PointGrid
           points={[
             { title: 'The stop', body: 'Whether the officer had a lawful basis to pull you over.' },

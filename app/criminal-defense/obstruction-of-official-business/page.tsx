@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Obstruction of Official Business Ohio',
   description:
-    'Obstruction of official business under ORC 2921.31 is a second-degree misdemeanor, or a felony if it risks physical harm. Penalties and defenses. Call (614) 285-5482.',
+    'Obstruction of official business under ORC 2921.31 is a second-degree misdemeanor, or a felony if it risks physical harm. Penalties and obstruction of official business defense. Call (614) 285-5482.',
   keywords: [
     'obstruction of official business lawyer Ohio',
     'obstruction defense attorney',
@@ -22,6 +22,8 @@ export const metadata: Metadata = {
     'Ohio obstruction lawyer',
     'interfering with police charges',
     'criminal defense obstruction attorney',
+    'obstruction of official business defense',
+    'obstruction and assault charges',
   ],
   openGraph: {
     title: 'Obstruction of Official Business Ohio | Jwayyed Law LLC',
@@ -203,7 +205,7 @@ export default function ObstructionOfficialBusinessPage() {
         </p>
       </Section>
 
-      <Section title="What a conviction costs beyond the sentence" tone="ice">
+      <Section title="Consequences beyond criminal penalties" tone="ice">
         <p>
           An obstruction conviction limits work in government, law enforcement, security, education and other positions of public trust,
           and professional licenses may be denied or revoked. Employers, landlords and others will see it on a background check. A felony
@@ -247,7 +249,7 @@ export default function ObstructionOfficialBusinessPage() {
         />
       </Section>
 
-      <Section title="How an obstruction case moves through court" tone="ice">
+      <Section title="The criminal court process for obstruction" tone="ice">
         <Steps
           steps={[
             {
@@ -274,7 +276,7 @@ export default function ObstructionOfficialBusinessPage() {
         />
       </Section>
 
-      <Section title="Defenses to obstruction">
+      <Section title="Obstruction of official business defense strategies">
         <PointGrid
           points={[
             {
@@ -356,7 +358,7 @@ export default function ObstructionOfficialBusinessPage() {
           ]}
         />
         <p>
-          The firm handles obstruction cases throughout Ohio, from standard misdemeanors to fifth-degree felonies. If you are charged,{' '}
+          The firm handles obstruction cases throughout Ohio, from standard misdemeanors to fifth-degree felonies. If you are facing obstruction charges,{' '}
           <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. You can also read about the firm&apos;s{' '}
           <Link href="/criminal-defense">criminal defense practice</Link> or the article on{' '}
           <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio">misdemeanor vs. felony charges in Ohio</Link>.

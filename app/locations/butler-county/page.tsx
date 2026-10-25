@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'What practice areas does the firm handle in Butler County?',
     answer:
-      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'The Butler County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Butler County?',
@@ -50,7 +50,7 @@ const faqs = [
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Butler County?',
     answer:
-      'After an OVI arrest in Butler County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to file an appeal at the Butler County area court that has your case. Missing the deadline permanently waives your right to contest the suspension, even if the OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
+      'After an OVI arrest in Butler County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to file an appeal at the Butler County area court that has your case. Missing the deadline permanently waives your right to contest the suspension, even if the underlying OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
   },
   {
     question: 'Which courts handle OVI and criminal cases in Butler County?',
@@ -92,7 +92,7 @@ export default function ButlerCountyLocationsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Butler County criminal defense and OVI"
+        title="Butler County criminal defense and OVI attorney"
         description="Butler County OVI and criminal charges are heard at Hamilton, Middletown or Fairfield Municipal Court, or another area court, depending on where the offense happened."
       />
 

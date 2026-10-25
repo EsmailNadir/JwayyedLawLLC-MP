@@ -52,7 +52,7 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
     },
     {
       question: `Why hire Jwayyed Law LLC for a disorderly conduct charge in ${suburb}?`,
-      answer: `Disorderly conduct looks minor, but a conviction creates a criminal record that follows you. Jwayyed Law LLC defends these charges throughout Franklin County, including ${suburb}. Many first-time cases qualify for diversion or conditional dismissal, which avoid a permanent record. The firm reviews every option before advising on a plea, and appears for you in ${courtName} and Franklin County Municipal Court. Call (614) 285-5482 to talk it through.`,
+      answer: `Disorderly conduct looks minor, but a conviction creates a criminal record that follows you. Jwayyed Law LLC defends disorderly conduct charges throughout Franklin County, including ${suburb}. Many first-time cases qualify for diversion or conditional dismissal, which avoid a permanent record. The firm reviews every option before advising on a plea, and appears for you in ${courtName} and Franklin County Municipal Court. Call (614) 285-5482 to talk it through.`,
     },
   ];
 
@@ -60,8 +60,8 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Disorderly conduct charges in ${suburb}, Ohio`}
-        description={`Disorderly conduct under R.C. 2917.11 is a minor misdemeanor with up to a $150 fine, or an M4 with up to ${MISDEMEANOR_SENTENCING.M4.maxJail} in jail. Charges from ${suburb} are heard in ${courtName}.`}
+        title={`Disorderly conduct defense attorney in ${suburb}, Ohio`}
+        description={`Facing disorderly conduct charges in ${suburb}? Disorderly conduct under R.C. 2917.11 is a minor misdemeanor with up to a $150 fine, or an M4 with up to ${MISDEMEANOR_SENTENCING.M4.maxJail} in jail. Charges from ${suburb} are heard in ${courtName}.`}
       />
 
       <Section
@@ -92,8 +92,8 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
         <ProsecutorNote title={formerProsecutorTitle} />
         <h3>How these charges come up in {suburb}</h3>
         <p>
-          Disorderly conduct is one of the most commonly issued citations in {suburb} and across Franklin County. Many charges come
-          out of a larger incident, such as a bar dispute, a neighborhood complaint or a traffic stop that became contentious, and
+          Disorderly conduct is one of the most commonly issued citations in {suburb} and across Franklin County. Many disorderly conduct
+          charges come out of a larger incident, such as a bar dispute, a neighborhood complaint or a traffic stop that became contentious, and
           are added alongside more serious allegations. The firm handles the related charges too.
         </p>
       </Section>
@@ -177,7 +177,7 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
         <p>
           In {suburb}, a charge that comes out of an argument with an officer, a dispute with a neighbor, or a heated exchange at a
           traffic stop sometimes reflects the officer&apos;s reaction to being challenged rather than conduct that meets the legal
-          threshold. When a charge cannot survive a First Amendment challenge, the firm raises it before trial so the charge can be
+          threshold. When a speech-based disorderly conduct charge cannot survive a First Amendment challenge, the firm raises it before trial so the charge can be
           dismissed without a contested hearing.
         </p>
       </Section>
@@ -201,7 +201,7 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
         </p>
       </Section>
 
-      <Section title="Defenses and diversion" tone="ice">
+      <Section title="Defenses and diversion options" tone="ice">
         <p>
           Disorderly conduct cases in Franklin County often resolve without a conviction. First-time defendants with no record are
           frequently offered diversion: a conditional dismissal that requires community service or a short probationary period.
@@ -216,7 +216,7 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
             { title: 'A lesser outcome', body: 'Whether the charge can be negotiated to an even lesser infraction that avoids a criminal record.' },
           ]}
         />
-        <h3>What the firm does</h3>
+        <h3>What the firm does in {suburb} disorderly conduct cases</h3>
         <PointGrid
           points={[
             { title: 'Diversion and dismissal', body: 'Pursuing conditional dismissal or diversion for first-time defendants.' },
@@ -230,7 +230,7 @@ export default function DisorderlyConductTemplate({ suburb }: Props) {
         <p>
           If you are charged with disorderly conduct in {suburb} or anywhere in Franklin County, call{' '}
           <a href={tel}>{FIRM_NAP.phone}</a> or <Link href="/contact">schedule a consultation online</Link>. Even a minor
-          misdemeanor conviction creates a permanent record, so talk to an attorney before entering any plea.
+          misdemeanor conviction can leave a permanent criminal record unless it is later sealed, so talk to an attorney before entering any plea.
         </p>
       </Section>
 

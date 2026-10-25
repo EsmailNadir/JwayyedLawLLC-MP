@@ -11,7 +11,7 @@ import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/comp
 export const metadata: Metadata = {
   title: 'Criminal Trespass Defense Ohio',
   description:
-    'Charged with criminal trespass under ORC 2911.21? Penalties, the notice rule, defenses and record sealing. Call Jwayyed Law LLC at (614) 285-5482.',
+    'Charged with criminal trespass under ORC 2911.21? Penalties, the notice rule, criminal trespass defense and record sealing. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'criminal trespass lawyer Ohio',
     'trespassing defense attorney',
@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     'unlawful entry defense lawyer',
     'Ohio trespass lawyer',
     'criminal trespass penalties Ohio',
-    'property crime defense attorney'
+    'property crime defense attorney',
+    'criminal trespass defense',
+    'trespass defense attorney',
+    'facing criminal trespass charges',
   ],
   openGraph: {
     title: 'Criminal Trespass Defense Ohio | Jwayyed Law LLC',
@@ -255,7 +258,7 @@ export default function CriminalTrespassPage() {
             },
           ]}
         />
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences beyond criminal penalties</h3>
         <p>
           Employers may view a trespass conviction unfavorably, especially for jobs involving property access, security or trust.
           Landlords may reject a housing application, and licensing in some fields may be affected. A court can also issue a
@@ -299,7 +302,7 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="How a criminal trespass case moves" tone="ice">
+      <Section title="The criminal court process for criminal trespass" tone="ice">
         <Steps
           steps={[
             {
@@ -345,7 +348,7 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="Defenses to criminal trespass" tone="ice">
+      <Section title="Criminal trespass defense strategies" tone="ice">
         <PointGrid
           points={[
             {
@@ -372,7 +375,7 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a trespass case">
+      <Section title="What a trespass defense attorney does on your case">
         <PointGrid
           points={[
             { title: 'Protects your rights', body: 'From citation or arrest, including advice on statements and dealings with police.' },
@@ -408,7 +411,7 @@ export default function CriminalTrespassPage() {
           <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link>.
         </p>
         <p>
-          If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. For
+          If you are facing criminal trespass charges anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. For
           more, see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read about{' '}
           <Link href="/our-law-firm/blog/what-to-expect-first-court-appearance-ohio">what to expect at your first court appearance in Ohio</Link>.
         </p>

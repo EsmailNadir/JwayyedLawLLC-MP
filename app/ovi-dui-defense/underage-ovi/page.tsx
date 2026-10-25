@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Underage OVI Defense in Ohio',
   description:
     'Under 21 and charged with OVI or OVUAC in Ohio? The 0.02% BAC threshold, penalties compared with a full OVI, record sealing and defenses.',
-  keywords: ['underage OVI attorney Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'OVUAC Ohio'],
+  keywords: ['underage OVI attorney Ohio', 'underage DUI defense attorney Ohio', 'minor OVI attorney', 'OVUAC Ohio', 'underage OVI defense', 'OVI defense attorney', 'underage OVI charges'],
   openGraph: {
     title: 'Underage OVI Defense in Ohio | Jwayyed Law LLC',
     description: 'OVUAC and full OVI charges for drivers under 21 in Ohio: thresholds, penalties, long-term effects and defenses.',
@@ -113,11 +113,11 @@ export default function UnderageOVIPage() {
         </p>
         <p>
           <strong>Full OVI</strong> under ORC 4511.19(A) applies if the driver&apos;s BAC reaches 0.08% or higher regardless of age, or
-          if the driver is impaired by alcohol or drugs regardless of BAC. The driver then faces the same mandatory minimums as any
-          adult.
+          if the driver is impaired by alcohol or drugs regardless of BAC. The driver then faces full OVI charges and the same mandatory minimums as
+          any adult.
         </p>
         <p>
-          The firm represents drivers under 21 and their families across Ohio on either charge, as part of its{' '}
+          As an OVI defense attorney, the firm represents drivers under 21 and their families across Ohio on either charge, as part of its{' '}
           <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>. For a first offense at the adult level, read{' '}
           <Link href="/our-law-firm/blog/first-dui-ohio-will-i-go-to-jail">what to expect after a first DUI in Ohio</Link>.
         </p>
@@ -172,7 +172,7 @@ export default function UnderageOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to an underage OVI or OVUAC" tone="ice">
+      <Section title="Underage OVI defense strategies" tone="ice">
         <p>
           Underage defenses overlap with standard OVI defenses, with extra weight on the low threshold. See the{' '}
           <Link href="/ovi-dui-defense">OVI defense overview</Link> for the full process.
@@ -233,7 +233,7 @@ export default function UnderageOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on an underage case" tone="ice">
+      <Section title="How an OVI defense attorney handles an underage case" tone="ice">
         <PointGrid
           points={[
             { title: 'Challenges the stop', body: 'Whether law enforcement had lawful reasonable suspicion to pull the vehicle over.' },

@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Morrow County Court Representation',
   description:
-    'Morrow County Municipal Court and Common Pleas Court in Mt. Gilead: addresses, what each hears, and the OVI, criminal, injury and business cases the firm handles.',
+    'Morrow County Municipal Court and Common Pleas Court in Mt. Gilead: addresses, what each hears, and the OVI defense, misdemeanor criminal defense, personal injury and business cases the firm handles.',
   keywords: [
     'Morrow County court attorney',
     'OVI lawyer Morrow County Ohio',
@@ -152,7 +152,7 @@ export default function MorrowCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges in Morrow County" tone="ice">
+      <Section title="OVI defense in Morrow County" tone="ice">
         <p>
           Under <Link href="/ovi-dui-defense">ORC 4511.19</Link>, it is illegal to drive with a BAC of 0.08 or higher, or while impaired
           by alcohol, drugs or both.
@@ -173,11 +173,11 @@ export default function MorrowCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor charges in Morrow County">
+      <Section title="Misdemeanor criminal defense in Morrow County">
         <p>
           Morrow County Municipal Court at 60 E. High St, Mt. Gilead hears everything from disorderly conduct and petty theft to domestic
           violence and drug-related offenses. Under ORC 2935.26, minor misdemeanors may lead to a citation instead of an arrest. First-
-          and second-degree misdemeanors carry up to 180 days in jail and fines up to $1,000, and create a permanent record.
+          and second-degree misdemeanors carry up to 180 days in jail and fines up to $1,000, and create a permanent criminal record.
         </p>
         <p>
           The firm looks for constitutional violations, weak evidence and room to negotiate reduced charges or dismissal. It also files
@@ -191,7 +191,7 @@ export default function MorrowCountyCourtsPage() {
           contract disputes, landlord-tenant matters and other civil litigation.
         </p>
         <p>
-          For injuries from vehicle accidents on U.S. Route 42 or State Route 61, premises liability or other claims, Ohio&rsquo;s two-year
+          For personal injury claims from vehicle accidents on U.S. Route 42 or State Route 61, premises liability or other injuries, Ohio&rsquo;s two-year
           statute of limitations under ORC 2305.10 applies.
         </p>
       </Section>

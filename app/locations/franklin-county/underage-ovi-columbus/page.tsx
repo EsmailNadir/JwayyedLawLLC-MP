@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Columbus Underage OVI Defense Attorney',
   description:
     'Drivers under 21 can be charged at a BAC of 0.02% under R.C. 4511.19(B). Columbus cases are heard at Franklin County Municipal Court.',
-  keywords: ['Columbus underage OVI lawyer', 'under 21 DUI Columbus Ohio', 'underage drunk driving Columbus', 'minor OVI Columbus attorney', 'zero tolerance OVI Ohio Columbus'],
+  keywords: ['Columbus underage OVI lawyer', 'under 21 DUI Columbus Ohio', 'underage drunk driving Columbus', 'minor OVI Columbus attorney', 'zero tolerance OVI Ohio Columbus', 'under 21 OVI charge', 'OVI defense attorney Columbus'],
   openGraph: {
     title: 'Columbus Underage OVI Defense Attorney | Jwayyed Law LLC',
     description: 'The 0.02% limit, OVUAC penalties, the ALS appeal and defenses for drivers under 21 in Columbus.',
@@ -146,7 +146,7 @@ export default function ColumbusUnderageOVIPage() {
         />
       </Section>
 
-      <Section title="Defenses to an underage OVI">
+      <Section title="How an OVI defense attorney defends an underage case">
         <PointGrid
           points={[
             {
@@ -177,7 +177,7 @@ export default function ColumbusUnderageOVIPage() {
         </p>
       </Section>
 
-      <Section title="Sealing an underage OVI">
+      <Section title="Sealing an underage OVI under Ohio expungement law">
         <p>
           An OVUAC conviction under R.C. 4511.19(B) is eligible for expungement under R.C. 2953.32 after the waiting period that follows
           final discharge. HB 96, effective September 30, 2025, shortened waiting periods for many low-level convictions. Once sealed, the

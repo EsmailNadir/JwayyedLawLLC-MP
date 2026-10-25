@@ -11,8 +11,8 @@ import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/comp
 export const metadata: Metadata = {
   title: 'High-Tier OVI Defense Lawyer in Ohio',
   description:
-    'Charged with a high-tier OVI (BAC 0.17% or higher) in Ohio? Doubled mandatory jail minimums, penalties by offense and the defenses that apply.',
-  keywords: ['high-tier OVI lawyer Ohio', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney'],
+    'Facing high-tier OVI charges (BAC 0.17% or higher) in Ohio? A high-tier OVI defense attorney on doubled jail minimums, the ALS hearing and defenses.',
+  keywords: ['high-tier OVI lawyer Ohio', 'high BAC DUI defense attorney Ohio', 'high-tier OVI attorney', 'high-tier OVI defense attorney', 'OVI defense lawyer', 'rising BAC defense', 'ALS hearing', 'Ohio OVI laws'],
   openGraph: {
     title: 'High-Tier OVI Defense Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Penalties, the 30-day ALS appeal and defenses for a high-tier OVI (BAC 0.17% or higher) in Ohio.',
@@ -110,17 +110,17 @@ export default function HighTierOVIPage() {
       <OVIReviews />
 
       <Section
-        title="What a high-tier OVI charge means"
+        title="Understanding high-tier OVI charges"
         intro={
           <p>
-            High-tier OVI under Ohio Revised Code 4511.19 applies when your BAC is 0.17% or higher at the time of testing. That is
+            High-tier OVI under Ohio OVI laws (Ohio Revised Code 4511.19) applies when your BAC is 0.17% or higher at the time of testing. That is
             more than double the legal limit of 0.08%.
           </p>
         }
       >
         <p>
           High tier carries enhanced penalties, including mandatory minimum jail terms that are double the standard OVI penalties.
-          This applies even to a first offense. The defenses that matter most, including the rising BAC defense, are covered below.
+          This applies even to a first offense. The defenses that matter most in high-tier OVI cases, including the rising BAC defense, are covered below.
         </p>
         <p>
           The case runs on two tracks: criminal court and the administrative license suspension (ALS) hearing. They are separate and
@@ -205,7 +205,7 @@ export default function HighTierOVIPage() {
             { label: 'Assessment and treatment', value: 'Mandatory alcohol assessment and treatment program.' },
           ]}
         />
-        <h3>Consequences beyond the sentence</h3>
+        <h3>Consequences beyond the criminal penalties</h3>
         <p>
           A high-tier conviction often raises insurance rates 4-5x for 7-10 years. It can create barriers to employment, restrict
           professional licenses, and leaves a permanent criminal record. High-tier status can also enhance the penalties on any future
@@ -241,11 +241,11 @@ export default function HighTierOVIPage() {
       </Section>
 
       <Section title="What happens at each stage of a high-tier OVI case">
-        <h3>The license suspension (ALS)</h3>
+        <h3>The license suspension and ALS hearing</h3>
         <p>
           Within 30 days of arrest, you must file an appeal of the ALS or lose the right to challenge it. For high tier, the ALS
-          suspension is longer than for a standard OVI. An attorney can file the appeal, request a stay of the suspension and
-          represent you at the hearing. Winning the ALS appeal can restore your license and strengthen the criminal defense.
+          suspension is longer than for a standard OVI. An OVI defense lawyer can file the appeal, request a stay of the suspension and
+          represent you at the ALS hearing. Winning the ALS appeal can restore your license and strengthen the criminal defense.
         </p>
         <h3>The criminal case</h3>
         <p>
@@ -306,11 +306,11 @@ export default function HighTierOVIPage() {
         />
       </Section>
 
-      <Section title="Defenses to a high-tier OVI">
+      <Section title="High-tier OVI defense strategies">
         <PointGrid
           points={[
             {
-              title: 'Rising BAC',
+              title: 'Rising BAC defense',
               body: 'Your BAC may have been under 0.08% while driving and risen to 0.17% or higher by the time of the test. This needs expert testimony and analysis of timing and consumption, and it can reduce a high-tier charge to a standard OVI or lead to dismissal.',
             },
             {
@@ -329,7 +329,7 @@ export default function HighTierOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a high-tier OVI" tone="ice">
+      <Section title="How a high-tier OVI defense attorney handles your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the ALS hearing.' },

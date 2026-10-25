@@ -77,7 +77,7 @@ export default function ColumbusMarijuanaPossessionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Marijuana possession defense in Columbus"
+        title="Columbus marijuana possession defense attorney"
         description="Adults 21 and over may possess up to 2.5 ounces in Ohio. Above that, or under 21, possession is still charged under R.C. 2925.11."
       />
 
@@ -114,7 +114,7 @@ export default function ColumbusMarijuanaPossessionPage() {
         </p>
       </Section>
 
-      <Section title="What Ohio's adult-use law covers" tone="ice">
+      <Section title="What Ohio's adult-use marijuana law covers" tone="ice">
         <p>
           Issue 2 and H.B. 86 (effective December 7, 2023) set up adult recreational use in Ohio. Adults 21 and over may possess up to 2.5
           ounces of flower or up to 15 grams of extract, buy from a licensed dispensary, and grow up to six plants at their primary
@@ -153,7 +153,7 @@ export default function ColumbusMarijuanaPossessionPage() {
         </p>
       </Section>
 
-      <Section title="Defenses and alternatives" tone="ice">
+      <Section title="Defenses and alternatives to a marijuana possession charge" tone="ice">
         <PointGrid
           points={[
             {

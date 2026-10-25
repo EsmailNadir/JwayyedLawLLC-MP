@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Clinton County Criminal Defense Attorney',
   description:
     'Misdemeanor defense at Wilmington Municipal Court for Clinton County: assault, theft, drug and domestic violence charges. Call (614) 285-5482.',
-  keywords: ['criminal defense Wilmington Ohio', 'misdemeanor attorney Clinton County', 'Wilmington Municipal Court criminal lawyer', 'Clinton County misdemeanor defense'],
+  keywords: ['criminal defense Wilmington Ohio', 'misdemeanor attorney Clinton County', 'Wilmington Municipal Court criminal lawyer', 'Clinton County misdemeanor defense', 'Clinton County criminal defense attorney', 'Wilmington Municipal Court criminal defense'],
   openGraph: {
     title: 'Clinton County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Wilmington Municipal Court for Wilmington, Sabina, Blanchester, Clarksville and Port William.',
@@ -98,7 +98,7 @@ export default function ClintonCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal misdemeanor defense in Clinton County"
+        title="Clinton County criminal misdemeanor defense attorney"
         description="Every misdemeanor in Clinton County is heard at Wilmington Municipal Court, 69 N. South St. A conviction there creates a permanent record that can follow you to jobs and housing."
       />
 
@@ -144,7 +144,7 @@ export default function ClintonCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties under Ohio law">
+      <Section title="Wilmington Municipal Court misdemeanor penalties">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -165,7 +165,7 @@ export default function ClintonCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="How the firm defends a Clinton County misdemeanor" tone="ice">
+      <Section title="Wilmington Municipal Court criminal defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'The arrest and search', body: 'Whether they were constitutional under the Fourth Amendment and ORC 2935.26.' },
@@ -177,7 +177,7 @@ export default function ClintonCriminalMisdemeanorDefensePage() {
           ]}
         />
         <p>
-          If you are facing a misdemeanor in Clinton County, call (614) 285-5482. Retaining counsel before arraignment is the most
+          If you are facing misdemeanor charges in Clinton County, call (614) 285-5482. Retaining counsel before arraignment is the most
           useful step you can take.
         </p>
       </Section>

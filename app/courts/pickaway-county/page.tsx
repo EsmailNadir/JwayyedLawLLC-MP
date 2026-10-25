@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Pickaway County Court Representation',
   description:
-    'Circleville Municipal Court and Pickaway County Common Pleas Court: addresses, what each hears, and the OVI, criminal, injury and business cases the firm handles.',
+    'Circleville Municipal Court and Pickaway County Common Pleas Court: addresses, what each hears, and the OVI defense, criminal defense, personal injury and business law cases the firm handles.',
   keywords: [
     'Pickaway County court attorney',
     'OVI lawyer Pickaway County Ohio',
@@ -152,7 +152,7 @@ export default function PickawayCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges on U.S. 23 and across the county" tone="ice">
+      <Section title="OVI defense on U.S. 23 and across the county" tone="ice">
         <p>
           Under <Link href="/ovi-dui-defense">ORC 4511.19</Link>, Ohio prohibits driving with a BAC of 0.08 or higher, or while impaired
           by alcohol, controlled substances or other drugs. U.S. Route 23 runs north-south through the county from Columbus to
@@ -174,12 +174,12 @@ export default function PickawayCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor charges in Pickaway County">
+      <Section title="Misdemeanor criminal defense in Pickaway County">
         <p>
           Circleville Municipal Court at 141 S. Court St hears charges from disorderly conduct and petty theft to domestic violence and
           drug offenses. The Pumpkin Show, one of the largest free street festivals in the United States, can add misdemeanor charges
           each October. Under Ohio law, first-degree misdemeanors (ORC 2929.24) carry up to 180 days in jail and $1,000 in fines, and a
-          conviction creates a permanent record that follows you into jobs, housing and licensing.
+          conviction creates a permanent criminal record that follows you into jobs, housing and licensing.
         </p>
         <p>
           The firm investigates each case, challenges the evidence, and pursues dismissal, a reduction or diversion. Eligible records
@@ -189,7 +189,7 @@ export default function PickawayCountyCourtsPage() {
 
       <Section title="Business and injury matters" tone="ice">
         <p>
-          Injury claims from accidents on U.S. 23 or county roads must be filed within Ohio&rsquo;s two-year statute of limitations under
+          Personal injury claims from accidents on U.S. 23 or county roads must be filed within Ohio&rsquo;s two-year statute of limitations under
           ORC 2305.10. For business owners on the U.S. 23 growth corridor, the firm handles LLC formation under ORC Chapter 1706,
           commercial contract drafting and landlord-tenant disputes.
         </p>

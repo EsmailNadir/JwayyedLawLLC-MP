@@ -11,8 +11,8 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'First OVI Defense Attorney in Ohio',
   description:
-    'Charged with a first OVI in Ohio? Penalties, the 30-day license suspension appeal, limited driving privileges and the defenses that apply, from Jwayyed Law LLC.',
-  keywords: ['first OVI attorney Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney'],
+    'Facing first OVI charges in Ohio? A first OVI defense attorney on penalties, the 30-day ALS hearing appeal, limited driving privileges and the defenses that apply.',
+  keywords: ['first OVI attorney Ohio', 'first DUI defense attorney Ohio', 'first offense OVI attorney', 'OVI defense attorney', 'first OVI charges', 'Ohio OVI laws', 'ALS hearing', 'rising BAC defense'],
   openGraph: {
     title: 'First OVI Defense Attorney in Ohio | Jwayyed Law LLC',
     description: 'Penalties, the 30-day ALS appeal, driving privileges and defenses for a first OVI charge in Ohio.',
@@ -44,7 +44,7 @@ const faqs = [
       "Administrative license suspension (ALS) comes from Ohio's implied consent law, ORC 4511.191. It is separate from the criminal penalties and starts at arrest if you refuse testing or fail a chemical test. You have 30 days to appeal it and ask for a stay of the suspension. An attorney can file the appeal and challenge the suspension.",
   },
   {
-    question: 'What defenses are available to a first OVI charge?',
+    question: 'What defenses are available to first OVI charges?',
     answer:
       'Common defenses include an illegal traffic stop, inaccurate breathalyzer results, field sobriety tests that were not given correctly, a rising BAC, medical conditions that affected testing, and evidence too thin to prove the charge. An attorney can challenge the evidence, negotiate with the prosecutor, and take the case to trial when that is the better course.',
   },
@@ -56,7 +56,7 @@ const faqs = [
   {
     question: 'What happens at a first OVI arraignment in Ohio?',
     answer:
-      'Arraignment is usually your first court appearance after an OVI arrest. The judge reads the charges, explains your rights and asks for your plea. In nearly all first OVI cases your attorney enters a not-guilty plea, which leaves time to review discovery and build the defense. The court may also set bond conditions and future dates. If the ALS appeal has not been filed yet, your attorney can file it right away: the 30-day deadline runs from the date of your arrest, not your arraignment.',
+      'Arraignment is usually your first court appearance after an OVI arrest. The judge reads the OVI charges, explains your rights and asks for your plea. In nearly all first OVI cases your attorney enters a not-guilty plea, which leaves time to review discovery and build the defense. The court may also set bond conditions and future dates. If the ALS appeal has not been filed yet, your attorney can file it right away: the 30-day deadline runs from the date of your arrest, not your arraignment.',
   },
   {
     question: 'Can a first OVI be reduced to reckless operation in Ohio?',
@@ -108,10 +108,10 @@ export default function FirstOVIPage() {
       />
 
       <Section
-        title="What a first OVI charge means"
+        title="Understanding first OVI charges"
         intro={
           <p>
-            A first OVI is a first-degree misdemeanor under Ohio Revised Code 4511.19. The same penalties apply whether the charge
+            A first OVI is a first-degree misdemeanor under Ohio OVI laws, Ohio Revised Code 4511.19. The same penalties apply whether the charge
             involves alcohol, drugs, or both.
           </p>
         }
@@ -221,7 +221,7 @@ export default function FirstOVIPage() {
         <h3>Consequences beyond the sentence</h3>
         <p>
           A first OVI conviction often raises auto insurance rates 2 to 3 times for 3 to 5 years. It can limit driving-related jobs,
-          affect professional licenses, carry immigration consequences for non-citizens, and stays on a criminal record that
+          affect professional licenses, carry immigration consequences for non-citizens, and becomes a permanent criminal record that
           employers can see.
         </p>
       </Section>
@@ -256,9 +256,9 @@ export default function FirstOVIPage() {
 
       <Section title="What happens at each stage of a first OVI case">
         <p>A first OVI runs on two tracks that need attention right away: the license suspension and the criminal case.</p>
-        <h3>The license suspension (ALS)</h3>
+        <h3>The OVI suspension and the ALS hearing</h3>
         <p>
-          Within 30 days of the arrest, the ALS appeal must be filed or the right to challenge it is lost. The hearing asks whether the
+          Within 30 days of the arrest, the ALS appeal must be filed or the right to challenge it is lost. The ALS hearing asks whether the
           officer had reasonable grounds to believe you were impaired, whether the arrest was proper, and whether testing was done
           correctly. Winning the appeal can restore your license and can strengthen the criminal defense.
         </p>
@@ -267,7 +267,7 @@ export default function FirstOVIPage() {
           steps={[
             {
               title: 'Arraignment',
-              body: 'Usually your first court appearance. The judge reads the charges, explains your rights and asks for your plea. In nearly all first OVI cases your attorney enters a not-guilty plea, which leaves time to review the evidence. The court may also set bond conditions and future dates.',
+              body: 'Usually your first court appearance. The judge reads the OVI charges, explains your rights and asks for your plea. In nearly all first OVI cases your attorney enters a not-guilty plea, which leaves time to review the evidence. The court may also set bond conditions and future dates.',
             },
             {
               title: 'Discovery',
@@ -290,7 +290,7 @@ export default function FirstOVIPage() {
       </Section>
 
       <Section
-        title="How a first OVI case can end"
+        title="How first OVI charges can end"
         tone="ice"
         intro={
           <p>
@@ -325,7 +325,7 @@ export default function FirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to a first OVI">
+      <Section title="First OVI defense strategies">
         <p>Which defense applies depends on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -342,17 +342,17 @@ export default function FirstOVIPage() {
               body: 'These tests are subjective. NHTSA sets specific protocols for them, and results can be challenged for improper administration, medical conditions, the conditions at the roadside, or a lack of officer training.',
             },
             {
-              title: 'Rising BAC',
+              title: 'Rising BAC defense',
               body: 'Your BAC may have been under 0.08% while driving and risen over the limit by the time of the test. This defense needs expert testimony and can lead to a reduced charge or dismissal.',
             },
           ]}
         />
       </Section>
 
-      <Section title="What the firm does on a first OVI" tone="ice">
+      <Section title="How a first OVI defense attorney handles your case" tone="ice">
         <PointGrid
           points={[
-            { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the hearing.' },
+            { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the ALS hearing.' },
             { title: 'Investigates the stop', body: 'Police reports, dashcam and bodycam footage, breathalyzer maintenance records and every other piece of evidence.' },
             { title: 'Challenges the evidence', body: 'Pretrial motions on the breath test, the field sobriety tests, chemical testing and anything obtained improperly.' },
             { title: 'Brings in experts', body: 'Toxicology, field sobriety and medical experts when the evidence calls for them.' },

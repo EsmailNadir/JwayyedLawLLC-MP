@@ -11,8 +11,8 @@ import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/comp
 export const metadata: Metadata = {
   title: 'Second OVI Defense in Ohio',
   description:
-    'Charged with a second OVI in Ohio? Mandatory jail, the 1 to 7 year suspension, ignition interlock rules and the defenses that apply.',
-  keywords: ['second OVI attorney Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney'],
+    'Facing second OVI charges in Ohio? A second OVI defense attorney on mandatory jail, the 1 to 7 year suspension, the ALS hearing, interlock rules and defenses.',
+  keywords: ['second OVI attorney Ohio', 'second DUI defense attorney Ohio', 'repeat OVI attorney', 'second OVI defense attorney', 'second OVI charges', 'ALS hearing', 'Ohio OVI laws'],
   openGraph: {
     title: 'Second OVI Defense in Ohio | Jwayyed Law LLC',
     description: 'Penalties, the 30-day ALS appeal, driving privileges and defenses for a second OVI charge in Ohio.',
@@ -110,10 +110,10 @@ export default function SecondOVIPage() {
       <OVIReviews />
 
       <Section
-        title="What a second OVI charge means"
+        title="Understanding second OVI charges"
         intro={
           <p>
-            A second OVI is operating a vehicle under the influence of alcohol, drugs, or both under Ohio Revised Code 4511.19, with
+            A second OVI is operating a vehicle under the influence of alcohol, drugs, or both under Ohio OVI laws (Ohio Revised Code 4511.19), with
             a prior OVI inside the lookback period. The penalties are much heavier than for a first offense.
           </p>
         }
@@ -130,7 +130,7 @@ export default function SecondOVIPage() {
         </p>
         <p>
           Two cases run at once: the criminal case in court and the administrative license suspension (ALS) through the BMV. You have
-          only 30 days from the date of arrest to request an ALS hearing. An attorney can handle both, seek a stay of the suspension
+          only 30 days from the date of arrest to request an ALS hearing. An OVI defense attorney can handle both the criminal defense and the ALS, seek a stay of the suspension
           where possible, and work on the result for your license and your record. Read{' '}
           <Link href="/our-law-firm/blog/what-happens-after-ovi-arrest-ohio">what happens after an OVI arrest in Ohio</Link>, part of
           the firm&rsquo;s <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>, or call (614) 285-5482 to{' '}
@@ -266,7 +266,7 @@ export default function SecondOVIPage() {
 
       <Section title="What happens at each stage of a second OVI case">
         <p>Second OVI cases move on two fronts: the BMV&apos;s administrative license suspension and the criminal case in municipal or county court.</p>
-        <h3>The license suspension (ALS)</h3>
+        <h3>The ALS license suspension process</h3>
         <p>
           At arrest, the officer usually serves an immediate suspension based on a test over the limit or a refusal. You have 30 days
           to request an ALS hearing. At the hearing, your attorney can argue that the stop, arrest or testing was improper and ask for
@@ -327,7 +327,7 @@ export default function SecondOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defenses to a second OVI">
+      <Section title="Second OVI defense strategies">
         <p>Which defense applies depends on your prior record and on what happened at the stop and the test.</p>
         <PointGrid
           points={[
@@ -351,7 +351,7 @@ export default function SecondOVIPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a second OVI" tone="ice">
+      <Section title="How a second OVI defense attorney handles your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Files the ALS appeal', body: 'Before the 30-day deadline, with a request to stay the suspension when appropriate, and represents you at the ALS hearing.' },

@@ -146,7 +146,7 @@ export default function EmploymentDisputesPage() {
           points={[
             {
               title: 'Wrongful termination (public policy)',
-              body: 'Under Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), an employer cannot fire you for exercising a legal right, complying with a legal duty, refusing to break the law or reporting illegal activity. Examples: filing a workers’ compensation claim (ORC 4123.90), jury duty, or reporting wage theft or safety violations. The claim needs a clear public policy in an Ohio statute, constitutional provision or regulation.',
+              body: 'Under Greeley v. Miami Valley Maintenance Contractors, Inc. (1990), an employer cannot fire you for exercising a legal right, complying with a legal duty, refusing to break the law or reporting illegal activity. Examples: filing a workers’ compensation claim (ORC 4123.90), jury duty, or reporting wage theft or safety violations. A public policy wrongful termination claim needs a clear public policy in an Ohio statute, constitutional provision or regulation.',
             },
             {
               title: 'Discrimination',

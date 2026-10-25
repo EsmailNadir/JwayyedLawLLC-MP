@@ -85,12 +85,12 @@ export default function PersonalInjuryMorrowCountyPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <PageHero
-        title="Personal injury claims in Morrow County"
+        title="Morrow County personal injury lawyer"
         description="Injury lawsuits from Mt. Gilead, Cardington, Marengo and Edison are filed at the Morrow County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
 
       <Section
-        title="Injuries in Morrow County"
+        title="Rural injury claims in Morrow County"
         intro={
           <p>
             Morrow County is rural, north of Columbus, with agricultural land, rural state routes and small communities. US 42 and SR
@@ -133,14 +133,14 @@ export default function PersonalInjuryMorrowCountyPage() {
         />
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Morrow County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Rural road crashes', body: 'US 42, SR 95 and county roads, including farm machinery and livestock.' },
             { title: 'Premises liability', body: 'Injuries at local businesses in Mt. Gilead and Cardington.' },
             { title: 'Dog bites', body: 'Strict liability claims under ORC 955.28.' },
             { title: 'Workplace accidents', body: 'Where a third party bears liability.' },
-            { title: 'Wrongful death', body: 'For families after a fatal injury.' },
+            { title: 'Wrongful death claims', body: 'For families after a fatal injury.' },
             { title: 'UM/UIM claims', body: 'Against your own insurer when the at-fault driver has no or too little coverage.' },
           ]}
         />

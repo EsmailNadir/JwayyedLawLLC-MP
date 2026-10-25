@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // Root layout applies the "%s | Jwayyed Law LLC" template, so no suffix here.
   title: "Johnstown Mayor's Court Lawyer, Licking County",
   description:
-    "Cited into Johnstown Mayor's Court in Licking County, Ohio? OVI, traffic and ordinance defense. Court sits the 1st and 3rd Wednesday. Call (614) 285-5482.",
+    "Cited into Johnstown Mayor's Court in Licking County, Ohio? OVI, traffic and misdemeanor ordinance defense. Court sits the 1st and 3rd Wednesday. Call (614) 285-5482.",
   keywords: [
     "Johnstown Mayor's Court attorney",
     "Johnstown Mayor's Court lawyer",
@@ -233,7 +233,7 @@ export default function JohnstownMayorsCourtPage() {
         />
       </Section>
 
-      <Section title="OVI in Johnstown and the ten-year look-back">
+      <Section title="OVI defense in Johnstown and the ten-year look-back">
         <p>
           An OVI charge can be heard here only in a clean first-offense posture. <strong>R.C. 1905.01</strong> permits the mayor&rsquo;s
           court to hear a charge under <strong>R.C. 4511.19</strong> only where the defendant has not, within ten years of the date of

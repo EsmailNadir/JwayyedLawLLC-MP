@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Circleville Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Circleville Municipal Court, 111 S Paint St, which hears cases from across Pickaway County, Ohio.',
-  keywords: ['Circleville Municipal Court attorney', 'Pickaway County OVI lawyer', 'Circleville misdemeanor defense', 'Circleville Ohio criminal attorney', 'Pickaway County DUI attorney'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Circleville Municipal Court, 111 S Paint St, which hears cases from across Pickaway County, Ohio.',
+  keywords: ['Circleville Municipal Court attorney', 'Pickaway County OVI lawyer', 'Circleville misdemeanor defense', 'Circleville Ohio criminal attorney', 'Pickaway County DUI attorney', 'Circleville DUI attorney', 'Circleville criminal defense attorney'],
   openGraph: {
     title: 'Circleville Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Circleville Municipal Court in Pickaway County.',
@@ -107,7 +107,7 @@ export default function CirclevilleMunicipalCourtPage() {
         </Callout>
       </Section>
 
-      <Section title="OVI cases in Circleville" tone="ice">
+      <Section title="OVI defense at Circleville Municipal Court" tone="ice">
         <p>
           On US 23 in Pickaway County, OVI enforcement comes from both the Ohio State Highway Patrol and the Circleville Police
           Department. Stops on SR 56 also come to this court.
@@ -127,7 +127,7 @@ export default function CirclevilleMunicipalCourtPage() {
         />
         <Callout title="Appeal the license suspension within 30 days">
           The Administrative License Suspension (ALS) under ORC 4511.191 can be appealed only within 30 days from the date of arrest.
-          Contact the office as soon as you can.
+          If you face an OVI charge, contact the office as soon as you can.
         </Callout>
         <PointGrid
           points={[
@@ -139,13 +139,13 @@ export default function CirclevilleMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Pickaway County">
-        <p>The court also hears misdemeanor assault, domestic violence, theft, disorderly conduct and drug possession charges.</p>
+      <Section title="Misdemeanor defense in Pickaway County">
+        <p>The court also hears common misdemeanor criminal charges such as assault, domestic violence, theft, disorderly conduct and drug possession charges.</p>
         <FactTable
           title="Penalties and sealing"
           rows={[
             { label: 'M1 maximum', value: 'Up to 180 days in jail and a $1,000 fine (ORC 2929.21)' },
-            { label: 'Record sealing', value: 'Many misdemeanor convictions can be sealed after one year under ORC 2953.32' },
+            { label: 'Sealing the record', value: 'Many misdemeanor convictions can be sealed after one year under ORC 2953.32' },
           ]}
         />
         <p>

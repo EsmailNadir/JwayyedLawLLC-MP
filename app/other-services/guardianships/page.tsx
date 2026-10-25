@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     'guardianship lawyer Columbus OH',
     'guardianship attorney Ohio',
+    'guardianship hearing Ohio',
+    'Ohio guardianship law',
     'adult guardianship Ohio',
     'minor guardianship Ohio',
     'Franklin County probate court guardianship',
@@ -141,7 +143,7 @@ export default function GuardianshipsPage() {
         />
       </Section>
 
-      <Section title="How the probate court process works">
+      <Section title="The probate court process and guardianship hearing">
         <Steps
           steps={[
             {

@@ -11,8 +11,8 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'Third OVI Defense Attorney Columbus Ohio',
   description:
-    'A third OVI within 10 years in Columbus carries 30 days in jail, criminal forfeiture of the vehicle and a 2 to 12 year suspension.',
-  keywords: ['third OVI Columbus Ohio', 'third offense DUI Columbus', 'Columbus 3rd OVI lawyer', '3rd OVI defense Columbus', 'third OVI penalty Ohio'],
+    'A third OVI within 10 years in Columbus carries 30 days in jail, criminal forfeiture of the vehicle and a 2 to 12 year license suspension.',
+  keywords: ['third OVI Columbus Ohio', 'third offense DUI Columbus', 'Columbus 3rd OVI lawyer', '3rd OVI defense Columbus', 'third OVI penalty Ohio', 'third OVI defense attorney Columbus', 'Columbus OVI mandatory penalties', 'OVI interlock requirements'],
   openGraph: {
     title: 'Third OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
     description: 'Penalties, vehicle forfeiture, the monitoring alternative and prior conviction challenges for a third OVI in Columbus.',
@@ -110,7 +110,7 @@ export default function ColumbusThirdOVIPage() {
         </p>
       </Section>
 
-      <Section title="Third OVI penalties" tone="ice">
+      <Section title="Columbus third OVI mandatory penalties" tone="ice">
         <FactTable
           title="Low-tier third OVI (BAC 0.08% to 0.169%)"
           rows={[
@@ -144,7 +144,7 @@ export default function ColumbusThirdOVIPage() {
         </p>
       </Section>
 
-      <Section title="Defending a third OVI" tone="ice">
+      <Section title="Third OVI defense strategies in Columbus" tone="ice">
         <PointGrid
           points={[
             {
@@ -159,7 +159,7 @@ export default function ColumbusThirdOVIPage() {
         <p>None of these standards relax because you have prior convictions.</p>
       </Section>
 
-      <Section title="The license after a third OVI">
+      <Section title="License suspension and interlock requirements after a third OVI">
         <FactTable
           title="Administrative License Suspension (R.C. 4511.191)"
           rows={[
@@ -181,7 +181,7 @@ export default function ColumbusThirdOVIPage() {
           Forfeiture takes a major asset and may leave you without a way to work even after limited privileges return.
         </p>
         <p>
-          Third OVI convictions are not eligible for expungement under R.C. 2953.32. The conviction stays on your record and counts toward the
+          Third OVI convictions are not eligible for expungement under R.C. 2953.32. The conviction stays on your criminal record and counts toward the
           lookback: a fourth OVI within 10 years becomes a felony.
         </p>
         <p>

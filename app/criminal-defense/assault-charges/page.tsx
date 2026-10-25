@@ -11,7 +11,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'Assault Defense Attorney Ohio',
   description:
-    'Charged with assault in Ohio? Penalties under ORC 2903.13, how the case moves through court, and the defenses that apply. Call (614) 285-5482.',
+    'Facing assault charges in Ohio? Penalties under ORC 2903.13, the criminal court process, and the defenses to assault charges that apply. Call (614) 285-5482.',
   keywords: [
     'assault charges lawyer Ohio',
     'assault defense attorney Ohio',
@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     'simple assault attorney',
     'misdemeanor assault lawyer',
     'Ohio assault attorney',
-    'Ohio assault lawyer'
+    'Ohio assault lawyer',
+    'assault and battery charges Ohio',
+    'facing assault charges',
+    'defenses to assault charges',
   ],
   openGraph: {
     title: 'Assault Defense Attorney Ohio | Jwayyed Law LLC',
@@ -109,7 +112,7 @@ export default function AssaultChargesPage() {
         intro={
           <p>
             Under Ohio law, assault means knowingly causing physical harm to another person, or causing them to believe they will
-            suffer physical harm. Ohio charges what other states call battery as assault.
+            suffer physical harm. What other states file as assault and battery charges, Ohio charges as assault.
           </p>
         }
       >
@@ -275,7 +278,7 @@ export default function AssaultChargesPage() {
         />
       </Section>
 
-      <Section title="How an assault case moves through court">
+      <Section title="The criminal court process for assault charges">
         <Steps
           steps={[
             {
@@ -342,7 +345,7 @@ export default function AssaultChargesPage() {
         />
       </Section>
 
-      <Section title="Defenses to an assault charge">
+      <Section title="Defenses to assault charges">
         <p>Which defense applies depends on what happened and what the evidence shows.</p>
         <PointGrid
           points={[
@@ -386,7 +389,7 @@ export default function AssaultChargesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on an assault case" tone="ice">
+      <Section title="What an assault defense attorney does on your case" tone="ice">
         <PointGrid
           points={[
             {
@@ -430,7 +433,7 @@ export default function AssaultChargesPage() {
 
       <Section title="Related criminal defense pages">
         <p>
-          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. For more,
+          If you are facing assault charges anywhere in Ohio, call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. For more,
           see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}
           <Link href="/our-law-firm/blog/charged-with-assault-what-happens-next">what happens after being charged with assault in Ohio</Link>.
         </p>

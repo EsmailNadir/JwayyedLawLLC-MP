@@ -85,7 +85,7 @@ export default function ColumbusAssaultPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Assault defense in Columbus"
+        title="Columbus assault defense attorney"
         description="Assault is a first-degree misdemeanor in Ohio, with up to 180 days in jail. Against a police officer or other protected person it becomes a felony."
       />
 
@@ -190,12 +190,12 @@ export default function ColumbusAssaultPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a Columbus assault charge">
+      <Section title="What the firm does on Columbus assault charges">
         <PointGrid
           points={[
             { title: 'Evidence review', body: 'Body-cam footage, surveillance video, police reports and medical records before any hearing.' },
             { title: 'Self-defense investigation', body: 'A full look at who started the confrontation.' },
-            { title: 'Felony escalation', body: 'Contesting protected-victim status when the facts do not support a felony.' },
+            { title: 'Felony escalation', body: 'Contesting protected-victim status when the facts do not support felony charges.' },
             { title: 'Mental state', body: 'Whether the prosecution can prove knowing conduct as R.C. 2903.13 requires.' },
             { title: 'Charge reduction', body: 'Negotiating a reduction to disorderly conduct or another lesser offense when the facts support it.' },
             { title: 'Diversion', body: 'First-offender diversion, which can end in dismissal without a conviction, where available.' },

@@ -11,7 +11,7 @@ import { FCMC } from '@/data/franklin-county-reference';
 export const metadata: Metadata = {
   title: 'First OVI Defense Attorney Columbus Ohio',
   description:
-    'A first OVI in Columbus goes to Franklin County Municipal Court: 3 days jail or DIP, a $565 to $1,075 fine and a 30-day window to appeal the ALS.',
+    'First Columbus OVI defense at Franklin County Municipal Court: mandatory penalties of 3 days jail or DIP, a $565 to $1,075 fine and a 30-day window to appeal the ALS.',
   keywords: [
     'first OVI Columbus Ohio',
     'first offense DUI Columbus',
@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     'first OVI defense Columbus',
     'first OVI penalty Ohio 2025',
     'Franklin County first OVI attorney',
+    'first-offense OVI defense',
+    'Columbus OVI mandatory penalties',
+    'first DUI defense Columbus',
+    'OVI defense attorney Columbus',
   ],
   openGraph: {
     title: 'First OVI Defense Attorney Columbus Ohio | Jwayyed Law LLC',
@@ -123,7 +127,7 @@ export default function ColumbusFirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="First OVI penalties under HB 37" tone="ice">
+      <Section title="Columbus first OVI mandatory penalties under HB 37" tone="ice">
         <p>HB 37 revised the mandatory minimums effective April 9, 2025. Your BAC decides which tier applies.</p>
         <FactTable
           title="Low-tier first OVI (BAC 0.08% to 0.169%)"
@@ -164,7 +168,7 @@ export default function ColumbusFirstOVIPage() {
         />
       </Section>
 
-      <Section title="Defenses to a first Columbus OVI" tone="ice">
+      <Section title="First-offense OVI defense in Columbus" tone="ice">
         <p>
           The defense starts with the stop and works through each piece of evidence. The firm gets the body-cam and dash-cam footage,
           the breathalyzer maintenance records and the blood test documents before weighing any offer.
@@ -183,7 +187,7 @@ export default function ColumbusFirstOVIPage() {
 
       <Section title="What a conviction costs beyond the sentence">
         <p>
-          OVI convictions under R.C. 4511.19 cannot be expunged in Ohio, so a first conviction stays on background checks for jobs,
+          OVI convictions under R.C. 4511.19 cannot be expunged in Ohio, so a first conviction stays on your criminal record and background checks for jobs,
           housing and professional licenses indefinitely. After reinstatement you will need SR-22 insurance, and premiums can triple or
           quadruple. Nurses, teachers, attorneys, financial advisers and others in regulated fields may have to report the conviction to
           a licensing board.
@@ -194,7 +198,7 @@ export default function ColumbusFirstOVIPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does on a first Columbus OVI" tone="ice">
+      <Section title="How a first OVI defense attorney handles a Columbus case" tone="ice">
         <PointGrid
           points={[
             { title: 'ALS appeal', body: 'Filed within 30 days, with a stay of the suspension requested.' },

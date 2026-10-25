@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer in Circleville',
   description:
     'Misdemeanor defense at Circleville Municipal Court for Pickaway County: assault, theft, drug and traffic charges. Call (614) 285-5482.',
-  keywords: ['criminal misdemeanor defense Pickaway County', 'misdemeanor attorney Circleville Municipal Court', 'Pickaway County criminal lawyer', 'Circleville misdemeanor defense'],
+  keywords: ['criminal misdemeanor defense Pickaway County', 'misdemeanor attorney Circleville Municipal Court', 'Pickaway County criminal lawyer', 'Circleville misdemeanor defense', 'Pickaway County criminal defense lawyer', 'sealing criminal records Pickaway County'],
   openGraph: {
     title: 'Criminal Defense Lawyer in Circleville | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Circleville Municipal Court, from a former Circleville Municipal Prosecutor.',
@@ -93,7 +93,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Misdemeanor defense at Circleville Municipal Court"
+        title="Pickaway County criminal defense lawyer at Circleville Municipal Court"
         description="Misdemeanor charges from anywhere in Pickaway County go to Circleville Municipal Court. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine."
       />
 
@@ -128,7 +128,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Misdemeanor cases the court hears" tone="ice">
+      <Section title="Criminal misdemeanor charges the court hears" tone="ice">
         <PointGrid
           points={[
             {
@@ -151,7 +151,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties in Ohio">
+      <Section title="Municipal court misdemeanor penalties in Ohio">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -162,7 +162,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
           ]}
           note="These are maximums. Reduced charges, alternative sentencing, community service or dismissal are possible in some cases."
         />
-        <h3>Expungement and record sealing</h3>
+        <h3>Expungement or record sealing</h3>
         <p>
           Misdemeanor convictions in Pickaway County may be eligible for expungement or sealing under Ohio Revised Code 2953.31 once
           the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the
@@ -170,7 +170,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses and what the firm does" tone="ice">
+      <Section title="Pickaway County criminal defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'Evidence challenges', body: 'Admissibility, police procedure, search and seizure, and witness credibility.' },
@@ -185,7 +185,7 @@ export default function PickawayCriminalMisdemeanorDefensePage() {
           ]}
         />
         <p>
-          On each case the firm reviews the evidence, police reports and charging documents, files pretrial motions to suppress
+          On each case, the firm&rsquo;s criminal misdemeanor defense attorney reviews the evidence, police reports and charging documents, files pretrial motions to suppress
           evidence or dismiss charges, negotiates with Pickaway County prosecutors, tries the case when it cannot be resolved, and
           helps with expungement afterward.
         </p>

@@ -199,7 +199,7 @@ export default function NursingHomeAbusePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a nursing home claim">
+      <Section title="What a nursing home abuse lawyer does on your claim">
         <PointGrid
           points={[
             {

@@ -76,7 +76,7 @@ export default function FranklinCountyExpungementPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Expungement in Franklin County"
+        title="Franklin County expungement attorney"
         description="H.B. 96, effective September 30, 2025, widened who can seal a record in Ohio. Most misdemeanors can be sealed one year after you finish your sentence."
       />
 
@@ -186,7 +186,7 @@ export default function FranklinCountyExpungementPage() {
         </p>
       </Section>
 
-      <Section title="What a sealed record means">
+      <Section title="What sealing your criminal record means">
         <p>
           Once sealed, the record no longer shows up through commercial background check services or in standard employer and landlord
           queries. You can generally answer &ldquo;no&rdquo; on job, housing and professional licensing applications that ask whether

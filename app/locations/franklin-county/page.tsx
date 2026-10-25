@@ -113,12 +113,12 @@ const faqs = [
   {
     question: 'What practice areas does the firm handle in Franklin County?',
     answer:
-      'OVI/DUI defense (first through felony OVI, high-tier, refusal, CDL, underage and marijuana OVI); criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container and expungement); personal injury (car accidents, premises liability and wrongful death); business formation and disputes; civil litigation; and estate planning and probate. Call (614) 285-5482 to discuss your matter.',
+      'The Franklin County practice covers OVI/DUI defense (first through felony OVI, high-tier, refusal, CDL, underage and marijuana OVI); criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container and expungement); personal injury (car accidents, premises liability and wrongful death); business formation and disputes; civil litigation; and estate planning and probate. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Franklin County?',
     answer:
-      'After an OVI arrest anywhere in Franklin County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Franklin County Municipal Court. Missing the deadline waives your right to contest the suspension for good, even if the OVI charge is later dismissed or reduced. Contact the firm soon after the arrest so the deadline is met.',
+      'After an OVI arrest anywhere in Franklin County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Franklin County Municipal Court. Missing the deadline waives your right to contest the suspension for good, even if the underlying OVI charge is later dismissed or reduced. Contact the firm soon after the arrest so the deadline is met.',
   },
   {
     question: "Which Franklin County suburbs have mayor's courts?",
@@ -142,7 +142,7 @@ export default function FranklinCountyLocationsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal defense and OVI in Franklin County"
+        title="Franklin County criminal defense and OVI attorney"
         description="Columbus cases go to Franklin County Municipal Court, and most suburbs also run a mayor's court. The firm appears in both, and in the Court of Common Pleas."
       />
 

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'revocable living trust Columbus OH',
     'living trust attorney Ohio',
     'avoid probate Ohio',
+    'avoid probate court Ohio',
     'estate planning lawyer Columbus',
     'revocable trust Ohio',
     'pour-over will Ohio',
@@ -43,7 +44,7 @@ const faqs = [
       'It is a trust governed by the Ohio Trust Code (ORC Chapters 5801 to 5811). As the grantor, you transfer your assets to the trust during your lifetime and keep the right to amend or revoke it at any time under ORC 5805.06. You usually serve as your own trustee and keep full control. When you die or become incapacitated, the successor trustee you named manages and distributes the trust property under your written instructions, outside probate court.',
   },
   {
-    question: 'How does a revocable living trust avoid probate in Ohio?',
+    question: 'How does a revocable living trust avoid the probate process in Ohio?',
     answer:
       'Probate in Ohio is the court-supervised process of validating a will and authorizing distribution of assets through the Franklin County or another county probate court. Trust assets are owned by the trust, not by you individually at death, so they are not part of that process. A properly funded revocable trust lets your successor trustee transfer real estate, bank accounts, investments and other property to beneficiaries within weeks, rather than the six to twelve months Ohio probate often takes, and without fees that can run from one to four percent of the estate.',
   },

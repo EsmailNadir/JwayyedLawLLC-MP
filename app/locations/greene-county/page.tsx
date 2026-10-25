@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'What practice areas does the firm handle in Greene County?',
     answer:
-      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'The Greene County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Greene County?',
@@ -50,7 +50,7 @@ const faqs = [
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Greene County?',
     answer:
-      'After an OVI arrest in Greene County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Fairborn Municipal Court or the Greene County court that has your case. Missing the deadline permanently waives your right to contest the suspension, even if the OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
+      'After an OVI arrest in Greene County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Fairborn Municipal Court or the Greene County court that has your case. Missing the deadline permanently waives your right to contest the suspension, even if the underlying OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
   },
   {
     question: 'Where is Fairborn Municipal Court located?',
@@ -92,7 +92,7 @@ export default function GreeneCountyLocationsPage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Greene County criminal defense and OVI"
+        title="Greene County criminal defense and OVI attorney"
         description="OVI arrests and criminal charges in Greene County are heard at Fairborn Municipal Court, 1 W. Main St, and the Greene County Court of Common Pleas in Xenia."
       />
 

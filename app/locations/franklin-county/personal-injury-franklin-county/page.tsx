@@ -86,7 +86,7 @@ export default function PersonalInjuryFranklinCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Franklin County"
+        title="Franklin County personal injury lawyer"
         description="Ohio gives you two years from the injury to file suit, and Franklin County cases are usually filed at the Court of Common Pleas in Columbus."
       />
 
@@ -150,7 +150,7 @@ export default function PersonalInjuryFranklinCountyPage() {
         />
       </Section>
 
-      <Section title="Dog bites and UM/UIM claims" tone="ice">
+      <Section title="Dog bite injury cases and UM/UIM claims" tone="ice">
         <PointGrid
           points={[
             {
@@ -165,7 +165,7 @@ export default function PersonalInjuryFranklinCountyPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a Franklin County injury claim">
+      <Section title="What the firm does on Franklin County personal injury cases">
         <PointGrid
           points={[
             { title: 'Investigates fault', body: 'Police reports, camera footage, vehicle data and reconstruction evidence.' },

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   keywords: [
     'asset protection trust Ohio',
     'Ohio Legacy Trust attorney',
+    'asset protection trusts lawyer',
     'domestic asset protection trust Ohio',
     'ORC 5816 trust attorney',
     'spendthrift trust Columbus OH',

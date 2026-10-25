@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     'Franklin County drug possession lawyer',
     'drug possession defense Ohio',
     'controlled substance possession attorney',
+    'Ohio drug possession charges',
+    'Ohio drug possession penalties',
+    'facing drug possession charges',
   ],
   openGraph: {
     title: 'Drug Possession Defense Ohio | Jwayyed Law LLC',
@@ -115,7 +118,7 @@ export default function DrugPossessionPage() {
         </p>
       </Section>
 
-      <Section title="Drug possession penalties in Ohio" tone="ice">
+      <Section title="Ohio drug possession penalties" tone="ice">
         <FactTable
           title="Schedule I and II substances other than marijuana"
           rows={[
@@ -190,13 +193,16 @@ export default function DrugPossessionPage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a drug possession case" tone="ice">
+      <Section title="What a drug possession defense attorney does on your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Suppression motions', body: 'Challenges unlawful stops, searches and seizures to exclude the drug evidence.' },
             { title: 'ILC and HART Court', body: 'Pursues treatment-based dismissal for eligible first-time defendants.' },
             { title: 'Marijuana limits', body: 'Confirms whether the possession was within the adult-use legal limits.' },
-            { title: 'Knowledge challenges', body: 'Contests whether the prosecution can prove knowing possession.' },
+            {
+              title: 'Knowledge challenges',
+              body: 'Contests whether the prosecution can prove knowing possession. Drugs found in a borrowed vehicle, for example, can support an unknowing possession defense.',
+            },
             {
               title: 'Quantity and classification',
               body: 'Disputes lab-reported weights and the substance classification used to set the degree of the charge.',
@@ -205,7 +211,7 @@ export default function DrugPossessionPage() {
           ]}
         />
         <p>
-          If you are charged in <Link href="/locations/franklin-county">Franklin County</Link>,{' '}
+          If you are facing drug possession charges in <Link href="/locations/franklin-county">Franklin County</Link>,{' '}
           <Link href="/locations/delaware-county">Delaware County</Link>,{' '}
           <Link href="/locations/greene-county">Greene County</Link> or elsewhere in Ohio, call{' '}
           <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>. Drug cases move

@@ -84,7 +84,7 @@ export default function ColumbusDrugPossessionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Drug possession defense in Columbus"
+        title="Columbus drug possession defense attorney"
         description="Drug charges from Columbus start at Franklin County Municipal Court. Felonies are bound over to Common Pleas, and HART Court and ILC can end a case without a conviction."
       />
 
@@ -142,8 +142,8 @@ export default function ColumbusDrugPossessionPage() {
         />
       </Section>
 
-      <Section title="Defense paths">
-        <p>Most Columbus drug cases are resolved through one of two paths: suppression or diversion.</p>
+      <Section title="Defense paths for drug possession charges">
+        <p>If you are facing drug possession charges in Columbus, most cases are resolved through one of two paths: suppression or diversion.</p>
         <Steps
           steps={[
             {
@@ -183,7 +183,7 @@ export default function ColumbusDrugPossessionPage() {
             { title: 'ILC and HART Court', body: 'Treatment-based dismissal for eligible first-time defendants, plus specialty docket options in Common Pleas.' },
             { title: 'Quantity and classification', body: 'Challenges to the weight and the substance classification that set the degree.' },
             { title: 'Knowledge', body: 'Whether the prosecution can prove you knowingly possessed the drugs.' },
-            { title: 'Paraphernalia', body: 'Whether the item meets the statutory definition and was intended for drug use.' },
+            { title: 'Paraphernalia', body: 'In drug paraphernalia charges, whether the item meets the statutory definition and was intended for drug use.' },
             { title: 'Expungement planning', body: 'ORC 2953.32 eligibility from the start of the case.' },
           ]}
         />

@@ -125,7 +125,7 @@ export default function ProbatePage() {
           filing requirements, forms and procedures.
         </p>
         <p>
-          Jwayyed Law LLC represents executors, administrators, surviving spouses and beneficiaries in probate throughout central Ohio:
+          Jwayyed Law LLC represents executors, administrators, surviving spouses and beneficiaries as their probate attorney throughout central Ohio:
           opening an estate, resolving a creditor dispute, preparing the inventory and appraisal, or closing an estate that has stalled.
           Call <a href="tel:6142855482">(614) 285-5482</a> to discuss your situation.
         </p>
@@ -175,7 +175,7 @@ export default function ProbatePage() {
         />
       </Section>
 
-      <Section title="Executor and attorney fees" tone="ice">
+      <Section title="Executor and probate attorney fees" tone="ice">
         <FactTable
           title="Executor compensation (ORC 2113.35)"
           rows={[

@@ -56,7 +56,7 @@ export default function AssaultTemplate({ suburb }: Props) {
     },
     {
       question: `Why hire Jwayyed Law LLC for an assault charge in ${suburb}?`,
-      answer: `Jwayyed Law LLC defends assault charges throughout Franklin County, including ${suburb}. Assault cases in Ohio turn on witness credibility, the video and physical evidence, and whether self-defense or another defense fits the facts. The firm gathers all available evidence, tests the prosecution's case, and builds the defense around what happened. A misdemeanor assault conviction affects employment, housing, and professional licensing, so call (614) 285-5482 before your arraignment if you can.`,
+      answer: `Jwayyed Law LLC defends assault charges throughout Franklin County, including ${suburb}. Assault cases in Ohio turn on witness credibility, the video and physical evidence, and whether self-defense or another defense fits the facts. The firm gathers all available evidence, tests the prosecution's case, and builds the defense around what happened. A misdemeanor assault conviction can leave a permanent criminal record unless it is later sealed, and it affects employment, housing, and professional licensing, so call (614) 285-5482 before your arraignment if you can.`,
     },
   ];
 
@@ -64,8 +64,8 @@ export default function AssaultTemplate({ suburb }: Props) {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`Assault charges in ${suburb}, Ohio`}
-        description={`Assault under R.C. 2903.13 is a first-degree misdemeanor with up to ${MISDEMEANOR_SENTENCING.M1.maxJail} in jail. Charges from ${suburb} start in ${courtName}.`}
+        title={`Assault defense attorney in ${suburb}, Ohio`}
+        description={`Facing assault charges in ${suburb}? Assault under R.C. 2903.13 is a first-degree misdemeanor with up to ${MISDEMEANOR_SENTENCING.M1.maxJail} in jail. Charges from ${suburb} start in ${courtName}.`}
       />
 
       <Section
@@ -150,7 +150,7 @@ export default function AssaultTemplate({ suburb }: Props) {
         </p>
       </Section>
 
-      <Section title="Self-defense and other defenses">
+      <Section title="Self-defense and other defenses to assault charges">
         <p>
           Ohio Revised Code 2901.05 recognizes self-defense, defense of another, and defense of one&apos;s residence as complete
           affirmative defenses to assault. Under amendments effective in 2019, once the defendant produces evidence that the
@@ -172,12 +172,12 @@ export default function AssaultTemplate({ suburb }: Props) {
         </p>
       </Section>
 
-      <Section title={`What the firm does in ${suburb} assault cases`} tone="ice">
+      <Section title={`How the firm handles ${suburb} assault defense`} tone="ice">
         <PointGrid
           points={[
             { title: 'Evidence analysis', body: 'Surveillance footage, body-cam video, police reports and medical records reviewed before any hearing.' },
             { title: 'Self-defense evaluation', body: 'A factual investigation into who started the confrontation and whether any force used was reasonable.' },
-            { title: 'Felony escalation challenge', body: 'Contesting protected-victim status where the facts do not support a felony.' },
+            { title: 'Felony escalation challenge', body: 'Contesting protected-victim status where the facts do not support felony charges.' },
             { title: 'Charge reduction', body: 'Negotiating down to lesser offenses (disorderly conduct, attempted assault) where the facts support it.' },
             { title: 'Diversion and dismissal', body: 'Checking first-offender diversion eligibility for a dismissal without conviction.' },
             { title: 'Expungement planning', body: 'Advising on ORC 2953.32 eligibility from the start to inform plea strategy.' },
@@ -186,7 +186,7 @@ export default function AssaultTemplate({ suburb }: Props) {
         <p>
           If you were charged with assault in {suburb} or anywhere in Franklin County, call <a href={tel}>{FIRM_NAP.phone}</a> or{' '}
           <Link href="/contact">schedule a consultation online</Link> before your arraignment. The choices made at that first
-          appearance shape the rest of the case. More on the firm&apos;s{' '}
+          court appearance shape the rest of the case. More on the firm&apos;s{' '}
           <Link href="/criminal-defense/assault-charges">assault defense</Link> practice.
         </p>
       </Section>

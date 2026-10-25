@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Catastrophic Injury Lawyer',
   description:
     'Catastrophic injury claims in Ohio for TBI, spinal cord injury, paralysis and severe burns: the ORC 2323.43 damage caps, life care plans and deadlines.',
-  keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'TBI attorney Ohio', 'Franklin County catastrophic injury attorney'],
+  keywords: ['catastrophic injury lawyer Columbus OH', 'catastrophic injury attorney Ohio', 'spinal cord injury lawyer', 'TBI attorney Ohio', 'Franklin County catastrophic injury attorney', 'Ohio catastrophic injury cases'],
   openGraph: {
     title: 'Ohio Catastrophic Injury Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Claims for brain injury, spinal cord injury, paralysis, burns and other catastrophic injuries in Ohio.',
@@ -170,7 +170,7 @@ export default function CatastrophicInjuriesPage() {
         <p>Without this expert foundation, no jury or adjuster can accurately value a catastrophic injury, and the victim risks being badly undercompensated.</p>
       </Section>
 
-      <Section title="Settlement: structures and liens" tone="ice">
+      <Section title="Personal injury settlement: structures and liens" tone="ice">
         <PointGrid
           points={[
             {
@@ -185,7 +185,7 @@ export default function CatastrophicInjuriesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a catastrophic injury claim">
+      <Section title="How a catastrophic injury lawyer handles your claim">
         <PointGrid
           points={[
             { title: 'Retains the experts', body: 'Medical, life care planning, economic, vocational and liability experts.' },

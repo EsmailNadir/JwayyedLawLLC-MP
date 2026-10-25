@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'OVI / DUI Lawyer for Dayton, Ohio',
   description:
-    'OVI/DUI defense at Dayton Municipal Court and Kettering Municipal Court for Dayton, Kettering, Huber Heights and Montgomery County, under HB 37.',
-  keywords: ['OVI lawyer Dayton Ohio', 'DUI attorney Montgomery County', 'OVI defense Kettering Ohio', 'Dayton Municipal Court OVI', 'Montgomery County OVI attorney'],
+    'Dayton OVI attorney for OVI and DUI charges at Dayton Municipal Court and Kettering Municipal Court for Dayton, Kettering, Huber Heights and Montgomery County, under HB 37.',
+  keywords: ['OVI lawyer Dayton Ohio', 'DUI attorney Montgomery County', 'OVI defense Kettering Ohio', 'Dayton Municipal Court OVI', 'Montgomery County OVI attorney', 'Dayton OVI attorney', 'Dayton OVI defense', 'DUI lawyer Dayton', 'ALS hearing'],
   openGraph: {
     title: 'OVI / DUI Lawyer for Dayton, Ohio | Jwayyed Law LLC',
     description: 'OVI defense in Dayton and Kettering Municipal Courts: which court hears your case, HB 37 penalties and the 30-day ALS appeal.',
@@ -63,7 +63,7 @@ const faqs = [
       "Yes. Commercial driver's license holders face federal consequences on top of Ohio penalties. Under federal law, a CDL holder convicted of OVI in a personal vehicle faces a one-year CDL disqualification for a first offense and lifetime disqualification for a second. Montgomery County's large trucking and transportation sector makes this a real concern, and the firm builds CDL consequences into the defense plan.",
   },
   {
-    question: 'Why hire Jwayyed Law LLC for a Montgomery County OVI?',
+    question: 'Why hire Jwayyed Law LLC as your Dayton OVI and DUI lawyer?',
     answer:
       "The firm defends OVI/DUI charges in Dayton Municipal Court and Kettering Municipal Court. Montgomery County is Ohio's fourth-largest county, and these courts handle a high volume of OVI cases. The firm files ALS appeals under ORC 4511.191 right away, gets all of the evidence and builds the defense around your case. Call (614) 285-5482 to schedule a consultation.",
   },
@@ -99,7 +99,7 @@ export default function MontgomeryOVIDefensePage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="OVI defense in Dayton and Montgomery County"
-        description="A Montgomery County OVI goes to Dayton Municipal Court or Kettering Municipal Court, depending on where you were stopped. Either way, you have 30 days to appeal the license suspension."
+        description="A Montgomery County OVI case goes to Dayton Municipal Court or Kettering Municipal Court, depending on where you were stopped. Either way, you have 30 days to appeal the license suspension."
       />
 
       <Section
@@ -137,7 +137,7 @@ export default function MontgomeryOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="OVI penalties under HB 37" tone="ice">
+      <Section title="Dayton and Kettering Municipal Court OVI penalties under HB 37" tone="ice">
         <p>HB 37, effective April 9, 2025, updated the mandatory minimums under ORC 4511.19. They apply in both courts.</p>
         <FactTable
           title="First OVI"
@@ -180,7 +180,7 @@ export default function MontgomeryOVIDefensePage() {
         </p>
       </Section>
 
-      <Section title="Defenses in Dayton and Kettering courts" tone="ice">
+      <Section title="Dayton OVI defense strategies" tone="ice">
         <PointGrid
           points={[
             { title: 'The stop', body: 'Whether there was genuine reasonable articulable suspicion, or the stop was pretextual.' },

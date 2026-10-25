@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Criminal Defense Lawyer in Dayton, Ohio',
   description:
     'Misdemeanor defense at Dayton and Kettering Municipal Courts for Montgomery County: assault, drug, theft and domestic violence charges. (614) 285-5482.',
-  keywords: ['criminal defense Dayton Ohio', 'misdemeanor attorney Montgomery County', 'Dayton Municipal Court criminal lawyer', 'Kettering misdemeanor defense', 'Montgomery County criminal defense attorney'],
+  keywords: ['criminal defense Dayton Ohio', 'misdemeanor attorney Montgomery County', 'Dayton Municipal Court criminal lawyer', 'Kettering misdemeanor defense', 'Montgomery County criminal defense attorney', 'Dayton Municipal Court criminal defense', 'Dayton Municipal Court misdemeanor penalties'],
   openGraph: {
     title: 'Montgomery County Criminal Defense | Jwayyed Law LLC',
     description: 'Misdemeanor defense in Dayton and Kettering Municipal Courts: which court hears your case, penalties and expungement.',
@@ -98,7 +98,7 @@ export default function MontgomeryCriminalMisdemeanorDefensePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal misdemeanor defense in Montgomery County"
+        title="Montgomery County criminal misdemeanor defense attorney"
         description="A Montgomery County misdemeanor goes to Dayton Municipal Court or Kettering Municipal Court, depending on where it happened. A first-degree misdemeanor carries up to 180 days in jail."
       />
 
@@ -148,7 +148,7 @@ export default function MontgomeryCriminalMisdemeanorDefensePage() {
         />
       </Section>
 
-      <Section title="Misdemeanor penalties in Montgomery County">
+      <Section title="Municipal court misdemeanor penalties in Montgomery County">
         <FactTable
           title="Maximum penalties by degree"
           rows={[
@@ -163,13 +163,13 @@ export default function MontgomeryCriminalMisdemeanorDefensePage() {
         <h3>Expungement</h3>
         <p>
           A misdemeanor conviction in either court may be eligible for expungement and record sealing under Ohio Revised Code 2953.31.
-          It removes the record from public access and lets you truthfully answer &ldquo;no conviction&rdquo; on most applications.
+          It removes the criminal record from public access and lets you truthfully answer &ldquo;no conviction&rdquo; on most applications.
           Eligibility depends on the offense, your record and the waiting period. Domestic violence convictions, OVI convictions and
           some other offenses are not eligible.
         </p>
       </Section>
 
-      <Section title="How the firm defends the case" tone="ice">
+      <Section title="How the firm defends Montgomery County criminal cases" tone="ice">
         <PointGrid
           points={[
             { title: 'The arrest and search', body: 'Whether they were constitutionally valid.' },

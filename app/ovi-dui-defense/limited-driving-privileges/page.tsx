@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Limited Driving Privileges After an OVI in Ohio',
   description:
     'How to get limited driving privileges during an Ohio OVI suspension: the HB 37 hard suspension periods, ignition interlock rules and the court motion.',
-  keywords: ['limited driving privileges attorney Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio'],
+  keywords: ['limited driving privileges attorney Ohio', 'driving privileges attorney Ohio', 'work privileges attorney', 'ORC 4510.021 Ohio', 'driving privileges after OVI suspension', 'OVI hard suspension', 'OVI defense attorney'],
   openGraph: {
     title: 'Limited Driving Privileges After an OVI in Ohio | Jwayyed Law LLC',
     description: 'Eligibility, hard suspension periods, ignition interlock conditions and the application process for limited driving privileges in Ohio.',
@@ -98,7 +98,7 @@ export default function LimitedDrivingPrivilegesPage() {
       />
 
       <Section
-        title="What limited driving privileges are"
+        title="Driving privileges after an OVI suspension"
         intro={
           <p>
             An OVI suspension does not always mean you cannot drive at all. ORC 4510.021 lets courts grant limited driving privileges
@@ -113,13 +113,13 @@ export default function LimitedDrivingPrivilegesPage() {
         </p>
         <p>
           The firm helps OVI clients get LDP as early as the law allows and stay within the rules during the suspension, as part of its{' '}
-          <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>, so that one OVI case does not become several criminal charges.
+          <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>, so that one set of OVI charges does not become several.
         </p>
       </Section>
 
       <Section title="When you can apply: hard suspension periods" tone="ice">
         <p>
-          HB 37, effective April 9, 2025, restructured how privileges interact with OVI suspensions. The biggest change for a first-time
+          HB 37, effective April 9, 2025, changed Ohio&apos;s OVI suspension rules for privileges. The biggest change for a first-time
           non-refusal offender is that courts can now waive the 15-day hard suspension entirely if you agree to install a certified IID.
           A first-time defendant with a test-over result and no prior alcohol-related arrests can potentially receive LDP on the day of
           sentencing, or even have the ALS period covered, once an IID is installed. Before HB 37, every suspended driver served a hard
@@ -233,7 +233,7 @@ export default function LimitedDrivingPrivilegesPage() {
         </Callout>
       </Section>
 
-      <Section title="What the firm does on a privileges application" tone="ice">
+      <Section title="How an OVI defense attorney handles a privileges application" tone="ice">
         <PointGrid
           points={[
             { title: 'Checks eligibility', body: 'Which hard suspension period applies and when LDP can first be sought.' },

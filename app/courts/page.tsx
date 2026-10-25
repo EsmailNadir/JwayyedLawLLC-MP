@@ -7,7 +7,7 @@ import { LinkGrid, Section } from '@/components/practice';
 export const metadata: Metadata = {
   title: 'Ohio Courts',
   description:
-    'Guides to the Ohio county, municipal and mayor’s courts where Jwayyed Law LLC represents clients in criminal, OVI and civil cases.',
+    'Guides to the Ohio county, municipal and mayor’s courts where Jwayyed Law LLC represents clients in criminal defense, OVI defense and civil cases.',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {
     title: 'Ohio Courts | Jwayyed Law LLC',

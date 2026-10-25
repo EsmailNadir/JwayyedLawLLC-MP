@@ -187,7 +187,7 @@ export default function FranklinCountyMayorsCourtHubPage() {
         </p>
       </Section>
 
-      <Section title="What the firm does in mayor's court">
+      <Section title="Traffic and misdemeanor defense in mayor's court">
         <PointGrid
           points={[
             { title: 'Appears for you', body: 'So you do not have to take time off work for each court date.' },

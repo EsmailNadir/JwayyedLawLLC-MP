@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   keywords: [
     'will contest lawyer Columbus OH',
     'will contest attorney Ohio',
+    'Ohio will contests lawyer',
     'contest a will Ohio',
     'undue influence will Ohio',
     'lack of testamentary capacity Ohio',

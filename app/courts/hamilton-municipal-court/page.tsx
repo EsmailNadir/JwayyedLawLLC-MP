@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Hamilton Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Hamilton Municipal Court, now at 700 Hanover Street in Hamilton, the Butler County seat.',
-  keywords: ['Hamilton Municipal Court attorney', 'Butler County OVI lawyer', 'Hamilton Ohio misdemeanor defense', 'Hamilton Ohio criminal attorney', 'Butler County DUI lawyer'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Hamilton Municipal Court, now at 700 Hanover Street in Hamilton, the Butler County seat.',
+  keywords: ['Hamilton Municipal Court attorney', 'Butler County OVI lawyer', 'Hamilton Ohio misdemeanor defense', 'Hamilton Ohio criminal attorney', 'Butler County DUI lawyer', 'Hamilton OVI defense attorney', 'Hamilton DUI attorney', 'Hamilton criminal defense attorney'],
   openGraph: {
     title: 'Hamilton Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Hamilton Municipal Court in Butler County.',
@@ -98,7 +98,7 @@ export default function HamiltonMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Hamilton" tone="ice">
+      <Section title="OVI defense in Hamilton Municipal Court" tone="ice">
         <p>US 27 and SR 4 both see active OVI and traffic enforcement.</p>
         <FactTable
           title="First OVI under ORC 4511.19 and HB 37 (effective April 9, 2025)"
@@ -121,18 +121,18 @@ export default function HamiltonMunicipalCourtPage() {
             { title: 'The stop', body: 'The basis for the traffic stop.' },
             { title: 'Field sobriety tests', body: 'How the tests were administered.' },
             { title: 'The breath test', body: 'Calibration of the breath testing instrument.' },
-            { title: 'Points', body: 'Under ORC 4510.036, 12 points in two years means a mandatory suspension.' },
+            { title: 'Points', body: 'Under ORC 4510.036, 12 points in two years means a mandatory suspension. The firm challenges the underlying traffic violation to keep points from accumulating.' },
           ]}
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Hamilton and Butler County">
+      <Section title="Misdemeanor defense in Hamilton and Butler County">
         <p>The court hears domestic violence (ORC 2919.25), assault, theft, drug possession and disorderly conduct, among others.</p>
         <FactTable
           title="Penalties and sealing"
           rows={[
             { label: 'M1 maximum', value: 'Up to 180 days in jail and a $1,000 fine (ORC 2929.21)' },
-            { label: 'Record sealing', value: 'Many misdemeanor convictions can be sealed under ORC 2953.32 after a one-year waiting period' },
+            { label: 'Sealing the record', value: 'Many misdemeanor convictions can be sealed under ORC 2953.32 after a one-year waiting period' },
           ]}
         />
         <p>The firm files suppression motions, challenges the evidence, negotiates with prosecutors, and tries cases when needed.</p>

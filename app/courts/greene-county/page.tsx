@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Greene County Court Representation',
   description:
-    'Fairborn and Xenia Municipal Courts, Greene County Common Pleas and Yellow Springs Mayor’s Court: which court hears your case and what the firm handles.',
+    'OVI defense and criminal defense in Fairborn and Xenia Municipal Courts, Greene County Common Pleas and Yellow Springs Mayor’s Court: which Greene County court hears your case.',
   keywords: [
     'Greene County OVI attorney',
     'Fairborn Municipal Court lawyer',
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     'Yellow Springs criminal defense',
     'Greene County DUI attorney',
     'Greene County Common Pleas',
+    'Xenia DUI attorney',
+    'Xenia OVI defense',
+    'Greene County felony defense',
   ],
   openGraph: {
     title: 'Greene County Court Representation | Jwayyed Law LLC',
@@ -143,8 +146,8 @@ export default function GreeneCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges in Greene County" tone="ice">
-        <p>Every OVI arrest under ORC 4511.19 has several points the defense can test.</p>
+      <Section title="OVI defense in Greene County" tone="ice">
+        <p>Under Ohio OVI law (ORC 4511.19), every OVI arrest in Greene County, whether in Xenia, Fairborn or Beavercreek, has several points the defense can test.</p>
         <PointGrid
           points={[
             { title: 'The stop', body: 'Whether the officer had constitutionally sufficient reasonable articulable suspicion.' },
@@ -162,17 +165,17 @@ export default function GreeneCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor and felony charges">
+      <Section title="Misdemeanor and felony defense in Greene County">
         <p>
-          The firm defends assault, domestic violence, theft, drug possession and disorderly conduct charges from arraignment through
-          trial. Under ORC 2935.26, officers may issue a citation instead of an arrest for most misdemeanors that are not first-degree.
+          The firm defends assault, domestic violence, theft, drug possession and disorderly conduct charges in Fairborn and Xenia Municipal
+          Courts from arraignment through trial. Under ORC 2935.26, officers may issue a citation instead of an arrest for most misdemeanors that are not first-degree.
           First-degree misdemeanor arrests (OVI, first-offense domestic violence, felonious assault reduced to a misdemeanor) usually
           lead to arraignment, where bond and release conditions are set. Counsel from the start keeps you from waiving rights or
           entering a plea you do not fully understand.
         </p>
         <p>
-          Felony OVI, charged when a defendant has three or more prior OVI convictions within 10 years, is prosecuted in Common Pleas
-          Court with possible prison time. The firm represents clients at both the municipal and Common Pleas levels, so the same counsel
+          Felony OVI, charged when a defendant has three or more prior OVI convictions within 10 years, is prosecuted in Greene County
+          Common Pleas Court in Xenia with possible prison time. The firm represents clients at both the municipal and Common Pleas levels, so the same counsel
           stays with the case.
         </p>
         <FactTable

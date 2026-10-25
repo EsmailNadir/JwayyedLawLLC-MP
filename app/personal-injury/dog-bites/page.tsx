@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Dog Bite Lawyer',
   description:
     'Ohio dog owners are strictly liable for bites under ORC 955.28. What you can recover, the 2-year deadline and the two defenses owners can raise.',
-  keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney', 'ORC 955.28 dog bite claim'],
+  keywords: ['dog bite lawyer Columbus OH', 'dog bite attorney Ohio', 'animal attack lawyer', 'Franklin County dog bite attorney', 'Ohio dog bite lawyer', 'dog bite liability claims', 'ORC 955.28 dog bite claim'],
   openGraph: {
     title: 'Ohio Dog Bite Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Dog bite claims under Ohio strict liability law, ORC 955.28.',
@@ -146,7 +146,7 @@ export default function DogBitesPage() {
         />
       </Section>
 
-      <Section tone="ice" title="Injuries these claims involve">
+      <Section tone="ice" title="Injuries in Ohio dog bite cases">
         <p>
           Dog bites range from puncture wounds to life-altering trauma. Children are especially vulnerable because they are often
           bitten on the face or neck and may need several reconstructive surgeries.
@@ -198,7 +198,7 @@ export default function DogBitesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a dog bite claim">
+      <Section title="How a dog bite lawyer handles your claim">
         <PointGrid
           points={[
             { title: 'Documents and values the injuries', body: 'Including long-term scarring and psychological harm.' },

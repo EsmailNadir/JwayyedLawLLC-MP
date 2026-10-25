@@ -102,8 +102,8 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
         </p>
         <p>
           Mayor&apos;s courts hear minor misdemeanor, M4, M3, M2 and M1 criminal charges from the municipality, plus traffic
-          violations under Ohio&apos;s motor vehicle laws. They have no jurisdiction over felonies; felony arraignments are held in
-          Franklin County Municipal Court. For OVI, {suburb} Mayor&apos;s Court can hear the criminal charge, but the Administrative
+          violations under Ohio&apos;s motor vehicle laws. They have no jurisdiction over felony charges; felony arraignments are held in
+          Franklin County Municipal Court. For OVI, {suburb} Mayor&apos;s Court can hear the underlying criminal OVI charge, but the Administrative
           License Suspension (ALS) appeal must be filed separately in Franklin County Municipal Court within 30 days of arrest.
         </p>
       </Section>
@@ -164,7 +164,7 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
         <PointGrid
           points={[
             { title: 'Arraignment representation', body: `Appearing at your first ${suburb} Mayor's Court date to enter a not guilty plea and obtain discovery.` },
-            { title: 'Pretrial negotiation', body: 'Talking with the prosecutor before any hearing about diversion, dismissal or a reduced charge.' },
+            { title: 'Pretrial negotiation', body: 'Talking with the prosecutor before any hearing about diversion, dismissal or charge reduction.' },
             { title: 'OVI defense', body: 'Defending the criminal OVI at the mayor’s court and filing the ALS appeal at Franklin County Municipal Court at the same time.' },
             { title: 'Traffic defense', body: 'Challenging speeding, failure to control and other traffic citations that affect your driving record and insurance rates.' },
             { title: 'Transfer coordination', body: 'Continuing representation if your case moves to Franklin County Municipal Court.' },
@@ -173,7 +173,7 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
         />
         <p>
           If you have a citation or summons for {suburb} Mayor&apos;s Court, call <a href={tel}>{FIRM_NAP.phone}</a> or{' '}
-          <Link href="/contact">schedule a consultation online</Link>. The firm handles mayor&apos;s court appearances throughout
+          <Link href="/contact">schedule a consultation online</Link>. The firm provides criminal and traffic defense in mayor&apos;s courts throughout
           Franklin County, often without your personal appearance on minor matters.
         </p>
       </Section>

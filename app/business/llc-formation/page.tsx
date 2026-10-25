@@ -10,8 +10,8 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 export const metadata: Metadata = {
   title: 'LLC Formation Lawyer Ohio | ORC 1706',
   description:
-    'Forming an Ohio LLC under ORC Chapter 1706: the $99 Articles of Organization filing, statutory agents, operating agreements and keeping the liability shield.',
-  keywords: ['LLC formation lawyer Columbus OH', 'LLC formation attorney Ohio', 'Ohio LLC operating agreement attorney', 'ORC 1706 LLC lawyer', 'business formation attorney Columbus'],
+    'LLC formation in Ohio under ORC Chapter 1706: the $99 Articles of Organization filing, statutory agents, operating agreements and keeping the liability shield.',
+  keywords: ['LLC formation lawyer Columbus OH', 'LLC formation attorney Ohio', 'Ohio LLC operating agreement attorney', 'ORC 1706 LLC lawyer', 'business formation attorney Columbus', 'Ohio LLC formation', 'starting an LLC in Ohio', 'forming an LLC in Ohio'],
   openGraph: {
     title: 'LLC Formation Lawyer Ohio | ORC 1706 | Jwayyed Law LLC',
     description: 'Articles of Organization, operating agreements and statutory agents for Ohio LLCs.',
@@ -83,7 +83,7 @@ export default function LLCFormationPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Forming an LLC in Ohio"
-        description="An Ohio LLC is formed by filing Articles of Organization with the Secretary of State for $99. The operating agreement and how you run the company decide how well it protects you."
+        description="Starting an LLC in Ohio means filing Articles of Organization with the Secretary of State for $99. The operating agreement and how you run the company decide how well it protects you."
       />
 
       <KeyFacts
@@ -98,7 +98,7 @@ export default function LLCFormationPage() {
         title="What an Ohio LLC gives you"
         intro={
           <p>
-            An LLC formed under ORC Chapter 1706, the Ohio LLC Act, shields members from the company&rsquo;s debts, allows pass-through
+            An LLC formed under ORC Chapter 1706, the Ohio LLC Act, shields members from the company&rsquo;s debts under ORC 1706.26, allows pass-through
             taxation and needs less formal governance than a corporation.
           </p>
         }
@@ -107,7 +107,7 @@ export default function LLCFormationPage() {
           That combination makes the LLC the most commonly chosen structure for new Ohio businesses. LLC formation is one of the most
           requested services in the firm&rsquo;s <Link href="/business">Ohio business law practice</Link>, from the Articles of
           Organization through the operating agreement and compliance after formation. For other entity types, see{' '}
-          <Link href="/business/business-formation">business formation</Link>.
+          <Link href="/business/business-formation">the overall business formation process</Link>.
         </p>
         <p>
           The firm&rsquo;s blog walks through{' '}
@@ -116,7 +116,7 @@ export default function LLCFormationPage() {
         </p>
       </Section>
 
-      <Section title="How to form an Ohio LLC" tone="ice">
+      <Section title="The Ohio LLC formation process" tone="ice">
         <Steps
           steps={[
             { title: 'Choose a name', body: 'Distinguishable from other registered names, and including "LLC," "L.L.C." or "Limited Liability Company."' },
@@ -141,7 +141,7 @@ export default function LLCFormationPage() {
           ]}
         />
         <FactTable
-          title="Taxes and ongoing costs"
+          title="LLC formation costs, taxes and ongoing fees"
           rows={[
             { label: 'Federal default', value: 'Single-member: taxed as a sole proprietorship. Multi-member: taxed as a partnership. S-corp or C-corp elections are available.' },
             {

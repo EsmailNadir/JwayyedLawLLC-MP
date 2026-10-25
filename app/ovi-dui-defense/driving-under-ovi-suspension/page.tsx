@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Driving Under OVI Suspension',
   description:
     'Charged with driving under an OVI suspension in Ohio? ORC 4510.14, the 30-day mandatory jail minimum, vehicle immobilization and your defenses.',
-  keywords: ['driving under suspension attorney Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'ORC 4510.14 defense'],
+  keywords: ['driving under suspension attorney Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'ORC 4510.14 defense', 'OVI suspension charges', 'OVI defense attorney', 'Ohio OVI law'],
   openGraph: {
     title: 'Driving Under OVI Suspension | Jwayyed Law LLC',
     description: 'Penalties, the two kinds of OVI suspension, HB 37 privilege rules and defenses for a DUOVIS charge in Ohio.',
@@ -98,10 +98,10 @@ export default function DrivingUnderOVISuspensionPage() {
       />
 
       <Section
-        title="What a DUOVIS charge means"
+        title="Understanding OVI suspension charges (DUOVIS)"
         intro={
           <p>
-            ORC 4510.14 makes it a separate offense, distinct from general driving under suspension, to drive while your license is
+            Under Ohio OVI law, ORC 4510.14 makes it a separate offense, distinct from general driving under suspension, to drive while your license is
             suspended because of an OVI conviction or an OVI-related ALS under ORC 4511.191.
           </p>
         }
@@ -217,7 +217,7 @@ export default function DrivingUnderOVISuspensionPage() {
         </Callout>
       </Section>
 
-      <Section title="Defenses to a DUOVIS charge" tone="ice">
+      <Section title="Defenses to OVI suspension charges" tone="ice">
         <p>
           Courts have very little room to depart from the mandatory minimum. The ways to avoid it are to defeat the charge or to
           negotiate a reduction to a non-DUOVIS offense where the minimum does not apply.
@@ -232,7 +232,7 @@ export default function DrivingUnderOVISuspensionPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a DUOVIS charge">
+      <Section title="How an OVI defense attorney handles a DUOVIS charge">
         <PointGrid
           points={[
             { title: 'Challenges the underlying suspension', body: 'Checks that the ALS or court suspension was validly imposed and procedurally proper.' },

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Ohio Trusts Attorney',
   description:
     'Revocable, irrevocable, special needs, asset protection and other trusts for Ohio families in Columbus, Cincinnati, Dayton and across the state.',
-  keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'special needs trusts', 'trusts lawyer Ohio'],
+  keywords: ['Ohio trusts attorney', 'Columbus trusts attorney', 'Cincinnati trusts attorney', 'Dayton trusts attorney', 'revocable living trusts', 'asset protection trusts', 'asset protection trust Ohio', 'irrevocable trust Ohio', 'Ohio trust laws', 'special needs trusts', 'trusts lawyer Ohio'],
   openGraph: {
     title: 'Ohio Trusts Attorney | Jwayyed Law LLC',
     description:

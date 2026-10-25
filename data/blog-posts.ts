@@ -435,7 +435,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>What happens after an arrest</h2>
       <p>You will be taken to the station for booking and a chemical test, and you will receive paperwork about your Administrative License Suspension. You have <strong>30 days from the date of arrest</strong> to request an ALS hearing. The deadline is strict. Miss it and the suspension becomes automatic, whatever happens in the criminal case.</p>
-      <p>The ALS runs separately from the criminal case. Even if the charges are dismissed, you can still lose your license if you did not request the hearing in time, so speak to an attorney right away.</p>
+      <p>The ALS license suspension runs separately from the OVI charge itself. Even if the criminal charges are dismissed, you can still lose your license if you did not request the hearing in time, so speak to an attorney right away.</p>
 
       <h2>Write down everything you remember</h2>
       <p>As soon as you are released, write it all down: the time and place of the stop, the officer&apos;s name and badge number, the reason they gave for stopping you, which tests you agreed to, road and weather conditions, any witnesses, and whether you saw body or dash cameras. These details fade fast and can matter to your defense. Your attorney can request the video.</p>
@@ -486,7 +486,7 @@ export const blogPosts: BlogPost[] = [
       <p>Before 2019, Ohio was one of the few states where the defendant had to prove self-defense by a preponderance of the evidence. <a href="https://codes.ohio.gov/ohio-revised-code/section-2901.05" target="_blank" rel="noopener noreferrer">Ohio Revised Code 2901.05</a> now puts the burden on the prosecution. Once you present enough evidence to raise self-defense, the prosecution must prove beyond a reasonable doubt that your actions were not justified.</p>
 
       <h2>When to talk to a lawyer</h2>
-      <p>Even clear self-defense situations can lead to charges. Prosecutors may question whether the threat was imminent, whether the force was reasonable, whether you could have avoided the confrontation, or whether you started it. If you have used force in self-defense, contact an attorney before you speak with investigators. Statements made in shock can be taken out of context and used against you.</p>
+      <p>Even clear self-defense situations can lead to criminal charges. Prosecutors may question whether the threat was imminent, whether the force was reasonable, whether you could have avoided the confrontation, or whether you started it. If you have used force in self-defense, contact an attorney before you speak with investigators. Statements made in shock can be taken out of context and used against you.</p>
 
       <p>If you are facing charges related to the use of force in Ohio, Jwayyed Law LLC can review the facts and build a defense under Ohio&apos;s self-defense statutes. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
@@ -519,7 +519,7 @@ export const blogPosts: BlogPost[] = [
       <p>Use your phone to photograph and film everything: damage to every vehicle (wide shots and close-ups), road conditions, traffic signs, skid marks, debris, the weather and any visible injuries. Capture where the vehicles ended up. Ask witnesses for their names and contact information, and note the time of day, the traffic level and anything else that may have contributed to the crash.</p>
 
       <h2>5. See a doctor promptly</h2>
-      <p>Even if you feel fine, see a doctor within 24 to 48 hours. Whiplash, concussions, internal bleeding and herniated discs often show no symptoms at first, and adrenaline masks pain. A medical record that links your injuries to the accident makes your claim stronger, and insurers routinely argue that delayed treatment means the collision did not cause the injury. Write down what you tell the doctor, because it goes into their records.</p>
+      <p>Even if you feel fine, see a doctor within 24 to 48 hours. Whiplash, concussions, internal bleeding and herniated discs often show no symptoms at first, and adrenaline masks pain. A medical record that links your injuries to the accident strengthens your claim, and insurers routinely argue that delayed treatment means the collision did not cause the injury. Write down what you tell the doctor, because it goes into their records.</p>
 
       <h2>6. Notify your insurance company</h2>
       <p>Report the accident to your insurer as soon as reasonably possible. Give the basics: date, time, location, the other drivers&apos; names and contact details, and the officer&apos;s name and report number. Do not give a detailed account of how the accident happened. <strong>Do not give a recorded statement to the other driver&apos;s insurance company without first talking to an attorney.</strong> If they call, say: &quot;I am consulting with an attorney about this matter and will have my attorney contact you.&quot;</p>
@@ -554,11 +554,11 @@ export const blogPosts: BlogPost[] = [
     gradient: 'from-[#2d3436] to-[#1a1a2e]',
     content: `
       <p>A criminal record can follow you long after you have served your sentence, paid your fines and moved on. Many employers reject applicants with a record. Landlords run background checks and often turn down people with convictions. A record can block professional licenses in teaching, nursing, social work and the trades, and it can affect custody decisions in family court and access to education.</p>
-      <p>Ohio has responded. Recent changes to the state&apos;s expungement and record-sealing laws have widened eligibility, so many more people can now ask for a fresh start. If you have a record, you may qualify even if you were once told you did not.</p>
+      <p>Ohio has responded. Recent changes to the state&apos;s expungement and record-sealing laws have widened eligibility, so many more people can now ask for a fresh start. If you have a criminal record, you may qualify even if you were once told you did not.</p>
 
       <h2>What is expungement in Ohio?</h2>
       <p>In Ohio, &quot;expungement&quot; is often used to mean &quot;record sealing,&quot; although the statute provides for sealing rather than destroying records. When your record is sealed under <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.32" target="_blank" rel="noopener noreferrer">Ohio Revised Code 2953.32</a>, the conviction is removed from public background check databases. A standard background check by an employer or landlord will not show it, and most employers, landlords and members of the public cannot access it.</p>
-      <p>There are exceptions. Law enforcement can still access sealed records in certain circumstances. Prosecutors can use them for charging decisions, and courts can use them at sentencing in a future case. Some licensing agencies, particularly in healthcare and childcare, can sometimes see them. For everyday purposes, though, a sealed record is out of public view and will not appear on a standard background check.</p>
+      <p>There are exceptions to who can see sealed records in Ohio. Law enforcement can still access sealed records in certain circumstances. Prosecutors can use them for charging decisions, and courts can use them at sentencing in a future case. Some licensing agencies, particularly in healthcare and childcare, can sometimes see them. For everyday purposes, though, a sealed record is out of public view and will not appear on a standard background check.</p>
 
       <h2>Who is newly eligible</h2>
       <p>Recent legislation has broadened eligibility in several ways:</p>
@@ -584,18 +584,18 @@ export const blogPosts: BlogPost[] = [
       <h2>The expungement process</h2>
       <p>You file an application with the court that handled your original case. It needs your case number, the charges you want sealed, and proof that you have completed your sentence and any supervision, such as probation or parole.</p>
       <p>The filing fee typically ranges from $50 to $150, depending on the court. Some courts waive it for applicants who cannot afford to pay.</p>
-      <p>After you file, the prosecutor has 30 days to object. If there is no objection, the judge may grant the application without a hearing. If the prosecutor objects, the court schedules a hearing where both sides argue to the judge. The judge weighs your criminal history, the nature of the offense, your rehabilitation and the community&apos;s interest in keeping the records public.</p>
+      <p>After you file, the prosecutor has 30 days to object. If there is no objection, the judge may grant the application without a hearing. If the prosecutor objects, the court schedules a hearing where both sides argue to the judge. The judge weighs your criminal history, the nature of the offense, your rehabilitation and the community&apos;s interest in keeping the criminal records public.</p>
 
       <h2>How a sealed record affects your life</h2>
       <p>Once your record is sealed, you can legally answer &quot;no&quot; on most job applications that ask whether you have been convicted of a crime, and most standard background checks will not show the conviction. Some situations still call for disclosure: certain professional licensing applications, background checks for jobs in sensitive fields, and questions asked under oath. Most landlords will not see a sealed conviction on a standard check. Licensing boards for fields such as nursing, teaching and law may ask about sealed convictions, so talk to an attorney about your specific situation.</p>
 
-      <h2>Why a lawyer helps</h2>
-      <p>An attorney makes sure the paperwork is complete, the deadlines are met and your case is presented clearly to the court. If the prosecutor objects, your attorney can argue at the hearing and present evidence of rehabilitation, such as employment records, character letters and treatment completion certificates. Knowing the judge and the local prosecutor&apos;s office helps too. Errors or missing documents can delay or derail the application.</p>
+      <h2>Why an expungement lawyer helps</h2>
+      <p>An attorney makes sure the paperwork is complete, the deadlines are met and your case is presented clearly to the court. If the prosecutor objects, your attorney can argue at the hearing and present evidence of rehabilitation, such as employment records, character letters and treatment completion certificates. Knowing the judge and the local prosecutor&apos;s office helps too. Errors or missing documents can delay or derail the expungement application.</p>
 
       <h2>If you were told no before</h2>
       <p>If you were told years ago that your record could not be expunged, the law has changed and many more people qualify now, so it is worth having an attorney check your eligibility again. Our <a href="/our-law-firm/case-results">case results</a> page includes past expungements.</p>
 
-      <p>If your record may be eligible for sealing under Ohio&apos;s updated laws, Jwayyed Law LLC can check your eligibility and handle the application from filing to hearing. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm handles expungement petitions in all Ohio counties.</p>
+      <p>If your record may be eligible for expungement under Ohio&apos;s updated laws, Jwayyed Law LLC can check your eligibility and handle the application from filing to hearing. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm handles expungement petitions in all Ohio counties.</p>
     `,
   },
   {
@@ -669,7 +669,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Your plea options</h2>
       <ul>
         <li><strong>Not Guilty:</strong> The most common plea at arraignment. You are not admitting guilt, and the prosecution has to prove its case. It preserves your rights and gives you and your attorney time to review the evidence and look at options. Most attorneys advise pleading not guilty at arraignment because it buys time to hire a lawyer and negotiate with the prosecutor.</li>
-        <li><strong>Guilty:</strong> You accept the charges. The judge may sentence you on the spot or set a sentencing date, and you usually cannot take the plea back. Do not plead guilty at arraignment without talking to an attorney first; negotiation may get you a better offer.</li>
+        <li><strong>Guilty:</strong> You accept the charges. The judge may sentence you on the spot or set a sentencing date, and you usually cannot take the plea back. Do not plead guilty at arraignment without consulting an attorney first; negotiation may get you a better offer.</li>
         <li><strong>No Contest (Nolo Contendere):</strong> For criminal purposes this has the same practical effect as a guilty plea, but the conviction cannot be used as an admission against you in a later civil lawsuit. The judge must approve a no contest plea, and it is not always allowed.</li>
       </ul>
 
@@ -682,7 +682,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Should you hire an attorney before the arraignment?</h2>
       <p>Ideally, yes. An attorney at arraignment makes sure you enter the right plea, that your bond conditions are fair and workable, and that you do not waive rights by accident. In busy municipal courts, arraignments move quickly and leave little time for questions. An attorney who knows the court and its judges can argue for reasonable bond conditions and set the tone for the rest of the case. If you cannot afford an attorney, ask for a public defender at the arraignment.</p>
 
-      <p>If you are facing criminal charges and have an arraignment coming up in any Ohio court, Jwayyed Law LLC can represent you from the first hearing through the end of the case. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
+      <p>If you are facing criminal or OVI charges and have an arraignment coming up in any Ohio court, Jwayyed Law LLC can represent you from the first hearing through the end of the case. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
   },
   {
@@ -696,7 +696,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/personalinjury-blog2-jpg.jpg',
     gradient: 'from-[#2d3436] via-[#b87333]/20 to-[#1a1a2e]',
     content: `
-      <p>Slip and fall accidents sound minor, but they can cause broken bones, head trauma, herniated discs and torn ligaments that need surgery and months of rehabilitation. In Ohio, property owners have a legal duty to keep their premises reasonably safe. When they fail to and someone is hurt as a result, the owner may be liable under Ohio&apos;s premises liability law.</p>
+      <p>Slip and fall accidents sound minor, but they can cause broken bones, head trauma, herniated discs and torn ligaments that need surgery and months of rehabilitation. In Ohio, property owners have a legal duty to keep their premises reasonably safe. When they fail to and someone is hurt as a result, the owner may be liable under Ohio&apos;s premises liability laws.</p>
 
       <h2>The duty of care in Ohio</h2>
       <p>Ohio law sorts people who enter a property into three categories:</p>
@@ -792,7 +792,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What to do after a stop</h2>
       <p>Write down what you remember as soon as you can: the time, location and weather, the officer&apos;s name and badge number, and what was said. Note the agency, and the case number from your citation if you got one. Do not discuss the stop with anyone but your attorney, and do not post about it on social media. If you believe the officer used excessive force or violated your rights, you can file a complaint with the department&apos;s internal affairs division.</p>
 
-      <p>If you are facing OVI/DUI, drug possession or other charges from a traffic stop in Ohio, Jwayyed Law LLC can review the details of the stop and whether your constitutional rights were respected. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
+      <p>If you are facing OVI/DUI, drug possession or other criminal charges from a traffic stop in Ohio, Jwayyed Law LLC can review the details of the stop and whether your constitutional rights were respected. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
   },
   {
@@ -806,7 +806,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/criminal.jpg',
     gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
     content: `
-      <p>Losing your license after an OVI arrest in Ohio makes ordinary life hard. Getting to work, caring for family and attending required treatment all depend on driving. Limited driving privileges (also called occupational or restricted licenses) let you drive for specific purposes during the suspension. Knowing how they work under Ohio law lets you plan ahead.</p>
+      <p>A license suspension after an OVI arrest in Ohio makes ordinary life hard. Getting to work, caring for family and attending required treatment all depend on driving. Limited driving privileges (also called occupational or restricted licenses) let you drive for specific purposes during the suspension. Knowing how they work under Ohio law lets you plan ahead.</p>
 
       <h2>What are limited driving privileges?</h2>
       <p>Limited driving privileges let you drive during a suspension for approved reasons only: work, school or educational programs, medical appointments and treatment, court dates or meetings with your attorney, child care, and other essential household needs. The court issues a written order that says when, where and for what purposes you may drive, and you must follow it exactly. Driving for an unapproved purpose or outside the approved hours can bring a new charge for driving under suspension and a longer suspension.</p>
@@ -827,7 +827,7 @@ export const blogPosts: BlogPost[] = [
       <p>Courts often limit driving to specific hours, routes and purposes. You may have to use an ignition interlock device, a breathalyzer installed in your vehicle that you must blow into before the car will start. The written order lists every condition. Driving outside it, even one mile off the approved route or one hour outside the approved times, can lead to a driving under suspension charge with its own penalties.</p>
 
       <h2>Why legal help matters</h2>
-      <p>The waiting periods, filing deadlines and court requirements are easy to get wrong. An <a href="/ovi-dui-defense">OVI attorney</a> knows how different judges handle these motions and can shape the argument for the court you are in. If you are facing an OVI suspension in Ohio, Jwayyed Law LLC can explain your options and apply for limited driving privileges that fit your schedule. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
+      <p>The waiting periods, filing deadlines and court requirements are easy to get wrong. An <a href="/ovi-dui-defense">OVI attorney</a> knows how different judges handle these motions and can shape the argument for the court you are in. If you are facing OVI charges and a license suspension in Ohio, Jwayyed Law LLC can explain your options and apply for limited driving privileges that fit your schedule. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
   },
   {
@@ -850,7 +850,7 @@ export const blogPosts: BlogPost[] = [
       <p>The 30-day deadline under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.191" target="_blank" rel="noopener noreferrer">Ohio Revised Code 4511.191</a> is strict and has no exceptions, and courts generally do not extend it. If you miss it by even one day, your only option is to wait out the suspension and apply for limited driving privileges when you become eligible.</p>
 
       <h2>What you need to do</h2>
-      <p>Contact an attorney as soon as you can after the arrest. An <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, ask for a stay of the suspension (which lets you keep driving until the hearing), and represent you at the BMV hearing. The criminal case and the ALS appeal run on separate tracks, and both need attention from day one. If you have been arrested for OVI in Ohio, call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a> before the 30 days run out. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
+      <p>Contact an attorney as soon as you can after the arrest. An <a href="/ovi-dui-defense">OVI defense attorney</a> can file the appeal, ask for a stay of the suspension (which lets you keep driving until the hearing), and represent you at the BMV hearing. The OVI charges and the ALS appeal run on separate tracks, and both need attention from day one. If you have been arrested for OVI in Ohio, call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a> before the 30 days run out. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
   },
   {
@@ -876,7 +876,7 @@ export const blogPosts: BlogPost[] = [
       <p>Get medical attention right away, even for a small bite, because dog bites carry bacteria that can cause serious infections. Get the owner&apos;s name, address and insurance information. Photograph your injuries, and the dog if you can. Report the bite to animal control and get a copy of the report. Collect witnesses&apos; contact information and keep your medical records and bills together. Then contact a <a href="/personal-injury">personal injury attorney</a> to review your claim; many work on contingency.</p>
 
       <h2>Ohio&apos;s statute of limitations</h2>
-      <p>You have two years from the date of the injury to file a lawsuit. Evidence and witnesses can disappear over time, and insurers may dispute claims reported late, so start early.</p>
+      <p>You have two years from the date of the injury to file a personal injury lawsuit. Evidence and witnesses can disappear over time, and insurers may dispute claims reported late, so start early.</p>
 
       <p>If you or a family member was injured by a dog in Ohio, Jwayyed Law LLC represents dog bite victims throughout the counties it serves. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm works on a contingency fee basis.</p>
     `,
@@ -969,7 +969,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Jail alternatives</h2>
       <p>Many first-time offenders serve no jail time. Courts often offer the Driver Intervention Program (a 3-day alcohol education program) in place of jail, house arrest with electronic monitoring, community service (60 to 100 hours), or probation without jail. An attorney can negotiate with the prosecutor and ask the judge for alternatives that keep you out of jail while still meeting the court&apos;s goals of accountability and rehabilitation.</p>
 
-      <h2>Consequences beyond jail</h2>
+      <h2>Fines, costs and license suspension</h2>
       <p>A first OVI also brings a license suspension (6 months to 3 years depending on BAC and refusal), fines of $565 to $1,075, court costs, license reinstatement fees ($315+), ignition interlock costs if ordered ($50 to $100 a month), and a required Driver Intervention Program or substance abuse counseling. You may be eligible for <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> after 15 days (30 if you refused).</p>
 
       <h2>Why an attorney matters</h2>
@@ -987,13 +987,13 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/passport.jpg',
     gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
     content: `
-      <p>An OVI/DUI in Ohio costs far more than the court fine. People facing charges tend to focus on the court penalties and overlook the costs that build up over the following years. Seeing the full picture helps you plan and decide whether hiring an attorney is worth it.</p>
+      <p>An OVI/DUI in Ohio costs far more than the court fine. People facing DUI charges tend to focus on the court penalties and overlook the costs that build up over the following years. Seeing the full picture helps you plan and decide whether hiring an attorney is worth it.</p>
 
       <h2>Court fines and fees</h2>
       <p>For a first OVI under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.19" target="_blank" rel="noopener noreferrer">Ohio Revised Code 4511.19</a>, fines range from $565 to $1,075, depending on whether the BAC is low-level or high-level. On top of that come court costs, probation supervision fees ($15 to $50 a month), fees for mandatory programs like the Driver Intervention Program ($200 to $500), and fees for an alcohol assessment or treatment. Court-ordered costs alone can easily pass $2,000.</p>
 
       <h2>License reinstatement</h2>
-      <p>When the suspension ends, you pay a $315 reinstatement fee to the Bureau of Motor Vehicles. If the court ordered an ignition interlock device, expect installation fees ($100 to $300) and monitoring fees ($50 to $100 a month) for 6 to 12 months. Some people also need SR-22 insurance, which costs much more than a regular policy.</p>
+      <p>When the license suspension ends, you pay a $315 reinstatement fee to the Bureau of Motor Vehicles. If the court ordered an ignition interlock device, expect installation fees ($100 to $300) and monitoring fees ($50 to $100 a month) for 6 to 12 months. Some people also need SR-22 insurance, which costs much more than a regular policy.</p>
 
       <h2>Insurance impact</h2>
       <p>Insurance is usually the largest cost. An OVI conviction typically doubles, triples or even quadruples car insurance rates for 3 to 5 years, because drivers with an OVI are classed as &quot;high-risk.&quot; If your insurance was $1,200 a year and triples to $3,600, that is an extra $12,000 over five years.</p>
@@ -1002,7 +1002,7 @@ export const blogPosts: BlogPost[] = [
       <p>A suspension of months or years can cost you income if your job involves driving. Limited driving privileges help, but their restrictions may still cut your earnings. Even a few days in jail means lost pay and possibly a lost job.</p>
 
       <h2>Attorney fees and what they can save</h2>
-      <p>An <a href="/ovi-dui-defense">OVI attorney</a> may charge a flat fee ($1,500 to $5,000) or an hourly rate. That is a real cost up front. Depending on the evidence, an attorney may get the charge reduced from OVI to reckless operation (avoiding the OVI label), negotiate a shorter suspension, keep you out of jail, or get the case dismissed. Saving 6 months of suspension, or avoiding a conviction that would double your insurance for five years, can be worth several times the fee.</p>
+      <p>An <a href="/ovi-dui-defense">OVI attorney</a> may charge a flat fee ($1,500 to $5,000) or an hourly rate. That is a real cost up front. Depending on the evidence, an attorney may get the charge reduced from OVI to reckless operation (avoiding the OVI label), negotiate a shorter license suspension, keep you out of jail, or get the case dismissed. Saving 6 months of suspension, or avoiding a conviction that would double your insurance for five years, can be worth several times the fee.</p>
 
       <h2>Long-term costs</h2>
       <p>An OVI conviction affects job prospects for years. Many employers run background checks and view DUI convictions negatively, and some fields (transportation, healthcare, education) may close to you. Rental applications and professional licensing can be affected too. Adding up fines, suspension fees, insurance increases, lost income and the effect on employment, an OVI in Ohio can easily cost $15,000 to $30,000 or more over several years.</p>
@@ -1033,7 +1033,7 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Self-defense</strong> applies if you reasonably believed you needed force to protect yourself from imminent harm, and it is one of the most common defenses to an assault charge. <strong>Defense of others</strong>, meaning reasonable force to protect a family member or someone else, is also a valid defense. Others include lack of intent to cause harm, mistaken identity and insufficient evidence. An attorney can review the facts and decide which defenses fit your case.</p>
 
       <h2>What you should do</h2>
-      <p>Do not discuss the case with anyone except your attorney, and do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible, so they can request evidence, investigate and start preparing your defense. Jwayyed Law LLC represents clients charged with assault in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
+      <p>Do not discuss the case with anyone except your attorney, and do not post about it on social media. Contact a <a href="/criminal-defense/assault-charges">criminal defense attorney</a> as soon as possible, so they can request evidence, investigate and start preparing your defense. Jwayyed Law LLC represents clients facing assault charges in Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>. The firm serves clients throughout Ohio, including Franklin County, Columbus and surrounding communities.</p>
     `,
   },
   {
@@ -1047,7 +1047,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/power.jpg',
     gradient: 'from-[#2d3436] to-[#1a1a2e]',
     content: `
-      <p>Shoplifting and petty theft in Ohio can lead to criminal charges, fines and a permanent record. Even a first offense can affect your job prospects, housing and professional opportunities.</p>
+      <p>Shoplifting and petty theft in Ohio can lead to criminal charges, fines and a criminal record that stays unless it is sealed. Even a first offense can affect your job prospects, housing and professional opportunities.</p>
 
       <h2>Theft classifications in Ohio</h2>
       <p>Shoplifting in Ohio is usually charged as theft under <a href="https://codes.ohio.gov/ohio-revised-code/section-2913.02" target="_blank" rel="noopener noreferrer">Ohio Revised Code 2913.02</a>. The value of the property and your prior record decide whether it is a misdemeanor or a felony. Theft of property worth less than $1,000 is typically a first-degree misdemeanor (up to 180 days in jail and a fine of up to $1,000). Theft of $1,000 to $7,500 is a fifth-degree felony (6 to 12 months in prison), and the level rises with the amount. Theft over $100,000 carries several years in prison.</p>
@@ -1084,7 +1084,7 @@ export const blogPosts: BlogPost[] = [
       <p>Report the fall to the manager and ask for an incident report. Photograph the exact spot where you fell and the hazard before it is cleaned up, and photograph your injuries. Get witnesses&apos; contact information. See a doctor within 24 to 48 hours, even if you feel fine, and keep all medical records and receipts.</p>
 
       <h2>Statute of limitations</h2>
-      <p>You have two years from the date of the fall to file a lawsuit in Ohio. Evidence and witnesses can disappear, and the longer you wait, the harder it is to prove what caused the fall.</p>
+      <p>You have two years from the date of the fall to file a personal injury lawsuit in Ohio. Evidence and witnesses can disappear, and the longer you wait, the harder it is to prove what caused the fall.</p>
 
       <p>Jwayyed Law LLC represents <a href="/personal-injury/slip-and-fall">slip and fall</a> victims throughout Ohio on a contingency fee basis. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
     `,
@@ -1131,10 +1131,10 @@ export const blogPosts: BlogPost[] = [
       <p>Most people benefit from having a will. Without one, Ohio law decides who inherits your property, and the result may not be what you would have chosen.</p>
 
       <h2>What happens without a will</h2>
-      <p>Ohio&apos;s intestacy laws decide who inherits when there is no will. Your spouse and children usually inherit first, but the shares depend on your family structure. An unmarried partner receives nothing unless a will provides for them. The court appoints an administrator, often not the person you would have picked, to manage your estate.</p>
+      <p>Ohio&apos;s intestacy laws decide who inherits when there is no will. Your spouse and children usually inherit first, but the shares depend on your family structure. An unmarried partner receives nothing unless a will provides for them. The probate court appoints an administrator, often not the person you would have picked, to manage your estate.</p>
 
       <h2>What a will does</h2>
-      <p>A will lets you decide who gets what, name an executor to manage your estate, and name guardians for minor children. You can update it as your life changes. A will does not avoid probate, but it makes sure your wishes are followed and can make probate simpler.</p>
+      <p>A will lets you decide who gets what, name an executor to manage your estate, and name guardians for minor children. You can update it as your life changes. A will does not avoid probate, but it makes sure your wishes are followed and can make the probate process simpler.</p>
 
       <h2>Who especially needs a will</h2>
       <p>Parents of minor children (to name guardians), people with significant assets, anyone who wants to leave something to someone other than the default heirs, and blended families. Even if your estate seems &quot;simple,&quot; a will settles questions your family would otherwise have to sort out.</p>
@@ -1181,7 +1181,7 @@ export const blogPosts: BlogPost[] = [
       <p>Wills and trusts both pass assets to loved ones, but they work differently and do different jobs.</p>
 
       <h2>What a will does</h2>
-      <p>A will says who gets your property when you die. It names an executor to handle your estate and can name guardians for minor children. A will must go through probate, the court-supervised process of validating the will and distributing the assets. Probate can take months, and the will becomes part of the public record.</p>
+      <p>A will says who gets your property when you die. It names an executor to handle your estate and can name guardians for minor children. A will must go through probate, the process in which the probate court validates the will and oversees distribution of the assets. Probate can take months, and the will becomes part of the public record.</p>
 
       <h2>What a trust does</h2>
       <p>A trust holds assets for named beneficiaries. You transfer assets into it during your life, and when you die the trustee distributes them under the trust terms, usually without probate. A revocable living trust can be changed or revoked while you are alive. Trusts keep your affairs private and often distribute assets faster than probate.</p>
@@ -1203,7 +1203,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/realestate-blog.jpg',
     gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
     content: `
-      <p>When a loved one dies in Ohio, one of the first legal questions is whether the estate needs probate and, if so, what that involves. Probate is the court-supervised process of validating a will, identifying and appraising assets, paying debts and taxes, and distributing what remains to the heirs. It is governed by <a href="https://codes.ohio.gov/ohio-revised-code/title-21" target="_blank" rel="noopener noreferrer">Ohio Revised Code Title 21</a> and can take anywhere from a few months to more than a year, depending on how complex the estate is.</p>
+      <p>When a loved one dies in Ohio, one of the first legal questions is whether the estate needs probate and, if so, what the probate process involves. Probate is the court-supervised process of validating a will, identifying and appraising assets, paying debts and taxes, and distributing what remains to the heirs. It is governed by <a href="https://codes.ohio.gov/ohio-revised-code/title-21" target="_blank" rel="noopener noreferrer">Ohio Revised Code Title 21</a> and can take anywhere from a few months to more than a year, depending on how complex the estate is.</p>
 
       <h2>When is probate required in Ohio?</h2>
       <p>Not every asset goes through probate. Property titled only in the decedent's name, with no joint owner or named beneficiary, usually does. That includes real estate in the decedent's name alone, bank accounts without a payable-on-death designation, vehicles titled only to the deceased, and personal property of significant value. Assets that usually skip probate include life insurance payable to a named beneficiary, retirement accounts (IRA, 401(k)) with designated beneficiaries, jointly owned property with right of survivorship, and assets held in a living trust. If the probate estate is worth $35,000 or less (or $100,000 if the surviving spouse is the sole heir), a simplified <strong>summary release from administration</strong> may be available under <a href="https://codes.ohio.gov/ohio-revised-code/section-2113.03" target="_blank" rel="noopener noreferrer">ORC 2113.03</a>.</p>
@@ -1215,7 +1215,7 @@ export const blogPosts: BlogPost[] = [
       <p>Within a set time after appointment, the executor must publish a notice to creditors in a local newspaper once a week for three consecutive weeks under <a href="https://codes.ohio.gov/ohio-revised-code/section-2117.06" target="_blank" rel="noopener noreferrer">ORC 2117.06</a>. Known creditors must also get individual written notice. Creditors then have <strong>six months</strong> from the date of death (or 60 days from the notice, whichever is later) to present their claims, and claims filed after that are generally barred. The executor reviews each claim and approves or rejects it, and a rejected claim can be contested in court.</p>
 
       <h2>Step 3: Preparing the inventory and appraisal</h2>
-      <p>Within three months of appointment, the executor must file a complete inventory of the probate assets with the court under <a href="https://codes.ohio.gov/ohio-revised-code/section-2115.02" target="_blank" rel="noopener noreferrer">ORC 2115.02</a>, listing each asset at fair market value as of the date of death. Real estate must be appraised by a court-appointed appraiser, and vehicles, business interests and collectibles may also need independent appraisals. Heirs and beneficiaries can object to the inventory if they think items are valued wrongly.</p>
+      <p>Within three months of appointment, the executor must file a complete inventory of the probate assets with the court under <a href="https://codes.ohio.gov/ohio-revised-code/section-2115.02" target="_blank" rel="noopener noreferrer">ORC 2115.02</a>, listing each asset at fair market value as of the date of death. Real estate must be appraised by a court-appointed appraiser, and vehicles, business interests and collectibles may also need independent appraisals. Heirs and beneficiaries can object to the inventory in probate court if they think items are valued wrongly.</p>
 
       <h2>Step 4: Managing estate assets during administration</h2>
       <p>While the estate is open, the executor is a fiduciary, legally bound to act in the best interests of the estate and its beneficiaries. That means collecting all the assets, safeguarding property, paying valid debts and taxes (including any Ohio estate tax obligations, and federal estate tax if the estate exceeds the federal threshold), filing the decedent&apos;s final income tax returns, and possibly filing an estate income tax return. An executor who mismanages assets can be personally liable.</p>
@@ -1224,7 +1224,7 @@ export const blogPosts: BlogPost[] = [
       <p>Once debts, taxes and administrative expenses are paid, the executor prepares a final account under <a href="https://codes.ohio.gov/ohio-revised-code/section-2109.30" target="_blank" rel="noopener noreferrer">ORC 2109.30</a> showing all receipts, payments and the assets left to distribute. After the court approves the account, the executor distributes the remaining assets to the beneficiaries as the will directs (or under Ohio's intestacy statutes if there is no will). Each beneficiary signs a receipt, and the executor files a certificate of completion to close the estate.</p>
 
       <h2>How to avoid probate</h2>
-      <p>Many Ohio families reduce what goes through probate by planning ahead. Common tools are a <a href="/trusts">revocable living trust</a>; payable-on-death or transfer-on-death designations on bank accounts and real estate (for real estate, Ohio's Transfer on Death Designation Affidavit under <a href="https://codes.ohio.gov/ohio-revised-code/section-5302.22" target="_blank" rel="noopener noreferrer">ORC 5302.22</a>); joint ownership with right of survivorship; and up-to-date beneficiary designations on retirement and insurance accounts. Planning now can spare your family months of court involvement and thousands in administration costs.</p>
+      <p>Many Ohio families reduce what has to pass through probate court by planning ahead. Common tools are a <a href="/trusts">revocable living trust</a>; payable-on-death or transfer-on-death designations on bank accounts and real estate (for real estate, Ohio's Transfer on Death Designation Affidavit under <a href="https://codes.ohio.gov/ohio-revised-code/section-5302.22" target="_blank" rel="noopener noreferrer">ORC 5302.22</a>); joint ownership with right of survivorship; and up-to-date beneficiary designations on retirement and insurance accounts. Planning now can spare your family months of court involvement and thousands in administration costs.</p>
 
       <p>If you are administering an estate or planning ahead, a <a href="/other-services/probate">probate attorney</a> can handle the filings and deadlines for you. Jwayyed Law LLC provides <a href="/other-services/estate-planning">estate planning</a> and probate administration throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
     `,
@@ -1240,10 +1240,10 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/criminallaw-blog2.jpg',
     gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
     content: `
-      <p>A criminal conviction, or even an arrest that did not lead to one, can create lasting barriers to jobs, housing, professional licenses and education. Ohio law offers a way forward through record sealing and expungement, but the two terms are often confused and the eligibility rules are detailed. The main statute is <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.32" target="_blank" rel="noopener noreferrer">ORC 2953.32</a>.</p>
+      <p>A criminal conviction, or even an arrest that did not lead to one, can create lasting barriers to jobs, housing, professional licenses and education. Ohio law offers a way forward through expungement and record sealing, but the two terms are often confused and the eligibility rules are detailed. The main statute is <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.32" target="_blank" rel="noopener noreferrer">ORC 2953.32</a>.</p>
 
       <h2>Sealing vs. expungement: what is the difference?</h2>
-      <p>In Ohio, "sealing" and "expungement" are often used interchangeably, but they mean different things in law. <strong>Sealing</strong> hides a record from the general public: most employers, landlords and members of the public cannot see it, but law enforcement and certain licensing boards may still have access. <strong>Expungement</strong> technically means the physical record is destroyed. In practice, most Ohio cases under ORC 2953.32 end in sealing rather than destruction. Either way, for most Ohioans the result is that the record does not appear on a standard background check.</p>
+      <p>In Ohio, "sealing" and "expungement" are often used interchangeably, but they mean different things in law. <strong>Sealing</strong> a record hides it from the general public: most employers, landlords and members of the public cannot see it, but law enforcement and certain licensing boards may still have access. <strong>Expungement</strong> technically means the physical record is destroyed. In practice, most Ohio cases under ORC 2953.32 end in sealing rather than destruction. Either way, for most Ohioans the result is that the record does not appear on a standard background check.</p>
 
       <h2>Who is eligible?</h2>
       <p>Ohio has expanded eligibility considerably in recent years. Under <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.36" target="_blank" rel="noopener noreferrer">ORC 2953.36</a>, some offenses are categorically ineligible: first- and second-degree felonies, most sex offenses that require registration, certain offenses involving victims under 18, domestic violence convictions, and OVI/DUI convictions. Eligible offenses generally include many misdemeanors, lower-level felonies (F3, F4, F5), and arrests that did not end in a conviction. Under the 2023 reforms, adults with any number of prior convictions may now be eligible, because Ohio removed the old "first-time offender" cap in many situations.</p>
@@ -1251,7 +1251,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Mandatory waiting periods</h2>
       <p>You cannot apply as soon as your case ends. Ohio sets waiting periods that run from the date you complete your sentence, including probation or community control: <strong>1 year</strong> for most misdemeanors and <strong>3 years</strong> for most eligible felonies. Where there was no conviction (a dismissal, a not-guilty verdict or a no bill), you can often apply right away. A new conviction during the waiting period stops the clock.</p>
 
-      <h2>The application process</h2>
+      <h2>The expungement process</h2>
       <p>You file an application (petition) in the court where the case started. It includes your personal information, the case number or numbers you want sealed, and a statement that you meet the eligibility requirements. The filing fee is typically $50 to $100, depending on the court. The court notifies the prosecutor&apos;s office, which has 60 days to object. If the prosecutor objects, the court schedules a hearing, where the judge weighs your interests against the government&apos;s interest in keeping the record. Judges look at the nature of the offense, your rehabilitation and your current circumstances.</p>
 
       <h2>What records are affected?</h2>
@@ -1311,7 +1311,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/personalinjury-blog.jpg',
     gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
     content: `
-      <p>If you were injured in Ohio, in a car accident, a slip and fall or through anyone else&apos;s negligence, the clock starts almost at once. Ohio sets strict deadlines, called <strong>statutes of limitations</strong>, for filing a lawsuit. Missing one usually means you permanently lose the right to seek compensation, however strong your case.</p>
+      <p>If you were injured in Ohio, in a car accident, a slip and fall or through anyone else&apos;s negligence, the clock starts almost at once. Ohio sets strict deadlines, called <strong>statutes of limitations</strong>, for filing a personal injury lawsuit. Missing one usually means you permanently lose the right to seek compensation, however strong your case.</p>
 
       <h2>The general rule: two years under ORC 2305.10</h2>
       <p>For most personal injury claims in Ohio, the governing statute is <a href="https://codes.ohio.gov/ohio-revised-code/section-2305.10" target="_blank" rel="noopener noreferrer">Ohio Revised Code 2305.10</a>. It requires a civil action for bodily injury or injury to personal property to be brought within <strong>two years</strong> after the cause of action accrues. In a straightforward case, that is the date of the accident or injury, so the two years start the day you are hurt. The two-year deadline applies to car accidents, truck accidents, pedestrian knockdowns, motorcycle crashes, premises liability (slip and falls), dog bites and most other general negligence claims.</p>
@@ -1370,15 +1370,15 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Second-Degree Felony (F2):</strong> 2 to 8 years in prison; maximum fine of $15,000. Examples: aggravated arson, felonious assault causing serious harm, kidnapping in certain circumstances.</li>
         <li><strong>First-Degree Felony (F1):</strong> 3 to 11 years in prison (or up to life for some offenses); maximum fine of $20,000. Examples: aggravated murder (a death penalty specification is possible), rape, aggravated robbery, most major drug trafficking offenses.</li>
       </ul>
-      <p>Felonies are prosecuted in the Court of Common Pleas in the county where the offense happened.</p>
+      <p>Felony cases are prosecuted in the Court of Common Pleas in the county where the offense happened.</p>
 
       <h2>Collateral consequences</h2>
       <p>Beyond the sentence itself, misdemeanor and felony convictions carry <strong>collateral consequences</strong> that last long after the case ends. A felony conviction can cost you the right to vote while incarcerated (restored on release in Ohio under <a href="https://codes.ohio.gov/ohio-revised-code/section-2961.01" target="_blank" rel="noopener noreferrer">ORC 2961.01</a>); the right to possess firearms under federal law (18 U.S.C. § 922(g)(1)) and Ohio law; eligibility for some professional licenses (law, medicine, education and others); federal student loan eligibility (for drug convictions); access to public housing; and the ability to pass a background check for most jobs. Even a first-degree misdemeanor conviction can cause professional license problems, affect housing applications and show up on standard background checks for years.</p>
 
       <h2>How sealing eligibility differs</h2>
-      <p>Record sealing rules differ between misdemeanors and felonies. Most misdemeanor convictions (except OVI and domestic violence) have a one-year waiting period and are easier to seal. Many felonies can be sealed too, but first- and second-degree felonies are categorically ineligible under <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.36" target="_blank" rel="noopener noreferrer">ORC 2953.36</a>. F3 through F5 convictions may be eligible after a three-year waiting period, subject to other conditions. Our article on <a href="/our-law-firm/blog/what-is-expungement-ohio-2024">Ohio expungement</a> has the details.</p>
+      <p>Rules for sealing a criminal record differ between misdemeanors and felonies. Most misdemeanor convictions (except OVI and domestic violence) have a one-year waiting period and are easier to seal. Many felonies can be sealed too, but first- and second-degree felonies are categorically ineligible under <a href="https://codes.ohio.gov/ohio-revised-code/section-2953.36" target="_blank" rel="noopener noreferrer">ORC 2953.36</a>. F3 through F5 convictions may be eligible after a three-year waiting period, subject to other conditions. Our article on <a href="/our-law-firm/blog/what-is-expungement-ohio-2024">Ohio expungement</a> has the details.</p>
 
-      <p>Whether you face a misdemeanor or a felony, the charge, the plea and the sentence all turn on decisions made early in the case. Jwayyed Law LLC provides <a href="/criminal-defense">criminal defense</a> representation throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p>Whether you face a misdemeanor or a felony charge, the final charge, the plea and the sentence all turn on decisions made early in the case. Jwayyed Law LLC provides <a href="/criminal-defense">criminal defense</a> representation throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
     `,
   },
   {
@@ -1394,7 +1394,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <p>A power of attorney (POA) is a core part of any estate plan, yet people often skip it until a crisis makes it urgent. In Ohio, a POA authorizes the person you choose (your <strong>agent</strong> or <strong>attorney-in-fact</strong>) to make legally binding decisions for you. Depending on the type, those decisions can cover your finances, real estate, medical care or day-to-day personal affairs.</p>
 
-      <h2>Ohio&apos;s durable power of attorney</h2>
+      <h2>Ohio power of attorney requirements</h2>
       <p>Ohio&apos;s durable power of attorney for finances is governed by <a href="https://codes.ohio.gov/ohio-revised-code/chapter-1337" target="_blank" rel="noopener noreferrer">ORC Chapter 1337</a>. A <strong>durable</strong> POA stays in effect if the principal (the person granting authority) becomes incapacitated, which is the feature most people need. Without the "durable" designation, a standard POA ends automatically when the principal loses mental capacity, exactly when someone needs to act for you. Under <a href="https://codes.ohio.gov/ohio-revised-code/section-1337.09" target="_blank" rel="noopener noreferrer">ORC 1337.09</a>, a durable POA must be signed by the principal and notarized. Ohio also recommends (and many institutions require) signing in front of two witnesses who are not the agent or the agent&apos;s relatives.</p>
 
       <h2>Financial POA vs. healthcare POA</h2>
@@ -1412,7 +1412,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Why you need a POA even if you have a will</h2>
       <p>Many people assume a will covers everything. A will takes effect only at death and does nothing while you are alive but incapacitated. Without a durable POA, if illness, injury or cognitive decline leaves you incapacitated, your family may have no legal authority to pay your bills, manage your accounts or make decisions for you. They would have to petition the probate court for a <strong>guardianship</strong>, which is costly, slow and emotionally hard, and can take months while your affairs are on hold. A properly drafted POA costs a fraction of a guardianship and gives clear, immediate authority to someone you chose.</p>
 
-      <p>Jwayyed Law LLC helps Ohio families put together estate plans that include durable powers of attorney, healthcare POAs, living wills and <a href="/other-services/estate-planning-wills">wills</a>. Contact the firm&apos;s <a href="/other-services/estate-planning">estate planning attorneys</a> at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p>Jwayyed Law LLC helps Ohio families put together estate plans that include durable powers of attorney, healthcare POAs, living wills and <a href="/other-services/estate-planning-wills">wills</a>. To speak with a power of attorney lawyer in Columbus, contact the firm&apos;s <a href="/other-services/estate-planning">estate planning attorneys</a> at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
     `,
   },
   {
@@ -1435,13 +1435,13 @@ export const blogPosts: BlogPost[] = [
       <p>The ALS is separate from the criminal case and starts immediately. If you failed a chemical test (a BAC of .08% or higher for adults, .04% for CDL holders operating a commercial vehicle, or .02% for drivers under 21) or refused it, the officer serves you with an ALS notice on behalf of the Ohio Bureau of Motor Vehicles. Your license is taken on the spot and you receive a temporary 15-day driving permit. You have <strong>30 days from the arrest date</strong> to appeal the ALS to the court handling your criminal case. Miss that deadline and you give up the right to contest the suspension. An attorney can file the appeal and ask for a stay of the ALS while it is pending, which may let you keep driving while the case is resolved.</p>
 
       <h2>Arraignment</h2>
-      <p>Your first court appearance is the arraignment, usually within a few days to a week of the arrest. The judge formally reads the charges and you enter an initial plea, almost always "not guilty" at this stage. The court may also set bond conditions and address restrictions on your driving. Have an attorney present, or at least hired, by this point, because bond conditions that limit where you can go or require alcohol monitoring can be challenged here.</p>
+      <p>Your first court appearance is the arraignment, usually within a few days to a week of the arrest. The judge formally reads the OVI charges and you enter an initial plea, almost always "not guilty" at this stage. The court may also set bond conditions and address restrictions on your driving. Have an attorney present, or at least hired, by this point, because bond conditions that limit where you can go or require alcohol monitoring can be challenged here.</p>
 
       <h2>Pretrial hearings and discovery</h2>
       <p>After arraignment the case moves into the pretrial phase. Your attorney requests discovery from the prosecution: the police report, dash and body camera footage, breath or blood test results and calibration records, field sobriety test records and any witness statements. Much of this evidence is scientific or procedural and can be challenged. Breath machines must be properly calibrated and maintained, field sobriety tests must follow standardized protocols, and blood draws must follow specific procedures to avoid contamination. Your attorney may file pretrial motions to suppress unlawfully obtained evidence. If the stop lacked reasonable articulable suspicion, for example, everything gathered afterward may be inadmissible.</p>
 
       <h2>Plea negotiations</h2>
-      <p>Most OVI cases end in a plea agreement rather than a trial. Your attorney weighs the strength of the prosecution&apos;s evidence and negotiates for reduced charges, lighter penalties or alternative sentencing. Common outcomes include a reduction from OVI to "physical control" (a lesser charge under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.194" target="_blank" rel="noopener noreferrer">ORC 4511.194</a>), a reduction to reckless operation, or an OVI plea with an agreed sentencing recommendation. How far the prosecutor will negotiate depends mostly on the quality of the evidence and your prior record.</p>
+      <p>Most Ohio OVI cases end in a plea agreement rather than a trial. Your attorney weighs the strength of the prosecution&apos;s evidence and negotiates for reduced charges, lighter penalties or alternative sentencing. Common outcomes include a reduction from OVI to "physical control" (a lesser charge under <a href="https://codes.ohio.gov/ohio-revised-code/section-4511.194" target="_blank" rel="noopener noreferrer">ORC 4511.194</a>), a reduction to reckless operation, or an OVI plea with an agreed sentencing recommendation. How far the prosecutor will negotiate depends mostly on the quality of the evidence and your prior record.</p>
 
       <h2>Trial</h2>
       <p>If no acceptable plea is reached, the case goes to trial, before a judge (a bench trial) or a jury. Your attorney will challenge the stop, the field sobriety tests, the chemical test results and the officer&apos;s observations. The prosecution must prove beyond a reasonable doubt that you were operating a vehicle while impaired or with a prohibited BAC.</p>
@@ -1540,7 +1540,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/dui-blog.jpg',
     gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
     content: `
-      <p>An FRA suspension is one of the most common license suspensions in Ohio, and one of the most confusing. It has nothing to do with DUI or criminal charges. It is triggered by failing to maintain proof of insurance under Ohio&apos;s Financial Responsibility Act (FRA), ORC Chapter 4509.</p>
+      <p>An FRA suspension is one of the most common types of license suspension in Ohio, and one of the most confusing. It has nothing to do with DUI or criminal charges. It is triggered by failing to maintain proof of insurance under Ohio&apos;s Financial Responsibility Act (FRA), ORC Chapter 4509.</p>
       <h2>What triggers an FRA suspension</h2>
       <p>Ohio requires every driver to carry at least minimum liability insurance. An FRA suspension can be triggered when (1) you are in an accident and cannot show proof of insurance; (2) you do not answer a random BMV verification request; or (3) your insurance lapses and your insurer notifies the BMV. HB 29 (effective April 9, 2025) restructured the BMV&apos;s random verification program, so if you receive a verification request, answer it promptly.</p>
       <h2>Reinstatement requirements</h2>
@@ -1562,7 +1562,7 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/courthouse-blog.jpg',
     gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
     content: `
-      <p>Circleville Municipal Court serves the City of Circleville and Pickaway County. If you have been charged with an OVI, a misdemeanor or a traffic offense in the Circleville area, your case will be heard there. Attorney Jwayyed Jwayyed previously served as Assistant Law Director for the City of Circleville and knows the court&apos;s procedures, judges and local practices.</p>
+      <p>Circleville Municipal Court serves the City of Circleville and Pickaway County, so it is the court most people mean by the Pickaway County Municipal Court. If you have been charged with an OVI, a misdemeanor or a traffic offense in the Circleville area, your case will be heard there. Attorney Jwayyed Jwayyed previously served as Assistant Law Director for the City of Circleville and knows the court&apos;s procedures, judges and local practices.</p>
       <h2>Jurisdiction and location</h2>
       <p>Circleville Municipal Court is at 151 E. Franklin St., Circleville, OH 43113. It handles misdemeanor criminal offenses, OVI/DUI, traffic violations, and civil cases up to $15,000 under ORC 1901.17 and ORC 1901.20. Felony charges are bound over to Pickaway County Common Pleas Court.</p>
       <h2>What to expect at arraignment</h2>
@@ -1614,7 +1614,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Naming a guardian</h2>
       <p>For new parents, the most important job of a will is naming a guardian for minor children. Under ORC 2111.12 and ORC 2111.121, a parent can nominate a guardian in a will. If both parents die without naming one, the Probate Court appoints a guardian, often after a contested hearing among relatives. Naming your choice does not guarantee the court will follow it, but it puts your preference on record, and courts take that seriously.</p>
       <h2>A will is not enough by itself</h2>
-      <p>A will controls assets that pass through your estate, meaning property in your name alone with no beneficiary designation. It does not control life insurance, 401(k)s, IRAs or joint accounts with right of survivorship, so review and update the beneficiary designations on every financial account. If you name your estate as the beneficiary of a life insurance policy, the money goes through probate, which is slower and more expensive than a direct transfer to a named beneficiary.</p>
+      <p>A will controls assets that pass through your estate, meaning property in your name alone with no beneficiary designation. It does not control life insurance, 401(k)s, IRAs or joint accounts with right of survivorship, so review and update the beneficiary designations on every financial account. If you name your estate as the beneficiary of a life insurance policy, the money has to pass through probate court, which is slower and more expensive than a direct transfer to a named beneficiary.</p>
       <h2>Consider a revocable living trust</h2>
       <p>If you want to avoid probate and control when your children receive assets (for example, at age 25 rather than 18), a <a href="/trusts/revocable-living-trusts">revocable living trust</a> is worth considering. You keep full control during your lifetime, and assets held in the trust pass outside probate at your death.</p>
       <h2>Powers of attorney</h2>

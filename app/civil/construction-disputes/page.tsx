@@ -167,7 +167,7 @@ export default function ConstructionDisputesPage() {
             { title: 'Read the contract', body: 'The terms decide the claims, the defenses and whether an arbitration clause takes the dispute out of court.' },
             { title: 'Protect lien or bond rights', body: 'Serve the notices and file the lien or bond claim before the deadline.' },
             { title: 'Negotiate or mediate', body: 'Many payment and defect disputes resolve here.' },
-            { title: 'Arbitrate or litigate', body: 'Enforce the lien, sue for breach, or defend against the claim.' },
+            { title: 'Arbitrate or litigate', body: 'Arbitration rather than court if the contract requires it. Otherwise enforce the lien, sue for breach, or defend against the claim.' },
           ]}
         />
         <p>

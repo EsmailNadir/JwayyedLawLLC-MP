@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Ohio Civil Attorney',
   description:
     'Civil disputes in Columbus, Cincinnati, Dayton and across Ohio: contracts, real estate, evictions, debt collection and more, with the filing deadlines that apply.',
-  keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer'],
+  keywords: ['Ohio civil attorney', 'Columbus civil attorney', 'Cincinnati civil attorney', 'Dayton civil attorney', 'Ohio civil lawyer', 'civil litigation attorney', 'contract disputes lawyer', 'debt collection defense Ohio'],
   openGraph: {
     title: 'Ohio Civil Attorney | Jwayyed Law LLC',
     description: 'Civil litigation in Columbus, Cincinnati, Dayton and throughout Ohio. Schedule a consultation.',

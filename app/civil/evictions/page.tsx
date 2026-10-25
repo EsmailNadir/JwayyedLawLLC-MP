@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Eviction Lawyer in Ohio',
   description:
     'Ohio evictions for landlords and tenants: the 3-day notice, the court hearing, the writ of possession and tenant defenses. Call (614) 285-5482.',
-  keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney'],
+  keywords: ['eviction lawyer Columbus OH', 'eviction attorney Ohio', 'landlord eviction lawyer', 'Franklin County eviction attorney', 'Ohio eviction process', 'Ohio eviction law', 'eviction defense Ohio'],
   openGraph: {
     title: 'Eviction Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Notice, filing, hearing and defenses in an Ohio eviction, for landlords and tenants.',
@@ -95,10 +95,10 @@ export default function EvictionsPage() {
       />
 
       <Section
-        title="How Ohio evictions work"
+        title="How the Ohio eviction process works"
         intro={
           <p>
-            Ohio evictions follow Ohio Revised Code Chapter 1923, and the landlord must follow each step. Tenant rights come from ORC
+            Ohio eviction law is set by Ohio Revised Code Chapter 1923, and the landlord must follow each step. Tenant rights come from ORC
             Chapter 5321.
           </p>
         }
@@ -161,7 +161,7 @@ export default function EvictionsPage() {
         <p>Defenses, continuances or an appeal can stretch the process from weeks to months.</p>
       </Section>
 
-      <Section title="Tenant defenses to eviction">
+      <Section title="Eviction defense for tenants">
         <PointGrid
           points={[
             {

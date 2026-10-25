@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Probate Administration Lawyer in Ohio',
   description:
     'Ohio probate administration step by step: letters, creditor notice, the three-month inventory, claims, tax returns and closing the estate.',
-  keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'probate administration', 'Franklin County probate attorney'],
+  keywords: ['probate administration lawyer Columbus OH', 'probate attorney Ohio', 'Ohio probate administration lawyer', 'Ohio probate administration process', 'probate administration', 'Franklin County probate attorney'],
   openGraph: {
     title: 'Probate Administration Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Each step of Ohio probate administration, from the petition to closing the estate.',
@@ -59,7 +59,7 @@ const faqs = [
       "The Summary Release from Administration (ORC 2113.031) is a simplified procedure for small Ohio estates. If the estate does not exceed $35,000 (or $100,000 if the surviving spouse is the sole beneficiary), it may qualify. The surviving spouse or next of kin applies to the probate court for a release instead of a full administration. There is then no executor to appoint, no notice to creditors to publish and no inventory to file, which saves cost and time. An attorney can check whether your loved one's estate qualifies and help with the application.",
   },
   {
-    question: 'Do I need an attorney for probate in Ohio?',
+    question: 'Do I need a probate attorney in Ohio?',
     answer:
       'Ohio law does not require one. The process does involve court filings, legal deadlines, creditor claims, tax obligations and fiduciary duties, and mistakes such as failing to notify creditors properly, missing deadlines or distributing too early can make the executor or administrator personally liable. An attorney can file the correct documents with the Franklin County Probate Court at 373 S. High St, Columbus, OH 43215, meet the statutory deadlines and administer the estate correctly.',
   },
@@ -112,7 +112,7 @@ export default function ProbateAdministrationPage() {
         </p>
       </Section>
 
-      <Section title="The administration process, step by step" tone="ice">
+      <Section title="The Ohio probate administration process, step by step" tone="ice">
         <Steps
           steps={[
             {

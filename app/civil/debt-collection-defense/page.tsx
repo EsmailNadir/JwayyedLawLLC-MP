@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Debt Collection Defense Lawyer in Ohio',
   description:
     'Sued for a debt in Ohio? You usually have 28 days to answer. Defenses, garnishment limits, exemptions and FDCPA rights, explained.',
-  keywords: ['debt collection defense lawyer Columbus OH', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
+  keywords: ['debt collection defense lawyer Columbus OH', 'Ohio debt collection defense', 'debt collection defense attorney', 'debt collection attorney Ohio', 'debt defense lawyer', 'Franklin County debt collection attorney'],
   openGraph: {
     title: 'Debt Collection Defense Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Defending debt collection lawsuits in Ohio: the answer deadline, the statute of limitations, exemptions and FDCPA claims.',
@@ -55,7 +55,7 @@ const faqs = [
   {
     question: 'Can debt collectors call me at night or at work in Ohio?',
     answer:
-      'Under the FDCPA, 15 U.S.C. § 1692c, collectors may not contact you before 8 a.m. or after 9 p.m. your local time. They may not contact you at work if they know or have reason to know your employer prohibits it. If you tell a collector in writing to stop, they must generally stop, except to notify you of specific actions. Calling after that request is a violation. Keep records of call times, caller ID and voicemails as evidence.',
+      'Under the FDCPA, 15 U.S.C. § 1692c, collectors may not contact you before 8 a.m. or after 9 p.m. your local time. They may not contact you at work if they know or have reason to know your employer prohibits it. If you tell a collector in writing to stop, they must generally stop, except to notify you of specific actions. Calling after that request is a violation. Keep a log of collector call times, caller ID and voicemails as evidence for an FDCPA claim.',
   },
   {
     question: 'How do I challenge a debt collection lawsuit in Ohio?',
@@ -95,7 +95,7 @@ export default function DebtCollectionDefensePage() {
       />
 
       <Section
-        title="Your protections as an Ohio consumer"
+        title="Understanding debt collection defense in Ohio"
         intro={
           <p>
             Ohio consumers are protected by the federal Fair Debt Collection Practices Act (FDCPA), 15 U.S.C. § 1692, the Ohio Consumer
@@ -104,7 +104,7 @@ export default function DebtCollectionDefensePage() {
         }
       >
         <p>
-          The firm defends consumers against debt collection lawsuits in Columbus, Cincinnati, Dayton and throughout Ohio, and pursues
+          The firm handles Ohio debt collection defense for consumers sued in Columbus, Cincinnati, Dayton and throughout Ohio, and pursues
           claims against collectors who break the law, as part of its <Link href="/civil">civil litigation practice</Link>.
         </p>
         <Callout title="Do not ignore the summons">
@@ -196,7 +196,7 @@ export default function DebtCollectionDefensePage() {
         />
       </Section>
 
-      <Section title="What the firm does on a debt case" tone="ice">
+      <Section title="What a debt collection defense attorney does on your case" tone="ice">
         <PointGrid
           points={[
             { title: 'Challenges the debt', body: 'Its validity, the statute of limitations and the debt buyer’s standing.' },

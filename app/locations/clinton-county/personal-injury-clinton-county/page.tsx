@@ -85,7 +85,7 @@ export default function PersonalInjuryClintonCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Clinton County"
+        title="Clinton County personal injury attorney"
         description="Injury lawsuits from Wilmington, Sabina, Blanchester, Clarksville and Port William are filed at the Clinton County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
 
@@ -114,7 +114,7 @@ export default function PersonalInjuryClintonCountyPage() {
 
       <Section title="Ohio deadlines and fault rules" tone="ice">
         <FactTable
-          title="The rules that decide an Ohio injury claim"
+          title="How Ohio personal injury law decides a claim"
           rows={[
             { label: 'Filing deadline', value: 'Two years from the date of injury for most claims (ORC 2305.10).' },
             {
@@ -131,7 +131,7 @@ export default function PersonalInjuryClintonCountyPage() {
         </p>
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Clinton County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Car accidents', body: 'Including crashes on US 68, SR 73 and county roads.' },

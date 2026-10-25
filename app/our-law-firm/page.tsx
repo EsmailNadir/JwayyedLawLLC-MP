@@ -50,7 +50,7 @@ export default function OurLawFirmPage() {
         }
       >
         <p>
-          The practice covers the legal problems Ohioans most often face: criminal defense and OVI/DUI, personal injury, civil
+          The practice covers the legal problems Ohioans most often face: criminal defense for people facing criminal charges, OVI/DUI defense, personal injury, civil
           litigation, landlord-tenant disputes, business formation and commercial disputes, and estate planning, including wills,
           trusts and powers of attorney.
         </p>

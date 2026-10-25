@@ -85,7 +85,7 @@ export default function PersonalInjuryAthensCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal injury claims in Athens County"
+        title="Athens County personal injury attorney"
         description="Injury lawsuits from Athens, Nelsonville, The Plains and Albany are filed at the Athens County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
 
@@ -134,7 +134,7 @@ export default function PersonalInjuryAthensCountyPage() {
         </p>
       </Section>
 
-      <Section title="Claims the firm handles">
+      <Section title="Athens County personal injury cases the firm handles">
         <PointGrid
           points={[
             { title: 'Car accidents', body: 'Crashes on US 33, US 50, SR 56 and rural county roads.' },

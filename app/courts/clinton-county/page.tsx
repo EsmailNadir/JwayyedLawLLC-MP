@@ -10,7 +10,7 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Clinton County Court Representation',
   description:
-    'Wilmington Municipal Court and Clinton County Common Pleas Court in Wilmington: addresses, what each hears, and the OVI, criminal and civil cases the firm handles.',
+    'Wilmington Municipal Court (Clinton County Municipal Court) and Clinton County Common Pleas Court: what each hears, and the OVI defense, criminal and civil cases the firm handles.',
   keywords: [
     'Clinton County OVI attorney',
     'Wilmington Municipal Court lawyer',
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     'Blanchester criminal defense',
     'Sabina Ohio attorney',
     'Clinton County Common Pleas',
+    'Clinton County Municipal Court',
+    'Wilmington DUI attorney',
+    'Wilmington criminal defense attorney',
   ],
   openGraph: {
     title: 'Clinton County Court Representation | Jwayyed Law LLC',
@@ -39,7 +42,7 @@ const faqs = [
   {
     question: 'What does Wilmington Municipal Court handle in Clinton County?',
     answer:
-      'Wilmington Municipal Court (69 N. South St, Wilmington, OH 45177) is the main trial court for misdemeanor criminal cases, OVI and DUI charges, traffic violations, civil claims up to $15,000, small claims and evictions in Clinton County. It also holds arraignments and preliminary hearings for felony arrests before those cases are bound over to Clinton County Common Pleas Court. If you are charged with OVI, assault, theft, drug possession or any other misdemeanor anywhere in the county, including Wilmington, Sabina, Blanchester, Clarksville and the rural townships, your case will be heard there. You must appear at arraignment, and having an attorney at that first hearing protects your rights.',
+      'Wilmington Municipal Court, also called Clinton County Municipal Court (69 N. South St, Wilmington, OH 45177), is the main trial court for misdemeanor criminal cases, OVI and DUI charges, traffic violations, civil claims up to $15,000, small claims and evictions in Clinton County. It also holds arraignments and preliminary hearings for felony arrests before those cases are bound over to Clinton County Common Pleas Court. If you are charged with OVI, assault, theft, drug possession or any other misdemeanor anywhere in the county, including Wilmington, Sabina, Blanchester, Clarksville and the rural townships, your case will be heard there. You must appear at arraignment, and having an attorney at that first court appearance protects your rights.',
   },
   {
     question: 'What are the OVI penalties for a first offense in Clinton County?',
@@ -64,7 +67,7 @@ const faqs = [
   {
     question: 'How does an attorney help with a Clinton County OVI case compared to representing myself?',
     answer:
-      'OVI law is technical. It involves Fourth Amendment search and seizure issues, NHTSA standards for field sobriety tests, Ohio Administrative Code requirements for breath instrument calibration and operator certification, and strict timelines for ALS appeals. One missed deadline or procedural misstep can permanently harm your case. An OVI attorney reviews the discovery, finds weaknesses in the evidence, files suppression motions, negotiates with the Clinton County prosecutor for reduced charges (such as a "wet reckless" or physical control), and advocates for you at sentencing. A conviction means a lost license, higher insurance, possible job loss and a permanent record.',
+      'OVI law is technical. It involves Fourth Amendment search and seizure issues, NHTSA standards for field sobriety tests, Ohio Administrative Code requirements for breath instrument calibration and operator certification, and strict timelines for ALS appeals. One missed deadline or procedural misstep can permanently harm your case. An OVI attorney reviews the discovery, finds weaknesses in the evidence, files suppression motions, negotiates with the Clinton County prosecutor for reduced charges (such as a "wet reckless" or physical control), and advocates for you at sentencing. A conviction means a lost license, higher insurance, possible job loss and a permanent criminal record.',
   },
   {
     question: 'Am I eligible to have a conviction sealed or expunged in Clinton County?',
@@ -91,7 +94,7 @@ export default function ClintonCountyCourtsPage() {
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
         title="Clinton County courts"
-        description="Every Clinton County case starts in one of two courts on South Street in Wilmington. Misdemeanors, OVI and felony arraignments go to Wilmington Municipal Court."
+        description="Every Clinton County case starts in one of two courts on South Street in Wilmington. Misdemeanors, OVI and felony arraignments go to Wilmington Municipal Court, also called Clinton County Municipal Court."
       />
 
       <Section
@@ -104,7 +107,7 @@ export default function ClintonCountyCourtsPage() {
         }
       >
         <FactTable
-          title="Wilmington Municipal Court"
+          title="Wilmington Municipal Court (Clinton County Municipal Court)"
           rows={[
             { label: 'Address', value: '69 N. South St, Wilmington, OH 45177' },
             { label: 'Hears', value: 'OVI, misdemeanor criminal cases, traffic violations, civil claims up to $15,000, small claims, evictions' },
@@ -124,7 +127,7 @@ export default function ClintonCountyCourtsPage() {
         />
       </Section>
 
-      <Section title="OVI charges in Clinton County" tone="ice">
+      <Section title="OVI defense in Clinton County" tone="ice">
         <p>
           Ohio&rsquo;s OVI law, ORC 4511.19, is among the most litigated statutes in the state, because the consequences are severe
           and the process has several stages where constitutional and procedural errors happen.
@@ -144,14 +147,14 @@ export default function ClintonCountyCourtsPage() {
         </Callout>
       </Section>
 
-      <Section title="Misdemeanor charges in Clinton County">
+      <Section title="Misdemeanor criminal defense in Clinton County">
         <p>
           ORC 2935.26 allows officers to issue a citation instead of an arrest for misdemeanors that are not first-degree. First-degree
           misdemeanors, including OVI, first-offense domestic violence and assault, usually mean arrest and arraignment.
         </p>
         <p>
           At arraignment, bail or bond conditions may be set. Defendants who appear without counsel risk waiving rights or entering
-          pleas they do not fully understand. An attorney from the first hearing through sentencing or trial makes sure every defense and
+          pleas they do not fully understand. An attorney from the first court appearance through sentencing or trial makes sure every defense and
           mitigation argument reaches Wilmington Municipal Court.
         </p>
         <FactTable

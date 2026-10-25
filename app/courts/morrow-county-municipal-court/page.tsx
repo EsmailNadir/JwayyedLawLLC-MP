@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Morrow County Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Morrow County Municipal Court, 48 E High St, Mount Gilead, which serves all of Morrow County, Ohio.',
-  keywords: ['Morrow County Municipal Court attorney', 'Morrow County OVI lawyer', 'Mount Gilead misdemeanor defense', 'Morrow County criminal attorney', 'OVI lawyer Mount Gilead Ohio'],
+    'OVI/DUI defense, misdemeanor criminal cases and traffic charges at Morrow County Municipal Court, 48 E High St, Mount Gilead, which serves all of Morrow County, Ohio.',
+  keywords: ['Morrow County Municipal Court attorney', 'Morrow County OVI lawyer', 'Mount Gilead misdemeanor defense', 'Morrow County criminal attorney', 'OVI lawyer Mount Gilead Ohio', 'Mount Gilead DUI attorney', 'Mount Gilead criminal defense attorney'],
   openGraph: {
     title: 'Morrow County Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Morrow County Municipal Court in Mount Gilead.',
@@ -98,7 +98,7 @@ export default function MorrowCountyMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Morrow County" tone="ice">
+      <Section title="OVI defense at Morrow County Municipal Court" tone="ice">
         <p>
           The Ohio State Highway Patrol actively patrols US 42 through Morrow County. OVI arrests in the county often follow traffic
           stops on US 42 and SR 61.
@@ -130,8 +130,8 @@ export default function MorrowCountyMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="Misdemeanor charges in Morrow County">
-        <p>The court also hears assault, domestic violence, theft, drug possession and disorderly conduct charges.</p>
+      <Section title="Misdemeanor defense in Morrow County">
+        <p>The court also hears misdemeanor criminal charges such as assault, domestic violence, theft, drug possession and disorderly conduct.</p>
         <FactTable
           title="Penalties"
           rows={[{ label: 'M1 maximum', value: 'Up to 180 days in jail and a $1,000 fine (ORC 2929.21)' }]}

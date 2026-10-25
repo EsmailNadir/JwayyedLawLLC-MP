@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     'spendthrift trust Columbus OH',
     'spendthrift trust attorney Ohio',
+    'Ohio trust law',
+    'Columbus estate planning attorneys',
     'ORC 5805.01 spendthrift provision',
     'creditor protection trust Ohio',
     'Ohio Legacy Trust ORC 5816',

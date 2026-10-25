@@ -9,8 +9,8 @@ import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/p
 export const metadata: Metadata = {
   title: 'Fairborn Municipal Court Attorney',
   description:
-    'OVI, misdemeanor and traffic cases at Fairborn Municipal Court, 1148 Kauffman Ave, which hears cases from Fairborn, Beavercreek and Bath Township.',
-  keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense', 'Wright-Patterson AFB OVI defense', 'Beavercreek criminal attorney'],
+    'OVI/DUI defense, misdemeanor criminal charges and traffic cases at Fairborn Municipal Court, 1148 Kauffman Ave, which hears cases from Fairborn, Beavercreek and Bath Township.',
+  keywords: ['Fairborn Municipal Court attorney', 'Greene County OVI lawyer', 'Fairborn misdemeanor defense', 'Wright-Patterson AFB OVI defense', 'Beavercreek criminal attorney', 'Fairborn DUI attorney', 'Fairborn criminal defense attorney', 'OVI defense Fairborn Municipal Court'],
   openGraph: {
     title: 'Fairborn Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Fairborn Municipal Court in Greene County.',
@@ -97,8 +97,8 @@ export default function FairbornMunicipalCourtPage() {
         />
       </Section>
 
-      <Section title="OVI cases in Fairborn and Beavercreek" tone="ice">
-        <p>Traffic is heavy on US 35, SR 444 and I-675, and OVI enforcement is active on all three.</p>
+      <Section title="OVI defense at Fairborn Municipal Court" tone="ice">
+        <p>In Fairborn and Beavercreek, traffic is heavy on US 35, SR 444 and I-675, and OVI enforcement is active on all three.</p>
         <FactTable
           title="First OVI under ORC 4511.19 and HB 37 (effective April 9, 2025)"
           rows={[
@@ -118,14 +118,14 @@ export default function FairbornMunicipalCourtPage() {
         </Callout>
         <h3>Military personnel and contractors</h3>
         <p>
-          For military personnel and government contractors near Wright-Patterson AFB, an OVI conviction carries risks beyond the
+          For military personnel and government contractors near Wright-Patterson AFB, an OVI conviction in Fairborn Municipal Court carries risks beyond the
           sentence, including possible security clearance review. The firm uses suppression motions, the ALS appeal and plea
           negotiation to protect both your record and your career.
         </p>
       </Section>
 
-      <Section title="Misdemeanor charges in Greene County">
-        <p>The court also hears misdemeanor assault, domestic violence (ORC 2919.25), theft, drug possession and disorderly conduct.</p>
+      <Section title="Misdemeanor defense at Fairborn Municipal Court">
+        <p>Fairborn Municipal Court also hears Greene County misdemeanor charges such as assault, domestic violence (ORC 2919.25), theft, drug possession and disorderly conduct.</p>
         <FactTable
           title="Penalties and sealing"
           rows={[
@@ -145,7 +145,8 @@ export default function FairbornMunicipalCourtPage() {
 
       <Section title="Related pages" tone="ice">
         <p>
-          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> for representation in Fairborn Municipal Court.
+          If you need a Fairborn DUI attorney or criminal defense attorney for a case in Fairborn Municipal Court, call (614) 285-5482
+          or use the <Link href="/contact">contact page</Link>.
         </p>
         <LinkGrid
           links={[
