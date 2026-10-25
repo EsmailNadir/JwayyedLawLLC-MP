@@ -3,6 +3,8 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
+import CopyButton from '@/components/CopyButton';
+import { LinkGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Legal Document Templates | Ohio',
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
     'personal injury demand letter',
   ],
   openGraph: {
-    title: 'Legal Document Templates | Jwayyed Law LLC',
+    title: 'Legal Document Templates',
     url: 'https://www.jjlawohio.com/our-law-firm/document-templates',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -33,7 +35,7 @@ const templates = [
   {
     id: 'personal-injury-demand',
     category: 'Personal Injury',
-    title: 'Personal Injury Demand Letter | Jwayyed Law LLC',
+    title: 'Personal Injury Demand Letter',
     description:
       'A demand letter is typically sent to the at-fault party or their insurance company before filing a lawsuit. It outlines the facts of the incident, your injuries and treatment, your total damages, and a settlement demand. Sending a well-documented demand letter often initiates settlement negotiations and can resolve a claim without litigation.',
     practiceHref: '/personal-injury',
@@ -50,7 +52,7 @@ const templates = [
 [ADDRESS]
 [CITY, STATE, ZIP]
 
-Re: Demand for Settlement — Claim for Personal Injuries
+Re: Demand for Settlement: Claim for Personal Injuries
     Claimant: [YOUR NAME]
     Date of Incident: [DATE OF ACCIDENT]
     Claim/Policy Number: [CLAIM # IF KNOWN]
@@ -61,17 +63,17 @@ This letter constitutes a formal demand for compensation for the injuries and da
 
 FACTS OF THE INCIDENT
 
-On [DATE], at approximately [TIME], I was [DESCRIBE WHAT YOU WERE DOING — e.g., "traveling northbound on Main Street in Columbus, Ohio"] when [DESCRIBE HOW THE ACCIDENT HAPPENED — e.g., "your insured, traveling southbound, failed to stop at a red light and struck my vehicle in the intersection"]. [ADD ANY ADDITIONAL RELEVANT FACTS.]
+On [DATE], at approximately [TIME], I was [DESCRIBE WHAT YOU WERE DOING, e.g., "traveling northbound on Main Street in Columbus, Ohio"] when [DESCRIBE HOW THE ACCIDENT HAPPENED, e.g., "your insured, traveling southbound, failed to stop at a red light and struck my vehicle in the intersection"]. [ADD ANY ADDITIONAL RELEVANT FACTS.]
 
 Police responded to the scene. A police report was filed (Report No. [#] with [LAW ENFORCEMENT AGENCY]).
 
 LIABILITY
 
-[AT-FAULT PARTY\'S NAME] was negligent in that [he/she/they] [DESCRIBE NEGLIGENT CONDUCT — e.g., "failed to obey a traffic signal, failed to keep a proper lookout, and operated a motor vehicle in a careless manner"]. As a direct and proximate result of this negligence, I suffered the injuries described below.
+[AT-FAULT PARTY\'S NAME] was negligent in that [he/she/they] [DESCRIBE NEGLIGENT CONDUCT, e.g., "failed to obey a traffic signal, failed to keep a proper lookout, and operated a motor vehicle in a careless manner"]. As a direct and proximate result of this negligence, I suffered the injuries described below.
 
 MY INJURIES AND MEDICAL TREATMENT
 
-As a result of the incident, I sustained the following injuries: [LIST INJURIES — e.g., "cervical strain, lumbar strain, and contusions to the right shoulder"]. I sought treatment at [HOSPITAL/CLINIC] on [DATE] and received follow-up care from [DOCTOR/SPECIALIST] through [DATE].
+As a result of the incident, I sustained the following injuries: [LIST INJURIES, e.g., "cervical strain, lumbar strain, and contusions to the right shoulder"]. I sought treatment at [HOSPITAL/CLINIC] on [DATE] and received follow-up care from [DOCTOR/SPECIALIST] through [DATE].
 
 SPECIAL DAMAGES (OUT-OF-POCKET LOSSES)
 
@@ -105,7 +107,7 @@ Enclosures: Medical Records, Medical Bills, Police Report, Photographs, Proof of
   {
     id: 'cease-desist-debt',
     category: 'Consumer / Debt',
-    title: 'Cease and Desist Letter (Debt Collector Harassment) | Jwayyed Law LLC',
+    title: 'Cease and Desist Letter (Debt Collector Harassment)',
     description:
       'The Fair Debt Collection Practices Act (FDCPA) gives consumers the right to demand that a debt collector stop contacting them. Once a collector receives this letter, they may generally only contact you to confirm they will stop or to notify you of a specific legal action. Sending this letter by certified mail creates a record of your demand.',
     practiceHref: '/civil',
@@ -147,14 +149,14 @@ Sincerely,
 [YOUR SIGNATURE]
 [YOUR PRINTED NAME]
 
-Sent via Certified Mail, Return Receipt Requested — Tracking #: [TRACKING NUMBER]`,
+Sent via Certified Mail, Return Receipt Requested. Tracking #: [TRACKING NUMBER]`,
   },
   {
     id: 'breach-contract',
     category: 'Business / Civil',
-    title: 'Business Contract Breach Demand Letter | Jwayyed Law LLC',
+    title: 'Business Contract Breach Demand Letter',
     description:
-      'When a party to a contract fails to perform their obligations — whether by not paying, not delivering goods or services, or otherwise breaching the agreement — this letter formally puts them on notice of the breach and demands they cure it or face legal action. Sending a written demand before suing is often required and can also facilitate resolution.',
+      'When a party to a contract fails to perform their obligations (by not paying, not delivering goods or services, or otherwise breaching the agreement), this letter formally puts them on notice of the breach and demands they cure it or face legal action. Sending a written demand before suing is often required and can also facilitate resolution.',
     practiceHref: '/business',
     practiceLabel: 'Business Law',
     templateText: `[YOUR NAME / COMPANY NAME]
@@ -170,7 +172,7 @@ Sent via Certified Mail, Return Receipt Requested — Tracking #: [TRACKING NUMB
 
 Re: Notice of Breach of Contract and Demand for Performance/Payment
     Contract Date: [DATE OF CONTRACT]
-    Contract Description: [BRIEF DESCRIPTION — e.g., "Services Agreement for IT consulting services"]
+    Contract Description: [BRIEF DESCRIPTION, e.g., "Services Agreement for IT consulting services"]
 
 Dear [PARTY\'S NAME]:
 
@@ -178,15 +180,15 @@ I am writing on behalf of [YOUR NAME / COMPANY] regarding the contract dated [DA
 
 TERMS OF THE AGREEMENT
 
-Under the Agreement, [OTHER PARTY] agreed to [DESCRIBE THE OBLIGATION — e.g., "pay the sum of $[AMOUNT] for services rendered by [DATE]" / "deliver [GOODS/SERVICES] by [DATE]" / "complete [WORK] in accordance with the specifications attached to the Agreement"].
+Under the Agreement, [OTHER PARTY] agreed to [DESCRIBE THE OBLIGATION, e.g., "pay the sum of $[AMOUNT] for services rendered by [DATE]" / "deliver [GOODS/SERVICES] by [DATE]" / "complete [WORK] in accordance with the specifications attached to the Agreement"].
 
 NATURE OF THE BREACH
 
-Despite [YOUR NAME/COMPANY] fully performing its obligations under the Agreement, [OTHER PARTY] has failed to [DESCRIBE THE BREACH — e.g., "remit payment in the amount of $[AMOUNT], which was due on [DATE]" / "deliver the agreed goods/services by the contractual deadline of [DATE]"]. [DESCRIBE ANY PRIOR ATTEMPTS TO RESOLVE — e.g., "We have contacted your office on [DATES] requesting payment/performance, but no resolution has been reached."]
+Despite [YOUR NAME/COMPANY] fully performing its obligations under the Agreement, [OTHER PARTY] has failed to [DESCRIBE THE BREACH, e.g., "remit payment in the amount of $[AMOUNT], which was due on [DATE]" / "deliver the agreed goods/services by the contractual deadline of [DATE]"]. [DESCRIBE ANY PRIOR ATTEMPTS TO RESOLVE, e.g., "We have contacted your office on [DATES] requesting payment/performance, but no resolution has been reached."]
 
 DEMAND
 
-I hereby demand that you [DESCRIBE WHAT YOU WANT — e.g., "remit payment in the full amount of $[AMOUNT]" / "complete performance under the Agreement"] within [NUMBER — typically 10–14] days of the date of this letter.
+I hereby demand that you [DESCRIBE WHAT YOU WANT, e.g., "remit payment in the full amount of $[AMOUNT]" / "complete performance under the Agreement"] within [NUMBER, typically 10–14] days of the date of this letter.
 
 If you fail to cure this breach within the time specified, I will pursue all legal remedies available, including filing a lawsuit for breach of contract seeking damages of $[AMOUNT], plus interest, court costs, and attorney fees as allowed by law [or the Agreement].
 
@@ -203,7 +205,7 @@ Sincerely,
   {
     id: 'notice-intent-sue',
     category: 'Civil / Small Claims',
-    title: 'Notice of Intent to Sue (Pre-Suit / Small Claims) | Jwayyed Law LLC',
+    title: 'Notice of Intent to Sue (Pre-Suit / Small Claims)',
     description:
       'Before filing in small claims court (or any court), sending a formal notice of intent gives the other party a final chance to resolve the dispute and demonstrates good faith on your part. Ohio small claims court handles disputes up to $6,000. This letter is also useful as a general pre-suit notice in any civil matter.',
     practiceHref: '/civil',
@@ -228,7 +230,7 @@ This letter serves as formal notice of my intent to file a lawsuit against you i
 
 NATURE OF THE DISPUTE
 
-[DESCRIBE THE DISPUTE IN PLAIN TERMS — e.g., "On [DATE], you borrowed $[AMOUNT] from me and agreed to repay it by [DATE]. Despite my repeated requests, you have not repaid this amount." / "You provided [SERVICES / GOODS] that were defective / not as agreed, causing me damages of $[AMOUNT]." / "You damaged my property located at [ADDRESS] on [DATE], resulting in repair costs of $[AMOUNT]."]
+[DESCRIBE THE DISPUTE IN PLAIN TERMS, e.g., "On [DATE], you borrowed $[AMOUNT] from me and agreed to repay it by [DATE]. Despite my repeated requests, you have not repaid this amount." / "You provided [SERVICES / GOODS] that were defective / not as agreed, causing me damages of $[AMOUNT]." / "You damaged my property located at [ADDRESS] on [DATE], resulting in repair costs of $[AMOUNT]."]
 
 AMOUNT OWED
 
@@ -242,7 +244,7 @@ The total amount I am seeking is $[TOTAL AMOUNT], which includes:
 
 DEMAND
 
-I am willing to resolve this matter without going to court. If you pay $[SETTLEMENT AMOUNT] — or if we reach another written agreement — by [DEADLINE DATE, e.g., 14 DAYS FROM DATE OF LETTER], I will consider this matter resolved.
+I am willing to resolve this matter without going to court. If you pay $[SETTLEMENT AMOUNT], or if we reach another written agreement, by [DEADLINE DATE, e.g., 14 DAYS FROM DATE OF LETTER], I will consider this matter resolved.
 
 If I do not hear from you or receive payment by that date, I will file my claim in [COUNTY] County Small Claims Court [or appropriate court] and seek judgment for the full amount plus court costs. Filing fees and any judgment against you may negatively affect your credit and could result in wage garnishment or a lien on your property.
 
@@ -256,7 +258,7 @@ Sincerely,
   {
     id: 'employment-grievance',
     category: 'Employment',
-    title: 'Employment Dispute Grievance Letter | Jwayyed Law LLC',
+    title: 'Employment Dispute Grievance Letter',
     description:
       'If you have experienced workplace discrimination, harassment, retaliation, unpaid wages, or another employment law violation, documenting your complaint in writing is a critical first step. This letter creates a formal record, puts your employer on notice, and may be required before you can file a claim with the EEOC or Ohio Civil Rights Commission.',
     practiceHref: '/civil',
@@ -268,13 +270,13 @@ Sincerely,
 
 [DATE]
 
-[RECIPIENT NAME — e.g., HR Director, Department Manager, or CEO]
+[RECIPIENT NAME, e.g., HR Director, Department Manager, or CEO]
 [TITLE]
 [COMPANY NAME]
 [COMPANY ADDRESS]
 [CITY, STATE, ZIP]
 
-Re: Formal Grievance / Complaint — [BRIEF DESCRIPTION, e.g., "Workplace Harassment" / "Unlawful Discrimination" / "Unpaid Wages"]
+Re: Formal Grievance / Complaint: [BRIEF DESCRIPTION, e.g., "Workplace Harassment" / "Unlawful Discrimination" / "Unpaid Wages"]
 
 Dear [RECIPIENT\'S NAME]:
 
@@ -282,14 +284,14 @@ I am submitting this formal written grievance regarding conduct I have experienc
 
 DESCRIPTION OF THE ISSUE
 
-[DESCRIBE THE PROBLEM IN DETAIL — Be specific and factual. Include dates, times, locations, names of individuals involved, and witnesses if any.]
+[DESCRIBE THE PROBLEM IN DETAIL. Be specific and factual. Include dates, times, locations, names of individuals involved, and witnesses if any.]
 
 Date(s) of incident(s): [DATE(S)]
 Location(s): [LOCATION]
 Individual(s) involved: [NAME(S) AND TITLE(S)]
 Witness(es), if any: [NAME(S)]
 
-What occurred: [DESCRIBE IN YOUR OWN WORDS — e.g., "On [DATE], my supervisor [NAME] made the following statements/took the following actions: [DESCRIBE]. This conduct has continued on the following dates: [LIST]. I believe this constitutes [harassment / discrimination based on my race/sex/religion/disability/etc. / retaliation for reporting a prior complaint / failure to pay overtime wages owed]."]
+What occurred: [DESCRIBE IN YOUR OWN WORDS, e.g., "On [DATE], my supervisor [NAME] made the following statements/took the following actions: [DESCRIBE]. This conduct has continued on the following dates: [LIST]. I believe this constitutes [harassment / discrimination based on my race/sex/religion/disability/etc. / retaliation for reporting a prior complaint / failure to pay overtime wages owed]."]
 
 PRIOR COMPLAINTS (IF ANY)
 
@@ -311,14 +313,14 @@ Sincerely,
 [YOUR PRINTED NAME]
 [DATE]
 
-Enclosures: [LIST ANY SUPPORTING DOCUMENTS — e.g., emails, text messages, pay stubs, photographs]`,
+Enclosures: [LIST ANY SUPPORTING DOCUMENTS, e.g., emails, text messages, pay stubs, photographs]`,
   },
   {
     id: 'ovi-evidence-preservation',
     category: 'Criminal Defense / OVI',
-    title: 'OVI/Criminal Defense Evidence Preservation Demand | Jwayyed Law LLC',
+    title: 'OVI/Criminal Defense Evidence Preservation Demand',
     description:
-      'After an OVI or criminal arrest, critical evidence — dashcam footage, bodycam video, breath test records, calibration logs, and dispatch recordings — can be deleted in as little as 30 to 90 days. This letter demands that law enforcement and other parties preserve all evidence related to your arrest before it is destroyed. Send it as soon as possible after your arrest.',
+      'After an OVI or criminal arrest, critical evidence (dashcam footage, bodycam video, breath test records, calibration logs and dispatch recordings) can be deleted in as little as 30 to 90 days. This letter demands that law enforcement and other parties preserve all evidence related to your arrest before it is destroyed. Send it as soon as possible after your arrest.',
     practiceHref: '/ovi-dui-defense',
     practiceLabel: 'OVI/DUI Defense',
     templateText: `[YOUR NAME or ATTORNEY\'S NAME ON YOUR BEHALF]
@@ -328,7 +330,7 @@ Enclosures: [LIST ANY SUPPORTING DOCUMENTS — e.g., emails, text messages, pay 
 
 [DATE]
 
-[LAW ENFORCEMENT AGENCY — e.g., Columbus Division of Police / Ohio State Highway Patrol]
+[LAW ENFORCEMENT AGENCY, e.g., Columbus Division of Police / Ohio State Highway Patrol]
 [ADDRESS]
 [CITY, STATE, ZIP]
 
@@ -390,98 +392,53 @@ Tracking or Confirmation #: [IF APPLICABLE]`,
 ];
 
 export default function DocumentTemplatesPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Free Ohio Legal Document Templates"
-        description="Download free legal document templates for common Ohio legal situations. Personal injury demand letters, cease and desist, OVI evidence preservation, and more."
+        title="Free Ohio legal document templates"
+        description="Fill-in-the-blank letters for common Ohio situations: injury demands, debt collector harassment, contract breaches, evidence preservation and more."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-navy-950/80 mb-3 leading-relaxed">
-            Below are 8 free legal document templates for common Ohio legal situations. Each
-            template includes real, fill-in-the-blank text you can copy and adapt. These templates
-            are a starting point — they are{' '}
-            <strong>not a substitute for legal advice</strong>. For guidance specific to your
-            situation,{' '}
-            <Link href="/contact" className="text-sky-deep font-semibold hover:underline">
-              consult with an attorney
-            </Link>{' '}
-            or call us at{' '}
-            <a href="tel:6142855482" className="text-sky-deep font-semibold hover:underline">
-              (614) 285-5482
-            </a>
-            .
+
+      <Section
+        title="Before you use one"
+        intro={
+          <p>
+            Here are {templates.length} templates with real text you can copy and adapt. They are a starting point and{' '}
+            <strong>not a substitute for legal advice</strong>.
           </p>
-          <p className="text-navy-950/70 text-sm mb-10 leading-relaxed">
-            Jump to:{' '}
-            {templates.map((t, i) => (
-              <span key={t.id}>
-                <a href={`#${t.id}`} className="text-sky-deep hover:underline">
-                  {t.title}
-                </a>
-                {i < templates.length - 1 ? ' · ' : ''}
-              </span>
-            ))}
+        }
+      >
+        <p>
+          For guidance on your situation, <Link href="/contact">talk to an attorney</Link> or call{' '}
+          <a href="tel:+16142855482">(614) 285-5482</a> before you send anything.
+        </p>
+        <LinkGrid columns={2} links={templates.map((t) => ({ href: `#${t.id}`, title: t.title, subtitle: t.category }))} />
+      </Section>
+
+      {templates.map((t, i) => (
+        <Section key={t.id} id={t.id} title={t.title} tone={i % 2 ? 'white' : 'ice'} intro={<p>{t.description}</p>}>
+          <div className="not-prose bg-white border border-navy-950/10">
+            <div className="flex items-center justify-between gap-4 px-5 py-3 bg-navy-950 text-white">
+              <span className="text-[length:var(--step-small)] font-semibold">{t.category} template</span>
+              <CopyButton text={t.templateText} />
+            </div>
+            <pre className="font-mono text-sm text-navy-950 p-5 sm:p-6 overflow-x-auto whitespace-pre-wrap leading-relaxed">{t.templateText}</pre>
+          </div>
+          <p className="text-[length:var(--step-small)] text-navy-950/70">
+            This is a template only. Laws vary by situation. Talk to an attorney about your circumstances before sending any legal
+            document. Read more about <Link href={t.practiceHref}>{t.practiceLabel.toLowerCase()}</Link>.
           </p>
+        </Section>
+      ))}
 
-          <div className="space-y-16">
-            {templates.map((t) => (
-              <div key={t.id} id={t.id} className="scroll-mt-20">
-                <span className="inline-block text-xs font-semibold text-sky-deep uppercase tracking-wider bg-sky-deep/10 px-3 py-1 rounded-full mb-3">
-                  {t.category}
-                </span>
-                <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-3">
-                  {t.title}
-                </h2>
-                <p className="text-navy-950/80 leading-relaxed mb-5">
-                  {t.description}
-                </p>
+      <Section title="Need a different template?">
+        <p>
+          This section is growing. If you need a specific document or form, <Link href="/contact">contact the firm</Link>; it may be
+          able to help or point you to the right resources. For complex matters, speak with an attorney before you proceed.
+        </p>
+      </Section>
 
-                <div className="bg-ice border border-navy-950/10 overflow-hidden">
-                  <div className="flex items-center justify-between px-4 py-2 bg-ice border-b border-navy-950/10">
-                    <span className="text-xs font-semibold text-navy-950/60 uppercase tracking-wider">
-                      Template — Copy and Customize
-                    </span>
-                  </div>
-                  <pre className="font-mono text-sm text-navy-950 p-5 overflow-x-auto whitespace-pre-wrap leading-relaxed">
-                    {t.templateText}
-                  </pre>
-                </div>
-
-                <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                  <p className="text-xs text-navy-950/60 italic flex-1">
-                    This is a template only. Laws vary by situation. Consult an attorney for advice
-                    specific to your circumstances before sending any legal document.
-                  </p>
-                  <Link
-                    href={t.practiceHref}
-                    className="text-sm font-semibold text-sky-deep hover:underline whitespace-nowrap"
-                  >
-                    Learn about {t.practiceLabel} →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16 p-6 bg-ice border border-navy-950/10">
-            <h3 className="jw-serif text-lg font-bold text-navy-950 mb-2">
-              Need a Template Not Listed Here?
-            </h3>
-            <p className="text-navy-950/80 text-sm leading-relaxed">
-              We are expanding this section. If you need a specific type of document or form,{' '}
-              <Link href="/contact" className="text-sky-deep font-semibold hover:underline">
-                contact us
-              </Link>{' '}
-              — we may be able to help or point you to the right resources. For complex matters,
-              always speak with an attorney before proceeding.
-            </p>
-          </div>
-        </div>
-      </section>
       <ContactCTA />
     </>
   );
