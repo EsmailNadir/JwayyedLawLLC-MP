@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -387,6 +388,7 @@ export default function SpeedingTicketsPage() {
       </Section>
 
       <LocationsWeServe title="Criminal Defense" />
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["protecting-rights-during-traffic-stop-ohio", "what-to-expect-first-court-appearance-ohio", "fra-suspension-ohio-what-it-is-how-to-fix"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

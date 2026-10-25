@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -387,6 +388,7 @@ export default function FirstOVIPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["first-dui-ohio-will-i-go-to-jail", "ovi-reduced-to-reckless-operation-ohio", "ovi-arraignment-franklin-county-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

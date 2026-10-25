@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -233,6 +234,7 @@ export default function CommercialDUICDLPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["should-you-refuse-breathalyzer-ohio", "ohio-als-appeal-30-day-deadline", "can-ovi-be-expunged-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

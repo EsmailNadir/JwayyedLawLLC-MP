@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -447,6 +448,7 @@ export default function CriminalDefensePage() {
         <LinkGrid links={COUNTIES} />
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["misdemeanor-vs-felony-ohio", "what-to-expect-first-court-appearance-ohio", "ohio-new-expungement-laws-clear-record"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

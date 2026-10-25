@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -219,6 +220,7 @@ export default function OpenContainerPage() {
         </p>
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["protecting-rights-during-traffic-stop-ohio", "what-to-do-pulled-over-ovi-ohio", "misdemeanor-vs-felony-ohio"]} />
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Areas We Serve" />
       <ContactCTA />

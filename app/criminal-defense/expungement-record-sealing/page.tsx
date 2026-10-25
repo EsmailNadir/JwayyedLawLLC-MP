@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -206,6 +207,7 @@ export default function ExpungementRecordSealingPage() {
 
       <LocationsWeServe title="Criminal Defense" />
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["ohio-new-expungement-laws-clear-record", "what-is-expungement-ohio-2024", "can-ovi-be-expunged-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

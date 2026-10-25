@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -386,6 +387,7 @@ export default function NoOperatorsLicensePage() {
       </Section>
 
       <LocationsWeServe title="Criminal Defense" />
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["fra-suspension-ohio-what-it-is-how-to-fix", "protecting-rights-during-traffic-stop-ohio", "what-to-expect-first-court-appearance-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

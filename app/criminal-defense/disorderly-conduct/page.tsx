@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -183,6 +184,7 @@ export default function DisorderlyConductPage() {
         </p>
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["what-to-expect-first-court-appearance-ohio", "misdemeanor-vs-felony-ohio", "ohio-new-expungement-laws-clear-record"]} />
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Areas We Serve" />
       <ContactCTA />

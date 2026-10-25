@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -382,6 +383,7 @@ export default function DomesticViolencePage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["ohio-civil-protection-order-guide", "charged-with-assault-what-happens-next", "ohio-castle-doctrine-self-defense-laws"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

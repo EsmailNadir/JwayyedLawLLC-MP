@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -361,6 +362,7 @@ export default function ResistingArrestPage() {
       </Section>
 
       <LocationsWeServe title="Criminal Defense" />
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["protecting-rights-during-traffic-stop-ohio", "charged-with-assault-what-happens-next", "what-to-expect-first-court-appearance-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

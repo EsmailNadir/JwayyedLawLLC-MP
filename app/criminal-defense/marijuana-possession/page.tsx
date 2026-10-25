@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -208,6 +209,7 @@ export default function MarijuanaPossessionPage() {
         </p>
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["protecting-rights-during-traffic-stop-ohio", "what-is-expungement-ohio-2024", "misdemeanor-vs-felony-ohio"]} />
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Areas We Serve" />
       <ContactCTA />

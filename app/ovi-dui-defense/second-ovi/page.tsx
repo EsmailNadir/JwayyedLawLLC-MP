@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -384,6 +385,7 @@ export default function SecondOVIPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["how-much-does-dui-cost-ohio", "limited-driving-privileges-after-ovi-ohio", "can-ovi-be-expunged-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

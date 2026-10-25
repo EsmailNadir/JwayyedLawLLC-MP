@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -231,6 +232,7 @@ export default function RefusalOVIPage() {
       </Section>
 
       <OVIReviews />
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["should-you-refuse-breathalyzer-ohio", "ohio-als-appeal-30-day-deadline", "field-sobriety-tests-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

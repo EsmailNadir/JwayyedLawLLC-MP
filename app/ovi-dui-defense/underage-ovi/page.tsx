@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -254,6 +255,7 @@ export default function UnderageOVIPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["ovi-charges-ohio-university-students-athens", "can-ovi-be-expunged-ohio", "what-to-do-pulled-over-ovi-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

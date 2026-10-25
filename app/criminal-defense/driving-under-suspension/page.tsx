@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -513,6 +514,7 @@ export default function DrivingUnderSuspensionPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="Criminal Defense" title="Articles on Ohio criminal charges" slugs={["fra-suspension-ohio-what-it-is-how-to-fix", "limited-driving-privileges-after-ovi-ohio", "protecting-rights-during-traffic-stop-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

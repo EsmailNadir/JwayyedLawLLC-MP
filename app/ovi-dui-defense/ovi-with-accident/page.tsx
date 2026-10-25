@@ -1,3 +1,4 @@
+import RelatedArticles from '@/components/practice/RelatedArticles';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
@@ -249,6 +250,7 @@ export default function OVIWithAccidentPage() {
         <LinkGrid links={RELATED} columns={2} />
       </Section>
 
+      <RelatedArticles category="OVI/DUI" title="Articles on Ohio OVI and DUI" slugs={["what-happens-after-ovi-arrest-ohio", "high-tier-ovi-ohio", "steps-after-car-accident-ohio"]} />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
