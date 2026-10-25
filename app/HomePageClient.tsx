@@ -234,9 +234,26 @@ export default function HomePageClient() {
    */
   useGSAP(
     () => {
+      // Phones resize the viewport as the address bar shows and hides; don't
+      // recalculate every trigger for that.
+      ScrollTrigger.config({ ignoreMobileResize: true });
       const mm = gsap.matchMedia();
       mm.add('(prefers-reduced-motion: no-preference)', () => {
         const q = gsap.utils.selector(root);
+
+        // ---- The trust strip only runs while it is on screen.
+        const strip = q('.jw-marquee')[0];
+        const track = q('.jw-marquee-track')[0];
+        if (strip && track) {
+          ScrollTrigger.create({
+            trigger: strip,
+            start: 'top bottom',
+            end: 'bottom top',
+            onToggle: (self) => {
+              track.style.animationPlayState = self.isActive ? '' : 'paused';
+            },
+          });
+        }
 
         // ---- Hero: footage settles, words rise, the rest follows. On the
         // way out the copy lifts and fades while the footage drifts.
@@ -319,13 +336,17 @@ export default function HomePageClient() {
           });
         });
 
-        // ---- Practice panels grow from 88% and their photographs drift.
+        // ---- Practice panels rise in once; their photographs drift. (The
+        // panels used to scale with the scroll, which re-rendered each panel,
+        // text and all, on every frame.)
         q('.area-panel').forEach((el) => {
-          gsap.fromTo(
-            el,
-            { scale: 0.88, opacity: 0.35 },
-            { scale: 1, opacity: 1, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'top 55%', scrub: true } }
-          );
+          gsap.from(el, {
+            y: 60,
+            opacity: 0,
+            duration: 0.9,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 88%' },
+          });
           const img = el.querySelector('img');
           if (img) {
             gsap.fromTo(
@@ -566,8 +587,11 @@ export default function HomePageClient() {
                         alt={a.alt}
                         fill
                         sizes="(min-width:1024px) 60vw, 100vw"
-                        className="object-cover scale-110 opacity-70 mix-blend-luminosity transition-transform duration-700 ease-out group-hover:scale-[1.16]"
+                        className="object-cover scale-110 transition-transform duration-700 ease-out group-hover:scale-[1.16]"
                       />
+                      {/* A flat navy tint rather than a blend mode: blending made
+                          the browser redraw each panel on every scroll frame. */}
+                      <div className="absolute inset-0 bg-navy-950/55" aria-hidden="true" />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent" aria-hidden="true" />
                       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 flex items-end justify-between gap-6 text-white">
                         <div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pause, Play, Star } from 'lucide-react';
 import { Marquee } from '@/components/ui/3d-testimonials';
 import { Card, CardContent } from '@/components/ui/card';
@@ -16,12 +16,11 @@ import { oviReviews, truncateReview } from '@/components/OVIReviewsSwiper';
  * used instead, which is both honest and the shadcn Avatar's own fallback.
  */
 
-/** Transparency masks that fade the wall's own edges (no colour is drawn). */
-const FADE_Y = '[mask-image:linear-gradient(to_bottom,transparent,black_18%,black_82%,transparent)]'; // taste-skill-ignore
-const FADE_X = '[mask-image:linear-gradient(to_right,transparent,black_12%,black_70%,transparent)]'; // taste-skill-ignore
-
 /** Enough to feel endless without mounting all ninety reviews. */
-const WALL_SIZE = 24;
+// 16 cards, each column repeated three times so no column runs out mid-cycle.
+// It was 24 x 3 = 72 moving cards, which made the wall the heaviest thing on
+// the page.
+const WALL_SIZE = 16;
 const COLUMNS = 4;
 
 function initials(name: string): string {
@@ -69,23 +68,45 @@ export default function TestimonialWall() {
   // hover: touch screens have no hover, and keyboard focus alone is not
   // discoverable. Hover and focus still pause it as well.
   const [paused, setPaused] = useState(false);
+  // It also stops whenever it is off screen, so dozens of moving cards in a
+  // 3D layer are never animating out of sight while the visitor scrolls the
+  // rest of the page.
+  const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let frame = 0;
+    const check = () => {
+      frame = 0;
+      const r = ref.current?.getBoundingClientRect();
+      if (r) setVisible(r.bottom > -200 && r.top < window.innerHeight + 200);
+    };
+    const onScroll = () => {
+      if (!frame) frame = window.setTimeout(check, 120);
+    };
+    check();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      window.clearTimeout(frame);
+    };
+  }, []);
+
+  const still = paused || !visible;
 
   return (
     <div
-      className={`relative flex h-[420px] w-full items-center justify-center overflow-hidden sm:h-[520px] [perspective:340px] ${
-        paused ? '[&_.animate-marquee-vertical]:[animation-play-state:paused]' : ''
+      ref={ref}
+      className={`relative flex h-[420px] w-full items-center justify-center overflow-hidden sm:h-[520px] [perspective:340px] [contain:layout_paint] ${
+        still ? '[&_.animate-marquee-vertical]:[animation-play-state:paused]' : ''
       }`}
       aria-label="Client reviews"
     >
       {/* Rotation kept modest. The upstream demo tilts 20deg on three axes,
           which looks striking with placeholder text and is tiring to read with
           real ones — these are quotes a visitor is meant to actually read. */}
-      {/* The wall fades out at its edges through masks on the wall itself,
-          rather than colored overlay boxes, so it dissolves into whatever
-          field it sits on. The rotated block is wider than its container, so
-          each mask holds full opacity well in from the edge. */}
-      <div className={`absolute inset-0 flex items-center justify-center ${FADE_Y}`}>
-        <div className={`flex h-full w-full items-center justify-center ${FADE_X}`}>
       <div
         className="flex flex-row items-center gap-4"
         style={{
@@ -100,7 +121,7 @@ export default function TestimonialWall() {
             pauseOnHover
             reverse={i % 2 === 1}
             repeat={3}
-            className="[--duration:52s]"
+            className="[--duration:46s]"
             ariaRole="list"
           >
             {group.map((review) => (
@@ -109,8 +130,15 @@ export default function TestimonialWall() {
           </Marquee>
         ))}
       </div>
-        </div>
-      </div>
+
+      {/* Edge fades as fixed overlays in the navy-900 field colour. They sit
+          still above the moving cards, so the browser composites them once;
+          a mask over the moving 3D layer (the earlier approach) forced the
+          whole wall to be redrawn every frame. taste-skill-ignore */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#12253d] via-[#12253d]/70 to-transparent" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#12253d] via-[#12253d]/70 to-transparent" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#12253d] to-transparent sm:w-24" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#12253d] from-55% to-transparent sm:w-52" aria-hidden="true" />
 
       <button
         type="button"
