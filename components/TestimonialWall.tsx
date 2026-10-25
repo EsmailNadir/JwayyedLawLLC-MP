@@ -16,7 +16,7 @@ import { oviReviews, truncateReview } from '@/components/OVIReviewsSwiper';
  * used instead, which is both honest and the shadcn Avatar's own fallback.
  */
 
-/** Enough to feel endless without mounting all ninety reviews. */
+/** Enough to feel endless without mounting all hundred-plus reviews. */
 // 16 cards, each column repeated three times so no column runs out mid-cycle.
 // It was 24 x 3 = 72 moving cards, which made the wall the heaviest thing on
 // the page.
