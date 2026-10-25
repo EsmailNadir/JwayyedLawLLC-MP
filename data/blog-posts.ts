@@ -1302,7 +1302,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'personal-injury-ohio-statute-of-limitations',
-    title: 'Ohio Personal Injury Statute of Limitations: Two Years and the Exceptions',
+    title: 'Ohio Personal Injury Statute of Limitations: The 2-Year Rule',
     excerpt: 'Most Ohio injury claims must be filed within two years. The discovery rule, tolling for minors, government claims and the 10-year repose rule explained.',
     category: 'Personal Injury',
     author: 'Jwayyed Jwayyed',
@@ -1577,7 +1577,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'ovi-charges-ohio-university-students-athens',
-    title: 'OVI Charges for Ohio University Students: What Athens Defendants Should Know',
+    title: 'OVI Charges for Ohio University Students in Athens',
     excerpt: 'For Ohio University students, an OVI in Athens can also bring student conduct action and trouble with professional programs. What is at stake.',
     category: 'OVI/DUI',
     author: 'Jwayyed Jwayyed',

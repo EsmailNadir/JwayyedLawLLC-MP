@@ -8,7 +8,7 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 
 export const metadata: Metadata = {
   // Root layout applies the "%s | Jwayyed Law LLC" template, so no suffix here.
-  title: "Johnstown Mayor's Court Attorney, Licking County",
+  title: "Johnstown Mayor's Court Lawyer, Licking County",
   description:
     "Cited into Johnstown Mayor's Court in Licking County, Ohio? OVI, traffic and ordinance defense. Court sits the 1st and 3rd Wednesday. Call (614) 285-5482.",
   keywords: [
