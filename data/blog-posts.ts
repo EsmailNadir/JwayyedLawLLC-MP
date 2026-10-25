@@ -27,6 +27,383 @@ export type Category = (typeof categories)[number];
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'should-you-refuse-breathalyzer-ohio',
+    title: 'Should You Refuse a Breathalyzer in Ohio?',
+    excerpt: 'Refusing a chemical test in Ohio brings a one-year license suspension at arrest, can be used against you at trial, and does not prevent an OVI conviction.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-24',
+    featured: false,
+    image: '/assets/dui-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>After an OVI arrest in Ohio, the officer will ask you to take a chemical test. You are allowed to say no, and many people assume that saying no protects them because the state never gets a number. Refusing does keep a BAC result out of the case. It also sets off an automatic license suspension, gives the prosecutor an argument to use at trial, and changes how the court treats the charge. This article covers what Ohio&apos;s implied consent law says, what a refusal triggers, and what a defense lawyer looks at once it has happened.</p>
+
+      <h2>Can you refuse a breathalyzer in Ohio?</h2>
+      <p>Yes, you can refuse, but Ohio attaches automatic consequences to the refusal under its implied consent law, ORC 4511.191. The idea behind implied consent is that by driving on Ohio roads, every driver has already agreed to a chemical test if lawfully arrested on suspicion of OVI. Refusing that test puts you in two systems at once: an administrative license suspension and the criminal OVI case.</p>
+      <p>A chemical test covers more than the breath machine. It means a breath, blood or urine test, and since HB 37 (Liv&apos;s Law) took effect on April 9, 2025, it also includes an oral fluid (saliva) swab. Refusing the swab brings the same implied consent penalties, including the automatic suspension.</p>
+
+      <h2>What happens to your license if you refuse?</h2>
+      <p>Your license is suspended right away. The officer takes your license on the spot and issues a paper Administrative License Suspension (ALS). For a first refusal the ALS lasts one year. A second refusal within ten years brings a two-year ALS. These suspensions run from the date of arrest, and they apply whether or not you are ever convicted of OVI.</p>
+      <p>A refusal also affects how soon you can drive again. In a non-refusal first OVI, a judge may waive the hard suspension that comes before limited driving privileges if you have no prior &quot;Physical Control&quot; conviction within 10 years. In a refusal case, the court cannot waive that hard suspension, even if you agree to install an ignition interlock. For most people this is the part of a refusal they feel first, because it decides how long they cannot get to work. The firm&apos;s page on <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> explains how the application works once you are eligible.</p>
+      <p>You can challenge the ALS. The ALS appeal must be filed within 30 days of the arrest, and the appeal can ask for a stay of the suspension while it is pending. Missing that window usually forfeits your right to contest the ALS. The firm&apos;s article on the <a href="/our-law-firm/blog/ohio-als-appeal-30-day-deadline">30-day ALS appeal deadline</a> covers the timing in more detail.</p>
+
+      <h2>Can a refusal be used against you in court?</h2>
+      <p>Yes. Ohio courts allow prosecutors to comment on your refusal at trial, and a jury may draw an adverse inference from it: that you refused because you knew you were impaired. This is often called the &quot;consciousness of guilt&quot; argument.</p>
+      <p>The argument can be answered. People refuse for many reasons, including confusion, fear, distrust of the machine, or a poor explanation from the officer. A defense lawyer can put those explanations in front of the jury and cross-examine the officer on whether you were properly advised of the consequences of refusal under ORC 4511.191 before the test was requested. Whether the refusal evidence is admitted at all is part of the defense in a refusal case.</p>
+
+      <h2>Can you still be convicted of OVI if you refuse the test?</h2>
+      <p>Yes. ORC 4511.19(A)(1)(a) allows an OVI conviction on evidence that you were under the influence of alcohol, whatever a chemical test would have shown. Officers testify about slurred speech, bloodshot eyes, the odor of alcohol, erratic driving and poor performance on field sobriety tests. Prosecutors regularly win OVI convictions without chemical test evidence, and in refusal cases they often argue that the refusal plus the officer&apos;s observations is enough.</p>
+      <p>A refusal removes one kind of evidence and leaves the rest of the case in place.</p>
+
+      <h2>Is a refusal treated as a high-level OVI?</h2>
+      <p>Often, yes. Ohio sorts a first OVI into two levels. The low level covers a BAC at or above .08% but below .17%. The high level covers a BAC of .17% or higher, or refusing the chemical test. A refusal is often treated as high level, especially when there is a prior OVI within 20 years. That 20-year window is one of the limited situations where Ohio looks back further than the usual 10-year lookback for counting prior offenses.</p>
+      <p>The level matters because it sets the minimum jail term. Other parts of a first-offense sentence are the same at either level: fines of $565 to $1,075 and a court-ordered license suspension of 1 to 3 years. The firm&apos;s guide to <a href="/our-law-firm/blog/high-tier-ovi-ohio">high-tier OVI in Ohio</a> covers what the high level changes.</p>
+
+      <h2>Refusing field sobriety tests is a different decision</h2>
+      <p>Declining the roadside field sobriety tests does not trigger an ALS. These are the walk-and-turn, the one-leg stand and the horizontal gaze nystagmus test, and Ohio attaches no statutory penalty to declining them. An officer may still use your refusal as one factor in deciding to arrest you, and it may be mentioned at trial.</p>
+      <p>The chemical test comes after the arrest and falls under implied consent. The field sobriety tests come before it and do not. People mix the two up at the roadside, and it is worth knowing which request you are answering. The firm&apos;s article on <a href="/our-law-firm/blog/field-sobriety-tests-ohio">field sobriety tests in Ohio</a> explains how those tests are challenged.</p>
+
+      <h2>What a refusal trades away</h2>
+      <p>No article can tell you what to do at a particular stop, because the answer depends on facts nobody knows in advance. What can be laid out is the trade.</p>
+      <p>On one side, the prosecution will not have a BAC number. That matters, because a test result is often the strongest single piece of evidence in an OVI case, and a result of .17% or higher makes the charge high tier.</p>
+      <p>On the other side, a refusal brings:</p>
+      <ul>
+        <li>a one-year ALS for a first refusal (two years for a second within ten years), starting at arrest;</li>
+        <li>a hard suspension before limited privileges that the court cannot waive, even with an interlock;</li>
+        <li>refusal evidence at trial and the consciousness of guilt argument;</li>
+        <li>treatment as a high-level OVI in many cases.</li>
+      </ul>
+      <p>A test result is also open to challenge. Breath results can be attacked for calibration, missing maintenance records, operator error, a rising BAC or a medical condition. Blood tests can be challenged for how the sample was collected, the chain of custody and lab error. A refusal removes those arguments along with the number.</p>
+
+      <h2>What the firm looks at after a refusal</h2>
+      <p>The firm reviews the whole sequence: the traffic stop, the officer&apos;s observations, the field sobriety test request, the chemical test request and every advisement given. The defenses that come up most in refusal cases are these:</p>
+      <ul>
+        <li><strong>No reasonable grounds.</strong> The officer lacked reasonable grounds to stop or arrest you.</li>
+        <li><strong>Improper advisement.</strong> The officer did not properly explain the consequences of refusal before asking for the test.</li>
+        <li><strong>Not a valid refusal.</strong> The refusal itself was not knowing and voluntary.</li>
+        <li><strong>The refusal evidence.</strong> Other explanations for the refusal, and cross-examination on the advisement, can answer the consciousness of guilt argument.</li>
+      </ul>
+      <p>The firm also files the ALS appeal, asks for a stay, applies for limited privileges when you become eligible, and negotiates for charge reductions or plea agreements that avoid the mandatory jail tied to a refusal conviction. The <a href="/ovi-dui-defense/refusal-ovi">refusal OVI page</a> sets out the penalties in full, and the main <a href="/ovi-dui-defense">OVI/DUI defense page</a> covers every offense level.</p>
+
+      <p>If you refused a breath, blood, urine or saliva test after an OVI arrest, the 30-day ALS deadline is already running. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
+    slug: 'field-sobriety-tests-ohio',
+    title: 'Field Sobriety Tests in Ohio and How They Are Challenged',
+    excerpt: 'The three NHTSA field sobriety tests Ohio officers use, why declining them brings no license suspension, and how the results are challenged in court.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-21',
+    featured: false,
+    image: '/assets/law.jpg',
+    gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
+    content: `
+      <p>Many OVI arrests in Ohio include a few minutes on the side of the road doing tests the officer asks for: walking a line, standing on one foot, following a light or pen with your eyes. These are field sobriety tests, and the officer&apos;s notes on how you did often end up as a central part of the police report. They are also among the most challengeable evidence in an OVI case. This article explains what the tests are, whether you have to take them, and how a defense lawyer attacks the results.</p>
+
+      <h2>What are the field sobriety tests in Ohio?</h2>
+      <p>Ohio officers use three Standardized Field Sobriety Tests (SFSTs): the walk-and-turn, the one-leg stand and the horizontal gaze nystagmus (HGN) test. The National Highway Traffic Safety Administration (NHTSA) sets specific protocols for how each test is given and scored.</p>
+      <ul>
+        <li><strong>Walk-and-turn.</strong> A balance and instruction test: you walk a line, turn and walk back while the officer watches for set clues.</li>
+        <li><strong>One-leg stand.</strong> A balance test: you stand on one foot while the officer watches for set clues.</li>
+        <li><strong>Horizontal gaze nystagmus.</strong> An eye test the officer scores by watching your eyes as they follow an object.</li>
+      </ul>
+      <p>Because the tests are standardized, the protocol becomes the measuring stick. When an officer departs from it, the defense has something concrete to point to.</p>
+
+      <h2>Do you have to do field sobriety tests in Ohio?</h2>
+      <p>No. Field sobriety tests are voluntary, and Ohio attaches no legal penalty to declining them. Refusing them does not trigger the automatic Administrative License Suspension (ALS) that comes with refusing a chemical test under Ohio&apos;s implied consent law, ORC 4511.191.</p>
+      <p>Declining is not free of consequences. An officer may still use your refusal as one factor to justify an arrest, and it may be commented on at trial. You can also still be arrested if the officer has probable cause from other observations, such as an odor of alcohol, slurred speech or bloodshot eyes.</p>
+      <p>The chemical test is a separate request with separate rules. The firm&apos;s article on <a href="/our-law-firm/blog/should-you-refuse-breathalyzer-ohio">refusing a breathalyzer in Ohio</a> covers that decision, and <a href="/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio">what to do if you are pulled over for OVI</a> walks through the stop from the start.</p>
+
+      <h2>Why are field sobriety tests subjective?</h2>
+      <p>The officer decides what counts as a clue and records it, usually at night, at the roadside, while also managing traffic and the stop itself. There is no machine reading. What reaches the court is the officer&apos;s account of what you did and how they scored it.</p>
+      <p>The tests also ask a lot of a sober person. You are nervous, you may be tired, you may be on a slope or loose gravel, and you are trying to follow instructions given once in a loud place. Sober people can &quot;fail&quot; these tests. Fatigue, nerves, injuries and medical conditions can all produce the same clues the officer is looking for.</p>
+
+      <h2>How are field sobriety tests challenged?</h2>
+      <p>They are challenged by comparing what happened at the roadside with what the NHTSA protocol requires, and by showing that something other than impairment explains the result. The main lines of attack are:</p>
+      <ul>
+        <li><strong>Improper administration.</strong> The officer gave the instructions wrong, skipped steps, demonstrated the test incorrectly or scored clues the protocol does not recognize.</li>
+        <li><strong>Lack of officer training.</strong> The officer&apos;s training records do not support the way the test was given or scored.</li>
+        <li><strong>Medical conditions.</strong> Injuries, balance problems and other conditions can affect performance on the balance tests and the eye test.</li>
+        <li><strong>Conditions at the roadside.</strong> Weather, the road surface, lighting and passing traffic can all throw off the results.</li>
+      </ul>
+      <p>Video is often the best evidence. Body-cam and dash-cam footage can be checked against the NHTSA procedures for the HGN, walk-and-turn and one-leg stand tests. If the video shows instructions that differ from the report, or a surface that differs from the officer&apos;s description, that goes straight to the reliability of the results.</p>
+      <p>These challenges are raised through pretrial motions and at trial. A field sobriety expert can explain the protocol to the court and point out where the officer departed from it. When the defense shows the tests were given wrongly, their results lose weight, and sometimes the case for probable cause to arrest gets weaker with them.</p>
+
+      <h2>How do field sobriety tests fit into the rest of the OVI case?</h2>
+      <p>The tests are one piece of the evidence. An OVI case runs on two tracks: the criminal case in court and the administrative license suspension. Field sobriety results matter on both.</p>
+      <p>In the criminal case, ORC 4511.19(A)(1)(a) allows a conviction on evidence that you were under the influence, whatever a chemical test shows. Poor field sobriety performance is part of the evidence officers testify about in those cases, alongside driving, physical appearance and the odor of alcohol. Weakening the field sobriety evidence can therefore matter even when there is no breath result.</p>
+      <p>On the license side, the ALS hearing asks whether the officer had reasonable grounds to believe you were impaired, whether the arrest was proper, and whether testing was done correctly. The ALS appeal must be filed within 30 days of the arrest. The roadside tests are often part of what the officer relies on for reasonable grounds.</p>
+      <p>The tests also interact with the other common defenses. If the stop itself was unlawful, everything that followed, including the field sobriety tests, may be suppressed. And if a breath result is close to a threshold, problems with the field sobriety evidence can add to a challenge of the test.</p>
+
+      <h2>What the firm does with field sobriety evidence</h2>
+      <p>The firm starts by getting the evidence the prosecution has to hand over: police reports, dash-cam and body-cam footage, and the records behind the officer&apos;s observations. From there it:</p>
+      <ul>
+        <li>compares the video with the officer&apos;s report and with the NHTSA protocol for each test;</li>
+        <li>looks for medical conditions, injuries or roadside conditions that explain the clues;</li>
+        <li>brings in field sobriety and medical experts when the evidence calls for them;</li>
+        <li>files pretrial motions challenging the field sobriety tests, the breath test and anything obtained improperly;</li>
+        <li>uses the weaknesses it finds when negotiating with the prosecutor, and at trial if the case goes there.</li>
+      </ul>
+      <p>For the penalties and defenses on a first charge, see <a href="/ovi-dui-defense/first-ovi">first OVI defense in Ohio</a>. The main <a href="/ovi-dui-defense">OVI/DUI defense page</a> covers every offense level.</p>
+
+      <p>If an officer used field sobriety tests to build an OVI case against you, the video and the protocol are where the defense starts. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
+    slug: 'ovi-reduced-to-reckless-operation-ohio',
+    title: 'Can an OVI Be Reduced to Reckless Operation in Ohio?',
+    excerpt: 'Reckless operation under ORC 4511.20 is a minor misdemeanor that does not count as a prior OVI. When Ohio prosecutors consider the reduction, and why.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-17',
+    featured: false,
+    image: '/assets/criminal.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>People charged with a first OVI in Ohio often ask whether the charge can be &quot;knocked down.&quot; The reduction they usually mean is reckless operation, sometimes called a &quot;wet reckless&quot; when alcohol is involved. It is one of the better outcomes available in an OVI case short of a dismissal or an acquittal. It is also something prosecutors give only when there is a reason to. This article explains what reckless operation is, why it matters so much, and what tends to put it on the table.</p>
+
+      <h2>What is reckless operation in Ohio?</h2>
+      <p>Reckless operation is an offense under ORC 4511.20. For a first offense it is a minor misdemeanor, and it carries no mandatory jail. When it is the result of a plea in an OVI case where alcohol was involved, people call it a &quot;wet reckless.&quot;</p>
+      <p>Compare that with the charge it replaces. A first OVI is a first-degree misdemeanor under ORC 4511.19 with mandatory minimum penalties: jail or a Driver Intervention Program, fines of $565 to $1,075, and a court-ordered license suspension of 1 to 3 years.</p>
+
+      <h2>Can an OVI be reduced to reckless operation?</h2>
+      <p>In some cases, yes. A first OVI can sometimes be negotiated down to reckless operation. Prosecutors do not offer it automatically. Whether it is available depends on the strength of the evidence, the facts of the stop and the testing, and your driving and criminal history.</p>
+      <p>Most OVI cases resolve through negotiation, and a reckless operation plea is one of the results that negotiation can produce. Others include a reduction from a high-tier to a standard OVI, a better plea agreement, or alternative sentencing. Trial remains an option when the offer is not good enough.</p>
+
+      <h2>Why does a reduction to reckless operation matter?</h2>
+      <p>The difference between the two convictions reaches well past the sentence in the case in front of you.</p>
+      <ul>
+        <li><strong>Jail.</strong> A first OVI carries mandatory minimums. Reckless operation carries no mandatory jail.</li>
+        <li><strong>The offense level.</strong> A first OVI is a first-degree misdemeanor. A first reckless operation is a minor misdemeanor.</li>
+        <li><strong>Future charges.</strong> Reckless operation does not count as a prior OVI for lookback purposes. Ohio counts prior OVI convictions within 10 years to decide whether a new charge is a first, second or third offense, and a second OVI within 10 years carries a 10-day minimum jail term at the low level. Keeping an OVI off your record keeps that count at zero.</li>
+        <li><strong>Your record.</strong> An OVI conviction cannot be expunged or sealed under current Ohio law, because ORC 2953.36 excludes OVI convictions. A reckless operation conviction is a different offense.</li>
+        <li><strong>Commercial drivers.</strong> CDL disqualification under ORC 4506.16 follows an OVI conviction. A non-OVI result, such as reckless operation, may not trigger it.</li>
+      </ul>
+      <p>For many clients the lookback point matters most. A first OVI sets the starting line for the next ten years, and every later offense in that window is punished as a repeat.</p>
+
+      <h2>When do prosecutors consider reducing an OVI to reckless operation?</h2>
+      <p>Prosecutors consider it when the defense has given them a reason to doubt they can win the OVI at trial, or when the facts make the full charge look like a poor fit. The factors that come up most are these:</p>
+      <ul>
+        <li><strong>Problems with the stop.</strong> Police need reasonable suspicion of a traffic violation or crime to stop you. If the stop was unlawful, the evidence that followed may be suppressed, which can end the case.</li>
+        <li><strong>Problems with the breath or blood test.</strong> Breath results can be challenged for calibration, missing maintenance records, operator error, a rising BAC or a medical condition. Blood tests can be challenged for how the sample was collected, the chain of custody and lab error.</li>
+        <li><strong>Problems with the field sobriety tests.</strong> The tests are subjective, and NHTSA sets specific protocols for them. Results can be challenged for improper administration, medical conditions, roadside conditions or a lack of officer training.</li>
+        <li><strong>A rising BAC.</strong> Your BAC may have been under 0.08% while driving and risen over the limit by the time of the test. This defense needs expert testimony and can lead to a reduced charge or dismissal.</li>
+        <li><strong>Your history.</strong> Your driving and criminal record weigh heavily in what the prosecutor is willing to offer.</li>
+      </ul>
+      <p>Each of these has to be built from the evidence: the police reports, the dash-cam and body-cam footage, the breath machine records and the officer&apos;s training. A prosecutor who has seen a strong suppression motion or a documented calibration problem negotiates differently from one who has seen nothing.</p>
+
+      <h2>What makes a reduction harder to get?</h2>
+      <p>Some facts narrow the room to negotiate. A high-tier OVI, meaning a BAC of 0.17% or higher, is one. Prosecutors are generally less willing to reduce a high-tier charge without a strong factual reason, such as a credible challenge to the breath result, a strong rising BAC defense, or a problem with the stop or arrest. A result close to the 0.17% threshold may leave more room to argue machine error or calibration. The firm&apos;s article on <a href="/our-law-firm/blog/high-tier-ovi-ohio">high-tier OVI in Ohio</a> covers those cases.</p>
+      <p>A refusal is another. When you refused the chemical test, the prosecution has no BAC number, but it can comment on the refusal at trial and argue it shows consciousness of guilt. Negotiation in refusal cases often aims at avoiding the mandatory jail tied to a refusal conviction. See the <a href="/ovi-dui-defense/refusal-ovi">refusal OVI page</a>.</p>
+      <p>Prior offenses are the third. Your driving and criminal history is one of the factors prosecutors weigh, so earlier convictions make a reduction harder to argue for.</p>
+
+      <h2>What to ask before accepting a reckless operation plea</h2>
+      <p>A plea offer is a decision, and it is worth understanding before you take it. Questions to go through with your lawyer:</p>
+      <ul>
+        <li>What exactly will I be convicted of, and at what level?</li>
+        <li>What happens to my license, including the administrative license suspension that started at arrest?</li>
+        <li>Does the plea affect a CDL or a professional license I hold?</li>
+        <li>Can this conviction be sealed later, and when?</li>
+        <li>How strong are the defense&apos;s suppression and testing arguments if the case goes to trial instead?</li>
+      </ul>
+      <p>The license question deserves its own attention. The ALS is separate from the criminal case, and the ALS appeal must be filed within 30 days of the arrest, usually long before any plea is offered. A reduction later in the case does not undo a deadline missed at the start. If you need to drive in the meantime, see <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a>.</p>
+
+      <h2>How the firm works toward a reduction</h2>
+      <p>The firm investigates the stop, gets the video and the testing records, and files pretrial motions on the stop, the breath test, the field sobriety tests and anything obtained improperly. It brings in toxicology, field sobriety and medical experts when the evidence calls for them. The negotiation comes after that work, because that work is what gives the prosecutor a reason to move. If the case does not resolve, the firm tries it. More on the defenses is on the <a href="/ovi-dui-defense/first-ovi">first OVI page</a>.</p>
+
+      <p>If you are charged with OVI and want to know whether a reduction is realistic in your case, call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
+    slug: 'ovi-arraignment-franklin-county-ohio',
+    title: 'What Happens at an OVI Arraignment in Franklin County',
+    excerpt: 'Where an OVI arraignment is held at Franklin County Municipal Court, 375 S. High Street, what the judge does, what to bring, and the ALS appeal timing.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-14',
+    featured: false,
+    image: '/assets/dui-blog.jpg',
+    gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
+    content: `
+      <p>If you were arrested for OVI in Columbus or elsewhere in Franklin County, your paperwork probably lists a date at Franklin County Municipal Court. That first date is the arraignment. It is short, it is procedural, and most people walk in not knowing what will be asked of them. This article explains where the court is, what happens in the courtroom, what to bring, and how the arraignment lines up with the separate deadline on your license.</p>
+
+      <h2>What is an OVI arraignment?</h2>
+      <p>An arraignment is usually your first court appearance after an OVI arrest. The judge reads the charges, explains your rights and asks for your plea. The court may also set bond conditions, driving restrictions and future dates.</p>
+      <p>The arraignment does not decide whether you are guilty. Nobody presents evidence and there is no trial. It is the formal start of the criminal case, and the steps that decide the outcome (discovery, pretrial motions, negotiation and, if needed, trial) all come after it.</p>
+
+      <h2>Where is an OVI arraignment held in Franklin County?</h2>
+      <p>OVI cases from Columbus and much of Franklin County are heard at Franklin County Municipal Court, 375 S. High Street, Columbus, OH 43215. The courtrooms are on the 12th to 15th floors. The clerk&apos;s office can be reached at (614) 645-8186.</p>
+      <p>The court hears first through third offense OVI cases and ALS appeals. It also handles arraignments for felony OVI cases before they are bound over to the Franklin County Court of Common Pleas. The firm&apos;s guide to <a href="/courts/franklin-county-municipal-court">Franklin County Municipal Court</a> covers the court&apos;s divisions and dockets, and the <a href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court">OVI defense page for Franklin County Municipal Court</a> covers OVI cases there in more detail.</p>
+      <p>Give yourself time on the day to park and find the right courtroom on the right floor. Check your paperwork for the courtroom and time, and call the clerk if anything is unclear.</p>
+
+      <h2>What happens at the arraignment?</h2>
+      <p>The hearing follows a set pattern. In order, the court usually:</p>
+      <ul>
+        <li>calls your case and confirms who you are;</li>
+        <li>reads the charges against you;</li>
+        <li>explains your rights, including the right to a lawyer;</li>
+        <li>asks for your plea;</li>
+        <li>sets bond conditions and any driving restrictions;</li>
+        <li>sets the next dates in the case.</li>
+      </ul>
+      <p>The court also deals with the administrative license suspension (ALS). If an ALS appeal has been filed, the court may set a hearing on it.</p>
+      <p>When a lawyer is already on the case, much of this happens through counsel. The firm appears at the arraignment, files the ALS appeal beforehand where it can, and asks for the best available bond conditions and driving privileges from the start.</p>
+
+      <h2>How should you plead at an OVI arraignment?</h2>
+      <p>In nearly all first OVI cases, the defense lawyer enters a plea of not guilty at arraignment. A not-guilty plea leaves time to review the prosecution&apos;s evidence and build the defense. Nothing about the case has been tested yet at this point: the stop, the field sobriety tests and the breath or blood result all still have to be examined.</p>
+      <p>A guilty plea at the first appearance gives that up. A first OVI is a first-degree misdemeanor with mandatory penalties, including fines of $565 to $1,075 and a court-ordered license suspension of 1 to 3 years. An OVI conviction also cannot be expunged or sealed under current Ohio law, because ORC 2953.36 excludes OVI convictions. Those consequences are why the plea at arraignment is almost always not guilty.</p>
+
+      <h2>What about your license and the ALS appeal?</h2>
+      <p>The ALS runs separately from the criminal case. After an OVI arrest anywhere in Franklin County, the officer issues an Administrative License Suspension notice under ORC 4511.191 if you refused testing or failed a chemical test. The suspension takes effect at arrest.</p>
+      <p>You can challenge it in Franklin County Municipal Court. The ALS appeal must be filed within 30 days of the arrest. With the appeal, your lawyer can ask for a stay so you may be able to keep driving while it is pending. Missing the window forfeits your right to contest the suspension, and it cannot be extended. The firm&apos;s article on the <a href="/our-law-firm/blog/ohio-als-appeal-30-day-deadline">30-day ALS appeal deadline</a> explains the hearing.</p>
+      <p>Because the deadline is counted from the arrest, do not wait for the arraignment to deal with your license. If you need to drive for work, school or treatment during a suspension, the application for <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> goes through the court and must show the need.</p>
+
+      <h2>What should you bring to an OVI arraignment?</h2>
+      <p>Bring everything the officer and the jail gave you, plus what your lawyer will need to argue for driving privileges. A practical list:</p>
+      <ul>
+        <li>the citation or ticket, which shows the charge and court date;</li>
+        <li>the ALS notice and any other paperwork about your license;</li>
+        <li>your bond or release paperwork;</li>
+        <li>a photo ID;</li>
+        <li>your work schedule, school schedule and any treatment or medical appointments, to show where you need to drive;</li>
+        <li>your lawyer&apos;s name and phone number, if you have hired one.</li>
+      </ul>
+      <p>Dress as you would for a job interview, arrive early, and keep your phone silenced in the courtroom.</p>
+
+      <h2>What comes after the arraignment?</h2>
+      <p>After the arraignment the case moves through the same stages as any OVI case:</p>
+      <ul>
+        <li><strong>Discovery.</strong> The prosecution must hand over its evidence, including police reports, breathalyzer maintenance records, dash-cam footage and witness statements.</li>
+        <li><strong>Pretrial motions.</strong> Motions can challenge the evidence or ask for dismissal, for example when the stop was unlawful or the tests were not given correctly.</li>
+        <li><strong>Resolution.</strong> Most cases resolve through negotiation. Trial is an option.</li>
+      </ul>
+      <p>The firm uses that time to investigate the stop, review the body-cam and dash-cam footage against the NHTSA procedures for the field sobriety tests, and check the breath machine&apos;s maintenance and calibration records. For the penalties and defenses on a first charge, see <a href="/ovi-dui-defense/first-ovi">first OVI defense in Ohio</a>, and for the full timeline see <a href="/our-law-firm/blog/what-happens-after-ovi-arrest-ohio">what happens after an OVI arrest in Ohio</a>.</p>
+
+      <p>If you have an OVI arraignment coming up at Franklin County Municipal Court, the firm can appear with you and file the ALS appeal before the 30 days run out. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
+    slug: 'can-ovi-be-expunged-ohio',
+    title: 'Can an OVI Be Expunged or Sealed in Ohio?',
+    excerpt: 'Ohio law bars sealing or expunging an OVI conviction under ORC 2953.36. What a permanent OVI record affects, and what can be done before a conviction.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-10',
+    featured: false,
+    image: '/assets/law.jpg',
+    gradient: 'from-[#2d3436] via-[#1a1a2e] to-[#b87333]/50',
+    content: `
+      <p>People who have finished an OVI sentence often ask whether they can clear it from their record the way some other convictions can be sealed. For an OVI conviction, Ohio law says no. That single fact changes how an OVI charge should be handled from the first day, because the only chance to keep an OVI off your record comes while the case is still open. This article explains the rule, what a permanent OVI record affects, and the options that exist while the case is still open.</p>
+
+      <h2>Can you expunge an OVI in Ohio?</h2>
+      <p>No. An OVI conviction cannot be expunged or sealed under current Ohio law. ORC 2953.36 excludes OVI convictions from eligibility. Time since the sentence ended and a clean record afterward do not change this.</p>
+
+      <h2>Is sealing different from expungement for an OVI?</h2>
+      <p>For an OVI conviction the difference does not help. Ohio uses both words for clearing a record, and people often use them interchangeably. Both are closed to an OVI conviction under ORC 2953.36. If you see a service or website suggesting otherwise for an OVI, ask exactly which statute it relies on.</p>
+      <p>Other convictions follow different rules, and many misdemeanors are eligible. The firm&apos;s page on <a href="/criminal-defense/expungement-record-sealing">expungement and record sealing</a> covers eligibility for those offenses.</p>
+
+      <h2>What does a permanent OVI record affect?</h2>
+      <p>A first OVI will show on background checks for jobs, professional licenses and housing indefinitely. The effects people run into most are these:</p>
+      <ul>
+        <li><strong>Jobs.</strong> Employers who run background checks may refuse to hire, particularly for driving jobs.</li>
+        <li><strong>Professional licenses.</strong> Licenses in commercial driving, transportation and security may be denied or revoked.</li>
+        <li><strong>Immigration.</strong> A conviction can carry immigration consequences for non-citizens.</li>
+        <li><strong>Commercial drivers.</strong> CDL disqualification under ORC 4506.16 follows an OVI conviction.</li>
+      </ul>
+      <p>The record also counts against you in any later case, which is the next question.</p>
+
+      <h2>How long does an OVI count against you for future charges?</h2>
+      <p>For sentencing, Ohio counts prior OVI convictions within a 10-year lookback. A prior OVI within 10 years of a new offense decides whether you face first, second or third offense penalties, and each level has higher mandatory minimums. A second OVI within 10 years, for example, carries a 10-day minimum jail term at the low level.</p>
+      <p>A 20-year lookback applies in limited situations, such as whether a refusal is treated as high tier when there is a prior OVI within 20 years.</p>
+      <p>The record itself is permanent. The lookback windows set how long it raises the penalties on a new charge.</p>
+
+      <h2>Fight the charge before a conviction</h2>
+      <p>Because a conviction cannot be cleared later, the time to fight an OVI is before a conviction. That means treating the open case as the only chance to protect your record, and working the evidence while it can still be challenged:</p>
+      <ul>
+        <li><strong>The stop.</strong> Police need reasonable suspicion of a traffic violation or crime to stop you. If the stop was unlawful, the evidence that followed may be suppressed, which can end the case.</li>
+        <li><strong>The breath or blood test.</strong> Breath results can be challenged for calibration, missing maintenance records, operator error, a rising BAC or a medical condition. Blood tests can be challenged for how the sample was collected, the chain of custody and lab error.</li>
+        <li><strong>The field sobriety tests.</strong> They are subjective, and NHTSA sets specific protocols for them. Results can be challenged for improper administration, medical conditions, roadside conditions or a lack of officer training.</li>
+        <li><strong>Rising BAC.</strong> Your BAC may have been under 0.08% while driving and risen over the limit by the time of the test. This needs expert testimony and can lead to a reduced charge or dismissal.</li>
+      </ul>
+      <p>Pleading guilty at the first court date to get the case over with gives all of this up. The firm&apos;s article on <a href="/our-law-firm/blog/field-sobriety-tests-ohio">field sobriety tests in Ohio</a> covers one of the most common challenges in detail.</p>
+
+      <h2>Ask whether a reduction to a non-OVI offense is possible</h2>
+      <p>The other path is a reduction. A first OVI can sometimes be negotiated down to reckless operation, called a &quot;wet reckless&quot; when alcohol is involved. Reckless operation under ORC 4511.20 is a minor misdemeanor for a first offense, carries no mandatory jail, and does not count as a prior OVI for lookback purposes. A reduction to reckless operation is one possible outcome when the evidence supports it.</p>
+      <p>Prosecutors do not offer it automatically. It depends on the strength of the evidence, the facts of the stop and the testing, and your driving and criminal history. Whether a reduced conviction can be sealed later, and when, is a question to settle with your lawyer before you accept any plea. The firm&apos;s article on <a href="/our-law-firm/blog/ovi-reduced-to-reckless-operation-ohio">reducing an OVI to reckless operation</a> explains when prosecutors consider it.</p>
+
+      <h2>Do not forget the license case</h2>
+      <p>An OVI arrest starts two cases. Alongside the criminal charge, the administrative license suspension (ALS) can take your license at the time of arrest. The ALS appeal must be filed within 30 days of the arrest. Winning it can restore your license and can strengthen the criminal defense, which in turn helps protect your record. See <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a> if you need to drive while the case is pending.</p>
+
+      <h2>What the firm does when your record is at stake</h2>
+      <p>The firm files the ALS appeal within the 30-day deadline, investigates the stop, gets the police reports, dash-cam and body-cam footage and breath machine records, and files pretrial motions on the evidence. It negotiates for reduced charges when the evidence supports them, and it tries the case when that is the better course. The <a href="/ovi-dui-defense/first-ovi">first OVI page</a> sets out the penalties, and the main <a href="/ovi-dui-defense">OVI/DUI defense page</a> covers every offense level.</p>
+
+      <p>If you are facing an OVI charge and your record matters to your job, license or future, act while the case is still open. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
+    slug: 'high-tier-ovi-ohio',
+    title: 'High-Tier OVI in Ohio: What a 0.17% BAC Changes',
+    excerpt: 'A BAC of 0.17% or higher makes an Ohio OVI high tier and doubles the mandatory jail minimum: 6 days on a first offense instead of 3.',
+    category: 'OVI/DUI',
+    author: 'Jwayyed Jwayyed',
+    date: '2026-10-07',
+    featured: false,
+    image: '/assets/dui-blog.jpg',
+    gradient: 'from-[#1a1a2e] via-[#2d3436] to-[#b87333]/60',
+    content: `
+      <p>Two people arrested for OVI in Ohio on the same night can face very different minimum sentences because of one number on a breath test printout. At 0.08% the charge is a standard OVI. At 0.17% or higher it becomes a high-tier OVI, and the mandatory jail minimum doubles, even on a first offense. This article explains the thresholds, what high tier changes at each offense level, and what a defense lawyer looks at when the result is at or near the line.</p>
+
+      <h2>What is a high-tier OVI in Ohio?</h2>
+      <p>A high-tier OVI under ORC 4511.19 is an OVI with a BAC of 0.17% or higher at the time of testing. That is more than double the legal limit of 0.08%. High tier carries enhanced penalties, including mandatory minimum jail terms that are double the standard OVI penalties, and this applies even to a first offense.</p>
+      <p>Ohio sorts a first OVI into two levels. The low level covers a BAC at or above .08% but below .17%. The high level covers a BAC of .17% or higher, or refusing the chemical test. So the high level reaches some people who never gave a sample. The firm&apos;s article on <a href="/our-law-firm/blog/should-you-refuse-breathalyzer-ohio">refusing a breathalyzer in Ohio</a> covers that side.</p>
+
+      <h2>What test results count as high tier?</h2>
+      <p>High tier depends on a chemical test result at or above a set threshold. The thresholds differ by test:</p>
+      <ul>
+        <li><strong>Breath:</strong> a BAC of 0.17% or higher.</li>
+        <li><strong>Blood:</strong> 0.17 grams or more per 100 milliliters of whole blood.</li>
+        <li><strong>Urine:</strong> 0.238 grams or more per 100 milliliters.</li>
+      </ul>
+      <p>These thresholds apply to alcohol. Separate per se limits exist for controlled substances and metabolites.</p>
+
+      <h2>What does high tier change at sentencing?</h2>
+      <p>The biggest change is the mandatory minimum jail term, which doubles at every offense level:</p>
+      <ul>
+        <li><strong>First offense:</strong> 6 days mandatory, against 3 days for a standard OVI. The court may allow a 3-day jail term plus a 3-day Driver Intervention Program.</li>
+        <li><strong>Second offense within 10 years:</strong> 20 days mandatory, against 10 days for a standard second OVI. The alternative minimum is 10 days in jail plus 36 days of house arrest.</li>
+        <li><strong>Third offense within 10 years:</strong> 60 days mandatory, against 30 days for a standard third OVI. The alternative minimum is 30 days in jail plus 110 days of house arrest.</li>
+      </ul>
+      <p>Offenses are counted within a 10-year lookback, and high-tier status can also enhance the penalties on any future OVI charge.</p>
+      <p>Some parts of a first-offense sentence are the same at either level. A first OVI, standard or high tier, carries fines of $565 to $1,075 and a court-ordered license suspension of 1 to 3 years. What high tier changes most on a first offense is the jail floor.</p>
+
+      <h2>Where are high-tier OVI cases heard?</h2>
+      <p>High-tier cases are heard in municipal court for first and second offenses, or in common pleas court for felony offenses. In Franklin County that means <a href="/courts/franklin-county-municipal-court">Franklin County Municipal Court</a> for most cases.</p>
+      <p>As with any OVI, the case runs on two tracks: the criminal case and the administrative license suspension (ALS). The ALS appeal must be filed within 30 days of the arrest, and an attorney can ask for a stay of the suspension while it is pending. Limited driving privileges after a high-tier OVI are available but may require an ignition interlock, and the application needs court approval and must show necessity. See <a href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</a>.</p>
+
+      <h2>Why does a result near 0.17% matter?</h2>
+      <p>A result just over the line carries the same doubled minimum as one far above it. A result close to the 0.17% threshold may leave more room to argue machine error or calibration, and a small problem with the test can be the difference between high tier and standard.</p>
+      <p>That is also why high tier narrows plea negotiations. Prosecutors are generally less willing to reduce a high-tier charge to a standard low-tier OVI without a strong factual reason, such as a credible challenge to the breath result, a strong rising BAC defense, or a problem with the stop or arrest. With one of those, a lawyer can seek a reduction to low-tier OVI, reckless operation, or alternative sentencing. The firm&apos;s article on <a href="/our-law-firm/blog/ovi-reduced-to-reckless-operation-ohio">reducing an OVI to reckless operation</a> covers that outcome.</p>
+
+      <h2>How are high-tier OVI charges defended?</h2>
+      <p>The defenses go after the number and the stop that led to it.</p>
+      <ul>
+        <li><strong>Rising BAC.</strong> Your BAC may have been under 0.08% while driving and risen to 0.17% or higher by the time of the test. This needs expert testimony and analysis of timing and consumption, and it can reduce a high-tier charge to a standard OVI or lead to dismissal.</li>
+        <li><strong>Inaccurate breathalyzer results.</strong> Breath machines must be calibrated, maintained and operated by trained officers. Medical conditions, recent drinking or improper procedure can affect the result, and maintenance records and operator qualifications can be challenged.</li>
+        <li><strong>Blood test problems.</strong> Blood tests can be challenged for how the sample was collected, the chain of custody and lab error.</li>
+        <li><strong>An illegal traffic stop.</strong> Police need reasonable suspicion of a traffic violation or crime to stop you. If the stop was illegal, the evidence that followed may be suppressed, which can end the case.</li>
+        <li><strong>Field sobriety tests.</strong> These tests are subjective and can be affected by medical conditions, weather, road conditions or improper administration.</li>
+      </ul>
+
+      <h2>What the firm looks at in a high-tier case</h2>
+      <p>The firm starts with the test. It gets the breathalyzer maintenance and calibration records, the operator&apos;s qualifications and, for a blood test, the chain of custody. It reviews the police reports and the dash-cam and body-cam footage, including the field sobriety procedures against the NHTSA protocol. It looks at the timeline from the last drink to the test, which is where a rising BAC defense comes from, and brings in toxicology experts when the facts support it.</p>
+      <p>From there it files the ALS appeal within the 30-day deadline, files pretrial motions on the evidence, and negotiates for a reduction from high tier to standard OVI, a better plea agreement, or alternative sentencing including treatment. If the case goes to trial, the firm cross-examines the officers and expert witnesses. The full penalty tables are on the <a href="/ovi-dui-defense/high-tier-ovi">high-tier OVI page</a>, and the main <a href="/ovi-dui-defense">OVI/DUI defense page</a> covers every offense level.</p>
+
+      <p>If your test came back at 0.17% or higher, the result and the machine behind it are the first things to examine. Call Jwayyed Law LLC at (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+    `,
+  },
+  {
     slug: 'what-to-do-pulled-over-ovi-ohio',
     title: 'What to Do If You\'re Pulled Over for OVI in Ohio',
     excerpt: 'What you must hand over, what you can decline, and the 30-day ALS deadline that starts at arrest if you are stopped for OVI in Ohio.',
