@@ -61,7 +61,7 @@ export default function NCDDBadge({
         target="_blank"
         rel="noopener noreferrer"
         title="View Attorney Jwayyed's NCDD profile"
-        className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 min-w-[220px] hover:border-navy-950/40 transition-colors duration-200"
+        className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 hover:border-navy-950/40 transition-colors duration-200"
       >
         <Image
           src="/assets/ncdd-general-member-badge.png"

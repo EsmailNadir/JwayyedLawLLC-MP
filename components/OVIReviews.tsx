@@ -12,26 +12,21 @@ const OVIReviewsSwiper = dynamic(() => import('@/components/OVIReviewsSwiper'), 
 
 const OVIReviews: React.FC = () => {
   return (
-    <section className="w-full py-20 sm:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-3 mb-4">
-            <span className="h-px w-8 bg-navy-950" />
-            <span className="text-xs tracking-[0.3em] uppercase text-sky-deep font-semibold">
-              Client Voices
-            </span>
-            <span className="h-px w-8 bg-navy-950" />
-          </div>
-          <h2 className="jw-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-navy-950 mb-5">
+    // Heading and trust marks in a left column, the reviews beside them, so
+    // the block reads as part of the page grid rather than a centred banner.
+    <section className="w-full py-16 sm:py-24 bg-white text-navy-950" aria-labelledby="ovi-reviews-heading">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-8 grid gap-10 lg:grid-cols-12">
+        <div className="lg:col-span-4">
+          <h2 id="ovi-reviews-heading" className="jw-display text-[clamp(1.875rem,1.3rem+2vw,3rem)] leading-[1.08]">
             What clients say
           </h2>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col gap-3">
             {/* Google Reviews card */}
             <a
               href="https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 min-w-[220px] hover:border-navy-950/20 transition-all duration-200"
+              className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 hover:border-navy-950/40 transition-colors duration-200"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" className="flex-shrink-0">
                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -48,7 +43,7 @@ const OVIReviews: React.FC = () => {
                   </div>
                   <span className="text-sm font-bold text-navy-950">4.9</span>
                 </div>
-                <p className="text-xs text-navy-950/60">100+ Google Reviews</p>
+                <p className="text-xs text-navy-950/60">100+ Google reviews</p>
               </div>
             </a>
 
@@ -57,12 +52,12 @@ const OVIReviews: React.FC = () => {
               href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick"
               target="_blank"
               rel="nofollow noreferrer"
-              className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 min-w-[220px] hover:border-navy-950/20 transition-all duration-200"
+              className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 hover:border-navy-950/40 transition-colors duration-200"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png" style={{ border: 0 }} alt="BBB Seal" width={52} height={22} className="object-contain flex-shrink-0" />
               <div>
-                <p className="text-sm font-bold text-navy-950">A+ Accredited</p>
+                <p className="text-sm font-bold text-navy-950">A+ accredited</p>
                 <p className="text-xs text-navy-950/60">Better Business Bureau</p>
               </div>
             </a>
@@ -71,7 +66,9 @@ const OVIReviews: React.FC = () => {
           </div>
         </div>
 
-        <OVIReviewsSwiper />
+        <div className="lg:col-span-8 min-w-0">
+          <OVIReviewsSwiper />
+        </div>
       </div>
     </section>
   );

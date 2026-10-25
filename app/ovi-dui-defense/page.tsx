@@ -1,15 +1,17 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 import { oviServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law LLC',
-  description: 'Experienced Ohio OVI/DUI defense attorney protecting your rights. First, second, and third OVI charges statewide. Call (614) 285-5482.',
+  title: 'Ohio OVI / DUI Defense Attorney',
+  description:
+    'Ohio OVI/DUI defense for first, second, third and felony OVI charges statewide: penalties, the 30-day license suspension appeal and defenses. Call (614) 285-5482.',
   keywords: [
     'Ohio OVI attorney',
     'Ohio DUI attorney',
@@ -20,432 +22,297 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law LLC',
-    description: 'Experienced OVI/DUI defense representation throughout Ohio. Schedule consultation available.',
+    description: 'OVI/DUI defense throughout Ohio, from a first offense to a felony. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/ovi-dui-defense',
   },
 };
 
-const breadcrumbItems = [
-  { label: 'OVI / DUI Defense', href: '/ovi-dui-defense' },
-];
+const breadcrumbItems = [{ label: 'OVI / DUI Defense', href: '/ovi-dui-defense' }];
 
 const faqs = [
   {
     question: 'What is the difference between OVI and DUI in Ohio?',
-    answer: 'Ohio uses the term OVI (Operating a Vehicle Impaired) instead of DUI (Driving Under the Influence). OVI under Ohio Revised Code 4511.19 means operating a vehicle while impaired by alcohol, drugs, or a combination. The terms are often used interchangeably, but OVI is the official legal term in Ohio. OVI can be charged based on BAC (blood alcohol content) of 0.08% or higher, or evidence of impairment regardless of BAC level.',
+    answer:
+      'Ohio uses the term OVI (Operating a Vehicle Impaired) instead of DUI (Driving Under the Influence). OVI under Ohio Revised Code 4511.19 means operating a vehicle while impaired by alcohol, drugs, or both. The terms are often used interchangeably, but OVI is the legal term in Ohio. An OVI can be charged on a BAC of 0.08% or higher, or on evidence of impairment whatever the BAC.',
   },
   {
     question: 'What are the penalties for a first OVI in Ohio?',
-    answer: 'A first OVI in Ohio is a first-degree misdemeanor. Low-level: 3 days to 6 months jail (court may allow 3-day Driver Intervention Program instead of jail, or waive jail with an ignition interlock). Fines $565 to $1,075; license 1 to 3 years ($315 reinstatement fee). Limited privileges after 15 days (30 for refusal); the 15-day wait may be waived if you have no prior Physical Control conviction. Treatment and restricted plates are optional at the court\'s discretion. High-level or refusal: 6 days minimum jail.',
+    answer:
+      "A first OVI in Ohio is a first-degree misdemeanor. At the low level, jail is 3 days to 6 months (the court may allow a 3-day Driver Intervention Program instead, or waive jail with an ignition interlock). Fines are $565 to $1,075 and the license suspension is 1 to 3 years with a $315 reinstatement fee. Limited privileges come after 15 days (30 for a refusal), and the 15-day wait may be waived with no prior Physical Control conviction. Treatment and restricted plates are optional at the court's discretion. At the high level or for a refusal, the minimum jail is 6 days.",
   },
   {
     question: 'Can I refuse a breathalyzer test in Ohio?',
-    answer: 'You can refuse a breathalyzer test in Ohio, but refusal carries severe consequences. Under Ohio\'s implied consent law (ORC 4511.191), refusing a chemical test results in automatic license suspension for 1 year (first offense) or longer for subsequent offenses. Refusal can also be used as evidence against you in court and may result in enhanced penalties. However, there are circumstances where refusal may be legally justified. Consult an attorney immediately if you refused testing.',
+    answer:
+      "You can, but refusing has serious consequences. Under Ohio's implied consent law (ORC 4511.191), refusing a chemical test brings an automatic license suspension of 1 year for a first offense, and longer for later offenses. The refusal can also be used as evidence against you and may lead to higher penalties. There are circumstances where a refusal may be legally justified. If you refused testing, talk to an attorney right away.",
   },
   {
     question: 'What is a high-tier OVI in Ohio?',
-    answer: 'High-tier OVI under Ohio Revised Code 4511.19 occurs when your BAC is 0.17% or higher. High-tier OVI carries enhanced penalties including mandatory jail time (6 days minimum for first offense), higher fines, longer license suspensions, and mandatory alcohol assessment and treatment. Even for a first offense, high-tier OVI requires more severe penalties than standard OVI. Prior convictions further enhance high-tier penalties.',
+    answer:
+      'A high-tier OVI under Ohio Revised Code 4511.19 is a BAC of 0.17% or higher. It carries higher penalties: mandatory jail (6 days minimum for a first offense), higher fines, longer license suspensions, and mandatory alcohol assessment and treatment. Prior convictions raise the penalties further.',
   },
   {
     question: 'Can I get limited driving privileges after an OVI suspension in Ohio?',
-    answer: 'Yes, depending on offense level. First OVI: eligible after 15 days (30 for refusal); the 15-day wait may be waived if you have no prior Physical Control conviction; interlock is optional unless you have that prior. Second OVI: after 45 days (90 for refusal), interlock required. Third OVI: after 180 days (1 year for refusal), interlock required. Privileges typically allow driving for work, school, treatment, and necessary activities. An attorney can help you request an ALS hearing (30-day deadline) and apply for limited privileges when eligible.',
+    answer:
+      'Yes, depending on the offense. First OVI: after 15 days (30 for a refusal); the 15-day wait may be waived with no prior Physical Control conviction, and the interlock is optional unless you have that prior. Second OVI: after 45 days (90 for a refusal), interlock required. Third OVI: after 180 days (1 year for a refusal), interlock required. Privileges usually cover driving for work, school, treatment and other necessary trips. An attorney can request the ALS hearing (30-day deadline) and apply for privileges when you are eligible.',
   },
   {
-    question: `What are the OVI lookback periods in Ohio?`,
-    answer: `Ohio uses two distinct lookback windows under ORC 4511.19. First, a 10-year lookback governs prior-offense counting for mandatory sentencing purposes: a prior OVI conviction within 10 years of the current offense date counts toward determining whether you face first-, second-, or third-offense penalties. Second, a 20-year lookback applies in limited specific contexts, such as whether a refusal is treated as a high-tier offense when there is a prior OVI within 20 years. There is no separate "6-year" lookback in current Ohio OVI law for penalty enhancement purposes. An attorney can review your prior record to determine which convictions fall within the relevant lookback windows and whether any priors can be challenged.`,
+    question: 'What are the OVI lookback periods in Ohio?',
+    answer:
+      'Ohio uses two lookback windows under ORC 4511.19. A 10-year lookback counts prior offenses for sentencing: a prior OVI conviction within 10 years of the current offense date decides whether you face first, second or third offense penalties. A 20-year lookback applies in limited situations, such as whether a refusal is treated as high tier when there is a prior OVI within 20 years. There is no separate "6-year" lookback in current Ohio OVI law for penalty enhancement. An attorney can review your record to see which convictions fall inside each window and whether any priors can be challenged.',
   },
   {
-    question: `What is an ALS and how do you appeal it in Ohio?`,
-    answer: `An Administrative License Suspension (ALS) is an automatic license suspension imposed by the BMV under Ohio's implied consent law (ORC 4511.191) when you are arrested for OVI and either fail a chemical test or refuse one. The ALS is separate from any criminal court suspension and begins immediately upon arrest. To challenge an ALS, you or your attorney must file a written appeal with the court within 30 days of the arrest—missing this deadline permanently waives your right to contest the suspension. Along with the appeal, your attorney can request a stay of the suspension, which allows you to keep driving while the appeal is pending. At the ALS hearing, the court examines whether the officer had reasonable grounds to stop you and request testing, whether the arrest was lawful, and whether testing was properly administered. Winning the ALS appeal can result in license reinstatement and may also benefit your criminal defense.`,
+    question: 'What is an ALS and how do you appeal it in Ohio?',
+    answer:
+      "An Administrative License Suspension (ALS) is an automatic suspension imposed by the BMV under Ohio's implied consent law (ORC 4511.191) when you are arrested for OVI and fail or refuse a chemical test. It is separate from any court-ordered suspension and starts at arrest. To challenge it, a written appeal must be filed with the court within 30 days of the arrest. Missing that deadline permanently waives the right to contest the suspension. With the appeal, your attorney can ask for a stay, which lets you keep driving while the appeal is pending. At the hearing, the court looks at whether the officer had reasonable grounds to stop you and request testing, whether the arrest was lawful, and whether testing was done properly. Winning can restore your license and may help the criminal defense.",
   },
   {
-    question: `What changed under HB 37 (effective April 9, 2025) for Ohio OVI cases?`,
-    answer: `HB 37, known as Liv's Law, took effect on April 9, 2025, and made several significant changes to Ohio OVI law under ORC 4511.19. Key changes include: updated fine ranges for all offense levels (for example, first OVI fines now start at $565 rather than the prior $375 minimum); authorization of oral fluid (saliva) testing as a new method of chemical testing subject to implied consent, with results admissible in court; clarification of ignition interlock device waiver rules for first OVI (the 15-day hard suspension can be waived for non-refusal cases with no prior Physical Control conviction); and updates to the reinstatement fee structure ($315 fee). The law was named after a victim of an OVI crash and reflects Ohio's continued effort to strengthen OVI enforcement. An attorney familiar with HB 37 can advise how these changes affect your specific charges.`,
+    question: 'What changed under HB 37 (effective April 9, 2025) for Ohio OVI cases?',
+    answer:
+      "HB 37, known as Liv's Law, took effect on April 9, 2025, and changed several parts of Ohio OVI law under ORC 4511.19. It updated fine ranges at every offense level (a first OVI fine now starts at $565 instead of the prior $375 minimum). It authorized oral fluid (saliva) testing as a chemical test under implied consent, with results admissible in court. It clarified that the 15-day hard suspension can be waived for a non-refusal first OVI with no prior Physical Control conviction. And it updated the reinstatement fee ($315). The law is named after a victim of an OVI crash. An attorney who knows HB 37 can explain how it affects your charges.",
   },
 ];
 
-export default function OVIDefensePage() {
+const COUNTIES = [
+  { href: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court', title: 'Franklin County', subtitle: 'Columbus and Franklin County Municipal Court' },
+  { href: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court', title: 'Delaware County', subtitle: 'Delaware County Municipal Court' },
+  { href: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts', title: 'Butler County', subtitle: 'Area Courts and Hamilton Municipal Court' },
+  { href: '/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court', title: 'Greene County', subtitle: 'Fairborn Municipal Court' },
+  { href: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court', title: 'Montgomery County', subtitle: 'Dayton Municipal Court' },
+  { href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court', title: 'Pickaway County', subtitle: 'Circleville Municipal Court' },
+  { href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court', title: 'Athens County', subtitle: 'Athens Municipal Court' },
+  { href: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court', title: 'Morrow County', subtitle: 'Morrow County Municipal Court' },
+  { href: '/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court', title: 'Clinton County', subtitle: 'Wilmington Municipal Court' },
+];
 
+export default function OVIDefensePage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio OVI Attorney"
-        description="Experienced legal representation for OVI/DUI charges throughout Ohio. Protecting your rights and fighting for the best possible outcome."
+        title="Ohio OVI and DUI defense"
+        description="OVI charges at every level, from a first offense to a felony, in courts across Ohio. An arrest starts two cases at once, and the license suspension appeal has a 30-day deadline."
       />
 
-      {/* Sub-Services Grid */}
-      <section className="py-8 bg-ice border-b border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            OVI / DUI Defense Services
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {oviServices.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="flex items-center justify-between p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-medium text-navy-950 group-hover:text-sky-deep transition-colors text-sm">{service.title}</span>
-                <span className="text-white/80 group-hover:text-sky-deep transition-colors ml-2 text-xs shrink-0">→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Section title="Find your charge" intro={<p>Each page covers the penalties, the process and the defenses for that charge.</p>}>
+        <LinkGrid links={oviServices.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+      </Section>
+
+      <KeyFacts
+        facts={[
+          { figure: '0.08%', label: 'BAC at which an OVI can be charged; impairment alone can also support the charge' },
+          { figure: '0.17%', label: 'BAC that makes it a high-tier OVI, with higher penalties even for a first offense' },
+          { figure: '30 days', label: 'to appeal the administrative license suspension after the arrest' },
+          { figure: '10 years', label: 'lookback for counting prior OVIs at sentencing' },
+        ]}
+      />
+
+      <Section
+        title="What OVI means in Ohio"
+        tone="ice"
+        intro={
+          <p>
+            OVI, Operating a Vehicle Impaired, is Ohio&rsquo;s term for DUI, charged under Ohio Revised Code 4511.19. The firm defends
+            OVI cases under current law, including HB 37 (Liv&rsquo;s Law, effective April 2025; current as of 2026).
+          </p>
+        }
+      >
+        <p>
+          An OVI covers impairment by alcohol, drugs (including marijuana, prescription drugs and controlled substances), or both. The
+          charge can rest on a BAC of 0.08% or higher, on evidence of impairment, or on oral fluid or other chemical testing authorized
+          under HB 37. The same penalties apply whether the offense involves alcohol, drugs or both, and they rise sharply with each
+          later offense.
+        </p>
+        <p>
+          A conviction brings criminal penalties, a license suspension, higher insurance and a permanent criminal record. Employers who
+          run background checks may refuse to hire, particularly for driving jobs. Professional licenses in commercial driving,
+          transportation and security may be denied or revoked. Insurance rates often rise 2 to 3 times for 3 to 5 years, and
+          financial aid eligibility can be affected.
+        </p>
+      </Section>
+
+      <Section title="Ohio OVI penalties by offense">
+        <p>Offenses are counted within a 10-year lookback. Each level has its own mandatory minimums.</p>
+        <FactTable
+          title="First OVI (within 10 years)"
+          rows={[
+            {
+              label: 'Jail',
+              value:
+                'Low level: 3 days to 6 months (the court may allow a 3-day DIP instead, or waive jail with an interlock). High level or refusal: 6 days to 6 months minimum.',
+            },
+            { label: 'Fines', value: '$565 to $1,075.' },
+            { label: 'License', value: '1 to 3 years ($315 reinstatement fee).' },
+            {
+              label: 'Limited privileges',
+              value:
+                "After 15 days (30 for a refusal); the 15-day wait may be waived with no prior Physical Control. Interlock, treatment and restricted plates are optional at the court's discretion (interlock required with a prior Physical Control).",
+            },
+          ]}
+        />
+        <FactTable
+          title="Second OVI (within 10 years)"
+          rows={[
+            {
+              label: 'Jail',
+              value:
+                'Low level: 10 days to 6 months (alternative minimum 5 days jail plus 18 days monitored house arrest). High level or refusal: 20 days to 6 months (alternative 10 days jail plus 36 days house arrest).',
+            },
+            { label: 'Fines', value: '$715 to $1,625.' },
+            {
+              label: 'License',
+              value:
+                '1 to 7 years ($315 reinstatement fee). Mandatory alcohol/drug assessment. Restricted plates required. 90-day vehicle immobilization if the vehicle is registered to you.',
+            },
+            { label: 'Limited privileges', value: 'After 45 days (90 for a refusal). Ignition interlock required for an alcohol-related OVI.' },
+          ]}
+        />
+        <FactTable
+          title="Third OVI (within 10 years)"
+          rows={[
+            {
+              label: 'Jail',
+              value:
+                'Low level: 30 days to 1 year (alternative 15 days jail plus 55 days house arrest). High level or refusal: 60 days to 1 year (alternative 30 days jail plus 110 days house arrest).',
+            },
+            { label: 'Fines', value: '$1,040 to $2,750.' },
+            {
+              label: 'License',
+              value:
+                '2 to 12 years ($315 reinstatement fee). Mandatory alcohol/drug addiction program. Restricted plates required. Vehicle forfeiture if the vehicle is registered to you.',
+            },
+            { label: 'Limited privileges', value: 'After 180 days (1 year for a refusal). Ignition interlock required.' },
+            { label: 'Level', value: 'First-degree misdemeanor. A fourth OVI within 10 years becomes a felony.' },
+          ]}
+        />
+        <Callout title="Fourth OVI within 10 years">
+          A fourth OVI within 10 years is a fourth-degree felony with much higher penalties. Call the office to discuss your options.
+        </Callout>
+      </Section>
+
+      <Section title="Two cases from one arrest" tone="ice">
+        <h3>The administrative license suspension (ALS)</h3>
+        <p>
+          Within 30 days of the arrest, the ALS appeal must be filed or the right to challenge it is lost. The hearing asks whether the
+          officer had reasonable grounds to believe you were impaired, whether the arrest was proper, and whether testing was done
+          correctly. Winning can restore your license and can strengthen the criminal defense.
+        </p>
+        <h3>The criminal case</h3>
+        <Steps
+          steps={[
+            { title: 'Arraignment', body: 'You enter a plea, usually not guilty.' },
+            {
+              title: 'Discovery',
+              body: 'The prosecution must hand over its evidence, including police reports, breathalyzer maintenance records, dashcam footage and witness statements.',
+            },
+            { title: 'Pretrial motions', body: 'Motions can challenge the evidence or ask for dismissal.' },
+            { title: 'Resolution', body: 'Most cases resolve through negotiation. Trial is an option.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="License suspension and driving privileges">
+        <p>
+          Ohio&rsquo;s implied consent law, ORC 4511.191, requires an automatic license suspension when you are charged with OVI. It is
+          separate from the criminal penalties and starts at arrest if you refuse testing or fail a chemical test. You have 30 days to
+          appeal it and request a stay, and an attorney can challenge the suspension at the hearing.
+        </p>
+        <FactTable
+          title="ALS suspension periods"
+          rows={[
+            { label: 'First offense, over the limit', value: 'Suspension per statute; limited privileges after 15 days (waiver possible with no prior Physical Control).' },
+            { label: 'First offense, refusal', value: '1 year suspension; limited privileges after 30 days.' },
+            { label: 'Second offense', value: '1 to 7 years; privileges after 45 days (90 for a refusal); interlock required.' },
+            { label: 'Third offense', value: '2 to 12 years; privileges after 180 days (1 year for a refusal); interlock required.' },
+            { label: 'Reinstatement fee', value: '$315 when eligible.' },
+          ]}
+          note="The ALS runs at the same time as any court-ordered suspension. Winning the ALS appeal can mean immediate reinstatement."
+        />
+        <p>
+          Limited privileges usually allow driving for work, school, treatment, medical care and other necessary purposes. After a first
+          OVI, the judge may waive the 15-day wait if you have no prior &ldquo;Physical Control&rdquo; conviction within 10 years; with
+          one, an interlock is required. See <Link href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</Link>{' '}
+          for the application.
+        </p>
+        <Callout title="New since 2025: oral fluid testing">
+          Under HB 37 (Liv&rsquo;s Law), Ohio police may test drivers suspected of OVI with an oral fluid (saliva) swab that detects
+          alcohol, drugs of abuse, controlled substances and metabolites. Results can support probable cause and be used in court.
+          Refusing the swab brings Ohio&rsquo;s implied consent penalties, including automatic suspension. The testing procedure,
+          accuracy and admissibility can all be challenged.
+        </Callout>
+      </Section>
+
+      <Section title="Common OVI defenses" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'An illegal traffic stop',
+              body: 'Police need reasonable suspicion of a traffic violation or crime to stop you. If the stop was unlawful, the evidence may be suppressed and the charges dismissed.',
+            },
+            {
+              title: 'Inaccurate breath results',
+              body: 'Breathalyzers must be calibrated, maintained and run by trained officers. Medical conditions, recent drinking or improper procedure can skew results, and maintenance records and operator qualifications can be challenged.',
+            },
+            {
+              title: 'Rising BAC',
+              body: 'BAC can keep rising after you stop drinking. If you were under 0.08% while driving but over it when tested, this defense may apply. It needs expert testimony and careful analysis of timing.',
+            },
+            {
+              title: 'Field sobriety tests',
+              body: 'The walk-and-turn, one-leg-stand and horizontal gaze nystagmus tests are subjective and can be thrown off by medical conditions, weather, the road surface or improper administration.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on an OVI case">
+        <PointGrid
+          points={[
+            { title: 'Files the ALS appeal', body: 'Within the 30-day deadline, with a request to stay the suspension, and represents you at the hearing.' },
+            {
+              title: 'Investigates',
+              body: 'Police reports, dashcam and bodycam footage, breathalyzer maintenance records and field sobriety procedures, looking for illegal stops and improper testing.',
+            },
+            {
+              title: 'Challenges the evidence',
+              body: 'Breath test calibration and maintenance, NHTSA protocol violations in field sobriety tests, chain of custody for blood tests, and anything obtained improperly.',
+            },
+            { title: 'Brings in experts', body: 'Toxicology, field sobriety and medical experts to test the prosecution’s evidence.' },
+            {
+              title: 'Negotiates',
+              body: 'For reduced charges, a better plea, alternative sentencing including treatment programs, or dismissal once conditions are met.',
+            },
+            { title: 'Gets you driving', body: 'Prepares the application for limited privileges and represents you in court on it.' },
+          ]}
+        />
+        <p>
+          The firm handles OVI cases from arrest through trial and post-conviction relief, including first, second, third and felony
+          offenses. If a case goes to trial, that means cross-examining the officers and the state&rsquo;s experts and calling experts of
+          its own.
+        </p>
+      </Section>
 
       <OVIReviews />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Experienced OVI/DUI Defense Representation in Ohio
-            </h2>
-            
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing OVI (Operating a Vehicle Impaired) charges throughout Ohio carries severe criminal penalties, license suspension, and long-term consequences that extend far beyond fines and jail time. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation for individuals charged under Ohio Revised Code 4511.19. Our attorney understands Ohio OVI laws including current requirements under HB 37 (Liv's Law, effective April 2025; current as of 2026), administrative license suspension procedures, and defense strategies necessary to protect your rights and achieve favorable outcomes.
-            </p>
+      <Section title="OVI defense in your county" tone="ice">
+        <p>Each county page covers its courts and local procedure.</p>
+        <LinkGrid links={COUNTIES} />
+        <h3>Related practice areas</h3>
+        <LinkGrid
+          columns={3}
+          links={[
+            { href: '/criminal-defense', title: 'Criminal defense', subtitle: 'Misdemeanor charges across Ohio' },
+            { href: '/personal-injury/car-accidents', title: 'Car accident claims', subtitle: 'When you were the one injured' },
+            { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement', subtitle: 'Sealing an eligible record' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              OVI in Ohio applies to impairment by alcohol, drugs (including marijuana, prescription drugs, and controlled substances), or a combination. Charges can be based on BAC of 0.08% or higher, evidence of impairment, or oral fluid or other chemical testing authorized under HB 37. The same penalty structure applies whether the offense involves alcohol, drugs, or both. Penalties escalate significantly with each subsequent offense, and high-tier OVI (BAC 0.17% or higher for alcohol) carries enhanced penalties even for first offenses. An OVI conviction results in criminal penalties, administrative license suspension, increased insurance rates, and a permanent criminal record.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's OVI laws are among the strictest in the nation, and prosecutors aggressively pursue these charges. Even first-time offenders face mandatory minimum sentences, automatic license suspensions, and significant financial penalties. Understanding the legal process, available defenses, and strategies to minimize consequences is essential. Early intervention by an experienced OVI defense attorney can significantly impact the outcome of your case, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for OVI charges involves both criminal court proceedings and administrative license suspension (ALS) hearings. These are separate processes that require different strategies. The ALS hearing must be requested within 30 days of arrest, while criminal proceedings follow a different timeline. An experienced attorney can navigate both processes simultaneously to protect your driving privileges and minimize criminal consequences. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The consequences of an OVI conviction extend far beyond the immediate penalties. A criminal record can create barriers to employment, as many employers conduct background checks and may refuse to hire individuals with OVI convictions, particularly for driving-related jobs. Professional licenses in fields such as commercial driving, transportation, and security may be denied or revoked. Insurance rates typically increase dramatically (often 2-3x higher) for 3-5 years after an OVI conviction. Educational opportunities including financial aid eligibility can be affected. These collateral consequences persist long after completing sentences and paying fines.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              OVI / DUI – Locations We Serve
-            </h3>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              We represent clients in OVI cases in the following Ohio counties and courts. Each county has its own page and court procedures; click through for court-specific information.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Franklin County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI – Franklin County Municipal Court</span>
-              </Link>
-              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Delaware County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Delaware County Municipal Court</span>
-              </Link>
-              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Butler County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Area Courts & Hamilton Municipal Court</span>
-              </Link>
-              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Greene County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Fairborn Municipal Court</span>
-              </Link>
-              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Montgomery County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Dayton Municipal Court</span>
-              </Link>
-              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Pickaway County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Circleville Municipal Court</span>
-              </Link>
-              <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Athens County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Athens Municipal Court</span>
-              </Link>
-              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Morrow County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Morrow County Municipal Court</span>
-              </Link>
-              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Clinton County</span>
-                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">OVI/DUI Defense – Wilmington Municipal Court</span>
-              </Link>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Ohio OVI Penalties by Offense Level
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First OVI (within 10 years)</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Low-level: Jail 3 days to 6 months (court may allow 3-day DIP instead of jail or waive jail with interlock). High-level or refusal: 6 days to 6 months minimum.</li>
-                <li>Fines: $565 to $1,075. License: 1 to 3 years ($315 reinstatement fee).</li>
-                <li>Limited privileges after 15 days (30 for refusal); 15-day wait may be waived if no prior Physical Control. Interlock, treatment, and restricted plates optional at court&apos;s discretion (interlock required if prior Physical Control).</li>
-              </ul>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Second OVI (within 10 years)</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Low-level: 10 days to 6 months jail (alternative minimum 5 days jail + 18 days house arrest with monitoring). High-level or refusal: 20 days to 6 months (alternative 10 days jail + 36 days house arrest).</li>
-                <li>Fines: $715 to $1,625. License: 1 to 7 years ($315 reinstatement fee). Mandatory alcohol/drug assessment. Restricted plates required. 90-day vehicle immobilization if registered to you.</li>
-                <li>Limited privileges after 45 days (90 for refusal). Ignition interlock required for alcohol-related OVI.</li>
-              </ul>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Third OVI (within 10 years)</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Low-level: 30 days to 1 year jail (alternative 15 days jail + 55 days house arrest). High-level or refusal: 60 days to 1 year (alternative 30 days jail + 110 days house arrest).</li>
-                <li>Fines: $1,040 to $2,750. License: 2 to 12 years ($315 reinstatement fee). Mandatory alcohol/drug addiction program. Restricted plates required. Vehicle forfeiture if registered to you.</li>
-                <li>Limited privileges after 180 days (1 year for refusal). Ignition interlock required. First-degree misdemeanor; fourth OVI within 10 years becomes a felony.</li>
-              </ul>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Fourth OVI (within 10 years)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Fourth OVI within 10 years escalates to a fourth-degree felony with significantly enhanced penalties. Contact our office to discuss your options.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Legal Process for OVI Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the OVI legal process helps you prepare for what lies ahead. The process involves two separate legal proceedings:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Administrative License Suspension (ALS) Process</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Within 30 days of arrest, you must file an appeal of the ALS or lose your right to challenge it. An attorney can file the appeal, request a stay of suspension, and represent you at the ALS hearing. The hearing focuses on whether the officer had reasonable grounds to believe you were OVI, whether you were properly arrested, and whether testing was properly administered. Winning the ALS appeal can result in license reinstatement and can strengthen your criminal defense. The ALS process is separate from criminal court and requires immediate attention.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Criminal Court Process</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The criminal process begins with arraignment where you enter a plea (typically not guilty). Discovery follows where prosecutors must provide all evidence including police reports, breathalyzer maintenance records, dashcam footage, and witness statements. Pretrial motions may challenge evidence or seek dismissal. Most cases resolve through plea negotiations, but trial is an option. An experienced attorney navigates each stage strategically to achieve the best outcome while simultaneously handling the ALS appeal.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How an OVI Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced OVI defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate ALS Appeal:</strong> File administrative license suspension appeal within the critical 30-day deadline, request stay of suspension, and represent you at ALS hearing to protect your driving privileges</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, dashcam footage, bodycam footage, breathalyzer maintenance records, field sobriety test procedures, and all evidence to identify weaknesses, illegal stops, or improper testing</li>
-              <li><strong>Strategic Evidence Challenges:</strong> Challenge breathalyzer accuracy through maintenance records and calibration issues, field sobriety test administration through NHTSA protocol violations, blood test procedures through chain of custody issues, or improperly obtained evidence through pretrial motions</li>
-              <li><strong>Defense Strategy Development:</strong> Develop and execute defense strategies including illegal traffic stops, lack of probable cause, rising BAC defense, medical conditions affecting testing, or insufficient evidence based on thorough investigation</li>
-              <li><strong>Expert Consultation:</strong> Consult with toxicology experts, field sobriety test experts, or medical professionals to challenge prosecution evidence including breathalyzer results, blood test accuracy, or field sobriety test reliability</li>
-              <li><strong>Skilled Negotiation:</strong> Work with prosecutors to reduce charges, negotiate favorable plea agreements, secure alternative sentencing options including treatment programs, or arrange dismissals upon completion of conditions</li>
-              <li><strong>Limited Driving Privileges:</strong> Help eligible clients obtain limited driving privileges for work, school, treatment, and necessary activities during suspension, including preparation of applications and court representation</li>
-              <li><strong>Aggressive Trial Advocacy:</strong> Provide effective trial representation with compelling arguments, strategic cross-examination of police officers and expert witnesses, expert testimony, and protection of your rights throughout trial proceedings if your case proceeds to trial</li>
-              <li><strong>Understanding Consequences:</strong> We help clients understand the long-term impact of an OVI and fight charges to avoid conviction when possible</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common OVI Defenses in Ohio
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Illegal Traffic Stop</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Police must have reasonable suspicion of a traffic violation or crime to stop your vehicle. If the stop was illegal, evidence obtained may be suppressed, potentially resulting in dismissed charges. An attorney can challenge the legality of the stop and argue for suppression of evidence.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Inaccurate Breathalyzer Results</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Breathalyzer machines must be properly calibrated, maintained, and operated by trained officers. Medical conditions, recent alcohol consumption, or improper procedures can affect results. An attorney can challenge breathalyzer accuracy, maintenance records, and operator qualifications.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Rising BAC Defense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Your BAC may rise after you stop drinking. If you were under 0.08% at the time of driving but over 0.08% when tested, this defense may apply. This requires expert testimony and careful analysis of timing and consumption patterns.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Field Sobriety Test Challenges</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Field sobriety tests (walk-and-turn, one-leg-stand, horizontal gaze nystagmus) are subjective and can be affected by medical conditions, weather, road conditions, or improper administration. An attorney can challenge test administration, scoring, and reliability as evidence of impairment.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Administrative License Suspension (ALS) in Ohio
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's implied consent law under ORC 4511.191 requires automatic license suspension when you are charged with OVI. This administrative suspension is separate from any criminal penalties and begins immediately upon arrest if you refuse testing or fail a chemical test. You have only 30 days to appeal the ALS and request a stay of suspension. An experienced OVI attorney can file the appeal, request a stay, and challenge the suspension at a BMV hearing.
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">ALS Suspension Periods</h4>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>First offense—test over limit:</strong> Suspension per statute; eligible for limited privileges after 15 days (waiver possible if no prior Physical Control).</li>
-                <li><strong>First offense—refusal:</strong> 1 year suspension; eligible for limited privileges after 30 days.</li>
-                <li><strong>Second offense:</strong> 1 to 7 years suspension; eligible after 45 days (90 for refusal); interlock required.</li>
-                <li><strong>Third offense:</strong> 2 to 12 years suspension; eligible after 180 days (1 year for refusal); interlock required.</li>
-                <li><strong>License reinstatement fee:</strong> $315 when eligible.</li>
-              </ul>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The ALS suspension runs concurrently with any criminal court suspension, but winning the ALS appeal can result in immediate license reinstatement and can strengthen your criminal defense case. You must file an ALS appeal within 30 days of arrest to preserve your right to challenge the suspension.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Limited Driving Privileges</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                First OVI: eligible after 15 days (30 for refusal). The 15-day wait may be waived by the judge if you have no prior &quot;Physical Control&quot; conviction within 10 years; if you do, interlock is required. Second OVI: eligible after 45 days (90 for refusal); interlock required. Third OVI: eligible after 180 days (1 year for refusal); interlock required. Privileges typically allow driving for work, school, treatment, medical care, and other necessary purposes. An attorney can help prepare the application and navigate the process.
-              </p>
-            </div>
-
-            <div className="bg-ice border-l-4 border-sky-deep p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">New in 2025: Oral Fluid Testing</h4>
-              <p className="text-navy-950/80 mb-2">
-                Under HB 37 (Liv's Law), Ohio law enforcement is now authorized to conduct oral fluid (saliva) testing on drivers suspected of OVI. Officers swab the inside of the mouth to detect alcohol, drugs of abuse, controlled substances, and metabolites. Results can be used to establish probable cause for arrest and as evidence in court. Refusing an oral fluid test subjects you to Ohio's implied consent penalties including automatic license suspension. If you were subjected to oral fluid testing, an experienced attorney can challenge the testing procedures, accuracy, and admissibility of results.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for OVI Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated OVI/DUI defense representation throughout Ohio. We understand that OVI charges can arise from various circumstances and that every case requires careful analysis of evidence, testing procedures, and potential defenses. Our attorney works diligently to challenge evidence, develop strong defenses, and achieve favorable outcomes while protecting your driving privileges and future.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm defends OVI charges under Ohio law, including first, second, third, and fourth-degree OVI cases. Our firm also assists with administrative license suspension appeals, limited driving privileges, and working with prosecutors to secure alternative sentencing options including treatment programs when appropriate. We maintain open communication with clients, ensuring you understand the charges, potential consequences, defense strategies, and license suspension procedures throughout your case.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue ALS appeals, negotiate pleas, or proceed to trial.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We recognize that OVI charges can have devastating consequences on your life, career, and future. Our firm is committed to providing personalized, dedicated representation focused on achieving the best possible outcome. Whether through ALS appeals, negotiation, pretrial motions, or trial advocacy, we fight aggressively to protect your rights, minimize consequences, and preserve your driving privileges. We handle cases from initial arrest through trial and post-conviction relief, providing comprehensive representation at every stage.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing OVI charges anywhere in Ohio, contact Jwayyed Law LLC immediately to schedule a consultation. We will review your case, explain your rights, discuss potential defenses including license suspension appeals, and develop a strategy tailored to your situation. Time is critical in OVI cases—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">First OVI</h4>
-                <p className="text-sm text-navy-950/70">Defense for first-time OVI charges</p>
-              </Link>
-              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">High-Tier OVI</h4>
-                <p className="text-sm text-navy-950/70">Defense for high BAC charges</p>
-              </Link>
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Limited Driving Privileges</h4>
-                <p className="text-sm text-navy-950/70">Get limited privileges during suspension</p>
-              </Link>
-            </div>
-
-            <div className="bg-ice border-l-4 border-sky-deep p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Related Practice Areas</h4>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/criminal-defense" className="text-sky-deep hover:underline">Criminal Defense</Link>
-                <Link href="/personal-injury/car-accidents" className="text-sky-deep hover:underline">Car Accident Claims</Link>
-                <Link href="/criminal-defense/expungement-record-sealing" className="text-sky-deep hover:underline">Expungement</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* County Service Locations */}
-      <section className="py-12 bg-ice border-t border-navy-950/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
-            OVI/DUI Defense Attorney — Ohio Counties We Serve
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link
-                key="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court"
-                href="/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Franklin County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & Franklin County Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court"
-                href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Delaware County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court"
-                href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Pickaway County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court"
-                href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Greene County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court"
-                href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Montgomery County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"
-                href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Morrow County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Morrow County Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/butler-county/ovi-dui-defense-butler-county-area-courts"
-                href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Butler County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/athens-county/ovi-dui-defense-athens-municipal-court"
-                href="/locations/athens-county/ovi-dui-defense-athens-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Athens County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens Municipal Court</span>
-              </Link>
-              <Link
-                key="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court"
-                href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court"
-                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-              >
-                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Clinton County</span>
-                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington Municipal Court</span>
-              </Link>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-
