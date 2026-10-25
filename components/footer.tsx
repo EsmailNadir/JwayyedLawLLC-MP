@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         {/* Trust marks */}
-        <div className="mt-16 flex flex-wrap items-center gap-x-10 gap-y-5 text-[length:var(--step-small)]">
+        <div className="mt-16 flex flex-wrap items-center gap-x-12 gap-y-6 text-[length:var(--step-small)]">
           <a
             href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick"
             target="_blank"
@@ -148,10 +148,10 @@ export default function Footer() {
             <img
               src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png"
               alt="Jwayyed Law LLC BBB Business Review"
-              width={110}
-              height={23}
+              width={200}
+              height={42}
               loading="lazy"
-              className="object-contain flex-shrink-0"
+              className="w-[180px] h-auto object-contain flex-shrink-0 bg-white p-1.5"
             />
             A+ accredited
           </a>
@@ -162,8 +162,8 @@ export default function Footer() {
               alt="Jwayyed Law LLC, BusinessRate Best of 2026 award winner"
               width={1540}
               height={1900}
-              sizes="32px"
-              className="h-10 w-auto flex-shrink-0"
+              sizes="64px"
+              className="h-20 w-auto flex-shrink-0"
             />
             BusinessRate Best of 2026
           </span>

@@ -21,6 +21,10 @@ import { siteNav } from '@/data/navigation';
  */
 
 const PHONE_DISPLAY = '(614) 285-5482';
+
+/** Trust tiles in "What clients say": the mark large on top, its label under it. */
+const BADGE_TILE = 'flex flex-col items-center justify-start gap-4 px-5 pt-7 pb-6 min-w-0 text-center bg-navy-800';
+const BADGE_ART = 'flex h-24 w-full items-center justify-center';
 const PHONE_TEL = 'tel:+16142855482';
 const EMAIL = 'jwayyedlawllc@outlook.com';
 const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews';
@@ -620,21 +624,23 @@ export default function HomePageClient() {
               <Words text="What clients say" />
             </h2>
 
-            <div className="reveal-group mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-left">
+            <div className="reveal-group mt-10 grid gap-3 grid-cols-2 lg:grid-cols-4">
               <a
                 href={GOOGLE_REVIEWS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-4 px-5 py-4 flex-1 min-w-0 bg-navy-800 hover:bg-navy-700 transition-colors ${RING_DARK}`}
+                className={`${BADGE_TILE} hover:bg-navy-700 transition-colors ${RING_DARK}`}
               >
-                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" className="flex-shrink-0">
+                <span className={BADGE_ART}>
+                <svg width="64" height="64" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
                   <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
+                </span>
                 <span>
-                  <span className="flex items-center gap-1.5">
+                  <span className="flex items-center justify-center gap-1.5">
                     <Stars className="w-3.5 h-3.5 fill-sky text-sky" />
                     <span className="font-semibold">{RATING}</span>
                   </span>
@@ -646,17 +652,19 @@ export default function HomePageClient() {
                 href="https://www.bbb.org/us/oh/columbus/profile/attorneys-lawyers/jwayyed-law-llc-0302-70166716/#sealclick"
                 target="_blank"
                 rel="nofollow noreferrer"
-                className={`flex items-center gap-4 px-5 py-4 flex-1 min-w-0 bg-navy-800 hover:bg-navy-700 transition-colors ${RING_DARK}`}
+                className={`${BADGE_TILE} hover:bg-navy-700 transition-colors ${RING_DARK}`}
               >
                 {/* Remote seal served by BBB; next/image would need a loader for it. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png"
-                  alt="BBB seal"
-                  width={64}
-                  height={27}
-                  className="object-contain flex-shrink-0"
-                />
+                <span className={BADGE_ART}>
+                  <img
+                    src="https://seal-centralohio.bbb.org/seals/blue-seal-200-42-bbb-70166716.png"
+                    alt="BBB seal"
+                    width={200}
+                    height={42}
+                    className="w-[200px] max-w-full h-auto object-contain bg-white p-2"
+                  />
+                </span>
                 <span>
                   <span className="block font-semibold">A+ accredited</span>
                   <span className="block text-[length:var(--step-small)] text-mist">Better Business Bureau</span>
@@ -665,15 +673,17 @@ export default function HomePageClient() {
 
               <NCDDBadge variant="glass" />
 
-              <div className="flex items-center gap-4 px-5 py-4 flex-1 min-w-0 bg-navy-800">
-                <Image
-                  src="/assets/jwayyed-law-llc-plaque.png"
-                  alt="Jwayyed Law LLC, BusinessRate Best of 2026 award winner"
-                  width={1540}
-                  height={1900}
-                  sizes="44px"
-                  className="h-12 w-auto flex-shrink-0"
-                />
+              <div className={BADGE_TILE}>
+                <span className={BADGE_ART}>
+                  <Image
+                    src="/assets/jwayyed-law-llc-plaque.png"
+                    alt="Jwayyed Law LLC, BusinessRate Best of 2026 award winner"
+                    width={1540}
+                    height={1900}
+                    sizes="96px"
+                    className="h-24 w-auto"
+                  />
+                </span>
                 <span>
                   <span className="block font-semibold">Best of 2026</span>
                   <span className="block text-[length:var(--step-small)] text-mist">BusinessRate award</span>

@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, useRef, useId } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { Phone, Search, X, Menu, ChevronDown, ArrowUpRight } from 'lucide-react';
+import { Phone, Search, X, Menu, ChevronDown, ArrowRight, ArrowUpRight } from 'lucide-react';
 import SearchBar from '@/components/SearchBar';
 import { primaryNav, type NavNode } from '@/data/navigation';
 
@@ -330,7 +330,8 @@ function NavItem({
     }
   };
 
-  const panelWidth = hasGroups ? 'w-[min(54rem,calc(100vw-3rem))]' : 'w-[20rem]';
+  const panelWidth = hasGroups ? 'w-[min(60rem,calc(100vw-3rem))]' : 'w-[26rem]';
+  const overviewLabel = node.href === '/services' ? 'See every service' : node.href === '/courts' ? 'Every court we cover' : 'Overview';
 
   return (
     <li className="relative" onMouseEnter={onOpenHover} onMouseLeave={onCloseHover}>
@@ -347,30 +348,52 @@ function NavItem({
         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
       </button>
 
-      {/* A real floating menu, so it is the one thing on the bar with a shadow. */}
+      {/* A real floating menu, so it is the one thing on the bar with a shadow.
+          A navy rail introduces the section over the firm's mark; the white
+          body holds the links. Grouped menus set the two side by side (the
+          rail adds an overview link and the phone), single lists stack them. */}
       <div
         id={panelId}
         ref={panelRef}
         onKeyDown={handlePanelKeyDown}
-        className={`${isOpen ? 'block jw-menu-in' : 'hidden'} absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ${panelWidth} bg-white text-navy-950 p-3 z-[60] ${MENU_SHADOW}`}
+        className={`${isOpen ? (hasGroups ? 'grid jw-menu-in' : 'block jw-menu-in') : 'hidden'} ${
+          hasGroups ? 'grid-cols-[17rem_minmax(0,1fr)]' : ''
+        } absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 ${panelWidth} border-t-2 border-sky bg-white text-navy-950 z-[60] ${MENU_SHADOW}`}
       >
-        <Link
-          href={node.href}
-          onClick={onClose}
-          className="flex items-center justify-between gap-4 px-4 py-3 mb-1 bg-navy-950/[0.06] hover:bg-navy-950/[0.1] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep"
+        {/* Hover bridge across the gap between the bar and the panel. */}
+        <span className="absolute -top-[14px] inset-x-0 h-[14px]" aria-hidden="true" />
+
+        <div
+          className={`jw-mark bg-navy-950 text-white flex flex-col ${hasGroups ? 'p-7 gap-6' : 'px-6 py-5'}`}
+          style={{ '--jw-mark-opacity': 0.08 } as React.CSSProperties}
         >
-          <span>
-            <span className="block text-[length:var(--step-small)] font-medium">{node.name}</span>
-            {node.tagline && <span className="block text-[length:var(--step-small)] text-navy-950/70 mt-0.5">{node.tagline}</span>}
-          </span>
-          <ArrowUpRight className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-        </Link>
+          <div>
+            <p className={`jw-display leading-tight ${hasGroups ? 'text-[1.75rem]' : 'text-[1.4rem]'}`}>{node.name}</p>
+            {node.tagline && <p className="mt-2 text-[15px] leading-snug text-white/75">{node.tagline}</p>}
+          </div>
+          {hasGroups && (
+            <div className="flex flex-col gap-3 mt-auto">
+              <Link
+                href={node.href}
+                onClick={onClose}
+                className={`group/ov inline-flex items-center gap-2 text-[15px] font-medium text-sky hover:text-white transition-colors ${FOCUS}`}
+              >
+                {overviewLabel}
+                <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover/ov:-translate-y-0.5 group-hover/ov:translate-x-0.5" aria-hidden="true" />
+              </Link>
+              <a href={PHONE_TEL} className={`inline-flex items-center gap-2 text-[15px] tabular-nums text-white/85 hover:text-white transition-colors ${FOCUS}`}>
+                <Phone className="w-4 h-4 text-sky" aria-hidden="true" />
+                {PHONE}
+              </a>
+            </div>
+          )}
+        </div>
 
         {hasGroups ? (
-          <div className="grid grid-cols-3 gap-x-2 gap-y-2 p-1">
+          <div className="grid grid-cols-3 gap-x-8 gap-y-7 p-7">
             {node.subDropdowns!.map((group) => (
               <div key={group.name} className="min-w-0">
-                <div className="text-[length:var(--step-small)] font-medium px-3 pt-2 pb-1 text-navy-950/60">{group.name}</div>
+                <p className="jw-display text-[1.05rem] leading-tight text-navy-950 pb-2 mb-1.5 border-b border-navy-950/10">{group.name}</p>
                 <ul>
                   {group.links.map((link) => (
                     <li key={`${group.name}-${link.href}-${link.name}`}>
@@ -382,10 +405,10 @@ function NavItem({
             ))}
           </div>
         ) : (
-          <ul className="p-1">
+          <ul className="p-3">
             {node.subLinks!.map((link) => (
               <li key={link.href}>
-                <PanelLink href={link.href} label={link.name} pathname={pathname} onClose={onClose} />
+                <PanelLink href={link.href} label={link.name} pathname={pathname} onClose={onClose} roomy />
               </li>
             ))}
           </ul>
@@ -395,28 +418,44 @@ function NavItem({
   );
 }
 
+/**
+ * One menu link. Its arrow slides in on hover; a trailing "→" in the data
+ * marks a column's "All …" link, which is set in the accent as the way on.
+ */
 function PanelLink({
   href,
   label,
   pathname,
   onClose,
+  roomy = false,
 }: {
   href: string;
   label: string;
   pathname: string | null;
   onClose: () => void;
+  roomy?: boolean;
 }) {
   const active = isActiveRoute(pathname, href);
+  const isAll = / →$/.test(label);
+  const tone = active
+    ? 'text-sky-deep font-medium'
+    : isAll
+      ? 'text-sky-deep font-medium hover:text-navy-950'
+      : 'text-navy-950/75 hover:text-navy-950';
   return (
     <Link
       href={href}
       onClick={onClose}
       aria-current={active ? 'page' : undefined}
-      className={`block px-3 py-2 text-[length:var(--step-small)] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep ${
-        active ? 'text-sky-deep font-medium bg-sky-deep/10' : 'text-navy-950 hover:bg-navy-950/[0.06]'
-      }`}
+      className={`group/pl flex items-center justify-between gap-3 ${roomy ? 'px-3 py-2.5 hover:bg-ice' : 'py-1.5'} text-[15px] leading-snug transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep ${tone}`}
     >
-      {label.replace(/ →$/, '')}
+      <span className="min-w-0">{label.replace(/ →$/, '')}</span>
+      <ArrowRight
+        className={`w-3.5 h-3.5 flex-shrink-0 text-sky-deep transition-[opacity,translate] duration-200 ${
+          isAll || active ? 'opacity-100' : 'opacity-0 -translate-x-1.5 group-hover/pl:opacity-100 group-hover/pl:translate-x-0'
+        }`}
+        aria-hidden="true"
+      />
     </Link>
   );
 }
