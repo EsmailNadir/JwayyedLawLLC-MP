@@ -3,7 +3,7 @@ import OVITemplate from '@/components/franklin-templates/OVITemplate';
 
 export const metadata: Metadata = {
   title: 'Upper Arlington OVI Defense',
-  description: 'OVI arrest in Upper Arlington? ALS appeal 30-day deadline. Upper Arlington Mayor\'s Court and FCMC. Lane Ave and Tremont Rd enforcement. Jwayyed Law LLC. Call (614) 285-5482.',
+  description: 'OVI arrest in Upper Arlington? The 30-day ALS appeal, Upper Arlington Mayor\'s Court and FCMC, and Lane Ave and Tremont Rd enforcement. Call (614) 285-5482.',
   keywords: ['Upper Arlington OVI lawyer', 'Upper Arlington DUI attorney', 'Upper Arlington Ohio OVI defense', 'Franklin County OVI Upper Arlington'],
   openGraph: {
     title: 'Upper Arlington OVI Defense | Jwayyed Law LLC',

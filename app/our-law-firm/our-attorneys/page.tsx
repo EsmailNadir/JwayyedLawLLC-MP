@@ -9,7 +9,7 @@ import { LinkGrid, Section } from '@/components/practice';
 import { teamMembers } from '@/data/team-members';
 
 export const metadata: Metadata = {
-  title: 'Attorney Jwayyed | Ohio OVI & Criminal Defense Lawyer',
+  title: 'Attorney Jwayyed, Ohio OVI and Criminal Defense',
   description:
     'Attorney Jwayyed, managing attorney of Jwayyed Law LLC: former municipal prosecutor representing clients across Ohio in OVI, criminal, estate and business matters.',
   alternates: {

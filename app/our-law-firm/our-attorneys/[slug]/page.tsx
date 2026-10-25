@@ -10,6 +10,14 @@ import { teamMembers, getMemberBySlug } from '@/data/team-members';
 // Only generate pages for members with fullBio content (not the attorney who has a separate page)
 const profileMembers = teamMembers.filter((m) => m.fullBio);
 
+/** The bio cut at a sentence end to fit a search result (about 155 characters). */
+function metaDescription(text: string, max = 155) {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const end = cut.lastIndexOf('. ');
+  return end > 60 ? cut.slice(0, end + 1) : `${cut.slice(0, cut.lastIndexOf(' '))}.`;
+}
+
 export async function generateStaticParams() {
   return profileMembers.map((m) => ({ slug: m.slug }));
 }
@@ -28,7 +36,7 @@ export async function generateMetadata({
 
   return {
     title: `${member.name}, ${member.title}`,
-    description: member.shortBio,
+    description: metaDescription(member.shortBio),
     keywords: [
       member.name,
       member.title,
@@ -37,7 +45,7 @@ export async function generateMetadata({
     ],
     openGraph: {
       title: `${member.name}, ${member.title}`,
-      description: member.shortBio,
+      description: metaDescription(member.shortBio),
       url: `https://www.jjlawohio.com/our-law-firm/our-attorneys/${slug}`,
       type: 'profile',
       images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],

@@ -9,7 +9,7 @@ import OfficeMap from '@/components/contact/OfficeMap';
 export const metadata: Metadata = {
   title: 'Contact Jwayyed Law LLC | Schedule a Consultation',
   description:
-    'Contact Jwayyed Law LLC to schedule a consultation. Serving all of Ohio: OVI/DUI, criminal defense, personal injury, civil, business and estate matters. Call (614) 285-5482.',
+    'Schedule a consultation with Jwayyed Law LLC for OVI/DUI, criminal, injury, civil, business or estate matters anywhere in Ohio. Call (614) 285-5482.',
   keywords: [
     'contact attorney Ohio',
     'schedule consultation Ohio',

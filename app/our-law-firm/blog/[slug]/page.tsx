@@ -23,8 +23,10 @@ export async function generateMetadata({
     return { title: 'Post Not Found' };
   }
 
+  // The layout template adds " | Jwayyed Law LLC" (18 characters). Long
+  // titles skip it so the whole title fits in a search result.
   return {
-    title: post.title,
+    title: post.title.length > 42 ? { absolute: post.title } : post.title,
     description: post.excerpt,
     keywords: [
       'Ohio law blog',
