@@ -129,8 +129,9 @@ export default function DrivingUnderSuspensionPage() {
           affect job prospects and housing. The firm defends DUS charges throughout Ohio and works toward getting your license
           reinstated.
         </p>
-        <LocationsWeServe title="Criminal Defense" />
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <Section title="Types of driving under suspension" tone="ice">
         <FactTable
@@ -160,7 +161,41 @@ export default function DrivingUnderSuspensionPage() {
         />
       </Section>
 
-      <Section title="DUS penalties in Ohio">
+      <Section
+        title="Driving under suspension or driving without a license"
+        intro={
+          <p>
+            The two charges are different. Driving under suspension means a license you had was suspended or revoked. Driving without
+            a license means you had no valid license at all.
+          </p>
+        }
+      >
+        <FactTable
+          title="Which charge fits"
+          rows={[
+            {
+              label: 'Driving under suspension (ORC 4510.11)',
+              value:
+                'The Ohio BMV or a court suspended, revoked or canceled your license, and you drove before it was reinstated. Generally the more serious charge.',
+            },
+            {
+              label: "No operator's license (ORC 4510.12)",
+              value: 'You never got a license, it expired, or you lost it and did not renew.',
+            },
+            {
+              label: 'Where they overlap',
+              value:
+                'If your license expired during a suspension, both charges can be in play. Some drivers believe a suspended license was reinstated when it was not, which is a DUS problem, not a licensing one.',
+            },
+          ]}
+        />
+        <p>
+          The first job is to establish which charge actually fits the BMV record. See{' '}
+          <Link href="/criminal-defense/no-operators-license">no operator&rsquo;s license</Link> for the other charge.
+        </p>
+      </Section>
+
+      <Section title="DUS penalties in Ohio" tone="ice">
         <p>Penalties depend on the type of suspension and the number of prior offenses.</p>
         <FactTable
           title="General DUS (ORC 4510.11)"
@@ -216,7 +251,74 @@ export default function DrivingUnderSuspensionPage() {
         </p>
       </Section>
 
-      <Section title="How a DUS case moves through court" tone="ice">
+      <Section
+        title="What a DUS conviction can cost in total"
+        intro={
+          <p>
+            The fine is only the start. Every suspension carries its own reinstatement fee, an FRA suspension adds years of SR-22
+            insurance, and the added suspension time costs you the ability to drive to work.
+          </p>
+        }
+      >
+        <FactTable
+          title="Costs that follow a DUS conviction"
+          rows={[
+            { label: 'Fine', value: '$250 to $1,000 for a general, OVI-related or FRA DUS, plus court costs.' },
+            {
+              label: 'Reinstatement fees',
+              value: 'A separate fee to the Ohio BMV for each suspension, typically $40-$475 depending on the type. An OVI suspension carries a $315 reinstatement fee when you are eligible.',
+            },
+            { label: 'SR-22 insurance', value: 'Required after an FRA suspension, typically for three years, with continuous coverage.' },
+            { label: 'Insurance rates', value: 'Rates rise, and coverage can become hard or expensive to get.' },
+            {
+              label: 'Your vehicle',
+              value: 'Immobilization for up to 30 days on an FRA DUS; forfeiture may be ordered for repeat OVI-related DUS offenses.',
+            },
+            {
+              label: 'Time without a license',
+              value: 'Six months to one year added for a first general DUS, and one to five years for an OVI-related DUS, on top of the original suspension.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="What to do after a DUS citation"
+        tone="ice"
+        intro={
+          <p>
+            Go to court, stop driving until you are legal, and get your full BMV record. Driving again before the case is resolved can
+            bring a second charge and another added suspension.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Do not miss the court date',
+              body: 'Ignoring the charge can bring more penalties and a warrant. Appear, or have an attorney appear with you.',
+            },
+            {
+              title: 'Stop driving until you are legal',
+              body: 'Each DUS conviction adds suspension time, and driving during that longer period brings another DUS charge and another extension. Limited privileges, if the court grants them, are the legal way to keep driving.',
+            },
+            {
+              title: 'Get your complete BMV record',
+              body: 'It shows every suspension on your license and the reason for each. Many people carry several at once without knowing it.',
+            },
+            {
+              title: 'Gather what shows notice, or the lack of it',
+              body: 'The BMV mails suspension notices by regular mail to your last known address. Keep any notices you received, proof of a move or a wrong address on file, and receipts for any fees or reinstatement steps you completed.',
+            },
+            {
+              title: 'Talk to an attorney before the arraignment',
+              body: 'Your attorney can review the notice and the stop, and in appropriate cases ask for driving privileges at the arraignment itself.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a DUS case moves through court">
         <p>DUS cases are heard in municipal courts throughout Ohio.</p>
         <Steps
           steps={[
@@ -235,6 +337,46 @@ export default function DrivingUnderSuspensionPage() {
             {
               title: 'Trial and sentencing',
               body: 'At trial the prosecution must prove beyond a reasonable doubt that you were driving while suspended and that you received proper notice. If there is a conviction, your attorney argues for alternatives to jail and the least added suspension.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="How DUS cases end in Ohio"
+        tone="ice"
+        intro={
+          <p>
+            A DUS charge does not have to end in a DUS conviction, especially when the license problem can be fixed while the case
+            is open.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal on the defense',
+              body: 'For lack of proper notice, an unlawful stop, a suspension that was no longer in effect, or insufficient evidence.',
+            },
+            {
+              title: 'Dismissal after reinstatement',
+              body: 'A common negotiated outcome is dismissal once the license is reinstated, which is why starting the reinstatement steps early matters.',
+            },
+            {
+              title: 'A reduced charge',
+              body: 'A reduction to a non-criminal traffic offense instead of the DUS charge.',
+            },
+            {
+              title: 'Community service instead of jail',
+              body: 'A negotiated sentence that keeps you out of jail where the statute allows it.',
+            },
+            {
+              title: 'Conviction with the lightest terms',
+              body: 'If there is a conviction, the firm argues for alternatives to jail such as community service or probation and the least added suspension.',
+            },
+            {
+              title: 'Sealing later',
+              body: 'Where you are eligible, the record can be sealed or expunged after the case. See expungement and record sealing.',
             },
           ]}
         />
@@ -267,7 +409,29 @@ export default function DrivingUnderSuspensionPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a DUS charge" tone="ice">
+      <Section
+        title="Can you drive while a DUS case is pending"
+        tone="ice"
+        intro={
+          <p>
+            Often, yes, with limited driving privileges granted by the court. They allow driving for set purposes such as work,
+            school, medical appointments and court-ordered programs.
+          </p>
+        }
+      >
+        <p>
+          Whether privileges are available depends on the type of suspension, whether it is a first offense and other factors. Your
+          attorney petitions the court for them, can raise the request at arraignment in appropriate cases, and helps you meet the
+          conditions to keep them.
+        </p>
+        <p>
+          If the underlying suspension came from an OVI, the OVI rules on waiting periods and ignition interlocks govern privileges.
+          See <Link href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</Link> and{' '}
+          <Link href="/ovi-dui-defense/driving-under-ovi-suspension">driving under an OVI suspension</Link>.
+        </p>
+      </Section>
+
+      <Section title="What the firm does on a DUS charge">
         <PointGrid
           points={[
             {
@@ -306,7 +470,7 @@ export default function DrivingUnderSuspensionPage() {
         />
       </Section>
 
-      <Section title="Getting your license reinstated">
+      <Section title="Getting your license reinstated" tone="ice">
         <p>
           Reinstatement means completing every condition the BMV and the courts imposed. The details depend on the reason for the
           suspension, but the steps are usually these.

@@ -122,8 +122,28 @@ export default function DomesticViolencePage() {
           limiting contact with family and affecting custody. The firm challenges protection orders, deals with alleged violations, and
           works to modify or end orders where appropriate while defending the criminal charge.
         </p>
-        <LocationsWeServe title="Criminal Defense" />
+        <h3>Who counts as a family or household member</h3>
+        <p>
+          The relationship is what turns an assault into domestic violence. Under ORC 2919.25 it covers more than spouses.
+        </p>
+        <FactTable
+          title="Relationships covered by ORC 2919.25"
+          rows={[
+            { label: 'Spouses', value: 'Current and former spouses.' },
+            { label: 'Living together as spouses', value: 'People living together as spouses.' },
+            { label: 'A child in common', value: 'People who have a child together.' },
+            { label: 'Parents and children', value: 'Parents and children.' },
+            { label: 'Relatives', value: 'Other people related by blood or marriage.' },
+          ]}
+        />
+        <h3>What the prosecution has to prove</h3>
+        <p>
+          The relationship; that you caused or attempted to cause physical harm, or recklessly caused serious physical harm; and the
+          required mental state. Each must be proved beyond a reasonable doubt, and a gap in any one of them is a defense.
+        </p>
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <Section title="Domestic violence penalties in Ohio" tone="ice">
         <p>Sentencing falls under Ohio Revised Code Chapter 2929. Prior convictions and the harm caused decide the degree.</p>
@@ -182,7 +202,44 @@ export default function DomesticViolencePage() {
         </Callout>
       </Section>
 
-      <Section title="How a domestic violence case moves" tone="ice">
+      <Section
+        title="What to do in the first days after a domestic violence arrest"
+        tone="ice"
+        intro={
+          <p>
+            Follow any protection order to the letter, do not ask the alleged victim to drop the charge, and get an attorney before the
+            protection order hearing. An order issued in the first days can decide where you live and whether you see your children
+            while the case runs.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Read the protection order and obey it',
+              body: 'A temporary protection order is often issued at arraignment and can bar contact, remove you from your home and limit firearms. Violating it is a separate crime: a first-degree misdemeanor for a first violation. The order binds you, not the other person.',
+            },
+            {
+              title: 'Do not ask the alleged victim to drop the charge',
+              body: 'The state prosecutes domestic violence, not the alleged victim, so the charge does not end if they recant. Reaching out to ask can also violate the protection order.',
+            },
+            {
+              title: 'Say nothing about the incident',
+              body: 'Use your right to remain silent and your right to counsel. Statements to police, family or friends can become evidence.',
+            },
+            {
+              title: 'Write down what happened and keep evidence',
+              body: 'Who was the initial aggressor, any injuries you received, the names of witnesses, and messages or photographs that support your account. These matter most for self-defense and false allegations.',
+            },
+            {
+              title: 'Prepare for the protection order hearing',
+              body: 'An ex parte emergency order can be issued within days, before you tell your side. Your attorney represents you at the full hearing, where the order can be challenged, modified or ended, and where custody and contact with your children can be at stake.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a domestic violence case moves">
         <Steps
           steps={[
             {
@@ -203,6 +260,56 @@ export default function DomesticViolencePage() {
             },
           ]}
         />
+        <h3>The evidence a prosecutor uses without the alleged victim</h3>
+        <p>
+          Even when the alleged victim recants, refuses to cooperate or asks for the charges to be dropped, the prosecutor can and
+          often does go forward with 911 recordings, medical records, photographs and officer observations. Each of these can be
+          challenged, explained or shown to be inconsistent, and the firm negotiates with the prosecutor on that basis.
+        </p>
+      </Section>
+
+      <Section
+        title="Can a domestic violence case end without a conviction"
+        tone="ice"
+        intro={
+          <p>
+            Yes. Most domestic violence cases resolve without trial, and several of the usual outcomes avoid a domestic violence
+            conviction.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'When the evidence is weak or inconsistent, the allegations are shown to be false, or self-defense is established.',
+            },
+            {
+              title: 'Diversion',
+              body: 'For first-time offenders, a diversion program that avoids a conviction entirely.',
+            },
+            {
+              title: 'Dismissal after conditions',
+              body: 'Dismissal once conditions such as counseling are completed.',
+            },
+            {
+              title: 'A felony reduced to a misdemeanor',
+              body: 'Where the charge was filed as a felony, a reduction that cuts the possible sentence from prison to jail.',
+            },
+            {
+              title: 'A plea with lighter penalties',
+              body: 'A negotiated plea that limits the sentence and the long-term consequences.',
+            },
+            {
+              title: 'Acquittal at trial',
+              body: 'If the prosecution does not prove the relationship, the harm and the mental state beyond a reasonable doubt.',
+            },
+          ]}
+        />
+        <p>
+          A conviction brings federal firearm restrictions and weighs heavily in family court, which is why the defense aims at the
+          conviction itself, not only the sentence.
+        </p>
       </Section>
 
       <Section title="Defenses to a domestic violence charge">

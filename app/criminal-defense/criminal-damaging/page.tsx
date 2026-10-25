@@ -121,8 +121,23 @@ export default function CriminalDamagingPage() {
         <p>
           Jwayyed Law LLC defends criminal damaging and endangering charges under ORC 2909.06 throughout Ohio.
         </p>
-        <LocationsWeServe title="Criminal Defense" />
+        <h3>What the prosecution has to prove</h3>
+        <FactTable
+          title="Elements of criminal damaging (ORC 2909.06)"
+          rows={[
+            { label: 'Mental state', value: 'You acted knowingly. Accidental damage is not enough for a conviction.' },
+            {
+              label: 'The harm',
+              value:
+                'You caused physical harm to the property, or created a substantial risk of physical harm to it by fire, explosion, flood or other means.',
+            },
+            { label: 'Property of another', value: "The property belonged to someone else, and they did not consent." },
+            { label: 'Identity', value: 'You were the person who did it, proved beyond a reasonable doubt.' },
+          ]}
+        />
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <Section title="Criminal damaging penalties in Ohio" tone="ice">
         <FactTable
@@ -158,18 +173,64 @@ export default function CriminalDamagingPage() {
         </p>
       </Section>
 
-      <Section title="How a criminal damaging case moves">
+      <Section
+        title="What to do after a criminal damaging charge"
+        intro={
+          <p>
+            Stay silent, keep the evidence that supports you, and talk to an attorney before the arraignment. Do not try to settle it
+            with the owner yourself.
+          </p>
+        }
+      >
         <Steps
           steps={[
-            { title: 'Arraignment', body: 'You hear the charge and enter a plea, usually not guilty.' },
-            { title: 'Discovery', body: 'The prosecution hands over its evidence, and your attorney reviews it.' },
-            { title: 'Pretrial negotiations', body: 'Your attorney challenges the evidence and negotiates for dismissal, a reduced charge or alternative sentencing.' },
-            { title: 'Trial', body: 'If the case does not resolve, it goes to trial.' },
+            { title: 'Use your right to remain silent', body: 'Do not talk to police about the damage without your attorney present.' },
+            {
+              title: 'Leave restitution to your attorney',
+              body: 'Restitution is routinely ordered, and the owner can also sue in civil court. Offers to pay are better negotiated through your attorney than made directly.',
+            },
+            {
+              title: 'Keep the evidence',
+              body: 'Photographs of the property, the names of witnesses, and anything that shows the damage was accidental, authorized or done by someone else.',
+            },
+            {
+              title: 'Gather proof of value',
+              body: 'Repair estimates or receipts. The amount of damage can decide whether the charge stays a misdemeanor or becomes a felony.',
+            },
           ]}
         />
       </Section>
 
-      <Section title="Defenses to criminal damaging" tone="ice">
+      <Section title="How a criminal damaging case moves" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Arraignment',
+              body: 'You hear the charge and enter a plea, usually not guilty, which preserves your rights and gives your attorney time to investigate.',
+            },
+            {
+              title: 'Discovery',
+              body: 'The prosecution hands over its evidence, such as police reports, witness statements, photographs of the damage and any surveillance footage, and your attorney reviews it.',
+            },
+            {
+              title: 'Pretrial negotiations',
+              body: 'Your attorney challenges the evidence and negotiates for dismissal, a reduced charge or alternative sentencing, and for reasonable restitution.',
+            },
+            {
+              title: 'Trial',
+              body: 'If the case does not resolve, it goes to trial, where the state must prove every element beyond a reasonable doubt.',
+            },
+          ]}
+        />
+        <h3>How these cases usually end</h3>
+        <p>
+          Through dismissal when intent, consent or identity cannot be proved, a reduced charge, alternative sentencing, or a verdict
+          at trial. When the damage is close to a felony threshold, the repair estimates and the value of the property matter as much
+          as the facts of the incident.
+        </p>
+      </Section>
+
+      <Section title="Defenses to criminal damaging">
         <PointGrid
           points={[
             {
@@ -188,7 +249,7 @@ export default function CriminalDamagingPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a criminal damaging case">
+      <Section title="What the firm does on a criminal damaging case" tone="ice">
         <p>
           The firm investigates the case, builds the defense, negotiates with the prosecutor and represents you at trial when the case
           goes there. If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a

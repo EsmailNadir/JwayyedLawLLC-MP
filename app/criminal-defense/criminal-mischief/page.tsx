@@ -120,8 +120,23 @@ export default function CriminalMischiefPage() {
           record that can affect jobs, housing and professional licenses.
         </p>
         <p>Jwayyed Law LLC defends criminal mischief charges under ORC 2909.07 throughout Ohio.</p>
-        <LocationsWeServe title="Criminal Defense" />
+        <h3>What the prosecution has to prove</h3>
+        <FactTable
+          title="Elements of criminal mischief (ORC 2909.07)"
+          rows={[
+            { label: 'Mental state', value: 'You acted knowingly. Accidental damage does not meet this element.' },
+            {
+              label: 'The act',
+              value: 'You moved, defaced, damaged, destroyed or otherwise improperly tampered with the property.',
+            },
+            { label: 'Property of another', value: 'The property belonged to someone else, not to you.' },
+            { label: 'No consent', value: "The owner did not give permission, written, verbal or implied." },
+            { label: 'Identity', value: 'You were the person who did it, proved beyond a reasonable doubt.' },
+          ]}
+        />
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <Section title="Types of criminal mischief under ORC 2909.07" tone="ice">
         <FactTable
@@ -150,7 +165,41 @@ export default function CriminalMischiefPage() {
         />
       </Section>
 
-      <Section title="Criminal mischief penalties in Ohio">
+      <Section
+        title="Criminal mischief, criminal damaging or vandalism"
+        intro={
+          <p>
+            Ohio has no standalone misdemeanor called vandalism. What people call vandalism is charged under one of three statutes,
+            depending on the value of the damage, the kind of property and how the harm was caused.
+          </p>
+        }
+      >
+        <FactTable
+          title="Which charge applies"
+          rows={[
+            {
+              label: 'Criminal mischief (ORC 2909.07)',
+              value: 'Tampering, defacement and minor damage such as graffiti. A third-degree misdemeanor: up to 60 days in jail and a fine of up to $500.',
+            },
+            {
+              label: 'Criminal damaging (ORC 2909.06)',
+              value:
+                'Knowingly causing physical harm to property, or creating a substantial risk of it by fire, explosion, flood or other means. A second-degree misdemeanor: up to 90 days in jail and a fine of up to $750.',
+            },
+            {
+              label: 'Vandalism (ORC 2909.05)',
+              value: 'A felony, when the damage passes the value thresholds or involves government property or critical infrastructure.',
+            },
+          ]}
+        />
+        <p>
+          Which statute fits sets the penalty range. Showing that the conduct was tampering rather than physical harm, or that the
+          damage falls under the threshold, keeps the case at the lower level. See{' '}
+          <Link href="/criminal-defense/criminal-damaging">criminal damaging</Link> for that charge.
+        </p>
+      </Section>
+
+      <Section title="Criminal mischief penalties in Ohio" tone="ice">
         <p>Sentencing falls under Ohio Revised Code Chapter 2929. The type of mischief decides the degree.</p>
         <FactTable
           title="Standard criminal mischief: third-degree misdemeanor"
@@ -198,7 +247,81 @@ export default function CriminalMischiefPage() {
         </p>
       </Section>
 
-      <Section title="How a criminal mischief case moves" tone="ice">
+      <Section
+        title="Common situations behind criminal mischief charges"
+        intro={
+          <p>
+            The same statute covers very different conduct, and each kind of case tends to turn on a different question.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Graffiti and defacement',
+              body: 'Often done with no witnesses, so the charge may rest on circumstantial evidence, surveillance footage or a shaky identification. Identity is usually the fight.',
+            },
+            {
+              title: 'Cars, windows, tires and mailboxes',
+              body: 'Scratched vehicles, broken windows, slashed tires and damaged mailboxes. The amount of damage drives restitution and whether the charge stays at mischief.',
+            },
+            {
+              title: 'Boundary markers and survey stakes',
+              body: 'Usually a property line dispute. If you have a legitimate claim to the land, or the dispute belonged in civil court, that is the defense.',
+            },
+            {
+              title: 'Fire hydrants and safety equipment',
+              body: 'Tampering with hydrants, extinguishers or other emergency equipment is treated seriously because it can endanger the public, and the charge may be raised.',
+            },
+            {
+              title: 'Utility equipment',
+              body: 'Tampering with utility equipment is also covered. Whether you had authorization, or a reasonable belief that you did, is the key question.',
+            },
+            {
+              title: 'Shared or disputed property',
+              body: 'Property you own or have a legitimate claim to, or that you believed you were allowed to move or change. The property must belong to another, and consent is a complete defense.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="What to do after a criminal mischief citation"
+        tone="ice"
+        intro={
+          <p>
+            Stay silent, do not contact the property owner, and keep the evidence that helps you. Trying to settle it yourself can be
+            used against you.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Use your right to remain silent',
+              body: 'Do not talk to police about the damage without your attorney present.',
+            },
+            {
+              title: 'Do not contact the owner',
+              body: 'Apologizing, offering to pay or trying to settle the matter yourself can be used against you. Restitution is better negotiated through your attorney.',
+            },
+            {
+              title: 'Keep the evidence',
+              body: 'Anything that shows an alibi, the names of witnesses, and photographs of the property and the scene.',
+            },
+            {
+              title: 'Note any permission',
+              body: 'If the owner allowed you to move, change or handle the property, write down when and how. Written, verbal and implied consent all count.',
+            },
+            {
+              title: 'Go to the arraignment with an attorney',
+              body: 'On a misdemeanor, release on your own recognizance or a low bond is common, and your attorney can argue for good release terms.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="How a criminal mischief case moves">
         <Steps
           steps={[
             {
@@ -217,6 +340,23 @@ export default function CriminalMischiefPage() {
               title: 'Trial',
               body: 'A misdemeanor trial in Ohio can be in front of a judge (a bench trial) or a jury. Your attorney presents your defense, cross-examines the witnesses and argues for acquittal.',
             },
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="How criminal mischief cases end in Ohio"
+        tone="ice"
+        intro={<p>Most misdemeanor mischief cases resolve before trial. These are the usual outcomes.</p>}
+      >
+        <PointGrid
+          points={[
+            { title: 'Dismissal', body: 'When the state cannot prove intent, identity, lack of consent or that the property belonged to someone else.' },
+            { title: 'A reduced charge', body: 'A plea to a lesser offense, negotiated with the prosecutor.' },
+            { title: 'Diversion', body: 'A diversion program. Prosecutors may offer first-time offenders alternatives to a conviction.' },
+            { title: 'Community service instead of jail', body: 'Restitution amounts and payment terms are negotiated alongside it.' },
+            { title: 'A plea with lighter consequences', body: 'A plea agreement that limits the sentence and the record.' },
+            { title: 'Acquittal', body: 'At a bench trial or a jury trial, if the state does not prove every element beyond a reasonable doubt.' },
           ]}
         />
       </Section>

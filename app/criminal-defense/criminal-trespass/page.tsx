@@ -120,8 +120,30 @@ export default function CriminalTrespassPage() {
           had a right to be there. When the trespass involves an occupied structure, the charge rises to a first-degree misdemeanor.
         </p>
         <p>Jwayyed Law LLC defends criminal trespass charges under ORC 2911.21 throughout Ohio.</p>
-        <LocationsWeServe title="Criminal Defense" />
+        <h3>What the prosecution has to prove</h3>
+        <p>The state must prove each element beyond a reasonable doubt. Most defenses attack one of them.</p>
+        <FactTable
+          title="Elements of criminal trespass (ORC 2911.21)"
+          rows={[
+            {
+              label: 'Mental state',
+              value: 'You entered or stayed knowingly, or recklessly for the forms that require only recklessness.',
+            },
+            { label: 'Property of another', value: "The land or premises belonged to someone else." },
+            {
+              label: 'Without privilege',
+              value: 'You had no permission or right to be there. Express or implied permission defeats this element.',
+            },
+            {
+              label: 'Notice',
+              value:
+                'Notice against unauthorized access was given by actual communication, by posting reasonably calculated to inform intruders, or by fencing or another enclosure. For failure to leave, the owner, occupant or an authorized agent told you to go.',
+            },
+          ]}
+        />
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <Section title="Types of criminal trespass under ORC 2911.21" tone="ice">
         <FactTable
@@ -151,7 +173,46 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="Criminal trespass penalties in Ohio">
+      <Section
+        title="Common situations that lead to trespass charges"
+        intro={
+          <p>
+            Most trespass charges come from a handful of everyday situations. Each one tends to turn on a different question:
+            permission, notice or what you reasonably believed.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Refusing to leave a business',
+              body: 'Management asks you to leave and you stay. This is the failure-to-leave form, and the question is whether you were actually told to go and had the chance to do it.',
+            },
+            {
+              title: 'Staying after the owner says go',
+              body: 'A guest or visitor stays on private property after the owner or occupant tells them to leave. What was said, and by whom, matters.',
+            },
+            {
+              title: 'Posted or fenced land',
+              body: 'Walking onto private land marked with signs or fencing. The defense often turns on whether the signs were visible and placed to inform intruders, or the fencing was complete.',
+            },
+            {
+              title: 'Property lines and neighbor disputes',
+              body: 'Confusion about where a boundary sits, or a feud with a neighbor that turns into a police call. A reasonable belief that you were on your own or public land can negate the mental state.',
+            },
+            {
+              title: 'Public places after hours',
+              body: 'Staying in a park or other public area after it closes. Whether closing hours were posted is part of the notice question.',
+            },
+            {
+              title: 'Protests and assemblies',
+              body: 'Charges that arise from peaceful protest or assembly can raise First Amendment questions, especially on property that is a public forum.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Criminal trespass penalties in Ohio" tone="ice">
         <p>Sentencing falls under Ohio Revised Code Chapter 2929. The form of the trespass sets the degree.</p>
         <FactTable
           title="Standard criminal trespass: fourth-degree misdemeanor"
@@ -175,6 +236,11 @@ export default function CriminalTrespassPage() {
           title="Related felony charges"
           rows={[
             {
+              label: 'Aggravated trespass (ORC 2911.211)',
+              value:
+                'A first-degree misdemeanor: entering or staying on land or premises to commit a misdemeanor likely to cause physical harm, or to make someone believe you will cause it. Up to 180 days in jail and a fine of up to $1,000.',
+            },
+            {
               label: 'Breaking and entering (ORC 2911.13)',
               value: 'A fifth-degree felony: entering an unoccupied structure to commit a theft or a felony.',
             },
@@ -195,6 +261,41 @@ export default function CriminalTrespassPage() {
           no-trespass order barring you from a property, which matters when that property is a business, workplace or public place you
           visit often.
         </p>
+      </Section>
+
+      <Section
+        title="What to do after a trespass citation or arrest"
+        intro={
+          <p>
+            Stay quiet, follow any order to stay away from the property, and write down why you thought you could be there. Those
+            notes and photographs often decide a trespass case.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Do not argue or explain',
+              body: 'Use your right to remain silent. Explaining to police why you were on the property gives them statements that can be used against you.',
+            },
+            {
+              title: 'Stay away from the property',
+              body: 'The court may order you to stay away, and a no-trespass order can bar you from a business or place you use often. Going back can bring a new charge.',
+            },
+            {
+              title: 'Write down your side',
+              body: 'Who gave you permission and when, why you believed you had a right to be there, and whether anyone told you to leave and how.',
+            },
+            {
+              title: 'Document the notice, or the lack of it',
+              body: 'Photographs of where signs were or were not posted, gaps in fencing and the property line. The state has to prove proper notice.',
+            },
+            {
+              title: 'Contact an attorney before arraignment',
+              body: 'Your attorney can argue for better release terms and start working toward a dismissal or a reduced charge.',
+            },
+          ]}
+        />
       </Section>
 
       <Section title="How a criminal trespass case moves" tone="ice">
@@ -220,7 +321,30 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="Defenses to criminal trespass">
+      <Section
+        title="How criminal trespass cases end in Ohio"
+        intro={
+          <p>
+            Most misdemeanor trespass cases resolve before trial, and several of the usual outcomes avoid a conviction.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            { title: 'Dismissal', body: 'When the state cannot prove notice, privilege or the required mental state, or the evidence was obtained illegally.' },
+            {
+              title: 'Conditional dismissal',
+              body: 'For first-time offenders without a significant record, a dismissal once conditions are met, which protects the record.',
+            },
+            { title: 'Diversion', body: 'A diversion program instead of a conviction.' },
+            { title: 'Community service instead of jail', body: 'A negotiated sentence that keeps you out of jail.' },
+            { title: 'A plea with lighter consequences', body: 'A plea agreement that limits the penalties and the effect on your record.' },
+            { title: 'Acquittal', body: 'At trial, if the state does not prove every element beyond a reasonable doubt.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Defenses to criminal trespass" tone="ice">
         <PointGrid
           points={[
             {
@@ -247,7 +371,7 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="What the firm does on a trespass case" tone="ice">
+      <Section title="What the firm does on a trespass case">
         <PointGrid
           points={[
             { title: 'Protects your rights', body: 'From citation or arrest, including advice on statements and dealings with police.' },
@@ -275,7 +399,7 @@ export default function CriminalTrespassPage() {
         />
       </Section>
 
-      <Section title="Sealing a criminal trespass conviction">
+      <Section title="Sealing a criminal trespass conviction" tone="ice">
         <p>
           Under Ohio Revised Code 2953.32, a criminal trespass conviction may be sealed or expunged. As a misdemeanor it is generally
           eligible after the waiting period if you meet the requirements, including having no more than the allowed number of prior

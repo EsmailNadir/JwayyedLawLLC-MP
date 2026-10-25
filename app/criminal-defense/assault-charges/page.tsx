@@ -122,10 +122,76 @@ export default function AssaultChargesPage() {
           harm with a deadly weapon. Prosecutors press these cases hardest when they involve a domestic relationship, a law
           enforcement officer, or a serious injury. The firm handles simple (misdemeanor) assault charges throughout Ohio.
         </p>
-        <LocationsWeServe title="Criminal Defense" />
+        <h3>What the prosecution has to prove</h3>
+        <p>
+          To convict you of simple assault, the state has to prove each of these beyond a reasonable doubt. If it cannot prove one,
+          the charge fails.
+        </p>
+        <FactTable
+          title="Elements of simple assault (ORC 2903.13)"
+          rows={[
+            {
+              label: 'Mental state',
+              value:
+                'You acted knowingly. A truly accidental contact, or not knowing your actions would cause harm, does not meet this element.',
+            },
+            {
+              label: 'The act',
+              value:
+                'You caused or attempted to cause physical harm to another person, or caused them to believe they would suffer physical harm.',
+            },
+            {
+              label: 'Identity',
+              value: 'You were the person who did it. Mistaken identity and an alibi go to this element.',
+            },
+            {
+              label: 'Self-defense',
+              value:
+                'Since 2019, once you raise evidence of self-defense under ORC 2901.05, the state must disprove it beyond a reasonable doubt.',
+            },
+          ]}
+        />
       </Section>
 
-      <Section title="Assault penalties in Ohio" tone="ice">
+      <LocationsWeServe title="Criminal Defense" />
+
+      <Section
+        title="When an assault becomes a different charge"
+        tone="ice"
+        intro={
+          <p>
+            Who was involved and how badly they were hurt can move the case out of simple assault and into a more serious statute.
+            Prosecutors press hardest in exactly these cases.
+          </p>
+        }
+      >
+        <FactTable
+          title="Related charges that start from the same incident"
+          rows={[
+            {
+              label: 'A family or household member',
+              value:
+                'Causing or attempting to cause physical harm to a spouse, former spouse, parent, child or other family or household member is charged as domestic violence under ORC 2919.25. It brings protection orders and a federal firearms ban on conviction.',
+            },
+            {
+              label: 'A police officer',
+              value:
+                'If an officer is hurt during an arrest, a separate charge such as assault on a peace officer under ORC 2903.13 may be filed, often alongside resisting arrest (ORC 2921.33) or obstruction of official business (ORC 2921.31).',
+            },
+            {
+              label: 'Serious harm or a deadly weapon',
+              value:
+                'Causing serious physical harm, or using a deadly weapon, under sudden passion or rage brought on by serious provocation is aggravated assault under ORC 2903.12: a fourth-degree felony with 6 to 18 months in prison.',
+            },
+          ]}
+        />
+        <p>
+          See <Link href="/criminal-defense/domestic-violence">domestic violence defense</Link> and{' '}
+          <Link href="/criminal-defense/resisting-arrest">resisting arrest</Link> for how those charges work.
+        </p>
+      </Section>
+
+      <Section title="Assault penalties in Ohio">
         <p>Sentencing for assault falls under Ohio Revised Code Chapter 2929. The degree of the charge sets the range.</p>
         <FactTable
           title="Simple assault (ORC 2903.13): first-degree misdemeanor"
@@ -158,6 +224,11 @@ export default function AssaultChargesPage() {
           in front of children. These can lead to maximum sentences, consecutive prison terms and higher fines. In certain
           circumstances an assault conviction also carries a mandatory minimum sentence.
         </p>
+        <p>
+          The same statute lists factors that pull a sentence down: no prior record, real remorse, cooperation with the authorities,
+          or facts that make the offense less serious than usual. Evidence of these is what the firm puts in front of the judge at
+          sentencing.
+        </p>
         <h3>Consequences beyond the sentence</h3>
         <p>
           Employers who run background checks may refuse to hire. Professional licenses in healthcare, education, law enforcement and
@@ -165,6 +236,42 @@ export default function AssaultChargesPage() {
           Certain serious convictions cost you your gun rights. Non-citizens can face deportation. Child custody and visitation can be
           restricted. All of this lasts long after the sentence is served and the fines are paid.
         </p>
+      </Section>
+
+      <Section
+        title="What to do in the first days after an assault charge"
+        tone="ice"
+        intro={
+          <p>
+            Say nothing about the case to anyone but your attorney, stay away from the alleged victim, and start keeping the evidence
+            that supports you. What you do before the first court date can shape the whole case.
+          </p>
+        }
+      >
+        <Steps
+          steps={[
+            {
+              title: 'Stop talking about what happened',
+              body: 'Do not discuss the case with police, the other person, friends or family. Anything you say can be used against you. You have the right to remain silent and the right to an attorney.',
+            },
+            {
+              title: 'Stay away from the alleged victim',
+              body: 'Avoid all contact, including calls and messages to apologize or explain. In a case involving a family or household member, a protection order may already forbid contact, and violating it is a separate crime.',
+            },
+            {
+              title: 'Write down what happened',
+              body: 'While it is fresh: where you were, who was there, what was said, who started it and any injuries you received. These details matter most when the defense is self-defense or defense of others.',
+            },
+            {
+              title: 'Keep the evidence',
+              body: 'The names of witnesses, photographs, documents, and receipts or records showing where you were. Note any cameras nearby so your attorney can ask for surveillance footage.',
+            },
+            {
+              title: 'Bring an attorney to the arraignment',
+              body: 'A not guilty plea preserves your rights. Your attorney can argue for lower bail or release on recognizance and request the police reports, witness statements and medical records.',
+            },
+          ]}
+        />
       </Section>
 
       <Section title="How an assault case moves through court">
@@ -194,7 +301,47 @@ export default function AssaultChargesPage() {
         />
       </Section>
 
-      <Section title="Defenses to an assault charge" tone="ice">
+      <Section
+        title="How assault cases end in Ohio"
+        tone="ice"
+        intro={
+          <p>
+            Most assault cases end through negotiation, not trial. The realistic outcomes run from dismissal to a conviction with the
+            lightest sentence the facts allow.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Dismissal',
+              body: 'On a motion to dismiss for insufficient evidence, an expired statute of limitations or procedural errors, or when suppressed evidence leaves the state without a case. Strong evidence of self-defense can also end it.',
+            },
+            {
+              title: 'A reduced charge',
+              body: 'Aggravated assault, a felony, reduced to simple assault, a misdemeanor, where the facts support it.',
+            },
+            {
+              title: 'Diversion or treatment',
+              body: 'A program or treatment instead of jail, sometimes followed by dismissal once the conditions are met.',
+            },
+            {
+              title: 'A plea agreement',
+              body: 'A plea to the charge or a lesser one in exchange for lighter penalties.',
+            },
+            {
+              title: 'A not guilty verdict',
+              body: 'If the case goes to trial and the state does not prove every element, or does not disprove self-defense, the verdict ends the case.',
+            },
+            {
+              title: 'Conviction, then sealing',
+              body: 'If there is a conviction, the firm argues for the minimum sentence or an alternative to jail, and later for sealing or expungement under Ohio Revised Code Chapter 2953 if you qualify.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Defenses to an assault charge">
         <p>Which defense applies depends on what happened and what the evidence shows.</p>
         <PointGrid
           points={[
@@ -238,7 +385,7 @@ export default function AssaultChargesPage() {
         />
       </Section>
 
-      <Section title="What the firm does on an assault case">
+      <Section title="What the firm does on an assault case" tone="ice">
         <PointGrid
           points={[
             {
@@ -280,7 +427,7 @@ export default function AssaultChargesPage() {
         </Callout>
       </Section>
 
-      <Section title="Related criminal defense pages" tone="ice">
+      <Section title="Related criminal defense pages">
         <p>
           Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. For more,
           see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}

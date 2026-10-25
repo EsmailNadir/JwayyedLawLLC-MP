@@ -201,9 +201,10 @@ export default function ExpungementRecordSealingPage() {
           <Link href="/criminal-defense">Ohio criminal defense</Link> and <Link href="/ovi-dui-defense">OVI/DUI defense</Link>. OVI
           convictions under ORC 4511.19 cannot be sealed.
         </p>
-        <LocationsWeServe title="Criminal Defense" />
         <LinkGrid links={RELATED} columns={2} />
       </Section>
+
+      <LocationsWeServe title="Criminal Defense" />
 
       <FAQ faqs={faqs} />
       <ContactCTA />
