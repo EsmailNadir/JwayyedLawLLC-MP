@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Criminal Mischief Defense Ohio',
-  description: 'Ohio criminal mischief defense attorney for ORC 2909.07 charges statewide. Call Jwayyed Law LLC at (614) 285-5482 for a consultation.',
+  description:
+    'Charged with criminal mischief under ORC 2909.07? Penalties, the types of the offense, defenses and record sealing. Call (614) 285-5482.',
   keywords: [
     'criminal mischief lawyer Ohio',
     'property damage defense attorney',
@@ -22,10 +24,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
-    description: 'Experienced criminal mischief defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Penalties, defenses and record sealing for a criminal mischief charge under ORC 2909.07.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-mischief',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/criminal-mischief',
   },
@@ -39,275 +41,256 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is criminal mischief under Ohio law?',
-    answer: 'Criminal mischief under Ohio Revised Code 2909.07 involves knowingly moving, defacing, damaging, destroying, or otherwise improperly tampering with the property of another without the owner\'s consent. This can include actions like graffiti, breaking windows, slashing tires, damaging mailboxes, or tampering with utility equipment. The offense is typically charged as a third-degree misdemeanor, punishable by up to 60 days in jail and fines up to $500.',
+    answer:
+      'Criminal mischief under Ohio Revised Code 2909.07 means knowingly moving, defacing, damaging, destroying or otherwise improperly tampering with another person\'s property without the owner\'s consent. Examples include graffiti, breaking windows, slashing tires, damaging mailboxes and tampering with utility equipment. It is usually charged as a third-degree misdemeanor, punishable by up to 60 days in jail and a fine of up to $500.',
   },
   {
     question: 'What are the penalties for criminal mischief in Ohio?',
-    answer: 'Criminal mischief is generally a third-degree misdemeanor under ORC 2909.07, carrying penalties of up to 60 days in jail, fines up to $500, restitution to the property owner, court costs, and a criminal record. However, if the property involved is an occupied aircraft, the offense is elevated to a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Repeat offenses or significant damage may also lead to enhanced charges such as criminal damaging under ORC 2909.06.',
+    answer:
+      'Criminal mischief is generally a third-degree misdemeanor under ORC 2909.07: up to 60 days in jail, a fine of up to $500, restitution to the property owner, court costs and a criminal record. If the property is an occupied aircraft, it becomes a first-degree misdemeanor punishable by up to 180 days in jail and a fine of up to $1,000. Repeat offenses or significant damage can also lead to a more serious charge such as criminal damaging under ORC 2909.06.',
   },
   {
     question: 'What is the difference between criminal mischief and criminal damaging in Ohio?',
-    answer: 'Criminal mischief under ORC 2909.07 involves tampering with, defacing, or otherwise improperly handling property, and is typically a third-degree misdemeanor. Criminal damaging or endangering under ORC 2909.06 is a more serious offense involving knowingly causing physical harm to property or creating a substantial risk of physical harm through fire, explosion, flood, or other means. Criminal damaging is generally a second-degree misdemeanor but can be elevated to a felony depending on the circumstances and value of property damaged.',
+    answer:
+      'Criminal mischief under ORC 2909.07 is tampering with, defacing or otherwise improperly handling property, and is usually a third-degree misdemeanor. Criminal damaging or endangering under ORC 2909.06 is more serious: knowingly causing physical harm to property, or creating a substantial risk of it through fire, explosion, flood or other means. Criminal damaging is generally a second-degree misdemeanor, but the circumstances and the value of the property can raise it to a felony.',
   },
   {
     question: 'Can criminal mischief charges be expunged from my record in Ohio?',
-    answer: 'Yes, criminal mischief convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor offense, you may apply to have the record sealed after the applicable waiting period, provided you meet eligibility requirements including having no more than the allowable number of prior convictions. An experienced attorney can evaluate your eligibility and guide you through the expungement application process to help clear your criminal record.',
+    answer:
+      'Yes. A criminal mischief conviction may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. Because it is a misdemeanor, you may apply after the waiting period if you meet the requirements, including having no more than the allowed number of prior convictions. An attorney can check your eligibility and handle the application.',
   },
   {
     question: 'What should I do if I am charged with criminal mischief in Ohio?',
-    answer: 'If charged with criminal mischief in Ohio, exercise your right to remain silent and contact an experienced criminal defense attorney immediately. Do not make statements to police without your attorney present. Avoid contacting the property owner or attempting to resolve the matter on your own, as this could be used against you. Gather any evidence that may support your defense, such as alibis, witness information, or photographs. An attorney can protect your rights, negotiate with prosecutors, and work toward the best possible outcome including potential dismissal or reduced charges.',
+    answer:
+      'Use your right to remain silent and contact a criminal defense attorney right away. Do not talk to police without your attorney present. Do not contact the property owner or try to settle the matter yourself, because that can be used against you. Keep any evidence that helps you, such as an alibi, witness names or photographs. An attorney can protect your rights and negotiate with the prosecutor for a dismissal or a reduced charge.',
   },
   {
-    question: `What is criminal mischief under Ohio law?`,
-    answer: `Criminal mischief under Ohio Revised Code 2909.07 is a property offense that covers knowingly tampering with safety devices or equipment, defacing or damaging property, interfering with boundary markers, or otherwise improperly handling another person's property without consent. It also includes tampering with fire hydrants, extinguishers, and other safety apparatus. The base offense is a third-degree misdemeanor (M3), punishable by up to 60 days in jail and fines up to $500. When an occupied aircraft is involved, the offense is elevated to a first-degree misdemeanor.`,
+    question: 'What conduct does criminal mischief cover in Ohio?',
+    answer:
+      'Criminal mischief under Ohio Revised Code 2909.07 covers knowingly tampering with safety devices or equipment, defacing or damaging property, interfering with boundary markers, or otherwise improperly handling another person\'s property without consent. It includes tampering with fire hydrants, extinguishers and other safety equipment. The base offense is a third-degree misdemeanor (M3), punishable by up to 60 days in jail and a fine of up to $500. When an occupied aircraft is involved, it becomes a first-degree misdemeanor.',
   },
   {
-    question: `How does criminal mischief differ from vandalism under Ohio law?`,
-    answer: `Ohio law does not use the term "vandalism" for a standalone misdemeanor offense. What is commonly called vandalism may be charged as criminal mischief (ORC 2909.07, M3 base) for minor property damage such as graffiti or defacement, criminal damaging (ORC 2909.06, M2) for knowingly causing physical harm to property, or vandalism (ORC 2909.05, felony) when the damage value exceeds applicable thresholds or involves government property or critical infrastructure. The specific charge depends on the value of damage, the nature of the property, and the method of harm.`,
+    question: 'How does criminal mischief differ from vandalism under Ohio law?',
+    answer:
+      'Ohio has no standalone misdemeanor called vandalism. What people call vandalism may be charged as criminal mischief (ORC 2909.07, M3 base) for minor damage such as graffiti or defacement; criminal damaging (ORC 2909.06, M2) for knowingly causing physical harm to property; or vandalism (ORC 2909.05, a felony) when the damage passes the value thresholds or involves government property or critical infrastructure. The charge depends on the value of the damage, the kind of property and how the harm was caused.',
   },
   {
-    question: `What are the penalties for criminal mischief and can it be sealed in Ohio?`,
-    answer: `A standard criminal mischief conviction under ORC 2909.07 is a third-degree misdemeanor (M3) carrying up to 60 days in jail, fines up to $500, restitution, and a permanent criminal record. If the mischief involves an occupied aircraft, penalties increase to a first-degree misdemeanor. Under Ohio Revised Code 2953.32, a criminal mischief conviction is generally eligible for record sealing after a one-year waiting period from the completion of sentence, provided you meet eligibility requirements including having no more than the allowable number of prior convictions. An attorney can evaluate your eligibility and guide you through the sealing process.`,
+    question: 'What are the penalties for criminal mischief and can it be sealed in Ohio?',
+    answer:
+      'A standard criminal mischief conviction under ORC 2909.07 is a third-degree misdemeanor (M3): up to 60 days in jail, a fine of up to $500, restitution and a permanent criminal record. If an occupied aircraft is involved, it becomes a first-degree misdemeanor. Under Ohio Revised Code 2953.32, a criminal mischief conviction is generally eligible for sealing after a one-year waiting period from the end of your sentence, if you meet the requirements, including having no more than the allowed number of prior convictions. An attorney can check your eligibility and handle the process.',
   },
 ];
 
-export default function CriminalMischiefPage() {
+const RELATED = [
+  { href: '/criminal-defense/criminal-damaging', title: 'Criminal damaging', subtitle: 'Property damage and destruction charges' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry defense' },
+  { href: '/criminal-defense/petty-theft', title: 'Petty theft', subtitle: 'Shoplifting and theft defense in Ohio' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing a criminal record under Ohio law' },
+];
 
+export default function CriminalMischiefPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Mischief Defense Attorney in Ohio"
-        description="Experienced legal defense for criminal mischief and property damage charges. Protecting your rights and fighting for the best possible outcome."
+        title="Criminal mischief charges in Ohio"
+        description="Criminal mischief under ORC 2909.07 is usually a third-degree misdemeanor: up to 60 days in jail and a fine of up to $500, plus restitution."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Criminal Mischief Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '60 days', label: 'maximum jail for criminal mischief, a third-degree misdemeanor' },
+          { figure: '$500', label: 'maximum fine, plus restitution and court costs' },
+          { figure: '180 days', label: 'maximum jail when an occupied aircraft is involved (first-degree misdemeanor)' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing criminal mischief charges throughout Ohio can have serious consequences on your record, employment, and future opportunities. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with criminal mischief under Ohio Revised Code 2909.07. Our attorney understands Ohio property crime laws, potential defenses, and the impact these charges can have on your life.
-            </p>
+      <Section
+        title="What a criminal mischief charge means"
+        intro={
+          <p>
+            Criminal mischief is a misdemeanor under Ohio Revised Code 2909.07. It covers tampering with, defacing, damaging or
+            destroying another person&rsquo;s property without permission.
+          </p>
+        }
+      >
+        <p>
+          The conduct ranges from graffiti and vandalism to tampering with utility equipment or moving boundary markers. The facts of
+          each case set the charge and the penalties. It can look like a minor charge, but a conviction leaves a permanent criminal
+          record that can affect jobs, housing and professional licenses.
+        </p>
+        <p>Jwayyed Law LLC defends criminal mischief charges under ORC 2909.07 throughout Ohio.</p>
+        <LocationsWeServe title="Criminal Defense" />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Criminal mischief is a misdemeanor offense involving the unauthorized tampering with, defacing, damaging, or destroying another person's property. While it may seem like a minor charge, a conviction creates a permanent criminal record that can affect employment opportunities, housing applications, and professional licensing. Ohio prosecutors take property crimes seriously, and even misdemeanor charges require effective legal representation.
-            </p>
+      <Section title="Types of criminal mischief under ORC 2909.07" tone="ice">
+        <FactTable
+          title="What the statute covers"
+          rows={[
+            {
+              label: 'Tampering with property (2909.07(A)(1))',
+              value:
+                'Knowingly moving, defacing, damaging, destroying or otherwise improperly tampering with property of another without consent: graffiti, scratched vehicles, broken windows, damaged fences, defaced public property. Usually a third-degree misdemeanor.',
+            },
+            {
+              label: 'Boundary markers (2909.07(A)(2))',
+              value:
+                'Knowingly moving, removing or tampering with boundary markers, survey stakes or monuments without authorization. These charges often grow out of property line disputes that belonged in civil court. A third-degree misdemeanor.',
+            },
+            {
+              label: 'Safety devices (2909.07(A)(3))',
+              value:
+                'Knowingly tampering with fire hydrants, fire extinguishers, safety devices or other emergency equipment without authorization. Treated seriously because it can endanger the public; the charge may be raised depending on the circumstances.',
+            },
+            {
+              label: 'Occupied aircraft (2909.07(B))',
+              value: 'A first-degree misdemeanor: up to 180 days in jail and a fine of up to $1,000.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio law, criminal mischief encompasses a broad range of conduct, from graffiti and vandalism to tampering with utility equipment or interfering with property boundaries. The specific circumstances of each case determine the severity of charges and potential penalties. An experienced criminal defense attorney can evaluate your case, identify the strongest defenses, and work to protect your rights throughout the legal process.
-            </p>
+      <Section title="Criminal mischief penalties in Ohio">
+        <p>Sentencing falls under Ohio Revised Code Chapter 2929. The type of mischief decides the degree.</p>
+        <FactTable
+          title="Standard criminal mischief: third-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 60 days.' },
+            { label: 'Fines', value: 'Up to $500, plus court costs.' },
+            { label: 'Restitution', value: 'Payment to the owner, including cleanup or repair of the damaged property.' },
+            { label: 'Other terms', value: 'Probation with conditions and community service.' },
+            { label: 'Record', value: 'A permanent criminal record.' },
+          ]}
+        />
+        <FactTable
+          title="Occupied aircraft: first-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 180 days.' },
+            { label: 'Fines', value: 'Up to $1,000, plus court costs.' },
+            { label: 'Restitution', value: 'Often significant.' },
+            { label: 'Record', value: 'A permanent criminal record.' },
+          ]}
+        />
+        <FactTable
+          title="When significant damage brings a more serious charge"
+          rows={[
+            {
+              label: 'Criminal damaging (ORC 2909.06)',
+              value: 'A second-degree misdemeanor: up to 90 days in jail and a fine of up to $750.',
+            },
+            {
+              label: 'Further escalation',
+              value: 'Possible when the damage involves government property or fire safety equipment, or creates a risk of physical harm.',
+            },
+            { label: 'Vandalism (ORC 2909.05)', value: 'A felony that applies when the damage passes certain thresholds.' },
+          ]}
+        />
+        <h3>Restitution and civil liability</h3>
+        <p>
+          Courts usually order restitution to cover repair or replacement. The owner can also file a separate civil suit for damages,
+          possibly including treble damages under Ohio law.
+        </p>
+        <h3>Consequences beyond the sentence</h3>
+        <p>
+          Employers running background checks may view a property crime conviction unfavorably. Housing applications may be rejected,
+          professional licenses in some fields may be affected, and educational opportunities and financial aid can suffer. For
+          juveniles, a conviction can affect college admissions and scholarships.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for criminal mischief charges involves arraignment, discovery, pretrial negotiations, and potentially trial. Each stage presents opportunities for an experienced attorney to challenge evidence, negotiate with prosecutors, and work toward favorable outcomes including dismissal, reduced charges, or alternative sentencing options.
-            </p>
+      <Section title="How a criminal mischief case moves" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Citation or arrest, then arraignment',
+              body: 'The case may start with a citation at the scene or an arrest. At arraignment the charges are read, bond conditions are set and you enter a plea. On a misdemeanor, release on your own recognizance or a low bond is common, and your attorney can argue for good release terms.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: "The prosecution must turn over its evidence: police reports, witness statements, photos of the damage and surveillance footage. Your attorney reviews it, interviews witnesses and looks for evidence of lack of intent, mistaken identity or consent.",
+            },
+            {
+              title: 'Pretrial negotiations',
+              body: 'Most misdemeanor mischief cases resolve here. Options include a reduced or dismissed charge, a diversion program, community service instead of jail, or a plea with lighter consequences. Prosecutors may offer first-time offenders alternatives to a conviction.',
+            },
+            {
+              title: 'Trial',
+              body: 'A misdemeanor trial in Ohio can be in front of a judge (a bench trial) or a jury. Your attorney presents your defense, cross-examines the witnesses and argues for acquittal.',
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="Defenses to criminal mischief">
+        <PointGrid
+          points={[
+            {
+              title: 'Lack of intent',
+              body: 'The offense requires that you acted knowingly. Accidental damage, or not knowing the property belonged to someone else, can lead to a reduced or dismissed charge.',
+            },
+            {
+              title: 'Consent or authorization',
+              body: "The owner's permission, written, verbal or implied, is a complete defense. So is a reasonable belief that you had permission to move, change or handle the property.",
+            },
+            {
+              title: 'Mistaken identity',
+              body: 'Mischief often happens with no witnesses, and charges may rest on circumstantial evidence or a shaky identification. An alibi or a challenge to the identification can end the case.',
+            },
+            {
+              title: 'Ownership or a right to the property',
+              body: 'The property must belong to someone else. If it is yours, or you have a legitimate claim to it, that can be a defense. Some property disputes are charged as crimes when they belong in civil court.',
+            },
+            {
+              title: 'Insufficient evidence',
+              body: 'The prosecution must prove every element beyond a reasonable doubt. If it cannot show that you knowingly tampered with, defaced, damaged or destroyed property of another, the charge should be dismissed.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Types of Criminal Mischief Under Ohio Law
-            </h3>
+      <Section title="What the firm does on a criminal mischief case" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Protects your rights', body: 'From citation or arrest: your right to remain silent and your right to counsel.' },
+            {
+              title: 'Investigates',
+              body: 'Police reports, photographs, surveillance footage and witness statements, looking for weaknesses and inconsistencies.',
+            },
+            {
+              title: 'Builds the defense',
+              body: 'Lack of intent, mistaken identity, consent, insufficient evidence or constitutional violations, based on what the investigation finds.',
+            },
+            {
+              title: 'Challenges the evidence',
+              body: 'Motions to suppress illegally obtained evidence, challenges to unreliable identifications, and motions to exclude prejudicial evidence.',
+            },
+            {
+              title: 'Negotiates',
+              body: 'For reduced charges, a better plea, diversion, or dismissal once conditions are met, and for reasonable restitution amounts and payment terms.',
+            },
+            {
+              title: 'Tries the case',
+              body: 'Represents you at trial and, if there is a conviction, argues at sentencing for alternatives such as community service.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Tampering with Property (ORC 2909.07(A)(1))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                This involves knowingly moving, defacing, damaging, destroying, or otherwise improperly tampering with the property of another without consent. Common examples include spray-painting graffiti on buildings, scratching vehicles, breaking windows, damaging fences, or defacing public property. This is typically charged as a third-degree misdemeanor.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Tampering with Boundary Markers (ORC 2909.07(A)(2))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                This involves knowingly moving, removing, or tampering with property boundary markers, survey stakes, or monuments without proper authorization. Disputes over property boundaries can lead to criminal mischief charges when individuals take matters into their own hands rather than pursuing civil remedies. This is a third-degree misdemeanor.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Tampering with Safety Devices or Equipment (ORC 2909.07(A)(3))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Knowingly tampering with fire hydrants, fire extinguishers, safety devices, or other emergency equipment without proper authorization constitutes criminal mischief. This type of criminal mischief is taken particularly seriously because it can endanger public safety. Charges may be elevated depending on the circumstances.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Tampering with Occupied Aircraft (ORC 2909.07(B))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Criminal mischief involving an occupied aircraft is elevated to a first-degree misdemeanor, carrying significantly harsher penalties of up to 180 days in jail and fines up to $1,000. This enhanced charge reflects the serious safety risks associated with tampering with aircraft while passengers are aboard.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Criminal Mischief Penalties and Consequences
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code Chapter 2929, criminal mischief convictions carry penalties that extend beyond jail time and fines. Understanding the full scope of consequences is essential when facing these charges:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Third-Degree Misdemeanor (Standard Criminal Mischief)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Standard criminal mischief under ORC 2909.07 is a third-degree misdemeanor carrying penalties including up to 60 days in jail, fines up to $500, restitution to the property owner for damages, court costs, probation with conditions, community service, and a permanent criminal record. The court may also order the defendant to pay for cleanup or repair of damaged property.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First-Degree Misdemeanor (Occupied Aircraft)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When criminal mischief involves an occupied aircraft, the offense is elevated to a first-degree misdemeanor punishable by up to 180 days in jail, fines up to $1,000, significant restitution, court costs, and a permanent criminal record. The enhanced penalty reflects the serious safety implications of this conduct.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Enhanced Charges for Significant Damage</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the property damage is significant, prosecutors may pursue more serious charges such as criminal damaging or endangering under ORC 2909.06, which is a second-degree misdemeanor carrying up to 90 days in jail and fines up to $750. If the damage involves government property, fire safety equipment, or creates a risk of physical harm, charges may be elevated further. Vandalism under ORC 2909.05 is a felony offense that applies when property damage exceeds certain thresholds.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Restitution and Civil Liability</h4>
-            <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              In addition to criminal penalties, courts typically order restitution requiring the defendant to compensate the property owner for the cost of repair or replacement. Property owners may also pursue separate civil lawsuits for damages, potentially including treble damages under Ohio law. The combination of criminal penalties and civil liability can result in significant financial consequences.
-            </p>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences</h4>
-            <p className="text-navy-950/80 mb-6">
-              Beyond criminal penalties, a criminal mischief conviction creates lasting collateral consequences. Employment opportunities may be limited as employers conducting background checks may view property crime convictions unfavorably. Housing applications may be rejected. Professional licenses in certain fields may be affected. Educational opportunities and financial aid eligibility can be impacted. For juveniles, criminal mischief convictions can affect college admissions and scholarship opportunities. These consequences persist long after completing sentences and paying fines.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Criminal Court Process for Criminal Mischief Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the criminal court process helps you prepare for what lies ahead. The process for misdemeanor criminal mischief charges typically involves several stages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Citation or Arrest and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Criminal mischief charges may begin with a citation issued at the scene or an arrest. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For misdemeanor charges, defendants are often released on their own recognizance or with minimal bond. An attorney can argue for favorable release conditions and begin building your defense immediately.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, prosecutors must provide all evidence including police reports, witness statements, photographs of damage, surveillance footage, and any other evidence. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting your defense such as lack of intent, mistaken identity, or consent.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Negotiations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most misdemeanor criminal mischief cases are resolved through pretrial negotiations. An experienced attorney can negotiate with prosecutors to reduce or dismiss charges, secure diversion program placement, arrange for community service in lieu of jail, or negotiate plea agreements that minimize consequences. For first-time offenders, prosecutors may be willing to offer favorable alternatives to conviction.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine prosecution witnesses, challenge the evidence against you, and advocate for acquittal. Misdemeanor trials in Ohio may be before a judge (bench trial) or jury. An experienced attorney can effectively present your case and protect your rights throughout the trial process.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced criminal mischief defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of citation or arrest, including your right to remain silent and right to counsel</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, photographs, surveillance footage, witness statements, and all evidence to identify weaknesses and inconsistencies in the prosecution's case</li>
-              <li><strong>Strategic Defense Development:</strong> Develop and execute defense strategies including lack of intent, mistaken identity, consent, insufficient evidence, or constitutional violations based on thorough investigation</li>
-              <li><strong>Evidence Challenges:</strong> File motions to suppress illegally obtained evidence, challenge flawed investigations, question unreliable witness identifications, and exclude prejudicial evidence</li>
-              <li><strong>Skilled Negotiation:</strong> Work with prosecutors to reduce charges, negotiate favorable plea agreements, secure diversion program placement, or arrange dismissals upon completion of conditions</li>
-              <li><strong>Trial Advocacy:</strong> Provide effective trial representation with compelling arguments, strategic cross-examination, and protection of your rights throughout trial proceedings</li>
-              <li><strong>Sentencing Advocacy:</strong> Present mitigating evidence, argue for minimum sentences, advocate for alternative sentencing including community service, and work to minimize consequences</li>
-              <li><strong>Restitution Negotiation:</strong> Negotiate reasonable restitution amounts and payment arrangements to minimize financial impact</li>
-              <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing and expungement applications under ORC 2953.32 to clear criminal records</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Criminal Mischief Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Lack of Intent</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Criminal mischief requires that the defendant acted "knowingly" in tampering with or damaging property. If the damage was accidental or unintentional, or you did not know the property belonged to another, this defense may apply. Evidence demonstrating accident or mistake can result in reduced or dismissed charges.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Consent or Authorization</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the property owner gave consent or authorization for the conduct in question, this is a complete defense to criminal mischief charges. Evidence of permission, whether written, verbal, or implied, can result in dismissal. For example, if you reasonably believed you had permission to modify, move, or handle the property, this defense may apply.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Mistaken Identity</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Criminal mischief often occurs without witnesses, and charges may be based on circumstantial evidence or unreliable witness identification. If you were not the person who committed the alleged offense, an alibi defense or challenge to the identification evidence may result in acquittal or dismissal.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Ownership or Right to Property</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Criminal mischief requires that the property belongs to another person. If you are the owner of the property or have a legitimate claim or right to the property, this may serve as a defense. Property disputes are sometimes mischaracterized as criminal mischief when they should be resolved through civil proceedings.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The prosecution must prove every element of criminal mischief beyond a reasonable doubt. If the evidence is insufficient to establish that you knowingly tampered with, defaced, damaged, or destroyed the property of another, the charges should be dismissed. An experienced attorney can identify gaps in the prosecution's evidence and challenge the sufficiency of proof.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement Eligibility for Criminal Mischief Convictions
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code 2953.32, individuals convicted of criminal mischief may be eligible to have their records sealed or expunged. As a misdemeanor offense, criminal mischief convictions are generally eligible for record sealing after the applicable waiting period, provided you meet eligibility requirements. Record sealing effectively hides the conviction from most background checks, helping restore employment opportunities, housing options, and other areas affected by a criminal record. An experienced attorney can evaluate your eligibility and guide you through the application process.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Criminal Mischief Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated criminal mischief defense representation throughout Ohio. We understand that criminal mischief charges can arise from misunderstandings, accidental damage, or situations where intent is lacking. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of property crime cases, from minor misdemeanor criminal mischief to more serious property damage charges. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and effective advocacy. We understand the court systems and prosecutor policies throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing criminal mischief charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio" className="text-sky-deep underline hover:text-navy-950">misdemeanor vs. felony charges in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/criminal-damaging" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Damaging</span>
-                <span className="text-sm text-navy-950/70">Property damage and destruction charges</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Petty Theft</span>
-                <span className="text-sm text-navy-950/70">Shoplifting and theft defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Sealing a criminal mischief conviction">
+        <p>
+          Under Ohio Revised Code 2953.32, a criminal mischief conviction may be sealed or expunged. As a misdemeanor it is generally
+          eligible after the waiting period if you meet the requirements. A sealed record is hidden from most background checks, which
+          helps with jobs, housing and anything else a record has held back. The firm can check your eligibility and file the
+          application. See <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link>.
+        </p>
+        <p>
+          If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. For
+          more, see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}
+          <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio">misdemeanor vs. felony charges in Ohio</Link>.
+        </p>
+        <h3>Related pages</h3>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />

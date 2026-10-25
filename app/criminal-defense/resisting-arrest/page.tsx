@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Resisting Arrest Defense Ohio',
-  description: 'Ohio resisting arrest defense attorney for ORC 2921.33 charges statewide. Protect your rights. Call Jwayyed Law LLC at (614) 285-5482.',
+  description:
+    'Resisting arrest under ORC 2921.33 is a second-degree misdemeanor, or first-degree if force is used. Penalties, defenses and the court process. Call (614) 285-5482.',
   keywords: [
     'resisting arrest lawyer Ohio',
     'resisting arrest defense attorney',
@@ -18,14 +20,14 @@ export const metadata: Metadata = {
     'resisting arrest penalties Ohio',
     'Ohio resisting arrest lawyer',
     'fleeing police charges attorney',
-    'criminal defense resisting arrest'
+    'criminal defense resisting arrest',
   ],
   openGraph: {
     title: 'Resisting Arrest Defense Ohio | Jwayyed Law LLC',
-    description: 'Experienced resisting arrest defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Resisting arrest defense throughout Ohio: what the state must prove, the penalties and the defenses. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense/resisting-arrest',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/resisting-arrest',
   },
@@ -39,278 +41,240 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What constitutes resisting arrest under Ohio law?',
-    answer: 'Resisting arrest under Ohio Revised Code 2921.33 occurs when a person recklessly or by force resists or interferes with a lawful arrest of the person or another. This can include physical resistance such as pulling away, struggling, or going limp, as well as fleeing from an officer attempting to make an arrest. The arrest must be lawful, meaning the officer had proper authority and probable cause. Passive resistance, verbal objections, or questioning an arrest do not typically constitute resisting arrest.',
+    answer:
+      'Under Ohio Revised Code 2921.33, resisting arrest is recklessly or by force resisting or interfering with the lawful arrest of yourself or someone else. It can include pulling away, struggling or going limp, and fleeing from an officer who is making an arrest. The arrest must be lawful, meaning the officer had proper authority and probable cause. Passive resistance, verbal objections or questioning the arrest do not usually count.',
   },
   {
     question: 'What are the penalties for resisting arrest in Ohio?',
-    answer: 'Resisting arrest is a second-degree misdemeanor under ORC 2921.33, punishable by up to 90 days in jail, fines up to $750, court costs, probation, and a permanent criminal record. If the offender uses force against the arresting officer during the resistance, the charge is enhanced to a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Additional charges such as assault on a peace officer may also be filed if the officer is injured during the resistance.',
+    answer:
+      'Resisting arrest is a second-degree misdemeanor under ORC 2921.33: up to 90 days in jail, a fine of up to $750, court costs, probation and a permanent criminal record. If you use force against the arresting officer, it becomes a first-degree misdemeanor with up to 180 days in jail and a fine of up to $1,000. If the officer is injured, the state may also file a charge such as assault on a peace officer.',
   },
   {
     question: 'Can I be charged with resisting arrest if the arrest was unlawful?',
-    answer: 'This is a complex legal question in Ohio. While resisting arrest under ORC 2921.33 requires that the arrest be "lawful," challenging the legality of an arrest at the time it occurs is not recommended. Ohio courts have held that the proper remedy for an unlawful arrest is to challenge it through legal proceedings after the fact, not by physically resisting. However, if your attorney can demonstrate that the arrest was unlawful (lacking probable cause or proper authority), this may serve as a defense to the resisting arrest charge.',
+    answer:
+      'Resisting arrest under ORC 2921.33 requires a "lawful" arrest, but fighting the arrest at the scene is not recommended. Ohio courts have held that the proper remedy for an unlawful arrest is to challenge it in court afterward, not to resist physically. If your attorney shows the arrest was unlawful (no probable cause or no proper authority), that can be a defense to the resisting charge.',
   },
   {
     question: 'Can resisting arrest charges be expunged from my record in Ohio?',
-    answer: 'Yes, resisting arrest convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor offense, you may apply to have the record sealed after the applicable waiting period, provided you meet eligibility requirements. Record sealing hides the conviction from most background checks, helping restore employment opportunities and other areas affected by a criminal record. An experienced attorney can evaluate your eligibility and guide you through the application process.',
+    answer:
+      'Resisting arrest convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor, the record can be sealed after the waiting period if you meet the eligibility rules. Sealing hides the conviction from most background checks. An attorney can review your eligibility and handle the application.',
   },
   {
     question: 'What should I do if I am charged with resisting arrest in Ohio?',
-    answer: 'If charged with resisting arrest in Ohio, exercise your right to remain silent and do not discuss the incident with anyone except your attorney. Contact an experienced criminal defense attorney immediately. Do not make statements to police about what happened during the arrest. Document everything you remember about the arrest including officer names, badge numbers, witnesses, and any injuries sustained. If you were injured during the arrest, seek medical attention and document your injuries. An attorney can review the circumstances of your arrest and develop an effective defense strategy.',
+    answer:
+      'Use your right to remain silent and do not discuss the incident with anyone but your attorney, including the police. Contact a criminal defense attorney right away. Write down everything you remember: officer names, badge numbers, witnesses and any injuries. If you were hurt, get medical attention and document the injuries. An attorney can then review how the arrest happened and build the defense.',
   },
   {
-    question: `What must the prosecution prove for a resisting arrest conviction in Ohio?`,
-    answer: `To obtain a conviction under ORC 2921.33, the prosecution must prove beyond a reasonable doubt that: (1) an arrest was being made; (2) the arrest was lawful — meaning the officer had proper authority and probable cause; (3) the defendant recklessly or by force resisted or interfered with that arrest; and (4) the defendant was aware of a substantial risk that their conduct would hinder the arrest and consciously disregarded that risk. Each element is subject to challenge. If the underlying arrest was unlawful, if the conduct did not rise to the level of reckless resistance, or if the physical reaction was involuntary rather than intentional, the charge may not hold up in court.`,
+    question: 'What must the prosecution prove for a resisting arrest conviction in Ohio?',
+    answer:
+      'Under ORC 2921.33 the prosecution must prove beyond a reasonable doubt that (1) an arrest was being made; (2) the arrest was lawful, meaning the officer had proper authority and probable cause; (3) you recklessly or by force resisted or interfered with it; and (4) you were aware of a substantial risk that your conduct would hinder the arrest and consciously disregarded it. Each element can be challenged. If the arrest was unlawful, the conduct was not reckless resistance, or the reaction was involuntary, the charge may not hold up.',
   },
   {
-    question: `Does the lawfulness of the underlying arrest matter for a resisting arrest charge in Ohio?`,
-    answer: `Yes — ORC 2921.33 requires that the arrest being resisted be a "lawful" arrest. If the officer lacked probable cause, exceeded their authority, or violated your constitutional rights in making the arrest, the arrest may be deemed unlawful, which can serve as a defense to the resisting charge. However, Ohio courts generally discourage physical resistance even to unlawful arrests, advising that the proper remedy is to challenge the arrest through legal proceedings afterward rather than physically at the scene. An attorney can investigate the circumstances of your arrest, file a motion to suppress if constitutional violations occurred, and argue that the arrest was unlawful as part of your defense strategy.`,
+    question: 'Does the lawfulness of the underlying arrest matter for a resisting arrest charge in Ohio?',
+    answer:
+      'Yes. ORC 2921.33 requires that the arrest be lawful. If the officer lacked probable cause, exceeded their authority or violated your constitutional rights, the arrest may be unlawful, which can be a defense. Ohio courts generally discourage physical resistance even to an unlawful arrest and say the remedy is a court challenge afterward. An attorney can investigate the arrest, move to suppress if your rights were violated, and argue the arrest was unlawful.',
   },
   {
-    question: `What are the penalties for resisting arrest versus obstructing official business in Ohio?`,
-    answer: `Resisting arrest under ORC 2921.33(A) is a second-degree misdemeanor (M2) punishable by up to 90 days in jail and fines up to $750. If force is used against the officer during the resistance, it is enhanced to a first-degree misdemeanor (M1) carrying up to 180 days in jail and fines up to $1,000. Obstructing official business under ORC 2921.31 is a second-degree misdemeanor for a first offense — same penalty range as standard resisting arrest — but is elevated to a fifth-degree felony (F5) if the obstruction creates a risk of physical harm to any person. Both charges are often filed together following a confrontational police encounter, and an experienced attorney can negotiate to resolve or reduce both charges as part of a unified defense strategy.`,
+    question: 'What are the penalties for resisting arrest versus obstructing official business in Ohio?',
+    answer:
+      'Resisting arrest under ORC 2921.33(A) is a second-degree misdemeanor (M2): up to 90 days in jail and a fine of up to $750. With force against the officer, it becomes a first-degree misdemeanor (M1): up to 180 days and up to $1,000. Obstructing official business under ORC 2921.31 is a second-degree misdemeanor for a first offense, the same range as standard resisting arrest, and becomes a fifth-degree felony (F5) if the obstruction creates a risk of physical harm to anyone. The two are often filed together after a confrontational police encounter, and an attorney can work to resolve or reduce both together.',
   },
 ];
 
-export default function ResistingArrestPage() {
+const RELATED = [
+  { href: '/criminal-defense/assault-charges', title: 'Assault charges', subtitle: 'Simple and aggravated assault in Ohio' },
+  { href: '/criminal-defense/obstruction-of-official-business', title: 'Obstruction of official business', subtitle: 'Charges for interfering with police' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Sealing an eligible record under Ohio law' },
+];
 
+export default function ResistingArrestPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Resisting Arrest Defense Attorney in Ohio"
-        description="Experienced legal defense for resisting arrest and related charges. Protecting your rights and fighting for the best possible outcome."
+        title="Resisting arrest charges in Ohio"
+        description="Resisting arrest under ORC 2921.33 is a second-degree misdemeanor with up to 90 days in jail. Using force against the officer makes it a first-degree misdemeanor."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Resisting Arrest Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '90 days', label: 'maximum jail for standard resisting arrest, a second-degree misdemeanor' },
+          { figure: '$750', label: 'maximum fine at the standard level' },
+          { figure: '180 days', label: 'maximum jail when force is used against the officer' },
+          { figure: '$1,000', label: 'maximum fine when force is used' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing resisting arrest charges throughout Ohio is a serious matter that can compound existing legal problems and create additional consequences. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with resisting arrest under Ohio Revised Code 2921.33. Our attorney understands Ohio's resisting arrest laws, the nuances of what constitutes lawful resistance versus unlawful arrest, and the defenses available to protect your rights.
-            </p>
+      <Section
+        title="What resisting arrest means in Ohio"
+        intro={
+          <p>
+            Under Ohio Revised Code 2921.33, resisting arrest is recklessly or by force resisting or interfering with a lawful arrest.
+            It usually comes with other charges, because it arises during an encounter with police.
+          </p>
+        }
+      >
+        <p>
+          The line between exercising your rights and resisting can be blurry. Officers sometimes charge resisting arrest when someone
+          only questioned the arrest, asserted their rights, or had a reflexive physical reaction in a stressful moment.
+        </p>
+        <p>
+          You have constitutional rights during a police encounter: to remain silent, to refuse consent to a search, and to be free from
+          unreasonable seizure. Using those rights is not resisting arrest. Because the charge usually travels with others, the defense
+          has to address every charge together, from arraignment through discovery, pretrial motions, negotiation and, if needed, trial.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Resisting arrest charges frequently accompany other criminal charges, as they arise during encounters with law enforcement. The charge requires that the person recklessly or by force resisted or interfered with a lawful arrest. However, the line between exercising your rights and resisting arrest can be blurry, and officers sometimes charge individuals with resisting arrest when they simply questioned the arrest, asserted their rights, or experienced a reflexive physical reaction during a stressful encounter.
-            </p>
+      <Section title="The two levels of the offense" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Reckless resistance, ORC 2921.33(A)',
+              body: '"Recklessly" means you were aware of a substantial risk that your conduct would hinder the arrest and disregarded it. Pulling away, tensing up to prevent handcuffing, going limp, running away or struggling can qualify. This is a second-degree misdemeanor.',
+            },
+            {
+              title: 'Resistance with force, ORC 2921.33(B)',
+              body: 'Using force against the arresting officer, such as pushing, hitting, kicking or biting, raises the charge to a first-degree misdemeanor with up to 180 days in jail and a fine of up to $1,000.',
+            },
+          ]}
+        />
+        <h3>What the prosecution must prove</h3>
+        <p>
+          Beyond a reasonable doubt: (1) an arrest was being made, (2) the arrest was lawful, (3) you resisted or interfered with it,
+          and (4) the resistance was reckless or involved force. Each element can be challenged, and if one cannot be proven the charge
+          should be dismissed.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio law recognizes that individuals have constitutional rights during police encounters, including the right to remain silent, the right to refuse consent to searches, and the right to be free from unreasonable seizure. Exercising these rights does not constitute resisting arrest. An experienced criminal defense attorney can distinguish between lawful exercise of rights and conduct that may constitute resistance, challenge the legality of the underlying arrest, and protect your interests.
-            </p>
+      <Section title="Resisting arrest penalties">
+        <p>
+          Penalties are set under Ohio Revised Code Chapter 2929. Resisting arrest is a separate charge, so its penalties stack on top of
+          whatever else you are charged with.
+        </p>
+        <FactTable
+          title="Standard resisting arrest, ORC 2921.33(A): second-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 90 days.' },
+            { label: 'Fine', value: 'Up to $750, plus court costs.' },
+            { label: 'Other', value: 'Probation with conditions and a permanent criminal record.' },
+          ]}
+        />
+        <FactTable
+          title="Resistance with force: first-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 180 days.' },
+            { label: 'Fine', value: 'Up to $1,000, plus court costs.' },
+            { label: 'Other', value: 'Probation with conditions and a permanent criminal record.' },
+            { label: 'If the officer is hurt', value: 'A separate charge such as assault on a peace officer under ORC 2903.13 may be filed.' },
+          ]}
+        />
+        <h3>Charges that often come with it</h3>
+        <p>
+          Common companions are obstruction of official business (ORC 2921.31), assault on a peace officer (ORC 2903.13), disorderly
+          conduct (ORC 2917.11) and the offense that led to the arrest. Together they can mean consecutive jail terms, stacked fines and
+          several entries on your record.
+        </p>
+        <Callout title="It affects the other charges too">
+          Prosecutors may be less willing to offer a good plea on the other charges when resisting arrest is in the case, and judges may
+          hold resistance against you at sentencing. Winning the resisting charge can strengthen your position on the rest by casting
+          doubt on how the arrest happened.
+        </Callout>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for resisting arrest charges involves arraignment, discovery, pretrial motions, negotiations, and potentially trial. Because these charges often accompany other criminal charges, the defense strategy must address all charges in a coordinated manner. Early intervention by a skilled attorney can significantly impact the outcome.
-            </p>
+      <Section title="What a conviction costs beyond the sentence" tone="ice">
+        <p>
+          A resisting arrest conviction can limit work in law enforcement, security, government and other jobs that call for cooperation
+          with authorities, and it may affect professional licensing. Employers may read it as a sign of a confrontational disposition.
+          For non-citizens, it may have immigration consequences. These effects outlast the sentence and the fines.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="How a resisting arrest case moves through court">
+        <p>Because resisting arrest usually comes with other charges, the court handles them together.</p>
+        <Steps
+          steps={[
+            {
+              title: 'Arrest and arraignment',
+              body: 'All charges are read, bail is set and you enter a plea. A not guilty plea on every charge preserves your rights. If you were injured during the arrest, document it now.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: "The prosecution must hand over police reports, body camera and dash camera footage, witness statements, medical records of any injuries and other evidence. The video is often the most objective account and can show that the officer's version is inconsistent, the arrest was unlawful, or your conduct was not resistance.",
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'A motion to suppress if the arrest was unlawful, your rights were violated or evidence was improperly obtained. A motion to dismiss if the arrest lacked probable cause. A motion to compel the body camera or dash camera footage.',
+            },
+            {
+              title: 'Negotiation',
+              body: 'The resisting charge can be dismissed as part of a global resolution, reduced, or folded into a plea agreement. Prosecutors often agree to drop it in exchange for a plea on the underlying offense, especially when the resistance was minimal or the evidence is weak.',
+            },
+            {
+              title: 'Trial',
+              body: 'Your attorney cross-examines the arresting officer, plays the video, calls witnesses and argues for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that the arrest was lawful and your conduct was reckless resistance.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Elements of Resisting Arrest Under Ohio Law
-            </h3>
+      <Section title="Defenses to resisting arrest" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'The arrest was unlawful',
+              body: 'ORC 2921.33 requires a lawful arrest. If the officer lacked probable cause or proper authority, or violated your constitutional rights, the resisting charge may be invalid. This is raised in pretrial motions and at trial.',
+            },
+            {
+              title: 'There was no resistance',
+              body: 'Asking why you are being arrested, protesting verbally or asserting your rights is not resisting arrest. The physical conduct must rise to reckless resistance or interference. Body camera footage often shows the alleged resistance was minimal or did not happen.',
+            },
+            {
+              title: 'The reaction was reflexive',
+              body: 'The offense requires reckless conduct: awareness of a substantial risk and conscious disregard of it. Pulling away when an officer grabs your arm, or flinching when force is applied, can be an involuntary response to pain that does not meet that mental state.',
+            },
+            {
+              title: 'The officer used excessive force',
+              body: 'Ohio law does not give a blanket right to resist excessive force. Evidence of it can still undercut the prosecution, create reasonable doubt, and support a defense that you were reacting to pain or acting in self-defense.',
+            },
+            {
+              title: 'The evidence is thin',
+              body: "When the case rests only on the officer's testimony, with no video, independent witnesses or corroboration, the sufficiency of the proof can be challenged. Footage that contradicts the officer can be decisive.",
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Reckless Resistance (ORC 2921.33(A))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The basic resisting arrest offense occurs when a person recklessly or by force resists or interferes with a lawful arrest. "Recklessly" means the person was aware of a substantial risk that their conduct would hinder the arrest and disregarded that risk. This can include pulling away from an officer, tensing up to prevent handcuffing, going limp to make arrest difficult, running away, or physically struggling. This is a second-degree misdemeanor.
-              </p>
+      <Section title="What the firm does on a resisting arrest case">
+        <PointGrid
+          points={[
+            { title: 'Protects your rights early', body: 'Advises you on statements and starts the defense from the first meeting.' },
+            { title: 'Gets the video', body: "Obtains and reviews every body camera and dash camera recording, looking for gaps against the officer's account." },
+            { title: 'Tests the arrest', body: 'Whether the officer had probable cause and proper authority and followed correct procedure.' },
+            { title: 'Investigates', body: 'Reviews the evidence, interviews witnesses and gets medical records of any injuries.' },
+            { title: 'Defends every charge together', body: 'One strategy for the resisting charge and the underlying charges.' },
+            { title: 'Negotiates', body: 'To dismiss the resisting charge, reduce charges or reach a better plea on all of them.' },
+            { title: 'Tries the case', body: "With the video evidence and a cross-examination of the arresting officer." },
+            { title: 'Seals the record', body: 'Handles record sealing and expungement applications under ORC 2953.32 for eligible clients.' },
+          ]}
+        />
+        <p>
+          If you are charged with resisting arrest anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
+          consultation. You can also read about the firm&apos;s <Link href="/criminal-defense">criminal defense practice</Link> or{' '}
+          <Link href="/our-law-firm/blog/what-to-expect-first-court-appearance-ohio">what to expect at your first court appearance in Ohio</Link>.
+        </p>
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Resistance with Force (ORC 2921.33(B))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When a person uses force against the arresting officer during the resistance, the charge is enhanced to a first-degree misdemeanor. "Force" involves physical contact directed at the officer, such as pushing, hitting, kicking, biting, or other physical aggression during the arrest process. The enhanced charge carries significantly harsher penalties of up to 180 days in jail and fines up to $1,000.
-              </p>
+      <Section title="Record sealing and related charges" tone="ice">
+        <p>
+          Under Ohio Revised Code 2953.32, a resisting arrest conviction may be eligible for sealing or expungement. As a misdemeanor, it
+          is generally eligible after the waiting period if you meet the requirements, and a sealed record is hidden from most background
+          checks.
+        </p>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Key Elements the Prosecution Must Prove</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                To obtain a conviction for resisting arrest, the prosecution must prove beyond a reasonable doubt that: (1) an arrest was being made, (2) the arrest was lawful, (3) the defendant resisted or interfered with the arrest, and (4) the resistance was reckless or involved force. Each of these elements can be challenged by an experienced defense attorney. If any element cannot be proven, the charge should be dismissed.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Resisting Arrest Penalties and Consequences
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code Chapter 2929, resisting arrest convictions carry penalties that can compound the consequences of any underlying charges:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Second-Degree Misdemeanor (Standard Resisting Arrest)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Standard resisting arrest under ORC 2921.33(A) is a second-degree misdemeanor carrying penalties including up to 90 days in jail, fines up to $750, court costs, probation with conditions, and a permanent criminal record. Because resisting arrest is a separate charge from any underlying offense, it adds additional penalties on top of whatever other charges you may face.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First-Degree Misdemeanor (Resistance with Force)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When force is used against the arresting officer, the charge is enhanced to a first-degree misdemeanor punishable by up to 180 days in jail, fines up to $1,000, court costs, probation with conditions, and a permanent criminal record. Additionally, if the officer suffers injury, separate charges such as assault on a peace officer under ORC 2903.13 may be filed, which carry their own penalties.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Related Charges That May Accompany Resisting Arrest</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Resisting arrest charges rarely come alone. Common accompanying charges include obstruction of official business (ORC 2921.31), assault on a peace officer (ORC 2903.13), disorderly conduct (ORC 2917.11), and whatever underlying offense prompted the arrest. The cumulative penalties from multiple charges can be severe, including consecutive jail sentences, compounding fines, and multiple entries on your criminal record.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Impact on Underlying Charges</h4>
-            <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              A resisting arrest charge can negatively impact the resolution of underlying charges. Prosecutors may be less willing to offer favorable plea deals on other charges if resisting arrest is part of the case. Judges may view resistance unfavorably during sentencing. Conversely, successfully defending against the resisting arrest charge can strengthen your position on other charges by calling into question the circumstances of the arrest.
-            </p>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences</h4>
-            <p className="text-navy-950/80 mb-6">
-              Beyond criminal penalties, a resisting arrest conviction creates lasting collateral consequences. Employment opportunities may be limited, particularly for positions in law enforcement, security, government, or fields requiring trust and cooperation with authorities. Professional licensing may be affected. A resisting arrest conviction suggests to future employers a confrontational disposition, which can be particularly damaging in job applications. For non-citizens, the conviction may have immigration consequences. These consequences persist long after completing sentences and paying fines.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Criminal Court Process for Resisting Arrest Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the criminal court process helps you prepare for what lies ahead. Because resisting arrest typically accompanies other charges, the court process addresses all charges together:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Arrest and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                After arrest, you will be taken before a judge for arraignment where all charges including resisting arrest are formally read, bail is set, and you enter a plea. An attorney can argue for reasonable bail conditions and begin building your defense immediately. If you sustained injuries during the arrest, documenting these injuries is important for your defense. Entering a not guilty plea on all charges preserves your rights.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, prosecutors must provide all evidence including police reports, body camera footage, dash camera footage, witness statements, medical records of any injuries, and any other evidence. An experienced attorney will thoroughly review this evidence, particularly body camera and dash camera footage which often provides the most objective account of the arrest. This footage may reveal that the officer's account is inconsistent, that the arrest was unlawful, or that your conduct did not constitute resistance.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Strategic pretrial motions can significantly impact resisting arrest cases. Motions to suppress evidence may be filed if the underlying arrest was unlawful, if your rights were violated, or if evidence was improperly obtained. Motions to dismiss may be filed if the arrest lacked probable cause, making the resisting charge invalid. Motions to compel body camera or dash camera footage ensure the most objective evidence is available for your defense.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Negotiations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                An experienced attorney can negotiate with prosecutors to dismiss the resisting arrest charge as part of a global resolution of all charges, reduce the charge, or negotiate favorable plea agreements. In many cases, prosecutors will agree to dismiss the resisting arrest charge in exchange for a plea on the underlying offense, particularly when the resistance was minimal or the evidence is weak.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine the arresting officer about their account of events, introduce body camera or dash camera footage, present witness testimony, and advocate for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that the arrest was lawful and that your conduct constituted reckless resistance. An experienced attorney can effectively challenge these elements.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced resisting arrest defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected, advise you on statements, and begin building your defense from the moment of engagement</li>
-              <li><strong>Body Camera and Dash Camera Analysis:</strong> Obtain and thoroughly analyze all available video footage to determine exactly what occurred during the arrest and identify inconsistencies with the officer's account</li>
-              <li><strong>Lawfulness of Arrest Challenge:</strong> Investigate whether the underlying arrest was lawful, including whether the officer had probable cause, proper authority, and followed correct procedures</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Review all evidence, interview witnesses, obtain medical records documenting injuries, and build a complete picture of what occurred</li>
-              <li><strong>Strategic Defense Development:</strong> Develop defense strategies including challenging the lawfulness of the arrest, demonstrating that conduct did not constitute resistance, or showing that actions were reflexive rather than intentional</li>
-              <li><strong>Coordinated Defense on All Charges:</strong> Develop a unified defense strategy that addresses the resisting arrest charge together with any underlying charges for optimal outcomes</li>
-              <li><strong>Skilled Negotiation:</strong> Negotiate with prosecutors to dismiss the resisting arrest charge, reduce charges, or secure favorable plea agreements on all charges</li>
-              <li><strong>Trial Advocacy:</strong> Provide effective trial representation with emphasis on video evidence, cross-examination of the arresting officer, and challenging the prosecution's narrative</li>
-              <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing and expungement applications under ORC 2953.32</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Resisting Arrest Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Unlawful Arrest</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Resisting arrest under ORC 2921.33 requires that the arrest be "lawful." If the officer lacked probable cause, did not have proper authority, or violated your constitutional rights during the arrest, the arrest was unlawful and the resisting charge may be invalid. An attorney can investigate the circumstances of the arrest and challenge its legality through pretrial motions and at trial.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">No Resistance Occurred</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Simply questioning an arrest, asking why you are being arrested, verbally protesting, or asserting your rights does not constitute resisting arrest. Physical conduct must rise to the level of reckless resistance or interference. If your conduct was passive, verbal, or constituted the exercise of your constitutional rights, the resisting charge may be invalid. Body camera footage often reveals that the alleged resistance was minimal or nonexistent.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Reflexive or Involuntary Conduct</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Resisting arrest requires reckless conduct, meaning awareness of a substantial risk and conscious disregard of that risk. If your physical reaction during the arrest was reflexive, involuntary, or a natural response to pain from the use of force, this may negate the required mental state. For example, pulling away reflexively when an officer grabs your arm or flinching when force is applied does not necessarily constitute reckless resistance.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Excessive Force by Officer</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the arresting officer used excessive force during the arrest, your physical response may be justified as self-defense or an involuntary reaction to pain. While Ohio law does not grant a blanket right to resist excessive force, evidence of excessive force can undermine the prosecution's narrative, create reasonable doubt about the circumstances of the resistance, and support a defense that your actions were reactive rather than reckless.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The prosecution must prove every element of resisting arrest beyond a reasonable doubt. If the evidence relies solely on the officer's testimony without supporting video footage, independent witnesses, or corroborating evidence, an experienced attorney can challenge the sufficiency of proof. Body camera footage that contradicts the officer's account can be particularly powerful in establishing reasonable doubt.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement Eligibility for Resisting Arrest Convictions
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code 2953.32, individuals convicted of resisting arrest may be eligible to have their records sealed or expunged. As a misdemeanor offense, resisting arrest convictions are generally eligible for record sealing after the applicable waiting period, provided you meet eligibility requirements. Record sealing effectively hides the conviction from most background checks, helping restore employment opportunities and other areas affected by a criminal record. An experienced attorney can evaluate your eligibility and guide you through the application process.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Resisting Arrest Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated resisting arrest defense representation throughout Ohio. We understand that resisting arrest charges often arise from stressful, chaotic encounters with law enforcement where the line between exercising rights and resisting can be unclear. Our attorney works diligently to investigate the circumstances of your arrest, challenge the prosecution's narrative, and achieve favorable outcomes.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We recognize that resisting arrest charges frequently accompany other criminal charges, requiring a coordinated defense strategy that addresses all charges together. Our firm maintains open communication with clients, ensuring you understand all charges, potential consequences, and defense strategies. We work to protect your rights, obtain and analyze all available video evidence, negotiate with prosecutors, and defend your case at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and effective advocacy. We understand the court systems and prosecutor policies throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing resisting arrest charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read about <Link href="/our-law-firm/blog/what-to-expect-first-court-appearance-ohio" className="text-sky-deep underline hover:text-navy-950">what to expect at your first court appearance in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Assault Charges</span>
-                <span className="text-sm text-navy-950/70">Simple and aggravated assault defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Obstruction of Official Business</span>
-                <span className="text-sm text-navy-950/70">Defense for interfering with law enforcement</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <LocationsWeServe title="Criminal Defense" />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

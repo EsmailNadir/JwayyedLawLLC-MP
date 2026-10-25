@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'No Operators License Ohio',
-  description: 'Ohio defense attorney for no operator\'s license charges under ORC 4510.12. Serving all Ohio counties. Call Jwayyed Law LLC at (614) 285-5482.',
+  description:
+    "Driving without a valid license under ORC 4510.12: a first offense carries a fine of up to $150, and repeat offenses can bring jail. Call (614) 285-5482.",
   keywords: [
     'no operators license lawyer Ohio',
     'driving without license attorney Ohio',
@@ -18,14 +20,14 @@ export const metadata: Metadata = {
     'traffic defense attorney Ohio',
     'Ohio no license attorney',
     'unlicensed driving lawyer',
-    'driving without valid license Ohio'
+    'driving without valid license Ohio',
   ],
   openGraph: {
     title: 'No Operators License Ohio | Jwayyed Law LLC',
-    description: 'Experienced defense for driving without a valid operator\'s license charges throughout Ohio. Protect your rights and minimize penalties.',
+    description: "Defense for driving without a valid operator's license throughout Ohio, and help getting properly licensed.",
     url: 'https://www.jjlawohio.com/criminal-defense/no-operators-license',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/no-operators-license',
   },
@@ -33,291 +35,265 @@ export const metadata: Metadata = {
 
 const breadcrumbItems = [
   { label: 'Criminal Defense', href: '/criminal-defense' },
-  { label: 'No Operator\'s License', href: '/criminal-defense/no-operators-license' },
+  { label: "No Operator's License", href: '/criminal-defense/no-operators-license' },
 ];
 
 const faqs = [
   {
     question: 'What is the penalty for driving without a license in Ohio?',
-    answer: 'Under Ohio Revised Code 4510.12, driving without a valid operator\'s license is an unclassified misdemeanor. A first offense carries a maximum fine of $150 plus court costs. Subsequent offenses within three years can be charged as a first-degree misdemeanor, carrying up to 180 days in jail and fines up to $1,000. The court may also impose additional license suspension and probation. The specific penalties depend on whether you never had a license, had an expired license, or had a license that was suspended.',
+    answer:
+      "Under Ohio Revised Code 4510.12, driving without a valid operator's license is an unclassified misdemeanor. A first offense carries a fine of up to $150 plus court costs. A later offense within three years can be charged as a first-degree misdemeanor, with up to 180 days in jail and a fine of up to $1,000. The court may also order an added license suspension and probation. The penalty depends on whether you never had a license, had an expired one, or had one that was suspended.",
   },
   {
     question: 'What is the difference between driving without a license and driving under suspension?',
-    answer: 'Driving without a license (ORC 4510.12) and driving under suspension (ORC 4510.11) are different charges with different penalties. Driving without a license means you do not have a valid license at all, either because you never obtained one, your license expired, or you lost your license and did not renew. Driving under suspension means you had a license that was specifically suspended or revoked by the BMV or a court. DUS is generally a more serious charge with harsher penalties, especially when the suspension is OVI-related or FRA-related.',
+    answer:
+      'They are different charges with different penalties. Driving without a license (ORC 4510.12) means you have no valid license at all: you never got one, it expired, or you lost it and did not renew. Driving under suspension (ORC 4510.11) means the BMV or a court suspended or revoked a license you had. DUS is generally the more serious charge, especially when the suspension is OVI-related or FRA-related.',
   },
   {
     question: 'Can I avoid a conviction if I get my license before my court date?',
-    answer: 'In some cases, obtaining a valid license before your court date can help your case significantly. Many prosecutors and judges are willing to consider a reduction or dismissal if you demonstrate that you have resolved the issue by obtaining a valid license. However, this is not guaranteed and depends on the specific court, prosecutor, your driving history, and the circumstances of your case. An attorney can advise you on the best strategy and negotiate on your behalf for the most favorable outcome.',
+    answer:
+      'Sometimes. Getting a valid license before court can help a great deal. Many prosecutors and judges will consider a reduction or dismissal when you show you have fixed the problem. It is not guaranteed and depends on the court, the prosecutor, your driving history and the facts of your case. An attorney can advise you on the approach and negotiate for you.',
   },
   {
     question: 'What if I have an out-of-state license and was charged in Ohio?',
-    answer: 'Ohio recognizes valid driver\'s licenses from other states under the principle of reciprocity. If you had a valid out-of-state license at the time you were charged, this may serve as a defense to the no operator\'s license charge. However, you must be able to prove the license was valid at the time of the traffic stop. If your out-of-state license was expired or suspended, you could still face charges. An attorney can help gather the necessary documentation and present this defense effectively.',
+    answer:
+      "Ohio recognizes valid licenses from other states under reciprocity. If your out-of-state license was valid when you were charged, that may be a defense, but you must be able to prove it was valid at the time of the stop. An expired or suspended out-of-state license can still lead to charges. An attorney can gather the documents and present the defense.",
   },
   {
-    question: 'How do I obtain a driver\'s license in Ohio if I have never had one?',
-    answer: 'To obtain a driver\'s license in Ohio, you must be at least 16 years old (with completed driver\'s education) or 18 years old (without driver\'s education). You must pass a written knowledge test, a vision screening, and a driving skills test. Required documents include proof of identity (birth certificate or passport), proof of Social Security number, and proof of Ohio residency. You must also provide proof of financial responsibility (insurance). If you have outstanding suspensions or holds on your record from previous violations, these must be resolved before you can obtain a license. An attorney can help identify and resolve any obstacles to obtaining your license.',
+    question: "How do I obtain a driver's license in Ohio if I have never had one?",
+    answer:
+      "You must be at least 16 years old (with completed driver's education) or 18 years old (without it). You must pass a written knowledge test, a vision screening and a driving skills test. You need proof of identity (birth certificate or passport), proof of your Social Security number and proof of Ohio residency, plus proof of financial responsibility (insurance). Any suspensions or holds on your record from past violations must be cleared first. An attorney can help find and resolve those obstacles.",
   },
   {
-    question: `What are the penalties for no operator's license in Ohio under ORC 4510.12?`,
-    answer: `Under Ohio Revised Code 4510.12, a first offense for operating a motor vehicle without a valid operator's license is an unclassified minor misdemeanor (MM) carrying a maximum fine of $150 plus court costs. However, if the offender has a prior conviction for the same offense within the preceding three years, the charge is elevated to a fourth-degree misdemeanor (M4), punishable by up to 30 days in jail and fines up to $250. Repeat violations can escalate further. In all cases, the court may impose license suspension and probation. A conviction also creates a criminal record that can affect employment and other opportunities.`,
+    question: "What are the penalties for no operator's license in Ohio under ORC 4510.12?",
+    answer:
+      "Under Ohio Revised Code 4510.12, a first offense of driving without a valid operator's license is an unclassified minor misdemeanor (MM) with a fine of up to $150 plus court costs. With a prior conviction for the same offense in the preceding three years, it becomes a fourth-degree misdemeanor (M4), punishable by up to 30 days in jail and a fine of up to $250. Repeat violations can go higher. In every case the court may order a license suspension and probation, and a conviction creates a criminal record that can affect employment.",
   },
   {
-    question: `What is the difference between no operator's license and driving under suspension in Ohio?`,
-    answer: `No operator's license (ORC 4510.12) and driving under suspension (ORC 4510.14) are distinct offenses with different penalties. No operator's license applies when a person has never obtained a valid license, has an expired license, or holds an invalid license. Driving under suspension applies when a person's license has been actively suspended or revoked by the Ohio BMV or a court order. Driving under suspension is generally the more serious charge, particularly when the suspension is OVI-related or related to the Financial Responsibility Act, and can carry mandatory jail time and longer suspension periods depending on the basis for the suspension.`,
+    question: "What is the difference between no operator's license and driving under suspension in Ohio?",
+    answer:
+      "No operator's license (ORC 4510.12) and driving under suspension (ORC 4510.14) are separate offenses. No operator's license applies when you never had a valid license, have an expired one, or hold an invalid one. Driving under suspension applies when the Ohio BMV or a court has actively suspended or revoked your license. DUS is generally more serious, particularly when the suspension is OVI-related or under the Financial Responsibility Act, and depending on the basis it can carry mandatory jail and longer suspensions.",
   },
   {
-    question: `Can a no operator's license charge be dismissed if I get a valid license before my court date?`,
-    answer: `Obtaining a valid Ohio operator's license before your court date can significantly improve the outcome of your case and is one of the most effective steps you can take. Many prosecutors and judges are willing to reduce the charge to a non-criminal minor misdemeanor, dismiss the case entirely, or minimize penalties when a defendant demonstrates they have resolved the underlying licensing issue. However, dismissal is not guaranteed and depends on the specific court, prosecutor, your prior driving history, and the circumstances of the stop. An experienced attorney can negotiate on your behalf and present your newly obtained license in the most favorable light possible.`,
+    question: "Can a no operator's license charge be dismissed if I get a valid license before my court date?",
+    answer:
+      "Getting a valid Ohio license before court is one of the most useful things you can do. Many prosecutors and judges will reduce the charge to a non-criminal minor misdemeanor, dismiss the case or lower the penalties when you show the licensing problem is fixed. Dismissal is not guaranteed and depends on the court, the prosecutor, your driving history and the facts of the stop. An attorney can negotiate for you and present the new license to the court.",
   },
 ];
 
-export default function NoOperatorsLicensePage() {
+const RELATED = [
+  { href: '/criminal-defense/driving-under-suspension', title: 'Driving under suspension', subtitle: 'Suspended license charges in Ohio' },
+  { href: '/criminal-defense/speeding-tickets', title: 'Speeding tickets', subtitle: 'Traffic violations throughout Ohio' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Sealing an eligible record under Ohio law' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry' },
+];
 
+export default function NoOperatorsLicensePage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="No Operator's License Defense in Ohio"
-        description="Experienced legal defense for driving without a valid operator's license charges throughout Ohio. Protecting your rights and helping you get properly licensed."
+        title="Driving without a valid license in Ohio"
+        description="A first no operator's license charge under ORC 4510.12 carries a fine of up to $150 and a criminal record. A repeat offense within three years can bring jail."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding No Operator&apos;s License Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '$150', label: 'maximum fine for a first offense, plus court costs' },
+          { figure: '3 years', label: 'lookback that turns a repeat offense into a higher-level misdemeanor' },
+          { figure: '30 days', label: 'for new Ohio residents to get an Ohio license' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Driving without a valid operator&apos;s license is a criminal offense in Ohio that can result in fines, jail time, and a criminal record. Under Ohio Revised Code 4510.12, no person shall operate any motor vehicle upon a highway or any public or private property used by the public for purposes of vehicular travel without a valid driver&apos;s license. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with driving without a valid license throughout Ohio. Our attorney understands the nuances of Ohio&apos;s licensing laws and can help protect your rights and minimize the consequences of these charges.
-            </p>
+      <Section
+        title="What a no operator's license charge means"
+        intro={
+          <p>
+            Ohio Revised Code 4510.12 bars operating a motor vehicle on a highway, or on public or private property used by the public
+            for vehicle travel, without a valid driver&apos;s license. It is a criminal offense that can bring fines, jail and a record.
+          </p>
+        }
+      >
+        <p>
+          People end up driving without a valid license for many reasons. Some never got one. Some let it expire without noticing. Some
+          believed a suspended license had been reinstated when it had not, and some hold a license from another country that Ohio does
+          not recognize.
+        </p>
+        <p>
+          A first offense can look minor, but a conviction is a criminal record and later offenses carry higher penalties. The charge
+          often comes with other problems, such as no insurance, registration issues or outstanding warrants. Ohio also treats driving
+          without a license differently from driving under suspension, so the first job is to establish which charge actually fits. The
+          firm handles the whole picture and helps you get properly licensed.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              There are many reasons why someone may be driving without a valid license. Some individuals never obtained a license, while others may have let their license expire without realizing it. Some may have had their license suspended and believed it was reinstated when it was not. Others may hold a valid license from another country that is not recognized in Ohio. Regardless of the reason, a charge under ORC 4510.12 must be taken seriously and addressed with experienced legal representation.
-            </p>
+      <Section title="The situations behind the charge" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Never had a license',
+              body: "You have never held a valid Ohio license or one from another state. The prosecution must prove you were driving and had no valid license at the time. A first offense is usually limited to fines; later offenses carry heavier penalties, including possible jail.",
+            },
+            {
+              title: 'An expired license',
+              body: "Charged under ORC 4510.12 as driving without a valid license. Ohio licenses expire on your birthday every four or eight years, depending on when the license was issued, and many people miss the renewal. It is usually treated less seriously than never having a license, and renewing before court often helps.",
+            },
+            {
+              title: 'The wrong class of license',
+              body: 'Driving a vehicle that needs a different class than you hold, such as a commercial vehicle without a CDL, a motorcycle without the endorsement, or any vehicle that requires an endorsement you lack. The penalty depends on the facts and whether you hold any valid license.',
+            },
+            {
+              title: 'A foreign license',
+              body: "A valid license from another country stops counting once you have lived in Ohio past the recognition period. Ohio generally requires new residents to get an Ohio license within 30 days of establishing residency. Visitors may use a foreign license for a limited time; longer stays require an Ohio license.",
+            },
+          ]}
+        />
+        <Callout title="No license is different from a suspended license">
+          If the BMV or a court suspended your license, you may face the more serious driving under suspension charge (ORC 4510.11)
+          instead. If your license expired during a suspension, the charges can overlap. The firm works out which charge applies.
+        </Callout>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              While a first offense for no operator&apos;s license may seem minor, the consequences can compound quickly. A conviction creates a criminal record, and subsequent offenses carry significantly enhanced penalties. Additionally, driving without a license often overlaps with other issues such as lack of insurance, vehicle registration problems, or outstanding warrants that can escalate the situation. An experienced attorney can address all of these issues comprehensively, working to minimize consequences and help you get properly licensed.
-            </p>
+      <Section title="No operator's license penalties">
+        <FactTable
+          title="First offense: unclassified misdemeanor"
+          rows={[
+            { label: 'Fine', value: 'Up to $150, plus court costs.' },
+            { label: 'Jail', value: 'Not typically imposed on a first offense.' },
+            {
+              label: 'Other conditions',
+              value: 'The court may order a license suspension, require you to get a valid license by a set date, or impose other conditions.',
+            },
+            { label: 'Court costs', value: 'Vary by court; typically $100-$200 or more.' },
+            { label: 'Record', value: 'A conviction creates a criminal record.' },
+          ]}
+        />
+        <FactTable
+          title="Second and later offenses within three years: first-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 180 days.' },
+            { label: 'Fine', value: 'Up to $1,000.' },
+            { label: 'License', value: 'An added suspension.' },
+            {
+              label: 'Other conditions',
+              value: 'Probation, community service and other conditions. Courts are more likely to jail repeat offenders who have not fixed their licensing problem.',
+            },
+          ]}
+        />
+        <h3>Other costs of a conviction</h3>
+        <p>
+          Your vehicle may be towed and impounded at the stop, with towing and storage fees that can run to hundreds of dollars. If you
+          were also driving without insurance, you face more charges and an FRA suspension. A criminal record can affect employment,
+          since many employers run background checks, and for non-citizens a criminal conviction can have immigration consequences.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio law distinguishes between driving without a license and driving under suspension, and the penalties differ accordingly. Understanding which charge applies to your situation and the available defenses is essential for building an effective defense strategy. Our attorney will analyze your specific circumstances, review the evidence, and develop a plan to achieve the best possible outcome.
-            </p>
+      <Section title="How a no license case moves through court" tone="ice">
+        <p>These cases are usually heard in municipal courts throughout Ohio.</p>
+        <Steps
+          steps={[
+            {
+              title: 'Citation and court date',
+              body: 'You receive a citation with a court date. Appear, or have an attorney appear for you. Missing it can lead to a bench warrant, more charges and a license suspension.',
+            },
+            {
+              title: 'Arraignment',
+              body: 'The charge is read and you enter a plea. A not guilty plea leaves time to review the evidence, investigate defenses, negotiate and help you get a valid license. In many courts an attorney can appear for you at arraignment.',
+            },
+            {
+              title: 'Pretrial and negotiation',
+              body: 'Often the stage that decides the case. A license obtained since the citation strengthens your position. Common outcomes include a reduction to a non-criminal minor misdemeanor, dismissal on proof of a valid license, lower fines or a driving course.',
+            },
+            {
+              title: 'Trial or resolution',
+              body: 'At trial the prosecution must prove beyond a reasonable doubt that you were driving and had no valid license. If you plead or are found guilty, your attorney argues for the lightest sentence available.',
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="Defenses to a no license charge">
+        <PointGrid
+          points={[
+            {
+              title: 'A valid out-of-state or foreign license',
+              body: 'If you held a valid license from another state or country at the time of the stop, that may be a complete defense. Ohio recognizes other states’ licenses under reciprocity, and some foreign licenses for limited periods.',
+            },
+            {
+              title: 'BMV record errors',
+              body: 'BMV records can wrongly show no valid license, or an administrative error can cancel a license improperly. Reviewing the records can expose the mistake.',
+            },
+            {
+              title: 'You did not know',
+              body: 'Not knowing your license had expired is not a complete defense, but it can count in mitigation, especially if the expiration was recent or BMV notices never reached you. It can move the prosecutor toward a better offer.',
+            },
+            {
+              title: 'An unlawful traffic stop',
+              body: 'If the stop lacked reasonable suspicion or probable cause, the evidence may be suppressed under the Fourth Amendment, and without it the charge may be dismissed.',
+            },
+            {
+              title: 'Not on a road used by the public',
+              body: 'ORC 4510.12 covers a highway or public or private property used by the public for vehicle travel. Driving only on private property not used by the public may be a defense, depending on the location.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Types of No Operator&apos;s License Situations
-            </h3>
+      <Section title="Getting an Ohio driver's license" tone="ice">
+        <p>A valid license before your court date can improve the outcome. The process:</p>
+        <FactTable
+          title="Ohio driver's license requirements"
+          rows={[
+            {
+              label: 'Eligibility',
+              value: "At least 16 years old with driver's education, or 18 years old without it. You must be an Ohio resident or have Ohio-based employment.",
+            },
+            {
+              label: 'Documents',
+              value:
+                'Proof of identity (birth certificate, passport or another accepted document), proof of Social Security number, proof of Ohio residency (two documents such as utility bills, bank statements or a lease), and proof of legal presence if you are not a U.S. citizen.',
+            },
+            { label: 'Knowledge test', value: 'A written test on Ohio traffic laws, signs and safe driving. Study materials are on the Ohio BMV website.' },
+            { label: 'Vision screening', value: 'At the BMV. Corrective lenses are noted as a restriction on your license.' },
+            { label: 'Driving skills test', value: 'A road test of basic driving skills and traffic maneuvers.' },
+            { label: 'Fees', value: 'Vary by type and length. A standard four-year license costs about $25.75; endorsements and special licenses cost more.' },
+            {
+              label: 'Holds',
+              value: 'Any suspensions, holds or blocks on your BMV record must be cleared first, which can mean paying reinstatement fees or resolving old tickets.',
+            },
+          ]}
+        />
+        <p>
+          If suspensions, unpaid tickets or other BMV holds stand in the way, the firm can help find and clear them. A license helps the
+          current case and protects you from the higher penalties that come with a repeat offense.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Never Obtained a License</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Some individuals have never gone through the licensing process and do not hold a valid Ohio driver&apos;s license or a license from any other state. This is the most straightforward no operator&apos;s license charge. The prosecution must prove that you were operating a motor vehicle and did not possess a valid license at the time. Penalties for a first offense are typically limited to fines, but subsequent offenses carry increasingly severe penalties including potential jail time.
-              </p>
+      <Section title="What the firm does on a no license case">
+        <PointGrid
+          points={[
+            { title: 'Reviews the case', body: 'The basis for the charge and your driving history.' },
+            { title: 'Checks your license status', body: 'Your full BMV record, for whether you actually lacked a valid license, BMV errors, or a valid out-of-state license.' },
+            { title: 'Helps you get licensed', body: 'Walks you through getting a valid Ohio license, including outstanding suspensions or holds.' },
+            { title: 'Appears in court for you', body: 'Before the judge and prosecutor, so you spend less time in court.' },
+            { title: 'Negotiates', body: 'For a reduced charge, lower fines or dismissal once you have a valid license.' },
+            { title: 'Raises the defenses', body: 'A valid out-of-state license, BMV errors, lack of knowledge of the expiration, or a challenge to the stop.' },
+            { title: 'Limits the penalty', body: 'Argues for the lightest sentence, including alternatives to jail for repeat offenses.' },
+            { title: 'Resolves related problems', body: 'No insurance, an impounded vehicle and any other charges or warrants.' },
+          ]}
+        />
+        <p>
+          Driving without a license often comes from not being able to afford fees, not understanding the process or an administrative
+          tangle. The firm works on the underlying problem while defending the charge. If you are charged anywhere in Ohio,{' '}
+          <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. You can also read about the firm&apos;s{' '}
+          <Link href="/criminal-defense">criminal defense practice</Link> or{' '}
+          <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio">protecting your rights during a traffic stop in Ohio</Link>.
+        </p>
+        <h3>Related charges</h3>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Expired License</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Driving with an expired license is charged under ORC 4510.12 as operating without a valid license. Ohio driver&apos;s licenses expire on your birthday every four or eight years depending on when the license was issued. Many people fail to renew on time and continue driving without realizing their license has expired. While this is generally treated less seriously than never having a license, it is still a criminal charge that can result in fines and a record. Renewing your license before your court date can often help in achieving a favorable outcome.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Wrong Class of License</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Operating a vehicle that requires a different class of license than the one you hold can result in a charge under ORC 4510.12. For example, driving a commercial vehicle without a CDL, operating a motorcycle without a motorcycle endorsement, or driving a vehicle requiring special endorsements without those endorsements. The penalty depends on the specific circumstances and whether you hold any valid license at all.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Foreign License Holders</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Individuals who hold a valid driver&apos;s license from another country may be charged with no operator&apos;s license if they have been residing in Ohio beyond the period during which their foreign license is recognized. Ohio generally requires new residents to obtain an Ohio driver&apos;s license within 30 days of establishing residency. International visitors may use their foreign license for a limited period, but extended stays require obtaining an Ohio license. An attorney can help navigate these complex situations and present appropriate defenses.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Suspended vs. No License</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                It is important to distinguish between having no license (ORC 4510.12) and driving under suspension (ORC 4510.11). If your license was suspended by the BMV or a court, you may face the more serious DUS charge rather than the no license charge. However, if your license expired during a suspension period, the charges can overlap. An experienced attorney will analyze which charge applies and develop the most effective defense strategy for your specific situation.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Penalties for No Operator&apos;s License in Ohio
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The penalties for driving without a valid operator&apos;s license in Ohio depend on the number of prior offenses and the specific circumstances of your case:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First Offense (Unclassified Misdemeanor)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A first offense under ORC 4510.12 is an unclassified misdemeanor carrying a maximum fine of $150 plus court costs. While jail time is not typically imposed for a first offense, the conviction creates a criminal record. The court may also impose a period of license suspension, require you to obtain a valid license within a specified time, or impose other conditions. Court costs vary by jurisdiction but typically add $100-$200 or more to the total financial obligation.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Second and Subsequent Offenses</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A second or subsequent offense within three years is a first-degree misdemeanor, significantly escalating the potential penalties. A first-degree misdemeanor carries up to 180 days in jail, fines up to $1,000, and additional license suspension. The court is more likely to impose jail time for repeat offenders who have not resolved their licensing issues. Probation, community service, and other conditions may also be imposed. The enhanced penalties for repeat offenses underscore the importance of resolving the underlying licensing issue as quickly as possible.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Additional Consequences</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Beyond the direct criminal penalties, a no operator&apos;s license conviction can have additional consequences. Your vehicle may be towed and impounded at the time of the stop, resulting in towing and storage fees that can amount to hundreds of dollars. If you are also found to be driving without insurance, you face additional charges and FRA suspension. A criminal record can affect employment prospects, as many employers conduct background checks. For non-citizens, criminal convictions can have immigration consequences. These collateral consequences make it essential to take even a first offense seriously.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Court Process for No Operator&apos;s License Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the court process helps you prepare for your case. No operator&apos;s license cases are typically heard in municipal courts throughout Ohio. The process involves several stages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Citation and Court Date</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When you are stopped and found to be driving without a valid license, you will receive a citation with a court date. It is critical to appear at your scheduled court date or have an attorney appear on your behalf. Failure to appear can result in a bench warrant, additional charges, and license suspension. Before your court date, consult with an attorney to understand your options and begin preparing your defense.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                At arraignment, the charge is formally read and you enter a plea. Entering a not guilty plea allows time for your attorney to review the evidence, investigate potential defenses, and negotiate with the prosecutor. Your attorney may also use this time to help you obtain a valid license, which can significantly improve the outcome of your case. In many courts, an attorney can appear on your behalf at arraignment.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial and Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The pretrial phase is often the most critical stage for no operator&apos;s license cases. Your attorney will negotiate with the prosecutor for a favorable resolution. If you have obtained a valid license between the time of the citation and the pretrial hearing, this significantly strengthens your negotiating position. Common favorable outcomes include reduction to a non-criminal minor misdemeanor, dismissal upon proof of obtaining a valid license, reduced fines, or completion of a driving course.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial or Resolution</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the case cannot be resolved through negotiation, it may proceed to trial. At trial, the prosecution must prove beyond a reasonable doubt that you were operating a motor vehicle and that you did not possess a valid operator&apos;s license at the time. Your attorney can challenge the evidence, present defenses, and advocate for a not guilty verdict. If you accept a negotiated plea or are found guilty, your attorney will advocate for the most lenient sentence possible.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced attorney provides comprehensive representation for no operator&apos;s license charges:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Case Evaluation:</strong> Thoroughly review the circumstances of your case, the basis for the charge, and your driving history to identify the strongest defense strategy</li>
-              <li><strong>License Status Investigation:</strong> Investigate your complete BMV record to determine whether you actually lacked a valid license, whether there were BMV errors, or whether an out-of-state license was valid at the time</li>
-              <li><strong>Licensing Assistance:</strong> Help you understand and navigate the process of obtaining a valid Ohio driver&apos;s license, including identifying any obstacles such as outstanding suspensions or holds</li>
-              <li><strong>Court Representation:</strong> Appear on your behalf in court, saving you time and providing skilled legal advocacy before the judge and prosecutor</li>
-              <li><strong>Charge Negotiation:</strong> Negotiate with prosecutors to reduce charges, minimize fines, or arrange for dismissal upon obtaining a valid license</li>
-              <li><strong>Defense Development:</strong> Develop and present defenses including valid out-of-state license, BMV errors, lack of knowledge of expired status, or constitutional challenges to the traffic stop</li>
-              <li><strong>Penalty Minimization:</strong> Advocate for the most lenient penalties possible, including alternatives to jail time for repeat offenders</li>
-              <li><strong>Comprehensive Resolution:</strong> Address related issues such as lack of insurance, vehicle impoundment, and any other outstanding charges or warrants to resolve all issues efficiently</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to No Operator&apos;s License Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Valid Out-of-State or Foreign License</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you held a valid driver&apos;s license from another state or country at the time of the traffic stop, this may serve as a complete defense to the charge. Ohio recognizes valid licenses from other states under reciprocity principles, and certain foreign licenses may be recognized for limited periods. An attorney can help obtain the necessary documentation to prove the validity of your out-of-state or foreign license.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">BMV Record Errors</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The Ohio BMV database can contain errors that incorrectly reflect your license status. If BMV records erroneously show that you do not have a valid license when you actually do, or if administrative errors caused your license to be improperly canceled, this can form the basis of a defense. An attorney can investigate BMV records and identify any discrepancies or errors.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Lack of Knowledge</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                While ignorance of the law is generally not a defense, lack of knowledge that your license had expired or was no longer valid may be considered as a mitigating factor. This is particularly relevant in cases where the expiration was recent, where you had no reason to know the license was invalid, or where BMV communications were not received. While not a complete defense, this can influence the prosecutor&apos;s willingness to offer a favorable resolution.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Unlawful Traffic Stop</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the traffic stop that led to the discovery of your unlicensed status was conducted without reasonable suspicion or probable cause, the evidence obtained may be suppressed under the Fourth Amendment. Without a lawful basis for the stop, the officer would not have discovered your license status, and the charge may be dismissed. Your attorney will evaluate the circumstances of the stop and file a suppression motion if appropriate.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Not Operating on a Public Roadway</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                ORC 4510.12 applies to operating a motor vehicle upon a highway or public or private property used by the public for vehicular travel. If you were operating the vehicle on purely private property not used by the public for travel, this may serve as a defense. The applicability of this defense depends on the specific location and whether it qualifies as property used by the public.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How to Obtain an Ohio Driver&apos;s License
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you are charged with no operator&apos;s license, obtaining a valid license before your court date can significantly improve the outcome of your case. Here is an overview of the process for obtaining an Ohio driver&apos;s license:
-            </p>
-
-            <div className="bg-ice p-6 mb-8">
-              <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>Eligibility requirements:</strong> You must be at least 16 years old (with driver&apos;s education) or 18 years old (without driver&apos;s education). You must be a resident of Ohio or have an Ohio-based employment.</li>
-                <li><strong>Required documents:</strong> You need proof of identity (birth certificate, passport, or other acceptable document), proof of Social Security number, proof of Ohio residency (two documents such as utility bills, bank statements, or lease agreements), and proof of legal presence if not a U.S. citizen.</li>
-                <li><strong>Written knowledge test:</strong> You must pass a written test covering Ohio traffic laws, signs, and safe driving practices. Study materials are available through the Ohio BMV website.</li>
-                <li><strong>Vision screening:</strong> You must pass a vision screening at the BMV. If you require corrective lenses, a restriction will be noted on your license.</li>
-                <li><strong>Driving skills test:</strong> You must pass a road test demonstrating your ability to safely operate a motor vehicle. The test covers basic driving skills, traffic maneuvers, and safe driving practices.</li>
-                <li><strong>Fees:</strong> License fees vary by type and duration. A standard four-year license costs approximately $25.75. Additional fees may apply for endorsements or special licenses.</li>
-                <li><strong>Clear any holds:</strong> Before you can obtain a license, any outstanding suspensions, holds, or blocks on your BMV record must be resolved. This may require paying reinstatement fees, resolving outstanding tickets, or addressing other issues.</li>
-              </ul>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you have obstacles to obtaining a license, such as outstanding suspensions, unpaid tickets, or other BMV holds, an attorney can help you identify and resolve these issues. Getting properly licensed not only helps your current case but protects you from future charges and the escalating penalties that come with repeat offenses.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for No Operator&apos;s License Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated defense representation for no operator&apos;s license charges throughout Ohio. We understand that driving without a license often results from circumstances such as inability to afford licensing fees, lack of understanding of the process, or administrative complications rather than willful disregard of the law. Our attorney works to resolve the underlying issue while defending against the criminal charge.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of no license cases, from first offenses to repeat violations. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and steps you can take to improve your situation. We work to minimize penalties, protect your record, and help you get properly licensed so you can drive legally and avoid future charges.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough case analysis, proactive problem-solving, and skilled negotiation. We understand the local court systems and prosecutor practices throughout Ohio, which allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to identify the best path forward, whether that involves obtaining a license, resolving BMV issues, or challenging the charges in court.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been charged with driving without a valid license anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio" className="text-sky-deep underline hover:text-navy-950">protecting your rights during a traffic stop in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Driving Under Suspension</span>
-                <span className="text-sm text-navy-950/70">Suspended license defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Speeding Tickets</span>
-                <span className="text-sm text-navy-950/70">Traffic violation defense throughout Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <LocationsWeServe title="Criminal Defense" />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

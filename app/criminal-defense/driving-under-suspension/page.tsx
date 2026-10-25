@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Driving Under Suspension Ohio',
-  description: 'Ohio driving under suspension defense attorney for ORC 4510.11, 4510.14, and 4510.16 charges statewide. Call (614) 285-5482.',
+  description:
+    'Charged with driving under suspension in Ohio? Penalties under ORC 4510.11, 4510.14 and 4510.16, defenses and reinstatement. Call (614) 285-5482.',
   keywords: [
     'driving under suspension lawyer Ohio',
     'DUS defense attorney Ohio',
@@ -22,10 +24,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
-    description: 'Experienced driving under suspension defense representation throughout Ohio. Protect your rights and work toward license reinstatement.',
+    description: 'Penalties by suspension type, defenses and license reinstatement for a driving under suspension charge in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/driving-under-suspension',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/driving-under-suspension',
   },
@@ -39,286 +41,313 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is driving under suspension (DUS) in Ohio?',
-    answer: 'Driving under suspension (DUS) in Ohio means operating a motor vehicle while your driver\'s license is suspended, revoked, or canceled. Under Ohio Revised Code 4510.11, it is illegal to drive while under any license suspension. The severity of the charge depends on the reason for your suspension. A general DUS is typically a first-degree misdemeanor, while DUS related to an OVI suspension (ORC 4510.14) or FRA suspension (ORC 4510.16) carries enhanced penalties including mandatory jail time.',
+    answer:
+      'Driving under suspension (DUS) means driving while your license is suspended, revoked or canceled. Ohio Revised Code 4510.11 makes it illegal to drive under any license suspension. How serious the charge is depends on why you were suspended. A general DUS is typically a first-degree misdemeanor, while DUS under an OVI suspension (ORC 4510.14) or an FRA suspension (ORC 4510.16) carries enhanced penalties, including mandatory jail time.',
   },
   {
     question: 'What are the penalties for driving under suspension in Ohio?',
-    answer: 'Penalties for DUS in Ohio vary by the type of suspension. A general DUS under ORC 4510.11 is a first-degree misdemeanor carrying up to 180 days in jail, fines up to $1,000, and additional license suspension. DUS with an OVI-related suspension (ORC 4510.14) carries mandatory jail time of 3 consecutive days (or 30 days house arrest) for a first offense, fines of $250-$1,000, and additional suspension. FRA suspension violations (ORC 4510.16) carry similar penalties with potential vehicle impoundment. Repeat offenses carry enhanced penalties.',
+    answer:
+      'It depends on the type of suspension. A general DUS under ORC 4510.11 is a first-degree misdemeanor with up to 180 days in jail, a fine of up to $1,000, and more suspension time. DUS under an OVI-related suspension (ORC 4510.14) carries mandatory jail of 3 consecutive days (or 30 days of house arrest) for a first offense, a $250-$1,000 fine, and more suspension. An FRA suspension violation (ORC 4510.16) carries similar penalties and possible vehicle impoundment. Repeat offenses carry higher penalties.',
   },
   {
     question: 'Can I get driving privileges while my license is suspended in Ohio?',
-    answer: 'In many cases, you may be eligible for limited driving privileges during your suspension period. Driving privileges allow you to drive for specific purposes such as work, school, medical appointments, or court-ordered programs. The availability of privileges depends on the type of suspension, whether it is a first offense, and other factors. An attorney can petition the court on your behalf for driving privileges and help ensure you meet all requirements to maintain them.',
+    answer:
+      'Often, yes. Limited driving privileges let you drive for specific purposes such as work, school, medical appointments or court-ordered programs. Whether they are available depends on the type of suspension, whether it is a first offense and other factors. An attorney can petition the court for privileges and help you meet the conditions to keep them.',
   },
   {
     question: 'What is an FRA suspension in Ohio?',
-    answer: 'An FRA (Financial Responsibility Act) suspension occurs when you are involved in an accident and cannot provide proof of insurance, or when you fail to maintain required SR-22 insurance after certain violations. Under ORC 4510.16, driving under an FRA suspension is a first-degree misdemeanor with penalties including up to 180 days in jail, fines, and additional suspension. To reinstate your license after an FRA suspension, you must provide proof of financial responsibility (SR-22 insurance), pay reinstatement fees, and meet other BMV requirements.',
+    answer:
+      'An FRA (Financial Responsibility Act) suspension happens when you are in an accident and cannot show proof of insurance, or when you fail to keep required SR-22 insurance after certain violations. Under ORC 4510.16, driving under an FRA suspension is a first-degree misdemeanor with up to 180 days in jail, fines and more suspension. To reinstate after an FRA suspension, you must provide proof of financial responsibility (SR-22 insurance), pay the reinstatement fees and meet the other BMV requirements.',
   },
   {
     question: 'What should I do if I am charged with driving under suspension in Ohio?',
-    answer: 'If charged with DUS in Ohio, contact an experienced criminal defense attorney immediately. Do not ignore the charge, as failure to appear can result in additional penalties and warrants. An attorney can review the basis for your suspension, determine if proper notice was given, evaluate potential defenses, negotiate with prosecutors for reduced charges, and help you work toward license reinstatement. Early legal intervention is critical to protecting your rights and minimizing consequences.',
+    answer:
+      'Contact a criminal defense attorney right away, and do not ignore the charge: missing court can bring more penalties and a warrant. An attorney can review why you were suspended, check whether proper notice was given, look at the defenses, negotiate for a reduced charge and help you work toward reinstatement.',
   },
   {
-    question: `What is the mandatory minimum penalty for driving under an OVI-related suspension in Ohio?`,
-    answer: `Driving under an OVI-related suspension is treated especially harshly under ORC 4510.14. For a first offense, the statute imposes a mandatory minimum of 30 consecutive days in jail — though the court may substitute 30 consecutive days of house arrest with electronic monitoring in lieu of jail. The mandatory minimums increase significantly for subsequent offenses: a second offense within five years requires at least 10 consecutive days in jail (or 90 days house arrest), and a third offense requires at least 30 consecutive days in jail. These mandatory minimums cannot be suspended or waived by the court, making it critical to mount an aggressive defense before any conviction occurs.`,
+    question: 'What is the mandatory minimum penalty for driving under an OVI-related suspension in Ohio?',
+    answer:
+      'ORC 4510.14 treats driving under an OVI-related suspension harshly. For a first offense, the statute imposes a mandatory minimum of 30 consecutive days in jail, though the court may order 30 consecutive days of house arrest with electronic monitoring instead. The minimums rise for later offenses: a second offense within five years requires at least 10 consecutive days in jail (or 90 days of house arrest), and a third offense requires at least 30 consecutive days in jail. The court cannot suspend or waive these minimums, so the defense has to happen before any conviction.',
   },
   {
-    question: `How is driving under a financial responsibility (FRA) suspension different from driving under an OVI-related suspension?`,
-    answer: `Both are serious charges, but they arise from different underlying conduct and carry different reinstatement requirements. An FRA (Financial Responsibility Act) suspension under ORC 4510.16 occurs when you fail to provide proof of insurance after an accident, fail to maintain required SR-22 insurance, or otherwise fail to comply with Ohio's financial responsibility laws. Unlike the mandatory jail minimums for OVI-related DUS under ORC 4510.14, FRA DUS is a first-degree misdemeanor that does not carry the same mandatory consecutive jail requirements for a first offense, though jail time remains possible. Reinstatement after an FRA suspension requires filing SR-22 proof of financial responsibility with the Ohio BMV and maintaining it for typically three years, in addition to paying reinstatement fees.`,
+    question: 'How is driving under a financial responsibility (FRA) suspension different from driving under an OVI-related suspension?',
+    answer:
+      'They come from different conduct and have different reinstatement rules. An FRA (Financial Responsibility Act) suspension under ORC 4510.16 follows a failure to show proof of insurance after an accident, a failure to keep required SR-22 insurance, or another failure to meet Ohio\'s financial responsibility laws. OVI-related DUS under ORC 4510.14 carries mandatory jail minimums. FRA DUS is a first-degree misdemeanor without the same mandatory consecutive jail for a first offense, though jail is still possible. Reinstatement after an FRA suspension requires filing SR-22 proof of financial responsibility with the Ohio BMV, usually keeping it for three years, and paying reinstatement fees.',
   },
   {
-    question: `Can a driving under suspension charge affect reinstatement of the original suspension?`,
-    answer: `Yes, significantly. A conviction for driving under suspension typically results in an additional license suspension on top of the original one. This means each DUS conviction extends the total period during which you cannot legally drive, creating a compounding cycle that becomes increasingly difficult to break without legal help. Under ORC 4510.14, for example, an OVI-related DUS conviction carries an additional one-to-five-year suspension. If you are caught driving again during that extended period, you face yet another DUS charge and another extension. Resolving DUS charges strategically — including negotiating reductions, obtaining driving privileges, and addressing the root causes of the original suspension — is essential to breaking this cycle.`,
+    question: 'Can a driving under suspension charge affect reinstatement of the original suspension?',
+    answer:
+      'Yes. A DUS conviction usually adds a new suspension on top of the original one, so each conviction pushes back the day you can drive legally. Under ORC 4510.14, for example, an OVI-related DUS conviction adds a one-to-five-year suspension. Driving during that longer period brings another DUS charge and another extension. Breaking the cycle means resolving the charge with care: negotiating a reduction, getting driving privileges, and fixing the cause of the original suspension.',
   },
 ];
 
-export default function DrivingUnderSuspensionPage() {
+const RELATED = [
+  { href: '/criminal-defense/no-operators-license', title: "No operator's license", subtitle: 'Driving without a valid license defense' },
+  { href: '/criminal-defense/speeding-tickets', title: 'Speeding tickets', subtitle: 'Traffic violation defense throughout Ohio' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing a criminal record under Ohio law' },
+  { href: '/criminal-defense/obstruction-of-official-business', title: 'Obstruction of official business', subtitle: 'Defense for interfering with law enforcement' },
+];
 
+export default function DrivingUnderSuspensionPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Driving Under Suspension Defense in Ohio"
-        description="Experienced legal defense for driving under suspension (DUS) charges throughout Ohio. Protecting your rights and working toward reinstatement of your driving privileges."
+        title="Driving under suspension in Ohio"
+        description="Driving on a suspended license is a criminal charge in Ohio, and the reason for the suspension sets the penalty. Driving under an OVI suspension carries mandatory jail."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Driving Under Suspension Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '3 days', label: 'mandatory consecutive jail for a first OVI-related DUS (or 30 days of house arrest)' },
+          { figure: '$250 to $1,000', label: 'fine range for a DUS conviction' },
+          { figure: '1 to 5 years', label: 'added license suspension for an OVI-related DUS' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Driving under suspension (DUS) is a serious criminal offense in Ohio that carries significant penalties including jail time, fines, and additional license suspension. Under Ohio Revised Code 4510.11, operating a motor vehicle while your license is suspended, revoked, or canceled is a criminal misdemeanor. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with driving under suspension throughout Ohio. Our attorney understands the complexities of Ohio&apos;s license suspension laws and can help protect your rights and driving privileges.
-            </p>
+      <Section
+        title="What a driving under suspension charge means"
+        intro={
+          <p>
+            Under Ohio Revised Code 4510.11, driving while your license is suspended, revoked or canceled is a criminal misdemeanor.
+            It carries jail, fines and more suspension time.
+          </p>
+        }
+      >
+        <p>
+          Some people do not know they are suspended: a notice went missing, a ticket went unpaid, or the Ohio BMV took an
+          administrative action. Whatever the reason, a conviction creates a criminal record and adds suspension time, which makes it
+          even harder to drive legally again.
+        </p>
+        <p>
+          Ohio treats DUS differently depending on why you were suspended. A suspension from an OVI conviction brings harsher
+          penalties than one for unpaid tickets or a lapse in insurance. The statute you are charged under sets the mandatory minimums,
+          the maximum penalties and the defenses that apply.
+        </p>
+        <p>
+          More suspension time makes it harder to keep a job, care for your family and get through the week. A criminal record can
+          affect job prospects and housing. The firm defends DUS charges throughout Ohio and works toward getting your license
+          reinstated.
+        </p>
+        <LocationsWeServe title="Criminal Defense" />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Many people drive under suspension without fully understanding the severity of the consequences. Some may not even realize their license is suspended due to missed notices, unpaid tickets, or administrative actions by the Ohio BMV. Regardless of the reason, a DUS conviction creates a criminal record and triggers additional suspension time, making it even harder to get back on the road legally. Understanding the different types of DUS charges, potential penalties, and available defenses is essential for protecting your future.
-            </p>
+      <Section title="Types of driving under suspension" tone="ice">
+        <FactTable
+          title="Which statute applies"
+          rows={[
+            {
+              label: 'General DUS (ORC 4510.11)',
+              value:
+                'A suspension not related to an OVI or FRA suspension: failure to appear in court, unpaid traffic tickets, unpaid child support, unpaid court fines or an administrative BMV action. A first offense is an unclassified misdemeanor with a fine of $250 to $1,000 and a possible added suspension of up to one year. A later offense within five years is a first-degree misdemeanor with up to 180 days in jail.',
+            },
+            {
+              label: 'OVI-related DUS (ORC 4510.14)',
+              value:
+                'A suspension from an OVI (Operating a Vehicle Impaired) conviction, or an administrative license suspension (ALS) tied to OVI testing. A first offense is a first-degree misdemeanor with mandatory penalties: 3 consecutive days in jail (or 30 days of house arrest with electronic monitoring), a fine of $250 to $1,000, and an added one to five years of suspension. Repeat offenses bring more mandatory jail and longer suspensions.',
+            },
+            {
+              label: 'FRA DUS (ORC 4510.16)',
+              value:
+                'A Financial Responsibility Act suspension: no proof of insurance after an accident, failure to keep required SR-22 insurance, or another financial responsibility failure. A first-degree misdemeanor with up to 180 days in jail, a fine of $250 to $1,000 and more suspension. The court may order the vehicle immobilized or impounded.',
+            },
+            {
+              label: 'Child support suspension',
+              value:
+                "Charged under the general DUS statute (ORC 4510.11), but reinstatement is different: the child support arrearage has to be addressed through the Child Support Enforcement Agency (CSEA) or the court that issued the support order.",
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio law treats DUS cases differently depending on the underlying reason for your license suspension. A suspension resulting from an OVI conviction carries harsher penalties than a suspension for unpaid tickets or failure to maintain insurance. The specific statute you are charged under determines the mandatory minimums, maximum penalties, and available defenses. An experienced attorney can analyze the basis for your suspension, challenge improper notice, and work to achieve the best possible outcome in your case.
-            </p>
+      <Section title="DUS penalties in Ohio">
+        <p>Penalties depend on the type of suspension and the number of prior offenses.</p>
+        <FactTable
+          title="General DUS (ORC 4510.11)"
+          rows={[
+            {
+              label: 'First offense',
+              value: 'Unclassified misdemeanor: a fine of $250 to $1,000 and a possible added suspension of six months to one year.',
+            },
+            {
+              label: 'Second within five years',
+              value: 'First-degree misdemeanor: up to 180 days in jail, a fine of $250 to $1,000, and added suspension.',
+            },
+            { label: 'Third and later', value: 'Enhanced penalties.' },
+            { label: 'Other terms', value: 'Community service, probation and other conditions. Each conviction adds suspension time.' },
+          ]}
+        />
+        <FactTable
+          title="OVI-related DUS (ORC 4510.14)"
+          rows={[
+            {
+              label: 'First offense',
+              value:
+                'Mandatory 3 consecutive days in jail (or 30 consecutive days of house arrest with electronic monitoring), a fine of $250 to $1,000, and one to five years of added suspension.',
+            },
+            {
+              label: 'Second within five years',
+              value: 'Mandatory 10 consecutive days in jail (or 90 days of house arrest), a fine of $250 to $1,000, and one to five years of added suspension.',
+            },
+            {
+              label: 'Third and later',
+              value: 'Mandatory 30 consecutive days in jail, a fine of up to $1,000, and one to five years of added suspension.',
+            },
+            { label: 'Vehicle', value: 'Forfeiture may be ordered for repeat offenses.' },
+          ]}
+        />
+        <FactTable
+          title="FRA DUS (ORC 4510.16)"
+          rows={[
+            { label: 'First offense', value: 'First-degree misdemeanor: up to 180 days in jail, a fine of $250 to $1,000, and added suspension.' },
+            { label: 'Vehicle', value: 'Immobilization for up to 30 days may be ordered.' },
+            { label: 'Later offenses within five years', value: 'Longer jail time and added suspension.' },
+            {
+              label: 'Reinstatement',
+              value: 'Proof of financial responsibility (SR-22 insurance, typically for three years), BMV reinstatement fees, and continuous coverage for the required period.',
+            },
+          ]}
+        />
+        <h3>Consequences beyond the sentence</h3>
+        <p>
+          Added suspension time affects work, school and family obligations. A criminal record affects job applications, housing and
+          professional licensing. Insurance rates rise, and coverage can become hard or expensive to get. For CDL holders, a DUS
+          conviction can disqualify commercial driving privileges.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The consequences of a DUS conviction extend beyond criminal penalties. Additional suspension time makes it harder to maintain employment, care for your family, and meet daily obligations. A criminal record can affect future job prospects, housing applications, and other areas of your life. Taking DUS charges seriously and obtaining experienced legal representation is critical to minimizing these consequences and working toward reinstatement of your driving privileges.
-            </p>
+      <Section title="How a DUS case moves through court" tone="ice">
+        <p>DUS cases are heard in municipal courts throughout Ohio.</p>
+        <Steps
+          steps={[
+            {
+              title: 'Citation or arrest, then arraignment',
+              body: 'DUS charges come from traffic stops, accident investigations and checkpoints. At arraignment the charge is read and you enter a plea. A not guilty plea preserves your right to contest the charge and gives your attorney time to investigate. In appropriate cases your attorney can request driving privileges at arraignment.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: "Your attorney requests the BMV records showing the basis for the suspension, proof the suspension notice was properly sent, and the officer's report and reason for the stop. Problems with the notice, the underlying suspension or the stop itself can form the defense.",
+            },
+            {
+              title: 'Pretrial motions and negotiation',
+              body: 'Motions can suppress evidence from an unlawful stop, challenge the suspension notice, or seek dismissal for insufficient evidence. Common negotiated outcomes include a reduction to a non-criminal traffic offense, community service instead of jail, or dismissal once the license is reinstated.',
+            },
+            {
+              title: 'Trial and sentencing',
+              body: 'At trial the prosecution must prove beyond a reasonable doubt that you were driving while suspended and that you received proper notice. If there is a conviction, your attorney argues for alternatives to jail and the least added suspension.',
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="Defenses to driving under suspension">
+        <PointGrid
+          points={[
+            {
+              title: 'Lack of proper notice',
+              body: 'The state must prove you received, or were properly sent, notice of the suspension. Ohio law requires the BMV to mail suspension notices to your last known address by regular mail. A wrong address, a BMV error, or no proof of mailing can lead to dismissal.',
+            },
+            {
+              title: 'Unlawful traffic stop',
+              body: 'Without reasonable suspicion or probable cause for the stop, the evidence may be suppressed. The Fourth Amendment protects against unreasonable searches and seizures, including pretextual stops. If the stop was unlawful, everything that followed, including the discovery that you were suspended, may be excluded.',
+            },
+            {
+              title: 'Suspension not in effect',
+              body: 'If the suspension had ended, the reinstatement requirements had been met, or the BMV records are wrong, the suspension may not have been in effect when you were charged.',
+            },
+            {
+              title: 'Emergency or necessity',
+              body: 'In rare cases, driving to deal with a real emergency, such as getting emergency medical treatment, may be a defense. The emergency must have been real and imminent, with no reasonable alternative, and the driving limited to what the emergency required.',
+            },
+            {
+              title: 'Mistaken identity',
+              body: 'If you were not driving, or the identity of the driver is in doubt, the charge may fail. This comes up when a car registered to a suspended driver is being driven by someone else.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Types of Driving Under Suspension in Ohio
-            </h3>
+      <Section title="What the firm does on a DUS charge" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Reviews the suspension',
+              body: 'Whether it was properly imposed, whether notice was given, and whether the underlying suspension can be challenged.',
+            },
+            {
+              title: 'Checks the notice',
+              body: 'Whether the BMV properly notified you. Lack of proper notice is a complete defense to DUS charges in Ohio.',
+            },
+            {
+              title: 'Challenges the stop',
+              body: 'Files motions to suppress when the stop violated your constitutional rights.',
+            },
+            {
+              title: 'Gets you driving',
+              body: 'Petitions for limited driving privileges for work, school and other essential obligations while the case is pending.',
+            },
+            {
+              title: 'Negotiates',
+              body: 'For a reduced charge, lighter penalties, or dismissal once conditions such as reinstatement are met.',
+            },
+            {
+              title: 'Argues at sentencing',
+              body: 'Presents mitigating evidence and argues for alternatives to jail such as community service or probation.',
+            },
+            {
+              title: 'Helps with reinstatement',
+              body: 'Identifies every outstanding suspension, fee and requirement.',
+            },
+            {
+              title: 'Protects your record',
+              body: 'Limits the record impact and pursues expungement or sealing after the case where you are eligible.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">General Driving Under Suspension (ORC 4510.11)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                General DUS applies when you operate a vehicle while your license is suspended for reasons not related to an OVI or FRA suspension. Common reasons for general suspensions include failure to appear in court, unpaid traffic tickets, failure to pay child support, unpaid court fines, or administrative BMV actions. This offense is an unclassified misdemeanor for a first offense, carrying a fine of $250 to $1,000 and a potential additional suspension of up to one year. Subsequent offenses within five years are elevated to first-degree misdemeanors carrying up to 180 days in jail.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">OVI-Related Driving Under Suspension (ORC 4510.14)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Driving under an OVI-related suspension is treated more seriously under Ohio law. This charge applies when your license was suspended as a result of an OVI (Operating a Vehicle Impaired) conviction or an administrative license suspension (ALS) related to OVI testing. A first offense is a first-degree misdemeanor carrying mandatory penalties including 3 consecutive days in jail (or 30 days of house arrest with electronic monitoring), fines of $250 to $1,000, and an additional one to five years of license suspension. Repeat offenses carry enhanced mandatory jail time and longer suspension periods.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">FRA Driving Under Suspension (ORC 4510.16)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                An FRA (Financial Responsibility Act) suspension occurs when you fail to provide proof of insurance after an accident, fail to maintain required SR-22 insurance, or fail to comply with other financial responsibility requirements. Driving under an FRA suspension is a first-degree misdemeanor carrying up to 180 days in jail, fines of $250 to $1,000, and additional license suspension. The court may also order vehicle immobilization or impoundment. Reinstatement of an FRA suspension requires providing proof of financial responsibility (SR-22 insurance) and paying reinstatement fees.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Child Support Suspension</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio can suspend your driver&apos;s license for failure to pay child support. While driving under a child support suspension falls under the general DUS statute (ORC 4510.11), the reinstatement process is unique. You must address the underlying child support arrearage through the Child Support Enforcement Agency (CSEA) or the court that issued the support order. An attorney can help navigate both the criminal charge and the reinstatement process.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Penalties for Driving Under Suspension in Ohio
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              DUS penalties in Ohio depend on the type of suspension and the number of prior offenses. Understanding the full range of potential consequences is essential when facing these charges:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">General DUS Penalties (ORC 4510.11)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A first offense general DUS is an unclassified misdemeanor carrying a fine of $250 to $1,000 and a potential additional suspension of six months to one year. A second offense within five years is a first-degree misdemeanor punishable by up to 180 days in jail, fines of $250 to $1,000, and additional suspension. Third and subsequent offenses carry enhanced penalties. The court may also impose community service, probation, and other conditions. Each conviction adds additional suspension time, creating a cycle that becomes increasingly difficult to break without legal help.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">OVI-Related DUS Penalties (ORC 4510.14)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A first offense OVI-related DUS carries mandatory penalties including 3 consecutive days in jail (or 30 consecutive days of house arrest with electronic monitoring), fines of $250 to $1,000, and additional license suspension of one to five years. A second offense within five years carries mandatory 10 consecutive days in jail (or 90 days house arrest), fines of $250 to $1,000, and one to five years additional suspension. Third and subsequent offenses carry mandatory 30 consecutive days in jail, fines up to $1,000, and one to five years additional suspension. Vehicle forfeiture may also be ordered for repeat offenses.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">FRA DUS Penalties (ORC 4510.16)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A first offense FRA DUS is a first-degree misdemeanor carrying up to 180 days in jail, fines of $250 to $1,000, and additional license suspension. The court may also order vehicle immobilization for up to 30 days. Subsequent offenses within five years carry enhanced penalties including longer jail time and additional suspension. FRA reinstatement requires providing proof of financial responsibility (SR-22 insurance for typically three years), paying reinstatement fees to the BMV, and maintaining continuous insurance coverage for the required period.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Collateral Consequences of DUS Convictions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Beyond criminal penalties, DUS convictions create significant collateral consequences. Additional suspension time makes legal driving increasingly difficult and can affect your ability to maintain employment, attend school, and meet family obligations. A criminal record affects job applications, housing opportunities, and professional licensing. Insurance rates increase significantly, and obtaining coverage may become difficult or expensive. For CDL holders, DUS convictions can result in disqualification of commercial driving privileges, threatening their livelihood. The cumulative effect of these consequences underscores the importance of aggressive defense representation.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Court Process for DUS Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the court process helps you prepare for what lies ahead. DUS cases are heard in municipal courts throughout Ohio. The process typically involves several stages, each requiring strategic legal representation:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Arrest or Citation and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                DUS charges may result from a traffic stop, accident investigation, or checkpoint. After being cited or arrested, you will be assigned a court date for arraignment. At arraignment, the charge is formally read and you enter a plea. Entering a not guilty plea preserves your right to contest the charge and allows time for your attorney to investigate the case, request discovery, and develop a defense strategy. An attorney can also request driving privileges at arraignment in appropriate cases.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Your attorney will request discovery materials including the BMV records showing the basis for suspension, proof that suspension notice was properly sent, the officer&apos;s report and basis for the traffic stop, and any other relevant evidence. Thorough review of these materials is critical for identifying potential defenses. Issues with notice, the underlying suspension reason, or the traffic stop itself can form the basis of a strong defense.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions and Negotiation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Strategic motions may be filed to suppress evidence from an unlawful traffic stop, challenge the suspension notice, or dismiss the case for insufficient evidence. Negotiations with the prosecutor may result in reduced charges, alternative sentencing, or dismissal. An experienced attorney understands the local court practices and can negotiate effectively on your behalf. Common negotiated outcomes include reduction to a non-criminal traffic offense, community service in lieu of jail time, or dismissal upon reinstatement of the license.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial and Sentencing</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, the prosecution must prove beyond a reasonable doubt that you were driving while your license was suspended and that you received proper notice of the suspension. Your attorney can challenge these elements, cross-examine witnesses, and present evidence supporting your defense. If convicted, your attorney will advocate for the most lenient sentence possible, including alternatives to jail and minimal additional suspension time.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced DUS defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Suspension Validity Review:</strong> Analyze the basis for your suspension and determine whether it was properly imposed, whether proper notice was given, and whether there are grounds to challenge the underlying suspension</li>
-              <li><strong>Notice Defense:</strong> Investigate whether the BMV properly notified you of the suspension, as lack of proper notice is a complete defense to DUS charges in Ohio</li>
-              <li><strong>Traffic Stop Challenges:</strong> Evaluate the legality of the traffic stop that led to the DUS charge and file motions to suppress evidence if your constitutional rights were violated</li>
-              <li><strong>Driving Privileges:</strong> Petition the court for limited driving privileges to allow you to continue working, attending school, or meeting other essential obligations during the pendency of your case</li>
-              <li><strong>Charge Negotiation:</strong> Negotiate with prosecutors to reduce charges, minimize penalties, or arrange for dismissal upon meeting certain conditions such as license reinstatement</li>
-              <li><strong>Reinstatement Assistance:</strong> Help you understand and navigate the license reinstatement process, including identifying all outstanding suspensions, fees, and requirements</li>
-              <li><strong>Sentencing Advocacy:</strong> Present mitigating evidence, argue for minimum sentences, and advocate for alternatives to incarceration such as community service or probation</li>
-              <li><strong>Record Protection:</strong> Work to minimize the criminal record impact and, where eligible, pursue expungement or record sealing options after case resolution</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Driving Under Suspension
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Lack of Proper Notice</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                One of the most effective defenses to DUS charges is lack of proper notice. The state must prove that you received or were properly sent notice of your license suspension. Under Ohio law, the BMV is required to send suspension notices to your last known address by regular mail. If the notice was sent to an incorrect address, if you never received notice due to a BMV error, or if the state cannot prove proper mailing, this defense may result in dismissal of the charge.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Unlawful Traffic Stop</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the officer did not have reasonable suspicion or probable cause to initiate the traffic stop that led to the DUS charge, the evidence obtained may be suppressed. The Fourth Amendment protects against unreasonable searches and seizures, including pretextual traffic stops. If the stop was unlawful, all evidence obtained as a result, including identification of your suspended status, may be excluded from the case.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Suspension Not in Effect</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your suspension had already been completed, if reinstatement requirements had been met, or if there was an error in the BMV records, you may have a defense that the suspension was not actually in effect at the time of the alleged violation. BMV records can contain errors, and an attorney can investigate to determine whether your suspension was valid at the time you were charged.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Emergency or Necessity</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In rare circumstances, the defense of necessity may apply if you were driving to address a genuine emergency, such as seeking emergency medical treatment for yourself or another person. This defense requires demonstrating that the emergency was real and imminent, that there was no reasonable alternative, and that the driving was limited to what was necessary to address the emergency.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Mistaken Identity</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you were not the person driving the vehicle, or if there is a question about the identity of the driver, this defense may apply. This can occur in cases where the vehicle is registered to a suspended driver but was being operated by someone else at the time of the stop.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              License Reinstatement Process in Ohio
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Reinstatement of a suspended license in Ohio requires completing all conditions imposed by the BMV and the courts. The process varies depending on the reason for suspension, but generally involves the following steps:
-            </p>
-
-            <div className="bg-ice p-6 mb-8">
-              <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>Identify all suspensions:</strong> The first step is obtaining a complete BMV record to identify all outstanding suspensions, as you may have multiple suspensions that must each be addressed separately</li>
-                <li><strong>Complete suspension period:</strong> Wait until the suspension period has fully elapsed for each suspension on your record</li>
-                <li><strong>Pay reinstatement fees:</strong> Each suspension requires a separate reinstatement fee paid to the Ohio BMV, typically $40-$475 depending on the type of suspension</li>
-                <li><strong>Satisfy court requirements:</strong> Complete any court-ordered requirements such as treatment programs, community service, or payment of fines and costs</li>
-                <li><strong>Obtain required insurance:</strong> For FRA suspensions, you must provide proof of financial responsibility (SR-22 insurance) for the required period, typically three years</li>
-                <li><strong>Address underlying issues:</strong> Resolve the underlying cause of the suspension, such as paying outstanding tickets, addressing child support arrearages, or completing required programs</li>
-                <li><strong>Apply for reinstatement:</strong> Once all requirements are met, apply for license reinstatement through the Ohio BMV</li>
-              </ul>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                An attorney can help you navigate this process, identify all outstanding suspensions, and develop a plan for reinstatement. Many people have multiple overlapping suspensions that create a complicated reinstatement path. Professional guidance can save time, prevent errors, and help you get back on the road legally as quickly as possible.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for DUS Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated DUS defense representation throughout Ohio. We understand that license suspensions and DUS charges create a difficult cycle that affects every aspect of your life. Our attorney works diligently to break this cycle by defending against DUS charges, obtaining driving privileges, and helping clients navigate the reinstatement process.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of DUS cases, from general suspensions to OVI-related and FRA suspensions. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, minimize penalties, and help you get back on the road legally.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation of the suspension basis, strategic defense development, and skilled negotiation. We understand the local court systems and prosecutor policies throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their situation, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing driving under suspension charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio" className="text-sky-deep underline hover:text-navy-950">protecting your rights during a traffic stop in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">No Operator&apos;s License</span>
-                <span className="text-sm text-navy-950/70">Driving without a valid license defense</span>
-              </Link>
-              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Speeding Tickets</span>
-                <span className="text-sm text-navy-950/70">Traffic violation defense throughout Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Obstruction of Official Business</span>
-                <span className="text-sm text-navy-950/70">Defense for interfering with law enforcement</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Getting your license reinstated">
+        <p>
+          Reinstatement means completing every condition the BMV and the courts imposed. The details depend on the reason for the
+          suspension, but the steps are usually these.
+        </p>
+        <Steps
+          steps={[
+            {
+              title: 'Identify all suspensions',
+              body: 'Get a complete BMV record. You may have several suspensions, and each must be addressed separately.',
+            },
+            { title: 'Complete each suspension period', body: 'Wait until every suspension period on your record has fully run.' },
+            {
+              title: 'Pay reinstatement fees',
+              body: 'Each suspension has its own reinstatement fee paid to the Ohio BMV, typically $40-$475 depending on the type.',
+            },
+            {
+              title: 'Satisfy court requirements',
+              body: 'Finish any court-ordered treatment programs or community service, and pay fines and costs.',
+            },
+            {
+              title: 'Get the required insurance',
+              body: 'For FRA suspensions, provide proof of financial responsibility (SR-22 insurance) for the required period, typically three years.',
+            },
+            {
+              title: 'Fix the underlying cause',
+              body: 'Pay outstanding tickets, address child support arrearages or complete required programs.',
+            },
+            { title: 'Apply for reinstatement', body: 'Once every requirement is met, apply through the Ohio BMV.' },
+          ]}
+        />
+        <Callout title="Overlapping suspensions are common">
+          Many people carry several suspensions at once. The firm can map them out and build a plan to get you driving legally again.
+        </Callout>
+        <p>
+          If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. See the
+          firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read about{' '}
+          <Link href="/our-law-firm/blog/protecting-rights-during-traffic-stop-ohio">protecting your rights during a traffic stop in Ohio</Link>.
+        </p>
+        <h3>Related pages</h3>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />

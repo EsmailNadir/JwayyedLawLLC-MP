@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Criminal Damaging Defense Ohio',
-  description: 'Ohio criminal damaging defense attorney for ORC 2909.06 charges statewide. Call Jwayyed Law LLC at (614) 285-5482 for a consultation.',
+  description:
+    'Charged with criminal damaging under ORC 2909.06? Penalties, when it becomes a felony, and the defenses that apply. Call (614) 285-5482.',
   keywords: [
     'criminal damaging lawyer Ohio',
     'criminal damaging ORC 2909.06',
@@ -21,10 +23,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Criminal Damaging Defense Ohio | Jwayyed Law LLC',
-    description: 'Experienced criminal damaging defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Penalties, felony thresholds and defenses for a criminal damaging charge under ORC 2909.06.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-damaging',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/criminal-damaging',
   },
@@ -38,162 +40,167 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is criminal damaging under Ohio law?',
-    answer: 'Criminal damaging or endangering under Ohio Revised Code 2909.06 (current 2026) occurs when a person knowingly causes physical harm to property of another or creates a substantial risk of physical harm to property by fire, explosion, flood, or other means. It is generally a second-degree misdemeanor, punishable by up to 90 days in jail and fines up to $750. The offense can be elevated to a felony depending on the value of property damaged or the circumstances.',
+    answer:
+      'Criminal damaging or endangering under Ohio Revised Code 2909.06 means knowingly causing physical harm to another person\'s property, or creating a substantial risk of physical harm to property by fire, explosion, flood or other means. It is generally a second-degree misdemeanor, punishable by up to 90 days in jail and a fine of up to $750. The value of the property or the circumstances can raise it to a felony.',
   },
   {
     question: 'What are the penalties for criminal damaging in Ohio?',
-    answer: 'Under current 2026 Ohio law, criminal damaging under ORC 2909.06 is typically a second-degree misdemeanor: up to 90 days in jail, fines up to $750, restitution, court costs, and a permanent criminal record. If the property damage exceeds certain thresholds or involves specific types of property (e.g., government property, safety equipment), charges may be elevated to a felony under ORC 2909.05 (vandalism) or other provisions, with significantly higher penalties.',
+    answer:
+      'Criminal damaging under ORC 2909.06 is usually a second-degree misdemeanor: up to 90 days in jail, a fine of up to $750, restitution, court costs and a permanent criminal record. If the damage passes certain thresholds or involves specific kinds of property (government property or safety equipment, for example), the charge may become a felony under ORC 2909.05 (vandalism) or another provision, with much higher penalties.',
   },
   {
     question: 'What is the difference between criminal damaging and criminal mischief in Ohio?',
-    answer: 'Criminal damaging (ORC 2909.06) involves knowingly causing physical harm to property or creating a substantial risk of physical harm (e.g., by fire, explosion, flood). It is typically a second-degree misdemeanor. Criminal mischief (ORC 2909.07) involves tampering with, defacing, or improperly handling property and is typically a third-degree misdemeanor. Criminal damaging is the more serious charge and carries greater penalties under 2026 Ohio law.',
+    answer:
+      'Criminal damaging (ORC 2909.06) is knowingly causing physical harm to property, or creating a substantial risk of it by fire, explosion or flood. It is usually a second-degree misdemeanor. Criminal mischief (ORC 2909.07) is tampering with, defacing or improperly handling property, and is usually a third-degree misdemeanor. Criminal damaging is the more serious charge and carries the higher penalties.',
   },
   {
     question: 'Can criminal damaging charges be expunged from my record in Ohio?',
-    answer: 'Yes, misdemeanor criminal damaging convictions may be eligible for record sealing under Ohio Revised Code 2953.32 (current 2026). Eligibility depends on the waiting period, completion of sentence, and your criminal history. An experienced attorney can evaluate your eligibility and guide you through the expungement application process.',
+    answer:
+      'Yes. A misdemeanor criminal damaging conviction may be eligible for record sealing under Ohio Revised Code 2953.32. Eligibility depends on the waiting period, whether you completed your sentence, and your criminal history. An attorney can check your eligibility and handle the application.',
   },
   {
     question: 'What should I do if I am charged with criminal damaging in Ohio?',
-    answer: 'If charged with criminal damaging in Ohio, exercise your right to remain silent and contact an experienced criminal defense attorney immediately. Do not make statements to police without your attorney present. Preserve any evidence that may support your defense. An attorney can protect your rights, challenge evidence, negotiate with prosecutors, and work toward dismissal or reduced charges.',
+    answer:
+      'Use your right to remain silent and contact a criminal defense attorney right away. Do not talk to police without your attorney present. Keep any evidence that supports your side. An attorney can protect your rights, challenge the evidence and negotiate with the prosecutor for a dismissal or a reduced charge.',
   },
   {
-    question: `What are the elements of criminal damaging under ORC 2909.06?`,
-    answer: `Under Ohio Revised Code 2909.06, the prosecution must prove that you knowingly caused physical harm to property belonging to another person without that person's consent, or that you knowingly created a substantial risk of physical harm to such property by fire, explosion, flood, or other means. The base offense is a second-degree misdemeanor (M2), punishable by up to 90 days in jail and fines up to $750. "Knowingly" is the required mental state—accidental damage is not sufficient to sustain a conviction.`,
+    question: 'What are the elements of criminal damaging under ORC 2909.06?',
+    answer:
+      'The prosecution must prove that you knowingly caused physical harm to another person\'s property without their consent, or knowingly created a substantial risk of physical harm to that property by fire, explosion, flood or other means. The base offense is a second-degree misdemeanor (M2), punishable by up to 90 days in jail and a fine of up to $750. "Knowingly" is the required mental state, so accidental damage is not enough for a conviction.',
   },
   {
-    question: `What is the difference between criminal damaging and criminal mischief in Ohio?`,
-    answer: `Criminal damaging under ORC 2909.06 and criminal mischief under ORC 2909.07 are related but distinct offenses. Criminal damaging involves knowingly causing physical harm to another's property or creating a substantial risk of physical harm by fire, explosion, or flood, and is a second-degree misdemeanor (M2) as the base offense. Criminal mischief covers tampering with, defacing, or improperly handling property—including safety devices and boundary markers—and is a third-degree misdemeanor (M3) as the base offense. Criminal damaging carries the more serious penalty tier.`,
+    question: 'How do criminal damaging and criminal mischief compare in Ohio?',
+    answer:
+      'They are related but separate offenses. Criminal damaging under ORC 2909.06 covers knowingly causing physical harm to another\'s property, or creating a substantial risk of harm by fire, explosion or flood. Its base offense is a second-degree misdemeanor (M2). Criminal mischief under ORC 2909.07 covers tampering with, defacing or improperly handling property, including safety devices and boundary markers. Its base offense is a third-degree misdemeanor (M3). Criminal damaging sits in the more serious penalty tier.',
   },
   {
-    question: `Can criminal damaging be charged as a felony in Ohio?`,
-    answer: `Yes. While the base offense under ORC 2909.06 is a second-degree misdemeanor, criminal damaging can be elevated to a felony when the damage exceeds $1,000 to certain property types or when fire or explosion is involved as the means of harm. Prosecutors may alternatively charge vandalism under ORC 2909.05—a felony offense—when property damage thresholds are met or when the damage involves government property or critical infrastructure. A felony conviction carries significantly harsher penalties including prison time and higher fines under Ohio's felony sentencing structure.`,
+    question: 'Can criminal damaging be charged as a felony in Ohio?',
+    answer:
+      'Yes. The base offense under ORC 2909.06 is a second-degree misdemeanor, but it can become a felony when the damage exceeds $1,000 to certain types of property, or when fire or explosion was the means of harm. Prosecutors may instead charge vandalism under ORC 2909.05, a felony, when the damage passes the thresholds or involves government property or critical infrastructure. A felony conviction carries prison time and higher fines under Ohio\'s felony sentencing structure.',
   },
 ];
 
-export default function CriminalDamagingPage() {
+const RELATED = [
+  { href: '/criminal-defense/criminal-mischief', title: 'Criminal mischief', subtitle: 'Property interference and tampering defense' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry defense' },
+  { href: '/criminal-defense/petty-theft', title: 'Petty theft', subtitle: 'Shoplifting and theft defense in Ohio' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing a criminal record under Ohio law' },
+];
 
+export default function CriminalDamagingPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Damaging Defense Attorney in Ohio"
-        description="Experienced legal defense for criminal damaging and endangering charges. Protecting your rights and fighting for the best possible outcome."
+        title="Criminal damaging charges in Ohio"
+        description="Criminal damaging under ORC 2909.06 is usually a second-degree misdemeanor: up to 90 days in jail, a fine of up to $750, and restitution for the damage."
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Criminal Damaging Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '90 days', label: 'maximum jail for criminal damaging, a second-degree misdemeanor' },
+          { figure: '$750', label: 'maximum fine, plus restitution and court costs' },
+          { figure: '$1,000', label: 'damage level at which the charge can become a felony for certain property' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing criminal damaging charges throughout Ohio can result in jail time, substantial fines, restitution, and a permanent criminal record. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with criminal damaging or endangering under Ohio Revised Code 2909.06. Our attorney understands current 2026 Ohio property crime laws, potential defenses, and the impact these charges can have on your life.
-            </p>
+      <Section
+        title="What a criminal damaging charge means"
+        intro={
+          <p>
+            Criminal damaging or endangering under Ohio Revised Code 2909.06 means knowingly causing physical harm to someone
+            else&rsquo;s property, or creating a substantial risk of physical harm to it by fire, explosion, flood or other means.
+          </p>
+        }
+      >
+        <p>
+          The state must prove you acted knowingly. &quot;Physical harm&quot; means any tangible or material damage. The charge is
+          usually a second-degree misdemeanor, but the circumstances can raise it to a felony. A conviction can affect jobs, housing and
+          professional licenses.
+        </p>
+        <p>
+          Jwayyed Law LLC defends criminal damaging and endangering charges under ORC 2909.06 throughout Ohio.
+        </p>
+        <LocationsWeServe title="Criminal Defense" />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Criminal damaging or endangering involves knowingly causing physical harm to the property of another or creating a substantial risk of physical harm to property by fire, explosion, flood, or other means. Under 2026 Ohio law, this is typically charged as a second-degree misdemeanor, but circumstances can elevate the charge to a felony. A conviction can affect employment, housing, and professional licensing.
-            </p>
+      <Section title="Criminal damaging penalties in Ohio" tone="ice">
+        <FactTable
+          title="Criminal damaging (ORC 2909.06): second-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 90 days.' },
+            { label: 'Fines', value: 'Up to $750, plus court costs.' },
+            { label: 'Restitution', value: 'The court may order you to pay to repair or replace the damaged property.' },
+            { label: 'Probation', value: 'May be ordered.' },
+            { label: 'Record', value: 'A permanent criminal record. Record sealing under ORC 2953.32 may be available after the waiting period.' },
+          ]}
+        />
+        <FactTable
+          title="When the charge becomes a felony"
+          rows={[
+            {
+              label: 'Property value',
+              value: 'Damage over $1,000 to certain types of property, or damage that passes other value thresholds.',
+            },
+            { label: 'Means of harm', value: 'Fire or explosion used to cause the damage.' },
+            {
+              label: 'Type of property',
+              value: 'Government property, critical infrastructure, or damage that creates a risk of serious harm.',
+            },
+            { label: 'Possible charge', value: 'Vandalism under ORC 2909.05, or another felony offense.' },
+            { label: 'Penalties', value: "Prison time and much higher fines under Ohio's felony sentencing law." },
+          ]}
+        />
+        <h3>Restitution and civil liability</h3>
+        <p>
+          Courts routinely order restitution. The property owner can also sue you for damages in civil court, so a single incident can
+          cost you twice.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for criminal damaging charges involves arraignment, discovery, pretrial negotiations, and potentially trial. An experienced attorney can challenge evidence, negotiate with prosecutors, and work toward favorable outcomes including dismissal, reduced charges, or alternative sentencing.
-            </p>
+      <Section title="How a criminal damaging case moves">
+        <Steps
+          steps={[
+            { title: 'Arraignment', body: 'You hear the charge and enter a plea, usually not guilty.' },
+            { title: 'Discovery', body: 'The prosecution hands over its evidence, and your attorney reviews it.' },
+            { title: 'Pretrial negotiations', body: 'Your attorney challenges the evidence and negotiates for dismissal, a reduced charge or alternative sentencing.' },
+            { title: 'Trial', body: 'If the case does not resolve, it goes to trial.' },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="Defenses to criminal damaging" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Lack of intent',
+              body: 'The offense requires that you acted knowingly. Accidental damage, or not knowing the property belonged to someone else, may defeat the charge.',
+            },
+            {
+              title: 'Consent or authorization',
+              body: 'If the owner consented, or you reasonably believed you were authorized, that can be a complete defense.',
+            },
+            {
+              title: 'Mistaken identity or insufficient evidence',
+              body: 'The state must prove every element beyond a reasonable doubt. Identification, proof of intent and the overall strength of the case can all be challenged.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Criminal Damaging Under Ohio Law (ORC 2909.06)
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Elements of the Offense (2026 Ohio Law)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Under ORC 2909.06, the state must prove that you knowingly caused physical harm to property of another, or knowingly created a substantial risk of physical harm to such property by fire, explosion, flood, or other means. &quot;Physical harm&quot; means any tangible or material damage. The offense is typically a second-degree misdemeanor under current Ohio law.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">When Charges Are Elevated to Felony</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the value of property damaged exceeds certain thresholds, or if the damage involves government property, critical infrastructure, or creates risk of serious harm, prosecutors may charge vandalism under ORC 2909.05 or other felony offenses. Felony penalties under 2026 Ohio sentencing law include prison time and significantly higher fines.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Penalties and Consequences (2026 Ohio Law)
-            </h3>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Second-Degree Misdemeanor</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Standard criminal damaging under ORC 2909.06 is a second-degree misdemeanor under current Ohio law: up to 90 days in jail, fines up to $750, restitution to the property owner, court costs, probation, and a permanent criminal record. The court may order payment for repair or replacement of damaged property.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Restitution and Civil Liability</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Courts routinely order restitution. Property owners may also pursue civil lawsuits for damages. The combination of criminal penalties and civil liability can result in significant financial consequences.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences</h4>
-            <p className="text-navy-950/80 mb-6">
-              A criminal damaging conviction can limit employment opportunities, affect housing applications, and impact professional licensing. These consequences persist long after completing the sentence. Record sealing under ORC 2953.32 (2026) may be available after the applicable waiting period.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Lack of Intent</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The offense requires that you acted &quot;knowingly.&quot; If the damage was accidental or you did not know the property belonged to another, this defense may apply.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Consent or Authorization</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the property owner consented to the conduct, or you reasonably believed you had authorization, this can be a complete defense.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Mistaken Identity / Insufficient Evidence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The state must prove every element beyond a reasonable doubt. An attorney can challenge identification, evidence of intent, and the sufficiency of the case.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated criminal damaging defense representation throughout Ohio. We understand current 2026 Ohio law and work diligently to investigate cases, develop defenses, and achieve favorable outcomes. We protect your rights, negotiate with prosecutors, and represent you at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing criminal damaging charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio" className="text-sky-deep underline hover:text-navy-950">misdemeanor vs. felony charges in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Mischief</span>
-                <span className="text-sm text-navy-950/70">Property interference and tampering defense</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Petty Theft</span>
-                <span className="text-sm text-navy-950/70">Shoplifting and theft defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="What the firm does on a criminal damaging case">
+        <p>
+          The firm investigates the case, builds the defense, negotiates with the prosecutor and represents you at trial when the case
+          goes there. If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a
+          consultation.
+        </p>
+        <p>
+          For more, see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}
+          <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio">misdemeanor vs. felony charges in Ohio</Link>.
+        </p>
+        <h3>Related pages</h3>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />

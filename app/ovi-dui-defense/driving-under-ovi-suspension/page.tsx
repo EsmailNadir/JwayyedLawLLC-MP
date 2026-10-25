@@ -1,21 +1,24 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Driving Under OVI Suspension',
-  description: 'Experienced Ohio driving under OVI suspension defense attorney protecting your rights. Skilled representation for driving under suspension charges in Ohio.',
+  description:
+    'Charged with driving under an OVI suspension in Ohio? ORC 4510.14, the 30-day mandatory jail minimum, vehicle immobilization and your defenses.',
   keywords: ['driving under suspension attorney Ohio', 'driving under OVI suspension attorney Ohio', 'suspended license attorney', 'ORC 4510.14 defense'],
   openGraph: {
     title: 'Driving Under OVI Suspension | Jwayyed Law LLC',
+    description: 'Penalties, the two kinds of OVI suspension, HB 37 privilege rules and defenses for a DUOVIS charge in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/driving-under-ovi-suspension',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/ovi-dui-defense/driving-under-ovi-suspension' },
 };
 
@@ -26,122 +29,194 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is driving under OVI suspension in Ohio?`,
-    answer: `Driving under OVI suspension (DUOVIS) is a specific criminal offense under ORC 4510.14 that applies when a person operates a vehicle while their license is suspended specifically because of an OVI conviction or an OVI-related Administrative License Suspension (ALS) under ORC 4511.191. It is distinct from general driving under suspension (ORC 4510.11) because the OVI-related suspension is treated more harshly by the legislature. DUOVIS is a first-degree misdemeanor (M1) on a first offense, punishable by up to 180 days in jail and a fine up to $1,000. Critically, ORC 4510.14 carries a mandatory minimum 30-day jail sentence — making it one of the most serious traffic misdemeanors in Ohio in terms of guaranteed incarceration.`,
+    question: 'What is driving under OVI suspension in Ohio?',
+    answer:
+      'Driving under OVI suspension (DUOVIS) is a specific offense under ORC 4510.14. It applies when you drive while your license is suspended because of an OVI conviction or an OVI-related Administrative License Suspension (ALS) under ORC 4511.191. The legislature treats it more harshly than general driving under suspension (ORC 4510.11). A first offense is a first-degree misdemeanor (M1), punishable by up to 180 days in jail and a fine up to $1,000. ORC 4510.14 also carries a mandatory minimum 30-day jail sentence, which makes it one of the most serious traffic misdemeanors in Ohio for guaranteed jail time.',
   },
   {
-    question: `What are the mandatory jail penalties for driving under OVI suspension?`,
-    answer: `ORC 4510.14 imposes a mandatory minimum of 30 consecutive days in jail for a first conviction of driving under OVI suspension. This is not a minimum that can be waived, suspended, or converted to community service by the court. The maximum is 180 days (the full M1 ceiling). For subsequent convictions within the look-back period, penalties escalate further and the possibility of felony charges increases. The 30-day mandatory minimum reflects the Ohio General Assembly's policy of treating OVI-related driving violations with the maximum severity, recognizing that drivers who ignore an OVI suspension pose a heightened risk to public safety. An experienced attorney may be able to challenge the underlying facts or the validity of the suspension itself, which is the primary avenue for avoiding the mandatory penalty.`,
+    question: 'What are the mandatory jail penalties for driving under OVI suspension?',
+    answer:
+      "ORC 4510.14 requires a minimum of 30 consecutive days in jail on a first conviction. The court cannot waive or suspend it or convert it to community service. The maximum is 180 days, the full M1 ceiling. Later convictions within the look-back period bring higher penalties and a greater chance of felony charges. The minimum reflects the General Assembly's view that drivers who ignore an OVI suspension are a heightened risk to public safety. The main way to avoid it is to challenge the underlying facts or the validity of the suspension itself.",
   },
   {
-    question: `Can I get limited driving privileges during my OVI suspension?`,
-    answer: `Yes — but you must obtain them from the court before you drive. Limited driving privileges (LDP) under ORC 4510.021 allow a person under OVI suspension to drive for specific authorized purposes: work, school, medical appointments, alcohol treatment, court appearances, and community service. The court must grant LDP through a formal order before any driving under suspension is lawful. Driving without a valid LDP order — even for work or a medical emergency — constitutes driving under OVI suspension and triggers the mandatory 30-day jail minimum. If you already have an OVI suspension, the time to apply for LDP is immediately and through counsel, not after you are caught driving and charged. See our dedicated page on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link> for the full process.`,
+    question: 'Can I get limited driving privileges during my OVI suspension?',
+    answer:
+      'Yes, but you must get them from the court before you drive. Limited driving privileges (LDP) under ORC 4510.021 let a person under OVI suspension drive for set purposes: work, school, medical appointments, alcohol treatment, court appearances and community service. Driving is lawful only once the court has granted LDP in a formal order. Driving without a valid order, even for work or a medical emergency, is driving under OVI suspension and brings the mandatory 30-day jail minimum. If you already have an OVI suspension, apply for LDP now through counsel, not after you are caught. The firm\'s limited driving privileges page covers the full process.',
   },
   {
-    question: `What is an ignition interlock device (IID) and when is it required in Ohio?`,
-    answer: `An ignition interlock device (IID) is a breath-testing instrument installed in the vehicle's ignition system that requires the driver to provide a clean breath sample before the car will start, and at random intervals while driving. Under HB 37 (effective April 9, 2025), courts may require an IID as a condition of limited driving privileges during an OVI suspension — and for first-offense non-refusal OVI cases, a defendant who agrees to install an IID may have the mandatory 15-day hard suspension waived by the court, allowing privileges to begin immediately. IIDs are typically required for second and subsequent OVI offenses. The IID must be installed by a certified provider, and the driver pays the installation and monthly monitoring costs. Any failed IID test or tampering with the device is reported to the court and may result in revocation of privileges.`,
+    question: 'What is an ignition interlock device (IID) and when is it required in Ohio?',
+    answer:
+      "An IID is a breath-testing instrument wired into the vehicle's ignition. The car will not start without a clean breath sample, and it asks for more samples at random while you drive. Under HB 37 (effective April 9, 2025), courts may require an IID as a condition of limited privileges during an OVI suspension. In a first-offense non-refusal case, a defendant who agrees to an IID may have the mandatory 15-day hard suspension waived, so privileges can start immediately. IIDs are typically required for second and later OVI offenses. A certified provider installs it, and the driver pays for installation and monthly monitoring. A failed test or tampering is reported to the court and may cost you your privileges.",
   },
   {
-    question: `What is the difference between an ALS suspension and a court-ordered OVI suspension?`,
-    answer: `There are two separate suspension mechanisms in Ohio OVI law. The Administrative License Suspension (ALS) under ORC 4511.191 is imposed immediately upon arrest by law enforcement — before any criminal conviction — when a driver either fails a BAC test or refuses to submit to one. The ALS is an administrative action by the Ohio BMV. A court-ordered suspension under ORC 4511.19 is imposed by the criminal court as part of sentencing following an OVI conviction. Both are OVI-related suspensions, and driving while subject to either triggers DUOVIS under ORC 4510.14. The ALS can be challenged through an appeal within 30 days of arrest; the court-ordered suspension generally cannot be challenged outside of direct appeal of the conviction. Understanding which type of suspension is in effect — or whether both apply simultaneously — is important to calculating when limited driving privileges may be available.`,
+    question: 'What is the difference between an ALS suspension and a court-ordered OVI suspension?',
+    answer:
+      'Ohio has two. The Administrative License Suspension (ALS) under ORC 4511.191 is imposed at arrest, before any conviction, when a driver fails or refuses a BAC test. It is an administrative action by the Ohio BMV. A court-ordered suspension under ORC 4511.19 is imposed by the criminal court at sentencing after an OVI conviction. Both are OVI-related, and driving under either is DUOVIS under ORC 4510.14. The ALS can be appealed within 30 days of arrest; the court-ordered suspension generally can be challenged only on direct appeal of the conviction. Knowing which suspension is in effect, or whether both are, decides when limited privileges may be available.',
   },
   {
-    question: `Can driving under OVI suspension affect my underlying OVI case?`,
-    answer: `Yes, in several ways. Most directly, a DUOVIS arrest while the underlying OVI case is still pending demonstrates to the court that the defendant is not complying with the terms of the suspension, which can negatively affect bail conditions, plea negotiations, and sentencing in the original OVI case. Judges take note of defendants who drive in open defiance of a court order. Additionally, a DUOVIS conviction within the look-back period for the original OVI offense can be counted toward the repeat-offender penalty calculations for any future OVI charges. Each separate violation creates its own record that compounds the consequences of the overall OVI situation. This is why addressing the original OVI promptly — including obtaining LDP before driving — is the safest course.`,
+    question: 'Can driving under OVI suspension affect my underlying OVI case?',
+    answer:
+      'Yes. A DUOVIS arrest while the OVI case is still pending shows the court you are not complying with the suspension, which can hurt bail conditions, plea negotiations and sentencing in the original case. Judges notice defendants who drive in defiance of a court order. A DUOVIS conviction within the look-back period can also count toward repeat-offender penalties on any future OVI charge. The safest course is to deal with the original OVI promptly, including getting LDP before you drive.',
   },
   {
-    question: `What happens if I am caught driving while suspended in Ohio?`,
-    answer: `When law enforcement discovers a driver operating under an OVI suspension, the driver will typically be arrested and charged with DUOVIS under ORC 4510.14. The vehicle may be immobilized or towed. For repeat DUOVIS offenders, Ohio law allows vehicle immobilization for 30 days (first offense) or forfeiture of the vehicle (subsequent offenses) under ORC 4503.233. The driver will face the mandatory 30-day jail minimum upon conviction. The court may also extend the underlying OVI suspension period. In cases where the driver has multiple prior DUOVIS convictions, prosecutors may seek felony charges under applicable repeat-offender enhancement statutes. Being caught driving on an OVI suspension is never a minor matter — it triggers consequences on multiple levels simultaneously.`,
+    question: 'What happens if I am caught driving while suspended in Ohio?',
+    answer:
+      'You will typically be arrested and charged with DUOVIS under ORC 4510.14, and the vehicle may be immobilized or towed. Under ORC 4503.233, Ohio allows vehicle immobilization for 30 days (first offense) or forfeiture (later offenses). A conviction brings the mandatory 30-day jail minimum, and the court may also extend the underlying OVI suspension. With multiple prior DUOVIS convictions, prosecutors may seek felony charges under repeat-offender enhancement statutes.',
   },
   {
-    question: `How does an attorney help with a driving under OVI suspension charge?`,
-    answer: `An experienced OVI defense attorney can challenge DUOVIS charges on several fronts. First, the attorney can examine whether the underlying OVI suspension was validly imposed — if the ALS appeal was never filed or if there was a procedural defect in the suspension, the underlying suspension itself may be challengeable. Second, the attorney can verify whether the defendant actually had valid limited driving privileges that were misinterpreted by law enforcement. Third, in cases where the defendant was driving within the boundaries of a valid LDP order, the attorney can argue the driving was lawful. Beyond challenging the charge, an attorney can negotiate with the prosecutor for a charge reduction or explore alternatives to the mandatory 30-day jail minimum where any legal basis exists. At Jwayyed Law LLC, we handle DUOVIS charges alongside OVI defense throughout Ohio. <Link href="/contact" className="text-sky-deep underline hover:opacity-80">Contact us today</Link> for a confidential consultation.`,
+    question: 'How does an attorney help with a driving under OVI suspension charge?',
+    answer:
+      'An attorney can check whether the underlying suspension was validly imposed; if the ALS appeal was never filed or the suspension had a procedural defect, the suspension itself may be open to challenge. The attorney can check whether you actually held valid limited privileges that law enforcement misread, and argue that driving within the limits of a valid LDP order was lawful. The attorney can also negotiate for a reduced charge or look for any legal basis for an alternative to the mandatory 30-day minimum. Jwayyed Law LLC handles DUOVIS charges alongside OVI defense throughout Ohio. Contact the firm to schedule a confidential consultation.',
   },
 ];
 
-export default function DrivingUnderOVISuspensionPage() {
+const RELATED = [
+  { href: '/ovi-dui-defense/limited-driving-privileges', title: 'Limited driving privileges', subtitle: 'Driving legally during an OVI suspension' },
+  { href: '/ovi-dui-defense/first-ovi', title: 'First OVI', subtitle: 'Penalties and defenses for a first offense' },
+  { href: '/ovi-dui-defense/second-ovi', title: 'Second OVI', subtitle: 'Higher penalties and mandatory jail for a second offense' },
+  { href: '/ovi-dui-defense/third-ovi', title: 'Third OVI', subtitle: 'Mandatory jail and vehicle forfeiture for a third offense' },
+];
 
+export default function DrivingUnderOVISuspensionPage() {
   return (
     <>
       <OVIReviews />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Driving Under OVI Suspension | Jwayyed Law LLC"
-        description="Experienced legal defense for driving under OVI suspension charges. Protecting your rights and fighting for the best possible outcome."
+        title="Driving under OVI suspension in Ohio"
+        description="Driving on an OVI suspension is a first-degree misdemeanor under ORC 4510.14 with a mandatory 30 consecutive days in jail on a first conviction."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Understanding Driving Under OVI Suspension Charges in Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's ORC 4510.14 makes it a specific criminal offense — distinct from general driving under suspension — to operate a vehicle while your license is suspended due to an OVI conviction or an OVI-related Administrative License Suspension (ALS) under ORC 4511.191. The Ohio General Assembly deliberately imposed harsher penalties for OVI-related driving while suspended than for other types of suspended-license driving, reflecting the legislature's judgment that OVI offenders who continue to drive pose an elevated public safety risk. A first conviction of driving under OVI suspension (DUOVIS) is a first-degree misdemeanor (M1) with a mandatory minimum 30 consecutive days in jail — a consequence that cannot be waived, suspended, or reduced by the court. At Jwayyed Law LLC, we defend clients charged with DUOVIS throughout Ohio as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>, and we also help current OVI clients obtain lawful limited driving privileges before they find themselves in this situation.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The mandatory 30-day jail minimum under ORC 4510.14 is among the most severe mandatory penalties attached to any misdemeanor in the Ohio Revised Code. By comparison, a first-offense OVI under ORC 4511.19 carries a mandatory minimum of only 3 days in jail (or the driver intervention program alternative). The legislature made a clear statement: driving in defiance of an OVI-related suspension is treated almost as seriously as the OVI itself. Courts have very limited ability to deviate from this mandatory minimum. The only meaningful ways to avoid it are to successfully challenge the charge outright — by contesting the validity of the underlying suspension, the identity of the driver, or whether the driving occurred within the scope of a valid limited driving privileges order — or to negotiate a charge reduction to a non-DUOVIS offense where the mandatory minimum does not apply. Learn more about <Link href="/our-law-firm/blog/limited-driving-privileges-after-ovi-ohio" className="text-sky-deep underline hover:text-navy-950">limited driving privileges after an OVI in Ohio</Link>.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio law distinguishes between two types of OVI-related suspensions that can give rise to a DUOVIS charge: the ALS and the court-ordered suspension. The ALS under ORC 4511.191 is imposed administratively at the time of arrest — either because the driver refused chemical testing or because they tested at or above the legal limit. It begins immediately upon arrest, and the driver receives a paper ALS notification from the officer. A court-ordered suspension under ORC 4511.19 is imposed by the criminal court as part of an OVI conviction sentence. Both types of suspension can be in effect simultaneously, and both are "OVI-related" for purposes of ORC 4510.14. It is critical for any OVI defendant to know exactly which suspensions are in effect, when they begin and end, and what limited driving privileges (if any) have been authorized by the court. Confusion about suspension status is not a defense to DUOVIS. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your case.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              HB 37, effective April 9, 2025, introduced important changes to how limited driving privileges interact with OVI suspensions. For first-offense non-refusal OVI cases, a court may now waive the mandatory 15-day hard suspension and grant limited driving privileges immediately if the defendant agrees to install a certified ignition interlock device (IID). For refusal cases, the 30-day hard suspension cannot be waived regardless of IID agreement. For repeat offenders, mandatory IID and longer hard suspension periods apply. The practical takeaway: in many first-offense non-refusal cases, a defendant who retains counsel promptly and agrees to an IID can avoid any gap in driving privileges entirely — and thereby avoid any risk of a DUOVIS charge during the suspension period. Early legal intervention is the most effective preventive measure.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For repeat DUOVIS offenders, Ohio law authorizes increasingly severe consequences. Under ORC 4503.233, a court may order the immobilization of the vehicle driven at the time of a DUOVIS offense for 30 days (first offense) or vehicle forfeiture for subsequent offenses. This means the vehicle itself — which may belong to a family member or employer — can be seized. A pattern of DUOVIS convictions can also affect sentencing in a subsequent OVI case, as it demonstrates willful noncompliance with court orders. Prosecutors and judges treat drivers with multiple driving-while-suspended violations very differently from first-time offenders. If you have a prior DUOVIS record and are now facing a new charge, contact Jwayyed Law LLC immediately. See also our pages on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link> and the general <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI defense overview</Link>.
-            </p>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Driving Under OVI Suspension Penalties in Ohio (ORC 4510.14)
-            </h3>
-            <div className="bg-ice p-6 mb-8">
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li><strong>Classification:</strong> First-degree misdemeanor (M1)</li>
-                <li><strong>Mandatory minimum jail:</strong> 30 consecutive days (cannot be waived, suspended, or converted)</li>
-                <li><strong>Maximum jail:</strong> 180 days</li>
-                <li><strong>Maximum fine:</strong> $1,000</li>
-                <li><strong>Vehicle immobilization:</strong> 30 days (first offense); forfeiture for subsequent offenses under ORC 4503.233</li>
-                <li><strong>Suspension extension:</strong> Court may extend the underlying OVI suspension period</li>
-                <li><strong>Repeat offenses:</strong> Escalating penalties; potential felony exposure for pattern offenders</li>
-              </ul>
-            </div>
+      <KeyFacts
+        facts={[
+          { figure: '30 days', label: 'mandatory consecutive jail on a first DUOVIS conviction' },
+          { figure: '180 days', label: 'maximum jail' },
+          { figure: '$1,000', label: 'maximum fine' },
+          { figure: '30 days', label: 'vehicle immobilization on a first offense (forfeiture after that)' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Driving Under Suspension Defense Attorney Can Help
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
-              <li><strong>Challenge the Underlying Suspension:</strong> Verify that the ALS or court suspension was validly imposed and procedurally proper</li>
-              <li><strong>LDP Verification:</strong> Determine whether valid limited driving privileges were in effect and covered the driving in question</li>
-              <li><strong>Charge Reduction Negotiation:</strong> Seek reduction to a non-DUOVIS offense to avoid the mandatory 30-day minimum</li>
-              <li><strong>Vehicle Immobilization Defense:</strong> Contest any order for immobilization or forfeiture of the vehicle</li>
-              <li><strong>Proactive LDP Applications:</strong> For current OVI clients, immediately file for limited driving privileges to prevent DUOVIS exposure going forward</li>
-              <li><strong>IID Compliance Planning:</strong> Advise on ignition interlock device requirements and how to maintain driving privileges lawfully under HB 37</li>
-            </ul>
+      <Section
+        title="What a DUOVIS charge means"
+        intro={
+          <p>
+            ORC 4510.14 makes it a separate offense, distinct from general driving under suspension, to drive while your license is
+            suspended because of an OVI conviction or an OVI-related ALS under ORC 4511.191.
+          </p>
+        }
+      >
+        <p>
+          The General Assembly deliberately set harsher penalties for OVI-related driving under suspension than for other
+          suspended-license driving, on the view that OVI offenders who keep driving are a higher public safety risk. A first
+          conviction is a first-degree misdemeanor (M1) with a mandatory minimum of 30 consecutive days in jail, which the court cannot
+          waive, suspend or reduce.
+        </p>
+        <p>
+          By comparison, a first-offense OVI under ORC 4511.19 carries a mandatory minimum of only 3 days in jail (or the driver
+          intervention program). That makes the DUOVIS minimum among the most severe attached to any misdemeanor in the Ohio Revised
+          Code. The firm defends DUOVIS charges as part of its <Link href="/ovi-dui-defense">OVI/DUI defense practice</Link>, and helps
+          current OVI clients get lawful limited driving privileges before it comes to this.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="OVI/DUI Defense" />
+      <Section title="Driving under OVI suspension penalties" tone="ice">
+        <FactTable
+          title="Penalties under ORC 4510.14"
+          rows={[
+            { label: 'Classification', value: 'First-degree misdemeanor (M1).' },
+            { label: 'Mandatory minimum jail', value: '30 consecutive days. It cannot be waived, suspended or converted.' },
+            { label: 'Maximum jail', value: '180 days.' },
+            { label: 'Maximum fine', value: '$1,000.' },
+            { label: 'Vehicle immobilization', value: '30 days (first offense); forfeiture for later offenses under ORC 4503.233.' },
+            { label: 'Suspension extension', value: 'The court may extend the underlying OVI suspension.' },
+            { label: 'Repeat offenses', value: 'Escalating penalties and possible felony exposure for a pattern of offenses.' },
+          ]}
+        />
+        <h3>Repeat offenses</h3>
+        <p>
+          Under ORC 4503.233, a court may order the vehicle driven during a DUOVIS offense immobilized for 30 days on a first offense, or
+          forfeited on later offenses, even if it belongs to a family member or employer. A pattern of DUOVIS convictions also shows
+          willful noncompliance and can affect sentencing in a later OVI case. Prosecutors and judges treat repeat offenders very
+          differently from first-time offenders. With a prior DUOVIS record and a new charge, contact the firm right away.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
-            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Limited Driving Privileges</span>
-                <span className="text-sm text-navy-950/70">Get back on the road legally during your OVI suspension</span>
-              </Link>
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
-                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
-              </Link>
-              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Second OVI Defense</span>
-                <span className="text-sm text-navy-950/70">Enhanced penalties and mandatory jail for second OVI offenses in Ohio</span>
-              </Link>
-              <Link href="/ovi-dui-defense/third-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Third OVI Defense</span>
-                <span className="text-sm text-navy-950/70">Aggressive defense for third OVI charges with mandatory jail and vehicle forfeiture</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="The two kinds of OVI suspension">
+        <p>Two types of OVI-related suspension can lead to a DUOVIS charge, and both can be in effect at once.</p>
+        <PointGrid
+          points={[
+            {
+              title: 'Administrative License Suspension (ALS)',
+              body: 'Imposed under ORC 4511.191 at the time of arrest, because you refused chemical testing or tested at or above the legal limit. It starts immediately, and the officer gives you a paper ALS notice.',
+            },
+            {
+              title: 'Court-ordered suspension',
+              body: 'Imposed under ORC 4511.19 by the criminal court as part of the sentence for an OVI conviction.',
+            },
+          ]}
+        />
+        <p>
+          Both are &ldquo;OVI-related&rdquo; for ORC 4510.14. Know exactly which suspensions are in effect, when they start and end,
+          and what limited privileges, if any, the court has authorized. Confusion about your suspension status is not a defense. Call
+          (614) 285-5482 or <Link href="/contact">schedule a consultation</Link>.
+        </p>
+      </Section>
+
+      <Section title="HB 37 and staying legal on the road" tone="ice">
+        <p>
+          HB 37, effective April 9, 2025, changed how limited privileges interact with OVI suspensions. In a first-offense non-refusal
+          case, a court may now waive the mandatory 15-day hard suspension and grant privileges immediately if you agree to install a
+          certified ignition interlock device (IID). In a refusal case, the 30-day hard suspension cannot be waived regardless of an IID
+          agreement. Repeat offenders face a mandatory IID and longer hard suspensions.
+        </p>
+        <p>
+          In many first-offense non-refusal cases, retaining counsel promptly and agreeing to an IID can avoid any gap in driving
+          privileges, and with it any risk of a DUOVIS charge. Read about{' '}
+          <Link href="/our-law-firm/blog/limited-driving-privileges-after-ovi-ohio">limited driving privileges after an OVI in Ohio</Link>{' '}
+          or see <Link href="/ovi-dui-defense/limited-driving-privileges">limited driving privileges</Link> for the full process.
+        </p>
+        <Callout title="Get privileges before you drive">
+          Driving without a valid LDP order, even for work or a medical emergency, is driving under OVI suspension.
+        </Callout>
+      </Section>
+
+      <Section title="Defenses to a DUOVIS charge">
+        <p>
+          Courts have very little room to depart from the mandatory minimum. The ways to avoid it are to defeat the charge or to
+          negotiate a reduction to a non-DUOVIS offense where the minimum does not apply.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'The underlying suspension', body: 'Whether it was validly imposed. A procedural defect may open the suspension itself to challenge.' },
+            { title: 'Identity of the driver', body: 'Whether the state can prove you were the person driving.' },
+            { title: 'A valid privileges order', body: 'Whether the driving fell within the scope of a valid limited driving privileges order.' },
+            { title: 'A reduced charge', body: 'A non-DUOVIS offense that does not carry the 30-day mandatory minimum.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="What the firm does on a DUOVIS charge" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Challenges the underlying suspension', body: 'Checks that the ALS or court suspension was validly imposed and procedurally proper.' },
+            { title: 'Verifies your privileges', body: 'Whether valid limited driving privileges were in effect and covered the driving in question.' },
+            { title: 'Negotiates a reduction', body: 'To a non-DUOVIS offense, avoiding the mandatory 30-day minimum.' },
+            { title: 'Contests the vehicle order', body: 'Any order to immobilize or forfeit the vehicle.' },
+            { title: 'Files for privileges early', body: 'For current OVI clients, an immediate LDP application to prevent DUOVIS exposure going forward.' },
+            { title: 'Plans IID compliance', body: 'Ignition interlock requirements and how to keep driving lawfully under HB 37.' },
+          ]}
+        />
+        <p>
+          See also the general <Link href="/ovi-dui-defense">OVI defense overview</Link>.
+        </p>
+      </Section>
+
+      <LocationsWeServe title="OVI/DUI Defense" />
+
+      <Section title="Related OVI pages" tone="ice">
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

@@ -5,16 +5,19 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, KeyFacts, LinkGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Expungement Attorney Ohio',
-  description: 'Ohio expungement attorney sealing criminal records under ORC 2953.32. Misdemeanors, low-level felonies, dismissed charges. Call (614) 285-5482.',
+  description:
+    'Sealing a criminal record in Ohio under ORC 2953.32: who qualifies, the waiting periods and the court process. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: ['expungement lawyer Ohio', 'record sealing attorney Columbus', 'Ohio expungement ORC 2953', 'criminal record sealing Ohio', 'expungement attorney Franklin County'],
   openGraph: {
     title: 'Expungement Attorney Ohio | Jwayyed Law LLC',
+    description: 'Eligibility, waiting periods and the court process for sealing or expunging a criminal record in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/expungement-record-sealing',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/criminal-defense/expungement-record-sealing' },
 };
 
@@ -25,121 +28,183 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is the difference between expungement and record sealing in Ohio?`,
-    answer: `In Ohio, "expungement" and "record sealing" are often used interchangeably but technically refer to different relief under ORC Chapter 2953. Record sealing under ORC 2953.32 closes the record from public view — most employers, landlords, and the general public cannot access it, but law enforcement, courts, and certain government agencies can. Expungement under ORC 2953.38 goes further and results in the physical destruction of the record. For most practical purposes, record sealing provides sufficient relief: a sealed record does not appear on standard background checks and allows individuals to lawfully answer "no" to most employment applications asking about prior convictions. Our firm can help determine which form of relief applies to your case.`,
+    question: 'What is the difference between expungement and record sealing in Ohio?',
+    answer:
+      'People use the terms interchangeably, but under ORC Chapter 2953 they are different kinds of relief. Record sealing under ORC 2953.32 closes the record from public view: most employers, landlords and members of the public cannot see it, but law enforcement, courts and certain government agencies can. Expungement under ORC 2953.38 goes further and destroys the record. For most purposes sealing is enough: a sealed record does not show up on standard background checks, and you may lawfully answer "no" on most job applications that ask about prior convictions. The firm can tell you which form of relief applies to your case.',
   },
   {
-    question: `Who is eligible for record sealing in Ohio under ORC 2953.32?`,
-    answer: `Eligibility for record sealing in Ohio depends on offense type, the number of prior convictions, completion of all sentence conditions, and expiration of the applicable waiting period. As amended by the Ohio legislature (most recently in 2023 and 2024), Ohio has significantly expanded expungement eligibility. Most misdemeanors (all degrees) and low-level felonies (F4 and F5, and many F3 offenses) are eligible. Certain offenses are categorically ineligible regardless of other factors: first- and second-degree felonies (with limited exceptions), crimes of violence under ORC 2901.01(A)(9), sexually oriented offenses, offenses involving minors as victims, and most traffic offenses (OVI/DUI under ORC 4511.19 is not sealable). An attorney can review your specific record and advise on eligibility.`,
+    question: 'Who is eligible for record sealing in Ohio under ORC 2953.32?',
+    answer:
+      'Eligibility depends on the type of offense, the number of prior convictions, whether you completed every condition of your sentence, and whether the waiting period has run. The Ohio legislature has significantly expanded eligibility, most recently in 2023 and 2024. Most misdemeanors (all degrees) and low-level felonies (F4 and F5, and many F3 offenses) are eligible. Some offenses are ineligible no matter what: first- and second-degree felonies (with limited exceptions), crimes of violence under ORC 2901.01(A)(9), sexually oriented offenses, offenses with minor victims, and most traffic offenses (OVI/DUI under ORC 4511.19 cannot be sealed). An attorney can review your record and advise on eligibility.',
   },
   {
-    question: `What are the waiting periods for record sealing in Ohio?`,
-    answer: `Under ORC 2953.32 (as amended through 2024), Ohio's record sealing waiting periods run from the date of final discharge — meaning completion of all incarceration, probation, parole, and payment of all fines, costs, and restitution. The waiting periods are: minor misdemeanors: 1 year; misdemeanors of the first through fourth degree: 1 year; fourth- and fifth-degree felonies: 1 year; third-degree felonies (one conviction): 3 years; third-degree felonies (two convictions): 3 years. For arrests and charges that did not result in conviction (dismissed charges, not-guilty verdicts, no-billed charges), there is no waiting period — you may seek sealing immediately. All financial obligations (fines, court costs, restitution) must be satisfied before the court will grant a sealing application.`,
+    question: 'What are the waiting periods for record sealing in Ohio?',
+    answer:
+      'Under ORC 2953.32 (as amended through 2024), waiting periods run from final discharge: the end of all incarceration, probation and parole, and payment of all fines, costs and restitution. They are: minor misdemeanors, 1 year; misdemeanors of the first through fourth degree, 1 year; fourth- and fifth-degree felonies, 1 year; third-degree felonies (one conviction), 3 years; third-degree felonies (two convictions), 3 years. Arrests and charges that did not end in a conviction (dismissals, not-guilty verdicts, no-bills) have no waiting period, so you can apply right away. The court will not grant sealing until all fines, court costs and restitution are paid.',
   },
   {
-    question: `Can felony records be sealed in Ohio?`,
-    answer: `Yes, many felony records can be sealed in Ohio under ORC 2953.32, significantly expanded by recent Ohio legislation. Fourth- and fifth-degree felonies are eligible after a 1-year waiting period. Many third-degree felonies are eligible after 3 years. Some second-degree felony convictions became eligible under 2023 Ohio legislation for offenses committed after July 1, 2023, with certain conditions. Ineligible felonies include first-degree felonies (generally), crimes of violence as defined by ORC 2901.01(A)(9), sexually oriented offenses, offenses with mandatory prison terms, and offenses where the victim was a minor. The number of prior convictions also affects eligibility — Ohio law sets maximum conviction counts for sealing eligibility. A criminal defense attorney can review your specific felony conviction(s) and advise whether sealing is possible.`,
+    question: 'Can felony records be sealed in Ohio?',
+    answer:
+      'Yes, many can, under ORC 2953.32 as expanded by recent legislation. Fourth- and fifth-degree felonies are eligible after a 1-year waiting period, and many third-degree felonies after 3 years. Under 2023 Ohio legislation, some second-degree felony convictions became eligible for offenses committed after July 1, 2023, with conditions. Ineligible felonies include first-degree felonies (generally), crimes of violence as defined by ORC 2901.01(A)(9), sexually oriented offenses, offenses with mandatory prison terms, and offenses with a minor victim. Ohio law also caps the number of prior convictions you can have. An attorney can review your felony conviction or convictions and tell you whether sealing is possible.',
   },
   {
-    question: `Can dismissed charges or not-guilty verdicts be sealed in Ohio?`,
-    answer: `Yes. Dismissed charges, charges that resulted in not-guilty verdicts, no-billed charges (where a grand jury declined to indict), and cases in which the prosecutor entered a nolle prosequi (declined to prosecute) are eligible for sealing under ORC 2953.52 with no waiting period. These are some of the most important records to seal because they still appear on background checks and can harm employment and housing prospects even though they did not result in a conviction. An application can be filed at any time after the case is resolved, and the standard for granting relief is generally favorable to the applicant when no conviction resulted.`,
+    question: 'Can dismissed charges or not-guilty verdicts be sealed in Ohio?',
+    answer:
+      'Yes. Dismissed charges, not-guilty verdicts, no-billed charges (where a grand jury declined to indict) and cases where the prosecutor entered a nolle prosequi (declined to prosecute) can be sealed under ORC 2953.52 with no waiting period. These records still show up on background checks and can hurt your job and housing prospects even though there was no conviction. You can apply any time after the case ends, and courts generally look favorably on the application when there was no conviction.',
   },
   {
-    question: `What is the process for getting a record sealed in Ohio?`,
-    answer: `The record sealing process in Ohio involves several steps: (1) Eligibility determination — confirm the offense type, waiting period, and number of prior convictions; (2) Application preparation — draft and file an application for expungement/sealing in the court of conviction (the original sentencing court), along with any required affidavits or documents; (3) Notice — the court notifies the prosecuting attorney, who has 60 days to object; (4) Hearing — the court holds a hearing (usually brief) at which the court weighs the interests of the applicant against any legitimate governmental interest in maintaining the record; (5) Order — if granted, the court issues a sealing order directed to all relevant repositories (Ohio BCI, courts, law enforcement agencies); (6) Record updates — agencies update their records accordingly. Our firm handles all steps of this process, from eligibility review to post-order follow-up.`,
+    question: 'What is the process for getting a record sealed in Ohio?',
+    answer:
+      'There are six steps. (1) Eligibility: confirm the offense type, the waiting period and the number of prior convictions. (2) Application: draft and file the application for expungement or sealing in the court of conviction (the original sentencing court), with any required affidavits or documents. (3) Notice: the court notifies the prosecuting attorney, who has 60 days to object. (4) Hearing: usually brief; the court weighs your interests against any legitimate government interest in keeping the record. (5) Order: if granted, the court sends a sealing order to every relevant repository (Ohio BCI, courts, law enforcement agencies). (6) Updates: the agencies update their records. The firm handles every step, from the eligibility review to follow-up after the order.',
   },
   {
-    question: `Does sealing a record allow me to say I have no criminal record on job applications?`,
-    answer: `Generally yes, with important exceptions. After a record is sealed in Ohio under ORC 2953.32, the law provides that in most circumstances the individual "shall be treated as if he had not been convicted of or pleaded guilty to the offense." This means you may lawfully answer "no" on most private employer applications asking about prior convictions. However, Ohio law requires disclosure of sealed records in several specific circumstances: applications for law enforcement positions; applications requiring a criminal background check under Ohio law (certain licensed professions, positions working with children or vulnerable adults, applications to purchase firearms); and federal employment applications (federal law is not governed by Ohio sealing orders). An attorney can advise on which disclosure obligations may apply to your specific situation.`,
+    question: 'Does sealing a record allow me to say I have no criminal record on job applications?',
+    answer:
+      'Generally yes, with important exceptions. Once a record is sealed under ORC 2953.32, the law says that in most circumstances you "shall be treated as if he had not been convicted of or pleaded guilty to the offense." So you may lawfully answer "no" on most private employer applications that ask about prior convictions. Ohio law still requires disclosure of a sealed record in some situations: law enforcement job applications; applications that require a criminal background check under Ohio law (certain licensed professions, jobs working with children or vulnerable adults, firearm purchases); and federal employment applications, since Ohio sealing orders do not govern federal law. An attorney can tell you which disclosure rules apply to you.',
   },
   {
-    question: `What records does Ohio's expungement order actually seal?`,
-    answer: `An Ohio record sealing order under ORC 2953.32 directs all official repositories to seal the subject records — this includes court records (the docket, case file, and judgment entry), Ohio Bureau of Criminal Investigation (BCI) records, law enforcement agency records, and records held by the arresting agency. The Ohio Revised Code requires BCI to maintain a sealed index accessible only to courts for sentencing purposes and law enforcement agencies. Commercial background check companies are required to remove sealed records when notified, but some databases may take time to update and some private companies may retain information — this is one reason why monitoring your background check report after sealing is advisable. A sealed record will not appear on most Ohio BCI checks used by private employers and landlords.`,
+    question: "What records does Ohio's expungement order actually seal?",
+    answer:
+      'A sealing order under ORC 2953.32 directs every official repository to seal the records: court records (the docket, case file and judgment entry), Ohio Bureau of Criminal Investigation (BCI) records, law enforcement agency records and the arresting agency\'s records. The Ohio Revised Code requires BCI to keep a sealed index that only courts (for sentencing) and law enforcement agencies can access. Commercial background check companies must remove sealed records once notified, but some databases take time to update and some private companies may keep the information, so it is worth checking your background report after sealing. A sealed record will not appear on most Ohio BCI checks used by private employers and landlords.',
   },
 ];
 
-export default function ExpungementRecordSealingPage() {
+const RELATED = [
+  { href: '/criminal-defense/assault-charges', title: 'Assault charges', subtitle: 'Simple and aggravated assault defense in Ohio' },
+  { href: '/criminal-defense/domestic-violence', title: 'Domestic violence defense', subtitle: 'Ohio DV charges and protection order defense' },
+  { href: '/criminal-defense/petty-theft', title: 'Petty theft', subtitle: 'Shoplifting and theft defense in Ohio' },
+  { href: '/criminal-defense/driving-under-suspension', title: 'Driving under suspension', subtitle: 'Suspended license defense in Ohio' },
+];
 
+export default function ExpungementRecordSealingPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Expungement &amp; Record Sealing Attorney in Ohio"
-        description="Helping clients seal criminal records under ORC Chapter 2953. Misdemeanors, low-level felonies, dismissed charges, and not-guilty verdicts."
+        title="Expungement and record sealing in Ohio"
+        description="Under ORC 2953.32, most misdemeanors and fourth- and fifth-degree felonies can be sealed 1 year after final discharge. Dismissed charges can be sealed right away."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Ohio Expungement and Record Sealing: A Second Chance Under ORC 2953
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              A criminal record — even for a minor misdemeanor — can follow Ohioans for years, appearing on background checks run by employers, landlords, professional licensing boards, and educational institutions. Ohio law provides a meaningful remedy: record sealing under <strong>ORC 2953.32</strong>, which effectively removes the conviction from public view and allows individuals to move forward without the ongoing collateral consequences of a criminal record. Ohio has significantly expanded its expungement and record sealing statutes in recent years, and many people who were previously ineligible may now qualify. At Jwayyed Law LLC, we help clients throughout Ohio navigate the eligibility requirements, file applications, and complete the sealing process efficiently.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Eligibility for record sealing in Ohio turns on several factors: the nature of the offense, the number of prior convictions, whether all sentence conditions have been completed, and whether the applicable waiting period has run. Under current Ohio law, most misdemeanor convictions and many felony convictions — including fourth- and fifth-degree felonies after a one-year waiting period, and third-degree felonies after three years — are eligible for sealing. Certain offenses remain categorically ineligible regardless of other factors: first-degree felonies in most circumstances, crimes of violence as defined by <strong>ORC 2901.01(A)(9)</strong>, sexually oriented offenses, offenses involving minor victims, and OVI/DUI convictions under <strong>ORC 4511.19</strong>. The expansion of eligible offenses under recent Ohio legislation means an attorney review of your specific record is the best way to determine whether you qualify.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              One category of records that is often overlooked is arrests, charges, and cases that did not result in conviction. Dismissed charges, charges that were no-billed by a grand jury, cases in which the prosecutor entered a nolle prosequi, and acquittals (not-guilty verdicts) are all eligible for sealing under <strong>ORC 2953.52</strong> with no waiting period. These records still appear on background checks despite never resulting in a conviction — they can mislead employers and landlords about an individual&apos;s history. Sealing dismissed and non-conviction records is often the quickest and most impactful form of record relief available in Ohio.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The practical effect of a sealed record in Ohio is significant. Once a record is sealed, Ohio law provides that in most circumstances the individual &quot;shall be treated as if he had not been convicted of or pleaded guilty to the offense.&quot; Most private employers and landlords conducting standard background checks will not see the sealed record. The individual may lawfully answer &quot;no&quot; on most employment applications that ask about prior convictions. Important exceptions apply: law enforcement positions, certain licensed professions, positions involving children or vulnerable adults, and federal employment applications require disclosure of sealed records. Understanding which exceptions apply to your specific situation is an important part of post-sealing planning.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '1 year', label: 'waiting period for misdemeanors and F4 and F5 felonies, from final discharge' },
+          { figure: '3 years', label: 'waiting period for third-degree felonies' },
+          { figure: 'None', label: 'waiting period for dismissed charges and not-guilty verdicts (ORC 2953.52)' },
+          { figure: '60 days', label: 'for the prosecutor to object after the application is filed' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Ohio Record Sealing Waiting Periods (ORC 2953.32)
-            </h3>
-            <div className="bg-ice p-6 mb-8">
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">Waiting periods are measured from <strong>final discharge</strong> — completion of all incarceration, probation, parole, and payment of all fines, costs, and restitution:</p>
-              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                <li>Minor misdemeanors: <strong>1 year</strong></li>
-                <li>Misdemeanors (all degrees, M1–M4): <strong>1 year</strong></li>
-                <li>Fourth- and fifth-degree felonies (F4, F5): <strong>1 year</strong></li>
-                <li>Third-degree felonies (F3, one or two convictions): <strong>3 years</strong></li>
-                <li>Dismissed charges / non-conviction records (ORC 2953.52): <strong>No waiting period</strong></li>
-              </ul>
-              <p className="text-navy-950/80">Ineligible offenses include: OVI/DUI (ORC 4511.19), crimes of violence (ORC 2901.01(A)(9)), sexually oriented offenses, offenses with minor victims, and most F1/F2 felonies. All fines and costs must be paid before filing. Number of prior convictions affects eligibility for higher-degree offenses.</p>
-            </div>
+      <Section
+        title="What sealing a record does"
+        intro={
+          <p>
+            Record sealing under <strong>ORC 2953.32</strong> takes a conviction out of public view, so it stops showing up on the
+            background checks employers, landlords, licensing boards and schools run.
+          </p>
+        }
+      >
+        <p>
+          Even a minor misdemeanor can follow you for years. Ohio has significantly expanded its sealing and expungement laws in recent
+          years, and many people who were ineligible before may now qualify. Jwayyed Law LLC helps clients throughout Ohio check
+          eligibility, file the application and complete the process.
+        </p>
+        <p>
+          Once a record is sealed, Ohio law says that in most circumstances you &quot;shall be treated as if he had not been convicted
+          of or pleaded guilty to the offense.&quot; Most private employers and landlords running standard checks will not see it, and
+          you may lawfully answer &quot;no&quot; on most job applications that ask about prior convictions.
+        </p>
+        <Callout title="When you still have to disclose">
+          Law enforcement jobs, certain licensed professions, positions working with children or vulnerable adults, and federal
+          employment applications require disclosure of sealed records. Knowing which of these apply to you is part of planning after
+          the record is sealed.
+        </Callout>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              How Jwayyed Law LLC Handles the Record Sealing Process
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Eligibility evaluation:</strong> Review of your complete criminal record history across all Ohio courts to identify all sealable offenses, confirm waiting periods have run, and identify any ineligible offenses that could complicate the application.</li>
-              <li><strong>Application preparation and filing:</strong> Draft and file the expungement/sealing application in the court of original conviction (the correct court is the sentencing court, not just any court), along with supporting documentation.</li>
-              <li><strong>Prosecutor response:</strong> Monitor for any objection by the prosecuting attorney (who has 60 days to respond) and respond appropriately if objections are filed.</li>
-              <li><strong>Hearing representation:</strong> Appear at the sealing hearing on your behalf, present the case for sealing, and address any judicial concerns or prosecutorial objections.</li>
-              <li><strong>Post-order follow-up:</strong> Confirm that sealing orders are transmitted to all relevant agencies including BCI, law enforcement repositories, and court records offices.</li>
-            </ul>
+      <Section title="Who qualifies for record sealing" tone="ice">
+        <p>
+          Eligibility turns on the nature of the offense, the number of prior convictions, whether every condition of the sentence is
+          complete, and whether the waiting period has run. Most misdemeanor convictions and many felony convictions are eligible,
+          including fourth- and fifth-degree felonies after one year and third-degree felonies after three years.
+        </p>
+        <FactTable
+          title="Waiting periods under ORC 2953.32, from final discharge"
+          rows={[
+            { label: 'Minor misdemeanors', value: '1 year' },
+            { label: 'Misdemeanors (M1 to M4)', value: '1 year' },
+            { label: 'Fourth- and fifth-degree felonies', value: '1 year' },
+            { label: 'Third-degree felonies (one or two convictions)', value: '3 years' },
+            { label: 'Dismissed charges and non-conviction records (ORC 2953.52)', value: 'No waiting period' },
+          ]}
+          note="Final discharge means the end of all incarceration, probation and parole, and payment of all fines, costs and restitution. All fines and costs must be paid before filing. The number of prior convictions affects eligibility for higher-degree offenses."
+        />
+        <FactTable
+          title="Offenses that cannot be sealed"
+          rows={[
+            { label: 'OVI/DUI', value: 'Convictions under ORC 4511.19.' },
+            { label: 'Crimes of violence', value: 'As defined by ORC 2901.01(A)(9).' },
+            { label: 'Sexually oriented offenses', value: 'Ineligible.' },
+            { label: 'Minor victims', value: 'Offenses where the victim was a minor.' },
+            { label: 'High-level felonies', value: 'Most F1 and F2 felonies; first-degree felonies in most circumstances.' },
+          ]}
+        />
+        <p>
+          Because eligibility has expanded under recent legislation, a review of your actual record is the surest way to know whether
+          you qualify.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you have a prior criminal record in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to discuss whether record sealing may be available to you. Read our articles on <Link href="/our-law-firm/blog/ohio-new-expungement-laws-clear-record" className="text-sky-deep underline hover:text-navy-950">Ohio&apos;s new expungement laws</Link> and <Link href="/our-law-firm/blog/what-is-expungement-ohio-2024" className="text-sky-deep underline hover:text-navy-950">how expungement works in Ohio</Link>. Related services include <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">Ohio criminal defense</Link> and <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense</Link>. Note that OVI convictions under ORC 4511.19 are not sealable.
-            </p>
+      <Section title="Sealing charges that never led to a conviction">
+        <p>
+          Arrests and cases that ended without a conviction are often overlooked. Dismissed charges, charges no-billed by a grand jury,
+          cases where the prosecutor entered a nolle prosequi, and acquittals (not-guilty verdicts) can all be sealed under{' '}
+          <strong>ORC 2953.52</strong> with no waiting period.
+        </p>
+        <p>
+          These records still show up on background checks and can mislead employers and landlords. Sealing them is often the fastest
+          and most useful record relief available in Ohio.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="How the sealing process works" tone="ice">
+        <Steps
+          steps={[
+            {
+              title: 'Eligibility review',
+              body: 'A review of your full record across Ohio courts to find every sealable offense, confirm the waiting periods have run, and flag any ineligible offense that could complicate the application.',
+            },
+            {
+              title: 'Application and filing',
+              body: 'The application is filed in the court of original conviction (the sentencing court, not just any court), with supporting documents.',
+            },
+            {
+              title: 'Prosecutor response',
+              body: 'The prosecuting attorney has 60 days to respond. Any objection gets a response.',
+            },
+            {
+              title: 'Hearing',
+              body: 'The firm appears on your behalf, presents the case for sealing, and answers any concerns from the judge or objections from the prosecutor.',
+            },
+            {
+              title: 'Follow-up after the order',
+              body: 'The firm confirms the sealing order reached every relevant agency, including BCI, law enforcement repositories and court records offices.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Assault Charges</span>
-                <span className="text-sm text-navy-950/70">Simple and aggravated assault defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Domestic Violence Defense</span>
-                <span className="text-sm text-navy-950/70">Ohio DV charges and protection order defense</span>
-              </Link>
-              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Petty Theft</span>
-                <span className="text-sm text-navy-950/70">Shoplifting and theft defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Driving Under Suspension</span>
-                <span className="text-sm text-navy-950/70">Suspended license defense in Ohio</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Related reading and services">
+        <p>
+          If you have a criminal record in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to find out whether sealing is
+          available to you. Read the firm&rsquo;s articles on{' '}
+          <Link href="/our-law-firm/blog/ohio-new-expungement-laws-clear-record">Ohio&rsquo;s new expungement laws</Link> and{' '}
+          <Link href="/our-law-firm/blog/what-is-expungement-ohio-2024">how expungement works in Ohio</Link>. Related services include{' '}
+          <Link href="/criminal-defense">Ohio criminal defense</Link> and <Link href="/ovi-dui-defense">OVI/DUI defense</Link>. OVI
+          convictions under ORC 4511.19 cannot be sealed.
+        </p>
+        <LocationsWeServe title="Criminal Defense" />
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

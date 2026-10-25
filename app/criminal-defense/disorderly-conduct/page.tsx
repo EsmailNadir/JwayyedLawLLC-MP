@@ -5,10 +5,12 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { FactTable, KeyFacts, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Disorderly Conduct Defense Ohio',
-  description: 'Charged with disorderly conduct in Ohio? Jwayyed Law LLC defends R.C. 2917.11 charges across Franklin County and central Ohio. Call (614) 285-5482.',
+  description:
+    'Charged with disorderly conduct under R.C. 2917.11? Penalties, when it becomes an M4, diversion and defenses. Call Jwayyed Law LLC at (614) 285-5482.',
   keywords: [
     'disorderly conduct lawyer Ohio',
     'disorderly conduct defense attorney Columbus',
@@ -20,6 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Disorderly Conduct Defense Ohio | Jwayyed Law LLC',
+    description: 'Penalties, M4 escalation, diversion and defenses for a disorderly conduct charge under R.C. 2917.11.',
     url: 'https://www.jjlawohio.com/criminal-defense/disorderly-conduct',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -34,100 +37,152 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is disorderly conduct under Ohio law?',
-    answer: 'Ohio Revised Code 2917.11 prohibits conduct that recklessly causes inconvenience, annoyance, or alarm to another person. Common violations include fighting or threatening harm, making unreasonable noise, using offensively coarse language in circumstances likely to provoke violence, and creating a physically offensive condition with no legitimate purpose. Division (B) separately prohibits engaging in offensive conduct or creating a risk of physical harm while voluntarily intoxicated in a public place. The base offense is a minor misdemeanor (no jail, up to $150 fine), escalating to an M4 in certain circumstances.',
+    answer:
+      'Ohio Revised Code 2917.11 prohibits conduct that recklessly causes inconvenience, annoyance or alarm to another person. Common examples are fighting or threatening harm, making unreasonable noise, using offensively coarse language where it is likely to provoke violence, and creating a physically offensive condition with no legitimate purpose. Division (B) separately prohibits offensive conduct, or creating a risk of physical harm, while voluntarily intoxicated in a public place. The base offense is a minor misdemeanor (no jail, a fine of up to $150), rising to an M4 in certain circumstances.',
   },
   {
     question: 'When does disorderly conduct escalate to a fourth-degree misdemeanor in Ohio?',
-    answer: 'Disorderly conduct escalates from a minor misdemeanor to a fourth-degree misdemeanor (up to 30 days jail, $250 fine) in four circumstances under R.C. 2917.11: (1) the offender persists after a reasonable warning by law enforcement to stop; (2) the offense occurs in the vicinity of a school or school safety zone; (3) the offense occurs in the presence of emergency personnel responding to an emergency; or (4) the offender has three or more prior convictions under the public intoxication subsection (R.C. 2917.11(B)). The escalation is a separate legal determination that our firm challenges on a case-by-case basis.',
+    answer:
+      'Under R.C. 2917.11 it becomes a fourth-degree misdemeanor (up to 30 days in jail and a $250 fine) in four situations: (1) you keep going after a reasonable warning from law enforcement to stop; (2) it happens near a school or in a school safety zone; (3) it happens in the presence of emergency personnel responding to an emergency; or (4) you have three or more prior convictions under the public intoxication subsection, R.C. 2917.11(B). Each escalation is a separate finding, and the firm challenges it case by case.',
   },
   {
     question: 'Does a disorderly conduct conviction go on my record?',
-    answer: 'Yes. Both minor misdemeanor and M4 disorderly conduct convictions create a permanent public criminal record under Ohio law — accessible through background checks used by employers, landlords, and professional licensing boards. Even a $150 minor misdemeanor conviction is worth contesting if there is a viable path to dismissal, diversion, or avoidance. Many first-time disorderly conduct cases in Ohio resolve without a conviction through first-offender diversion programs.',
+    answer:
+      'Yes. A minor misdemeanor or M4 disorderly conduct conviction creates a permanent public criminal record in Ohio, visible on the background checks employers, landlords and licensing boards use. Even a $150 minor misdemeanor is worth contesting when there is a real path to dismissal or diversion. Many first-time disorderly conduct cases in Ohio end without a conviction through first-offender diversion programs.',
   },
   {
     question: 'Can disorderly conduct be expunged in Ohio?',
-    answer: 'Most disorderly conduct convictions are eligible for expungement under Ohio Revised Code 2953.32 after applicable waiting periods — 1 year from final discharge for minor misdemeanor and M4 convictions. Once sealed, the record is removed from public background check databases. However, expungement is a future option after conviction, not an alternative to fighting the charge. Our firm pursues dismissal or diversion first, and evaluates expungement as a fallback for any conviction that results.',
+    answer:
+      'Most disorderly conduct convictions can be expunged under Ohio Revised Code 2953.32 after the waiting period: 1 year from final discharge for minor misdemeanor and M4 convictions. Once sealed, the record comes out of public background check databases. Expungement only helps after a conviction, though, so the firm goes for dismissal or diversion first and treats expungement as the fallback.',
   },
   {
     question: 'What defenses apply to disorderly conduct charges in Ohio?',
-    answer: 'Key defenses to Ohio disorderly conduct charges include: challenging whether the conduct was actually "reckless" versus merely careless or impulsive; contesting whether the conduct caused actual inconvenience, annoyance, or alarm to a specific person (rather than abstract offense); First Amendment challenges to charges based on speech or expressive conduct; challenging the sufficiency of any "warning" relied on for the M4 escalation; and evaluating whether the defendant\'s conduct falls within an exception or de minimis standard. Our firm reviews all evidence — body-cam footage, police reports, witness statements — before advising on any defense.',
+    answer:
+      'The main defenses are: the conduct was careless or impulsive rather than reckless; it did not cause actual inconvenience, annoyance or alarm to a specific person; the charge rests on speech or expression protected by the First Amendment; the warning relied on for the M4 escalation was not sufficient; or the conduct falls within an exception or is too minor to count. The firm reviews the body-cam footage, police reports and witness statements before advising on a defense.',
   },
   {
     question: 'Why hire Jwayyed Law LLC for a disorderly conduct charge in Ohio?',
-    answer: 'Jwayyed Law LLC defends disorderly conduct charges throughout Ohio, including Franklin County, Columbus, and surrounding communities. While disorderly conduct appears minor, a conviction creates a permanent criminal record. Many first-time cases can be dismissed or diverted — outcomes an experienced attorney is better positioned to achieve than a self-represented defendant. Our firm appears in mayor\'s courts, Franklin County Municipal Court, and municipal courts throughout central Ohio. Call (614) 285-5482 to discuss your case.',
+    answer:
+      'Jwayyed Law LLC defends disorderly conduct charges throughout Ohio, including Franklin County, Columbus and nearby communities. The charge can look minor, but a conviction leaves a permanent criminal record. Many first-time cases can be dismissed or diverted, and an attorney is in a better position to get there than someone representing themselves. The firm appears in mayor\'s courts, Franklin County Municipal Court and municipal courts across central Ohio. Call (614) 285-5482 to discuss your case.',
   },
 ];
 
 export default function DisorderlyConductPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Disorderly Conduct Defense Attorney in Ohio"
-        description="Charged with disorderly conduct under R.C. 2917.11? Jwayyed Law LLC defends minor misdemeanor and M4 disorderly conduct charges across Franklin County and central Ohio. Call (614) 285-5482."
+        title="Disorderly conduct charges in Ohio"
+        description="Disorderly conduct under R.C. 2917.11 starts as a minor misdemeanor with a fine of up to $150. In four situations it becomes an M4 with up to 30 days in jail."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Disorderly Conduct Defense in Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Disorderly conduct under Ohio Revised Code 2917.11 is one of the most broadly written misdemeanor statutes in Ohio&apos;s criminal code — covering everything from a shouting argument in a parking lot to aggressive behavior at a community event to public intoxication that creates a risk of harm. At its base, disorderly conduct is a minor misdemeanor: no jail, maximum $150 fine. But even a minor misdemeanor conviction creates a permanent public criminal record accessible through the background check systems used by employers, landlords, and professional licensing boards. And when the offense escalates to a fourth-degree misdemeanor — up to 30 days in jail and a $250 fine — the consequences become more serious. Jwayyed Law LLC defends disorderly conduct charges throughout Ohio, including Franklin County and surrounding communities. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              to discuss your case.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '$150', label: 'maximum fine for minor misdemeanor disorderly conduct, with no jail' },
+          { figure: '30 days', label: 'maximum jail once the charge becomes a fourth-degree misdemeanor' },
+          { figure: '$250', label: 'maximum fine for M4 disorderly conduct' },
+        ]}
+      />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              What Ohio&apos;s Disorderly Conduct Statute Prohibits
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              R.C. 2917.11(A) prohibits recklessly causing inconvenience, annoyance, or alarm to another by: fighting, threatening harm, or engaging in violent or turbulent behavior; making unreasonable noise; using offensively coarse language or gestures in circumstances likely to provoke a violent response; creating a physically offensive condition with no legitimate purpose; or engaging in other behavior that creates a risk of physical harm. Division (B) separately prohibits being voluntarily intoxicated in a public place and engaging in offensive conduct or creating a risk of physical harm while in that condition — a separate criminal act from merely being intoxicated.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The statute&apos;s key limitation is the word &ldquo;reckless.&rdquo; Ohio law defines reckless conduct as conscious disregard of a substantial and unjustifiable risk — more culpable than negligence, but less culpable than knowing or purposeful conduct. Acts that are merely ill-advised, impulsive, or disruptive without the defendant consciously disregarding a risk of inconvenience or alarm do not satisfy the recklessness standard. Our firm evaluates whether the prosecution can establish recklessness — not just that the conduct occurred, but that the defendant consciously disregarded a substantial risk.
-            </p>
+      <Section
+        title="What Ohio's disorderly conduct statute prohibits"
+        intro={
+          <p>
+            Ohio Revised Code 2917.11 is one of the most broadly written misdemeanor statutes in the state. It can cover a shouting
+            match in a parking lot, aggressive behavior at a community event, or public intoxication that creates a risk of harm.
+          </p>
+        }
+      >
+        <p>
+          R.C. 2917.11(A) prohibits recklessly causing inconvenience, annoyance or alarm to another by:
+        </p>
+        <ul>
+          <li>fighting, threatening harm, or violent or turbulent behavior;</li>
+          <li>making unreasonable noise;</li>
+          <li>using offensively coarse language or gestures where they are likely to provoke a violent response;</li>
+          <li>creating a physically offensive condition with no legitimate purpose; or</li>
+          <li>other behavior that creates a risk of physical harm.</li>
+        </ul>
+        <p>
+          Division (B) separately prohibits being voluntarily intoxicated in a public place and, while in that condition, engaging in
+          offensive conduct or creating a risk of physical harm. Being intoxicated alone is not the offense.
+        </p>
+        <h3>The recklessness requirement</h3>
+        <p>
+          The statute turns on the word &ldquo;reckless.&rdquo; Ohio law defines reckless conduct as conscious disregard of a
+          substantial and unjustifiable risk. That is more culpable than negligence and less culpable than knowing or purposeful
+          conduct. Behavior that was ill-advised, impulsive or disruptive does not meet the standard unless you consciously disregarded
+          a risk of causing inconvenience or alarm. The firm looks at whether the prosecution can prove that state of mind, beyond
+          proving the conduct happened.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              M4 Escalation — When the Charge Becomes More Serious
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              R.C. 2917.11(C) escalates disorderly conduct from a minor misdemeanor to a fourth-degree misdemeanor (up to 30 days jail, $250 fine) in four situations. The most common is persistence after a law enforcement warning: if an officer warns a person to stop the disorderly conduct and the person continues, the minor misdemeanor becomes an M4. Whether that warning was clearly communicated, actually heard by the defendant, and whether the conduct continued after the warning are all factual questions that can defeat the escalation charge. School proximity and emergency scene presence escalations are similarly fact-specific.
-            </p>
+      <Section title="Disorderly conduct penalties" tone="ice">
+        <FactTable
+          title="Minor misdemeanor (base offense)"
+          rows={[
+            { label: 'Jail', value: 'None.' },
+            { label: 'Fine', value: 'Up to $150.' },
+            {
+              label: 'Record',
+              value: 'A permanent public criminal record, visible to employers, landlords and professional licensing boards.',
+            },
+          ]}
+        />
+        <FactTable
+          title="Fourth-degree misdemeanor (R.C. 2917.11(C))"
+          rows={[
+            { label: 'Jail', value: 'Up to 30 days.' },
+            { label: 'Fine', value: 'Up to $250.' },
+            { label: 'Warning ignored', value: 'You keep going after a reasonable warning from law enforcement to stop. This is the most common escalation.' },
+            { label: 'Near a school', value: 'The offense happens near a school or in a school safety zone.' },
+            { label: 'Emergency scene', value: 'The offense happens in the presence of emergency personnel responding to an emergency.' },
+            { label: 'Prior intoxication convictions', value: 'Three or more prior convictions under R.C. 2917.11(B).' },
+          ]}
+          note="Whether the warning was clearly given, whether you heard it, and whether the conduct actually continued afterward are all factual questions that can defeat the escalation. School and emergency-scene escalations are just as fact-specific."
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Diversion and First-Offender Options
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Many first-time disorderly conduct charges in Ohio resolve without a conviction through diversion programs. Typical diversion conditions include brief community service, no new arrests during a probationary period, and payment of court costs. Successful completion results in dismissal. An experienced attorney is far more likely to identify and negotiate diversion availability than a self-represented defendant, and dismissal is always the preferred outcome over any plea — even a plea to a minor misdemeanor.
-            </p>
+      <Section title="Diversion for a first offense">
+        <p>
+          Many first-time disorderly conduct charges in Ohio end without a conviction through a diversion program. An attorney is far
+          more likely than a self-represented defendant to find out whether diversion is available and negotiate it. A dismissal is
+          always better than a plea, even a plea to a minor misdemeanor.
+        </p>
+        <Steps
+          steps={[
+            { title: 'Enter the program', body: 'Diversion is negotiated with the prosecutor or offered by the court.' },
+            {
+              title: 'Meet the conditions',
+              body: 'Typically brief community service, no new arrests during a probationary period, and payment of court costs.',
+            },
+            { title: 'Dismissal', body: 'When you complete the program, the charge is dismissed.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How We Can Help
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Diversion and dismissal:</strong> Pursuing conditional dismissal for first-time defendants</li>
-              <li><strong>M4 escalation challenge:</strong> Contesting the &ldquo;persists after warning&rdquo; and other escalation elements</li>
-              <li><strong>Recklessness analysis:</strong> Evaluating whether the prosecution can prove the mental state the statute requires</li>
-              <li><strong>First Amendment challenges:</strong> Identifying speech and expression protections where applicable</li>
-              <li><strong>Companion charge defense:</strong> Coordinating disorderly conduct defense alongside assault, OVI, or other related charges</li>
-              <li><strong>Expungement planning:</strong> Advising on record-sealing eligibility under R.C. 2953.32</li>
-            </ul>
+      <Section title="What the firm does on a disorderly conduct charge" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Diversion and dismissal', body: 'Pursues a conditional dismissal for first-time defendants.' },
+            { title: 'Challenges the M4 escalation', body: 'Contests the "persists after warning" element and the other escalation grounds.' },
+            { title: 'Tests the mental state', body: 'Whether the prosecution can prove the recklessness the statute requires.' },
+            { title: 'First Amendment challenges', body: 'Raises speech and expression protections where they apply.' },
+            {
+              title: 'Defends companion charges',
+              body: 'Coordinates the disorderly conduct defense with assault, OVI or other related charges.',
+            },
+            { title: 'Plans for expungement', body: 'Advises on record-sealing eligibility under R.C. 2953.32.' },
+          ]}
+        />
+        <p>
+          If you are charged in <Link href="/locations/franklin-county">Franklin County</Link>,{' '}
+          <Link href="/locations/delaware-county">Delaware County</Link> or anywhere in Ohio, call{' '}
+          <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation</Link>. Even a minor
+          misdemeanor conviction leaves a permanent record, so talk to an attorney before you enter any plea.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing disorderly conduct charges in{' '}
-              <Link href="/locations/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/locations/delaware-county" className="text-sky-deep underline hover:opacity-80">Delaware County</Link>, or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
-              Even a minor misdemeanor conviction creates a permanent record — talk to an attorney before entering any plea.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Areas We Serve" />
       <ContactCTA />

@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Assault Defense Attorney Ohio',
-  description: 'Ohio assault defense attorney for misdemeanor assault and battery charges. Serving all Ohio counties. Call (614) 285-5482 for a consultation.',
+  description:
+    'Charged with assault in Ohio? Penalties under ORC 2903.13, how the case moves through court, and the defenses that apply. Call (614) 285-5482.',
   keywords: [
     'assault charges lawyer Ohio',
     'assault defense attorney Ohio',
@@ -20,10 +22,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Assault Defense Attorney Ohio | Jwayyed Law LLC',
-    description: 'Experienced assault defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Penalties, the court process and defenses for a misdemeanor assault charge in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/assault-charges',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/assault-charges',
   },
@@ -37,296 +39,258 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is the difference between assault and battery in Ohio?',
-    answer: 'In Ohio, assault under Ohio Revised Code 2903.13 involves knowingly causing physical harm or causing another to believe they will suffer physical harm. Battery is typically charged as assault in Ohio. The severity of charges depends on the harm caused, weapons involved, and the relationship between the parties.',
+    answer:
+      'Ohio charges what other states call battery as assault. Under Ohio Revised Code 2903.13, assault means knowingly causing physical harm to someone, or causing them to believe they will suffer physical harm. How serious the charge is depends on the harm caused, whether a weapon was involved, and the relationship between the people involved.',
   },
   {
     question: 'What are the penalties for assault in Ohio?',
-    answer: 'Simple assault (ORC 2903.13) is typically a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault escalates to a fourth-degree felony with up to 18 months in prison. Prior convictions and weapons can enhance penalties.',
+    answer:
+      'Simple assault (ORC 2903.13) is usually a first-degree misdemeanor, punishable by up to 180 days in jail and a fine of up to $1,000. Aggravated assault is a fourth-degree felony with up to 18 months in prison. Prior convictions and weapons can increase the penalties.',
   },
   {
     question: 'Can I defend against assault charges in Ohio?',
-    answer: 'Yes, there are several defenses to assault charges in Ohio. Common defenses include self-defense (ORC 2901.05), defense of others, lack of intent to cause harm, mistaken identity, insufficient evidence, or false allegations. An experienced criminal defense attorney can evaluate your case, gather evidence, and develop the strongest defense strategy based on the specific circumstances of your situation.',
+    answer:
+      'Yes. Common defenses include self-defense (ORC 2901.05), defense of others, lack of intent to cause harm, mistaken identity, insufficient evidence and false allegations. Which one fits depends on the facts, so an attorney starts by reviewing the evidence and gathering your own.',
   },
   {
     question: 'Will an assault conviction appear on my criminal record in Ohio?',
-    answer: 'Yes, a misdemeanor assault conviction will appear on your criminal record in Ohio and can be accessed by employers, landlords, and others. Misdemeanor assault convictions may be eligible for expungement or record sealing after a waiting period if you meet eligibility requirements under Ohio Revised Code Chapter 2953. An attorney can help determine your eligibility for record sealing.',
+    answer:
+      'Yes. A misdemeanor assault conviction goes on your criminal record, where employers, landlords and others can see it. It may be eligible for expungement or record sealing after a waiting period if you meet the requirements of Ohio Revised Code Chapter 2953. An attorney can tell you whether you qualify.',
   },
   {
     question: 'What should I do if I am charged with assault in Ohio?',
-    answer: 'If charged with assault in Ohio, remain calm and exercise your rights. Do not discuss the case with anyone except your attorney. Contact an experienced criminal defense attorney immediately. Avoid contact with the alleged victim. Gather any evidence including witnesses, photos, or documents that support your defense. Time is critical—an attorney can help protect your rights, challenge evidence, negotiate with prosecutors, and develop a defense strategy.',
+    answer:
+      'Stay calm and use your rights. Do not discuss the case with anyone except your attorney, and contact one right away. Avoid contact with the alleged victim. Keep any evidence that supports you, such as the names of witnesses, photos or documents. Early on, an attorney can protect your rights, challenge the evidence and open talks with the prosecutor.',
   },
   {
-    question: `What is the difference between assault and aggravated assault in Ohio?`,
-    answer: `Under ORC 2903.13, simple assault — knowingly causing or attempting to cause physical harm to another — is generally a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000. Aggravated assault under ORC 2903.12 is a more serious charge that applies when a person causes serious physical harm or uses a deadly weapon while under the influence of sudden passion or rage brought on by serious provocation. Aggravated assault is a fourth-degree felony (F4) punishable by 6–18 months in prison. If you are facing either charge, contact Jwayyed Law LLC at (614) 285-5482 to discuss your case.`,
+    question: 'What is the difference between assault and aggravated assault in Ohio?',
+    answer:
+      'Simple assault under ORC 2903.13 means knowingly causing or attempting to cause physical harm to another. It is generally a first-degree misdemeanor (M1), punishable by up to 180 days in jail and a fine of up to $1,000. Aggravated assault under ORC 2903.12 applies when a person causes serious physical harm, or uses a deadly weapon, while under the influence of sudden passion or rage brought on by serious provocation. It is a fourth-degree felony (F4) punishable by 6 to 18 months in prison. To discuss either charge, call Jwayyed Law LLC at (614) 285-5482.',
   },
   {
-    question: `Can self-defense be raised as a defense to assault in Ohio?`,
-    answer: `Yes. Under ORC 2901.05, self-defense is an affirmative defense in Ohio assault cases. As of 2019, Ohio shifted the burden to the prosecution — once a defendant raises evidence of self-defense, the state must disprove self-defense beyond a reasonable doubt. To succeed on a self-defense claim, the evidence must show that you were not at fault in creating the situation, you had a reasonable and honest belief that you were in imminent danger of bodily harm, and the force used was proportionate to the threat. An experienced defense attorney can evaluate whether the facts of your case support a self-defense argument and present it effectively.`,
+    question: 'Can self-defense be raised as a defense to assault in Ohio?',
+    answer:
+      'Yes. Under ORC 2901.05, self-defense is an affirmative defense in Ohio assault cases. As of 2019, the burden sits with the prosecution: once you raise evidence of self-defense, the state must disprove it beyond a reasonable doubt. The evidence must show that you did not create the situation, that you honestly and reasonably believed you were in imminent danger of bodily harm, and that the force you used matched the threat. An attorney can judge whether your facts support the claim and present it.',
   },
   {
-    question: `What are the collateral consequences of an assault conviction in Ohio?`,
-    answer: `Beyond jail time and fines, an assault conviction in Ohio can have lasting collateral consequences. A criminal record for assault may lead employers to reject your job applications, particularly in healthcare, education, law enforcement, or any field requiring a background check. Professional licensing boards — including those for nursing, teaching, and real estate — can deny or revoke licenses based on assault convictions. Housing applications may be rejected by landlords. For non-citizens, an assault conviction may trigger immigration consequences including removal proceedings. Even a misdemeanor assault on your record signals potential violence to those reviewing it, making early and aggressive defense essential.`,
+    question: 'What are the collateral consequences of an assault conviction in Ohio?',
+    answer:
+      'An assault conviction can follow you well past the jail term and fine. Employers may reject your application, especially in healthcare, education, law enforcement or any job with a background check. Licensing boards, including those for nursing, teaching and real estate, can deny or revoke a license. Landlords may turn down a housing application. For non-citizens, a conviction may lead to immigration consequences, including removal proceedings. Even a misdemeanor assault tells anyone reading your record that violence was alleged, which is why the defense should start early.',
   },
 ];
 
-export default function AssaultChargesPage() {
+const RELATED = [
+  { href: '/criminal-defense/domestic-violence', title: 'Domestic violence defense', subtitle: 'Ohio DV charges and protection order defense' },
+  { href: '/criminal-defense/resisting-arrest', title: 'Resisting arrest', subtitle: 'Defense for resisting arrest and obstruction charges' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry defense' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing a criminal record under Ohio law' },
+];
 
+export default function AssaultChargesPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Assault Defense Attorney in Ohio"
-        description="Experienced legal defense for misdemeanor assault and battery charges. Protecting your rights and fighting for the best possible outcome."
+        title="Assault charges in Ohio"
+        description="Simple assault under ORC 2903.13 is usually a first-degree misdemeanor: up to 180 days in jail and a fine of up to $1,000."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Assault Charges in Ohio
-            </h2>
-            
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing misdemeanor assault charges throughout Ohio can have serious consequences on your freedom, employment, and reputation. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with simple assault and battery under Ohio Revised Code 2903.13. Our attorney understands Ohio assault laws, potential defenses, and the impact these charges can have on your future.
-            </p>
+      <KeyFacts
+        facts={[
+          { figure: '180 days', label: 'maximum jail for simple assault, a first-degree misdemeanor' },
+          { figure: '$1,000', label: 'maximum fine for simple assault' },
+          { figure: '6 to 18 months', label: 'prison range for aggravated assault, a fourth-degree felony' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio law, assault involves knowingly causing physical harm to another person or causing another to believe they will suffer physical harm. The severity of charges depends on the harm caused, weapons involved, and the relationship between parties — ranging from simple misdemeanor assault under ORC 2903.13 to more serious charges under ORC 2903.12.
-            </p>
+      <Section
+        title="What an assault charge means"
+        intro={
+          <p>
+            Under Ohio law, assault means knowingly causing physical harm to another person, or causing them to believe they will
+            suffer physical harm. Ohio charges what other states call battery as assault.
+          </p>
+        }
+      >
+        <p>
+          Jwayyed Law LLC defends people charged with simple assault under Ohio Revised Code 2903.13. The level of the charge depends
+          on the harm caused, whether a weapon was involved, and the relationship between the people involved. It ranges from simple
+          misdemeanor assault under ORC 2903.13 to the more serious charges under ORC 2903.12.
+        </p>
+        <p>
+          Simple assault covers knowingly causing or attempting to cause physical harm to another, or negligently causing physical
+          harm with a deadly weapon. Prosecutors press these cases hardest when they involve a domestic relationship, a law
+          enforcement officer, or a serious injury. The firm handles simple (misdemeanor) assault charges throughout Ohio.
+        </p>
+        <LocationsWeServe title="Criminal Defense" />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's assault laws are complex and prosecutors aggressively pursue these charges, particularly in cases involving domestic relationships, law enforcement officers, or serious injuries. Understanding the specific elements prosecutors must prove, available defenses, and the court process is essential for building an effective defense. An experienced criminal defense attorney can navigate these complexities, protect your constitutional rights, and work toward the best possible outcome in your case.
-            </p>
+      <Section title="Assault penalties in Ohio" tone="ice">
+        <p>Sentencing for assault falls under Ohio Revised Code Chapter 2929. The degree of the charge sets the range.</p>
+        <FactTable
+          title="Simple assault (ORC 2903.13): first-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 180 days in county jail.' },
+            { label: 'Fines', value: 'Up to $1,000, plus court costs and probation supervision fees.' },
+            { label: 'Programs', value: 'Anger management or counseling may be ordered.' },
+            { label: 'Record', value: 'A permanent criminal record unless it is later sealed or expunged.' },
+            {
+              label: 'Expungement',
+              value: 'Under Ohio Revised Code 2953.32, a misdemeanor assault conviction may be eligible for expungement after a waiting period.',
+            },
+          ]}
+        />
+        <FactTable
+          title="Aggravated assault (ORC 2903.12): fourth-degree felony"
+          rows={[
+            { label: 'Prison', value: '6 to 18 months.' },
+            {
+              label: 'When it applies',
+              value:
+                'Causing serious physical harm, or using a deadly weapon, while under the influence of sudden passion or rage brought on by serious provocation.',
+            },
+          ]}
+        />
+        <h3>Factors that raise the sentence</h3>
+        <p>
+          Under Ohio Revised Code 2929.12, a judge weighs factors that can push the sentence up: prior criminal history, use of a
+          weapon, harm to a protected person (a child, an elderly or disabled person), gang-related activity, or an offense committed
+          in front of children. These can lead to maximum sentences, consecutive prison terms and higher fines. In certain
+          circumstances an assault conviction also carries a mandatory minimum sentence.
+        </p>
+        <h3>Consequences beyond the sentence</h3>
+        <p>
+          Employers who run background checks may refuse to hire. Professional licenses in healthcare, education, law enforcement and
+          finance can be denied or revoked. Landlords may reject a housing application, and financial aid eligibility can be affected.
+          Certain serious convictions cost you your gun rights. Non-citizens can face deportation. Child custody and visitation can be
+          restricted. All of this lasts long after the sentence is served and the fines are paid.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for assault charges begins with arrest and initial court appearances, followed by discovery, pretrial motions, plea negotiations, and potentially trial. Each stage requires strategic decision-making and experienced legal representation. Early intervention by a skilled defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
-            </p>
+      <Section title="How an assault case moves through court">
+        <Steps
+          steps={[
+            {
+              title: 'Arrest and arraignment',
+              body: 'A judge reads the charges, sets bail and takes your plea, usually not guilty, which preserves your rights and leaves time to investigate. Your attorney can argue for lower bail, release on recognizance or house arrest, and request discovery: police reports, witness statements, medical records and other evidence.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: "The prosecution must hand over the evidence it plans to use at trial. Your attorney reviews it, interviews witnesses, examines medical records and any surveillance footage, and looks for evidence of self-defense, lack of intent, mistaken identity or false allegations. Medical, forensic or use-of-force experts may be consulted to test the prosecution's evidence.",
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'A motion to suppress can exclude evidence obtained illegally, through a violation of your rights at arrest, or from coerced statements. A motion to dismiss can be filed if the evidence is insufficient, the statute of limitations has run, or procedural errors occurred. A motion to compel makes the prosecution produce required discovery.',
+            },
+            {
+              title: 'Plea negotiations',
+              body: 'Most assault cases resolve through negotiation. Possible results include a reduced charge (aggravated to simple assault where it applies), a plea agreement with lighter penalties, diversion or treatment instead of jail, or dismissal once conditions are met.',
+            },
+            {
+              title: 'Trial',
+              body: "If the case goes to trial, your attorney presents your defense, cross-examines the prosecution's witnesses, calls experts where needed and argues to the jury. A not guilty verdict ends the case.",
+            },
+          ]}
+        />
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="Defenses to an assault charge" tone="ice">
+        <p>Which defense applies depends on what happened and what the evidence shows.</p>
+        <PointGrid
+          points={[
+            {
+              title: 'Self-defense',
+              body: 'Under Ohio Revised Code 2901.05, you may use reasonable force if you reasonably believe you are in imminent danger of physical harm. The force must be proportional to the threat. Evidence of self-defense can lead to dismissal or acquittal.',
+            },
+            {
+              title: 'Defense of others',
+              body: 'You may use reasonable force to protect another person from imminent physical harm, if you reasonably believed they were in danger and your actions were necessary and proportional.',
+            },
+            {
+              title: 'Lack of intent',
+              body: 'Assault requires knowingly causing harm. If the contact was an accident, or you did not know your actions would cause harm, the charge may be reduced or dismissed.',
+            },
+            {
+              title: 'False allegations',
+              body: 'Assault accusations are sometimes made out of revenge, during a custody dispute, or for money. Investigation can expose inconsistencies in the story.',
+            },
+            {
+              title: 'Consent',
+              body: 'Where the other person consented to the contact, as in sports, mutual combat or other consensual activity, consent may be a defense. It must be genuine and informed, and not obtained through fraud or coercion.',
+            },
+            {
+              title: 'Defense of property',
+              body: 'You may use reasonable, proportional force to protect property from theft, damage or trespass. Deadly force is generally not permitted to protect property alone, unless there is also a threat of serious physical harm.',
+            },
+            {
+              title: 'Mental state',
+              body: 'If you lacked the required mental state (knowingly, recklessly or negligently), the charge may fail. That covers a truly accidental contact, not knowing harm would result, or reasonably believing your actions were necessary and lawful.',
+            },
+            {
+              title: 'Alibi',
+              body: 'Proof that you were somewhere else at the time can end the case. It needs strong evidence: witnesses, surveillance footage, receipts or other records of where you were.',
+            },
+            {
+              title: 'Misconduct and procedural errors',
+              body: 'Prosecutorial misconduct, violations of your constitutional rights, or a failure to provide required discovery can support a motion to dismiss or to suppress evidence.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Assault Charges in Ohio
-            </h3>
+      <Section title="What the firm does on an assault case">
+        <PointGrid
+          points={[
+            {
+              title: 'Protects your rights from arrest',
+              body: 'Your right to remain silent, your right to counsel and your protection against self-incrimination.',
+            },
+            {
+              title: 'Investigates the case',
+              body: 'Police reports, medical records, witness statements, surveillance footage and the rest of the evidence, looking for weaknesses and inconsistencies.',
+            },
+            {
+              title: 'Builds the defense',
+              body: 'Self-defense (ORC 2901.05), defense of others, lack of intent, mistaken identity, insufficient evidence or false allegations, based on what the investigation finds.',
+            },
+            {
+              title: 'Challenges the evidence',
+              body: 'Motions to suppress illegally obtained evidence and exclude prejudicial evidence, and cross-examination of unreliable witnesses.',
+            },
+            {
+              title: 'Consults experts',
+              body: 'Medical, forensic and use-of-force experts when the evidence calls for them.',
+            },
+            {
+              title: 'Negotiates',
+              body: 'For reduced charges, a better plea agreement, alternative sentencing, or dismissal once conditions are met.',
+            },
+            {
+              title: 'Argues at sentencing',
+              body: 'Presents mitigating evidence and argues for the minimum sentence or an alternative to jail if there is a conviction.',
+            },
+            {
+              title: 'Helps after the case',
+              body: 'Record sealing, expungement applications, sentence modifications or appeals for eligible clients.',
+            },
+          ]}
+        />
+        <Callout title="Represented at trial when it goes there">
+          If the case does not resolve through negotiation or motions, the firm tries it.
+        </Callout>
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Simple Assault (ORC 2903.13) — We Represent Clients on This Charge</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Simple assault occurs when a person knowingly causes or attempts to cause physical harm to another, or negligently causes physical harm with a deadly weapon. This is typically charged as a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Our firm handles defense for simple (misdemeanor) assault charges throughout Ohio.
-              </p>
-
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Ohio Assault Penalties and Consequences
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code Chapter 2929, assault convictions carry severe penalties that extend far beyond jail time and fines. Understanding the full scope of consequences is essential when facing assault charges:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First-Degree Misdemeanor (Simple Assault - ORC 2903.13)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Simple assault convictions carry significant penalties including up to 180 days in county jail, fines up to $1,000, court costs, probation supervision fees, mandatory anger management or counseling programs, and a permanent criminal record. Even misdemeanor convictions can affect employment, professional licensing, housing applications, and educational opportunities. Under Ohio Revised Code 2953.32, misdemeanor assault convictions may be eligible for expungement after a waiting period, but the process requires careful navigation.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Enhanced Penalties and Aggravating Factors</h4>
-            <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              Under Ohio Revised Code 2929.12, judges consider various factors that can increase penalties including prior criminal history, use of weapons, harm to protected persons (children, elderly, disabled), gang-related activity, or offenses committed in the presence of children. These factors can result in maximum sentences, consecutive prison terms, and enhanced fines. Additionally, assault convictions can trigger mandatory minimum sentences in certain circumstances.
-            </p>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences of Assault Convictions</h4>
-            <p className="text-navy-950/80 mb-6">
-              Beyond criminal penalties, assault convictions create lasting collateral consequences. Employment opportunities become limited as many employers conduct background checks and may refuse to hire individuals with assault convictions. Professional licenses in fields such as healthcare, education, law enforcement, and finance may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights may be lost for certain serious convictions. Immigration consequences can include deportation for non-citizens. Child custody and visitation rights may be restricted. These consequences persist long after completing sentences and paying fines.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Criminal Court Process for Assault Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the criminal court process helps you prepare for what lies ahead. The process typically involves several stages, each requiring strategic legal representation:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Initial Arrest and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                After arrest, you will be taken before a judge for arraignment where charges are formally read, bail is set, and you enter a plea. This is a critical stage where an attorney can argue for reduced bail, release on recognizance, or house arrest. The initial plea (typically not guilty) preserves your rights and allows time for investigation and defense preparation. An attorney can also request discovery materials including police reports, witness statements, medical records, and evidence at this early stage.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, prosecutors must provide all evidence they intend to use at trial. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, examine medical records, review surveillance footage if available, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting self-defense, lack of intent, mistaken identity, or false allegations. Independent experts including medical professionals, forensic specialists, or use-of-force experts may be consulted to challenge the prosecution's evidence.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Strategic pretrial motions can significantly impact your case. Motions to suppress evidence may be filed if evidence was obtained illegally, if your constitutional rights were violated during arrest, or if statements were coerced. Motions to dismiss may be filed if charges lack sufficient evidence, if statutes of limitations have expired, or if procedural errors occurred. Motions to compel discovery ensure prosecutors provide all required evidence. These motions require legal expertise and can result in dismissal of charges or exclusion of damaging evidence.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Plea Negotiations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most assault cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (e.g., aggravated to simple assault where applicable), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial Representation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, experienced trial representation is essential. Your attorney will present evidence supporting your defense, cross-examine prosecution witnesses to expose weaknesses or inconsistencies, present expert testimony when appropriate, make compelling arguments to the jury, and protect your rights throughout the process. Trial requires extensive preparation, knowledge of evidence rules, and effective advocacy skills. A not guilty verdict results in complete dismissal of charges.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced assault defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of arrest, including right to remain silent, right to counsel, and protection against self-incrimination</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, medical records, witness statements, surveillance footage, and all evidence to identify weaknesses, inconsistencies, or evidence supporting your defense</li>
-              <li><strong>Strategic Defense Development:</strong> Develop and execute defense strategies including self-defense (ORC 2901.05), defense of others, lack of intent, mistaken identity, insufficient evidence, or false allegations based on thorough investigation</li>
-              <li><strong>Evidence Challenges:</strong> File motions to suppress illegally obtained evidence, challenge flawed investigations, question unreliable witnesses, expose false allegations, and exclude prejudicial evidence</li>
-              <li><strong>Expert Consultation:</strong> Consult with medical experts, forensic specialists, use-of-force experts, or other professionals to challenge prosecution evidence and support your defense</li>
-              <li><strong>Skilled Negotiation:</strong> Work with prosecutors to reduce charges, negotiate favorable plea agreements, secure alternative sentencing options, or arrange dismissals upon completion of conditions</li>
-              <li><strong>Aggressive Trial Advocacy:</strong> Provide effective trial representation with compelling arguments, strategic cross-examination, expert testimony, and protection of your rights throughout trial proceedings</li>
-              <li><strong>Sentencing Advocacy:</strong> Present mitigating evidence, argue for minimum sentences, advocate for alternative sentencing options, and work to minimize consequences if conviction occurs</li>
-              <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing, expungement applications, sentence modifications, or appeals when appropriate</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Assault Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Self-Defense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Under Ohio Revised Code 2901.05, you may use reasonable force to defend yourself if you reasonably believe you are in imminent danger of physical harm. The force used must be proportional to the threat faced. Evidence of self-defense can result in dismissal or acquittal.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Defense of Others</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Similar to self-defense, you may use reasonable force to protect another person from imminent physical harm. The defense requires a reasonable belief that the other person was in danger and that your actions were necessary and proportional.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Lack of Intent</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Assault requires knowingly causing harm. If the incident was accidental or unintentional, or you lacked knowledge that your actions would cause harm, this defense may apply. Evidence of accident or mistake can result in reduced or dismissed charges.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">False Allegations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Sometimes individuals make false assault allegations for various reasons including revenge, custody disputes, or financial gain. An attorney can investigate, gather evidence, identify inconsistencies, and expose false allegations to protect your rights.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Additional Defense Strategies and Considerations
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Beyond the common defenses discussed, several additional strategies may apply depending on your specific circumstances:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Consent Defense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In certain circumstances, if the alleged victim consented to the physical contact (such as in sports, mutual combat, or consensual activities), this may serve as a defense. However, consent must be genuine, informed, and not obtained through fraud or coercion. This defense requires careful analysis of the specific facts and circumstances.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Defense of Property</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Under Ohio law, you may use reasonable force to protect your property from theft, damage, or trespass. However, the force must be proportional and reasonable under the circumstances. Deadly force is generally not permitted solely for property protection unless there is also a threat of serious physical harm.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Mental State Defenses</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you lacked the required mental state (knowingly, recklessly, or negligently) to commit assault, this may serve as a defense. For example, if the contact was truly accidental, if you were unaware your actions would cause harm, or if you reasonably believed your actions were necessary and lawful, these factors may support a defense.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Alibi Defense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you can prove you were not present at the location where the assault allegedly occurred, or if you were elsewhere at the time, this alibi defense can result in complete dismissal of charges. Alibi defenses require strong evidence including witness testimony, surveillance footage, receipts, or other documentation proving your location.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Prosecutorial Misconduct or Procedural Errors</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Sometimes cases can be dismissed due to prosecutorial misconduct, violations of your constitutional rights, failure to provide required discovery, or other procedural errors. An experienced attorney can identify these issues and file appropriate motions to dismiss or suppress evidence.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Assault Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated assault defense representation throughout Ohio. We understand that assault charges can arise from misunderstandings, false allegations, or situations requiring self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle misdemeanor assault cases throughout Ohio. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We recognize that assault charges can have devastating consequences on your life, career, and future. Our firm is committed to providing personalized, dedicated representation focused on achieving the best possible outcome. Whether through negotiation, pretrial motions, or trial advocacy, we fight aggressively to protect your rights and minimize consequences.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing assault charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome. Do not delay in seeking experienced legal representation to protect your rights and future.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you are facing assault charges in Ohio, call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link>. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/charged-with-assault-what-happens-next" className="text-sky-deep underline hover:text-navy-950">what happens after being charged with assault in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Domestic Violence Defense</span>
-                <span className="text-sm text-navy-950/70">Ohio DV charges and protection order defense</span>
-              </Link>
-              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Resisting Arrest</span>
-                <span className="text-sm text-navy-950/70">Defense for resisting arrest and obstruction charges</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section title="Related criminal defense pages" tone="ice">
+        <p>
+          Call <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>. For more,
+          see the firm&rsquo;s <Link href="/criminal-defense">criminal defense practice</Link> or read{' '}
+          <Link href="/our-law-firm/blog/charged-with-assault-what-happens-next">what happens after being charged with assault in Ohio</Link>.
+        </p>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

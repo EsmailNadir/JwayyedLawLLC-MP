@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Obstruction of Official Business Ohio',
-  description: 'Ohio obstruction of official business defense attorney for ORC 2921.31 charges statewide. Call Jwayyed Law LLC at (614) 285-5482.',
+  description:
+    'Obstruction of official business under ORC 2921.31 is a second-degree misdemeanor, or a felony if it risks physical harm. Penalties and defenses. Call (614) 285-5482.',
   keywords: [
     'obstruction of official business lawyer Ohio',
     'obstruction defense attorney',
@@ -18,14 +20,14 @@ export const metadata: Metadata = {
     'obstruction penalties Ohio',
     'Ohio obstruction lawyer',
     'interfering with police charges',
-    'criminal defense obstruction attorney'
+    'criminal defense obstruction attorney',
   ],
   openGraph: {
     title: 'Obstruction of Official Business Ohio | Jwayyed Law LLC',
-    description: 'Experienced obstruction of official business defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Obstruction of official business defense throughout Ohio: the elements, the felony enhancement and the defenses. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense/obstruction-of-official-business',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/obstruction-of-official-business',
   },
@@ -39,284 +41,252 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is obstruction of official business under Ohio law?',
-    answer: 'Obstruction of official business under Ohio Revised Code 2921.31 occurs when a person, without privilege to do so and with the purpose to prevent, obstruct, or delay the performance of any authorized act by a public official, does any act that hampers or impedes the official in the performance of their lawful duty. This can include providing false information to police, hiding evidence, warning suspects of police presence, physically blocking an officer, or interfering with an investigation. It is typically a second-degree misdemeanor.',
+    answer:
+      'Under Ohio Revised Code 2921.31, obstruction of official business is doing any act, without privilege and with the purpose to prevent, obstruct or delay a public official’s authorized act, that hampers or impedes the official in their lawful duty. Examples include giving police false information, hiding evidence, warning a suspect that police are coming, physically blocking an officer, or interfering with an investigation. It is usually a second-degree misdemeanor.',
   },
   {
     question: 'What are the penalties for obstruction of official business in Ohio?',
-    answer: 'Obstruction of official business is a second-degree misdemeanor under ORC 2921.31, punishable by up to 90 days in jail, fines up to $750, court costs, probation, and a permanent criminal record. However, if the violation creates a risk of physical harm to any person, the offense is enhanced to a fifth-degree felony punishable by 6 to 12 months in prison and fines up to $2,500. The felony enhancement significantly increases the severity of consequences.',
+    answer:
+      'Obstruction of official business is a second-degree misdemeanor under ORC 2921.31: up to 90 days in jail, a fine of up to $750, court costs, probation and a permanent criminal record. If the violation creates a risk of physical harm to anyone, it becomes a fifth-degree felony punishable by 6 to 12 months in prison and a fine of up to $2,500.',
   },
   {
     question: 'What is the difference between obstruction of official business and resisting arrest?',
-    answer: 'Obstruction of official business (ORC 2921.31) is broader than resisting arrest (ORC 2921.33). Obstruction applies to any interference with any public official performing any authorized act, not just police officers making arrests. Resisting arrest specifically involves physically resisting or interfering with a lawful arrest. A person could be charged with obstruction for providing false information during an investigation, interfering with a traffic stop, or impeding a fire inspector, while resisting arrest requires resistance during an actual arrest.',
+    answer:
+      'Obstruction of official business (ORC 2921.31) is broader than resisting arrest (ORC 2921.33). Obstruction covers interference with any public official performing any authorized act, not only police making arrests. Resisting arrest is physically resisting or interfering with a lawful arrest. You could be charged with obstruction for giving false information during an investigation, interfering with a traffic stop or impeding a fire inspector; resisting arrest requires resistance during an actual arrest.',
   },
   {
     question: 'Can obstruction of official business charges be expunged from my record in Ohio?',
-    answer: 'Yes, obstruction of official business convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor offense, you may apply to have the record sealed after the applicable waiting period, provided you meet eligibility requirements. If the charge was enhanced to a fifth-degree felony, eligibility may be different. Record sealing hides the conviction from most background checks. An experienced attorney can evaluate your eligibility and guide you through the application process.',
+    answer:
+      'Obstruction of official business convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor, the record can be sealed after the waiting period if you meet the eligibility rules. If the charge was raised to a fifth-degree felony, the rules may differ. Sealing hides the conviction from most background checks. An attorney can review your eligibility and handle the application.',
   },
   {
     question: 'What should I do if I am charged with obstruction of official business in Ohio?',
-    answer: 'If charged with obstruction of official business in Ohio, exercise your right to remain silent immediately and do not make any further statements to law enforcement. Do not attempt to explain or justify your actions without an attorney present. Contact an experienced criminal defense attorney immediately. Document everything you remember about the encounter, including the names and badge numbers of officers involved, any witnesses, and the specific circumstances. An attorney can evaluate whether your conduct actually constituted obstruction and develop an effective defense strategy.',
+    answer:
+      'Use your right to remain silent and make no further statements to police. Do not try to explain or justify what you did without an attorney present. Contact a criminal defense attorney right away. Write down everything you remember about the encounter: the officers’ names and badge numbers, any witnesses and what happened. An attorney can then judge whether your conduct was actually obstruction and build the defense.',
   },
   {
-    question: `What are the elements of obstruction of official business in Ohio?`,
-    answer: `Under Ohio Revised Code 2921.31, the prosecution must prove four elements beyond a reasonable doubt: (1) the defendant did an affirmative act; (2) without privilege to do so; (3) with the purpose to prevent, obstruct, or delay the performance of an authorized act by a public official; and (4) the act actually hampered or impeded the official in the performance of their lawful duties. The base offense is a second-degree misdemeanor (M2), punishable by up to 90 days in jail and fines up to $750. Ohio courts have held that mere passive non-cooperation does not satisfy the affirmative act requirement.`,
+    question: 'What are the elements of obstruction of official business in Ohio?',
+    answer:
+      'Under Ohio Revised Code 2921.31 the prosecution must prove four elements beyond a reasonable doubt: (1) you did an affirmative act; (2) without privilege to do so; (3) with the purpose to prevent, obstruct or delay a public official’s authorized act; and (4) the act actually hampered or impeded the official in their lawful duties. The base offense is a second-degree misdemeanor (M2), punishable by up to 90 days in jail and a fine of up to $750. Ohio courts have held that passive non-cooperation alone does not meet the affirmative act requirement.',
   },
   {
-    question: `How is obstruction of official business different from resisting arrest in Ohio?`,
-    answer: `Obstruction of official business (ORC 2921.31) is a broader offense that applies to interference with any public official—including police officers, fire inspectors, code enforcement officers, and others—performing any authorized act. Resisting arrest (ORC 2921.33) specifically covers physically resisting, obstructing, or interfering with a lawful arrest or the execution of a search warrant. A person can be charged with obstruction for providing false information to investigators or blocking access to a scene without any physical resistance, while resisting arrest requires actual physical interference during an arrest. Both can be charged simultaneously when the conduct overlaps.`,
+    question: 'How is obstruction of official business different from resisting arrest in Ohio?',
+    answer:
+      'Obstruction of official business (ORC 2921.31) covers interference with any public official, including police officers, fire inspectors and code enforcement officers, performing any authorized act. Resisting arrest (ORC 2921.33) covers physically resisting, obstructing or interfering with a lawful arrest or the execution of a search warrant. Giving false information to investigators or blocking access to a scene can be obstruction with no physical resistance at all. When the conduct overlaps, both can be charged at once.',
   },
   {
-    question: `What are common defenses to obstruction of official business charges in Ohio?`,
-    answer: `Common defenses to ORC 2921.31 charges include: (1) no affirmative act—Ohio courts require active conduct, not mere silence or passive non-cooperation; (2) exercise of constitutional rights—the right to remain silent, refuse consent to searches, or record police in public cannot constitute obstruction; (3) lack of purpose to obstruct—if your conduct served a different purpose and obstruction was merely incidental; (4) the official was not performing an authorized act—if the official exceeded their authority; and (5) challenging the felony enhancement by showing no actual risk of physical harm was created. Body camera footage is often critical in evaluating and presenting these defenses.`,
+    question: 'What are common defenses to obstruction of official business charges in Ohio?',
+    answer:
+      'Common defenses to an ORC 2921.31 charge are (1) no affirmative act, since Ohio courts require active conduct and silence or passive non-cooperation is not enough; (2) the exercise of constitutional rights, since remaining silent, refusing consent to a search or recording police in public cannot be obstruction; (3) no purpose to obstruct, where your conduct had another purpose and any obstruction was incidental; (4) the official was not performing an authorized act because they exceeded their authority; and (5) a challenge to the felony enhancement showing no actual risk of physical harm. Body camera footage is often central to all of these.',
   },
 ];
 
-export default function ObstructionOfficialBusinessPage() {
+const RELATED = [
+  { href: '/criminal-defense/resisting-arrest', title: 'Resisting arrest', subtitle: 'Charges for resisting or interfering with an arrest' },
+  { href: '/criminal-defense/assault-charges', title: 'Assault charges', subtitle: 'Simple and aggravated assault in Ohio' },
+  { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Sealing an eligible record under Ohio law' },
+];
 
+export default function ObstructionOfficialBusinessPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Obstruction of Official Business Defense in Ohio"
-        description="Experienced legal defense for obstruction of official business and related charges. Protecting your rights and fighting for the best possible outcome."
+        title="Obstruction of official business charges in Ohio"
+        description="Obstruction under ORC 2921.31 is a second-degree misdemeanor with up to 90 days in jail. If it creates a risk of physical harm, it becomes a fifth-degree felony."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Obstruction of Official Business Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: '90 days', label: 'maximum jail for standard obstruction, a second-degree misdemeanor' },
+          { figure: '$750', label: 'maximum fine at the misdemeanor level' },
+          { figure: '6 to 12 months', label: 'prison range when the charge is a fifth-degree felony' },
+          { figure: '$2,500', label: 'maximum fine for felony obstruction' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing obstruction of official business charges throughout Ohio is a serious matter that can result in jail time, significant fines, and a permanent criminal record. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with obstruction of official business under Ohio Revised Code 2921.31. Our attorney understands Ohio's obstruction laws, the critical distinctions between protected conduct and unlawful obstruction, and the defenses available to protect your rights.
-            </p>
+      <Section
+        title="What obstruction of official business means"
+        intro={
+          <p>
+            Ohio Revised Code 2921.31 covers any act done with the purpose to prevent, obstruct or delay a public official from
+            performing an authorized act. That reaches from giving police false information to physically interfering with an officer.
+          </p>
+        }
+      >
+        <p>
+          Many obstruction charges come out of police encounters where the person was using constitutional rights. Remaining silent,
+          refusing consent to a search and recording police are all protected and are not obstruction, yet police sometimes charge
+          obstruction when people assert them.
+        </p>
+        <p>
+          The charge often comes with others, so the defense has to cover all of them, from arraignment through discovery, pretrial
+          motions, negotiation and, if needed, trial. If the obstruction created a risk of physical harm to anyone, the charge becomes a
+          fifth-degree felony.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Obstruction of official business is a broad charge that covers any act done with the purpose to prevent, obstruct, or delay a public official from performing an authorized act. This can range from providing false information to police during an investigation to physically interfering with an officer performing their duties. The charge is particularly concerning because it can be elevated to a fifth-degree felony if the obstruction creates a risk of physical harm to any person, dramatically increasing the potential consequences.
-            </p>
+      <Section title="What the prosecution must prove" tone="ice">
+        <p>
+          Under ORC 2921.31, beyond a reasonable doubt: (1) you did an act, (2) without privilege to do so, (3) with the purpose to
+          prevent, obstruct or delay a public official&apos;s authorized act, and (4) the act hampered or impeded the official in their
+          lawful duty. Each element can be challenged.
+        </p>
+        <h3>Common forms of obstruction</h3>
+        <ul>
+          <li>giving police false identifying information</li>
+          <li>making a false statement during an investigation</li>
+          <li>hiding or destroying evidence</li>
+          <li>warning a suspect about police action</li>
+          <li>physically blocking an officer from reaching a location</li>
+          <li>interfering with emergency personnel</li>
+          <li>refusing a lawful order in a way that impedes an investigation</li>
+          <li>creating a disturbance that keeps officers from their duties</li>
+        </ul>
+        <Callout title="Silence is not obstruction">
+          Ohio courts have held that obstruction requires an affirmative act. Failing to act, passive non-cooperation or refusing to
+          answer questions generally does not qualify. Remaining silent, refusing consent to a search or declining to help police cannot
+          be charged as obstruction.
+        </Callout>
+        <h3>The felony enhancement, ORC 2921.31(B)</h3>
+        <p>
+          If the obstruction creates a risk of physical harm to anyone, the offense rises from a second-degree misdemeanor to a
+          fifth-degree felony. That can happen when someone physically interferes with an officer in a way that could cause injury,
+          creates a distraction in a dangerous situation, or forces officers to turn away from a safety-critical task.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Many obstruction charges arise during encounters with law enforcement where individuals were exercising their constitutional rights. The right to remain silent, the right to refuse consent to searches, and the right to record police activity are all protected and do not constitute obstruction. However, police sometimes charge individuals with obstruction when they assert these rights. An experienced criminal defense attorney can distinguish between protected conduct and actual obstruction, and defend your rights in court.
-            </p>
+      <Section title="Obstruction penalties">
+        <p>Penalties are set under Ohio Revised Code Chapter 2929.</p>
+        <FactTable
+          title="Standard obstruction: second-degree misdemeanor"
+          rows={[
+            { label: 'Jail', value: 'Up to 90 days.' },
+            { label: 'Fine', value: 'Up to $750, plus court costs.' },
+            { label: 'Other', value: 'Probation with conditions, community service and a permanent criminal record. Courts may add conditions such as anger management classes.' },
+          ]}
+        />
+        <FactTable
+          title="Obstruction creating a risk of physical harm: fifth-degree felony"
+          rows={[
+            { label: 'Prison', value: '6 to 12 months.' },
+            { label: 'Fine', value: 'Up to $2,500, plus court costs.' },
+            { label: 'Post-release control', value: 'Mandatory.' },
+            { label: 'Record', value: 'A permanent felony record.' },
+            {
+              label: 'Other consequences',
+              value: 'Possible loss of voting rights while incarcerated, a federal ban on possessing firearms, and serious employment restrictions.',
+            },
+          ]}
+        />
+        <h3>Charges that often come with it</h3>
+        <p>
+          Resisting arrest (ORC 2921.33), falsification (ORC 2921.13), tampering with evidence (ORC 2921.12), disorderly conduct (ORC
+          2917.11) and the offense that started the encounter. Combined penalties can be heavy, so the firm defends them together.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for obstruction charges involves arraignment, discovery, pretrial motions, negotiations, and potentially trial. Because obstruction charges often accompany other criminal charges, the defense strategy must address all charges together. Early intervention by a skilled attorney can significantly impact the outcome, particularly in identifying constitutional defenses and challenging the prosecution's narrative.
-            </p>
+      <Section title="What a conviction costs beyond the sentence" tone="ice">
+        <p>
+          An obstruction conviction limits work in government, law enforcement, security, education and other positions of public trust,
+          and professional licenses may be denied or revoked. Employers, landlords and others will see it on a background check. A felony
+          conviction goes further: possible loss of gun rights, licensing restrictions across many fields, and barriers to housing and
+          education. For non-citizens, a felony conviction can carry serious immigration consequences, including deportation.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="How an obstruction case moves through court">
+        <Steps
+          steps={[
+            {
+              title: 'Citation or arrest, then arraignment',
+              body: 'The charges are read, bond conditions are set and you enter a plea. On a misdemeanor, defendants are usually released on their own recognizance or a small bond. At the felony level, bail may be higher.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: "The prosecution must hand over police reports, body camera and dash camera footage, witness statements and other evidence. Body camera footage often decides these cases, because it can show you were exercising your rights or that nothing actually hampered the official's duties.",
+            },
+            {
+              title: 'Pretrial motions',
+              body: 'A motion to dismiss can argue the conduct was protected by the First Amendment, that there was no affirmative act, or that the official was not performing an authorized act. A motion to suppress can challenge the encounter itself. A separate motion can attack the felony enhancement where no real risk of physical harm existed.',
+            },
+            {
+              title: 'Negotiation',
+              body: 'The charge can be dismissed, a felony enhancement reduced to a misdemeanor, or a better plea reached. Prosecutors often agree to dismiss obstruction as part of a global resolution when the evidence is weak or the conduct arguably fell within constitutional protections.',
+            },
+            {
+              title: 'Trial',
+              body: 'Your attorney cross-examines the official, plays the video, calls witnesses and holds the prosecution to every element. These cases often turn on whether your conduct was an affirmative act that actually hampered the official.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Elements of Obstruction of Official Business Under Ohio Law
-            </h3>
+      <Section title="Defenses to obstruction" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'You were exercising your rights',
+              body: 'Remaining silent, refusing consent to a search, asking whether you are free to leave and recording police in public are constitutionally protected and cannot be obstruction.',
+            },
+            {
+              title: 'There was no affirmative act',
+              body: 'Passive non-cooperation, not volunteering information or refusing to help police is not obstruction. Police often misunderstand this requirement.',
+            },
+            {
+              title: 'Nothing was actually hampered',
+              body: 'If the officer still completed the investigation, made the arrest or performed the duty despite your conduct, that element is not met.',
+            },
+            {
+              title: 'No purpose to obstruct',
+              body: 'Obstruction requires the specific purpose to prevent, obstruct or delay. Protecting your rights, recording for your own protection or asking legitimate questions is a different purpose, even if some obstruction resulted.',
+            },
+            {
+              title: 'The act was not authorized',
+              body: 'If the official was acting outside their authority or jurisdiction, the charge may be invalid.',
+            },
+            {
+              title: 'No risk of physical harm',
+              body: 'To keep the felony enhancement, the prosecution must prove the conduct created a risk of physical harm. Without it, the charge should drop to a second-degree misdemeanor, which can mean the difference between prison and a misdemeanor sentence.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">The Statutory Elements (ORC 2921.31)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                To obtain a conviction for obstruction of official business, the prosecution must prove beyond a reasonable doubt that: (1) the defendant did an act, (2) without privilege to do so, (3) with the purpose to prevent, obstruct, or delay the performance of an authorized act by a public official, and (4) the act hampered or impeded the official in performing their lawful duty. Each of these elements can be challenged by an experienced defense attorney.
-              </p>
+      <Section title="What the firm does on an obstruction case">
+        <PointGrid
+          points={[
+            { title: 'Protects your rights early', body: 'Advises you against further statements and starts the defense right away.' },
+            { title: 'Checks constitutional protections', body: 'Whether the First Amendment or another right covered what you did, including staying silent, refusing a search or recording police.' },
+            { title: 'Gets the video', body: "Obtains and reviews all available footage for gaps against the prosecution's account." },
+            { title: 'Tests the affirmative act', body: 'Whether your conduct was an act that actually hampered the official, or passive non-cooperation.' },
+            { title: 'Fights the felony enhancement', body: 'Shows that no actual risk of physical harm was created.' },
+            { title: 'Investigates', body: 'Reviews the evidence and interviews witnesses.' },
+            { title: 'Defends every charge together', body: 'One strategy for obstruction and any companion charges.' },
+            { title: 'Negotiates', body: 'To dismiss charges, reduce a felony enhancement to a misdemeanor or reach a better plea.' },
+            { title: 'Tries the case', body: 'Focused on constitutional protections, the video and every element the state must prove.' },
+            { title: 'Seals the record', body: 'Handles record sealing and expungement applications under ORC 2953.32 for eligible clients.' },
+          ]}
+        />
+        <p>
+          The firm handles obstruction cases throughout Ohio, from standard misdemeanors to fifth-degree felonies. If you are charged,{' '}
+          <Link href="/contact">contact Jwayyed Law LLC</Link> to schedule a consultation. You can also read about the firm&apos;s{' '}
+          <Link href="/criminal-defense">criminal defense practice</Link> or the article on{' '}
+          <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio">misdemeanor vs. felony charges in Ohio</Link>.
+        </p>
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Common Forms of Obstruction</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Obstruction of official business can take many forms, including: providing false identifying information to police, giving a false statement during an investigation, hiding or destroying evidence, warning a suspect about impending police action, physically blocking an officer from reaching a location, interfering with emergency personnel performing their duties, refusing to comply with a lawful order that impedes an investigation, or creating a disturbance that prevents officers from performing their duties.
-              </p>
+      <Section title="Record sealing and related charges" tone="ice">
+        <p>
+          Under Ohio Revised Code 2953.32, an obstruction conviction may be eligible for sealing or expungement. A standard second-degree
+          misdemeanor conviction is generally eligible after the waiting period if you meet the requirements. A fifth-degree felony
+          conviction has different criteria, but sealing may still be available. A sealed record is hidden from most background checks.
+        </p>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">The Affirmative Act Requirement</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio courts have held that obstruction of official business requires an affirmative act -- mere failure to act, passive non-cooperation, or refusal to answer questions generally does not constitute obstruction. The defendant must actually do something that hampers or impedes the official. This distinction is critical because it means that exercising your right to remain silent, refusing to consent to searches, or declining to voluntarily assist police cannot be charged as obstruction.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Felony Enhancement for Risk of Physical Harm (ORC 2921.31(B))</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the obstruction creates a risk of physical harm to any person, the offense is elevated from a second-degree misdemeanor to a fifth-degree felony. This enhancement applies when the obstructive conduct puts someone in danger, such as physically interfering with an officer in a way that could cause injury, creating a distraction during a dangerous situation, or engaging in conduct that forces officers to divert attention from a safety-critical task. The felony enhancement dramatically increases potential penalties.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Obstruction of Official Business Penalties and Consequences
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code Chapter 2929, obstruction of official business convictions carry significant penalties:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Second-Degree Misdemeanor (Standard Obstruction)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Standard obstruction of official business is a second-degree misdemeanor carrying penalties including up to 90 days in jail, fines up to $750, court costs, probation with conditions, community service, and a permanent criminal record. Because obstruction often accompanies other charges, the combined penalties can be significant. Courts may also impose conditions such as anger management classes or other behavioral requirements.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Fifth-Degree Felony (Obstruction Creating Risk of Physical Harm)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When the obstruction creates a risk of physical harm, the offense is elevated to a fifth-degree felony punishable by 6 to 12 months in prison, fines up to $2,500, mandatory post-release control, court costs, and a permanent felony criminal record. The felony classification brings additional consequences including potential loss of voting rights during incarceration, prohibition on possessing firearms under federal law, and severe employment restrictions. This is a dramatic escalation from the standard misdemeanor charge.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Related Charges That May Accompany Obstruction</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Obstruction charges frequently accompany other offenses including resisting arrest (ORC 2921.33), falsification (ORC 2921.13), tampering with evidence (ORC 2921.12), disorderly conduct (ORC 2917.11), and whatever underlying offense prompted the law enforcement encounter. The cumulative penalties from multiple charges can be severe. An experienced attorney can develop a coordinated defense strategy addressing all charges.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences</h4>
-            <p className="text-navy-950/80 mb-6">
-              Beyond criminal penalties, an obstruction conviction creates lasting collateral consequences. Employment opportunities are limited, particularly in government, law enforcement, security, education, and positions requiring public trust. Professional licensing may be denied or revoked. Background checks reveal the conviction to potential employers, landlords, and others. If enhanced to a felony, the consequences are dramatically more severe, including potential loss of gun rights, restrictions on professional licensing across many fields, and barriers to housing and education. For non-citizens, felony convictions can have serious immigration consequences including deportation.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Criminal Court Process for Obstruction Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the criminal court process helps you prepare for what lies ahead. The process for obstruction charges typically involves several stages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Citation or Arrest and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Obstruction charges may begin with a citation or a formal arrest. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For misdemeanor obstruction, defendants are typically released on their own recognizance or with minimal bond. For felony-level obstruction, bail may be more significant. An attorney can argue for favorable release conditions and begin building your defense immediately.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, prosecutors must provide all evidence including police reports, body camera footage, dash camera footage, witness statements, and any other evidence. An experienced attorney will thoroughly review this evidence, particularly video footage that may show the encounter from an objective perspective. Body camera footage is often critical in obstruction cases, as it may reveal that the defendant was exercising constitutional rights rather than obstructing, or that the alleged obstruction did not actually hamper the official's duties.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Strategic pretrial motions are particularly important in obstruction cases. Motions to dismiss may argue that the defendant's conduct was protected by the First Amendment, that no affirmative act occurred, or that the official was not performing an authorized act. Motions to suppress evidence may challenge the legality of the encounter that led to the obstruction charge. Motions challenging the felony enhancement may argue that no actual risk of physical harm existed.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Negotiations</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                An experienced attorney can negotiate with prosecutors to dismiss the obstruction charge, reduce a felony enhancement to a misdemeanor, or secure favorable plea agreements. In many cases, prosecutors will agree to dismiss the obstruction charge as part of a global resolution, particularly when the evidence of actual obstruction is weak or when the defendant's conduct arguably fell within constitutional protections.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine the public official about their account, introduce video footage, present witness testimony, and challenge whether the prosecution has proven every element beyond a reasonable doubt. Obstruction cases often turn on the specific details of the encounter and whether the defendant's conduct actually constituted an affirmative act that hampered the official. An experienced attorney can effectively present these nuances to the judge or jury.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced obstruction defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected, advise you against making further statements, and begin building your defense immediately</li>
-              <li><strong>Constitutional Analysis:</strong> Evaluate whether your conduct was protected by the First Amendment or other constitutional rights, including the right to remain silent, refuse searches, or record police</li>
-              <li><strong>Body Camera and Video Analysis:</strong> Obtain and thoroughly analyze all available video footage to determine what actually occurred and identify inconsistencies with the prosecution's narrative</li>
-              <li><strong>Affirmative Act Challenge:</strong> Analyze whether your conduct constituted an affirmative act that actually hampered the official, or whether it was passive non-cooperation or exercise of rights</li>
-              <li><strong>Felony Enhancement Defense:</strong> Challenge the felony enhancement by demonstrating that no actual risk of physical harm was created by the alleged obstruction</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Review all evidence, interview witnesses, and build a complete picture of the circumstances surrounding the charge</li>
-              <li><strong>Coordinated Defense Strategy:</strong> Address obstruction charges together with any accompanying charges for the best overall outcome</li>
-              <li><strong>Skilled Negotiation:</strong> Negotiate with prosecutors to dismiss charges, reduce felony enhancements to misdemeanors, or secure favorable plea agreements</li>
-              <li><strong>Trial Advocacy:</strong> Provide effective trial representation focusing on constitutional protections, video evidence, and challenging every element of the prosecution's case</li>
-              <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing and expungement applications under ORC 2953.32</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Obstruction of Official Business Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Exercise of Constitutional Rights</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The exercise of constitutional rights cannot constitute obstruction. The right to remain silent, the right to refuse consent to searches, the right to ask whether you are free to leave, and the right to record police activity in public are all constitutionally protected. If you were charged with obstruction for exercising these rights, this is a powerful defense. An attorney can demonstrate that your conduct fell within constitutional protections.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">No Affirmative Act</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Ohio courts require an affirmative act for obstruction. Mere passive non-cooperation, failure to volunteer information, or refusal to assist police does not constitute obstruction. If you simply declined to answer questions, refused to consent to a search, or did not actively assist in an investigation, your conduct likely did not meet the affirmative act requirement. This distinction is critical and frequently misunderstood by law enforcement.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">No Actual Hampering or Impeding</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Even if you performed an affirmative act, the prosecution must prove it actually hampered or impeded the official in performing their duty. If the official was able to complete their authorized act despite your conduct, the charge may fail. For example, if an officer was still able to complete their investigation, make an arrest, or perform their duty despite the alleged obstruction, this element is not satisfied.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Lack of Purpose to Obstruct</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Obstruction requires the specific purpose to prevent, obstruct, or delay the official. If your conduct had a different purpose -- such as protecting your own rights, recording an encounter for your protection, or asking legitimate questions -- this may negate the required mental state. The prosecution must prove your purpose was to obstruct, not merely that obstruction occurred as a byproduct of other conduct.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Official Not Performing Authorized Act</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The prosecution must prove the official was performing an "authorized act" at the time of the alleged obstruction. If the official was acting outside their authority, exceeding their jurisdiction, or performing an unauthorized act, the obstruction charge may be invalid. An attorney can investigate whether the official had proper authority for the actions they were performing.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Challenge to Felony Enhancement</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If the charge has been enhanced to a fifth-degree felony based on risk of physical harm, challenging this enhancement is critical. The prosecution must prove that the obstructive conduct created a risk of physical harm to any person. If no such risk existed, the charge should be reduced to a second-degree misdemeanor. Successfully challenging the enhancement can mean the difference between a prison sentence and a minor misdemeanor consequence.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement Eligibility for Obstruction Convictions
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code 2953.32, individuals convicted of obstruction of official business may be eligible to have their records sealed or expunged. As a second-degree misdemeanor, standard obstruction convictions are generally eligible for record sealing after the applicable waiting period, provided you meet eligibility requirements. If the charge was enhanced to a fifth-degree felony, different eligibility criteria apply but record sealing may still be available. Record sealing effectively hides the conviction from most background checks, helping restore employment opportunities and other areas affected by a criminal record. An experienced attorney can evaluate your eligibility and guide you through the application process.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Obstruction Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated obstruction of official business defense representation throughout Ohio. We understand that obstruction charges frequently arise from encounters where individuals were exercising their constitutional rights or where the circumstances were mischaracterized by law enforcement. Our attorney works diligently to investigate the circumstances of each case, identify constitutional protections, and achieve favorable outcomes.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of obstruction cases, from standard misdemeanor charges to cases enhanced to fifth-degree felonies. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, obtain and analyze all available evidence including body camera footage, negotiate with prosecutors, and defend your case at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and effective advocacy with particular attention to constitutional protections. We understand the court systems and prosecutor policies throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing obstruction charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/misdemeanor-vs-felony-ohio" className="text-sky-deep underline hover:text-navy-950">misdemeanor vs. felony charges in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Resisting Arrest</span>
-                <span className="text-sm text-navy-950/70">Defense for resisting arrest and obstruction charges</span>
-              </Link>
-              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Assault Charges</span>
-                <span className="text-sm text-navy-950/70">Simple and aggravated assault defense in Ohio</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
-                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <LocationsWeServe title="Criminal Defense" />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

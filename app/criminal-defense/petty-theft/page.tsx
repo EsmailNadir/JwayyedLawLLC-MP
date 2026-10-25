@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Theft Defense Attorney Ohio',
-  description: 'Ohio theft defense attorney for petty theft and shoplifting charges under ORC 2913.02. Serving all Ohio counties. Call (614) 285-5482.',
+  description:
+    'Petty theft and shoplifting charges under ORC 2913.02: penalties by value, the court process, defenses and record sealing. Call (614) 285-5482.',
   keywords: [
     'petty theft lawyer Ohio',
     'shoplifting defense attorney',
@@ -18,14 +20,14 @@ export const metadata: Metadata = {
     'shoplifting charges lawyer',
     'Ohio theft defense lawyer',
     'petty theft penalties Ohio',
-    'first offense theft attorney'
+    'first offense theft attorney',
   ],
   openGraph: {
     title: 'Theft Defense Attorney Ohio | Jwayyed Law LLC',
-    description: 'Experienced petty theft defense representation throughout Ohio. Schedule consultation available.',
+    description: 'Petty theft and shoplifting defense throughout Ohio: penalties, defenses and diversion. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense/petty-theft',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: {
     canonical: '/criminal-defense/petty-theft',
   },
@@ -39,283 +41,245 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What is petty theft under Ohio law?',
-    answer: 'Petty theft under Ohio Revised Code 2913.02 is a theft offense involving property or services valued at less than $1,000. It is classified as a first-degree misdemeanor punishable by up to 180 days in jail and fines up to $1,000. Theft occurs when a person knowingly obtains or exerts control over the property or services of another without consent, by deception, by threat, or by intimidation. Petty theft includes shoplifting, taking someone\'s personal property, and obtaining services without paying.',
+    answer:
+      "Petty theft under Ohio Revised Code 2913.02 is theft of property or services worth less than $1,000. It is a first-degree misdemeanor punishable by up to 180 days in jail and a fine of up to $1,000. Theft happens when a person knowingly obtains or exerts control over someone else's property or services without consent, by deception, by threat or by intimidation. It includes shoplifting, taking someone's personal property and obtaining services without paying.",
   },
   {
     question: 'What are the penalties for petty theft in Ohio?',
-    answer: 'Petty theft (under $1,000) is a first-degree misdemeanor carrying up to 180 days in jail, fines up to $1,000, restitution to the victim, court costs, and a permanent criminal record. If the value is under $150, it is generally a minor misdemeanor with a maximum fine of $150 and no jail time. Penalties can be enhanced based on prior theft convictions, the type of property stolen, or the victim\'s status. Additional consequences include difficulty finding employment, housing rejections, and professional licensing issues.',
+    answer:
+      "Petty theft (under $1,000) is a first-degree misdemeanor: up to 180 days in jail, a fine of up to $1,000, restitution to the victim, court costs and a permanent criminal record. If the value is under $150, it is generally a minor misdemeanor with a maximum $150 fine and no jail. Penalties can be raised by prior theft convictions, the type of property or the victim's status. A conviction can also make it harder to find work, rent housing or hold a professional license.",
   },
   {
     question: 'Is shoplifting the same as petty theft in Ohio?',
-    answer: 'Shoplifting is a common form of petty theft in Ohio and is charged under the same theft statute, ORC 2913.02. Shoplifting involves knowingly concealing, taking, or exerting control over store merchandise without paying the full retail value. Ohio does not have a separate shoplifting statute. The severity of the charge depends on the value of merchandise: under $150 is generally a minor misdemeanor, $150-$999 is a first-degree misdemeanor, and $1,000 or more elevates to felony theft charges.',
+    answer:
+      'Shoplifting is a common form of petty theft and is charged under the same statute, ORC 2913.02. Ohio has no separate shoplifting statute. Shoplifting means knowingly concealing, taking or exerting control over store merchandise without paying full retail value. The value sets the charge: under $150 is generally a minor misdemeanor, $150 to $999 is a first-degree misdemeanor, and $1,000 or more is felony theft.',
   },
   {
     question: 'Can petty theft charges be expunged from my record in Ohio?',
-    answer: 'Yes, petty theft convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor offense, you may apply to have the record sealed after the applicable waiting period, provided you meet eligibility requirements. However, theft convictions can be particularly damaging on background checks because they suggest dishonesty. Record sealing can help mitigate these long-term consequences by hiding the conviction from most background searches. An experienced attorney can evaluate your eligibility.',
+    answer:
+      'Petty theft convictions may be eligible for expungement or record sealing under Ohio Revised Code 2953.32. As a misdemeanor, the record can be sealed after the waiting period if you meet the eligibility rules. Theft convictions do particular damage on background checks because they suggest dishonesty, and sealing hides the conviction from most background searches. An attorney can review your eligibility.',
   },
   {
     question: 'What should I do if I am charged with petty theft or shoplifting in Ohio?',
-    answer: 'If charged with petty theft or shoplifting in Ohio, exercise your right to remain silent immediately. Do not make statements to police, store security, or loss prevention officers without an attorney present. Do not sign any admission of guilt or civil demand letters. Contact an experienced criminal defense attorney immediately. Preserve any evidence that may support your defense, such as receipts, text messages, or witness information. An attorney can protect your rights, challenge the evidence, and work toward the best possible outcome including potential dismissal.',
+    answer:
+      'Use your right to remain silent. Do not make statements to police, store security or loss prevention officers without an attorney present, and do not sign an admission of guilt or a civil demand letter. Contact a criminal defense attorney right away. Keep anything that may support your defense, such as receipts, text messages or witness information. An attorney can challenge the evidence and work toward the best outcome available, including dismissal.',
   },
   {
-    question: `What is the value threshold between petty theft and felony theft in Ohio?`,
-    answer: `Under ORC 2913.02, the value of the property or services stolen determines the degree of the offense. Theft of property valued at less than $1,000 is petty theft, charged as a first-degree misdemeanor (M1) punishable by up to 180 days in jail and fines up to $1,000 (or a minor misdemeanor if under $150 with no prior theft convictions). When the value reaches $1,000 to $7,499, the offense becomes a fifth-degree felony (F5) punishable by 6–12 months in prison. The threshold increases further for higher-value thefts. Accurately valuing property is therefore a critical issue in theft cases, and an attorney can challenge inflated valuations to potentially reduce the severity of the charge.`,
+    question: 'What is the value threshold between petty theft and felony theft in Ohio?',
+    answer:
+      'Under ORC 2913.02, the value of what was taken sets the degree of the offense. Under $1,000 is petty theft, a first-degree misdemeanor (M1) punishable by up to 180 days in jail and a fine of up to $1,000, or a minor misdemeanor if under $150 with no prior theft convictions. At $1,000 to $7,499 it becomes a fifth-degree felony (F5) punishable by 6 to 12 months in prison, and the degree rises with higher values. Valuation is often a central issue, and an attorney can challenge an inflated value to lower the charge.',
   },
   {
-    question: `Can a petty theft conviction be sealed in Ohio?`,
-    answer: `Yes, in most cases a petty theft conviction is eligible for record sealing under ORC 2953.32. After a one-year waiting period following the completion of your sentence (including any probation), you may petition the court to seal your record. Once sealed, the record is hidden from most employers and landlords conducting background checks — though law enforcement and certain licensing agencies may still access it. Because theft convictions are particularly damaging to employment prospects (they signal dishonesty to employers), pursuing record sealing as soon as you are eligible is strongly advisable. An attorney can evaluate your eligibility and file the necessary petition on your behalf.`,
+    question: 'Can a petty theft conviction be sealed in Ohio?',
+    answer:
+      'In most cases, yes, under ORC 2953.32. One year after you complete your sentence (including any probation), you may petition the court to seal the record. A sealed record is hidden from most employers and landlords running background checks, though law enforcement and some licensing agencies can still see it. Because a theft conviction weighs heavily with employers, it makes sense to apply as soon as you are eligible. An attorney can review your eligibility and file the petition.',
   },
   {
-    question: `Does a petty theft conviction affect professional licensing in Ohio?`,
-    answer: `Yes, a petty theft conviction can affect professional licensing in Ohio. Many licensing boards — including those governing nursing, pharmacy, education, real estate, insurance, and financial services — conduct background checks and have authority to deny, suspend, or revoke licenses based on criminal convictions. Because theft offenses involve dishonesty, licensing boards often view them seriously even when the amount stolen is small. If you hold a professional license or are pursuing one, the stakes of a theft conviction go well beyond criminal penalties. An experienced attorney can work to minimize or avoid a conviction through diversion programs, charge reductions, or dismissal, and can also advise on how to address any licensing board inquiries.`,
+    question: 'Does a petty theft conviction affect professional licensing in Ohio?',
+    answer:
+      'Yes, it can. Many licensing boards, including those for nursing, pharmacy, education, real estate, insurance and financial services, run background checks and can deny, suspend or revoke a license over a criminal conviction. Boards often take theft seriously even when the amount is small, because it involves dishonesty. If you hold or are pursuing a license, an attorney can work to avoid a conviction through diversion, a reduced charge or dismissal, and advise you on any licensing board inquiry.',
   },
 ];
 
-export default function PettyTheftPage() {
+const RELATED = [
+  { href: '/criminal-defense/criminal-damaging', title: 'Criminal damaging', subtitle: 'Property damage and destruction charges' },
+  { href: '/criminal-defense/criminal-mischief', title: 'Criminal mischief', subtitle: 'Property interference and tampering charges' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Sealing an eligible record under Ohio law' },
+  { href: '/criminal-defense/obstruction-of-official-business', title: 'Obstruction of official business', subtitle: 'Charges for interfering with police' },
+];
 
+export default function PettyTheftPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Theft Defense Attorney in Ohio"
-        description="Experienced legal defense for petty theft, shoplifting, and misdemeanor theft charges. Protecting your rights and fighting for the best possible outcome."
+        title="Petty theft and shoplifting charges in Ohio"
+        description="Theft of property worth less than $1,000 is a first-degree misdemeanor in Ohio, with up to 180 days in jail and a fine of up to $1,000."
       />
 
-      {/* Main Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-navy-950 mb-6">
-              Understanding Petty Theft Charges in Ohio
-            </h2>
+      <KeyFacts
+        facts={[
+          { figure: 'Under $1,000', label: 'value that makes a theft petty theft, a first-degree misdemeanor' },
+          { figure: '180 days', label: 'maximum jail for petty theft' },
+          { figure: '$1,000', label: 'maximum fine, plus restitution and court costs' },
+          { figure: '$1,000 to $7,499', label: 'value range that makes it a fifth-degree felony' },
+        ]}
+      />
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Facing petty theft charges throughout Ohio can have devastating consequences on your record, career, and future. At Jwayyed Law LLC, we provide experienced defense representation for individuals charged with petty theft and shoplifting under Ohio Revised Code 2913.02. Our attorney understands Ohio theft laws, potential defenses, and the particularly damaging impact theft charges can have on your employment and reputation.
-            </p>
+      <Section
+        title="What petty theft means in Ohio"
+        intro={
+          <p>
+            Petty theft is knowingly obtaining or exerting control over someone else&apos;s property or services without consent, where
+            the value is less than $1,000. It is charged under Ohio Revised Code 2913.02.
+          </p>
+        }
+      >
+        <p>
+          It covers shoplifting from stores, taking personal property, using services without paying and other kinds of theft. Ohio&apos;s
+          theft laws sit in Revised Code Chapter 2913. The value of the property mostly decides the penalty, and the type of property,
+          the victim&apos;s status and your prior record can raise it.
+        </p>
+        <p>
+          Petty theft is a misdemeanor, but a theft conviction can follow you for years, especially with employers who weigh honesty
+          and trustworthiness. Many petty theft cases resolve before trial, particularly for first-time offenders, through diversion,
+          a reduced charge or a dismissal.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Petty theft in Ohio involves knowingly obtaining or exerting control over the property or services of another without consent, where the value of the property or services is less than $1,000. This includes shoplifting from retail stores, taking personal property, using services without paying, and other forms of theft. Even though petty theft is a misdemeanor offense, a theft conviction on your record carries a stigma that can follow you for years, particularly in employment situations where honesty and trustworthiness are valued.
-            </p>
+      <Section title="Forms of petty theft" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Shoplifting and retail theft',
+              body: 'Concealing store merchandise, leaving without paying, altering price tags, moving merchandise into other containers, or otherwise depriving a store of the full retail value. Ohio has no separate shoplifting statute; these are charged under ORC 2913.02.',
+            },
+            {
+              title: 'Theft of personal property',
+              body: "Taking someone's property without consent from a home, vehicle, workplace or anywhere else. Items worth under $1,000 are charged as petty theft, a misdemeanor.",
+            },
+            {
+              title: 'Theft of services',
+              body: 'Knowingly obtaining services without paying, or intending to avoid payment: leaving a restaurant without paying, illegal utility connections, professional services obtained by deception, or riding transit without paying the fare.',
+            },
+            {
+              title: 'Theft by deception',
+              body: 'Obtaining property or services through a false representation, misleading conduct or concealing material facts, such as using false identification to get goods. It can overlap with fraud offenses but is charged as petty theft when the value is under $1,000.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio's theft laws are codified in Ohio Revised Code Chapter 2913 and cover a broad range of conduct. The penalties for theft offenses are primarily determined by the value of the property stolen, with additional enhancements based on the type of property, the victim's status, and the defendant's prior record. Understanding the specific elements prosecutors must prove and the available defenses is essential for building an effective defense strategy.
-            </p>
+      <Section title="Petty theft penalties by value">
+        <FactTable
+          title="Minor misdemeanor: value under $150, no prior theft conviction"
+          rows={[
+            { label: 'Jail', value: 'None.' },
+            { label: 'Fine', value: 'Up to $150, plus court costs and restitution.' },
+            { label: 'Record', value: 'A conviction still creates a criminal record. This is the lowest classification and may resolve quickly.' },
+          ]}
+        />
+        <FactTable
+          title="First-degree misdemeanor: value $150 to $999"
+          rows={[
+            { label: 'Jail', value: 'Up to 180 days.' },
+            { label: 'Fine', value: 'Up to $1,000.' },
+            { label: 'Other penalties', value: 'Restitution to the victim, court costs, probation with conditions, community service.' },
+            { label: 'Record', value: 'A permanent criminal record.' },
+            { label: 'Also applies to', value: 'A theft under $150 when you have a prior theft conviction.' },
+          ]}
+        />
+        <h3>Enhancements</h3>
+        <p>
+          Prior theft convictions raise the penalty. A second theft of property under $150 becomes a first-degree misdemeanor, and
+          several priors can lift even a small theft to a felony. The court counts every prior theft-related conviction when setting the
+          charge level, so a first theft charge is worth defending to avoid a later enhancement.
+        </p>
+        <p>
+          Some thefts are raised regardless of value. Theft from an elderly person or disabled adult under ORC 2913.02(B)(3) is raised in
+          degree. Theft of a firearm is a felony regardless of value, theft of a motor vehicle is a felony, and theft of drugs is
+          enhanced.
+        </p>
+        <Callout title="Stores can also come after you civilly">
+          Under ORC 2307.61, a retail merchant can seek the retail value of the merchandise, a civil penalty of up to $150 and attorney
+          fees. Parents of a minor who shoplifts can also be held civilly liable. These civil demands are separate from the criminal case.
+        </Callout>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The legal process for petty theft charges involves arraignment, discovery, pretrial negotiations, and potentially trial. Many petty theft cases are resolved through pretrial negotiations, particularly for first-time offenders. An experienced attorney can negotiate for diversion programs, reduced charges, or dismissals that protect your record and future.
-            </p>
+      <Section title="What a theft conviction costs beyond the sentence" tone="ice">
+        <p>
+          A theft conviction speaks to honesty, so it weighs heavily in a background check. Many employers will not hire someone with a
+          theft conviction, especially for jobs handling money, merchandise or sensitive information. Licenses in accounting, finance,
+          law, healthcare and education may be denied or revoked. Housing applications are often rejected, banks may refuse to open
+          accounts, and security clearances can be denied. For non-citizens, a theft conviction can trigger deportation as a crime
+          involving moral turpitude. These effects last long after the sentence is served and the fines are paid.
+        </p>
+      </Section>
 
-            <LocationsWeServe title="Criminal Defense" />
+      <Section title="How a petty theft case moves through court">
+        <Steps
+          steps={[
+            {
+              title: 'Citation, arrest or summons, then arraignment',
+              body: 'The case can start with a citation at the scene, an arrest or a summons. At arraignment the charges are read, bond conditions are set and you enter a plea. Misdemeanor theft defendants are often released on their own recognizance. A not guilty plea preserves your rights and leaves time to investigate.',
+            },
+            {
+              title: 'Discovery and investigation',
+              body: 'The prosecution must hand over its evidence: police reports, loss prevention reports, surveillance footage, witness statements and any statements you made. Reviewing it can expose gaps in the footage, a weak valuation, chain of custody problems, or support for defenses like lack of intent, mistaken identity or consent.',
+            },
+            {
+              title: 'Negotiation and diversion',
+              body: 'Most petty theft cases resolve before trial. Options include dismissal, a theft diversion program, a reduction to a minor misdemeanor or a plea that limits the consequences. Many Ohio courts offer diversion or intervention for first-time theft offenders, usually with theft prevention education, community service, restitution and a probationary period, followed by dismissal.',
+            },
+            {
+              title: 'Trial',
+              body: 'The prosecution must prove every element beyond a reasonable doubt, including that you knowingly obtained or exerted control over the property without consent and with the purpose to deprive the owner. At trial your attorney cross-examines the state’s witnesses, challenges the surveillance evidence and disputes the valuation.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Types of Petty Theft Under Ohio Law
-            </h3>
+      <Section title="Defenses to petty theft" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Lack of intent',
+              body: 'Theft requires acting "knowingly" with the purpose to deprive the owner. If the taking was accidental, came from confusion or forgetfulness (an item left in a cart or pocket), or you did not intend to permanently deprive the owner, this defense may apply. Many shoplifting charges involve someone who forgot to pay or was distracted.',
+            },
+            {
+              title: 'Consent or claim of right',
+              body: 'A good-faith belief that you had permission, or a legitimate claim to the property, can defeat the charge. It comes up with shared property, property you believed was abandoned, or property you reasonably believed you were entitled to.',
+            },
+            {
+              title: 'Mistaken identity',
+              body: 'Identification in retail theft cases can be unreliable, especially when it rests only on surveillance footage. Challenging footage quality and witness identifications, or presenting alibi evidence, can lead to dismissal or acquittal.',
+            },
+            {
+              title: 'Insufficient evidence',
+              body: 'If the evidence does not prove beyond a reasonable doubt that you knowingly took the property without consent and with the purpose to deprive the owner, the charge should be dismissed. Footage may be unclear, testimony inconsistent, or the chain of custody flawed.',
+            },
+            {
+              title: 'Disputing the value',
+              body: 'Not a complete defense, but an overstated value can be challenged with independent valuations. A successful challenge can reduce a first-degree misdemeanor to a minor misdemeanor.',
+            },
+          ]}
+        />
+      </Section>
 
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Shoplifting / Retail Theft</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Shoplifting is the most common form of petty theft and involves knowingly concealing store merchandise, removing merchandise from a store without paying, altering price tags, transferring merchandise to different containers, or otherwise depriving a retail establishment of the full retail value of merchandise. Ohio does not have a separate shoplifting statute; these offenses are charged under the general theft statute ORC 2913.02.
-              </p>
+      <Section title="What the firm does on a theft case">
+        <PointGrid
+          points={[
+            { title: 'Protects your rights early', body: 'Advises you on dealing with police and loss prevention, and on avoiding self-incriminating statements.' },
+            { title: 'Investigates', body: 'Police reports, loss prevention reports, surveillance footage, witness statements and the rest of the evidence.' },
+            { title: 'Reviews the footage', body: 'Looks for gaps, poor quality, inconsistencies or anything that contradicts the prosecution.' },
+            { title: 'Disputes the value', body: 'To bring a first-degree misdemeanor down to a minor misdemeanor, or a charge down a classification.' },
+            { title: 'Seeks diversion', body: 'Programs that end in dismissal when completed.' },
+            { title: 'Negotiates', body: 'For dismissal, a reduced charge, alternative sentencing or a better plea agreement.' },
+            { title: 'Tries the case', body: 'Challenges every element at trial, including intent, identification and ownership of the property.' },
+            { title: 'Answers civil demands', body: 'Advises you on civil demand letters from retailers alongside the criminal case.' },
+            { title: 'Seals the record', body: 'Handles record sealing and expungement applications under ORC 2953.32 for eligible clients.' },
+          ]}
+        />
+        <p>
+          The firm handles theft cases throughout Ohio, from shoplifting to more serious misdemeanor theft, and knows which courts offer
+          diversion for first-time offenders. If you are charged anywhere in Ohio, <Link href="/contact">contact Jwayyed Law LLC</Link> to
+          schedule a consultation. You can also read about the firm&apos;s <Link href="/criminal-defense">criminal defense practice</Link>{' '}
+          or the article on <Link href="/our-law-firm/blog/shoplifting-ohio-first-offense">shoplifting charges for a first offense in Ohio</Link>.
+        </p>
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Theft of Personal Property</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Taking another person's personal property without their consent constitutes theft. This includes taking items from another person's home, vehicle, workplace, or other location. The offense is charged based on the value of the property taken. Items valued under $1,000 are charged as petty theft, a misdemeanor offense.
-              </p>
+      <Section title="Record sealing after a theft conviction" tone="ice">
+        <p>
+          Under Ohio Revised Code 2953.32, a petty theft conviction may be eligible for sealing or expungement. As a misdemeanor, it is
+          generally eligible after the waiting period if you meet the requirements. Sealing hides the conviction from most background
+          checks, which matters more for theft than for most offenses. See{' '}
+          <Link href="/criminal-defense/expungement-record-sealing">expungement and record sealing</Link> for the process.
+        </p>
+        <h3>Related charges</h3>
+        <LinkGrid links={RELATED} columns={2} />
+      </Section>
 
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Theft of Services</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Theft of services involves knowingly obtaining services without paying or with the intent to avoid payment. This can include dining and leaving without paying (dine and dash), obtaining utility services through illegal connections, receiving professional services through deception, or using transportation without paying the required fare.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Theft by Deception</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Theft by deception occurs when a person obtains property or services through false representation, misleading conduct, or concealment of material facts. This can overlap with fraud-related offenses but is charged as petty theft when the value is under $1,000. Examples include using false identification to obtain goods or misrepresenting facts to receive property or services.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Petty Theft Penalties by Value in Ohio
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio theft penalties are primarily determined by the value of the property or services stolen. Understanding the penalty structure is essential when facing theft charges:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Minor Misdemeanor (Value Under $150)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When the value of stolen property is less than $150 and the offender has no prior theft convictions, the offense is a minor misdemeanor. Penalties include a maximum fine of $150, no jail time, court costs, and restitution. While no jail time is imposed, a conviction still creates a criminal record. However, this is the least severe classification and may be eligible for quick resolution.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First-Degree Misdemeanor (Value $150 - $999)</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                When the value of stolen property is between $150 and $999, the offense is a first-degree misdemeanor carrying up to 180 days in jail, fines up to $1,000, restitution to the victim, court costs, probation with conditions, community service, and a permanent criminal record. This penalty level also applies to minor misdemeanor thefts when the offender has a prior theft conviction.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Enhanced Penalties Based on Prior Convictions</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Prior theft convictions significantly enhance penalties under Ohio law. A second theft offense of property under $150 becomes a first-degree misdemeanor. Multiple prior theft convictions can elevate even minor thefts to felony charges. The court considers all prior theft-related convictions when determining the appropriate charge level, making it critical to aggressively defend even first-time theft charges to avoid future enhancement.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Special Category Enhancements</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Certain types of theft carry enhanced penalties regardless of value. Theft from an elderly person or disabled adult under ORC 2913.02(B)(3) is elevated in degree. Theft of a firearm is a felony regardless of value. Theft of a motor vehicle is a felony. Theft of drugs is enhanced. These special categories reflect the legislature's determination that certain thefts warrant more severe punishment.
-              </p>
-            </div>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Civil Liability for Shoplifting</h4>
-            <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              In addition to criminal penalties, Ohio law allows retail merchants to pursue civil damages against shoplifters under ORC 2307.61. Merchants can seek the retail value of the merchandise, a civil penalty of up to $150, and attorney fees. Parents of minor children who shoplift may also be held civilly liable. These civil demands are separate from criminal penalties and can add significant financial consequences.
-            </p>
-
-            <h4 className="font-semibold text-navy-950 mt-6 mb-4">Collateral Consequences of Theft Convictions</h4>
-            <p className="text-navy-950/80 mb-6">
-              Theft convictions carry particularly severe collateral consequences because they reflect on a person's honesty and trustworthiness. Employment opportunities are significantly limited as most employers conduct background checks and many will not hire individuals with theft convictions, particularly for positions involving handling money, merchandise, or sensitive information. Professional licensing in fields such as accounting, finance, law, healthcare, and education may be denied or revoked. Housing applications are frequently rejected. Financial institutions may refuse to open accounts. Security clearances will be denied. For non-citizens, theft convictions can trigger deportation as crimes involving moral turpitude. These consequences persist long after completing sentences and paying fines.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              The Criminal Court Process for Petty Theft Charges
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Understanding the criminal court process helps you prepare for what lies ahead. The process for misdemeanor petty theft charges typically involves several stages:
-            </p>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Citation, Arrest, or Summons and Arraignment</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Petty theft charges may begin with a citation at the scene, a formal arrest, or a summons to appear in court. At arraignment, charges are formally read, bail or bond conditions are set, and you enter a plea. For misdemeanor theft charges, defendants are often released on their own recognizance. An attorney can argue for favorable release conditions and begin building your defense immediately. Entering a not guilty plea preserves all your rights and allows time for investigation.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                During discovery, prosecutors must provide all evidence including police reports, loss prevention reports, surveillance footage, witness statements, and any statements you may have made. An experienced attorney will thoroughly review this evidence, analyze surveillance footage for inconsistencies, challenge the valuation of property, verify the chain of custody, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting defenses such as lack of intent, mistaken identification, or consent.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Negotiations and Diversion Programs</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Most petty theft cases are resolved through pretrial negotiations. An experienced attorney can negotiate with prosecutors for dismissal, placement in a theft diversion program, reduction to a minor misdemeanor, or plea agreements that minimize consequences. Many Ohio courts offer diversion or intervention programs for first-time theft offenders that result in dismissal upon completion of program requirements. These programs typically involve theft prevention education, community service, restitution, and a probationary period.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If your case proceeds to trial, your attorney will present evidence supporting your defense, cross-examine prosecution witnesses, challenge surveillance evidence, dispute property valuations, and advocate for acquittal. The prosecution must prove every element beyond a reasonable doubt, including that you knowingly obtained or exerted control over the property without consent and with the purpose to deprive the owner. An experienced attorney can effectively challenge these elements.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How a Criminal Defense Attorney Can Help
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An experienced petty theft defense attorney provides comprehensive representation throughout every stage of your case:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-              <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected, advise you on interactions with law enforcement and loss prevention, and prevent self-incriminating statements</li>
-              <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, loss prevention reports, surveillance footage, witness statements, and all evidence to identify weaknesses and build your defense</li>
-              <li><strong>Surveillance Evidence Analysis:</strong> Carefully analyze surveillance footage for inconsistencies, gaps, poor quality, or evidence that contradicts the prosecution's narrative</li>
-              <li><strong>Value Disputes:</strong> Challenge the valuation of property to potentially reduce charges from first-degree misdemeanor to minor misdemeanor, or from misdemeanor to lower classifications</li>
-              <li><strong>Diversion Program Advocacy:</strong> Identify and advocate for diversion or intervention programs that result in dismissal of charges upon successful completion</li>
-              <li><strong>Skilled Negotiation:</strong> Work with prosecutors to dismiss charges, reduce charges, secure alternative sentencing, or arrange favorable plea agreements</li>
-              <li><strong>Trial Advocacy:</strong> Provide effective trial representation challenging every element of the prosecution's case including intent, identification, and property ownership</li>
-              <li><strong>Civil Demand Response:</strong> Advise you on responding to civil demand letters from retailers and protect your interests in both criminal and civil proceedings</li>
-              <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing and expungement applications under ORC 2953.32 to clear criminal records</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Common Defenses to Petty Theft Charges
-            </h3>
-
-            <div className="bg-ice p-6 mb-8">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Lack of Intent</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Theft requires that the defendant acted "knowingly" with the purpose to deprive the owner of property. If the taking was accidental, the result of confusion or forgetfulness (such as forgetting an item in your cart or pocket), or you lacked the intent to permanently deprive the owner, this defense may apply. Many shoplifting charges involve situations where individuals genuinely forgot to pay for an item or were distracted.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Consent or Claim of Right</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                If you had a good faith belief that you had permission to take the property or a legitimate claim of ownership or right to the property, this defense may negate the theft charge. This applies in situations involving shared property, property you believed was abandoned, or property you had a reasonable belief you were entitled to possess.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Mistaken Identity</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                In retail theft cases, identification can be unreliable, particularly when based solely on surveillance footage. If you were not the person who committed the alleged theft, challenges to the identification evidence may result in acquittal or dismissal. An attorney can analyze surveillance footage quality, challenge witness identifications, and present alibi evidence.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                The prosecution must prove every element of theft beyond a reasonable doubt. If the evidence is insufficient to establish that you knowingly took property without consent and with the purpose to deprive the owner, the charges should be dismissed. Surveillance footage may be unclear, witness testimony may be inconsistent, and the chain of custody may be flawed.
-              </p>
-
-              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Value Dispute</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                While not a complete defense, challenging the value of the property can reduce the severity of charges and penalties. If the prosecution overstates the value of property, a successful challenge can reduce a first-degree misdemeanor to a minor misdemeanor, significantly reducing potential penalties. An attorney can obtain independent valuations and challenge the prosecution's valuation methodology.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Expungement Eligibility for Petty Theft Convictions
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under Ohio Revised Code 2953.32, individuals convicted of petty theft may be eligible to have their records sealed or expunged. Given the particularly damaging impact of theft convictions on employment and reputation, record sealing is an important option for eligible individuals. As a misdemeanor offense, petty theft convictions are generally eligible for record sealing after the applicable waiting period, provided you meet eligibility requirements. Record sealing effectively hides the conviction from most background checks, helping restore employment opportunities and reduce the stigma associated with theft convictions. An experienced attorney can evaluate your eligibility and guide you through the application process.
-            </p>
-
-            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Why Choose Jwayyed Law LLC for Petty Theft Defense
-            </h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated petty theft defense representation throughout Ohio. We understand that theft charges can arise from misunderstandings, momentary lapses in judgment, or situations where intent is lacking. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes that protect your record and future.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We handle all types of theft cases, from minor shoplifting charges to more serious misdemeanor theft offenses. Our firm maintains open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies. We work to protect your rights, challenge evidence, negotiate with prosecutors for diversion programs and reduced charges, and defend your case at trial when necessary.
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our approach combines thorough investigation, strategic defense development, and effective advocacy. We understand the court systems and prosecutor policies throughout Ohio, including which courts offer diversion programs for first-time offenders. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing petty theft or shoplifting charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our article on <Link href="/our-law-firm/blog/shoplifting-ohio-first-offense" className="text-sky-deep underline hover:text-navy-950">shoplifting charges for a first offense in Ohio</Link>.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/criminal-damaging" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Damaging</span>
-                <span className="text-sm text-navy-950/70">Property damage and destruction charges</span>
-              </Link>
-              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Mischief</span>
-                <span className="text-sm text-navy-950/70">Property interference and tampering defense</span>
-              </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
-                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
-              </Link>
-              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
-                <span className="jw-serif font-bold text-navy-950 block mb-1">Obstruction of Official Business</span>
-                <span className="text-sm text-navy-950/70">Defense for interfering with law enforcement</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <LocationsWeServe title="Criminal Defense" />
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
