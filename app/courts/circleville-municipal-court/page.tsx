@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Circleville Municipal Court Attorney',
-  description: 'Experienced attorney for Circleville Municipal Court. OVI/DUI defense, misdemeanor criminal charges, and traffic violations in Pickaway County, Ohio.',
+  description:
+    'OVI, misdemeanor and traffic cases at Circleville Municipal Court, 111 S Paint St, which hears cases from across Pickaway County, Ohio.',
   keywords: ['Circleville Municipal Court attorney', 'Pickaway County OVI lawyer', 'Circleville misdemeanor defense', 'Circleville Ohio criminal attorney', 'Pickaway County DUI attorney'],
   openGraph: {
     title: 'Circleville Municipal Court Attorney | Jwayyed Law LLC',
+    description: 'OVI, misdemeanor and traffic defense at Circleville Municipal Court in Pickaway County.',
     url: 'https://www.jjlawohio.com/courts/circleville-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/courts/circleville-municipal-court' },
 };
 
@@ -25,82 +28,145 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What types of cases does Circleville Municipal Court handle?`,
-    answer: `Circleville Municipal Court handles misdemeanor criminal cases, OVI/DUI charges under ORC 4511.19, traffic violations, civil disputes up to $15,000, small claims matters, and landlord-tenant disputes arising within Pickaway County. Circleville, as the county seat of Pickaway County, hosts the primary municipal court for the county. Felony charges are bound over to the Pickaway County Common Pleas Court. Our firm does not handle juvenile, probate, or immigration matters in this court.`,
+    question: 'What types of cases does Circleville Municipal Court handle?',
+    answer:
+      'Misdemeanor criminal cases, OVI/DUI charges under ORC 4511.19, traffic violations, civil disputes up to $15,000, small claims and landlord-tenant disputes arising within Pickaway County. Circleville is the county seat and hosts the primary municipal court for the county. Felony charges are bound over to the Pickaway County Common Pleas Court. The firm does not handle juvenile, probate or immigration matters in this court.',
   },
   {
-    question: `Where is Circleville Municipal Court located?`,
-    answer: `Circleville Municipal Court is located at 111 S Paint St, Circleville, OH 43113. Circleville sits along the US 23 corridor approximately 30 miles south of Columbus. The court handles OVI and traffic charges arising from US 23 enforcement as well as SR 56 and US 22. If you were stopped along US 23 in Pickaway County, your case will likely be heard in Circleville Municipal Court or the Pickaway County Common Pleas Court depending on the severity of the charges.`,
+    question: 'Where is Circleville Municipal Court located?',
+    answer:
+      'At 111 S Paint St, Circleville, OH 43113. Circleville sits on the US 23 corridor about 30 miles south of Columbus. The court hears OVI and traffic charges from US 23 enforcement as well as SR 56 and US 22. If you were stopped on US 23 in Pickaway County, your case will likely be heard in Circleville Municipal Court or the Pickaway County Common Pleas Court, depending on how serious the charges are.',
   },
   {
-    question: `What are the OVI penalties in Circleville Municipal Court?`,
-    answer: `Under ORC 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Circleville Municipal Court carries: mandatory 3 days in jail (or 3-day driver intervention program), fines of $565–$1,075, a class five license suspension of 1–3 years, and 6 points on your license. For a high-tier first OVI (BAC 0.17% or higher, or test refusal with a prior refusal), the mandatory minimum is 6 days in jail. HB 37 also eliminated the 15-day hard suspension for non-refusal first OVI offenses when an ignition interlock device is installed, allowing limited driving privileges to be available sooner.`,
+    question: 'What are the OVI penalties in Circleville Municipal Court?',
+    answer:
+      'Under ORC 4511.19 and HB 37 (effective April 9, 2025), a first OVI carries a mandatory 3 days in jail (or a 3-day driver intervention program), fines of $565 to $1,075, a class five license suspension of 1 to 3 years, and 6 points on your license. For a high-tier first OVI (BAC 0.17% or higher, or a test refusal with a prior refusal), the mandatory minimum is 6 days in jail. HB 37 also eliminated the 15-day hard suspension for non-refusal first OVI offenses when an ignition interlock device is installed, so limited driving privileges can come sooner.',
   },
   {
-    question: `Does Circleville Municipal Court handle OVI charges arising from US 23?`,
-    answer: `Yes. US 23 is a major north-south highway passing through Pickaway County, and the Ohio State Highway Patrol and Circleville Police Department actively enforce OVI and traffic laws along this corridor. Charges arising from US 23 stops within Pickaway County are typically handled in Circleville Municipal Court (for misdemeanor OVI) or the Pickaway County Common Pleas Court (for felony OVI). Our attorney is familiar with enforcement patterns on US 23 and builds defenses accordingly.`,
+    question: 'Does Circleville Municipal Court handle OVI charges arising from US 23?',
+    answer:
+      'Yes. US 23 is a major north-south highway through Pickaway County, and the Ohio State Highway Patrol and Circleville Police Department enforce OVI and traffic laws along it. Charges from US 23 stops in Pickaway County are typically handled in Circleville Municipal Court (misdemeanor OVI) or the Pickaway County Common Pleas Court (felony OVI). The firm builds the defense around how the stop on US 23 was made.',
   },
   {
-    question: `What is the 30-day ALS appeal deadline after a Pickaway County OVI arrest?`,
-    answer: `An Administrative License Suspension (ALS) under ORC 4511.191 goes into effect immediately when you are arrested for OVI in Pickaway County and either test above 0.08% BAC or refuse a chemical test. You have 30 days from the date of arrest to file an appeal of the ALS with Circleville Municipal Court. This deadline is absolute — missing it forfeits your right to challenge the suspension. An attorney must file the appeal and supporting memorandum within the 30-day window and can simultaneously pursue suppression of the stop or the test.`,
+    question: 'What is the 30-day ALS appeal deadline after a Pickaway County OVI arrest?',
+    answer:
+      'An Administrative License Suspension (ALS) under ORC 4511.191 starts at arrest when you test above 0.08% BAC or refuse a chemical test in Pickaway County. You have 30 days from the date of arrest to file an ALS appeal with Circleville Municipal Court. The deadline is absolute: missing it forfeits your right to challenge the suspension. An attorney files the appeal and supporting memorandum within the window and can pursue suppression of the stop or the test at the same time.',
   },
   {
-    question: `What misdemeanor criminal charges are common in Circleville Municipal Court?`,
-    answer: `Common misdemeanor criminal charges in Circleville Municipal Court include assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), criminal trespass, disorderly conduct, and minor misdemeanor drug possession (marijuana under 100g, ORC 2925.11). Pickaway County's rural character also generates agricultural and property-related misdemeanor matters. Under ORC 2929.21, an M1 offense carries up to 180 days in jail and a $1,000 fine. An attorney can explore diversion, plea negotiation, or suppression to minimize consequences.`,
+    question: 'What misdemeanor criminal charges are common in Circleville Municipal Court?',
+    answer:
+      "Assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), criminal trespass, disorderly conduct, and minor misdemeanor drug possession (marijuana under 100g, ORC 2925.11). Pickaway County's rural character also produces agricultural and property-related misdemeanor cases. Under ORC 2929.21, an M1 offense carries up to 180 days in jail and a $1,000 fine. An attorney can look at diversion, plea negotiation or suppression.",
   },
   {
-    question: `Can I get limited driving privileges after a Circleville Municipal Court OVI charge?`,
-    answer: `Yes. Under ORC 4510.021, Circleville Municipal Court can grant limited driving privileges for work, school, medical appointments, and other essential travel during the pendency of your OVI case and following a conviction. Under HB 37, for non-refusal first OVI offenses, the former mandatory 15-day hard suspension before LDP is available has been eliminated when an ignition interlock device is installed. Our attorney petitions the court for LDP as early as possible to minimize disruption to your employment and daily responsibilities.`,
+    question: 'Can I get limited driving privileges after a Circleville Municipal Court OVI charge?',
+    answer:
+      'Yes. Under ORC 4510.021, Circleville Municipal Court can grant limited driving privileges for work, school, medical appointments and other essential travel while your OVI case is pending and after a conviction. Under HB 37, for non-refusal first OVI offenses, the former mandatory 15-day hard suspension before LDP is available has been eliminated when an ignition interlock device is installed. The firm petitions for LDP as early as possible so you can keep working.',
   },
   {
-    question: `Can misdemeanor convictions from Circleville Municipal Court be sealed?`,
-    answer: `Yes. Most misdemeanor convictions — including M1 through M4 offenses — are eligible for record sealing under ORC 2953.32 after a one-year waiting period from final discharge. Dismissed charges and not-guilty verdicts can be sealed immediately under ORC 2953.52 with no waiting period. OVI/DUI convictions under ORC 4511.19 are not sealable in Ohio. After sealing, the record is removed from most background checks and you may lawfully answer no on most private employer applications asking about prior convictions.`,
+    question: 'Can misdemeanor convictions from Circleville Municipal Court be sealed?',
+    answer:
+      'Yes. Most misdemeanor convictions, M1 through M4, are eligible for record sealing under ORC 2953.32 after a one-year waiting period from final discharge. Dismissed charges and not-guilty verdicts can be sealed immediately under ORC 2953.52 with no waiting period. OVI/DUI convictions under ORC 4511.19 are not sealable in Ohio. Once sealed, the record is removed from most background checks and you may lawfully answer no on most private employer applications that ask about prior convictions.',
   },
 ];
 
 export default function CirclevilleMunicipalCourtPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Circleville Municipal Court Attorney"
-        description="OVI/DUI defense, misdemeanor criminal charges, and traffic matters in Circleville Municipal Court. Serving Pickaway County, Ohio."
+        title="Circleville Municipal Court"
+        description="Circleville Municipal Court at 111 S Paint St hears misdemeanor, OVI and traffic cases from across Pickaway County, including stops on US 23."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Circleville Municipal Court: OVI Defense and Misdemeanor Representation
-            </h2>
-            <div className="not-prose my-6 inline-flex items-center gap-3 bg-sky-deep/8 border border-sky-deep/25 px-4 py-3">
-              <span className="text-sky-deep font-bold text-sm">⚖</span>
-              <span className="text-sm font-semibold text-navy-950">Former Assistant Law Director of Circleville — Insider knowledge of local court procedures and prosecution strategy.</span>
-            </div>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Circleville Municipal Court, located at 111 S Paint St in Circleville, Ohio, serves Pickaway County — a rural county south of Columbus along the US 23 corridor. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations arising throughout Pickaway County. Jwayyed Law LLC represents defendants in Circleville Municipal Court, including individuals stopped on US 23 and SR 56. If you face an OVI charge, the 30-day deadline to appeal your Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> begins running from the date of arrest — do not delay in contacting our office.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              OVI enforcement on US 23 in Pickaway County is conducted by both the Ohio State Highway Patrol and the Circleville Police Department. Our attorney examines whether the traffic stop was supported by reasonable articulable suspicion, whether standardized field sobriety tests were properly administered, and whether the breath or blood testing instrument was properly maintained. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device (IID) is installed, and fines have been updated to $565–$1,075 for a first offense — important changes that can improve outcomes for our clients.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Misdemeanor Defense in Pickaway County
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Circleville Municipal Court also handles misdemeanor assault, domestic violence, theft, disorderly conduct, and drug possession charges. Under <strong>ORC 2929.21</strong>, an M1 conviction can result in up to 180 days in jail and a $1,000 fine. Many misdemeanor convictions can be sealed after one year under <strong>ORC 2953.32</strong>. Our attorney carefully evaluates defenses, pursues suppression motions where applicable, and works toward dismissal or reduced charges to protect your record and your future.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Contact Jwayyed Law LLC at (614) 285-5482 or through{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> if you have a matter in Circleville Municipal Court. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> services throughout Ohio.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="The court at a glance"
+        intro={
+          <p>
+            Pickaway County is a rural county south of Columbus on the US 23 corridor. Circleville, the county seat, hosts its primary
+            municipal court.
+          </p>
+        }
+      >
+        <FactTable
+          title="Circleville Municipal Court"
+          rows={[
+            { label: 'Address', value: '111 S Paint St, Circleville, OH 43113' },
+            { label: 'Location', value: 'About 30 miles south of Columbus on US 23' },
+            {
+              label: 'Hears',
+              value:
+                'Misdemeanor criminal cases, OVI/DUI under ORC 4511.19, traffic violations, civil disputes up to $15,000, small claims, landlord-tenant disputes',
+            },
+            { label: 'Felonies', value: 'Bound over to the Pickaway County Common Pleas Court' },
+            { label: 'Roads', value: 'US 23, SR 56 and US 22' },
+          ]}
+        />
+        <Callout title="Former Assistant Law Director of Circleville">
+          Attorney Jwayyed is a former prosecutor who has worked alongside and trained law enforcement. That background covers police
+          procedures, case preparation and courtroom strategy in this court.
+        </Callout>
+      </Section>
+
+      <Section title="OVI cases in Circleville" tone="ice">
+        <p>
+          On US 23 in Pickaway County, OVI enforcement comes from both the Ohio State Highway Patrol and the Circleville Police
+          Department. Stops on SR 56 also come to this court.
+        </p>
+        <FactTable
+          title="First OVI under ORC 4511.19 and HB 37 (effective April 9, 2025)"
+          rows={[
+            { label: 'Jail', value: 'Mandatory 3 days, or a 3-day driver intervention program' },
+            { label: 'Fines', value: '$565 to $1,075' },
+            { label: 'License', value: 'Class five suspension of 1 to 3 years; 6 points' },
+            { label: 'High-tier first OVI', value: 'BAC 0.17% or higher, or a test refusal with a prior refusal: mandatory minimum 6 days in jail' },
+            {
+              label: 'Hard suspension',
+              value: 'HB 37 eliminated the 15-day hard suspension for non-refusal first OVI offenses when an ignition interlock device (IID) is installed',
+            },
+          ]}
+        />
+        <Callout title="Appeal the license suspension within 30 days">
+          The Administrative License Suspension (ALS) under ORC 4511.191 can be appealed only within 30 days from the date of arrest.
+          Contact the office as soon as you can.
+        </Callout>
+        <PointGrid
+          points={[
+            { title: 'The stop', body: 'Whether reasonable articulable suspicion supported the traffic stop.' },
+            { title: 'Field sobriety tests', body: 'Whether the standardized tests were given properly.' },
+            { title: 'Breath and blood testing', body: 'Whether the testing instrument was properly maintained.' },
+            { title: 'Driving privileges', body: 'Limited driving privileges under ORC 4510.021 while the case is pending and after it.' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Misdemeanor charges in Pickaway County">
+        <p>The court also hears misdemeanor assault, domestic violence, theft, disorderly conduct and drug possession charges.</p>
+        <FactTable
+          title="Penalties and sealing"
+          rows={[
+            { label: 'M1 maximum', value: 'Up to 180 days in jail and a $1,000 fine (ORC 2929.21)' },
+            { label: 'Record sealing', value: 'Many misdemeanor convictions can be sealed after one year under ORC 2953.32' },
+          ]}
+        />
+        <p>
+          The firm looks at the defenses, files suppression motions where they apply, and works toward dismissal or reduced charges
+          to protect your record.
+        </p>
+      </Section>
+
+      <Section title="Related pages" tone="ice">
+        <p>
+          Call (614) 285-5482 or use the <Link href="/contact">contact page</Link> if you have a matter in Circleville Municipal Court.
+        </p>
+        <LinkGrid
+          links={[
+            { href: '/courts/pickaway-county', title: 'Pickaway County courts', subtitle: 'Every court in the county' },
+            { href: '/ovi-dui-defense', title: 'OVI/DUI defense', subtitle: 'Penalties and defenses across Ohio' },
+            { href: '/criminal-defense', title: 'Criminal defense', subtitle: 'Misdemeanor charges across Ohio' },
+          ]}
+        />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

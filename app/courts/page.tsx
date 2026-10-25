@@ -2,136 +2,141 @@ import { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
-import Link from 'next/link';
+import { LinkGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Ohio Courts',
-  description: 'Experienced legal representation in Ohio county and municipal courts. Skilled representation for criminal, OVI.',
+  description:
+    'Guides to the Ohio county, municipal and mayor’s courts where Jwayyed Law LLC represents clients in criminal, OVI and civil cases.',
   keywords: ['Ohio courts attorney', 'county court lawyer', 'municipal court attorney', 'Franklin County court lawyer'],
   openGraph: {
     title: 'Ohio Courts | Jwayyed Law LLC',
+    description: 'Court guides for the Ohio counties and municipal courts the firm practices in.',
     url: 'https://www.jjlawohio.com/courts',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/courts' },
 };
 
 const breadcrumbItems = [{ label: 'Courts', href: '/courts' }];
 
-const counties = [
-  { name: 'Franklin County', href: '/courts/franklin-county' },
-  { name: 'Delaware County', href: '/courts/delaware-county' },
-  { name: 'Butler County', href: '/courts/butler-county' },
-  { name: 'Greene County', href: '/courts/greene-county' },
-  { name: 'Montgomery County', href: '/courts/montgomery-county' },
-  { name: 'Pickaway County', href: '/courts/pickaway-county' },
-  { name: 'Athens County', href: '/courts/athens-county' },
-  { name: 'Morrow County', href: '/courts/morrow-county' },
-  { name: 'Clinton County', href: '/courts/clinton-county' },
+const COUNTIES = [
+  { href: '/courts/franklin-county', title: 'Franklin County', subtitle: 'Columbus' },
+  { href: '/courts/delaware-county', title: 'Delaware County' },
+  { href: '/courts/butler-county', title: 'Butler County' },
+  { href: '/courts/greene-county', title: 'Greene County' },
+  { href: '/courts/montgomery-county', title: 'Montgomery County', subtitle: 'Dayton' },
+  { href: '/courts/pickaway-county', title: 'Pickaway County' },
+  { href: '/courts/athens-county', title: 'Athens County' },
+  { href: '/courts/morrow-county', title: 'Morrow County' },
+  { href: '/courts/clinton-county', title: 'Clinton County' },
+];
+
+const MUNICIPAL_COURTS = [
+  { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Franklin County' },
+  { href: '/courts/delaware-county-municipal-court', title: 'Delaware County Municipal Court', subtitle: 'Delaware County' },
+  { href: '/courts/circleville-municipal-court', title: 'Circleville Municipal Court', subtitle: 'Pickaway County' },
+  { href: '/courts/athens-municipal-court', title: 'Athens Municipal Court', subtitle: 'Athens County' },
+  { href: '/courts/morrow-county-municipal-court', title: 'Morrow County Municipal Court', subtitle: 'Morrow County' },
+  { href: '/courts/wilmington-municipal-court', title: 'Wilmington Municipal Court', subtitle: 'Clinton County' },
+  { href: '/courts/hamilton-municipal-court', title: 'Hamilton Municipal Court', subtitle: 'Butler County' },
+  { href: '/courts/fairborn-municipal-court', title: 'Fairborn Municipal Court', subtitle: 'Greene County' },
+  { href: '/courts/dayton-municipal-court', title: 'Dayton Municipal Court', subtitle: 'Montgomery County' },
+];
+
+const MAYORS_COURTS = [
+  { href: '/courts/johnstown-mayors-court', title: 'Johnstown Mayor’s Court', subtitle: 'Licking County' },
+  { href: '/locations/franklin-county/mayors-courts-franklin-county', title: 'Franklin County mayor’s courts', subtitle: 'The mayor’s courts inside Franklin County' },
+];
+
+const AREA_LINKS = [
+  { href: '/locations/franklin-county/personal-injury-franklin-county', title: 'Franklin County', subtitle: 'Personal injury' },
+  { href: '/locations/franklin-county/business-formation-llc-franklin-county', title: 'Franklin County', subtitle: 'Business formation' },
+  { href: '/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court', title: 'Delaware County', subtitle: 'Criminal defense' },
+  { href: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court', title: 'Delaware County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/delaware-county/personal-injury-delaware-county', title: 'Delaware County', subtitle: 'Personal injury' },
+  { href: '/locations/delaware-county/business-formation-llc-delaware-county', title: 'Delaware County', subtitle: 'Business formation' },
+  { href: '/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts', title: 'Butler County', subtitle: 'Criminal defense' },
+  { href: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts', title: 'Butler County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/butler-county/personal-injury-butler-county', title: 'Butler County', subtitle: 'Personal injury' },
+  { href: '/locations/butler-county/business-formation-llc-butler-county', title: 'Butler County', subtitle: 'Business formation' },
+  { href: '/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court', title: 'Greene County', subtitle: 'Criminal defense' },
+  { href: '/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court', title: 'Greene County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/greene-county/personal-injury-greene-county', title: 'Greene County', subtitle: 'Personal injury' },
+  { href: '/locations/greene-county/business-formation-llc-greene-county', title: 'Greene County', subtitle: 'Business formation' },
+  { href: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court', title: 'Montgomery County', subtitle: 'Criminal defense' },
+  { href: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court', title: 'Montgomery County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/montgomery-county/personal-injury-montgomery-county', title: 'Montgomery County', subtitle: 'Personal injury' },
+  { href: '/locations/montgomery-county/business-formation-llc-montgomery-county', title: 'Montgomery County', subtitle: 'Business formation' },
+  { href: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court', title: 'Pickaway County', subtitle: 'Criminal defense' },
+  { href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court', title: 'Pickaway County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/pickaway-county/personal-injury-pickaway-county', title: 'Pickaway County', subtitle: 'Personal injury' },
+  { href: '/locations/pickaway-county/business-formation-llc-pickaway-county', title: 'Pickaway County', subtitle: 'Business formation' },
+  { href: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court', title: 'Athens County', subtitle: 'Criminal defense' },
+  { href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court', title: 'Athens County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/athens-county/personal-injury-athens-county', title: 'Athens County', subtitle: 'Personal injury' },
+  { href: '/locations/athens-county/business-formation-llc-athens-county', title: 'Athens County', subtitle: 'Business formation' },
+  { href: '/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court', title: 'Morrow County', subtitle: 'Criminal defense' },
+  { href: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court', title: 'Morrow County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/morrow-county/personal-injury-morrow-county', title: 'Morrow County', subtitle: 'Personal injury' },
+  { href: '/locations/morrow-county/business-formation-llc-morrow-county', title: 'Morrow County', subtitle: 'Business formation' },
+  { href: '/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court', title: 'Clinton County', subtitle: 'Criminal defense' },
+  { href: '/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court', title: 'Clinton County', subtitle: 'OVI/DUI defense' },
+  { href: '/locations/clinton-county/personal-injury-clinton-county', title: 'Clinton County', subtitle: 'Personal injury' },
+  { href: '/locations/clinton-county/business-formation-llc-clinton-county', title: 'Clinton County', subtitle: 'Business formation' },
 ];
 
 export default function CourtsPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio Courts Representation"
-        description="Experienced legal representation in county and municipal courts throughout Ohio."
+        title="Ohio court guides"
+        description="Which court hears your case depends on where it happened. These guides cover the county, municipal and mayor's courts where the firm represents clients."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Ohio Courts Representation</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we provide experienced legal representation in county and municipal courts throughout Ohio. Our attorney understands court procedures, prosecutor practices, and local court expectations necessary to achieve favorable outcomes for our clients. Major metro areas such as Columbus and the greater Cincinnati area have multiple courts and counties—we represent clients in the Ohio counties and courts listed below. Please note that individual courts may have local rules, procedures, or filing requirements that differ from general Ohio practice.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio county and municipal courts handle misdemeanor criminal cases, OVI/DUI charges under Ohio Revised Code 4511.19 (including changes under House Bill 37 effective April 2025), traffic offenses, civil disputes within jurisdictional limits, and in some courts small claims and landlord-tenant matters. Each county may have one or more municipal courts; knowing which court has jurisdiction over your case and how that court operates is important. We represent clients in the counties listed below—click any county for court-specific information, addresses, and the practice areas we handle in that jurisdiction.
-            </p>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Courts &amp; Counties We Serve</h3>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              Select a county or court below to view court information, local procedures, and how we can help with OVI/DUI defense, criminal defense, personal injury, business matters, or other services in that jurisdiction.
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              {counties.map((county) => (
-                <Link key={county.href} href={county.href} className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
-                  <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">{county.name}</h4>
-                </Link>
-              ))}
-            </div>
-            <h4 className="jw-serif text-xl font-bold text-navy-950 mt-8 mb-4">Municipal Courts</h4>
-            <div className="grid md:grid-cols-2 gap-3 mb-8">
-              <Link href="/courts/franklin-county-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Franklin County Municipal Court</Link>
-              <Link href="/courts/delaware-county-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Delaware County Municipal Court</Link>
-              <Link href="/courts/circleville-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Circleville Municipal Court</Link>
-              <Link href="/courts/athens-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Athens Municipal Court</Link>
-              <Link href="/courts/morrow-county-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Morrow County Municipal Court</Link>
-              <Link href="/courts/wilmington-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Wilmington Municipal Court</Link>
-              <Link href="/courts/hamilton-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Hamilton Municipal Court</Link>
-              <Link href="/courts/fairborn-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Fairborn Municipal Court</Link>
-              <Link href="/courts/dayton-municipal-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Dayton Municipal Court</Link>
-            </div>
-            <h4 className="jw-serif text-xl font-bold text-navy-950 mt-8 mb-4">Mayor&apos;s Courts</h4>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              Ohio mayor&apos;s courts operate under R.C. Chapter 1905 and handle local ordinance violations, traffic citations, and qualifying first-offense OVI charges arising inside a municipality&apos;s limits. A conviction there carries the same weight as one entered in municipal court, and appeals must be filed within ten days.
-            </p>
-            <div className="grid md:grid-cols-2 gap-3 mb-8">
-              <Link href="/courts/johnstown-mayors-court" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Johnstown Mayor&apos;s Court (Licking County)</Link>
-              <Link href="/locations/franklin-county/mayors-courts-franklin-county" className="block p-3 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group text-navy-950/80 group-hover:text-sky-deep">Franklin County Mayor&apos;s Courts</Link>
-            </div>
-            <h4 className="jw-serif text-xl font-bold text-navy-950 mt-8 mb-4">Location-Specific Practice Areas</h4>
-            <p className="text-navy-950/80 mb-4 leading-relaxed">
-              We serve clients in these counties for criminal defense, OVI/DUI, personal injury, and business formation. Select a practice area and county below:
-            </p>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 mb-8 text-sm">
-              <Link href="/locations/franklin-county/personal-injury-franklin-county" className="text-sky-deep hover:underline">Franklin County – Personal Injury</Link>
-              <Link href="/locations/franklin-county/business-formation-llc-franklin-county" className="text-sky-deep hover:underline">Franklin County – Business Formation</Link>
-              <Link href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court" className="text-sky-deep hover:underline">Delaware – Criminal Defense</Link>
-              <Link href="/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court" className="text-sky-deep hover:underline">Delaware – OVI/DUI Defense</Link>
-              <Link href="/locations/delaware-county/personal-injury-delaware-county" className="text-sky-deep hover:underline">Delaware – Personal Injury</Link>
-              <Link href="/locations/delaware-county/business-formation-llc-delaware-county" className="text-sky-deep hover:underline">Delaware – Business Formation</Link>
-              <Link href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts" className="text-sky-deep hover:underline">Butler – Criminal Defense</Link>
-              <Link href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts" className="text-sky-deep hover:underline">Butler – OVI/DUI Defense</Link>
-              <Link href="/locations/butler-county/personal-injury-butler-county" className="text-sky-deep hover:underline">Butler – Personal Injury</Link>
-              <Link href="/locations/butler-county/business-formation-llc-butler-county" className="text-sky-deep hover:underline">Butler – Business Formation</Link>
-              <Link href="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court" className="text-sky-deep hover:underline">Greene – Criminal Defense</Link>
-              <Link href="/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court" className="text-sky-deep hover:underline">Greene – OVI/DUI Defense</Link>
-              <Link href="/locations/greene-county/personal-injury-greene-county" className="text-sky-deep hover:underline">Greene – Personal Injury</Link>
-              <Link href="/locations/greene-county/business-formation-llc-greene-county" className="text-sky-deep hover:underline">Greene – Business Formation</Link>
-              <Link href="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court" className="text-sky-deep hover:underline">Montgomery – Criminal Defense</Link>
-              <Link href="/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court" className="text-sky-deep hover:underline">Montgomery – OVI/DUI Defense</Link>
-              <Link href="/locations/montgomery-county/personal-injury-montgomery-county" className="text-sky-deep hover:underline">Montgomery – Personal Injury</Link>
-              <Link href="/locations/montgomery-county/business-formation-llc-montgomery-county" className="text-sky-deep hover:underline">Montgomery – Business Formation</Link>
-              <Link href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court" className="text-sky-deep hover:underline">Pickaway – Criminal Defense</Link>
-              <Link href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court" className="text-sky-deep hover:underline">Pickaway – OVI/DUI Defense</Link>
-              <Link href="/locations/pickaway-county/personal-injury-pickaway-county" className="text-sky-deep hover:underline">Pickaway – Personal Injury</Link>
-              <Link href="/locations/pickaway-county/business-formation-llc-pickaway-county" className="text-sky-deep hover:underline">Pickaway – Business Formation</Link>
-              <Link href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court" className="text-sky-deep hover:underline">Athens – Criminal Defense</Link>
-              <Link href="/locations/athens-county/ovi-dui-defense-athens-municipal-court" className="text-sky-deep hover:underline">Athens – OVI/DUI Defense</Link>
-              <Link href="/locations/athens-county/personal-injury-athens-county" className="text-sky-deep hover:underline">Athens – Personal Injury</Link>
-              <Link href="/locations/athens-county/business-formation-llc-athens-county" className="text-sky-deep hover:underline">Athens – Business Formation</Link>
-              <Link href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court" className="text-sky-deep hover:underline">Morrow – Criminal Defense</Link>
-              <Link href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court" className="text-sky-deep hover:underline">Morrow – OVI/DUI Defense</Link>
-              <Link href="/locations/morrow-county/personal-injury-morrow-county" className="text-sky-deep hover:underline">Morrow – Personal Injury</Link>
-              <Link href="/locations/morrow-county/business-formation-llc-morrow-county" className="text-sky-deep hover:underline">Morrow – Business Formation</Link>
-              <Link href="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court" className="text-sky-deep hover:underline">Clinton – Criminal Defense</Link>
-              <Link href="/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court" className="text-sky-deep hover:underline">Clinton – OVI/DUI Defense</Link>
-              <Link href="/locations/clinton-county/personal-injury-clinton-county" className="text-sky-deep hover:underline">Clinton – Personal Injury</Link>
-              <Link href="/locations/clinton-county/business-formation-llc-clinton-county" className="text-sky-deep hover:underline">Clinton – Business Formation</Link>
-            </div>
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated court representation in Ohio county and municipal courts. We understand that court proceedings require experienced representation. Our attorney works diligently to understand court procedures, develop strategies, and achieve favorable outcomes for our clients.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              We stay current on Ohio law—including OVI and criminal penalties, administrative license suspension rules, and civil procedure—so you get accurate advice. We represent clients in Columbus, Cincinnati, Dayton, and throughout the state. If you have a case in one of the counties above or need guidance on which court applies to your situation, contact us to schedule a consultation.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="Find your court"
+        intro={<p>Start with the county where you were charged or where the dispute arose. Each county page lists its courts.</p>}
+      >
+        <h3>By county</h3>
+        <LinkGrid links={COUNTIES} />
+        <h3>Municipal courts</h3>
+        <LinkGrid links={MUNICIPAL_COURTS} />
+        <h3>Mayor&rsquo;s courts</h3>
+        <p>
+          Ohio mayor&rsquo;s courts operate under R.C. Chapter 1905 and handle local ordinance violations, traffic citations, and
+          qualifying first-offense OVI charges arising inside a municipality&rsquo;s limits. A conviction there carries the same weight
+          as one entered in municipal court, and appeals must be filed within ten days.
+        </p>
+        <LinkGrid links={MAYORS_COURTS} columns={2} />
+      </Section>
+
+      <Section title="What these courts hear" tone="ice">
+        <p>
+          Ohio county and municipal courts handle misdemeanor criminal cases, OVI/DUI charges under Ohio Revised Code 4511.19
+          (including changes under House Bill 37, effective April 2025), traffic offenses, and civil disputes within their
+          jurisdictional limits. Some courts also hear small claims and landlord-tenant matters.
+        </p>
+        <p>
+          A county may have one municipal court or several, and Columbus and the greater Cincinnati area each span more than one
+          court. Individual courts can have local rules, procedures and filing requirements that differ from general Ohio practice,
+          so the first question in any case is which court has jurisdiction and how that court runs.
+        </p>
+        <p>
+          The firm represents clients in Columbus, Cincinnati, Dayton and the counties listed on this page. If you are not sure which
+          court your case belongs in, call the office or schedule a consultation.
+        </p>
+      </Section>
+
+      <Section
+        title="Practice areas by county"
+        intro={<p>Criminal defense, OVI/DUI, personal injury and business formation, with the local courts for each.</p>}
+      >
+        <LinkGrid links={AREA_LINKS} />
+      </Section>
+
       <ContactCTA />
     </>
   );
 }
-

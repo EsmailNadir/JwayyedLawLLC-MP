@@ -1,14 +1,16 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Delaware County Court Representation',
-  description: 'OVI, criminal defense, and civil representation in Delaware County courts including Delaware County Municipal Court and Common Pleas Court. Serving Powell.',
+  description:
+    'Delaware County Municipal Court and Common Pleas Court in Delaware, Ohio: addresses, what each hears, and the OVI, criminal and civil cases the firm handles.',
   keywords: [
     'Delaware County OVI attorney',
     'Delaware County criminal defense',
@@ -21,9 +23,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Delaware County Court Representation | Jwayyed Law LLC',
+    description: 'The Delaware County courts and the OVI, criminal and civil cases the firm handles there, from Powell to Sunbury.',
     url: 'https://www.jjlawohio.com/courts/delaware-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/courts/delaware-county' },
 };
 
@@ -34,166 +37,179 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What are the OVI penalties in Delaware County, Ohio?`,
-    answer: `OVI (Operating a Vehicle Impaired) in Ohio is governed by ORC 4511.19. A first-offense OVI in Delaware County is a first-degree misdemeanor carrying a minimum 3 days in jail (or 3-day driver intervention program), a fine of $375–$1,075, a mandatory license suspension of 1–3 years, and possible vehicle immobilization. A second offense within 10 years increases penalties significantly—minimum 10 days in jail, higher fines, and potential ignition interlock requirements. Under changes effective April 9, 2025 (House Bill 37), courts now have discretion to waive the 15-day hard suspension if the defendant agrees to use an ignition interlock device. An experienced OVI attorney can challenge the traffic stop, field sobriety tests, and breath or blood test procedures to pursue reduced charges or dismissal.`,
+    question: 'What are the OVI penalties in Delaware County, Ohio?',
+    answer:
+      'OVI (Operating a Vehicle Impaired) is governed by ORC 4511.19. A first offense is a first-degree misdemeanor with a minimum 3 days in jail (or a 3-day driver intervention program), a fine of $375 to $1,075, a mandatory license suspension of 1 to 3 years, and possible vehicle immobilization. A second offense within 10 years brings a minimum 10 days in jail, higher fines and possible ignition interlock requirements. Under House Bill 37 (effective April 9, 2025), courts have discretion to waive the 15-day hard suspension if the defendant agrees to use an ignition interlock device. An OVI attorney can challenge the stop, the field sobriety tests and the breath or blood test procedures to pursue reduced charges or dismissal.',
   },
   {
-    question: `What does Delaware County Municipal Court handle?`,
-    answer: `Delaware County Municipal Court (70 N. Union St, Delaware, OH 43015) has jurisdiction over misdemeanor criminal offenses, OVI and DUI charges, traffic violations, civil cases with claims up to $15,000, small claims, and evictions within Delaware County. The court also handles arraignments and preliminary hearings for felony cases before they are bound over to the Delaware County Common Pleas Court. Municipal Court judges and magistrates preside over most misdemeanor and traffic matters, including OVI cases. If you are charged with a misdemeanor or OVI in Delaware, Powell, Westerville, Lewis Center, Galena, Sunbury, or other Delaware County communities, your case will be heard in Delaware County Municipal Court.`,
+    question: 'What does Delaware County Municipal Court handle?',
+    answer:
+      'Delaware County Municipal Court (70 N. Union St, Delaware, OH 43015) hears misdemeanor criminal offenses, OVI and DUI charges, traffic violations, civil cases up to $15,000, small claims and evictions within Delaware County. It also handles arraignments and preliminary hearings in felony cases before they are bound over to the Delaware County Common Pleas Court. Judges and magistrates preside over most misdemeanor and traffic matters, including OVI. A misdemeanor or OVI charge in Delaware, Powell, Westerville, Lewis Center, Galena, Sunbury or another Delaware County community is heard there.',
   },
   {
-    question: `How long do I have to appeal my Administrative License Suspension (ALS) in Delaware County?`,
-    answer: `If you are arrested for OVI in Delaware County and either refuse a breath/blood test or test over the legal limit (0.08% BAC for adults, 0.04% for commercial drivers, 0.02% for minors under ORC 4511.19), the arresting officer will immediately impose an Administrative License Suspension (ALS) under ORC 4511.191. You have only 30 days from the date of the ALS to file an appeal in Delaware County Municipal Court. This is a hard deadline—missing it forfeits your right to challenge the suspension. An ALS appeal is separate from your criminal OVI case. During the appeal, you or your attorney must show grounds such as improper stop, failure to properly inform you of consequences, or procedural errors. Acting quickly is essential—contact an attorney immediately after an OVI arrest.`,
+    question: 'How long do I have to appeal my Administrative License Suspension (ALS) in Delaware County?',
+    answer:
+      'If you are arrested for OVI in Delaware County and refuse a breath or blood test or test over the legal limit (0.08% BAC for adults, 0.04% for commercial drivers, 0.02% for minors under ORC 4511.19), the officer imposes an Administrative License Suspension (ALS) under ORC 4511.191 on the spot. You have only 30 days from the date of the ALS to file an appeal in Delaware County Municipal Court. Missing that hard deadline forfeits your right to challenge the suspension. The appeal is separate from the criminal case and must show grounds such as an improper stop, failure to properly inform you of the consequences, or procedural errors. Contact an attorney right after the arrest.',
   },
   {
-    question: `What are the maximum penalties for misdemeanor charges in Delaware County?`,
-    answer: `Ohio classifies misdemeanors in five degrees under ORC 2929.24. A first-degree misdemeanor—the most serious—carries up to 180 days in jail and a fine up to $1,000. Second-degree misdemeanors carry up to 90 days jail and $750 fine. Third-degree misdemeanors carry up to 60 days jail and $500 fine. Fourth-degree misdemeanors carry up to 30 days jail and $250 fine. Minor misdemeanors carry no jail time but a fine up to $150. Common first-degree misdemeanors in Delaware County include OVI (first offense), domestic violence (first offense), assault, theft under $1,000, and drug possession of small quantities. An attorney can often negotiate with Delaware County prosecutors for reduced charges, diversion programs, or community service in lieu of jail time.`,
+    question: 'What are the maximum penalties for misdemeanor charges in Delaware County?',
+    answer:
+      'Ohio has five degrees of misdemeanor under ORC 2929.24. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine; second-degree, up to 90 days and $750; third-degree, up to 60 days and $500; fourth-degree, up to 30 days and $250. A minor misdemeanor carries no jail and a fine up to $150. Common first-degree misdemeanors in Delaware County include a first OVI, first-offense domestic violence, assault, theft under $1,000 and possession of small quantities of drugs. An attorney can often negotiate with Delaware County prosecutors for reduced charges, diversion or community service in place of jail.',
   },
   {
-    question: `How do I choose the right attorney for my Delaware County case?`,
-    answer: `When facing OVI, criminal, or civil charges in Delaware County, look for an attorney who has experience in Delaware County Municipal Court and knows the local prosecutors, judges, and court procedures. Ask whether the attorney handles cases personally or passes them off to associates. Look for someone who will explain your rights, the realistic range of outcomes, and a clear strategy for your case. For OVI cases specifically, ask about the attorney's experience challenging breathalyzer calibration records, field sobriety test administration under NHTSA standards, and whether the initial traffic stop was constitutionally valid. At Jwayyed Law LLC, we personally handle every case in Delaware County courts and provide direct, honest communication from your first consultation through resolution.`,
+    question: 'How do I choose the right attorney for my Delaware County case?',
+    answer:
+      "Look for an attorney with experience in Delaware County Municipal Court who knows the local prosecutors, judges and procedures. Ask whether the attorney handles cases personally or passes them to associates. Expect a plain explanation of your rights, the realistic range of outcomes and a strategy for your case. On an OVI, ask about experience challenging breathalyzer calibration records, field sobriety test administration under NHTSA standards, and the constitutionality of the stop. At Jwayyed Law LLC, the attorney personally handles every Delaware County case, from the first consultation through resolution.",
   },
   {
-    question: `What is the difference between Delaware County Municipal Court and Common Pleas Court?`,
-    answer: `Delaware County Municipal Court handles misdemeanors (OVI, traffic, minor criminal charges) and civil cases up to $15,000. Delaware County Common Pleas Court (91 N. Sandusky St, Delaware, OH 43015) handles felony criminal cases, civil cases over $15,000, domestic relations (divorce, custody), and probate matters. When someone is charged with a felony in Delaware County, the case usually begins in Municipal Court for arraignment and preliminary hearing, then is transferred (bound over) to Common Pleas Court. If your OVI charge is elevated to a felony—for example, a fourth OVI offense within 10 years under ORC 4511.19(G)(1)(d)—your case will be prosecuted in Common Pleas Court with correspondingly higher stakes and penalties.`,
+    question: 'What is the difference between Delaware County Municipal Court and Common Pleas Court?',
+    answer:
+      'Delaware County Municipal Court handles misdemeanors (OVI, traffic, minor criminal charges) and civil cases up to $15,000. Delaware County Common Pleas Court (91 N. Sandusky St, Delaware, OH 43015) handles felony cases, civil cases over $15,000, domestic relations (divorce, custody) and probate. A felony charge usually starts in Municipal Court for arraignment and preliminary hearing, then is bound over to Common Pleas. If an OVI is elevated to a felony, for example a fourth OVI within 10 years under ORC 4511.19(G)(1)(d), it is prosecuted in Common Pleas with higher penalties.',
   },
   {
-    question: `Am I eligible for expungement of a criminal record in Ohio?`,
-    answer: `Ohio's expungement and sealing statutes were significantly expanded under Senate Bill 288 (effective October 2023) and allow sealing of many misdemeanor and felony convictions. Under ORC 2953.32, most first-degree misdemeanor convictions become eligible for sealing one year after discharge (completion of sentence including probation). Some offenses—including OVI convictions, most traffic violations, domestic violence, and certain sex offenses—are not eligible for sealing regardless of time elapsed. If eligible, a sealed record is not visible to most employers or the general public. Delaware County has its own process for filing a sealing application in Common Pleas Court, and a hearing is scheduled where the court weighs your rehabilitation against the state's interest. An attorney can evaluate your specific record and advise whether expungement is available.`,
+    question: 'Am I eligible for expungement of a criminal record in Ohio?',
+    answer:
+      "Ohio's sealing law was expanded by Senate Bill 288 (effective October 2023) and now covers many misdemeanor and felony convictions. Under ORC 2953.32, most first-degree misdemeanor convictions become eligible for sealing one year after discharge (completion of the sentence, including probation). Some offenses, including OVI convictions, most traffic violations, domestic violence and certain sex offenses, cannot be sealed however much time passes. A sealed record is hidden from most employers and the public. In Delaware County the application is filed in Common Pleas Court, which holds a hearing to weigh your rehabilitation against the state's interest. An attorney can review your record and advise whether sealing is available.",
   },
   {
-    question: `What should I do immediately if I am charged with OVI in Delaware County?`,
-    answer: `First, do not make any statements to police beyond identifying yourself—anything you say can be used against you. Second, note the details of the stop: time, location, reason the officer gave for stopping you, what tests you were asked to take, and your responses. Third, contact an OVI attorney as soon as possible—ideally within 24–48 hours of arrest—because the 30-day ALS appeal deadline begins immediately. Fourth, write down everything you remember while it is fresh. Fifth, gather any witnesses or video footage that may have captured the stop. At your first court appearance (arraignment), you will enter a plea—having an attorney present ensures you do not inadvertently waive rights or enter a plea without fully understanding the consequences. Jwayyed Law LLC offers consultations for Delaware County OVI charges; call (614) 285-5482 to discuss your case.`,
+    question: 'What should I do immediately if I am charged with OVI in Delaware County?',
+    answer:
+      'First, do not say anything to police beyond identifying yourself. Second, note the details of the stop: the time, the location, the reason the officer gave, the tests you were asked to take and your responses. Third, contact an OVI attorney as soon as possible, ideally within 24 to 48 hours, because the 30-day ALS appeal deadline is already running. Fourth, write down everything you remember while it is fresh. Fifth, find any witnesses or video of the stop. At arraignment you will enter a plea, and an attorney there makes sure you do not waive rights or plead without understanding the consequences. Call Jwayyed Law LLC at (614) 285-5482 to schedule a consultation.',
   },
 ];
 
-export default function DelawareCountyCourtsPage() {
+const SERVICES = [
+  { href: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court', title: 'OVI/DUI defense', subtitle: 'Delaware County Municipal Court' },
+  { href: '/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court', title: 'Misdemeanor criminal defense', subtitle: 'Delaware County Municipal Court' },
+  { href: '/locations/delaware-county/personal-injury-delaware-county', title: 'Personal injury', subtitle: 'Delaware County' },
+  { href: '/locations/delaware-county/business-formation-llc-delaware-county', title: 'Business formation and LLC', subtitle: 'Delaware County' },
+];
 
+export default function DelawareCountyCourtsPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Delaware County Court Representation"
-        description="OVI defense, criminal defense, and civil representation in Delaware County. Serving Delaware, Powell, Lewis Center, Westerville, and surrounding communities. Call (614) 285-5482."
+        title="Delaware County courts"
+        description="Delaware County cases are heard in two courts in downtown Delaware. Misdemeanors, OVI and felony arraignments start at Delaware County Municipal Court on N. Union St."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Delaware County Court Representation
-            </h2>
+      <Section
+        title="Find your court"
+        intro={
+          <p>
+            Delaware County is one of Ohio&rsquo;s fastest-growing counties, running north of Columbus through Powell, Lewis Center,
+            part of Dublin, part of Westerville, Sunbury, Galena and the county seat of Delaware. The caseload in both courts has grown
+            with it.
+          </p>
+        }
+      >
+        <FactTable
+          title="Delaware County Municipal Court"
+          rows={[
+            { label: 'Address', value: '70 N. Union St, Delaware, OH 43015' },
+            { label: 'Hears', value: 'OVI, misdemeanor criminal cases, traffic violations, civil claims up to $15,000, small claims, evictions' },
+            { label: 'Felony cases', value: 'Arraignments and preliminary hearings before bindover to Common Pleas' },
+          ]}
+        />
+        <FactTable
+          title="Delaware County Common Pleas Court"
+          rows={[
+            { label: 'Address', value: '91 N. Sandusky St, Delaware, OH 43015' },
+            { label: 'Hears', value: 'Felony criminal cases, civil cases over $15,000, domestic relations, probate' },
+          ]}
+        />
+        <LinkGrid
+          columns={2}
+          links={[{ href: '/courts/delaware-county-municipal-court', title: 'Delaware County Municipal Court guide', subtitle: 'OVI, misdemeanors and US 23 traffic cases' }]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Delaware County is one of Ohio&apos;s fastest-growing counties, stretching north of Columbus through
-              communities like Powell, Lewis Center, Dublin (partly), Westerville (partly), Sunbury, Galena, and the
-              county seat of Delaware. As the population grows, so does the caseload at Delaware County Municipal
-              Court and Delaware County Common Pleas Court. Jwayyed Law LLC provides experienced OVI defense,
-              misdemeanor criminal defense, and civil representation for clients throughout Delaware County.
-            </p>
+      <Section title="OVI charges in Delaware County" tone="ice">
+        <FactTable
+          title="Legal limits under ORC 4511.19"
+          rows={[
+            { label: 'Adults', value: 'BAC of 0.08% or higher' },
+            { label: 'Commercial drivers', value: '0.04%' },
+            { label: 'Drivers under 21', value: '0.02%' },
+          ]}
+        />
+        <p>
+          Every step of an OVI case (the stop, the field sobriety tests, the breath test and the advisement of rights) must follow
+          strict protocols under the Ohio Administrative Code and NHTSA standards. An error at any stage can lead to suppression of
+          evidence or dismissal. The firm reviews every piece of evidence for those errors.
+        </p>
+        <Callout title="HB 37 (effective April 9, 2025)">
+          House Bill 37 updated OVI sentencing and administrative license suspension procedures, giving courts broader discretion over
+          ignition interlock requirements and the hard suspension period.
+        </Callout>
+        <h3>Right after an OVI arrest</h3>
+        <Steps
+          steps={[
+            { title: 'Say nothing beyond your identity', body: 'Anything you say can be used against you.' },
+            { title: 'Note the details', body: 'Time, location, the reason given for the stop, the tests you were asked to take and your responses.' },
+            { title: 'Call an attorney within 24 to 48 hours', body: 'The 30-day ALS appeal deadline is already running.' },
+            { title: 'Gather witnesses and video', body: 'Anything that may have captured the stop.' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio&apos;s OVI statute, ORC 4511.19, prohibits operating any vehicle with a blood alcohol concentration
-              of 0.08% or higher (0.04% for commercial drivers; 0.02% for drivers under 21). OVI is one of the most
-              defensible charges in Ohio criminal law because every element of the process—the traffic stop, field
-              sobriety tests, breath test administration, and proper advisement—must follow strict protocols under the
-              Ohio Administrative Code and NHTSA standards. Errors at any stage can result in suppression of evidence
-              or dismissal of the charge. Our firm carefully reviews every piece of evidence in Delaware County OVI
-              cases to identify and exploit any weaknesses in the prosecution&apos;s case.
-            </p>
+      <Section title="Misdemeanor charges in Delaware County">
+        <p>
+          Delaware County Municipal Court hears the full range of misdemeanors, including domestic violence under ORC 2919.25, assault
+          under ORC 2903.13, theft under ORC 2913.02, drug possession under ORC 2925.11 and disorderly conduct under ORC 2917.11. A
+          conviction can bring fines, jail, probation and a permanent record that affects employment, housing and professional
+          licensing.
+        </p>
+        <FactTable
+          title="Ohio misdemeanor penalties (ORC 2929.24)"
+          rows={[
+            { label: 'First-degree misdemeanor', value: 'Up to 180 days in jail and a $1,000 fine' },
+            { label: 'Second-degree misdemeanor', value: 'Up to 90 days and $750' },
+            { label: 'Third-degree misdemeanor', value: 'Up to 60 days and $500' },
+            { label: 'Fourth-degree misdemeanor', value: 'Up to 30 days and $250' },
+            { label: 'Minor misdemeanor', value: 'No jail; a fine up to $150' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Beyond OVI, Delaware County Municipal Court handles the full range of misdemeanor criminal offenses
-              including domestic violence under ORC 2919.25, assault under ORC 2903.13, theft under ORC 2913.02,
-              drug possession under ORC 2925.11, and disorderly conduct under ORC 2917.11. Misdemeanor convictions
-              carry real consequences—fines, possible jail time, probation, and a permanent criminal record that can
-              affect employment, housing, and professional licensing. Having an attorney represent you at every stage,
-              from arraignment through pretrial hearings and trial, ensures your rights are protected and the best
-              possible outcome is pursued.
-            </p>
+      <Section title="Civil and injury matters" tone="ice">
+        <p>
+          The firm handles landlord-tenant disputes, contract claims and other civil litigation in Delaware County Municipal Court (up
+          to $15,000) and Delaware County Common Pleas Court (over $15,000), along with personal injury cases. That might be a breach of
+          contract with a Powell business, a security deposit dispute with a Delaware landlord, or an injury from a crash on Route 23.
+        </p>
+        <PointGrid
+          points={[
+            { title: 'OVI / DUI defense', body: 'Stops, field sobriety tests, breath and blood tests; ALS appeals (ORC 4511.191); license reinstatement.' },
+            { title: 'Misdemeanor defense', body: 'Domestic violence, assault, theft and drug possession.' },
+            { title: 'Traffic violations', body: 'Reckless operation, driving under suspension, speeding, following too closely.' },
+            { title: 'Civil litigation', body: 'Contract disputes, landlord-tenant matters and small claims.' },
+            { title: 'Personal injury', body: 'Auto accidents, premises liability and other injury claims.' },
+            { title: 'Record sealing', body: 'Eligibility review and sealing applications under ORC 2953.32.' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              For civil matters in Delaware County, our firm assists with landlord-tenant disputes, contract claims,
-              and other civil litigation in Delaware County Municipal Court (jurisdiction up to $15,000) and Delaware
-              County Common Pleas Court (jurisdiction over $15,000). We also handle personal injury cases arising
-              in Delaware County. Whether your matter involves a breach of contract with a Powell business, a
-              security deposit dispute with a Delaware landlord, or a personal injury claim from a traffic accident
-              on Route 23, Jwayyed Law LLC provides thorough, client-focused representation.
-            </p>
+      <Section title="What the firm handles in Delaware County">
+        <LinkGrid links={SERVICES} columns={2} />
+        <p>
+          The firm serves Delaware, Powell, Lewis Center, Westerville, Dublin, Sunbury, Galena, Ostrander and the surrounding
+          communities. The attorney personally handles every Delaware County case; you are not passed to a paralegal or associate.
+          Call <strong>(614) 285-5482</strong> or contact the firm online to schedule a consultation.
+        </p>
+        <h3>Neighboring counties</h3>
+        <LinkGrid
+          links={[
+            { href: '/courts/franklin-county', title: 'Franklin County' },
+            { href: '/courts/morrow-county', title: 'Morrow County' },
+            { href: '/courts/pickaway-county', title: 'Pickaway County' },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Under changes to Ohio law effective April 9, 2025 (House Bill 37), OVI sentencing and administrative
-              license suspension procedures were updated. Courts now have broader discretion regarding ignition
-              interlock requirements and the hard suspension period. These changes underscore why it is important
-              to work with an attorney who stays current on Ohio OVI law. Jwayyed Law LLC monitors legislative and
-              case law developments affecting our Delaware County clients and adjusts defense strategies accordingly.
-            </p>
+      <LocationsWeServe title="Delaware County Legal Services" />
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Courts We Appear In
-            </h3>
-
-            <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-navy-950/10">
-                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
-                  Delaware County Municipal Court
-                </h4>
-                <p className="text-navy-950/80 mb-1">70 N. Union St, Delaware, OH 43015</p>
-                <p className="text-sm text-navy-950/70">
-                  OVI &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Small claims &bull; Evictions
-                </p>
-              </div>
-              <div className="p-6 border border-navy-950/10">
-                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
-                  Delaware County Common Pleas Court
-                </h4>
-                <p className="text-navy-950/80 mb-1">91 N. Sandusky St, Delaware, OH 43015</p>
-                <p className="text-sm text-navy-950/70">
-                  Felony criminal cases &bull; Civil cases over $15,000 &bull; Domestic relations &bull; Probate
-                </p>
-              </div>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Practice Areas in Delaware County
-            </h3>
-            <ul className="text-navy-950/80 mb-6 space-y-2 leading-relaxed">
-              <li><strong>OVI / DUI Defense:</strong> Challenging stops, field sobriety tests, breath and blood tests; ALS appeals (ORC 4511.191); license reinstatement</li>
-              <li><strong>Misdemeanor Criminal Defense:</strong> Domestic violence (ORC 2919.25), assault (ORC 2903.13), theft (ORC 2913.02), drug possession (ORC 2925.11)</li>
-              <li><strong>Traffic Violations:</strong> Reckless operation, driving under suspension, speeding, following too closely</li>
-              <li><strong>Civil Litigation:</strong> Contract disputes, landlord-tenant matters, small claims in Delaware County Municipal Court</li>
-              <li><strong>Personal Injury:</strong> Auto accidents, premises liability, and injury claims in Delaware County</li>
-              <li><strong>Expungement / Record Sealing:</strong> Evaluating eligibility and filing sealing applications under ORC 2953.32</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Communities We Serve in Delaware County
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              We serve clients throughout Delaware County including Delaware (county seat), Powell, Lewis Center,
-              Westerville, Dublin, Sunbury, Galena, Ostrander, and all surrounding communities. For neighboring
-              county representation, see our pages for{' '}
-              <Link href="/courts/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/courts/morrow-county" className="text-sky-deep underline hover:opacity-80">Morrow County</Link>, and{' '}
-              <Link href="/courts/pickaway-county" className="text-sky-deep underline hover:opacity-80">Pickaway County</Link>.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
-              Why Choose Jwayyed Law LLC for Delaware County
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our attorney personally handles every Delaware County case—you will not be passed off to a paralegal
-              or associate. We know Delaware County Municipal Court procedures, understand how local prosecutors
-              approach OVI and criminal cases, and stay current on Ohio law changes. From your first consultation
-              through the final resolution of your case, we provide honest advice, clear communication, and aggressive
-              advocacy. Call <strong>(614) 285-5482</strong> or contact us online to schedule a consultation.
-            </p>
-
-            <LocationsWeServe title="Delaware County Legal Services"  />
-
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

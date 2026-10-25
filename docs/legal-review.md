@@ -159,6 +159,28 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | wrapper metadata | Grove City DV description names Grove City Mayor's Court; many descriptions say FCMC for suburbs whose cases start in a mayor's court | Conflicts with the template body | Medium |
 | personal-injury-franklin-county, business-formation-llc-franklin-county | UM/UIM at ORC 3345.21; insurers "must offer" UM/UIM; barred at "50% or more" fault; statutory agent at 1705.06 | Wrong section; Ohio's bar is greater than 50%; likely 1706.09 | Medium |
 
+## Court guides (app/courts)
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| athens, butler, clinton, delaware, greene, montgomery, morrow, pickaway county pages | First OVI fine $375 to $1,075 | HB 37 range is $565 to $1,075, as the municipal court pages say | High |
+| municipal court pages, Johnstown, Clinton, Delaware, Greene, Montgomery | 15-day hard suspension waived "when an ignition interlock is installed" | The OVI pages say it may be waived without one if no prior Physical Control | High |
+| circleville-municipal-court vs pickaway-county | Circleville Municipal Court at 111 S. Paint St vs 141 S. Court St | Two addresses | High |
+| morrow-county-municipal-court vs morrow-county | 48 E. High St vs 60 E. High St (and 48 E. High called Common Pleas) | Conflict | High |
+| fairborn-municipal-court vs greene-county | 1148 Kauffman Ave vs 1 W. Main St | Conflict | High |
+| most court pages | Misdemeanor sealing wait of one year (citing SB 288); dismissed charges at 2953.52; Butler cites 2953.31 | SB 288 believed to have shortened it to 6 months; citations to check | High |
+| franklin-county, greene-county, montgomery-county vs johnstown-mayors-court, courts index | Mayor's courts cannot hear OVI vs can hear qualifying first-offense OVI (R.C. 1905.01); magistrate "rather than an elected judge" | Contradictory | High |
+| clinton, greene, montgomery, FCMC, delaware | Felony OVI threshold: third offense F4 / fourth F3 vs three or more priors vs fourth offense | Inconsistent | High |
+| dayton-municipal-court | ORC 4510.14 carries 30 days mandatory jail for a first offense | Believed to be 3 days | High |
+| greene-county | F5 sentences 6 to 36 months | F5 is normally 6 to 12 months | High |
+| clinton-county | ALS "takes effect 30 days after the arrest" for a failed test; 30-day vehicle immobilization on a first offense | Other pages say the ALS starts at arrest | Medium |
+| butler-county | First OVI "requires yellow plates and an interlock"; permanent record "under ORC 2935.26" | Both optional on a first offense; 2935.26 is citation in lieu of arrest | Medium |
+| morrow-county | First- and second-degree misdemeanors carry up to 180 days | An M2 is 90 days | Medium |
+| franklin-county-municipal-court | Eviction hearing within 30 days under ORC 1923.07 | Likely 1923.06 | Low |
+| several | Marijuana under 100 g is a minor misdemeanor | May be outdated after 2023 legalization | Medium |
+| greene-county, montgomery-county, franklin-county | Greene lists Kettering, Centerville, Springboro; Montgomery lists Fairborn; New Albany listed with a mayor's court; Pickerington mostly in Fairfield County | Wrong county or inconsistent | Medium |
+| athens, butler, morrow, pickaway vs franklin | The firm "does not handle probate" vs offers probate administration | Firm-practice conflict: confirm what the firm handles | Medium |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |
