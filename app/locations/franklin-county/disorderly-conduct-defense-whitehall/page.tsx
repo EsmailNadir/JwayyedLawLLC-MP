@@ -3,7 +3,7 @@ import DisorderlyConductTemplate from '@/components/franklin-templates/Disorderl
 
 export const metadata: Metadata = {
   title: 'Whitehall Disorderly Conduct Defense',
-  description: 'Criminal defense attorney serving Whitehall, Ohio. Assault, domestic violence, drug, and theft charges — Franklin County Municipal Court. (614) 285-5482.',
+  description: 'Criminal defense attorney serving Whitehall, Ohio. Assault, domestic violence, drug, and theft charges in Franklin County Municipal Court. (614) 285-5482.',
   keywords: ['Whitehall disorderly conduct lawyer', 'Whitehall disorderly conduct defense', 'Whitehall Ohio disorderly conduct'],
   openGraph: {
     title: 'Whitehall Disorderly Conduct Defense | Jwayyed Law LLC',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function WhitehallDisorderlyPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Disorderly Conduct Defense in Whitehall", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Whitehall", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/disorderly-conduct-defense-whitehall"};
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Disorderly Conduct Defense in Whitehall", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Whitehall", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/disorderly-conduct-defense-whitehall"};
   return (
     <>
       <script

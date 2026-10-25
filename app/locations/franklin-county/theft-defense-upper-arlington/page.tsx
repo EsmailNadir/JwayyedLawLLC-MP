@@ -3,7 +3,7 @@ import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
   title: 'Upper Arlington Theft Defense',
-  description: 'Theft & shoplifting defense attorney serving Upper Arlington, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
+  description: 'Theft & shoplifting defense attorney serving Upper Arlington, Ohio, in Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Upper Arlington theft lawyer', 'Upper Arlington shoplifting attorney', 'Upper Arlington Ohio theft defense', 'Franklin County theft Upper Arlington'],
   openGraph: {
     title: 'Upper Arlington Theft Defense | Jwayyed Law LLC',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function UpperArlingtonTheftPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Theft Defense in Upper Arlington", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Upper Arlington", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-upper-arlington"};
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Theft Defense in Upper Arlington", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Upper Arlington", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-upper-arlington"};
   return (
     <>
       <script

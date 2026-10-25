@@ -4,26 +4,20 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
 import LocationsWeServe from '@/components/LocationsWeServe';
+import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 import { getSuburb, FCMC, OVI_PENALTIES, OVI_BAC_THRESHOLDS, FIRM_NAP } from '@/data/franklin-county-reference';
+import { FcmcTable, ProsecutorNote, SuburbAtAGlance, localCourt, slugify, suburbLinks } from './shared';
 
 interface Props {
   suburb: string;
-}
-
-function slugify(name: string) {
-  return name.toLowerCase().replace(/\s+/g, '-');
 }
 
 export default function OVITemplate({ suburb }: Props) {
   const suburbData = getSuburb(suburb);
   if (!suburbData) throw new Error(`No reference data found for suburb: ${suburb}`);
 
-  const { mayorsCourt, policeAgency, keyRoads, population2020, formerProsecutorTitle } = suburbData;
-  const hasMayorsCourt = mayorsCourt.active;
-  const courtName = hasMayorsCourt ? `${suburb} Mayor's Court` : FCMC.name;
-  const courtAddress = hasMayorsCourt ? mayorsCourt.address! : FCMC.address;
-  const courtPhone = hasMayorsCourt ? mayorsCourt.phone! : FCMC.clerkPhone;
-  const courtSchedule = hasMayorsCourt ? mayorsCourt.schedule : null;
+  const { mayorsCourt, policeAgency, keyRoads, formerProsecutorTitle } = suburbData;
+  const { hasMayorsCourt, courtName, courtAddress, courtPhone, courtSchedule } = localCourt(suburb, suburbData);
 
   const firstLow = OVI_PENALTIES.find((p) => p.offense === 1 && p.tier === 'low')!;
   const firstHigh = OVI_PENALTIES.find((p) => p.offense === 1 && p.tier === 'high')!;
@@ -32,161 +26,246 @@ export default function OVITemplate({ suburb }: Props) {
 
   const roadsText = keyRoads.slice(0, 3).join(', ');
   const slug = slugify(suburb);
+  const tel = `tel:${FIRM_NAP.phoneRaw.replace('+', '')}`;
 
   const breadcrumbItems = [
     { label: 'Locations', href: '/locations' },
     { label: 'Franklin County', href: '/locations/franklin-county' },
-    { label: `OVI Defense — ${suburb}`, href: `/locations/franklin-county/ovi-dui-defense-${slug}` },
+    { label: `OVI Defense in ${suburb}`, href: `/locations/franklin-county/ovi-dui-defense-${slug}` },
   ];
 
   const faqs = [
     {
       question: `What are the OVI penalties in ${suburb}, Ohio?`,
-      answer: `Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction for a ${suburb} resident carries a mandatory minimum of ${firstLow.jailMin}, fines of ${firstLow.fine}, and a license suspension of ${firstLow.suspension}. High-tier OVI (BAC ${OVI_BAC_THRESHOLDS.highTierBlood}) carries ${firstHigh.jailMin} mandatory. A second OVI within 10 years escalates to ${secondLow.jailMin}, fines of ${secondLow.fine}, and suspension of ${secondLow.suspension}. OVI charges from ${suburb} are heard in ${courtName}.`,
+      answer: `Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction for a ${suburb} resident carries a mandatory minimum of ${firstLow.jailMin}, fines of ${firstLow.fine}, and a license suspension of ${firstLow.suspension}. A high-tier OVI (BAC ${OVI_BAC_THRESHOLDS.highTierBlood}) carries ${firstHigh.jailMin} mandatory. A second OVI within 10 years rises to ${secondLow.jailMin}, fines of ${secondLow.fine}, and a suspension of ${secondLow.suspension}. OVI charges from ${suburb} are heard in ${courtName}.`,
     },
     {
       question: `Where is my OVI case heard if I was arrested in ${suburb}?`,
       answer: hasMayorsCourt
-        ? `OVI and traffic charges arising in ${suburb} are initially heard in ${suburb} Mayor's Court, located at ${courtAddress}. The court meets ${courtSchedule}. If your case involves a 2nd offense OVI or higher, a high-tier OVI (BAC 0.17%+), or any matter that cannot be resolved at the mayor's court level, it transfers to Franklin County Municipal Court at ${FCMC.address}. First-offense OVI matters may be handled at ${suburb} Mayor's Court; repeat offenses must be heard in Franklin County Municipal Court. An attorney can appear at both courts on your behalf.`
-        : `${mayorsCourt.note} All OVI cases from ${suburb} are heard at ${FCMC.address}, ${FCMC.floors}. The Franklin County Municipal Court handles the full spectrum of OVI matters including arraignments, ALS appeals, pleas, and trials.`,
+        ? `OVI and traffic charges from ${suburb} are first heard in ${suburb} Mayor's Court at ${courtAddress}. Court schedule: ${courtSchedule}. A second OVI or higher, a high-tier OVI (BAC 0.17%+), or any matter the mayor's court cannot resolve transfers to Franklin County Municipal Court at ${FCMC.address}. First-offense OVI matters may be handled at ${suburb} Mayor's Court; repeat offenses must be heard in Franklin County Municipal Court. An attorney can appear at both courts for you.`
+        : `${mayorsCourt.note} All OVI cases from ${suburb} are heard at ${FCMC.address}, ${FCMC.floors}. Franklin County Municipal Court handles every stage of an OVI case, including arraignments, ALS appeals, pleas, and trials.`,
     },
     {
       question: `How do I appeal my Administrative License Suspension (ALS) after an OVI arrest in ${suburb}?`,
-      answer: `Under ORC 4511.191, you have exactly 30 days from the date of arrest to file an ALS appeal. Missing that deadline permanently forfeits your right to contest the suspension. Your ALS appeal is filed at Franklin County Municipal Court (${FCMC.address}), regardless of where in Franklin County the arrest occurred. Our firm treats every ALS appeal as an emergency — we file immediately, request a stay of suspension, and challenge the officer's compliance with ORC 4511.191 procedural requirements.`,
+      answer: `Under ORC 4511.191, you have exactly 30 days from the date of arrest to file an ALS appeal. Missing that deadline permanently forfeits your right to contest the suspension. The appeal is filed at Franklin County Municipal Court (${FCMC.address}), wherever in Franklin County the arrest happened. The firm treats every ALS appeal as an emergency: it files right away, asks for a stay of the suspension, and challenges whether the officer followed the procedural requirements of ORC 4511.191.`,
     },
     {
       question: `What OVI defenses are available for charges in ${suburb}?`,
-      answer: `Common defenses we evaluate for every ${suburb} OVI case include: whether the initial stop by ${policeAgency} was supported by reasonable articulable suspicion; whether field sobriety tests (HGN, walk-and-turn, one-leg stand) were administered in strict compliance with NHTSA standards; whether breathalyzer maintenance and calibration records show the device was properly functioning; whether blood draw procedures followed proper chain-of-custody protocols; and, where BAC is near the threshold, the rising BAC defense — arguing that BAC was below 0.08% at the time of driving and rose to the tested level before the test was administered.`,
+      answer: `The defenses the firm checks in every ${suburb} OVI case are: whether the ${policeAgency} had reasonable articulable suspicion for the stop; whether the field sobriety tests (HGN, walk-and-turn, one-leg stand) followed NHTSA standards; whether breathalyzer maintenance and calibration records show the device was working properly; whether the blood draw followed chain-of-custody rules; and, where BAC is near the threshold, the rising BAC defense, which argues that BAC was below 0.08% while driving and rose to the tested level before the test.`,
     },
     {
       question: `Can I get limited driving privileges after an OVI in ${suburb}?`,
-      answer: `Yes. Ohio courts — including ${hasMayorsCourt ? courtName : FCMC.name} — can grant limited driving privileges for work, school, medical appointments, and other essential purposes. Under HB 37, first-time defendants who agree to install a certified ignition interlock device may waive the standard 15-day hard suspension waiting period, allowing near-immediate access to limited privileges. Our firm petitions quickly and helps you satisfy all court requirements. The reinstatement fee after an OVI suspension is ${OVI_BAC_THRESHOLDS.licenseReinstatementFee}.`,
+      answer: `Yes. Ohio courts, including ${hasMayorsCourt ? courtName : FCMC.name}, can grant limited driving privileges for work, school, medical appointments, and other essential purposes. Under HB 37, first-time defendants who agree to install a certified ignition interlock device may waive the standard 15-day hard suspension waiting period and get limited privileges almost immediately. The firm petitions quickly and helps you meet the court's requirements. The reinstatement fee after an OVI suspension is ${OVI_BAC_THRESHOLDS.licenseReinstatementFee}.`,
     },
     {
       question: `Will an OVI conviction in ${suburb} affect my professional license?`,
-      answer: `OVI convictions are reportable to Ohio professional licensing boards and can trigger investigations by the State Medical Board, Ohio Board of Nursing, Ohio Bar Association, Ohio Real Estate Commission, and commercial driver licensing authorities. ${suburb} residents employed in healthcare, law, education, or trucking face these collateral consequences in addition to criminal penalties. Our firm evaluates professional licensing exposure alongside the criminal case and works to achieve outcomes — such as reduction to reckless operation under ORC 4511.20 — that minimize long-term career impact.`,
+      answer: `OVI convictions are reportable to Ohio professional licensing boards and can lead to investigations by the State Medical Board, Ohio Board of Nursing, Ohio Bar Association, Ohio Real Estate Commission, and commercial driver licensing authorities. ${suburb} residents who work in healthcare, law, education, or trucking face these consequences on top of the criminal penalties. The firm weighs licensing exposure alongside the criminal case and works toward outcomes, such as a reduction to reckless operation under ORC 4511.20, that limit the long-term effect on your career.`,
     },
     {
       question: `Why hire Jwayyed Law LLC for an OVI charge in ${suburb}?`,
-      answer: `Jwayyed Law LLC provides experienced OVI defense throughout Franklin County, including ${suburb}. We understand the procedures of ${courtName} and Franklin County Municipal Court, the practices of the prosecutors handling ${suburb} OVI cases, and the defense arguments most effective in these courts. We act immediately to file ALS appeals within the 30-day deadline under ORC 4511.191 — this deadline cannot be extended. Call (614) 285-5482 as soon as possible after your arrest.`,
+      answer: `Jwayyed Law LLC defends OVI charges throughout Franklin County, including ${suburb}, in ${courtName} and Franklin County Municipal Court. The firm files the ALS appeal within the 30-day deadline under ORC 4511.191, and that deadline cannot be extended. Call (614) 285-5482 as soon as you can after your arrest.`,
     },
   ];
-
 
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title={`OVI / DUI Defense Attorney in ${suburb}, Ohio`}
-        description={`Facing OVI or DUI charges in ${suburb}? Jwayyed Law LLC defends clients in ${courtName} and throughout Franklin County. Call (614) 285-5482 — the ALS appeal deadline is 30 days.`}
+        title={`OVI defense in ${suburb}, Ohio`}
+        description={
+          hasMayorsCourt
+            ? `OVI charges from ${suburb} start in ${suburb} Mayor's Court. The license suspension appeal goes to Franklin County Municipal Court, and you have 30 days from the arrest to file it.`
+            : `OVI charges from ${suburb} are heard in Franklin County Municipal Court. You have 30 days from the arrest to appeal the license suspension.`
+        }
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              OVI / DUI Defense in {suburb}, Ohio
-            </h2>
-            {formerProsecutorTitle && (
-              <div className="not-prose my-6 inline-flex items-center gap-3 bg-sky-deep/8 border border-sky-deep/25 px-4 py-3">
-                <span className="text-sky-deep font-bold text-sm">⚖</span>
-                <span className="text-sm font-semibold text-navy-950">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
-              </div>
-            )}
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              An OVI arrest in {suburb} can happen fast — a traffic stop on {keyRoads[0]}, a checkpoint near a {suburb} business district, or a late-night stop by the{' '}
-              <strong>{policeAgency}</strong>. One moment you are driving home; the next you have a citation in your hand, your license has been suspended, and you are wondering what to do. Ohio Revised Code 4511.19, substantially revised by HB 37 (effective April 9, 2025), sets mandatory minimum penalties that a court cannot waive below — meaning the consequences of even a first OVI conviction are serious, automatic, and lasting. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI and DUI defense</Link>{' '}
-              for clients throughout Franklin County, including {suburb}, and appears in {courtName} and Franklin County Municipal Court. Call{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
-              immediately — the administrative license suspension appeal deadline is only 30 days from your arrest.
+      <Section
+        title={`Where a ${suburb} OVI case is heard`}
+        intro={
+          <p>
+            An OVI arrest in {suburb} usually starts with a stop by the {policeAgency} on {keyRoads[0]}, at a checkpoint, or on
+            another road through the city. The case then goes to {courtName}.
+          </p>
+        }
+      >
+        <SuburbAtAGlance suburb={suburb} data={suburbData} />
+        {hasMayorsCourt ? (
+          <>
+            <p>
+              OVI and traffic charges from {suburb} are first processed in <strong>{suburb} Mayor&apos;s Court</strong> at{' '}
+              {courtAddress} ({courtPhone}). A mayor&apos;s court is run by the municipal mayor or a
+              designated magistrate and hears minor misdemeanor OVI and traffic offenses from inside the municipality.
             </p>
-            {formerProsecutorTitle && (
-              <p className="text-navy-950/80 mb-6 leading-relaxed">
-                As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
-              </p>
-            )}
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents, and law enforcement activity on its primary corridors — {roadsText} — produces a significant number of OVI arrests each year. The {policeAgency} patrols these routes routinely, and Ohio State Highway Patrol units also operate in portions of Franklin County. Every OVI stop involves a sequence of decisions by law enforcement — the legal justification for the stop, the administration of field sobriety tests, the request for a breath or blood sample, and the documentation of results — and any misstep in that sequence can be the foundation of a successful defense.
+            <p>
+              A high-tier OVI, a repeat offense, or any matter the mayor&apos;s court cannot resolve is transferred to Franklin
+              County Municipal Court for arraignment on misdemeanor OVI charges, pretrial motions and trial. Your ALS appeal is always
+              filed in Franklin County Municipal Court, whichever court has the criminal case.
             </p>
+          </>
+        ) : (
+          <p>
+            {mayorsCourt.note} OVI charges from {suburb} go straight to <strong>Franklin County Municipal Court</strong>, the
+            busiest municipal court in Ohio, which handles OVI arraignments, ALS appeals, pretrial motions and trials for Columbus
+            and the surrounding Franklin County communities. The firm appears in this court regularly.
+          </p>
+        )}
+        <FcmcTable hears="OVI transfers from mayor's courts, all ALS appeals, and misdemeanor OVI arraignments, motions and trials" />
+        <p>
+          The {policeAgency} patrols {roadsText}, and Ohio State Highway Patrol units also work parts of Franklin County. Every
+          OVI stop is a chain of police decisions: the reason for the stop, the field sobriety tests, the request for a breath or
+          blood sample, and the paperwork. A misstep at any point can be the basis of a defense.
+        </p>
+        <ProsecutorNote title={formerProsecutorTitle} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              OVI Penalties in {suburb} Under HB 37
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio&apos;s House Bill 37, effective April 9, 2025, restructured the mandatory minimum penalties for OVI under R.C. 4511.19. A first OVI conviction — with a BAC between {OVI_BAC_THRESHOLDS.lowTierBlood} (low-tier) — carries a mandatory minimum of{' '}
-              <strong>{firstLow.jailMin}</strong>, fines of{' '}
-              <strong>{firstLow.fine}</strong>, and a license suspension of{' '}
-              <strong>{firstLow.suspension}</strong>. The license reinstatement fee is {OVI_BAC_THRESHOLDS.licenseReinstatementFee}. These are mandatory minimums — the court has no discretion to impose less. First-time defendants who agree to install a certified ignition interlock device may have the standard 15-day hard suspension waiting period waived under HB 37, allowing near-immediate limited driving privileges for work, school, and medical purposes.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              High-tier OVI charges — where the BAC is {OVI_BAC_THRESHOLDS.highTierBlood} — carry enhanced mandatory minimums even for first-time defendants: {firstHigh.jailMin}. If you have a prior OVI within the {OVI_BAC_THRESHOLDS.lookBackPeriod.split('(')[0].trim()}, a second offense carries a minimum of{' '}
-              <strong>{secondLow.jailMin}</strong>, fines of <strong>{secondLow.fine}</strong>, and suspension of <strong>{secondLow.suspension}</strong>, plus a 90-day vehicle immobilization and 90-day plate impound. A third OVI within 10 years carries a minimum of {thirdLow.jailMin}, fines of {thirdLow.fine}, and suspension of {thirdLow.suspension}, with criminal forfeiture of the vehicle. A fourth or subsequent OVI conviction within 10 years escalates to a fourth-degree felony, processed in Franklin County Court of Common Pleas rather than municipal court.
-            </p>
+      <Section
+        title="OVI penalties under HB 37"
+        tone="ice"
+        intro={
+          <p>
+            House Bill 37, effective April 9, 2025, restructured the mandatory minimum penalties for OVI under R.C. 4511.19. These
+            are mandatory minimums: the court cannot impose less.
+          </p>
+        }
+      >
+        <FactTable
+          title={`First OVI, low tier (BAC ${OVI_BAC_THRESHOLDS.lowTierBlood})`}
+          rows={[
+            { label: 'Mandatory minimum', value: firstLow.jailMin },
+            { label: 'Fines', value: firstLow.fine },
+            { label: 'License suspension', value: firstLow.suspension },
+            { label: 'Reinstatement fee', value: OVI_BAC_THRESHOLDS.licenseReinstatementFee },
+            {
+              label: 'Limited privileges',
+              value:
+                'First-time defendants who agree to a certified ignition interlock may have the standard 15-day hard suspension waiting period waived under HB 37, allowing near-immediate privileges for work, school and medical purposes.',
+            },
+          ]}
+        />
+        <FactTable
+          title={`First OVI, high tier (BAC ${OVI_BAC_THRESHOLDS.highTierBlood})`}
+          rows={[
+            { label: 'Mandatory minimum', value: firstHigh.jailMin },
+            { label: 'Fines', value: firstHigh.fine },
+            { label: 'License suspension', value: firstHigh.suspension },
+          ]}
+        />
+        <FactTable
+          title={`Repeat OVI within the ${OVI_BAC_THRESHOLDS.lookBackPeriod.split('(')[0].trim()} lookback`}
+          rows={[
+            {
+              label: 'Second OVI',
+              value: `Minimum ${secondLow.jailMin}; fines of ${secondLow.fine}; suspension of ${secondLow.suspension}; 90-day vehicle immobilization and 90-day plate impound.`,
+            },
+            {
+              label: 'Third OVI within 10 years',
+              value: `Minimum ${thirdLow.jailMin}; fines of ${thirdLow.fine}; suspension of ${thirdLow.suspension}; criminal forfeiture of the vehicle.`,
+            },
+            {
+              label: 'Fourth or later within 10 years',
+              value: 'A fourth-degree felony, heard in Franklin County Court of Common Pleas rather than municipal court.',
+            },
+          ]}
+        />
+        <h3>Consequences beyond the sentence</h3>
+        <p>
+          Ohio professional licensing boards, including the State Medical Board, Board of Nursing, Bar Association, Real Estate
+          Commission, and the Bureau of Motor Vehicles for CDL holders, can investigate, sanction or revoke licenses after an OVI
+          conviction. Auto insurance rates usually rise sharply, and many insurers require SR-22 certification for the length of
+          the suspension.
+        </p>
+        <p>
+          An OVI conviction is not eligible for expungement under Ohio law, so it stays on your record permanently. The firm weighs
+          these consequences when advising on a plea offer against trial, and where appropriate pursues a reduction to reckless
+          operation under ORC 4511.20, which can sometimes be sealed after the waiting periods under ORC 2953.32.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Administrative License Suspension — 30-Day Deadline
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              When a {suburb} driver is arrested for OVI, the arresting officer immediately issues a notice of Administrative License Suspension under ORC 4511.191. The ALS is a civil action entirely separate from the criminal OVI case — it takes effect the moment the notice is served, and it imposes a 15-day hard suspension during which no driving is permitted. You have <strong>30 days from the date of arrest</strong> to file an ALS appeal in Franklin County Municipal Court. Missing that window is permanent — no extension is available, and the right to challenge the suspension is forfeited entirely.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm treats every ALS appeal as an emergency. We file immediately after being retained, request a stay of the suspension so you can continue driving during the appeal process, and challenge the suspension on both procedural and substantive grounds. Procedural challenges include whether the officer properly advised you of the consequences of refusal or submission, whether the chemical testing device was properly maintained and calibrated, and whether all required documentation was submitted within the statutory time frame. Even a partial ALS appeal victory — a reduction in suspension length or a stay — can significantly reduce the disruption to your life while the criminal case proceeds.
-            </p>
+      <Section title="The 30-day license suspension appeal">
+        <p>
+          When a {suburb} driver is arrested for OVI, the officer serves a notice of Administrative License Suspension under ORC
+          4511.191. The ALS is a civil action, separate from the criminal case. It takes effect the moment the notice is served and
+          starts a 15-day hard suspension with no driving at all.
+        </p>
+        <Callout title="30 days from the date of arrest">
+          That is how long you have to file the ALS appeal in Franklin County Municipal Court. No extension is available, and
+          missing the window forfeits the right to challenge the suspension.
+        </Callout>
+        <Steps
+          steps={[
+            { title: 'File right away', body: 'The firm files the appeal as soon as it is retained, treating every ALS appeal as an emergency.' },
+            { title: 'Ask for a stay', body: 'A stay of the suspension lets you keep driving while the appeal is pending.' },
+            {
+              title: 'Challenge the procedure',
+              body: 'Whether the officer properly advised you of the consequences of refusal or submission, whether the testing device was maintained and calibrated, and whether the required paperwork was submitted on time.',
+            },
+            {
+              title: 'Challenge the substance',
+              body: 'Even a partial win, such as a shorter suspension or a stay, reduces the disruption while the criminal case moves forward.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Where Your {suburb} OVI Case Is Heard
-            </h3>
-            {hasMayorsCourt ? (
-              <p className="text-navy-950/80 mb-6 leading-relaxed">
-                OVI and traffic charges arising in {suburb} are initially processed in <strong>{suburb} Mayor&apos;s Court</strong>, located at {courtAddress}, reachable at {courtPhone}. The court meets {courtSchedule}. Mayor&apos;s courts are presided over by the municipal mayor or a designated magistrate and have jurisdiction over minor misdemeanor OVI and traffic offenses arising within the municipality. If your case involves a high-tier OVI, a repeat offense, or any matter that cannot be resolved at the mayor&apos;s court level, it is transferred to Franklin County Municipal Court at {FCMC.address} ({FCMC.floors}), {FCMC.clerkPhone}, for further proceedings including arraignment on misdemeanor OVI charges, pre-trial motions, and trial. Your ALS appeal is always filed directly in Franklin County Municipal Court regardless of which court handles the underlying criminal case.
-              </p>
-            ) : (
-              <p className="text-navy-950/80 mb-6 leading-relaxed">
-                {mayorsCourt.note} OVI charges from {suburb} are processed directly in <strong>Franklin County Municipal Court</strong> at {FCMC.address} ({FCMC.floors}), reachable at {FCMC.clerkPhone}. Franklin County Municipal Court is the busiest municipal court in Ohio, handling all OVI arraignments, ALS appeals, pretrial motions, and trials for Columbus and the surrounding Franklin County communities. Our firm regularly appears in this court and understands its judges, procedures, and the prosecutors who handle OVI dockets.
-              </p>
-            )}
+      <Section title={`Defenses in a ${suburb} OVI case`} tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'The stop',
+              body: `The Fourth Amendment and the Ohio Constitution require reasonable articulable suspicion of a traffic violation or crime before a stop. Weaving slightly within a lane, braking early or an overly cautious turn are sometimes not enough, and evidence from an invalid stop may be suppressed. The firm gets all body-cam and dash-cam footage from the ${policeAgency} stop.`,
+            },
+            {
+              title: 'Field sobriety tests',
+              body: 'NHTSA publishes standard procedures for the Horizontal Gaze Nystagmus, walk-and-turn and one-leg stand tests. The firm compares the recorded tests and the officer’s training records to those standards and challenges any deviation.',
+            },
+            {
+              title: 'Breath tests',
+              body: 'The firm subpoenas breathalyzer maintenance and calibration records to show whether the instrument was working properly.',
+            },
+            {
+              title: 'Blood draws',
+              body: 'Chain-of-custody documentation and laboratory records are checked for gaps and errors.',
+            },
+            {
+              title: 'Rising BAC',
+              body: 'Where BAC is near 0.08%, or close to 0.17% for high tier, the defense argues that blood alcohol was below the threshold while driving and rose by the time of the test. Ohio courts recognize this defense when the facts support it.',
+            },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              OVI Defense Strategies for {suburb} Cases
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Every OVI defense begins with a close examination of the stop itself. The Fourth Amendment and Ohio constitutional protections require that the officer who stopped you had reasonable articulable suspicion of a traffic violation or criminal activity before initiating the stop. Stops based on vague observations — weaving slightly within a lane, braking early, or making an overly cautious turn — are sometimes legally insufficient, and evidence gathered after an invalid stop may be suppressed. We obtain all body-cam and dash-cam footage from the {policeAgency} stop and analyze every second of the recorded interaction.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              After evaluating the stop, we scrutinize the field sobriety test administration. The National Highway Traffic Safety Administration publishes standardized procedures for the Horizontal Gaze Nystagmus, walk-and-turn, and one-leg stand tests — and officers who deviate from those procedures administer invalid tests. We review the officer&apos;s training records, compare the recorded administration to NHTSA standards, and challenge any deviation as a basis for excluding the test results. For breath tests, we subpoena breathalyzer maintenance and calibration records to establish whether the instrument was properly functioning. For blood draws, we obtain chain-of-custody documentation and laboratory records. Where BAC is near the legal threshold — 0.08% or close to 0.17% for high-tier — the rising BAC defense argues that blood alcohol was below the threshold at the time of driving and rose by the time of testing due to continued alcohol absorption. This is a recognized defense in Ohio courts when the facts support it.
-            </p>
+      <Section title={`What the firm handles in ${suburb} OVI cases`}>
+        <PointGrid
+          points={[
+            { title: 'ALS appeal (30-day deadline)', body: 'Emergency filing, a stay of suspension, and procedural and substantive challenges under ORC 4511.191.' },
+            { title: 'First OVI defense', body: 'Stop validity, field sobriety test administration, breathalyzer calibration records, rising BAC and diversion options.' },
+            { title: 'Second and third OVI defense', body: 'Penalty mitigation, continuous alcohol monitoring alternatives and vehicle immobilization challenges.' },
+            { title: 'High-tier OVI (BAC 0.17%+)', body: 'Defenses to the enhanced mandatory minimums and the interlock requirements.' },
+            { title: 'CDL OVI defense', body: 'Federal disqualification consequences and the effect on a commercial license.' },
+            { title: 'Limited driving privileges', body: 'Petitions for work, school and medical driving during a suspension.' },
+            { title: 'Reckless operation reduction', body: 'Negotiating an R.C. 4511.20 plea to preserve expungement eligibility.' },
+          ]}
+        />
+        <p>
+          If you were arrested for OVI in {suburb} or anywhere in Franklin County, call <a href={tel}>{FIRM_NAP.phone}</a> or{' '}
+          <Link href="/contact">schedule a consultation online</Link>. The 30-day ALS deadline runs from the arrest and cannot be
+          extended, so every day of waiting narrows your options. See the firm&apos;s{' '}
+          <Link href="/ovi-dui-defense">OVI and DUI defense</Link> practice for more.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              Collateral Consequences of an OVI Conviction
-            </h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Beyond the mandatory jail, fines, and suspension, an OVI conviction in {suburb} carries significant collateral consequences. Ohio professional licensing boards — including the State Medical Board, Board of Nursing, Bar Association, Real Estate Commission, and Bureau of Motor Vehicles for CDL holders — can investigate, sanction, or revoke licenses based on OVI convictions. Auto insurance rates typically increase substantially following an OVI, and many insurers require SR-22 certification for the duration of the suspension. An OVI conviction is also not eligible for expungement under Ohio law, meaning it remains on your record permanently. Our firm considers all of these consequences when advising clients about the relative merits of any plea offer versus proceeding to trial, and in appropriate cases pursues reduction to reckless operation under ORC 4511.20, which can sometimes be sealed after applicable waiting periods under ORC 2953.32.
-            </p>
+      <Section title={`More for ${suburb} and Franklin County`} tone="ice">
+        <LinkGrid links={suburbLinks(suburb, 'ovi-dui-defense')} />
+        <h3>Franklin County courts</h3>
+        <LinkGrid
+          columns={2}
+          links={[
+            { href: '/courts/franklin-county-municipal-court', title: 'Franklin County Municipal Court', subtitle: 'Court guide: location, dockets and what to expect' },
+            { href: '/locations/franklin-county/mayors-courts-franklin-county', title: 'Franklin County mayor’s courts', subtitle: 'Every suburb mayor’s court in the county' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
-              How We Can Help
-            </h3>
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>ALS appeal (30-day deadline):</strong> Emergency filing, stay of suspension, procedural and substantive challenges under ORC 4511.191</li>
-              <li><strong>First OVI defense:</strong> Stop validity, SFST administration, breathalyzer calibration records, rising BAC, diversion options</li>
-              <li><strong>Second and third OVI defense:</strong> Enhanced penalty mitigation, continuous alcohol monitoring alternatives, vehicle immobilization challenges</li>
-              <li><strong>High-tier OVI (BAC 0.17%+):</strong> Enhanced mandatory minimum defenses, interlock device requirements</li>
-              <li><strong>CDL OVI defense:</strong> Federal disqualification consequences, commercial license impact strategy</li>
-              <li><strong>Limited driving privileges:</strong> Petition to court for work/school/medical driving during suspension</li>
-              <li><strong>Reckless operation reduction:</strong> Negotiating R.C. 4511.20 plea to preserve expungement eligibility</li>
-            </ul>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you have been arrested for OVI in {suburb} or anywhere in Franklin County, contact Jwayyed Law LLC immediately at{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
-              The 30-day ALS appeal deadline runs from the moment of arrest — it cannot be extended, and waiting even a few days reduces your options. Early involvement by an attorney is the single most important step you can take after an OVI arrest.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <LocationsWeServe title="Franklin County & Ohio" />
       <ContactCTA />

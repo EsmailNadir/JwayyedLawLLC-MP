@@ -3,7 +3,7 @@ import TheftTemplate from '@/components/franklin-templates/TheftTemplate';
 
 export const metadata: Metadata = {
   title: 'Obetz Theft Defense Attorney',
-  description: 'Theft & shoplifting defense attorney serving Obetz, Ohio — Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
+  description: 'Theft & shoplifting defense attorney serving Obetz, Ohio, in Franklin County Municipal Court. Protect your record. Call (614) 285-5482.',
   keywords: ['Obetz theft lawyer', 'Obetz theft attorney', 'Obetz Ohio theft defense', 'Franklin County theft Obetz'],
   openGraph: {
     title: 'Obetz Theft Defense Attorney | Jwayyed Law LLC',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function ObetzTheftPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Theft Defense in Obetz", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Obetz", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-obetz"};
+  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC: Theft Defense in Obetz", "serviceType": "Criminal Defense", "areaServed": {"@type": "City", "name": "Obetz", "containedInPlace": {"@type": "County", "name": "Franklin County", "containedInPlace": {"@type": "State", "name": "Ohio"}}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/franklin-county/theft-defense-obetz"};
   return (
     <>
       <script

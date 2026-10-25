@@ -54,7 +54,7 @@ export const FCMC = {
   ],
   // Judges current as of January 2026 (verify at franklincountymunicourt.org before citing by name)
   noteOnJudges:
-    'Do not cite individual judge names in page content without verifying against the current court roster at franklincountymunicourt.org — judicial assignments change.',
+    'Do not cite individual judge names in page content without verifying against the current court roster at franklincountymunicourt.org, because judicial assignments change.',
 } as const;
 
 // ─── SUBURB DATA ──────────────────────────────────────────────────────────────
@@ -100,7 +100,7 @@ export const SUBURBS: SuburbData[] = [
       active: true,
       address: '6565 Commerce Parkway, Dublin, OH 43017',
       phone: '(614) 410-4920',
-      schedule: 'Every Tuesday — ALS hearings 1:30 PM, pleas 2:00–2:30 PM, pre-trials 2:30–3:15 PM, arraignments/misc 3:00 PM, trials 4:00 PM',
+      schedule: 'Every Tuesday: ALS hearings 1:30 PM, pleas 2:00–2:30 PM, pre-trials 2:30–3:15 PM, arraignments/misc 3:00 PM, trials 4:00 PM',
     },
   },
   {
@@ -113,7 +113,7 @@ export const SUBURBS: SuburbData[] = [
       suburb: 'Grandview Heights',
       active: false,
       note:
-        'Grandview Heights Mayor\'s Court closed effective December 31, 2023. All cases — past and new — are handled by Franklin County Municipal Court at 375 S. High Street, Columbus, OH 43215, (614) 645-8186.',
+        'Grandview Heights Mayor\'s Court closed effective December 31, 2023. All cases, past and new, are handled by Franklin County Municipal Court at 375 S. High Street, Columbus, OH 43215, (614) 645-8186.',
     },
   },
   {
@@ -128,7 +128,7 @@ export const SUBURBS: SuburbData[] = [
       address: '3360 Park Street, Grove City, OH 43123',
       phone: '(614) 277-1715',
       schedule:
-        'Wednesdays — 9:00 AM for failure-to-comply and interpreter cases; 10:00 AM for criminal cases and minor traffic arraignments',
+        'Wednesdays: 9:00 AM for failure-to-comply and interpreter cases; 10:00 AM for criminal cases and minor traffic arraignments',
     },
     formerProsecutorTitle: "Former Grove City Prosecutor & Mayor's Court Prosecutor",
   },
@@ -186,7 +186,7 @@ export const SUBURBS: SuburbData[] = [
       address: 'Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230',
       phone: '(614) 342-4080',
       schedule: 'Contact Gahanna City Hall for current schedule',
-      note: 'New Albany Mayor\'s Court is administered by the City of Gahanna and held at Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230, (614) 342-4080. Jwayyed Law LLC regularly appears in New Albany Mayor\'s Court to defend New Albany clients. First-offense OVI and traffic citations from New Albany are typically heard here. Although the court shares facilities with Gahanna City Hall, the client is a New Albany defendant — this is the proper venue for New Albany citations.',
+      note: 'New Albany Mayor\'s Court is administered by the City of Gahanna and held at Gahanna City Hall, 200 S. Hamilton Road, Gahanna, OH 43230, (614) 342-4080. Jwayyed Law LLC regularly appears in New Albany Mayor\'s Court to defend New Albany clients. First-offense OVI and traffic citations from New Albany are typically heard here. Although the court shares facilities with Gahanna City Hall, the client is a New Albany defendant, and this is the proper venue for New Albany citations.',
     },
     formerProsecutorTitle: 'Former New Albany Prosecutor',
   },
@@ -275,7 +275,7 @@ export const SUBURBS: SuburbData[] = [
       address: '360 South Yearling Road, Whitehall, OH 43213',
       phone: '(614) 338-3109',
       schedule:
-        'Every Tuesday — 7:45 AM check-in; 8:00 AM traffic cases; 8:15 AM (translator available); 8:30 AM pre-trials; 8:45 AM code enforcement; 9:00 AM criminal cases; 10:15 AM trials (2nd Tuesday only)',
+        'Every Tuesday: 7:45 AM check-in; 8:00 AM traffic cases; 8:15 AM (translator available); 8:30 AM pre-trials; 8:45 AM code enforcement; 9:00 AM criminal cases; 10:15 AM trials (2nd Tuesday only)',
     },
     formerProsecutorTitle: 'Former Whitehall City Prosecutor',
   },
@@ -401,8 +401,8 @@ export const DOMESTIC_VIOLENCE = {
 
 export const ASSAULT = {
   statute: 'R.C. 2903.13',
-  baseDegree: 'M1 — knowingly causing or attempting to cause physical harm to another person',
-  recklessDegree: 'M1 — recklessly causing serious physical harm',
+  baseDegree: 'M1: knowingly causing or attempting to cause physical harm to another person',
+  recklessDegree: 'M1: recklessly causing serious physical harm',
   penalties: {
     M1: { maxJail: '180 days', maxFine: '$1,000' },
   },
@@ -424,14 +424,14 @@ export const DRUG_POSSESSION = {
     adultUseLegal:
       'Under Ohio\'s adult-use marijuana framework (Issue 2, effective December 7, 2023, and implementing legislation HB 86): adults 21 and older may legally possess up to 2.5 ounces of marijuana and up to 15 grams of marijuana concentrate. Possession within these limits is not a criminal offense.',
     criminalThresholds: {
-      minorMisdemeanor: 'Possession of 70.87g–99g (above 2.5 oz adult-use limit, below 100g statutory threshold — no jail, up to $150 fine)',
-      M4: '100g–199g (at or above minor misdemeanor threshold; M4 — up to 30 days jail, up to $250 fine)',
-      F5: '200g–999g (at or above bulk amount; F5 aggravated possession — up to 12 months prison, up to $2,500 fine)',
+      minorMisdemeanor: 'Possession of 70.87g–99g (above 2.5 oz adult-use limit, below 100g statutory threshold; no jail, up to $150 fine)',
+      M4: '100g–199g (at or above minor misdemeanor threshold; M4: up to 30 days jail, up to $250 fine)',
+      F5: '200g–999g (at or above bulk amount; F5 aggravated possession: up to 12 months prison, up to $2,500 fine)',
       F3: '1,000g–4,999g (F3 aggravated possession)',
       F2: '5,000g–19,999g (F2 aggravated possession)',
       F1: '20,000g or more (F1 aggravated possession)',
     },
-    note: 'Verify current Ohio marijuana law at codes.ohio.gov — thresholds have evolved since Issue 2. Adults may also legally home-cultivate up to 6 plants.',
+    note: 'Verify current Ohio marijuana law at codes.ohio.gov, as thresholds have evolved since Issue 2. Adults may also legally home-cultivate up to 6 plants.',
   },
   cocainePossession: { baseDegree: 'F5', note: 'Escalates with quantity under R.C. 2925.11(C)(4)' },
   heroinPossession: { baseDegree: 'F5', note: 'Escalates with quantity; fentanyl-contaminated heroin often elevates charge' },
@@ -448,7 +448,7 @@ export const DRUG_POSSESSION = {
 
 export const DISORDERLY_CONDUCT = {
   statute: 'R.C. 2917.11',
-  baseDegree: 'Minor misdemeanor — no jail, up to $150 fine',
+  baseDegree: 'Minor misdemeanor: no jail, up to $150 fine',
   elevatedDegree: 'M4 (up to 30 days jail, up to $250 fine) when:',
   elevationTriggers: [
     'Persists after reasonable warning or request to desist by law enforcement',
@@ -465,11 +465,11 @@ export const DISORDERLY_CONDUCT = {
 export const OPEN_CONTAINER = {
   statute: 'R.C. 4301.62',
   penaltyStatute: 'R.C. 4301.99(A)',
-  degree: 'Minor misdemeanor — no jail, up to $150 fine',
+  degree: 'Minor misdemeanor: no jail, up to $150 fine',
   prohibits:
     'Possessing an opened container of beer or intoxicating liquor in: agency stores, premises of permit holders, public places, or motor vehicles on streets, highways, or property open to vehicular travel.',
   vehicleNote:
-    'Open container in a vehicle on a public road is the most common citation in Franklin County traffic stops. The offense applies to all occupants — driver and passengers.',
+    'Open container in a vehicle on a public road is the most common citation in Franklin County traffic stops. The offense applies to all occupants, driver and passengers.',
   exceptions: [
     'Passengers in chauffeured limousines (rear passenger compartment)',
     'Passengers on commercial quadricycles (up to 36 oz beer or 18 oz wine)',
