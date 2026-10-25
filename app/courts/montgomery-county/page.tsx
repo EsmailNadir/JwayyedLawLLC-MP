@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     question: `Why hire Jwayyed Law LLC for a Montgomery County OVI or criminal case?`,
-    answer: `At Jwayyed Law LLC, the attorney personally handles every Montgomery County case from first consultation to final resolution—no passing your case to an associate or paralegal. Our firm appears in Dayton Municipal Court and Kettering Municipal Court, understanding the procedural differences and prosecutor tendencies in each. For OVI cases, we meticulously review the traffic stop justification, NHTSA field sobriety test administration, breathalyzer calibration history, and chain of custody for blood samples. We file ALS appeals within the 30-day deadline, pursue suppression motions when evidence was unlawfully obtained, and negotiate aggressively with Montgomery County prosecutors for the best possible outcome. For a free initial consultation on your Dayton or Kettering OVI or criminal matter, call (614) 285-5482.`,
+    answer: `At Jwayyed Law LLC, the attorney personally handles every Montgomery County case from first consultation to final resolution—no passing your case to an associate or paralegal. Our firm appears in Dayton Municipal Court and Kettering Municipal Court, understanding the procedural differences and prosecutor tendencies in each. For OVI cases, we meticulously review the traffic stop justification, NHTSA field sobriety test administration, breathalyzer calibration history, and chain of custody for blood samples. We file ALS appeals within the 30-day deadline, pursue suppression motions when evidence was unlawfully obtained, and negotiate aggressively with Montgomery County prosecutors for the best possible outcome. For an initial consultation on your Dayton or Kettering OVI or criminal matter, call (614) 285-5482.`,
   },
 ];
 
@@ -210,7 +210,7 @@ export default function MontgomeryCountyCourtsPage() {
               the procedural tendencies of both courts, how local prosecutors approach OVI and criminal cases,
               and the specialty dockets available for qualifying clients. We stay current on Ohio OVI law
               including the 2025 House Bill 37 amendments, and we apply that knowledge strategically for every
-              client. Call <strong>(614) 285-5482</strong> to schedule your free initial consultation.
+              client. Call <strong>(614) 285-5482</strong> to schedule your initial consultation.
             </p>
 
             <LocationsWeServe title="Montgomery County Legal Services"  />

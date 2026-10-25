@@ -3,7 +3,7 @@ import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
   title: 'Ohio Attorney | OVI & Criminal Defense | Jwayyed Law LLC',
-  description: 'Jwayyed Law LLC — OVI/DUI & criminal defense attorney serving all of Ohio. Call (614) 285-5482 for a free consultation.',
+  description: 'Jwayyed Law LLC: OVI/DUI and criminal defense attorney serving all of Ohio. Call (614) 285-5482 to schedule a consultation.',
   keywords: [
     'criminal defense attorney Columbus Ohio',
     'OVI defense attorney Ohio',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ohio Attorney | OVI & Criminal Defense | Jwayyed Law LLC',
-    description: 'Jwayyed Law LLC — OVI/DUI & criminal defense attorney serving all of Ohio. Call (614) 285-5482 for a free consultation.',
+    description: 'Jwayyed Law LLC: OVI/DUI and criminal defense attorney serving all of Ohio. Call (614) 285-5482 to schedule a consultation.',
     url: 'https://www.jjlawohio.com',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },

@@ -7,9 +7,9 @@ import ConsultationPanel from '@/components/contact/ConsultationPanel';
 import OfficeMap from '@/components/contact/OfficeMap';
 
 export const metadata: Metadata = {
-  title: 'Contact Jwayyed Law LLC | Free Consultation',
+  title: 'Contact Jwayyed Law LLC | Schedule a Consultation',
   description:
-    'Contact Jwayyed Law LLC to schedule a free consultation. Serving all of Ohio: OVI/DUI, criminal defense, personal injury, civil, business and estate matters. Call (614) 285-5482.',
+    'Contact Jwayyed Law LLC to schedule a consultation. Serving all of Ohio: OVI/DUI, criminal defense, personal injury, civil, business and estate matters. Call (614) 285-5482.',
   keywords: [
     'contact attorney Ohio',
     'schedule consultation Ohio',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/contact' },
   openGraph: {
-    title: 'Contact Jwayyed Law LLC | Free Consultation',
-    description: 'Schedule a free consultation with Jwayyed Law LLC. OVI/DUI, criminal defense, estate planning, and more. Call (614) 285-5482.',
+    title: 'Contact Jwayyed Law LLC | Schedule a Consultation',
+    description: 'Schedule a consultation with Jwayyed Law LLC. OVI/DUI, criminal defense, estate planning, and more. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/contact',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
@@ -94,7 +94,7 @@ export default function ContactPage() {
               Talk to an attorney today.
             </h1>
             <p className="jw-enter mt-6 max-w-[40rem] text-[length:var(--step-lead)] leading-snug text-white/85" style={{ '--d': '160ms' } as React.CSSProperties}>
-              Free consultations for criminal, OVI, injury, civil, business and estate matters anywhere in Ohio. You
+              Consultations for criminal, OVI, injury, civil, business and estate matters anywhere in Ohio. You
               speak with the attorney who will handle your case.
             </p>
 
