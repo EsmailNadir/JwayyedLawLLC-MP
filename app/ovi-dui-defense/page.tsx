@@ -10,10 +10,12 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 import { oviServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio OVI / DUI Defense Attorney',
+  title: 'OVI & DUI Defense Lawyer in Columbus, Ohio',
   description:
-    'Ohio OVI/DUI defense for first, second, third and felony OVI charges statewide: penalties, the 30-day license suspension appeal and defenses. Call (614) 285-5482.',
+    'Columbus OVI/DUI defense for first, second, third and felony charges across Ohio: penalties, the 30-day license appeal and defenses. Call (614) 285-5482.',
   keywords: [
+    'Columbus OVI lawyer',
+    'Columbus DUI attorney',
     'Ohio OVI attorney',
     'Ohio DUI attorney',
     'Ohio OVI defense attorney',
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
     'first OVI defense',
   ],
   openGraph: {
-    title: 'Ohio OVI / DUI Defense Attorney | Jwayyed Law LLC',
+    title: 'OVI & DUI Defense Lawyer in Columbus, Ohio | Jwayyed Law LLC',
     description: 'OVI/DUI defense throughout Ohio, from a first offense to a felony. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -94,7 +96,7 @@ export default function OVIDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio OVI and DUI defense"
+        title="OVI and DUI defense in Columbus and across Ohio"
         description="OVI charges at every level, from a first offense to a felony, in courts across Ohio. An arrest starts two cases at once, and the license suspension appeal has a 30-day deadline."
       />
 

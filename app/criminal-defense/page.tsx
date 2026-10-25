@@ -9,10 +9,12 @@ import { Callout, FactTable, KeyFacts, LinkGrid, PointGrid, Section, Steps } fro
 import { criminalDefenseServices } from '@/data/services';
 
 export const metadata: Metadata = {
-  title: 'Ohio Criminal Defense Attorney',
+  title: 'Criminal Defense Lawyer in Columbus, Ohio',
   description:
-    'Misdemeanor defense across Ohio: assault, domestic violence, theft, traffic and license charges, with penalties, the court process and defenses. Call (614) 285-5482.',
+    'Columbus criminal defense for misdemeanor charges across Ohio: assault, domestic violence, theft, traffic and license charges. Call (614) 285-5482.',
   keywords: [
+    'Columbus criminal defense lawyer',
+    'criminal defense attorney Columbus Ohio',
     'Ohio criminal defense attorney',
     'Ohio criminal defense lawyer',
     'criminal defense Ohio',
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     'Ohio criminal attorney',
   ],
   openGraph: {
-    title: 'Ohio Criminal Defense Attorney | Jwayyed Law LLC',
+    title: 'Criminal Defense Lawyer in Columbus, Ohio | Jwayyed Law LLC',
     description: 'Criminal defense throughout Ohio, from arraignment through trial and record sealing. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
@@ -153,7 +155,7 @@ export default function CriminalDefensePage() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Ohio criminal defense"
+        title="Criminal defense in Columbus and across Ohio"
         description="Misdemeanor charges in courts across Ohio, from assault and theft to traffic and license offenses. A first-degree misdemeanor alone carries up to 180 days in jail and a $1,000 fine."
       />
 
