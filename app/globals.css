@@ -455,6 +455,14 @@ body:has(.bg-gray-100) {
   font-family: var(--font-jw);
 }
 
+/* The display serif for headings inside running copy (inner pages), without
+   .jw-display's tight 1.05 leading, which crowds a heading that wraps. */
+.jw-serif {
+  font-family: var(--font-jw-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 .jw-display {
   font-family: var(--font-jw-display);
   font-weight: 600;

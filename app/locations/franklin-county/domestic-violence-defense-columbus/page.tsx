@@ -81,64 +81,64 @@ export default function ColumbusDomesticViolencePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Domestic Violence Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A domestic violence arrest in Columbus triggers consequences before any court date: the Columbus Division of Police makes an immediate arrest when probable cause exists, a temporary protection order is typically issued the same night, and the Ohio state prosecution machine — not the alleged victim — controls what happens next. Domestic violence charges under Ohio Revised Code 2919.25 are prosecuted aggressively in Franklin County, and the consequences of a conviction extend far beyond a fine or a brief jail sentence. A misdemeanor DV conviction permanently prohibits firearm possession under federal law (the Lautenberg Amendment), is not eligible for expungement under Ohio law, and follows the defendant into every employment application, housing search, and professional licensing review for the rest of their life. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense/domestic-violence" className="text-[#b87333] underline hover:opacity-80">domestic violence defense</Link>{' '}
+              <Link href="/criminal-defense/domestic-violence" className="text-sky-deep underline hover:opacity-80">domestic violence defense</Link>{' '}
               at Franklin County Municipal Court in Columbus. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               immediately — the first 48 hours matter.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus is Ohio&apos;s largest city and Franklin County&apos;s population center. Domestic disturbance calls represent one of the most common types of police response in Columbus across all neighborhoods and demographics. The Franklin County prosecutor&apos;s DV unit handles a high volume of cases and proceeds based on the state&apos;s evidence regardless of the alleged victim&apos;s cooperation. In many Columbus DV cases, the most important issue is not the immediate criminal penalties — it is achieving a resolution that is not classified as domestic violence, preserving firearm rights and expungement eligibility.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Domestic Violence Under Ohio Revised Code 2919.25
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2919.25 defines domestic violence as knowingly causing or attempting to cause physical harm to a family or household member (M1 — up to 180 days jail, $1,000 fine); recklessly causing serious physical harm to a family or household member (also M1); or threatening a family or household member with force in a manner that causes the person to believe imminent harm is at risk (M4 — up to 30 days jail, $250 fine). &ldquo;Family or household member&rdquo; is defined broadly to include spouses, former spouses, persons living as spouses, natural parents of shared children, relatives by blood or marriage, and current or former cohabitants within the preceding five years.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Prior DV convictions trigger felony escalation. A second DV conviction where the prior involved a family or household member escalates to an F4 felony (tried in Franklin County Court of Common Pleas, not Franklin County Municipal Court). If the victim in the current case is pregnant, the charge escalates to an F3 felony. These felony escalations carry mandatory incarceration. Our firm scrutinizes prior conviction records carefully — improper use of an out-of-state or dissimilar prior conviction to justify felony escalation is a challenge our firm evaluates in every case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               The Lautenberg Amendment — A Permanent Federal Consequence
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The federal Lautenberg Amendment (18 U.S.C. § 922(g)(9)) permanently prohibits any person convicted of a misdemeanor crime of domestic violence from possessing, purchasing, or transporting firearms or ammunition under federal law. This prohibition is lifetime, applies regardless of how much time has passed, and cannot be restored by state law. It applies to the M4 threat conviction as well as the M1 physical harm conviction — any DV conviction under R.C. 2919.25 triggers it. It applies to law enforcement officers, military personnel, and civilians alike.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For Columbus residents who own firearms for home defense, for current or aspiring law enforcement officers or military members, or for persons employed in security or armed roles, the Lautenberg prohibition can mean the immediate loss of a career or an essential tool for personal safety — consequences that outlast any jail sentence or fine by decades. This is why our firm pursues every available alternative to a domestic violence conviction, including pleas to disorderly conduct (R.C. 2917.11), which does not trigger the Lautenberg prohibition and is eligible for expungement.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Columbus DV Proceedings at Franklin County Municipal Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Domestic violence cases from Columbus are heard at Franklin County Municipal Court, 375 S. High Street (floors 12–15). At arraignment — typically the morning after arrest — the court will set bond conditions and formally issue or continue the temporary protection order (TPO). TPO conditions can prohibit contact with the family home, contact with any person named in the order, and in some cases affect custody arrangements with children. Our firm appears at arraignment and advocates for reasonable bond conditions and appropriately scoped TPO terms from the very first court appearance.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Franklin County&apos;s DV prosecution unit is experienced and well-organized. Prosecutors regularly proceed without the alleged victim&apos;s cooperation using 911 call recordings, body-cam footage, medical records, and prior police contact history. Our firm obtains all of this evidence through discovery and evaluates the strength of the state&apos;s independent case before advising on any strategy. When the state&apos;s evidence is weak or inconsistent, our firm pushes for dismissal. When a resolution is appropriate, we pursue non-DV alternatives that protect the client&apos;s rights and future.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies for Columbus DV Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus DV defense strategies depend entirely on the facts. Self-defense under ORC 2901.05 is available when the defendant responded to the alleged victim&apos;s aggression — and Ohio law since 2019 places the burden of disproving self-defense on the prosecution. Credibility challenges are powerful when the alleged victim&apos;s account in the police report is inconsistent with body-cam footage, 911 call content, or their own later statements. In some cases, the alleged victim recants or provides a written statement contradicting the initial police account — while this does not automatically end the prosecution, it significantly weakens the state&apos;s case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When the facts of the case make acquittal at trial unlikely, our firm focuses on achieving a non-DV resolution. A plea to disorderly conduct under R.C. 2917.11 — while still a conviction — is not a domestic violence conviction. It does not trigger the Lautenberg firearm prohibition. It is eligible for expungement after a 1-year waiting period. For Columbus clients whose primary concern is firearm rights or a clean record in the longer term, securing a disorderly conduct plea rather than a DV conviction is often the most valuable outcome an attorney can achieve.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Emergency arraignment:</strong> Appearing at arraignment to address bond conditions and protection order scope from day one</li>
               <li><strong>Evidence investigation:</strong> All police reports, body-cam footage, 911 recordings, and medical records obtained before any hearing</li>
               <li><strong>Self-defense evaluation:</strong> Full factual investigation into the circumstances of the alleged incident</li>
@@ -147,11 +147,11 @@ export default function ColumbusDomesticViolencePage() {
               <li><strong>Felony escalation challenge:</strong> Scrutinizing prior conviction records used to justify felony DV charges</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you have been arrested for domestic violence in Columbus or anywhere in Franklin County, contact Jwayyed Law LLC immediately at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               The first 48 hours — arraignment, protection order terms, and initial evidence preservation — shape everything that follows in a domestic violence case.
             </p>
           </div>

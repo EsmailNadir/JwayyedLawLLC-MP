@@ -76,25 +76,25 @@ export default function BusinessFormationLLCDelawareCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Delaware County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County is one of Ohio&apos;s most rapidly growing counties, with thriving communities in Delaware, Powell, Westerville, Lewis Center, Sunbury, and the northern edges of Dublin. The county attracts small businesses, professional service firms, and technology companies relocating from Columbus, as well as entrepreneurs serving the county&apos;s expanding residential population. Jwayyed Law LLC provides experienced business formation and LLC counsel to Delaware County entrepreneurs under Ohio&apos;s current business statutes, helping you build your new venture on a solid legal foundation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, which replaced the former Chapter 1705 in February 2022. Chapter 1706 modernized Ohio LLC law — offering series LLC capabilities, enhanced flexibility in management structure, and clearer rules on what the operating agreement can and cannot modify. Ohio corporations remain under ORC Chapter 1701. Our attorney explains the differences clearly so you can choose the structure that best serves your specific goals, tax preferences, and ownership arrangement.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One area where many Delaware County business owners shortchange themselves is the operating agreement. Online formation services provide generic templates that fail to address the specific dynamics of your ownership group — particularly in two- or three-member LLCs where disagreements about management, profit sharing, or exit are common. Our attorney prepares operating agreements that are customized to your business, your co-owners, and your industry, addressing the scenarios most likely to cause conflict and providing clear resolution mechanisms.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County&apos;s professional services sector — including medical practices, law firms, consulting firms, and technology companies — has specific formation needs. Licensed professionals in Ohio may be required to form professional corporations (PCs) or professional LLCs (PLLCs) rather than standard LLCs. Real estate investors benefit from holding company structures that separate properties and limit cross-liability. Our attorney advises on industry-specific requirements and structures business entities to give owners maximum liability protection and operational flexibility.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is administered through the Ohio Secretary of State, so our attorney can assist Delaware County clients regardless of their specific location. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>
         </div>

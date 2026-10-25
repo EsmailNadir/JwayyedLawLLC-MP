@@ -70,26 +70,26 @@ export default function DelawareCountyMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Delaware County Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County Municipal Court, located at 70 N. Union St in Delaware, Ohio, serves one of Ohio&apos;s fastest-growing counties — a suburban area north of Columbus along the US 23 corridor that has seen significant population expansion in communities like Powell, Lewis Center, and Dublin. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations arising throughout Delaware County. Jwayyed Law LLC represents defendants in Delaware County Municipal Court in OVI defense, misdemeanor criminal defense, and traffic matters. The 30-day ALS appeal deadline under <strong>ORC 4511.191</strong> begins running at arrest — contact our office immediately.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County is served by active state highway enforcement on US 23, SR 36/37, and SR 315. OVI arrests frequently occur in the US 23 corridor and near entertainment districts in Powell and Lewis Center. Our attorney reviews the traffic stop basis, the administration of standardized field sobriety tests, and the DataMaster breath instrument records to build a comprehensive defense. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device is installed, and fines are updated to $565–$1,075 for a first offense.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Delaware County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County Municipal Court handles a range of misdemeanor offenses including domestic violence (<strong>ORC 2919.25</strong>), assault, theft, disorderly conduct, and drug possession. Under <strong>ORC 2929.21</strong>, an M1 conviction carries up to 180 days in jail and a $1,000 fine. Many misdemeanor convictions are eligible for sealing under <strong>ORC 2953.32</strong> after a one-year waiting period, which can remove the record from most background checks. Our attorney pursues the best possible resolution — including dismissal, diversion, or reduced charges — tailored to the specific facts of your case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Delaware County Municipal Court. For more information, see our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Delaware County Municipal Court. For more information, see our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice areas.
             </p>
           </div>
         </div>

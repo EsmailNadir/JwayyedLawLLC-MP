@@ -76,42 +76,42 @@ export default function ClintonCriminalMisdemeanorDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Criminal Misdemeanor Defense in Clinton County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A misdemeanor charge in Clinton County is not a minor matter. A conviction in Wilmington Municipal Court, located at 69 N. South St, Wilmington, OH 45177, creates a permanent criminal record that can affect your employment, housing, professional licenses, and personal reputation. At Jwayyed Law LLC, we provide experienced{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link>{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link>{' '}
               representation for clients facing misdemeanor charges throughout Clinton County, including Wilmington, Sabina, Blanchester, Clarksville, and Port William.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County is a rural agricultural community in southwestern Ohio where close-knit community ties mean that a criminal charge can damage personal and professional relationships quickly. The Clinton County prosecutor&apos;s office handles all misdemeanor cases in Wilmington Municipal Court, and local prosecutor practices and judicial preferences can meaningfully affect case outcomes. Our attorney understands these local dynamics and tailors strategy accordingly.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Types of Misdemeanor Cases in Wilmington Municipal Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Wilmington Municipal Court handles the full range of misdemeanor criminal charges arising in Clinton County. Common cases our firm handles include: assault and aggravated assault (first-degree misdemeanor, up to 180 days in jail); domestic violence (first-degree misdemeanor with mandatory minimum jail time on repeat offenses); theft and shoplifting (degree depends on value of property); drug possession of marijuana, controlled substances, and drug paraphernalia; criminal damaging or endangering; menacing and aggravated menacing; disorderly conduct; criminal trespass; driving under suspension; and violation of protection orders. Each charge carries distinct penalties, defenses, and plea negotiation dynamics.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Penalties Under Ohio Revised Code
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code sets the following maximum misdemeanor penalties that Wilmington Municipal Court applies: first-degree misdemeanors carry up to 180 days in jail and a fine of up to $1,000; second-degree misdemeanors carry up to 90 days in jail and a $750 fine; third-degree misdemeanors carry up to 60 days in jail and a $500 fine; fourth-degree misdemeanors carry up to 30 days in jail and a $250 fine; minor misdemeanors carry no jail time but a fine of up to $150. These maximums can often be significantly reduced or avoided through skilled representation, plea negotiation, alternative sentencing, or diversion programs.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies in Clinton County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Effective misdemeanor defense in Clinton County requires thorough investigation of the facts and law. Our firm examines whether the arrest or search was constitutional under the Fourth Amendment and ORC 2935.26; whether Miranda rights were properly given before any statements were made; whether the evidence is sufficient to prove each element of the offense beyond a reasonable doubt; and whether witnesses or alleged victims have credibility issues that can be challenged. In assault and domestic violence cases, self-defense and defense of others under Ohio law provide complete defenses when the facts support them. In drug cases, we challenge search and seizure issues, chain of custody, and lab certification. We also evaluate eligibility for Intervention in Lieu of Conviction (ILC) and other diversion programs that can result in dismissal without conviction.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Expungement and Record Sealing in Clinton County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Even if you receive a misdemeanor conviction in Wilmington Municipal Court, you may be eligible for expungement and record sealing under Ohio Revised Code 2953.31 after completing your sentence and waiting periods. Expungement seals the record from public view, removes it from most background checks, and allows you to legally answer &quot;no conviction&quot; on most job and housing applications. Our firm evaluates expungement eligibility for every client and assists with the petition process in Wilmington Municipal Court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing misdemeanor charges in Clinton County, contact Jwayyed Law LLC immediately at (614) 285-5482. Early retention of counsel before arraignment is the most important step you can take to protect your rights. We will review the charges and evidence, explain your options, and develop a defense strategy tailored to the specific facts of your case and the procedures of Wilmington Municipal Court.
             </p>
           </div>

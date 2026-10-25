@@ -218,15 +218,15 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
           autoFocus={autoFocus}
           className="
             w-full pl-10 pr-4 py-2.5 
-            bg-gray-50 border border-gray-200 rounded-lg
-            text-base sm:text-sm text-gray-900 placeholder-gray-400
-            focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500
+            bg-ice border border-navy-950/10
+            text-base sm:text-sm text-navy-950 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-sky-deep/20 focus:border-sky-deep
             transition-all duration-200
           "
         />
         {/* Search Icon */}
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-950/50"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -247,7 +247,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
                 setIsOpen(false);
                 inputRef.current?.focus();
                 }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition-colors"
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center rounded-full bg-sky-deep hover:bg-sky-deep transition-colors"
             >
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
@@ -261,7 +261,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
         <div
             className="
             absolute top-full left-0 right-0 mt-2
-            bg-white border border-gray-100 rounded-xl shadow-xl
+            bg-white border border-navy-950/10
             overflow-hidden z-[130]
             "
         >
@@ -277,13 +277,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
                     }}
                     className={`
                       flex flex-col px-4 py-3 transition-colors
-                      ${index === selectedIndex ? 'bg-orange-50' : 'hover:bg-gray-50'}
+                      ${index === selectedIndex ? 'bg-ice' : 'hover:bg-ice'}
                     `}
                   >
-                    <span className={`text-sm font-medium ${index === selectedIndex ? 'text-orange-600' : 'text-gray-900'}`}>
+                    <span className={`text-sm font-medium ${index === selectedIndex ? 'text-sky-deep' : 'text-navy-950'}`}>
                       {result.item.title}
                     </span>
-                    <span className="text-xs text-gray-400 mt-0.5">
+                    <span className="text-xs text-navy-950/50 mt-0.5">
                       {result.item.subcategory 
                         ? `${result.item.category} › ${result.item.subcategory}`
                         : result.item.category
@@ -295,19 +295,19 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
             </ul>
           ) : (
             <div className="px-4 py-8 text-center">
-              <p className="text-sm text-gray-500">No results found for "{query}"</p>
-              <p className="text-xs text-gray-400 mt-1">Try searching for a service or location</p>
+              <p className="text-sm text-navy-950/60">No results found for "{query}"</p>
+              <p className="text-xs text-navy-950/50 mt-1">Try searching for a service or location</p>
             </div>
           )}
 
           {/* Footer hint */}
-          {/* <div className="px-4 py-2 bg-gray-50 border-t border-gray-100">
-            <p className="text-xs text-gray-400">
-              <kbd className="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px] font-mono">↑↓</kbd>
+          {/* <div className="px-4 py-2 bg-ice border-t border-navy-950/10">
+            <p className="text-xs text-navy-950/50">
+              <kbd className="px-1.5 py-0.5 bg-white border border-navy-950/10 text-[10px] font-mono">↑↓</kbd>
               {' '}to navigate{' '}
-              <kbd className="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px] font-mono">↵</kbd>
+              <kbd className="px-1.5 py-0.5 bg-white border border-navy-950/10 text-[10px] font-mono">↵</kbd>
               {' '}to select{' '}
-              <kbd className="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px] font-mono">esc</kbd>
+              <kbd className="px-1.5 py-0.5 bg-white border border-navy-950/10 text-[10px] font-mono">esc</kbd>
               {' '}to close
             </p>
           </div> */}

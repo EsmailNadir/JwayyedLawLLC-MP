@@ -80,11 +80,11 @@ export default function DelawareCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Delaware County Court Representation
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County is one of Ohio&apos;s fastest-growing counties, stretching north of Columbus through
               communities like Powell, Lewis Center, Dublin (partly), Westerville (partly), Sunbury, Galena, and the
               county seat of Delaware. As the population grows, so does the caseload at Delaware County Municipal
@@ -92,7 +92,7 @@ export default function DelawareCountyCourtsPage() {
               misdemeanor criminal defense, and civil representation for clients throughout Delaware County.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s OVI statute, ORC 4511.19, prohibits operating any vehicle with a blood alcohol concentration
               of 0.08% or higher (0.04% for commercial drivers; 0.02% for drivers under 21). OVI is one of the most
               defensible charges in Ohio criminal law because every element of the process—the traffic stop, field
@@ -102,7 +102,7 @@ export default function DelawareCountyCourtsPage() {
               cases to identify and exploit any weaknesses in the prosecution&apos;s case.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Delaware County Municipal Court handles the full range of misdemeanor criminal offenses
               including domestic violence under ORC 2919.25, assault under ORC 2903.13, theft under ORC 2913.02,
               drug possession under ORC 2925.11, and disorderly conduct under ORC 2917.11. Misdemeanor convictions
@@ -112,7 +112,7 @@ export default function DelawareCountyCourtsPage() {
               possible outcome is pursued.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For civil matters in Delaware County, our firm assists with landlord-tenant disputes, contract claims,
               and other civil litigation in Delaware County Municipal Court (jurisdiction up to $15,000) and Delaware
               County Common Pleas Court (jurisdiction over $15,000). We also handle personal injury cases arising
@@ -121,7 +121,7 @@ export default function DelawareCountyCourtsPage() {
               on Route 23, Jwayyed Law LLC provides thorough, client-focused representation.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under changes to Ohio law effective April 9, 2025 (House Bill 37), OVI sentencing and administrative
               license suspension procedures were updated. Courts now have broader discretion regarding ignition
               interlock requirements and the hard suspension period. These changes underscore why it is important
@@ -129,35 +129,35 @@ export default function DelawareCountyCourtsPage() {
               case law developments affecting our Delaware County clients and adjusts defense strategies accordingly.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Courts We Appear In
             </h3>
 
             <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Delaware County Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">70 N. Union St, Delaware, OH 43015</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">70 N. Union St, Delaware, OH 43015</p>
+                <p className="text-sm text-navy-950/70">
                   OVI &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Small claims &bull; Evictions
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Delaware County Common Pleas Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">91 N. Sandusky St, Delaware, OH 43015</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">91 N. Sandusky St, Delaware, OH 43015</p>
+                <p className="text-sm text-navy-950/70">
                   Felony criminal cases &bull; Civil cases over $15,000 &bull; Domestic relations &bull; Probate
                 </p>
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Practice Areas in Delaware County
             </h3>
-            <ul className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 space-y-2 leading-relaxed">
+            <ul className="text-navy-950/80 mb-6 space-y-2 leading-relaxed">
               <li><strong>OVI / DUI Defense:</strong> Challenging stops, field sobriety tests, breath and blood tests; ALS appeals (ORC 4511.191); license reinstatement</li>
               <li><strong>Misdemeanor Criminal Defense:</strong> Domestic violence (ORC 2919.25), assault (ORC 2903.13), theft (ORC 2913.02), drug possession (ORC 2925.11)</li>
               <li><strong>Traffic Violations:</strong> Reckless operation, driving under suspension, speeding, following too closely</li>
@@ -166,22 +166,22 @@ export default function DelawareCountyCourtsPage() {
               <li><strong>Expungement / Record Sealing:</strong> Evaluating eligibility and filing sealing applications under ORC 2953.32</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Communities We Serve in Delaware County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We serve clients throughout Delaware County including Delaware (county seat), Powell, Lewis Center,
               Westerville, Dublin, Sunbury, Galena, Ostrander, and all surrounding communities. For neighboring
               county representation, see our pages for{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/courts/morrow-county" className="text-[#b87333] underline hover:opacity-80">Morrow County</Link>, and{' '}
-              <Link href="/courts/pickaway-county" className="text-[#b87333] underline hover:opacity-80">Pickaway County</Link>.
+              <Link href="/courts/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>,{' '}
+              <Link href="/courts/morrow-county" className="text-sky-deep underline hover:opacity-80">Morrow County</Link>, and{' '}
+              <Link href="/courts/pickaway-county" className="text-sky-deep underline hover:opacity-80">Pickaway County</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Delaware County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our attorney personally handles every Delaware County case—you will not be passed off to a paralegal
               or associate. We know Delaware County Municipal Court procedures, understand how local prosecutors
               approach OVI and criminal cases, and stay current on Ohio law changes. From your first consultation

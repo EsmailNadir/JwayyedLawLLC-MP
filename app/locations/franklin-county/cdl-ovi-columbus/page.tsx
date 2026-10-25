@@ -70,68 +70,68 @@ export default function ColumbusCDLOVIPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               CDL / Commercial Driver OVI Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus sits at the intersection of two of Ohio&apos;s busiest interstate corridors — I-70 and I-71 — and is a major logistics hub with a large population of commercial drivers: truck drivers, bus operators, delivery drivers, and others who depend on their CDL for their livelihood. An OVI conviction in Columbus — even in a personal vehicle, not a commercial vehicle — triggers federal CDL disqualification consequences that can end a driving career. The first OVI conviction means a 1-year federal CDL disqualification. The second means lifetime disqualification. These consequences are imposed by federal law independently of Ohio&apos;s criminal penalties, and they apply regardless of whether the CDL holder was operating a commercial vehicle at the time of the arrest. Jwayyed Law LLC provides experienced CDL OVI defense for Columbus commercial drivers. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               immediately.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               CDL-Specific OVI Thresholds and Federal Disqualification
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Federal regulations under 49 CFR § 392.5 prohibit operating a commercial motor vehicle with a BAC of 0.04% or above. Ohio law adopts this federal threshold. This means Columbus CDL holders operating a commercial vehicle — a semi-truck, a bus, a delivery vehicle — face OVI charges at half the standard alcohol threshold. A first CDL OVI conviction results in a 1-year disqualification from operating commercial vehicles (3 years if hazardous materials were being transported). A second conviction results in lifetime CDL disqualification under 49 U.S.C. § 31311 — which applies regardless of which state the offense occurred in.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The disqualification consequences also apply to a CDL holder arrested for a standard OVI in a personal vehicle. Federal law is clear that a CDL holder convicted of operating any motor vehicle under the influence — commercial or personal — faces CDL disqualification. A Columbus truck driver stopped for OVI in their personal car on I-270 on a weekend faces the same CDL career consequences as one stopped in a commercial vehicle.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Near-Threshold BAC Challenges for CDL Drivers
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Because the CDL threshold is 0.04% — half the standard threshold — instrument accuracy is especially critical in CDL OVI defense. Ohio breathalyzer instruments have certified margins of error, and a BAC reading near 0.04% may fall within or overlap that margin of error. Our firm subpoenas the calibration and maintenance records of the specific instrument used in every CDL OVI case, compares those records against the Ohio Department of Health certification standards, and evaluates whether the near-threshold reading reliably establishes a BAC above 0.04%.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               ALS Appeal — Critical for CDL Holders
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The 30-day ALS appeal deadline is especially critical for CDL holders, because during the suspension period — before the appeal is decided — CDL holders typically cannot operate commercial vehicles. This means an extended uncontested suspension translates directly into lost employment. Our firm files ALS appeals immediately after being retained for CDL OVI cases, requests a stay of suspension so the client can continue working during the appeal, and challenges all procedural and substantive grounds for the ALS.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Federal Employer Notification Requirements for CDL Holders
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Federal regulations under 49 CFR § 383.31 require CDL holders to notify their employer of an OVI conviction within 30 days of the conviction — not the arrest. The notification must be made even if the OVI occurred in a personal vehicle, not a commercial vehicle. Some employers impose additional contractual obligations requiring notification of an arrest, regardless of the 30-day conviction rule. Separately, CDL holders must also notify the state licensing authority that issued their CDL. Failure to notify after a conviction is an independent federal violation that can result in additional CDL consequences beyond those from the conviction itself. Our firm advises CDL holder clients on these obligations from the outset.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               CDL Disqualification vs. Ohio License Suspension — Two Separate Consequences
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               CDL holders facing an OVI in Columbus face two distinct suspension tracks that operate independently. Ohio&apos;s Administrative License Suspension (ALS) and any criminal license suspension from the OVI conviction affect the ability to operate all motor vehicles under the defendant&apos;s Ohio driving privileges. Federal CDL disqualification — imposed by the Federal Motor Carrier Safety Administration under 49 U.S.C. § 31311 — is a separate consequence that prevents operation of commercial motor vehicles regardless of Ohio driving privileges. A CDL holder who successfully lifts the Ohio ALS and avoids a criminal suspension through a successful defense may still face federal CDL disqualification if convicted. Both tracks must be addressed simultaneously in every CDL OVI case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For a second-offense CDL OVI — the lifetime federal disqualification scenario — the stakes of the criminal defense cannot be overstated. A Columbus truck driver with a prior OVI conviction who faces a second OVI charge is facing permanent loss of their commercial driving career. Every available defense must be pursued. Our firm evaluates prior conviction records for accuracy, challenges the current arrest on all constitutional grounds, and advises on how each potential outcome affects both the Ohio license and the federal CDL.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Columbus as a CDL OVI Enforcement Hub
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus sits at the intersection of I-70 (running east-west) and I-71 (running northeast-southwest), two of the most heavily trafficked freight corridors in the Midwest. The Ohio State Highway Patrol and local law enforcement regularly conduct commercial vehicle inspection stations and OVI enforcement operations along these corridors in Franklin County. Columbus is also the hub of Ohio&apos;s Amazon, FedEx, and UPS distribution infrastructure, employing large numbers of commercial drivers who travel these corridors daily. An OVI charge for a commercial driver in this environment is a genuine career-threatening event. Our firm provides experienced CDL OVI defense with full awareness of the federal and state consequences that commercial drivers face.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               For CDL holders, every day without a defense attorney is a day closer to potential career-ending consequences.
             </p>
           </div>

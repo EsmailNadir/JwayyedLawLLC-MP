@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useId, useState } from 'react';
+import { Plus } from 'lucide-react';
 
 interface FAQItem {
   question: string;
@@ -10,85 +11,93 @@ interface FAQItem {
 interface FAQProps {
   faqs: FAQItem[];
   className?: string;
+  /** Section heading. Defaults to "Questions clients ask". */
+  title?: string;
 }
 
-export default function FAQ({ faqs, className = '' }: FAQProps) {
+/**
+ * Questions and answers, with FAQPage structured data.
+ *
+ * The heading sits in a left column on wide screens so the questions get a
+ * long, readable measure. Answers open with a grid-rows transition, which
+ * shows the whole answer however long it is (the old max-height trick cut
+ * long answers off) and stays still under reduced motion.
+ */
+export default function FAQ({ faqs, className = '', title = 'Questions clients ask' }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const id = useId();
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  // Generate FAQPage schema markup
   const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <section className={`py-12 bg-gray-50 ${className}`}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-8 text-center">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
-              >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors font-['Inter',_'Arial',_sans-serif]"
-                    aria-expanded={openIndex === index}
-                  >
-                    <span className="font-semibold text-gray-900 pr-8">
-                      {faq.question}
-                    </span>
-                    <svg
-                      className={`w-5 h-5 text-orange-500 flex-shrink-0 transition-transform ${
-                        openIndex === index ? 'rotate-180' : ''
-                      }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="px-6 py-4 text-gray-700 leading-relaxed border-t border-gray-100 font-['Inter',_'Arial',_sans-serif]">
-                    {faq.answer}
-                  </div>
-                </div>
-              </div>
-            ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <section
+        className={`jw jw-mark jw-mark--navy bg-ice text-navy-950 py-20 sm:py-28 ${className}`}
+        style={
+          {
+            '--jw-mark-fade': 'radial-gradient(ellipse 55% 70% at 0% 100%, #000 10%, transparent 100%)',
+            '--jw-mark-opacity': 0.06,
+          } as React.CSSProperties
+        }
+        aria-labelledby={`${id}-heading`}
+      >
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <h2 id={`${id}-heading`} className="jw-display text-[clamp(2rem,1.3rem+2.4vw,3.25rem)] leading-[1.08] lg:sticky lg:top-28">
+              {title}
+            </h2>
           </div>
+          <ul className="lg:col-span-8 bg-white">
+            {faqs.map((faq, index) => {
+              const open = openIndex === index;
+              return (
+                <li key={index} className={index > 0 ? 'border-t border-navy-950/10' : ''}>
+                  <h3>
+                    <button
+                      type="button"
+                      id={`${id}-q${index}`}
+                      onClick={() => setOpenIndex(open ? null : index)}
+                      aria-expanded={open}
+                      aria-controls={`${id}-a${index}`}
+                      className="w-full flex items-start justify-between gap-6 px-6 sm:px-8 py-6 text-left font-semibold text-[length:var(--step-body)] leading-snug hover:text-sky-deep transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sky-deep"
+                    >
+                      <span>{faq.question}</span>
+                      <Plus
+                        className={`mt-0.5 w-5 h-5 flex-shrink-0 text-sky-deep transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
+                        aria-hidden="true"
+                      />
+                    </button>
+                  </h3>
+                  <div
+                    id={`${id}-a${index}`}
+                    role="region"
+                    aria-labelledby={`${id}-q${index}`}
+                    className={`grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${
+                      open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                    }`}
+                  >
+                    <div className="overflow-hidden" inert={!open}>
+                      <p className="px-6 sm:px-8 pb-7 max-w-[70ch] text-navy-950/80 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </>
   );
 }
-

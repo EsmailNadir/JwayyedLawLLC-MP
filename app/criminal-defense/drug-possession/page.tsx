@@ -76,50 +76,50 @@ export default function DrugPossessionPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Drug Possession Defense in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Drug possession charges in Ohio — governed by Ohio Revised Code 2925.11 — range from a minor misdemeanor marijuana citation to serious felony charges for possession of cocaine, heroin, fentanyl, or methamphetamine that carry the possibility of prison and lasting career consequences. A felony drug conviction affects employment applications, professional licensing, housing, and in some cases federal benefits. Ohio&apos;s 2023 adult-use marijuana law changed the landscape for cannabis possession, but it did not eliminate drug crime for larger quantities or for other controlled substances. Jwayyed Law LLC provides experienced drug possession defense for clients in Columbus, Franklin County, and communities throughout central Ohio. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to discuss your situation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Drug possession cases present unique defense opportunities compared to many other charges. The most powerful is suppression — if the traffic stop, search, or seizure that produced the evidence was conducted unlawfully, a successful motion to suppress can exclude all drug evidence, leaving the prosecution with nothing to prove the charge. Our firm scrutinizes every step of the police encounter: the basis for the stop, the scope and basis for the search, whether consent was truly voluntary, whether the search exceeded its authorized scope, and whether the chain of custody of the evidence was maintained. In many drug cases, the legal basis for the search is the most important issue in the entire case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Drug Possession Under R.C. 2925.11 — What the Law Requires
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2925.11 prohibits knowingly obtaining, possessing, or using a controlled substance or controlled substance analog. The statute&apos;s key element is <em>knowing</em> possession — the prosecution must prove that the defendant was aware of the substance&apos;s presence and its nature as a controlled substance. Accidental possession, unknowing presence of drugs in a shared vehicle or home, and situations where the defendant had no reason to know the substance was illegal can all challenge the knowledge element. The degree of the offense depends on the substance&apos;s Schedule classification under Ohio law and the quantity possessed.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio&apos;s Adult-Use Marijuana Framework — What Remains Criminal
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Issue 2, effective December 7, 2023, and implemented through House Bill 86, made Ohio the 24th state to legalize adult-use marijuana. Adults 21 and older may legally possess up to <strong>2.5 ounces</strong> of marijuana and up to <strong>15 grams</strong> of marijuana concentrate without criminal liability. Home cultivation of up to <strong>6 plants</strong> per adult is permitted. However, possession above these amounts remains criminal. Possession of 2.5–10 ounces is a minor misdemeanor. Possession of 200 grams or more triggers M4 through felony charges. Marijuana impaired driving — OVI under R.C. 4511.19 — remains fully illegal.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Felony Drug Possession — Controlled Substances Other Than Marijuana
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Possession of cocaine, heroin, fentanyl, methamphetamine, or other Schedule I and II controlled substances begins as a fifth-degree felony under R.C. 2925.11 regardless of quantity, escalating rapidly with the amount. Bulk cocaine possession (15 grams+) is F4. Bulk heroin (10 grams+) is F4. Aggravated possession — between the bulk amount and five times the bulk amount of any Schedule I or II substance — is F5. Amounts above those thresholds escalate to F4 through F1. Felony drug possession convictions require prison in many cases and carry collateral consequences including federal student loan restrictions, public housing eligibility, and professional licensing impacts.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Intervention in Lieu of Conviction and HART Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For eligible first-time defendants, Ohio&apos;s Intervention in Lieu of Conviction (ILC) program under ORC 2951.041 allows completion of substance abuse treatment in lieu of a conviction. Successful ILC results in full dismissal — no conviction, no record. Franklin County Municipal Court also operates the HART Court (opioid and substance use recovery docket), which provides structured treatment programming for eligible defendants as an alternative to traditional prosecution. Our firm evaluates these options at the outset of every drug possession case, because a path to dismissal is always better than any plea.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Suppression motions:</strong> Challenging unlawful stops, searches, or seizures to exclude drug evidence</li>
               <li><strong>ILC / HART Court:</strong> Pursuing treatment-based dismissal for eligible first-time defendants</li>
               <li><strong>Marijuana law analysis:</strong> Confirming whether possession was within Ohio adult-use legal limits</li>
@@ -128,14 +128,14 @@ export default function DrugPossessionPage() {
               <li><strong>Expungement planning:</strong> Advising on ORC 2953.32 eligibility from the outset of the case</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing drug possession charges in Ohio — in{' '}
-              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/locations/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>,{' '}
-              <Link href="/locations/greene-county" className="text-[#b87333] underline hover:opacity-80">Greene County</Link>, or elsewhere — contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <Link href="/locations/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>,{' '}
+              <Link href="/locations/delaware-county" className="text-sky-deep underline hover:opacity-80">Delaware County</Link>,{' '}
+              <Link href="/locations/greene-county" className="text-sky-deep underline hover:opacity-80">Greene County</Link>, or elsewhere — contact Jwayyed Law LLC at{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               Drug cases move quickly through the Ohio court system — early intervention is essential.
             </p>
           </div>

@@ -70,53 +70,53 @@ export default function ColumbusOVIWithAccidentPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               OVI With Accident Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An OVI arrest following a Columbus traffic accident significantly raises the stakes of the criminal case. A standard OVI — already serious — can escalate to aggravated vehicular assault (a fourth-degree felony) when the accident caused serious physical harm to another person, or to aggravated vehicular homicide (a second-degree felony) when a death results. These felony charges require Franklin County Court of Common Pleas proceedings, carry mandatory prison time, and produce civil exposure that can follow the defendant for years. Jwayyed Law LLC provides experienced defense for OVI accident cases in Columbus, coordinating the criminal defense strategy across both the underlying OVI and any accident-related charges. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               immediately.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Charges That Can Arise From a Columbus OVI Accident
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a Columbus OVI arrest involves an accident, the charge structure depends on the severity of any injuries. A property-damage-only accident produces a standard OVI plus a failure to control or reckless operation charge. When the accident causes physical harm (not necessarily serious), aggravated vehicular assault under R.C. 2903.08 may be charged — an F4 felony at baseline, escalating to F3 if the defendant has a prior OVI or if the victim is a protected person. When the accident causes serious physical harm (significant injury), the F3 charge applies from the start. When the accident causes death, aggravated vehicular homicide under R.C. 2903.06 may be charged — an F2 felony.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               OVI Accident Defense Strategy — Coordinating Multiple Charges
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A Columbus OVI accident defense must address multiple simultaneous issues: the constitutional validity of the traffic stop and subsequent OVI investigation; the BAC evidence (breathalyzer or blood test); the causation of the accident (was the OVI the cause of the collision, or did another factor — road conditions, the other driver&apos;s negligence, a vehicle defect — cause or contribute to the accident?); and the severity of any alleged injuries. In felony vehicular assault cases, challenging whether the injuries meet the statutory definition of &ldquo;serious physical harm&rdquo; under R.C. 2901.01 can be critical to the degree of the charge.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Accident causation is a defense element that does not arise in a standard traffic-stop OVI. An accident can result from road conditions, mechanical failure, or the actions of another driver — and the prosecution must establish that the defendant&apos;s impairment, not these other factors, was the proximate cause of the collision. Our firm engages accident reconstruction analysis where the facts support it, evaluates the physical evidence at the scene against the police reconstruction report, and identifies any causation arguments that undercut the vehicular assault charge even if the underlying OVI cannot be dismissed.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Civil Liability and the Interaction With the Criminal Case
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An OVI accident in Columbus that injures another person typically results in a civil lawsuit by the injured party in addition to the criminal prosecution. The civil case is separate from the criminal proceeding but runs on a parallel track. Evidence from the criminal case — including the BAC reading, the police report, field sobriety test results, and any criminal conviction — is usable in the civil case. A criminal conviction, particularly a guilty plea, can significantly weaken the civil defense because it removes the defendant&apos;s ability to contest liability. Our firm advises on the interaction between the criminal defense and any civil exposure, coordinating strategy so that decisions made in the criminal case do not inadvertently damage the civil defense position.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s auto insurance system means the injured party will likely pursue both the defendant&apos;s liability insurance and, if coverage is insufficient, a direct judgment. A Columbus defendant who pleads guilty to OVI and aggravated vehicular assault faces a civil presumption of negligence that makes a large damages verdict far more likely. Decisions about criminal pleas and admissions must be made with this civil exposure in mind.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Leaving the Scene — Additional Charges That Compound the Case
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 4549.02 requires any driver involved in an accident that causes injury or property damage to stop at the scene, provide identification and insurance information, and render reasonable assistance. Leaving the scene of a Columbus OVI accident creates additional felony exposure: leaving the scene of an accident involving injury is a fifth-degree felony; leaving the scene of an accident involving serious injury or death escalates to F4 or F3 depending on severity. In cases where a driver left the scene and was later identified, these hit-and-run charges often carry heavier practical consequences than the underlying OVI. Our firm handles all related charges as part of a coordinated defense strategy.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>ALS appeal:</strong> Filing within the 30-day deadline immediately upon being retained</li>
               <li><strong>Stop and BAC challenges:</strong> Constitutional validity of the stop and accuracy of all chemical test evidence</li>
               <li><strong>Accident causation analysis:</strong> Evaluating whether OVI impairment was the actual cause of the collision versus road conditions, mechanical failure, or third-party negligence</li>
@@ -125,11 +125,11 @@ export default function ColumbusOVIWithAccidentPage() {
               <li><strong>Hit-and-run defense:</strong> Addressing any leaving-the-scene charges that accompany the OVI and accident allegations</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               OVI accident cases involve complex criminal and civil issues that require immediate and coordinated defense.
             </p>
           </div>

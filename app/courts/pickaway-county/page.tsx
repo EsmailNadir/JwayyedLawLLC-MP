@@ -78,10 +78,10 @@ export default function PickawayCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Pickaway County Legal Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Pickaway County lies just 30 to 40 minutes south of Columbus along the U.S. Route 23 corridor, making it
               one of the fastest-growing counties in central Ohio. The county seat of Circleville — famous for the annual
               Pumpkin Show — anchors a county that blends rural farmland with increasingly suburban communities such as
@@ -90,9 +90,9 @@ export default function PickawayCountyCourtsPage() {
               misdemeanor offenses, personal injury claims, and the need to form and protect small businesses. Jwayyed Law
               LLC is committed to providing experienced, client-focused legal representation throughout Pickaway County.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense is one of the most critical services we offer Pickaway County clients. Under{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">
                 ORC 4511.19
               </Link>
               , Ohio prohibits operating a vehicle with a BAC of 0.08 or higher or while impaired by alcohol, controlled
@@ -104,7 +104,7 @@ export default function PickawayCountyCourtsPage() {
               test, your license is automatically suspended, and you have only 30 days to appeal that suspension in
               Circleville Municipal Court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Misdemeanor criminal defense is another major area of representation in Pickaway County. Circleville
               Municipal Court at 141 S. Court St handles charges ranging from disorderly conduct and petty theft to
               domestic violence and drug-related offenses. The county&rsquo;s Pumpkin Show, one of the largest free street
@@ -114,7 +114,7 @@ export default function PickawayCountyCourtsPage() {
               Our firm investigates each case thoroughly, challenges the evidence, and pursues every available avenue
               to achieve a dismissal, reduction, or diversion for our clients.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Civil and business legal needs are equally important for Pickaway County residents and entrepreneurs.
               Personal injury claims from accidents on U.S. 23 or county roads must be filed within Ohio&rsquo;s two-year
               statute of limitations under ORC 2305.10 — delaying contact with an attorney puts your claim at risk.
@@ -124,35 +124,35 @@ export default function PickawayCountyCourtsPage() {
               matter in Circleville, our firm is ready to help.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Pickaway County Courts
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Circleville Municipal Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">141 S. Court St, Circleville, OH 43113</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Circleville Municipal Court</h4>
+                <p className="text-navy-950/80">141 S. Court St, Circleville, OH 43113</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=141+S+Court+St,+Circleville,+OH+43113"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Pickaway County Common Pleas Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">207 S. Court St, Circleville, OH 43113</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Pickaway County Common Pleas Court</h4>
+                <p className="text-navy-950/80">207 S. Court St, Circleville, OH 43113</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=207+S+Court+St,+Circleville,+OH+43113"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
@@ -160,14 +160,14 @@ export default function PickawayCountyCourtsPage() {
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Services We Provide in Pickaway County
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>
                 <Link
                   href="/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   OVI/DUI Defense
                 </Link>
@@ -178,7 +178,7 @@ export default function PickawayCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Misdemeanor Criminal Defense
                 </Link>
@@ -188,7 +188,7 @@ export default function PickawayCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/pickaway-county/personal-injury-pickaway-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Personal Injury
                 </Link>
@@ -198,7 +198,7 @@ export default function PickawayCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/pickaway-county/business-formation-llc-pickaway-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Business Formation &amp; LLC
                 </Link>
@@ -211,10 +211,10 @@ export default function PickawayCountyCourtsPage() {
               </li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Pickaway County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC is based in Columbus and regularly serves clients throughout central and southern Ohio,
               including Pickaway County. We are familiar with the local court environment in Circleville, the legal
               landscape of U.S. Route 23 OVI enforcement, and the needs of Pickaway County&rsquo;s growing community.

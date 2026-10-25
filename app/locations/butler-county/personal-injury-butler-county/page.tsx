@@ -76,28 +76,28 @@ export default function PersonalInjuryButlerCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Butler County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County is one of Ohio&apos;s most populated counties, with busy commercial corridors in West Chester and Mason, a large university community in Oxford, and industrial and manufacturing presence in Hamilton and Middletown. Its road network — including I-75, SR 129 (Princeton Pike), US 27, US 42, and SR 4 (Dixie Highway) — carries heavy traffic and sees a significant number of serious accidents each year. If you or a family member was injured in Butler County due to another person&apos;s negligence, Jwayyed Law LLC provides experienced personal injury representation throughout the county. Under Ohio Revised Code 2305.10(A), most personal injury claims must be filed within two years of the injury — missing this deadline forfeits your right to any recovery.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s comparative negligence statute, ORC 2315.33, is one of the most important rules governing injury claims in Butler County. Under this modified comparative fault system, your compensation is reduced by your percentage of fault, and you cannot recover at all if you are 50% or more responsible for the accident. Insurance companies defending accident claims along the I-75 corridor and SR 129 frequently dispute fault to minimize their exposure. Our attorney conducts a thorough investigation of every case — gathering accident reports, surveillance footage, witness statements, and expert analysis — to accurately establish liability and protect your right to full compensation.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Common Injury Scenarios in Butler County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County generates a wide range of personal injury cases. Car and truck accidents on I-75 — a major commercial trucking corridor connecting Cincinnati to Dayton — are common and often severe. West Chester and Mason&apos;s retail corridors along SR 129 and US 42 produce slip and fall and premises liability cases at shopping centers, grocery stores, and restaurants. Miami University in Oxford creates significant pedestrian injury exposure, with students walking and cycling near vehicle traffic. Dog bite incidents are governed by Ohio&apos;s strict liability statute, ORC 955.28. Workplace injuries — particularly in Hamilton and Middletown&apos;s manufacturing sectors — may give rise to claims against third parties even when workers&apos; compensation applies. Each type of case requires a different investigation and legal strategy.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s collateral source rule, codified at ORC 2315.36, affects how damages are calculated in Butler County personal injury cases. This rule addresses whether payments from health insurance, disability benefits, or other collateral sources are deducted from the defendant&apos;s liability. Understanding how these rules interact with your specific damages — including medical bills, lost wages, and pain and suffering — is essential to maximizing your recovery. Our attorney evaluates every component of your losses and builds a claim that reflects the true extent of your damages.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Butler County personal injury cases valued over $15,000 are filed at the Butler County Common Pleas Court at 315 High Street, Hamilton, OH 45011. We handle all aspects of your case — from the initial investigation through settlement negotiations or trial. Personal injury representation is provided on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> throughout Ohio.
             </p>
           </div>
         </div>

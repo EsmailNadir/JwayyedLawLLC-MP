@@ -70,67 +70,67 @@ export default function ColumbusDisorderlyConductPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Disorderly Conduct Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus is Ohio&apos;s largest city and a major entertainment hub — home to the Short North, the Arena District, Ohio State University, and one of the most active nightlife scenes in the Midwest. When large gatherings, sporting events, and late-night entertainment produce altercations, loud arguments, or intoxicated behavior, Columbus Division of Police regularly issues disorderly conduct citations under R.C. 2917.11. A minor misdemeanor disorderly conduct carries no jail time, but it creates a criminal record that appears on background checks and can affect employment, professional licensing, and housing applications. When the charge escalates to a fourth-degree misdemeanor — which can happen when the person is intoxicated or persists after a police warning — jail time becomes a real possibility. Jwayyed Law LLC defends disorderly conduct charges at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to protect your record.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio&apos;s Disorderly Conduct Statute — R.C. 2917.11
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2917.11 defines disorderly conduct broadly. A person commits disorderly conduct when they recklessly cause inconvenience, annoyance, or alarm to another by: making unreasonable noise or an offensively coarse utterance, gesture, or display; addressing abusive language to any person present; insulting, taunting, or challenging another in a manner likely to provoke a violent response; creating a condition that is physically offensive or presents a risk of physical harm to others; or engaging in fighting, threatening, or violent behavior.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The baseline offense is a minor misdemeanor — a $150 fine, no jail time, no suspension. However, R.C. 2917.11(E) elevates the offense to a fourth-degree misdemeanor (30 days maximum jail, $250 fine) if: the offender persists in the disorderly conduct after a reasonable warning to stop; the offense is committed near a school, church, or government facility; or — most commonly in Columbus — the offender is intoxicated. The intoxication escalation is significant because Columbus nightlife arrests often involve alcohol, which automatically upgrades the minor misdemeanor to an M4.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Disorderly Conduct Hotspots in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The Short North — Columbus&apos;s arts and entertainment district running along High Street from I-670 north through Victorian Village — is the city&apos;s highest-volume area for disorderly conduct citations. Bars, restaurants, and late-night venues draw thousands on weekend nights, and the combination of alcohol, crowded sidewalks, and parking disputes regularly produces R.C. 2917.11 citations. The Columbus Division of Police&apos;s Short North District is specifically staffed to handle the volume of calls in this area.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio State game days create a city-wide enforcement heightening. I-270 and U.S. 23 tailgating, the Lane Avenue bar corridor, and the post-game High Street scene are all heavily patrolled. The Arena District generates similar patterns on Jackets and Clippers game nights. First-time Columbus visitors charged with disorderly conduct during an event often have no other criminal history — their case warrants aggressive pursuit of diversion and dismissal options.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies for Columbus Disorderly Conduct Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Minor misdemeanor disorderly conduct citations are often dismissible or reducible if challenged early. The R.C. 2917.11 &ldquo;recklessly causes inconvenience, annoyance, or alarm&rdquo; standard requires actual proof of the offending conduct beyond a reasonable doubt. Loud speech alone — absent fighting words or genuine threat — may be constitutionally protected under the First Amendment. Mere presence at a disturbance is not disorderly conduct. Columbus dash-cam and body-cam footage often shows less than the citation describes.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For fourth-degree misdemeanor charges based on intoxication, our firm evaluates whether the arresting officer had adequate grounds to determine intoxication and whether the escalation to M4 was properly charged. Diversion programs — including the Franklin County Municipal Court&apos;s pre-trial diversion program — are available for first-time offenders on minor charges and result in dismissal upon completion of conditions. Our firm pursues diversion as the first option in every disorderly conduct case where the client is eligible.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               First Amendment Protections and Disorderly Conduct in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A significant portion of Columbus disorderly conduct citations involve verbal confrontations rather than physical conduct. R.C. 2917.11&apos;s prohibition on &ldquo;offensively coarse utterance&rdquo; and &ldquo;abusive language likely to provoke a violent response&rdquo; is constitutionally constrained — these provisions reach only speech that constitutes &ldquo;fighting words&rdquo; under the First Amendment: speech that by its very utterance inflicts immediate injury or tends to incite an immediate breach of the peace. Profanity, loud criticism of police officers, or verbal expressions of anger that are offensive but not imminently threatening are constitutionally protected and cannot support a valid disorderly conduct conviction. Ohio courts, including the Tenth District Court of Appeals, have reversed disorderly conduct convictions where the charged conduct amounted to protected expression rather than the &ldquo;fighting words&rdquo; that the statute lawfully reaches.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               In Columbus, disorderly conduct citations arising from arguments with officers during traffic stops or at the scene of another incident are frequently based on a constitutionally questionable foundation. If the defendant was loud or argumentative but not physically threatening, the First Amendment may provide a defense. Our firm evaluates the constitutional basis for every speech-based disorderly conduct charge.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Disorderly Conduct as a Plea Resolution in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A disorderly conduct plea can be a valuable defense tool in Columbus when the original charge — domestic violence, assault, or criminal damaging — carries consequences more severe than the actual conduct warrants. A disorderly conduct conviction is a minor misdemeanor with no jail, no loss of civil rights, and no mandatory reporting obligations. Critically, a disorderly conduct conviction does not trigger the Lautenberg Amendment — the federal prohibition on firearm possession that attaches to any misdemeanor &ldquo;crime of domestic violence&rdquo; conviction under 18 U.S.C. § 922(g)(9). For Columbus defendants facing a domestic violence charge, a negotiated reduction to disorderly conduct can protect firearms rights that would otherwise be permanently lost.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               A disorderly conduct citation in Columbus is more consequential than it appears — and more defensible than you may think.
             </p>
           </div>

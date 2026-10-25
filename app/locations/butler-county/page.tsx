@@ -79,17 +79,17 @@ export default function ButlerCountyLocationsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Legal Services in Butler County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County sits southwest of Columbus between Dayton and Cincinnati, encompassing Hamilton, Middletown, Fairfield, Oxford, and West Chester Township. OVI and criminal charges in Butler County are heard at multiple area courts — Hamilton Municipal Court, Middletown Municipal Court, and Fairfield Municipal Court — depending on where the offense occurred. Jwayyed Law LLC represents clients across all Butler County area courts and the Butler County Court of Common Pleas. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>.
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
             </p>
 
             <div className="not-prose space-y-4 mb-10">
-              <div className="border-l-4 border-[#b87333] bg-gray-50 rounded-r-lg p-5">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-3">
+              <div className="border-l-4 border-sky-deep bg-ice p-5">
+                <h4 className="jw-serif text-lg font-bold text-navy-950 mb-3">
                   Butler County Practice Areas
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
@@ -118,23 +118,23 @@ export default function ButlerCountyLocationsPage() {
                     <Link
                       key={href}
                       href={href}
-                      className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                      className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
                     >
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors block mb-1">
+                      <span className="text-sm font-semibold text-navy-950 group-hover:text-sky-deep transition-colors block mb-1">
                         {label}
                       </span>
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs text-gray-500 group-hover:text-gray-700 transition-colors">{desc}</span>
+                      <span className="text-xs text-navy-950/60 group-hover:text-navy-950/80 transition-colors">{desc}</span>
                     </Link>
                   ))}
                 </div>
               </div>
             </div>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               For OVI arrests in Butler County, the 30-day ALS appeal deadline is critical — contact us immediately after any OVI arrest. Reach Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
             </p>
           </div>
         </div>

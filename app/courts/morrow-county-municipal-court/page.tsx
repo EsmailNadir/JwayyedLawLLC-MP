@@ -70,26 +70,26 @@ export default function MorrowCountyMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Morrow County Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Morrow County Municipal Court, located at 48 E High St in Mount Gilead, Ohio, serves this rural county north of Columbus. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations throughout Morrow County. Jwayyed Law LLC represents individuals charged in Morrow County Municipal Court — from OVI arrests on US 42 to misdemeanor criminal charges in the county. If you have been charged with OVI, the 30-day deadline to appeal your Administrative License Suspension under <strong>ORC 4511.191</strong> begins immediately upon arrest — time is critical.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               US 42 runs through Morrow County and is actively patrolled by the Ohio State Highway Patrol. OVI arrests in the county frequently arise from traffic stops on US 42 and SR 61. Our attorney reviews the basis for every stop, challenges the administration of standardized field sobriety tests, and examines the calibration and maintenance records for breath testing instruments. Under <strong>HB 37</strong> (effective April 9, 2025), minimum OVI fines are $565–$1,075 for a first offense, and the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when an ignition interlock device is installed — a significant benefit for rural residents who depend on their vehicles.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Morrow County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The court also handles misdemeanor charges including assault, domestic violence, theft, drug possession, and disorderly conduct. <strong>ORC 2929.21</strong> provides for up to 180 days in jail and a $1,000 fine for an M1 offense. In a small rural county, misdemeanor convictions can have an outsized impact on community standing and employment. Our attorney evaluates every available defense, seeks suppression or dismissal where appropriate, and works to minimize consequences for our clients in Morrow County.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Morrow County Municipal Court. See our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas for more.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Morrow County Municipal Court. See our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice areas for more.
             </p>
           </div>
         </div>

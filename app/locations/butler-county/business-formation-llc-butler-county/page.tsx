@@ -76,28 +76,28 @@ export default function BusinessFormationLLCButlerCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Butler County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County is one of the most economically active counties in southwestern Ohio. West Chester and Mason host major commercial corridors and corporate offices. Oxford, home to Miami University, supports a vibrant ecosystem of small businesses, retail establishments, and service providers. Hamilton retains a strong manufacturing and industrial base, while the I-75 corridor throughout the county serves as a logistics and commercial hub. Whether you are launching a new venture, restructuring an existing business, or formalizing a partnership, Jwayyed Law LLC provides experienced business formation and LLC counsel to entrepreneurs and business owners throughout Butler County. Ohio&apos;s LLC law is now governed by Ohio Revised Code Chapter 1706 — the Revised Limited Liability Company Act — which applies to all LLCs formed after February 11, 2022.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Choosing the right business entity is one of the most consequential decisions a new business owner makes. An LLC formed under ORC Chapter 1706 provides personal liability protection, flexible management structure, and favorable pass-through taxation. A corporation formed under ORC Chapter 1701 may be appropriate for businesses seeking investment, planning to issue stock, or with complex ownership structures. Sole proprietorships and general partnerships offer simplicity but leave owners personally exposed to business liabilities. Our attorney helps Butler County clients analyze their goals, tax situation, and risk tolerance before recommending an entity type — and then handles formation from start to finish.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Forming Your Ohio LLC: Key Steps and Requirements
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Forming an LLC in Ohio requires filing Articles of Organization with the Ohio Secretary of State (fee: $99) at ohio.gov/business, designating a statutory agent with an Ohio street address under ORC 1706.16, adopting an operating agreement that governs member rights and responsibilities, obtaining a federal Employer Identification Number (EIN) from the IRS (free), and registering for Ohio taxes — including the Commercial Activity Tax under ORC Chapter 5751 if gross receipts will exceed $150,000. The operating agreement is particularly important for multi-member LLCs: without one, member disputes are resolved under default statutory rules that may not align with your intentions. Our attorney drafts operating agreements tailored to your specific business structure, whether you are a sole member, equal co-owners, or partners with unequal contributions.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s LLC landscape changed significantly with the enactment of the Revised LLC Act (ORC Chapter 1706), effective February 11, 2022. Existing LLCs formed under the prior act (ORC Chapter 1705) were permitted to continue under that law until 2026, at which point transition to Chapter 1706 occurs automatically. If your Butler County business was formed before February 2022, it may still be governed by ORC Chapter 1705 and may need review and updating to ensure compliance with current law and to take advantage of Chapter 1706&apos;s more flexible provisions. Our attorney advises existing Ohio LLC owners on transition planning and any amendments needed to their organizational documents.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Beyond formation, Jwayyed Law LLC assists Butler County business clients with contract drafting and review, business dispute resolution, partnership and operating agreement amendments, and compliance matters. Starting your business correctly protects your personal assets, establishes the right tax structure, and prevents disputes before they arise. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/business/business-formation" className="text-[#b87333] underline hover:opacity-80">business formation practice</Link> throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/business/business-formation" className="text-sky-deep underline hover:opacity-80">business formation practice</Link> throughout Ohio.
             </p>
           </div>
         </div>

@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: `Can I get LDP if I refused the breathalyzer test?`,
-    answer: `Yes, but the process is harder and the waiting period is longer. For refusal cases, ORC 4511.191 as amended by HB 37 imposes a mandatory 30-day hard suspension before any LDP can be granted. Unlike the 15-day hard suspension in non-refusal cases, the 30-day period for refusal cases cannot be waived by the court even if the defendant agrees to an ignition interlock device. You must serve the full 30 days with no driving privilege whatsoever before LDP becomes available. After the 30-day period, the court can grant LDP subject to IID requirements and any other conditions. This is one of the key practical consequences of refusing a BAC test — the hard suspension period is doubled, and it cannot be shortened by any agreement. See our dedicated page on <Link href="/ovi-dui-defense/refusal-ovi" className="text-[#b87333] underline hover:opacity-80">refusal OVI defense</Link> for more information.`,
+    answer: `Yes, but the process is harder and the waiting period is longer. For refusal cases, ORC 4511.191 as amended by HB 37 imposes a mandatory 30-day hard suspension before any LDP can be granted. Unlike the 15-day hard suspension in non-refusal cases, the 30-day period for refusal cases cannot be waived by the court even if the defendant agrees to an ignition interlock device. You must serve the full 30 days with no driving privilege whatsoever before LDP becomes available. After the 30-day period, the court can grant LDP subject to IID requirements and any other conditions. This is one of the key practical consequences of refusing a BAC test — the hard suspension period is doubled, and it cannot be shortened by any agreement. See our dedicated page on <Link href="/ovi-dui-defense/refusal-ovi" className="text-sky-deep underline hover:opacity-80">refusal OVI defense</Link> for more information.`,
   },
   {
     question: `What is an ignition interlock device (IID) and how does it work?`,
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: `What happens if I drive outside my limited driving privileges?`,
-    answer: `Driving outside the scope of your court-authorized LDP — wrong hours, wrong purpose, wrong vehicle, or without the required IID — constitutes driving under OVI suspension under ORC 4510.14. This is a first-degree misdemeanor (M1) carrying a mandatory minimum 30 consecutive days in jail that cannot be waived or suspended by the court. The court that granted your LDP may also revoke it entirely, leaving you with no driving privileges at all for the remainder of the suspension. Prosecutors treat LDP violations seriously because they demonstrate willful noncompliance with court orders. If you are unsure whether a particular driving purpose is covered by your LDP order, do not drive — contact your attorney first. Jwayyed Law LLC represents clients throughout Ohio in both LDP applications and DUOVIS defense. <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">Contact us today</Link> for a consultation.`,
+    answer: `Driving outside the scope of your court-authorized LDP — wrong hours, wrong purpose, wrong vehicle, or without the required IID — constitutes driving under OVI suspension under ORC 4510.14. This is a first-degree misdemeanor (M1) carrying a mandatory minimum 30 consecutive days in jail that cannot be waived or suspended by the court. The court that granted your LDP may also revoke it entirely, leaving you with no driving privileges at all for the remainder of the suspension. Prosecutors treat LDP violations seriously because they demonstrate willful noncompliance with court orders. If you are unsure whether a particular driving purpose is covered by your LDP order, do not drive — contact your attorney first. Jwayyed Law LLC represents clients throughout Ohio in both LDP applications and DUOVIS defense. <Link href="/contact" className="text-sky-deep underline hover:opacity-80">Contact us today</Link> for a consultation.`,
   },
 ];
 
@@ -72,30 +72,30 @@ export default function LimitedDrivingPrivilegesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Limited Driving Privileges in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An OVI suspension in Ohio does not necessarily mean you cannot drive at all. Ohio law — specifically ORC 4510.021 — allows courts to grant limited driving privileges (LDP) to suspended drivers who can demonstrate a legitimate need to drive for work, school, medical treatment, or other enumerated purposes. LDP are not automatic and they do not apply immediately in all cases. The court must issue a formal order specifying the authorized purposes, days, hours, and any conditions such as an ignition interlock device (IID). Driving without a valid LDP order, or driving outside its boundaries, is its own crime under ORC 4510.14 with a mandatory 30-day jail minimum. At Jwayyed Law LLC, we help OVI defendants obtain LDP as quickly as legally permitted and navigate the suspension period lawfully as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>, so that a single OVI case does not compound into multiple criminal charges.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              An OVI suspension in Ohio does not necessarily mean you cannot drive at all. Ohio law — specifically ORC 4510.021 — allows courts to grant limited driving privileges (LDP) to suspended drivers who can demonstrate a legitimate need to drive for work, school, medical treatment, or other enumerated purposes. LDP are not automatic and they do not apply immediately in all cases. The court must issue a formal order specifying the authorized purposes, days, hours, and any conditions such as an ignition interlock device (IID). Driving without a valid LDP order, or driving outside its boundaries, is its own crime under ORC 4510.14 with a mandatory 30-day jail minimum. At Jwayyed Law LLC, we help OVI defendants obtain LDP as quickly as legally permitted and navigate the suspension period lawfully as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>, so that a single OVI case does not compound into multiple criminal charges.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              HB 37, which took effect on April 9, 2025, significantly restructured how limited driving privileges interact with OVI suspensions in Ohio. The most important change for first-time non-refusal OVI offenders is that courts now have discretion to waive the mandatory 15-day hard suspension entirely if the defendant agrees to install a certified IID. This means a first-time OVI defendant with a test-over result and no prior alcohol-related arrests can potentially receive LDP on the day of sentencing — or even have the ALS period covered — if an IID is installed in the vehicle. Previously, all suspended drivers had to serve a hard suspension period with no driving at all before any LDP could begin. For refusal cases, the new law retains a mandatory 30-day hard suspension that cannot be waived by any IID agreement, creating a significant practical distinction between refusing and submitting to BAC testing. Learn more about <Link href="/our-law-firm/blog/limited-driving-privileges-after-ovi-ohio" className="text-[#b87333] underline hover:text-[#a06828]">limited driving privileges after an OVI in Ohio</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              HB 37, which took effect on April 9, 2025, significantly restructured how limited driving privileges interact with OVI suspensions in Ohio. The most important change for first-time non-refusal OVI offenders is that courts now have discretion to waive the mandatory 15-day hard suspension entirely if the defendant agrees to install a certified IID. This means a first-time OVI defendant with a test-over result and no prior alcohol-related arrests can potentially receive LDP on the day of sentencing — or even have the ALS period covered — if an IID is installed in the vehicle. Previously, all suspended drivers had to serve a hard suspension period with no driving at all before any LDP could begin. For refusal cases, the new law retains a mandatory 30-day hard suspension that cannot be waived by any IID agreement, creating a significant practical distinction between refusing and submitting to BAC testing. Learn more about <Link href="/our-law-firm/blog/limited-driving-privileges-after-ovi-ohio" className="text-sky-deep underline hover:text-navy-950">limited driving privileges after an OVI in Ohio</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The hard suspension waiting periods under HB 37 vary significantly depending on the number of prior OVI offenses and whether the current offense involved a test-over or refusal. First OVI (test-over): 15-day hard suspension, waivable with IID. First OVI (refusal): 30-day hard suspension, not waivable. Second OVI (test-over): 45-day hard suspension with mandatory IID for LDP. Second OVI (refusal): 90-day hard suspension with mandatory IID. Third OVI: 180-day hard suspension with mandatory IID. Fourth or subsequent (felony OVI): 3-year waiting period before any LDP. These timelines begin from the date of the ALS (administrative arrest) or the date of the criminal court suspension order, depending on the context. An attorney can calculate the precise dates and ensure a motion for LDP is filed and heard as soon as the waiting period expires. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your limited driving privileges options.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The hard suspension waiting periods under HB 37 vary significantly depending on the number of prior OVI offenses and whether the current offense involved a test-over or refusal. First OVI (test-over): 15-day hard suspension, waivable with IID. First OVI (refusal): 30-day hard suspension, not waivable. Second OVI (test-over): 45-day hard suspension with mandatory IID for LDP. Second OVI (refusal): 90-day hard suspension with mandatory IID. Third OVI: 180-day hard suspension with mandatory IID. Fourth or subsequent (felony OVI): 3-year waiting period before any LDP. These timelines begin from the date of the ALS (administrative arrest) or the date of the criminal court suspension order, depending on the context. An attorney can calculate the precise dates and ensure a motion for LDP is filed and heard as soon as the waiting period expires. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your limited driving privileges options.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The LDP application process requires a formal motion filed with the court of jurisdiction — either the court handling the criminal OVI case or, for ALS-only situations, the court in the county where the arrest occurred as specified in ORC 4511.191(G)(5). The motion must identify the specific purposes for which driving is needed, the proposed schedule, and any conditions the defendant accepts. Courts typically require current proof of auto insurance — often an SR-22 financial responsibility form filed with the Ohio BMV — and may require an employer letter, school enrollment documentation, or other supporting evidence. Filing a well-prepared motion with supporting documents accelerates court approval. In jurisdictions where prosecutors review and comment on LDP motions, having legal representation at the hearing is important to address any objections and present the case for privileges compellingly.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Limited driving privileges often come with conditions beyond simply an IID requirement. Courts may impose geographic restrictions — confining the driver to specific routes between home and work — and time restrictions limiting driving to certain hours. Some courts impose GPS monitoring as a condition of LDP, requiring the driver to wear an ankle monitor or use a vehicle GPS tracker. Violations of any condition, including driving outside authorized hours or routes, constitute driving under OVI suspension under ORC 4510.14, triggering the mandatory 30-day jail minimum. Ohio may also require OVI-marked ("yellow plate") license plates under certain circumstances, which publicly identifies the vehicle as belonging to an OVI-suspended driver. An attorney can advise on all LDP conditions, help ensure compliance, and address any issues that arise during the suspension period. For related topics, see our pages on <Link href="/ovi-dui-defense/refusal-ovi" className="text-[#b87333] underline hover:opacity-80">refusal OVI defense</Link> and <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="text-[#b87333] underline hover:opacity-80">driving under OVI suspension</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Limited driving privileges often come with conditions beyond simply an IID requirement. Courts may impose geographic restrictions — confining the driver to specific routes between home and work — and time restrictions limiting driving to certain hours. Some courts impose GPS monitoring as a condition of LDP, requiring the driver to wear an ankle monitor or use a vehicle GPS tracker. Violations of any condition, including driving outside authorized hours or routes, constitute driving under OVI suspension under ORC 4510.14, triggering the mandatory 30-day jail minimum. Ohio may also require OVI-marked ("yellow plate") license plates under certain circumstances, which publicly identifies the vehicle as belonging to an OVI-suspended driver. An attorney can advise on all LDP conditions, help ensure compliance, and address any issues that arise during the suspension period. For related topics, see our pages on <Link href="/ovi-dui-defense/refusal-ovi" className="text-sky-deep underline hover:opacity-80">refusal OVI defense</Link> and <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="text-sky-deep underline hover:opacity-80">driving under OVI suspension</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Hard Suspension Waiting Periods Under HB 37 (Effective April 9, 2025)
             </h3>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li><strong>First OVI (test-over, no prior alcohol arrests):</strong> 15-day hard suspension — waivable with IID agreement, allowing immediate LDP</li>
                 <li><strong>First OVI (refusal):</strong> 30-day hard suspension — not waivable; IID required for LDP after 30 days</li>
                 <li><strong>Second OVI (test-over):</strong> 45-day hard suspension; mandatory IID for LDP</li>
@@ -107,10 +107,10 @@ export default function LimitedDrivingPrivilegesPage() {
               </ul>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How an Attorney Can Help with Limited Driving Privileges
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Eligibility Analysis:</strong> Determine which hard suspension period applies and when LDP can first be sought</li>
               <li><strong>IID Waiver Strategy:</strong> For eligible first-offense cases, negotiate IID agreement to waive the 15-day hard suspension and obtain immediate privileges</li>
               <li><strong>Motion Preparation:</strong> Draft a complete, well-supported LDP motion with all required documentation</li>
@@ -121,23 +121,23 @@ export default function LimitedDrivingPrivilegesPage() {
 
             <LocationsWeServe title="OVI/DUI Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
               </Link>
-              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Second OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enhanced penalties and mandatory jail for second OVI offenses in Ohio</span>
+              <Link href="/ovi-dui-defense/second-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Second OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Enhanced penalties and mandatory jail for second OVI offenses in Ohio</span>
               </Link>
-              <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Driving Under OVI Suspension</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for driving while suspended due to an OVI conviction</span>
+              <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Driving Under OVI Suspension</span>
+                <span className="text-sm text-navy-950/70">Defense for driving while suspended due to an OVI conviction</span>
               </Link>
-              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Refusal OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense strategies when you refused the breathalyzer or chemical test</span>
               </Link>
             </div>
           </div>

@@ -81,68 +81,68 @@ export default function LandTrustsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Land Trusts in Ohio: Privacy, Probate Avoidance, and Investment Flexibility
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An Ohio land trust is a specialized legal arrangement under ORC 5301.255 in which a trustee holds legal title to real property for the benefit of one or more beneficiaries. The defining characteristic of a land trust is that the beneficial interest — the real economic ownership of the property — is personal property held privately by the beneficiary, not real property recorded in the public deed records. This structure offers real estate investors, estate planners, and homeowners a powerful combination of ownership privacy, simplified ownership transfer, probate avoidance, and liability compartmentalization. Jwayyed Law LLC helps clients throughout Columbus, Franklin County, and the surrounding Ohio communities establish and administer land trusts tailored to their real estate portfolios and estate planning goals.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The Ohio land trust statute, ORC 5301.255, codifies what was historically known in the Midwest as the "Illinois-style land trust" — a form that originated in Illinois in the late 19th century and spread to Ohio and other states as an efficient mechanism for commercial real estate transactions. Unlike most trust vehicles, an Ohio land trust does not require court supervision, formal trust accounting, or public disclosure of the beneficiary\'s identity. The trustee\'s sole obligation is to hold legal title and execute documents with respect to the property at the beneficiary\'s direction. Real management decisions — leasing, improving, mortgaging, or selling the property — remain with the beneficiary or a designated manager.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               It is important to understand what a land trust is not. A land trust is not an asset protection device in the same sense as an irrevocable trust or a limited liability company. A creditor who obtains a judgment against you personally can generally reach your beneficial interest in a land trust because that interest is personal property subject to levy. Land trusts do not provide the same level of creditor insulation as a properly structured LLC. What they do provide is an ownership privacy layer that makes it harder for casual searchers to identify your property holdings — which can deter frivolous litigation, reduce targeting by predatory vendors, and simplify ownership-level negotiations in real estate transactions.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               How the Land Trust Mechanism Works Under ORC 5301.255
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               To establish an Ohio land trust, you execute a trust agreement that names a trustee and identifies the property. The trustee can be you, another individual, or a corporate trustee. Many Ohio real estate investors use a separate LLC as trustee to add another layer of identity obscurity, though this requires the LLC to be in good standing and adds a small layer of complexity. The trust agreement identifies the beneficiaries and their percentage interests, sets out the beneficiary\'s authority to direct the trustee, and specifies what happens to the beneficial interest when a beneficiary dies or transfers their interest.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Once the trust agreement is executed, you deed the property to the trustee using a standard Ohio warranty deed or quitclaim deed. The deed identifies the grantee as the trustee acting in a trustee capacity — for example, "Jane Smith, Trustee of the Smith Land Trust dated March 1, 2024." The deed is recorded in the county recorder\'s office along with any applicable transfer documentation. The transfer tax (Ohio conveyance fee) is generally not owed on a transfer to a trust where the grantor and beneficiary are the same person, but you should confirm the local county auditor\'s practice. After recording, a title searcher will find only the trustee\'s name; the trust agreement, the identity of the beneficiary, and the beneficial interest assignment are private documents held outside the public record.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The beneficial interest can be assigned — transferred — by a simple written assignment document executed by the beneficiary. This is one of the most powerful features of the land trust for real estate investors and estate planners. To transfer a 50% interest to a business partner, add a family member as co-beneficiary, or transfer your entire interest to your children at death, no new deed is required, no title search is necessary, and no deed transfer fee is owed. The assignment is a private transaction. For estate planning purposes, you designate successor beneficiaries in the trust agreement itself, so your interest passes automatically to your heirs on your death without a probate proceeding for that property. If you own properties in multiple Ohio counties, this can eliminate the need for separate probate actions in each county.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Land Trusts for Real Estate Investors: Multiple Properties and Co-Ownership
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus-area real estate investors who own multiple rental properties, commercial parcels, or development tracts frequently use land trusts to manage their portfolios. Best practice is to place each property in its own separate trust so that a lien, judgment, or environmental liability affecting one property cannot be easily cross-levied against the others. Using a common trustee across all trusts simplifies administration while maintaining separate legal silos for each asset.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For joint ventures and co-investment situations, land trusts offer a clean way to document fractional ownership without recording the partners' names in public deed records. Each investor holds a percentage of the beneficial interest as personal property. Buyouts, buy-ins, and interest transfers are handled by assignment rather than by deed, which reduces transaction friction and cost. However, for co-investment structures involving significant liability exposure — such as active construction or commercial leasing — pairing the land trust with an underlying LLC (which holds the beneficial interest) provides both privacy and creditor protection.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Financing is an area where land trusts require careful planning. Many residential lenders and some commercial lenders are unfamiliar with land trusts or have underwriting policies that require the borrower to be the titled owner of the property. If you plan to refinance a property held in a land trust, or if you are purchasing a property that you intend to immediately transfer into a trust, discuss this with your lender before proceeding. Some lenders require the beneficiary to execute a personal guarantee or to take title individually during the loan process, then transfer to the trust after closing with the lender\'s written consent. The due-on-sale clause in most mortgage notes is triggered by any transfer of title, including a transfer to a trust, unless the lender waives it.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Land Trust vs. Revocable Living Trust for Real Estate in Ohio
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A revocable living trust is Ohio\'s most common probate-avoidance vehicle for real estate, and it accomplishes the same probate-avoidance goal as a land trust. The primary difference is privacy: a revocable living trust deed typically identifies the grantor by name and is public record, while a land trust deed does not identify the beneficiary. A revocable living trust also covers all assets — not just real estate — in a single integrated document alongside your pour-over will, durable power of attorney, and healthcare directive.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               For most Ohio homeowners whose primary concern is avoiding probate for a single residence, a revocable living trust is simpler and more comprehensive. For real estate investors with multiple properties, rental income, and co-investment partners, land trusts offer operational advantages that go beyond probate avoidance. Our attorneys can help you assess which vehicle — or combination of vehicles — best fits your specific real estate holdings and estate planning objectives. Call Jwayyed Law LLC at (614) 285-5482 to discuss your situation.
             </p>
 
             <LocationsWeServe title="Land Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Trust Services
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Revocable Living Trusts
               </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Real Estate Disputes
               </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Estate Planning &amp; Wills
               </Link>
             </div>

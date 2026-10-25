@@ -76,25 +76,25 @@ export default function BusinessFormationLLCMorrowCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Morrow County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Morrow County is a rural Ohio county north of Columbus, home to Mt. Gilead, Cardington, Marengo, and Edison. Its economy is anchored by agriculture, small retail and service businesses, and an increasing number of residents who commute to Columbus and surrounding metropolitan areas. Whether you are a farmer looking to protect personal assets by formalizing your agricultural operation as an LLC, a small business owner forming a service company, or a professional setting up a practice, Jwayyed Law LLC provides experienced business formation and LLC counsel for Morrow County clients.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, which took effect in February 2022 and replaced the former Chapter 1705. Chapter 1706 is a significant modernization — it introduces series LLCs (allowing one entity to separate assets and liabilities across distinct business activities), provides more flexible management structures, and clarifies what can be customized in an operating agreement versus what is mandatory by law. Morrow County farm families can use these features to separate farming operations from other business activities within a single LLC structure.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most valuable things any Morrow County business owner can do is work with an attorney to prepare a customized operating agreement. Generic online templates do not address the specific dynamics of your ownership and management arrangement. For family farming operations, the operating agreement should address what happens to the farm when an owner passes away, how family members can join or leave the business, and how succession will be handled across generations. For service businesses with two or more owners, it should specify exactly how profits are divided, who makes decisions, and how disputes are resolved.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond entity formation, Morrow County business owners benefit from legal guidance on contracts with customers and suppliers, employment agreements if they have staff, commercial lease review, and ongoing compliance with Ohio&apos;s tax registration and reporting requirements. For farm operations with specialized needs, our attorney can also address issues related to land use, easements, and agricultural liability.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is handled through the Ohio Secretary of State, so Jwayyed Law LLC can assist Morrow County clients regardless of location. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>
         </div>

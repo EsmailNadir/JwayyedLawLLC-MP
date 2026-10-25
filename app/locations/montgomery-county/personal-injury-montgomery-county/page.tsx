@@ -76,25 +76,25 @@ export default function PersonalInjuryMontgomeryCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Montgomery County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County is one of Ohio&apos;s most populous urban counties, anchored by Dayton and surrounded by Kettering, Trotwood, Huber Heights, Englewood, Miamisburg, and Vandalia. The intersecting interstates — I-75, I-70, and US 35 — make Montgomery County a major transportation hub where serious accidents occur regularly. Jwayyed Law LLC represents personal injury victims throughout the county in car accidents, truck accidents, slip and fall, premises liability, workplace injury claims, and wrongful death matters. If you were hurt due to someone else&apos;s negligence, our attorney will fight for the full compensation you deserve under Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 gives personal injury victims two years from the date of injury to file suit. This deadline is non-negotiable — miss it and your case is dismissed, regardless of its merits. Our attorney works to begin your case immediately, identifying liable parties, preserving evidence, and building a complete picture of your damages. In busy, high-volume accident environments like the Dayton metro area, swift action is especially important as evidence can disappear quickly.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s modified comparative negligence rule under ORC 2315.33 means fault matters enormously in personal injury cases. Insurance companies defending accident claims in Montgomery County often attempt to assign you a share of blame — arguing you were speeding, following too closely, or otherwise contributed to the crash. Our attorney proactively investigates every case to counter these arguments with solid evidence, ensuring your share of fault is not inflated and your recovery is not unfairly diminished.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County&apos;s urban density brings significant slip and fall and premises liability activity as well. Retail establishments, restaurants, parking lots, and commercial properties throughout Dayton, Kettering, and Miamisburg must maintain safe conditions for visitors. When they fail to do so, injury victims can hold property owners accountable. We also handle dog bite claims under ORC 955.28, workplace third-party negligence cases, bicycle and pedestrian accident claims, and catastrophic injury matters.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury cases in Montgomery County are filed at the Montgomery County Common Pleas Court, 41 N. Perry St, Dayton, OH 45422. We represent clients on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> across Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> across Ohio.
             </p>
           </div>
         </div>

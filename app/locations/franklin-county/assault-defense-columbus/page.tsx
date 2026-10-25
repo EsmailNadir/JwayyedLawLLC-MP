@@ -78,58 +78,58 @@ export default function ColumbusAssaultPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Assault Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus is Ohio&apos;s largest city, and the Columbus Division of Police responds to thousands of assault calls each year across the city&apos;s diverse neighborhoods — from the Short North and Arena District to the Eastside and Westside residential neighborhoods, from bar fights near campus to road rage incidents on I-270. An assault charge under Ohio Revised Code 2903.13 is a first-degree misdemeanor at baseline — up to 180 days in jail, a $1,000 fine, and a permanent criminal record accessible to every employer and landlord who runs a background check. More significantly, assault on a Columbus police officer, OSP trooper, or other protected person escalates to a felony, carrying the full weight of Franklin County Court of Common Pleas prosecution. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense/assault-charges" className="text-[#b87333] underline hover:opacity-80">assault defense</Link>{' '}
+              <Link href="/criminal-defense/assault-charges" className="text-sky-deep underline hover:opacity-80">assault defense</Link>{' '}
               at Franklin County Municipal Court and throughout Columbus. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               before your arraignment.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus assault charges arise from a wide variety of circumstances: bar confrontations in the Short North or German Village, disputes at OSU game-day events, road rage incidents on I-70 or High Street, neighborhood altercations, and confrontations that police classify as assault even when the defendant acted in self-defense or did not initiate the contact. Each situation requires a tailored defense based on the specific facts, the available evidence, and the identity and role of the alleged victim.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Assault Under R.C. 2903.13 — What the Prosecution Must Prove
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2903.13 requires the prosecution to prove that the defendant knowingly caused or attempted to cause physical harm to another person, or recklessly caused serious physical harm. The word &ldquo;knowingly&rdquo; is legally significant: the prosecution must prove the defendant was aware that his or her conduct would cause or probably cause the result. Accidental contact, involuntary reactions, and situations where the defendant lacked the required awareness do not satisfy the statute. Our firm evaluates whether the prosecution can actually establish this mental state given the specific facts of the Columbus encounter.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Self-Defense in Columbus Assault Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Self-defense under ORC 2901.05 is the most commonly asserted defense in Columbus assault cases — particularly bar fights, road rage confrontations, and mutual altercations where the defendant did not initiate the contact. Since Ohio&apos;s 2019 self-defense amendments, the prosecution bears the burden of disproving self-defense beyond a reasonable doubt once the defendant presents sufficient evidence that the defense applies. We evaluate whether the defendant reasonably believed force was necessary, whether the defendant was the initial aggressor, and whether the force used was proportionate to the threat.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Body-cam footage from the Columbus Division of Police is often the most important evidence in Columbus assault cases. Officers typically arrive after the confrontation has ended and capture the immediate aftermath — injuries, statements, and the physical scene. We obtain all body-cam footage, available surveillance footage from nearby businesses, and witness information before making any recommendation about strategy. In cases where the video clearly shows who initiated the confrontation, self-defense may be the strongest available argument.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Felony Assault Escalations in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When the alleged victim of a Columbus assault is a law enforcement officer, firefighter, EMS worker, school employee, hospital staff member, or other protected person under R.C. 2903.13(C), the charge escalates from a misdemeanor to a felony. Assault on a Columbus Division of Police officer or OSP trooper in the performance of official duties is a fourth-degree felony — processed in Franklin County Court of Common Pleas rather than Franklin County Municipal Court. Our firm scrutinizes whether the alleged victim was actually acting in an official capacity at the time of the incident — officers who are off-duty, acting outside the scope of their duties, or responding in a personal rather than professional capacity may not qualify for the enhanced felony charge.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Expungement of an Assault Conviction in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Most first-offense misdemeanor assault convictions under R.C. 2903.13 are eligible for expungement under R.C. 2953.32 after a one-year waiting period from final discharge of the sentence. Once sealed, the assault conviction is removed from the public criminal record and will not appear on standard employer or landlord background checks. This is an important long-term benefit of any Columbus assault defense that results in a conviction — and it is why avoiding a domestic violence charge (R.C. 2919.25) rather than simple assault matters: domestic violence convictions are not expungeable under Ohio law, while simple assault convictions generally are.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The charge classification in a Columbus assault case — whether the disposition is as M1 assault, M4 disorderly conduct, or DV — has lasting expungement consequences. Our firm evaluates plea outcomes with the expungement timeline in mind from the very first hearing, so that the resolution of the current case does not create a permanent obstacle to clearing the record later.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Evidence analysis:</strong> Body-cam footage, surveillance, police reports, and medical records before any hearing</li>
               <li><strong>Self-defense evaluation:</strong> Full factual investigation into who initiated the confrontation</li>
               <li><strong>Felony escalation challenge:</strong> Contesting protected-victim status where the facts do not support felony charges</li>
@@ -138,11 +138,11 @@ export default function ColumbusAssaultPage() {
               <li><strong>Diversion options:</strong> Pursuing first-offender diversion for dismissal without conviction where available</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you have been charged with assault in Columbus or anywhere in Franklin County, contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               Assault charges move quickly — early involvement is essential.
             </p>
           </div>

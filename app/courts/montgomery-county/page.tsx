@@ -80,11 +80,11 @@ export default function MontgomeryCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Montgomery County Court Representation
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County is home to Dayton, one of Ohio&apos;s largest cities, and a diverse array of
               suburban communities including Kettering, Trotwood, Huber Heights, Centerville, Englewood, Miamisburg,
               and Vandalia. The county&apos;s courts handle a high volume of OVI, criminal, and civil matters.
@@ -92,7 +92,7 @@ export default function MontgomeryCountyCourtsPage() {
               representation for individuals and businesses throughout Montgomery County.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County has two primary municipal courts—Dayton Municipal Court and Kettering Municipal
               Court—along with several Mayor&apos;s Courts (including Huber Heights) for minor violations. Dayton
               Municipal Court (301 W. Third St, Dayton, OH 45402) is a high-volume court handling thousands of
@@ -102,7 +102,7 @@ export default function MontgomeryCountyCourtsPage() {
               the offense occurred, and our firm is familiar with both courts.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense under ORC 4511.19 requires a systematic review of every element of the government&apos;s
               case. Ohio requires law enforcement to follow strict NHTSA protocols for the three standardized field
               sobriety tests (Horizontal Gaze Nystagmus, Walk and Turn, One Leg Stand). Any deviation from the
@@ -112,7 +112,7 @@ export default function MontgomeryCountyCourtsPage() {
               reviews all of this documentation for every Montgomery County OVI client before advising on strategy.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Montgomery County courts see substantial misdemeanor criminal caseloads including domestic
               violence, assault, theft, and drug possession. Under ORC 2935.26, officers may issue a citation in lieu
               of arrest for most non-first-degree misdemeanors, but first-degree misdemeanors and OVI typically
@@ -122,7 +122,7 @@ export default function MontgomeryCountyCourtsPage() {
               for each individual client&apos;s circumstances.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For felony matters, Montgomery County Common Pleas Court (41 N. Perry St, Dayton, OH 45422) handles
               everything from felony OVI (which can be charged as an F4 or F3 for repeat offenders under ORC 4511.19(G))
               to drug trafficking, robbery, and violent felonies. Montgomery County Common Pleas also has specialty
@@ -132,53 +132,53 @@ export default function MontgomeryCountyCourtsPage() {
               outcome of a Montgomery County felony case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Courts We Appear In
             </h3>
 
             <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Dayton Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">301 W. Third St, Dayton, OH 45402</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">301 W. Third St, Dayton, OH 45402</p>
+                <p className="text-sm text-navy-950/70">
                   OVI &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Small claims &bull; Drug Court docket
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Kettering Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">2325 Wilmington Pike, Kettering, OH 45420</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">2325 Wilmington Pike, Kettering, OH 45420</p>
+                <p className="text-sm text-navy-950/70">
                   OVI &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Serves Kettering and surrounding communities
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Montgomery County Common Pleas Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">41 N. Perry St, Dayton, OH 45422</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">41 N. Perry St, Dayton, OH 45422</p>
+                <p className="text-sm text-navy-950/70">
                   Felony criminal cases &bull; Civil cases over $15,000 &bull; Domestic relations &bull; Probate &bull; Drug Court, Mental Health Court, Veterans Treatment Court
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Huber Heights Mayor&apos;s Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">Huber Heights, OH</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">Huber Heights, OH</p>
+                <p className="text-sm text-navy-950/70">
                   Minor traffic violations and minor misdemeanors within the City of Huber Heights; OVI and first-degree misdemeanors transfer to the appropriate municipal court
                 </p>
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Practice Areas in Montgomery County
             </h3>
-            <ul className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 space-y-2 leading-relaxed">
+            <ul className="text-navy-950/80 mb-6 space-y-2 leading-relaxed">
               <li><strong>OVI / DUI Defense:</strong> Traffic stop challenges, NHTSA field sobriety analysis, breathalyzer calibration review, ALS appeals under ORC 4511.191 (30-day deadline)</li>
               <li><strong>Misdemeanor Criminal Defense:</strong> Domestic violence (ORC 2919.25), assault (ORC 2903.13), theft (ORC 2913.02), drug possession (ORC 2925.11), disorderly conduct (ORC 2917.11)</li>
               <li><strong>Felony Defense:</strong> Felony OVI, drug trafficking, robbery, assault, and other felonies in Montgomery County Common Pleas Court</li>
@@ -187,24 +187,24 @@ export default function MontgomeryCountyCourtsPage() {
               <li><strong>Record Sealing:</strong> Eligibility analysis and sealing applications under ORC 2953.32 in Montgomery County courts</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Communities We Serve in Montgomery County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We serve clients throughout Montgomery County including Dayton (county seat), Kettering, Trotwood,
               Huber Heights, Fairborn, Centerville, Englewood, Miamisburg, and Vandalia. For representation in
               neighboring counties, see our pages for{' '}
-              <Link href="/courts/greene-county" className="text-[#b87333] underline hover:opacity-80">Greene County</Link>,{' '}
-              <Link href="/courts/clinton-county" className="text-[#b87333] underline hover:opacity-80">Clinton County</Link>, and{' '}
-              <Link href="/courts/butler-county" className="text-[#b87333] underline hover:opacity-80">Butler County</Link>.
+              <Link href="/courts/greene-county" className="text-sky-deep underline hover:opacity-80">Greene County</Link>,{' '}
+              <Link href="/courts/clinton-county" className="text-sky-deep underline hover:opacity-80">Clinton County</Link>, and{' '}
+              <Link href="/courts/butler-county" className="text-sky-deep underline hover:opacity-80">Butler County</Link>.
               Also see our dedicated page for{' '}
-              <Link href="/courts/dayton-municipal-court" className="text-[#b87333] underline hover:opacity-80">Dayton Municipal Court</Link>.
+              <Link href="/courts/dayton-municipal-court" className="text-sky-deep underline hover:opacity-80">Dayton Municipal Court</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Montgomery County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our attorney personally handles every Montgomery County case—from first consultation through final
               resolution—appearing directly in Dayton Municipal Court and Kettering Municipal Court. We know
               the procedural tendencies of both courts, how local prosecutors approach OVI and criminal cases,

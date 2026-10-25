@@ -61,7 +61,7 @@ export default function NCDDBadge({
         target="_blank"
         rel="noopener noreferrer"
         title="View Attorney Jwayyed's NCDD profile"
-        className="flex items-center gap-4 bg-white border border-slate-200 rounded-xl px-5 py-4 min-w-[220px] hover:border-slate-400 transition-colors duration-200"
+        className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 min-w-[220px] hover:border-navy-950/40 transition-colors duration-200"
       >
         <Image
           src="/assets/ncdd-general-member-badge.png"
@@ -72,8 +72,8 @@ export default function NCDDBadge({
           className="h-11 w-11 flex-shrink-0"
         />
         <div className="text-left">
-          <p className="text-sm font-bold text-slate-900">NCDD Member</p>
-          <p className="text-xs text-slate-500">National College for DUI Defense</p>
+          <p className="text-sm font-bold text-navy-950">NCDD Member</p>
+          <p className="text-xs text-navy-950/60">National College for DUI Defense</p>
         </div>
       </a>
     );

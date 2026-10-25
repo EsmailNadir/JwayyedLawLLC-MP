@@ -82,58 +82,58 @@ export default function MedicaidAssetProtectionTrustsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Medicaid Asset Protection Trusts in Ohio: Protecting Your Assets Before You Need Long-Term Care
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The cost of long-term care in Ohio is substantial. Nursing facility care in the Columbus area averages $9,000 to $11,000 per month, and memory care and assisted living facilities charge comparable amounts. Without proper planning, a single year of nursing home care can deplete $100,000 to $130,000 in savings — wiping out assets that took a lifetime to accumulate. Ohio Medicaid — the jointly funded state-federal program that covers long-term care costs for eligible residents — requires applicants to have no more than $2,000 in countable resources as a single person before benefits begin. A Medicaid Asset Protection Trust (MAPT) is an irrevocable planning tool that, when established at least five years before applying for Medicaid, removes transferred assets from the countable resource calculation and shields them from Ohio\'s Medicaid estate recovery program. Jwayyed Law LLC advises clients throughout Columbus, Cincinnati, Dayton, and the surrounding Ohio communities on timely Medicaid planning, including the establishment and funding of MAPTs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Medicaid for long-term care is administered under ORC Chapter 5163 and governed federally by 42 U.S.C. 1396 et seq. To qualify for nursing facility Medicaid as a single person, you must have no more than $2,000 in countable resources. Countable resources include bank accounts, CDs, stocks, bonds, non-primary-residence real estate, and most other financial assets. Exempt resources include your primary residence (while you or your spouse lives there), one vehicle, personal household goods, prepaid funeral arrangements, and a few other categories. Ohio Medicaid also imposes an income contribution requirement — most of your monthly income must be paid to the nursing facility as your "patient pay amount," with Medicaid covering the balance up to the Medicaid rate.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The five-year lookback period is the central legal constraint on MAPT planning. Under 42 U.S.C. 1396p(c), any transfer of assets for less than fair market value within 60 months of a Medicaid application will result in a penalty period — a period during which Medicaid will not pay for nursing facility care. The penalty period is calculated by dividing the value of the transferred assets by the average monthly cost of nursing care in Ohio (approximately $9,500 per month in 2024 for this calculation). A $190,000 home transfer, for example, could result in a 20-month penalty period. Critically, this penalty period does not begin until you would otherwise be eligible for Medicaid but for the transferred asset — so an applicant with $190,000 in transferred assets and no other resources could face a 20-month gap with no coverage and no assets to pay privately.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               How a MAPT Is Structured: Income-Only Trust Design
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A MAPT is an irrevocable trust in which you transfer assets to the trust and name an independent trustee (typically an adult child or trusted third party) and remainder beneficiaries (your heirs). The defining structural feature is that you — as the grantor — cannot be a beneficiary of the trust\'s principal. If you retain the right to receive trust principal on demand, Ohio Medicaid will treat the trust as a revocable resource and count it toward your $2,000 limit.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Most MAPTs are structured as income-only trusts: the trust agreement gives you the right to receive all net income generated by trust assets — interest, dividends, rental income — but gives you no right to principal. This income stream is counted as your income for Medicaid purposes and must be applied toward your nursing facility cost of care if you are receiving Medicaid benefits. The principal, however, is no longer a countable resource once the five-year lookback period has expired. This means you can fund a MAPT with your home, a brokerage account, or a bank CD, continue to receive any interest or rent those assets generate, and eventually qualify for Medicaid without those assets counting against your eligibility.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Protecting the family home is one of the most common MAPT objectives for Ohio clients. While your primary residence is exempt from countable resources during your lifetime, it is subject to Ohio Medicaid estate recovery under ORC 5163.21 after your death. Ohio Medicaid can file a claim against your probate estate — including your home if it passes through probate — to recoup all Medicaid benefits paid on your behalf after age 55. By transferring the home to a MAPT more than five years before applying for Medicaid, you protect it from estate recovery because the home passes outside of your probate estate. Your heirs receive the home free of any Medicaid estate recovery claim.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Ohio Medicaid Estate Recovery, Spend-Down Alternatives, and Miller Trusts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Even when a MAPT was not established years in advance, there are other Medicaid planning strategies available to Ohio residents facing an imminent nursing home admission. Spending down to the $2,000 resource limit through legitimate expenditures — prepaying funeral costs, paying off a mortgage, purchasing home modifications or medical equipment, or making gifts to adult children (with an understanding of the lookback implications) — can accelerate Medicaid eligibility. Purchasing a Medicaid-compliant immediate annuity can convert a countable asset into an income stream that is not a countable resource. Each of these strategies must be carefully evaluated in light of the lookback rules and your specific asset composition.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For applicants whose monthly income exceeds Ohio\'s income cap for nursing facility Medicaid ($2,829/month in 2024 for single individuals), a Qualified Income Trust (QIT) — also called a Miller Trust — is required. Each month, the applicant\'s income that exceeds the cap is deposited into the QIT, which then pays the nursing facility directly. The QIT does not involve the five-year lookback and is established quickly as part of the Medicaid application process. Unlike a MAPT (which is a pre-planning tool for assets), a QIT is an eligibility tool for income-over-limit situations.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Medicaid planning is among the most time-sensitive areas of elder law. The ideal time to establish a MAPT is at least five to ten years before you anticipate needing long-term care — while you are healthy enough to transfer assets and start the lookback clock. Waiting until a health crisis forces the issue often eliminates the MAPT option and leaves far fewer planning tools available. If you or a parent are in their 60s or 70s and have not yet addressed long-term care planning, now is the time to consult with a Medicaid planning attorney. Call Jwayyed Law LLC at (614) 285-5482 to schedule a consultation about protecting your assets with a MAPT.
             </p>
 
             <LocationsWeServe title="Medicaid Asset Protection Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Trust Services
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Irrevocable Trusts
               </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Estate Planning &amp; Wills
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Revocable Living Trusts
               </Link>
             </div>

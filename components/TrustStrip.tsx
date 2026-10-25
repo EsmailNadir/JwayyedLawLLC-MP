@@ -30,7 +30,7 @@ const items = [
 export default function TrustStrip() {
   return (
     <section
-      className="py-6 sm:py-8 border-y border-[#b87333]/20 bg-[#2c2c2c]/95 backdrop-blur-sm"
+      className="py-6 sm:py-8 border-y border-sky-deep/20 bg-navy-950/95 backdrop-blur-sm"
       aria-label="Recognition and credentials"
     >
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ export default function TrustStrip() {
             <Link
               key={i}
               href={item.href}
-              className="flex items-center gap-3 sm:gap-4 py-3 sm:py-4 px-3 sm:px-4 rounded-lg border border-white/10 hover:border-[#b87333]/30 hover:bg-white/5 transition-colors"
+              className="flex items-center gap-3 sm:gap-4 py-3 sm:py-4 px-3 sm:px-4 border border-white/10 hover:border-sky-deep/30 hover:bg-white/5 transition-colors"
             >
               <span
                 className="flex-shrink-0 w-10 h-10 flex items-center justify-center text-xl rounded-full"
@@ -51,7 +51,7 @@ export default function TrustStrip() {
                 <span className="block text-sm font-semibold text-white leading-tight">
                   {item.label1}
                 </span>
-                <span className="block text-xs text-gray-400 leading-tight">
+                <span className="block text-xs text-navy-950/50 leading-tight">
                   {item.label2}
                 </span>
               </div>

@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: `Should parents hire an attorney for their child facing an underage OVI charge?`,
-    answer: `Yes — and the sooner the better. Drivers aged 18–20 face adult criminal court for OVI and OVUAC charges, meaning the conviction appears on an adult criminal record. Drivers under 18 go to juvenile court, where records may be treated differently, but the consequences are still serious and can follow a young person into adulthood. An experienced OVI defense attorney can challenge the evidence, negotiate with prosecutors for charge reductions (such as a non-criminal traffic offense), pursue diversion programs where available, and protect the young person's driving record, educational opportunities, and professional future. At Jwayyed Law LLC, we handle underage OVI and OVUAC cases throughout Ohio. <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">Contact us today</Link> for a confidential consultation.`,
+    answer: `Yes — and the sooner the better. Drivers aged 18–20 face adult criminal court for OVI and OVUAC charges, meaning the conviction appears on an adult criminal record. Drivers under 18 go to juvenile court, where records may be treated differently, but the consequences are still serious and can follow a young person into adulthood. An experienced OVI defense attorney can challenge the evidence, negotiate with prosecutors for charge reductions (such as a non-criminal traffic offense), pursue diversion programs where available, and protect the young person's driving record, educational opportunities, and professional future. At Jwayyed Law LLC, we handle underage OVI and OVUAC cases throughout Ohio. <Link href="/contact" className="text-sky-deep underline hover:opacity-80">Contact us today</Link> for a confidential consultation.`,
   },
 ];
 
@@ -72,39 +72,39 @@ export default function UnderageOVIPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Underage OVI and OVUAC Charges in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio applies two separate legal frameworks to drivers under age 21 who are caught with alcohol in their system while driving. The first is OVUAC — Operating a Vehicle After Underage Consumption — under ORC 4511.19(B), which applies at a BAC of 0.02% to 0.079%. This reflects Ohio's zero-tolerance policy: any measurable amount of alcohol in a minor's system while driving can result in criminal charges. The second framework is full OVI under ORC 4511.19(A), which applies if the driver's BAC reaches 0.08% or higher regardless of age, or if the driver is impaired by alcohol or drugs regardless of BAC. At Jwayyed Law LLC, we represent drivers under 21 and their families throughout Ohio facing either type of charge as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>, with a focus on protecting both the immediate legal outcome and the long-term consequences.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Ohio applies two separate legal frameworks to drivers under age 21 who are caught with alcohol in their system while driving. The first is OVUAC — Operating a Vehicle After Underage Consumption — under ORC 4511.19(B), which applies at a BAC of 0.02% to 0.079%. This reflects Ohio's zero-tolerance policy: any measurable amount of alcohol in a minor's system while driving can result in criminal charges. The second framework is full OVI under ORC 4511.19(A), which applies if the driver's BAC reaches 0.08% or higher regardless of age, or if the driver is impaired by alcohol or drugs regardless of BAC. At Jwayyed Law LLC, we represent drivers under 21 and their families throughout Ohio facing either type of charge as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>, with a focus on protecting both the immediate legal outcome and the long-term consequences.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVUAC is classified as a fourth-degree misdemeanor (M4). Penalties for a first OVUAC offense include a license suspension of 90 days to 2 years, a fine up to $250, up to 30 days in jail (with no mandatory minimum), and a mandatory alcohol assessment and any recommended treatment. These penalties, while less severe than full OVI, still represent a criminal conviction with a lasting record. If the BAC is 0.08% or above, the driver faces full OVI charges under ORC 4511.19(A) and the same mandatory minimums as any adult driver — including a mandatory minimum of 3 days in jail (or driver intervention program), fines of $565–$1,075 under HB 37 (effective April 9, 2025), and a license suspension of 1–3 years with a $315 reinstatement fee. The critical distinction between OVUAC and full OVI makes the precise BAC reading, and challenges to its accuracy, central to the defense. Learn more about <Link href="/our-law-firm/blog/first-dui-ohio-will-i-go-to-jail" className="text-[#b87333] underline hover:text-[#a06828]">what to expect after a first DUI in Ohio</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              OVUAC is classified as a fourth-degree misdemeanor (M4). Penalties for a first OVUAC offense include a license suspension of 90 days to 2 years, a fine up to $250, up to 30 days in jail (with no mandatory minimum), and a mandatory alcohol assessment and any recommended treatment. These penalties, while less severe than full OVI, still represent a criminal conviction with a lasting record. If the BAC is 0.08% or above, the driver faces full OVI charges under ORC 4511.19(A) and the same mandatory minimums as any adult driver — including a mandatory minimum of 3 days in jail (or driver intervention program), fines of $565–$1,075 under HB 37 (effective April 9, 2025), and a license suspension of 1–3 years with a $315 reinstatement fee. The critical distinction between OVUAC and full OVI makes the precise BAC reading, and challenges to its accuracy, central to the defense. Learn more about <Link href="/our-law-firm/blog/first-dui-ohio-will-i-go-to-jail" className="text-sky-deep underline hover:text-navy-950">what to expect after a first DUI in Ohio</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The collateral consequences of an underage OVI conviction extend far beyond fines and license suspension. College admissions processes often require disclosure of criminal charges or convictions. Many universities and professional programs — including nursing, education, pharmacy, and law — ask about alcohol-related convictions on applications and in licensing proceedings. Scholarship programs, ROTC commitments, and study abroad programs may have clean-record requirements that an OVI or OVUAC conviction violates. Military service is significantly complicated by any alcohol-related conviction. These downstream effects can be more damaging than the criminal penalty itself, particularly for a young person at the beginning of their career. Our goal is to find every available avenue to reduce or dismiss the charge so that the young person's future is protected. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your case.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The collateral consequences of an underage OVI conviction extend far beyond fines and license suspension. College admissions processes often require disclosure of criminal charges or convictions. Many universities and professional programs — including nursing, education, pharmacy, and law — ask about alcohol-related convictions on applications and in licensing proceedings. Scholarship programs, ROTC commitments, and study abroad programs may have clean-record requirements that an OVI or OVUAC conviction violates. Military service is significantly complicated by any alcohol-related conviction. These downstream effects can be more damaging than the criminal penalty itself, particularly for a young person at the beginning of their career. Our goal is to find every available avenue to reduce or dismiss the charge so that the young person's future is protected. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Drivers aged 18, 19, and 20 face OVI and OVUAC charges in adult criminal court — the same court system as any adult defendant. Drivers under 18 go through the juvenile court system, where proceedings and records are handled differently, though the consequences remain serious and may transfer to an adult record. In adult court, a conviction becomes part of the person's permanent criminal and BMV record and is accessible on background checks by employers, landlords, educational institutions, and professional licensing boards. Ohio's record sealing statute (ORC 2953.32) may allow sealing of OVUAC convictions after a waiting period, but OVI convictions are generally not sealable. This makes early aggressive defense — not relying on sealing later — the most important strategy.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Defense strategies in underage OVI and OVUAC cases overlap with those in standard OVI cases but have additional dimensions specific to the lower BAC threshold. Because OVUAC begins at just 0.02%, the margin of error in breathalyzer calibration and administration becomes particularly significant. A breathalyzer that reads 0.022% may be within the instrument's margin of error, and a skilled attorney can challenge whether the result actually proves the statutory threshold was met. We also examine whether the officer had a lawful basis to stop the vehicle in the first place, whether field sobriety tests were administered correctly under NHTSA standards, and whether any constitutional rights were violated during the encounter. For more information about your rights and the full OVI defense process, see our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI defense overview</Link> and our page on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-[#b87333] underline hover:opacity-80">limited driving privileges</Link> during suspension.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Defense strategies in underage OVI and OVUAC cases overlap with those in standard OVI cases but have additional dimensions specific to the lower BAC threshold. Because OVUAC begins at just 0.02%, the margin of error in breathalyzer calibration and administration becomes particularly significant. A breathalyzer that reads 0.022% may be within the instrument's margin of error, and a skilled attorney can challenge whether the result actually proves the statutory threshold was met. We also examine whether the officer had a lawful basis to stop the vehicle in the first place, whether field sobriety tests were administered correctly under NHTSA standards, and whether any constitutional rights were violated during the encounter. For more information about your rights and the full OVI defense process, see our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI defense overview</Link> and our page on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link> during suspension.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               OVUAC vs. Full OVI Penalties at a Glance
             </h3>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">OVUAC — ORC 4511.19(B) (BAC 0.02%–0.079%, under age 21)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-3">OVUAC — ORC 4511.19(B) (BAC 0.02%–0.079%, under age 21)</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>M4 misdemeanor</li>
                 <li>License suspension: 90 days to 2 years</li>
                 <li>Fine: up to $250</li>
                 <li>Jail: up to 30 days (no mandatory minimum)</li>
                 <li>Mandatory alcohol assessment and treatment</li>
               </ul>
-              <h4 className="font-semibold text-gray-900 mt-6 mb-3">Full OVI — ORC 4511.19(A) (BAC 0.08%+, any age; HB 37 first offense)</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-3">Full OVI — ORC 4511.19(A) (BAC 0.08%+, any age; HB 37 first offense)</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>M1 misdemeanor</li>
                 <li>Mandatory minimum 3 days jail or driver intervention program</li>
                 <li>Fines: $565–$1,075</li>
@@ -113,10 +113,10 @@ export default function UnderageOVIPage() {
               </ul>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How an Underage OVI Defense Attorney Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Challenge the Stop:</strong> Analyze whether law enforcement had lawful reasonable suspicion to pull the vehicle over</li>
               <li><strong>Challenge BAC Results:</strong> Scrutinize breathalyzer calibration, certification, and operator licensure</li>
               <li><strong>SFST Analysis:</strong> Evaluate whether field sobriety tests were administered in compliance with NHTSA standards</li>
@@ -127,23 +127,23 @@ export default function UnderageOVIPage() {
 
             <LocationsWeServe title="OVI/DUI Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
               </Link>
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Limited Driving Privileges</span>
+                <span className="text-sm text-navy-950/70">Get back on the road legally during your OVI suspension</span>
               </Link>
-              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Refusal OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense strategies when you refused the breathalyzer or chemical test</span>
               </Link>
-              <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Driving Under OVI Suspension</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for driving while suspended due to an OVI conviction</span>
+              <Link href="/ovi-dui-defense/driving-under-ovi-suspension" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Driving Under OVI Suspension</span>
+                <span className="text-sm text-navy-950/70">Defense for driving while suspended due to an OVI conviction</span>
               </Link>
             </div>
           </div>

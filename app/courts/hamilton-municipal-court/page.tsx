@@ -70,26 +70,26 @@ export default function HamiltonMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Hamilton Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Hamilton Municipal Court, located at 700 Hanover Street in Hamilton, Ohio, serves the city of Hamilton — the county seat of Butler County in southwestern Ohio. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, traffic violations, and civil matters for the city of Hamilton and its surrounding jurisdictional area. Jwayyed Law LLC represents defendants in Hamilton Municipal Court across all misdemeanor criminal, OVI, and traffic matters. If you have been arrested for OVI, the 30-day window to appeal your Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> begins running from the date of arrest.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Hamilton is served by US 27 and SR 4 (Dixie Highway), both of which see active OVI and traffic enforcement. Our attorney examines the basis for the traffic stop, the administration of field sobriety tests, and the calibration of the breath testing instrument. Under <strong>HB 37</strong> (effective April 9, 2025), the minimum fine for a first OVI is $565–$1,075, and the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when an ignition interlock device (IID) is installed — allowing earlier access to limited driving privileges.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Hamilton and Butler County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Hamilton Municipal Court handles a full range of misdemeanor offenses including domestic violence (<strong>ORC 2919.25</strong>), assault, theft, drug possession, and disorderly conduct. Under <strong>ORC 2929.21</strong>, an M1 conviction can result in up to 180 days in jail and a $1,000 fine. Our attorney pursues suppression motions, challenges evidence, negotiates with prosecutors, and represents clients at trial when necessary to achieve the best possible outcome. Many misdemeanor convictions can be sealed under <strong>ORC 2953.32</strong> after a one-year waiting period.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Hamilton Municipal Court. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> services throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Hamilton Municipal Court. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> services throughout Ohio.
             </p>
           </div>
         </div>

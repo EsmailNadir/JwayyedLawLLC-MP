@@ -70,29 +70,29 @@ export default function CatastrophicInjuriesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Catastrophic Injury Claims in Ohio: Damages, Experts, and Long-Term Recovery
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Catastrophic injuries are life-altering events. A traumatic brain injury, spinal cord injury resulting in paralysis, severe burn injury, amputation, or other permanent disabling condition changes every aspect of a person's life — and requires decades of ongoing medical care, rehabilitation, and personal support. Ohio law recognizes the elevated nature of these injuries through ORC 2323.43, which imposes a higher non-economic damages cap for claims involving permanent physical deformity, loss of use of a limb, loss of a bodily organ system, or a permanent inability to independently care for oneself. At Jwayyed Law LLC, we approach catastrophic injury cases with the thoroughness and resources these high-stakes claims demand.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Establishing the full measure of damages in a catastrophic injury case requires a team of expert witnesses working together to paint a complete picture of the plaintiff's past and future losses. A certified life care planner develops a comprehensive projection of all future care needs — from surgeries and hospitalizations to home health aides, assistive technology, and home modifications. An economist translates those projected costs into present value, accounting for inflation and investment returns. A vocational rehabilitation expert quantifies the lifetime impact on earning capacity. Medical specialists testify about the permanence of the injury, expected complications, and life expectancy effects. Without this expert foundation, no jury or adjuster can accurately value a catastrophic injury case, and the victim risks being dramatically undercompensated.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's non-economic damage caps under ORC 2323.43 apply to catastrophic injury claims with a higher ceiling than standard tort claims. For injuries qualifying as catastrophic — permanent deformity, loss of limb use, organ system loss, or permanent inability to self-care — non-economic damages are capped at $500,000 per plaintiff or $1,000,000 per occurrence, compared to the standard $350,000/$500,000 cap. Critically, economic damages are never capped. Future medical expenses, future lost earnings, costs of personal care attendants, home modifications, prosthetics, wheelchairs, and other long-term needs are all fully recoverable without limit. This makes the thoroughness of the life care plan and economic analysis decisive to the overall value of the case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Structured settlements — where a portion of the recovery is paid in future periodic installments rather than as a lump sum — are common in catastrophic injury cases. They can provide tax advantages, protect against the risk of depleting a large award over a lifetime of care, and be structured to match anticipated future expense milestones (such as future surgeries or the transition from parental care to residential placement). Structured settlements require careful negotiation and involve life insurance companies issuing annuity policies. An attorney experienced in catastrophic injury cases can guide you through the structured settlement analysis to ensure the structure meets your actual long-term needs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Resolving liens is a critical step at the end of every catastrophic injury case. Medicare, Medicaid, private health insurers, and Ohio BWC (in workers' comp cases) all have a right to be repaid from the personal injury settlement for benefits they paid related to the injury. These liens can be substantial in catastrophic injury cases — Medicare may have paid hundreds of thousands in medical bills. Failing to address these liens can result in legal liability for the plaintiff and attorney. Negotiating lien reductions — particularly Medicare liens governed by federal statute — requires specific expertise and can significantly increase the net recovery available to the injured person.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Types of Catastrophic Injuries We Handle
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>Traumatic brain injury (TBI) — mild, moderate, and severe; diffuse axonal injury</li>
               <li>Spinal cord injury — paraplegia, quadriplegia, incomplete spinal cord injuries</li>
               <li>Severe burns requiring skin grafting, long-term hospitalization, and reconstruction</li>
@@ -103,41 +103,41 @@ export default function CatastrophicInjuriesPage() {
               <li>Birth injuries causing permanent neurological impairment (cerebral palsy, HIE)</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Catastrophic injury cases demand patience, resources, and experience. At Jwayyed Law LLC, we take catastrophic injury cases seriously — retaining the right experts, waiting for medical stabilization before evaluating settlement, and building the strongest possible case for maximum lifetime compensation. We handle catastrophic injury claims on a contingency fee basis.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We also handle related matters including{' '}
-              <Link href="/personal-injury/medical-malpractice" className="text-[#b87333] underline hover:opacity-80">medical malpractice</Link>,{' '}
-              <Link href="/personal-injury/workplace-injuries" className="text-[#b87333] underline hover:opacity-80">workplace injury claims</Link>, and{' '}
-              <Link href="/personal-injury/nursing-home-abuse" className="text-[#b87333] underline hover:opacity-80">nursing home abuse and neglect</Link> throughout Ohio.
+              <Link href="/personal-injury/medical-malpractice" className="text-sky-deep underline hover:opacity-80">medical malpractice</Link>,{' '}
+              <Link href="/personal-injury/workplace-injuries" className="text-sky-deep underline hover:opacity-80">workplace injury claims</Link>, and{' '}
+              <Link href="/personal-injury/nursing-home-abuse" className="text-sky-deep underline hover:opacity-80">nursing home abuse and neglect</Link> throughout Ohio.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link> to discuss your case. Learn more about <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations" className="text-[#b87333] underline hover:text-[#a06828]">Ohio&apos;s statute of limitations for personal injury claims</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link> to discuss your case. Learn more about <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations" className="text-sky-deep underline hover:text-navy-950">Ohio&apos;s statute of limitations for personal injury claims</Link>.
             </p>
 
             <LocationsWeServe title="Personal Injury" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
+                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
               </Link>
-              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Truck Accidents</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Commercial vehicle and semi-truck collision claims</span>
+              <Link href="/personal-injury/truck-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Truck Accidents</span>
+                <span className="text-sm text-navy-950/70">Commercial vehicle and semi-truck collision claims</span>
               </Link>
-              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Wrongful Death</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Holding negligent parties accountable for fatal injuries</span>
+              <Link href="/personal-injury/wrongful-death" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Wrongful Death</span>
+                <span className="text-sm text-navy-950/70">Holding negligent parties accountable for fatal injuries</span>
               </Link>
-              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Workplace Injuries</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">On-the-job injuries and workers&apos; compensation</span>
+              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Workplace Injuries</span>
+                <span className="text-sm text-navy-950/70">On-the-job injuries and workers&apos; compensation</span>
               </Link>
             </div>
           </div>

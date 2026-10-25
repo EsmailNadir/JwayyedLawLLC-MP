@@ -76,25 +76,25 @@ export default function PersonalInjuryMorrowCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Morrow County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Morrow County is a rural Ohio county north of Columbus, home to Mt. Gilead, Cardington, Marengo, and Edison. Its character — agricultural land, rural state routes, and smaller communities — means that personal injury cases here can involve unique circumstances: farm equipment collisions, livestock on roadways, poorly maintained rural roads, and limited emergency services response times that affect injury severity. Jwayyed Law LLC represents Morrow County injury victims in all types of personal injury matters, fighting to recover the compensation they deserve under Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 gives most personal injury claimants exactly two years from the date of injury to file a lawsuit. This deadline does not move simply because you are still treating with doctors or negotiating with an insurance company. Missing the deadline is almost always fatal to a personal injury case. Our attorney prioritizes acting quickly — securing evidence, documenting your damages, and building a comprehensive claim from the start — to put you in the strongest possible legal position.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               US 42 and SR 95 are primary corridors through Morrow County and see a meaningful number of serious accidents, including rear-end collisions, side-swipes, and crashes involving farm machinery crossing roads during planting and harvest seasons. Ohio&apos;s modified comparative negligence rule under ORC 2315.33 allows recovery as long as you are less than 50% at fault. Our attorney carefully reviews accident reports, road conditions, sight-line issues, and vehicle data to establish liability and protect your right to recover in full.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond vehicle accidents, Morrow County personal injury cases can involve premises liability at local businesses in Mt. Gilead and Cardington, dog bite injuries under ORC 955.28, workplace accidents where a third party bears liability, and wrongful death claims. Every case is evaluated on its individual facts and pursued with the same level of dedication, regardless of the size of the claim or the county in which it arises.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury cases in Morrow County are filed at the Morrow County Common Pleas Court, 48 E. High St, Mt. Gilead, OH 43338. Jwayyed Law LLC handles these cases on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
             </p>
           </div>
         </div>

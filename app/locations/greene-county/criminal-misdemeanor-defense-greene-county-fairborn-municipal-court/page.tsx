@@ -76,42 +76,42 @@ export default function GreeneCriminalMisdemeanorDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Criminal Misdemeanor Defense in Greene County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Misdemeanor criminal charges in Greene County are handled in two courts: Fairborn Municipal Court at 1 W. Main St, Fairborn, OH 45324 and Xenia Municipal Court at 101 N. Detroit St, Xenia, OH 45385. Jurisdiction depends on where the offense occurred. At Jwayyed Law LLC, we provide aggressive{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link>{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link>{' '}
               representation in both courts for clients throughout Greene County, including Fairborn, Beavercreek, Xenia, Yellow Springs, and Centerville.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The presence of Wright-Patterson Air Force Base makes Greene County unique among Ohio counties for criminal defense purposes. Active-duty military members, reservists, veterans, and civilian base employees charged with misdemeanors in Fairborn or Xenia Municipal Court face consequences that extend far beyond Ohio&apos;s criminal penalties. Security clearance implications, UCMJ proceedings, and military career consequences must all be considered when developing a defense strategy. Our firm understands this population&apos;s specific needs and coordinates with military defense counsel when appropriate.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Types of Misdemeanor Cases in Greene County Courts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Both Fairborn Municipal Court and Xenia Municipal Court handle the full range of misdemeanor criminal cases: assault and aggravated assault; domestic violence; theft and shoplifting; drug possession of controlled substances and marijuana; disorderly conduct; criminal damaging or endangering; menacing; criminal trespass; driving under suspension; and traffic-related criminal charges. Fairborn and Beavercreek&apos;s commercial areas and proximity to the base generate a significant number of retail theft, disorderly conduct, and assault cases. Xenia and Yellow Springs cases reflect that area&apos;s community characteristics. Our firm approaches each case according to the specific court, prosecutor, and local practices involved.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Penalties in Greene County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under Ohio Revised Code, maximum misdemeanor penalties in Greene County courts are: first-degree misdemeanor — up to 180 days in jail and a $1,000 fine; second-degree — up to 90 days and $750; third-degree — up to 60 days and $500; fourth-degree — up to 30 days and $250; minor misdemeanor — no jail, up to $150 fine. These are maximum penalties and are not automatically imposed. An experienced defense attorney can often achieve reduced charges, suspended sentences, community service, diversion, or dismissal, substantially reducing or eliminating the impact on your record and life.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies in Fairborn and Xenia Municipal Courts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our defense strategy begins with thorough review of all available evidence: police reports, body-cam footage, witness statements, and physical evidence. We evaluate whether the arrest or search complied with constitutional requirements and ORC 2935.26. In assault cases, we assess self-defense and defense-of-others arguments under Ohio law. In drug cases, we challenge the basis for the search, chain of custody, and laboratory procedures. In domestic violence cases, we investigate the factual background, review all communications, and challenge the credibility of witnesses. We also evaluate whether clients are eligible for Ohio&apos;s Intervention in Lieu of Conviction (ILC) program, which can result in dismissal of the charges upon successful completion of treatment.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Military Considerations in Greene County Criminal Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For military clients at Wright-Patterson AFB, even a minor misdemeanor conviction can have disproportionate career consequences. Security clearance adjudicators look at arrests, charges, and convictions regardless of the civilian sentence imposed. A domestic violence conviction triggers a federal firearm prohibition under the Lautenberg Amendment, which can result in immediate disqualification from military service. Our firm pursues the best possible civilian outcome — dismissal, reduction to a non-conviction, or ILC — with the goal of minimizing adverse military consequences.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing misdemeanor charges in Greene County, contact Jwayyed Law LLC immediately at (614) 285-5482. Whether your case is in Fairborn Municipal Court or Xenia Municipal Court, we will review the charges, explain all available options including diversion and expungement, and develop a defense strategy tailored to your specific situation and the court where your case will be heard.
             </p>
           </div>

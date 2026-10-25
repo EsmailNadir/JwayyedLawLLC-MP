@@ -82,60 +82,60 @@ export default function PowersOfAttorneyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Powers of Attorney in Ohio: Planning for Incapacity Under ORC Chapter 1337
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A power of attorney (POA) is a legal document in which one person (the principal) grants another person (the agent or attorney-in-fact) the authority to act on the principal\'s behalf. Powers of attorney are among the most important and most underutilized documents in estate planning. Without a durable financial power of attorney, if you become incapacitated due to illness, accident, or cognitive decline, no one — not your spouse, not your adult children, not your closest friend — has legal authority to manage your finances, pay your bills, file your tax returns, or handle your business affairs without going to probate court and obtaining a guardianship. A healthcare power of attorney provides the same protection for medical decisions. With these documents in place, your chosen person can act immediately when needed, privately, and without court involvement.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio\'s modern power of attorney framework is codified at ORC 1337.01 through 1337.64 — the Ohio Uniform Power of Attorney Act, effective since March 22, 2012. The UPOAA standardized the law across Ohio, clarified the duties of agents, established which powers require explicit authorization (so-called "hot powers"), created third-party acceptance obligations to reduce institutional resistance to honoring POAs, and provided a statutory short form that simplifies drafting while ensuring legal adequacy. Despite the existence of a statutory form, a power of attorney drafted without legal guidance often lacks crucial provisions — hot powers for Medicaid planning or gifting, specific authority for digital accounts, or healthcare-specific directives — that become critically important exactly when the document needs to be used.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC prepares financial (general) powers of attorney and healthcare powers of attorney for clients throughout Columbus, Franklin County, and Ohio as part of comprehensive estate plans. We tailor every POA to your specific circumstances — the size and composition of your estate, your healthcare preferences, the trustworthiness and capabilities of your chosen agent, and your goals for Medicaid planning and estate planning. A power of attorney is not a form you fill out online; it is a carefully drafted legal instrument that determines who will care for you and your finances if you cannot care for yourself.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Types of Powers of Attorney in Ohio
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>General (Financial) Durable Power of Attorney:</strong> Grants your agent broad authority to manage your financial affairs — banking, investments, real estate, taxes, business operations, government benefit programs, and more. Under the UPOAA, a general POA grants a wide range of default powers, but certain sensitive powers (gifts, trust modifications, beneficiary changes) require explicit language. This document becomes critically important during incapacity, when your agent must pay your bills, file your taxes, and manage your estate without the ability to consult you.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Limited (Special) Power of Attorney:</strong> Grants authority to do one specific thing — sign documents at a real estate closing, manage a specific bank account, sell a particular vehicle. A limited POA is typically non-durable and terminates upon completion of the specified task or at a stated expiration date. It is not a substitute for an estate planning POA.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Healthcare Power of Attorney (Healthcare Proxy):</strong> Governed by ORC 1337.12, this document appoints a healthcare proxy to make medical decisions — treatment choices, surgery consent, end-of-life care decisions, facility selection — if you are unable to communicate or make decisions for yourself. Your healthcare proxy should know your values, your preferences for aggressive versus comfort-focused care, and your wishes regarding life-sustaining treatment.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               POA vs. Guardianship: The Cost of Not Planning
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The most compelling reason to execute powers of attorney is to avoid <Link href="/other-services/guardianships" className="text-[#b87333] underline hover:text-[#a06828]">guardianship</Link>. If you become incapacitated without these documents in place, your family must petition the probate court — a process that takes weeks, costs thousands of dollars in attorney fees and court costs, and removes your autonomy entirely by placing your affairs under court supervision indefinitely. An appointed guardian must file annual reports and accountings with the court, seek prior court approval for major decisions, and continue to incur legal fees throughout the guardianship. A durable power of attorney and healthcare proxy, prepared in advance, allow your chosen person to act without any of this — immediately, privately, and at far lower cost. These documents cost a fraction of what a single year of guardianship administration costs.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The most compelling reason to execute powers of attorney is to avoid <Link href="/other-services/guardianships" className="text-sky-deep underline hover:text-navy-950">guardianship</Link>. If you become incapacitated without these documents in place, your family must petition the probate court — a process that takes weeks, costs thousands of dollars in attorney fees and court costs, and removes your autonomy entirely by placing your affairs under court supervision indefinitely. An appointed guardian must file annual reports and accountings with the court, seek prior court approval for major decisions, and continue to incur legal fees throughout the guardianship. A durable power of attorney and healthcare proxy, prepared in advance, allow your chosen person to act without any of this — immediately, privately, and at far lower cost. These documents cost a fraction of what a single year of guardianship administration costs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One critical point: powers of attorney can only be executed while the principal has legal capacity. If a person has already lost the cognitive ability to understand and execute legal documents, it is too late to create a POA — guardianship becomes the only option. This is why estate planning attorneys consistently emphasize that these documents should be prepared well before any health crisis, not in response to one. Young adults benefit from these documents too — an 18-year-old in a car accident may need their parents to access medical and financial information that they could not access without a POA, because adult children are legally independent persons.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/other-services/guardianships" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Guardianships</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">When a POA is no longer available — court-supervised protection</span>
+              <Link href="/other-services/guardianships" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Guardianships</span>
+                <span className="text-sm text-navy-950/70">When a POA is no longer available — court-supervised protection</span>
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Revocable Living Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Comprehensive incapacity and probate planning</span>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
+                <span className="text-sm text-navy-950/70">Comprehensive incapacity and probate planning</span>
               </Link>
-              <Link href="/other-services/estate-planning" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Estate Planning</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Wills, trusts, and a complete estate plan</span>
+              <Link href="/other-services/estate-planning" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Estate Planning</span>
+                <span className="text-sm text-navy-950/70">Wills, trusts, and a complete estate plan</span>
               </Link>
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Special Needs Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Planning for loved ones with disabilities</span>
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Special Needs Trusts</span>
+                <span className="text-sm text-navy-950/70">Planning for loved ones with disabilities</span>
               </Link>
             </div>
           </div>

@@ -81,68 +81,68 @@ export default function CharitableTrustsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Charitable Trusts in Ohio: How They Work and What They Cost
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Charitable trusts are sophisticated estate planning vehicles that allow you to support causes you care about while simultaneously reducing federal income taxes, bypassing capital gains on appreciated assets, and removing value from your taxable estate. Ohio residents who own appreciated stock, real estate, or a closely held business interest are often ideal candidates for charitable trust planning. At Jwayyed Law LLC, we guide clients throughout Columbus, Cincinnati, Dayton, and the surrounding areas through every step of establishing a charitable trust that integrates seamlessly with their broader estate plan.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio has no state estate tax — it was repealed effective January 1, 2013. However, for estates that exceed the federal exemption (currently $13.61 million per individual in 2024, though this amount is scheduled to sunset to approximately $7 million after 2025 absent congressional action), charitable trusts can play an important role in reducing federal estate tax exposure. Even for estates well below the federal threshold, charitable trusts offer compelling income tax advantages that can deliver real economic value in the year of funding.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The governing federal statutes for charitable remainder trusts are IRC 664 (which defines the income payout rules and tax treatment), IRC 170 (which provides the income tax deduction), and IRC 2055 and 2522 (which provide estate and gift tax deductions for charitable transfers). In Ohio, the Ohio Trust Code under ORC Chapter 5804 governs charitable purpose trusts, and the Ohio Attorney General has supervisory and enforcement authority over charitable trusts under ORC 109.23 through ORC 109.33, including mandatory registration and annual reporting obligations.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Charitable Remainder Trusts: CRAT vs. CRUT
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A charitable remainder trust (CRT) is an irrevocable split-interest trust: you (or other named individuals) receive income for a term, and whatever remains at the end passes to charity. There are two main types. A <strong>Charitable Remainder Annuity Trust (CRAT)</strong> pays a fixed dollar amount each year — determined as a percentage of the initial contribution. Once set, the annuity amount never changes regardless of investment performance, making it predictable but inflexible. A <strong>Charitable Remainder Unitrust (CRUT)</strong> pays a fixed percentage (at least 5% per IRC 664) of the trust\'s fair market value as redetermined each year. If the trust grows, your payments grow with it. CRUTs allow additional contributions; CRATs do not.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The capital gains bypass benefit is one of the most compelling reasons Columbus-area clients use CRTs. If you own appreciated real estate or stock with a very low cost basis, selling it outright would trigger federal capital gains tax — up to 23.8% (20% long-term rate plus 3.8% net investment income tax). By contributing that property to a CRT instead, the trust sells it free of capital gains tax. The full sale proceeds remain in the trust and are invested to generate your income stream. You receive an immediate partial income tax deduction under IRC 170 in the year of the contribution. The capital gain is not eliminated — it is spread over your income distributions over time and characterized according to IRS four-tier accounting rules — but the immediate lump-sum tax hit is avoided.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When you fund a CRT, you must designate one or more qualified charities as remainder beneficiaries. This can be a public charity (a university, hospital, religious organization, or community foundation), a donor-advised fund, or a private foundation you establish. You cannot change the remainder beneficiary in a way that would disqualify the trust as a charitable remainder trust under IRC 664, so careful selection at the outset is critical.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Charitable Lead Trusts and Alternatives to CRTs
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A <strong>Charitable Lead Trust (CLT)</strong> works in the reverse order of a CRT. The trust pays an annuity or unitrust amount to charity for a defined term, then the remaining principal passes to your heirs. A <strong>Charitable Lead Annuity Trust (CLAT)</strong> makes fixed annual payments to charity; a <strong>Charitable Lead Unitrust (CLUT)</strong> pays a percentage of annually revalued assets. CLTs are powerful wealth transfer tools in low-interest-rate environments. Because the IRS values the remainder interest to heirs using the Section 7520 rate, a low AFR means the IRS assigns a low value to what passes to heirs — reducing or eliminating the taxable gift.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Donor-advised funds (DAFs)</strong> are a simpler, lower-cost alternative for clients who want to make a charitable contribution and take an immediate deduction but do not yet know which charities they want to benefit. You contribute assets to a sponsoring organization (such as a community foundation or a financial institution\'s charitable arm), receive an immediate deduction, and then recommend grants to qualified charities over time. DAFs do not provide the income stream of a CRT, but they are inexpensive to establish (often no cost) and offer maximum flexibility. A <strong>private foundation</strong> is another option for donors seeking more control, though foundations carry higher administrative costs and more stringent IRS compliance requirements under IRC 4940 through 4958.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Choosing among a CRT, CLT, donor-advised fund, or private foundation depends on your income needs, estate size, philanthropic goals, and the type of assets you plan to contribute. Our Columbus estate planning attorneys work with your financial advisor and CPA to model the after-tax outcomes of each option before recommending a structure.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Ohio Attorney General Oversight and Ongoing Compliance
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio takes charitable trust oversight seriously. Under ORC 109.23 through ORC 109.33, any trustee holding assets for charitable purposes must register with the Ohio Attorney General\'s Charitable Law Section and file annual financial reports. Failure to register or report can result in enforcement action. The AG has authority to audit charitable trusts, compel accountings in probate court, seek court-ordered modifications or terminations of trusts that have become impractical, and bring actions against trustees who breach their fiduciary duties. These ongoing obligations are separate from the federal requirement to file IRS Form 5227 (Split-Interest Trust Information Return) annually for CRTs and CLTs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               When we draft a charitable trust for an Ohio client, we prepare the registration materials and initial annual report filing as part of the engagement, and we advise on the ongoing recordkeeping practices that will keep the trust in good standing with both the Ohio AG and the IRS. Properly structured and maintained, a charitable trust can serve as the centerpiece of a philanthropic legacy that benefits your family, your community, and the causes you have supported throughout your lifetime.
             </p>
 
             <LocationsWeServe title="Charitable Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Trust Services
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Irrevocable Trusts
               </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Estate Planning &amp; Wills
               </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Dynasty Trusts
               </Link>
             </div>

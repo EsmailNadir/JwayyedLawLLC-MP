@@ -70,29 +70,29 @@ export default function WorkplaceInjuriesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Ohio Workplace Injuries: Workers' Compensation and Third-Party Claims
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio operates a state-run workers' compensation system through the Ohio Bureau of Workers' Compensation (BWC), making it one of the few states where most employers are required to insure through a state fund rather than private carriers. The system is governed by ORC Chapter 4123. When an employee is hurt on the job, workers' comp provides no-fault benefits covering medical treatment and a portion of lost wages — but those benefits are the exclusive remedy against the employer itself. Understanding what workers' comp covers, what it does not cover, and when a separate civil lawsuit against a third party is possible is essential to protecting your financial recovery after a workplace injury.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Workers' compensation under ORC 4123.01 covers employees — but not independent contractors — performing services in Ohio. Benefits include payment for all necessary medical treatment, Temporary Total Disability (TTD) compensation while you cannot work (typically two-thirds of your average weekly wage, subject to BWC maximums), Permanent Partial Disability (PPD) for lasting impairments, Permanent Total Disability (PTD) for workers who can no longer perform any sustained employment, and death benefits for the dependents of workers killed on the job. Disputed claims are appealed to the Industrial Commission of Ohio (ICO), which conducts administrative hearings. Further appeals go through the Ohio court system.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most important — and frequently overlooked — aspects of workplace injury law in Ohio is the possibility of a third-party civil lawsuit in addition to a workers' comp claim. If your workplace injury was caused by someone other than your employer, that third party can be sued in civil court where the full range of damages is available, including pain and suffering, full lost income, and loss of quality of life. Common third-party defendants include manufacturers of defective machinery or tools (product liability), owners of worksites that are not your employer's property (premises liability), and negligent drivers who caused accidents while you were working. The BWC will typically assert a lien on part of any third-party recovery to recoup the benefits it paid — your attorney will manage this process.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio employers are prohibited from retaliating against workers who file BWC claims. ORC 4123.90 makes it unlawful for any employer to discharge, demote, reassign, or otherwise take adverse action against an employee because they filed a workers' compensation claim, testified in a workers' comp proceeding, or exercised any other right under the workers' comp system. A retaliation claim under ORC 4123.90 must be filed within 180 days of the retaliatory act and can result in reinstatement, back pay, and attorney fees. If you believe you have been fired or disciplined in connection with filing a claim, consult an attorney immediately.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The statute of limitations for filing a BWC claim is one year from the date of injury under ORC 4123.84. For occupational diseases (conditions that develop over time from workplace exposures), different accrual rules apply. If your employer is illegally uninsured, the BWC has an Uninsured Employer Fund that provides benefits, and the employer loses its civil immunity, potentially opening the door to a direct negligence lawsuit. OSHA violations by your employer — while not creating a private right of action in themselves — can be strong evidence of negligence in a third-party claim and can affect the overall investigation of the workplace accident.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Workplace Injury Cases We Handle
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>Ohio BWC workers' compensation claims — initial filings and denied claim appeals</li>
               <li>Third-party product liability claims for defective workplace equipment and machinery</li>
               <li>Construction site injuries — third-party premises liability and contractor negligence</li>
@@ -103,41 +103,41 @@ export default function WorkplaceInjuriesPage() {
               <li>Permanent total and permanent partial disability determinations</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Navigating the Ohio BWC system while simultaneously evaluating potential third-party civil claims requires an attorney who understands both paths. At Jwayyed Law LLC, we help injured Ohio workers pursue every available avenue of recovery — including challenging denied BWC claims before the Industrial Commission and filing civil lawsuits against negligent third parties. We handle workplace injury cases on a contingency fee basis.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We also handle related matters including{' '}
-              <Link href="/personal-injury/premises-liability" className="text-[#b87333] underline hover:opacity-80">premises liability</Link>,{' '}
-              <Link href="/personal-injury/catastrophic-injuries" className="text-[#b87333] underline hover:opacity-80">catastrophic injury claims</Link>, and other{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury matters</Link> throughout Ohio.
+              <Link href="/personal-injury/premises-liability" className="text-sky-deep underline hover:opacity-80">premises liability</Link>,{' '}
+              <Link href="/personal-injury/catastrophic-injuries" className="text-sky-deep underline hover:opacity-80">catastrophic injury claims</Link>, and other{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury matters</Link> throughout Ohio.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link>. Learn about <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations" className="text-[#b87333] underline hover:text-[#a06828]">Ohio&apos;s statute of limitations for injury claims</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link>. Learn about <Link href="/our-law-firm/blog/personal-injury-ohio-statute-of-limitations" className="text-sky-deep underline hover:text-navy-950">Ohio&apos;s statute of limitations for injury claims</Link>.
             </p>
 
             <LocationsWeServe title="Personal Injury" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Catastrophic Injuries</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Severe and life-altering injury claims</span>
+              <Link href="/personal-injury/catastrophic-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Catastrophic Injuries</span>
+                <span className="text-sm text-navy-950/70">Severe and life-altering injury claims</span>
               </Link>
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
+                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
               </Link>
-              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Slip & Fall Injuries</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Premises liability claims for unsafe conditions</span>
+              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Slip & Fall Injuries</span>
+                <span className="text-sm text-navy-950/70">Premises liability claims for unsafe conditions</span>
               </Link>
-              <Link href="/personal-injury/premises-liability" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Premises Liability</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property owner negligence and unsafe conditions</span>
+              <Link href="/personal-injury/premises-liability" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Premises Liability</span>
+                <span className="text-sm text-navy-950/70">Property owner negligence and unsafe conditions</span>
               </Link>
             </div>
           </div>

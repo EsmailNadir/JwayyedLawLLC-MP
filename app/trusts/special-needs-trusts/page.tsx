@@ -81,54 +81,54 @@ export default function SpecialNeedsTrustsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Special Needs Trusts in Ohio: Protecting Benefits While Providing for Your Loved One
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For families with a child or adult loved one who has a disability, one of the most consequential planning decisions is how to provide financially for that person without destroying their eligibility for the government benefits they depend on. Medicaid pays for essential healthcare, in-home support, residential services, and therapies for millions of Ohioans with disabilities. Supplemental Security Income (SSI) provides monthly cash assistance. Both programs impose strict resource limits — generally $2,000 in countable assets for an individual — and a direct inheritance, settlement award, or gift above that limit can immediately suspend these critical benefits. A properly drafted special needs trust (SNT), governed by ORC Chapter 5815 and federal law (42 U.S.C. § 1396p(d)(4)(A)), holds assets for a disabled beneficiary\'s supplemental benefit without being counted as the beneficiary\'s own resource, preserving benefits eligibility while dramatically improving quality of life.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio attorneys at Jwayyed Law LLC work with families across Columbus and throughout the state to establish, fund, and administer special needs trusts. Whether you are a parent planning for a child with autism or cerebral palsy, a grandparent who wants to leave a bequest, a personal injury attorney seeking a structured settlement vehicle for a client with disabilities, or an adult who has received an unexpected inheritance or legal settlement — the rules governing SNTs are technical, and the consequences of errors are severe. We bring practical knowledge of Ohio Medicaid rules and SSA program policy to every special needs trust we draft.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               First-Party vs. Third-Party Special Needs Trusts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The most important threshold question in SNT planning is whose money will fund the trust. A <strong>first-party SNT</strong> (also called a self-settled or (d)(4)(A) trust) is funded with the disabled person\'s own assets. Common scenarios include a personal injury settlement, retroactive Social Security Disability benefits, or an inheritance that was already received outright. Federal law (42 U.S.C. § 1396p(d)(4)(A)) requires these trusts to: (1) be established by a parent, grandparent, legal guardian, or court — not by the beneficiary personally; (2) name the beneficiary as the sole lifetime beneficiary; (3) be established before the beneficiary\'s 65th birthday; and (4) include a Medicaid payback provision requiring that upon the beneficiary\'s death, the state Medicaid agency is reimbursed for all benefits paid before any remaining funds pass to heirs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A <strong>third-party SNT</strong> is funded with assets belonging to someone other than the beneficiary — most commonly a parent or grandparent who wants to plan ahead for a disabled child. Third-party SNTs carry no Medicaid payback requirement, meaning that remaining trust funds at the beneficiary\'s death pass entirely to whomever the grantor designated. They have no age limit, can be funded by multiple family members over time (including through wills and beneficiary designations), and are the preferred vehicle whenever the family has a choice. When a grandparent wants to leave a bequest to a grandchild with a disability, the bequest should go to a third-party SNT — never outright to the grandchild, and never to the grandchild\'s parents to hold informally (which creates its own legal and tax complications).
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Permissible Distributions and Trustee Responsibilities
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The trustee of a special needs trust wields significant discretion — and significant responsibility. Every distribution must be evaluated against two questions: will this distribution reduce a government benefit, and does it genuinely serve the beneficiary\'s supplemental needs? Cash paid directly to the beneficiary counts as an SSI resource in the month received and as income the following month. Payments for food and shelter can trigger the SSI in-kind support and maintenance (ISM) rules, potentially reducing the beneficiary\'s monthly SSI payment by up to one-third plus $20. Permissible distributions — those that do not count against benefits — typically include medical and dental expenses not covered by Medicaid, personal care and hygiene items, clothing and accessories, transportation and vehicle expenses, recreation and travel, education and vocational training, technology and adaptive equipment, home furnishings, and legal and professional fees. Trustees must keep meticulous records and issue annual accountings consistent with their fiduciary duties under Ohio trust law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio families who want a simpler alternative for smaller amounts should consider the Ohio ABLE program — a tax-advantaged savings account available to individuals whose disability began before age 26. ABLE accounts (up to $100,000) are excluded from SSI resource counting and can be used for a wide range of disability-related expenses. However, annual contribution limits ($18,000 in 2024) make them unsuitable for large settlements or inheritances. Many comprehensive disability plans combine a third-party SNT (for larger assets) with an ABLE account (for routine supplemental spending), giving trustees flexibility and giving beneficiaries greater autonomy over smaller purchases.
             </p>
 
             <LocationsWeServe title="Trusts" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Revocable Living Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Avoid probate and maintain control of your estate</span>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
+                <span className="text-sm text-navy-950/70">Avoid probate and maintain control of your estate</span>
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Irrevocable Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Medicaid planning and estate tax strategies</span>
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Trusts</span>
+                <span className="text-sm text-navy-950/70">Medicaid planning and estate tax strategies</span>
               </Link>
-              <Link href="/other-services/guardianships" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Guardianships</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Legal protection for adults and minors who need a guardian</span>
+              <Link href="/other-services/guardianships" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Guardianships</span>
+                <span className="text-sm text-navy-950/70">Legal protection for adults and minors who need a guardian</span>
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Powers of Attorney</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Financial and healthcare decision-making authority</span>
+              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Powers of Attorney</span>
+                <span className="text-sm text-navy-950/70">Financial and healthcare decision-making authority</span>
               </Link>
             </div>
           </div>

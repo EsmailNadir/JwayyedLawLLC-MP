@@ -82,57 +82,57 @@ export default function GuardianshipsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Guardianships in Ohio: Protecting Those Who Cannot Protect Themselves
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a loved one loses the ability to make sound decisions due to dementia, intellectual disability, traumatic brain injury, severe mental illness, or any other cause, Ohio law provides a legal mechanism to protect them: guardianship. Under ORC Chapter 2111, a probate court can appoint a guardian — a person legally authorized to make personal, medical, and financial decisions on behalf of another individual called the ward. Guardianship is one of the most powerful legal interventions available because it effectively overrides the ward\'s independent decision-making authority, which is why Ohio courts require clear and convincing evidence of incapacity and must find that guardianship is the least restrictive available option before appointing a guardian.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio\'s guardianship law was significantly modernized by the 2021 enactment of ORC Chapter 2135, the Uniform Guardianship, Conservatorship, and Other Protective Arrangements Act. This law strengthened the rights of proposed wards — including the right to appointed counsel, the right to attend hearings, and the right to present evidence — and explicitly directed courts to consider less restrictive alternatives such as supported decision-making agreements before imposing guardianship. Navigating both Chapter 2111 and Chapter 2135 requires legal counsel who understands how these two statutory frameworks interact in modern Ohio probate court practice.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC assists families across Columbus, Franklin County, and throughout Ohio with all aspects of guardianship matters — from evaluating whether guardianship is necessary to preparing petitions, attending hearings, and advising appointed guardians on their ongoing duties. If your parent has been diagnosed with Alzheimer\'s disease, if a family member with developmental disabilities is aging out of school-based support systems, if an adult child has suffered a severe injury, or if you are concerned that a vulnerable person is being financially exploited — our firm is ready to help you assess your options and act quickly when necessary.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Guardianship Process in Ohio Probate Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Establishing a guardianship requires filing a complaint in the probate court of the county where the proposed ward lives — for Columbus residents, that is the Franklin County Probate Court, located on South High Street. The complaint must describe the proposed ward\'s condition, identify the basis for claiming incapacity, and request a specific type of guardianship (person, estate, or both). The court will require a statement from a physician, psychologist, or other licensed health professional attesting to the proposed ward\'s incapacity.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               After the complaint is filed, the court appoints a guardian ad litem — an attorney who independently investigates the proposed ward\'s circumstances and reports to the court. The proposed ward must be served with notice of the hearing and has the right to retain their own attorney, attend the hearing, and present evidence opposing the petition. At the hearing, the probate judge evaluates all evidence and, if satisfied that incapacity exists and guardianship is appropriate, issues letters of guardianship. In Franklin County, the process typically takes four to eight weeks from filing to appointment for uncontested cases; contested cases can take significantly longer and may involve depositions, expert testimony, and multiple hearings.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Guardian Duties, Reporting, and Accountability
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio guardians are fiduciaries — they owe a duty of loyalty and care to the ward and are accountable to the probate court. A guardian of the estate must file a complete inventory of the ward\'s assets within 90 days of appointment and must file annual accountings showing every dollar received and every dollar spent, with supporting documentation. A guardian of the person must file an annual report describing the ward\'s current condition, medical treatment, living arrangements, and any significant changes. Court approval is required for major decisions: selling real estate, making large expenditures, authorizing certain invasive medical procedures, or moving the ward to a different residential facility. Guardians who fail to file required reports face sanctions including removal, surcharge (personal liability for losses), and referral to the prosecutor for criminal charges in cases of financial exploitation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Proactive planning remains the best way to avoid guardianship entirely. If a person retains legal capacity and executes a <Link href="/other-services/powers-of-attorney" className="text-[#b87333] underline hover:text-[#a06828]">durable power of attorney</Link> and healthcare proxy, their chosen agent can manage their affairs without court involvement, preserving both privacy and the individual\'s dignity. Similarly, a <Link href="/trusts/revocable-living-trusts" className="text-[#b87333] underline hover:text-[#a06828]">revocable living trust</Link> with a named successor trustee provides seamless financial management at incapacity without any court process. These tools require advance planning — once capacity is lost, they are no longer available, and guardianship becomes the only option.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Proactive planning remains the best way to avoid guardianship entirely. If a person retains legal capacity and executes a <Link href="/other-services/powers-of-attorney" className="text-sky-deep underline hover:text-navy-950">durable power of attorney</Link> and healthcare proxy, their chosen agent can manage their affairs without court involvement, preserving both privacy and the individual\'s dignity. Similarly, a <Link href="/trusts/revocable-living-trusts" className="text-sky-deep underline hover:text-navy-950">revocable living trust</Link> with a named successor trustee provides seamless financial management at incapacity without any court process. These tools require advance planning — once capacity is lost, they are no longer available, and guardianship becomes the only option.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Powers of Attorney</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Avoid guardianship with advance planning</span>
+              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Powers of Attorney</span>
+                <span className="text-sm text-navy-950/70">Avoid guardianship with advance planning</span>
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Revocable Living Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Manage assets at incapacity without court involvement</span>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
+                <span className="text-sm text-navy-950/70">Manage assets at incapacity without court involvement</span>
               </Link>
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Special Needs Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Financial protection for individuals with disabilities</span>
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Special Needs Trusts</span>
+                <span className="text-sm text-navy-950/70">Financial protection for individuals with disabilities</span>
               </Link>
-              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Probate Administration</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Estate administration through Ohio probate court</span>
+              <Link href="/other-services/probate" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Probate Administration</span>
+                <span className="text-sm text-navy-950/70">Estate administration through Ohio probate court</span>
               </Link>
             </div>
           </div>

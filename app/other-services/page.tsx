@@ -68,25 +68,25 @@ export default function OtherServicesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Additional Legal Services at Jwayyed Law LLC
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               In addition to criminal defense, OVI/DUI defense, personal injury, civil litigation, and business law, Jwayyed Law LLC provides estate planning, probate administration, and dispute resolution services throughout Ohio. These practice areas address some of life&apos;s most important legal decisions — protecting your assets and family through thoughtful estate planning, navigating the Ohio probate process efficiently after a loved one passes, and resolving disputes through mediation or arbitration when litigation is not the right path. Our attorney handles these matters with the same attention to Ohio statute and practical detail that we bring to our litigation practice.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Estate planning in Ohio is governed primarily by <strong>ORC Chapter 2107</strong> (wills), <strong>ORC Chapter 5801</strong> (trusts), and <strong>ORC 1337</strong> (powers of attorney). A comprehensive estate plan typically includes a Last Will and Testament, a durable financial power of attorney, a healthcare power of attorney, and an advance directive (living will). For individuals with larger estates, blended families, or real estate in multiple states, a revocable living trust under ORC Chapter 5801 can avoid probate entirely and provide a flexible, private mechanism for asset management and distribution. Ohio&apos;s Transfer on Death deed statute, <strong>ORC 5302.22</strong>, also allows real estate to pass directly to named beneficiaries without probate.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Probate administration in Ohio is handled through the Probate Division of the Court of Common Pleas under <strong>ORC Chapter 2113</strong>. The executor must inventory estate assets, publish notice to creditors, satisfy valid claims during the 4-month creditor claim period under <strong>ORC 2117.06</strong>, file required tax returns, and distribute the estate to beneficiaries. Executors have fiduciary duties and can face personal liability for mismanagement. Our attorney guides executors through each step of the process — from opening the estate to final accounting and distribution — helping them fulfill their obligations and minimize risk.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Dispute resolution services include mediation under <strong>ORC Chapter 2710</strong> and arbitration under <strong>ORC Chapter 2711</strong>. Many commercial contracts now include mandatory arbitration clauses, making it important to have experienced representation in arbitration proceedings. Mediation offers a confidential, voluntary path to settlement that can resolve disputes faster and at lower cost than litigation. Whether a dispute arises from a contract, a business relationship, or an estate matter, our attorney can advise on the most appropriate resolution strategy and represent your interests throughout.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-6">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-6">
               Our Other Legal Services
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -94,13 +94,13 @@ export default function OtherServicesPage() {
                 <a
                   key={service.href}
                   href={service.href}
-                  className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                  className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
                 >
-                  <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">
+                  <h4 className="jw-serif text-xl font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-3">
                     {service.title}
                   </h4>
                   {service.description && (
-                    <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">{service.description}</p>
+                    <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">{service.description}</p>
                   )}
                 </a>
               ))}

@@ -72,69 +72,69 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               {suburb} Mayor&apos;s Court — What You Need to Know
             </h2>
             {formerProsecutorTitle && (
-              <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
-                <span className="text-[#b87333] font-bold text-sm">⚖</span>
-                <span className="text-sm font-semibold text-slate-800">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
+              <div className="not-prose my-6 inline-flex items-center gap-3 bg-sky-deep/8 border border-sky-deep/25 px-4 py-3">
+                <span className="text-sky-deep font-bold text-sm">⚖</span>
+                <span className="text-sm font-semibold text-navy-950">{formerProsecutorTitle} — Insider knowledge of local court procedures and prosecution strategy.</span>
               </div>
             )}
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               {suburb} Mayor&apos;s Court handles the initial processing of most misdemeanor criminal charges and traffic violations arising within {suburb} city limits — including OVI, speeding, disorderly conduct, open container, petty theft, and a range of other offenses that residents and visitors to {suburb} may face. The court meets{' '}
               <strong>{schedule}</strong> at{' '}
               <strong>{address}</strong>, reachable at {phone}. For {suburb} residents facing any criminal or traffic charge, the mayor&apos;s court is often the first and most important stop — and the decisions made there, including whether to enter a plea and what kind, can determine whether you end up with a permanent criminal record. Jwayyed Law LLC provides experienced defense representation in {suburb} Mayor&apos;s Court and, when cases transfer, at Franklin County Municipal Court. Call{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               before your court date — not after.
             </p>
             {formerProsecutorTitle && (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-navy-950/80 mb-6 leading-relaxed">
                 As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
               </p>
             )}
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents. The <strong>{policeAgency}</strong> makes most of the arrests and issues most of the citations that flow into {suburb} Mayor&apos;s Court. Traffic stops on {keyRoads[0]} and other primary corridors through {suburb} account for a significant portion of the court&apos;s caseload — OVI stops, speeding citations, open container discoveries, and other traffic-related criminal charges. Understanding how the mayor&apos;s court process works and when a case should be contested versus resolved by plea is knowledge that an attorney brings to every appearance.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               What Is a Mayor&apos;s Court Under Ohio Law?
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Mayor&apos;s courts are a uniquely Ohio institution authorized by Ohio Revised Code 1905.01. They are established by Ohio municipalities to handle minor criminal and traffic matters arising within the city limits, without requiring a full-time municipal court. Unlike a county or municipal court, a mayor&apos;s court is presided over by the mayor of the municipality (or a magistrate appointed by the mayor) rather than by a licensed attorney or judge. The mayor&apos;s court does not conduct jury trials — it has jurisdiction to accept pleas, impose fines, and sentence defendants, but any defendant who demands a jury trial has that case transferred to Franklin County Municipal Court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Mayor&apos;s courts have jurisdiction over minor misdemeanor, M4, M3, M2, and M1 criminal charges arising in the municipality, as well as traffic violations under Ohio&apos;s motor vehicle laws. They do not have jurisdiction over felony charges — felony arraignments are conducted in Franklin County Municipal Court. For OVI specifically, {suburb} Mayor&apos;s Court can handle the underlying criminal OVI charge, but the Administrative License Suspension (ALS) appeal must be filed separately in Franklin County Municipal Court within 30 days of arrest.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               The {suburb} Mayor&apos;s Court Process
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When the {policeAgency} cites or arrests a person for a mayor&apos;s court offense in {suburb}, the defendant receives a citation or summons to appear at {suburb} Mayor&apos;s Court at {address} on a scheduled date. The court meets {schedule}. At the first appearance (arraignment), the defendant is informed of the charges, their rights, and asked to enter a plea. The most common options are: not guilty (continuing the case to a later date); guilty (convicted immediately, sentenced that day or at a later date); or no contest (not admitting guilt but not disputing the evidence — treated the same as a guilty plea for conviction purposes).
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An attorney appearing at arraignment can often enter a not guilty plea, request discovery of all police evidence, and negotiate with the prosecutor before any subsequent hearing. In many first-offense minor misdemeanor and M4 cases, pretrial negotiations result in dismissal, diversion, or charge reduction without requiring a trial. Having an attorney present at arraignment — or, better, before arraignment — is the most impactful single step you can take. Our firm appears at {suburb} Mayor&apos;s Court on behalf of clients, often allowing clients to avoid a personal court appearance for minor matters.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               When Cases Transfer From {suburb} Mayor&apos;s Court to Franklin County Municipal Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Several circumstances require transfer of a {suburb} Mayor&apos;s Court case to Franklin County Municipal Court at {FCMC.address} ({FCMC.floors}): (1) the defendant demands a jury trial, which the mayor&apos;s court cannot conduct; (2) the charge is a felony (arraignments and all proceedings for felony charges must occur in Franklin County Municipal Court); (3) the case involves an OVI with an ALS appeal (filed in Franklin County Municipal Court regardless of where the criminal case is pending); (4) the mayor&apos;s court otherwise lacks jurisdiction; or (5) the mayor&apos;s court and prosecutor agree to transfer for administrative convenience. Our firm handles cases at both levels and coordinates representation so you have continuity regardless of which court is handling your matter.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Charges Heard in {suburb} Mayor&apos;s Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               {suburb} Mayor&apos;s Court regularly handles: OVI/DUI charges under R.C. 4511.19 (first appearances only — ALS appeals go to Franklin County Municipal Court); speeding and traffic violations; disorderly conduct under R.C. 2917.11; open container under R.C. 4301.62; petty theft and shoplifting under R.C. 2913.02 (misdemeanor level); minor drug possession citations (minor misdemeanor marijuana under adult-use amounts); driving under suspension; failure to control; marked lanes violations; and other misdemeanor charges under Ohio&apos;s criminal code or {suburb}&apos;s municipal ordinances. Each type of charge has its own procedural context and potential defenses — our firm prepares specifically for the charge you face, not generically.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help at {suburb} Mayor&apos;s Court
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Arraignment representation:</strong> Appearing at your first {suburb} Mayor&apos;s Court date to enter a not guilty plea and obtain discovery</li>
               <li><strong>Pre-trial negotiation:</strong> Discussing the case with the prosecutor before any hearing to evaluate diversion, dismissal, or charge reduction</li>
               <li><strong>OVI defense:</strong> Defending the underlying criminal OVI at mayor&apos;s court level and simultaneously filing the ALS appeal at Franklin County Municipal Court</li>
@@ -143,11 +143,11 @@ export default function MayorsCourtTemplate({ suburb }: Props) {
               <li><strong>Record protection:</strong> Evaluating diversion and expungement eligibility to minimize the long-term impact on your criminal record</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you have a citation or summons for {suburb} Mayor&apos;s Court, contact Jwayyed Law LLC at{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               Our firm handles mayor&apos;s court appearances throughout Franklin County — often without requiring your personal appearance for minor matters.
             </p>
           </div>

@@ -72,48 +72,48 @@ export default function CommercialDUICDLPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Commercial DUI (CDL) Charges in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Commercial driver's license (CDL) holders face uniquely severe consequences when charged with OVI in Ohio. While the standard BAC limit for non-commercial drivers is 0.08% under ORC 4511.19, CDL holders operating a commercial motor vehicle (CMV) are subject to OVI charges at just 0.04% under ORC 4511.19(A)(1)(f). More critically, any OVI conviction — even in a personal vehicle, even at the standard 0.08% threshold — triggers CDL disqualification under ORC 4506.16. A first conviction means a one-year disqualification (three years for HAZMAT drivers). A second conviction means permanent, lifetime disqualification with no reinstatement pathway. For a professional trucker, delivery driver, or bus driver, this is effectively a career-ending consequence. At Jwayyed Law LLC, we understand what is at stake and we fight aggressively to protect our CDL-holding clients from these outcomes as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Commercial driver's license (CDL) holders face uniquely severe consequences when charged with OVI in Ohio. While the standard BAC limit for non-commercial drivers is 0.08% under ORC 4511.19, CDL holders operating a commercial motor vehicle (CMV) are subject to OVI charges at just 0.04% under ORC 4511.19(A)(1)(f). More critically, any OVI conviction — even in a personal vehicle, even at the standard 0.08% threshold — triggers CDL disqualification under ORC 4506.16. A first conviction means a one-year disqualification (three years for HAZMAT drivers). A second conviction means permanent, lifetime disqualification with no reinstatement pathway. For a professional trucker, delivery driver, or bus driver, this is effectively a career-ending consequence. At Jwayyed Law LLC, we understand what is at stake and we fight aggressively to protect our CDL-holding clients from these outcomes as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              One of the most important and frequently misunderstood aspects of CDL OVI law is that the disqualification follows the person, not the vehicle. ORC 4506.16 imposes CDL disqualification based on the driver's conviction, regardless of whether the offense occurred in a 80,000-pound semi-truck or a personal sedan on a day off. The only distinction is the BAC threshold that triggers OVI charges — 0.04% in a CMV, 0.08% in a personal vehicle. But once an OVI conviction is entered, the CDL disqualification applies in either case. This surprises many CDL holders who assume their personal-vehicle conduct is irrelevant to their commercial license. Federal regulations governed by the FMCSA reinforce this approach, and the CDL disqualification is reported to the national Commercial Driver's License Information System (CDLIS), making it visible to licensing authorities across all 50 states. Learn more about <Link href="/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to do if you are pulled over for OVI in Ohio</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              One of the most important and frequently misunderstood aspects of CDL OVI law is that the disqualification follows the person, not the vehicle. ORC 4506.16 imposes CDL disqualification based on the driver's conviction, regardless of whether the offense occurred in a 80,000-pound semi-truck or a personal sedan on a day off. The only distinction is the BAC threshold that triggers OVI charges — 0.04% in a CMV, 0.08% in a personal vehicle. But once an OVI conviction is entered, the CDL disqualification applies in either case. This surprises many CDL holders who assume their personal-vehicle conduct is irrelevant to their commercial license. Federal regulations governed by the FMCSA reinforce this approach, and the CDL disqualification is reported to the national Commercial Driver's License Information System (CDLIS), making it visible to licensing authorities across all 50 states. Learn more about <Link href="/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio" className="text-sky-deep underline hover:text-navy-950">what to do if you are pulled over for OVI in Ohio</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Federal reporting obligations add another layer of complexity to CDL OVI cases. Under 49 CFR 383.31, a CDL holder who is convicted of any OVI offense — in any vehicle — must notify their employer within 30 days of the conviction. This obligation applies to the employee independently; it is not the employer's duty to discover the conviction. Failure to report within 30 days is itself a federal regulatory violation that can result in additional disqualification consequences. In practice, most commercial carriers independently discover OVI convictions through background screening programs, and many have zero-tolerance employment policies that call for termination upon OVI arrest — before any conviction occurs. The employment consequences often arrive before the court proceedings are even concluded. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your CDL OVI case.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Federal reporting obligations add another layer of complexity to CDL OVI cases. Under 49 CFR 383.31, a CDL holder who is convicted of any OVI offense — in any vehicle — must notify their employer within 30 days of the conviction. This obligation applies to the employee independently; it is not the employer's duty to discover the conviction. Failure to report within 30 days is itself a federal regulatory violation that can result in additional disqualification consequences. In practice, most commercial carriers independently discover OVI convictions through background screening programs, and many have zero-tolerance employment policies that call for termination upon OVI arrest — before any conviction occurs. The employment consequences often arrive before the court proceedings are even concluded. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your CDL OVI case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a CDL holder is stopped and tested at 0.04% or above in a commercial vehicle, federal law also requires law enforcement to issue an immediate 24-hour out-of-service order, preventing the driver from operating any CMV for that period. The out-of-service event is separately recorded in the FMCSA's Safety Measurement System (SMS) and can affect both the driver's individual safety record and the employing carrier's safety rating. Carriers with poor SMS scores face increased regulatory scrutiny and may face difficulty securing contracts. This means a single OVI event for a CDL holder can create ripple effects that extend beyond the driver's own career to the employer's operations — and those employers know it, which is why many act swiftly on their employment policies.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The defense of a CDL OVI case must address two parallel proceedings: the administrative ALS challenge and the criminal OVI defense. An attorney can file a timely ALS appeal within 30 days of arrest to challenge the administrative suspension and seek a stay pending the outcome. On the criminal side, the attorney examines every aspect of the stop, the chemical test administration, the BAC testing equipment maintenance and calibration records, and the operator's certification. If the criminal charge can be reduced to a non-OVI offense such as reckless operation, the CDL disqualification under ORC 4506.16 may be avoided entirely. Every CDL OVI case is different, but the stakes are so high that immediate, experienced legal representation is essential. For more on the OVI process generally, see our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI defense overview</Link>. If you have already been suspended, see our page on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-[#b87333] underline hover:opacity-80">limited driving privileges</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The defense of a CDL OVI case must address two parallel proceedings: the administrative ALS challenge and the criminal OVI defense. An attorney can file a timely ALS appeal within 30 days of arrest to challenge the administrative suspension and seek a stay pending the outcome. On the criminal side, the attorney examines every aspect of the stop, the chemical test administration, the BAC testing equipment maintenance and calibration records, and the operator's certification. If the criminal charge can be reduced to a non-OVI offense such as reckless operation, the CDL disqualification under ORC 4506.16 may be avoided entirely. Every CDL OVI case is different, but the stakes are so high that immediate, experienced legal representation is essential. For more on the OVI process generally, see our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI defense overview</Link>. If you have already been suspended, see our page on <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               CDL OVI Penalties in Ohio (HB 37, Effective April 9, 2025)
             </h3>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-3">First OVI Conviction — CDL Consequences</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-3">First OVI Conviction — CDL Consequences</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>CDL disqualification: 1 year (3 years if transporting HAZMAT at time of offense)</li>
                 <li>Criminal OVI penalties: mandatory 3 days jail or driver intervention program, fines $565–$1,075, license suspension 1–3 years, reinstatement fee $315</li>
                 <li>Mandatory 30-day employer notification under 49 CFR 383.31</li>
                 <li>FMCSA CDLIS entry — nationally visible in all states</li>
               </ul>
-              <h4 className="font-semibold text-gray-900 mt-6 mb-3">Second OVI Conviction — CDL Consequences</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-3">Second OVI Conviction — CDL Consequences</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>Lifetime CDL disqualification — no reinstatement, no waiver, no appeal</li>
                 <li>Permanent end of commercial driving career</li>
                 <li>Enhanced criminal OVI penalties for repeat offense</li>
               </ul>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How a CDL OVI Defense Attorney Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>ALS Appeal:</strong> File within 30 days to challenge the administrative suspension and seek a stay</li>
               <li><strong>Stop and Test Challenges:</strong> Scrutinize the legal basis for the stop and the accuracy of BAC testing procedures</li>
               <li><strong>Equipment Records:</strong> Subpoena breathalyzer calibration and maintenance records for compliance issues</li>
@@ -124,23 +124,23 @@ export default function CommercialDUICDLPage() {
 
             <LocationsWeServe title="OVI/DUI Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
               </Link>
-              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">High-Tier OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
               </Link>
-              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Refusal OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense strategies when you refused the breathalyzer or chemical test</span>
               </Link>
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Limited Driving Privileges</span>
+                <span className="text-sm text-navy-950/70">Get back on the road legally during your OVI suspension</span>
               </Link>
             </div>
           </div>

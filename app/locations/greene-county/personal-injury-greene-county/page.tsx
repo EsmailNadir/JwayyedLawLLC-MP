@@ -76,25 +76,25 @@ export default function PersonalInjuryGreeneCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Greene County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Greene County, Ohio is home to Xenia (the county seat), Fairborn, Beavercreek, Yellow Springs, and Centerville — a diverse mix of communities near Wright-Patterson Air Force Base and the greater Dayton metropolitan area. Jwayyed Law LLC represents personal injury victims throughout Greene County in car accidents, slip and fall cases, premises liability matters, and other negligence claims. If you were injured due to another party&apos;s fault in Greene County, our attorney is prepared to pursue the full compensation you are entitled to under Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 gives most injury victims two years from the date of injury to file a personal injury lawsuit. This window is firm and unforgiving — missing it typically bars your claim entirely. Our attorney begins working immediately to preserve evidence, secure witness statements, and document the full extent of your damages. Early action protects your claim and positions you for the strongest possible negotiating stance with insurance companies.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               US 35 and SR 675 are major accident corridors in Greene County, carrying heavy traffic between Xenia, Fairborn, and Beavercreek. Accidents on these routes can be severe and often involve questions of shared fault. Ohio&apos;s modified comparative negligence rule under ORC 2315.33 allows recovery as long as you are less than 50% at fault — with damages reduced proportionally by your percentage of fault. Our attorney builds a thorough evidentiary record to minimize any fault attributed to you and maximize your recovery.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               In addition to highway and road accidents, Greene County presents slip and fall and premises liability risks at retail establishments, restaurants, parking lots, and public spaces throughout Beavercreek and the Fairborn commercial corridor. We also handle dog bite injuries under ORC 955.28, workplace injuries involving third-party negligence, wrongful death claims, and motorcycle and bicycle accidents. Each case is approached with detailed factual investigation and an understanding of Ohio&apos;s injury statutes.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury cases in Greene County are filed at the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Jwayyed Law LLC works on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
             </p>
           </div>
         </div>

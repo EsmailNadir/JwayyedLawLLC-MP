@@ -76,25 +76,25 @@ export default function BusinessFormationLLCClintonCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Clinton County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County&apos;s economy spans agriculture, logistics, light manufacturing, and the full range of small and medium-sized businesses that serve communities in Wilmington, Sabina, Blanchester, Clarksville, and Port William. Whether you are launching a new venture, restructuring an existing business, or formalizing a partnership, proper legal formation is one of the most important steps you can take. Jwayyed Law LLC provides experienced business formation and LLC counsel for Clinton County entrepreneurs and business owners under current Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, which took effect in February 2022 and replaced the former Chapter 1705. Chapter 1706 offers significant flexibility: LLCs can be structured as member-managed or manager-managed, can adopt corporate governance features if desired, and may take advantage of series LLC provisions to separate assets and liabilities across different business activities. Ohio corporations remain under ORC Chapter 1701. Our attorney helps you understand the differences and select the structure that best serves your specific business goals and personal liability concerns.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A critical but frequently overlooked element of business formation is the operating agreement. Without a written, customized operating agreement, the default rules of ORC Chapter 1706 govern your LLC. Those default rules may not reflect how you and your co-owners intend to run the business, how profits should be divided, or what happens when a member wants out. Our attorney prepares operating agreements tailored to your specific ownership and management structure, ensuring all members are protected and potential disputes are addressed before they arise.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County&apos;s agricultural businesses benefit particularly from LLC formation. Family farming operations, agribusinesses, and food processing companies that operate as sole proprietorships or informal partnerships expose owners to unlimited personal liability. Forming an LLC or corporation separates business debts and liabilities from personal assets. For logistics and warehousing businesses in the Wilmington area, clear contracts with customers and vendors, employment agreements, and a solid business entity structure are equally important.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is handled through the Ohio Secretary of State, so our attorney can assist Clinton County clients wherever in Ohio they are located. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

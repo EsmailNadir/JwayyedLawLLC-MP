@@ -81,60 +81,60 @@ export default function IrrevocableTrustsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Irrevocable Trusts in Ohio: Types, Benefits, and When to Use Them
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An irrevocable trust is a trust that the grantor cannot unilaterally revoke or amend after creation. Under ORC 5801.10, a trust is irrevocable to the extent that the settlor has not reserved a power of revocation. That loss of control is intentional and strategic: by relinquishing ownership of the transferred assets, the grantor places them beyond the reach of personal creditors, removes them from the taxable estate, and — with proper structuring — protects them from Medicaid asset counting after the applicable lookback period. Irrevocable trusts are not one-size-fits-all instruments. They come in many forms — Irrevocable Life Insurance Trusts (ILITs), Grantor Retained Annuity Trusts (GRATs), Charitable Remainder Trusts (CRTs), Medicaid Asset Protection Trusts (MAPTs), Spousal Lifetime Access Trusts (SLATs), and Ohio Legacy Trusts — each designed to solve a specific planning problem.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio eliminated its state estate tax in 2013, making Ohio one of the more estate-tax-friendly states for residents. However, the federal estate tax — currently applicable to estates over $13.99 million in 2025 — looms for high-net-worth families, especially given that the Tax Cuts and Jobs Act\'s doubled exemption is scheduled to sunset after December 31, 2025, potentially cutting the exemption to roughly $7 million. This creates a narrow window for Ohio families with estates in that range to transfer assets into irrevocable trusts and lock in current high exemption amounts. Jwayyed Law LLC works with clients to evaluate their estate\'s exposure to federal estate tax and recommend trust structures that efficiently transfer wealth to the next generation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For Ohio seniors planning for the potential need for Medicaid-funded long-term care, the irrevocable Medicaid Asset Protection Trust (MAPT) is a cornerstone planning tool. Ohio Medicaid applies a five-year (60-month) lookback period to asset transfers: if you transfer assets to an irrevocable trust within five years of applying for Medicaid nursing home benefits, Ohio Job and Family Services will impose a period of ineligibility proportional to the value transferred. Assets transferred more than five years before the application date are generally protected. The earlier you plan, the more assets you can protect. The MAPT must be structured so that the grantor retains no power to reach the principal — income distributions may be permitted — and the trust must be genuinely irrevocable with no grantor beneficial control.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Common Types of Irrevocable Trusts for Ohio Residents
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Irrevocable Life Insurance Trust (ILIT):</strong> Owns a life insurance policy outside the grantor\'s taxable estate. Death benefits flow to trust beneficiaries free of estate tax. Premiums are funded through annual exclusion gifts using "Crummey" notices. Particularly useful for Ohio business owners whose estate is otherwise illiquid and whose heirs will need cash to pay estate taxes or buy out business interests.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Grantor Retained Annuity Trust (GRAT):</strong> Transfers appreciating assets to a trust while the grantor retains annuity payments for a fixed term. Appreciation above the IRS Section 7520 hurdle rate passes to beneficiaries gift-tax-free. Ideal for low-interest-rate environments and for assets expected to appreciate significantly — business interests before a sale, pre-IPO shares, or real estate in a rising market.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Charitable Remainder Trust (CRT):</strong> Contributes appreciated assets to a trust; grantor receives income for life or a term; remainder passes to charity. Avoids immediate capital gains on the sale of appreciated property and generates a partial charitable income tax deduction. Common for Ohio clients selling farm land, commercial real estate, or closely held business interests.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Spousal Lifetime Access Trust (SLAT):</strong> One spouse gifts assets to an irrevocable trust that names the other spouse as a discretionary beneficiary. The gifting spouse removes the assets from the taxable estate; the other spouse retains indirect access to trust assets through discretionary distributions. SLATs allow married couples to lock in the high federal exemption while retaining some access to funds through the beneficiary spouse.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Modifying an Irrevocable Trust in Ohio: NJSAs, Decanting, and Court Petitions
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Despite their name, irrevocable trusts are not always permanent. Ohio law provides several mechanisms for modification. Under ORC 5804.11, a <strong>Non-Judicial Settlement Agreement (NJSA)</strong> allows all qualified beneficiaries and the trustee to agree in writing to modify or terminate a trust, without court involvement, as long as the change does not violate a material purpose of the trust. An NJSA can address trustee succession, administrative provisions, distribution standards, and even trust duration in some circumstances. For irrevocable trusts with charitable beneficiaries, modification may require a court petition under the <strong>cy pres doctrine</strong> (ORC 5804.09) if the charitable purpose has become impractical or wasteful. <strong>Decanting</strong> under ORC 5808.18 is another option — the trustee distributes assets from an old trust into a new trust with updated terms, effectively rewriting provisions that no longer serve the beneficiaries' needs. Our firm advises trustees and beneficiaries on which modification pathway is available and appropriate for each situation.
             </p>
 
             <LocationsWeServe title="Trusts" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Revocable Living Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Probate avoidance and flexible lifetime control</span>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
+                <span className="text-sm text-navy-950/70">Probate avoidance and flexible lifetime control</span>
               </Link>
-              <Link href="/trusts/asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Ohio Legacy Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Self-settled asset protection under ORC Chapter 5816</span>
+              <Link href="/trusts/asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Ohio Legacy Trusts</span>
+                <span className="text-sm text-navy-950/70">Self-settled asset protection under ORC Chapter 5816</span>
               </Link>
-              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Medicaid Asset Protection Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Long-term care planning with the five-year lookback</span>
+              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Medicaid Asset Protection Trusts</span>
+                <span className="text-sm text-navy-950/70">Long-term care planning with the five-year lookback</span>
               </Link>
-              <Link href="/trusts/irrevocable-life-insurance-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Irrevocable Life Insurance Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Remove life insurance from your taxable estate</span>
+              <Link href="/trusts/irrevocable-life-insurance-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Life Insurance Trusts</span>
+                <span className="text-sm text-navy-950/70">Remove life insurance from your taxable estate</span>
               </Link>
             </div>
           </div>

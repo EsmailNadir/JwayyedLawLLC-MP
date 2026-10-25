@@ -78,10 +78,10 @@ export default function MorrowCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Morrow County Legal Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Morrow County is a rural county located about 45 minutes north of Columbus, bordered by Knox, Delaware,
               Marion, and Richland counties. The county seat of Mt. Gilead serves as the hub for local government and the
               court system. Communities including Cardington, Marengo, Edison, and Chesterville make up a county where
@@ -90,9 +90,9 @@ export default function MorrowCountyCourtsPage() {
               civil disputes, and business formation. Whether you are facing a legal challenge or planning a new business
               venture, our firm provides straightforward, experienced legal guidance tailored to your needs.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI charges are a serious concern throughout rural Ohio, including Morrow County. Under{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">
                 ORC 4511.19
               </Link>
               , it is illegal to operate a vehicle with a blood alcohol concentration (BAC) of 0.08 or higher, or while
@@ -104,7 +104,7 @@ export default function MorrowCountyCourtsPage() {
               is particularly devastating. If you are arrested for OVI, you have just 30 days to appeal the Administrative
               License Suspension in Morrow County Municipal Court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Misdemeanor criminal defense is another important service area for Morrow County clients. Morrow County
               Municipal Court at 60 E. High St, Mt. Gilead handles everything from disorderly conduct and petty theft to
               domestic violence and drug-related offenses. Under ORC 2935.26, minor misdemeanors may result in a citation
@@ -114,7 +114,7 @@ export default function MorrowCountyCourtsPage() {
               We also handle expungement petitions under ORC 2953.31 for clients who have completed their sentences and
               want a clean record.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Morrow County&rsquo;s agricultural and small business economy creates a steady need for business and civil legal
               services. Jwayyed Law LLC assists with LLC formation under ORC Chapter 1706, protecting business owners from
               personal liability while providing operational flexibility. For personal injury matters — including vehicle
@@ -124,35 +124,35 @@ export default function MorrowCountyCourtsPage() {
               other civil litigation for Morrow County clients.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Morrow County Courts
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Morrow County Municipal Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">60 E. High St, Mt. Gilead, OH 43338</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Morrow County Municipal Court</h4>
+                <p className="text-navy-950/80">60 E. High St, Mt. Gilead, OH 43338</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=60+E+High+St,+Mt+Gilead,+OH+43338"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Morrow County Common Pleas Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">48 E. High St, Mt. Gilead, OH 43338</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Morrow County Common Pleas Court</h4>
+                <p className="text-navy-950/80">48 E. High St, Mt. Gilead, OH 43338</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=48+E+High+St,+Mt+Gilead,+OH+43338"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
@@ -160,14 +160,14 @@ export default function MorrowCountyCourtsPage() {
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Services We Provide in Morrow County
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>
                 <Link
                   href="/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   OVI/DUI Defense
                 </Link>
@@ -177,7 +177,7 @@ export default function MorrowCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Misdemeanor Criminal Defense
                 </Link>
@@ -187,7 +187,7 @@ export default function MorrowCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/morrow-county/personal-injury-morrow-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Personal Injury
                 </Link>
@@ -197,7 +197,7 @@ export default function MorrowCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/morrow-county/business-formation-llc-morrow-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Business Formation &amp; LLC
                 </Link>
@@ -210,10 +210,10 @@ export default function MorrowCountyCourtsPage() {
               </li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Morrow County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC is a Columbus-based law firm that regularly serves clients in central Ohio counties including
               Morrow County. We understand the practical realities of rural life in Ohio — the reliance on personal vehicles,
               the tight-knit community dynamics, and the economic pressures facing farmers and small business owners. Our

@@ -66,23 +66,23 @@ export default function CaseResultsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               While every case is unique and results depend on specific facts and circumstances, our track record demonstrates our commitment to aggressive advocacy. Below are anonymized examples of outcomes we have achieved for clients in <Link href="/criminal-defense">criminal defense</Link>, <Link href="/ovi-dui-defense">OVI/DUI defense</Link>, <Link href="/personal-injury">personal injury</Link>, and civil matters.
             </p>
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-12 mb-6">Representative Case Outcomes</h2>
+            <h2 className="jw-serif text-2xl font-bold text-navy-950 mt-12 mb-6">Representative Case Outcomes</h2>
             <div className="space-y-8">
               {caseExamples.map((c) => (
-                <div key={c.title} className="border-l-4 border-[#b87333] pl-6 py-2">
-                  <span className="text-sm font-semibold text-[#b87333] uppercase tracking-wider">{c.area}</span>
-                  <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mt-2 mb-2">{c.title}</h3>
-                  <p className="text-gray-700 leading-relaxed mb-3">{c.summary}</p>
-                  <Link href={c.href} className="text-[#b87333] font-semibold hover:underline">Learn more about {c.area.toLowerCase()} →</Link>
+                <div key={c.title} className="border-l-4 border-sky-deep pl-6 py-2">
+                  <span className="text-sm font-semibold text-sky-deep uppercase tracking-wider">{c.area}</span>
+                  <h3 className="jw-serif text-xl font-bold text-navy-950 mt-2 mb-2">{c.title}</h3>
+                  <p className="text-navy-950/80 leading-relaxed mb-3">{c.summary}</p>
+                  <Link href={c.href} className="text-sky-deep font-semibold hover:underline">Learn more about {c.area.toLowerCase()} →</Link>
                 </div>
               ))}
             </div>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mt-12 leading-relaxed">
+            <p className="text-navy-950/80 mt-12 leading-relaxed">
               If you are facing charges or need representation, <Link href="/contact">contact us</Link> for a consultation. We will review your case and discuss your options.
             </p>
           </div>

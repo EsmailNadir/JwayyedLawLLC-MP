@@ -70,35 +70,35 @@ export default function AppealsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Appeals in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When a trial court rules against you in Columbus, Cincinnati, Dayton, or anywhere in Ohio, you may have the right to appeal that decision to a higher court. Appeals under Ohio Revised Code Chapter 2505 and the Ohio Rules of Appellate Procedure allow parties to challenge legal errors that affected the outcome of their case. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced appellate representation and understands that the appellate process demands a different skill set than trial practice — one focused on legal analysis, precise writing, and an in-depth understanding of standards of review.
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Appeals in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              When a trial court rules against you in Columbus, Cincinnati, Dayton, or anywhere in Ohio, you may have the right to appeal that decision to a higher court. Appeals under Ohio Revised Code Chapter 2505 and the Ohio Rules of Appellate Procedure allow parties to challenge legal errors that affected the outcome of their case. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced appellate representation and understands that the appellate process demands a different skill set than trial practice — one focused on legal analysis, precise writing, and an in-depth understanding of standards of review.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio's Appellate Court Structure</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Ohio's Appellate Court Structure</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's court system has three levels of appellate review. Trial-level decisions from Municipal Courts and Common Pleas Courts are first appealed to the appropriate District Court of Appeals. The 10th District Court of Appeals sits in Columbus and handles Franklin County cases. Neighboring districts include the 12th District (Butler, Warren, Greene, and Clinton Counties), the 2nd District (Montgomery County/Dayton area), the 4th District (Athens and Pickaway Counties), and the 9th District (Morrow County and others). From the District Courts of Appeals, parties may seek discretionary review at the Ohio Supreme Court under Ohio App.R. 26. The Ohio Supreme Court accepts only a fraction of cases and generally limits review to constitutional questions or cases of significant public interest.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Critical Deadlines and Preservation of Error</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Critical Deadlines and Preservation of Error</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio App.R. 4 requires that a notice of appeal be filed within 30 days of the trial court's final judgment entry. ORC 2505.07 codifies this deadline, and missing it almost always results in a complete loss of appellate rights. Beyond the filing deadline, a critical but often overlooked principle is the duty to preserve errors at trial. Ohio appellate courts will not review errors — including improper jury instructions, evidentiary rulings, or constitutional violations — that were not properly raised and objected to in the trial court. An appellate attorney can evaluate the trial record to identify which errors were preserved and which, if any, may qualify for plain error review despite the lack of a timely objection.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Standards of Review and Appellate Briefs</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Standards of Review and Appellate Briefs</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Success on appeal depends heavily on identifying the correct standard of review for each issue raised. Ohio appellate courts apply de novo review to pure questions of law (giving no deference to the trial court), abuse of discretion review to discretionary rulings, and manifest weight of the evidence review to factual determinations. Appellate briefs are governed by Ohio App.R. 16, which requires a precise statement of assignments of error, a statement of facts supported by citations to the record, and legal arguments with authority. Oral argument, when allowed, provides one additional opportunity to address the panel's questions and reinforce the strongest arguments in your brief.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">When to Appeal vs. When to Accept</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Not every adverse judgment is worth appealing. Appeals are expensive, time-consuming, and succeed only when a genuine legal error affected the outcome. Before deciding to appeal, an experienced appellate attorney should review the trial record to identify preserved legal errors, assess the strength of available assignments of error, and weigh the likelihood of success against the cost of pursuing the appeal. In some cases — particularly where liability is clear but damages were reduced by a questionable legal ruling — an appeal may be strongly warranted. In others, negotiating a post-judgment settlement or seeking reconsideration in the trial court may be a more efficient path. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> for an honest assessment of your appellate prospects. Appeals also arise in <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense</Link> cases, where preserving trial-level objections is equally critical.
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">When to Appeal vs. When to Accept</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Not every adverse judgment is worth appealing. Appeals are expensive, time-consuming, and succeed only when a genuine legal error affected the outcome. Before deciding to appeal, an experienced appellate attorney should review the trial record to identify preserved legal errors, assess the strength of available assignments of error, and weigh the likelihood of success against the cost of pursuing the appeal. In some cases — particularly where liability is clear but damages were reduced by a questionable legal ruling — an appeal may be strongly warranted. In others, negotiating a post-judgment settlement or seeking reconsideration in the trial court may be a more efficient path. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> for an honest assessment of your appellate prospects. Appeals also arise in <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense</Link> cases, where preserving trial-level objections is equally critical.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Appeals Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an Appeals Attorney Can Help</h3>
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Appeal Evaluation:</strong> Review the trial record and identify preserved, meritorious assignments of error</li>
               <li><strong>Brief Preparation:</strong> Draft appellate briefs under Ohio App.R. 16 presenting compelling legal arguments</li>
               <li><strong>Oral Arguments:</strong> Present oral arguments before District Courts of Appeals or the Ohio Supreme Court</li>
@@ -106,23 +106,23 @@ export default function AppealsPage() {
               <li><strong>Strategic Advice:</strong> Provide an honest assessment of whether appealing is in your best interest</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
+                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Employment Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Wrongful termination, discrimination, and workplace retaliation claims</span>
+              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Disputes</span>
+                <span className="text-sm text-navy-950/70">Wrongful termination, discrimination, and workplace retaliation claims</span>
               </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Real Estate Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Title disputes, boundary issues, quiet title actions, and property litigation</span>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Real Estate Disputes</span>
+                <span className="text-sm text-navy-950/70">Title disputes, boundary issues, quiet title actions, and property litigation</span>
               </Link>
-              <Link href="/criminal-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Criminal appeals and post-conviction relief in Ohio courts</span>
+              <Link href="/criminal-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Defense</span>
+                <span className="text-sm text-navy-950/70">Criminal appeals and post-conviction relief in Ohio courts</span>
               </Link>
             </div>
           </div>

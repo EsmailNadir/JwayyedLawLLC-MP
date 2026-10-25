@@ -76,25 +76,25 @@ export default function BusinessFormationLLCPickawayCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Pickaway County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Pickaway County sits directly south of Columbus along US 23 — a corridor that is experiencing steady residential and commercial growth as development pushes outward from the capital region. Communities like Commercial Point, Ashville, and South Bloomfield are growing rapidly, and Circleville remains a vibrant county seat with a diverse mix of agriculture, retail, and service businesses. Jwayyed Law LLC provides experienced business formation and LLC counsel to Pickaway County entrepreneurs and business owners who want to build their ventures on a solid legal foundation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, which became effective February 2022. Chapter 1706 replaced the former Chapter 1705 and introduced a range of modernizations — series LLC authority, enhanced flexibility in management structure, and clearer rules on what operating agreement provisions are mandatory versus what can be modified by agreement. Ohio corporations remain under ORC Chapter 1701. Our attorney explains the differences in plain language and helps you choose the entity type that best fits your business, tax preferences, and ownership arrangement.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For businesses in Pickaway County&apos;s agriculture sector — including crop farms, livestock operations, and agribusinesses — LLC formation provides crucial liability protection that sole proprietorships and informal partnerships do not. A farm LLC can also be structured to facilitate succession planning, allow family members to participate in ownership, and separate the farming operation from other personal financial activities. Our attorney understands the specific needs of agricultural businesses and prepares operating agreements that address family succession and intergenerational transition.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Service and retail businesses in Circleville and the growing suburban corridor also benefit from proper LLC formation. A common mistake is forming an LLC but failing to prepare a real operating agreement — relying instead on a generic online template that leaves critical questions unanswered. When disputes arise among owners, or when a member wants to exit, the absence of a clear operating agreement creates expensive and sometimes business-ending conflicts. Our attorney prepares customized agreements that address the scenarios most likely to cause problems in your specific ownership arrangement.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is administered through the Ohio Secretary of State, so our attorney can assist Pickaway County clients from anywhere in Ohio. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law practice</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

@@ -71,43 +71,43 @@ export default function DisorderlyConductPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Disorderly Conduct Defense in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Disorderly conduct under Ohio Revised Code 2917.11 is one of the most broadly written misdemeanor statutes in Ohio&apos;s criminal code — covering everything from a shouting argument in a parking lot to aggressive behavior at a community event to public intoxication that creates a risk of harm. At its base, disorderly conduct is a minor misdemeanor: no jail, maximum $150 fine. But even a minor misdemeanor conviction creates a permanent public criminal record accessible through the background check systems used by employers, landlords, and professional licensing boards. And when the offense escalates to a fourth-degree misdemeanor — up to 30 days in jail and a $250 fine — the consequences become more serious. Jwayyed Law LLC defends disorderly conduct charges throughout Ohio, including Franklin County and surrounding communities. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to discuss your case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               What Ohio&apos;s Disorderly Conduct Statute Prohibits
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2917.11(A) prohibits recklessly causing inconvenience, annoyance, or alarm to another by: fighting, threatening harm, or engaging in violent or turbulent behavior; making unreasonable noise; using offensively coarse language or gestures in circumstances likely to provoke a violent response; creating a physically offensive condition with no legitimate purpose; or engaging in other behavior that creates a risk of physical harm. Division (B) separately prohibits being voluntarily intoxicated in a public place and engaging in offensive conduct or creating a risk of physical harm while in that condition — a separate criminal act from merely being intoxicated.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The statute&apos;s key limitation is the word &ldquo;reckless.&rdquo; Ohio law defines reckless conduct as conscious disregard of a substantial and unjustifiable risk — more culpable than negligence, but less culpable than knowing or purposeful conduct. Acts that are merely ill-advised, impulsive, or disruptive without the defendant consciously disregarding a risk of inconvenience or alarm do not satisfy the recklessness standard. Our firm evaluates whether the prosecution can establish recklessness — not just that the conduct occurred, but that the defendant consciously disregarded a substantial risk.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               M4 Escalation — When the Charge Becomes More Serious
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2917.11(C) escalates disorderly conduct from a minor misdemeanor to a fourth-degree misdemeanor (up to 30 days jail, $250 fine) in four situations. The most common is persistence after a law enforcement warning: if an officer warns a person to stop the disorderly conduct and the person continues, the minor misdemeanor becomes an M4. Whether that warning was clearly communicated, actually heard by the defendant, and whether the conduct continued after the warning are all factual questions that can defeat the escalation charge. School proximity and emergency scene presence escalations are similarly fact-specific.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Diversion and First-Offender Options
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Many first-time disorderly conduct charges in Ohio resolve without a conviction through diversion programs. Typical diversion conditions include brief community service, no new arrests during a probationary period, and payment of court costs. Successful completion results in dismissal. An experienced attorney is far more likely to identify and negotiate diversion availability than a self-represented defendant, and dismissal is always the preferred outcome over any plea — even a plea to a minor misdemeanor.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Diversion and dismissal:</strong> Pursuing conditional dismissal for first-time defendants</li>
               <li><strong>M4 escalation challenge:</strong> Contesting the &ldquo;persists after warning&rdquo; and other escalation elements</li>
               <li><strong>Recklessness analysis:</strong> Evaluating whether the prosecution can prove the mental state the statute requires</li>
@@ -116,13 +116,13 @@ export default function DisorderlyConductPage() {
               <li><strong>Expungement planning:</strong> Advising on record-sealing eligibility under R.C. 2953.32</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing disorderly conduct charges in{' '}
-              <Link href="/locations/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>,{' '}
-              <Link href="/locations/delaware-county" className="text-[#b87333] underline hover:opacity-80">Delaware County</Link>, or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <Link href="/locations/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>,{' '}
+              <Link href="/locations/delaware-county" className="text-sky-deep underline hover:opacity-80">Delaware County</Link>, or anywhere in Ohio, contact Jwayyed Law LLC at{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               Even a minor misdemeanor conviction creates a permanent record — talk to an attorney before entering any plea.
             </p>
           </div>

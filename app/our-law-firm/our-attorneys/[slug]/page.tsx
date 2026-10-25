@@ -92,7 +92,7 @@ export default async function StaffProfilePage({
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* ── Profile Header ─────────────────────────────────────────── */}
-      <section className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-[#1a1a2e] via-[#2d3436] to-[#1a1a2e]">
+      <section className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-navy-950 via-navy-950 to-navy-950">
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -101,13 +101,13 @@ export default async function StaffProfilePage({
             backgroundSize: '24px 24px',
           }}
         />
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-[#b87333]/10 rounded-full blur-3xl" />
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-sky-deep/10 rounded-full blur-3xl" />
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
             {/* Photo */}
             <div className="flex-shrink-0 w-full max-w-[320px] md:w-[300px] lg:w-[350px]">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <div className="relative aspect-[4/5] overflow-hidden ring-1 ring-white/10">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -128,20 +128,20 @@ export default async function StaffProfilePage({
                   font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
                   ${
                     member.role === 'Attorney'
-                      ? 'bg-[#b87333]/20 text-[#d4a574]'
+                      ? 'bg-sky-deep/20 text-sky'
                       : member.role === 'Staff'
                         ? 'bg-[#2d6a4f]/20 text-[#40916c]'
-                        : 'bg-white/10 text-gray-300'
+                        : 'bg-white/10 text-white/80'
                   }
                 `}
               >
                 {member.role}
               </span>
 
-              <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
+              <h1 className="jw-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
                 {member.name}
               </h1>
-              <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-[#b87333] text-lg font-semibold mb-6">
+              <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sky-deep text-lg font-semibold mb-6">
                 {member.title}
               </p>
 
@@ -151,7 +151,7 @@ export default async function StaffProfilePage({
                   {member.highlights.map((h) => (
                     <span
                       key={h}
-                      className="text-xs font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+                      className="text-xs font-medium text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
                     >
                       {h}
                     </span>
@@ -171,21 +171,21 @@ export default async function StaffProfilePage({
             className="
               prose prose-lg max-w-none
               font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
-              prose-headings:font-['Playfair_Display',_'Georgia',_serif]
-              prose-headings:text-gray-900
-              prose-p:text-gray-600
+              prose-headings:jw-serif
+              prose-headings:text-navy-950
+              prose-p:text-navy-950/70
               prose-p:leading-relaxed
               prose-p:mb-5
-              prose-strong:text-gray-800
+              prose-strong:text-navy-950
             "
             dangerouslySetInnerHTML={{ __html: member.fullBio }}
           />
 
           {/* Back link */}
-          <div className="mt-10 pt-6 border-t border-gray-200">
+          <div className="mt-10 pt-6 border-t border-navy-950/10">
             <Link
               href="/our-law-firm/our-attorneys"
-              className="inline-flex items-center gap-2 text-[#b87333] hover:text-[#8b5a1f] font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+              className="inline-flex items-center gap-2 text-sky-deep hover:text-navy-950 font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
             >
               <svg
                 className="w-4 h-4"
@@ -210,7 +210,7 @@ export default async function StaffProfilePage({
       {otherMembers.length > 0 && (
       <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
+          <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-10">
             Meet the Rest of the Team
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -220,8 +220,8 @@ export default async function StaffProfilePage({
                 href={other.profileLink}
                 className="group"
               >
-                <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:shadow-[#b87333]/10 transition-all duration-500 hover:-translate-y-1">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-[#2d3436]">
+                <div className="bg-navy-950 overflow-hidden transition-all duration-500 hover:-translate-y-1">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-navy-950">
                     <Image
                       src={other.image}
                       alt={other.name}
@@ -230,13 +230,13 @@ export default async function StaffProfilePage({
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                       quality={80}
                     />
-                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#1a1a2e] to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-950 to-transparent" />
                   </div>
                   <div className="p-4 sm:p-5">
-                    <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-white group-hover:text-[#d4a574] transition-colors duration-300">
+                    <h3 className="jw-serif text-lg font-bold text-white group-hover:text-sky transition-colors duration-300">
                       {other.name}
                     </h3>
-                    <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-[#b87333] text-xs font-semibold tracking-wide mt-1">
+                    <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sky-deep text-xs font-semibold tracking-wide mt-1">
                       {other.title}
                     </p>
                   </div>

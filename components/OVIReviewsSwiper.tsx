@@ -120,22 +120,22 @@ export default function OVIReviewsSwiper() {
     >
       {oviReviews.map((review, index) => (
         <SwiperSlide key={index}>
-          <div className="relative bg-white rounded-xl border border-slate-200 p-6 sm:p-7 h-[320px] flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div className="absolute top-0 left-6 right-6 h-0.5 bg-[#b87333]" aria-hidden="true" />
+          <div className="relative bg-white border border-navy-950/10 p-6 sm:p-7 h-[320px] flex flex-col hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute top-0 left-6 right-6 h-0.5 bg-navy-950" aria-hidden="true" />
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-0.5" aria-hidden="true">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[#b87333] text-[#b87333]" />
+                  <Star key={i} className="w-4 h-4 fill-sky-deep text-sky-deep" />
                 ))}
               </div>
-              <span className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-slate-500">
+              <span className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-navy-950/60">
                 {review.platform}
               </span>
             </div>
-            <blockquote className="font-['Playfair_Display',_'Georgia',_serif] text-base sm:text-[1.05rem] text-slate-700 leading-relaxed flex-1 min-h-0 overflow-hidden">
+            <blockquote className="jw-serif text-base sm:text-[1.05rem] text-navy-950/80 leading-relaxed flex-1 min-h-0 overflow-hidden">
               &ldquo;{truncateReview(review.text)}&rdquo;
             </blockquote>
-            <cite className="text-sm font-semibold text-slate-900 not-italic border-t border-slate-200 pt-4 mt-4 flex-shrink-0">
+            <cite className="text-sm font-semibold text-navy-950 not-italic border-t border-navy-950/10 pt-4 mt-4 flex-shrink-0">
               — {review.name}
             </cite>
           </div>

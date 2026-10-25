@@ -70,33 +70,33 @@ export default function CirclevilleMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Circleville Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <div className="not-prose my-6 inline-flex items-center gap-3 bg-[#b87333]/8 border border-[#b87333]/25 rounded-lg px-4 py-3">
-              <span className="text-[#b87333] font-bold text-sm">⚖</span>
-              <span className="text-sm font-semibold text-slate-800">Former Assistant Law Director of Circleville — Insider knowledge of local court procedures and prosecution strategy.</span>
+            <div className="not-prose my-6 inline-flex items-center gap-3 bg-sky-deep/8 border border-sky-deep/25 px-4 py-3">
+              <span className="text-sky-deep font-bold text-sm">⚖</span>
+              <span className="text-sm font-semibold text-navy-950">Former Assistant Law Director of Circleville — Insider knowledge of local court procedures and prosecution strategy.</span>
             </div>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               As a former prosecutor with experience working alongside and training law enforcement, attorney Jwayyed brings insight into police procedures, case preparation, and courtroom strategy.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Circleville Municipal Court, located at 111 S Paint St in Circleville, Ohio, serves Pickaway County — a rural county south of Columbus along the US 23 corridor. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations arising throughout Pickaway County. Jwayyed Law LLC represents defendants in Circleville Municipal Court, including individuals stopped on US 23 and SR 56. If you face an OVI charge, the 30-day deadline to appeal your Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> begins running from the date of arrest — do not delay in contacting our office.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI enforcement on US 23 in Pickaway County is conducted by both the Ohio State Highway Patrol and the Circleville Police Department. Our attorney examines whether the traffic stop was supported by reasonable articulable suspicion, whether standardized field sobriety tests were properly administered, and whether the breath or blood testing instrument was properly maintained. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device (IID) is installed, and fines have been updated to $565–$1,075 for a first offense — important changes that can improve outcomes for our clients.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Pickaway County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Circleville Municipal Court also handles misdemeanor assault, domestic violence, theft, disorderly conduct, and drug possession charges. Under <strong>ORC 2929.21</strong>, an M1 conviction can result in up to 180 days in jail and a $1,000 fine. Many misdemeanor convictions can be sealed after one year under <strong>ORC 2953.32</strong>. Our attorney carefully evaluates defenses, pursues suppression motions where applicable, and works toward dismissal or reduced charges to protect your record and your future.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or through{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> if you have a matter in Circleville Municipal Court. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> services throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> if you have a matter in Circleville Municipal Court. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> services throughout Ohio.
             </p>
           </div>
         </div>

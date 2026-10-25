@@ -87,69 +87,69 @@ export default function FranklinCountyMayorsCourtHubPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Franklin County Mayor&apos;s Courts — What They Are and How They Work
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Franklin County is home to Columbus and 42 other municipalities — and many of those suburbs operate their own local courts known as mayor&apos;s courts. Under R.C. Chapter 1905, Ohio municipalities with a population under the threshold for a municipal court may establish a mayor&apos;s court to handle minor misdemeanor charges, traffic violations, and local ordinance matters that occur within the municipality. As of 2026, fourteen Franklin County suburbs operate active mayor&apos;s courts where Jwayyed Law LLC appears: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, New Albany, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, and Worthington. Mayor&apos;s courts are not courts of record and operate with limited jurisdiction — but a conviction entered there has the same legal weight as a Franklin County Municipal Court conviction and counts in Ohio&apos;s criminal history for purposes like OVI look-back periods. Jwayyed Law LLC appears in all fourteen active Franklin County mayor&apos;s courts. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               if you have been cited in any Franklin County suburb.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How Ohio Mayor&apos;s Courts Work
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s mayor&apos;s court system is established by R.C. Chapter 1905. The mayor of a qualifying municipality presides, or — more commonly in Franklin County — the municipality appoints a licensed attorney as a mayor&apos;s court magistrate. Mayor&apos;s courts are limited to jurisdiction over: minor misdemeanor violations of municipal ordinances, minor misdemeanor violations of state statutes (including traffic laws), and first appearances and bail hearings for more serious charges that will be transferred to the appropriate court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a Franklin County suburb mayor&apos;s court encounters a charge that exceeds its jurisdiction — a fourth-degree misdemeanor or higher, a charge the defendant contests beyond the mayor&apos;s court&apos;s capacity to try — the case transfers to Franklin County Municipal Court at 375 S. High Street, Columbus. OVI charges (R.C. 4511.19) in particular often start at the local mayor&apos;s court for arraignment and then transfer to Franklin County Municipal Court for trial and disposition.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               De Novo Appeals from Franklin County Mayor&apos;s Courts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One important feature of Ohio&apos;s mayor&apos;s court system is the de novo appeal right. Under R.C. 1905.27, any person convicted at a Franklin County mayor&apos;s court has the right to appeal to Franklin County Municipal Court for a completely fresh hearing — the case is retried from scratch, with no weight given to the mayor&apos;s court&apos;s original findings. This means a defendant who accepts a mayor&apos;s court plea or is found guilty can, in some circumstances, appeal and retry the case at the Municipal Court level.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm uses the de novo appeal strategically in Franklin County mayor&apos;s court cases. If additional evidence has emerged, if witnesses have become available, or if the original defense was inadequate, a de novo appeal can be the path to a different outcome. The appeal must be filed promptly after conviction — the deadline under Ohio rules is 30 days — so immediate contact with counsel is important if a mayor&apos;s court conviction has recently occurred.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Franklin County Mayor&apos;s Courts — All Active Suburbs
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Jwayyed Law LLC appears in all fourteen active Franklin County mayor&apos;s courts. Select your suburb for specific defense information:
             </p>
 
             <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {mayorsCourts.map(({ suburb, slug, description }) => (
-                <div key={slug} className="border border-gray-200 rounded-lg p-4">
-                  <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-2">
-                    <Link href={`/locations/franklin-county/mayors-court-${slug}`} className="text-[#b87333] hover:opacity-80">
+                <div key={slug} className="border border-navy-950/10 p-4">
+                  <h4 className="jw-serif text-lg font-bold text-navy-950 mb-2">
+                    <Link href={`/locations/franklin-county/mayors-court-${slug}`} className="text-sky-deep hover:opacity-80">
                       {suburb} Mayor&apos;s Court
                     </Link>
                   </h4>
-                  <p className="font-['Inter',_'Arial',_sans-serif] text-gray-600 text-sm leading-relaxed">{description}</p>
+                  <p className="text-navy-950/70 text-sm leading-relaxed">{description}</p>
                 </div>
               ))}
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Suburbs Routing Directly to Franklin County Municipal Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Not all Franklin County suburbs operate active mayor&apos;s courts. Grandview Heights closed its mayor&apos;s court effective December 31, 2023, and Marble Cliff has never operated an independent court. Residents of these two communities who are cited for OVI, traffic offenses, or misdemeanor charges within those municipality boundaries will have their cases heard at Franklin County Municipal Court, 375 S. High Street, Columbus, OH 43215. Our firm defends{' '}
-              <Link href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court" className="text-[#b87333] underline hover:opacity-80">criminal and misdemeanor cases at Franklin County Municipal Court</Link>{' '}
+              <Link href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court" className="text-sky-deep underline hover:opacity-80">criminal and misdemeanor cases at Franklin County Municipal Court</Link>{' '}
               as well as at every suburb mayor&apos;s court.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               Our firm appears in every Franklin County mayor&apos;s court — find out how we can help with your charge.
             </p>
           </div>

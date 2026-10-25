@@ -70,35 +70,35 @@ export default function ConstructionDisputesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Construction Disputes in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Construction disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve breach of contract, defective workmanship, payment disputes, delay claims, change order disagreements, and the complex mechanics&apos; lien process under ORC Chapter 1311. Whether you are a property owner, general contractor, subcontractor, or material supplier, unresolved construction disputes can stall projects, cloud real estate titles, and result in significant financial losses. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for construction disputes and helps clients understand and exercise their legal rights under Ohio law.
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Construction Disputes in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Construction disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve breach of contract, defective workmanship, payment disputes, delay claims, change order disagreements, and the complex mechanics&apos; lien process under ORC Chapter 1311. Whether you are a property owner, general contractor, subcontractor, or material supplier, unresolved construction disputes can stall projects, cloud real estate titles, and result in significant financial losses. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for construction disputes and helps clients understand and exercise their legal rights under Ohio law.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Mechanics&apos; Liens Under ORC Chapter 1311</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Ohio Mechanics&apos; Liens Under ORC Chapter 1311</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s mechanics&apos; lien statute (ORC Chapter 1311) provides contractors, subcontractors, laborers, and material suppliers with a powerful remedy when they are not paid for work on a construction project. A properly filed mechanics&apos; lien attaches to the real property and clouds the title, preventing the owner from selling or refinancing until the lien is released or resolved. The process requires strict compliance with notice requirements and filing deadlines: the lien claim must be filed with the county recorder within 75 days of the last date of work under ORC 1311.09. After filing, the claimant must bring an action to enforce the lien in court within 6 years under ORC 1311.15. Failure to comply with any of these requirements can result in complete loss of lien rights.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Contractor Licensing and the Home Construction Service Suppliers Act</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio regulates construction contractors through the Ohio Construction Industry Licensing Board (OCILB) and through the Home Construction Service Suppliers Act (ORC 4722.02). Residential contractors performing services valued at $25 or more are required to provide written contracts that include specific disclosures. Contractors must also be properly registered. Failure to comply with these requirements can have significant legal consequences — including providing homeowners with additional grounds for recovery. When evaluating a construction dispute, an attorney will examine not only the contract terms but also whether the contractor complied with applicable licensing and registration requirements. If you are facing a construction dispute, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation.
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Contractor Licensing and the Home Construction Service Suppliers Act</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Ohio regulates construction contractors through the Ohio Construction Industry Licensing Board (OCILB) and through the Home Construction Service Suppliers Act (ORC 4722.02). Residential contractors performing services valued at $25 or more are required to provide written contracts that include specific disclosures. Contractors must also be properly registered. Failure to comply with these requirements can have significant legal consequences — including providing homeowners with additional grounds for recovery. When evaluating a construction dispute, an attorney will examine not only the contract terms but also whether the contractor complied with applicable licensing and registration requirements. If you are facing a construction dispute, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Construction Disputes We Handle</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Construction Disputes We Handle</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Construction disputes take many forms. Payment disputes arise when owners refuse to pay for completed work or when contractors dispute the owner&apos;s right to withhold payment. Defective workmanship claims arise when a contractor&apos;s work fails to meet applicable standards, causes property damage, or requires costly remediation. Delay claims can arise from either side when a project runs over schedule due to alleged fault of the other party. Change order disputes are common when the scope of work expands without written authorization and the parties disagree about who owes what. Subcontractor vs. owner disputes can be particularly complex when the subcontractor has no direct contract with the owner and must rely on lien rights or bond claims to recover payment.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Public Projects and Payment Bond Claims</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Public Projects and Payment Bond Claims</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               On Ohio public construction projects, mechanics&apos; liens cannot be filed against publicly owned property. Instead, ORC 153.57 requires general contractors on public projects to provide a payment bond, which protects subcontractors and material suppliers. Claimants on public projects must carefully follow notice and claim deadline requirements to preserve bond rights. An attorney experienced in Ohio public construction law can help evaluate whether a bond claim is available and ensure all procedural requirements are met before deadlines expire.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Construction Disputes Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Construction Disputes Attorney Can Help</h3>
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Contract Analysis:</strong> Analyze construction contracts, identify breaches, and assess the strength of claims and defenses</li>
               <li><strong>Mechanics&apos; Lien Filing:</strong> Prepare and file mechanics&apos; liens before the 75-day deadline under ORC 1311.09</li>
               <li><strong>Lien Enforcement:</strong> Bring actions to enforce mechanics&apos; liens within the 6-year deadline under ORC 1311.15</li>
@@ -107,23 +107,23 @@ export default function ConstructionDisputesPage() {
               <li><strong>Alternative Dispute Resolution:</strong> Represent clients in mediation and arbitration to resolve disputes efficiently</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
+                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil/real-estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Real Estate Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Title disputes, boundary issues, quiet title actions, and property litigation</span>
+              <Link href="/civil/real-estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Real Estate Disputes</span>
+                <span className="text-sm text-navy-950/70">Title disputes, boundary issues, quiet title actions, and property litigation</span>
               </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Debt Collection Defense</span>
+                <span className="text-sm text-navy-950/70">Defend against unfair debt collection practices and protect your rights</span>
               </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Employment Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Wrongful termination, discrimination, and workplace retaliation claims</span>
+              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Disputes</span>
+                <span className="text-sm text-navy-950/70">Wrongful termination, discrimination, and workplace retaliation claims</span>
               </Link>
             </div>
           </div>

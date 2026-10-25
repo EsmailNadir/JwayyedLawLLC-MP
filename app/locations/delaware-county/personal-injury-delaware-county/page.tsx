@@ -76,25 +76,25 @@ export default function PersonalInjuryDelawareCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Delaware County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County is one of Ohio&apos;s fastest-growing counties, with rapidly expanding communities along US 23, SR 36, and SR 37 bringing increased traffic, new construction zones, and unfortunately more accidents. Jwayyed Law LLC represents personal injury victims throughout Delaware County — including Delaware, Powell, Westerville, Dublin, Lewis Center, and Sunbury — in matters ranging from car accidents and truck collisions to slip and fall and premises liability claims. If you were injured due to someone else&apos;s negligence, our attorney is prepared to help you pursue the full compensation you deserve under Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under Ohio Revised Code 2305.10, you generally have two years from the date of injury to file a personal injury lawsuit in Ohio. This deadline is strict. Even if you are still treating with doctors, still negotiating with an insurance company, or still uncertain about the full extent of your injuries, the clock is running. Our attorney begins working your case immediately upon retention to preserve evidence, interview witnesses, and document damages before opportunities are lost.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The comparative negligence statute, ORC 2315.33, governs how fault is allocated in Ohio personal injury cases. In Delaware County car accidents — particularly on busy commuter routes like US 23 through Lewis Center and Powell — insurance companies often try to share blame with the injured party to reduce their exposure. Our attorney carefully investigates the facts, retains experts when appropriate, and challenges any effort to overstate your contribution to the accident, ensuring you receive a fair recovery.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County&apos;s suburban growth also means construction zone accidents, defective sidewalks, dangerous parking lots, and premises liability incidents at retail and commercial properties occur frequently. We handle all categories of personal injury claims, including car and truck accidents, motorcycle crashes, slip and fall, dog bite injuries under ORC 955.28, and wrongful death matters. Every case is handled with individual attention and a focus on securing maximum compensation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury cases in Delaware County are filed at the Delaware County Common Pleas Court, 91 N. Sandusky St, Delaware, OH 43015. We handle cases on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also review our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice overview</Link> for more information.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also review our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice overview</Link> for more information.
             </p>
           </div>
         </div>

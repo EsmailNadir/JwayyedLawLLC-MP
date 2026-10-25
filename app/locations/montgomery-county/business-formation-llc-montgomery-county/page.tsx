@@ -76,25 +76,25 @@ export default function BusinessFormationLLCMontgomeryCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Montgomery County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County is one of Ohio&apos;s major urban and economic centers, anchored by Dayton and encompassing Kettering, Trotwood, Huber Heights, Miamisburg, Vandalia, and Englewood. Dayton has a deep manufacturing and innovation heritage — birthplace of aviation and home to a growing modern technology and healthcare economy. Whether you are launching a startup in Dayton&apos;s urban core or forming a professional services LLC in Kettering, Jwayyed Law LLC provides experienced business formation counsel tailored to Montgomery County&apos;s diverse business community.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, effective February 2022. This modern statute replaced the former Chapter 1705 and introduced important new features — including series LLCs for businesses that want to separate assets across distinct lines of operation, enhanced flexibility in management structure, and clearer rules governing operating agreement customization. Ohio corporations remain under ORC Chapter 1701. Our attorney explains the differences and helps you choose the entity type that best serves your Montgomery County business.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The operating agreement is the backbone of any multi-member LLC. Without a written, customized agreement, your LLC operates under the default statutory rules of ORC Chapter 1706, which were designed for the average case — not your specific business, ownership percentages, or management intentions. Disputes among LLC members are a leading cause of business failure. A well-drafted operating agreement prevents these disputes by establishing clear rules for profit sharing, decision-making, member exits, and dispute resolution before problems arise.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Montgomery County&apos;s healthcare, professional services, and manufacturing sectors each have specific business formation needs. Licensed healthcare providers may need professional corporations or PLLCs; manufacturing businesses benefit from clear ownership structures and contracts with suppliers and customers; technology startups may need intellectual property assignments and equity arrangements for founders and early investors. Our attorney advises clients across all these sectors and helps them build businesses that are legally sound from the ground up.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is handled through the Ohio Secretary of State, so Jwayyed Law LLC can assist Montgomery County clients regardless of location in Ohio. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

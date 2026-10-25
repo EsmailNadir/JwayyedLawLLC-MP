@@ -109,7 +109,7 @@ export default async function BlogPostPage({
 
       {/* ── Article Header ─────────────────────────────────────────── */}
       <header className="relative overflow-hidden py-16 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#2d3436] to-[#1a1a2e]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-950 to-navy-950" />
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -118,37 +118,37 @@ export default async function BlogPostPage({
             backgroundSize: '24px 24px',
           }}
         />
-        <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#b87333]/12 rounded-full blur-3xl" />
+        <div className="absolute -top-24 -right-24 w-80 h-80 bg-sky-deep/12 rounded-full blur-3xl" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-6">
-            <span className="bg-[#b87333] text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
+            <span className="bg-navy-950 text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
               {post.category}
             </span>
             <time
               dateTime={post.date}
-              className="text-gray-400 text-sm font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+              className="text-navy-950/50 text-sm font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
             >
               {formatDate(post.date)}
             </time>
           </div>
-          <h1 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+          <h1 className="jw-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
             {post.title}
           </h1>
-          <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-lg text-gray-300 leading-relaxed max-w-3xl">
+          <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-lg text-white/80 leading-relaxed max-w-3xl">
             {post.excerpt}
           </p>
 
           {/* Author */}
           <div className="flex items-center gap-3 mt-8 pt-6 border-t border-white/10">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#b87333] to-[#8b5a1f] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sky-deep to-navy-950 flex items-center justify-center">
               <span className="text-white text-sm font-bold">JL</span>
             </div>
             <div className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
               <span className="block text-white font-medium text-sm">
                 {post.author}
               </span>
-              <span className="block text-gray-400 text-xs">
+              <span className="block text-navy-950/50 text-xs">
                 Columbus, Ohio
               </span>
             </div>
@@ -164,21 +164,21 @@ export default async function BlogPostPage({
             className="
               prose prose-lg max-w-none
               font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
-              prose-headings:font-['Playfair_Display',_'Georgia',_serif]
-              prose-headings:text-gray-900
+              prose-headings:jw-serif
+              prose-headings:text-navy-950
               prose-headings:font-bold
               prose-h2:text-2xl
               prose-h2:mt-10
               prose-h2:mb-4
               prose-h2:border-l-4
-              prose-h2:border-[#b87333]
+              prose-h2:border-sky-deep
               prose-h2:pl-4
-              prose-p:text-gray-600
+              prose-p:text-navy-950/70
               prose-p:leading-relaxed
-              prose-li:text-gray-600
-              prose-strong:text-gray-800
+              prose-li:text-navy-950/70
+              prose-strong:text-navy-950
               prose-ul:space-y-2
-              prose-a:text-[#b87333]
+              prose-a:text-sky-deep
               prose-a:no-underline
               hover:prose-a:underline
             "
@@ -186,8 +186,8 @@ export default async function BlogPostPage({
           />
 
           {/* Disclaimer */}
-          <div className="mt-12 p-6 bg-gray-50 border border-gray-200 rounded-xl">
-            <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sm text-gray-500 leading-relaxed italic">
+          <div className="mt-12 p-6 bg-ice border border-navy-950/10">
+            <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sm text-navy-950/60 leading-relaxed italic">
               This article is for informational purposes only and does not
               constitute legal advice. For legal counsel regarding your specific
               situation, contact Jwayyed Law, LLC.
@@ -198,7 +198,7 @@ export default async function BlogPostPage({
           <div className="mt-8">
             <Link
               href="/our-law-firm/blog"
-              className="inline-flex items-center gap-2 text-[#b87333] hover:text-[#8b5a1f] font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+              className="inline-flex items-center gap-2 text-sky-deep hover:text-navy-950 font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
             >
               <svg
                 className="w-4 h-4"
@@ -260,9 +260,9 @@ export default async function BlogPostPage({
         const links = serviceLinks[post.category];
         if (!links) return null;
         return (
-          <section className="py-10 bg-white border-t border-gray-100">
+          <section className="py-10 bg-white border-t border-navy-950/10">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 mb-4">
+              <h2 className="jw-serif text-xl font-bold text-navy-950 mb-4">
                 Related Services
               </h2>
               <div className="flex flex-wrap gap-3">
@@ -270,7 +270,7 @@ export default async function BlogPostPage({
                   <Link
                     key={l.href}
                     href={l.href}
-                    className="inline-block px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-[#b87333] hover:text-[#b87333] transition-colors duration-200 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
+                    className="inline-block px-4 py-2 bg-ice border border-navy-950/10 text-sm font-medium text-navy-950/80 hover:border-sky-deep hover:text-sky-deep transition-colors duration-200 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
                   >
                     {l.label}
                   </Link>
@@ -284,7 +284,7 @@ export default async function BlogPostPage({
       {/* ── Related Posts ───────────────────────────────────────────── */}
       <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl sm:text-3xl font-bold text-gray-900 mb-10">
+          <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-10">
             Related Articles
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -292,7 +292,7 @@ export default async function BlogPostPage({
               <Link
                 key={related.slug}
                 href={`/our-law-firm/blog/${related.slug}`}
-                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-500 hover:-translate-y-1"
+                className="group bg-white border border-navy-950/10 overflow-hidden hover:shadow-gray-200/50 transition-all duration-500 hover:-translate-y-1"
               >
                 {/* Image thumbnail */}
                 <div className="relative h-44 overflow-hidden">
@@ -305,20 +305,20 @@ export default async function BlogPostPage({
                     quality={80}
                   />
                   <div className="absolute top-4 left-4 z-10">
-                    <span className="bg-[#b87333] text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif] shadow-sm">
+                    <span className="bg-navy-950 text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
                       {related.category}
                     </span>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-[#b87333] transition-colors duration-300">
+                  <h3 className="jw-serif text-lg font-bold text-navy-950 mb-2 leading-snug group-hover:text-sky-deep transition-colors duration-300">
                     {related.title}
                   </h3>
-                  <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-gray-500 text-sm line-clamp-2 leading-relaxed">
+                  <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-navy-950/60 text-sm line-clamp-2 leading-relaxed">
                     {related.excerpt}
                   </p>
-                  <div className="mt-4 text-xs text-gray-400 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
+                  <div className="mt-4 text-xs text-navy-950/50 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">
                     <time dateTime={related.date}>
                       {formatDate(related.date)}
                     </time>

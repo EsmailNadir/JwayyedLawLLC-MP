@@ -82,71 +82,71 @@ export default function SpendthriftTrustsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Spendthrift Trusts in Ohio: Protecting Beneficiaries from Their Own Creditors
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A spendthrift trust is a trust that contains a legally enforceable provision preventing a beneficiary from voluntarily assigning or pledging their interest in the trust and preventing the beneficiary\'s creditors from reaching trust assets before a distribution is made. Ohio gives full legal effect to spendthrift provisions under ORC 5805.01. This makes Ohio spendthrift trusts a powerful shield against a beneficiary\'s financial difficulties — whether those arise from reckless spending, an unexpected lawsuit, a failed business, credit card debt, or a divorce proceeding. Jwayyed Law LLC advises clients throughout Columbus, Cincinnati, Dayton, and all of Ohio on incorporating spendthrift protections into their estate plans to safeguard inherited wealth for the beneficiaries who need it most.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The spendthrift concept reflects a fundamental principle of trust law: a grantor who creates and funds a trust for the benefit of another person has the right to impose reasonable conditions on how that benefit is received and whether it can be reached by the beneficiary\'s creditors. Ohio courts have consistently upheld spendthrift provisions as a valid exercise of the grantor\'s freedom to control how their assets benefit their heirs. The spendthrift provision works by severing the link between the beneficiary\'s interest in future distributions (which the beneficiary cannot assign) and the beneficiary\'s current creditors (who cannot compel the trustee to make a distribution to satisfy a debt).
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The protection runs in two directions. First, the beneficiary cannot voluntarily assign, pledge, or transfer their interest in the trust to anyone — including voluntarily offering it as collateral for a loan. Second, creditors cannot attach, levy upon, or compel distribution of the beneficiary\'s interest. A judgment creditor who wins a lawsuit against a spendthrift trust beneficiary cannot serve a garnishment on the trustee and demand payment. The creditor must wait — potentially indefinitely — for the trustee to voluntarily make a distribution, at which point the distributed funds lose their spendthrift protection and become fair game for collection.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Mandatory vs. Discretionary Spendthrift Trusts: Why Discretion Matters
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Not all spendthrift trusts offer the same level of protection, and the distribution standard chosen by the grantor dramatically affects how effectively the trust shields assets from creditors. A <strong>mandatory spendthrift trust</strong> requires the trustee to make distributions on a set schedule or formula — for example, distributing all net income monthly or distributing a fixed dollar amount each quarter. The spendthrift provision prevents a creditor from attaching the beneficiary\'s right to receive these mandatory distributions in advance, but a court may order the trustee to redirect mandatory distributions to a judgment creditor once they are due, because the trustee has no discretion to withhold what the trust mandates be paid.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A <strong>fully discretionary spendthrift trust</strong> gives the trustee absolute discretion to decide whether, when, and how much to distribute — subject to the distribution standards in the trust document. A common discretionary standard is health, education, maintenance, and support (HEMS), which gives the trustee a framework for decision-making while maintaining meaningful discretion. Because the beneficiary has no enforceable right to compel a distribution, and because the trustee can lawfully choose to withhold distributions entirely, creditors cannot compel the trustee to make any distribution. The creditor has no attachable interest because the interest is contingent entirely on the trustee\'s future exercise of discretion. Ohio courts and the Ohio Trust Code recognize this distinction, making fully discretionary trusts significantly stronger in creditor protection than mandatory or income-only trusts.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The practical effect is that a trustee of a discretionary spendthrift trust must be thoughtful when a beneficiary has known creditors or outstanding judgments. Ohio law does not create an absolute prohibition on distributions when creditors are lurking — but a trustee who distributes funds with the knowledge that creditors are actively pursuing collection may be held liable to those creditors in equity for facilitating the evasion of their legitimate claims. Best practice is for the trustee to consult with counsel before making distributions to a beneficiary who the trustee knows has significant outstanding debts or active litigation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Exceptions to Spendthrift Protection Under ORC 5805.06
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio\'s spendthrift protection is robust but not absolute. ORC 5805.06 specifies several categories of claimants who can reach spendthrift trust assets despite the protective provision. The most significant exception — and the one most frequently encountered in practice — is for domestic support obligations. Under ORC 5805.06(B)(1), a former spouse or child who holds a valid court order for spousal support, child support, or other domestic relations support may petition the court for an order directing the trustee to satisfy the support obligation from the trust. This exception reflects Ohio\'s strong public policy that a beneficiary cannot use a spendthrift trust to evade legally mandated family support obligations.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Other exceptions under ORC 5805.06 include judgments in favor of a creditor who provided services for the protection of a beneficiary\'s interest in the trust (such as an attorney who successfully defended the trust from attack), and in some circumstances, claims by a state or governmental entity for unpaid taxes or Medicaid estate recovery. Tort judgments from personal injury lawsuits — often a key concern for clients — are generally not exceptions to Ohio spendthrift protection, meaning that a judgment creditor from a car accident or other personal injury claim cannot pierce the spendthrift protection to reach trust assets.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding these exceptions is critical when drafting a spendthrift trust. If the beneficiary is at risk of future divorce or has ongoing domestic support obligations, the spendthrift provision will not fully insulate trust assets from those claims. In those situations, combining the spendthrift provision with a fully discretionary distribution standard — so that the trustee can choose to withhold distributions during periods of high creditor risk — provides the best available protection.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Ohio Legacy Trusts, Special Needs Trusts, and Combining Protections
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For clients who want to protect their own assets — rather than a beneficiary\'s inherited assets — Ohio offers the Ohio Legacy Trust under ORC Chapter 5816. An Ohio Legacy Trust is a self-settled, irrevocable, discretionary spendthrift trust that allows you to transfer assets to a trust for your own benefit while shielding those assets from future creditors, subject to strict statutory requirements: the trustee must be an Ohio resident individual or a qualified Ohio trust company, the transfer must be made without fraudulent intent, the grantor must maintain solvency after the transfer, and a five-year statute of limitations applies to creditors who existed at the time of the transfer. Ohio Legacy Trusts are a specialized planning tool for business owners, physicians, attorneys, and others in high-liability professions who want personal asset protection beyond what can be achieved with liability insurance alone.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Spendthrift provisions are also commonly combined with other trust structures. A <strong>special needs trust</strong> for a beneficiary with a disability nearly always includes a spendthrift provision to prevent the beneficiary\'s interest from being counted as an available resource for Medicaid or SSI purposes. A <strong>dynasty trust</strong> for multi-generational wealth transfer uses spendthrift provisions at every generational level to prevent a creditor, divorcing spouse, or improvident beneficiary from depleting the trust before it reaches future generations. Combining a discretionary spendthrift provision with a dynasty trust structure is the most comprehensive multi-generational asset protection strategy available in Ohio.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you have a child, grandchild, or other beneficiary who struggles with financial management, is in a troubled marriage, runs a business with creditor exposure, or faces other risks that could threaten their inheritance, a spendthrift trust is one of the most effective tools available to protect the wealth you worked to accumulate. At Jwayyed Law LLC, our Columbus estate planning attorneys draft spendthrift trusts tailored to each family\'s specific circumstances, ensuring that the trust\'s distribution standards, trustee selection, and protective provisions work together to deliver lasting financial security. Call us at (614) 285-5482 to schedule a consultation.
             </p>
 
             <LocationsWeServe title="Spendthrift Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Trust Services
               </Link>
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Special Needs Trusts
               </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Dynasty Trusts
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Irrevocable Trusts
               </Link>
             </div>

@@ -70,35 +70,35 @@ export default function DebtCollectionDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Debt Collection Defense in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Being sued for a debt — or subjected to aggressive collection practices — can be stressful and overwhelming. Ohio consumers have significant legal protections under the federal Fair Debt Collection Practices Act (FDCPA), 15 U.S.C. § 1692, the Ohio Consumer Sales Practices Act (OCSPA), ORC Chapter 1345, and Ohio&apos;s statute of limitations and property exemption laws. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC helps consumers throughout Columbus, Cincinnati, Dayton, and Ohio understand their rights, defend against debt collection lawsuits, and hold abusive debt collectors accountable.
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Debt Collection Defense in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Being sued for a debt — or subjected to aggressive collection practices — can be stressful and overwhelming. Ohio consumers have significant legal protections under the federal Fair Debt Collection Practices Act (FDCPA), 15 U.S.C. § 1692, the Ohio Consumer Sales Practices Act (OCSPA), ORC Chapter 1345, and Ohio&apos;s statute of limitations and property exemption laws. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC helps consumers throughout Columbus, Cincinnati, Dayton, and Ohio understand their rights, defend against debt collection lawsuits, and hold abusive debt collectors accountable.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Ohio Statute of Limitations on Debt</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              One of the most powerful defenses in debt collection cases is the statute of limitations. Under ORC 2305.06, written contract claims in Ohio — including most credit card agreements, personal loans, and medical debts based on written agreements — must be filed within 6 years of the date the debt became due. Under ORC 2305.07, oral contract claims carry the same 6-year limitation period. For UCC-governed transactions, ORC 1309.625 applies a 4-year period. Once the limitations period expires, the debt is time-barred and a court cannot enter judgment against you, even if you owe the money. However, be cautious — making even a partial payment or acknowledging the debt in writing can restart the statute of limitations clock. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> promptly if you have been sued for an old debt.
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Ohio Statute of Limitations on Debt</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              One of the most powerful defenses in debt collection cases is the statute of limitations. Under ORC 2305.06, written contract claims in Ohio — including most credit card agreements, personal loans, and medical debts based on written agreements — must be filed within 6 years of the date the debt became due. Under ORC 2305.07, oral contract claims carry the same 6-year limitation period. For UCC-governed transactions, ORC 1309.625 applies a 4-year period. Once the limitations period expires, the debt is time-barred and a court cannot enter judgment against you, even if you owe the money. However, be cautious — making even a partial payment or acknowledging the debt in writing can restart the statute of limitations clock. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> promptly if you have been sued for an old debt.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Wage Garnishment and Property Exemptions in Ohio</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Wage Garnishment and Property Exemptions in Ohio</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               If a creditor obtains a court judgment against you, they may attempt to collect by garnishing your wages, levying your bank accounts, or placing liens on real property. Ohio law and federal law limit how much of your wages can be garnished: under ORC 2716.02, the maximum garnishment is 25% of disposable earnings, or the amount by which weekly disposable earnings exceed 30 times the federal minimum wage, whichever is less. Ohio also provides significant property exemptions under ORC 2329.66, including a homestead exemption of $145,425 in equity in your primary residence, a $4,000 vehicle exemption, and exemptions for household goods, tools of the trade, and retirement accounts. Asserting these exemptions properly requires filing timely objections in the court.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">FDCPA Violations and Consumer Counterclaims</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">FDCPA Violations and Consumer Counterclaims</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Debt collectors who violate the FDCPA can be sued and forced to pay damages. Common FDCPA violations include calling outside permitted hours (before 8 a.m. or after 9 p.m.), contacting you after a written cease-communication request, misrepresenting the amount owed, threatening legal action they cannot or do not intend to take, and using abusive or harassing language. If a debt collector has violated the FDCPA while attempting to collect from you, you may have counterclaims in a debt collection lawsuit, or you may be able to sue the collector independently for actual damages, up to $1,000 in statutory damages, and attorney fees under 15 U.S.C. § 1692k. The Ohio Consumer Sales Practices Act (ORC Chapter 1345) provides additional state-law remedies for deceptive collection practices.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Challenging Debt Buyer Standing</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Challenging Debt Buyer Standing</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A significant number of debt collection lawsuits are filed not by original creditors but by debt buyers — companies that purchase portfolios of delinquent accounts for pennies on the dollar. Debt buyers must prove they have standing to sue by demonstrating a complete chain of title from the original creditor through any intermediate purchasers to themselves. Often, the documentation is incomplete — missing assignment agreements, bills of sale, or the original account agreement. Raising a lack of standing defense can be effective in cases where the debt buyer cannot produce proper documentation. An attorney can review the collection lawsuit and demand proper documentation through discovery to evaluate the strength of this defense.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Debt Collection Defense Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Debt Collection Defense Attorney Can Help</h3>
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Debt Challenges:</strong> Challenge debt validity, raise statute of limitations defenses, and contest debt buyer standing</li>
               <li><strong>Debt Validation:</strong> Send FDCPA debt validation letters and evaluate collector responses</li>
               <li><strong>FDCPA Violations:</strong> Identify FDCPA violations and pursue statutory damages and attorney fees</li>
@@ -107,23 +107,23 @@ export default function DebtCollectionDefensePage() {
               <li><strong>Court Representation:</strong> Represent you in court to defend against collection lawsuits</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
+                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
+              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Landlord-Tenant Disputes</span>
+                <span className="text-sm text-navy-950/70">Eviction defense, security deposit claims, and habitability issues</span>
               </Link>
-              <Link href="/civil/employment-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Employment Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Wrongful termination, discrimination, and workplace retaliation claims</span>
+              <Link href="/civil/employment-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Employment Disputes</span>
+                <span className="text-sm text-navy-950/70">Wrongful termination, discrimination, and workplace retaliation claims</span>
               </Link>
-              <Link href="/civil/appeals" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Appeals</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Challenge unfavorable court decisions in Ohio appellate courts</span>
+              <Link href="/civil/appeals" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Appeals</span>
+                <span className="text-sm text-navy-950/70">Challenge unfavorable court decisions in Ohio appellate courts</span>
               </Link>
             </div>
           </div>

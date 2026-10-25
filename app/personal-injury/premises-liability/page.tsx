@@ -70,29 +70,29 @@ export default function PremisesLiabilityPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Premises Liability in Ohio: Duties, Defenses, and Your Rights
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio premises liability law holds property owners and occupiers responsible when dangerous conditions on their property injure lawful visitors. The duty owed depends on the visitor's legal status — invitees (customers, business visitors) receive the highest duty of reasonable care, while licensees (social guests) are owed a duty to warn of known hidden dangers, and trespassers are generally owed only a duty to avoid willful or wanton conduct. Ohio's comparative fault framework under ORC 2315.33 means a plaintiff's recovery is reduced by their percentage of fault — and barred entirely if they are found more than 50% responsible. The two-year statute of limitations under ORC 2305.10 applies to most premises liability claims.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most significant defenses in Ohio premises liability cases is the open and obvious doctrine. Ohio courts have held that a property owner generally has no duty to warn of or repair a hazard that is open and obvious to any reasonable person exercising ordinary care. A step-down at a store entrance that is clearly visible, or a wet floor with a prominent warning sign, may be considered open and obvious. However, attendant circumstances — such as a crowded store, a distraction created by the property owner (like a prominent display), or a design that diverted a visitor's attention — can defeat the open and obvious defense. Each case is fact-specific, and an attorney's evaluation is essential.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Commercial property owners owe their customers and business invitees a duty to inspect the premises, discover hazardous conditions, and either correct them or warn of them within a reasonable time. In a classic grocery store slip and fall, the plaintiff must show that the store created the spill, or that the spill had been on the floor long enough that the store should have discovered and cleaned it through reasonable inspection. Courts look at the entire record: whether employees had been in the area, the store's cleaning and inspection schedule, and any evidence (like footprints, dried edges, or a cart stationed nearby) that indicates how long the hazard existed. Surveillance footage is often decisive — which is why you must act quickly to preserve it.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Residential landlords have statutory duties under ORC Chapter 5321 to maintain rental units and common areas in a fit and habitable condition, to keep all common areas safe and sanitary, and to maintain all electrical, plumbing, heating, and other systems in good working order. When a landlord knows of a dangerous condition — such as a broken handrail, deteriorating stairs, or inadequate exterior lighting — and fails to repair it within a reasonable time, and a tenant or guest is injured as a result, the landlord can be held liable. Tenants who report conditions in writing create a clear record of the landlord's actual notice of the hazard, which is critical to proving liability.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               After a premises injury, the steps you take immediately are crucial. Photograph the hazard before it is cleaned up or repaired. Request an incident report from the property owner or manager and keep a copy. Get the names and contact information of any witnesses. Seek medical attention even if your injuries seem minor — some injuries worsen over time. Do not give a recorded statement to the property owner's insurer before consulting an attorney. Under ORC 2305.321, recreational user immunity may protect some landowners, and government property injuries under ORC Chapter 2744 have special notice and filing requirements that differ from standard civil cases.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Premises Liability Cases We Handle
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>Slip and fall on wet floors, spills, and slippery surfaces in commercial properties</li>
               <li>Trip and fall on uneven pavement, broken sidewalks, and deteriorating stairs</li>
               <li>Ice and snow slip and falls on commercial and residential property</li>
@@ -103,41 +103,41 @@ export default function PremisesLiabilityPage() {
               <li>Injuries on government-owned property (ORC Chapter 2744 political subdivision claims)</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Premises liability cases often turn on documentary evidence that must be preserved quickly — surveillance footage is routinely overwritten within days. At Jwayyed Law LLC, we act fast to preserve evidence, identify all liable parties (property owners, management companies, maintenance contractors), and build the strongest possible case. We represent premises liability clients throughout Ohio on a contingency fee basis.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We also handle related personal injury matters including{' '}
-              <Link href="/personal-injury/workplace-injuries" className="text-[#b87333] underline hover:opacity-80">workplace injuries</Link>,{' '}
-              <Link href="/personal-injury/dog-bites" className="text-[#b87333] underline hover:opacity-80">dog bite claims</Link>, and other{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury cases</Link> across Ohio.
+              <Link href="/personal-injury/workplace-injuries" className="text-sky-deep underline hover:opacity-80">workplace injuries</Link>,{' '}
+              <Link href="/personal-injury/dog-bites" className="text-sky-deep underline hover:opacity-80">dog bite claims</Link>, and other{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury cases</Link> across Ohio.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link>. Read our article on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-[#b87333] underline hover:text-[#a06828]">Ohio slip and fall laws for property owners</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link>. Read our article on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-sky-deep underline hover:text-navy-950">Ohio slip and fall laws for property owners</Link>.
             </p>
 
             <LocationsWeServe title="Personal Injury" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Slip & Fall Injuries</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Premises liability claims for unsafe conditions</span>
+              <Link href="/personal-injury/slip-and-fall" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Slip & Fall Injuries</span>
+                <span className="text-sm text-navy-950/70">Premises liability claims for unsafe conditions</span>
               </Link>
-              <Link href="/personal-injury/dog-bites" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Dog Bites</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Animal attack liability under Ohio law</span>
+              <Link href="/personal-injury/dog-bites" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Dog Bites</span>
+                <span className="text-sm text-navy-950/70">Animal attack liability under Ohio law</span>
               </Link>
-              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Workplace Injuries</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">On-the-job injuries and workers&apos; compensation</span>
+              <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Workplace Injuries</span>
+                <span className="text-sm text-navy-950/70">On-the-job injuries and workers&apos; compensation</span>
               </Link>
-              <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+              <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
+                <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
               </Link>
             </div>
           </div>

@@ -11,19 +11,19 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon: Icon, onLearnMore }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-all duration-200 border border-gray-200 flex flex-col h-full">
+    <div className="bg-white p-6 border border-navy-950/10 hover:bg-ice transition-colors duration-200 flex flex-col h-full">
       <div className="flex items-center justify-center mb-4">
-        <div className="text-blue-900 mr-3 flex-shrink-0">
+        <div className="text-sky-deep mr-3 flex-shrink-0">
           <Icon size={36} />
         </div>
-        <h2 className="text-xl font-semibold font-serif text-gray-900 text-center leading-tight">{title}</h2>
+        <h2 className="jw-display text-xl text-navy-950 text-center leading-tight">{title}</h2>
       </div>
 
-      <p className="text-gray-700 text-sm mb-4 flex-grow">{description}</p>
+      <p className="text-navy-950/75 text-sm mb-4 flex-grow">{description}</p>
 
       <button
         onClick={onLearnMore}
-        className="inline-block text-blue-950 border border-blue-950 px-4 py-2 rounded hover:bg-blue-950 hover:text-white transition-all duration-200 text-sm font-medium w-full text-center"
+        className="inline-block text-navy-950 border border-navy-950 px-4 py-2 hover:bg-navy-950 hover:text-white transition-colors duration-200 text-sm font-medium w-full text-center"
       >
         Learn More
       </button>

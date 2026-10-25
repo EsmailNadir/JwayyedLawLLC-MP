@@ -70,28 +70,28 @@ export default function LLCFormationPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Ohio LLC Formation Under ORC Chapter 1706
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Forming a Limited Liability Company in Ohio is governed by <strong>ORC Chapter 1706</strong>, the Ohio LLC Act. An LLC provides the core benefit that most business owners seek: limited liability protection, meaning members are generally not personally liable for the company&apos;s debts and obligations. Combined with pass-through taxation (avoiding corporate double taxation) and flexible governance, the Ohio LLC is the most commonly chosen business structure for new businesses in the state. LLC formation is one of the most requested services within our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">Ohio business law practice</Link>. At Jwayyed Law LLC, we assist clients with all aspects of LLC formation — from Articles of Organization filing to operating agreement drafting and post-formation compliance guidance. For a broader overview of entity types, see our <Link href="/business/business-formation" className="text-[#b87333] underline hover:text-[#a06828]">business formation</Link> page.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Forming a Limited Liability Company in Ohio is governed by <strong>ORC Chapter 1706</strong>, the Ohio LLC Act. An LLC provides the core benefit that most business owners seek: limited liability protection, meaning members are generally not personally liable for the company&apos;s debts and obligations. Combined with pass-through taxation (avoiding corporate double taxation) and flexible governance, the Ohio LLC is the most commonly chosen business structure for new businesses in the state. LLC formation is one of the most requested services within our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">Ohio business law practice</Link>. At Jwayyed Law LLC, we assist clients with all aspects of LLC formation — from Articles of Organization filing to operating agreement drafting and post-formation compliance guidance. For a broader overview of entity types, see our <Link href="/business/business-formation" className="text-sky-deep underline hover:text-navy-950">business formation</Link> page.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The Ohio LLC formation process begins with filing Articles of Organization with the Ohio Secretary of State. The current filing fee is $99. The Articles must designate a statutory agent (registered agent) with an Ohio address — the person or entity who will receive legal notices on behalf of the LLC. Under <strong>ORC 1706.08</strong>, while a written operating agreement is not legally required, it is strongly advisable for any multi-member LLC and even for single-member LLCs. An operating agreement establishes ownership percentages, profit and loss allocation, management structure, voting rights, and procedures for member withdrawal or dissolution — all of which become critical if a dispute arises between members. To learn more about the LLC formation process, read our blog posts on <Link href="/our-law-firm/blog/forming-llc-ohio-step-by-step" className="text-[#b87333] underline hover:text-[#a06828]">forming an LLC in Ohio step by step</Link> and <Link href="/our-law-firm/blog/do-i-need-llc-for-business" className="text-[#b87333] underline hover:text-[#a06828]">whether you need an LLC for your business</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The Ohio LLC formation process begins with filing Articles of Organization with the Ohio Secretary of State. The current filing fee is $99. The Articles must designate a statutory agent (registered agent) with an Ohio address — the person or entity who will receive legal notices on behalf of the LLC. Under <strong>ORC 1706.08</strong>, while a written operating agreement is not legally required, it is strongly advisable for any multi-member LLC and even for single-member LLCs. An operating agreement establishes ownership percentages, profit and loss allocation, management structure, voting rights, and procedures for member withdrawal or dissolution — all of which become critical if a dispute arises between members. To learn more about the LLC formation process, read our blog posts on <Link href="/our-law-firm/blog/forming-llc-ohio-step-by-step" className="text-sky-deep underline hover:text-navy-950">forming an LLC in Ohio step by step</Link> and <Link href="/our-law-firm/blog/do-i-need-llc-for-business" className="text-sky-deep underline hover:text-navy-950">whether you need an LLC for your business</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs with Ohio taxable gross receipts above $150,000 annually are subject to the Commercial Activity Tax (CAT) under <strong>ORC Chapter 5751</strong>. Registration with the Ohio Department of Taxation is required once the CAT filing threshold is met. Federal tax obligations depend on how the LLC elects to be treated for federal income tax purposes — a default pass-through entity (sole proprietorship or partnership treatment) or an S-corp or C-corp election. Our attorney advises on the tax and registration obligations that apply to your specific business as part of the overall formation process.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Maintaining the LLC&apos;s liability protection after formation requires proper conduct: keeping business and personal finances separate, adequately capitalizing the business, documenting significant decisions and transactions, and avoiding personal guarantees of LLC obligations where possible. Ohio courts can pierce the LLC veil and impose personal liability on members when the LLC is a mere alter ego of its owners. Our attorney advises on the operational practices that preserve the liability shield provided by <strong>ORC 1706.26</strong>.
             </p>
 
             <LocationsWeServe title="Business" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               LLC Formation: How We Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Articles of Organization:</strong> Prepare and file Articles of Organization with the Ohio Secretary of State, including proper designation of the statutory agent and management structure.</li>
               <li><strong>Operating agreement drafting:</strong> Draft comprehensive operating agreements covering ownership, management, capital contributions, profit distribution, and dispute resolution under ORC 1706.08.</li>
               <li><strong>Tax and compliance guidance:</strong> Advise on EIN registration, CAT filing obligations under ORC Chapter 5751, and applicable business licensing requirements.</li>
@@ -99,28 +99,28 @@ export default function LLCFormationPage() {
               <li><strong>Ongoing legal support:</strong> Provide continued representation for business contracts, disputes, and operational legal matters as your business grows.</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              To discuss forming an LLC in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> at (614) 285-5482 or via our contact page. Related business law services include{' '}
-              <Link href="/business/contract-drafting-review" className="text-[#b87333] underline hover:text-[#a06828]">contract drafting and review</Link> and{' '}
-              <Link href="/business/business-dissolution" className="text-[#b87333] underline hover:text-[#a06828]">business dissolution</Link>.
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
+              To discuss forming an LLC in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> at (614) 285-5482 or via our contact page. Related business law services include{' '}
+              <Link href="/business/contract-drafting-review" className="text-sky-deep underline hover:text-navy-950">contract drafting and review</Link> and{' '}
+              <Link href="/business/business-dissolution" className="text-sky-deep underline hover:text-navy-950">business dissolution</Link>.
             </p>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/business-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Formation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Choose the right business structure for your Ohio company</span>
+              <Link href="/business/business-formation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Formation</span>
+                <span className="text-sm text-navy-950/70">Choose the right business structure for your Ohio company</span>
               </Link>
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Contract Drafting & Review</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protect your LLC with properly drafted contracts and agreements</span>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Contract Drafting & Review</span>
+                <span className="text-sm text-navy-950/70">Protect your LLC with properly drafted contracts and agreements</span>
               </Link>
-              <Link href="/business/business-compliance" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Compliance</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Maintain your LLC's good standing and meet Ohio requirements</span>
+              <Link href="/business/business-compliance" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Compliance</span>
+                <span className="text-sm text-navy-950/70">Maintain your LLC's good standing and meet Ohio requirements</span>
               </Link>
-              <Link href="/business/partnership-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Partnership Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Resolve multi-member LLC and partnership disagreements</span>
+              <Link href="/business/partnership-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Partnership Disputes</span>
+                <span className="text-sm text-navy-950/70">Resolve multi-member LLC and partnership disagreements</span>
               </Link>
             </div>
           </div>

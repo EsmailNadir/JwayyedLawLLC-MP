@@ -76,28 +76,28 @@ export default function ButlerCriminalMisdemeanorDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Criminal Misdemeanor Defense in Butler County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County misdemeanor charges are prosecuted in four courts depending on where the offense occurred: Butler County Area Court I in Oxford, Area Court II in Hamilton, Area Court III in West Chester, and Hamilton Municipal Court at 700 Hanover Street, Hamilton. Each court operates with its own procedures, judges, prosecutors, and local practices. At Jwayyed Law LLC, we provide experienced criminal misdemeanor defense representation in all Butler County courts under Ohio Revised Code 2929.21 through 2929.28 and the full range of Ohio criminal statutes. Our attorney understands what it takes to protect your rights, challenge the evidence against you, and achieve the best possible outcome in each specific court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A misdemeanor conviction in Butler County is not a minor matter. Even a fourth-degree misdemeanor — the lowest level — carries up to 30 days in jail and a $250 fine. More significantly, any conviction creates a criminal record that appears in background checks, can affect employment and professional licensing, may impact immigration status, and can be used to enhance penalties for future charges. Domestic violence convictions carry federal firearms restrictions under the Lautenberg Amendment. Drug possession convictions can affect eligibility for student loans and housing. Understanding the full collateral consequences of a charge — not just the jail time — is essential to making informed decisions about how to handle your case.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Common Misdemeanor Charges in Butler County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The most common misdemeanor charges in Butler County courts include assault under ORC 2903.13 (M1, up to 180 days), domestic violence under ORC 2919.25 (typically M1 for first offense), theft under $1,000 under ORC 2913.02 (M1 or M2 depending on value), drug possession under ORC 2925.11 (level depends on substance and quantity), disorderly conduct under ORC 2917.11 (typically M4), and criminal trespass under ORC 2911.21 (M4). Oxford — home to Miami University — sees significant numbers of charges involving underage consumption, minor possession of alcohol, disorderly conduct, and assault around campus and off-campus housing. West Chester and Hamilton see theft, assault, and domestic violence cases at higher rates given their population centers.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Domestic violence charges in Butler County present unique complexity because they often arise alongside a Temporary Protection Order (TPO) under ORC 2919.26 filed at arraignment. The TPO can immediately restrict a defendant from returning to their home, contacting their children, or attending their workplace if the alleged victim works nearby. This makes the arraignment hearing critically important — our attorney appears at arraignment to address TPO conditions, argue for reasonable terms, and begin building the defense from day one. For clients facing a Civil Protection Order (CPO) under ORC 3113.31, we provide representation in that separate civil proceeding as well.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Butler County offers diversion programs for eligible first-time misdemeanor offenders, and expungement under ORC 2953.32 is available for many misdemeanor convictions after a one-year waiting period. Our attorney evaluates every client&apos;s eligibility for diversion and expungement at the outset, incorporating these options into our overall defense strategy. If you are facing a misdemeanor charge in Butler County, contact Jwayyed Law LLC at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense practice</Link> throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense practice</Link> throughout Ohio.
             </p>
           </div>
         </div>

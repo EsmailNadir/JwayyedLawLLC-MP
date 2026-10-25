@@ -70,85 +70,85 @@ export default function RealEstateDisputesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Real Estate Disputes in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Real Estate Disputes in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Real estate disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve boundary disputes, title issues, purchase agreements, landlord-tenant matters, and other complex property law issues. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC provides experienced representation for real estate disputes under Ohio Revised Code. Our attorney understands property law and the remedies necessary to protect your property rights.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Real estate disputes can involve valuable property interests and complex legal issues including boundary disputes, easement disputes, title defects, purchase agreement breaches, seller disclosure issues, construction disputes, and property damage claims. Understanding your rights, available remedies, and the legal process is essential for protecting your property interests and resolving disputes efficiently. Early intervention by a skilled real estate disputes attorney can significantly impact the outcome, ensuring proper documentation, negotiation, and protection of your rights.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> to discuss your real estate dispute and protect your rights.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The statute of limitations for real estate disputes in Ohio varies by claim type: breach of contract (6 years for written contracts, 4 years for oral contracts under ORC 2305.06, 2305.07 as amended June 2021), property damage (4 years), and fraud (4 years from discovery). Missing deadlines may bar recovery, making it crucial to act quickly. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> to discuss your real estate dispute and protect your rights.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Common Real Estate Disputes</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common Real Estate Disputes</h3>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Boundary Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Boundary Disputes</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Boundary disputes arise when property owners disagree about property lines, fences, or structures. These disputes may require surveys, title research, and legal action to resolve. An attorney can analyze property records, surveys, and evidence to determine boundaries and resolve disputes through negotiation or litigation.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Title Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Title Disputes</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Title disputes involve competing claims to property, title defects, liens, or other clouds on title. Quiet title actions under Ohio Revised Code 5303.01 can resolve title disputes and establish clear ownership. An attorney can analyze title issues, file quiet title actions, and resolve title disputes.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Purchase Agreement Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Purchase Agreement Disputes</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Purchase agreement disputes may involve breach of contract, seller disclosure issues, inspection disputes, closing disputes, or financing issues. These disputes can delay or prevent property transactions. An attorney can analyze purchase agreements, negotiate disputes, and protect your interests.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Easement Disputes</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Easement Disputes</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Easement disputes involve rights to use another person&apos;s property for specific purposes (access, utilities, etc.). These disputes may require analysis of easement agreements, property records, and legal action to resolve. An attorney can analyze easement issues and resolve disputes.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Real Estate Disputes Process</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Real Estate Disputes Process</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding the real estate disputes process helps you prepare for what lies ahead:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Investigation and Analysis</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Investigation and Analysis</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 The process begins with investigating the dispute, analyzing property records, surveys, title documents, contracts, and evidence. An attorney can review documents, conduct title searches, analyze property records, and identify issues. This analysis is crucial for understanding the dispute and developing strategies.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Negotiation and Settlement</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Negotiation and Settlement</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Many real estate disputes can be resolved through negotiation without litigation. An attorney can negotiate with opposing parties, draft settlement agreements, and work toward resolution. Alternative dispute resolution including mediation or arbitration can save time and money while resolving disputes.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Quiet Title Actions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Quiet Title Actions</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 If negotiation fails, litigation may be necessary. This involves filing lawsuits, quiet title actions, or other legal proceedings. Litigation may include discovery, depositions, expert testimony, and potentially trial. An experienced attorney can navigate the litigation process and protect your property rights.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Real Estate Disputes Attorney Can Help</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Real Estate Disputes Attorney Can Help</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An experienced real estate disputes attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
               <li><strong>Property Law Analysis:</strong> Analyze property issues, title problems, boundary disputes, easement disputes, and other property law matters to understand your rights and options</li>
               <li><strong>Title Research:</strong> Conduct title searches, review property records, surveys, and documents to identify issues and resolve title disputes</li>
               <li><strong>Quiet Title Actions:</strong> File quiet title actions under Ohio Revised Code 5303.01 to resolve title disputes and establish clear ownership of property</li>
@@ -157,37 +157,37 @@ export default function RealEstateDisputesPage() {
               <li><strong>Alternative Dispute Resolution:</strong> Participate in mediation or arbitration to resolve disputes efficiently and cost-effectively</li>
               <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court to protect your property rights</li>
             </ul>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm provides dedicated real estate disputes representation throughout Ohio. We understand that real estate disputes can be complex and affect valuable property interests. Our attorney works diligently to analyze property issues, resolve disputes, and protect your property rights.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our approach combines thorough understanding of property law, strategic dispute resolution, and aggressive advocacy when necessary. We understand the local court systems, judicial preferences, and common issues in real estate disputes. This knowledge allows us to develop effective strategies tailored to your specific situation and protect your interests. We work closely with clients to understand their goals, explain legal options, and make informed decisions about dispute resolution strategies.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are involved in a real estate dispute in Columbus, Cincinnati, Dayton, or anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential solutions, and develop a strategy tailored to your situation. Time is critical in real estate disputes—statutes of limitations must be met, evidence must be preserved, and early intervention can often prevent disputes from escalating. Do not delay in seeking experienced legal representation to protect your property rights and interests.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/construction-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Construction Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
+              <Link href="/civil/construction-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Construction Disputes</span>
+                <span className="text-sm text-navy-950/70">Mechanics&apos; liens, defective workmanship, and payment disputes on construction projects</span>
               </Link>
-              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Landlord-Tenant Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Eviction defense, security deposit claims, and habitability issues</span>
+              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Landlord-Tenant Disputes</span>
+                <span className="text-sm text-navy-950/70">Eviction defense, security deposit claims, and habitability issues</span>
               </Link>
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
+                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil/evictions" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Evictions</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Landlord eviction proceedings and tenant eviction defense in Ohio</span>
+              <Link href="/civil/evictions" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Evictions</span>
+                <span className="text-sm text-navy-950/70">Landlord eviction proceedings and tenant eviction defense in Ohio</span>
               </Link>
             </div>
           </div>

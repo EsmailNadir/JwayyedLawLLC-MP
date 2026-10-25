@@ -70,65 +70,65 @@ export default function ColumbusRefusalOVIPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               OVI Refusal Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a Columbus driver refuses a breath, blood, or urine test after an OVI arrest, they are exercising a legal right under the Fourth Amendment — but Ohio&apos;s implied consent law imposes significant consequences for doing so. A first refusal triggers a 1-year Administrative License Suspension (longer than the standard consent ALS) and enhances the mandatory minimum criminal OVI penalties to the high-tier level. The refusal eliminates BAC evidence from the prosecution&apos;s case — but does not eliminate the OVI charge. Columbus Division of Police and Franklin County prosecutors routinely proceed with refusal OVI cases using officer observations, field sobriety test results, and dash-cam and body-cam footage. Jwayyed Law LLC defends refusal OVI cases at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               — the ALS appeal deadline is 30 days.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio&apos;s Implied Consent Law and Refusal Consequences
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 4511.191 establishes implied consent: any person who operates a vehicle in Ohio implicitly consents to chemical testing upon a lawful OVI arrest. Refusal triggers an ALS of 1 year for a first offense, 2 years for a second refusal within 10 years, and 3 years for a third. The refusal ALS imposes a longer hard suspension period before limited driving privileges are available. The ALS can be appealed at Franklin County Municipal Court within 30 days of arrest — our firm files these appeals immediately and requests a stay of suspension.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defending a Refusal OVI Without BAC Evidence
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               In a Columbus refusal OVI case, the prosecution must build its case on officer observations, field sobriety test results, and any other evidence gathered at the scene — rather than a BAC reading. This actually creates defense opportunities. Field sobriety tests are subjective and officer-administered — deviations from NHTSA standards, improper surface conditions, medical conditions affecting performance, and officer credibility are all challengeable. We obtain all body-cam and dash-cam footage, review field sobriety test administration second-by-second against NHTSA standards, and evaluate whether the officer&apos;s observations in the arrest report are consistent with the recorded video.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Refusal ALS Appeal Strategy in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The refusal ALS appeal is filed in Franklin County Municipal Court within 30 days of arrest and follows the same procedural framework as a consent ALS appeal. However, the grounds are different. In a refusal ALS appeal, the most productive challenges typically focus on: (1) whether the arresting officer properly advised the defendant of the statutory consequences of refusal under ORC 4511.191(B)(2) — the specific warning that must be given before any refusal can be used to trigger the enhanced ALS; (2) whether the defendant&apos;s refusal was a clear, unequivocal act of refusal versus hesitation, a request to speak with counsel, or an attempt to comply that the officer mischaracterized; and (3) whether all administrative prerequisites for the ALS — including the proper form completion — were met. A successful refusal ALS appeal can reduce or eliminate the 1-year suspension and restore driving privileges while the criminal OVI case is still pending.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               The Refusal at Trial — How the Prosecution Uses It
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under Ohio law, a defendant&apos;s refusal to take a breath test can be used as evidence in the OVI criminal trial. The prosecution may argue that the defendant&apos;s refusal was a consciousness of guilt — that a person who knew they were impaired chose not to provide a test because they knew the result would be incriminating. Ohio appellate courts have upheld the use of refusal evidence at trial, and Columbus prosecutors routinely present this argument. Our firm prepares rebuttal evidence and instruction arguments to counter the refusal inference, including evidence of the defendant&apos;s actual condition at the time of the stop and alternative explanations for the refusal that do not indicate impairment.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Enhanced Refusal Penalties — What They Actually Mean
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s enhanced OVI penalties for refusal cases (R.C. 4511.19(A)(2)) treat a first-offense refusal OVI like a high-tier OVI for mandatory minimum purposes: 6 days mandatory (3 days jail + 3 days DIP, or 6 days jail if no DIP is available), compared to the 3-day minimum for a standard first OVI. The refusal thus costs the defendant: a longer ALS (1 year vs. 90 days), enhanced criminal mandatory minimums, and the use of the refusal as evidence of guilt at trial. The trade-off is the elimination of BAC evidence — which the prosecution would otherwise use as its strongest proof. Whether that trade-off is favorable depends entirely on the strength of the other evidence in a given case. Our firm analyzes the full evidentiary picture to advise on whether the refusal created a stronger or weaker defense position and what the optimal strategy is given the actual facts.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Collateral Consequences of an OVI Refusal Conviction in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A refusal OVI conviction in Columbus carries all the collateral consequences of any OVI conviction — plus the permanent record of a refusal on the driving record. OVI convictions under R.C. 4511.19 are not eligible for expungement in Ohio, meaning the conviction will appear on criminal background checks and driving record reports indefinitely. Auto insurance rates typically double or triple after an OVI conviction, and some high-risk insurers decline to renew policies with OVI on record. The SR-22 insurance requirement after license reinstatement extends the cost impact for years beyond the suspension period itself. For employed defendants, the license suspension (1 year for refusal ALS alone) can disrupt transportation to work, particularly in Columbus suburbs where public transit options are limited.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For professionals in licensed fields — healthcare, education, law, financial services, real estate — an OVI conviction triggers mandatory disclosure to Ohio licensing boards. The refusal itself, and the enhanced mandatory minimums that accompany it, may result in additional scrutiny from licensing boards that review character and fitness. A first OVI conviction also starts the 10-year look-back clock: if a second OVI occurs within ten years, the first conviction doubles the mandatory minimum and extends the suspension. Understanding these long-term consequences is why fighting a refusal OVI charge — rather than accepting a quick plea — is almost always the right strategy for a first-time defendant.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               The 30-day ALS appeal deadline for a refusal is the same as for consent — act immediately.
             </p>
           </div>

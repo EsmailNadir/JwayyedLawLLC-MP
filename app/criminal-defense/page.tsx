@@ -81,9 +81,9 @@ export default function CriminalDefensePage() {
       />
 
       {/* Sub-Services Grid */}
-      <section className="py-8 bg-gray-50 border-b border-gray-100">
+      <section className="py-8 bg-ice border-b border-navy-950/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
             Criminal Defense Services
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -91,10 +91,10 @@ export default function CriminalDefensePage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="flex items-center justify-between p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-medium text-gray-900 group-hover:text-[#b87333] transition-colors text-sm">{service.title}</span>
-                <span className="text-gray-300 group-hover:text-[#b87333] transition-colors ml-2 text-xs shrink-0">→</span>
+                <span className="font-medium text-navy-950 group-hover:text-sky-deep transition-colors text-sm">{service.title}</span>
+                <span className="text-white/80 group-hover:text-sky-deep transition-colors ml-2 text-xs shrink-0">→</span>
               </Link>
             ))}
           </div>
@@ -105,123 +105,123 @@ export default function CriminalDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-navy-950 mb-6">
               Experienced Criminal Defense Representation in Ohio
             </h2>
             
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Facing criminal charges throughout Ohio can be overwhelming and life-altering. At Jwayyed Law LLC, we provide dedicated criminal defense representation for individuals charged with misdemeanor crimes. Our attorney understands the Ohio Revised Code, local court procedures, and defense strategies necessary to protect your rights and achieve the best possible outcome.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Criminal charges carry serious consequences beyond potential jail time. A conviction can affect employment opportunities, professional licenses, housing, and your reputation. Under Ohio law, criminal offenses are classified as misdemeanors or felonies, each with different sentencing structures and long-term implications. Our firm works diligently to challenge evidence, negotiate with prosecutors, and defend your case at trial when necessary.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's criminal justice system is complex, with multiple stages from arrest through trial and sentencing. Understanding your rights at each stage is critical. The process begins with investigation and arrest, followed by initial court appearances, discovery, pretrial motions, plea negotiations, and potentially trial. Each stage requires strategic decision-making and experienced legal representation. Early intervention by a skilled criminal defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The consequences of a criminal conviction extend far beyond the immediate penalties. A criminal record can create barriers to employment, as many employers conduct background checks and may refuse to hire individuals with criminal convictions. Professional licenses in fields such as healthcare, education, law enforcement, finance, and real estate may be denied or revoked. Housing applications may be rejected by landlords conducting background checks. Educational opportunities including financial aid eligibility can be affected. Gun rights may be lost for certain serious convictions. Immigration consequences can include deportation for non-citizens. These collateral consequences persist long after completing sentences and paying fines.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Criminal Defense – Locations We Serve
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               We serve clients in the following Ohio counties. Each county has its own page; click through for court information and local details.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Link href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Franklin County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Criminal Defense – Franklin County Municipal Court</span>
+              <Link href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Franklin County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Criminal Defense – Franklin County Municipal Court</span>
               </Link>
-              <Link href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Delaware County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Criminal Defense – Delaware County Municipal Court</span>
+              <Link href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Delaware County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Criminal Defense – Delaware County Municipal Court</span>
               </Link>
-              <Link href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Butler County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
+              <Link href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Butler County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Hamilton, Oxford, West Chester</span>
               </Link>
-              <Link href="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Greene County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Fairborn & surrounding areas</span>
+              <Link href="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Greene County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Fairborn & surrounding areas</span>
               </Link>
-              <Link href="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Montgomery County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Dayton & surrounding areas</span>
+              <Link href="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Montgomery County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Dayton & surrounding areas</span>
               </Link>
-              <Link href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Pickaway County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Circleville & surrounding areas</span>
+              <Link href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Pickaway County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Circleville & surrounding areas</span>
               </Link>
-              <Link href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Athens County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Athens & surrounding areas</span>
+              <Link href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Athens County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Athens & surrounding areas</span>
               </Link>
-              <Link href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Morrow County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
+              <Link href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Morrow County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Mount Gilead, Cardington & surrounding areas</span>
               </Link>
-              <Link href="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-['Inter',_'Arial',_sans-serif]">
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors">Clinton County</span>
-                <span className="block text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Wilmington & surrounding areas</span>
+              <Link href="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all">
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors">Clinton County</span>
+                <span className="block text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Wilmington & surrounding areas</span>
               </Link>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               The Criminal Court Process in Ohio
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding the criminal court process helps you prepare for what lies ahead. The process typically involves several stages, each requiring strategic legal representation:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Arrest and Initial Court Proceedings</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Arrest and Initial Court Proceedings</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 After arrest, you will be taken before a judge for arraignment where charges are formally read, bail is set, and you enter a plea. This is a critical stage where an attorney can argue for reduced bail, release on recognizance, or house arrest. The initial plea (typically not guilty) preserves your rights and allows time for investigation and defense preparation. An attorney can also request discovery materials including police reports, witness statements, and evidence at this early stage.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence they intend to use at trial. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, examine forensic evidence, review surveillance footage if available, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting defenses, constitutional violations, or insufficient evidence. Independent experts including forensic specialists, medical professionals, or use-of-force experts may be consulted to challenge the prosecution's evidence.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Pretrial Motions</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Pretrial Motions</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Strategic pretrial motions can significantly impact your case. Motions to suppress evidence may be filed if evidence was obtained illegally, if your constitutional rights were violated during arrest, or if statements were coerced. Motions to dismiss may be filed if charges lack sufficient evidence, if statutes of limitations have expired, or if procedural errors occurred. Motions to compel discovery ensure prosecutors provide all required evidence. These motions require legal expertise and can result in dismissal of charges or exclusion of damaging evidence.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Plea Negotiations</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Plea Negotiations</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Most criminal cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges where applicable (e.g., aggravated to simple), negotiate favorable plea agreements that minimize penalties, secure alternative sentencing options including diversion programs or treatment instead of jail, or arrange for charges to be dismissed upon completion of conditions. These negotiations require understanding of local court practices, prosecutor policies, and case strengths.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Trial Representation</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Trial Representation</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 If your case proceeds to trial, experienced trial representation is essential. Your attorney will present evidence supporting your defense, cross-examine prosecution witnesses to expose weaknesses or inconsistencies, present expert testimony when appropriate, make compelling arguments to the jury, and protect your rights throughout the process. Trial requires extensive preparation, knowledge of evidence rules, and effective advocacy skills. A not guilty verdict results in complete dismissal of charges.
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               How a Criminal Defense Attorney Can Help
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An experienced criminal defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of arrest, including right to remain silent, right to counsel, and protection against illegal searches and seizures</li>
               <li><strong>Comprehensive Case Evaluation:</strong> Thoroughly review police reports, evidence, witness statements, forensic reports, and all discovery materials to identify weaknesses in the prosecution's case, constitutional violations, or evidence supporting your defense</li>
               <li><strong>Constitutional Rights Protection:</strong> Ensure your Fourth Amendment (search and seizure), Fifth Amendment (self-incrimination, due process), and Sixth Amendment (right to counsel, confrontation) rights were not violated during investigation or arrest</li>
@@ -234,84 +234,84 @@ export default function CriminalDefensePage() {
               <li><strong>Post-Conviction Relief:</strong> Help eligible clients with record sealing, expungement applications, sentence modifications, or appeals when appropriate</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               Criminal Defense Practice Areas
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm handles all types of criminal charges under Ohio law, providing experienced defense representation across the full spectrum of criminal offenses. We understand that each type of charge requires specific knowledge of the relevant statutes, common defenses, and sentencing structures. Our comprehensive practice includes:
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Assault Charges</h4>
-                <p className="text-sm text-gray-600">Defense for assault and battery charges under ORC 2903.13, from simple assault through aggravated assault.</p>
+              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Assault Charges</h4>
+                <p className="text-sm text-navy-950/70">Defense for assault and battery charges under ORC 2903.13, from simple assault through aggravated assault.</p>
               </Link>
-              <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Domestic Violence</h4>
-                <p className="text-sm text-gray-600">Protection for domestic violence charges and protection order matters under ORC 2919.25</p>
+              <Link href="/criminal-defense/domestic-violence" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Domestic Violence</h4>
+                <p className="text-sm text-navy-950/70">Protection for domestic violence charges and protection order matters under ORC 2919.25</p>
               </Link>
-              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Criminal Mischief</h4>
-                <p className="text-sm text-gray-600">Defense for property damage and criminal mischief charges under ORC 2909.07</p>
+              <Link href="/criminal-defense/criminal-mischief" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Criminal Mischief</h4>
+                <p className="text-sm text-navy-950/70">Defense for property damage and criminal mischief charges under ORC 2909.07</p>
               </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Criminal Trespass</h4>
-                <p className="text-sm text-gray-600">Defense for trespass charges and unlawful entry allegations under ORC 2911.21</p>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Criminal Trespass</h4>
+                <p className="text-sm text-navy-950/70">Defense for trespass charges and unlawful entry allegations under ORC 2911.21</p>
               </Link>
-              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Petty Theft</h4>
-                <p className="text-sm text-gray-600">Defense for shoplifting and petty theft charges under ORC 2913.02</p>
+              <Link href="/criminal-defense/petty-theft" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Petty Theft</h4>
+                <p className="text-sm text-navy-950/70">Defense for shoplifting and petty theft charges under ORC 2913.02</p>
               </Link>
-              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Resisting Arrest</h4>
-                <p className="text-sm text-gray-600">Defense for resisting arrest charges under ORC 2921.33</p>
+              <Link href="/criminal-defense/resisting-arrest" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Resisting Arrest</h4>
+                <p className="text-sm text-navy-950/70">Defense for resisting arrest charges under ORC 2921.33</p>
               </Link>
-              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Obstruction of Official Business</h4>
-                <p className="text-sm text-gray-600">Defense for obstruction charges under ORC 2921.31</p>
+              <Link href="/criminal-defense/obstruction-of-official-business" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Obstruction of Official Business</h4>
+                <p className="text-sm text-navy-950/70">Defense for obstruction charges under ORC 2921.31</p>
               </Link>
-              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Speeding Tickets</h4>
-                <p className="text-sm text-gray-600">Defense for speeding violations, point reduction, and CDL implications under ORC 4511.21</p>
+              <Link href="/criminal-defense/speeding-tickets" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Speeding Tickets</h4>
+                <p className="text-sm text-navy-950/70">Defense for speeding violations, point reduction, and CDL implications under ORC 4511.21</p>
               </Link>
-              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Driving Under Suspension</h4>
-                <p className="text-sm text-gray-600">Defense for DUS charges and license reinstatement under ORC 4510.11-4510.16</p>
+              <Link href="/criminal-defense/driving-under-suspension" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Driving Under Suspension</h4>
+                <p className="text-sm text-navy-950/70">Defense for DUS charges and license reinstatement under ORC 4510.11-4510.16</p>
               </Link>
-              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">No Operator&apos;s License</h4>
-                <p className="text-sm text-gray-600">Defense for driving without a valid license charges under ORC 4510.12</p>
+              <Link href="/criminal-defense/no-operators-license" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">No Operator&apos;s License</h4>
+                <p className="text-sm text-navy-950/70">Defense for driving without a valid license charges under ORC 4510.12</p>
               </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Expungement & Record Sealing</h4>
-                <p className="text-sm text-gray-600">Seal or expunge eligible criminal records under ORC Chapter 2953</p>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Expungement & Record Sealing</h4>
+                <p className="text-sm text-navy-950/70">Seal or expunge eligible criminal records under ORC Chapter 2953</p>
               </Link>
             </div>
 
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Each practice area requires specific knowledge of the relevant Ohio Revised Code sections, common defenses, sentencing structures, and case law. Our attorney stays current with changes in Ohio criminal law and understands how these laws are applied throughout Ohio courts. We develop defense strategies tailored to the specific type of charge you face, drawing on our experience with similar cases and knowledge of local court practices.
             </p>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               Understanding Ohio Criminal Penalties
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's criminal sentencing structure, defined in Ohio Revised Code Chapter 2929, establishes penalties based on offense degree:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Misdemeanor Penalties in Ohio</h4>
-              <ul className="space-y-2 text-gray-700">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Misdemeanor Penalties in Ohio</h4>
+              <ul className="space-y-2 text-navy-950/80">
                 <li><strong>First Degree Misdemeanor:</strong> Up to 180 days in jail, fines up to $1,000</li>
                 <li><strong>Second Degree Misdemeanor:</strong> Up to 90 days in jail, fines up to $750</li>
                 <li><strong>Third Degree Misdemeanor:</strong> Up to 60 days in jail, fines up to $500</li>
                 <li><strong>Fourth Degree Misdemeanor:</strong> Up to 30 days in jail, fines up to $250</li>
               </ul>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felony Penalties in Ohio</h4>
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Felony Penalties in Ohio</h4>
+              <ul className="space-y-2 text-navy-950/80">
                 <li><strong>First Degree Felony (F-1):</strong> 3-11 years indefinite imprisonment (for offenses after March 22, 2019, maximum equals minimum plus 50%), fines up to $20,000</li>
                 <li><strong>Second Degree Felony (F-2):</strong> 2-8 years indefinite imprisonment (for offenses after March 22, 2019), fines up to $15,000</li>
                 <li><strong>Third Degree Felony (F-3):</strong> 9-36 months imprisonment, fines up to $10,000</li>
@@ -320,20 +320,20 @@ export default function CriminalDefensePage() {
               </ul>
             </div>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               These penalties represent maximum sentences. Factors including prior criminal history, severity of the offense, victim impact, and presence of weapons can affect sentencing. Under Ohio Revised Code 2929.12, judges consider various aggravating and mitigating factors when determining sentences. Aggravating factors that can increase penalties include prior convictions, use of weapons, harm to victims, offenses committed in the presence of children, or gang-related activity. Mitigating factors that can reduce penalties include lack of prior record, genuine remorse, cooperation with authorities, or circumstances suggesting the offense was less serious than typical.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Certain offenses carry mandatory minimum sentences that cannot be suspended or reduced. For example, certain drug trafficking amounts trigger mandatory 5-year minimum prison sentences. Some violent offenses carry mandatory prison time. Understanding these mandatory minimums is essential when evaluating plea offers and defense strategies. An experienced attorney can explain how mandatory minimums apply to your case and work to avoid or minimize their impact when possible.
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Collateral Consequences of Criminal Convictions</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Collateral Consequences of Criminal Convictions</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Beyond the direct criminal penalties, convictions create lasting collateral consequences that persist long after completing sentences:
               </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80">
                 <li><strong>Employment Barriers:</strong> Many employers conduct background checks and may refuse to hire individuals with criminal convictions, particularly for felonies or offenses involving dishonesty</li>
                 <li><strong>Professional License Restrictions:</strong> Convictions can result in denial or revocation of professional licenses in healthcare, education, law enforcement, finance, real estate, and other regulated fields</li>
                 <li><strong>Housing Difficulties:</strong> Landlords often conduct background checks and may reject applications from individuals with criminal records</li>
@@ -347,56 +347,56 @@ export default function CriminalDefensePage() {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               Common Defenses in Criminal Cases
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The specific defenses available depend on the charges and circumstances, but common defenses include:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Constitutional Defenses</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Constitutional Defenses</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Violations of your constitutional rights can result in suppression of evidence or dismissal of charges. These include illegal searches and seizures (Fourth Amendment), coerced confessions or violations of right to remain silent (Fifth Amendment), or denial of right to counsel (Sixth Amendment). An attorney can identify constitutional violations and file motions to suppress evidence or dismiss charges.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Factual Defenses</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Factual Defenses</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Factual defenses challenge the prosecution's version of events. These include alibi (you were elsewhere), self-defense (you acted to protect yourself), defense of others, lack of intent, mistaken identity, or insufficient evidence. These defenses require investigation, evidence gathering, and effective presentation to the court or jury.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Procedural Defenses</h4>
-              <p className="text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Procedural Defenses</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Procedural defenses challenge how the case was handled. These include statute of limitations (charges filed too late), double jeopardy (being tried twice for the same offense), or prosecutorial misconduct. These defenses can result in dismissal of charges.
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-navy-950 mt-8 mb-4">
               Why Choose Jwayyed Law LLC for Criminal Defense
             </h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm provides personalized attention to each criminal case. We understand that every situation is unique, and we develop defense strategies tailored to your specific circumstances. With knowledge of Ohio criminal law and local court procedures, we work to protect your rights and achieve favorable outcomes. We maintain open communication throughout your case, ensuring you understand the process and your options.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We recognize that criminal charges can have devastating consequences on your life, career, and future. Our firm is committed to providing personalized, dedicated representation focused on achieving the best possible outcome. Whether through negotiation, pretrial motions, or trial advocacy, we fight aggressively to protect your rights and minimize consequences. We handle cases from initial arrest through trial and post-conviction relief, providing comprehensive representation at every stage.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our experience includes defending clients charged with misdemeanors across all practice areas. We have successfully negotiated reduced charges, secured dismissals, won trials, and helped clients seal or expunge records. We understand that each case is different and requires careful analysis of the facts, law, and available defenses. We invest the time and resources necessary to build strong defenses and achieve favorable outcomes.
             </p>
 
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing criminal charges anywhere in Ohio, contact Jwayyed Law LLC to schedule a consultation. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation. Time is critical in criminal cases—early intervention by experienced counsel can significantly impact the outcome, potentially resulting in dismissed charges, reduced penalties, or favorable plea agreements. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
             </p>
           </div>
@@ -405,83 +405,83 @@ export default function CriminalDefensePage() {
 
 
       {/* County Service Locations */}
-      <section className="py-12 bg-gray-50 border-t border-gray-100">
+      <section className="py-12 bg-ice border-t border-navy-950/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-6">
             Criminal Defense Attorney — Ohio Counties We Serve
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
                 key="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court"
                 href="/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Franklin County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & Franklin County Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Franklin County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Columbus & Franklin County Municipal Court</span>
               </Link>
               <Link
                 key="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court"
                 href="/locations/delaware-county/criminal-misdemeanor-defense-delaware-county-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Delaware County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Delaware County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Delaware Municipal Court</span>
               </Link>
               <Link
                 key="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court"
                 href="/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Pickaway County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Pickaway County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Circleville Municipal Court</span>
               </Link>
               <Link
                 key="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court"
                 href="/locations/greene-county/criminal-misdemeanor-defense-greene-county-fairborn-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Greene County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Greene County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Fairborn Municipal Court</span>
               </Link>
               <Link
                 key="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court"
                 href="/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Montgomery County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Montgomery County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Dayton Municipal Court</span>
               </Link>
               <Link
                 key="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court"
                 href="/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Morrow County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Morrow County Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Morrow County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Morrow County Municipal Court</span>
               </Link>
               <Link
                 key="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts"
                 href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Butler County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Butler County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Hamilton Municipal Court</span>
               </Link>
               <Link
                 key="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court"
                 href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Athens County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Athens County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Athens Municipal Court</span>
               </Link>
               <Link
                 key="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court"
                 href="/locations/clinton-county/criminal-misdemeanor-defense-clinton-county-wilmington-municipal-court"
-                className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <span className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors font-['Playfair_Display',_'Georgia',_serif]">Clinton County</span>
-                <span className="block text-sm text-gray-500 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington Municipal Court</span>
+                <span className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors jw-serif">Clinton County</span>
+                <span className="block text-sm text-navy-950/60 mt-1 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]">Wilmington Municipal Court</span>
               </Link>
           </div>
         </div>

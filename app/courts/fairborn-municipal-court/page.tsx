@@ -70,26 +70,26 @@ export default function FairbornMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Fairborn Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Fairborn Municipal Court, located at 1148 Kauffman Ave in Fairborn, Ohio, serves the western portion of Greene County — including Fairborn, Beavercreek, Bath Township, and communities adjacent to Wright-Patterson Air Force Base. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, and traffic violations in its jurisdiction. Jwayyed Law LLC represents defendants in Fairborn Municipal Court for OVI defense, misdemeanor criminal matters, and traffic charges. If you face an OVI charge, the 30-day ALS appeal window under <strong>ORC 4511.191</strong> runs from the date of arrest — contact our office immediately.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The Fairborn and Beavercreek area features significant traffic on US 35, SR 444, and I-675, and OVI enforcement is active in these corridors. For military personnel and government contractors near Wright-Patterson AFB, an OVI conviction carries collateral risks beyond the criminal sentence, including potential security clearance implications. Our attorney understands these intersecting concerns and pursues the best criminal outcome — including suppression motions, ALS appeals, and plea negotiations — to protect both your record and your career. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses is eliminated when an ignition interlock device is installed.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Greene County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Fairborn Municipal Court handles misdemeanor assault, domestic violence (<strong>ORC 2919.25</strong>), theft, drug possession, and disorderly conduct. Under <strong>ORC 2929.21</strong>, an M1 offense carries up to 180 days in jail and a $1,000 fine. Our attorney evaluates suppression, plea negotiations, and diversion options to pursue the best available outcome and protect your record. Many misdemeanor convictions are eligible for sealing under <strong>ORC 2953.32</strong> after a one-year waiting period.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or through{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Fairborn Municipal Court. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Fairborn Municipal Court. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice areas.
             </p>
           </div>
         </div>

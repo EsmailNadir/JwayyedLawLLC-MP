@@ -71,26 +71,26 @@ export default function ShareholderDisputesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Shareholder Disputes in Ohio: Understanding Your Rights and Remedies
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Disputes among shareholders — particularly in closely held Ohio corporations where a small group of people own and operate the business — can be among the most complex and damaging legal conflicts a business owner faces. Unlike shareholders in publicly traded companies who can sell their shares on an open market when they are dissatisfied, shareholders in closely held corporations are often locked in. When the majority uses its control to freeze out, oppress, or financially harm the minority, the legal stakes are high and the need for experienced counsel is acute. At Jwayyed Law LLC, we represent shareholders on both sides of these disputes under <strong>ORC Chapter 1701</strong>, Ohio\'s General Corporation Law, helping clients in Columbus and throughout Ohio understand their options and pursue effective remedies.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio\'s General Corporation Law imposes important fiduciary obligations on corporate directors and officers. Under <strong>ORC 1701.59</strong>, directors must perform their duties in good faith, with the care of an ordinarily prudent person, and in a manner reasonably believed to be in the best interests of the corporation. When directors breach these duties — by engaging in self-dealing, diverting corporate opportunities, or making decisions that benefit themselves or majority shareholders at the expense of the corporation and its minority owners — they can be held liable for the resulting harm. Minority shareholders who have been frozen out of management positions they were promised, denied dividends while majority shareholders extract value through above-market compensation, or subjected to share dilution schemes have legal recourse under both the statute and Ohio common law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most powerful preliminary tools in shareholder disputes is the right to inspect corporate books and records. Under <strong>ORC 1701.37</strong>, shareholders of record may inspect the corporation\'s articles of incorporation, regulations, minutes of shareholder meetings, shareholder records, and most recent available financial statements. When a corporation stonewalls a good-faith inspection demand, the shareholder can seek a writ of mandamus compelling access. This inspection right is often the first step in building a case: it enables shareholders and their counsel to identify financial irregularities, trace self-dealing transactions, and gather evidence necessary for breach of fiduciary duty claims or a petition for judicial dissolution.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When oppression or misconduct cannot be resolved through negotiation or mediation, Ohio law provides a meaningful avenue for relief through judicial dissolution under <strong>ORC 1701.91</strong>. A shareholder may petition the Common Pleas Court for dissolution if directors are deadlocked, if those in control are acting illegally or oppressively, if assets are being misapplied, or if shareholder deadlock has prevented the election of directors for at least two consecutive annual meeting dates. Because Ohio courts view dissolution as a drastic last resort, they often exercise their equitable discretion to order a forced buyout of the minority shareholder\'s shares at fair value rather than dismantling the business entirely. This makes the determination of "fair value" — which under Ohio law typically does not apply minority or marketability discounts — a critical and often contested part of these proceedings.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Common Shareholder Dispute Issues We Handle
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Minority shareholder oppression:</strong> Freeze-outs from employment or management, dividend withholding, and asset-stripping by controlling shareholders in close corporations.</li>
               <li><strong>Breach of fiduciary duty by directors and officers:</strong> Self-dealing, usurpation of corporate opportunities, excessive compensation, and conflict-of-interest transactions violating <strong>ORC 1701.59</strong>.</li>
               <li><strong>Corporate deadlock:</strong> When equal shareholders or boards cannot agree and the business cannot function, requiring judicial intervention under <strong>ORC 1701.91</strong>.</li>
@@ -101,38 +101,38 @@ export default function ShareholderDisputesPage() {
               <li><strong>Judicial dissolution and winding up:</strong> Petitioning for and managing the dissolution process under <strong>ORC 1701.91</strong> through <strong>1701.95</strong>.</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               What to Expect in Ohio Shareholder Dispute Litigation
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Shareholder disputes filed in Ohio Common Pleas Court — most often in Franklin County for Columbus-area businesses — are governed by the Ohio Rules of Civil Procedure. The litigation typically involves several key phases. First, a demand letter or inspection demand is often sent before filing, giving the opposing side an opportunity to resolve the matter. If litigation proceeds, the complaint sets out the specific statutory and common law claims. Discovery in shareholder disputes is frequently document-intensive: financial records, board minutes, shareholder communications, compensation records, and third-party valuations are all potential evidence. Expert witnesses — typically forensic accountants and business valuators — play a major role, particularly in cases involving requests for dissolution or buyout at fair value.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Many shareholder disputes settle during or after discovery, once each side has a clearer picture of the financial facts and the range of possible court outcomes. Settlement structures vary widely: a negotiated buyout, a restructured shareholder agreement, a change in governance arrangements, or a structured exit plan are all common resolutions. For closely held businesses, preserving confidentiality is often a major concern — litigation creates a public record, while arbitration and mediated settlements can remain private. Our firm helps clients assess all available paths and pursue the one best suited to their goals. For related services, see our pages on <Link href="/business/partnership-disputes" className="text-[#b87333] underline hover:opacity-80">Ohio partnership disputes</Link> and <Link href="/business/business-litigation" className="text-[#b87333] underline hover:opacity-80">Ohio business litigation</Link>, and explore our full <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Many shareholder disputes settle during or after discovery, once each side has a clearer picture of the financial facts and the range of possible court outcomes. Settlement structures vary widely: a negotiated buyout, a restructured shareholder agreement, a change in governance arrangements, or a structured exit plan are all common resolutions. For closely held businesses, preserving confidentiality is often a major concern — litigation creates a public record, while arbitration and mediated settlements can remain private. Our firm helps clients assess all available paths and pursue the one best suited to their goals. For related services, see our pages on <Link href="/business/partnership-disputes" className="text-sky-deep underline hover:opacity-80">Ohio partnership disputes</Link> and <Link href="/business/business-litigation" className="text-sky-deep underline hover:opacity-80">Ohio business litigation</Link>, and explore our full <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link>.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link>. Learn more about our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">business law practice</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link>. Learn more about our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">business law practice</Link>.
             </p>
 
             <LocationsWeServe title="Business Law" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/partnership-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Partnership Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Partnership dissolution and fiduciary duty claims</span>
+              <Link href="/business/partnership-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Partnership Disputes</span>
+                <span className="text-sm text-navy-950/70">Partnership dissolution and fiduciary duty claims</span>
               </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Litigation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Commercial disputes and business lawsuits</span>
+              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Litigation</span>
+                <span className="text-sm text-navy-950/70">Commercial disputes and business lawsuits</span>
               </Link>
-              <Link href="/business/business-dissolution" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Dissolution</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Winding down and dissolving an Ohio business</span>
+              <Link href="/business/business-dissolution" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Dissolution</span>
+                <span className="text-sm text-navy-950/70">Winding down and dissolving an Ohio business</span>
               </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Non-Compete Agreements</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforcing and defending restrictive covenants</span>
+              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Non-Compete Agreements</span>
+                <span className="text-sm text-navy-950/70">Enforcing and defending restrictive covenants</span>
               </Link>
             </div>
           </div>

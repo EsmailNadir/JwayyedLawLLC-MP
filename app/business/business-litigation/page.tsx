@@ -71,26 +71,26 @@ export default function BusinessLitigationPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business Litigation in Ohio: From Demand Letters to Trial
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Business disputes are an inevitable part of commercial life in Ohio — contracts get breached, partners disagree, fraud occurs, and competitors cross the line into unfair conduct. When a dispute cannot be resolved informally, business litigation in Ohio\'s Court of Common Pleas becomes the means of enforcing rights and obtaining remedies. Ohio\'s civil litigation framework, governed by the Ohio Rules of Civil Procedure and substantive statutes including <strong>ORC Chapter 2307</strong> (Ohio\'s civil action framework), provides businesses with powerful tools: the ability to compel document production, take depositions, seek emergency injunctive relief, and ultimately obtain a judgment enforceable against the defendant\'s assets. At Jwayyed Law LLC, we provide experienced business litigation representation in Franklin County and throughout Ohio, representing both plaintiffs pursuing claims and defendants protecting their interests.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Effective business litigation begins before a lawsuit is filed. In most situations, a well-crafted demand letter from an attorney is the first step: it documents the claim, establishes a formal record of the dispute, and gives the opposing party an opportunity to resolve the matter without the cost and uncertainty of court proceedings. Many Ohio business disputes — including breach of contract claims, payment disputes, and even some fraud allegations — settle at the demand letter stage or through brief attorney-to-attorney negotiation. Mediation is also a powerful pre-litigation tool: a neutral mediator can help parties find creative solutions that a court cannot impose, and the process is confidential, preserving business relationships and sensitive commercial information. Where a contract includes a mandatory mediation or arbitration clause, those requirements must be addressed before or instead of court filing.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When informal resolution fails and immediate action is required, Ohio courts provide emergency relief through temporary restraining orders (TROs) and preliminary injunctions under Ohio Rule of Civil Procedure 65. These are among the most powerful tools in business litigation: a TRO can be obtained within days, requiring the opposing party to immediately stop conduct that is causing irreparable harm — misusing trade secrets, violating a non-compete agreement, dissipating disputed business assets, or disrupting an established business relationship. To obtain emergency relief, the moving party must demonstrate a likelihood of success on the merits, irreparable harm without the order, and that the balance of hardships favors issuance. The procedural requirements are exacting, and success requires counsel with experience in the specific court and judge assigned to the case. Jwayyed Law LLC is equipped to move quickly when the situation demands it.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio business litigation offers a range of damages to successful plaintiffs. For breach of contract, the standard remedy is expectation damages — placing the plaintiff in the position they would have been in had the contract been performed — plus foreseeable consequential damages such as lost profits, subject to the obligation to mitigate. For fraud and intentional business torts, Ohio permits punitive damages under <strong>ORC 2315.21</strong> where the defendant\'s conduct constitutes actual malice, though punitive damages are capped at the greater of two times compensatory damages or $350,000. Courts also have broad equitable authority to issue injunctions, order specific performance of contractual obligations, and require an accounting of profits improperly obtained through wrongful conduct. In trade secret misappropriation cases under ORC 1333.61, courts may award both actual damages and the defendant\'s unjust enrichment attributable to the misappropriation, plus attorney fees for willful misappropriation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Types of Business Litigation We Handle in Ohio
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Breach of contract:</strong> Disputes arising from failure to perform commercial contracts, including purchase agreements, service contracts, construction contracts, and licensing agreements. Ohio\'s UCC (ORC Chapter 1302) governs contracts for the sale of goods.</li>
               <li><strong>Business fraud and misrepresentation:</strong> Claims where a party was induced to enter a transaction or business relationship based on intentional or negligent false statements. Both common-law fraud and statutory claims may be available.</li>
               <li><strong>Breach of fiduciary duty:</strong> Claims against corporate directors, LLC managers, partners, and officers who breached duties of loyalty and care owed to the business and its owners. Frequently combined with accounting and disgorgement claims.</li>
@@ -98,16 +98,16 @@ export default function BusinessLitigationPage() {
               <li><strong>Tortious interference:</strong> Claims against third parties who wrongfully induced breach of contract or disrupted prospective business relationships through improper means.</li>
               <li><strong>Unfair competition:</strong> Claims involving deceptive trade practices, false advertising, and passing off — governed by both Ohio common law and the Ohio Deceptive Trade Practices Act, ORC 4165.</li>
               <li><strong>Non-compete and non-solicitation enforcement:</strong> Emergency TRO proceedings and full injunctive relief to stop former employees or business sellers from violating restrictive covenants.</li>
-              <li><strong>Partnership and shareholder disputes:</strong> Complex multi-party commercial litigation involving closely held business ownership conflicts. See our dedicated pages on <Link href="/business/partnership-disputes" className="text-[#b87333] underline hover:opacity-80">partnership disputes</Link> and <Link href="/business/shareholder-disputes" className="text-[#b87333] underline hover:opacity-80">shareholder disputes</Link>.</li>
+              <li><strong>Partnership and shareholder disputes:</strong> Complex multi-party commercial litigation involving closely held business ownership conflicts. See our dedicated pages on <Link href="/business/partnership-disputes" className="text-sky-deep underline hover:opacity-80">partnership disputes</Link> and <Link href="/business/shareholder-disputes" className="text-sky-deep underline hover:opacity-80">shareholder disputes</Link>.</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Ohio Business Litigation Process: Phases and Timelines
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Ohio business litigation follows a predictable but often lengthy sequence of procedural steps. A case filed in Franklin County Common Pleas Court on a straightforward commercial dispute might resolve in nine to eighteen months; a complex case with extensive discovery, multiple parties, and expert witnesses can take three years or more. The major phases are:
             </p>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Pre-litigation (weeks to months):</strong> Demand letters, investigation, evidence preservation, and settlement negotiations or mediation before filing.</li>
               <li><strong>Pleadings (1–3 months):</strong> Filing the Complaint, service of process under Ohio Civ.R. 4, Answer, counterclaims, and third-party claims. A defendant served in Ohio has 28 days to answer.</li>
               <li><strong>Discovery (6–18+ months in complex cases):</strong> Written discovery (interrogatories, document requests, requests for admission under Ohio Civ.R. 26–36), followed by depositions of witnesses and experts. Business litigation discovery frequently involves massive document productions and forensic analysis of financial records.</li>
@@ -115,32 +115,32 @@ export default function BusinessLitigationPage() {
               <li><strong>Trial (if no settlement):</strong> Jury or bench trial governed by the Ohio Rules of Evidence. Most Ohio business cases settle before trial — often during or after discovery when both sides have a full picture of the evidence.</li>
               <li><strong>Appeals:</strong> Ohio Court of Appeals (First, Second, Fifth, Tenth, or other district depending on county), and potentially the Ohio Supreme Court on questions of public or great general interest.</li>
             </ul>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              For more information about specific types of business disputes, see our related pages on <Link href="/business/shareholder-disputes" className="text-[#b87333] underline hover:opacity-80">Ohio shareholder disputes</Link>, <Link href="/business/partnership-disputes" className="text-[#b87333] underline hover:opacity-80">Ohio partnership disputes</Link>, and <Link href="/civil/breach-of-contract" className="text-[#b87333] underline hover:opacity-80">Ohio breach of contract claims</Link>. Explore our full range of <Link href="/business" className="text-[#b87333] underline hover:opacity-80">Ohio business law services</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              For more information about specific types of business disputes, see our related pages on <Link href="/business/shareholder-disputes" className="text-sky-deep underline hover:opacity-80">Ohio shareholder disputes</Link>, <Link href="/business/partnership-disputes" className="text-sky-deep underline hover:opacity-80">Ohio partnership disputes</Link>, and <Link href="/civil/breach-of-contract" className="text-sky-deep underline hover:opacity-80">Ohio breach of contract claims</Link>. Explore our full range of <Link href="/business" className="text-sky-deep underline hover:opacity-80">Ohio business law services</Link>.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Call <a href="tel:6142855482" className="text-[#b87333] underline hover:text-[#a06828]">(614) 285-5482</a> or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation online</Link>. Learn more about our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">business law practice</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Call <a href="tel:6142855482" className="text-sky-deep underline hover:text-navy-950">(614) 285-5482</a> or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation online</Link>. Learn more about our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">business law practice</Link>.
             </p>
 
             <LocationsWeServe title="Business Law" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Contract Drafting & Review</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Business contracts, NDAs, and vendor agreements</span>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Contract Drafting & Review</span>
+                <span className="text-sm text-navy-950/70">Business contracts, NDAs, and vendor agreements</span>
               </Link>
-              <Link href="/business/shareholder-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Shareholder Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Minority shareholder rights and corporate disputes</span>
+              <Link href="/business/shareholder-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Shareholder Disputes</span>
+                <span className="text-sm text-navy-950/70">Minority shareholder rights and corporate disputes</span>
               </Link>
-              <Link href="/business/partnership-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Partnership Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Partnership dissolution and fiduciary duty claims</span>
+              <Link href="/business/partnership-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Partnership Disputes</span>
+                <span className="text-sm text-navy-950/70">Partnership dissolution and fiduciary duty claims</span>
               </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Non-Compete Agreements</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforcing and defending restrictive covenants</span>
+              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Non-Compete Agreements</span>
+                <span className="text-sm text-navy-950/70">Enforcing and defending restrictive covenants</span>
               </Link>
             </div>
           </div>

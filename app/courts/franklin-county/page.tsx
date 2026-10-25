@@ -80,95 +80,95 @@ export default function FranklinCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Full-Service Legal Representation in Franklin County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Franklin County is the most populous county in Ohio and home to Columbus, the state capital. With over 1.3 million residents, the county is served by a multi-tiered court system — from the mayor's courts in Dublin, Hilliard, Westerville, Bexley, and a dozen other suburbs, to Franklin County Municipal Court at 375 S. High Street, to the Court of Common Pleas and Probate Court just steps away. Jwayyed Law LLC provides experienced legal representation across every practice area in every Franklin County court — OVI and DUI defense, criminal misdemeanor defense, traffic violations, civil litigation, business matters, landlord-tenant proceedings, estate planning, and probate administration. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to discuss your Franklin County legal matter.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               OVI / DUI Defense in Franklin County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI arrests in Franklin County are common along I-270, I-71, I-70, US-33, US-23, and the major suburban corridors. Whether you were stopped by Columbus Police, the Franklin County Sheriff, the Ohio State Highway Patrol, or a suburban police department, an OVI arrest triggers two separate proceedings that both require immediate attention: the criminal OVI case under{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">Ohio Revised Code 4511.19</Link>{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">Ohio Revised Code 4511.19</Link>{' '}
               and the Administrative License Suspension (ALS) under ORC 4511.191. You have only <strong>30 days from the date of arrest</strong> to appeal the ALS in Franklin County Municipal Court — missing this deadline permanently forfeits your right to contest the suspension.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under HB 37, effective April 9, 2025, a first OVI conviction in Franklin County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums even for first offenses. A second OVI within 10 years escalates significantly: 10 consecutive days minimum, $715 to $1,625 in fines, and 1 to 7 year suspension with 90-day vehicle immobilization. Our firm handles OVI cases at{' '}
-              <Link href="/courts/franklin-county-municipal-court" className="text-[#b87333] underline hover:opacity-80">Franklin County Municipal Court</Link>{' '}
+              <Link href="/courts/franklin-county-municipal-court" className="text-sky-deep underline hover:opacity-80">Franklin County Municipal Court</Link>{' '}
               and at every mayor's court in the Franklin County suburbs we serve.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Criminal Misdemeanor Defense in Franklin County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Franklin County Municipal Court handles misdemeanor criminal charges for Columbus and all Franklin County municipalities. Our firm defends the full range of misdemeanor charges heard in this court, including theft and shoplifting under ORC 2913.02 (M1 for amounts under $1,000 — up to 180 days in jail and a $1,000 fine), domestic violence under ORC 2919.25 (with significant collateral consequences including the federal Lautenberg Amendment's permanent firearm prohibition triggered by any misdemeanor DV conviction), assault under ORC 2903.13, drug possession under ORC 2925.11, disorderly conduct under ORC 2917.11, and open container under ORC 4301.62. For cases involving drug addiction or mental illness, the court's HART and MAVS specialized dockets may offer treatment-based alternatives to traditional prosecution.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A misdemeanor conviction creates a permanent criminal record accessible to employers, landlords, and professional licensing boards. Early, informed advocacy — reviewing all evidence, identifying constitutional issues, understanding the local prosecutor's practices — can make the difference between a conviction and a dismissal, a reduced charge, or a diversion program that leaves no permanent record. Our firm obtains all available evidence before evaluating any plea offer and fights every case from the first hearing to the last.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Franklin County Courts — Where Your Case Will Be Heard
             </h3>
 
             <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Franklin County Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">375 S. High Street, Columbus, OH 43215 — (614) 645-8186</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">375 S. High Street, Columbus, OH 43215 — (614) 645-8186</p>
+                <p className="text-sm text-navy-950/70">
                   OVI/DUI defense &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Evictions &bull; Small Claims (up to $6,000) &bull; HART, MAVS, and CATCH specialty dockets
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Franklin County Mayor&apos;s Courts
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">Located in: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, New Albany, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, Worthington</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">Located in: Bexley, Canal Winchester, Dublin, Grove City, Groveport, Hilliard, New Albany, Obetz, Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall, Worthington</p>
+                <p className="text-sm text-navy-950/70">
                   Minor misdemeanor traffic and OVI arraignments &bull; Cases may transfer to Franklin County Municipal Court for higher charges
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Franklin County Court of Common Pleas — General Division
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">369 S. High Street, Columbus, OH 43215</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">369 S. High Street, Columbus, OH 43215</p>
+                <p className="text-sm text-navy-950/70">
                   Civil cases over $15,000 &bull; Felony criminal cases &bull; Business disputes &bull; Contract litigation &bull; Domestic Relations
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Franklin County Probate Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">373 S. High Street, Columbus, OH 43215</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">373 S. High Street, Columbus, OH 43215</p>
+                <p className="text-sm text-navy-950/70">
                   Estate administration &bull; Guardianships &bull; Trust matters &bull; Will contests (ORC Ch. 2101–2131)
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   10th District Court of Appeals
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">373 S. High Street, Columbus, OH 43215</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">373 S. High Street, Columbus, OH 43215</p>
+                <p className="text-sm text-navy-950/70">
                   Appeals from all Franklin County trial courts in civil, criminal, and OVI matters
                 </p>
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-2">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-2">
               Columbus Defense Pages
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Charged in Columbus or at Franklin County Municipal Court? Select your practice area below.
             </p>
 
@@ -176,12 +176,12 @@ export default function FranklinCountyCourtsPage() {
             <div className="not-prose grid md:grid-cols-3 gap-5 mb-10">
 
               {/* OVI Card */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-                <div className="bg-[#b87333] px-5 py-4">
-                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">OVI / DUI Defense</span>
-                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
+              <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+                <div className="bg-navy-950 px-5 py-4">
+                  <span className="jw-serif text-white font-bold text-base">OVI / DUI Defense</span>
+                  <span className="block text-white/80 text-xs mt-0.5">Columbus</span>
                 </div>
-                <div className="flex flex-col divide-y divide-gray-100 flex-1">
+                <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                   {[
                     { label: '1st OVI', href: '/locations/franklin-county/first-ovi-columbus' },
                     { label: '2nd OVI', href: '/locations/franklin-county/second-ovi-columbus' },
@@ -194,26 +194,26 @@ export default function FranklinCountyCourtsPage() {
                     { label: 'Marijuana OVI', href: '/locations/franklin-county/marijuana-ovi-columbus' },
                     { label: 'OVI With Accident', href: '/locations/franklin-county/ovi-with-accident-columbus' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors">
+                      <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                      <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
-                <div className="px-4 py-3 border-t border-gray-100">
-                  <Link href="/locations/franklin-county/ovi-dui-defense-columbus" className="block text-center text-xs font-semibold font-['Inter',_'Arial',_sans-serif] text-[#b87333] border border-[#b87333] rounded-lg py-2 hover:bg-[#b87333] hover:text-white transition-colors">
+                <div className="px-4 py-3 border-t border-navy-950/10">
+                  <Link href="/locations/franklin-county/ovi-dui-defense-columbus" className="block text-center text-xs font-semibold text-sky-deep border border-sky-deep py-2 hover:bg-navy-950 hover:text-white transition-colors">
                     View OVI hub →
                   </Link>
                 </div>
               </div>
 
               {/* Criminal Defense Card */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-                <div className="bg-[#b87333] px-5 py-4">
-                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">Criminal Defense</span>
-                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
+              <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+                <div className="bg-navy-950 px-5 py-4">
+                  <span className="jw-serif text-white font-bold text-base">Criminal Defense</span>
+                  <span className="block text-white/80 text-xs mt-0.5">Columbus</span>
                 </div>
-                <div className="flex flex-col divide-y divide-gray-100 flex-1">
+                <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                   {[
                     { label: 'Theft / Shoplifting', href: '/locations/franklin-county/theft-defense-columbus' },
                     { label: 'Drug Possession', href: '/locations/franklin-county/drug-possession-defense-columbus' },
@@ -224,30 +224,30 @@ export default function FranklinCountyCourtsPage() {
                     { label: 'Open Container', href: '/locations/franklin-county/open-container-defense-columbus' },
                     { label: 'Expungement', href: '/locations/franklin-county/expungement-columbus' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors">
+                      <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                      <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
               </div>
 
               {/* County-Wide Card */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-                <div className="bg-gray-700 px-5 py-4">
-                  <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">County-Wide Pages</span>
-                  <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Franklin County Municipal Court &amp; county</span>
+              <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+                <div className="bg-navy-800 px-5 py-4">
+                  <span className="jw-serif text-white font-bold text-base">County-Wide Pages</span>
+                  <span className="block text-white/80 text-xs mt-0.5">Franklin County Municipal Court &amp; county</span>
                 </div>
-                <div className="flex flex-col divide-y divide-gray-100 flex-1">
+                <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                   {[
                     { label: 'OVI Defense — FCMC', href: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court' },
                     { label: 'Criminal Defense — FCMC', href: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
                     { label: "Mayor's Courts — All Suburbs", href: '/locations/franklin-county/mayors-courts-franklin-county' },
                     { label: 'Expungement — Franklin County', href: '/locations/franklin-county/expungement-franklin-county' },
                   ].map(({ label, href }) => (
-                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors">
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                      <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <Link key={href} href={href} className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors">
+                      <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                      <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                     </Link>
                   ))}
                 </div>
@@ -255,10 +255,10 @@ export default function FranklinCountyCourtsPage() {
 
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-2">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-2">
               Franklin County Suburbs
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Charged in a Franklin County suburb? Find your community below.
             </p>
 
@@ -281,11 +281,11 @@ export default function FranklinCountyCourtsPage() {
                 { suburb: 'Whitehall', slug: 'whitehall', hasMayorsCourt: true },
                 { suburb: 'Worthington', slug: 'worthington', hasMayorsCourt: true },
               ].map(({ suburb, slug, hasMayorsCourt }) => (
-                <div key={slug} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-[#b87333]/40 hover:shadow-md transition-all">
+                <div key={slug} className="bg-white border border-navy-950/10 p-5 hover:border-sky-deep/40 transition-all">
                   <div className="flex items-center justify-between mb-3">
-                    <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 text-base">{suburb}</h4>
+                    <h4 className="jw-serif font-bold text-navy-950 text-base">{suburb}</h4>
                     {hasMayorsCourt && (
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-[10px] font-semibold uppercase tracking-wide text-[#b87333] bg-[#b87333]/10 px-2 py-0.5 rounded-full">
+                      <span className="text-[10px] font-semibold uppercase tracking-wide text-sky-deep bg-sky-deep/10 px-2 py-0.5 rounded-full">
                         Mayor&apos;s Court
                       </span>
                     )}
@@ -301,7 +301,7 @@ export default function FranklinCountyCourtsPage() {
                       { label: 'Open Container', href: `/locations/franklin-county/open-container-defense-${slug}` },
                       ...(hasMayorsCourt ? [{ label: "Mayor's Court", href: `/locations/franklin-county/mayors-court-${slug}` }] : []),
                     ].map(({ label, href }) => (
-                      <Link key={href} href={href} className="inline-block font-['Inter',_'Arial',_sans-serif] text-xs font-medium px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-[#b87333] hover:text-white transition-colors whitespace-nowrap">
+                      <Link key={href} href={href} className="inline-block text-xs font-medium px-3 py-1.5 rounded-full bg-ice text-navy-950/80 hover:bg-navy-950 hover:text-white transition-colors whitespace-nowrap">
                         {label}
                       </Link>
                     ))}
@@ -312,11 +312,11 @@ export default function FranklinCountyCourtsPage() {
 
             <LocationsWeServe title="Franklin County & Ohio Legal Services" />
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Whether you are facing an OVI arrest on I-270, a theft charge in Hilliard, a domestic violence allegation in Westerville, or need to plan your estate or form a Columbus business, Jwayyed Law LLC is ready to help. Contact us at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               For OVI cases, time is critical — the ALS appeal must be filed within 30 days of arrest.
             </p>
           </div>

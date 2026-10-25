@@ -82,75 +82,75 @@ export default function EstatePlanningWillsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Estate Planning and Wills in Ohio
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A will is the foundation of any Ohio estate plan — the legal document that instructs the Probate Court who receives your property, who manages your estate, and who cares for your minor children when you are gone. But a comprehensive estate plan goes beyond a single document. It coordinates your will with beneficiary designations, powers of attorney, healthcare directives, and — where appropriate — a revocable living trust to ensure that every asset reaches the right person in the most efficient way possible. At Jwayyed Law LLC, we help Columbus-area individuals and families create complete, legally sound estate plans tailored to their actual goals and family circumstances.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio will law is governed primarily by ORC Chapter 2107. To execute a valid will in Ohio, the testator must be at least eighteen years old and of "sound mind and memory" — meaning they understand the nature and extent of their property, know the natural objects of their bounty (family members and close relationships), understand what a will does, and can form an orderly plan for distributing their estate. The will must be signed by the testator (or by someone else in the testator\'s presence and at their express direction) in the presence of two competent witnesses, who must also sign in the testator\'s presence. Meeting these formalities precisely is critical — a will that fails execution requirements cannot be admitted to probate regardless of how clearly it expresses the testator\'s wishes.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we approach every estate planning engagement with the goal of understanding what matters most to you — protecting a spouse, providing for children, minimizing probate, supporting a charity, or ensuring a business passes to the right hands — and building a plan around those priorities. Contact us at <a href="tel:6142855482" className="text-[#b87333] hover:underline">(614) 285-5482</a> to schedule a consultation.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              At Jwayyed Law LLC, we approach every estate planning engagement with the goal of understanding what matters most to you — protecting a spouse, providing for children, minimizing probate, supporting a charity, or ensuring a business passes to the right hands — and building a plan around those priorities. Contact us at <a href="tel:6142855482" className="text-sky-deep hover:underline">(614) 285-5482</a> to schedule a consultation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               What Your Ohio Will Can and Cannot Do
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A will can direct who receives your individually owned probate assets — real estate, bank accounts, vehicles, personal property, and investments that do not have a beneficiary designation or joint owner. It can name an executor to manage the probate process, designate a guardian for minor children under ORC 2111.03, establish testamentary trusts for minor or special-needs beneficiaries, make specific bequests of particular items to particular people, and set out the residuary distribution for everything that is not specifically bequeathed. A will can disinherit any family member except a surviving spouse — Ohio law allows you to leave relatives with nothing so long as you do so clearly and the will is not the product of incapacity or undue influence.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               What a will cannot do is equally important. A will cannot override a valid beneficiary designation on a life insurance policy, retirement account, or payable-on-death bank account — those assets pass by contract to the named beneficiary regardless of what the will says. A will cannot transfer assets held in joint tenancy — those pass automatically to the surviving owner. A will cannot reduce a surviving spouse\'s right of election under ORC 2106.01. And critically, a will cannot avoid probate — all assets that pass through your will must go through the Franklin County Probate Court (or the probate court in whichever Ohio county you reside at death) before reaching your beneficiaries.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio recognizes self-proving wills under ORC 2107.52, in which the testator and witnesses sign a notarized affidavit at the time of execution attesting to the will\'s proper signing. A self-proving will can be admitted to probate without requiring the witnesses to testify or provide sworn statements — a significant practical advantage years later when witnesses may be deceased, moved away, or difficult to locate. We prepare all wills as self-proving wills as a standard practice. Ohio also permits "holographic" wills — entirely handwritten and signed by the testator without witnesses — under ORC 2107.03, but these are frequently ambiguous, incomplete, and disputed in probate. We do not recommend relying on a holographic will when proper estate planning is available.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Consequences of Dying Without a Will in Ohio
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               If you die without a valid will — intestate — Ohio\'s intestate succession statute at ORC 2105.06 controls who inherits your estate. The statutory formula does not consider what you actually wanted or the specific circumstances of your family. A surviving spouse and children from prior relationships divide the estate according to a prescribed formula that may not reflect your intent at all. Unmarried partners, close friends, step-children, and charities receive nothing under the intestate succession rules regardless of your relationship or wishes. If you have minor children, no guardian is named in any legal document — the Probate Court appoints a guardian based on what it determines to be in the children\'s best interest, without guidance from you.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Dying intestate also typically means your estate will go through full probate — with all the time, expense, and public exposure that entails — because you will not have had the opportunity to set up the non-probate transfer mechanisms that can simplify or eliminate probate for planned estates. An estate plan created with an Ohio attorney is not just about distributing assets; it is about protecting your family from unnecessary court proceedings, administrative burdens, and family conflict at an already difficult time.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               A Complete Ohio Estate Plan: Beyond the Will
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A comprehensive Ohio estate plan includes several coordinated documents. A durable financial power of attorney designates someone to manage your financial affairs if you become incapacitated — paying bills, managing investments, handling real estate transactions, and conducting business on your behalf. Without a power of attorney, your family may need to petition the Probate Court for a guardianship or conservatorship to manage your affairs, which is expensive, time-consuming, and public. A healthcare power of attorney authorizes someone to make medical decisions for you when you cannot make them yourself. A living will (advance directive) states your wishes about end-of-life treatment, including whether you want life-sustaining treatment withheld under specific circumstances.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For clients with more substantial assets, privacy concerns, or complex family situations, we often recommend adding a revocable living trust to the estate plan. A trust allows your assets to be managed during your lifetime and distributed at death without going through probate — faster, cheaper, and privately compared to court administration. A pour-over will works alongside the trust to capture any assets that were not transferred into the trust during your lifetime and direct them into the trust at death. Finally, reviewing and updating beneficiary designations on all retirement accounts, life insurance policies, and financial accounts is essential — these designations are contract provisions that override whatever your will says, and outdated designations regularly cause assets to pass to former spouses, deceased individuals, or unintended recipients. We coordinate all elements of your plan to ensure they work together seamlessly.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/probate" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Ohio Probate Administration
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Powers of Attorney in Ohio
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Revocable Living Trusts
               </Link>
             </div>

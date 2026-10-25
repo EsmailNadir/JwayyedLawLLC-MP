@@ -76,42 +76,42 @@ export default function DelawareCriminalMisdemeanorDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Criminal Misdemeanor Defense in Delaware County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County is one of Ohio&apos;s fastest-growing counties, with rapidly expanding communities along US 23 and US 36 north of Columbus. A misdemeanor conviction in Delaware County Municipal Court, located at 70 N. Union St, Delaware, OH 43015, creates a permanent criminal record that can affect employment, professional licensing, housing, and future opportunities. At Jwayyed Law LLC, we provide aggressive{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link>{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link>{' '}
               for clients throughout Delaware County, including Delaware, Powell, Westerville, Dublin portions in Delaware County, Lewis Center, and Sunbury.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County&apos;s growing population includes a large professional workforce employed in healthcare, technology, finance, and other licensed fields. For these clients, a misdemeanor conviction carries consequences that extend far beyond the courtroom — Ohio licensing boards for medical professionals, attorneys, nurses, real estate agents, and teachers can investigate, suspend, or revoke licenses based on criminal records. Our firm carefully considers these collateral consequences when evaluating every case and strategy option.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Types of Misdemeanor Cases in Delaware County Municipal Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Delaware County Municipal Court handles the full spectrum of misdemeanor criminal cases: assault and aggravated assault (first-degree misdemeanor, up to 180 days in jail and $1,000 fine); domestic violence (first-degree misdemeanor with collateral consequences including firearm prohibition); theft and shoplifting (degree depends on value); drug possession of controlled substances, marijuana, and drug paraphernalia; disorderly conduct; criminal damaging or endangering; menacing and aggravated menacing; criminal trespass; driving under suspension; and traffic-related criminal charges. As the county&apos;s suburban growth continues, new commercial areas in Powell and Lewis Center generate increasing numbers of retail theft, disorderly conduct, and assault cases that our firm handles.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Penalties in Delaware County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code sets maximum misdemeanor penalties applied by Delaware County Municipal Court: first-degree misdemeanors — up to 180 days in jail and $1,000 fine; second-degree — up to 90 days and $750; third-degree — up to 60 days and $500; fourth-degree — up to 30 days and $250; minor misdemeanors — no jail, up to $150 fine. These are maximum penalties and can frequently be reduced through skilled representation, diversion programs, or favorable plea agreements. Our firm works to achieve the outcome that minimizes the impact on your life and career.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies for Delaware County Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our defense approach in Delaware County Municipal Court begins with thorough review of all evidence — police reports, body-cam and dash-cam footage, witness statements, and physical evidence. We evaluate whether the arrest or search was constitutionally valid and whether any evidence should be suppressed under the Fourth Amendment or ORC 2935.26. In assault cases, we assess self-defense arguments. In drug cases, we challenge the search that produced the evidence, chain of custody, and laboratory procedures. In domestic violence cases, we investigate the factual background, potential witness bias, and look for exculpatory evidence. We also evaluate whether clients are eligible for Intervention in Lieu of Conviction (ILC), community diversion, or other programs that can result in dismissal without a conviction on the record.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Expungement of Misdemeanor Records in Delaware County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               If you have a misdemeanor conviction in Delaware County Municipal Court, you may qualify for expungement and record sealing under Ohio Revised Code 2953.31. Expungement allows the record to be sealed from public view, effectively removing it from most background checks and allowing you to answer truthfully that you have no conviction on most applications. Waiting periods and eligibility rules depend on the offense type and prior record. Certain offenses — including domestic violence convictions and most traffic offenses — are not eligible. Our firm evaluates your eligibility and handles the petition process with the court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing misdemeanor charges in Delaware County, contact Jwayyed Law LLC immediately at (614) 285-5482. The decisions you make in the first days after a charge — including what you say to police and whether you attend arraignment with counsel — can profoundly affect the outcome. We will review your case, explain all available options, and develop a defense strategy tailored to the specific charges and the procedures of Delaware County Municipal Court.
             </p>
           </div>

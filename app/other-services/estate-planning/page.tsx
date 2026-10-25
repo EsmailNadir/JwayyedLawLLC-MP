@@ -70,47 +70,47 @@ export default function EstatePlanningPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Estate Planning in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Estate Planning in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Estate planning is the process of creating legal documents that protect your assets, provide for your loved ones, and ensure your wishes are carried out — both during your lifetime if you become incapacitated and after your death. At Jwayyed Law LLC, we help individuals and families in Columbus, Cincinnati, Dayton, and throughout Ohio develop comprehensive estate plans under Ohio law. Ohio's estate and probate framework is set out in Title 21 of the Ohio Revised Code: descent and distribution (intestate succession) in ORC Chapter 2105, wills in ORC Chapter 2107, fiduciaries in ORC Chapter 2109, and executors and administrators in ORC Chapter 2113. The Ohio Uniform Trust Code (OUTC) governing trusts is codified at ORC Chapter 5801. Powers of attorney — both financial and healthcare — are governed by ORC Chapter 1337 and the Ohio Revised Uniform Power of Attorney Act (RUPOAA) at ORC 1337.21 et seq. Guardianships for incapacitated adults and minors are addressed in ORC Chapter 2111. Together, these statutes form the foundation of Ohio estate planning.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A foundational element of any Ohio estate plan is a valid Last Will and Testament. Under ORC 2107.03, a valid Ohio will must be in writing, signed by the testator (the person making the will), and attested and subscribed in the testator's conscious presence by two or more competent witnesses. Your will directs how your probate assets are distributed at death, names the executor who will administer your estate, establishes trusts for minor or disabled beneficiaries, and — critically — names a guardian for any minor children you may have. Without a will, Ohio's intestate succession statutes under ORC 2105.06 control who inherits your property, which may not match your actual wishes, particularly if you have a blended family, a non-traditional relationship, or wishes to benefit a charity or friend.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For many clients, a revocable living trust is a powerful complement or alternative to a will. A living trust — governed by ORC Chapter 5801, the Ohio Uniform Trust Code — is a legal entity created during your lifetime to hold title to your assets. Because a trust is not part of your estate for probate purposes, assets held in trust pass directly to your beneficiaries after your death without court supervision, avoiding the time and expense of probate. A "pour-over will" is typically used alongside a trust to capture any assets not transferred into the trust during your lifetime and direct them into the trust at death. Living trusts also provide built-in incapacity planning: if you become unable to manage your affairs, your successor trustee steps in immediately without any court involvement — a significant advantage over probate-based alternatives.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Incapacity planning is just as important as planning for death. A durable financial power of attorney under ORC 1337.21 et seq. authorizes your chosen agent to manage your financial affairs — pay bills, manage investments, handle real estate — even if you become incapacitated. A separate healthcare power of attorney allows your agent to make medical decisions on your behalf. A living will (advance healthcare directive) records your wishes about life-sustaining treatment and other end-of-life care decisions. If you have a serious illness, an Ohio POLST (Physician Orders for Life-Sustaining Treatment) form translates your wishes into medical orders that follow you through care settings. Without these documents in place, your family may need to pursue a costly and time-consuming guardianship proceeding in the probate court under ORC Chapter 2111 to gain the legal authority to act on your behalf.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Thoughtful use of non-probate assets is another key component of Ohio estate planning. Many assets pass automatically outside the probate process through beneficiary designations, titling, or transfer-on-death (TOD) features. Life insurance policies, IRAs, 401(k) plans, and annuities pass to named beneficiaries upon death without probate. Bank accounts can be set up as payable-on-death (POD) accounts. Brokerage accounts can have transfer-on-death designations. Real estate can be conveyed by a TOD affidavit under ORC 5302.22, which allows you to designate a beneficiary who will inherit the property at death without probate — while you retain full ownership and control during your lifetime. Joint and survivorship ownership is another option. Coordinating your estate plan documents with proper beneficiary designations and asset titling is essential to ensure all of your assets pass as intended and that no assets are inadvertently left outside your plan. Contact us today to learn more about <Link href="/other-services/estate-planning-wills" className="text-[#b87333] underline hover:opacity-80">wills and estate planning documents</Link>, <Link href="/other-services/powers-of-attorney" className="text-[#b87333] underline hover:opacity-80">powers of attorney</Link>, and <Link href="/other-services/guardianships" className="text-[#b87333] underline hover:opacity-80">guardianships</Link> in Ohio.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Thoughtful use of non-probate assets is another key component of Ohio estate planning. Many assets pass automatically outside the probate process through beneficiary designations, titling, or transfer-on-death (TOD) features. Life insurance policies, IRAs, 401(k) plans, and annuities pass to named beneficiaries upon death without probate. Bank accounts can be set up as payable-on-death (POD) accounts. Brokerage accounts can have transfer-on-death designations. Real estate can be conveyed by a TOD affidavit under ORC 5302.22, which allows you to designate a beneficiary who will inherit the property at death without probate — while you retain full ownership and control during your lifetime. Joint and survivorship ownership is another option. Coordinating your estate plan documents with proper beneficiary designations and asset titling is essential to ensure all of your assets pass as intended and that no assets are inadvertently left outside your plan. Contact us today to learn more about <Link href="/other-services/estate-planning-wills" className="text-sky-deep underline hover:opacity-80">wills and estate planning documents</Link>, <Link href="/other-services/powers-of-attorney" className="text-sky-deep underline hover:opacity-80">powers of attorney</Link>, and <Link href="/other-services/guardianships" className="text-sky-deep underline hover:opacity-80">guardianships</Link> in Ohio.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Estate Planning Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Estate Planning Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/estate-planning-wills" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Estate Planning & Wills</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Comprehensive estate planning and will preparation under ORC Chapter 2107</p>
+              <Link href="/other-services/estate-planning-wills" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Estate Planning & Wills</h4>
+                <p className="text-sm text-navy-950/70">Comprehensive estate planning and will preparation under ORC Chapter 2107</p>
               </Link>
-              <Link href="/trusts" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Trusts</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Revocable living trusts and trust administration under ORC Chapter 5801</p>
+              <Link href="/trusts" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Trusts</h4>
+                <p className="text-sm text-navy-950/70">Revocable living trusts and trust administration under ORC Chapter 5801</p>
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Powers of Attorney</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Financial and healthcare powers of attorney under ORC 1337.21 et seq.</p>
+              <Link href="/other-services/powers-of-attorney" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Powers of Attorney</h4>
+                <p className="text-sm text-navy-950/70">Financial and healthcare powers of attorney under ORC 1337.21 et seq.</p>
               </Link>
-              <Link href="/other-services/guardianships" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Guardianships</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Guardianship establishment and administration under ORC Chapter 2111</p>
+              <Link href="/other-services/guardianships" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Guardianships</h4>
+                <p className="text-sm text-navy-950/70">Guardianship establishment and administration under ORC Chapter 2111</p>
               </Link>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Estate Planning</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Estate Planning</h3>
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Our firm provides dedicated estate planning assistance throughout Ohio. We understand that estate planning is not a one-size-fits-all exercise — your plan should reflect your unique family situation, financial circumstances, and personal values. Our attorney works closely with each client to understand their goals, explain the options under Ohio law, and draft documents that are clear, legally sound, and tailored to their needs. Whether you need a straightforward will and power of attorney or a more complex trust-based plan, we are here to help you protect your legacy and give your family peace of mind. Contact Jwayyed Law LLC at (614) 285-5482 to schedule your estate planning consultation.
             </p>
           </div>

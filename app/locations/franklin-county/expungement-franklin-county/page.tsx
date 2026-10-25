@@ -70,60 +70,60 @@ export default function FranklinCountyExpungementPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Expungement in Franklin County, Ohio — Sealing Your Criminal Record
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A Franklin County criminal record — whether a misdemeanor OVI, a drug possession charge, a theft citation, or a disorderly conduct conviction — can follow you into job applications, housing searches, professional licensing, and background checks for years after you have completed your sentence. Ohio&apos;s expungement statute, R.C. 2953.32, allows eligible Franklin County residents to petition the court to seal their conviction record from public view. The H.B. 96 amendments (effective September 30, 2025) significantly expanded eligibility — many Franklin County residents who previously could not expunge their records now qualify, including those with multiple misdemeanor convictions and certain felony convictions. Jwayyed Law LLC handles expungement petitions at both Franklin County Municipal Court (for Municipal Court convictions) and Franklin County Court of Common Pleas (for felony and Common Pleas convictions). Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to find out if your record qualifies.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Who Qualifies for Expungement in Franklin County — H.B. 96 Expanded Eligibility
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s expungement law underwent its most significant expansion in recent years through H.B. 96, which took effect on September 30, 2025. Under current law, Franklin County residents may petition to seal convictions for: any minor misdemeanor conviction (after six months); any M4, M3, M2, or M1 misdemeanor conviction (after one year); any F5 or F4 felony conviction (after one year); any F3 felony conviction (after three years); and certain F2 felony convictions (after seven years), subject to the court&apos;s discretion. Arrests that did not result in conviction — charges that were dismissed, no-billed, or acquitted — are eligible immediately with no waiting period.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               H.B. 96 also changed the numerical limits. Prior law allowed only one felony conviction or a limited number of misdemeanors to be sealed. The new law allows up to five felony convictions and an essentially unlimited number of misdemeanor convictions to be eligible, dramatically expanding relief for Franklin County residents with multiple low-level convictions accumulated over time. A Columbus resident with three misdemeanor disorderly conduct convictions and one minor misdemeanor OVI conviction may now be eligible to seal all four in a single expungement petition.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Offenses That Cannot Be Expunged in Ohio
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2953.36 lists the offenses that are categorically excluded from expungement in Ohio. No expungement is available for: murder and aggravated murder; voluntary and involuntary manslaughter; rape; gross sexual imposition; sexual battery; unlawful sexual conduct with a minor; child pornography offenses; pandering obscenity involving a minor; any conviction for which sex offender registration is required; and domestic violence under R.C. 2919.25. The domestic violence exclusion is particularly significant — a misdemeanor domestic violence conviction under R.C. 2919.25 is not sealable in Ohio, regardless of how much time has passed. This is one reason our firm pursues non-DV pleas (such as disorderly conduct) in appropriate domestic violence cases where expungement eligibility is a priority.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Certain traffic offenses — including OVI convictions — are excluded from expungement under R.C. 4510.35 and related provisions. A standard R.C. 4511.19 OVI conviction is not sealable in Ohio. However, a disorderly conduct or reckless operation charge that resolved an underlying OVI is typically eligible for expungement, since the sealed conviction is for the reduced charge, not the OVI.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               The Expungement Process at Franklin County Courts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The expungement petition process in Franklin County begins with filing the application at the appropriate court. Misdemeanor convictions from Franklin County Municipal Court are petitioned at Franklin County Municipal Court, 375 S. High St., Columbus, OH 43215. Felony convictions from Franklin County Court of Common Pleas are petitioned at the Common Pleas court at the same address. The petition must include the case number, the specific conviction sought to be sealed, and a supporting statement about the applicant&apos;s rehabilitation and the reasons the sealing serves justice.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               After filing, the prosecutor receives notice and has 60 days to object. If the prosecutor objects, the court schedules a hearing. At the hearing, the court weighs two interests: the applicant&apos;s interest in having the record sealed (rehabilitation, employment, housing) against the state&apos;s legitimate interest in maintaining public records. The judge has discretion to grant or deny even an otherwise eligible petition. A strong supporting narrative — one that explains what led to the conviction, what the applicant has done since, and why sealing serves justice — is essential to success when the prosecutor objects. Our firm prepares comprehensive expungement packages designed to preempt objections and, where objections are filed, to overcome them at hearing.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               What Expungement Means for Your Franklin County Record
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a Franklin County court grants an expungement petition, the sealed record is no longer accessible through commercial background check services or standard employer and landlord queries. You may generally answer &ldquo;no&rdquo; on job applications, housing applications, and professional licensing applications when asked whether you have been convicted of the sealed offense. The record is retained in secure court files and is accessible to law enforcement and prosecutors — it may be considered in any future criminal proceedings — but it is not disclosed to employers, landlords, or the general public.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For Franklin County residents who have completed their sentences and are rebuilding their professional or personal lives, expungement can remove the barrier that a criminal record creates. Columbus employers — particularly in healthcare, finance, and education — perform background checks, and a sealed record does not appear in those results. If you completed your sentence more than a year ago and your conviction is eligible, the waiting is over — contact us to begin the process.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               Find out whether your Franklin County record qualifies for sealing under Ohio&apos;s expanded expungement law.
             </p>
           </div>

@@ -76,25 +76,25 @@ export default function PersonalInjuryClintonCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Clinton County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When you are injured because of someone else&apos;s negligence in Clinton County, Ohio, you should not have to face the legal and financial aftermath alone. Jwayyed Law LLC represents injury victims throughout Clinton County — including Wilmington, Sabina, Blanchester, Clarksville, and Port William — in personal injury matters ranging from car accidents to premises liability. The rural southwestern Ohio landscape served by US 68 and SR 73 corridors sees its share of serious collisions, and our attorney is prepared to fight for the full compensation you deserve under Ohio law.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 imposes a two-year statute of limitations on most personal injury claims, beginning from the date of injury. Acting quickly is critical not only to preserve your legal rights but also to secure evidence before it is lost or destroyed. Accident reconstruction experts, surveillance footage, witness recollections, and medical records all become harder to obtain as time passes. Our attorney begins investigating your case as soon as you retain us, building the strongest possible foundation for your claim.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s modified comparative negligence statute, ORC 2315.33, can significantly affect your recovery. In rural counties like Clinton, insurance adjusters sometimes argue that drivers contributed to accidents by speeding on country roads or failing to account for agricultural equipment and animals. We carefully review all evidence to challenge inflated fault assessments. As long as your share of fault is below 50%, you retain the right to recover — and we work to ensure your damages are calculated fairly and comprehensively.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County&apos;s agricultural character means that farm-related injury scenarios, animal-vehicle collisions, and rural road hazards are not uncommon. Beyond traffic accidents, we handle slip and fall claims at local businesses, premises liability cases, dog bite injuries under ORC 955.28, and workplace injuries where third-party negligence is involved. Every case receives individualized attention and thorough legal analysis tailored to the specific facts.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury lawsuits in Clinton County are filed at the Clinton County Common Pleas Court, 46 S. South St, Wilmington, OH 45177. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 for a consultation. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury services</Link> throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 for a consultation. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury services</Link> throughout Ohio.
             </p>
           </div>
         </div>

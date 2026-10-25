@@ -143,25 +143,25 @@ export default function FranklinCountyLocationsPage() {
       {/* Intro */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 text-lg leading-relaxed">
+          <p className="text-navy-950/80 text-lg leading-relaxed">
             Franklin County is Ohio&apos;s most populous county, home to Columbus and more than a dozen incorporated suburbs — each with its own police department, prosecutor, and often a mayor&apos;s court. Jwayyed Law LLC represents clients at{' '}
-            <Link href="/courts/franklin-county-municipal-court" className="text-[#b87333] underline hover:opacity-80">
+            <Link href="/courts/franklin-county-municipal-court" className="text-sky-deep underline hover:opacity-80">
               Franklin County Municipal Court
             </Link>
             , the Court of Common Pleas, and every active mayor&apos;s court in the county. Call{' '}
-            <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>.
+            <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
           </p>
         </div>
       </section>
 
       {/* Columbus Practice Area Cards */}
-      <section className="py-12 bg-gray-50 border-t border-gray-200">
+      <section className="py-12 bg-ice border-t border-navy-950/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-1">
+            <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-1">
               Charged in Columbus?
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-500 text-sm">
+            <p className="text-navy-950/60 text-sm">
               Select your practice area below.
             </p>
           </div>
@@ -169,27 +169,27 @@ export default function FranklinCountyLocationsPage() {
           <div className="grid md:grid-cols-3 gap-5">
 
             {/* OVI Card */}
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-              <div className="bg-[#b87333] px-5 py-4">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">OVI / DUI Defense</span>
-                <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
+            <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+              <div className="bg-navy-950 px-5 py-4">
+                <span className="jw-serif text-white font-bold text-base">OVI / DUI Defense</span>
+                <span className="block text-white/80 text-xs mt-0.5">Columbus</span>
               </div>
-              <div className="flex flex-col divide-y divide-gray-100 flex-1">
+              <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                 {oviLinks.map(({ label, href }) => (
                   <Link
                     key={href}
                     href={href}
-                    className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors"
+                    className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors"
                   >
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                    <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                    <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                   </Link>
                 ))}
               </div>
-              <div className="px-4 py-3 border-t border-gray-100">
+              <div className="px-4 py-3 border-t border-navy-950/10">
                 <Link
                   href="/locations/franklin-county/ovi-dui-defense-columbus"
-                  className="block text-center text-xs font-semibold font-['Inter',_'Arial',_sans-serif] text-[#b87333] border border-[#b87333] rounded-lg py-2 hover:bg-[#b87333] hover:text-white transition-colors"
+                  className="block text-center text-xs font-semibold text-sky-deep border border-sky-deep py-2 hover:bg-navy-950 hover:text-white transition-colors"
                 >
                   View OVI hub →
                 </Link>
@@ -197,40 +197,40 @@ export default function FranklinCountyLocationsPage() {
             </div>
 
             {/* Criminal Defense Card */}
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-              <div className="bg-[#b87333] px-5 py-4">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">Criminal Defense</span>
-                <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Columbus</span>
+            <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+              <div className="bg-navy-950 px-5 py-4">
+                <span className="jw-serif text-white font-bold text-base">Criminal Defense</span>
+                <span className="block text-white/80 text-xs mt-0.5">Columbus</span>
               </div>
-              <div className="flex flex-col divide-y divide-gray-100 flex-1">
+              <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                 {criminalLinks.map(({ label, href }) => (
                   <Link
                     key={href}
                     href={href}
-                    className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors"
+                    className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors"
                   >
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                    <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                    <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                   </Link>
                 ))}
               </div>
             </div>
 
             {/* County-Wide Card */}
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-              <div className="bg-gray-700 px-5 py-4">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] text-white font-bold text-base">County-Wide Pages</span>
-                <span className="block font-['Inter',_'Arial',_sans-serif] text-white/80 text-xs mt-0.5">Franklin County Municipal Court & county</span>
+            <div className="bg-white border border-navy-950/10 overflow-hidden flex flex-col">
+              <div className="bg-navy-800 px-5 py-4">
+                <span className="jw-serif text-white font-bold text-base">County-Wide Pages</span>
+                <span className="block text-white/80 text-xs mt-0.5">Franklin County Municipal Court & county</span>
               </div>
-              <div className="flex flex-col divide-y divide-gray-100 flex-1">
+              <div className="flex flex-col divide-y divide-navy-950/10 flex-1">
                 {countyWideLinks.map(({ label, href }) => (
                   <Link
                     key={href}
                     href={href}
-                    className="flex items-center justify-between px-4 py-2.5 hover:bg-[#b87333]/5 group transition-colors"
+                    className="flex items-center justify-between px-4 py-2.5 hover:bg-sky-deep/5 group transition-colors"
                   >
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 group-hover:text-[#b87333] transition-colors">{label}</span>
-                    <span className="text-gray-300 group-hover:text-[#b87333] transition-colors text-xs ml-2">→</span>
+                    <span className="text-sm text-navy-950/80 group-hover:text-sky-deep transition-colors">{label}</span>
+                    <span className="text-white/80 group-hover:text-sky-deep transition-colors text-xs ml-2">→</span>
                   </Link>
                 ))}
               </div>
@@ -241,13 +241,13 @@ export default function FranklinCountyLocationsPage() {
       </section>
 
       {/* Suburb Card Grid */}
-      <section className="py-12 bg-white border-t border-gray-200">
+      <section className="py-12 bg-white border-t border-navy-950/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-1">
+            <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-1">
               Charged in a Suburb?
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-500 text-sm">
+            <p className="text-navy-950/60 text-sm">
               Find your community and select your charge.
             </p>
           </div>
@@ -256,14 +256,14 @@ export default function FranklinCountyLocationsPage() {
             {suburbs.map(({ suburb, slug, hasMayorsCourt }) => (
               <div
                 key={slug}
-                className="bg-white border border-gray-200 rounded-xl p-5 hover:border-[#b87333]/40 hover:shadow-md transition-all"
+                className="bg-white border border-navy-950/10 p-5 hover:border-sky-deep/40 transition-all"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 text-base">
+                  <h3 className="jw-serif font-bold text-navy-950 text-base">
                     {suburb}
                   </h3>
                   {hasMayorsCourt && (
-                    <span className="font-['Inter',_'Arial',_sans-serif] text-[10px] font-semibold uppercase tracking-wide text-[#b87333] bg-[#b87333]/10 px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] font-semibold uppercase tracking-wide text-sky-deep bg-sky-deep/10 px-2 py-0.5 rounded-full">
                       Mayor&apos;s Court
                     </span>
                   )}
@@ -273,7 +273,7 @@ export default function FranklinCountyLocationsPage() {
                     <Link
                       key={href}
                       href={href}
-                      className="inline-block font-['Inter',_'Arial',_sans-serif] text-xs font-medium px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-[#b87333] hover:text-white transition-colors whitespace-nowrap"
+                      className="inline-block text-xs font-medium px-3 py-1.5 rounded-full bg-ice text-navy-950/80 hover:bg-navy-950 hover:text-white transition-colors whitespace-nowrap"
                     >
                       {label}
                     </Link>
@@ -286,13 +286,13 @@ export default function FranklinCountyLocationsPage() {
       </section>
 
       {/* Closing CTA text */}
-      <section className="py-10 bg-gray-50 border-t border-gray-200">
+      <section className="py-10 bg-ice border-t border-navy-950/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 leading-relaxed">
+          <p className="text-navy-950/80 leading-relaxed">
             Facing a charge anywhere in Franklin County? Call{' '}
-            <a href="tel:6142855482" className="text-[#b87333] font-semibold underline hover:opacity-80">(614) 285-5482</a>{' '}
+            <a href="tel:6142855482" className="text-sky-deep font-semibold underline hover:opacity-80">(614) 285-5482</a>{' '}
             or{' '}
-            <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+            <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
             For OVI arrests, the 30-day ALS appeal deadline is critical — contact us immediately.
           </p>
         </div>

@@ -79,17 +79,17 @@ export default function AthensCountyLocationsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Legal Services in Athens County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Athens County is located in southeast Ohio and is home to Ohio University, making it one of Ohio&apos;s most active counties for OVI, open container, and disorderly conduct charges. Criminal and OVI cases in Athens are heard at <strong>Athens Municipal Court</strong> (8 E. Washington St, Athens, OH 45701). Jwayyed Law LLC represents Athens County clients — including Ohio University students — at Municipal Court and the Athens County Court of Common Pleas. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>.
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
             </p>
 
             <div className="not-prose space-y-4 mb-10">
-              <div className="border-l-4 border-[#b87333] bg-gray-50 rounded-r-lg p-5">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-3">
+              <div className="border-l-4 border-sky-deep bg-ice p-5">
+                <h4 className="jw-serif text-lg font-bold text-navy-950 mb-3">
                   Athens County Practice Areas
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
@@ -118,23 +118,23 @@ export default function AthensCountyLocationsPage() {
                     <Link
                       key={href}
                       href={href}
-                      className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                      className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
                     >
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors block mb-1">
+                      <span className="text-sm font-semibold text-navy-950 group-hover:text-sky-deep transition-colors block mb-1">
                         {label}
                       </span>
-                      <span className="font-['Inter',_'Arial',_sans-serif] text-xs text-gray-500 group-hover:text-gray-700 transition-colors">{desc}</span>
+                      <span className="text-xs text-navy-950/60 group-hover:text-navy-950/80 transition-colors">{desc}</span>
                     </Link>
                   ))}
                 </div>
               </div>
             </div>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               For OVI arrests in Athens County, the 30-day ALS appeal deadline is critical — contact us immediately after any OVI arrest. Reach Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
             </p>
           </div>
         </div>

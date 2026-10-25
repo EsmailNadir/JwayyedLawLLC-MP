@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ChevronRight, Home } from 'lucide-react';
 
 interface BreadcrumbItem {
   label: string;
@@ -37,31 +36,27 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <nav className="bg-gray-100 py-3" aria-label="Breadcrumb">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ol className="flex items-center space-x-2 text-sm">
+      {/* Same navy as the PageHero below, so breadcrumb and hero read as one
+          band; the trail sits small at its top edge. */}
+      <nav className="jw bg-navy-950 text-[length:var(--step-small)]" aria-label="Breadcrumb">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-6 sm:pt-8">
+          <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-mist">
             <li>
-              <Link
-                href="/"
-                className="inline-flex items-center gap-1.5 px-2 py-1 -mx-2 rounded-md text-gray-600 hover:text-orange-500 hover:bg-gray-200/60 transition-colors min-h-[32px] cursor-pointer pointer-events-auto"
-                aria-label="Home"
-              >
-                <Home className="w-4 h-4" />
-                <span className="font-medium font-['Inter',_'Arial',_sans-serif]">Home</span>
+              <Link href="/" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                Home
               </Link>
             </li>
             {items.map((item, index) => (
-              <li key={item.href} className="flex items-center">
-                <ChevronRight className="w-4 h-4 text-gray-400 mx-2" />
+              <li key={item.href} className="flex items-center gap-2">
+                <span aria-hidden="true" className="text-white/30">
+                  /
+                </span>
                 {index === items.length - 1 ? (
-                  <span className="text-gray-900 font-medium font-['Inter',_'Arial',_sans-serif]" aria-current="page">
+                  <span className="text-white" aria-current="page">
                     {item.label}
                   </span>
                 ) : (
-                  <Link
-                    href={item.href}
-                    className="text-gray-600 hover:text-orange-500 transition-colors font-['Inter',_'Arial',_sans-serif]"
-                  >
+                  <Link href={item.href} className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky">
                     {item.label}
                   </Link>
                 )}

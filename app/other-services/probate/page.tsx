@@ -82,75 +82,75 @@ export default function ProbatePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Probate in Ohio
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Probate is the court-supervised legal process through which a deceased person\'s estate is administered, debts are paid, and remaining assets are distributed to rightful heirs or beneficiaries. In Ohio, probate proceedings are governed primarily by Ohio Revised Code Title 21, with Chapters 2107 through 2117 controlling the most common estate administration tasks. Whether a person died with a carefully drafted will or without any estate plan at all, most individually owned assets must pass through Ohio Probate Court before title can legally transfer to anyone else.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Probate Courts have exclusive jurisdiction over the administration of decedents' estates under ORC 2101.24. In Franklin County, that means the Franklin County Probate Court located at 373 South High Street in Columbus. Each county in Ohio has its own Probate Court with local filing requirements, forms, and procedures. An experienced Ohio probate attorney who regularly practices in the relevant county can navigate these local rules efficiently and avoid costly mistakes that delay estate closure.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we represent executors, administrators, surviving spouses, and beneficiaries in probate proceedings throughout central Ohio. Whether you need assistance opening a new estate, resolving a creditor dispute, preparing the required inventory and appraisal, or closing an estate that has stalled, our attorney provides practical, cost-conscious guidance tailored to your specific circumstances. Call us at <a href="tel:6142855482" className="text-[#b87333] hover:underline">(614) 285-5482</a> to discuss your situation.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              At Jwayyed Law LLC, we represent executors, administrators, surviving spouses, and beneficiaries in probate proceedings throughout central Ohio. Whether you need assistance opening a new estate, resolving a creditor dispute, preparing the required inventory and appraisal, or closing an estate that has stalled, our attorney provides practical, cost-conscious guidance tailored to your specific circumstances. Call us at <a href="tel:6142855482" className="text-sky-deep hover:underline">(614) 285-5482</a> to discuss your situation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Testate vs. Intestate: Two Paths Through Ohio Probate
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio probate follows one of two tracks depending on whether the decedent left a valid will. When a will exists, the estate is "testate." The executor named in the will petitions the Probate Court to admit the will and issue "letters testamentary," the official document authorizing the executor to act on behalf of the estate. Under ORC Chapter 2107, the court examines the will\'s execution — confirming it was signed by a testator of sound mind and witnessed by two competent adults — before admitting it to probate. Once the will is admitted, administration proceeds according to its terms, subject to Ohio\'s mandatory protections for surviving spouses and creditors.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When no valid will exists, the estate is "intestate" and distribution is controlled entirely by ORC 2105.06. Under Ohio\'s intestate succession statute, a surviving spouse with no surviving children or where all surviving children are also children of the surviving spouse inherits the entire estate. When the decedent had children from a prior relationship, the surviving spouse and children divide the estate according to a statutory formula. More distant relatives — parents, siblings, and their descendants — inherit only when there is no surviving spouse or children. The Probate Court appoints an administrator, often following the surviving spouse\'s or a child\'s preference, to manage the intestate estate with the same duties as an executor.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Ohio Probate Process: Step by Step
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio probate typically unfolds in several stages. First, the executor or a family member files a petition to open the estate with the county Probate Court, along with the original will (if any) and the decedent\'s death certificate. The court issues letters testamentary or letters of administration, giving the fiduciary authority to gather assets and act on the estate\'s behalf. Within thirty days of appointment, the executor must notify beneficiaries and heirs. Within three months, the executor must file an inventory and appraisal listing all probate assets at their fair market value as required by ORC 2109.302. Real estate, business interests, and unusual personal property typically require formal appraisal by a licensed appraiser.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Simultaneously, the executor publishes a notice to creditors in a local newspaper and mails notice to all known creditors. Under ORC 2117.06, creditors have six months from the executor\'s appointment to file claims. After the creditor window closes, the executor pays valid debts in the statutory priority order — secured creditors, funeral costs, administration expenses, taxes, and then general unsecured creditors. Once debts are satisfied, the executor files a final account with the Probate Court documenting all receipts and disbursements. After court approval of the account, the executor distributes remaining assets to beneficiaries and files a receipt for distribution. The court then closes the estate.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Executor compensation in Ohio is governed by ORC 2113.35, which sets a statutory fee schedule based on the value of assets administered — generally four percent on the first $100,000, three percent on the next $300,000, two percent on the next $600,000, and one percent or a court-determined reasonable fee on amounts above $1 million. Attorney fees for probate representation are reviewed by the Probate Court and must be reasonable given the work performed. Both executor and attorney fees are paid from estate assets before distribution to beneficiaries.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Simplified Procedures and Avoiding Probate in Ohio
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio offers relief from full probate for smaller estates through ORC 2113.03's release from administration procedure. When the gross estate does not exceed $35,000 — or does not exceed $100,000 and passes entirely to the surviving spouse — an authorized family member may apply to the Probate Court for a simplified release rather than opening a full estate. The court can release assets directly to the applicant without appointing an executor, publishing creditor notice, or filing a formal inventory. This procedure saves time and legal fees for families dealing with modest estates.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For assets that do not need to go through probate at all, Ohio law provides several mechanisms. Joint tenancy with right of survivorship allows co-owners to inherit each other\'s shares automatically at death. Payable-on-death designations on bank accounts and transfer-on-death registrations on brokerage accounts, vehicles, and real estate all allow assets to pass directly to named beneficiaries without probate. Life insurance proceeds and retirement account distributions to named beneficiaries never enter the probate estate. A revocable living trust — which we help clients establish through our estate planning practice — can hold the majority of a person\'s assets and distribute them at death with no court involvement, no public record, and no waiting period for creditors. Thoughtful use of these tools can dramatically reduce or eliminate the burden of probate on your family.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/will-contests" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/will-contests" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Will Contests in Ohio
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Revocable Living Trusts
               </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Estate Planning &amp; Wills
               </Link>
             </div>

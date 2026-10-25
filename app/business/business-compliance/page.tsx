@@ -71,26 +71,26 @@ export default function BusinessCompliancePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business Compliance in Ohio: What Every LLC and Corporation Must Know
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When Ohio business owners form an LLC or corporation, they often focus intensely on the <Link href="/business/business-formation" className="text-[#b87333] underline hover:text-[#a06828]">formation process</Link> — drafting operating agreements, filing articles of organization or incorporation, and opening bank accounts. What many do not fully appreciate is that compliance is not a one-time event at formation; it is an ongoing obligation that persists for the entire life of the business. Ohio LLCs are primarily governed by <strong>ORC Chapter 1705</strong> (with the newer Ohio LLC Act at <strong>ORC Chapter 1706</strong> now available for new formations), while Ohio corporations operate under <strong>ORC Chapter 1701</strong>. Both statutory frameworks impose continuing obligations — maintaining a valid statutory agent, observing corporate formalities, keeping financial records, and complying with tax registration requirements — the neglect of which can have serious consequences ranging from administrative dissolution to personal liability for owners. Business compliance is a critical component of our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">Ohio business law services</Link>. At Jwayyed Law LLC, we help Ohio businesses understand and meet their compliance obligations, protecting the liability shield that is the primary reason to operate as an LLC or corporation in the first place. For more on choosing the right entity type, see our blog post on <Link href="/our-law-firm/blog/starting-business-ohio-llc-vs-corporation" className="text-[#b87333] underline hover:text-[#a06828]">starting a business in Ohio: LLC vs. corporation</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              When Ohio business owners form an LLC or corporation, they often focus intensely on the <Link href="/business/business-formation" className="text-sky-deep underline hover:text-navy-950">formation process</Link> — drafting operating agreements, filing articles of organization or incorporation, and opening bank accounts. What many do not fully appreciate is that compliance is not a one-time event at formation; it is an ongoing obligation that persists for the entire life of the business. Ohio LLCs are primarily governed by <strong>ORC Chapter 1705</strong> (with the newer Ohio LLC Act at <strong>ORC Chapter 1706</strong> now available for new formations), while Ohio corporations operate under <strong>ORC Chapter 1701</strong>. Both statutory frameworks impose continuing obligations — maintaining a valid statutory agent, observing corporate formalities, keeping financial records, and complying with tax registration requirements — the neglect of which can have serious consequences ranging from administrative dissolution to personal liability for owners. Business compliance is a critical component of our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">Ohio business law services</Link>. At Jwayyed Law LLC, we help Ohio businesses understand and meet their compliance obligations, protecting the liability shield that is the primary reason to operate as an LLC or corporation in the first place. For more on choosing the right entity type, see our blog post on <Link href="/our-law-firm/blog/starting-business-ohio-llc-vs-corporation" className="text-sky-deep underline hover:text-navy-950">starting a business in Ohio: LLC vs. corporation</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most significant risks of compliance failure is the doctrine of "piercing the corporate veil." Under Ohio law, courts can disregard the separate legal existence of an LLC or corporation — holding owners personally liable for the entity's debts — when owners have used the entity as an alter ego: commingling personal and business funds, failing to observe formalities, keeping the entity inadequately capitalized, or using business assets for personal expenses without proper documentation. Ohio courts apply a two-prong test requiring both a showing of domination and control and improper conduct. The practical consequence is stark: everything that proper compliance protects — homes, savings accounts, personal assets — becomes exposed when the veil is pierced. Consistent corporate governance is the best protection: holding meetings (or documenting written consents), maintaining separate accounts, documenting major decisions in writing, and never using the business as a personal financial instrument.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's Commercial Activity Tax (CAT) is a compliance obligation that catches many small business owners off guard. Imposed by the Ohio Department of Taxation on gross receipts of businesses doing business in Ohio, the CAT requires registration through the Ohio Business Gateway when a business exceeds applicable thresholds (effective with 2023 tax year legislation, the first $3 million in taxable gross receipts is excluded from the CAT base, and businesses with total receipts below $150,000 are generally exempt). In addition to the CAT, Ohio businesses that sell taxable goods or services must obtain a Vendor's License and collect and remit Ohio sales tax. Ohio businesses with employees must also register with the Ohio Department of Job and Family Services for unemployment insurance purposes and comply with Ohio workers' compensation requirements under <strong>ORC Chapter 4123</strong>. Failure to properly register and remit taxes creates back-tax liability, interest, and civil penalties that can far exceed the cost of getting it right from the start.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Employment law compliance is among the most complex ongoing obligations for Ohio businesses with employees. The Ohio Civil Rights Act, <strong>ORC Chapter 4112</strong>, prohibits employment discrimination based on race, color, religion, sex, national origin, disability, age, and ancestry — and applies to employers with four or more employees (broader coverage than federal Title VII). Ohio's Wage Payment Act, <strong>ORC Chapter 4113</strong>, governs the timing of paychecks and permissible deductions, while <strong>ORC Chapter 4111</strong> governs minimum wage (currently indexed annually to inflation). Beyond these statutes, Ohio employers must maintain required workplace postings, provide proper workers' compensation coverage, and comply with applicable federal employment laws (FMLA, ADA, FLSA). Payroll misclassification — treating employees as independent contractors — is one of the most audited areas by both Ohio and federal tax authorities and can expose businesses to substantial back-tax liability and civil lawsuits.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Key Ohio Business Compliance Obligations by Area
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Statutory agent maintenance:</strong> All Ohio LLCs (ORC 1705.06) and corporations (ORC 1701.07) must maintain a valid statutory agent with a physical Ohio address at all times; updates must be filed within 30 days of any change via Form 521 with the Ohio Secretary of State.</li>
               <li><strong>Entity amendments:</strong> Changes to company name, principal office address, articles of incorporation, or articles of organization must be filed with the Secretary of State; unauthorized amendments can create confusion about the entity's legal status and expose it to challenge.</li>
               <li><strong>Corporate formalities:</strong> Annual meetings (or written consents), board and member resolutions documenting major decisions, updated officer and director lists, and maintenance of the minutes book under ORC 1701.37 and 1705.22.</li>
@@ -100,34 +100,34 @@ export default function BusinessCompliancePage() {
               <li><strong>Contract compliance:</strong> Ongoing review of material contracts to ensure obligations are being met and renewal/notice deadlines are tracked; updating standard form contracts when Ohio law changes.</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               How Jwayyed Law LLC Can Help with Business Compliance
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Many Ohio business owners do not discover compliance gaps until they become problems — a lawsuit exposes the fact that formalities were never observed, a tax audit reveals years of unregistered liability, or a contract dispute reveals that notice deadlines were missed. Proactive legal guidance is substantially less expensive than reactive litigation. Our firm conducts compliance audits that systematically review your entity's governance records, tax registrations, licensing status, employment practices, and contract obligations. We identify gaps, prioritize the most significant risks, and provide a practical action plan for remediation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              We also provide ongoing compliance counsel to Ohio businesses at key growth stages: when the business hires its first employees, when it crosses revenue thresholds triggering new tax obligations, when ownership changes hands, and when the business takes on significant new contracts or enters new markets. Related services include <Link href="/business/llc-formation" className="text-[#b87333] underline hover:text-[#a06828]">Ohio LLC formation</Link> and <Link href="/business/contract-drafting-review" className="text-[#b87333] underline hover:text-[#a06828]">contract drafting and review</Link>. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> to schedule a compliance consultation.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              We also provide ongoing compliance counsel to Ohio businesses at key growth stages: when the business hires its first employees, when it crosses revenue thresholds triggering new tax obligations, when ownership changes hands, and when the business takes on significant new contracts or enters new markets. Related services include <Link href="/business/llc-formation" className="text-sky-deep underline hover:text-navy-950">Ohio LLC formation</Link> and <Link href="/business/contract-drafting-review" className="text-sky-deep underline hover:text-navy-950">contract drafting and review</Link>. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> to schedule a compliance consultation.
             </p>
 
             <LocationsWeServe title="Business Law" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/business-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Formation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Start your Ohio business with the right legal structure</span>
+              <Link href="/business/business-formation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Formation</span>
+                <span className="text-sm text-navy-950/70">Start your Ohio business with the right legal structure</span>
               </Link>
-              <Link href="/business/llc-formation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">LLC Formation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Form an Ohio LLC under ORC Chapter 1706</span>
+              <Link href="/business/llc-formation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">LLC Formation</span>
+                <span className="text-sm text-navy-950/70">Form an Ohio LLC under ORC Chapter 1706</span>
               </Link>
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Contract Drafting & Review</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Ensure your business contracts meet Ohio legal requirements</span>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Contract Drafting & Review</span>
+                <span className="text-sm text-navy-950/70">Ensure your business contracts meet Ohio legal requirements</span>
               </Link>
-              <Link href="/business/business-dissolution" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Dissolution</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Properly close your Ohio LLC or corporation</span>
+              <Link href="/business/business-dissolution" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Dissolution</span>
+                <span className="text-sm text-navy-950/70">Properly close your Ohio LLC or corporation</span>
               </Link>
             </div>
           </div>

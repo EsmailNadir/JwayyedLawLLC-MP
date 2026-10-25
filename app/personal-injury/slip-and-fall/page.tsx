@@ -69,59 +69,59 @@ export default function SlipAndFallPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Slip and Fall Claims in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Slip and Fall Claims in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Slip and fall accidents in Columbus, Cincinnati, Dayton, or throughout Ohio can result in serious injuries including broken bones, head injuries, spinal cord injuries, and other injuries requiring extensive medical treatment. At Jwayyed Law LLC, we provide experienced representation for slip and fall accident victims under Ohio Revised Code 2305.10 (current as of 2026). Our attorney understands premises liability law and the compensation process necessary to help you recover.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Premises liability law in Ohio requires property owners and occupiers to maintain safe conditions for visitors and to warn of known dangers. Slip and fall accidents often occur due to wet floors, uneven surfaces, inadequate lighting, broken stairs, or other hazards. Understanding your rights, the legal requirements for proving fault, and the compensation process is essential for maximizing recovery. Early intervention by a skilled slip and fall attorney can significantly impact the outcome, ensuring proper documentation, investigation, and maximum compensation.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The statute of limitations for slip and fall personal injury claims in Ohio is 2 years from the date of injury, making it crucial to act quickly. Slip and fall cases require thorough investigation, documentation of hazards, and evidence that the property owner knew or should have known of the dangerous condition. Insurance companies often attempt to minimize claims or deny liability, making experienced representation essential.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Slip and Fall Claims Process</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Slip and Fall Claims Process</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding the slip and fall claims process helps you prepare for what lies ahead:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Immediate Investigation and Documentation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Immediate Investigation and Documentation</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Immediately after a slip and fall accident, evidence must be preserved including photos of the hazard, surrounding area, lighting conditions, your injuries, witness contact information, incident reports, and maintenance records if available. An attorney can coordinate investigation, gather evidence, interview witnesses, and ensure all documentation is properly preserved. This early documentation is crucial for establishing liability and damages.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Proving Premises Liability</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Proving Premises Liability</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Proving fault in slip and fall cases requires demonstrating that the property owner or occupier knew or should have known of the dangerous condition and failed to remedy it or warn of it. Evidence may include photos of the hazard, witness statements, maintenance records, incident reports, expert testimony, and evidence of similar prior incidents. An attorney can help gather evidence and build your case.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Insurance Negotiation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Insurance Negotiation</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Most slip and fall claims are resolved through negotiation with insurance companies. Insurance adjusters often attempt to minimize claims, deny liability, or argue that you were partially at fault. An experienced attorney understands insurance tactics, can negotiate effectively, and knows when to push for fair compensation. Most cases settle during negotiation, but preparation for litigation strengthens negotiation position.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Litigation and Trial</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Litigation and Trial</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 If settlement negotiations fail, litigation may be necessary. This involves filing a lawsuit, discovery (exchanging evidence), depositions, expert testimony including safety experts, and potentially trial. An experienced attorney can navigate the litigation process, present compelling evidence, and advocate for maximum compensation at trial. Most cases settle before trial, but preparation for trial strengthens negotiation position.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How a Slip and Fall Attorney Can Help</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Slip and Fall Attorney Can Help</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An experienced slip and fall attorney provides comprehensive representation throughout every stage of your claim:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
               <li><strong>Immediate Case Investigation:</strong> Thoroughly investigate the accident including gathering photos of the hazard, surrounding area, lighting conditions, your injuries, witness statements, incident reports, and maintenance records</li>
               <li><strong>Premises Liability Analysis:</strong> Analyze premises liability issues, determine fault, identify all potentially liable parties, and establish that the property owner knew or should have known of the dangerous condition</li>
               <li><strong>Medical Coordination:</strong> Help coordinate medical treatment, ensure all injuries are properly documented, and work with medical providers to establish causation and prognosis</li>
@@ -131,15 +131,15 @@ export default function SlipAndFallPage() {
               <li><strong>Litigation Representation:</strong> File lawsuits when necessary, navigate the litigation process, conduct discovery, take depositions, and represent you in court if settlement negotiations fail</li>
               <li><strong>Maximize Recovery:</strong> Work to ensure you receive full compensation for all damages including medical expenses (past and future), lost wages, loss of earning capacity, pain and suffering, emotional distress, and other losses</li>
             </ul>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Compensation Available</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Compensation Available</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Slip and fall accident compensation in Ohio may include various types of damages:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>Medical expenses (past and future including surgeries, rehabilitation, therapy, medications)</li>
                 <li>Lost wages and loss of earning capacity</li>
                 <li>Property damage (damaged clothing or personal items)</li>
@@ -149,9 +149,9 @@ export default function SlipAndFallPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Non-Economic Damages</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Non-Economic Damages</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>Pain and suffering</li>
                 <li>Emotional distress</li>
                 <li>Loss of enjoyment of life</li>
@@ -161,46 +161,46 @@ export default function SlipAndFallPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Punitive Damages</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Punitive Damages</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 In cases involving egregious conduct such as intentional failure to remedy known hazards or gross negligence, punitive damages may be available to punish the wrongdoer and deter similar conduct. Punitive damages are rare and require clear and convincing evidence of malicious or reckless behavior.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC</h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm provides dedicated slip and fall accident representation throughout Ohio. We understand that slip and fall accidents can cause serious injuries and financial losses. Our attorney works diligently to investigate cases, document hazards, negotiate with insurance companies, and maximize compensation for our clients.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our approach combines thorough investigation, premises liability expertise, strategic case development, and aggressive advocacy. We understand the complexities of slip and fall cases, insurance company tactics, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and maximize compensation. We work closely with clients to understand their goals, explain legal options, and make informed decisions about settlement offers versus litigation.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and analyze premises liability issues. Learn more about our <Link href="/personal-injury" className="text-[#b87333] underline hover:text-[#a06828]">personal injury practice</Link> or read our articles on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-[#b87333] underline hover:text-[#a06828]">Ohio slip and fall laws</Link> and <Link href="/our-law-firm/blog/slipped-fell-at-store-can-i-sue" className="text-[#b87333] underline hover:text-[#a06828]">whether you can sue after slipping at a store</Link>.
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
+              If you have been injured in a slip and fall accident in Columbus, Cincinnati, Dayton, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> to schedule a consultation. We will review your case, explain your rights, discuss potential compensation, and analyze premises liability issues. Learn more about our <Link href="/personal-injury" className="text-sky-deep underline hover:text-navy-950">personal injury practice</Link> or read our articles on <Link href="/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners" className="text-sky-deep underline hover:text-navy-950">Ohio slip and fall laws</Link> and <Link href="/our-law-firm/blog/slipped-fell-at-store-can-i-sue" className="text-sky-deep underline hover:text-navy-950">whether you can sue after slipping at a store</Link>.
             </p>
           </div>
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/personal-injury/premises-liability" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Premises Liability</span>
-            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Property owner negligence and unsafe conditions</span>
+          <Link href="/personal-injury/premises-liability" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+            <span className="jw-serif font-bold text-navy-950 block mb-1">Premises Liability</span>
+            <span className="text-sm text-navy-950/70">Property owner negligence and unsafe conditions</span>
           </Link>
-          <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Workplace Injuries</span>
-            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">On-the-job injuries and workers&apos; compensation</span>
+          <Link href="/personal-injury/workplace-injuries" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+            <span className="jw-serif font-bold text-navy-950 block mb-1">Workplace Injuries</span>
+            <span className="text-sm text-navy-950/70">On-the-job injuries and workers&apos; compensation</span>
           </Link>
-          <Link href="/personal-injury/car-accidents" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Car Accidents</span>
-            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Motor vehicle collision claims throughout Ohio</span>
+          <Link href="/personal-injury/car-accidents" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+            <span className="jw-serif font-bold text-navy-950 block mb-1">Car Accidents</span>
+            <span className="text-sm text-navy-950/70">Motor vehicle collision claims throughout Ohio</span>
           </Link>
-          <Link href="/personal-injury/dog-bites" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-            <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Dog Bites</span>
-            <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Animal attack liability under Ohio law</span>
+          <Link href="/personal-injury/dog-bites" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+            <span className="jw-serif font-bold text-navy-950 block mb-1">Dog Bites</span>
+            <span className="text-sm text-navy-950/70">Animal attack liability under Ohio law</span>
           </Link>
         </div>
       </section>

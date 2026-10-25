@@ -72,30 +72,30 @@ export default function RefusalOVIPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Refusal OVI Charges in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When a police officer suspects OVI in Ohio, they will request a chemical test — breath, blood, urine, or oral fluid — under Ohio's implied consent law, ORC 4511.191. The theory behind implied consent is that by choosing to drive on Ohio's roads, every driver has already consented to testing if lawfully arrested on suspicion of OVI. Refusing that test carries immediate, automatic consequences entirely separate from any criminal charge. At Jwayyed Law LLC, our attorney defends clients throughout Ohio who have refused chemical testing and are facing both Administrative License Suspension and criminal OVI charges as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>. Understanding the interplay between the administrative and criminal systems is essential to mounting an effective defense.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              When a police officer suspects OVI in Ohio, they will request a chemical test — breath, blood, urine, or oral fluid — under Ohio's implied consent law, ORC 4511.191. The theory behind implied consent is that by choosing to drive on Ohio's roads, every driver has already consented to testing if lawfully arrested on suspicion of OVI. Refusing that test carries immediate, automatic consequences entirely separate from any criminal charge. At Jwayyed Law LLC, our attorney defends clients throughout Ohio who have refused chemical testing and are facing both Administrative License Suspension and criminal OVI charges as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>. Understanding the interplay between the administrative and criminal systems is essential to mounting an effective defense.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An ALS for refusal under ORC 4511.191 is one year for a first offense and two years for a second refusal within ten years. These timelines begin at the moment of arrest — not at conviction. HB 37, which took effect on April 9, 2025, made important changes to how refusal suspensions are handled compared to suspensions from test-over results. For non-refusal OVI cases, a judge may now waive the mandatory 15-day hard suspension if the defendant agrees to install a certified ignition interlock device (IID) — allowing limited driving privileges to begin immediately. For refusal cases, however, the 30-day hard suspension cannot be waived by any court, regardless of IID agreement. This distinction makes refusal cases substantially more disruptive to a person's daily life, and it increases the importance of appealing the ALS suspension promptly. Learn more about the <Link href="/our-law-firm/blog/ohio-als-appeal-30-day-deadline" className="text-[#b87333] underline hover:text-[#a06828]">30-day ALS appeal deadline in Ohio</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              An ALS for refusal under ORC 4511.191 is one year for a first offense and two years for a second refusal within ten years. These timelines begin at the moment of arrest — not at conviction. HB 37, which took effect on April 9, 2025, made important changes to how refusal suspensions are handled compared to suspensions from test-over results. For non-refusal OVI cases, a judge may now waive the mandatory 15-day hard suspension if the defendant agrees to install a certified ignition interlock device (IID) — allowing limited driving privileges to begin immediately. For refusal cases, however, the 30-day hard suspension cannot be waived by any court, regardless of IID agreement. This distinction makes refusal cases substantially more disruptive to a person's daily life, and it increases the importance of appealing the ALS suspension promptly. Learn more about the <Link href="/our-law-firm/blog/ohio-als-appeal-30-day-deadline" className="text-sky-deep underline hover:text-navy-950">30-day ALS appeal deadline in Ohio</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One common misconception is that refusing a BAC test prevents a conviction. This is not true under Ohio law. ORC 4511.19(A)(1)(a) allows an OVI conviction based purely on observational evidence of impairment — officer testimony about driving behavior, physical appearance, the odor of alcohol, and performance on field sobriety tests. Prosecutors can also comment on the refusal itself at trial, arguing it demonstrates consciousness of guilt. Ohio courts have consistently upheld this practice. Moreover, a refusal conviction carries a mandatory 3-day jail minimum with no option to substitute the driver intervention program (DIP), which is available in standard first OVI cases. This means a refusal OVI, even on a first offense, guarantees jail time if convicted.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The 30-day deadline to appeal an ALS suspension under ORC 4511.197 is one of the most critical timelines in Ohio OVI law. The appeal must be filed in the court with jurisdiction over the offense. Grounds for an ALS appeal include: the officer lacked reasonable grounds to stop or arrest you, the officer failed to properly advise you of the consequences of refusal before requesting the test, or the refusal itself was not knowing and voluntary. Filing a timely appeal can result in a stay of the suspension while the case is litigated, meaning you may be able to drive legally while your challenge is pending. Missing this 30-day window typically forfeits your right to contest the ALS entirely. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your refusal OVI case.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The 30-day deadline to appeal an ALS suspension under ORC 4511.197 is one of the most critical timelines in Ohio OVI law. The appeal must be filed in the court with jurisdiction over the offense. Grounds for an ALS appeal include: the officer lacked reasonable grounds to stop or arrest you, the officer failed to properly advise you of the consequences of refusal before requesting the test, or the refusal itself was not knowing and voluntary. Filing a timely appeal can result in a stay of the suspension while the case is litigated, meaning you may be able to drive legally while your challenge is pending. Missing this 30-day window typically forfeits your right to contest the ALS entirely. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your refusal OVI case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Field sobriety test refusal and chemical test refusal are legally distinct in Ohio. Declining to perform standardized field sobriety tests (SFSTs) such as the walk-and-turn or horizontal gaze nystagmus does not trigger an automatic ALS — there is no statutory penalty for declining SFSTs. However, an officer may use the SFST refusal as part of the probable cause analysis supporting the arrest. At Jwayyed Law LLC, we evaluate the entire sequence of events — the initial traffic stop, the officer's observations, the SFST request, the chemical test request, and any advisements given — to identify every available defense. If you have been charged with refusal OVI in Columbus, Franklin County, or anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">contact us today</Link> for a consultation. You can also read more about <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">our full OVI defense practice</Link> and <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-[#b87333] underline hover:opacity-80">limited driving privileges options</Link> during your suspension.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Field sobriety test refusal and chemical test refusal are legally distinct in Ohio. Declining to perform standardized field sobriety tests (SFSTs) such as the walk-and-turn or horizontal gaze nystagmus does not trigger an automatic ALS — there is no statutory penalty for declining SFSTs. However, an officer may use the SFST refusal as part of the probable cause analysis supporting the arrest. At Jwayyed Law LLC, we evaluate the entire sequence of events — the initial traffic stop, the officer's observations, the SFST request, the chemical test request, and any advisements given — to identify every available defense. If you have been charged with refusal OVI in Columbus, Franklin County, or anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:opacity-80">contact us today</Link> for a consultation. You can also read more about <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">our full OVI defense practice</Link> and <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges options</Link> during your suspension.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Refusal OVI Penalties in Ohio (HB 37, Effective April 9, 2025)
             </h3>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li>ALS suspension: 1 year (first refusal), 2 years (second refusal within 10 years)</li>
                 <li>Criminal OVI first offense: mandatory 3-day jail minimum — driver intervention program (DIP) is NOT available as an alternative in refusal cases</li>
                 <li>Fines: $565–$1,075 (first OVI offense under HB 37)</li>
@@ -106,10 +106,10 @@ export default function RefusalOVIPage() {
               </ul>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How a Refusal OVI Defense Attorney Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>ALS Appeal:</strong> File a timely challenge to the administrative suspension and seek a stay within 30 days of arrest</li>
               <li><strong>Stop and Arrest Challenges:</strong> Contest whether the officer had reasonable grounds to stop your vehicle and probable cause to arrest you</li>
               <li><strong>Implied Consent Advisement:</strong> Verify that you were properly advised of the consequences of refusal before the test was requested</li>
@@ -120,23 +120,23 @@ export default function RefusalOVIPage() {
 
             <LocationsWeServe title="OVI/DUI Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
               </Link>
-              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">High-Tier OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
               </Link>
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Limited Driving Privileges</span>
+                <span className="text-sm text-navy-950/70">Get back on the road legally during your OVI suspension</span>
               </Link>
-              <Link href="/ovi-dui-defense/ovi-with-accident" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">OVI with Accident</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for OVI charges involving traffic accidents and injuries</span>
+              <Link href="/ovi-dui-defense/ovi-with-accident" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">OVI with Accident</span>
+                <span className="text-sm text-navy-950/70">Defense for OVI charges involving traffic accidents and injuries</span>
               </Link>
             </div>
           </div>

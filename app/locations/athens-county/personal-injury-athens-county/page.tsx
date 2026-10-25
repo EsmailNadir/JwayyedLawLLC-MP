@@ -76,25 +76,25 @@ export default function PersonalInjuryAthensCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Athens County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               If you were injured in Athens County due to someone else&apos;s negligence, you deserve skilled legal representation to pursue the compensation you are owed. Athens County sits in the heart of Appalachian southeastern Ohio, and its roads — including US 33, US 50, and SR 56 — can be dangerous corridors for accidents. Jwayyed Law LLC represents injury victims throughout Athens County, including Athens, Nelsonville, The Plains, Albany, and the communities surrounding Ohio University. We understand the local courts, the applicable Ohio statutes, and what it takes to build a strong personal injury case on your behalf.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 gives most personal injury claimants two years from the date of injury to file suit. Missing this deadline forfeits your right to recovery, regardless of how strong your case is. Whether your injury was caused by a car accident, a slip and fall on a dangerous property, a dog attack, a workplace incident, or another party&apos;s negligence, it is important to speak with an attorney as early as possible. Evidence is preserved more effectively, witnesses are easier to locate, and your rights are better protected when action is taken promptly.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s modified comparative negligence rule, codified in ORC 2315.33, means that your recovery may be reduced if you are found partially at fault. Insurance companies frequently argue that injured victims bear a share of blame in order to reduce or deny claims. Our attorney carefully investigates each case, gathers evidence, and builds arguments to minimize any fault attributed to you. If you were less than 50% at fault, you are entitled to recover — and we fight to protect that right.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The Athens County area presents unique injury scenarios. Ohio University&apos;s presence means pedestrian and bicycle accidents are common near campus, and injuries in rental housing — from negligent landlords who fail to maintain safe conditions — are an ongoing concern. Rural roads and agricultural areas around Nelsonville and Albany carry risks of serious collisions and equipment-related injuries. We handle the full range of personal injury matters and tailor our approach to the specific facts of your case and the local community context.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Personal injury cases in Athens County are filed at the Athens County Common Pleas Court at 1 S. Court St, Athens, OH 45701. Jwayyed Law LLC handles cases on a contingency fee basis. To discuss your injury claim, contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> and how we serve clients across Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> and how we serve clients across Ohio.
             </p>
           </div>
         </div>

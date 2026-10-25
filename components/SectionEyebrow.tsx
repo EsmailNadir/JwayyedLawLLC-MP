@@ -17,8 +17,8 @@ export default function SectionEyebrow({
   tone?: 'light' | 'dark';
   align?: 'center' | 'start';
 }) {
-  const rule = tone === 'dark' ? 'bg-copper-300/70' : 'bg-copper-500/60';
-  const text = tone === 'dark' ? 'text-copper-200' : 'text-copper-600';
+  const rule = tone === 'dark' ? 'bg-sky/70' : 'bg-sky-deep/60';
+  const text = tone === 'dark' ? 'text-sky' : 'text-sky-deep';
 
   return (
     <div className={`inline-flex items-center gap-3 mb-4 ${align === 'center' ? 'justify-center' : ''}`}>

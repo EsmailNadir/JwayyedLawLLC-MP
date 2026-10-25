@@ -77,10 +77,10 @@ export default function ButlerCountyCourtsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Butler County Court Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The greater Cincinnati area has multiple courts and counties. Butler County is served by three Area Courts
               (I, II, and III) located in Oxford, Hamilton, and West Chester, plus Hamilton Municipal Court in the city
               of Hamilton. Butler County courts handle various legal matters including criminal cases, OVI/DUI charges,
@@ -88,9 +88,9 @@ export default function ButlerCountyCourtsPage() {
               County courts. Please note that we do not handle immigration matters, juvenile matters, or probate matters
               in these courts.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense is a cornerstone of our Butler County practice. Under{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">
                 ORC 4511.19
               </Link>
               , Ohio imposes mandatory minimum penalties on OVI convictions that courts cannot waive without a proper
@@ -103,7 +103,7 @@ export default function ButlerCountyCourtsPage() {
               your license is a serious disruption. Our firm files ALS appeals promptly and builds comprehensive defenses
               challenging the traffic stop, field sobriety testing, and chemical testing procedures.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Misdemeanor criminal defense is equally important for Butler County residents. The Area Courts and Hamilton
               Municipal Court handle hundreds of misdemeanor cases each year — disorderly conduct, domestic violence,
               petty theft, drug paraphernalia, and driving-related offenses among them. Miami University&rsquo;s Oxford campus
@@ -113,7 +113,7 @@ export default function ButlerCountyCourtsPage() {
               weaknesses, constitutional violations, and diversion opportunities — including intervention in lieu of
               conviction and other programs — to achieve the best possible outcome for our clients.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Butler County&rsquo;s dynamic economy — anchored by West Chester&rsquo;s corporate corridor, Hamilton&rsquo;s industrial
               heritage, and Oxford&rsquo;s university ecosystem — creates substantial need for business and civil legal
               services. Jwayyed Law LLC assists Butler County entrepreneurs with LLC formation under ORC Chapter 1706,
@@ -123,10 +123,10 @@ export default function ButlerCountyCourtsPage() {
               for Butler County clients.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Butler County Area Courts I, II &amp; III
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               Located in <strong>Oxford</strong>, <strong>Hamilton</strong>, and <strong>West Chester</strong>, these
               three Area Courts handle misdemeanor and traffic cases, OVI, domestic violence, and civil matters within
               their jurisdictions. Each court has its own territorial jurisdiction — for example, Area I serves the City
@@ -136,60 +136,60 @@ export default function ButlerCountyCourtsPage() {
               OVI/DUI, traffic matters, and civil cases within the court&rsquo;s jurisdictional limits.
             </p>
             <div className="grid md:grid-cols-1 gap-6 mb-6">
-              <div id="area-i-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area I Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">118 West High Street, Oxford, OH 45056</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 523-4748</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Serves: City of Oxford; Hanover, Milford, Morgan, Oxford, Reily, and Wayne Townships</p>
+              <div id="area-i-court" className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Butler County Area I Court</h4>
+                <p className="text-navy-950/80">118 West High Street, Oxford, OH 45056</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Phone: (513) 523-4748</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Serves: City of Oxford; Hanover, Milford, Morgan, Oxford, Reily, and Wayne Townships</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=118+West+High+Street,+Oxford,+OH+45056"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
-              <div id="area-ii-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area II Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">101 High St, Hamilton, OH 45011</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 887-3459</p>
+              <div id="area-ii-court" className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Butler County Area II Court</h4>
+                <p className="text-navy-950/80">101 High St, Hamilton, OH 45011</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Phone: (513) 887-3459</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=101+High+St,+Hamilton,+OH+45011"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
-              <div id="area-iii-court" className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Butler County Area III Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">9577 Beckett Rd #300, West Chester, OH 45069</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Phone: (513) 867-5070</p>
+              <div id="area-iii-court" className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Butler County Area III Court</h4>
+                <p className="text-navy-950/80">9577 Beckett Rd #300, West Chester, OH 45069</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Phone: (513) 867-5070</p>
                 <p className="text-sm mt-1">
                   <a
                     href="https://www.google.com/maps?q=9577+Beckett+Rd,+West+Chester,+OH+45069"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
             </div>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-600 text-sm mb-8">
+            <p className="text-navy-950/70 text-sm mb-8">
               For more information on jurisdiction and hours, visit the Butler County Area Courts at{' '}
               <a
                 href="https://areacourts.bcohio.gov"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#b87333] underline hover:opacity-80"
+                className="text-sky-deep underline hover:opacity-80"
               >
                 areacourts.bcohio.gov
               </a>{' '}
@@ -198,17 +198,17 @@ export default function ButlerCountyCourtsPage() {
                 href="https://areacourts.bcohio.gov/about/area_i_court.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#b87333] underline hover:opacity-80"
+                className="text-sky-deep underline hover:opacity-80"
               >
                 Area I jurisdiction
               </a>
               ).
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Hamilton Municipal Court (City of Hamilton)
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               The City of Hamilton has its own Municipal Court, separate from the Butler County Area II Court (which is
               also located in Hamilton). Hamilton Municipal Court is located at 700 Hanover Street, Hamilton, OH 45011.
               If your case is in Hamilton Municipal Court, we can help with misdemeanor criminal defense, OVI/DUI,
@@ -218,23 +218,23 @@ export default function ButlerCountyCourtsPage() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Link
                 href="/courts/hamilton-municipal-court"
-                className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+                className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
               >
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Hamilton Municipal Court</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Hamilton Municipal Court</h4>
+                <p className="text-sm text-navy-950/70">
                   700 Hanover Street, Hamilton, OH 45011. Misdemeanor cases, OVI/DUI, and traffic violations.
                 </p>
               </Link>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Services We Provide in Butler County
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>
                 <Link
                   href="/locations/butler-county/ovi-dui-defense-butler-county-area-courts"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   OVI/DUI Defense
                 </Link>
@@ -244,7 +244,7 @@ export default function ButlerCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Misdemeanor Criminal Defense
                 </Link>
@@ -254,7 +254,7 @@ export default function ButlerCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/butler-county/personal-injury-butler-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Personal Injury
                 </Link>
@@ -264,7 +264,7 @@ export default function ButlerCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/butler-county/business-formation-llc-butler-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Business Formation &amp; LLC
                 </Link>
@@ -277,10 +277,10 @@ export default function ButlerCountyCourtsPage() {
               </li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Why Choose Jwayyed Law LLC for Butler County Courts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We represent clients in the Butler County Area Courts (I, II, and III) and in Hamilton Municipal Court.
               Whether your case is in Oxford, Hamilton, or West Chester, we can help with misdemeanor criminal defense,
               OVI/DUI charges, traffic matters, civil cases, personal injury claims, and business legal needs. Our

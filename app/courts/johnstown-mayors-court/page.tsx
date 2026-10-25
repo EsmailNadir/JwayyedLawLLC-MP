@@ -173,104 +173,104 @@ export default function JohnstownMayorsCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Johnstown Mayor&apos;s Court — Licking County Traffic, OVI, and Ordinance Defense
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Johnstown Mayor&apos;s Court sits in the Council Chambers at 599 S. Main Street in Johnstown, Ohio, and hears cases on the <strong>1st and 3rd Wednesday of each month</strong>. It is a limited-jurisdiction court established under <strong>R.C. Chapter 1905</strong>, and defendants appear before a licensed attorney serving as the mayor&apos;s court magistrate. Nearly every citation written by the Johnstown Police Department inside the city limits — and many written by the Ohio State Highway Patrol on U.S. 62 and S.R. 37 where those routes run through town — starts here. Jwayyed Law LLC represents drivers and defendants in Johnstown Mayor&apos;s Court and in{' '}
-              <Link href="/courts" className="text-[#b87333] underline hover:opacity-80">Ohio courts statewide</Link>. Call{' '}
-              <a href="tel:+16142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>.
+              <Link href="/courts" className="text-sky-deep underline hover:opacity-80">Ohio courts statewide</Link>. Call{' '}
+              <a href="tel:+16142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Johnstown is no longer the quiet village it was a decade ago. The 2020 census put its population at 5,182 — enough to advance it to city status — and the arrival of Intel&apos;s <em>Ohio One</em> semiconductor campus in neighboring Jersey Township, together with the New Albany International Business Park build-out along S.R. 161, has put heavy commuter and construction traffic on U.S. 62, S.R. 37, and S.R. 310. Traffic enforcement has grown with it. What used to be a routine speeding ticket is now, for many people, a points problem, a CDL problem, or an insurance problem — and mayor&apos;s court moves fast enough that those consequences are locked in before most defendants realize a decision was made.
             </p>
 
-            <div className="not-prose border border-gray-200 rounded-lg overflow-hidden mb-10">
-              <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-xl font-bold text-gray-900 px-5 py-4 bg-gray-50 border-b border-gray-200">
+            <div className="not-prose border border-navy-950/10 overflow-hidden mb-10">
+              <h3 className="jw-serif text-xl font-bold text-navy-950 px-5 py-4 bg-ice border-b border-navy-950/10">
                 Johnstown Mayor&apos;s Court — Court Information
               </h3>
-              <dl className="divide-y divide-gray-200">
+              <dl className="divide-y divide-navy-950/10">
                 {courtFacts.map(({ label, value }) => (
                   <div key={label} className="grid sm:grid-cols-3 gap-1 sm:gap-4 px-5 py-3">
-                    <dt className="font-['Inter',_'Arial',_sans-serif] text-sm font-semibold text-gray-900">
+                    <dt className="text-sm font-semibold text-navy-950">
                       {label}
                     </dt>
-                    <dd className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-700 sm:col-span-2 leading-relaxed">
+                    <dd className="text-sm text-navy-950/80 sm:col-span-2 leading-relaxed">
                       {value}
                     </dd>
                   </div>
                 ))}
               </dl>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-xs text-gray-500 px-5 py-3 bg-gray-50 border-t border-gray-200">
+              <p className="text-xs text-navy-950/60 px-5 py-3 bg-ice border-t border-navy-950/10">
                 Court schedules and staffing change. Confirm your date with the Mayor&apos;s Court Clerk at (740) 967-5961 before relying on this listing.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               What Johnstown Mayor&apos;s Court Can — and Cannot — Decide
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>R.C. 1905.01</strong> authorizes a mayor&apos;s court in an Ohio municipality with a population over 200 that does not have its own municipal court. Its jurisdiction reaches violations of the municipality&apos;s ordinances, parking and standing violations, and moving traffic violations of state law committed on streets and state highways within the corporate limits. In practice, Johnstown Mayor&apos;s Court handles speeding and assured-clear-distance citations, traffic control device violations, driving under suspension and no-operator&apos;s-license charges, open container and other minor misdemeanor citations, local code violations, and qualifying first-offense OVI charges.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               What it cannot do matters just as much. A mayor&apos;s court is <em>not a court of record</em>. It cannot hear felony charges, it cannot empanel a jury, and it cannot retain a case that falls outside the statutory grant. Under <strong>R.C. 1905.032</strong>, the mayor must transfer a case that exceeds the court&apos;s jurisdiction and may transfer any case to municipal court, county court, or common pleas at any time before final disposition. Every transfer out of Johnstown lands in the same place: <strong>Licking County Municipal Court</strong>, 40 W. Main Street, 3rd Floor, Newark, OH 43055.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               OVI in Johnstown Mayor&apos;s Court and the Ten-Year Look-Back
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An OVI charge can be heard in Johnstown Mayor&apos;s Court, but only in a clean first-offense posture. <strong>R.C. 1905.01</strong> permits the mayor&apos;s court to hear a charge under <strong>R.C. 4511.19</strong> only where the defendant has not, within ten years of the date of the offense charged, been convicted of or pleaded guilty to a prior OVI, an equivalent municipal ordinance, a substantially similar out-of-state or federal offense, or a reduced charge that arose out of a dismissed OVI. If a qualifying prior falls inside that window, the statute requires the case to be transferred immediately. Checking that look-back correctly is the first move in any Johnstown OVI case, because it determines the venue, the prosecutor, and the realistic sentencing range.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The penalties do not soften because the case stays local. Under <strong>House Bill 37</strong>, effective April 9, 2025, a first OVI conviction carries a mandatory minimum of 3 days in jail or a 3-day driver intervention program, fines of <strong>$565–$1,075</strong>, a class five license suspension of 1 to 3 years, and 6 points. A high-tier first offense — a breath test of .17 or higher, or a refusal with a prior refusal — carries 6 mandatory days. HB 37 did eliminate the former 15-day hard suspension for non-refusal first offenses where an ignition interlock device is installed, which means{' '}
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-[#b87333] underline hover:opacity-80">limited driving privileges</Link>{' '}
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link>{' '}
               can be sought earlier than under prior law. See our{' '}
-              <Link href="/ovi-dui-defense/first-ovi" className="text-[#b87333] underline hover:opacity-80">first OVI</Link> and{' '}
-              <Link href="/ovi-dui-defense/high-tier-ovi" className="text-[#b87333] underline hover:opacity-80">high-tier OVI</Link> pages for the full breakdown.
+              <Link href="/ovi-dui-defense/first-ovi" className="text-sky-deep underline hover:opacity-80">first OVI</Link> and{' '}
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="text-sky-deep underline hover:opacity-80">high-tier OVI</Link> pages for the full breakdown.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One deadline sits outside the mayor&apos;s court entirely. An <strong>Administrative License Suspension</strong> under <strong>R.C. 4511.191</strong> takes effect at arrest when a driver tests over the limit or refuses testing, and it runs on its own clock — the appeal is due within <strong>30 days</strong> and is filed with the court having jurisdiction over the underlying charge, which for a Johnstown arrest means Licking County Municipal Court in Newark. Because Johnstown Mayor&apos;s Court convenes only twice a month, simply waiting for your first court date can burn most of that window.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Traffic Enforcement on U.S. 62, S.R. 37, and the Silicon Heartland Corridor
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               U.S. 62 and S.R. 37 cross in the middle of downtown Johnstown, funneling traffic between Columbus, Newark, Mount Vernon, and the New Albany corridor through a village-scale grid with abrupt speed-limit transitions at the corporate limits. Add construction convoys and shift traffic bound for the Intel <em>Ohio One</em> site in Jersey Township and the surrounding business park, and the result is sustained enforcement on the routes most Johnstown defendants are cited on. Speed, assured clear distance, failure to yield, and following-too-close citations dominate the docket.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Points are the quiet consequence. Under <strong>R.C. 4510.036</strong>, accumulating 12 points within two years triggers a mandatory license suspension, and each conviction reports to the BMV and to your insurer. For CDL holders the exposure is worse — a conviction that a private motorist absorbs can end a commercial driving career. Our attorney works to keep the disposition off your record where possible: dismissal, amendment to a non-moving or zero-point violation, or a negotiated resolution that protects your license. See our{' '}
-              <Link href="/criminal-defense/speeding-tickets" className="text-[#b87333] underline hover:opacity-80">speeding ticket</Link>,{' '}
-              <Link href="/criminal-defense/driving-under-suspension" className="text-[#b87333] underline hover:opacity-80">driving under suspension</Link>, and{' '}
-              <Link href="/ovi-dui-defense/commercial-dui-cdl" className="text-[#b87333] underline hover:opacity-80">CDL OVI</Link> pages.
+              <Link href="/criminal-defense/speeding-tickets" className="text-sky-deep underline hover:opacity-80">speeding ticket</Link>,{' '}
+              <Link href="/criminal-defense/driving-under-suspension" className="text-sky-deep underline hover:opacity-80">driving under suspension</Link>, and{' '}
+              <Link href="/ovi-dui-defense/commercial-dui-cdl" className="text-sky-deep underline hover:opacity-80">CDL OVI</Link> pages.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Appealing a Johnstown Mayor&apos;s Court Decision — Ten Days, Tried From Scratch
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio gives mayor&apos;s court defendants an unusually strong second chance, and an unusually short deadline to claim it. Under <strong>R.C. 1905.22</strong>, an appeal from a mayor&apos;s court is taken to the municipal or county court with jurisdiction over the municipality — Licking County Municipal Court, for Johnstown. Under <strong>R.C. 1905.23</strong>, the notice of appeal must be filed with the mayor&apos;s court within <strong>ten days</strong> of judgment. And under <strong>R.C. 1905.25</strong>, that appeal proceeds as a <strong>trial de novo</strong>: the case is retried in Newark from the beginning, with no weight given to the mayor&apos;s court&apos;s finding.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               That combination is a real strategic tool. A defendant who appeared unrepresented, pleaded on the spot, and only afterward understood the license or employment consequences may still have a path — but only for ten days. If you were convicted or entered a plea at a recent Johnstown Mayor&apos;s Court session, contact our office immediately rather than waiting for the fine notice to arrive.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Your Record After Johnstown Mayor&apos;s Court
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A conviction entered in Johnstown Mayor&apos;s Court carries the same legal weight as one entered in any other Ohio court. It reports to the BMV, it appears on background checks, and an OVI conviction from a mayor&apos;s court counts as a prior for Ohio&apos;s ten-year look-back. Many eligible misdemeanor convictions can later be sealed or expunged under <strong>R.C. 2953.32</strong> once the applicable waiting period runs, though OVI convictions are statutorily excluded from sealing. We evaluate those long-term consequences before advising on any plea — see our{' '}
-              <Link href="/criminal-defense/expungement-record-sealing" className="text-[#b87333] underline hover:opacity-80">expungement and record sealing</Link> page.
+              <Link href="/criminal-defense/expungement-record-sealing" className="text-sky-deep underline hover:opacity-80">expungement and record sealing</Link> page.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Jwayyed Law LLC defends OVI, traffic, and misdemeanor cases in Johnstown Mayor&apos;s Court and on appeal in Licking County Municipal Court. Call{' '}
-              <a href="tel:+16142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:+16142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>. For broader background, see our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>. For broader background, see our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice areas.
             </p>
           </div>
         </div>

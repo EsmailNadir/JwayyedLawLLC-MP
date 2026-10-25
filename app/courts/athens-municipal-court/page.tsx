@@ -70,26 +70,26 @@ export default function AthensMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Athens Municipal Court: Jurisdiction, Charges, and Defense
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Athens Municipal Court, located at 8 E Washington St in Athens, Ohio, handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, traffic violations, and civil disputes for Athens County. Jwayyed Law LLC represents individuals charged in Athens Municipal Court — including Ohio University students, faculty, and visitors — in OVI defense, misdemeanor criminal defense, and traffic matters. If you are facing charges in Athens Municipal Court, prompt action is critical: the 30-day window to appeal an Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> begins running immediately upon arrest.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The presence of Ohio University makes Athens Municipal Court one of the more active municipal courts in southeastern Ohio for alcohol-related offenses. OVI charges — whether based on a breath test result above the 0.08% legal limit or an officer&apos;s observation of impairment — require careful evidentiary review. Our attorney examines the basis for the traffic stop, the administration of standardized field sobriety tests (SFSTs), and whether the breath or blood testing instrument was properly calibrated and maintained. Under HB 37, effective April 9, 2025, a first non-refusal OVI no longer carries a mandatory 15-day hard suspension if the defendant installs an ignition interlock device — a development that can meaningfully improve outcomes for clients.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Criminal Defense in Athens County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Athens Municipal Court handles a full range of misdemeanor offenses including assault (ORC 2903.13), theft (ORC 2913.02), drug possession misdemeanors, disorderly conduct, criminal trespass, and domestic violence. A misdemeanor of the first degree carries up to 180 days in jail and a $1,000 fine under <strong>ORC 2929.21</strong>. Our attorney evaluates every available defense — constitutional challenges to the stop or search, factual challenges to the state&apos;s evidence, and mitigating factors for sentencing — to pursue the best possible result. Many misdemeanor charges in Athens Municipal Court can be resolved through diversion programs, reduced charges, or dismissal.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing charges in Athens Municipal Court, contact Jwayyed Law LLC at (614) 285-5482 or visit{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link>. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice areas.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link>. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice areas.
             </p>
           </div>
         </div>

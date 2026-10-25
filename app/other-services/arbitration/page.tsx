@@ -82,71 +82,71 @@ export default function ArbitrationPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Arbitration in Ohio: What You Need to Know
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Arbitration is a form of alternative dispute resolution in which parties submit their dispute to one or more neutral arbitrators who issue a binding or non-binding decision called an award. In Ohio, arbitration is governed primarily by ORC Chapter 2711 — the Ohio Arbitration Act — which establishes when arbitration agreements are enforceable, how arbitrators are appointed, and the narrow grounds on which a court may vacate or modify an award. Federal arbitration law — the Federal Arbitration Act, 9 U.S.C. § 1 et seq. — applies to contracts involving interstate commerce and generally preempts conflicting state rules.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Arbitration has become ubiquitous in American commercial and consumer life. Arbitration clauses appear in employment contracts, consumer product terms, credit card agreements, franchise agreements, residential leases, and virtually every other type of commercial contract. Most people sign dozens of arbitration agreements each year without realizing it. When a dispute arises, the existence of an arbitration clause often means the parties must resolve their conflict outside of court — whether they want to or not — under rules set by organizations like the American Arbitration Association (AAA) or JAMS.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              At Jwayyed Law LLC, we help Ohio clients understand their rights under arbitration agreements, represent them in arbitration hearings before AAA, JAMS, and private arbitrators, and handle court proceedings to confirm or challenge arbitration awards. Whether you are a business defending a claim brought in arbitration or an individual forced to arbitrate a dispute with an employer or corporation, experienced legal representation is essential. Contact us at <a href="tel:6142855482" className="text-[#b87333] hover:underline">(614) 285-5482</a> to discuss your situation.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              At Jwayyed Law LLC, we help Ohio clients understand their rights under arbitration agreements, represent them in arbitration hearings before AAA, JAMS, and private arbitrators, and handle court proceedings to confirm or challenge arbitration awards. Whether you are a business defending a claim brought in arbitration or an individual forced to arbitrate a dispute with an employer or corporation, experienced legal representation is essential. Contact us at <a href="tel:6142855482" className="text-sky-deep hover:underline">(614) 285-5482</a> to discuss your situation.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Arbitration vs. Mediation vs. Litigation
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding the differences among dispute resolution options matters because each has distinct costs, benefits, and strategic implications. Litigation in Ohio Common Pleas Court or federal court provides the most procedural protection — formal discovery, rules of evidence, the right to a jury trial, and a full appellate process. Litigation is also the most public and often the most time-consuming and expensive path. Mediation is a facilitated negotiation process in which a neutral mediator helps parties reach a voluntary settlement; the mediator has no power to impose a decision, and the process is entirely confidential. Arbitration sits between these two: it produces a binding decision like litigation but uses private proceedings like mediation, with narrower discovery and extremely limited appeal rights.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Binding arbitration produces a final award that Ohio courts will confirm and enforce as a judgment under ORC 2711.09. Non-binding arbitration — used in some insurance and consumer contexts — allows either party to reject the award and proceed to trial if dissatisfied. Most commercial arbitration clauses mandate binding arbitration. The finality of binding arbitration is both its greatest strength and its most significant risk: disputes resolve quickly and conclusively, but errors of fact or law by the arbitrator cannot be corrected on appeal absent extraordinary circumstances.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Enforceability of Arbitration Agreements Under Ohio and Federal Law
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under ORC 2711.01, a written agreement to arbitrate a controversy is valid, irrevocable, and enforceable except on grounds that exist at law or in equity for the revocation of any contract. Courts apply ordinary contract principles — offer, acceptance, consideration, and mutual assent — to determine whether an arbitration clause is binding. Fraud, duress, lack of consideration, and unconscionability are the most common defenses raised against arbitration clauses in Ohio courts. The unconscionability defense examines both procedural unconscionability (was the clause buried in fine print with no opportunity to negotiate?) and substantive unconscionability (does the clause impose such one-sided terms as to shock the conscience?).
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One particularly consequential provision found in many arbitration clauses is the class action waiver, which requires each party to arbitrate only individual claims and bars class or collective proceedings. The U.S. Supreme Court has broadly upheld class action waivers in arbitration clauses under federal law, meaning that consumers and employees bound by such clauses generally cannot band together to challenge widespread corporate conduct. This has significant practical implications for disputes involving small individual harms that would only be economically viable to litigate as class actions. When we review contracts for Ohio clients, identifying the scope of arbitration clauses and class action waivers is a critical part of the analysis.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Arbitration Process and Representing Your Interests
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Arbitration begins when one party files a demand with the applicable arbitration organization — typically AAA or JAMS — or directly with the other party when institutional rules do not apply. The demand sets out the claims, the amount sought, and the basis for arbitration. The respondent answers and may assert counterclaims. Both parties then participate in arbitrator selection through a list-and-strike process managed by the institution. Once an arbitrator is appointed, the parties agree on a scheduling order covering exchange of documents, any limited depositions, pre-hearing briefs, and the hearing date itself.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The arbitration hearing resembles a streamlined trial. Both sides present opening statements, examine and cross-examine witnesses, introduce documentary evidence, and make closing arguments. Formal rules of evidence do not apply in most arbitration proceedings — arbitrators have discretion to consider any relevant evidence, which can cut both ways. After the hearing, the arbitrator issues a written award, typically within thirty days under AAA rules. Once issued, the prevailing party may file a motion in Ohio court to confirm the award under ORC 2711.09, converting it into a court judgment enforceable through the full range of collection remedies. If you believe grounds exist to challenge the award, ORC 2711.10 provides a narrow window — generally ninety days from service of the award — to petition for vacatur.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/mediation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/mediation" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Mediation in Ohio
               </Link>
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Breach of Contract
               </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Business Litigation
               </Link>
             </div>

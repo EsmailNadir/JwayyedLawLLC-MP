@@ -82,57 +82,57 @@ export default function WillContestsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Will Contests in Ohio: Challenging and Defending a Will\'s Validity
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A will contest is a legal challenge to the validity of a deceased person\'s will, brought in the probate court of the county where the will was admitted — most commonly the Franklin County Probate Court for Columbus residents. Will contests are governed by ORC 2107.71 through 2107.76 and must be initiated within a strict three-month deadline after the will is admitted to probate. They are among the most complex and emotionally charged matters in Ohio estate law: the parties are almost always family members, the stakes involve a loved one\'s final wishes, and the evidence — medical records, witness testimony, financial transactions — is often incomplete, disputed, and deeply personal.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Will contests arise when heirs or other interested parties believe that the will being probated does not reflect the decedent\'s true wishes — because the decedent lacked the mental capacity to make a will, because a caregiver, family member, or romantic partner manipulated the decedent into changing their will, because someone deceived the decedent about the document they were signing, or because the will was not executed with the formalities required by Ohio law. These are serious legal claims that require substantial evidence, strategic litigation planning, and a thorough understanding of Ohio probate procedure.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC handles will contests from both sides of the dispute: representing contestants who believe a will is invalid and seeking to have it set aside, and representing executors, beneficiaries, and estates defending the validity of a properly executed will against unfounded challenges. Our firm understands that behind every will contest is a family in grief, and we approach these matters with both the legal rigor they demand and the sensitivity they deserve.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Testamentary Capacity and Undue Influence: The Two Most Common Grounds
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Lack of testamentary capacity</strong> is the most frequently litigated will contest ground in Ohio. Ohio law requires that a testator be "of sound mind and memory" at the time of executing a will (ORC 2107.02). Courts have interpreted this to mean that the testator must: (1) understand the nature of making a will; (2) know the nature and extent of their property; (3) know the natural objects of their bounty (i.e., who their family members are); and (4) understand the relationship of these elements and form an orderly plan for distributing property. A diagnosis of Alzheimer\'s disease, dementia, or another cognitive condition does not automatically invalidate a will — capacity is evaluated at the specific moment of execution, and a person can have "lucid intervals" of sufficient capacity even in the later stages of dementia. Medical records from around the time of signing, the drafting attorney\'s notes, and testimony from witnesses who observed the testator are critical evidence.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Undue influence</strong> is the second major ground and is often harder to prove because it leaves little direct evidence. Undue influence occurs when the free will of a vulnerable testator is overborne by someone with the opportunity and motive to exploit the testator\'s weakness. Classic scenarios include an adult child who moves in with an elderly parent after health declines, controls all communications and financial accounts, drives the parent to attorney appointments, and is present during the signing — resulting in a will that cuts out all other siblings. Ohio courts examine the totality of the circumstances: the testator\'s physical and mental condition, isolation from other family members, the beneficiary\'s role in initiating and attending the estate planning, the content of the will itself (does it make sense given the testator\'s expressed wishes over the years?), and financial transactions near the time of execution.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Three-Month Deadline and Intestate Succession
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The three-month deadline under ORC 2107.76 is absolute. The clock starts when the probate court enters the order admitting the will — not when you receive notice, not when the estate attorney calls you, and not when you first suspect a problem. Probate courts do not typically extend this deadline for any reason short of fraud in obtaining the admission order itself. If you miss the three-month window, you lose the ability to contest the will regardless of how strong your evidence is. This urgency makes it critical to consult a will contest attorney immediately upon learning that a will you believe is invalid has been admitted to probate.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               If a will contest succeeds and the will is invalidated, the estate passes under the most recent prior valid will — or, if none exists, under Ohio\'s intestate succession statute at ORC 2105.06. Ohio intestacy distributes property as follows: first, to a surviving spouse (with adjustments if there are also children from a prior relationship); then to descendants (children, grandchildren) in equal shares; then to parents; then to siblings and their descendants; and so forth. Understanding who would benefit from invalidating the will — and how — is an essential part of analyzing whether a will contest makes sense. Our firm can map the intestate succession analysis for your family\'s specific circumstances and help you understand the likely outcome of a successful challenge.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Probate Administration</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Estate administration through Ohio probate court</span>
+              <Link href="/other-services/probate" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Probate Administration</span>
+                <span className="text-sm text-navy-950/70">Estate administration through Ohio probate court</span>
               </Link>
-              <Link href="/other-services/estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Estate Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Executor misconduct, trust disputes, and beneficiary claims</span>
+              <Link href="/other-services/estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Estate Disputes</span>
+                <span className="text-sm text-navy-950/70">Executor misconduct, trust disputes, and beneficiary claims</span>
               </Link>
-              <Link href="/other-services/mediation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Mediation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Resolve estate disputes without a full trial</span>
+              <Link href="/other-services/mediation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Mediation</span>
+                <span className="text-sm text-navy-950/70">Resolve estate disputes without a full trial</span>
               </Link>
-              <Link href="/other-services/guardianships" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Guardianships</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protecting vulnerable adults and minors</span>
+              <Link href="/other-services/guardianships" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Guardianships</span>
+                <span className="text-sm text-navy-950/70">Protecting vulnerable adults and minors</span>
               </Link>
             </div>
           </div>

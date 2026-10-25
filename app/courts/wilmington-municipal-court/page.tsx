@@ -70,26 +70,26 @@ export default function WilmingtonMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Wilmington Municipal Court: OVI Defense and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Wilmington Municipal Court (officially the Clinton County Municipal Court), located at 69 N South Street in Wilmington, Ohio, serves all of Clinton County — a rural southwestern Ohio county along US 68 between Columbus and Cincinnati. The court handles misdemeanor criminal cases, OVI/DUI charges under <strong>ORC 4511.19</strong>, traffic violations, and civil matters for the entirety of Clinton County. Jwayyed Law LLC represents defendants in Wilmington Municipal Court in OVI defense, misdemeanor criminal matters, and traffic cases. If you were arrested for OVI, the 30-day ALS appeal window under <strong>ORC 4511.191</strong> runs from the date of arrest — contact our office immediately.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI arrests in Clinton County frequently arise from US 68 and SR 73 enforcement. Clinton County&apos;s rural roads present unique defense considerations — accidents involving animals, adverse road conditions, or agricultural equipment can be misconstrued as impairment-related events. Our attorney investigates the full circumstances of each stop and arrest, challenging field sobriety tests, breath test calibration, and the legal basis for the stop. Under <strong>HB 37</strong> (effective April 9, 2025), fines for a first OVI are $565–$1,075, and the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when an ignition interlock device is installed — critical for rural residents who depend on their vehicles.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Misdemeanor Defense in Clinton County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The court also handles misdemeanor assault, domestic violence (<strong>ORC 2919.25</strong>), theft, drug possession, and disorderly conduct. Under <strong>ORC 2929.21</strong>, an M1 conviction carries up to 180 days in jail and a $1,000 fine. In a smaller rural county, misdemeanor convictions can have significant reputational and professional consequences. Our attorney pursues suppression motions, seeks dismissal or reduced charges, and represents clients at trial when necessary to achieve the best possible outcome in Wilmington Municipal Court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Wilmington Municipal Court. See our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> pages for more information.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Wilmington Municipal Court. See our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> pages for more information.
             </p>
           </div>
         </div>

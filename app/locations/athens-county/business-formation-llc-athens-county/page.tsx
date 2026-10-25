@@ -76,25 +76,25 @@ export default function BusinessFormationLLCAthensCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Athens County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Athens County is home to Ohio University — one of Ohio&apos;s flagship institutions — and a growing entrepreneurial community in the heart of Appalachian Ohio. Whether you are a student entrepreneur launching a startup, a local professional forming a service company, or an established business owner looking to restructure or expand, Jwayyed Law LLC provides experienced business formation and LLC counsel for clients in Athens, Nelsonville, Albany, The Plains, and surrounding communities. We help you build on a solid legal foundation from the start.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, Ohio Revised Code Chapter 1706, which became effective in February 2022. Chapter 1706 replaced the former Chapter 1705 and introduced significant modernizations — including authority for series LLCs (allowing segregation of assets and liability within a single entity), more flexible management structures, clearer rules on what can be waived or modified in operating agreements, and enhanced options for corporate-style governance within an LLC. An attorney familiar with current Ohio LLC law ensures your entity takes full advantage of these features.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most common and costly mistakes new business owners make is failing to draft a thorough operating agreement. Without a written operating agreement, the default rules of ORC Chapter 1706 govern your LLC — and those default rules may not align with how you and your partners want the business to operate. A well-crafted operating agreement addresses profit and loss allocations, management authority, member voting rights, buy-sell provisions, and what happens when a member departs, dies, or becomes incapacitated. Our attorney drafts operating agreements that are specific to your business, not generic fill-in-the-blank forms.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Businesses in Athens County may also benefit from consulting an attorney about contracts with vendors or customers, intellectual property protection for technology or creative work developed in connection with Ohio University, and compliance with Ohio tax registration and licensing requirements. For businesses considering Appalachian Ohio&apos;s economic development incentive programs, we can help you understand the legal structure requirements for eligibility and ensure your entity is properly organized to qualify.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio LLCs are formed through the Ohio Secretary of State and governed by state law, so our attorney can assist clients in Athens County and throughout Ohio regardless of location. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. You can also learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. You can also learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
             </p>
           </div>
         </div>

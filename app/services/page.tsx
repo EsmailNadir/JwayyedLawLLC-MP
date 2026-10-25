@@ -39,12 +39,12 @@ function ServicesSection({
 }) {
 
   return (
-    <section className="py-10 sm:py-12 border-b border-gray-100 last:border-b-0">
+    <section className="py-10 sm:py-12 border-b border-navy-950/10 last:border-b-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+        <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-3">
           {heading}
         </h2>
-        <p className="font-['Inter',_'Arial',_sans-serif] text-sm sm:text-base text-gray-700 mb-5">
+        <p className="text-sm sm:text-base text-navy-950/80 mb-5">
           {intro}
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -52,13 +52,13 @@ function ServicesSection({
             <Link
               key={service.href}
               href={service.href}
-              className="block p-4 bg-white border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group"
+              className="block p-4 bg-white border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
             >
-              <h3 className="font-['Inter',_'Arial',_sans-serif] font-semibold text-gray-900 mb-1">
+              <h3 className="font-semibold text-navy-950 mb-1">
                 {service.title}
               </h3>
               {service.description && (
-                <p className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">
+                <p className="text-sm text-navy-950/70">
                   {service.description}
                 </p>
               )}

@@ -76,31 +76,31 @@ export default function ButlerOVIDefensePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               OVI/DUI Defense in Butler County, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI charges in Butler County are heard in one of four courts depending on where the arrest occurred: Butler County Area Court I in Oxford, Area Court II in Hamilton, Area Court III in West Chester, or Hamilton Municipal Court at 700 Hanover Street. Each court has its own procedures, judges, and local practices. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation in all Butler County courts under Ohio Revised Code 4511.19 and the updated penalty framework established by House Bill 37, effective April 9, 2025. Our attorney understands the local court landscape and uses that knowledge to develop defense strategies tailored to each client&apos;s case and court.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The I-75 corridor running through Butler County is a high-enforcement zone for OVI. Ohio State Highway Patrol regularly conducts traffic enforcement along I-75 and SR 129 (Princeton Pike), and checkpoints are not uncommon. Oxford — home to Miami University — sees elevated OVI arrest rates during the academic year, with arrests often occurring near campus on or around High Street and College Avenue. West Chester Township Police actively patrol the SR 129 commercial corridor. No matter which agency made the arrest or which court has jurisdiction, an OVI charge in Butler County is a serious misdemeanor that can affect your license, your employment, your insurance rates, and your criminal record permanently.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               OVI Penalties in Butler County Under HB 37
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under Ohio Revised Code 4511.19 as updated by HB 37 (effective April 9, 2025), first-offense OVI penalties in Butler County include: mandatory minimum 3 days in jail (or driver intervention program), fines of $565 to $1,075, license suspension of 1 to 3 years, and a $315 reinstatement fee. High-tier OVI — where BAC tested at 0.17% or higher — carries enhanced penalties of 6 days minimum jail or 3 days jail plus 3 days in a driver intervention program. HB 37 also expanded the court&apos;s authority to waive the 15-day hard suspension if the defendant agrees to an ignition interlock device (IID), offering a pathway to maintain limited driving ability. Second and subsequent OVI offenses carry dramatically escalating penalties including longer jail terms and mandatory IID requirements.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Administrative License Suspension and the 30-Day Appeal Window
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An OVI arrest in Butler County triggers two parallel proceedings: the criminal OVI case in court and an Administrative License Suspension (ALS) under ORC 4511.191. The ALS is imposed by the BMV upon the arresting officer&apos;s report and takes effect immediately. You have only 30 days from the date of arrest to appeal the ALS in the appropriate court of jurisdiction. Our firm treats this deadline as urgent — we file ALS appeals promptly, request stays of suspension, and challenge the suspension based on procedural deficiencies, improper implied consent advisements, or issues with the testing procedure. Protecting your driving privileges from day one is a critical part of our OVI defense representation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               OVI convictions are permanently on your record — Ohio law expressly excludes OVI from expungement eligibility under ORC 2953.36. This makes fighting the charge aggressively from the beginning the only way to protect your record. Our attorney reviews every aspect of your case: the traffic stop, field sobriety test administration, chemical testing procedures, implied consent advisements, and chain of custody for any blood draw. Contact us immediately at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense practice</Link> throughout Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense practice</Link> throughout Ohio.
             </p>
           </div>
         </div>

@@ -82,125 +82,125 @@ export default function DomesticViolencePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding Domestic Violence Charges in Ohio
             </h2>
             
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Domestic violence charges throughout Ohio carry serious criminal penalties and long-term consequences that extend far beyond potential jail time. At Jwayyed Law LLC, we provide experienced defense representation for individuals facing domestic violence charges under Ohio Revised Code 2919.25. Our attorney understands Ohio domestic violence laws, protection order procedures, and the severe impact these charges can have on your life, career, and relationships.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Domestic violence charges in Ohio involve allegations of physical harm, attempted harm, or threats against family or household members. These charges can arise from domestic disputes, misunderstandings, false allegations, or situations requiring self-defense. Under Ohio law, domestic violence is prosecuted aggressively, and convictions carry enhanced penalties, firearm restrictions, and permanent criminal records that affect employment, housing, and custody matters.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's domestic violence laws are strict, and prosecutors aggressively pursue these charges due to the serious nature of domestic violence. Understanding the specific elements prosecutors must prove (family or household member relationship, physical harm or threat, intent), available defenses, and the court process is essential for building an effective defense. Early intervention by an experienced domestic violence defense attorney can significantly impact the outcome, potentially resulting in reduced charges, dismissed cases, or favorable plea agreements that minimize consequences.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The legal process for domestic violence charges begins with arrest and initial court appearances, often involving immediate protection orders that can remove you from your home, restrict contact with family members, and affect custody. These orders are issued quickly and can have immediate devastating effects. An attorney can challenge protection orders, address violations, and work to modify or terminate orders when appropriate while simultaneously defending the criminal charges.
             </p>
 
             <LocationsWeServe title="Criminal Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Domestic Violence Laws in Ohio
             </h3>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">First-Degree Misdemeanor Domestic Violence (ORC 2919.25)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First-Degree Misdemeanor Domestic Violence (ORC 2919.25)</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 A first offense of knowingly causing or attempting to cause physical harm to a family or household member is charged as a first-degree misdemeanor. This is punishable by up to 180 days in jail, fines up to $1,000, and mandatory counseling or treatment programs. A conviction results in a permanent criminal record and federal firearm restrictions.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Felony Domestic Violence (ORC 2919.25)</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Felony Domestic Violence (ORC 2919.25)</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 If you have a prior domestic violence conviction or if the offense causes serious physical harm, charges are elevated to a fourth-degree felony. This is punishable by 6-18 months imprisonment, fines up to $5,000, and more severe long-term consequences. Prior convictions significantly enhance penalties under Ohio's domestic violence laws.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Protection Orders in Ohio</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Protection Orders in Ohio</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Domestic violence charges often involve temporary or permanent protection orders issued under Ohio Revised Code 3113.31. These orders can restrict contact, remove you from your home, affect custody, and limit firearms. Violating a protection order is a separate criminal offense with additional penalties.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               The Legal Process for Domestic Violence Charges
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Understanding the criminal court process helps you prepare for what lies ahead:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Arrest and Protection Orders</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Arrest and Protection Orders</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 After arrest, you will be arraigned where charges are formally read, bail is set, and you enter a plea. Domestic violence charges often result in immediate temporary protection orders that can remove you from your home, restrict contact with family members, affect custody, and limit firearms. These orders are issued quickly and can have immediate devastating effects. An attorney can challenge protection orders, address violations, and work to modify or terminate orders when appropriate.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Discovery and Investigation</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Discovery and Investigation</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 During discovery, prosecutors must provide all evidence including police reports, medical records, witness statements, 911 recordings, and documentation. An experienced attorney will thoroughly review this evidence, conduct independent investigation, interview witnesses, review medical records, examine 911 recordings, and identify weaknesses in the prosecution's case. This investigation may reveal evidence supporting defenses, false allegations, or insufficient evidence.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Plea Negotiations and Diversion Programs</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Plea Negotiations and Diversion Programs</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Most domestic violence cases are resolved through plea negotiations rather than trial. An experienced attorney can negotiate with prosecutors to reduce charges (felony to misdemeanor), negotiate favorable plea agreements that minimize penalties, explore eligibility for diversion programs for first-time offenders, or arrange for charges to be dismissed upon completion of conditions including counseling. First-time offenders may qualify for diversion programs that avoid conviction entirely.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Penalties and Consequences of Domestic Violence Convictions
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under Ohio Revised Code Chapter 2929, domestic violence convictions carry severe penalties that extend far beyond jail time:
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Criminal Penalties</h4>
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Criminal Penalties</h4>
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li><strong>First-Degree Misdemeanor:</strong> Up to 180 days in jail, fines up to $1,000, mandatory counseling or treatment programs</li>
                 <li><strong>Fourth-Degree Felony:</strong> 6-18 months imprisonment, fines up to $5,000, mandatory post-release control</li>
                 <li><strong>Prior Convictions:</strong> Significantly enhance penalties, often elevating charges to felonies</li>
               </ul>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Firearm Restrictions</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Firearm Restrictions</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Federal law under 18 U.S.C. 922(g)(9) prohibits firearm possession for those convicted of domestic violence, even for misdemeanor convictions. This is a permanent restriction that cannot be restored. Firearm restrictions apply immediately upon conviction and affect hunting, sport shooting, and self-defense rights.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Protection Orders</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-6">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Protection Orders</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Domestic violence charges often involve temporary or permanent protection orders that can restrict contact, remove you from your home, affect custody, and limit firearms. Violating a protection order is a separate criminal offense with additional penalties. Protection orders can last for years and significantly impact your life and relationships.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Collateral Consequences</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Collateral Consequences</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Beyond criminal penalties, domestic violence convictions create lasting consequences including employment barriers (many employers refuse to hire individuals with domestic violence convictions), professional license restrictions, housing difficulties, permanent loss of gun rights under federal law, immigration consequences for non-citizens, and most significantly, impact on family court custody determinations. Domestic violence convictions are heavily considered in custody cases and can result in loss of custody or restricted visitation.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How a Domestic Violence Defense Attorney Can Help
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An experienced domestic violence defense attorney provides comprehensive representation throughout every stage of your case:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
               <li><strong>Immediate Protection of Rights:</strong> Ensure your constitutional rights are protected from the moment of arrest, including right to remain silent, right to counsel, and protection against illegal searches</li>
               <li><strong>Protection Order Defense:</strong> Challenge protection orders immediately, address violations, work to modify or terminate orders when appropriate, and protect your rights to contact family members and return to your home</li>
               <li><strong>Comprehensive Case Investigation:</strong> Thoroughly review police reports, medical records, witness statements, 911 recordings, and all evidence to identify weaknesses, false allegations, or evidence supporting your defense</li>
@@ -211,68 +211,68 @@ export default function DomesticViolencePage() {
               <li><strong>Record Sealing:</strong> Help eligible clients seal misdemeanor domestic violence records after case resolution and required waiting periods under Ohio Revised Code Chapter 2953</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Common Defenses to Domestic Violence Charges
             </h3>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-4">Self-Defense</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Self-Defense</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Under Ohio Revised Code 2901.05, you may use reasonable force to defend yourself if you reasonably believe you are in imminent danger of physical harm. In domestic situations, self-defense requires demonstrating that you were not the initial aggressor and that your actions were necessary and proportional to the threat faced.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">False Allegations</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">False Allegations</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Unfortunately, domestic violence allegations are sometimes made falsely for various reasons including custody disputes, revenge, financial gain, or manipulation. An attorney can investigate, gather evidence of false statements, identify inconsistencies in allegations, and expose false allegations to protect your rights.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Lack of Intent</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Lack of Intent</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Domestic violence requires knowingly causing harm. If an incident was accidental, unintentional, or you lacked knowledge that your actions would cause harm, this defense may apply. Evidence of accident, mistake, or lack of intent can result in reduced or dismissed charges.
               </p>
 
-              <h4 className="font-semibold text-gray-900 mt-6 mb-4">Insufficient Evidence</h4>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+              <h4 className="font-semibold text-navy-950 mt-6 mb-4">Insufficient Evidence</h4>
+              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 Prosecutors must prove domestic violence beyond a reasonable doubt. If evidence is weak, inconsistent, or insufficient, charges may be dismissed or reduced. An attorney can challenge evidence quality, witness credibility, and prosecution arguments to protect your rights.
               </p>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Why Choose Jwayyed Law LLC for Domestic Violence Defense
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm provides dedicated domestic violence defense representation throughout Ohio. We understand that domestic violence charges can arise from complex family situations, misunderstandings, false allegations, or legitimate self-defense. Our attorney works diligently to investigate cases, develop strong defenses, and achieve favorable outcomes while protecting your rights and reputation.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We handle all types of domestic violence cases, from first-time misdemeanor charges to serious felony offenses with prior convictions. Our firm also assists with protection order matters, including challenging orders, addressing violations, and working to modify or terminate orders when appropriate. We maintain open communication with clients, ensuring you understand the charges, potential consequences, and defense strategies throughout your case.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our approach combines thorough investigation, strategic defense development, and aggressive advocacy. We understand the local court systems, prosecutor policies, and judicial preferences throughout Ohio. This knowledge allows us to develop effective strategies tailored to your specific case and jurisdiction. We work closely with clients to understand their goals, explain legal options, and make informed decisions about defense strategies including whether to pursue diversion programs, negotiate pleas, or proceed to trial.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
-              If you are facing domestic violence charges anywhere in Ohio, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact Jwayyed Law LLC</Link> immediately. Learn more about our <Link href="/criminal-defense" className="text-[#b87333] underline hover:text-[#a06828]">criminal defense practice</Link> or read our guide on <Link href="/our-law-firm/blog/ohio-civil-protection-order-guide" className="text-[#b87333] underline hover:text-[#a06828]">Ohio civil protection orders</Link>.
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
+              If you are facing domestic violence charges anywhere in Ohio, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact Jwayyed Law LLC</Link> immediately. Learn more about our <Link href="/criminal-defense" className="text-sky-deep underline hover:text-navy-950">criminal defense practice</Link> or read our guide on <Link href="/our-law-firm/blog/ohio-civil-protection-order-guide" className="text-sky-deep underline hover:text-navy-950">Ohio civil protection orders</Link>.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Assault Charges</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Simple and aggravated assault defense in Ohio</span>
+              <Link href="/criminal-defense/assault-charges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Assault Charges</span>
+                <span className="text-sm text-navy-950/70">Simple and aggravated assault defense in Ohio</span>
               </Link>
-              <Link href="/civil/civil-protection-orders" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Civil Protection Orders</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">CPO defense and modification in Ohio courts</span>
+              <Link href="/civil/civil-protection-orders" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Civil Protection Orders</span>
+                <span className="text-sm text-navy-950/70">CPO defense and modification in Ohio courts</span>
               </Link>
-              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Expungement & Record Sealing</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Clear your criminal record under Ohio law</span>
+              <Link href="/criminal-defense/expungement-record-sealing" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Expungement & Record Sealing</span>
+                <span className="text-sm text-navy-950/70">Clear your criminal record under Ohio law</span>
               </Link>
-              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Criminal Trespass</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Trespass and unauthorized entry defense</span>
+              <Link href="/criminal-defense/criminal-trespass" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Criminal Trespass</span>
+                <span className="text-sm text-navy-950/70">Trespass and unauthorized entry defense</span>
               </Link>
             </div>
           </div>

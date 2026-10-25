@@ -80,54 +80,54 @@ export default function AssetProtectionTrustsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Ohio Legacy Trusts: Domestic Asset Protection Under ORC Chapter 5816
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio is one of a growing number of states that authorizes domestic asset protection trusts (DAPTs) — trusts in which the grantor can be a discretionary beneficiary of the very trust that protects assets from the grantor\'s creditors. Ohio\'s version is called the Ohio Legacy Trust (OLT), and it is governed by ORC Chapter 5816, the Ohio Legacy Trust Act. Before Ohio joined this group of states, residents who wanted this type of protection had to use offshore trusts or trusts in states like Nevada or Delaware, often at significant complexity and expense. The Ohio Legacy Trust Act, effective in 2013, brought that option home — allowing Ohioans to establish powerful creditor protection structures under familiar Ohio law, administered by Ohio trustees, with the full benefit of Ohio\'s spendthrift trust provisions under ORC Chapter 5805.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The core concept of an Ohio Legacy Trust is straightforward: you transfer assets into an irrevocable trust, name at least one qualified Ohio trustee to administer it, and include a spendthrift provision that prohibits your creditors from reaching the trust assets. Unlike a traditional irrevocable trust — where the grantor must give up all beneficial interest — an OLT allows you to remain a <em>discretionary</em> beneficiary. The trustee has sole discretion to make or withhold distributions to you; you cannot demand a distribution or direct the trustee. Because you lack the ability to compel distributions, creditors cannot step into your shoes to compel them either. After an 18-month seasoning period under ORC 5816.05, the trust assets are protected from claims that arose after the transfer date.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Legacy Trusts are most appropriate for individuals who have accumulated significant assets and want to protect them against future unforeseen liability — a professional (physician, attorney, contractor, business owner) exposed to malpractice or commercial litigation risk, a real estate investor with multiple properties, or an individual who wants to ensure that a catastrophic judgment or divorce settlement cannot wipe out a lifetime of savings. The planning must be done prospectively and in good faith. The trust cannot be used to shelter assets from existing or reasonably anticipated creditors, and transfers made with intent to hinder, delay, or defraud a creditor remain voidable under Ohio\'s fraudulent transfer law (ORC Chapter 1336).
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Statutory Requirements and the Qualified Affidavit
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               To qualify for protection under ORC Chapter 5816, an Ohio Legacy Trust must satisfy several mandatory requirements. The trust must be <strong>irrevocable</strong> — the grantor cannot retain the right to take assets back. It must contain a <strong>spendthrift provision</strong> that prevents both voluntary and involuntary assignment of the grantor\'s beneficial interest. At least one <strong>qualified trustee</strong> must be either an Ohio resident individual or a trust company authorized to conduct trust business in Ohio — and that trustee must maintain custody of assets, maintain trust records, and prepare accountings. The trust must be expressly governed by <strong>Ohio law</strong>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Before or simultaneously with each transfer into the trust, the grantor must execute a <strong>qualified affidavit</strong> under ORC 5816.05, swearing that: the transfer does not render the grantor insolvent or unable to pay debts as they come due; the grantor is not about to file for bankruptcy and has not filed within the preceding 5 years; no pending or threatened civil or criminal actions exist against the grantor (with certain exceptions); the transferred assets were not derived from any unlawful activity; and the grantor is not in default on any child support obligation. Failure to execute a proper qualified affidavit can void the statutory protections for that transfer. This is not a form document — it must be tailored to the grantor\'s specific circumstances and executed with the assistance of legal counsel.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Ohio Legacy Trust vs. Other Asset Protection Strategies
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio residents have several asset protection options, and an Ohio Legacy Trust is one piece of a broader strategy. Retirement accounts (IRAs and 401(k)s) enjoy strong federal and state creditor protection and should be maximized before considering a trust transfer. Ohio homestead exemption protects up to $145,425 in home equity from most creditor claims under ORC 2329.66. A properly structured LLC provides liability protection for business assets and separates personal assets from business risk. Life insurance cash value and annuities enjoy statutory protection under ORC 3911.10 and 3911.14. An Ohio Legacy Trust complements these tools by protecting the investment assets — brokerage accounts, real estate beyond the homestead, business sale proceeds — that do not fit into other protected categories. An experienced attorney can help you map your entire asset picture against these protections and design a coordinated strategy.
             </p>
 
             <LocationsWeServe title="Trusts" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Irrevocable Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Estate tax planning, Medicaid planning, and more</span>
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Trusts</span>
+                <span className="text-sm text-navy-950/70">Estate tax planning, Medicaid planning, and more</span>
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Revocable Living Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Probate avoidance and incapacity planning</span>
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Revocable Living Trusts</span>
+                <span className="text-sm text-navy-950/70">Probate avoidance and incapacity planning</span>
               </Link>
-              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Spendthrift Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protecting beneficiaries from their own creditors</span>
+              <Link href="/trusts/spendthrift-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Spendthrift Trusts</span>
+                <span className="text-sm text-navy-950/70">Protecting beneficiaries from their own creditors</span>
               </Link>
-              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Medicaid Asset Protection Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Long-term care planning with the five-year lookback</span>
+              <Link href="/trusts/medicaid-asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Medicaid Asset Protection Trusts</span>
+                <span className="text-sm text-navy-950/70">Long-term care planning with the five-year lookback</span>
               </Link>
             </div>
           </div>

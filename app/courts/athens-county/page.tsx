@@ -78,10 +78,10 @@ export default function AthensCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Athens County Legal Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Athens County sits in the heart of southeastern Ohio, a region known for its Appalachian character, rolling hills,
               and close-knit communities. The county seat is Athens, home to Ohio University — one of the largest universities
               in the state — which means Athens Municipal Court and Common Pleas Court regularly handle matters involving
@@ -91,9 +91,9 @@ export default function AthensCountyCourtsPage() {
               resident, a university student, or a small business owner in communities such as Albany, The Plains, Nelsonville,
               Coolville, or Glouster.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI charges under{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">
                 ORC 4511.19
               </Link>{' '}
               are among the most frequently prosecuted offenses in Athens County, particularly given the presence of Ohio
@@ -105,7 +105,7 @@ export default function AthensCountyCourtsPage() {
               suspended at the time of arrest if you refuse or fail a chemical test, and you have just 30 days to appeal that
               suspension in Athens Municipal Court. Acting quickly is essential.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Athens Municipal Court sees a wide range of misdemeanor cases each year, many involving Ohio
               University students and young adults. Common charges include disorderly conduct, criminal trespassing, petty
               theft, minor in possession of alcohol (MIP), drug paraphernalia possession, and domestic violence. Under ORC
@@ -115,7 +115,7 @@ export default function AthensCountyCourtsPage() {
               defenses, plea negotiations, and diversion opportunities that can spare clients the lasting consequences of a
               criminal conviction.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Athens County also presents opportunities for civil and business legal services. Personal injury matters —
               including car accidents on U.S. Route 33 and State Route 50, premises liability incidents, and similar claims
               — are governed by Ohio&rsquo;s two-year statute of limitations under ORC 2305.10. Missing this deadline
@@ -126,35 +126,35 @@ export default function AthensCountyCourtsPage() {
               which benefit from sound legal guidance at startup and throughout their operations.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Athens County Courts
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Athens Municipal Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">8 E. Washington St, Athens, OH 45701</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Athens Municipal Court</h4>
+                <p className="text-navy-950/80">8 E. Washington St, Athens, OH 45701</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Misdemeanors, OVI/DUI, traffic violations, civil claims under $15,000</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=8+E+Washington+St,+Athens,+OH+45701"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Athens County Common Pleas Court</h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif]">1 S. Court St, Athens, OH 45701</p>
-                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Athens County Common Pleas Court</h4>
+                <p className="text-navy-950/80">1 S. Court St, Athens, OH 45701</p>
+                <p className="text-sm text-navy-950/70 group-hover:text-navy-950 transition-colors mt-1">Felony cases, major civil disputes, domestic relations, probate</p>
                 <p className="text-sm mt-2">
                   <a
                     href="https://www.google.com/maps?q=1+S+Court+St,+Athens,+OH+45701"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#b87333] underline hover:opacity-80"
+                    className="text-sky-deep underline hover:opacity-80"
                   >
                     Get directions (Google Maps)
                   </a>
@@ -162,14 +162,14 @@ export default function AthensCountyCourtsPage() {
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Services We Provide in Athens County
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li>
                 <Link
                   href="/locations/athens-county/ovi-dui-defense-athens-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   OVI/DUI Defense
                 </Link>
@@ -179,7 +179,7 @@ export default function AthensCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Misdemeanor Criminal Defense
                 </Link>
@@ -189,7 +189,7 @@ export default function AthensCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/athens-county/personal-injury-athens-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Personal Injury
                 </Link>
@@ -198,7 +198,7 @@ export default function AthensCountyCourtsPage() {
               <li>
                 <Link
                   href="/locations/athens-county/business-formation-llc-athens-county"
-                  className="text-[#b87333] underline hover:opacity-80"
+                  className="text-sky-deep underline hover:opacity-80"
                 >
                   Business Formation &amp; LLC
                 </Link>
@@ -210,10 +210,10 @@ export default function AthensCountyCourtsPage() {
               </li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Athens County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC is a Columbus-based firm serving clients across Ohio, including Athens County and the broader
               southeastern Ohio region. We understand that Athens County presents unique circumstances — from Ohio University
               students facing their first criminal charge to long-time residents dealing with a civil dispute or personal injury

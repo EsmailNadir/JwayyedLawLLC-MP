@@ -80,64 +80,64 @@ export default function RevocableLivingTrustsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Revocable Living Trusts in Ohio: What They Are and Why They Matter
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A revocable living trust is one of the most versatile and widely used estate planning tools available to Ohio residents. Governed by the Ohio Trust Code — ORC Chapters 5801 through 5811 — a revocable trust allows you to transfer ownership of your home, bank accounts, investments, and other property into a legal arrangement that you control completely during your lifetime. You serve as your own trustee, manage the assets exactly as you did before, and can amend or revoke the trust at any time under ORC 5805.06. The difference only becomes apparent when you die or become incapacitated: your named successor trustee steps in and distributes your estate according to your written instructions — without probate, without court supervision, and without delays measured in months or years.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Probate in Ohio — the court process of validating a will and supervising asset distribution — runs through county probate courts. In Franklin County, for example, a modest estate can take six to eighteen months to close, and statutory fees paid to the executor and attorney are set by ORC 2113.35 and can consume one to four percent of the gross estate. A fully funded revocable trust bypasses this process entirely. Assets titled in the trust name pass immediately to beneficiaries, saving both time and money. The trust document is also private — unlike a probated will, which becomes a public court record that anyone can search.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For Ohio residents with real estate in multiple counties or multiple states, a revocable trust is particularly valuable. Without a trust, your family may need to open ancillary probate proceedings in each state where you own real property — a process that multiplies the cost and delay of settling your estate. A trust eliminates that problem because the trustee simply executes a new deed on behalf of the trust in each jurisdiction, without court involvement.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               The Three Parties: Grantor, Trustee, and Beneficiary
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Every revocable living trust involves three roles. The <strong>grantor</strong> (also called settlor or trustor) is the person who creates and funds the trust. The <strong>trustee</strong> holds legal title to the trust assets and manages them according to the trust terms; during your lifetime, you serve as your own trustee. The <strong>beneficiary</strong> is the person or entity who receives the economic benefit — during your life, you are the primary beneficiary, and after your death, your named heirs receive distributions. These roles can be held by the same person simultaneously, which is why a revocable trust feels seamless during your lifetime: nothing changes about how you use or access your property.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The successor trustee — the person who takes over when you die or become incapacitated — is arguably the most important decision in your estate plan. This individual must be willing to manage financial accounts, sell or transfer real estate, file tax returns, and distribute assets to beneficiaries in strict compliance with the trust document. Ohio law imposes fiduciary duties on trustees under ORC Chapter 5808, including duties of loyalty, prudent administration, and impartiality among beneficiaries. Choosing the right person and preparing clear, detailed instructions are critical steps we work through with every client.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Funding the Trust: The Step Most People Skip
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A revocable living trust that has not been funded is essentially a blank container — it provides no probate-avoidance benefit because there are no assets titled in the trust\'s name. Funding requires re-titling every significant asset: executing and recording new Ohio deeds for real property, updating account titles at banks and brokerage firms, assigning business interests (LLC membership interests, partnership interests), and changing beneficiary designations on accounts that pass outside of probate anyway (like life insurance and IRAs — these typically name the trust as beneficiary only if there is a specific planning reason to do so). Our firm handles deed preparation for Ohio real estate as part of our trust planning service and provides a comprehensive funding checklist to guide clients through every remaining asset.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Every client who establishes a revocable living trust with Jwayyed Law LLC also receives a <strong>pour-over will</strong> — a backup document that captures any assets inadvertently left outside the trust and directs them into the trust at death. Those assets will pass through a simplified probate process called summary release from administration if they are small enough, or a full probate otherwise, but the pour-over will ensures they are ultimately governed by your trust\'s distribution instructions. Think of the pour-over will as your safety net.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Common Misconceptions About Revocable Trusts
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Many Ohio families believe a revocable living trust protects assets from creditors or reduces estate taxes. Neither is true. Because you retain full power to revoke the trust and reclaim the assets, creditors — including nursing homes and Medicaid — can reach trust assets during your lifetime, and the IRS includes them in your taxable estate. Ohio eliminated its state estate tax in 2013, so estate tax is only a concern for estates exceeding the federal exemption ($13.99 million in 2025). Revocable trusts are primarily probate-avoidance and incapacity-planning tools. For creditor protection, you need a different structure — such as an <Link href="/trusts/asset-protection-trusts" className="text-[#b87333] underline hover:text-[#a06828]">Ohio Legacy Trust</Link> or a properly structured LLC. For Medicaid planning, an <Link href="/trusts/irrevocable-trusts" className="text-[#b87333] underline hover:text-[#a06828]">irrevocable trust</Link> with a five-year lookback consideration is the appropriate vehicle.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Many Ohio families believe a revocable living trust protects assets from creditors or reduces estate taxes. Neither is true. Because you retain full power to revoke the trust and reclaim the assets, creditors — including nursing homes and Medicaid — can reach trust assets during your lifetime, and the IRS includes them in your taxable estate. Ohio eliminated its state estate tax in 2013, so estate tax is only a concern for estates exceeding the federal exemption ($13.99 million in 2025). Revocable trusts are primarily probate-avoidance and incapacity-planning tools. For creditor protection, you need a different structure — such as an <Link href="/trusts/asset-protection-trusts" className="text-sky-deep underline hover:text-navy-950">Ohio Legacy Trust</Link> or a properly structured LLC. For Medicaid planning, an <Link href="/trusts/irrevocable-trusts" className="text-sky-deep underline hover:text-navy-950">irrevocable trust</Link> with a five-year lookback consideration is the appropriate vehicle.
             </p>
 
             <LocationsWeServe title="Trusts" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Special Needs Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protecting benefits eligibility for disabled loved ones</span>
+              <Link href="/trusts/special-needs-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Special Needs Trusts</span>
+                <span className="text-sm text-navy-950/70">Protecting benefits eligibility for disabled loved ones</span>
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Irrevocable Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Estate tax planning and Medicaid planning options</span>
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Irrevocable Trusts</span>
+                <span className="text-sm text-navy-950/70">Estate tax planning and Medicaid planning options</span>
               </Link>
-              <Link href="/trusts/asset-protection-trusts" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Asset Protection Trusts</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Ohio Legacy Trusts under ORC Chapter 5816</span>
+              <Link href="/trusts/asset-protection-trusts" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Asset Protection Trusts</span>
+                <span className="text-sm text-navy-950/70">Ohio Legacy Trusts under ORC Chapter 5816</span>
               </Link>
-              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Powers of Attorney</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Financial and healthcare decision-making authority</span>
+              <Link href="/other-services/powers-of-attorney" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Powers of Attorney</span>
+                <span className="text-sm text-navy-950/70">Financial and healthcare decision-making authority</span>
               </Link>
             </div>
           </div>

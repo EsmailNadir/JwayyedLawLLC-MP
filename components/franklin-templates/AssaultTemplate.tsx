@@ -77,66 +77,66 @@ export default function AssaultTemplate({ suburb }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Assault Defense in {suburb}, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An assault charge in {suburb} can arise from a wide range of situations — a bar fight on a {suburb} commercial strip, a neighborhood dispute that escalated, an altercation at a local event, or a confrontation that began with words and ended with police involvement. Whatever the circumstances, an assault conviction under Ohio Revised Code 2903.13 is a first-degree misdemeanor that creates a permanent criminal record, carries the possibility of jail time, and can affect employment, professional licensing, and housing applications for years. The{' '}
               <strong>{policeAgency}</strong> takes assault calls seriously, and the Franklin County prosecutorial system moves quickly once a report is filed. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense/assault-charges" className="text-[#b87333] underline hover:opacity-80">assault defense</Link>{' '}
+              <Link href="/criminal-defense/assault-charges" className="text-sky-deep underline hover:opacity-80">assault defense</Link>{' '}
               for {suburb} residents. Call{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               before your arraignment — the choices made at that first court appearance shape everything that follows.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents. Assault cases in the area reflect the full range of circumstances that produce confrontations in any community — interpersonal disputes, nights out that turn physical, road rage incidents on {keyRoads[0]}, and domestic-adjacent conflicts that the prosecution chooses not to pursue as domestic violence. Our firm evaluates each situation on its own facts, identifies who initiated the confrontation, reviews all available evidence, and builds a defense rooted in the actual record of what happened.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Assault Under Ohio Revised Code 2903.13
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2903.13 defines assault as knowingly causing or attempting to cause physical harm to another person or to another person&apos;s unborn, or recklessly causing serious physical harm to another person. Importantly, the offense includes <em>attempts</em> — Ohio does not require that harm was actually inflicted, only that the defendant knowingly attempted to cause it. The baseline offense is a first-degree misdemeanor carrying up to{' '}
               <strong>{MISDEMEANOR_SENTENCING.M1.maxJail}</strong> in jail and a <strong>{MISDEMEANOR_SENTENCING.M1.maxFine}</strong> fine. These are maximum penalties — the actual sentence depends on the facts of the case, the defendant&apos;s prior record, and the skill of the attorney at the sentencing stage.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The word &ldquo;knowingly&rdquo; in the statute is legally significant. The prosecution must prove that the defendant was aware that his or her conduct would cause or probably cause the result — not merely that the harm occurred accidentally. Accidents, involuntary contact, and situations where the defendant lacked the mental state of awareness required by the statute are not criminal assault. Our firm examines the facts carefully for any argument that the defendant&apos;s conduct was not &ldquo;knowing&rdquo; within the legal meaning of that term.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Felony Escalations — When Assault Becomes a Felony
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               R.C. 2903.13(C) elevates assault from a first-degree misdemeanor to a felony when the victim falls into a protected category. Assault on a peace officer, firefighter, or emergency medical service worker during the performance of official duties becomes a fourth-degree felony — and a third-degree felony if there is a prior assault conviction. Assault on a corrections officer or youth services employee at a state DRC institution is a third-degree felony; assault on local jail staff or probation officers is a fifth-degree felony. Assault on a teacher, school administrator, or school bus operator on school grounds is a fifth-degree felony (F4 with a prior). Assault on hospital employees or judges and prosecutors during official duties is a fifth-degree felony (F4 with a prior). These felony-level charges are processed in Franklin County Court of Common Pleas after arraignment and carry substantially greater penalties than misdemeanor assault. Our firm scrutinizes whether the alleged victim&apos;s protected status was established, whether the victim was acting within the scope of official duties at the time of the incident, and whether the prosecution can prove these elements beyond a reasonable doubt.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Where Your {suburb} Assault Case Is Heard
             </h3>
             {hasMayorsCourt ? (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-navy-950/80 mb-6 leading-relaxed">
                 Misdemeanor assault charges arising in {suburb} are initially processed in <strong>{suburb} Mayor&apos;s Court</strong> at {courtAddress}, {courtPhone}. The court meets {courtSchedule}. Arraignment, pretrial negotiations, and pleas on M1 assault charges may be handled at the mayor&apos;s court level. Felony assault escalations — where the victim is a law enforcement officer or other protected person — are transferred to Franklin County Municipal Court at {FCMC.address} for arraignment and then bound over to Franklin County Court of Common Pleas for trial. Our firm appears in all three venues.
               </p>
             ) : (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-navy-950/80 mb-6 leading-relaxed">
                 {mayorsCourt.note} Assault charges from {suburb} are processed directly in <strong>Franklin County Municipal Court</strong> at {FCMC.address} ({FCMC.floors}), {FCMC.clerkPhone}. Felony assault matters are bound over to Franklin County Court of Common Pleas. Franklin County Municipal Court handles the full spectrum of misdemeanor assault cases, from initial arraignment through trial. Our firm regularly appears in this court.
               </p>
             )}
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Self-Defense and Other Defenses
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2901.05 recognizes self-defense, defense of another, and defense of one's residence as complete affirmative defenses to assault. Under amendments effective in 2019, the prosecution bears the burden of disproving self-defense beyond a reasonable doubt once the defendant produces evidence that the defense is at issue. For {suburb} assault cases, self-defense applies when the defendant reasonably believed force was immediately necessary to protect against the use or imminent use of unlawful force. We look for evidence of the alleged victim&apos;s threatening conduct, evidence that the defendant retreated or attempted to avoid the confrontation, and any physical or video evidence showing who initiated the contact.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond self-defense, our firm evaluates: whether the physical contact was knowing or accidental; whether the prosecution can identify the defendant with certainty; whether witness testimony is consistent and credible; and whether any evidence was obtained in violation of constitutional protections. We obtain all body-cam and surveillance footage, police reports, medical records, and forensic evidence before making any recommendation about plea or trial strategy.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Evidence analysis:</strong> All surveillance footage, body-cam video, police reports, and medical records reviewed before any hearing</li>
               <li><strong>Self-defense evaluation:</strong> Full factual investigation into who initiated the confrontation and the reasonableness of any force used</li>
               <li><strong>Felony escalation challenge:</strong> Contesting protected-victim status where the facts do not support felony charges</li>
@@ -145,11 +145,11 @@ export default function AssaultTemplate({ suburb }: Props) {
               <li><strong>Expungement planning:</strong> Advising on ORC 2953.32 eligibility from the start to inform plea strategy</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you have been charged with assault in {suburb} or anywhere in Franklin County, contact Jwayyed Law LLC at{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               Assault charges move quickly in Franklin County courts — having an attorney involved from the earliest stage gives you the best chance at a favorable outcome.
             </p>
           </div>

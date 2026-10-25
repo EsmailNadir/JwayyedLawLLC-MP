@@ -82,68 +82,68 @@ export default function QTIPTrustsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               QTIP Trusts in Ohio: Protecting Your Spouse and Your Children
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A Qualified Terminable Interest Property trust — universally known as a QTIP trust — is one of the most nuanced and important tools in the Ohio estate planning toolbox, particularly for blended families, second marriages, and high-net-worth couples where estate tax deferral and beneficiary control both matter. The QTIP allows the first spouse to die to qualify their estate for the unlimited federal estate tax marital deduction under IRC 2056(b)(7) — deferring all estate tax until the surviving spouse\'s death — while retaining the ability to specify exactly who receives the trust assets after the surviving spouse dies. This combination of tax efficiency and remainder control is what distinguishes the QTIP from a simple outright bequest to a spouse, and it is the reason the QTIP trust is a cornerstone of blended family estate planning. Jwayyed Law LLC advises clients throughout Columbus, Cincinnati, Dayton, and all of Ohio on QTIP trust design, drafting, and administration.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio has no state estate tax — it was repealed effective January 1, 2013 — so QTIP trust planning for Ohio clients is exclusively a federal estate tax and blended family protection strategy. The federal estate tax applies to taxable estates exceeding the exemption amount, which is $13.61 million per individual in 2024. This exemption is scheduled to sunset after December 31, 2025, to approximately half of its current level, absent action by Congress. For Ohio couples with combined estates approaching or exceeding the post-sunset projected threshold, QTIP trust planning is a critical component of pre-sunset estate planning in 2024 and 2025.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Even for Ohio couples whose estates are well below the federal exemption and unlikely to ever face estate tax, QTIP trusts serve an indispensable non-tax function: protecting children from a prior marriage. Without a QTIP, a surviving spouse who receives an outright inheritance has complete legal authority to change their estate plan — disinheriting stepchildren, leaving everything to a new spouse or partner, or depleting the inherited assets in ways the first decedent never intended. A QTIP trust locks in the first decedent\'s wishes: the surviving spouse receives income for life (and principal for HEMS needs if the trust permits), and whatever remains at the surviving spouse\'s death passes to the children named by the first decedent.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               QTIP Qualification Requirements Under IRC 2056(b)(7)
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               To qualify as a QTIP trust under IRC 2056(b)(7), the trust must satisfy three mandatory requirements. First, the surviving spouse must be entitled to receive all of the trust\'s net income, payable at least annually (or more frequently, such as monthly). No income can be accumulated or distributed to anyone other than the surviving spouse during the surviving spouse\'s lifetime. Second, no person — including the trustee — may have the power to appoint any part of the trust property to any person other than the surviving spouse during the surviving spouse\'s lifetime. Third, the executor of the first decedent\'s estate must make the QTIP election on the federal estate tax return (Form 706). Without the executor\'s election, the trust does not qualify for the marital deduction, and the full value of the trust assets is included in the first decedent\'s taxable estate.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The QTIP election is made on Form 706, which is due nine months after the first decedent\'s death (with a possible six-month extension). The executor has discretion to elect QTIP treatment for all, some, or none of the trust assets. This flexibility — sometimes called a "Clayton election" when structured in the trust document — allows the executor to calibrate the amount QTIP-elected based on the estate\'s actual tax situation at the time of death, taking into account the prevailing exemption amounts and the specific assets in the estate. A well-drafted QTIP trust document anticipates this executor flexibility and sets out what happens to non-QTIP-elected assets (typically a credit shelter or bypass trust funded with the non-marital share).
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The trade-off for the marital deduction in a QTIP is IRC 2044: the full fair market value of QTIP trust assets is included in the surviving spouse\'s taxable estate at their death, even though the surviving spouse did not own the assets outright and cannot control their ultimate disposition. The marital deduction does not eliminate estate tax; it defers it to the second death. The surviving spouse\'s estate receives a deduction for estate taxes paid attributable to the QTIP assets — avoiding double taxation — but the QTIP assets are fully subject to estate tax at the second death using the exemption and rates then in effect.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Portability vs. QTIP: Choosing the Right Strategy for Ohio Couples
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Since 2013, surviving spouses have been able to elect portability of the deceased spouse\'s unused exemption (DSUEA) by filing a timely Form 706 (even if no tax is due). Portability is simpler to implement than a QTIP trust — it requires no trust drafting, no trustee administration, and no income distributions. For a couple in a first and only marriage with no blended family concerns and an estate well below the federal threshold, portability may be sufficient.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               However, portability has significant limitations compared to a QTIP trust. The ported DSUEA is not indexed for inflation — it locks in at the first decedent\'s exemption amount at the time of death, which may be less valuable to the surviving spouse decades later if inflation has eroded its real value or if the exemption amount has increased. Portability cannot be used in conjunction with the generation-skipping transfer exemption — the ported exemption cannot be applied to GST-taxable transfers, which limits dynasty trust planning. And critically, portability provides no protection for children from a prior marriage and no control over who ultimately receives the surviving spouse\'s assets.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For most Ohio couples with blended families, significant wealth, or concerns about the surviving spouse\'s remarriage or future estate planning, a QTIP trust combined with a credit shelter (bypass) trust represents the optimal structure. The credit shelter trust absorbs the first decedent\'s exemption amount and is not included in the surviving spouse\'s estate; the QTIP trust absorbs the marital share and qualifies for the marital deduction. Together they minimize estate tax at both deaths, protect remainder beneficiaries, and give the surviving spouse the income security they need.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Trustee Selection and Investment Duties in a QTIP Trust
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Because a QTIP trust must pay all net income to the surviving spouse at least annually while preserving principal for the remainder beneficiaries, the trustee faces an inherent tension between the competing interests of the income beneficiary (the surviving spouse) and the remainder beneficiaries (the children). Ohio\'s trustee duties under ORC Chapter 5808 require the trustee to act impartially — considering both the income beneficiary\'s right to reasonable income and the remainder beneficiaries' right to principal preservation. Ohio has adopted a version of the Uniform Prudent Investor Act under ORC 5810.02, which requires the trustee to manage investments with a total-return focus rather than maximizing income production. For QTIP trusts, the trustee and beneficiaries should agree on a unitrust conversion or a principal-and-income allocation approach that fairly balances the competing interests at the outset.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Trustee selection in a QTIP trust is therefore important and sometimes sensitive, particularly in blended family situations where the surviving spouse and the remainder beneficiaries (children from the first marriage) may have conflicting financial interests. An independent corporate trustee or a professional co-trustee can manage these tensions more neutrally than a family member who is close to one party. If the surviving spouse and the first decedent\'s children have a good relationship, a family member trustee may work well — but the trust document should include clear trustee removal provisions and dispute resolution mechanisms. Contact Jwayyed Law LLC at (614) 285-5482 to discuss whether a QTIP trust belongs in your Ohio estate plan.
             </p>
 
             <LocationsWeServe title="QTIP Trusts" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Trust Services
               </Link>
-              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/irrevocable-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Irrevocable Trusts
               </Link>
-              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/dynasty-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Dynasty Trusts
               </Link>
-              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/estate-planning-wills" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Estate Planning &amp; Wills
               </Link>
             </div>

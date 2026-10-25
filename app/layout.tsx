@@ -235,7 +235,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <AnnouncementBar />
         <Navbar />
 
-        <main id="main-content" tabIndex={-1} className="flex-grow scroll-mt-20 focus:outline-none">
+        <main id="main-content" tabIndex={-1} className="jw flex-grow scroll-mt-20 focus:outline-none text-navy-950">
           {children}
         </main>
 

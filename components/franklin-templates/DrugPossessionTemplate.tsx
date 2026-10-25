@@ -77,65 +77,65 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Drug Possession Defense in {suburb}, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Drug possession charges in {suburb} range from a minor misdemeanor marijuana citation — carrying no jail time and a $150 maximum fine — to serious felony charges for possession of heroin, cocaine, fentanyl, or methamphetamine that can result in prison time and lasting career consequences. Ohio&apos;s 2023 adult-use marijuana law changed the landscape for cannabis possession, but it did not eliminate drug possession as a criminal matter, and possession of controlled substances other than marijuana in amounts above legal limits remains prosecutable. The{' '}
               <strong>{policeAgency}</strong> enforces Ohio drug laws vigorously, and traffic stops on {keyRoads[0]} and elsewhere in {suburb} regularly produce drug possession charges when officers conduct searches incident to arrest or with claimed consent. Jwayyed Law LLC provides experienced{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link>{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link>{' '}
               for drug possession charges throughout Franklin County, including {suburb}. Call{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               to discuss your situation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               {suburb} is a Franklin County community of approximately {population2020.toLocaleString()} residents. Drug possession cases here arise in a variety of settings: traffic stops on {keyRoads[0]}, searches of persons following an unrelated arrest, and in some cases searches of homes or vehicles pursuant to warrants. Each of these entry points presents different legal challenges and opportunities. Our firm begins every drug case by examining the origin of the search or seizure, because a successfully suppressed search often results in dismissal of the entire case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio&apos;s Adult-Use Marijuana Framework — What Is and Is Not Legal in {suburb}
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Issue 2, effective December 7, 2023, and implemented through House Bill 86, established a legal adult-use marijuana framework. Adults 21 and older may now legally possess up to <strong>2.5 ounces</strong> of usable marijuana and up to <strong>15 grams</strong> of marijuana concentrate without criminal liability. Home cultivation of up to <strong>6 marijuana plants</strong> per adult is also permitted. These amounts are not criminal and are not subject to prosecution. Officers in {suburb} are no longer permitted to treat possession within these limits as a criminal matter.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               However, the legal framework does not make all marijuana possession legal. Possession above 2.5 oz (70.87 grams) up to 100 grams remains a minor misdemeanor — no jail, maximum $150 fine. Possession of 100–199 grams is a fourth-degree misdemeanor (up to 30 days jail, $250 fine). Possession of 200 grams or more reaches the bulk amount threshold and becomes aggravated possession — a fifth-degree felony carrying up to 12 months in prison and a $2,500 fine. Possession of 1,000–4,999 grams is an F3 felony; 5,000–19,999 grams is an F2; 20,000 grams or more is an F1. Persons under 21 are not covered by the adult-use framework and face the standard criminal possession laws. Consumption in public spaces, motor vehicles, or near schools is prohibited and subject to civil penalties.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Controlled Substance Possession — Penalties Under R.C. 2925.11
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Possession of controlled substances other than marijuana — including cocaine, heroin, fentanyl, methamphetamine, and prescription drugs without a valid prescription — is governed by R.C. 2925.11 and carries felony penalties in most cases. The base offense for possession of cocaine, heroin, or methamphetamine in any amount is a fifth-degree felony (up to 12 months in prison, $2,500 fine). The charge escalates with the quantity of the substance: possession of bulk cocaine is F4; bulk heroin is F4; higher quantities escalate to F3, F2, and F1 felonies. Drug paraphernalia possession under R.C. 2925.14 is a fourth-degree misdemeanor on a first offense (up to {MISDEMEANOR_SENTENCING.M4.maxJail} jail, {MISDEMEANOR_SENTENCING.M4.maxFine} fine), escalating to M2 on a second offense.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Where Your {suburb} Drug Possession Case Is Heard
             </h3>
             {hasMayorsCourt ? (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-navy-950/80 mb-6 leading-relaxed">
                 Minor misdemeanor marijuana possession citations from {suburb} may be handled in <strong>{suburb} Mayor&apos;s Court</strong> at {courtAddress}, {courtPhone} ({courtSchedule}). More serious misdemeanor drug charges and all felony drug possession matters transfer to Franklin County Municipal Court at {FCMC.address} for arraignment, and felonies are then bound over to Franklin County Court of Common Pleas. Franklin County Municipal Court also operates the HART Court (recovery docket for opioid-involved defendants) and offers ILC (Intervention in Lieu of Conviction) for eligible first-time drug defendants.
               </p>
             ) : (
-              <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-navy-950/80 mb-6 leading-relaxed">
                 {mayorsCourt.note} Drug possession charges from {suburb} are processed directly in <strong>Franklin County Municipal Court</strong> at {FCMC.address} ({FCMC.floors}), {FCMC.clerkPhone}. Felony drug possession is bound over to Franklin County Court of Common Pleas. Franklin County Municipal Court operates the HART Court recovery docket for eligible opioid-involved defendants and offers ILC for first-time drug defendants.
               </p>
             )}
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Defense Strategies — Suppression and Diversion
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Drug possession cases present two major categories of defense. The first is constitutional — challenging the stop, search, or seizure that produced the evidence. If the {policeAgency} stopped a vehicle without reasonable suspicion of a traffic violation, searched without valid consent, or exceeded the scope of a warrant, a motion to suppress under the Fourth Amendment may exclude all drug evidence. Without the drugs, the prosecution has no case. Our firm reviews every traffic stop for articulated probable cause, every consent search for voluntariness, and every warrant for particularity and probable cause support.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The second category is diversion. Ohio&apos;s Intervention in Lieu of Conviction program (ORC 2951.041) allows eligible first-time defendants charged with drug possession to complete substance abuse treatment instead of being convicted. Successful ILC completion results in dismissal of all charges — no conviction, no record of guilt. Franklin County Municipal Court&apos;s HART Court (for opioid-involved defendants) provides a similar structured treatment path. Our firm evaluates ILC eligibility at the outset of every drug case and, where the defendant qualifies, advocates strongly for placement. A dismissal through ILC is always superior to any plea — even a plea to a reduced charge.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How We Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Suppression motions:</strong> Challenging the stop, search, or seizure that produced the drug evidence under the Fourth Amendment</li>
               <li><strong>ILC and diversion:</strong> Pursuing Intervention in Lieu of Conviction or HART Court placement for eligible first-time defendants</li>
               <li><strong>Marijuana law analysis:</strong> Confirming whether your possession was within Ohio&apos;s adult-use legal limits before any plea is entered</li>
@@ -144,11 +144,11 @@ export default function DrugPossessionTemplate({ suburb }: Props) {
               <li><strong>Expungement planning:</strong> Advising on long-term record-sealing eligibility under ORC 2953.32 from the start</li>
             </ul>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               If you are facing drug possession charges in {suburb} or elsewhere in Franklin County, contact Jwayyed Law LLC at{' '}
-              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-[#b87333] underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
+              <a href={`tel:${FIRM_NAP.phoneRaw.replace('+', '')}`} className="text-sky-deep underline hover:opacity-80">{FIRM_NAP.phone}</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation online</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
               Drug cases move through the Franklin County system quickly, and early intervention — before a plea is entered — is when your options are widest.
             </p>
           </div>

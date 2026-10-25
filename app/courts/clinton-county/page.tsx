@@ -80,11 +80,11 @@ export default function ClintonCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Clinton County Court Representation
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County is a rural southwest Ohio county centered on Wilmington, the county seat. Despite its
               smaller size, Clinton County courts handle a full spectrum of legal matters—OVI and DUI charges, misdemeanor
               criminal cases, traffic violations, civil disputes, and more. Wilmington Municipal Court (69 N. South St,
@@ -94,7 +94,7 @@ export default function ClintonCountyCourtsPage() {
               for Clinton County residents and businesses facing these legal challenges.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense is one of the most important practice areas we handle in Clinton County. Ohio&apos;s OVI law
               (ORC 4511.19) is among the most litigated statutes in the state because the consequences are severe and
               the process involves multiple stages where constitutional and procedural errors can occur. From the
@@ -105,7 +105,7 @@ export default function ClintonCountyCourtsPage() {
               possible defense for every OVI client in Clinton County.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For misdemeanor criminal matters in Clinton County, Ohio Revised Code 2935.26 allows officers to issue
               citations rather than make physical arrests for misdemeanors that are not first-degree misdemeanors.
               However, first-degree misdemeanors—including OVI, first-offense domestic violence, and assault—typically
@@ -115,7 +115,7 @@ export default function ClintonCountyCourtsPage() {
               every available defense and mitigation argument is properly presented to Wilmington Municipal Court.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Clinton County residents also come to us for civil legal matters. Whether you are a Wilmington landlord
               seeking to evict a non-paying tenant under ORC Chapter 1923, a small-business owner in Blanchester
               with a contract dispute, or a Sabina resident who was injured in a car accident, Jwayyed Law LLC
@@ -124,7 +124,7 @@ export default function ClintonCountyCourtsPage() {
               Court, and assist with business formation and estate planning for residents throughout the county.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s 2025 OVI law changes (House Bill 37, effective April 9, 2025) introduced new provisions
               regarding ignition interlock devices and the hard suspension period following OVI arrests. Under the
               updated law, courts may waive the 15-day hard suspension if the defendant agrees to install an ignition
@@ -133,35 +133,35 @@ export default function ClintonCountyCourtsPage() {
               for every Clinton County OVI client.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Courts We Appear In
             </h3>
 
             <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Wilmington Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">69 N. South St, Wilmington, OH 45177</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">69 N. South St, Wilmington, OH 45177</p>
+                <p className="text-sm text-navy-950/70">
                   OVI &bull; Misdemeanor criminal defense &bull; Traffic violations &bull; Civil claims up to $15,000 &bull; Small claims &bull; Evictions
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Clinton County Common Pleas Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">46 S. South St, Wilmington, OH 45177</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">46 S. South St, Wilmington, OH 45177</p>
+                <p className="text-sm text-navy-950/70">
                   Felony criminal cases &bull; Civil cases over $15,000 &bull; Domestic relations &bull; Probate
                 </p>
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Practice Areas in Clinton County
             </h3>
-            <ul className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 space-y-2 leading-relaxed">
+            <ul className="text-navy-950/80 mb-6 space-y-2 leading-relaxed">
               <li><strong>OVI / DUI Defense:</strong> Traffic stop challenges, field sobriety test analysis, ALS appeals under ORC 4511.191 (30-day deadline), license reinstatement</li>
               <li><strong>Misdemeanor Criminal Defense:</strong> Domestic violence (ORC 2919.25), assault (ORC 2903.13), theft (ORC 2913.02), drug offenses (ORC 2925.11)</li>
               <li><strong>Traffic Violations:</strong> Driving under suspension (ORC 4510.11), reckless operation (ORC 4511.20), speeding, and other traffic matters</li>
@@ -170,22 +170,22 @@ export default function ClintonCountyCourtsPage() {
               <li><strong>Business Formation &amp; Estate Planning:</strong> LLCs (ORC Chapter 1706), wills, powers of attorney for Wilmington and surrounding area clients</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Communities We Serve in Clinton County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We serve clients throughout Clinton County including Wilmington (county seat), Sabina, Blanchester,
               Clarksville, Port William, Midland, and Martinsville. For representation in neighboring counties, visit
               our pages for{' '}
-              <Link href="/courts/greene-county" className="text-[#b87333] underline hover:opacity-80">Greene County</Link>,{' '}
-              <Link href="/courts/montgomery-county" className="text-[#b87333] underline hover:opacity-80">Montgomery County</Link>, and{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>.
+              <Link href="/courts/greene-county" className="text-sky-deep underline hover:opacity-80">Greene County</Link>,{' '}
+              <Link href="/courts/montgomery-county" className="text-sky-deep underline hover:opacity-80">Montgomery County</Link>, and{' '}
+              <Link href="/courts/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Clinton County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Jwayyed Law LLC provides direct, personal representation in every Clinton County case. Our attorney
               understands Wilmington Municipal Court procedures, the Clinton County prosecutor&apos;s approach to
               OVI and criminal cases, and current Ohio law including 2025 OVI amendments. We do not hand cases off

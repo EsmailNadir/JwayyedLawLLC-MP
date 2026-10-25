@@ -70,13 +70,13 @@ export default function FranklinCountySuburbGrid() {
             <button
               key={slug}
               onClick={() => setSelected({ suburb, slug, hasMayorsCourt })}
-              className="group text-left bg-white border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-[#b87333] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#b87333] focus:ring-offset-2"
+              className="group text-left bg-white border border-navy-950/10 p-4 hover:border-sky-deep transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sky-deep focus:ring-offset-2"
             >
-              <div className="w-8 h-0.5 bg-[#b87333] mb-3 group-hover:w-12 transition-all duration-200" />
-              <p className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 text-sm leading-snug mb-2">
+              <div className="w-8 h-0.5 bg-navy-950 mb-3 group-hover:w-12 transition-all duration-200" />
+              <p className="jw-serif font-bold text-navy-950 text-sm leading-snug mb-2">
                 {suburb}
               </p>
-              <p className="font-['Inter',_'Arial',_sans-serif] text-xs text-gray-400 group-hover:text-[#b87333] transition-colors">
+              <p className="text-xs text-navy-950/50 group-hover:text-sky-deep transition-colors">
                 {count} practice areas →
               </p>
             </button>
@@ -95,29 +95,29 @@ export default function FranklinCountySuburbGrid() {
       {/* Bottom sheet */}
       {selected && (
         <div
-          className={`fixed bottom-0 left-0 right-0 z-50 bg-white rounded-t-2xl shadow-2xl transition-transform duration-300 ease-out ${visible ? 'translate-y-0' : 'translate-y-full'}`}
+          className={`fixed bottom-0 left-0 right-0 z-50 bg-white transition-transform duration-300 ease-out ${visible ? 'translate-y-0' : 'translate-y-full'}`}
           style={{ maxHeight: '80vh', overflowY: 'auto' }}
         >
           {/* Handle bar */}
           <div className="flex justify-center pt-3 pb-1">
-            <div className="w-10 h-1 bg-gray-200 rounded-full" />
+            <div className="w-10 h-1 bg-navy-950/10 rounded-full" />
           </div>
 
           <div className="px-6 pb-8 pt-3">
             {/* Header */}
             <div className="flex items-start justify-between mb-5">
               <div>
-                <div className="w-8 h-0.5 bg-[#b87333] mb-2" />
-                <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900">
+                <div className="w-8 h-0.5 bg-navy-950 mb-2" />
+                <h3 className="jw-serif text-2xl font-bold text-navy-950">
                   {selected.suburb}
                 </h3>
-                <p className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-500 mt-0.5">
+                <p className="text-sm text-navy-950/60 mt-0.5">
                   Select a practice area
                 </p>
               </div>
               <button
                 onClick={close}
-                className="ml-4 mt-1 text-gray-400 hover:text-gray-600 transition-colors p-1 rounded-full hover:bg-gray-100"
+                className="ml-4 mt-1 text-navy-950/50 hover:text-navy-950/70 transition-colors p-1 rounded-full hover:bg-ice"
                 aria-label="Close"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -133,12 +133,12 @@ export default function FranklinCountySuburbGrid() {
                   key={href}
                   href={href}
                   onClick={close}
-                  className="flex items-center justify-between group bg-gray-50 hover:bg-[#b87333] rounded-lg px-4 py-3 transition-all duration-150"
+                  className="flex items-center justify-between group bg-ice hover:bg-navy-950 px-4 py-3 transition-all duration-150"
                 >
-                  <span className="font-['Inter',_'Arial',_sans-serif] text-sm font-medium text-gray-800 group-hover:text-white transition-colors">
+                  <span className="text-sm font-medium text-navy-950 group-hover:text-white transition-colors">
                     {label}
                   </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 group-hover:text-white transition-colors flex-shrink-0 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-navy-950/50 group-hover:text-white transition-colors flex-shrink-0 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
                 </Link>

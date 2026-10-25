@@ -400,26 +400,26 @@ export default function DocumentTemplatesPage() {
       />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-3 leading-relaxed">
+          <p className="text-navy-950/80 mb-3 leading-relaxed">
             Below are 8 free legal document templates for common Ohio legal situations. Each
             template includes real, fill-in-the-blank text you can copy and adapt. These templates
             are a starting point — they are{' '}
             <strong>not a substitute for legal advice</strong>. For guidance specific to your
             situation,{' '}
-            <Link href="/contact" className="text-[#b87333] font-semibold hover:underline">
+            <Link href="/contact" className="text-sky-deep font-semibold hover:underline">
               consult with an attorney
             </Link>{' '}
             or call us at{' '}
-            <a href="tel:6142855482" className="text-[#b87333] font-semibold hover:underline">
+            <a href="tel:6142855482" className="text-sky-deep font-semibold hover:underline">
               (614) 285-5482
             </a>
             .
           </p>
-          <p className="font-['Inter',_'Arial',_sans-serif] text-gray-600 text-sm mb-10 leading-relaxed">
+          <p className="text-navy-950/70 text-sm mb-10 leading-relaxed">
             Jump to:{' '}
             {templates.map((t, i) => (
               <span key={t.id}>
-                <a href={`#${t.id}`} className="text-[#b87333] hover:underline">
+                <a href={`#${t.id}`} className="text-sky-deep hover:underline">
                   {t.title}
                 </a>
                 {i < templates.length - 1 ? ' · ' : ''}
@@ -430,35 +430,35 @@ export default function DocumentTemplatesPage() {
           <div className="space-y-16">
             {templates.map((t) => (
               <div key={t.id} id={t.id} className="scroll-mt-20">
-                <span className="inline-block text-xs font-semibold text-[#b87333] uppercase tracking-wider bg-[#b87333]/10 px-3 py-1 rounded-full mb-3">
+                <span className="inline-block text-xs font-semibold text-sky-deep uppercase tracking-wider bg-sky-deep/10 px-3 py-1 rounded-full mb-3">
                   {t.category}
                 </span>
-                <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mb-3">
+                <h2 className="jw-serif text-2xl font-bold text-navy-950 mb-3">
                   {t.title}
                 </h2>
-                <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 leading-relaxed mb-5">
+                <p className="text-navy-950/80 leading-relaxed mb-5">
                   {t.description}
                 </p>
 
-                <div className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
-                  <div className="flex items-center justify-between px-4 py-2 bg-gray-100 border-b border-gray-200">
-                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <div className="bg-ice border border-navy-950/10 overflow-hidden">
+                  <div className="flex items-center justify-between px-4 py-2 bg-ice border-b border-navy-950/10">
+                    <span className="text-xs font-semibold text-navy-950/60 uppercase tracking-wider">
                       Template — Copy and Customize
                     </span>
                   </div>
-                  <pre className="font-mono text-sm text-gray-800 p-5 overflow-x-auto whitespace-pre-wrap leading-relaxed">
+                  <pre className="font-mono text-sm text-navy-950 p-5 overflow-x-auto whitespace-pre-wrap leading-relaxed">
                     {t.templateText}
                   </pre>
                 </div>
 
                 <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                  <p className="font-['Inter',_'Arial',_sans-serif] text-xs text-gray-500 italic flex-1">
+                  <p className="text-xs text-navy-950/60 italic flex-1">
                     This is a template only. Laws vary by situation. Consult an attorney for advice
                     specific to your circumstances before sending any legal document.
                   </p>
                   <Link
                     href={t.practiceHref}
-                    className="text-sm font-semibold text-[#b87333] hover:underline whitespace-nowrap"
+                    className="text-sm font-semibold text-sky-deep hover:underline whitespace-nowrap"
                   >
                     Learn about {t.practiceLabel} →
                   </Link>
@@ -467,13 +467,13 @@ export default function DocumentTemplatesPage() {
             ))}
           </div>
 
-          <div className="mt-16 p-6 bg-gray-50 border border-gray-200 rounded-lg">
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-lg font-bold text-gray-900 mb-2">
+          <div className="mt-16 p-6 bg-ice border border-navy-950/10">
+            <h3 className="jw-serif text-lg font-bold text-navy-950 mb-2">
               Need a Template Not Listed Here?
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 text-sm leading-relaxed">
+            <p className="text-navy-950/80 text-sm leading-relaxed">
               We are expanding this section. If you need a specific type of document or form,{' '}
-              <Link href="/contact" className="text-[#b87333] font-semibold hover:underline">
+              <Link href="/contact" className="text-sky-deep font-semibold hover:underline">
                 contact us
               </Link>{' '}
               — we may be able to help or point you to the right resources. For complex matters,

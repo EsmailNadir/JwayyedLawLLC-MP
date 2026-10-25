@@ -70,60 +70,60 @@ export default function ColumbusMarijuanaPossessionPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Marijuana Possession Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s adult-use marijuana law changed the legal landscape for Columbus cannabis users — but it did not eliminate marijuana possession charges. Adults 21 and over may legally possess up to 2.5 ounces of marijuana and 15 grams of concentrate; possession above those limits remains a criminal offense under R.C. 2925.11, as does any possession by persons under 21. Columbus also has a significant student population at OSU and other universities where drug charges can have serious academic and professional consequences. Jwayyed Law LLC defends marijuana possession charges at Franklin County Municipal Court (for misdemeanor amounts) and Franklin County Court of Common Pleas (for felony amounts). Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               to discuss your case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               What Ohio&apos;s Adult-Use Law Covers — and What It Does Not
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Issue 2 and H.B. 86 (effective December 7, 2023) established the framework for adult recreational marijuana use in Ohio. Under this law, adults 21 and over in Columbus may: possess up to 2.5 ounces of marijuana flower or up to 15 grams of marijuana extract; purchase marijuana from a licensed dispensary; and cultivate up to six plants at their primary residence for personal use. The plants must not be visible from a public place and must be cultivated in an enclosed, locked space.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               What the adult-use law does not cover: possession above the 2.5-ounce limit; any possession by persons under 21; use in public places, schools, or workplaces (adult-use is home-only); operating a motor vehicle under the influence of marijuana; possession on federal property (National Guard facilities, post offices, VA hospitals within Columbus); and sale or distribution without a license. A Columbus driver stopped on I-670 with four ounces of marijuana in the car has three times the legal possession amount — a potential felony.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Marijuana Possession Charges and Penalty Tiers in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The penalty for marijuana possession in Columbus under R.C. 2925.11 depends on the quantity. Possession of more than 2.5 ounces (70.87g) up to 100 grams is a minor misdemeanor — a $150 fine with no jail time. However, it is still a criminal conviction. Possession of 100–199 grams is a fourth-degree misdemeanor (M4), carrying up to 30 days in jail and a $250 fine. Possession of 200 grams to 999 grams reaches the bulk amount threshold and becomes an F5 felony (aggravated possession), carrying 6–12 months in prison and fines up to $2,500. Possession of 1,000–4,999 grams is an F3 felony, carrying 9–36 months. Possession of 5,000–19,999 grams is an F2. Possession of 20,000 grams or more is an F1 — the most serious felony designation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The weight determination is critical: all marijuana possession charges depend on the total weight of the substance. If the weight determination is inaccurate — through weighing errors, inclusion of packaging, or combining separate items — the charge degree may be reducible. Our firm scrutinizes the laboratory testing weight report in every marijuana possession case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Fourth Amendment Challenges and Search Issues
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The most powerful defense in many Columbus marijuana possession cases is a Fourth Amendment challenge to the search that produced the marijuana. Prior to adult-use legalization, the odor of marijuana alone gave Columbus police probable cause to search a vehicle. Post-legalization, the constitutional status of marijuana odor as probable cause is an evolving area of law: if marijuana is legal to possess in the amounts found, does its odor justify a search? Courts in several states have held that the odor of marijuana alone does not support probable cause post-legalization. Ohio courts are still developing this doctrine.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our firm challenges every Columbus marijuana case on stop validity and search authorization grounds. If the traffic stop lacked reasonable suspicion, or if the search was conducted without valid consent, probable cause, or a warrant, the marijuana evidence can be suppressed — and a suppressed search typically results in dismissal of the charge.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Intervention in Lieu of Conviction and Expungement Options
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For Columbus defendants facing marijuana possession charges — particularly first-time defendants — Intervention in Lieu of Conviction (ILC) under R.C. 2951.041 may be available. ILC is a diversion program that, upon successful completion, results in dismissal of the charge without a conviction. ILC is available for drug possession charges where the offense was driven by substance use. The defendant must complete treatment, drug testing, and any other court-ordered conditions. ILC eligibility is not automatic — the prosecutor must consent and the court must approve. Our firm evaluates ILC as the primary alternative to a conviction-entry plea in every marijuana possession case where the client qualifies.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For those who already have a marijuana conviction, H.B. 96 (effective September 30, 2025) expanded Ohio&apos;s expungement eligibility under R.C. 2953.32. Prior minor misdemeanor marijuana possession convictions may now be eligible for expungement after a six-month waiting period from final discharge. Our firm handles expungement petitions at Franklin County Court of Common Pleas and advises clients on whether their prior marijuana conviction qualifies for sealing under the current law.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               Even in the adult-use era, Columbus marijuana charges require experienced defense counsel.
             </p>
           </div>

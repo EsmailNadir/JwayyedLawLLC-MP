@@ -82,60 +82,60 @@ export default function MediationPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Mediation in Ohio: A Smarter Path to Resolving Disputes
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Litigation is expensive, slow, emotionally draining, and public. A civil lawsuit in Ohio can take two to four years from filing to trial, costing each side tens of thousands of dollars in attorney fees, expert witness costs, and court expenses — even for cases that ultimately settle before a jury ever hears them. Ohio courts, recognizing these burdens, have broadly embraced mediation as a faster, more cost-effective path to resolution. Under ORC Chapter 2710 — Ohio\'s Uniform Mediation Act — and Ohio Rule of Civil Procedure 16, courts across the state routinely order parties to mediate before trial. But mediation is also available — and often most effective — when parties choose it voluntarily, before or during litigation, as a way to reach a resolution they design together rather than having a judge or jury decide for them.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               At Jwayyed Law LLC, we assist clients in Columbus and across Ohio with mediation in two ways: as counsel for a party in mediation (helping you prepare your position, understand your legal rights, and evaluate any proposed settlement), and as a neutral mediator facilitating resolution in civil, business, landlord-tenant, and estate matters. We bring a practical, problem-solving approach to conflict resolution that is grounded in knowledge of Ohio law and an understanding that most clients would rather reach a workable agreement today than win a theoretical victory two years from now.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Mediation is not a sign of weakness or capitulation — it is a strategic choice. Parties who control the terms of their own settlement typically reach more durable, tailored outcomes than those imposed by a court. A business dispute that could destroy a long-standing commercial relationship may be resolved with a creative payment arrangement, a revised contract, or a structured exit that neither side would have thought to propose in the adversarial heat of litigation. An estate dispute among siblings can be resolved in ways that preserve family relationships — something a court cannot order and litigation almost always damages.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Ohio\'s Uniform Mediation Act: Confidentiality and Legal Framework
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio enacted ORC Chapter 2710, the Ohio Uniform Mediation Act, effective in 2005, establishing a statewide legal framework for mediation confidentiality and procedure. The Act\'s most important provision — ORC 2710.06 — creates a privilege protecting all mediation communications from disclosure in any subsequent legal proceeding. This means that what a party says in mediation, any offers made, and any admissions disclosed cannot be introduced as evidence in a later trial. The mediator is also prohibited from testifying about the mediation. This privilege belongs to the parties, the mediator, and any non-party participants, and it applies unless all privilege holders waive it.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The confidentiality protections are robust but not absolute. ORC 2710.06(B) sets out specific exceptions: a court or administrative tribunal may admit evidence of a mediation communication to prove or disprove a claim of professional misconduct by a mediator; to prove or disprove abuse, neglect, or exploitation of a child or vulnerable adult; or as otherwise required by law. The practical effect is that parties can speak candidly in mediation — acknowledging mistakes, expressing concerns about risks in litigation, and exploring compromises — without worrying that their candor will be weaponized against them in court.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Mediation for Business, Landlord-Tenant, and Estate Disputes in Ohio
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Business disputes</strong> — breach of contract claims, partnership and LLC dissolution disputes, non-compete and trade secret conflicts, vendor and customer disputes — are among the most fertile ground for mediation. Business parties often prefer private resolution because litigation is public: a filed lawsuit and a published judgment can damage business reputations, expose confidential business information to competitors, and poison relationships with customers, vendors, and employees. A mediated settlement can include confidentiality provisions that litigation cannot.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Landlord-tenant disputes</strong> in Columbus and Franklin County are a significant portion of civil docket. Whether the issue is unpaid rent, security deposit disputes, habitability claims, lease interpretation, or eviction-related matters, mediation can often resolve these matters in hours rather than weeks of court dates. Columbus\'s Housing Division of the Franklin County Municipal Court has utilized mediation programs to help parties reach agreements without full trials, saving both sides time and money.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               <strong>Estate and probate disputes</strong> — will contests, trust disputes, claims of undue influence, executor misconduct, and family disagreements over asset distribution — are particularly well-suited for mediation because the parties are almost always family members whose relationship extends far beyond the present dispute. A will contest tried to a jury produces a winner and a loser, and often ends relationships permanently. Mediated estate settlements can distribute assets in ways that honor everyone\'s interests, preserve sentimental property for the family members who value it most, and allow siblings to maintain relationships through and after the loss of a parent.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/other-services/arbitration" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Arbitration</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Binding alternative dispute resolution</span>
+              <Link href="/other-services/arbitration" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Arbitration</span>
+                <span className="text-sm text-navy-950/70">Binding alternative dispute resolution</span>
               </Link>
-              <Link href="/other-services/will-contests" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Will Contests</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Contesting or defending the validity of a will</span>
+              <Link href="/other-services/will-contests" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Will Contests</span>
+                <span className="text-sm text-navy-950/70">Contesting or defending the validity of a will</span>
               </Link>
-              <Link href="/other-services/estate-disputes" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Estate Disputes</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Resolving conflicts in estate and probate matters</span>
+              <Link href="/other-services/estate-disputes" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Estate Disputes</span>
+                <span className="text-sm text-navy-950/70">Resolving conflicts in estate and probate matters</span>
               </Link>
-              <Link href="/other-services/dispute-resolution" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Dispute Resolution</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Full overview of ADR options in Ohio</span>
+              <Link href="/other-services/dispute-resolution" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Dispute Resolution</span>
+                <span className="text-sm text-navy-950/70">Full overview of ADR options in Ohio</span>
               </Link>
             </div>
           </div>

@@ -80,11 +80,11 @@ export default function GreeneCountyCourtsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Greene County Court Representation
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Greene County sits in southwestern Ohio, bordered by Montgomery County to the west and stretching
               through communities including Xenia (the county seat), Fairborn, Beavercreek, Kettering, Centerville,
               Springboro, and Yellow Springs. The county is home to Wright-Patterson Air Force Base and a large
@@ -93,7 +93,7 @@ export default function GreeneCountyCourtsPage() {
               representation in all Greene County courts.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               One of the most important things to understand about Greene County is that it has two separate
               municipal courts: Fairborn Municipal Court (1 W. Main St, Fairborn, OH 45324) and Xenia Municipal Court
               (101 N. Detroit St, Xenia, OH 45385). These are distinct courts with separate judges, prosecutors, local
@@ -103,7 +103,7 @@ export default function GreeneCountyCourtsPage() {
               your very first appearance, and our firm appears in both courts.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense under ORC 4511.19 is a major focus of our Greene County practice. Every OVI arrest involves
               multiple potential defense points: whether the officer had constitutionally sufficient reasonable
               articulable suspicion to stop the vehicle, whether field sobriety tests were administered in strict
@@ -113,7 +113,7 @@ export default function GreeneCountyCourtsPage() {
               every Greene County OVI client to identify suppression motions and negotiating leverage.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For misdemeanor criminal matters in Greene County—assault, domestic violence, theft, drug possession,
               disorderly conduct—our firm provides defense representation at every stage from arraignment through
               trial. Under ORC 2935.26, officers may issue a citation in lieu of arrest for most non-first-degree
@@ -123,7 +123,7 @@ export default function GreeneCountyCourtsPage() {
               fully understanding the consequences.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Greene County Common Pleas Court (45 N. Detroit St, Xenia, OH 45385) handles all felony criminal cases,
               civil cases over $15,000, domestic relations matters, and probate. Felony OVI—charged when a defendant
               has three or more prior OVI convictions within 10 years—is prosecuted in Common Pleas Court with
@@ -131,53 +131,53 @@ export default function GreeneCountyCourtsPage() {
               in Greene County, providing continuity of counsel throughout the entire case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Courts We Appear In
             </h3>
 
             <div className="grid md:grid-cols-1 gap-6 mb-8">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Fairborn Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">1 W. Main St, Fairborn, OH 45324</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">1 W. Main St, Fairborn, OH 45324</p>
+                <p className="text-sm text-navy-950/70">
                   Jurisdiction: City of Fairborn, Bath, Beavercreek City &bull; OVI &bull; Misdemeanor criminal defense &bull; Traffic &bull; Civil up to $15,000
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Xenia Municipal Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">101 N. Detroit St, Xenia, OH 45385</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">101 N. Detroit St, Xenia, OH 45385</p>
+                <p className="text-sm text-navy-950/70">
                   Jurisdiction: City of Xenia &bull; OVI &bull; Misdemeanor criminal defense &bull; Traffic &bull; Civil up to $15,000
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Greene County Common Pleas Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">45 N. Detroit St, Xenia, OH 45385</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">45 N. Detroit St, Xenia, OH 45385</p>
+                <p className="text-sm text-navy-950/70">
                   Felony criminal cases &bull; Civil cases over $15,000 &bull; Domestic relations &bull; Probate
                 </p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h4 className="font-['Playfair_Display',_'Georgia',_serif] font-semibold text-gray-900 mb-2">
+              <div className="p-6 border border-navy-950/10">
+                <h4 className="jw-serif font-semibold text-navy-950 mb-2">
                   Yellow Springs Mayor&apos;s Court
                 </h4>
-                <p className="text-gray-700 font-['Inter',_'Arial',_sans-serif] mb-1">Yellow Springs, OH</p>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">
+                <p className="text-navy-950/80 mb-1">Yellow Springs, OH</p>
+                <p className="text-sm text-navy-950/70">
                   Minor misdemeanors and traffic violations within the Village of Yellow Springs; OVI and first-degree misdemeanors transfer to Fairborn Municipal Court
                 </p>
               </div>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Practice Areas in Greene County
             </h3>
-            <ul className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 space-y-2 leading-relaxed">
+            <ul className="text-navy-950/80 mb-6 space-y-2 leading-relaxed">
               <li><strong>OVI / DUI Defense:</strong> Traffic stop challenges, NHTSA field sobriety test analysis, ALS appeals (ORC 4511.191 — 30-day deadline), breathalyzer calibration review</li>
               <li><strong>Misdemeanor Criminal Defense:</strong> Domestic violence (ORC 2919.25), assault (ORC 2903.13), theft (ORC 2913.02), drug possession (ORC 2925.11), disorderly conduct (ORC 2917.11)</li>
               <li><strong>Felony Defense:</strong> Felony OVI, felonious assault, drug trafficking, theft, and other felonies in Greene County Common Pleas Court</li>
@@ -186,24 +186,24 @@ export default function GreeneCountyCourtsPage() {
               <li><strong>Record Sealing:</strong> Eligibility analysis and applications under ORC 2953.32 in Greene County courts</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Communities We Serve in Greene County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               We serve clients throughout Greene County including Xenia (county seat), Fairborn, Beavercreek,
               Kettering, Centerville, Springboro, and Yellow Springs. For legal representation in neighboring counties,
               see our pages for{' '}
-              <Link href="/courts/montgomery-county" className="text-[#b87333] underline hover:opacity-80">Montgomery County</Link>,{' '}
-              <Link href="/courts/clinton-county" className="text-[#b87333] underline hover:opacity-80">Clinton County</Link>, and{' '}
-              <Link href="/courts/franklin-county" className="text-[#b87333] underline hover:opacity-80">Franklin County</Link>.
+              <Link href="/courts/montgomery-county" className="text-sky-deep underline hover:opacity-80">Montgomery County</Link>,{' '}
+              <Link href="/courts/clinton-county" className="text-sky-deep underline hover:opacity-80">Clinton County</Link>, and{' '}
+              <Link href="/courts/franklin-county" className="text-sky-deep underline hover:opacity-80">Franklin County</Link>.
               Also see our dedicated page for{' '}
-              <Link href="/courts/fairborn-municipal-court" className="text-[#b87333] underline hover:opacity-80">Fairborn Municipal Court</Link>.
+              <Link href="/courts/fairborn-municipal-court" className="text-sky-deep underline hover:opacity-80">Fairborn Municipal Court</Link>.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Why Choose Jwayyed Law LLC for Greene County
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Our attorney appears personally in both Fairborn Municipal Court and Xenia Municipal Court, providing
               firsthand knowledge of each court&apos;s procedures and prosecutorial tendencies. We are current on Ohio
               OVI law including the 2025 House Bill 37 amendments, and we apply that knowledge strategically for

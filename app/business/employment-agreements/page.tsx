@@ -71,26 +71,26 @@ export default function EmploymentAgreementsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Employment Agreements in Ohio: Protecting Your Rights and Your Business
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              The employment relationship in Ohio is fundamentally shaped by a single legal default: at-will employment. Under Ohio's well-established at-will doctrine, either party can end the employment relationship at any time, for virtually any reason, without notice — unless an employment agreement says otherwise. That "unless" carries enormous weight. A carefully drafted employment agreement can replace unpredictable at-will defaults with clear, negotiated terms: when and how employment can be terminated, what compensation and benefits the employee is owed, how disputes will be resolved, and what restrictions apply when the relationship ends. A poorly drafted agreement — or no written agreement at all — leaves both employers and employees exposed to disputes, costly litigation, and outcomes they never intended. Employment agreements are a key part of our <Link href="/business" className="text-[#b87333] underline hover:text-[#a06828]">Ohio business law practice</Link>. At Jwayyed Law LLC, we assist employers and employees throughout Columbus and Ohio with drafting, reviewing, and negotiating employment agreements that reflect their actual understanding and legal rights.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              The employment relationship in Ohio is fundamentally shaped by a single legal default: at-will employment. Under Ohio's well-established at-will doctrine, either party can end the employment relationship at any time, for virtually any reason, without notice — unless an employment agreement says otherwise. That "unless" carries enormous weight. A carefully drafted employment agreement can replace unpredictable at-will defaults with clear, negotiated terms: when and how employment can be terminated, what compensation and benefits the employee is owed, how disputes will be resolved, and what restrictions apply when the relationship ends. A poorly drafted agreement — or no written agreement at all — leaves both employers and employees exposed to disputes, costly litigation, and outcomes they never intended. Employment agreements are a key part of our <Link href="/business" className="text-sky-deep underline hover:text-navy-950">Ohio business law practice</Link>. At Jwayyed Law LLC, we assist employers and employees throughout Columbus and Ohio with drafting, reviewing, and negotiating employment agreements that reflect their actual understanding and legal rights.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio's at-will employment doctrine has important statutory and common-law exceptions that every employer and employee should understand. Federal and Ohio civil rights statutes prohibit termination based on race, color, religion, sex, national origin, age (40 and older), disability, pregnancy, and other protected characteristics. Ohio's whistleblower protection statute (<strong>ORC 4113.52</strong>) protects employees who report certain employer violations to appropriate authorities. Ohio courts have also recognized a public policy exception to at-will employment, established in <em>Greeley v. Miami Valley Maintenance Contractors, Inc.</em> (1990) and its progeny: an employer cannot terminate an employee in violation of a clear public policy expressed in the Ohio Constitution, Ohio statutes, or administrative regulations — such as firing an employee for filing a workers' compensation claim, serving on a jury, or reporting a workplace safety violation. Understanding these exceptions is critical for employers structuring termination decisions and for employees evaluating whether a termination was unlawful.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Compensation structure is one of the most heavily negotiated aspects of Ohio employment agreements, and getting it right requires attention to both contract law and regulatory requirements. Ohio's minimum wage is governed by <strong>ORC Chapter 4111</strong> and is indexed to inflation annually under the Ohio Constitution. Wage payment timing and permissible deductions are regulated under <strong>ORC Chapter 4113</strong> (the Ohio Wage Payment Act). Commission and bonus structures require particular care: Ohio courts have held that once an employee satisfies the conditions for earning a commission or bonus, the payment becomes a vested contractual right — meaning an employer cannot terminate an employee on the eve of a large commission payment and avoid liability. Employment agreements should explicitly address when bonuses and commissions are "earned" to avoid ambiguity and litigation.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For employers, employment agreements are also a critical vehicle for protecting business interests through restrictive covenants. Non-compete, non-solicitation, and non-disclosure provisions should be carefully tailored to satisfy Ohio's reasonableness standard under <em>Raimonde v. Van Vlerah</em>, and should be integrated with the employer's broader intellectual property protections. Intellectual property assignment clauses ensure that inventions, work product, and creative output developed during employment are owned by the employer — filling gaps in the "work made for hire" doctrine under federal copyright law. Dispute resolution clauses specifying arbitration, Ohio choice of law, and Franklin County (or another appropriate Ohio county) as the agreed venue can significantly affect how efficiently disputes are resolved and what procedural rights each party has. All of these provisions interact, and the agreement needs to be considered as a whole.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Types of Employment Agreements We Draft and Review
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
               <li><strong>Executive employment agreements:</strong> Comprehensive contracts for C-suite and senior management, including "for cause" termination definitions, severance structures, equity or bonus provisions, and post-employment restrictions.</li>
               <li><strong>Standard employment agreements:</strong> Written employment contracts for professional employees that replace at-will defaults with agreed-upon termination procedures and compensation terms.</li>
               <li><strong>Offer letters:</strong> Reviewed and drafted to include appropriate at-will disclaimers while clearly confirming material compensation terms — avoiding the implied-contract liability created by poorly worded letters.</li>
@@ -100,34 +100,34 @@ export default function EmploymentAgreementsPage() {
               <li><strong>Separation and transition agreements:</strong> Governing post-termination arrangements, including cooperation obligations, references, and ongoing benefit continuation.</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Wrongful Termination Risk and How Agreements Reduce It
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-4 leading-relaxed">
+            <p className="text-navy-950/80 mb-4 leading-relaxed">
               For Ohio employers, a well-structured employment agreement — paired with documented performance management and a compliant employee handbook — is one of the most effective tools for reducing wrongful termination risk. When an agreement defines "cause" for termination, specifies the procedures required before termination (warnings, performance improvement plans, or HR review), and includes a valid arbitration clause, it simultaneously protects against improvised termination decisions and provides a defined, private forum for resolving disputes that do arise.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              For Ohio employees facing termination or negotiating a departure, understanding what the employment agreement actually says — as opposed to what HR representatives say it says — is essential. Many employees do not realize they have negotiating leverage, particularly if they have specialized knowledge, customer relationships the employer wants to protect, or potential legal claims the employer prefers to resolve privately. An attorney review before signing a severance agreement or a non-compete can make a significant financial difference. For related services, see our pages on <Link href="/business/non-compete-agreements" className="text-[#b87333] underline hover:text-[#a06828]">Ohio non-compete agreements</Link> and <Link href="/business/contract-drafting-review" className="text-[#b87333] underline hover:text-[#a06828]">contract drafting and review</Link>. To discuss your employment agreement needs, <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">contact our office</Link> to schedule a consultation.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              For Ohio employees facing termination or negotiating a departure, understanding what the employment agreement actually says — as opposed to what HR representatives say it says — is essential. Many employees do not realize they have negotiating leverage, particularly if they have specialized knowledge, customer relationships the employer wants to protect, or potential legal claims the employer prefers to resolve privately. An attorney review before signing a severance agreement or a non-compete can make a significant financial difference. For related services, see our pages on <Link href="/business/non-compete-agreements" className="text-sky-deep underline hover:text-navy-950">Ohio non-compete agreements</Link> and <Link href="/business/contract-drafting-review" className="text-sky-deep underline hover:text-navy-950">contract drafting and review</Link>. To discuss your employment agreement needs, <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">contact our office</Link> to schedule a consultation.
             </p>
 
             <LocationsWeServe title="Business Law" />
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/business/contract-drafting-review" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Contract Drafting & Review</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Draft and review all types of business contracts under Ohio law</span>
+              <Link href="/business/contract-drafting-review" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Contract Drafting & Review</span>
+                <span className="text-sm text-navy-950/70">Draft and review all types of business contracts under Ohio law</span>
               </Link>
-              <Link href="/business/non-compete-agreements" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Non-Compete Agreements</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Draft and enforce restrictive covenants under Ohio's Raimonde standard</span>
+              <Link href="/business/non-compete-agreements" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Non-Compete Agreements</span>
+                <span className="text-sm text-navy-950/70">Draft and enforce restrictive covenants under Ohio's Raimonde standard</span>
               </Link>
-              <Link href="/business/business-litigation" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Litigation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Litigate employment and business disputes in Ohio courts</span>
+              <Link href="/business/business-litigation" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Litigation</span>
+                <span className="text-sm text-navy-950/70">Litigate employment and business disputes in Ohio courts</span>
               </Link>
-              <Link href="/business/business-compliance" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Business Compliance</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Meet Ohio employment law and regulatory compliance obligations</span>
+              <Link href="/business/business-compliance" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Business Compliance</span>
+                <span className="text-sm text-navy-950/70">Meet Ohio employment law and regulatory compliance obligations</span>
               </Link>
             </div>
           </div>

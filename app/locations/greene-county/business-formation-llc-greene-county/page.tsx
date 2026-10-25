@@ -76,25 +76,25 @@ export default function BusinessFormationLLCGreeneCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Business & LLC Formation in Greene County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Greene County&apos;s economy is shaped in significant part by the proximity of Wright-Patterson Air Force Base — one of the largest military installations in the United States — which supports a robust community of defense contractors, technology companies, engineering firms, and professional service businesses in Fairborn and Beavercreek. Beyond the defense sector, Greene County&apos;s communities of Xenia, Yellow Springs, and Centerville support a diverse small business economy. Jwayyed Law LLC provides experienced business formation and LLC counsel for Greene County entrepreneurs across all industries.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, effective February 2022. Chapter 1706 represents a significant modernization of Ohio LLC law — introducing series LLCs, clarifying operating agreement modification rights, and providing more flexible management options. Ohio corporations remain under ORC Chapter 1701. For businesses in Greene County&apos;s defense contracting sector, the choice between LLC, S corporation, and C corporation often has significant tax and federal compliance implications. Our attorney analyzes your specific situation and recommends the right structure.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Operating agreements are one of the most important — and most frequently overlooked — elements of proper business formation. Without a written, customized operating agreement, your LLC is governed by the default rules of ORC Chapter 1706, which may not reflect your ownership arrangement or management intentions. In multi-member LLCs, disputes over profit sharing, decision-making authority, and exit procedures are common causes of business failure. A well-drafted operating agreement addresses these issues before they arise, protecting all owners and providing a clear framework for running the business.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Greene County entrepreneurs also benefit from legal guidance on contracts — vendor agreements, customer service contracts, employment agreements, non-disclosure agreements, and non-compete provisions all require careful legal drafting to be enforceable in Ohio. For defense contractors operating in Fairborn and Beavercreek, proper documentation of business structure and governance may also be a compliance requirement for federal contract eligibility.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Ohio business formation is handled through the Ohio Secretary of State, so our attorney can assist Greene County clients wherever they are located. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-[#b87333] underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs and business owners.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
+              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs and business owners.
             </p>
           </div>
         </div>

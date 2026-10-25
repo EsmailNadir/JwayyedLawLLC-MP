@@ -72,30 +72,30 @@ export default function OVIWithAccidentPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Understanding OVI with Accident Charges in Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              When an OVI arrest arises out of a traffic accident, the legal stakes escalate dramatically. A standard first OVI under ORC 4511.19 is a first-degree misdemeanor with penalties under HB 37 (effective April 9, 2025) including 3–180 days in jail, fines of $565–$1,075, and a 1–3 year license suspension. But when the OVI-related accident causes serious physical harm to another person, charges under ORC 2903.08 for vehicular assault (F4) or aggravated vehicular assault (F3) may be filed alongside or instead of the misdemeanor OVI. If the accident causes death, prosecutors can seek vehicular homicide (M1), vehicular manslaughter (F3), or aggravated vehicular homicide (F1 or F2) under ORC 2903.06. These felony charges carry prison sentences, substantial fines, and consequences that can permanently alter every aspect of a person's life. At Jwayyed Law LLC, we provide aggressive criminal defense for clients facing OVI with accident charges throughout Ohio as part of our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:text-[#a06828]">OVI/DUI defense practice</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              When an OVI arrest arises out of a traffic accident, the legal stakes escalate dramatically. A standard first OVI under ORC 4511.19 is a first-degree misdemeanor with penalties under HB 37 (effective April 9, 2025) including 3–180 days in jail, fines of $565–$1,075, and a 1–3 year license suspension. But when the OVI-related accident causes serious physical harm to another person, charges under ORC 2903.08 for vehicular assault (F4) or aggravated vehicular assault (F3) may be filed alongside or instead of the misdemeanor OVI. If the accident causes death, prosecutors can seek vehicular homicide (M1), vehicular manslaughter (F3), or aggravated vehicular homicide (F1 or F2) under ORC 2903.06. These felony charges carry prison sentences, substantial fines, and consequences that can permanently alter every aspect of a person's life. At Jwayyed Law LLC, we provide aggressive criminal defense for clients facing OVI with accident charges throughout Ohio as part of our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:text-navy-950">OVI/DUI defense practice</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              OVI accident cases differ from standard OVI cases in the complexity and volume of evidence that prosecutors assemble. Beyond the BAC test results and officer observations typical of any OVI case, accident cases involve accident reconstruction specialists who analyze physical evidence at the scene — tire marks, crush damage, airbag deployment patterns, and point of impact — to reconstruct speed and driver behavior. Vehicles manufactured in the last two decades typically contain event data recorders (EDRs), commonly called "black boxes," which record speed, braking inputs, and steering in the seconds before a crash. Law enforcement can obtain and download this data, and it frequently becomes central evidence in prosecution. Hospital blood draws following serious accidents may be ordered by law enforcement and may be admissible under ORC 4511.191's implied consent provisions even without the driver's consent. Eyewitnesses and surveillance footage also play a significant role. An effective defense must address all of these evidence streams from the earliest stages of the case. Learn more about <Link href="/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio" className="text-[#b87333] underline hover:text-[#a06828]">what to do if you are pulled over for OVI in Ohio</Link>.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              OVI accident cases differ from standard OVI cases in the complexity and volume of evidence that prosecutors assemble. Beyond the BAC test results and officer observations typical of any OVI case, accident cases involve accident reconstruction specialists who analyze physical evidence at the scene — tire marks, crush damage, airbag deployment patterns, and point of impact — to reconstruct speed and driver behavior. Vehicles manufactured in the last two decades typically contain event data recorders (EDRs), commonly called "black boxes," which record speed, braking inputs, and steering in the seconds before a crash. Law enforcement can obtain and download this data, and it frequently becomes central evidence in prosecution. Hospital blood draws following serious accidents may be ordered by law enforcement and may be admissible under ORC 4511.191's implied consent provisions even without the driver's consent. Eyewitnesses and surveillance footage also play a significant role. An effective defense must address all of these evidence streams from the earliest stages of the case. Learn more about <Link href="/our-law-firm/blog/what-to-do-pulled-over-ovi-ohio" className="text-sky-deep underline hover:text-navy-950">what to do if you are pulled over for OVI in Ohio</Link>.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              An OVI accident creates parallel civil and criminal exposure. The injured party or the estate of a deceased victim can file a personal injury or wrongful death lawsuit in Ohio civil court seeking compensation for medical expenses, lost income, pain and suffering, and other damages. An OVI conviction in the criminal case is admissible in the civil case as evidence of negligence per se — the jury can be instructed that the conviction establishes the driver was operating unlawfully, which generally satisfies the negligence element. Ohio's Dram Shop Act under ORC 4399.01 may also expose bars or restaurants that served the driver to civil liability in limited circumstances. The civil case timeline typically runs parallel to the criminal case, creating additional pressure. An attorney managing both the criminal defense and coordination with civil counsel provides the most comprehensive protection. Call (614) 285-5482 or <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">schedule a consultation</Link> to discuss your case.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              An OVI accident creates parallel civil and criminal exposure. The injured party or the estate of a deceased victim can file a personal injury or wrongful death lawsuit in Ohio civil court seeking compensation for medical expenses, lost income, pain and suffering, and other damages. An OVI conviction in the criminal case is admissible in the civil case as evidence of negligence per se — the jury can be instructed that the conviction establishes the driver was operating unlawfully, which generally satisfies the negligence element. Ohio's Dram Shop Act under ORC 4399.01 may also expose bars or restaurants that served the driver to civil liability in limited circumstances. The civil case timeline typically runs parallel to the criminal case, creating additional pressure. An attorney managing both the criminal defense and coordination with civil counsel provides the most comprehensive protection. Call (614) 285-5482 or <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">schedule a consultation</Link> to discuss your case.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Causation is one of the most important and often litigated issues in OVI accident cases. Prosecutors must prove not only that the driver was impaired, but that the impairment caused the accident and the resulting harm. Defense attorneys can challenge causation by introducing evidence that road conditions, another driver's actions, a vehicle malfunction, or other independent factors caused or contributed to the crash. For example, if another vehicle ran a red light and caused the collision, the OVI driver's BAC level may be legally irrelevant to the causation analysis. If the defense can establish that the accident would have occurred regardless of any impairment — because the fault lay entirely with another party — this can defeat vehicular assault or homicide charges even if the OVI itself is proved. Accident reconstruction experts retained by the defense are frequently essential in mounting this type of challenge.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Hit-and-run situations combined with OVI charges create additional criminal exposure under ORC 4549.02. Ohio law requires every driver involved in any accident involving injury, death, or property damage to stop immediately, exchange information, and render reasonable assistance to injured parties. Leaving the scene of an accident is a separate criminal offense — a misdemeanor for property damage only, a fifth-degree felony if injury resulted, and a third-degree felony if serious physical harm or death resulted. Prosecutors often use leaving the scene as evidence of consciousness of guilt on the OVI charge. If you are facing both charges, an attorney who understands how they interact and how to defend both simultaneously is critical. For more about the overall OVI defense process, see our <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI defense overview</Link>, or learn about <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-[#b87333] underline hover:opacity-80">limited driving privileges</Link> during any resulting suspension.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Hit-and-run situations combined with OVI charges create additional criminal exposure under ORC 4549.02. Ohio law requires every driver involved in any accident involving injury, death, or property damage to stop immediately, exchange information, and render reasonable assistance to injured parties. Leaving the scene of an accident is a separate criminal offense — a misdemeanor for property damage only, a fifth-degree felony if injury resulted, and a third-degree felony if serious physical harm or death resulted. Prosecutors often use leaving the scene as evidence of consciousness of guilt on the OVI charge. If you are facing both charges, an attorney who understands how they interact and how to defend both simultaneously is critical. For more about the overall OVI defense process, see our <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI defense overview</Link>, or learn about <Link href="/ovi-dui-defense/limited-driving-privileges" className="text-sky-deep underline hover:opacity-80">limited driving privileges</Link> during any resulting suspension.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio OVI Accident Charge Hierarchy
             </h3>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <ul className="list-disc pl-6 space-y-2 font-['Inter',_'Arial',_sans-serif] text-gray-700 group-hover:text-gray-900 transition-colors mb-4">
+            <div className="bg-ice p-6 mb-8">
+              <ul className="list-disc pl-6 space-y-2 text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
                 <li><strong>OVI (ORC 4511.19):</strong> M1 misdemeanor — no injury or death; 3–180 days jail, fines $565–$1,075 (HB 37 first offense)</li>
                 <li><strong>Vehicular Assault (ORC 2903.08):</strong> F4 felony — OVI causes serious physical harm; 6–18 months prison</li>
                 <li><strong>Aggravated Vehicular Assault (ORC 2903.08):</strong> F3 felony — driver under OVI suspension or prior felony OVI; 9 months to 3 years prison</li>
@@ -105,10 +105,10 @@ export default function OVIWithAccidentPage() {
               </ul>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               How an OVI with Accident Defense Attorney Can Help
             </h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Immediate Investigation:</strong> Secure accident scene evidence, EDR data, and surveillance footage before it is lost or overwritten</li>
               <li><strong>Expert Retention:</strong> Engage accident reconstruction experts to challenge the prosecution's causation theory</li>
               <li><strong>BAC Evidence Challenges:</strong> Contest hospital blood draw procedures, chain of custody, and test accuracy</li>
@@ -119,23 +119,23 @@ export default function OVIWithAccidentPage() {
 
             <LocationsWeServe title="OVI/DUI Defense" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related OVI Defense Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related OVI Defense Services</h3>
             <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">First OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for first-time OVI charges with strategies to protect your record</span>
+              <Link href="/ovi-dui-defense/first-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">First OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for first-time OVI charges with strategies to protect your record</span>
               </Link>
-              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">High-Tier OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
+              <Link href="/ovi-dui-defense/high-tier-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">High-Tier OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense for BAC of 0.17% or higher with enhanced mandatory penalties</span>
               </Link>
-              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Refusal OVI Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defense strategies when you refused the breathalyzer or chemical test</span>
+              <Link href="/ovi-dui-defense/refusal-ovi" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Refusal OVI Defense</span>
+                <span className="text-sm text-navy-950/70">Defense strategies when you refused the breathalyzer or chemical test</span>
               </Link>
-              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Limited Driving Privileges</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Get back on the road legally during your OVI suspension</span>
+              <Link href="/ovi-dui-defense/limited-driving-privileges" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Limited Driving Privileges</span>
+                <span className="text-sm text-navy-950/70">Get back on the road legally during your OVI suspension</span>
               </Link>
             </div>
           </div>

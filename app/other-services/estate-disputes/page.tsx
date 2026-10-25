@@ -82,75 +82,75 @@ export default function EstateDisputesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Estate Disputes in Ohio: Types, Rights, and Remedies
             </h2>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When a loved one dies, the estate administration process is supposed to carry out their final wishes and provide for their heirs and beneficiaries in an orderly way. Too often, however, disputes arise — over the validity of the will itself, the conduct of the executor or trustee, the fair distribution of assets, or the interpretation of ambiguous estate documents. Estate disputes are among the most emotionally charged legal matters because they occur at a time of grief and often involve family members on opposite sides. At Jwayyed Law LLC, we represent beneficiaries, heirs, executors, and trustees in estate and probate disputes throughout Ohio, providing clear-headed legal advocacy in the Franklin County Probate Court and beyond.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Ohio estate disputes are governed by a web of statutes including ORC Chapter 2107 (wills), ORC Chapter 2109 (fiduciary duties), ORC Chapter 2113 (estate administration and fiduciary misconduct), and ORC Chapter 2105 (intestate succession). Depending on the nature of the dispute, proceedings may take place in the Probate Court, the Common Pleas Court, or both. Understanding which court has jurisdiction over your specific claim — and the applicable filing deadlines — is critical to protecting your rights. Contact us at <a href="tel:6142855482" className="text-[#b87333] hover:underline">(614) 285-5482</a> as soon as a dispute arises so that we can assess your situation before time-sensitive deadlines expire.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Ohio estate disputes are governed by a web of statutes including ORC Chapter 2107 (wills), ORC Chapter 2109 (fiduciary duties), ORC Chapter 2113 (estate administration and fiduciary misconduct), and ORC Chapter 2105 (intestate succession). Depending on the nature of the dispute, proceedings may take place in the Probate Court, the Common Pleas Court, or both. Understanding which court has jurisdiction over your specific claim — and the applicable filing deadlines — is critical to protecting your rights. Contact us at <a href="tel:6142855482" className="text-sky-deep hover:underline">(614) 285-5482</a> as soon as a dispute arises so that we can assess your situation before time-sensitive deadlines expire.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Will Contests and Challenges to Estate Documents
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A will contest under ORC 2107.71 is a legal challenge to the validity of a will that has been admitted to probate. Grounds for contesting a will in Ohio include: lack of testamentary capacity (the testator did not understand the nature and extent of their property, who their natural heirs were, or what a will does); undue influence (someone with power over the testator substituted their wishes for the testator\'s own); fraud (the testator was deceived about the nature of what they signed); and failure to meet Ohio\'s execution formalities (the will was not signed or witnessed as required by ORC 2107.02). A will contest must be filed as a civil action in the Common Pleas Court of the county where probate is pending within three months after the will is admitted, under ORC 2107.76.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Undue influence is the most frequently litigated ground in Ohio will contests. Ohio courts do not require direct evidence of influence — circumstantial factors like the testator\'s advanced age or illness, isolation from family members, dependency on the alleged influencer, the influencer\'s active involvement in procuring or drafting the will, and a sudden dramatic change from prior testamentary plans can collectively establish undue influence. Disputes over the competency of elderly testators who suffered from dementia or Alzheimer\'s disease are particularly common and often turn on medical records, witness testimony, and expert psychiatric opinion evidence about the testator\'s mental state at the time the will was executed.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Estate disputes can also arise from conflicts over the meaning of will provisions (ambiguous bequests, disputes over which assets are included in the residuary estate, or disagreements about how specific property should be valued), disputes over whether a decedent\'s beneficiary designations on non-probate assets correctly reflect their intent, and challenges to the validity of pre-death transfers that may have been made under duress or while the decedent lacked capacity. Digital assets — cryptocurrency, online financial accounts, intellectual property, and social media accounts — have added a new dimension to estate disputes as families struggle to access, value, and distribute assets that did not exist in prior generations.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Executor and Trustee Misconduct: Breach of Fiduciary Duty
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               An executor or administrator serves as a fiduciary — a person legally bound to act in the best interests of the estate and its beneficiaries, not their own interests. Ohio imposes strict fiduciary duties under ORC Chapter 2109, including the duty of loyalty, the duty to administer the estate prudently, the duty to account, and the duty to treat all beneficiaries impartially. When an executor breaches these duties — by self-dealing, making improper distributions, failing to pay creditors in the correct priority order, neglecting to file required court accounts, or allowing estate assets to waste — beneficiaries have legal remedies available in Probate Court.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under ORC 2113.61, an executor who wastes or converts estate assets is liable to be charged with the assets and surcharged for any losses caused by the misconduct. The Probate Court can order an executor to repay amounts wrongfully taken or paid, restore assets improperly transferred, and reimburse the estate for costs incurred as a result of the breach. In serious cases, the court can remove the executor under ORC 2109.24 and appoint a successor. Removal petitions require showing actual harm or a serious threat of harm — courts are reluctant to remove executors who are simply making decisions that some beneficiaries disagree with but have not yet caused injury to the estate.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Trust disputes follow a similar framework but are governed by Ohio\'s Uniform Trust Code rather than the probate statutes. A trustee who breaches a fiduciary duty can be surcharged for losses, ordered to disgorge profits, removed from office, and in some cases held personally liable for damages beyond the amount taken. Beneficiaries of irrevocable trusts have statutory rights to annual accountings, information about the trust\'s assets and administration, and notice of significant transactions. If a trustee refuses to provide information or file proper accounts, the court can compel disclosure and impose sanctions. We also handle disputes involving the surviving spouse\'s right of election under ORC 2106.01, which allows a surviving spouse to claim a share of the augmented estate even when the will leaves them less.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-4">
               Other Estate Dispute Issues: Medicaid Recovery, Digital Assets, and Real Property
             </h3>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio\'s Medicaid estate recovery program requires the Ohio Department of Medicaid to seek reimbursement from a deceased Medicaid recipient\'s estate for benefits paid on their behalf. Families sometimes dispute the scope of Medicaid\'s claim, the value of assets subject to recovery, or whether certain assets qualify for exemptions — particularly when the decedent\'s home is the primary asset. Challenging a Medicaid estate recovery claim or negotiating a compromise requires understanding both estate law and Medicaid regulations, and the stakes can be significant for families expecting to inherit a family home.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Real property disputes in Ohio estates are particularly contentious. When the estate includes a family home, farm, or investment property, disagreements often arise over whether the property should be sold or distributed in-kind, how it should be valued for purposes of an equal distribution among multiple beneficiaries, and whether one beneficiary who lived in or managed the property has a superior claim. Partition actions — in which co-owners ask the court to divide or sell jointly owned property — are sometimes necessary when estate beneficiaries who inherit jointly cannot agree on disposition. We help families navigate these difficult decisions and, when litigation is unavoidable, represent clients in partition proceedings and estate real property disputes.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8 mb-8">
-              <Link href="/other-services" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 All Other Legal Services
               </Link>
-              <Link href="/other-services/will-contests" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/will-contests" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Will Contests in Ohio
               </Link>
-              <Link href="/other-services/probate" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/other-services/probate" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Ohio Probate Administration
               </Link>
-              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all font-medium text-gray-900 font-['Inter',_'Arial',_sans-serif]">
+              <Link href="/trusts/revocable-living-trusts" className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all font-medium text-navy-950">
                 Revocable Living Trusts
               </Link>
             </div>

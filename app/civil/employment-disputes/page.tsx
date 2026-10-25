@@ -70,35 +70,35 @@ export default function EmploymentDisputesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Understanding Employment Disputes in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Employment disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve wrongful termination, workplace discrimination, harassment, retaliation, whistleblower claims, and violations of wage and hour laws. Ohio is an at-will employment state, but that does not mean employers can do whatever they want — both the Ohio Civil Rights Act (ORC Chapter 4112) and a robust set of federal laws including Title VII, the ADEA, the ADA, and the FMLA provide meaningful protections for Ohio employees. As part of our <Link href="/civil" className="text-[#b87333] underline hover:text-[#a06828]">civil litigation practice</Link>, Jwayyed Law LLC represents employees who have been mistreated in the workplace and helps them navigate the complex administrative and judicial processes available under Ohio and federal law. Employment disputes may also involve <Link href="/business/employment-agreements" className="text-[#b87333] underline hover:text-[#a06828]">employment agreement</Link> issues such as non-compete clauses and severance terms.
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Understanding Employment Disputes in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Employment disputes in Columbus, Cincinnati, Dayton, or throughout Ohio can involve wrongful termination, workplace discrimination, harassment, retaliation, whistleblower claims, and violations of wage and hour laws. Ohio is an at-will employment state, but that does not mean employers can do whatever they want — both the Ohio Civil Rights Act (ORC Chapter 4112) and a robust set of federal laws including Title VII, the ADEA, the ADA, and the FMLA provide meaningful protections for Ohio employees. As part of our <Link href="/civil" className="text-sky-deep underline hover:text-navy-950">civil litigation practice</Link>, Jwayyed Law LLC represents employees who have been mistreated in the workplace and helps them navigate the complex administrative and judicial processes available under Ohio and federal law. Employment disputes may also involve <Link href="/business/employment-agreements" className="text-sky-deep underline hover:text-navy-950">employment agreement</Link> issues such as non-compete clauses and severance terms.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">The Ohio Civil Rights Act and Protected Classes</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">The Ohio Civil Rights Act and Protected Classes</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s Civil Rights Act (ORC Chapter 4112) prohibits employment discrimination based on race, color, religion, sex, national origin, disability, age (40 and older), military status, ancestry, and pregnancy. It applies to employers with four or more employees and covers all aspects of the employment relationship — hiring, firing, promotions, compensation, job assignments, and other terms and conditions of employment. ORC 4112.99 allows employees to bring a direct civil lawsuit within 2 years of the discriminatory act, in addition to filing an administrative charge with the Ohio Civil Rights Commission (OCRC). Federal counterparts — Title VII (race, sex, religion, national origin), the Age Discrimination in Employment Act (ADEA, 29 U.S.C. § 623), and the Americans with Disabilities Act (ADA, 42 U.S.C. § 12101) — provide parallel federal protections with their own procedures and remedies.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Wrongful Termination and the Public Policy Exception</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Wrongful Termination and the Public Policy Exception</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               While Ohio&apos;s at-will employment doctrine gives employers broad authority to terminate employees, the Ohio Supreme Court established an important public policy exception in Greeley v. Miami Valley Maintenance Contractors, Inc. (1990). Under this exception, an employer cannot fire an employee for exercising a right expressly granted by law, for complying with a legal duty, for refusing to engage in illegal conduct, or for reporting illegal activity. Common examples include termination for filing a workers&apos; compensation claim (ORC 4123.90), for jury duty service, or for reporting wage theft or safety violations. Proving a public policy wrongful termination claim requires identifying a clear public policy in an Ohio statute, constitutional provision, or administrative regulation that was violated by the termination.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">EEOC, OCRC, and Filing Deadlines</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              Filing deadlines in employment discrimination cases are strictly enforced and missing them permanently bars the claim. Ohio employees pursuing federal discrimination claims must file a charge with the EEOC within 300 days of the discriminatory act (Ohio is a deferral state, which extends the normal 180-day federal deadline). Employees pursuing state law discrimination claims through the OCRC must file within 2 years. If an employee wants to file a direct civil lawsuit in Ohio court under ORC 4112.99, the 2-year limitations period also applies. FMLA retaliation claims under 29 U.S.C. § 2617 have a 2-year limitations period (3 years for willful violations), and workers&apos; compensation retaliation claims under ORC 4123.90 must be filed within 180 days. <Link href="/contact" className="text-[#b87333] underline hover:text-[#a06828]">Contact Jwayyed Law LLC</Link> promptly after an adverse employment action to preserve all available claims.
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">EEOC, OCRC, and Filing Deadlines</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              Filing deadlines in employment discrimination cases are strictly enforced and missing them permanently bars the claim. Ohio employees pursuing federal discrimination claims must file a charge with the EEOC within 300 days of the discriminatory act (Ohio is a deferral state, which extends the normal 180-day federal deadline). Employees pursuing state law discrimination claims through the OCRC must file within 2 years. If an employee wants to file a direct civil lawsuit in Ohio court under ORC 4112.99, the 2-year limitations period also applies. FMLA retaliation claims under 29 U.S.C. § 2617 have a 2-year limitations period (3 years for willful violations), and workers&apos; compensation retaliation claims under ORC 4123.90 must be filed within 180 days. <Link href="/contact" className="text-sky-deep underline hover:text-navy-950">Contact Jwayyed Law LLC</Link> promptly after an adverse employment action to preserve all available claims.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Whistleblower and Retaliation Protections</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Whistleblower and Retaliation Protections</h3>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio employees are protected from retaliation for engaging in legally protected activities. Ohio&apos;s Whistleblower Protection Act (ORC 4113.52) protects employees who report employer violations of state or federal law, subject to specific notice requirements. ORC 4123.90 protects employees who file workers&apos; compensation claims or participate in workers&apos; compensation proceedings. Federal law provides additional retaliation protections: Title VII and Ohio&apos;s Civil Rights Act prohibit retaliation for filing discrimination charges or participating in discrimination proceedings; the FMLA (29 U.S.C. § 2615) prohibits retaliation for taking protected leave; and the ADEA protects employees who oppose age discrimination. Retaliation claims can arise even when the underlying discrimination claim is not ultimately proven — the employee need only show they had a reasonable, good-faith belief that a protected activity was occurring.
             </p>
 
             <LocationsWeServe title="Civil" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">How an Employment Disputes Attorney Can Help</h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an Employment Disputes Attorney Can Help</h3>
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Claims Evaluation:</strong> Analyze employment issues, identify viable legal theories, and evaluate the strength of your claims</li>
               <li><strong>EEOC and OCRC Charges:</strong> File timely administrative charges with the EEOC (within 300 days) and OCRC (within 2 years)</li>
               <li><strong>Negotiations:</strong> Negotiate severance agreements, settlements, and reinstatement</li>
@@ -107,23 +107,23 @@ export default function EmploymentDisputesPage() {
               <li><strong>Whistleblower Claims:</strong> Advise on and pursue claims under Ohio&apos;s Whistleblower Protection Act (ORC 4113.52)</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Related Civil Litigation Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Related Civil Litigation Services</h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/civil/breach-of-contract" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Breach of Contract</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Enforce or defend contract obligations and recover damages for broken agreements</span>
+              <Link href="/civil/breach-of-contract" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Breach of Contract</span>
+                <span className="text-sm text-navy-950/70">Enforce or defend contract obligations and recover damages for broken agreements</span>
               </Link>
-              <Link href="/civil/debt-collection-defense" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Debt Collection Defense</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Defend against unfair debt collection practices and protect your rights</span>
+              <Link href="/civil/debt-collection-defense" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Debt Collection Defense</span>
+                <span className="text-sm text-navy-950/70">Defend against unfair debt collection practices and protect your rights</span>
               </Link>
-              <Link href="/civil" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Defamation</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Protect your reputation against false and harmful statements</span>
+              <Link href="/civil" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Defamation</span>
+                <span className="text-sm text-navy-950/70">Protect your reputation against false and harmful statements</span>
               </Link>
-              <Link href="/civil/appeals" className="block p-4 border border-gray-200 rounded-lg hover:border-[#b87333] transition-colors">
-                <span className="font-['Playfair_Display',_'Georgia',_serif] font-bold text-gray-900 block mb-1">Appeals</span>
-                <span className="font-['Inter',_'Arial',_sans-serif] text-sm text-gray-600">Challenge unfavorable court decisions in Ohio appellate courts</span>
+              <Link href="/civil/appeals" className="block p-4 border border-navy-950/10 hover:border-sky-deep transition-colors">
+                <span className="jw-serif font-bold text-navy-950 block mb-1">Appeals</span>
+                <span className="text-sm text-navy-950/70">Challenge unfavorable court decisions in Ohio appellate courts</span>
               </Link>
             </div>
           </div>

@@ -70,70 +70,70 @@ export default function ColumbusMarijuanaOVIPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
 
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Marijuana OVI Defense in Columbus, Ohio
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s adult-use marijuana law (Issue 2, effective December 2023) made recreational cannabis legal for adults 21 and over in Columbus — but it did nothing to change Ohio&apos;s marijuana OVI laws. It remains a criminal offense to operate a vehicle in Columbus with THC above the per se limit in blood or urine, regardless of whether the cannabis was consumed legally. What makes marijuana OVI charges uniquely dangerous is Ohio&apos;s per se limit structure: a 2 nanogram per milliliter (ng/mL) threshold in whole blood that can be exceeded for hours after use, and urine metabolite thresholds that can be positive for days or weeks after the last use. A Columbus driver who used cannabis legally the day before — and was not impaired at the time of driving — can still be charged with marijuana OVI under the per se statute. Jwayyed Law LLC defends marijuana OVI charges at Franklin County Municipal Court. Call{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               — the 30-day ALS appeal deadline applies.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Ohio&apos;s Marijuana OVI Per Se Limits — R.C. 4511.19(A)(1)(j)
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Under R.C. 4511.19(A)(1)(j), Ohio sets per se OVI limits for marijuana and marijuana metabolites. For whole blood: 2 ng/mL of marijuana (THC) and 15 ng/mL of marijuana metabolite. For urine: 10 ng/mL of marijuana and 35 ng/mL of marijuana metabolite. These per se limits operate identically to the alcohol BAC limit — a test result above the threshold supports an OVI charge without requiring additional proof of impairment.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               The 2 ng/mL blood threshold for THC is scientifically controversial. Research on THC and driving impairment does not establish a clear dose-response relationship between blood THC concentration and driving impairment in the way that alcohol BAC does. Habitual cannabis users can have blood THC above 2 ng/mL even when not currently impaired — THC is lipophilic and accumulates in fatty tissue, releasing back into blood over time. The Ohio Supreme Court in <em>State v. Ilg</em> addressed the metabolite-only question, drawing a distinction between parent THC (which establishes recent use) and metabolites alone (which establish only past use). However, these defenses require careful scientific analysis of the specific test results in your case.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Drug Recognition Expert (DRE) Evaluations in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Because there is no roadside breathalyzer for marijuana, Columbus Division of Police and Franklin County law enforcement rely on Drug Recognition Experts (DREs) when they suspect drug-impaired driving. DRE is a 12-step standardized evaluation protocol developed by the National Highway Traffic Safety Administration and the International Association of Chiefs of Police. A DRE officer examines the suspect&apos;s eyes, vital signs, muscle tone, and behavioral indicators and forms an opinion on what category of drugs is causing impairment.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               DRE evaluations are challengeable on multiple grounds. The DRE must be certified and must follow the 12-step protocol in sequence — deviations can undermine the opinion. The validity of DRE as a scientific method for detecting marijuana impairment specifically is disputed; courts have not uniformly accepted DRE testimony as established science. We obtain the DRE officer&apos;s certification records, the written DRE evaluation report, and any video of the evaluation, and analyze whether the protocol was followed and whether the officer&apos;s conclusions are supported by the observations recorded.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Blood and Urine Test Challenges in Columbus Marijuana OVI Cases
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               In a Columbus marijuana OVI, the chemical test is typically a blood draw performed at a hospital after arrest or at a law enforcement facility. Blood testing is more scientifically defensible for detecting current impairment than urine, which can show only metabolites. However, both blood and urine tests are challengeable on procedural and scientific grounds.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               For blood tests, our firm examines the chain of custody from draw to analysis, the laboratory&apos;s certification status and accreditation, the specific testing methodology (gas chromatography-mass spectrometry is the gold standard), and the timing between the traffic stop and the blood draw. A significant delay between the stop and the blood draw is relevant to whether the THC concentration at the time of testing reflects the THC concentration at the time of driving. For urine tests, we challenge whether a metabolite-only result — showing only breakdown products of THC, not active THC — actually establishes impairment, consistent with the Ohio Supreme Court&apos;s metabolite jurisprudence.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Marijuana OVI and the Adult-Use Framework in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s adult-use marijuana law (Issue 2 / H.B. 86) permits Columbus adults 21 and over to possess up to 2.5 ounces of marijuana, 15 grams of concentrate, and cultivate up to six plants. Legal dispensaries now operate throughout Franklin County. This legal framework creates real-world complexity for drivers: a Columbus adult who uses cannabis legally at home in the evening may still have measurable blood THC the following morning — potentially above the 2 ng/mL per se limit — even though they are not actively impaired. The legal status of the cannabis consumed provides no defense to the OVI charge, but it is relevant to the defense narrative and to arguments about the disconnect between per se test results and actual impaired driving.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Columbus drivers stopped near dispensary corridors — including areas along the I-270 outerbelt, High Street, and the Short North — may be subject to heightened law enforcement attention for marijuana impairment. Our firm is familiar with the Columbus Division of Police&apos;s OVI enforcement patterns and understands the specific factual issues that arise in marijuana OVI cases in this city.
             </p>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Marijuana OVI Penalties and ALS in Columbus
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               A marijuana OVI conviction in Columbus carries the same criminal penalties as an alcohol OVI: mandatory minimum 3 days in jail or 3 days in a Driver Intervention Program for a first offense; fines of $565–$1,075; and a license suspension of 1–3 years under HB 37. The ALS is also imposed at arrest — 90 days for consent (test taken, per se limit exceeded) or 1 year for refusal. The ALS appeal must be filed in Franklin County Municipal Court within 30 days of the arrest date. Our firm files the ALS appeal immediately upon being retained, requests a stay of suspension, and challenges the per se test result as part of the overall defense.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Unlike alcohol OVI, a marijuana OVI conviction is not eligible for expungement under Ohio law. The R.C. 4511.19 ineligibility applies regardless of whether the underlying impairment was from marijuana, alcohol, or other substances. This makes fighting a marijuana OVI charge — rather than accepting a plea — especially important: the conviction will remain on the defendant&apos;s record permanently if not dismissed or reduced to an eligible offense.
             </p>
 
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-[#b87333] underline hover:opacity-80">(614) 285-5482</a>{' '}
+              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
               or{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">schedule a consultation</Link>.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation</Link>.
               The 30-day ALS appeal deadline applies to marijuana OVI arrests — act immediately.
             </p>
           </div>

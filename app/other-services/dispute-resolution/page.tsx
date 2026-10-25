@@ -70,39 +70,39 @@ export default function DisputeResolutionPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">Alternative Dispute Resolution in Ohio</h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Alternative Dispute Resolution in Ohio</h2>
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               When disputes arise — whether in a business relationship, a contract disagreement, an employment matter, or a neighbor conflict — litigation is not always the best path forward. Alternative dispute resolution (ADR) offers faster, less expensive, and more private alternatives that can preserve relationships and give the parties greater control over outcomes. At Jwayyed Law LLC, we assist clients in Columbus, Cincinnati, Dayton, and throughout Ohio with both mediation and arbitration under the framework established by the Ohio Revised Code. Ohio Revised Code Chapter 2711 governs arbitration agreements and the enforcement of arbitration awards, while ORC Chapter 2710 — the Ohio Mediation Act — establishes confidentiality protections for mediation communications. Our attorney can help you determine whether ADR is appropriate for your dispute and represent you effectively throughout the process.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Mediation is a voluntary, confidential process in which a neutral third-party mediator facilitates negotiations between disputing parties. The mediator does not decide the case — the parties retain full control over any settlement. Under ORC 2710.03, all mediation communications are confidential and generally cannot be introduced as evidence in subsequent court or arbitration proceedings. This confidentiality encourages candid discussion and creative problem-solving that rarely happens in adversarial litigation. Studies consistently show that mediation results in settlement in 70 to 85 percent of cases when both parties participate in good faith. Settling through mediation typically costs a fraction of what full litigation would require and can be completed in days or weeks rather than years.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Arbitration is a more formal ADR process in which an arbitrator — or a panel of arbitrators — acts as a private judge. The parties present evidence, call witnesses, and make legal arguments, and the arbitrator issues a written award. Under ORC 2711.01, agreements to arbitrate future disputes are valid and enforceable in Ohio, which is why arbitration clauses appear in many commercial contracts, employment agreements, and consumer contracts. When the parties have agreed to binding arbitration, the arbitrator's award is final and may be confirmed by an Ohio court under ORC 2711.09, making it as enforceable as a court judgment. Non-binding arbitration is also available and allows either party to reject the award and proceed to court if unsatisfied.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio courts actively encourage ADR as a means of reducing court caseloads and helping parties resolve disputes efficiently. Under Ohio Civil Rule 16, Ohio courts have broad authority to refer civil cases to mediation as part of pretrial case management. Many courts in Franklin County and across Ohio have established court-connected ADR programs and maintain rosters of certified mediators. Ohio Supreme Court Rule 16 sets standards for the certification of mediators in Ohio. Participation in court-referred mediation does not waive any legal rights — if mediation fails, the litigation continues. Many disputes that initially appear headed for a trial ultimately settle through this process.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
-              ADR is well-suited to a wide range of disputes. Business owners frequently use mediation and arbitration to resolve contract disputes, partnership disagreements, vendor conflicts, and employment matters — particularly when maintaining an ongoing business relationship is important. ADR is also appropriate for landlord-tenant disputes, neighbor conflicts, and construction disagreements. One major advantage over litigation is privacy: court proceedings are public record, while ADR proceedings and any settlements are confidential. For businesses that want to protect proprietary information or avoid publicity, this privacy benefit alone can make ADR the preferred option. If you have a dispute and want to explore whether mediation or arbitration is a good fit, contact Jwayyed Law LLC at (614) 285-5482 to schedule a consultation. You may also want to review our pages on <Link href="/other-services/mediation" className="text-[#b87333] underline hover:opacity-80">mediation</Link> and <Link href="/other-services/arbitration" className="text-[#b87333] underline hover:opacity-80">arbitration</Link> for more detail on each process.
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
+              ADR is well-suited to a wide range of disputes. Business owners frequently use mediation and arbitration to resolve contract disputes, partnership disagreements, vendor conflicts, and employment matters — particularly when maintaining an ongoing business relationship is important. ADR is also appropriate for landlord-tenant disputes, neighbor conflicts, and construction disagreements. One major advantage over litigation is privacy: court proceedings are public record, while ADR proceedings and any settlements are confidential. For businesses that want to protect proprietary information or avoid publicity, this privacy benefit alone can make ADR the preferred option. If you have a dispute and want to explore whether mediation or arbitration is a good fit, contact Jwayyed Law LLC at (614) 285-5482 to schedule a consultation. You may also want to review our pages on <Link href="/other-services/mediation" className="text-sky-deep underline hover:opacity-80">mediation</Link> and <Link href="/other-services/arbitration" className="text-sky-deep underline hover:opacity-80">arbitration</Link> for more detail on each process.
             </p>
 
             <LocationsWeServe title="Other Services" />
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Dispute Resolution Services</h3>
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Dispute Resolution Services</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Link href="/other-services/mediation" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Mediation</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Confidential, facilitated negotiation to resolve disputes — parties control the outcome</p>
+              <Link href="/other-services/mediation" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Mediation</h4>
+                <p className="text-sm text-navy-950/70">Confidential, facilitated negotiation to resolve disputes — parties control the outcome</p>
               </Link>
-              <Link href="/other-services/arbitration" className="block p-6 border border-gray-200 rounded-lg hover:shadow-[inset_4px_0_0_#b87333] transition-all group">
-                <h4 className="font-semibold text-gray-900 group-hover:text-[#b87333] transition-colors mb-2">Arbitration</h4>
-                <p className="text-sm text-gray-600 font-['Inter',_'Arial',_sans-serif]">Private dispute resolution with a binding decision enforceable under ORC 2711.09</p>
+              <Link href="/other-services/arbitration" className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group">
+                <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-2">Arbitration</h4>
+                <p className="text-sm text-navy-950/70">Private dispute resolution with a binding decision enforceable under ORC 2711.09</p>
               </Link>
             </div>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Types of Disputes Suitable for ADR</h3>
-            <ul className="list-disc pl-6 space-y-3 font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Disputes Suitable for ADR</h3>
+            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-8">
               <li><strong>Business and Commercial Disputes:</strong> Contract disagreements, partnership conflicts, vendor disputes, and business-to-business claims</li>
               <li><strong>Employment Disputes:</strong> Wrongful termination, wage and hour claims, non-compete enforcement, and workplace conflicts</li>
               <li><strong>Landlord-Tenant Disputes:</strong> Security deposit claims, lease disagreements, and property damage disputes</li>
@@ -111,8 +111,8 @@ export default function DisputeResolutionPage() {
               <li><strong>Family Business Disagreements:</strong> Succession planning disputes, buy-sell agreement conflicts, and ownership transition disagreements</li>
             </ul>
 
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Jwayyed Law LLC for Dispute Resolution</h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Dispute Resolution</h3>
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Our firm provides dedicated dispute resolution assistance throughout Ohio. We understand the full range of ADR options available under Ohio law and can help you choose the right approach for your dispute. Whether you are entering into a mediation in hopes of preserving a business relationship, responding to an arbitration demand under a contract clause, or looking for an efficient way to resolve a conflict without the cost and stress of litigation, Jwayyed Law LLC is here to guide and represent you. Contact us at (614) 285-5482 to discuss your dispute and learn how ADR might help you reach a faster, more cost-effective resolution.
             </p>
           </div>

@@ -76,25 +76,25 @@ export default function PersonalInjuryPickawayCountyPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Personal Injury Representation in Pickaway County
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Pickaway County sits directly south of Columbus on US 23, a corridor that carries substantial commuter and commercial traffic between the capital city and the communities of Circleville, Ashville, Commercial Point, South Bloomfield, and Williamsport. This mix of rural character and rapidly increasing suburban growth creates real accident risks, particularly along US 23 — one of Ohio&apos;s highest-accident-rate highways. Jwayyed Law LLC represents personal injury victims throughout Pickaway County, pursuing the full compensation they deserve after car accidents, slip and fall incidents, and other negligence-caused injuries.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio Revised Code 2305.10 provides a two-year statute of limitations for most personal injury claims. Waiting too long — even while still receiving medical treatment or negotiating with an insurer — can cost you your entire case. Our attorney begins protecting your claim from day one: preserving accident scene evidence, gathering police reports, identifying witnesses, and documenting the complete scope of your damages before evidence fades and witnesses become difficult to locate.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Ohio&apos;s modified comparative negligence rule under ORC 2315.33 is a critical factor in every personal injury case. Insurance companies defending US 23 accident claims in Pickaway County often argue that the injured party contributed to the crash — pointing to speed, following distance, or other driver behaviors. Our attorney reviews all available evidence to challenge these arguments, including accident reconstruction analysis, vehicle data, and road condition documentation, to ensure any fault attributed to you is minimized.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond highway accidents, Pickaway County personal injury claims include slip and fall cases at retail establishments in Circleville, premises liability incidents related to the county&apos;s mix of agricultural and commercial properties, dog bite injuries under ORC 955.28, and workplace accidents involving third-party negligence. We also represent families in wrongful death cases when a negligently caused injury proves fatal. Every matter is handled individually and pursued with full commitment.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Pickaway County personal injury cases are filed at the Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-[#b87333] underline hover:opacity-80">personal injury practice</Link> across Ohio.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
+              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> across Ohio.
             </p>
           </div>
         </div>

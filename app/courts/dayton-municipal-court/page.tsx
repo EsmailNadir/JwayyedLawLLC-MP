@@ -70,26 +70,26 @@ export default function DaytonMunicipalCourtPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="font-['Playfair_Display',_'Georgia',_serif] text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
               Dayton Municipal Court: Jurisdiction, OVI Defense, and Misdemeanor Representation
             </h2>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Dayton Municipal Court, located at 301 W Third St in downtown Dayton, Ohio, is one of Ohio&apos;s busiest municipal courts, handling misdemeanor criminal cases, OVI/DUI charges, traffic violations, and civil matters for the city of Dayton and portions of Montgomery County. Jwayyed Law LLC represents defendants in Dayton Municipal Court across all misdemeanor criminal and OVI matters. If you are charged in this court, understanding the court&apos;s procedures — including the critical 30-day deadline to appeal an Administrative License Suspension (ALS) under <strong>ORC 4511.191</strong> — is essential to protecting your rights.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               OVI defense in Dayton Municipal Court requires challenging multiple layers of evidence. The legality of the initial traffic stop, the administration of standardized field sobriety tests (SFSTs) under NHTSA protocols, and the maintenance and calibration records of the breath testing instrument (typically a DataMaster DMT) must all be scrutinized. Under <strong>HB 37</strong> (effective April 9, 2025), the mandatory 15-day hard suspension for non-refusal first OVI offenses has been eliminated when the defendant agrees to install an ignition interlock device — a significant improvement that our attorney pursues where applicable. Minimum fines for a first OVI are now $565 to $1,075 under HB 37.
             </p>
-            <h3 className="font-['Playfair_Display',_'Georgia',_serif] text-2xl font-bold text-gray-900 mt-8 mb-4">
+            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">
               Montgomery County Misdemeanor Defense
             </h3>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-navy-950/80 mb-6 leading-relaxed">
               Beyond OVI, Dayton Municipal Court handles assault (ORC 2903.13), domestic violence (ORC 2919.25), theft (ORC 2913.02), drug possession misdemeanors, disorderly conduct, criminal trespass, and other misdemeanor charges. Misdemeanor penalties under <strong>ORC 2929.21</strong> include up to 180 days in jail and $1,000 in fines for an M1 offense. The court&apos;s driving under suspension docket under <strong>ORC 4510.14</strong> is particularly active, with mandatory minimum 30-day jail sentences for OVI-related suspension violations. Our attorney examines each case for constitutional challenges, suppression motions, and negotiated resolutions to minimize consequences.
             </p>
-            <p className="font-['Inter',_'Arial',_sans-serif] text-gray-700 mb-8 leading-relaxed">
+            <p className="text-navy-950/80 mb-8 leading-relaxed">
               Contact Jwayyed Law LLC at (614) 285-5482 or via{' '}
-              <Link href="/contact" className="text-[#b87333] underline hover:opacity-80">our contact page</Link> for representation in Dayton Municipal Court. See our{' '}
-              <Link href="/ovi-dui-defense" className="text-[#b87333] underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
-              <Link href="/criminal-defense" className="text-[#b87333] underline hover:opacity-80">criminal defense</Link> practice pages for more information on how we approach these cases.
+              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> for representation in Dayton Municipal Court. See our{' '}
+              <Link href="/ovi-dui-defense" className="text-sky-deep underline hover:opacity-80">OVI/DUI defense</Link> and{' '}
+              <Link href="/criminal-defense" className="text-sky-deep underline hover:opacity-80">criminal defense</Link> practice pages for more information on how we approach these cases.
             </p>
           </div>
         </div>
