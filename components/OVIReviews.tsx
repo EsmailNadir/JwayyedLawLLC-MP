@@ -23,7 +23,7 @@ const OVIReviews: React.FC = () => {
           <div className="mt-8 flex flex-col gap-3">
             {/* Google Reviews card */}
             <a
-              href="https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews"
+              href="https://www.google.com/maps/place/Jwayyed+Law+LLC/@40.1191818,-83.0144292,17z/data=!4m8!3m7!1s0x88388f6d01807339:0x8f1ee26d8800df52!8m2!3d40.1191818!4d-83.0144292!9m1!1b1!16s%2Fg%2F11l35ntszq"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-white border border-navy-950/10 px-5 py-4 hover:border-navy-950/40 transition-colors duration-200"
@@ -41,9 +41,9 @@ const OVIReviews: React.FC = () => {
                       <Star key={i} className="w-3.5 h-3.5 fill-sky-deep text-sky-deep" />
                     ))}
                   </div>
-                  <span className="text-sm font-bold text-navy-950">4.9</span>
+                  <span className="text-sm font-bold text-navy-950">5.0</span>
                 </div>
-                <p className="text-xs text-navy-950/60">100+ Google reviews</p>
+                <p className="text-xs text-navy-950/60">130+ Google reviews</p>
               </div>
             </a>
 

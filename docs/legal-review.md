@@ -207,6 +207,6 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 
 | Page | Statement | Note | Priority |
 |---|---|---|---|
-| data/team-members.ts | The bio said "5.0-star rating with 100+ verified Google reviews" | Changed to match the 4.9 used everywhere else on the site; confirm the current Google rating | Medium |
+| data/team-members.ts, homepage, OVI reviews | Google rating and review count | Updated to 5.0 from 130+ reviews, matching the Google Business Profile (5.0, 134 reviews, checked October 25, 2026); review buttons now open the Google reviews tab | Done |
 | Site-wide | Office hours | Now Monday to Friday, 9am to 5pm everywhere (confirmed October 25, 2026) | Done |
 | Site-wide | Free consultations | Removed everywhere; the firm does not offer them (confirmed October 25, 2026) | Done |

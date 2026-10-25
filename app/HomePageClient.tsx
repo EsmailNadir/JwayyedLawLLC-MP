@@ -27,9 +27,9 @@ const BADGE_TILE = 'flex flex-col items-center justify-start gap-4 px-5 pt-7 pb-
 const BADGE_ART = 'flex h-24 w-full items-center justify-center';
 const PHONE_TEL = 'tel:+16142855482';
 const EMAIL = 'jwayyedlawllc@outlook.com';
-const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?q=Jwayyed+Law+LLC+Columbus+Ohio+reviews';
+const GOOGLE_REVIEWS_URL = 'https://www.google.com/maps/place/Jwayyed+Law+LLC/@40.1191818,-83.0144292,17z/data=!4m8!3m7!1s0x88388f6d01807339:0x8f1ee26d8800df52!8m2!3d40.1191818!4d-83.0144292!9m1!1b1!16s%2Fg%2F11l35ntszq';
 const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=100+E+Campus+View+Blvd+Suite+250+Columbus+OH+43235';
-const RATING = '4.9';
+const RATING = '5.0';
 
 const FRAME = 'max-w-[1440px] mx-auto px-5 sm:px-8';
 const SECTION = 'py-[clamp(96px,11vw,184px)]';
@@ -53,8 +53,8 @@ function areaLinks(navName: string) {
 }
 
 const TRUST = [
-  'Rated 4.9 on Google',
-  '100+ client reviews',
+  'Rated 5.0 on Google',
+  '130+ client reviews',
   'BBB A+ accredited',
   'National College for DUI Defense member',
   'BusinessRate Best of 2026',
@@ -346,7 +346,7 @@ export default function HomePageClient() {
             >
               <Stars className="w-4 h-4 fill-sky text-sky" />
               <span>
-                <span className="font-semibold text-white">{RATING}</span> from 100+ Google reviews
+                <span className="font-semibold text-white">{RATING}</span> from 130+ Google reviews
               </span>
             </a>
             <OfficeStatus tone="dark" />
@@ -417,14 +417,14 @@ export default function HomePageClient() {
               <Stars className="w-5 h-5 fill-sky text-sky" />
               <div>
                 <p className="jw-display text-[clamp(3rem,2rem+3vw,4.5rem)] leading-none tabular-nums">
-                  <span data-count="4.9" data-decimals="1">
-                    4.9
+                  <span data-count="5.0" data-decimals="1">
+                    5.0
                   </span>
                 </p>
                 <p className="mt-2 text-white/80">
                   From{' '}
-                  <span data-count="100" className="tabular-nums">
-                    100
+                  <span data-count="130" className="tabular-nums">
+                    130
                   </span>
                   + Google reviews
                 </p>
@@ -644,7 +644,7 @@ export default function HomePageClient() {
                     <Stars className="w-3.5 h-3.5 fill-sky text-sky" />
                     <span className="font-semibold">{RATING}</span>
                   </span>
-                  <span className="block text-[length:var(--step-small)] text-mist">100+ Google reviews</span>
+                  <span className="block text-[length:var(--step-small)] text-mist">130+ Google reviews</span>
                 </span>
               </a>
 
@@ -695,9 +695,9 @@ export default function HomePageClient() {
           <div className="reveal-group grid items-center gap-8 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
             <ReviewSummaryCard
               rating={Number(RATING)}
-              reviewCount={100}
+              reviewCount={130}
               orMore
-              summaryText={`Rated ${RATING} from 100+ verified Google reviews.`}
+              summaryText={`Rated ${RATING} from 130+ verified Google reviews.`}
               className="mx-auto lg:mx-0 bg-white text-navy-950"
             />
             <TestimonialWall />
