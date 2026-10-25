@@ -174,6 +174,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/courts/johnstown-mayors-court', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.court },
 
     // Location Pages
+    { url: '/locations', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.location },
     { url: '/locations/pickaway-county', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.location },
     { url: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.location },
     { url: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.location },

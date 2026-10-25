@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-const COUNTIES = [
+export const COUNTIES = [
   { slug: 'franklin-county', name: 'Franklin County', subtitle: 'Columbus & surrounding areas' },
   { slug: 'delaware-county', name: 'Delaware County', subtitle: 'Delaware & surrounding areas' },
   { slug: 'butler-county', name: 'Butler County', subtitle: 'Hamilton, Oxford, West Chester' },
