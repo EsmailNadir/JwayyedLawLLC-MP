@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Columbus Marijuana Possession Attorney | Jwayyed Law LLC',
     description: 'Legal limits, penalty tiers, search defenses, ILC and expungement for marijuana charges in Columbus.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/marijuana-possession-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/marijuana-possession-columbus' },
 };

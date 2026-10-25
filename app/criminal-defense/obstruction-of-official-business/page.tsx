@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Obstruction of Official Business Ohio | Jwayyed Law LLC',
     description: 'Obstruction of official business defense throughout Ohio: the elements, the felony enhancement and the defenses. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense/obstruction-of-official-business',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/obstruction-of-official-business',

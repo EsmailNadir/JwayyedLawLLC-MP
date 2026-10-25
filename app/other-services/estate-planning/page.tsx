@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Estate Planning Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Wills, living trusts, powers of attorney and TOD deeds under Ohio law.',
     url: 'https://www.jjlawohio.com/other-services/estate-planning',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/estate-planning' },
 };

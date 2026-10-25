@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Ohio Estate Planning & Wills Lawyer | Jwayyed Law LLC',
     description: 'Will requirements, self-proving wills and complete estate plans under Ohio law.',
     url: 'https://www.jjlawohio.com/other-services/estate-planning-wills',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/estate-planning-wills' },
 };

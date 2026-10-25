@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor, civil and eviction cases at Franklin County Municipal Court in Columbus.',
     url: 'https://www.jjlawohio.com/courts/franklin-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/franklin-county-municipal-court' },
 };

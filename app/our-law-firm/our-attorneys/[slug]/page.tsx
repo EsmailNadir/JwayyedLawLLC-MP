@@ -48,7 +48,7 @@ export async function generateMetadata({
       description: metaDescription(member.shortBio),
       url: `https://www.jjlawohio.com/our-law-firm/our-attorneys/${slug}`,
       type: 'profile',
-      images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
     },
     alternates: {
       canonical: `/our-law-firm/our-attorneys/${slug}`,

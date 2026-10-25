@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Ohio Workplace Injury Lawyer | Columbus | Jwayyed Law LLC',
     description: "Ohio workers' compensation claims and third-party workplace injury lawsuits.",
     url: 'https://www.jjlawohio.com/personal-injury/workplace-injuries',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/workplace-injuries' },
 };

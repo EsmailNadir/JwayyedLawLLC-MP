@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Attorney Jwayyed | Jwayyed Law LLC',
     description: 'Former municipal prosecutor and managing attorney of Jwayyed Law LLC, representing clients across Ohio.',
     url: 'https://www.jjlawohio.com/our-law-firm/our-attorneys',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
 };
 

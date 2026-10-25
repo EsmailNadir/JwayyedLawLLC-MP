@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Personal Injury Lawyer | Jwayyed Law LLC',
     description: 'Car accidents, premises liability, dog bites and UM/UIM claims in Columbus and Franklin County.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/personal-injury-franklin-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/personal-injury-franklin-county' },
 };

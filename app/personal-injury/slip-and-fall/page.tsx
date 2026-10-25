@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Slip and Fall Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Slip and fall injury claims under Ohio premises liability law.',
     url: 'https://www.jjlawohio.com/personal-injury/slip-and-fall',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/slip-and-fall' },
 };

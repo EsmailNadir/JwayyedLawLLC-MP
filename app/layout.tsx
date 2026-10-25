@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     description: 'Ohio attorney serving Columbus, Cincinnati, Dayton, and throughout Ohio. Criminal defense, estate planning, business law, probate.',
     images: [
       {
-        url: '/assets/Jwayyed_Logo_Inverted.JPEG',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Jwayyed Law LLC',
@@ -104,6 +104,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         "@type": "LegalService",
         "name": "Jwayyed Law LLC",
         "alternateName": "JJ Law Ohio",
+        "logo": `${siteUrl}/logo-square.png`,
         "image": [`${siteUrl}/assets/Jwayyed_Logo_Inverted.JPEG`, `${siteUrl}/assets/jwayyed-law-llc-plaque.png`],
         "@id": siteUrl,
         "url": siteUrl,

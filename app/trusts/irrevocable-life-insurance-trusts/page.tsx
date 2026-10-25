@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'ILIT Lawyer Ohio | Life Insurance Trusts | Jwayyed Law LLC',
     description: 'Keep life insurance out of your taxable estate with an irrevocable life insurance trust. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/irrevocable-life-insurance-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/irrevocable-life-insurance-trusts' },
 };

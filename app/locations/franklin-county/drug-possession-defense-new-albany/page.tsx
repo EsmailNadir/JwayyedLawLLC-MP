@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'New Albany Drug Possession Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/drug-possession-defense-new-albany',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/drug-possession-defense-new-albany' },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Montgomery County Business & LLC Formation | Jwayyed Law LLC',
     description: 'Business formation and LLC law for Dayton, Kettering, Trotwood, Huber Heights, Miamisburg and Vandalia.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/montgomery-county/business-formation-llc-montgomery-county' },
 };

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Whitehall Open Container Defense | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/open-container-defense-whitehall',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/open-container-defense-whitehall' },
 };

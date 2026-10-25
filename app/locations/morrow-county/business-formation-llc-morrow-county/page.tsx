@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Business & LLC Formation in Morrow County | Jwayyed Law LLC',
     description: 'Business formation, farm LLCs and business law for Mt. Gilead, Cardington, Marengo and Edison.',
     url: 'https://www.jjlawohio.com/locations/morrow-county/business-formation-llc-morrow-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/morrow-county/business-formation-llc-morrow-county' },
 };

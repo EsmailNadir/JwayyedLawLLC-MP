@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Jwayyed Law LLC',
     description: 'OVI defense at Morrow County Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
     url: 'https://www.jjlawohio.com/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court' },
 };

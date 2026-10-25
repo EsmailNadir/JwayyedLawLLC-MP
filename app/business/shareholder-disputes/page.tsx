@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Shareholder Disputes Lawyer Ohio | Jwayyed Law LLC',
     description: 'Rights and remedies for shareholders of Ohio corporations, especially close corporations.',
     url: 'https://www.jjlawohio.com/business/shareholder-disputes',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/shareholder-disputes' },
 };

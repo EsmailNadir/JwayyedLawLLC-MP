@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Driving Under Suspension Ohio | Jwayyed Law LLC',
     description: 'Penalties by suspension type, defenses and license reinstatement for a driving under suspension charge in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/driving-under-suspension',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/driving-under-suspension',

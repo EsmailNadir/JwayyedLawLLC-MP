@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Criminal Damaging Defense Ohio | Jwayyed Law LLC',
     description: 'Penalties, felony thresholds and defenses for a criminal damaging charge under ORC 2909.06.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-damaging',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/criminal-damaging',

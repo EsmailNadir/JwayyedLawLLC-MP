@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Criminal Defense Lawyer in Circleville | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Circleville Municipal Court, from a former Circleville Municipal Prosecutor.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court' },
 };

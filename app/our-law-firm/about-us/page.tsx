@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'About Our Firm | Jwayyed Law LLC',
     description: 'Attorney Jwayyed Jwayyed, Ohio Bar #0098679: former prosecutor, now representing clients across Ohio.',
     url: 'https://www.jjlawohio.com/our-law-firm/about-us',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
 };
 

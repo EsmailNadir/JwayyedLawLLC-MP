@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       'Set up an Ohio revocable living trust to avoid probate and keep your estate private. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/revocable-living-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/revocable-living-trusts' },
 };

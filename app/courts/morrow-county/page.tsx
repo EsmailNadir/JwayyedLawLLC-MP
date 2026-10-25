@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Morrow County Court Representation | Jwayyed Law LLC',
     description: 'The two Morrow County courts in Mt. Gilead and the cases the firm handles there.',
     url: 'https://www.jjlawohio.com/courts/morrow-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/morrow-county' },
 };

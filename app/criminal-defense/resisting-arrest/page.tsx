@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Resisting Arrest Defense Ohio | Jwayyed Law LLC',
     description: 'Resisting arrest defense throughout Ohio: what the state must prove, the penalties and the defenses. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense/resisting-arrest',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/resisting-arrest',

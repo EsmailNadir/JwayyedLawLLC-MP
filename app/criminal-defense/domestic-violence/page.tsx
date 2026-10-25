@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Domestic Violence Defense Ohio | Jwayyed Law LLC',
     description: 'Penalties, protection orders, firearm restrictions and defenses for a domestic violence charge in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/domestic-violence',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/domestic-violence',

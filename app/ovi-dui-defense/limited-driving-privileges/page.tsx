@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Limited Driving Privileges After an OVI in Ohio | Jwayyed Law LLC',
     description: 'Eligibility, hard suspension periods, ignition interlock conditions and the application process for limited driving privileges in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/limited-driving-privileges',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/limited-driving-privileges' },
 };

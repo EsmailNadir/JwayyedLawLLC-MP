@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Marijuana Possession Defense Ohio | Jwayyed Law LLC',
     description: 'What Ohio Issue 2 and HB 86 made legal, what is still criminal, and how a marijuana possession charge is defended.',
     url: 'https://www.jjlawohio.com/criminal-defense/marijuana-possession',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/criminal-defense/marijuana-possession' },
 };

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Special Needs Trusts Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Provide for a loved one with a disability while preserving Medicaid and SSI eligibility. (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/special-needs-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/special-needs-trusts' },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Delaware County Business Attorney | Jwayyed Law LLC',
     description: 'Business formation and LLC law for Delaware, Powell, Westerville, Dublin, Lewis Center and Sunbury.',
     url: 'https://www.jjlawohio.com/locations/delaware-county/business-formation-llc-delaware-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/delaware-county/business-formation-llc-delaware-county' },
 };

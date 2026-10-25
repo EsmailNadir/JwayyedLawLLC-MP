@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'OVI Refusal Attorney in Ohio | Jwayyed Law LLC',
     description: 'License suspension, the 30-day ALS appeal, penalties and defenses after refusing an OVI chemical test in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/refusal-ovi',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/refusal-ovi' },
 };

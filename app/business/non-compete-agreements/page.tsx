@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Non-Compete Agreement Lawyer Ohio | Jwayyed Law LLC',
     description: 'How Ohio courts decide whether a non-compete is enforceable, for employers and employees.',
     url: 'https://www.jjlawohio.com/business/non-compete-agreements',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/non-compete-agreements' },
 };

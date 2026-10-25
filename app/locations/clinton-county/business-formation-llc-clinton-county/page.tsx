@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Clinton County Business Attorney | Jwayyed Law LLC',
     description: 'Business formation and LLC law for Wilmington, Sabina, Blanchester, Clarksville and Port William.',
     url: 'https://www.jjlawohio.com/locations/clinton-county/business-formation-llc-clinton-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/clinton-county/business-formation-llc-clinton-county' },
 };

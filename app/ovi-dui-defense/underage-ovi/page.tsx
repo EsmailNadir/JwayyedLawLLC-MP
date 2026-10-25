@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Underage OVI Defense in Ohio | Jwayyed Law LLC',
     description: 'OVUAC and full OVI charges for drivers under 21 in Ohio: thresholds, penalties, long-term effects and defenses.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/underage-ovi',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/underage-ovi' },
 };

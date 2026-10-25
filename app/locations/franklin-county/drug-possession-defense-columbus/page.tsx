@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Columbus Drug Possession Defense Attorney | Jwayyed Law LLC',
     description: 'Courts, penalties, suppression, ILC and HART Court for drug possession charges in Columbus.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/drug-possession-defense-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/drug-possession-defense-columbus' },
 };

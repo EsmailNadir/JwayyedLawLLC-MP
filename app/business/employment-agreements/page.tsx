@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Employment Agreement Lawyer Ohio | Jwayyed Law LLC',
     description: 'Employment contracts in an at-will state, for Ohio employers and employees.',
     url: 'https://www.jjlawohio.com/business/employment-agreements',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/employment-agreements' },
 };

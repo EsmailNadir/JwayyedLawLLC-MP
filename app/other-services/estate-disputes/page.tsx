@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Ohio Estate Disputes & Litigation Lawyer | Jwayyed Law LLC',
     description: 'Will contests, executor misconduct and trust disputes in Ohio probate and common pleas courts.',
     url: 'https://www.jjlawohio.com/other-services/estate-disputes',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/estate-disputes' },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'OVI / DUI Lawyer for Fairborn & Xenia | Jwayyed Law LLC',
     description: 'OVI defense in Fairborn and Xenia Municipal Courts, including military consequences near Wright-Patterson AFB.',
     url: 'https://www.jjlawohio.com/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/greene-county/ovi-dui-defense-greene-county-fairborn-municipal-court' },
 };

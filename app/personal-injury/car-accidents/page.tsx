@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Car Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Car accident injury claims in Columbus, Cincinnati, Dayton and throughout Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/car-accidents',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/car-accidents' },
 };

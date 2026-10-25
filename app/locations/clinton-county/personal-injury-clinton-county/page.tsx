@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Clinton County Personal Injury Attorney | Jwayyed Law LLC',
     description: 'Personal injury claims in Wilmington, Sabina, Blanchester, Clarksville and Port William, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/clinton-county/personal-injury-clinton-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/clinton-county/personal-injury-clinton-county' },
 };

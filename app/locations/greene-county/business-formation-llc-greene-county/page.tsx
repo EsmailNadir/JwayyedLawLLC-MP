@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Business & LLC Formation in Greene County | Jwayyed Law LLC',
     description: 'Business formation and LLC law for Xenia, Fairborn, Beavercreek and Yellow Springs, near Wright-Patterson AFB.',
     url: 'https://www.jjlawohio.com/locations/greene-county/business-formation-llc-greene-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/greene-county/business-formation-llc-greene-county' },
 };

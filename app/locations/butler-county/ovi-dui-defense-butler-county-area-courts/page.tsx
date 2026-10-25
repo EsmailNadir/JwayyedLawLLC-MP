@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Butler County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense in the Butler County area courts: which court hears your case, HB 37 penalties and the 30-day ALS appeal.',
     url: 'https://www.jjlawohio.com/locations/butler-county/ovi-dui-defense-butler-county-area-courts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/butler-county/ovi-dui-defense-butler-county-area-courts' },
 };

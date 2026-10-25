@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Butler County Court Representation | Jwayyed Law LLC',
     description: 'The four Butler County courts for misdemeanor, OVI and traffic cases, and the cases the firm handles there.',
     url: 'https://www.jjlawohio.com/courts/butler-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/butler-county' },
 };

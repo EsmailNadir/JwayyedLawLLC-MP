@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Marble Cliff OVI Defense Attorney | Jwayyed Law LLC',
     url: 'https://www.jjlawohio.com/locations/franklin-county/ovi-dui-defense-marble-cliff',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/ovi-dui-defense-marble-cliff' },
 };

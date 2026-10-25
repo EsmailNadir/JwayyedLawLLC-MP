@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Breach of Contract Lawyer in Ohio | Jwayyed Law LLC',
     description: 'The elements, deadlines and remedies for a breach of contract claim in Ohio.',
     url: 'https://www.jjlawohio.com/civil/breach-of-contract',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/civil/breach-of-contract' },
 };

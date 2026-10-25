@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Athens Municipal Court, from disorderly conduct near campus to assault and theft.',
     url: 'https://www.jjlawohio.com/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court' },
 };

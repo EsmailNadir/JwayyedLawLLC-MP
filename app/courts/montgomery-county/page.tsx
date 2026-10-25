@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Montgomery County Court Representation | Jwayyed Law LLC',
     description: 'The Montgomery County courts, from Dayton Municipal Court to the Common Pleas specialty dockets, and what the firm handles.',
     url: 'https://www.jjlawohio.com/courts/montgomery-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/montgomery-county' },
 };

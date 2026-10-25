@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Columbus Assault Defense Attorney | Jwayyed Law LLC',
     description: 'Assault charges at Franklin County Municipal Court: penalties, felony escalation, self-defense and expungement.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/assault-defense-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/assault-defense-columbus' },
 };

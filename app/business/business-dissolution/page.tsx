@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Business Dissolution Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Closing an Ohio business properly, from the dissolution filing to the final distribution.',
     url: 'https://www.jjlawohio.com/business/business-dissolution',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/business-dissolution' },
 };

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Greene County OVI & Criminal Defense | Jwayyed Law LLC',
     description: 'OVI, criminal, injury and business matters in Greene County, at Fairborn Municipal Court and the Court of Common Pleas in Xenia.',
     url: 'https://www.jjlawohio.com/locations/greene-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/greene-county' },
 };

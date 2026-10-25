@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Athens County Criminal Defense & OVI | Jwayyed Law LLC',
     description: 'OVI, criminal, injury and business matters in Athens County, at Athens Municipal Court and the Court of Common Pleas.',
     url: 'https://www.jjlawohio.com/locations/athens-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/athens-county' },
 };

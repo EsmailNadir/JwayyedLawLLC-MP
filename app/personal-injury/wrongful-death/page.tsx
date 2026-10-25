@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Wrongful Death Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Wrongful death claims for families throughout Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/wrongful-death',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/wrongful-death' },
 };

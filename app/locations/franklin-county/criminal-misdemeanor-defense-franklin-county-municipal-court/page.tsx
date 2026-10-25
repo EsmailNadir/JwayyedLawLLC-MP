@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor charges at Franklin County Municipal Court: the court, the penalties and the alternatives to conviction.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/criminal-misdemeanor-defense-franklin-county-municipal-court' },
 };

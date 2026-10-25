@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Attorney: Columbus, Ohio | Jwayyed Law LLC',
     description: 'Franklin County courts, addresses and the cases the firm handles in Columbus and the suburbs.',
     url: 'https://www.jjlawohio.com/courts/franklin-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/franklin-county' },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Personal Injury Lawyer in Morrow County | Jwayyed Law LLC',
     description: 'Personal injury claims in Mt. Gilead, Cardington, Marengo and Edison, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/morrow-county/personal-injury-morrow-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/morrow-county/personal-injury-morrow-county' },
 };

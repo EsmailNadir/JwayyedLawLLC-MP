@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'CDL and Commercial OVI Defense in Ohio | Jwayyed Law LLC',
     description: 'CDL disqualification, the 0.04% commercial BAC limit, employer reporting and defenses for CDL holders charged with OVI in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/commercial-dui-cdl',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/commercial-dui-cdl' },
 };

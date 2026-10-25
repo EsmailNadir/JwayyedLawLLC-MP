@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Contact Jwayyed Law LLC | Schedule a Consultation',
     description: 'Schedule a consultation with Jwayyed Law LLC. OVI/DUI, criminal defense, estate planning, and more. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/contact',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Expungement Attorney | Jwayyed Law LLC',
     description: 'Expungement eligibility, waiting periods and the filing process in Franklin County Municipal Court and Common Pleas.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/expungement-franklin-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/expungement-franklin-county' },
 };

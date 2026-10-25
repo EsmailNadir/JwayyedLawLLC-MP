@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Legal Document Templates',
     url: 'https://www.jjlawohio.com/our-law-firm/document-templates',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/our-law-firm/document-templates' },
 };

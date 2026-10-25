@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Delaware County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Delaware County Municipal Court: penalties under HB 37, the 30-day ALS appeal and professional license consequences.',
     url: 'https://www.jjlawohio.com/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/delaware-county/ovi-dui-defense-delaware-county-municipal-court' },
 };

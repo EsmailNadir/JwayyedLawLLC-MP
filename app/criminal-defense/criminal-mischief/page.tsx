@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Criminal Mischief Defense Ohio | Jwayyed Law LLC',
     description: 'Penalties, defenses and record sealing for a criminal mischief charge under ORC 2909.07.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-mischief',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/criminal-mischief',

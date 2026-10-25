@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Columbus Domestic Violence Defense | Jwayyed Law LLC',
     description: 'Domestic violence charges at Franklin County Municipal Court: penalties, protection orders, the Lautenberg Amendment and defenses.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/domestic-violence-defense-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/domestic-violence-defense-columbus' },
 };

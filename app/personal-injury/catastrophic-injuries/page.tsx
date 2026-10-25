@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Ohio Catastrophic Injury Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Claims for brain injury, spinal cord injury, paralysis, burns and other catastrophic injuries in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/catastrophic-injuries',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/catastrophic-injuries' },
 };

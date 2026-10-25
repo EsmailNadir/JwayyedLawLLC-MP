@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Ohio Arbitration Lawyer | Columbus | Jwayyed Law LLC',
     description: 'AAA, JAMS and private arbitration in Ohio, from the clause to confirming or vacating the award.',
     url: 'https://www.jjlawohio.com/other-services/arbitration',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/arbitration' },
 };

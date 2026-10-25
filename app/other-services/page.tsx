@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
     description: 'Estate planning, probate administration and dispute resolution in Ohio.',
     url: 'https://www.jjlawohio.com/other-services',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services' },
 };

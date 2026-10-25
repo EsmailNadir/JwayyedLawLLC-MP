@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Athens County Court Representation | Jwayyed Law LLC',
     description: 'The Athens County courts and the cases the firm handles there, including Ohio University student charges.',
     url: 'https://www.jjlawohio.com/courts/athens-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/athens-county' },
 };

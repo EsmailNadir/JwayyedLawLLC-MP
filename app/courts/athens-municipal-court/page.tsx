@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Athens Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Athens Municipal Court, including Ohio University students.',
     url: 'https://www.jjlawohio.com/courts/athens-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/athens-municipal-court' },
 };

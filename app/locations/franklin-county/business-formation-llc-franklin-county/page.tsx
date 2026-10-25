@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Business & LLC Formation in Franklin County | Jwayyed Law LLC',
     description: 'LLC and corporation formation for Columbus and Franklin County businesses under current Ohio law.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/business-formation-llc-franklin-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/business-formation-llc-franklin-county' },
 };

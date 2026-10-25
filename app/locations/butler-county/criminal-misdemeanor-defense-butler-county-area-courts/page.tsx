@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Butler County Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Misdemeanor defense in Area Courts I, II and III and Hamilton Municipal Court.',
     url: 'https://www.jjlawohio.com/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/butler-county/criminal-misdemeanor-defense-butler-county-area-courts' },
 };

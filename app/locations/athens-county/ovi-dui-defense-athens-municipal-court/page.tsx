@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Athens County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Athens Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
     url: 'https://www.jjlawohio.com/locations/athens-county/ovi-dui-defense-athens-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/athens-county/ovi-dui-defense-athens-municipal-court' },
 };

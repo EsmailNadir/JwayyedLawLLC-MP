@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'OVI Defense Lawyer in Circleville | Jwayyed Law LLC',
     description: 'OVI defense at Circleville Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court' },
 };

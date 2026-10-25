@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Business Formation Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Choosing a structure and forming a business in Ohio, step by step.',
     url: 'https://www.jjlawohio.com/business/business-formation',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/business-formation' },
 };

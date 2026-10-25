@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Pedestrian Accident Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Injury claims for pedestrians struck by vehicles in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/pedestrian-accidents',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/pedestrian-accidents' },
 };

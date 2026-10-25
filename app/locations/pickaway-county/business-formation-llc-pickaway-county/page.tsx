@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Business & LLC Formation in Pickaway County | Jwayyed Law LLC',
     description: 'Business formation and LLC law for Circleville, Ashville, Commercial Point, South Bloomfield and Williamsport.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/business-formation-llc-pickaway-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/pickaway-county/business-formation-llc-pickaway-county' },
 };

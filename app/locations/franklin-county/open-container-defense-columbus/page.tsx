@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Columbus Open Container Defense Attorney | Jwayyed Law LLC',
     description: 'Vehicle and public-space open container charges, the downtown ORA and defenses in Columbus.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/open-container-defense-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/open-container-defense-columbus' },
 };

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Powers of Attorney Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Durable financial and healthcare powers of attorney under ORC Chapter 1337. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/other-services/powers-of-attorney',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/powers-of-attorney' },
 };

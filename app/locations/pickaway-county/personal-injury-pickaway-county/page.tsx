@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Personal Injury Lawyer in Pickaway County | Jwayyed Law LLC',
     description: 'Personal injury claims in Circleville, Ashville and along US 23, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/pickaway-county/personal-injury-pickaway-county' },
 };

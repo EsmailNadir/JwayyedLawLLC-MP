@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Will Contests Lawyer in Ohio | Columbus | Jwayyed Law LLC',
     description: 'Contesting and defending Ohio wills for lack of capacity, undue influence, fraud or improper execution. (614) 285-5482.',
     url: 'https://www.jjlawohio.com/other-services/will-contests',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/will-contests' },
 };

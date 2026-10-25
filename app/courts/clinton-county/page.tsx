@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Clinton County Court Representation | Jwayyed Law LLC',
     description: 'The two Clinton County courts in Wilmington and the OVI, criminal and civil cases the firm handles there.',
     url: 'https://www.jjlawohio.com/courts/clinton-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/clinton-county' },
 };

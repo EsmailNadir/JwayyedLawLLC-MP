@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Franklin County Municipal Court OVI | Jwayyed Law LLC',
     description: 'How an OVI moves through Franklin County Municipal Court, from the ALS appeal to trial.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/ovi-dui-defense-franklin-county-municipal-court' },
 };

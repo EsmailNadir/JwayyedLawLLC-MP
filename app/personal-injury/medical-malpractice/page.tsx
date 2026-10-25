@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Ohio Medical Malpractice Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Claims for misdiagnosis, surgical errors, birth injuries and other medical negligence in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/medical-malpractice',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/medical-malpractice' },
 };

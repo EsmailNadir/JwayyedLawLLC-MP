@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Criminal Trespass Defense Ohio | Jwayyed Law LLC',
     description: 'Penalties, the notice requirement and defenses for a criminal trespass charge under ORC 2911.21.',
     url: 'https://www.jjlawohio.com/criminal-defense/criminal-trespass',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/criminal-trespass',

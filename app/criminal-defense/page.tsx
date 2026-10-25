@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Ohio Criminal Defense Attorney | Jwayyed Law LLC',
     description: 'Criminal defense throughout Ohio, from arraignment through trial and record sealing. Schedule a consultation.',
     url: 'https://www.jjlawohio.com/criminal-defense',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense',

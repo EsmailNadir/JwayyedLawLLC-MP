@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Civil Protection Orders Lawyer in Ohio | Jwayyed Law LLC',
     description: 'CPOs and civil stalking protection orders in Ohio, for petitioners and respondents.',
     url: 'https://www.jjlawohio.com/civil/civil-protection-orders',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/civil/civil-protection-orders' },
 };

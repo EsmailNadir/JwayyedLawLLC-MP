@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Ohio Probate Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Estate administration, creditor claims and small-estate release in Ohio probate court.',
     url: 'https://www.jjlawohio.com/other-services/probate',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/other-services/probate' },
 };

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Debt Collection Defense Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Defending debt collection lawsuits in Ohio: the answer deadline, the statute of limitations, exemptions and FDCPA claims.',
     url: 'https://www.jjlawohio.com/civil/debt-collection-defense',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/civil/debt-collection-defense' },
 };

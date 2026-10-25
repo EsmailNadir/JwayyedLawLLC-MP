@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Open Container Defense Ohio | Jwayyed Law LLC',
     description: 'What R.C. 4301.62 prohibits, the exceptions, and how diversion can keep an open container citation off your record.',
     url: 'https://www.jjlawohio.com/criminal-defense/open-container',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/criminal-defense/open-container' },
 };

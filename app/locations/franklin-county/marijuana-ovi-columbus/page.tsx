@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Columbus Marijuana OVI Defense Attorney | Jwayyed Law LLC',
     description: 'Per se THC limits, DRE evaluations, blood and urine tests and the ALS appeal in a Columbus marijuana OVI.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/marijuana-ovi-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/marijuana-ovi-columbus' },
 };

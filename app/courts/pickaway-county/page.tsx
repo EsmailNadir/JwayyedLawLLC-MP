@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Pickaway County Court Representation | Jwayyed Law LLC',
     description: 'The two Pickaway County courts in Circleville and the cases the firm handles there, including U.S. 23 OVI stops.',
     url: 'https://www.jjlawohio.com/courts/pickaway-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/pickaway-county' },
 };

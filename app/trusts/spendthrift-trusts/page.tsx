@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Spendthrift Trusts Lawyer Ohio | Jwayyed Law LLC',
     description: 'Protect an inheritance from a beneficiary’s creditors with an Ohio spendthrift trust. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/spendthrift-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/spendthrift-trusts' },
 };

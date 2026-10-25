@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Montgomery County Criminal Defense | Jwayyed Law LLC',
     description: 'Misdemeanor defense in Dayton and Kettering Municipal Courts: which court hears your case, penalties and expungement.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court' },
 };

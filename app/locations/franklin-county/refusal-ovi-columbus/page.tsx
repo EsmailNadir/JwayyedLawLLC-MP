@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Columbus OVI Refusal Defense Attorney | Jwayyed Law LLC',
     description: 'The 1-year refusal ALS, the appeal and the defense of a refusal OVI at Franklin County Municipal Court.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/refusal-ovi-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/refusal-ovi-columbus' },
 };

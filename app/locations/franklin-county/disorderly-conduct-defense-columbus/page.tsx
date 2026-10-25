@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Columbus Disorderly Conduct Defense | Jwayyed Law LLC',
     description: 'Penalties, defenses and diversion for disorderly conduct charges at Franklin County Municipal Court.',
     url: 'https://www.jjlawohio.com/locations/franklin-county/disorderly-conduct-defense-columbus',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county/disorderly-conduct-defense-columbus' },
 };

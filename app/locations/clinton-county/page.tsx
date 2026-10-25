@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Clinton County Criminal Defense & OVI | Jwayyed Law LLC',
     description: 'OVI, criminal, injury and business matters in Clinton County, at Wilmington Municipal Court and the Court of Common Pleas.',
     url: 'https://www.jjlawohio.com/locations/clinton-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/clinton-county' },
 };

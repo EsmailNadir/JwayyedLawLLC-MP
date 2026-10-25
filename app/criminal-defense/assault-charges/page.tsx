@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Assault Defense Attorney Ohio | Jwayyed Law LLC',
     description: 'Penalties, the court process and defenses for a misdemeanor assault charge in Ohio.',
     url: 'https://www.jjlawohio.com/criminal-defense/assault-charges',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/assault-charges',

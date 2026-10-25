@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Ohio Business Compliance Lawyer | Jwayyed Law LLC',
     description: 'What Ohio LLCs and corporations must keep doing after formation to protect the liability shield.',
     url: 'https://www.jjlawohio.com/business/business-compliance',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/business-compliance' },
 };

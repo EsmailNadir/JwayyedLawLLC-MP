@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Ohio Premises Liability Lawyer | Columbus | Jwayyed Law LLC',
     description: 'Injury claims against property owners, businesses and landlords in Ohio.',
     url: 'https://www.jjlawohio.com/personal-injury/premises-liability',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/personal-injury/premises-liability' },
 };

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'LLC Formation Lawyer Ohio | ORC 1706 | Jwayyed Law LLC',
     description: 'Articles of Organization, operating agreements and statutory agents for Ohio LLCs.',
     url: 'https://www.jjlawohio.com/business/llc-formation',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/llc-formation' },
 };

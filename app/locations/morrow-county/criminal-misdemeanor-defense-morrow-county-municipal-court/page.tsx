@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Criminal Defense Lawyer in Morrow County | Jwayyed Law LLC',
     description: 'Misdemeanor defense at Morrow County Municipal Court for Mount Gilead, Cardington, Edison and Marengo.',
     url: 'https://www.jjlawohio.com/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court' },
 };

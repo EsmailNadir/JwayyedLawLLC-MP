@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Delaware County Personal Injury Attorney | Jwayyed Law LLC',
     description: 'Personal injury claims in Delaware, Powell, Westerville, Dublin, Lewis Center and Sunbury, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/delaware-county/personal-injury-delaware-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/delaware-county/personal-injury-delaware-county' },
 };

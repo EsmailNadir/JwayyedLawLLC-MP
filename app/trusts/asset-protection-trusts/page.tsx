@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Asset Protection Trusts Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Ohio Legacy Trusts under ORC Chapter 5816 to protect assets from future creditors. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/asset-protection-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/asset-protection-trusts' },
 };

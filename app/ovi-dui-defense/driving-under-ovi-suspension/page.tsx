@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Driving Under OVI Suspension | Jwayyed Law LLC',
     description: 'Penalties, the two kinds of OVI suspension, HB 37 privilege rules and defenses for a DUOVIS charge in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/driving-under-ovi-suspension',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/driving-under-ovi-suspension' },
 };

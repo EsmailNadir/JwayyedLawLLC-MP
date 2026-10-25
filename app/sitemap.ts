@@ -6,12 +6,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jjlawohio.com';
 
   const d = {
-    home: new Date('2026-07-12'),
-    blog: new Date('2026-06-24'),
-    attorneys: new Date('2026-07-12'),
-    service: new Date('2026-06-24'),
-    court: new Date('2026-06-24'),
-    location: new Date('2026-06-24'),
+    home: new Date('2026-10-25'),
+    blog: new Date('2026-10-25'),
+    attorneys: new Date('2026-10-25'),
+    service: new Date('2026-10-25'),
+    court: new Date('2026-10-25'),
+    location: new Date('2026-10-25'),
   };
 
   // Dynamically generate blog post sitemap entries from data
@@ -19,7 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `/our-law-firm/blog/${post.slug}`,
     priority: 0.7,
     changeFrequency: 'monthly' as const,
-    lastModified: new Date(post.date),
+    // Every post was edited in the October 2026 redesign; never report a
+    // date earlier than that edit.
+    lastModified: new Date(Math.max(new Date(post.date).getTime(), d.blog.getTime())),
   }));
 
   // Dynamically generate attorney bio sitemap entries from data (mirrors blogRoutes —

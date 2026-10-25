@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Charitable Trusts Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Charitable remainder trusts, charitable lead trusts and other giving strategies in Ohio. Call (614) 285-5482.',
     url: 'https://www.jjlawohio.com/trusts/charitable-trusts',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/trusts/charitable-trusts' },
 };

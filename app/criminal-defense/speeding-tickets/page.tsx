@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Speeding Ticket Attorney Ohio | Jwayyed Law LLC',
     description: 'Speeding ticket defense throughout Ohio: points, insurance, CDL consequences and how tickets are reduced or dismissed.',
     url: 'https://www.jjlawohio.com/criminal-defense/speeding-tickets',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: {
     canonical: '/criminal-defense/speeding-tickets',

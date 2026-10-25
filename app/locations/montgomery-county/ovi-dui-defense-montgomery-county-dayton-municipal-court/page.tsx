@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'OVI / DUI Lawyer for Dayton, Ohio | Jwayyed Law LLC',
     description: 'OVI defense in Dayton and Kettering Municipal Courts: which court hears your case, HB 37 penalties and the 30-day ALS appeal.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court' },
 };

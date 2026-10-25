@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Clinton County OVI Attorney | Jwayyed Law LLC',
     description: 'OVI defense at Wilmington Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
     url: 'https://www.jjlawohio.com/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/clinton-county/ovi-dui-defense-clinton-county-wilmington-municipal-court' },
 };

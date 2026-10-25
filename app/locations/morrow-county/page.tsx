@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Morrow County OVI & Criminal Defense | Jwayyed Law LLC',
     description: 'OVI, criminal, injury and business matters in Morrow County, at Morrow County Municipal Court in Mt. Gilead.',
     url: 'https://www.jjlawohio.com/locations/morrow-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/morrow-county' },
 };

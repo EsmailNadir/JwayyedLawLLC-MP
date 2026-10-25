@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Morrow County Municipal Court Attorney | Jwayyed Law LLC',
     description: 'OVI, misdemeanor and traffic defense at Morrow County Municipal Court in Mount Gilead.',
     url: 'https://www.jjlawohio.com/courts/morrow-county-municipal-court',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/courts/morrow-county-municipal-court' },
 };

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Business Litigation Lawyer Ohio | ORC 2307 | Jwayyed Law LLC',
     description: 'Business disputes in Ohio courts, from the demand letter to trial and appeal.',
     url: 'https://www.jjlawohio.com/business/business-litigation',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/business/business-litigation' },
 };

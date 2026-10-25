@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Real Estate Disputes Lawyer in Ohio | Jwayyed Law LLC',
     description: 'Title, boundary, easement and purchase agreement disputes in Ohio, and the deadlines that apply.',
     url: 'https://www.jjlawohio.com/civil/real-estate-disputes',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/civil/real-estate-disputes' },
 };

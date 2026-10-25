@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'OVI With Accident Defense in Ohio | Jwayyed Law LLC',
     description: 'Vehicular assault, vehicular homicide, leaving the scene and civil exposure after an OVI accident in Ohio.',
     url: 'https://www.jjlawohio.com/ovi-dui-defense/ovi-with-accident',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/ovi-dui-defense/ovi-with-accident' },
 };

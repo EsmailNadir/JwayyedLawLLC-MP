@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Franklin County OVI & Criminal Defense | Jwayyed Law LLC',
     description: 'OVI and criminal defense in Columbus, its suburbs and their mayor’s courts, plus county-wide personal injury and business work.',
     url: 'https://www.jjlawohio.com/locations/franklin-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/franklin-county' },
 };

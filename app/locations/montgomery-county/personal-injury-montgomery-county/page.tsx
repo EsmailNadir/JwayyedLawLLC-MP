@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Personal Injury Lawyer in Montgomery County | Jwayyed Law LLC',
     description: 'Personal injury claims in Dayton, Kettering, Huber Heights and Miamisburg, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/personal-injury-montgomery-county',
-    images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/montgomery-county/personal-injury-montgomery-county' },
 };
