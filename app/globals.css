@@ -528,3 +528,176 @@ body:has(.bg-gray-100) {
     animation-play-state: paused;
   }
 }
+
+/*
+ * Scroll-linked motion on the home page, as CSS scroll-driven animations.
+ *
+ * These used to be GSAP scrubs: script wrote a transform on every scroll
+ * frame, which cost style and layout work each frame and trailed the native
+ * scroll by a frame (the "jelly" lag, worst in Safari). Declared here, the
+ * browser runs them on the compositor alongside the scroll itself.
+ *
+ * Only transform and opacity are animated. Browsers without scroll timelines,
+ * phones (where the effect is barely visible and battery matters most) and
+ * reduced motion all get the still, finished page.
+ */
+@keyframes jw-hero-out {
+  to {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+}
+@keyframes jw-hero-drift {
+  to {
+    transform: translateY(12%);
+  }
+}
+@keyframes jw-drift {
+  from {
+    transform: translateY(-4%);
+  }
+  to {
+    transform: translateY(4%);
+  }
+}
+@keyframes jw-drift-wide {
+  from {
+    transform: translateY(-8%) scale(1.2);
+  }
+  to {
+    transform: translateY(8%) scale(1.2);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 640px) {
+    .jw .hero {
+      view-timeline: --jw-hero block;
+    }
+    .jw-hero-out,
+    .jw-hero-drift {
+      animation: jw-hero-out linear both;
+      animation-timeline: --jw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+    .jw-hero-drift {
+      animation-name: jw-hero-drift;
+    }
+    .jw-drift,
+    .jw-drift-wide {
+      animation: jw-drift linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+    .jw-drift-wide {
+      animation-name: jw-drift-wide;
+    }
+  }
+}
+
+/*
+ * Home reveals. The hero plays on first paint; everything else waits for
+ * `is-in` from the page's IntersectionObserver. Hidden states apply only
+ * once that script has set data-motion, so the page is complete without it.
+ * Only transform and opacity change, so the browser composites the motion
+ * instead of laying the page out again.
+ */
+@keyframes jw-rise {
+  from {
+    transform: translateY(115%);
+  }
+}
+@keyframes jw-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title .jw-word > span {
+    animation: jw-rise 1.1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+    animation-delay: calc(0.15s + var(--i, 0) * 70ms);
+  }
+  .hero-copy > .hero-follow {
+    animation: jw-fade-up 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation-delay: 0.75s;
+  }
+  .hero-copy > .hero-follow:nth-child(3) {
+    animation-delay: 0.87s;
+  }
+  .hero-copy > .hero-follow:nth-child(4) {
+    animation-delay: 0.99s;
+  }
+
+  .jw-marquee[data-offscreen='true'] .jw-marquee-track {
+    animation-play-state: paused;
+  }
+
+  /* Delays sit on opacity and transform only, so hover colour changes on
+     the same elements stay instant. */
+  [data-motion] :is(.reveal-group > *, .bento-card, .area-panel, .result-row) {
+    --rv-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition:
+      opacity var(--rv-dur, 0.9s) var(--rv-ease) var(--rv-delay, 0s),
+      transform var(--rv-dur, 0.9s) var(--rv-ease) var(--rv-delay, 0s),
+      color 0.15s,
+      background-color 0.15s,
+      border-color 0.15s;
+  }
+  [data-motion] .reveal-group > * {
+    --rv-delay: calc(var(--i, 0) * 100ms);
+  }
+  [data-motion] .bento-card {
+    --rv-dur: 1s;
+    --rv-delay: calc(var(--i, 0) * 120ms);
+  }
+  [data-motion] .reveal-group:not(.is-in) > * {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+  [data-motion] .bento:not(.is-in) .bento-card {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+
+  [data-motion] .area-panel:not(.is-in),
+  [data-motion] .result-row:not(.is-in) {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  [data-motion] .reveal-title .jw-word > span {
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: calc(var(--i, 0) * 60ms);
+  }
+  [data-motion] .reveal-title:not(.is-in) .jw-word > span {
+    transform: translateY(115%);
+  }
+
+  /* The statement brightens word by word as it arrives. */
+  [data-motion] .statement .jw-word > span {
+    transition: opacity 0.5s ease-out;
+    transition-delay: calc(var(--i, 0) * 45ms);
+  }
+  [data-motion] .statement:not(.is-in) .jw-word > span {
+    opacity: 0.18;
+  }
+
+  /* Results: the charge is struck through, then the outcome arrives. */
+  [data-motion] .result-row .jw-strike-bar {
+    transition: transform 0.6s cubic-bezier(0.45, 0, 0.55, 1) 0.55s;
+  }
+  [data-motion] .result-row:not(.is-in) .jw-strike-bar {
+    transform: scaleX(0);
+  }
+  [data-motion] .result-row .result-outcome {
+    transition:
+      opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.05s,
+      transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.05s;
+  }
+  [data-motion] .result-row:not(.is-in) .result-outcome {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+}

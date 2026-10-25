@@ -3,9 +3,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
 import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Pause, Phone, Play, Star } from 'lucide-react';
 import CourtFinder from '@/components/CourtFinder';
 import NCDDBadge from '@/components/NCDDBadge';
@@ -13,8 +10,6 @@ import OfficeStatus from '@/components/OfficeStatus';
 import TestimonialWall from '@/components/TestimonialWall';
 import { ReviewSummaryCard } from '@/components/ui/card-2';
 import { siteNav } from '@/data/navigation';
-
-gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 /*
  * Home page. Structure and motion follow the notes in
@@ -97,14 +92,14 @@ function Stars({ className }: { className: string }) {
 }
 
 /** Splits text into clipped words that GSAP raises one after another. */
-function Words({ text, className = '' }: { text: string; className?: string }) {
+function Words({ text, className = '', start = 0 }: { text: string; className?: string; start?: number }) {
   const words = text.split(' ');
   return (
     <>
       {words.map((w, i) => (
         <React.Fragment key={i}>
           <span className={`jw-word ${className}`}>
-            <span>{w}</span>
+            <span style={{ '--i': start + i } as React.CSSProperties}>{w}</span>
           </span>
           {i < words.length - 1 ? ' ' : null}
         </React.Fragment>
@@ -146,7 +141,7 @@ function HeroVideo() {
 
   return (
     <>
-      <div className="hero-media absolute inset-0 will-change-transform" aria-hidden="true">
+      <div className="hero-media jw-hero-drift absolute inset-0" aria-hidden="true">
         <Image
           src="/assets/attorney-main.jpg"
           alt=""
@@ -196,13 +191,22 @@ function MobileCallBar() {
   useEffect(() => {
     // Shown once the hero is gone; tucked away again near the foot of the
     // page so it never covers the footer's contact lines and legal notice.
-    const onScroll = () => {
+    // Read at most once a frame: scrollHeight is a layout read.
+    let frame = 0;
+    const check = () => {
+      frame = 0;
       const nearEnd = window.scrollY + window.innerHeight > document.documentElement.scrollHeight - 480;
       setShow(window.scrollY > window.innerHeight * 0.85 && !nearEnd);
     };
-    onScroll();
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(check);
+    };
+    check();
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      cancelAnimationFrame(frame);
+    };
   }, []);
   return (
     <div
@@ -222,182 +226,84 @@ function MobileCallBar() {
   );
 }
 
+/** Counts a figure up from zero. The server HTML holds the real figure. */
+function countUp(el: HTMLElement) {
+  const to = Number(el.dataset.count);
+  const decimals = Number(el.dataset.decimals ?? 0);
+  const t0 = performance.now();
+  const tick = (t: number) => {
+    const p = Math.min(1, (t - t0) / 1600);
+    el.textContent = (to * (1 - (1 - p) ** 2)).toFixed(decimals);
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
 export default function HomePageClient() {
   const root = useRef<HTMLDivElement>(null);
 
   /*
-   * All motion lives here and only under no-preference. Every tween is a
-   * `from` or a scroll-scrubbed `fromTo` set up at runtime, so the markup
-   * itself is always the finished page: without script or with reduced
-   * motion, nothing is hidden or offset. gsap.matchMedia reverts it all if
-   * the preference changes.
+   * Motion. The hero's entrance is pure CSS (it plays on first paint, no
+   * script needed). Everything below it reveals once as it scrolls into
+   * view: one IntersectionObserver adds `is-in`, and CSS transitions on
+   * transform and opacity do the rest (globals.css, "Home reveals").
+   *
+   * This replaced GSAP. Each GSAP reveal read computed styles for every
+   * word and block it animated at the moment its section came into view,
+   * which forced a full style and layout pass mid-scroll: the stutter
+   * visitors felt. Transitions start from a class change and run on the
+   * compositor.
+   *
+   * Nothing is hidden unless this effect runs (it sets data-motion on the
+   * root), so without script, or with reduced motion, the page is simply
+   * finished.
    */
-  useGSAP(
-    () => {
-      // Phones resize the viewport as the address bar shows and hides; don't
-      // recalculate every trigger for that.
-      ScrollTrigger.config({ ignoreMobileResize: true });
-      const mm = gsap.matchMedia();
-      mm.add('(prefers-reduced-motion: no-preference)', () => {
-        const q = gsap.utils.selector(root);
+  useEffect(() => {
+    const el = root.current;
+    if (!el || !('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-        // ---- The trust strip only runs while it is on screen.
-        const strip = q('.jw-marquee')[0];
-        const track = q('.jw-marquee-track')[0];
-        if (strip && track) {
-          ScrollTrigger.create({
-            trigger: strip,
-            start: 'top bottom',
-            end: 'bottom top',
-            onToggle: (self) => {
-              track.style.animationPlayState = self.isActive ? '' : 'paused';
-            },
-          });
+    el.querySelectorAll<HTMLElement>('.reveal-group, .bento').forEach((group) => {
+      const items = group.classList.contains('bento') ? group.querySelectorAll<HTMLElement>('.bento-card') : group.children;
+      Array.from(items).forEach((child, i) => (child as HTMLElement).style.setProperty('--i', String(i)));
+    });
+    el.dataset.motion = 'on';
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const target = entry.target as HTMLElement;
+          io.unobserve(target);
+          target.classList.add('is-in');
+          target.querySelectorAll<HTMLElement>('[data-count]').forEach(countUp);
         }
+      },
+      { rootMargin: '0px 0px -12% 0px' }
+    );
+    el.querySelectorAll('.reveal-title, .reveal-group, .bento, .area-panel, .statement, .result-row').forEach((t) => io.observe(t));
 
-        // ---- Hero: footage settles, words rise, the rest follows. On the
-        // way out the copy lifts and fades while the footage drifts.
-        gsap.from(q('.hero-media'), { scale: 1.15, duration: 2.6, ease: 'power3.out' });
-        gsap.from(q('.hero-title .jw-word > span'), {
-          yPercent: 115,
-          duration: 1.1,
-          ease: 'power4.out',
-          stagger: 0.07,
-          delay: 0.15,
-        });
-        gsap.from(q('.hero-follow'), { y: 28, opacity: 0, duration: 1, ease: 'power3.out', stagger: 0.12, delay: 0.75 });
-        gsap.to(q('.hero-copy'), {
-          y: -90,
-          opacity: 0,
-          ease: 'none',
-          scrollTrigger: { trigger: q('.hero')[0], start: 'top top', end: 'bottom top', scrub: true },
-        });
-        gsap.to(q('.hero-media'), {
-          yPercent: 14,
-          ease: 'none',
-          scrollTrigger: { trigger: q('.hero')[0], start: 'top top', end: 'bottom top', scrub: true },
-        });
+    // The trust strip only runs while it is on screen.
+    const strip = new IntersectionObserver((entries) => {
+      for (const entry of entries) (entry.target as HTMLElement).dataset.offscreen = entry.isIntersecting ? '' : 'true';
+    });
+    el.querySelectorAll('.jw-marquee').forEach((t) => strip.observe(t));
 
-        // ---- Section headings: words rise as the heading enters.
-        q('.reveal-title').forEach((el) => {
-          gsap.from(el.querySelectorAll('.jw-word > span'), {
-            yPercent: 115,
-            duration: 1,
-            ease: 'power4.out',
-            stagger: 0.06,
-            scrollTrigger: { trigger: el, start: 'top 85%' },
-          });
-        });
-
-        // ---- Blocks rise in, children staggered.
-        q('.reveal-group').forEach((el) => {
-          gsap.from(el.children, {
-            y: 48,
-            opacity: 0,
-            duration: 0.9,
-            ease: 'power3.out',
-            stagger: 0.1,
-            scrollTrigger: { trigger: el, start: 'top 82%' },
-          });
-        });
-
-        // ---- Bento: cards lift in one after another; the photo eases in.
-        gsap.from(q('.bento-card'), {
-          y: 70,
-          opacity: 0,
-          duration: 1,
-          ease: 'power3.out',
-          stagger: 0.12,
-          scrollTrigger: { trigger: q('.bento')[0], start: 'top 78%' },
-        });
-        gsap.fromTo(
-          q('.bento-photo img'),
-          { scale: 1.2 },
-          { scale: 1, ease: 'none', scrollTrigger: { trigger: q('.bento')[0], start: 'top bottom', end: 'bottom top', scrub: true } }
-        );
-
-        // ---- Figures count up from zero when they come into view. The
-        // server HTML always holds the real figure.
-        q('[data-count]').forEach((el) => {
-          const to = Number(el.getAttribute('data-count'));
-          const decimals = Number(el.getAttribute('data-decimals') ?? 0);
-          const obj = { v: 0 };
-          gsap.to(obj, {
-            v: to,
-            duration: 1.6,
-            ease: 'power2.out',
-            scrollTrigger: { trigger: el, start: 'top 88%' },
-            onStart: () => {
-              el.textContent = (0).toFixed(decimals);
-            },
-            onUpdate: () => {
-              el.textContent = obj.v.toFixed(decimals);
-            },
-          });
-        });
-
-        // ---- Practice panels rise in once; their photographs drift. (The
-        // panels used to scale with the scroll, which re-rendered each panel,
-        // text and all, on every frame.)
-        q('.area-panel').forEach((el) => {
-          gsap.from(el, {
-            y: 60,
-            opacity: 0,
-            duration: 0.9,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 88%' },
-          });
-          const img = el.querySelector('img');
-          if (img) {
-            gsap.fromTo(
-              img,
-              { yPercent: -8 },
-              { yPercent: 8, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } }
-            );
-          }
-        });
-
-        // ---- The statement brightens word by word with the scroll.
-        gsap.fromTo(
-          q('.statement .jw-word > span'),
-          { opacity: 0.18 },
-          {
-            opacity: 1,
-            ease: 'none',
-            stagger: 0.08,
-            scrollTrigger: { trigger: q('.statement')[0], start: 'top 78%', end: 'bottom 50%', scrub: true },
-          }
-        );
-
-        // ---- Results: the charge is struck through, then the outcome arrives.
-        q('.result-row').forEach((row) => {
-          const tl = gsap.timeline({ scrollTrigger: { trigger: row, start: 'top 82%' } });
-          tl.from(row, { y: 40, opacity: 0, duration: 0.7, ease: 'power3.out' })
-            .from(row.querySelector('.jw-strike-bar'), { scaleX: 0, duration: 0.6, ease: 'power2.inOut' }, '-=0.1')
-            .from(row.querySelectorAll('.result-outcome'), { x: -18, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.1');
-        });
-
-        // ---- The Statehouse moves against the scroll.
-        gsap.fromTo(
-          q('.statehouse img'),
-          { yPercent: -10, scale: 1.12 },
-          { yPercent: 10, scale: 1, ease: 'none', scrollTrigger: { trigger: q('.statehouse')[0], start: 'top bottom', end: 'bottom top', scrub: true } }
-        );
-      });
-      return () => mm.revert();
-    },
-    { scope: root }
-  );
+    return () => {
+      io.disconnect();
+      strip.disconnect();
+    };
+  }, []);
 
   return (
     <div ref={root} className="jw overflow-x-clip bg-white text-navy-950 text-[length:var(--step-body)] leading-[1.6]">
       {/* ======================= HERO ======================= */}
       <section className="hero relative -mt-16 xl:-mt-20 min-h-[calc(100svh-44px)] flex items-center overflow-hidden bg-navy-950 text-white">
         <HeroVideo />
-        <div className={`hero-copy relative z-10 ${FRAME} w-full pt-28 xl:pt-32 pb-24 text-center`}>
+        <div className={`hero-copy jw-hero-out relative z-10 ${FRAME} w-full pt-28 xl:pt-32 pb-24 text-center`}>
           <h1 className="hero-title jw-display mx-auto max-w-6xl text-[length:var(--step-display)] leading-[1.06]">
             <Words text="Defending Your Rights." />
-            <br className="hidden sm:block" /> <Words text="Building Your Future." className="text-sky" />
+            <br className="hidden sm:block" /> <Words text="Building Your Future." className="text-sky" start={3} />
           </h1>
           <p className="hero-follow mt-7 mx-auto max-w-[46rem] text-[length:var(--step-lead)] leading-snug text-white/85 text-pretty">
             Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and
@@ -587,7 +493,7 @@ export default function HomePageClient() {
                         alt={a.alt}
                         fill
                         sizes="(min-width:1024px) 60vw, 100vw"
-                        className="object-cover scale-110 transition-transform duration-700 ease-out group-hover:scale-[1.16]"
+                        className="jw-drift object-cover scale-110 transition-[scale] duration-700 ease-out group-hover:scale-[1.16]"
                       />
                       {/* A flat navy tint rather than a blend mode: blending made
                           the browser redraw each panel on every scroll frame. */}
@@ -779,7 +685,7 @@ export default function HomePageClient() {
 
       {/* ======================= THE PLACE ======================= */}
       <figure className="statehouse relative h-[64svh] min-h-[400px] overflow-hidden bg-navy-950">
-        <Image src="/assets/found/ohio-statehouse.jpg" alt="The Ohio Statehouse in Columbus" fill sizes="100vw" className="object-cover" />
+        <Image src="/assets/found/ohio-statehouse.jpg" alt="The Ohio Statehouse in Columbus" fill sizes="100vw" className="jw-drift-wide object-cover" />
         <figcaption className={`${FRAME} absolute inset-x-0 bottom-0 pb-6 text-[length:var(--step-small)] text-white`}>
           <span className="bg-navy-950 px-3 py-1.5">The Ohio Statehouse, Columbus.</span>
         </figcaption>
