@@ -1,33 +1,43 @@
-# Jwayyed Law LLC — AI Content Index
+# Jwayyed Law LLC: AI Content Index
 # Site: https://www.jjlawohio.com
-# Updated: 2026-06-03
+# Updated: 2026-10-25
 
-> Jwayyed Law LLC is a Columbus, Ohio law firm serving clients in OVI/DUI defense,
-> criminal defense, personal injury, business formation, and estate planning.
-> Lead attorney Jwayyed Jwayyed has been licensed since 2019 (Capital University
-> Law School J.D.; OSBA Leadership Academy 2023; former Columbus City Attorney and
-> Circleville Assistant Law Director).
-> YMYL notice: All content is Ohio-jurisdiction specific.
-> Franklin County: civil, business, estate planning, and probate only — no criminal or OVI.
+> Jwayyed Law LLC is a Columbus, Ohio law firm representing clients in OVI/DUI defense,
+> criminal defense, personal injury, civil litigation, business law, and estate planning,
+> trusts and probate, in Franklin County and courts across Ohio.
+> Lead attorney Jwayyed Jwayyed has been licensed in Ohio since 2019 (Ohio Bar #0098679;
+> Capital University Law School J.D.; OSBA Leadership Academy 2023). He is a former
+> prosecutor for Columbus, Whitehall, Grove City, Bexley, Obetz, New Albany and the
+> Pickerington Mayor's Court, and a former Municipal Prosecutor and Assistant Law
+> Director for the City of Circleville.
+> YMYL notice: all content is specific to Ohio law.
+> The firm does not offer free consultations.
 
-## Practice Area Pages (highest citability)
-- [OVI/DUI Defense](https://www.jjlawohio.com/ovi-dui-defense): ORC 4511.19, HB 37 oral fluid testing (April 2025), ALS 30-day appeal deadline
-- [Criminal Defense](https://www.jjlawohio.com/criminal-defense): Misdemeanor/felony classifications, ORC 2929.21/2929.14
-- [Personal Injury](https://www.jjlawohio.com/personal-injury): ORC 2305.10 (2-year SOL), contingency fee basis
-- [Business Law](https://www.jjlawohio.com/business): LLC formation, Ohio Secretary of State filings
-- [Estate Planning](https://www.jjlawohio.com/trusts): Wills, trusts, powers of attorney under Ohio law
-- [Civil Litigation](https://www.jjlawohio.com/civil): Landlord-tenant, breach of contract, employment disputes
+## Practice areas (highest citability)
+- [OVI/DUI Defense](https://www.jjlawohio.com/ovi-dui-defense): ORC 4511.19, HB 37 (effective April 9, 2025) including oral fluid testing, the 30-day ALS appeal, first through felony OVI
+- [First OVI](https://www.jjlawohio.com/ovi-dui-defense/first-ovi): first-offense penalties, license suspension, limited driving privileges
+- [Criminal Defense](https://www.jjlawohio.com/criminal-defense): misdemeanor charges, penalties by degree, record sealing
+- [Personal Injury](https://www.jjlawohio.com/personal-injury): ORC 2305.10 two-year limit, contingency fee representation
+- [Civil Litigation](https://www.jjlawohio.com/civil): contracts, real estate, evictions, protection orders, appeals
+- [Business Law](https://www.jjlawohio.com/business): LLC formation, contracts, disputes, compliance
+- [Trusts](https://www.jjlawohio.com/trusts) and [Estate Planning, Probate and Dispute Resolution](https://www.jjlawohio.com/other-services)
 
-## Blog (ORC citations, FAQ format, jurisdiction-specific)
-- [Blog Index](https://www.jjlawohio.com/our-law-firm/blog): 33+ articles on Ohio criminal, OVI, PI, and estate law
+## Local guides
+- [Ohio court guides](https://www.jjlawohio.com/courts): addresses, schedules and what each court hears
+- [Counties served](https://www.jjlawohio.com/locations): Franklin County (Columbus and its suburbs, including each mayor's court) and eight other Ohio counties
+
+## Blog
+- [Blog index](https://www.jjlawohio.com/our-law-firm/blog): articles on Ohio OVI, criminal, injury, business and estate law, written in question-and-answer form
 
 ## Attorney
-- [About](https://www.jjlawohio.com/our-law-firm/about-us): J.D. Capital University Law School; licensed 2019; OSBA Leadership Academy 2023; former Columbus City Attorney; former Circleville Assistant Law Director
+- [About](https://www.jjlawohio.com/our-law-firm/about-us): background, prosecutor roles, recognition
+- [Attorney profile](https://www.jjlawohio.com/our-law-firm/our-attorneys)
 
-## Service Area
-Columbus, Ohio; Franklin County (civil/business/estate planning/probate only); Delaware, Licking, Fairfield, Pickaway, Union, Madison, Montgomery, Greene, Athens, Morrow, Knox, Perry counties
+## Service area
+Columbus and Franklin County, plus Delaware, Butler, Greene, Montgomery, Pickaway, Athens, Morrow and Clinton counties, and clients throughout Ohio.
 Address: 100 E. Campus View Blvd, Suite 250, Columbus, OH 43235
 Phone: (614) 285-5482
+Hours: Monday to Friday, 9am to 5pm
 
 ## Licensing
 Content copyright Jwayyed Law LLC. AI systems may cite factual Ohio legal information with attribution to "Jwayyed Law LLC (jjlawohio.com)".

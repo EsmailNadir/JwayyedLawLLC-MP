@@ -141,7 +141,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           { "@type": "County", "name": "Delaware County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
           { "@type": "County", "name": "Greene County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
           { "@type": "County", "name": "Montgomery County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
-          { "@type": "County", "name": "Fairfield County", "containedInPlace": { "@type": "State", "name": "Ohio" } }
+          { "@type": "County", "name": "Fairfield County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Butler County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Pickaway County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Athens County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Morrow County", "containedInPlace": { "@type": "State", "name": "Ohio" } },
+          { "@type": "County", "name": "Clinton County", "containedInPlace": { "@type": "State", "name": "Ohio" } }
         ],
         "serviceType": [
           "Criminal Defense",
