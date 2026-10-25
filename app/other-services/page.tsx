@@ -4,18 +4,20 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 import FAQ from '@/components/FAQ';
 import LocationsWeServe from '@/components/LocationsWeServe';
-import Link from 'next/link';
+import { FactTable, KeyFacts, LinkGrid, PointGrid, Section } from '@/components/practice';
 import { otherServices } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Estate Planning & Probate Lawyer Ohio',
-  description: 'Ohio attorney for estate planning, wills and trusts, probate administration, and dispute resolution. Serving Columbus and communities across Ohio.',
+  description:
+    'Ohio estate planning, wills and trusts, probate administration, and mediation and arbitration, from a Columbus law firm serving clients statewide.',
   keywords: ['estate planning attorney Columbus Ohio', 'probate lawyer Ohio', 'dispute resolution attorney Columbus', 'Ohio will attorney', 'trust attorney Columbus OH'],
   openGraph: {
     title: 'Estate Planning & Probate Lawyer Ohio | Jwayyed Law LLC',
+    description: 'Estate planning, probate administration and dispute resolution in Ohio.',
     url: 'https://www.jjlawohio.com/other-services',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/other-services' },
 };
 
@@ -23,91 +25,150 @@ const breadcrumbItems = [{ label: 'Other Services', href: '/other-services' }];
 
 const faqs = [
   {
-    question: `What estate planning documents does every Ohio adult need?`,
-    answer: `At a minimum, Ohio adults should have: (1) a Last Will and Testament under ORC Chapter 2107 directing distribution of probate assets and naming an executor; (2) a durable financial power of attorney under ORC 1337.22 designating someone to manage finances if incapacitated; (3) a healthcare power of attorney or healthcare proxy under ORC 1337.12 designating a decision-maker for medical treatment; and (4) a living will (advance directive) under ORC 2133.02 stating end-of-life treatment preferences. Depending on assets and goals, a revocable living trust under ORC 5801 may also be appropriate to avoid probate and provide for seamless asset management.`,
+    question: 'What estate planning documents does every Ohio adult need?',
+    answer:
+      'At a minimum: (1) a Last Will and Testament under ORC Chapter 2107, directing distribution of probate assets and naming an executor; (2) a durable financial power of attorney under ORC 1337.22, naming someone to manage your finances if you are incapacitated; (3) a healthcare power of attorney or healthcare proxy under ORC 1337.12, naming a decision-maker for medical treatment; and (4) a living will (advance directive) under ORC 2133.02, stating your end-of-life treatment preferences. Depending on your assets and goals, a revocable living trust under ORC 5801 may also make sense, to avoid probate and keep assets managed without interruption.',
   },
   {
-    question: `What is the probate process in Ohio and how long does it take?`,
-    answer: `Ohio probate is administered through the Probate Division of the Court of Common Pleas in the county where the decedent resided. Under ORC Chapter 2113, the executor files the will (if any) and petitions the court to open the estate. The estate must remain open long enough to notify creditors (notice must be published and a 4-month creditor claim period runs under ORC 2117.06), inventory assets, pay valid debts and taxes, and distribute remaining assets to beneficiaries. A straightforward Ohio estate typically takes 6–12 months; complex estates with disputes, real estate in multiple counties, or federal estate tax obligations can take longer. An attorney guides the executor through each step.`,
+    question: 'What is the probate process in Ohio and how long does it take?',
+    answer:
+      'Ohio probate runs through the Probate Division of the Court of Common Pleas in the county where the decedent lived. Under ORC Chapter 2113, the executor files the will (if any) and petitions the court to open the estate. The estate stays open long enough to notify creditors (notice must be published, and a 4-month creditor claim period runs under ORC 2117.06), inventory assets, pay valid debts and taxes, and distribute what remains to beneficiaries. A straightforward Ohio estate typically takes 6 to 12 months; estates with disputes, real estate in several counties or federal estate tax take longer. An attorney guides the executor through each step.',
   },
   {
-    question: `Can I avoid probate in Ohio?`,
-    answer: `Yes. Several Ohio mechanisms allow assets to pass outside of probate: (1) joint tenancy with right of survivorship (real estate and financial accounts); (2) beneficiary designations on retirement accounts, life insurance, and financial accounts (TOD/POD designations); (3) a Transfer on Death (TOD) deed for real estate under ORC 5302.22; (4) a revocable living trust under ORC Chapter 5801, which holds assets during life and distributes them at death without court involvement. A properly funded living trust is the most comprehensive probate avoidance tool for larger or more complex estates. Our attorney can advise on the best strategy for your specific asset mix and family situation.`,
+    question: 'Can I avoid probate in Ohio?',
+    answer:
+      'Yes. Assets can pass outside probate through: (1) joint tenancy with right of survivorship (real estate and financial accounts); (2) beneficiary designations on retirement accounts, life insurance and financial accounts (TOD/POD designations); (3) a Transfer on Death (TOD) deed for real estate under ORC 5302.22; and (4) a revocable living trust under ORC Chapter 5801, which holds assets during life and distributes them at death without court involvement. A properly funded living trust is the broadest tool for larger or more complex estates. The firm can advise on the right approach for your assets and family.',
   },
   {
-    question: `What is the difference between a will and a revocable living trust in Ohio?`,
-    answer: `A Last Will and Testament under ORC Chapter 2107 is a document that takes effect at death and must pass through Ohio probate court before assets are distributed — it is a public record. A revocable living trust under ORC Chapter 5801 is a legal entity you create and fund during your lifetime that holds title to your assets; at death, the successor trustee distributes assets to beneficiaries without court involvement, maintaining privacy and avoiding probate delay. Wills are generally simpler and less expensive to create; trusts require funding (retitling assets) to be effective but provide greater flexibility, privacy, and control — particularly for larger estates, blended families, or individuals with property in multiple states.`,
+    question: 'What is the difference between a will and a revocable living trust in Ohio?',
+    answer:
+      'A Last Will and Testament under ORC Chapter 2107 takes effect at death and must go through Ohio probate court before assets are distributed, and it becomes a public record. A revocable living trust under ORC Chapter 5801 is created and funded during your lifetime and holds title to your assets; at death, the successor trustee distributes them without court involvement, privately and without probate delay. Wills are generally simpler and less expensive to create. Trusts must be funded (assets retitled) to work, but give more flexibility, privacy and control, particularly for larger estates, blended families or property in several states.',
   },
   {
-    question: `What is an executor's duty in Ohio probate, and can they be held liable?`,
-    answer: `An Ohio executor (personal representative) has fiduciary duties under ORC Chapter 2113 including: inventorying and appraising estate assets, notifying and paying valid creditors, filing estate and income tax returns, managing estate assets prudently during administration, and distributing assets to beneficiaries per the will or Ohio intestacy law. Executors can be held personally liable for breach of these fiduciary duties — for example, distributing assets before creditors are paid, or mismanaging estate investments. An attorney can guide the executor through the probate process, helping them fulfill their obligations and minimize personal liability exposure.`,
+    question: "What is an executor's duty in Ohio probate, and can they be held liable?",
+    answer:
+      "An Ohio executor (personal representative) has fiduciary duties under ORC Chapter 2113: inventorying and appraising estate assets, notifying and paying valid creditors, filing estate and income tax returns, managing estate assets prudently during administration, and distributing assets under the will or Ohio intestacy law. An executor can be personally liable for breaching these duties, for example by distributing assets before creditors are paid or mismanaging estate investments. An attorney can guide the executor through probate and help limit that exposure.",
   },
   {
-    question: `What is mediation and how does it differ from arbitration in Ohio?`,
-    answer: `Mediation and arbitration are both forms of alternative dispute resolution (ADR) in Ohio but work differently. Mediation under ORC Chapter 2710 is a voluntary, confidential process where a neutral mediator helps the parties reach a mutually acceptable settlement — the mediator has no authority to impose a decision. Arbitration under ORC Chapter 2711 is a more formal process where a neutral arbitrator (or panel) hears evidence and issues a binding or non-binding award. Mediation is typically faster and less expensive; arbitration resembles a streamlined trial. Many commercial contracts include mandatory arbitration clauses. Our attorney can advise on which ADR process is appropriate for your dispute and represent you throughout.`,
+    question: 'What is mediation and how does it differ from arbitration in Ohio?',
+    answer:
+      'Both are alternative dispute resolution (ADR). Mediation under ORC Chapter 2710 is a voluntary, confidential process in which a neutral mediator helps the parties reach a settlement they both accept; the mediator cannot impose a decision. Arbitration under ORC Chapter 2711 is more formal: a neutral arbitrator (or panel) hears evidence and issues a binding or non-binding award. Mediation is usually faster and less expensive; arbitration resembles a streamlined trial. Many commercial contracts include mandatory arbitration clauses. The firm can advise which process suits your dispute and represent you throughout.',
   },
   {
-    question: `Does Ohio recognize handwritten (holographic) wills?`,
-    answer: `Ohio does not recognize handwritten (holographic) wills that lack proper witness signatures. Under ORC 2107.03, a valid Ohio will must be in writing, signed by the testator (or by another at the testator's direction), and attested and signed by two competent witnesses in the testator's conscious presence. An unwitnessed handwritten will is not valid in Ohio. If someone dies with an invalid or no will, Ohio's intestacy statute (ORC 2105.06) governs distribution — which may not reflect the decedent's actual wishes. This makes proper will drafting with an attorney critical to ensuring your intentions are carried out.`,
+    question: 'Does Ohio recognize handwritten (holographic) wills?',
+    answer:
+      "Ohio does not recognize handwritten (holographic) wills that lack proper witness signatures. Under ORC 2107.03, a valid Ohio will must be in writing, signed by the testator (or by another at the testator's direction), and attested and signed by two competent witnesses in the testator's conscious presence. An unwitnessed handwritten will is not valid in Ohio. If someone dies with an invalid will or none, Ohio's intestacy statute (ORC 2105.06) governs distribution, which may not reflect the decedent's wishes.",
   },
   {
-    question: `What other legal services does Jwayyed Law LLC provide beyond criminal defense and personal injury?`,
-    answer: `Beyond criminal defense, OVI/DUI defense, and personal injury, Jwayyed Law LLC provides: estate planning (wills, trusts, powers of attorney, living wills under ORC Chapters 2107, 5801, 1337); probate administration (ORC Chapter 2113); dispute resolution including mediation (ORC Chapter 2710) and arbitration (ORC Chapter 2711); civil litigation including landlord-tenant disputes, debt collection defense, employment disputes, and defamation claims; and business law including LLC formation (ORC Chapter 1706), business dissolution, contract drafting, and business dispute resolution. We serve clients throughout Ohio from our Columbus base.`,
+    question: 'What other legal services does Jwayyed Law LLC provide beyond criminal defense and personal injury?',
+    answer:
+      'Beyond criminal defense, OVI/DUI defense and personal injury, Jwayyed Law LLC provides: estate planning (wills, trusts, powers of attorney and living wills under ORC Chapters 2107, 5801 and 1337); probate administration (ORC Chapter 2113); dispute resolution, including mediation (ORC Chapter 2710) and arbitration (ORC Chapter 2711); civil litigation, including landlord-tenant disputes, debt collection defense, employment disputes and defamation claims; and business law, including LLC formation (ORC Chapter 1706), business dissolution, contract drafting and business dispute resolution. The firm serves clients throughout Ohio from its Columbus base.',
   },
 ];
 
 export default function OtherServicesPage() {
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Estate Planning, Probate &amp; Dispute Resolution"
-        description="Ohio legal services for estate planning, wills and trusts, probate administration, and alternative dispute resolution. Serving Columbus and throughout Ohio."
+        title="Estate planning, probate and dispute resolution in Ohio"
+        description="Wills, trusts and powers of attorney, Ohio probate administration, and mediation or arbitration when a dispute does not belong in court. A straightforward Ohio estate typically takes 6 to 12 months in probate."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Additional Legal Services at Jwayyed Law LLC
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              In addition to criminal defense, OVI/DUI defense, personal injury, civil litigation, and business law, Jwayyed Law LLC provides estate planning, probate administration, and dispute resolution services throughout Ohio. These practice areas address some of life&apos;s most important legal decisions — protecting your assets and family through thoughtful estate planning, navigating the Ohio probate process efficiently after a loved one passes, and resolving disputes through mediation or arbitration when litigation is not the right path. Our attorney handles these matters with the same attention to Ohio statute and practical detail that we bring to our litigation practice.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Estate planning in Ohio is governed primarily by <strong>ORC Chapter 2107</strong> (wills), <strong>ORC Chapter 5801</strong> (trusts), and <strong>ORC 1337</strong> (powers of attorney). A comprehensive estate plan typically includes a Last Will and Testament, a durable financial power of attorney, a healthcare power of attorney, and an advance directive (living will). For individuals with larger estates, blended families, or real estate in multiple states, a revocable living trust under ORC Chapter 5801 can avoid probate entirely and provide a flexible, private mechanism for asset management and distribution. Ohio&apos;s Transfer on Death deed statute, <strong>ORC 5302.22</strong>, also allows real estate to pass directly to named beneficiaries without probate.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Probate administration in Ohio is handled through the Probate Division of the Court of Common Pleas under <strong>ORC Chapter 2113</strong>. The executor must inventory estate assets, publish notice to creditors, satisfy valid claims during the 4-month creditor claim period under <strong>ORC 2117.06</strong>, file required tax returns, and distribute the estate to beneficiaries. Executors have fiduciary duties and can face personal liability for mismanagement. Our attorney guides executors through each step of the process — from opening the estate to final accounting and distribution — helping them fulfill their obligations and minimize risk.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Dispute resolution services include mediation under <strong>ORC Chapter 2710</strong> and arbitration under <strong>ORC Chapter 2711</strong>. Many commercial contracts now include mandatory arbitration clauses, making it important to have experienced representation in arbitration proceedings. Mediation offers a confidential, voluntary path to settlement that can resolve disputes faster and at lower cost than litigation. Whether a dispute arises from a contract, a business relationship, or an estate matter, our attorney can advise on the most appropriate resolution strategy and represent your interests throughout.
-            </p>
 
-            <LocationsWeServe title="Other Services" />
+      <Section title="Find your matter" intro={<p>Each page covers the Ohio law, the process and what the firm does for that matter.</p>}>
+        <LinkGrid links={otherServices.map((s) => ({ href: s.href, title: s.title, subtitle: s.description }))} />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-10 mb-6">
-              Our Other Legal Services
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              {otherServices.map((service) => (
-                <a
-                  key={service.href}
-                  href={service.href}
-                  className="block p-6 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-                >
-                  <h4 className="jw-serif text-xl font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-3">
-                    {service.title}
-                  </h4>
-                  {service.description && (
-                    <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">{service.description}</p>
-                  )}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <KeyFacts
+        facts={[
+          { figure: '2', label: 'competent witnesses required for a valid Ohio will (ORC 2107.03)' },
+          { figure: '4 months', label: 'creditor claim period in Ohio probate (ORC 2117.06)' },
+          { figure: '6 to 12 months', label: 'typical length of a straightforward Ohio probate estate' },
+        ]}
+      />
+
+      <Section
+        title="What these services cover"
+        tone="ice"
+        intro={
+          <p>
+            Alongside criminal defense, OVI/DUI defense, personal injury, civil litigation and business law, Jwayyed Law LLC handles
+            estate planning, probate administration and dispute resolution throughout Ohio.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Estate planning',
+              body: 'Protecting your assets and family with a will, powers of attorney, a living will and, where it fits, a trust.',
+            },
+            {
+              title: 'Probate administration',
+              body: 'Taking an estate through the Ohio probate process after a loved one dies.',
+            },
+            {
+              title: 'Dispute resolution',
+              body: 'Mediation or arbitration when litigation is not the right path, for contract, business relationship or estate disputes.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Estate planning under Ohio law">
+        <p>
+          Estate planning in Ohio is governed mainly by <strong>ORC Chapter 2107</strong> (wills), <strong>ORC Chapter 5801</strong>{' '}
+          (trusts) and <strong>ORC 1337</strong> (powers of attorney).
+        </p>
+        <FactTable
+          title="The core documents"
+          rows={[
+            { label: 'Last Will and Testament', value: 'Directs distribution of probate assets and names an executor (ORC Chapter 2107).' },
+            { label: 'Durable financial power of attorney', value: 'Names someone to manage your finances if you are incapacitated (ORC 1337.22).' },
+            { label: 'Healthcare power of attorney', value: 'Names a decision-maker for medical treatment (ORC 1337.12).' },
+            { label: 'Living will', value: 'An advance directive with your end-of-life treatment preferences (ORC 2133.02).' },
+            {
+              label: 'Revocable living trust',
+              value: 'For larger estates, blended families or real estate in several states: can avoid probate entirely and manage and distribute assets privately (ORC Chapter 5801).',
+            },
+            { label: 'Transfer on Death deed', value: 'Lets real estate pass directly to named beneficiaries without probate (ORC 5302.22).' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Probate administration" tone="ice">
+        <p>
+          Ohio probate is handled through the Probate Division of the Court of Common Pleas under <strong>ORC Chapter 2113</strong>. The
+          executor must inventory estate assets, publish notice to creditors, pay valid claims during the 4-month creditor claim period
+          under <strong>ORC 2117.06</strong>, file required tax returns and distribute the estate to beneficiaries.
+        </p>
+        <p>
+          Executors have fiduciary duties and can be personally liable for mismanagement. The firm guides executors from opening the
+          estate to the final accounting and distribution.
+        </p>
+      </Section>
+
+      <Section title="Mediation and arbitration">
+        <PointGrid
+          points={[
+            {
+              title: 'Mediation (ORC Chapter 2710)',
+              body: 'A confidential, voluntary route to settlement that can resolve a dispute faster and at lower cost than litigation.',
+            },
+            {
+              title: 'Arbitration (ORC Chapter 2711)',
+              body: 'Many commercial contracts now include mandatory arbitration clauses, so representation at the arbitration itself matters.',
+            },
+          ]}
+        />
+        <p>
+          Whether the dispute comes from a contract, a business relationship or an estate, the firm can advise on the right way to
+          resolve it and represent you throughout.
+        </p>
+      </Section>
+
+      <LocationsWeServe title="Other Services" />
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
