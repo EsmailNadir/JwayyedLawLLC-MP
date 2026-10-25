@@ -116,6 +116,31 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | business/business-litigation | Punitive cap "greater of 2x compensatory or $350,000" | Check against ORC 2315.21 | Medium |
 | civil (landing) | Jury right for claims "over $1,000"; breach of contract under ORC Chapter 1301 | Check | Low |
 
+## Blog articles (data/blog-posts.ts, by slug)
+
+| Article | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| what-happens-after-ovi-arrest-ohio, ovi-charges-ohio-university-students-athens vs first-dui-ohio-will-i-go-to-jail, how-much-does-dui-cost-ohio | First OVI fine $375 to $1,075 vs $565 to $1,075 | Articles disagree (the practice pages use $565 under HB 37) | High |
+| first-dui-ohio-will-i-go-to-jail | First OVI suspension 6 months to 3 years | Other pages say 1 to 3 years | High |
+| what-happens-after-ovi-arrest-ohio | Reinstatement fee $475 | Other pages say $315 | Medium |
+| ohio-new-expungement-laws-clear-record vs what-is-expungement-ohio-2024 | Sealing limit "two felonies / four misdemeanors" vs "unlimited prior convictions under 2023 reforms"; objection window 30 vs 60 days; fee $50 to $150 vs $50 to $100 | Articles disagree | High |
+| what-to-do-pulled-over-ovi-ohio, ohio-als-appeal-30-day-deadline, what-happens-after-ovi-arrest-ohio | ALS appeal 30 days "from the date of arrest", at a "BMV hearing", cited to 4511.191 | ORC 4511.197 runs it from the initial appearance, in the criminal court | High |
+| expungement articles, misdemeanor-vs-felony-ohio | 1-year misdemeanor and 3-year felony waiting periods | Look pre-SB 288 | High |
+| starting-business-ohio-llc-vs-corporation, forming-llc-ohio-step-by-step, ohio-business-formation-llc-vs-corp | LLC biennial report "currently free"; Chapter 1705 still governs pre-2022 LLCs | Ohio LLCs file no periodic report; Chapter 1706 governs all LLCs | Medium |
+| how-long-sue-after-injury-ohio | Medical malpractice under the 2-year rule (2305.10) | Generally 1 year under 2305.113 | High |
+| ohio-slip-and-fall-laws-property-owners | Owner must be more than 50% at fault; trespassers owed "no duty" | Misstates 2315.33; the duty to trespassers is to avoid willful or wanton conduct | High |
+| ohio-probate-process-step-by-step | "Ohio estate tax obligations"; creditor notice "60 days from notice, whichever is later"; $35,000/$100,000 as "summary release"; court-appointed appraiser | Ohio estate tax repealed for deaths from 2013; the other details look off | High |
+| ohio-power-of-attorney-guide | A POA without the "durable" label ends on incapacity; notarization required (1337.09) | Under the 2012 Act (1337.21 and following) POAs are durable by default | High |
+| protecting-rights-during-traffic-stop-ohio | Smell of marijuana alone is probable cause | May be outdated since adult-use legalization in 2023 | Medium |
+| misdemeanor-vs-felony-ohio | Aggravated murder as F1; theft under $1,000 as M4; paraphernalia as a minor misdemeanor | Aggravated murder is unclassified; theft under $1,000 is M1; paraphernalia usually M4 | High |
+| ohio-civil-protection-order-guide | CPO violations as "fourth- or third-degree felonies" | 2919.27: F5 with a prior, F3 when a felony is committed | Medium |
+| starting-ohio-nonprofit-organization | Names need "Inc." or "Corporation"; "annual or biennial reports"; three directors under 1702.10; "directors are not paid" | Ohio nonprofits file a Statement of Continued Existence every 5 years; likely 1702.27 | Medium |
+| fra-suspension-ohio-what-it-is-how-to-fix | $40/$300/$600 fees; one-year SR-22; HB 29 description | Unverified; SR-22 may be 3 years | Medium |
+| limited-driving-privileges-after-ovi-ohio | Privileges under 4511.191; waiver if no prior Physical Control | Likely 4510.021/4510.13 | Low |
+| ovi-charges-ohio-university-students-athens | Drug convictions can affect financial aid | Removed by the FAFSA Simplification Act | Medium |
+| what-to-expect-circleville-municipal-court-pickaway-county | Court at 151 E. Franklin St. | Address unverified | Medium |
+| dog bite article | Two-year limit | Strict-liability claims under 955.28 may have a longer limit | Low |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |
