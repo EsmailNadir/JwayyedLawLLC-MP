@@ -26,6 +26,8 @@ const nextConfig = {
       { source: '/our-law-firm/our-attorneys/jonathan-cowan', destination: '/our-law-firm/our-attorneys', permanent: true },
       { source: '/our-law-firm/our-attorneys/mateo-improvola', destination: '/our-law-firm/our-attorneys', permanent: true },
       { source: '/about/legal-assistant', destination: '/our-law-firm/our-attorneys', permanent: true },
+      // /about duplicated /our-law-firm/about-us; one canonical About page.
+      { source: '/about', destination: '/our-law-firm/about-us', permanent: true },
       { source: '/civil/landlord-tenant-disputes', destination: '/civil', permanent: true },
       { source: '/civil/defamation', destination: '/civil', permanent: true },
       { source: '/other-services/immigration', destination: '/other-services', permanent: true },

@@ -39,12 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const, lastModified: d.home },
     { url: '/contact', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.home },
     { url: '/services', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const, lastModified: d.home },
 
     // Our Law Firm
     { url: '/our-law-firm', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.home },
-    { url: '/our-law-firm/about-us', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
+    { url: '/our-law-firm/about-us', priority: 0.9, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     { url: '/our-law-firm/our-attorneys', priority: 0.7, changeFrequency: 'monthly' as const, lastModified: d.attorneys },
     ...attorneyRoutes,
     { url: '/our-law-firm/case-results', priority: 0.7, changeFrequency: 'weekly' as const, lastModified: d.blog },
