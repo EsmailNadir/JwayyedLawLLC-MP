@@ -3,16 +3,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
-  title: 'Criminal Defense Lawyer | Circleville',
-  description: 'Criminal misdemeanor defense attorney in Pickaway County — Circleville Municipal Court. Assault, theft, drug, and traffic charges. Call (614) 285-5482.',
+  title: 'Criminal Defense Lawyer in Circleville',
+  description:
+    'Misdemeanor defense at Circleville Municipal Court for Pickaway County: assault, theft, drug and traffic charges. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Pickaway County', 'misdemeanor attorney Circleville Municipal Court', 'Pickaway County criminal lawyer', 'Circleville misdemeanor defense'],
   openGraph: {
-    title: 'Criminal Defense Lawyer | Circleville | Jwayyed Law LLC',
+    title: 'Criminal Defense Lawyer in Circleville | Jwayyed Law LLC',
+    description: 'Misdemeanor defense at Circleville Municipal Court, from a former Circleville Municipal Prosecutor.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court' },
 };
 
@@ -25,177 +28,175 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are misdemeanor penalties in Circleville Municipal Court?',
-    answer: 'Misdemeanor penalties in Circleville Municipal Court under Ohio Revised Code depend on offense level: First-degree misdemeanors: up to 180 days jail, $1,000 fine. Second-degree misdemeanors: up to 90 days jail, $750 fine. Third-degree misdemeanors: up to 60 days jail, $500 fine. Fourth-degree misdemeanors: up to 30 days jail, $250 fine. Penalties may be reduced through defense representation.',
+    answer:
+      'Penalties under the Ohio Revised Code depend on the degree of the offense. First-degree misdemeanors: up to 180 days in jail and a $1,000 fine. Second-degree misdemeanors: up to 90 days and $750. Third-degree misdemeanors: up to 60 days and $500. Fourth-degree misdemeanors: up to 30 days and $250. Defense representation can sometimes reduce these penalties.',
   },
   {
     question: 'What types of misdemeanor cases does Circleville Municipal Court handle?',
-    answer: 'Circleville Municipal Court handles various misdemeanor cases including assault, domestic violence, theft, drug possession, disorderly conduct, traffic violations, and other misdemeanor offenses occurring in Pickaway County. The court follows Ohio Revised Code for penalties and procedures. An attorney can help understand court procedures and develop defense strategies.',
+    answer:
+      'Assault, domestic violence, theft, drug possession, disorderly conduct, traffic violations and other misdemeanor offenses occurring in Pickaway County. The court follows the Ohio Revised Code for penalties and procedure.',
   },
   {
     question: 'Can I get a misdemeanor expunged in Pickaway County?',
-    answer: 'Yes, many misdemeanors may be eligible for expungement in Pickaway County under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Eligibility depends on offense type, prior convictions, and circumstances. An attorney can help determine eligibility and file expungement petitions.',
+    answer:
+      'Yes, many misdemeanors may be eligible for expungement under Ohio Revised Code 2953.31 once the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the circumstances. An attorney can check eligibility and file the petition.',
   },
   {
     question: 'What should I do if I am charged with a misdemeanor in Pickaway County?',
-    answer: 'If charged with a misdemeanor in Pickaway County, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced criminal defense attorney right away. An attorney can protect your rights, understand court procedures, and develop defense strategies.',
+    answer:
+      'Use your right to remain silent and do not discuss the case without your attorney present. Contact a criminal defense attorney right away, before your first court date.',
   },
   {
     question: 'Do I need a local attorney for misdemeanor defense in Pickaway County?',
-    answer: 'While you can hire any Ohio attorney, an attorney familiar with Pickaway County courts, Circleville Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced criminal defense attorney can provide effective representation.',
+    answer:
+      'You can hire any Ohio attorney. An attorney who knows Circleville Municipal Court, its procedures and the local prosecutors understands how the court schedules cases, what it expects in filings and how pretrial conferences tend to run.',
   },
   {
-    question: `What misdemeanor charges are common in Pickaway County?`,
-    answer: `Circleville Municipal Court handles a broad range of misdemeanor offenses that reflect the mix of urban and rural communities in Pickaway County. Common charges include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25, misdemeanor drug possession under ORC 2925.11, theft and petty theft under ORC 2913.02, and property crimes such as criminal damaging under ORC 2909.06. Traffic-related misdemeanors, including driving under suspension and reckless operation, are also frequently prosecuted in Circleville Municipal Court. Each of these offenses carries consequences beyond jail time and fines — a conviction can affect employment background checks, professional licenses, and housing applications in Pickaway County and beyond.`,
+    question: 'What misdemeanor charges are common in Pickaway County?',
+    answer:
+      'Circleville Municipal Court hears a broad range of misdemeanors from the urban and rural parts of the county. Common charges include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25, misdemeanor drug possession under ORC 2925.11, theft and petty theft under ORC 2913.02, and property crimes such as criminal damaging under ORC 2909.06. Traffic-related misdemeanors, including driving under suspension and reckless operation, are also prosecuted often. A conviction can affect background checks for jobs, professional licenses and housing applications in Pickaway County and beyond.',
   },
   {
-    question: `What are the penalties for misdemeanor offenses in Pickaway County under ORC 2929.21?`,
-    answer: `Under Ohio Revised Code 2929.21, misdemeanor penalties in Circleville Municipal Court depend on the degree of the offense: first-degree misdemeanors (M1) carry up to 180 days in jail and fines up to $1,000; second-degree misdemeanors (M2) carry up to 90 days in jail and fines up to $750; third-degree misdemeanors (M3) carry up to 60 days in jail and fines up to $500; and fourth-degree misdemeanors (M4) carry up to 30 days in jail and fines up to $250. Judges in Circleville Municipal Court may also impose community control, community service, restitution, and treatment conditions. These are maximum penalties — experienced defense representation can often result in reduced charges, suspended sentences, or alternative sentencing depending on your circumstances and criminal history.`,
+    question: 'What are the penalties for misdemeanor offenses in Pickaway County under ORC 2929.21?',
+    answer:
+      'Under Ohio Revised Code 2929.21, penalties in Circleville Municipal Court depend on the degree: first-degree misdemeanors (M1) carry up to 180 days in jail and fines up to $1,000; second-degree misdemeanors (M2) up to 90 days and $750; third-degree misdemeanors (M3) up to 60 days and $500; and fourth-degree misdemeanors (M4) up to 30 days and $250. Judges may also impose community control, community service, restitution and treatment. These are maximums; a reduced charge, suspended sentence or alternative sentence is sometimes possible depending on your circumstances and history.',
   },
   {
-    question: `Can misdemeanor convictions from Circleville Municipal Court be sealed under ORC 2953.32?`,
-    answer: `Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Circleville Municipal Court are eligible for sealing after a one-year waiting period following final discharge from the sentence. Final discharge means you have completed all jail time, probation, community service, fines, and any other court-imposed conditions. Most M1 through M4 misdemeanor convictions qualify, though certain offenses are excluded — including convictions involving minor victims and certain traffic offenses. A sealed record is not accessible to the general public, which can open doors to employment, professional licensing, and housing that a visible criminal record would otherwise close. An attorney can assess your eligibility, prepare the petition, and represent you at the sealing hearing in Circleville Municipal Court.`,
+    question: 'Can misdemeanor convictions from Circleville Municipal Court be sealed under ORC 2953.32?',
+    answer:
+      'Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Circleville Municipal Court can be sealed after a one-year waiting period following final discharge, meaning all jail time, probation, community service, fines and other conditions are complete. Most M1 through M4 convictions qualify, though some are excluded, including convictions involving minor victims and certain traffic offenses. A sealed record is not available to the general public, which helps with jobs, professional licenses and housing. An attorney can assess your eligibility, prepare the petition and represent you at the sealing hearing.',
   },
 ];
 
-export default function PickawayCriminalMisdemeanorDefensePage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Criminal Defense in Pickaway County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Pickaway County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court"};
+const RELATED = [
+  { href: '/courts/circleville-municipal-court', title: 'Circleville Municipal Court guide', subtitle: 'Where the court is and what to expect' },
+  { href: '/locations/pickaway-county', title: 'Pickaway County', subtitle: 'Every service the firm offers in the county' },
+  { href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court', title: 'OVI defense in Circleville', subtitle: 'Penalties and the 30-day ALS appeal' },
+  { href: '/criminal-defense/driving-under-suspension', title: 'Driving under suspension', subtitle: 'A common traffic misdemeanor' },
+  { href: '/criminal-defense/criminal-damaging', title: 'Criminal damaging', subtitle: 'Property damage charges' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing an eligible record' },
+];
 
+export default function PickawayCriminalMisdemeanorDefensePage() {
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Criminal Defense in Pickaway County',
+    serviceType: 'Criminal Defense',
+    areaServed: { '@type': 'County', name: 'Pickaway County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Defense Lawyer | Circleville Municipal Court"
-        description="Experienced legal defense for criminal misdemeanor charges in Pickaway County. Protecting your rights and fighting for the best possible outcome in Circleville Municipal Court."
+        title="Misdemeanor defense at Circleville Municipal Court"
+        description="Misdemeanor charges from anywhere in Pickaway County go to Circleville Municipal Court. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Criminal Misdemeanor Defense in Pickaway County, Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Criminal misdemeanor charges in Pickaway County, particularly in Circleville Municipal Court, require experienced defense representation to protect your rights and minimize consequences. At Jwayyed Law LLC, we provide experienced criminal misdemeanor defense representation in Pickaway County under Ohio Revised Code. Our attorney understands Circleville Municipal Court procedures, local prosecutor practices, and judicial preferences, enabling us to provide effective representation tailored to this specific court.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Pickaway County, located in central Ohio, includes communities such as Circleville, Ashville, Commercial Point, and Orient. The Circleville Municipal Court serves as the primary court for misdemeanor criminal cases occurring throughout Pickaway County. Understanding the unique characteristics of this court, including its procedures, prosecutor approaches, and judicial expectations, is essential for achieving favorable outcomes in criminal cases.
-            </p>
+      <Section
+        title="Where a Pickaway County misdemeanor is heard"
+        intro={
+          <p>
+            Circleville Municipal Court is the main court for misdemeanor criminal cases from Circleville, Ashville, Commercial Point,
+            Orient and the rest of Pickaway County in central Ohio.
+          </p>
+        }
+      >
+        <FactTable
+          title="Circleville Municipal Court at a glance"
+          rows={[
+            { label: 'Address', value: '115 E. Main St, Circleville, OH 43113' },
+            { label: 'Hears', value: 'All misdemeanor criminal cases occurring in Pickaway County' },
+            { label: 'Communities', value: 'Circleville, Ashville, Commercial Point and Orient' },
+            { label: 'Hearings', value: 'Misdemeanor cases are usually set for arraignment, pretrial conferences and hearings' },
+          ]}
+        />
+        <p>
+          The court follows the Ohio Revised Code for penalties and procedure, but local practice, prosecutor policy and the
+          judge&rsquo;s approach shape how a case resolves. The firm&rsquo;s attorney previously served as Municipal Prosecutor and
+          Assistant Law Director for the City of Circleville, and the firm works with the clerk&rsquo;s office on the court&rsquo;s
+          filing deadlines and motion requirements.
+        </p>
+        <h3>What the court sees most</h3>
+        <p>
+          The county mixes urban and rural communities, and the docket reflects it: assault, domestic violence, drug possession,
+          theft and criminal damaging, along with traffic misdemeanors such as driving under suspension and reckless operation.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Understanding Circleville Municipal Court</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Circleville Municipal Court is located in Circleville, Ohio, and handles all misdemeanor criminal cases occurring in Pickaway County. The court follows Ohio Revised Code for misdemeanor penalties and procedures, but local court practices, prosecutor policies, and judicial preferences can significantly impact case outcomes. Our attorney has extensive experience representing clients in Circleville Municipal Court and understands the nuances of how misdemeanor cases are handled in this jurisdiction.
-            </p>
+      <Section title="Misdemeanor cases the court hears" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Assault and domestic violence',
+              body: 'Serious misdemeanors that can bring jail time, protective orders and a permanent record. These cases need attention right away.',
+            },
+            {
+              title: 'Theft and property crimes',
+              body: 'Theft, shoplifting and vandalism can bring jail, fines and restitution. Penalties depend on the value of the property and prior convictions.',
+            },
+            {
+              title: 'Drug possession',
+              body: "Even small amounts can bring jail, fines and a driver's license suspension. First-time offenders may qualify for intervention in lieu of conviction or drug court.",
+            },
+            {
+              title: 'Disorderly conduct',
+              body: 'Disorderly conduct and disturbing the peace often grow out of disputes and can be challenged for lack of evidence, police conduct or constitutional issues.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The Circleville Municipal Court typically schedules misdemeanor cases for arraignment, pretrial conferences, and hearings. Understanding the court's scheduling practices, filing requirements, and motion procedures is crucial for effective representation. Our firm works closely with the court clerk's office and understands local filing deadlines, motion requirements, and court procedures specific to Circleville Municipal Court.
-            </p>
+      <Section title="Misdemeanor penalties in Ohio">
+        <FactTable
+          title="Maximum penalties by degree"
+          rows={[
+            { label: 'First-degree misdemeanor', value: 'Up to 180 days in jail and fines up to $1,000. Includes assault, domestic violence and certain theft charges.' },
+            { label: 'Second-degree misdemeanor', value: 'Up to 90 days in jail and fines up to $750. Includes lesser assaults, certain theft charges and disorderly conduct.' },
+            { label: 'Third-degree misdemeanor', value: 'Up to 60 days in jail and fines up to $500. Includes minor property crimes and certain traffic-related offenses.' },
+            { label: 'Fourth-degree misdemeanor', value: 'Up to 30 days in jail and fines up to $250. Includes minor offenses and certain traffic violations.' },
+          ]}
+          note="These are maximums. Reduced charges, alternative sentencing, community service or dismissal are possible in some cases."
+        />
+        <h3>Expungement and record sealing</h3>
+        <p>
+          Misdemeanor convictions in Pickaway County may be eligible for expungement or sealing under Ohio Revised Code 2953.31 once
+          the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the
+          circumstances.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Misdemeanor Cases in Pickaway County</h3>
+      <Section title="Defenses and what the firm does" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Evidence challenges', body: 'Admissibility, police procedure, search and seizure, and witness credibility.' },
+            { title: 'Constitutional challenges', body: 'Illegal stops, searches and arrests, and Miranda violations.' },
+            { title: 'Self-defense', body: 'Self-defense or defense of others in assault cases.' },
+            { title: 'Lack of intent', body: 'No criminal intent, or a mistake of fact.' },
+            { title: 'Alibi', body: 'Evidence that you were somewhere else at the time.' },
+            {
+              title: 'Negotiation and alternatives',
+              body: 'Reduced charges, alternative sentencing, community service, treatment or intervention in lieu of conviction.',
+            },
+          ]}
+        />
+        <p>
+          On each case the firm reviews the evidence, police reports and charging documents, files pretrial motions to suppress
+          evidence or dismiss charges, negotiates with Pickaway County prosecutors, tries the case when it cannot be resolved, and
+          helps with expungement afterward.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Circleville Municipal Court handles various types of misdemeanor criminal cases:
-            </p>
+      <Section title="Related pages">
+        <LinkGrid links={RELATED} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Assault and Domestic Violence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Assault and domestic violence charges are serious misdemeanors that can result in jail time, protective orders, and permanent criminal records. These cases require immediate attention to protect your rights, challenge evidence, and develop defense strategies. Our firm understands the sensitive nature of these cases and works diligently to protect your rights while achieving favorable outcomes.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Theft and Property Crimes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Theft, shoplifting, vandalism, and other property crime charges can result in jail time, fines, and restitution. The severity of penalties depends on the value of property involved and prior convictions. Our firm challenges evidence, negotiates with prosecutors, and develops defense strategies to minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Drug Possession</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Drug possession charges, even for small amounts, can result in jail time, fines, and driver's license suspension. First-time offenders may be eligible for intervention in lieu of conviction programs or drug court. Our firm explores all options including treatment programs, dismissal opportunities, and reduced charges.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Disorderly Conduct and Disturbing the Peace</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Disorderly conduct, disturbing the peace, and related charges often result from disputes or arguments. These charges can be challenged based on lack of evidence, improper police conduct, or constitutional issues. Our firm works to have these charges dismissed or reduced.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Misdemeanor Penalties in Pickaway County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Misdemeanor penalties in Circleville Municipal Court under Ohio Revised Code depend on the offense degree:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>First-Degree Misdemeanors:</strong> Up to 180 days in jail and fines up to $1,000. These include serious offenses such as assault, domestic violence, and certain theft charges.</li>
-              <li><strong>Second-Degree Misdemeanors:</strong> Up to 90 days in jail and fines up to $750. These include less serious assaults, certain theft charges, and disorderly conduct.</li>
-              <li><strong>Third-Degree Misdemeanors:</strong> Up to 60 days in jail and fines up to $500. These include minor property crimes and certain traffic-related offenses.</li>
-              <li><strong>Fourth-Degree Misdemeanors:</strong> Up to 30 days in jail and fines up to $250. These include minor offenses and certain traffic violations.</li>
-            </ul>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              While these are maximum penalties, experienced defense representation can help negotiate reduced charges, alternative sentencing, community service, or dismissal in appropriate cases. Our firm works to minimize jail time, reduce fines, and protect your record.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common Defense Strategies in Pickaway County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Effective misdemeanor defense in Pickaway County requires developing strategies tailored to the specific charges:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Evidence Challenges:</strong> Challenging the admissibility of evidence, police procedures, search and seizure issues, or witness credibility</li>
-              <li><strong>Constitutional Challenges:</strong> Challenging illegal stops, searches, arrests, or Miranda rights violations</li>
-              <li><strong>Defense of Others or Self-Defense:</strong> Asserting self-defense or defense of others in assault cases</li>
-              <li><strong>Lack of Intent:</strong> Arguing lack of criminal intent or mistake of fact</li>
-              <li><strong>Alibi Defenses:</strong> Presenting evidence that you were elsewhere at the time of the alleged offense</li>
-              <li><strong>Negotiation:</strong> Working with prosecutors to negotiate reduced charges, alternative sentencing, or dismissal when appropriate</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Expungement and Record Sealing in Pickaway County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Misdemeanor convictions in Pickaway County may be eligible for expungement or record sealing under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Expungement eligibility depends on the offense type, prior convictions, and circumstances. Our firm helps clients determine eligibility, navigate the expungement process, and clear their criminal records to improve employment opportunities and move forward with their lives.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Criminal Misdemeanor Defense Attorney Can Help in Pickaway County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides comprehensive misdemeanor defense representation in Pickaway County:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Immediate Case Review:</strong> Review all evidence, police reports, and charging documents to identify weaknesses and defense opportunities</li>
-              <li><strong>Motion Practice:</strong> File pretrial motions to suppress evidence, dismiss charges, or challenge procedures when appropriate</li>
-              <li><strong>Negotiation:</strong> Work with Pickaway County prosecutors to negotiate reduced charges, alternative sentencing, or favorable plea agreements</li>
-              <li><strong>Trial Representation:</strong> Provide aggressive trial representation when cases cannot be resolved through negotiation</li>
-              <li><strong>Alternative Sentencing:</strong> Advocate for community service, treatment programs, or intervention in lieu of conviction when appropriate</li>
-              <li><strong>Expungement Assistance:</strong> Help clients determine expungement eligibility and navigate the record sealing process</li>
-              <li><strong>Local Court Knowledge:</strong> Understand Circleville Municipal Court procedures, prosecutor practices, and judicial preferences</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Pickaway County Criminal Defense</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated criminal misdemeanor defense representation in Pickaway County and Circleville Municipal Court. We understand that criminal charges can have significant consequences on your life, employment, and future. Our attorney has extensive experience in Circleville Municipal Court, understands local procedures and practices, and works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and future.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing misdemeanor charges in Pickaway County, contact Jwayyed Law LLC immediately to schedule a consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Circleville Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

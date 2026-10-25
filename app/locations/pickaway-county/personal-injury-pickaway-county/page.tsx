@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
-  title: 'Personal Injury Lawyer | Pickaway County',
-  description: 'Personal injury attorney serving Pickaway County, Circleville, and Ashville, Ohio. Car accidents, slip and fall, and serious injuries. Call (614) 285-5482.',
+  title: 'Personal Injury Lawyer in Pickaway County',
+  description:
+    'Injury claims from US 23 crashes and other accidents in Circleville, Ashville and Pickaway County, filed at Common Pleas. Call (614) 285-5482.',
   keywords: ['personal injury Pickaway County', 'injury lawyer Circleville Ohio', 'Pickaway County accident attorney', 'car accident US 23 Ohio', 'personal injury Ashville Ohio'],
   openGraph: {
-    title: 'Personal Injury Lawyer | Pickaway County | Jwayyed Law LLC',
+    title: 'Personal Injury Lawyer in Pickaway County | Jwayyed Law LLC',
+    description: 'Personal injury claims in Circleville, Ashville and along US 23, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/pickaway-county/personal-injury-pickaway-county' },
 };
 
@@ -25,80 +28,141 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is Ohio's statute of limitations for personal injury claims?`,
-    answer: `Ohio Revised Code 2305.10 establishes a two-year statute of limitations for most personal injury claims, running from the date the cause of action accrues — typically the injury date. If you were hurt in Pickaway County and fail to file within two years, your case will be time-barred. Medical malpractice has a one-year limitation with a four-year repose period. Do not assume your claim can wait — contact an attorney promptly to preserve your legal rights.`,
+    question: "What is Ohio's statute of limitations for personal injury claims?",
+    answer:
+      'Ohio Revised Code 2305.10 sets a two-year statute of limitations for most personal injury claims, running from the date the cause of action accrues, which is usually the injury date. If you were hurt in Pickaway County and do not file within two years, the case is time-barred. Medical malpractice has a one-year limitation with a four-year repose period. Talk to an attorney promptly.',
   },
   {
-    question: `US 23 through Pickaway County has a high accident rate — how does that affect my case?`,
-    answer: `US 23 is one of Ohio's most dangerous highways and runs directly through Pickaway County, connecting Columbus to Circleville and communities further south. High speeds, heavy traffic, and frequent turning movements create significant accident risks. If you were hurt on US 23 in Pickaway County, your case may involve commercial vehicles, distracted drivers, or road design defects. Our attorney investigates these accidents thoroughly, working to establish clear liability and a complete damages picture under Ohio law including ORC 2315.33 on comparative fault.`,
+    question: 'US 23 through Pickaway County has a high accident rate. How does that affect my case?',
+    answer:
+      'US 23 runs directly through Pickaway County, connecting Columbus to Circleville and communities further south. High speeds, heavy traffic and frequent turning movements create real crash risk. A US 23 case may involve commercial vehicles, distracted drivers or road design defects. The firm investigates these crashes to establish liability and the full damages picture under Ohio law, including ORC 2315.33 on comparative fault.',
   },
   {
-    question: `What damages can I recover after a Pickaway County personal injury?`,
-    answer: `Ohio law permits recovery of economic damages — past and future medical expenses, lost wages, loss of earning capacity, and property damage — as well as non-economic damages including pain and suffering, emotional distress, loss of enjoyment of life, and spouse's loss of consortium. In egregious cases involving intentional or malicious harm, punitive damages may be awarded. Our attorney builds a comprehensive damages assessment that reflects not just your current costs but the long-term impact of your injuries on your life and financial security.`,
+    question: 'What damages can I recover after a Pickaway County personal injury?',
+    answer:
+      "Economic damages (past and future medical expenses, lost wages, loss of earning capacity and property damage) and non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life and a spouse's loss of consortium). Punitive damages may be awarded in egregious cases involving intentional or malicious harm. The damages assessment should cover the long-term effect of the injury as well as current costs.",
   },
   {
-    question: `How does Ohio's modified comparative negligence rule work?`,
-    answer: `Under ORC 2315.33, Ohio uses a modified comparative fault system. If you are 50% or more at fault for the accident, you cannot recover any damages at all. If you are less than 50% at fault, your recovery is reduced by your fault percentage. For example, if you are 25% at fault and your total damages are $80,000, you recover $60,000. Insurance companies routinely argue that plaintiffs are more at fault than the evidence supports. Our attorney aggressively disputes inflated fault attributions to protect your recovery.`,
+    question: "How does Ohio's modified comparative negligence rule work?",
+    answer:
+      'Under ORC 2315.33, if you are 50% or more at fault for the accident, you recover nothing. If you are less than 50% at fault, your recovery is reduced by your share. For example, at 25% fault on $80,000 in damages, you recover $60,000. Insurers routinely argue that the injured person carries more fault than the evidence supports, and the firm contests those arguments.',
   },
   {
-    question: `What should I do after an accident in Circleville or on US 23?`,
-    answer: `After any accident in Pickaway County: (1) get emergency medical care — do not delay, even if injuries seem minor; (2) photograph the scene, vehicles, road conditions, and your injuries from multiple angles; (3) write down or record the names and contact information of all witnesses; (4) file a police report; (5) avoid making statements about fault at the scene or to any insurance adjuster before speaking with an attorney; and (6) call Jwayyed Law LLC at (614) 285-5482 as soon as possible to begin building your case.`,
+    question: 'What should I do after an accident in Circleville or on US 23?',
+    answer:
+      'After any accident in Pickaway County: (1) get emergency medical care, even if injuries seem minor; (2) photograph the scene, vehicles, road conditions and your injuries from several angles; (3) write down the names and contact information of all witnesses; (4) file a police report; (5) do not make statements about fault at the scene or to an insurance adjuster before speaking with an attorney; and (6) call Jwayyed Law LLC at (614) 285-5482 as soon as possible.',
   },
   {
-    question: `Does uninsured/underinsured motorist coverage apply in Pickaway County accidents?`,
-    answer: `Yes. Ohio law, including ORC 3345.21, allows you to seek compensation from your own auto insurance under UM/UIM coverage when the at-fault driver has no insurance or insufficient insurance to cover your damages. This coverage is especially relevant in rural Ohio where uninsured motorist rates can be elevated. If you carry UM/UIM coverage and are hit by an uninsured driver on US 23 or elsewhere in Pickaway County, our attorney can help you pursue your own insurer for full and fair compensation.`,
+    question: 'Does uninsured/underinsured motorist coverage apply in Pickaway County accidents?',
+    answer:
+      'Yes. Ohio law, including ORC 3345.21, lets you claim against your own auto insurance under UM/UIM coverage when the at-fault driver has no insurance or not enough. This matters in rural Ohio, where uninsured motorist rates can be higher. If you carry UM/UIM and an uninsured driver hit you on US 23 or elsewhere in the county, the firm can pursue your own insurer for fair compensation.',
   },
   {
-    question: `Do I need to pay attorney fees to start a personal injury case?`,
-    answer: `No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the recovery, deducted when the case concludes by settlement or verdict. This arrangement makes skilled legal representation accessible to injury victims in Pickaway County and across Ohio.`,
+    question: 'Do I need to pay attorney fees to start a personal injury case?',
+    answer:
+      'No. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the recovery, deducted when the case ends by settlement or verdict.',
   },
   {
-    question: `Where are personal injury lawsuits filed in Pickaway County?`,
-    answer: `Personal injury cases in Pickaway County are filed at the Pickaway County Common Pleas Court, located at 207 S. Court St, Circleville, OH 43113. Smaller claims may go to the Circleville Municipal Court or Pickaway County Court depending on the amount in controversy. Jwayyed Law LLC understands Ohio's court filing requirements and will ensure your case is initiated in the correct venue, preserving all rights and procedural protections available to you.`,
+    question: 'Where are personal injury lawsuits filed in Pickaway County?',
+    answer:
+      'At the Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113. Smaller claims may go to Circleville Municipal Court or Pickaway County Court depending on the amount in controversy. The firm files in the correct venue so every procedural protection is kept.',
   },
 ];
 
 export default function PersonalInjuryPickawayCountyPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Personal Injury in Pickaway County", "serviceType": "Personal Injury", "areaServed": {"@type": "County", "name": "Pickaway County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county"};
-
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Personal Injury in Pickaway County',
+    serviceType: 'Personal Injury',
+    areaServed: { '@type': 'County', name: 'Pickaway County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/pickaway-county/personal-injury-pickaway-county',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Lawyer in Pickaway County, Ohio"
-        description="Serving Circleville, Ashville, Commercial Point, South Bloomfield, Williamsport, and surrounding communities."
+        title="Personal injury claims in Pickaway County"
+        description="Injury lawsuits from Circleville, Ashville and the US 23 corridor are filed at the Pickaway County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Personal Injury Representation in Pickaway County
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Pickaway County sits directly south of Columbus on US 23, a corridor that carries substantial commuter and commercial traffic between the capital city and the communities of Circleville, Ashville, Commercial Point, South Bloomfield, and Williamsport. This mix of rural character and rapidly increasing suburban growth creates real accident risks, particularly along US 23 — one of Ohio&apos;s highest-accident-rate highways. Jwayyed Law LLC represents personal injury victims throughout Pickaway County, pursuing the full compensation they deserve after car accidents, slip and fall incidents, and other negligence-caused injuries.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Revised Code 2305.10 provides a two-year statute of limitations for most personal injury claims. Waiting too long — even while still receiving medical treatment or negotiating with an insurer — can cost you your entire case. Our attorney begins protecting your claim from day one: preserving accident scene evidence, gathering police reports, identifying witnesses, and documenting the complete scope of your damages before evidence fades and witnesses become difficult to locate.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio&apos;s modified comparative negligence rule under ORC 2315.33 is a critical factor in every personal injury case. Insurance companies defending US 23 accident claims in Pickaway County often argue that the injured party contributed to the crash — pointing to speed, following distance, or other driver behaviors. Our attorney reviews all available evidence to challenge these arguments, including accident reconstruction analysis, vehicle data, and road condition documentation, to ensure any fault attributed to you is minimized.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Beyond highway accidents, Pickaway County personal injury claims include slip and fall cases at retail establishments in Circleville, premises liability incidents related to the county&apos;s mix of agricultural and commercial properties, dog bite injuries under ORC 955.28, and workplace accidents involving third-party negligence. We also represent families in wrongful death cases when a negligently caused injury proves fatal. Every matter is handled individually and pursued with full commitment.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Pickaway County personal injury cases are filed at the Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113. Jwayyed Law LLC handles personal injury cases on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> across Ohio.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="Injuries in Pickaway County"
+        intro={
+          <p>
+            Pickaway County sits directly south of Columbus on US 23, which carries heavy commuter and commercial traffic between the
+            capital and Circleville, Ashville, Commercial Point, South Bloomfield and Williamsport.
+          </p>
+        }
+      >
+        <p>
+          The county mixes rural land with fast suburban growth, and US 23 is where much of the crash risk sits. In US 23 claims,
+          insurers often argue the injured driver contributed to the crash through speed or following distance. The firm answers that
+          with accident reconstruction, vehicle data and road condition records.
+        </p>
+        <FactTable
+          title="Where a Pickaway County injury case is filed"
+          rows={[
+            { label: 'Most lawsuits', value: 'Pickaway County Common Pleas Court, 207 S. Court St, Circleville, OH 43113' },
+            { label: 'Smaller claims', value: 'Circleville Municipal Court or Pickaway County Court, depending on the amount in controversy' },
+            { label: 'Communities served', value: 'Circleville, Ashville, Commercial Point, South Bloomfield and Williamsport' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio deadlines and fault rules" tone="ice">
+        <FactTable
+          title="The rules that decide an Ohio injury claim"
+          rows={[
+            {
+              label: 'Filing deadline',
+              value: 'Two years for most claims (ORC 2305.10). It does not pause while you are still in treatment or negotiating with an insurer.',
+            },
+            { label: 'Medical malpractice', value: 'One-year limitation, with a four-year repose period.' },
+            {
+              label: 'Comparative fault',
+              value: 'Modified comparative negligence (ORC 2315.33). At 50% or more at fault you recover nothing; under 50%, damages are reduced by your share.',
+            },
+            { label: 'UM/UIM coverage', value: 'Your own policy may pay when the at-fault driver has no insurance or too little.' },
+            { label: 'Fees', value: 'Personal injury cases are handled on a contingency fee basis.' },
+          ]}
+        />
+        <p>
+          From the first day the firm preserves scene evidence, gathers police reports, identifies witnesses and documents your
+          damages before evidence fades.
+        </p>
+      </Section>
+
+      <Section title="Claims the firm handles">
+        <PointGrid
+          points={[
+            { title: 'Highway crashes', body: 'US 23 collisions, including those involving commercial vehicles.' },
+            { title: 'Slip and fall', body: 'Falls at retail establishments in Circleville.' },
+            { title: 'Premises liability', body: 'Injuries on the county’s agricultural and commercial properties.' },
+            { title: 'Dog bites', body: 'Strict liability claims under ORC 955.28.' },
+            { title: 'Workplace accidents', body: 'Where a third party’s negligence caused the injury.' },
+            { title: 'Wrongful death', body: 'For families when a negligently caused injury proves fatal.' },
+          ]}
+        />
+        <p>
+          Use <Link href="/contact">the contact page</Link> or call (614) 285-5482. More on the firm&rsquo;s{' '}
+          <Link href="/personal-injury">personal injury practice</Link> across Ohio.
+        </p>
+      </Section>
+
+      <Section title="Related pages" tone="ice">
+        <LinkGrid
+          links={[
+            { href: '/locations/pickaway-county', title: 'Pickaway County', subtitle: 'Every service the firm offers in the county' },
+            { href: '/personal-injury/car-accidents', title: 'Car accident claims', subtitle: 'Ohio crash claims and insurance' },
+            { href: '/personal-injury/truck-accidents', title: 'Truck accident claims', subtitle: 'Crashes with commercial vehicles' },
+          ]}
+        />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

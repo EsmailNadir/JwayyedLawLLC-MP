@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Montgomery County Business & LLC Formation',
-  description: 'Business attorney serving Montgomery County, Dayton, Kettering, Miamisburg, Trotwood, and surrounding Ohio communities. LLC formation, business law.',
+  description:
+    'LLC formation and business law for Dayton, Kettering, Miamisburg and Trotwood: startups, healthcare practices and manufacturers. Call (614) 285-5482.',
   keywords: ['business lawyer Montgomery County', 'LLC formation Dayton Ohio', 'Montgomery County business attorney', 'LLC formation Kettering Ohio', 'small business attorney Dayton Ohio'],
   openGraph: {
     title: 'Montgomery County Business & LLC Formation | Jwayyed Law LLC',
+    description: 'Business formation and LLC law for Dayton, Kettering, Trotwood, Huber Heights, Miamisburg and Vandalia.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/montgomery-county/business-formation-llc-montgomery-county' },
 };
 
@@ -25,80 +28,134 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `How do I form an LLC in Ohio?`,
-    answer: `To form an Ohio LLC, you file Articles of Organization with the Ohio Secretary of State and pay the required filing fee. Ohio LLCs are governed by ORC Chapter 1706 — the Ohio Revised Limited Liability Company Act, effective February 2022. After filing, you must maintain a statutory agent with an Ohio physical address (ORC 1705.06), prepare a written operating agreement, obtain a federal EIN, and complete applicable tax registrations with the Ohio Department of Taxation. An attorney ensures your formation is complete, your operating agreement protects all owners, and your business is set up for long-term success.`,
+    question: 'How do I form an LLC in Ohio?',
+    answer:
+      'File Articles of Organization with the Ohio Secretary of State and pay the filing fee. Ohio LLCs are governed by ORC Chapter 1706, the Ohio Revised Limited Liability Company Act, effective February 2022. After filing you must keep a statutory agent with an Ohio physical address (ORC 1705.06), prepare a written operating agreement, get a federal EIN and complete the tax registrations that apply with the Ohio Department of Taxation. An attorney makes sure the formation is complete and the operating agreement protects every owner.',
   },
   {
-    question: `What is the difference between an LLC and a corporation in Ohio?`,
-    answer: `Ohio LLCs (ORC Chapter 1706) are flexible, have pass-through taxation by default, and require less ongoing formal compliance than Ohio corporations (ORC Chapter 1701). Corporations require a board of directors, annual meetings, officers, and formal record-keeping. Montgomery County's tech, manufacturing, and professional services businesses have varied needs — some prefer LLCs for simplicity, while others prefer S or C corporations for investor flexibility or specific tax treatment. Our attorney evaluates your specific situation and recommends the structure best suited to your industry, ownership, and growth plans.`,
+    question: 'What is the difference between an LLC and a corporation in Ohio?',
+    answer:
+      "Ohio LLCs (ORC Chapter 1706) are flexible, have pass-through taxation by default and need less formal compliance than Ohio corporations (ORC Chapter 1701), which require a board of directors, annual meetings, officers and formal records. Montgomery County's tech, manufacturing and professional services businesses have different needs: some prefer an LLC for simplicity, others an S or C corporation for investor flexibility or a particular tax treatment.",
   },
   {
-    question: `What business opportunities exist in the Dayton and Montgomery County area?`,
-    answer: `Dayton has a strong historical foundation in manufacturing and aviation and a growing modern startup and technology ecosystem. The Dayton Development Coalition and other regional resources support business formation and expansion. Montgomery County is home to healthcare, professional services, manufacturing, logistics, real estate, and a growing number of technology startups. This diversity creates a wide range of business formation needs — from single-member professional LLCs to multi-member holding companies and manufacturing corporations. Our attorney helps Montgomery County entrepreneurs choose the right structure and build a legally sound foundation.`,
+    question: 'What business opportunities exist in the Dayton and Montgomery County area?',
+    answer:
+      'Dayton has deep roots in manufacturing and aviation and a growing startup and technology scene. The Dayton Development Coalition and other regional resources support business formation and expansion. The county is home to healthcare, professional services, manufacturing, logistics, real estate and a rising number of technology startups, so formation needs range from single-member professional LLCs to multi-member holding companies and manufacturing corporations.',
   },
   {
-    question: `What is an operating agreement and why is it critical for my Ohio LLC?`,
-    answer: `An operating agreement is the internal governing document that determines how your Ohio LLC operates. ORC Chapter 1706 permits wide flexibility in what the operating agreement can establish — including how profits and losses are allocated, how decisions are made, who has authority to bind the LLC, what restrictions apply to transferring membership interests, and how members exit or are bought out. Without a written, customized agreement, Ohio's default statutory rules apply, which may not match your intentions or protect your investment. Our attorney drafts operating agreements specifically for your business, not generic fill-in-the-blank forms.`,
+    question: 'What is an operating agreement and why is it critical for my Ohio LLC?',
+    answer:
+      "It is the internal governing document that decides how your LLC runs. ORC Chapter 1706 allows wide flexibility in what it can set, including how profits and losses are allocated, how decisions are made, who can bind the LLC, limits on transferring membership interests, and how members exit or are bought out. Without a written, customized agreement, Ohio's default rules apply, and they may not match your intentions or protect your investment.",
   },
   {
-    question: `What is a statutory agent and how do I maintain compliance?`,
-    answer: `Ohio law (ORC 1705.06 as incorporated into Chapter 1706) requires every Ohio LLC to designate a statutory agent — a person or entity with an Ohio physical address authorized to receive lawsuits, government notices, and other official correspondence on behalf of the LLC. The agent's information must be kept current with the Secretary of State at all times. If you change your address or agents and fail to update state records, your LLC may miss critical legal deadlines. Jwayyed Law LLC can serve as your statutory agent or help you set up proper agent designation from the start.`,
+    question: 'What is a statutory agent and how do I maintain compliance?',
+    answer:
+      "Ohio law (ORC 1705.06 as incorporated into Chapter 1706) requires every Ohio LLC to designate a statutory agent: a person or entity with an Ohio physical address authorized to receive lawsuits, government notices and other official correspondence for the LLC. The agent's information must be kept current with the Secretary of State. If it goes out of date, the LLC can miss a legal deadline. Jwayyed Law LLC can serve as your statutory agent or help you set up the designation.",
   },
   {
-    question: `How does Ohio's Revised LLC Act (ORC Chapter 1706) affect my business?`,
-    answer: `The Ohio Revised Limited Liability Company Act took effect February 11, 2022, replacing the former Chapter 1705. All Ohio LLCs — whether formed before or after that date — are now governed by Chapter 1706. Key changes include authorization for series LLCs (allowing one entity to segregate assets and liabilities across distinct series), more detailed rules on what operating agreement provisions are mandatory versus default, enhanced flexibility in management structure, and alignment with modern LLC practice. If your LLC was formed before 2022, reviewing and potentially updating your operating agreement under Chapter 1706 is advisable.`,
+    question: "How does Ohio's Revised LLC Act (ORC Chapter 1706) affect my business?",
+    answer:
+      'The Ohio Revised Limited Liability Company Act took effect February 11, 2022, replacing the former Chapter 1705. Every Ohio LLC, whenever it was formed, is now governed by Chapter 1706. Key changes include series LLCs (one entity can segregate assets and liabilities across distinct series), more detailed rules on which operating agreement terms are mandatory and which are defaults, more flexible management, and alignment with modern practice. If your LLC was formed before 2022, review the operating agreement under Chapter 1706.',
   },
   {
-    question: `Do I need an EIN for my Ohio LLC?`,
-    answer: `A federal Employer Identification Number (EIN) is required for Ohio LLCs with more than one member, LLCs with employees, and LLCs electing corporate tax treatment. Single-member LLCs without employees may use their SSN for federal tax purposes but obtaining an EIN is strongly recommended — banks typically require it to open a business account, and it keeps your personal SSN off business documents. For Montgomery County businesses in the healthcare or professional services sector, an EIN is also needed for various billing and contracting purposes. Obtaining an EIN is free through the IRS website.`,
+    question: 'Do I need an EIN for my Ohio LLC?',
+    answer:
+      'An EIN is required for Ohio LLCs with more than one member, with employees, or electing corporate tax treatment. A single-member LLC without employees may use the owner’s SSN, but an EIN is strongly recommended: banks typically require one for a business account, and it keeps your SSN off business documents. Healthcare and professional services businesses in Montgomery County also need an EIN for billing and contracting. Getting one is free through the IRS website.',
   },
   {
-    question: `Why hire an attorney for business formation instead of using an online service?`,
-    answer: `Online formation services handle the basic paperwork but provide no legal advice about your specific situation. They cannot tell you whether an LLC, S corporation, or C corporation better serves your Dayton-area business, how to draft an operating agreement that addresses your specific ownership arrangement, what tax elections are available and appropriate, or what industry-specific licensing and compliance obligations apply. Attorney-guided business formation in Montgomery County is an investment that protects your personal assets, reduces the risk of costly disputes among owners, and ensures your business is structured to achieve your actual goals — not just to have a registered entity number.`,
+    question: 'Why hire an attorney for business formation instead of using an online service?',
+    answer:
+      'Online services handle the basic paperwork but give no legal advice. They cannot tell you whether an LLC, S corporation or C corporation fits your Dayton-area business, how to draft an operating agreement for your ownership arrangement, which tax elections apply, or what industry licensing and compliance duties you face. Attorney-guided formation protects personal assets, lowers the risk of owner disputes and structures the business around your goals.',
   },
 ];
 
 export default function BusinessFormationLLCMontgomeryCountyPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Business Formation and LLC in Montgomery County", "serviceType": "Business Law", "areaServed": {"@type": "County", "name": "Montgomery County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county"};
-
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Business Formation and LLC in Montgomery County',
+    serviceType: 'Business Law',
+    areaServed: { '@type': 'County', name: 'Montgomery County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/montgomery-county/business-formation-llc-montgomery-county',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Business & LLC Formation | Montgomery County"
-        description="Serving Dayton, Kettering, Trotwood, Huber Heights, Miamisburg, Vandalia, and surrounding communities with business formation and LLC law."
+        title="Business and LLC formation in Montgomery County"
+        description="LLC formation and business counsel for Dayton, Kettering, Trotwood, Huber Heights, Miamisburg and Vandalia, from startups in Dayton's urban core to professional practices in Kettering."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Business & LLC Formation in Montgomery County
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Montgomery County is one of Ohio&apos;s major urban and economic centers, anchored by Dayton and encompassing Kettering, Trotwood, Huber Heights, Miamisburg, Vandalia, and Englewood. Dayton has a deep manufacturing and innovation heritage — birthplace of aviation and home to a growing modern technology and healthcare economy. Whether you are launching a startup in Dayton&apos;s urban core or forming a professional services LLC in Kettering, Jwayyed Law LLC provides experienced business formation counsel tailored to Montgomery County&apos;s diverse business community.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio LLCs are governed by the Ohio Revised Limited Liability Company Act, ORC Chapter 1706, effective February 2022. This modern statute replaced the former Chapter 1705 and introduced important new features — including series LLCs for businesses that want to separate assets across distinct lines of operation, enhanced flexibility in management structure, and clearer rules governing operating agreement customization. Ohio corporations remain under ORC Chapter 1701. Our attorney explains the differences and helps you choose the entity type that best serves your Montgomery County business.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The operating agreement is the backbone of any multi-member LLC. Without a written, customized agreement, your LLC operates under the default statutory rules of ORC Chapter 1706, which were designed for the average case — not your specific business, ownership percentages, or management intentions. Disputes among LLC members are a leading cause of business failure. A well-drafted operating agreement prevents these disputes by establishing clear rules for profit sharing, decision-making, member exits, and dispute resolution before problems arise.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Montgomery County&apos;s healthcare, professional services, and manufacturing sectors each have specific business formation needs. Licensed healthcare providers may need professional corporations or PLLCs; manufacturing businesses benefit from clear ownership structures and contracts with suppliers and customers; technology startups may need intellectual property assignments and equity arrangements for founders and early investors. Our attorney advises clients across all these sectors and helps them build businesses that are legally sound from the ground up.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Ohio business formation is handled through the Ohio Secretary of State, so Jwayyed Law LLC can assist Montgomery County clients regardless of location in Ohio. Contact us at{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482 to discuss your business formation needs. Learn more about our{' '}
-              <Link href="/business" className="text-sky-deep underline hover:opacity-80">business law services</Link> for Ohio entrepreneurs.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="Businesses in Montgomery County"
+        intro={
+          <p>
+            Montgomery County is one of Ohio&rsquo;s major urban and economic centers. Dayton, the birthplace of aviation, has a long
+            manufacturing heritage and a growing technology and healthcare economy.
+          </p>
+        }
+      >
+        <PointGrid
+          points={[
+            {
+              title: 'Healthcare providers',
+              body: 'Licensed providers may need professional corporations or PLLCs, plus an EIN for billing and contracting.',
+            },
+            { title: 'Manufacturers', body: 'Clear ownership structures and contracts with suppliers and customers.' },
+            {
+              title: 'Technology startups',
+              body: 'Intellectual property assignments and equity arrangements for founders and early investors.',
+            },
+            {
+              title: 'Regional resources',
+              body: 'The Dayton Development Coalition and other regional groups support formation and expansion.',
+            },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio LLC law in brief" tone="ice">
+        <FactTable
+          title="The rules that apply"
+          rows={[
+            {
+              label: 'Governing law',
+              value: 'ORC Chapter 1706, the Ohio Revised Limited Liability Company Act, effective February 2022. It replaced Chapter 1705.',
+            },
+            {
+              label: 'What changed',
+              value: 'Series LLCs that separate assets across distinct lines of operation, more flexible management and clearer rules on customizing operating agreements.',
+            },
+            { label: 'Statutory agent', value: 'Required (ORC 1705.06), with an Ohio physical address kept current with the Secretary of State.' },
+            { label: 'Corporations', value: 'Remain under ORC Chapter 1701.' },
+          ]}
+        />
+        <h3>The operating agreement</h3>
+        <p>
+          For a multi-member LLC, the operating agreement carries the most weight. Chapter 1706&rsquo;s default rules were written for
+          the average case, not your ownership percentages or management plans. A well-drafted agreement sets profit sharing,
+          decision-making, member exits and dispute resolution before problems arise.
+        </p>
+        <p>
+          Formation is handled through the Ohio Secretary of State, so the firm can help Montgomery County clients anywhere in Ohio.
+          Use <Link href="/contact">the contact page</Link> or call (614) 285-5482, or read about the firm&rsquo;s{' '}
+          <Link href="/business">business law services</Link>.
+        </p>
+      </Section>
+
+      <Section title="Related pages">
+        <LinkGrid
+          links={[
+            { href: '/locations/montgomery-county', title: 'Montgomery County', subtitle: 'Every service the firm offers in the county' },
+            { href: '/business/llc-formation', title: 'LLC formation', subtitle: 'Forming an Ohio LLC step by step' },
+            { href: '/business/shareholder-disputes', title: 'Shareholder disputes', subtitle: 'When owners disagree' },
+          ]}
+        />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

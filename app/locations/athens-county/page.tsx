@@ -4,11 +4,12 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Athens County Criminal Defense & OVI',
   description:
-    'Jwayyed Law LLC defends OVI, misdemeanor, and personal injury cases in Athens County — Athens, Nelsonville, and nearby. Call (614) 285-5482.',
+    'OVI, misdemeanor, personal injury and business cases in Athens County, from Athens and the Ohio University area to Nelsonville. Call (614) 285-5482.',
   keywords: [
     'Athens County OVI attorney',
     'Athens County criminal defense lawyer',
@@ -21,124 +22,131 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Athens County Criminal Defense & OVI | Jwayyed Law LLC',
+    description: 'OVI, criminal, injury and business matters in Athens County, at Athens Municipal Court and the Court of Common Pleas.',
     url: 'https://www.jjlawohio.com/locations/athens-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/athens-county' },
 };
 
-const breadcrumbItems = [
-  { label: 'Athens County', href: '/locations/athens-county' },
-];
+const breadcrumbItems = [{ label: 'Athens County', href: '/locations/athens-county' }];
 
 const faqs = [
   {
     question: 'What areas of Athens County does Jwayyed Law LLC serve?',
     answer:
-      'Jwayyed Law LLC serves clients throughout Athens County, including the City of Athens, the Ohio University area, Nelsonville, Albany, Glouster, and surrounding communities. We appear at Athens Municipal Court (8 E. Washington St, Athens, OH 45701) and the Athens County Court of Common Pleas.',
+      'The firm serves clients throughout Athens County, including the City of Athens, the Ohio University area, Nelsonville, Albany, Glouster and nearby communities. It appears at Athens Municipal Court (8 E. Washington St, Athens, OH 45701) and the Athens County Court of Common Pleas.',
   },
   {
     question: 'What practice areas does the firm handle in Athens County?',
     answer:
-      'Our Athens County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Athens Municipal Court?',
     answer:
-      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Athens County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums. A second OVI within 10 years requires a minimum of 10 consecutive days in jail, fines of $715 to $1,625, and a 1 to 7 year suspension.',
+      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Athens County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. A high-tier OVI (BAC 0.17% or above) carries higher mandatory minimums. A second OVI within 10 years requires at least 10 consecutive days in jail, fines of $715 to $1,625 and a 1 to 7 year suspension.',
   },
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Athens County?',
     answer:
-      'After an OVI arrest in Athens County, the arresting officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have only 30 days from the date of the ALS to appeal it at Athens Municipal Court. Missing this deadline permanently waives your right to contest the suspension — even if the underlying OVI charge is later reduced or dismissed. Contact our office immediately after any OVI arrest.',
+      'After an OVI arrest in Athens County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Athens Municipal Court. Missing the deadline permanently waives your right to contest the suspension, even if the OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
   },
   {
     question: 'Where is Athens Municipal Court located?',
     answer:
-      'Athens Municipal Court is located at 8 E. Washington Street, Athens, OH 45701. The court handles misdemeanor criminal cases, OVI/DUI charges, and traffic violations for the City of Athens and surrounding Athens County communities. The Athens County Court of Common Pleas (1 South Court St, Athens, OH 45701) handles felony cases and civil matters over $15,000.',
+      'Athens Municipal Court is at 8 E. Washington Street, Athens, OH 45701. It hears misdemeanor criminal cases, OVI/DUI charges and traffic violations for the City of Athens and surrounding Athens County communities. The Athens County Court of Common Pleas (1 South Court St, Athens, OH 45701) hears felony cases and civil matters over $15,000.',
   },
   {
     question: 'Does the firm handle cases involving Ohio University students in Athens?',
     answer:
-      'Yes. Jwayyed Law LLC represents Ohio University students and all Athens County residents facing criminal charges, OVI, or other legal matters. Athens County — home to Ohio University — sees a significant volume of OVI, open container, disorderly conduct, and drug charges. A criminal conviction can affect a student\'s academic standing, scholarships, on-campus housing, and future career. Early, aggressive representation can often result in diversion, dismissal, or reduced charges that protect a student\'s record. Call (614) 285-5482.',
+      "Yes. The firm represents Ohio University students and all Athens County residents facing criminal charges, OVI or other legal matters. Athens County sees a high volume of OVI, open container, disorderly conduct and drug charges. A conviction can affect a student's academic standing, scholarships, on-campus housing and future career. Early representation can sometimes lead to diversion, dismissal or a reduced charge that protects the student's record. Call (614) 285-5482.",
+  },
+];
+
+const SERVICES = [
+  {
+    href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court',
+    title: 'OVI / DUI defense at Athens Municipal Court',
+    subtitle: 'First through felony OVI, high-tier, refusal, ALS appeals',
+  },
+  {
+    href: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
+    title: 'Criminal misdemeanor defense in Athens County',
+    subtitle: 'Theft, domestic violence, assault, drug possession, disorderly conduct, open container',
+  },
+  {
+    href: '/locations/athens-county/personal-injury-athens-county',
+    title: 'Personal injury in Athens County',
+    subtitle: 'Car accidents, slip and fall, wrongful death, premises liability',
+  },
+  {
+    href: '/locations/athens-county/business-formation-llc-athens-county',
+    title: 'Business formation and LLCs in Athens County',
+    subtitle: 'LLC formation, operating agreements, business planning',
   },
 ];
 
 export default function AthensCountyLocationsPage() {
-
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Athens County Criminal Defense & OVI Attorney"
-        description="Experienced legal representation throughout Athens County — Athens, Ohio University area, Nelsonville, and surrounding communities. OVI defense, criminal misdemeanor defense, and personal injury. Call (614) 285-5482."
+        title="Athens County criminal defense and OVI"
+        description="Criminal and OVI cases in Athens County are heard at Athens Municipal Court, 8 E. Washington St. The firm represents Athens residents and Ohio University students there and at the Court of Common Pleas."
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
+      <Section
+        title="What we handle in Athens County"
+        intro={
+          <p>
+            Athens County is in southeast Ohio and is home to Ohio University, which makes it one of Ohio&rsquo;s most active counties
+            for OVI, open container and disorderly conduct charges.
+          </p>
+        }
+      >
+        <LinkGrid links={SERVICES} columns={2} />
+      </Section>
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Legal Services in Athens County, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Athens County is located in southeast Ohio and is home to Ohio University, making it one of Ohio&apos;s most active counties for OVI, open container, and disorderly conduct charges. Criminal and OVI cases in Athens are heard at <strong>Athens Municipal Court</strong> (8 E. Washington St, Athens, OH 45701). Jwayyed Law LLC represents Athens County clients — including Ohio University students — at Municipal Court and the Athens County Court of Common Pleas. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
-            </p>
+      <Section title="Athens County courts" tone="ice">
+        <FactTable
+          title="Athens Municipal Court"
+          rows={[
+            { label: 'Address', value: '8 E. Washington St, Athens, OH 45701' },
+            { label: 'Hears', value: 'Misdemeanor criminal cases, OVI/DUI charges and traffic violations' },
+            { label: 'Covers', value: 'The City of Athens and surrounding Athens County communities' },
+            { label: 'ALS appeals', value: 'Filed here within 30 days' },
+          ]}
+        />
+        <FactTable
+          title="Athens County Court of Common Pleas"
+          rows={[
+            { label: 'Address', value: '1 South Court St, Athens, OH 45701' },
+            { label: 'Hears', value: 'Felony cases and civil matters over $15,000' },
+          ]}
+        />
+        <LinkGrid
+          columns={2}
+          links={[
+            { href: '/courts/athens-municipal-court', title: 'Athens Municipal Court guide', subtitle: 'What to expect at the court' },
+            { href: '/courts/athens-county', title: 'Athens County courts', subtitle: 'Every court in the county' },
+          ]}
+        />
+      </Section>
 
-            <div className="not-prose space-y-4 mb-10">
-              <div className="border-l-4 border-sky-deep bg-ice p-5">
-                <h4 className="jw-serif text-lg font-bold text-navy-950 mb-3">
-                  Athens County Practice Areas
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
-                  {[
-                    {
-                      label: 'OVI / DUI Defense — Athens Municipal Court',
-                      href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court',
-                      desc: 'First through felony OVI, high-tier, refusal, ALS appeals',
-                    },
-                    {
-                      label: 'Criminal Misdemeanor Defense — Athens County',
-                      href: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
-                      desc: 'Theft, domestic violence, assault, drug possession, disorderly conduct, open container',
-                    },
-                    {
-                      label: 'Personal Injury — Athens County',
-                      href: '/locations/athens-county/personal-injury-athens-county',
-                      desc: 'Car accidents, slip and fall, wrongful death, premises liability',
-                    },
-                    {
-                      label: 'Business Formation / LLC — Athens County',
-                      href: '/locations/athens-county/business-formation-llc-athens-county',
-                      desc: 'LLC formation, operating agreements, business planning',
-                    },
-                  ].map(({ label, href, desc }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-                    >
-                      <span className="text-sm font-semibold text-navy-950 group-hover:text-sky-deep transition-colors block mb-1">
-                        {label}
-                      </span>
-                      <span className="text-xs text-navy-950/60 group-hover:text-navy-950/80 transition-colors">{desc}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              For OVI arrests in Athens County, the 30-day ALS appeal deadline is critical — contact us immediately after any OVI arrest. Reach Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="Charges near Ohio University">
+        <p>
+          The firm represents Ohio University students as well as long-time Athens County residents. For a student, a conviction can
+          reach academic standing, scholarships, on-campus housing and later job applications, so the outcome of a misdemeanor or OVI
+          case matters beyond the fine. Diversion, dismissal or a reduced charge are sometimes available when the case is handled
+          early.
+        </p>
+        <Callout title="After an OVI arrest, the clock is 30 days">
+          The administrative license suspension must be appealed at Athens Municipal Court within 30 days, or the right to challenge
+          it is lost. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
+          <Link href="/contact">schedule a consultation online</Link>.
+        </Callout>
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />

@@ -3,16 +3,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, LinkGrid, PointGrid, Section, Steps } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'OVI / DUI Lawyer for Mount Gilead, Ohio',
-  description: 'OVI/DUI defense attorney for Mount Gilead and Morrow County, Ohio. Morrow County Municipal Court. First OVI, second OVI, and misdemeanor OVI defense.',
+  description:
+    'OVI/DUI defense at Morrow County Municipal Court for Mount Gilead, Cardington and rural US 42 stops: first and second OVI under HB 37.',
   keywords: ['OVI lawyer Mount Gilead Ohio', 'DUI attorney Morrow County', 'OVI defense Morrow County', 'Morrow County Municipal Court OVI'],
   openGraph: {
     title: 'OVI / DUI Lawyer for Mount Gilead, Ohio | Jwayyed Law LLC',
+    description: 'OVI defense at Morrow County Municipal Court: penalties under HB 37, the 30-day ALS appeal and defenses.',
     url: 'https://www.jjlawohio.com/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court' },
 };
 
@@ -25,162 +28,229 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are the penalties for OVI in Morrow County Municipal Court?',
-    answer: 'OVI penalties in Morrow County Municipal Court under Ohio Revised Code 4511.19 follow state law and depend on offense level. First OVI carries 3-180 days jail (minimum 3 days mandatory), fines of $565-$1,075 (minimum increased under HB 37 effective April 2025), and 1 to 3 years license suspension. License reinstatement fee is $315. Subsequent offenses carry enhanced penalties. An experienced attorney can help minimize consequences.',
+    answer:
+      'Morrow County Municipal Court applies state law, Ohio Revised Code 4511.19, and the penalties depend on the offense level. A first OVI carries 3-180 days in jail (3 days mandatory minimum), fines of $565-$1,075 (the minimum rose under HB 37, effective April 2025) and a 1 to 3 years license suspension. The license reinstatement fee is $315. Later offenses carry higher penalties.',
   },
   {
     question: 'Can I get limited driving privileges in Morrow County?',
-    answer: 'Limited driving privileges may be available in Morrow County after OVI suspension depending on offense level and circumstances. Limited privileges may require ignition interlock devices and restrict driving to work, school, treatment, and necessary activities. An attorney can help determine eligibility and apply for limited privileges.',
+    answer:
+      'Often, yes. Whether limited privileges are available after an OVI suspension depends on the offense level and your circumstances. Privileges may require an ignition interlock device and limit driving to work, school, treatment and other necessary trips. An attorney can check your eligibility and apply for them.',
   },
   {
     question: 'How do I appeal an administrative license suspension in Morrow County?',
-    answer: 'To appeal an administrative license suspension in Morrow County, file an appeal with the Morrow County Municipal Court within 30 days of arrest. Appeals challenge the suspension based on procedural issues, testing procedures, or other legal grounds. An attorney can help file appeals, request stays of suspension, and protect your driving privileges.',
+    answer:
+      'File an appeal with the Morrow County Municipal Court within 30 days of arrest. The appeal can challenge the suspension on procedural issues, testing procedures or other legal grounds. An attorney can file it, request a stay of the suspension and protect your driving privileges.',
   },
   {
     question: 'What should I do if I am charged with OVI in Morrow County?',
-    answer: 'If charged with OVI in Morrow County, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced OVI defense attorney right away. You have only 30 days to appeal an administrative license suspension. An attorney can protect your rights and develop defense strategies.',
+    answer:
+      'Use your right to remain silent and do not discuss the case without your attorney present. Contact an OVI defense attorney right away: you have only 30 days to appeal the administrative license suspension.',
   },
   {
     question: 'Do I need a local attorney for OVI in Morrow County?',
-    answer: 'While you can hire any Ohio attorney, an attorney familiar with Morrow County courts, Morrow County Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced OVI attorney can provide effective representation.',
+    answer:
+      'You can hire any Ohio attorney. An attorney who knows Morrow County Municipal Court, its procedures and the local prosecutors knows how the court schedules OVI cases, what it expects in filings and how pretrial conferences tend to run.',
   },
   {
-    question: `What is the 30-day ALS appeal deadline after a Morrow County OVI arrest?`,
-    answer: `Under Ohio Revised Code 4511.191, an administrative license suspension (ALS) takes effect immediately upon a Morrow County OVI arrest if you refuse a chemical test or test over the legal limit. You have exactly 30 days from the date of arrest to file an appeal of the ALS with Morrow County Municipal Court. Missing this deadline permanently waives the right to appeal, and the suspension remains in place for its full statutory duration — one year for a first refusal or 90 days for a first test failure. Filing the appeal promptly also allows your attorney to request a stay of the suspension, which can preserve your driving privileges while the appeal is pending. Contact a Morrow County OVI attorney immediately after arrest to protect this right.`,
+    question: 'What is the 30-day ALS appeal deadline after a Morrow County OVI arrest?',
+    answer:
+      'Under Ohio Revised Code 4511.191, an administrative license suspension (ALS) takes effect immediately on a Morrow County OVI arrest if you refuse a chemical test or test over the legal limit. You have 30 days from the date of arrest to appeal it at Morrow County Municipal Court. Missing the deadline permanently waives the right to appeal, and the suspension runs its full length: one year for a first refusal or 90 days for a first test failure. Filing promptly also lets your attorney request a stay of the suspension while the appeal is pending.',
   },
   {
-    question: `How does rural road OVI enforcement on US 42 differ from urban OVI stops?`,
-    answer: `OVI enforcement on rural roads like US 42 in Morrow County has distinct characteristics compared to urban areas. Rural stops often involve single-vehicle accidents, agricultural equipment traffic, and long stretches of road with fewer traffic signals, which can affect how officers establish reasonable suspicion for a stop. Ohio State Highway Patrol and Morrow County Sheriff deputies patrol these highways and may conduct checkpoint operations or targeted enforcement. Because emergency medical response times are longer in rural Morrow County, law enforcement may be especially attentive to impaired driving on these routes. At the same time, rural stops can present unique defense opportunities — dashcam footage quality, witness availability, and field sobriety test administration on uneven road surfaces can all be challenged by an experienced OVI defense attorney.`,
+    question: 'How does rural road OVI enforcement on US 42 differ from urban OVI stops?',
+    answer:
+      'Rural stops on roads like US 42 often involve single-vehicle accidents, farm equipment traffic and long stretches with few traffic signals, which affects how an officer builds reasonable suspicion for a stop. The Ohio State Highway Patrol and Morrow County Sheriff deputies patrol these highways and may run checkpoints or targeted enforcement. Because emergency response times are longer in rural Morrow County, officers may watch closely for impaired driving on these routes. Rural stops also open defense questions: the quality of dashcam footage, whether witnesses are available, and field sobriety tests given on uneven road surfaces.',
   },
   {
-    question: `What are the consequences of a first OVI conviction for rural Morrow County residents who depend on their vehicle for work?`,
-    answer: `A first OVI conviction in Morrow County Municipal Court carries a mandatory license suspension of one to three years under ORC 4511.19, which can be devastating for rural residents who have no public transportation options. Many Morrow County residents rely on personal vehicles to commute to work in Mount Gilead, Cardington, or neighboring counties. Limited driving privileges may be available under ORC 4510.021, but they restrict driving to specific purposes such as employment, school, and medical appointments, and may require an ignition interlock device. Under HB 37 (effective April 9, 2025), judges can waive the 15-day hard suspension waiting period for non-refusal first offenders, allowing earlier access to limited privileges. An experienced OVI attorney can advocate for the earliest possible limited driving privileges to minimize the impact on your livelihood.`,
+    question: 'What are the consequences of a first OVI conviction for rural Morrow County residents who depend on their vehicle for work?',
+    answer:
+      'A first OVI conviction in Morrow County Municipal Court carries a mandatory license suspension of one to three years under ORC 4511.19, which is hard on rural residents with no public transportation. Many residents drive to work in Mount Gilead, Cardington or neighboring counties. Limited driving privileges may be available under ORC 4510.021, but they restrict driving to purposes such as work, school and medical appointments and may require an ignition interlock device. Under HB 37 (effective April 9, 2025), judges can waive the 15-day hard suspension for non-refusal first offenders, which allows earlier privileges.',
   },
 ];
 
-export default function MorrowOVIDefensePage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — OVI/DUI Defense in Morrow County", "serviceType": "OVI DUI Defense", "areaServed": {"@type": "County", "name": "Morrow County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court"};
+const RELATED = [
+  { href: '/courts/morrow-county-municipal-court', title: 'Morrow County Municipal Court guide', subtitle: 'Where the court is and what to expect' },
+  { href: '/locations/morrow-county', title: 'Morrow County', subtitle: 'Every service the firm offers in the county' },
+  {
+    href: '/locations/morrow-county/criminal-misdemeanor-defense-morrow-county-municipal-court',
+    title: 'Misdemeanor defense in Morrow County',
+    subtitle: 'Trespass, theft, assault and other charges',
+  },
+  { href: '/ovi-dui-defense/first-ovi', title: 'First OVI', subtitle: 'Penalties and defenses for a first offense' },
+  { href: '/ovi-dui-defense/second-ovi', title: 'Second OVI', subtitle: 'Mandatory jail for a repeat offense' },
+  { href: '/ovi-dui-defense/limited-driving-privileges', title: 'Limited driving privileges', subtitle: 'Driving to work and school during a suspension' },
+];
 
+export default function MorrowOVIDefensePage() {
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: OVI/DUI Defense in Morrow County',
+    serviceType: 'OVI DUI Defense',
+    areaServed: { '@type': 'County', name: 'Morrow County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/morrow-county/ovi-dui-defense-morrow-county-municipal-court',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="OVI / DUI Lawyer for Mount Gilead, Ohio"
-        description="Morrow County Municipal Court. Experienced OVI/DUI defense for Mount Gilead, Cardington, and Morrow County, Ohio."
+        title="OVI defense for Mount Gilead and Morrow County"
+        description="OVI cases from Mount Gilead, Cardington and the rest of Morrow County are heard at Morrow County Municipal Court. You have 30 days from arrest to appeal the license suspension there."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">OVI/DUI Defense in Morrow County, Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              OVI/DUI charges in Morrow County, particularly in Morrow County Municipal Court, require experienced defense representation to protect your rights and minimize consequences. At Jwayyed Law LLC, we provide experienced OVI/DUI defense representation in Morrow County under Ohio Revised Code 4511.19. Our attorney understands Morrow County Municipal Court procedures, local prosecutor practices, and judicial preferences, enabling us to provide effective representation tailored to this specific court.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Morrow County, located in north-central Ohio, includes communities such as Mount Gilead, Cardington, Edison, and Marengo. The Morrow County Municipal Court serves as the primary court for OVI/DUI cases occurring throughout Morrow County. Understanding the unique characteristics of this court, including its procedures, prosecutor approaches, and judicial expectations, is essential for achieving favorable outcomes in OVI cases.
-            </p>
+      <Section
+        title="Where a Morrow County OVI is heard"
+        intro={
+          <p>
+            Morrow County Municipal Court is the main court for OVI/DUI cases from Mount Gilead, Cardington, Edison, Marengo and the
+            rest of Morrow County in north-central Ohio.
+          </p>
+        }
+      >
+        <FactTable
+          title="Morrow County Municipal Court at a glance"
+          rows={[
+            { label: 'Address', value: '48 E. High St, Mt. Gilead, OH 43338' },
+            { label: 'Hears', value: 'All misdemeanor OVI/DUI cases arising in Morrow County' },
+            { label: 'Communities', value: 'Mount Gilead, Cardington, Edison and Marengo' },
+            { label: 'ALS appeal', value: 'Filed at this court within 30 days of the arrest' },
+            { label: 'Hearings', value: 'OVI cases are usually set for arraignment, pretrial conferences and hearings' },
+          ]}
+        />
+        <p>
+          The court follows Ohio Revised Code 4511.19 for penalties and procedure, but local practice, prosecutor policy and the
+          judge&rsquo;s approach shape how a case resolves. The firm works with the clerk&rsquo;s office and tracks the court&rsquo;s
+          filing deadlines and motion requirements.
+        </p>
+        <h3>Rural stops on US 42</h3>
+        <p>
+          Most Morrow County OVI stops happen on rural highways such as US 42, patrolled by the Ohio State Highway Patrol and Morrow
+          County Sheriff deputies. Long stretches with few signals, farm equipment and uneven shoulders all bear on whether the stop
+          was justified and whether field sobriety tests were fair.
+        </p>
+        <h3>When you depend on your vehicle</h3>
+        <p>
+          With no public transportation, a 1 to 3 year suspension can cost a rural resident the commute to work in Mount Gilead,
+          Cardington or a neighboring county. Limited driving privileges under ORC 4510.021 are often the first thing the firm works
+          on.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Understanding Morrow County Municipal Court</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Morrow County Municipal Court is located in Mount Gilead, Ohio, and handles all misdemeanor OVI/DUI cases occurring in Morrow County. The court follows Ohio Revised Code 4511.19 for OVI penalties and procedures, but local court practices, prosecutor policies, and judicial preferences can significantly impact case outcomes. Our attorney has extensive experience representing clients in Morrow County Municipal Court and understands the nuances of how OVI cases are handled in this jurisdiction.
-            </p>
+      <Section title="OVI penalties in Morrow County" tone="ice">
+        <p>Morrow County applies the statewide penalties in ORC 4511.19, as updated by HB 37 (effective April 2025).</p>
+        <FactTable
+          title="First OVI"
+          rows={[
+            { label: 'Jail', value: '3 days mandatory minimum, or 3 days in a driver intervention program.' },
+            { label: 'Fines', value: '$565 to $1,075 (the minimum rose from $375).' },
+            { label: 'License', value: '1 to 3 years suspension. Reinstatement fee $315 (reduced from $475).' },
+            { label: 'Other orders', value: 'The court may order vehicle immobilization, an ignition interlock device and alcohol/drug treatment.' },
+            {
+              label: 'Limited privileges',
+              value: 'Judges can now waive the 15-day waiting period for first offenders with no prior alcohol arrests.',
+            },
+          ]}
+        />
+        <FactTable
+          title="Second OVI within 10 years"
+          rows={[
+            { label: 'Jail', value: '10 days to 6 months (10 days mandatory minimum).' },
+            { label: 'Fines', value: '$715 to $1,625 (the minimum rose from $525).' },
+            { label: 'License', value: '1 to 7 years suspension; $315 reinstatement fee.' },
+            {
+              label: 'Mandatory orders',
+              value:
+                'Vehicle immobilization for 90 days; an ignition interlock device for limited privileges (45-day or 90-day waiting period); alcohol/drug treatment.',
+            },
+          ]}
+        />
+        <FactTable
+          title="High-tier OVI (BAC 0.17% or higher)"
+          rows={[
+            { label: 'Jail', value: '6 days mandatory, or 3 days in jail plus 3 days in a driver intervention program, even for a first offense.' },
+            { label: 'Fines', value: '$565 to $1,075 (the minimum rose from $375).' },
+            { label: 'License', value: '1 to 3 years suspension; $315 reinstatement fee.' },
+          ]}
+          note="These are mandatory minimums. Negotiation can sometimes lead to reduced penalties or alternative sentencing."
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The Morrow County Municipal Court typically schedules OVI cases for arraignment, pretrial conferences, and hearings. Understanding the court's scheduling practices, filing requirements, and motion procedures is crucial for effective representation. Our firm works closely with the court clerk's office and understands local filing deadlines, motion requirements, and court procedures specific to Morrow County Municipal Court.
-            </p>
+      <Section title="Two cases start at the arrest">
+        <p>
+          A Morrow County OVI arrest opens the criminal case in Morrow County Municipal Court and an administrative license
+          suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS starts immediately if you refuse a chemical test or test
+          over the legal limit.
+        </p>
+        <Callout title="30 days to appeal the suspension">
+          The ALS appeal must be filed within 30 days of the arrest in Morrow County Municipal Court, the court of jurisdiction for
+          ALS appeals in this region. The firm files it right away, asks for a stay of the suspension and challenges it on procedure
+          and testing. Winning keeps you driving to work and treatment while the criminal case continues.
+        </Callout>
+        <Steps
+          steps={[
+            { title: 'ALS appeal', body: 'Filed within 30 days, with a request to stay the suspension.' },
+            { title: 'Arraignment', body: 'Your first appearance at Morrow County Municipal Court.' },
+            { title: 'Pretrial conferences', body: 'Evidence review, motions and negotiation with the prosecutor.' },
+            { title: 'Resolution or trial', body: 'A negotiated outcome, or trial when the case does not resolve.' },
+          ]}
+        />
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">OVI Penalties in Morrow County</h3>
+      <Section title="Common OVI defenses" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Breathalyzer challenges',
+              body: 'Accuracy, calibration, maintenance records, operator certification and testing procedure. Results can be excluded if procedures were not followed.',
+            },
+            {
+              title: 'Field sobriety tests',
+              body: 'These tests are subjective and can be challenged for improper administration, medical conditions or the conditions at the scene.',
+            },
+            {
+              title: 'The traffic stop',
+              body: 'If the stop was not based on reasonable suspicion, the evidence that followed may be suppressed.',
+            },
+            {
+              title: 'Miranda violations',
+              body: 'Statements can be challenged if Miranda warnings were not given or questioning continued after you invoked the right to remain silent.',
+            },
+            {
+              title: 'Rising BAC',
+              body: 'Your BAC may have been below the legal limit while driving and risen above it by the time of the test.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              OVI penalties in Morrow County follow Ohio Revised Code 4511.19 and depend on the offense level:
-            </p>
+      <Section title="What the firm does on a Morrow County OVI">
+        <PointGrid
+          points={[
+            { title: 'Files the ALS appeal', body: 'Within 30 days, with a request to stay the suspension.' },
+            { title: 'Reviews the evidence', body: 'Police reports, breathalyzer records and field sobriety test videos.' },
+            { title: 'Files motions', body: 'To suppress evidence, challenge procedures or dismiss charges when appropriate.' },
+            { title: 'Negotiates', body: 'With Morrow County prosecutors for reduced charges, alternative sentencing or a better plea agreement.' },
+            { title: 'Tries the case', body: 'When it cannot be resolved through negotiation.' },
+            { title: 'Gets you driving', body: 'Prepares the limited driving privilege application and its requirements.' },
+          ]}
+        />
+        <h3>Limited driving privileges</h3>
+        <p>
+          Limited privileges may be available after an OVI conviction for work, school, treatment and other necessary trips. They may
+          require an ignition interlock device, set times and places you can drive, and ask for proof of employment or treatment
+          enrollment.
+        </p>
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">First OVI Offense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A first OVI conviction in Morrow County Municipal Court carries mandatory minimum penalties under HB 37 (effective April 2025): 3 days in jail (or 3 days in a driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315 (reduced from $475). The court may also order vehicle immobilization, ignition interlock devices, and alcohol/drug treatment programs. Judges can now waive the 15-day waiting period for limited driving privileges for first offenders with no prior alcohol arrests. While these are mandatory minimums, experienced representation can help negotiate reduced penalties or alternative sentencing.
-              </p>
-            </div>
+      <Section title="Related pages" tone="ice">
+        <LinkGrid links={RELATED} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Second OVI Offense</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                A second OVI conviction within 10 years carries enhanced penalties under HB 37: 10 days to 6 months in jail (minimum 10 days mandatory), fines of $715 to $1,625 (minimum increased from $525), and license suspension of 1 to 7 years. License reinstatement fee is $315. The court must order vehicle immobilization for 90 days, mandatory ignition interlock device for limited driving privileges (45-day or 90-day waiting period), and alcohol/drug treatment. Second OVI cases require aggressive defense representation to minimize these severe consequences.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">High-Tier OVI</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                High-tier OVI charges (BAC of 0.17% or higher) carry enhanced penalties even for first offenses under HB 37: mandatory 6 days in jail (or 3 days in jail plus 3 days in driver intervention program), fines of $565 to $1,075 (minimum increased from $375), and license suspension of 1 to 3 years. License reinstatement fee is $315. High-tier OVI cases require challenging the breathalyzer results, testing procedures, and developing defenses to minimize consequences.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Administrative License Suspension (ALS) in Morrow County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              When arrested for OVI in Morrow County, you face two separate proceedings: the criminal OVI case in Morrow County Municipal Court and an administrative license suspension (ALS) through the Ohio Bureau of Motor Vehicles. The ALS suspension begins immediately upon arrest if you refuse a chemical test or test over the legal limit. You have only 30 days from the date of arrest to appeal the ALS suspension, and this appeal must be filed in Morrow County Municipal Court (the court of jurisdiction for ALS appeals in this region).
-            </p>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm immediately files ALS appeals for Morrow County clients, requests stays of suspension to preserve driving privileges during the appeal, and challenges the suspension based on procedural issues, testing procedures, or other legal grounds. Successfully appealing an ALS suspension can preserve your driving privileges while the criminal case proceeds, which is crucial for maintaining employment, attending treatment programs, and meeting daily obligations.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common OVI Defenses in Morrow County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Effective OVI defense in Morrow County requires challenging the evidence against you. Common defenses include:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Breathalyzer Challenges:</strong> Challenging breathalyzer accuracy, calibration, maintenance records, operator certification, and testing procedures. Breathalyzer results can be excluded if proper procedures were not followed.</li>
-              <li><strong>Field Sobriety Test Challenges:</strong> Challenging the administration and interpretation of field sobriety tests. These tests are subjective and can be challenged based on improper administration, medical conditions, or environmental factors.</li>
-              <li><strong>Traffic Stop Challenges:</strong> Challenging the legality of the traffic stop itself. If the stop was not based on reasonable suspicion, evidence obtained may be suppressed.</li>
-              <li><strong>Miranda Rights Violations:</strong> Challenging statements made if Miranda warnings were not properly given or if questioning continued after invoking the right to remain silent.</li>
-              <li><strong>Rising BAC Defense:</strong> Arguing that your BAC was below the legal limit while driving but rose above the limit by the time of testing.</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Limited Driving Privileges in Morrow County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Limited driving privileges may be available in Morrow County after an OVI conviction, allowing restricted driving for work, school, treatment, and necessary activities. Limited privileges may require ignition interlock devices, restrict driving to specific times and locations, and may require proof of employment, treatment enrollment, or other conditions. Our firm helps clients determine eligibility for limited privileges, prepare applications, and navigate the requirements to obtain driving privileges as quickly as possible.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How an OVI/DUI Defense Attorney Can Help in Morrow County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides comprehensive OVI defense representation in Morrow County:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Immediate ALS Appeals:</strong> File appeals within 30 days, request stays of suspension, and challenge ALS suspensions to preserve driving privileges</li>
-              <li><strong>Evidence Review:</strong> Thoroughly review police reports, breathalyzer records, field sobriety test videos, and all evidence to identify weaknesses and defense opportunities</li>
-              <li><strong>Motion Practice:</strong> File pretrial motions to suppress evidence, challenge procedures, or dismiss charges when appropriate</li>
-              <li><strong>Negotiation:</strong> Work with Morrow County prosecutors to negotiate reduced charges, alternative sentencing, or favorable plea agreements when appropriate</li>
-              <li><strong>Trial Representation:</strong> Provide aggressive trial representation when cases cannot be resolved through negotiation</li>
-              <li><strong>Limited Privileges:</strong> Assist with limited driving privilege applications and requirements</li>
-              <li><strong>Local Court Knowledge:</strong> Understand Morrow County Municipal Court procedures, prosecutor practices, and judicial preferences</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Morrow County OVI Defense</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated OVI/DUI defense representation in Morrow County and Morrow County Municipal Court. We understand that OVI charges can have devastating consequences on your life, career, and future. Our attorney has extensive experience in Morrow County Municipal Court, understands local procedures and practices, and works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and driving privileges.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing OVI charges in Morrow County, contact Jwayyed Law LLC immediately to schedule a consultation. Time is critical—you have only 30 days to appeal an administrative license suspension, and early intervention by experienced counsel can significantly impact the outcome. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Morrow County Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, driving privileges, and future.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

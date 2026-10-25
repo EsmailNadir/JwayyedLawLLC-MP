@@ -4,11 +4,12 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Montgomery County OVI & Criminal Defense',
   description:
-    'OVI, criminal defense & personal injury across Montgomery County — Dayton, Kettering, Huber Heights & nearby. Dayton Municipal Court. (614) 285-5482.',
+    'OVI, criminal defense and personal injury across Montgomery County: Dayton, Kettering, Huber Heights and nearby, at Dayton Municipal Court. (614) 285-5482.',
   keywords: [
     'Montgomery County OVI attorney',
     'Montgomery County criminal defense lawyer',
@@ -21,124 +22,130 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Montgomery County OVI & Criminal Defense | Jwayyed Law LLC',
+    description: 'OVI, criminal, injury and business matters in Montgomery County, at Dayton and Kettering Municipal Courts and Common Pleas.',
     url: 'https://www.jjlawohio.com/locations/montgomery-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/montgomery-county' },
 };
 
-const breadcrumbItems = [
-  { label: 'Montgomery County', href: '/locations/montgomery-county' },
-];
+const breadcrumbItems = [{ label: 'Montgomery County', href: '/locations/montgomery-county' }];
 
 const faqs = [
   {
     question: 'What areas of Montgomery County does Jwayyed Law LLC serve?',
     answer:
-      'Jwayyed Law LLC serves clients throughout Montgomery County, including Dayton, Kettering, Huber Heights, Trotwood, Miamisburg, West Carrollton, Brookville, and surrounding communities. We appear at Dayton Municipal Court, Kettering Municipal Court, and the Montgomery County Court of Common Pleas.',
+      'The firm serves clients throughout Montgomery County, including Dayton, Kettering, Huber Heights, Trotwood, Miamisburg, West Carrollton, Brookville and nearby communities. It appears at Dayton Municipal Court, Kettering Municipal Court and the Montgomery County Court of Common Pleas.',
   },
   {
     question: 'What practice areas does the firm handle in Montgomery County?',
     answer:
-      'Our Montgomery County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Montgomery County?',
     answer:
-      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Montgomery County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums. A second OVI within 10 years requires a minimum of 10 consecutive days in jail, fines of $715 to $1,625, and a 1 to 7 year suspension with 90-day vehicle immobilization.',
+      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Montgomery County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. A high-tier OVI (BAC 0.17% or above) carries higher mandatory minimums. A second OVI within 10 years requires at least 10 consecutive days in jail, fines of $715 to $1,625 and a 1 to 7 year suspension with 90-day vehicle immobilization.',
   },
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Montgomery County?',
     answer:
-      'After an OVI arrest in Montgomery County, the arresting officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have only 30 days from the date of the ALS to appeal it at the applicable Montgomery County court. Missing this deadline permanently waives your right to contest the suspension — even if the underlying OVI charge is later reduced or dismissed. Contact our office immediately after any OVI arrest.',
+      'After an OVI arrest in Montgomery County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at the Montgomery County court that has your case. Missing the deadline permanently waives your right to contest the suspension, even if the OVI charge is later reduced or dismissed. Call the office as soon as you can after an OVI arrest.',
   },
   {
     question: 'Where is Dayton Municipal Court located?',
     answer:
-      'Dayton Municipal Court is located at 301 W. Third Street, Dayton, OH 45402. The court handles misdemeanor criminal cases, OVI/DUI charges, and traffic violations for the City of Dayton. The Montgomery County Court of Common Pleas (41 N. Perry St, Dayton, OH 45422) handles felony cases and civil matters over $15,000 for all of Montgomery County.',
+      'Dayton Municipal Court is at 301 W. Third Street, Dayton, OH 45402. It hears misdemeanor criminal cases, OVI/DUI charges and traffic violations for the City of Dayton. The Montgomery County Court of Common Pleas (41 N. Perry St, Dayton, OH 45422) hears felony cases and civil matters over $15,000 for all of Montgomery County.',
   },
   {
     question: 'Why choose Jwayyed Law LLC for Montgomery County legal matters?',
     answer:
-      'Jwayyed Law LLC is an Ohio firm that practices throughout the state, including Montgomery County courts. We prepare every case thoroughly — reviewing all evidence, identifying constitutional issues, and understanding local court procedures — to give our Montgomery County clients the strongest possible defense. Call (614) 285-5482 for a consultation.',
+      'Jwayyed Law LLC is an Ohio firm that practices throughout the state, including in Montgomery County courts. On each case the firm reviews all of the evidence, looks for constitutional issues and works within local court procedure. Call (614) 285-5482 to schedule a consultation.',
+  },
+];
+
+const SERVICES = [
+  {
+    href: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court',
+    title: 'OVI / DUI defense at Dayton Municipal Court',
+    subtitle: 'First through felony OVI, high-tier, refusal, ALS appeals',
+  },
+  {
+    href: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court',
+    title: 'Criminal misdemeanor defense in Montgomery County',
+    subtitle: 'Theft, domestic violence, assault, drug possession, disorderly conduct',
+  },
+  {
+    href: '/locations/montgomery-county/personal-injury-montgomery-county',
+    title: 'Personal injury in Montgomery County',
+    subtitle: 'Car accidents, slip and fall, wrongful death, premises liability',
+  },
+  {
+    href: '/locations/montgomery-county/business-formation-llc-montgomery-county',
+    title: 'Business formation and LLCs in Montgomery County',
+    subtitle: 'LLC formation, operating agreements, business planning',
   },
 ];
 
 export default function MontgomeryCountyLocationsPage() {
-
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Montgomery County Criminal Defense & OVI Attorney"
-        description="Experienced legal representation throughout Montgomery County — Dayton, Kettering, Huber Heights, Trotwood, and surrounding communities. OVI defense, criminal misdemeanor defense, and personal injury. Call (614) 285-5482."
+        title="Montgomery County criminal defense and OVI"
+        description="OVI arrests on I-75, I-675, US-35 and SR-4 are heard at Dayton Municipal Court, Kettering Municipal Court or another area court, depending on where the arrest happened."
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
+      <Section
+        title="What we handle in Montgomery County"
+        intro={
+          <p>
+            Montgomery County is Ohio&rsquo;s sixth-largest county by population, anchored by Dayton, the county seat. The firm
+            represents clients across all Montgomery County courts.
+          </p>
+        }
+      >
+        <LinkGrid links={SERVICES} columns={2} />
+      </Section>
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Legal Services in Montgomery County, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Montgomery County is Ohio&apos;s sixth-largest county by population and anchored by Dayton, the county seat. OVI arrests along I-75, I-675, US-35, and SR-4 are common, with cases heard at <strong>Dayton Municipal Court</strong> (301 W. Third St, Dayton, OH 45402), Kettering Municipal Court, and other area courts depending on jurisdiction. The <strong>Montgomery County Court of Common Pleas</strong> (41 N. Perry St, Dayton, OH 45422) handles felony and higher civil matters. Jwayyed Law LLC represents clients across all Montgomery County courts. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
-            </p>
+      <Section title="Montgomery County courts" tone="ice">
+        <FactTable
+          title="Dayton Municipal Court"
+          rows={[
+            { label: 'Address', value: '301 W. Third St, Dayton, OH 45402' },
+            { label: 'Hears', value: 'Misdemeanor criminal cases, OVI/DUI charges and traffic violations for the City of Dayton' },
+          ]}
+        />
+        <FactTable
+          title="Kettering Municipal Court"
+          rows={[
+            { label: 'Address', value: '2325 Wilmington Pike, Kettering, OH 45420' },
+            { label: 'Hears', value: 'Cases from Kettering and surrounding communities, depending on jurisdiction' },
+          ]}
+        />
+        <FactTable
+          title="Montgomery County Court of Common Pleas"
+          rows={[
+            { label: 'Address', value: '41 N. Perry St, Dayton, OH 45422' },
+            { label: 'Hears', value: 'Felony cases and civil matters over $15,000 for all of Montgomery County' },
+          ]}
+        />
+        <LinkGrid
+          columns={2}
+          links={[
+            { href: '/courts/dayton-municipal-court', title: 'Dayton Municipal Court guide', subtitle: 'What to expect at the court' },
+            { href: '/courts/montgomery-county', title: 'Montgomery County courts', subtitle: 'Every court in the county' },
+          ]}
+        />
+      </Section>
 
-            <div className="not-prose space-y-4 mb-10">
-              <div className="border-l-4 border-sky-deep bg-ice p-5">
-                <h4 className="jw-serif text-lg font-bold text-navy-950 mb-3">
-                  Montgomery County Practice Areas
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
-                  {[
-                    {
-                      label: 'OVI / DUI Defense — Dayton Municipal Court',
-                      href: '/locations/montgomery-county/ovi-dui-defense-montgomery-county-dayton-municipal-court',
-                      desc: 'First through felony OVI, high-tier, refusal, ALS appeals',
-                    },
-                    {
-                      label: 'Criminal Misdemeanor Defense — Montgomery County',
-                      href: '/locations/montgomery-county/criminal-misdemeanor-defense-montgomery-county-dayton-municipal-court',
-                      desc: 'Theft, domestic violence, assault, drug possession, disorderly conduct',
-                    },
-                    {
-                      label: 'Personal Injury — Montgomery County',
-                      href: '/locations/montgomery-county/personal-injury-montgomery-county',
-                      desc: 'Car accidents, slip and fall, wrongful death, premises liability',
-                    },
-                    {
-                      label: 'Business Formation / LLC — Montgomery County',
-                      href: '/locations/montgomery-county/business-formation-llc-montgomery-county',
-                      desc: 'LLC formation, operating agreements, business planning',
-                    },
-                  ].map(({ label, href, desc }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-                    >
-                      <span className="text-sm font-semibold text-navy-950 group-hover:text-sky-deep transition-colors block mb-1">
-                        {label}
-                      </span>
-                      <span className="text-xs text-navy-950/60 group-hover:text-navy-950/80 transition-colors">{desc}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              For OVI arrests in Montgomery County, the 30-day ALS appeal deadline is critical — contact us immediately after any OVI arrest. Reach Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="After an arrest in Montgomery County">
+        <Callout title="After an OVI arrest, the clock is 30 days">
+          The administrative license suspension must be appealed within 30 days at the court that has your case, or the right to
+          challenge it is lost. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
+          <Link href="/contact">schedule a consultation online</Link>.
+        </Callout>
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />

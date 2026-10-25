@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Athens County Personal Injury Attorney',
-  description: 'Personal injury attorney serving Athens County, Ohio. Car accidents, slip and fall, and injury claims. Call (614) 285-5482.',
+  description:
+    'Injury claims from Athens County roads, rentals and campus: car accidents, slip and fall and more, filed at Athens County Common Pleas. Call (614) 285-5482.',
   keywords: ['personal injury Athens County', 'injury lawyer Athens Ohio', 'Athens County accident attorney', 'car accident lawyer Athens Ohio', 'slip and fall Athens County'],
   openGraph: {
     title: 'Athens County Personal Injury Attorney | Jwayyed Law LLC',
+    description: 'Personal injury claims in Athens County, Nelsonville, The Plains and Albany, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/athens-county/personal-injury-athens-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/athens-county/personal-injury-athens-county' },
 };
 
@@ -25,80 +28,137 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is the statute of limitations for personal injury claims in Ohio?`,
-    answer: `Under Ohio Revised Code 2305.10, the statute of limitations for most personal injury claims in Ohio is two years from the date the cause of action accrues — typically the date of injury. If you were hurt in Athens County and wait too long to file, you may lose your right to recover compensation entirely. Medical malpractice has a one-year statute with a four-year repose period. Contact an attorney promptly after any injury to protect your rights.`,
+    question: 'What is the statute of limitations for personal injury claims in Ohio?',
+    answer:
+      'Under Ohio Revised Code 2305.10, most personal injury claims must be filed within two years from the date the cause of action accrues, which is usually the date of injury. If you were hurt in Athens County and wait too long, you can lose the right to recover anything. Medical malpractice has a one-year statute with a four-year repose period. Talk to an attorney soon after any injury.',
   },
   {
-    question: `How does Ohio's comparative negligence law affect my personal injury case?`,
-    answer: `Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are found to be 50% or more at fault for your own injury, you cannot recover any damages. If you are less than 50% at fault, your damages are reduced proportionally. For example, if you are found 20% at fault and your total damages are $100,000, you recover $80,000. Insurance companies often try to inflate your percentage of fault — having an experienced attorney advocate for you is critical.`,
+    question: "How does Ohio's comparative negligence law affect my personal injury case?",
+    answer:
+      'Ohio follows a modified comparative negligence rule under ORC 2315.33. If you are 50% or more at fault for your own injury, you recover nothing. If you are less than 50% at fault, your damages are reduced by your share. For example, at 20% fault on $100,000 in damages, you recover $80,000. Insurers often try to push your share of fault higher, which an attorney can contest.',
   },
   {
-    question: `What damages can I recover after a personal injury in Athens County?`,
-    answer: `Ohio law allows injury victims to recover economic damages such as past and future medical expenses, lost wages, loss of earning capacity, and property damage. You may also recover non-economic damages including pain and suffering, emotional distress, loss of enjoyment of life, and loss of consortium for a spouse. In cases involving egregious conduct, punitive damages may also be available. An attorney can evaluate the full value of your claim based on your specific circumstances.`,
+    question: 'What damages can I recover after a personal injury in Athens County?',
+    answer:
+      'Economic damages such as past and future medical expenses, lost wages, loss of earning capacity and property damage. Non-economic damages such as pain and suffering, emotional distress, loss of enjoyment of life, and loss of consortium for a spouse. Punitive damages may be available when the conduct was egregious. An attorney can value the claim based on your circumstances.',
   },
   {
-    question: `What should I do after a car accident in Athens County?`,
-    answer: `After a car accident in Athens County or anywhere in Ohio, you should: (1) call 911 and get medical attention even if you feel fine — injuries often appear hours or days later; (2) document the scene with photos of vehicles, road conditions, and injuries; (3) exchange insurance and contact information with the other driver; (4) avoid admitting fault or making recorded statements to insurance adjusters before speaking with an attorney; and (5) contact Jwayyed Law LLC to discuss your legal options as soon as possible.`,
+    question: 'What should I do after a car accident in Athens County?',
+    answer:
+      'After a car accident in Athens County or anywhere in Ohio: (1) call 911 and get medical attention even if you feel fine, because injuries often appear hours or days later; (2) photograph the vehicles, road conditions and injuries; (3) exchange insurance and contact information with the other driver; (4) do not admit fault or give recorded statements to insurance adjusters before speaking with an attorney; and (5) contact Jwayyed Law LLC as soon as possible.',
   },
   {
-    question: `Does Jwayyed Law LLC handle personal injury cases for Ohio University students?`,
-    answer: `Yes. Ohio University brings thousands of students and visitors to Athens each year, and injuries can happen on campus, at local businesses, in rental properties, or on area roads. We represent injured students, faculty, staff, and visitors in Athens County. Whether your injury occurred at an off-campus party, in a vehicle accident on US 33, or due to a landlord's negligence, we can evaluate your claim and advise you of your rights under Ohio law.`,
+    question: 'Does Jwayyed Law LLC handle personal injury cases for Ohio University students?',
+    answer:
+      "Yes. Ohio University brings thousands of students and visitors to Athens each year, and injuries happen on campus, at local businesses, in rental properties and on area roads. The firm represents injured students, faculty, staff and visitors in Athens County, whether the injury came from an off-campus party, a vehicle accident on US 33 or a landlord's negligence.",
   },
   {
-    question: `What is uninsured or underinsured motorist (UM/UIM) coverage, and why does it matter?`,
-    answer: `Ohio Revised Code 3345.21 and related provisions govern uninsured and underinsured motorist coverage in Ohio. If you are hit by a driver with no insurance or insufficient insurance to cover your injuries, your own UM/UIM policy may compensate you for medical bills, lost wages, and other damages. Pursuing a UM/UIM claim involves its own legal process, and insurers do not always offer fair settlements. An attorney can help you navigate the claim and negotiate on your behalf.`,
+    question: 'What is uninsured or underinsured motorist (UM/UIM) coverage, and why does it matter?',
+    answer:
+      'Ohio Revised Code 3345.21 and related provisions govern uninsured and underinsured motorist coverage in Ohio. If a driver with no insurance, or not enough, hits you, your own UM/UIM policy may pay for medical bills, lost wages and other damages. A UM/UIM claim has its own process, and insurers do not always offer fair settlements. An attorney can handle the claim and negotiate for you.',
   },
   {
-    question: `How does a contingency fee arrangement work for personal injury cases?`,
-    answer: `At Jwayyed Law LLC, personal injury cases are typically handled on a contingency fee basis. The attorney's fee is a percentage of any recovery. This arrangement ensures that injured people in Athens County and throughout Ohio can access quality legal representation regardless of their financial situation. We discuss fee arrangements openly during your initial consultation.`,
+    question: 'How does a contingency fee arrangement work for personal injury cases?',
+    answer:
+      "At Jwayyed Law LLC, personal injury cases are usually handled on a contingency fee basis: the attorney's fee is a percentage of any recovery. That lets injured people in Athens County and across Ohio hire a lawyer whatever their finances. Fee arrangements are explained at your initial consultation.",
   },
   {
-    question: `Where are personal injury cases filed in Athens County?`,
-    answer: `Personal injury lawsuits in Athens County are filed at the Athens County Common Pleas Court, located at 1 S. Court St, Athens, OH 45701. Smaller claims may be handled in the Athens Municipal Court or Athens County Court depending on the amount in controversy. Jwayyed Law LLC is experienced in navigating Ohio's court system and will file your case in the appropriate venue to maximize your recovery.`,
+    question: 'Where are personal injury cases filed in Athens County?',
+    answer:
+      'Personal injury lawsuits in Athens County are filed at the Athens County Common Pleas Court, 1 S. Court St, Athens, OH 45701. Smaller claims may go to Athens Municipal Court or Athens County Court depending on the amount in controversy. The firm files in the venue that fits the claim.',
   },
 ];
 
 export default function PersonalInjuryAthensCountyPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Personal Injury in Athens County", "serviceType": "Personal Injury", "areaServed": {"@type": "County", "name": "Athens County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/athens-county/personal-injury-athens-county"};
-
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Personal Injury in Athens County',
+    serviceType: 'Personal Injury',
+    areaServed: { '@type': 'County', name: 'Athens County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/athens-county/personal-injury-athens-county',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Attorney in Athens County, Ohio"
-        description="Serving Athens, Nelsonville, The Plains, Albany, and surrounding communities with experienced injury representation."
+        title="Personal injury claims in Athens County"
+        description="Injury lawsuits from Athens, Nelsonville, The Plains and Albany are filed at the Athens County Common Pleas Court. Most Ohio injury claims must be filed within two years."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Personal Injury Representation in Athens County
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              If you were injured in Athens County due to someone else&apos;s negligence, you deserve skilled legal representation to pursue the compensation you are owed. Athens County sits in the heart of Appalachian southeastern Ohio, and its roads — including US 33, US 50, and SR 56 — can be dangerous corridors for accidents. Jwayyed Law LLC represents injury victims throughout Athens County, including Athens, Nelsonville, The Plains, Albany, and the communities surrounding Ohio University. We understand the local courts, the applicable Ohio statutes, and what it takes to build a strong personal injury case on your behalf.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Revised Code 2305.10 gives most personal injury claimants two years from the date of injury to file suit. Missing this deadline forfeits your right to recovery, regardless of how strong your case is. Whether your injury was caused by a car accident, a slip and fall on a dangerous property, a dog attack, a workplace incident, or another party&apos;s negligence, it is important to speak with an attorney as early as possible. Evidence is preserved more effectively, witnesses are easier to locate, and your rights are better protected when action is taken promptly.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio&apos;s modified comparative negligence rule, codified in ORC 2315.33, means that your recovery may be reduced if you are found partially at fault. Insurance companies frequently argue that injured victims bear a share of blame in order to reduce or deny claims. Our attorney carefully investigates each case, gathers evidence, and builds arguments to minimize any fault attributed to you. If you were less than 50% at fault, you are entitled to recover — and we fight to protect that right.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The Athens County area presents unique injury scenarios. Ohio University&apos;s presence means pedestrian and bicycle accidents are common near campus, and injuries in rental housing — from negligent landlords who fail to maintain safe conditions — are an ongoing concern. Rural roads and agricultural areas around Nelsonville and Albany carry risks of serious collisions and equipment-related injuries. We handle the full range of personal injury matters and tailor our approach to the specific facts of your case and the local community context.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Personal injury cases in Athens County are filed at the Athens County Common Pleas Court at 1 S. Court St, Athens, OH 45701. Jwayyed Law LLC handles cases on a contingency fee basis. To discuss your injury claim, contact us at{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. You can also learn more about our{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> and how we serve clients across Ohio.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="Injuries in Athens County"
+        intro={
+          <p>
+            Athens County sits in Appalachian southeastern Ohio. Its main roads, US 33, US 50 and SR 56, carry a lot of the
+            county&rsquo;s serious crashes.
+          </p>
+        }
+      >
+        <p>
+          Ohio University shapes the local injury picture. Pedestrian and bicycle accidents are common near campus, and injuries in
+          rental housing, where landlords fail to keep conditions safe, are an ongoing problem. Around Nelsonville and Albany, rural
+          roads and agricultural areas bring serious collisions and equipment-related injuries.
+        </p>
+        <FactTable
+          title="Where an Athens County injury case is filed"
+          rows={[
+            { label: 'Most lawsuits', value: 'Athens County Common Pleas Court, 1 S. Court St, Athens, OH 45701' },
+            { label: 'Smaller claims', value: 'Athens Municipal Court or Athens County Court, depending on the amount in controversy' },
+            { label: 'Communities served', value: 'Athens, Nelsonville, The Plains, Albany and the Ohio University area' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio deadlines and fault rules" tone="ice">
+        <FactTable
+          title="The rules that decide an Ohio injury claim"
+          rows={[
+            { label: 'Filing deadline', value: 'Two years from the date of injury for most claims (ORC 2305.10). Missing it forfeits the claim.' },
+            { label: 'Medical malpractice', value: 'One-year statute of limitations, with a four-year repose period.' },
+            {
+              label: 'Comparative fault',
+              value: 'Modified comparative negligence (ORC 2315.33). At 50% or more at fault you recover nothing; under 50%, damages are reduced by your share.',
+            },
+            { label: 'UM/UIM coverage', value: 'Your own policy may pay when the at-fault driver has no insurance or too little.' },
+            { label: 'Fees', value: 'Personal injury cases are usually handled on a contingency fee basis.' },
+          ]}
+        />
+        <p>
+          Acting early matters for more than the deadline. Evidence is easier to preserve and witnesses are easier to find. Insurers
+          often argue that the injured person shares the blame; the firm investigates each case to keep any fault assigned to you as
+          low as the evidence allows.
+        </p>
+      </Section>
+
+      <Section title="Claims the firm handles">
+        <PointGrid
+          points={[
+            { title: 'Car accidents', body: 'Crashes on US 33, US 50, SR 56 and rural county roads.' },
+            { title: 'Slip and fall and premises', body: 'Dangerous conditions at businesses and in rental properties.' },
+            { title: 'Pedestrian and bicycle', body: 'Accidents near campus and in town.' },
+            { title: 'Dog attacks and workplace incidents', body: 'And other injuries caused by another party’s negligence.' },
+          ]}
+        />
+        <p>
+          To discuss your injury claim, use <Link href="/contact">the contact page</Link> or call (614) 285-5482. More on the
+          firm&rsquo;s <Link href="/personal-injury">personal injury practice</Link> across Ohio.
+        </p>
+      </Section>
+
+      <Section title="Related pages" tone="ice">
+        <LinkGrid
+          links={[
+            { href: '/locations/athens-county', title: 'Athens County', subtitle: 'Every service the firm offers in the county' },
+            { href: '/personal-injury/car-accidents', title: 'Car accident claims', subtitle: 'Ohio crash claims and insurance' },
+            { href: '/personal-injury/premises-liability', title: 'Premises liability', subtitle: 'Injuries from unsafe property' },
+          ]}
+        />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

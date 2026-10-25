@@ -181,6 +181,27 @@ Priority: **High** = likely wrong and affects a reader's decision (penalties, de
 | greene-county, montgomery-county, franklin-county | Greene lists Kettering, Centerville, Springboro; Montgomery lists Fairborn; New Albany listed with a mayor's court; Pickerington mostly in Fairfield County | Wrong county or inconsistent | Medium |
 | athens, butler, morrow, pickaway vs franklin | The firm "does not handle probate" vs offers probate administration | Firm-practice conflict: confirm what the firm handles | Medium |
 
+## Other county location pages (Athens, Butler, Clinton, Delaware, Greene, Montgomery, Morrow, Pickaway)
+
+| Page | Statement on the site | Why it looks wrong | Priority |
+|---|---|---|---|
+| delaware-county hub vs its OVI and criminal pages | Delaware County Municipal Court at 1 W. Winter St vs 70 N. Union St | Two addresses | High |
+| butler-county hub vs its OVI and criminal pages | Hamilton Municipal Court at 345 High St vs 700 Hanover St | Two addresses | High |
+| montgomery-county hub vs its OVI and criminal pages | Montgomery is Ohio's "sixth-largest" vs "fourth-largest" county; Dayton the "fourth-largest city" | Conflict; check both | Low |
+| morrow-county pages | Municipal Court and Common Pleas both at 48 E. High St, Mt. Gilead | Conflicts with the court guide (60 E. High St) | Medium |
+| athens-county OVI FAQ | File the ALS appeal with "Athens County Municipal Court" | The court is Athens Municipal Court | Low |
+| Clinton, Montgomery, Greene, Delaware, Butler vs Athens, Pickaway, Morrow | HB 37 15-day waiver requires an ignition interlock vs requires "no prior alcohol-related arrests" | Both differ from the statewide first-OVI page (no prior Physical Control) | High |
+| county hubs vs service pages | ALS 30 days "from the date of the ALS" vs from the arrest | Inconsistent | High |
+| all PI pages except Butler | UM/UIM at ORC 3345.21 | That is a university section; Butler cites 3937.18 | Medium |
+| business pages | Statutory agent at 1705.06 (Butler: 1706.16); Butler says pre-2022 LLCs stay under 1705 "until 2026" while others say they moved automatically; CAT threshold $150,000 | Chapter 1705 repealed; CAT figures stale | High |
+| Butler criminal FAQ | Under 100 g marijuana is a minor misdemeanor, $150 fine | May be outdated after 2023 legalization | Medium |
+| Clinton, Delaware, Montgomery, Greene and others | One-year misdemeanor sealing wait; exclusions at 2953.31; DV convictions not eligible | Possibly outdated; exclusions are usually 2953.36 | High |
+| Clinton, Montgomery, Delaware | Aggravated assault as a first-degree misdemeanor | Aggravated assault is a felony | High |
+| several | ORC 2935.26 cited as a ground for suppression | It is the minor-misdemeanor citation statute | Medium |
+| Butler PI | Collateral source rule at ORC 2315.36 | Check (2315.20) | Low |
+| several | First OVI jail "3 to 180 days" | Statewide pages say 3 days to 6 months | Low |
+| Greene, Montgomery, Pickaway | "SR 675" (likely I-675); Centerville under Xenia Municipal Court vs Kettering; Honda in Marysville cited for Pickaway | Check | Low |
+
 ## Firm facts
 
 | Page | Statement | Note | Priority |

@@ -3,16 +3,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Athens County Criminal Defense Attorney',
-  description: 'Criminal misdemeanor defense attorney in Athens County, Ohio. Athens Municipal Court. Assault, theft, drug charges. Call (614) 285-5482.',
+  description:
+    'Misdemeanor defense at Athens Municipal Court: assault, theft, drug and disorderly conduct charges near Ohio University. Call (614) 285-5482.',
   keywords: ['criminal misdemeanor defense Athens County', 'misdemeanor attorney Athens Municipal Court', 'Athens County criminal lawyer', 'Athens misdemeanor defense'],
   openGraph: {
     title: 'Athens County Criminal Defense Attorney | Jwayyed Law LLC',
+    description: 'Misdemeanor defense at Athens Municipal Court, from disorderly conduct near campus to assault and theft.',
     url: 'https://www.jjlawohio.com/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court' },
 };
 
@@ -25,177 +28,175 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: 'What are misdemeanor penalties in Athens Municipal Court?',
-    answer: 'Misdemeanor penalties in Athens Municipal Court under Ohio Revised Code depend on offense level: First-degree misdemeanors: up to 180 days jail, $1,000 fine. Second-degree misdemeanors: up to 90 days jail, $750 fine. Third-degree misdemeanors: up to 60 days jail, $500 fine. Fourth-degree misdemeanors: up to 30 days jail, $250 fine. Penalties may be reduced through defense representation.',
+    answer:
+      'Penalties under the Ohio Revised Code depend on the degree of the offense. First-degree misdemeanors: up to 180 days in jail and a $1,000 fine. Second-degree misdemeanors: up to 90 days and $750. Third-degree misdemeanors: up to 60 days and $500. Fourth-degree misdemeanors: up to 30 days and $250. Defense representation can sometimes reduce these penalties.',
   },
   {
     question: 'What types of misdemeanor cases does Athens Municipal Court handle?',
-    answer: 'Athens Municipal Court handles various misdemeanor cases including assault, domestic violence, theft, drug possession, disorderly conduct, traffic violations, and other misdemeanor offenses occurring in Athens County. The court follows Ohio Revised Code for penalties and procedures. An attorney can help understand court procedures and develop defense strategies.',
+    answer:
+      'Assault, domestic violence, theft, drug possession, disorderly conduct, traffic violations and other misdemeanor offenses occurring in Athens County. The court follows the Ohio Revised Code for penalties and procedure.',
   },
   {
     question: 'Can I get a misdemeanor expunged in Athens County?',
-    answer: 'Yes, many misdemeanors may be eligible for expungement in Athens County under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Eligibility depends on offense type, prior convictions, and circumstances. An attorney can help determine eligibility and file expungement petitions.',
+    answer:
+      'Yes, many misdemeanors may be eligible for expungement under Ohio Revised Code 2953.31 once the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the circumstances. An attorney can check eligibility and file the petition.',
   },
   {
     question: 'What should I do if I am charged with a misdemeanor in Athens County?',
-    answer: 'If charged with a misdemeanor in Athens County, exercise your rights immediately. Do not discuss the case without your attorney present. Contact an experienced criminal defense attorney right away. An attorney can protect your rights, understand court procedures, and develop defense strategies.',
+    answer:
+      'Use your right to remain silent and do not discuss the case without your attorney present. Contact a criminal defense attorney right away, before your first court date.',
   },
   {
     question: 'Do I need a local attorney for misdemeanor defense in Athens County?',
-    answer: 'While you can hire any Ohio attorney, an attorney familiar with Athens County courts, Athens Municipal Court procedures, and local prosecutors can provide better representation. Local knowledge of court practices, prosecutors, and procedures can help achieve favorable outcomes. An experienced criminal defense attorney can provide effective representation.',
+    answer:
+      'You can hire any Ohio attorney. An attorney who knows Athens Municipal Court, its procedures and the local prosecutors understands how the court schedules cases, what it expects in filings and how pretrial conferences tend to run.',
   },
   {
-    question: `What misdemeanor offenses are most common in Athens Municipal Court near Ohio University?`,
-    answer: `Because Athens is a college town home to Ohio University, Athens Municipal Court sees a high volume of alcohol-related misdemeanor charges. The most common offenses include disorderly conduct under ORC 2917.11 (often arising from public intoxication or disturbances near campus), criminal trespass under ORC 2911.21, underage consumption, and petty theft under ORC 2913.02. Alcohol-related offenses spike around university events, homecoming weekends, and the bar district on Court Street. Even misdemeanor convictions for these offenses can affect academic standing, campus housing eligibility, and future employment. An experienced defense attorney familiar with Athens Municipal Court can help students and residents pursue dismissals, reduced charges, or diversion programs.`,
+    question: 'What misdemeanor offenses are most common in Athens Municipal Court near Ohio University?',
+    answer:
+      'Athens is a college town, so the court sees many alcohol-related misdemeanors. The most common are disorderly conduct under ORC 2917.11 (often from public intoxication or disturbances near campus), criminal trespass under ORC 2911.21, underage consumption, and petty theft under ORC 2913.02. These charges spike around university events, homecoming weekends and the Court Street bar district. Even a misdemeanor conviction can affect academic standing, campus housing eligibility and future jobs. A defense attorney can pursue dismissal, a reduced charge or a diversion program for students and residents.',
   },
   {
-    question: `What are the penalties for a first-degree misdemeanor in Ohio under ORC 2929.21?`,
-    answer: `Under Ohio Revised Code 2929.21, a first-degree misdemeanor (M1) carries a maximum sentence of up to 180 days in jail and a fine of up to $1,000. In Athens Municipal Court, M1 offenses include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25, and certain theft offenses. While 180 days is the statutory maximum, judges have discretion to impose lesser sentences, community control, community service, or treatment in lieu of incarceration. A conviction — even without jail time — creates a permanent criminal record that can affect employment, professional licensing, and housing. Experienced defense representation can help minimize the consequences or pursue alternatives to conviction.`,
+    question: 'What are the penalties for a first-degree misdemeanor in Ohio under ORC 2929.21?',
+    answer:
+      'Under Ohio Revised Code 2929.21, a first-degree misdemeanor (M1) carries up to 180 days in jail and a fine of up to $1,000. In Athens Municipal Court, M1 offenses include misdemeanor assault under ORC 2903.13, domestic violence under ORC 2919.25 and certain theft offenses. Judges can impose less than the maximum, or community control, community service or treatment instead of jail. A conviction, even without jail, creates a permanent criminal record that can affect jobs, professional licenses and housing.',
   },
   {
-    question: `Can misdemeanor convictions from Athens Municipal Court be sealed under ORC 2953.32?`,
-    answer: `Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Athens Municipal Court are eligible for sealing (commonly called expungement) after a one-year waiting period following final discharge from the sentence — meaning after completing any jail time, probation, fines, and other conditions. Eligible offenses include most M1 through M4 misdemeanors. Certain offenses are not eligible for sealing, including convictions for offenses involving victims who are minors and certain traffic offenses. Once a record is sealed, it is not accessible to the general public, which can significantly improve employment and housing opportunities. An attorney can evaluate your eligibility, prepare the petition, and represent you at the sealing hearing in Athens Municipal Court.`,
+    question: 'Can misdemeanor convictions from Athens Municipal Court be sealed under ORC 2953.32?',
+    answer:
+      'Yes. Under Ohio Revised Code 2953.32, most misdemeanor convictions from Athens Municipal Court can be sealed (often called expungement) after a one-year waiting period following final discharge, meaning after any jail time, probation, fines and other conditions are complete. Most M1 through M4 misdemeanors qualify. Some offenses do not, including offenses with victims who are minors and certain traffic offenses. A sealed record is not available to the general public, which helps with jobs and housing. An attorney can check your eligibility, prepare the petition and represent you at the sealing hearing.',
   },
 ];
 
-export default function AthensCriminalMisdemeanorDefensePage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Criminal Defense in Athens County", "serviceType": "Criminal Defense", "areaServed": {"@type": "County", "name": "Athens County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court"};
+const RELATED = [
+  { href: '/courts/athens-municipal-court', title: 'Athens Municipal Court guide', subtitle: 'Where the court is and what to expect' },
+  { href: '/locations/athens-county', title: 'Athens County', subtitle: 'Every service the firm offers in the county' },
+  { href: '/locations/athens-county/ovi-dui-defense-athens-municipal-court', title: 'OVI defense in Athens', subtitle: 'Penalties and the 30-day ALS appeal' },
+  { href: '/criminal-defense/disorderly-conduct', title: 'Disorderly conduct', subtitle: 'The most common charge near campus' },
+  { href: '/criminal-defense/open-container', title: 'Open container', subtitle: 'Alcohol charges in public and in vehicles' },
+  { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing an eligible record' },
+];
 
+export default function AthensCriminalMisdemeanorDefensePage() {
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Criminal Defense in Athens County',
+    serviceType: 'Criminal Defense',
+    areaServed: { '@type': 'County', name: 'Athens County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/athens-county/criminal-misdemeanor-defense-athens-municipal-court',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Criminal Defense Attorney | Athens Municipal Court"
-        description="Experienced legal defense for criminal misdemeanor charges in Athens County. Protecting your rights and fighting for the best possible outcome in Athens Municipal Court."
+        title="Misdemeanor defense at Athens Municipal Court"
+        description="Misdemeanor charges from anywhere in Athens County go to Athens Municipal Court. A first-degree misdemeanor carries up to 180 days in jail and a $1,000 fine."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">Criminal Misdemeanor Defense in Athens County, Ohio</h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Criminal misdemeanor charges in Athens County, particularly in Athens Municipal Court, require experienced defense representation to protect your rights and minimize consequences. At Jwayyed Law LLC, we provide experienced criminal misdemeanor defense representation in Athens County under Ohio Revised Code. Our attorney understands Athens Municipal Court procedures, local prosecutor practices, and judicial preferences, enabling us to provide effective representation tailored to this specific court.
-            </p>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Athens County, located in southeastern Ohio, includes communities such as Athens, Nelsonville, The Plains, and Albany. The Athens Municipal Court serves as the primary court for misdemeanor criminal cases occurring throughout Athens County. Understanding the unique characteristics of this court, including its procedures, prosecutor approaches, and judicial expectations, is essential for achieving favorable outcomes in criminal cases.
-            </p>
+      <Section
+        title="Where an Athens County misdemeanor is heard"
+        intro={
+          <p>
+            Athens Municipal Court is the main court for misdemeanor criminal cases from Athens, Nelsonville, The Plains, Albany and
+            the rest of Athens County in southeastern Ohio.
+          </p>
+        }
+      >
+        <FactTable
+          title="Athens Municipal Court at a glance"
+          rows={[
+            { label: 'Address', value: '8 E. Washington St, Athens, OH 45701' },
+            { label: 'Hears', value: 'All misdemeanor criminal cases occurring in Athens County' },
+            { label: 'Communities', value: 'Athens, Nelsonville, The Plains, Albany and the Ohio University area' },
+            { label: 'Hearings', value: 'Misdemeanor cases are usually set for arraignment, pretrial conferences and hearings' },
+          ]}
+        />
+        <p>
+          The court follows the Ohio Revised Code for penalties and procedure, but local practice, prosecutor policy and the
+          judge&rsquo;s approach shape how a case resolves. The firm works with the clerk&rsquo;s office and tracks the court&rsquo;s
+          filing deadlines and motion requirements.
+        </p>
+        <h3>Charges near Ohio University</h3>
+        <p>
+          Athens is a college town, and alcohol-related charges such as disorderly conduct, criminal trespass, underage consumption
+          and petty theft rise around university events, homecoming weekends and the Court Street bar district. For a student, even a
+          misdemeanor conviction can reach academic standing and campus housing.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Understanding Athens Municipal Court</h3>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Athens Municipal Court is located in Athens, Ohio, and handles all misdemeanor criminal cases occurring in Athens County. The court follows Ohio Revised Code for misdemeanor penalties and procedures, but local court practices, prosecutor policies, and judicial preferences can significantly impact case outcomes. Our attorney has extensive experience representing clients in Athens Municipal Court and understands the nuances of how misdemeanor cases are handled in this jurisdiction.
-            </p>
+      <Section title="Misdemeanor cases the court hears" tone="ice">
+        <PointGrid
+          points={[
+            {
+              title: 'Assault and domestic violence',
+              body: 'Serious misdemeanors that can bring jail time, protective orders and a permanent record. These cases need attention right away.',
+            },
+            {
+              title: 'Theft and property crimes',
+              body: 'Theft, shoplifting and vandalism can bring jail, fines and restitution. Penalties depend on the value of the property and prior convictions.',
+            },
+            {
+              title: 'Drug possession',
+              body: "Even small amounts can bring jail, fines and a driver's license suspension. First-time offenders may qualify for intervention in lieu of conviction or drug court.",
+            },
+            {
+              title: 'Disorderly conduct',
+              body: 'Disorderly conduct and disturbing the peace often grow out of disputes and can be challenged for lack of evidence, police conduct or constitutional issues.',
+            },
+          ]}
+        />
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              The Athens Municipal Court typically schedules misdemeanor cases for arraignment, pretrial conferences, and hearings. Understanding the court's scheduling practices, filing requirements, and motion procedures is crucial for effective representation. Our firm works closely with the court clerk's office and understands local filing deadlines, motion requirements, and court procedures specific to Athens Municipal Court.
-            </p>
+      <Section title="Misdemeanor penalties in Ohio">
+        <FactTable
+          title="Maximum penalties by degree"
+          rows={[
+            { label: 'First-degree misdemeanor', value: 'Up to 180 days in jail and fines up to $1,000. Includes assault, domestic violence and certain theft charges.' },
+            { label: 'Second-degree misdemeanor', value: 'Up to 90 days in jail and fines up to $750. Includes lesser assaults, certain theft charges and disorderly conduct.' },
+            { label: 'Third-degree misdemeanor', value: 'Up to 60 days in jail and fines up to $500. Includes minor property crimes and certain traffic-related offenses.' },
+            { label: 'Fourth-degree misdemeanor', value: 'Up to 30 days in jail and fines up to $250. Includes minor offenses and certain traffic violations.' },
+          ]}
+          note="These are maximums. Reduced charges, alternative sentencing, community service or dismissal are possible in some cases."
+        />
+        <h3>Expungement and record sealing</h3>
+        <p>
+          Misdemeanor convictions in Athens County may be eligible for expungement or sealing under Ohio Revised Code 2953.31 once
+          the sentence is complete and the waiting period has passed. Eligibility depends on the offense, prior convictions and the
+          circumstances.
+        </p>
+      </Section>
 
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Types of Misdemeanor Cases in Athens County</h3>
+      <Section title="Defenses and what the firm does" tone="ice">
+        <PointGrid
+          points={[
+            { title: 'Evidence challenges', body: 'Admissibility, police procedure, search and seizure, and witness credibility.' },
+            { title: 'Constitutional challenges', body: 'Illegal stops, searches and arrests, and Miranda violations.' },
+            { title: 'Self-defense', body: 'Self-defense or defense of others in assault cases.' },
+            { title: 'Lack of intent', body: 'No criminal intent, or a mistake of fact.' },
+            { title: 'Alibi', body: 'Evidence that you were somewhere else at the time.' },
+            {
+              title: 'Negotiation and alternatives',
+              body: 'Reduced charges, alternative sentencing, community service, treatment or intervention in lieu of conviction.',
+            },
+          ]}
+        />
+        <p>
+          On each case the firm reviews the evidence, police reports and charging documents, files pretrial motions to suppress
+          evidence or dismiss charges, negotiates with Athens County prosecutors, tries the case when it cannot be resolved, and helps
+          with expungement afterward.
+        </p>
+      </Section>
 
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Athens Municipal Court handles various types of misdemeanor criminal cases:
-            </p>
+      <Section title="Related pages">
+        <LinkGrid links={RELATED} />
+      </Section>
 
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Assault and Domestic Violence</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Assault and domestic violence charges are serious misdemeanors that can result in jail time, protective orders, and permanent criminal records. These cases require immediate attention to protect your rights, challenge evidence, and develop defense strategies. Our firm understands the sensitive nature of these cases and works diligently to protect your rights while achieving favorable outcomes.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Theft and Property Crimes</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Theft, shoplifting, vandalism, and other property crime charges can result in jail time, fines, and restitution. The severity of penalties depends on the value of property involved and prior convictions. Our firm challenges evidence, negotiates with prosecutors, and develops defense strategies to minimize consequences.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Drug Possession</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Drug possession charges, even for small amounts, can result in jail time, fines, and driver's license suspension. First-time offenders may be eligible for intervention in lieu of conviction programs or drug court. Our firm explores all options including treatment programs, dismissal opportunities, and reduced charges.
-              </p>
-            </div>
-
-            <div className="bg-ice p-6 mb-6">
-              <h4 className="font-semibold text-navy-950 group-hover:text-sky-deep transition-colors mb-4">Disorderly Conduct and Disturbing the Peace</h4>
-              <p className="text-navy-950/80 group-hover:text-navy-950 transition-colors mb-4">
-                Disorderly conduct, disturbing the peace, and related charges often result from disputes or arguments. These charges can be challenged based on lack of evidence, improper police conduct, or constitutional issues. Our firm works to have these charges dismissed or reduced.
-              </p>
-            </div>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Misdemeanor Penalties in Athens County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Misdemeanor penalties in Athens Municipal Court under Ohio Revised Code depend on the offense degree:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>First-Degree Misdemeanors:</strong> Up to 180 days in jail and fines up to $1,000. These include serious offenses such as assault, domestic violence, and certain theft charges.</li>
-              <li><strong>Second-Degree Misdemeanors:</strong> Up to 90 days in jail and fines up to $750. These include less serious assaults, certain theft charges, and disorderly conduct.</li>
-              <li><strong>Third-Degree Misdemeanors:</strong> Up to 60 days in jail and fines up to $500. These include minor property crimes and certain traffic-related offenses.</li>
-              <li><strong>Fourth-Degree Misdemeanors:</strong> Up to 30 days in jail and fines up to $250. These include minor offenses and certain traffic violations.</li>
-            </ul>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              While these are maximum penalties, experienced defense representation can help negotiate reduced charges, alternative sentencing, community service, or dismissal in appropriate cases. Our firm works to minimize jail time, reduce fines, and protect your record.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Common Defense Strategies in Athens County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Effective misdemeanor defense in Athens County requires developing strategies tailored to the specific charges:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Evidence Challenges:</strong> Challenging the admissibility of evidence, police procedures, search and seizure issues, or witness credibility</li>
-              <li><strong>Constitutional Challenges:</strong> Challenging illegal stops, searches, arrests, or Miranda rights violations</li>
-              <li><strong>Defense of Others or Self-Defense:</strong> Asserting self-defense or defense of others in assault cases</li>
-              <li><strong>Lack of Intent:</strong> Arguing lack of criminal intent or mistake of fact</li>
-              <li><strong>Alibi Defenses:</strong> Presenting evidence that you were elsewhere at the time of the alleged offense</li>
-              <li><strong>Negotiation:</strong> Working with prosecutors to negotiate reduced charges, alternative sentencing, or dismissal when appropriate</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Expungement and Record Sealing in Athens County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Misdemeanor convictions in Athens County may be eligible for expungement or record sealing under Ohio Revised Code 2953.31 after completing sentence requirements and waiting periods. Expungement eligibility depends on the offense type, prior convictions, and circumstances. Our firm helps clients determine eligibility, navigate the expungement process, and clear their criminal records to improve employment opportunities and move forward with their lives.
-            </p>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">How a Criminal Misdemeanor Defense Attorney Can Help in Athens County</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides comprehensive misdemeanor defense representation in Athens County:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-navy-950/80 mb-6">
-              <li><strong>Immediate Case Review:</strong> Review all evidence, police reports, and charging documents to identify weaknesses and defense opportunities</li>
-              <li><strong>Motion Practice:</strong> File pretrial motions to suppress evidence, dismiss charges, or challenge procedures when appropriate</li>
-              <li><strong>Negotiation:</strong> Work with Athens County prosecutors to negotiate reduced charges, alternative sentencing, or favorable plea agreements</li>
-              <li><strong>Trial Representation:</strong> Provide aggressive trial representation when cases cannot be resolved through negotiation</li>
-              <li><strong>Alternative Sentencing:</strong> Advocate for community service, treatment programs, or intervention in lieu of conviction when appropriate</li>
-              <li><strong>Expungement Assistance:</strong> Help clients determine expungement eligibility and navigate the record sealing process</li>
-              <li><strong>Local Court Knowledge:</strong> Understand Athens Municipal Court procedures, prosecutor practices, and judicial preferences</li>
-            </ul>
-
-            <h3 className="jw-serif text-2xl font-bold text-navy-950 mt-8 mb-4">Why Choose Jwayyed Law LLC for Athens County Criminal Defense</h3>
-
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Our firm provides dedicated criminal misdemeanor defense representation in Athens County and Athens Municipal Court. We understand that criminal charges can have significant consequences on your life, employment, and future. Our attorney has extensive experience in Athens Municipal Court, understands local procedures and practices, and works diligently to challenge evidence, develop defense strategies, and achieve favorable outcomes while protecting your rights and future.
-            </p>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              If you are facing misdemeanor charges in Athens County, contact Jwayyed Law LLC immediately to schedule a consultation. Early intervention by experienced counsel can significantly impact the outcome of your case. We will review your case, explain your rights, discuss potential defenses, and develop a strategy tailored to your situation and the specific procedures of Athens Municipal Court. Do not delay in seeking experienced legal representation to protect your rights, freedom, and future.
-            </p>
-          </div>
-        </div>
-      </section>
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>
   );
 }
-

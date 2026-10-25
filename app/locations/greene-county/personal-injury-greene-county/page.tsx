@@ -4,16 +4,19 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { FactTable, LinkGrid, PointGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Greene County Personal Injury Lawyer',
-  description: 'Personal injury attorney serving Greene County, Xenia, Fairborn, Beavercreek, and surrounding Ohio communities. Car accidents, slip and fall.',
+  description:
+    'Injury claims from US 35 and SR 675 crashes and falls in Xenia, Fairborn and Beavercreek, filed at Greene County Common Pleas. Call (614) 285-5482.',
   keywords: ['personal injury Greene County', 'injury lawyer Xenia Ohio', 'Greene County accident attorney', 'car accident lawyer Fairborn Ohio', 'personal injury Beavercreek Ohio'],
   openGraph: {
     title: 'Greene County Personal Injury Lawyer | Jwayyed Law LLC',
+    description: 'Personal injury claims in Xenia, Fairborn, Beavercreek, Centerville and Yellow Springs, and the two-year Ohio deadline.',
     url: 'https://www.jjlawohio.com/locations/greene-county/personal-injury-greene-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
-    },
+  },
   alternates: { canonical: '/locations/greene-county/personal-injury-greene-county' },
 };
 
@@ -25,80 +28,135 @@ const breadcrumbItems = [
 
 const faqs = [
   {
-    question: `What is the statute of limitations for personal injury claims in Ohio?`,
-    answer: `Under Ohio Revised Code 2305.10, most personal injury claims in Ohio must be filed within two years of the date the cause of action accrues — typically the injury date. If you were hurt in Greene County and miss this deadline, you forfeit your right to recover, regardless of how strong your case is. Medical malpractice claims have a one-year statute with a four-year statute of repose. Contact Jwayyed Law LLC promptly after any injury so we can evaluate your claim and ensure deadlines are met.`,
+    question: 'What is the statute of limitations for personal injury claims in Ohio?',
+    answer:
+      'Under Ohio Revised Code 2305.10, most personal injury claims must be filed within two years of the date the cause of action accrues, usually the injury date. If you were hurt in Greene County and miss the deadline, you lose the right to recover however strong the case. Medical malpractice claims have a one-year statute with a four-year statute of repose. Contact the firm promptly so the deadlines are met.',
   },
   {
-    question: `How does Ohio's modified comparative negligence law affect my injury claim?`,
-    answer: `Ohio Revised Code 2315.33 establishes a modified comparative fault system. If you are 50% or more responsible for the accident, you cannot recover anything. If you are less than 50% at fault, your damages are reduced in proportion to your fault percentage. Insurers frequently raise comparative fault arguments in Greene County accidents — particularly on US 35 and SR 675 — to reduce settlements. Our attorney aggressively disputes inflated fault attributions and builds the strongest possible case for your recovery.`,
+    question: "How does Ohio's modified comparative negligence law affect my injury claim?",
+    answer:
+      'Ohio Revised Code 2315.33 sets modified comparative fault. If you are 50% or more responsible, you recover nothing. Under 50%, your damages are reduced by your share. Insurers often raise comparative fault in Greene County crashes, particularly on US 35 and SR 675, to cut settlements, and the firm contests inflated fault claims.',
   },
   {
-    question: `What types of damages are available in a Greene County personal injury case?`,
-    answer: `Ohio law allows injured victims to recover economic damages — past and future medical expenses, lost wages, loss of earning capacity, and property damage — as well as non-economic damages including pain and suffering, emotional distress, and loss of enjoyment of life. Spouses may recover for loss of consortium. In cases involving willful, reckless, or malicious conduct, courts may award punitive damages. Our attorney evaluates every category of damages and fights to ensure your settlement or verdict reflects the true cost of your injuries.`,
+    question: 'What types of damages are available in a Greene County personal injury case?',
+    answer:
+      'Economic damages (past and future medical expenses, lost wages, loss of earning capacity and property damage) and non-economic damages (pain and suffering, emotional distress and loss of enjoyment of life). Spouses may recover for loss of consortium. Courts may award punitive damages for willful, reckless or malicious conduct.',
   },
   {
-    question: `Are there unique accident risks near Wright-Patterson Air Force Base in Greene County?`,
-    answer: `Yes. The area surrounding Wright-Patterson AFB in Fairborn and Beavercreek experiences heavy traffic from military personnel, contractors, and civilian workers. US 35 and SR 444 near the base see elevated accident rates. Additionally, contractors and workers on base property may face unique premises liability and third-party negligence scenarios. If you were injured in the WPAFB area or the surrounding communities, our attorney can evaluate whether civil claims are available under Ohio law or federal tort law depending on the circumstances.`,
+    question: 'Are there unique accident risks near Wright-Patterson Air Force Base in Greene County?',
+    answer:
+      'Yes. The area around Wright-Patterson AFB in Fairborn and Beavercreek carries heavy traffic from military personnel, contractors and civilian workers, and US 35 and SR 444 near the base see elevated accident rates. Contractors and workers on base property may face their own premises liability and third-party negligence issues. Depending on the facts, a claim may arise under Ohio law or federal tort law.',
   },
   {
-    question: `What should I do after a car accident in Greene County?`,
-    answer: `After an accident in Greene County: (1) seek immediate medical attention — delays in treatment can harm both your health and your legal claim; (2) document the scene with photos of damage, road conditions, and visible injuries; (3) get witness names and contact information; (4) file a police report; (5) avoid giving a recorded statement to the at-fault driver's insurance company before speaking with an attorney; and (6) contact Jwayyed Law LLC to begin protecting your rights and documenting your damages as soon as possible.`,
+    question: 'What should I do after a car accident in Greene County?',
+    answer:
+      "After an accident in Greene County: (1) get medical attention right away, since delays can hurt both your health and your claim; (2) photograph the damage, road conditions and visible injuries; (3) get witness names and contact information; (4) file a police report; (5) do not give a recorded statement to the at-fault driver's insurer before speaking with an attorney; and (6) contact Jwayyed Law LLC as soon as possible.",
   },
   {
-    question: `Does UM/UIM coverage protect me if the other driver has no insurance?`,
-    answer: `Yes. Uninsured and underinsured motorist (UM/UIM) coverage, governed by Ohio law including ORC 3345.21, compensates you from your own policy when the at-fault driver carries no insurance or insufficient insurance to cover your injuries and losses. Many Ohio drivers are uninsured. If you are hit by an uninsured driver in Xenia, Fairborn, Beavercreek, or elsewhere in Greene County, a UM/UIM claim through your own insurer may be your primary path to recovery. We help clients navigate and maximize these claims.`,
+    question: 'Does UM/UIM coverage protect me if the other driver has no insurance?',
+    answer:
+      'Yes. Uninsured and underinsured motorist (UM/UIM) coverage, governed by Ohio law including ORC 3345.21, pays you from your own policy when the at-fault driver has no insurance or not enough. Many Ohio drivers are uninsured. After a crash with an uninsured driver in Xenia, Fairborn, Beavercreek or elsewhere in Greene County, a UM/UIM claim may be your main path to recovery.',
   },
   {
-    question: `How do contingency fees work for personal injury cases?`,
-    answer: `Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the gross recovery and is deducted when the case concludes.`,
+    question: 'How do contingency fees work for personal injury cases?',
+    answer:
+      'Jwayyed Law LLC handles personal injury cases on a contingency fee basis. The fee is a percentage of the gross recovery and is deducted when the case concludes.',
   },
   {
-    question: `Where are personal injury lawsuits filed in Greene County?`,
-    answer: `Personal injury cases in Greene County are filed at the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Smaller claims may be filed in one of the county's municipal courts. Our attorney is familiar with Greene County's courts and legal community, and will file your case in the appropriate venue and aggressively pursue your claim from start to finish.`,
+    question: 'Where are personal injury lawsuits filed in Greene County?',
+    answer:
+      "At the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Smaller claims may be filed in one of the county's municipal courts. The firm files in the venue that fits the claim.",
   },
 ];
 
 export default function PersonalInjuryGreeneCountyPage() {
-  const locationSchema = {"@context": "https://schema.org", "@type": "LegalService", "name": "Jwayyed Law LLC — Personal Injury in Greene County", "serviceType": "Personal Injury", "areaServed": {"@type": "County", "name": "Greene County", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "provider": {"@type": "LegalService", "@id": "https://www.jjlawohio.com", "name": "Jwayyed Law LLC", "telephone": "(614) 285-5482", "url": "https://www.jjlawohio.com"}, "url": "https://www.jjlawohio.com/locations/greene-county/personal-injury-greene-county"};
-
+  const locationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: 'Jwayyed Law LLC: Personal Injury in Greene County',
+    serviceType: 'Personal Injury',
+    areaServed: { '@type': 'County', name: 'Greene County', containedInPlace: { '@type': 'State', name: 'Ohio' } },
+    provider: { '@type': 'LegalService', '@id': 'https://www.jjlawohio.com', name: 'Jwayyed Law LLC', telephone: '(614) 285-5482', url: 'https://www.jjlawohio.com' },
+    url: 'https://www.jjlawohio.com/locations/greene-county/personal-injury-greene-county',
+  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Personal Injury Lawyer in Greene County, Ohio"
-        description="Serving Xenia, Fairborn, Beavercreek, Centerville, Yellow Springs, and surrounding communities."
+        title="Personal injury claims in Greene County"
+        description="Injury lawsuits from Xenia, Fairborn, Beavercreek, Centerville and Yellow Springs are filed at the Greene County Common Pleas Court in Xenia. Most must be filed within two years."
       />
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Personal Injury Representation in Greene County
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Greene County, Ohio is home to Xenia (the county seat), Fairborn, Beavercreek, Yellow Springs, and Centerville — a diverse mix of communities near Wright-Patterson Air Force Base and the greater Dayton metropolitan area. Jwayyed Law LLC represents personal injury victims throughout Greene County in car accidents, slip and fall cases, premises liability matters, and other negligence claims. If you were injured due to another party&apos;s fault in Greene County, our attorney is prepared to pursue the full compensation you are entitled to under Ohio law.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Ohio Revised Code 2305.10 gives most injury victims two years from the date of injury to file a personal injury lawsuit. This window is firm and unforgiving — missing it typically bars your claim entirely. Our attorney begins working immediately to preserve evidence, secure witness statements, and document the full extent of your damages. Early action protects your claim and positions you for the strongest possible negotiating stance with insurance companies.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              US 35 and SR 675 are major accident corridors in Greene County, carrying heavy traffic between Xenia, Fairborn, and Beavercreek. Accidents on these routes can be severe and often involve questions of shared fault. Ohio&apos;s modified comparative negligence rule under ORC 2315.33 allows recovery as long as you are less than 50% at fault — with damages reduced proportionally by your percentage of fault. Our attorney builds a thorough evidentiary record to minimize any fault attributed to you and maximize your recovery.
-            </p>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              In addition to highway and road accidents, Greene County presents slip and fall and premises liability risks at retail establishments, restaurants, parking lots, and public spaces throughout Beavercreek and the Fairborn commercial corridor. We also handle dog bite injuries under ORC 955.28, workplace injuries involving third-party negligence, wrongful death claims, and motorcycle and bicycle accidents. Each case is approached with detailed factual investigation and an understanding of Ohio&apos;s injury statutes.
-            </p>
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              Personal injury cases in Greene County are filed at the Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385. Jwayyed Law LLC works on a contingency fee basis. Contact us at{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">our contact page</Link> or call (614) 285-5482. Learn more about our{' '}
-              <Link href="/personal-injury" className="text-sky-deep underline hover:opacity-80">personal injury practice</Link> serving clients across Ohio.
-            </p>
-          </div>
-        </div>
-      </section>
+
+      <Section
+        title="Injuries in Greene County"
+        intro={
+          <p>
+            Greene County is home to Xenia (the county seat), Fairborn, Beavercreek, Yellow Springs and Centerville, near
+            Wright-Patterson Air Force Base and the Dayton metro area.
+          </p>
+        }
+      >
+        <p>
+          US 35 and SR 675 are major crash corridors, carrying heavy traffic between Xenia, Fairborn and Beavercreek, and those crashes
+          often raise shared-fault questions. Around the base, US 35 and SR 444 see elevated accident rates. Retail stores, restaurants,
+          parking lots and public spaces in Beavercreek and the Fairborn commercial corridor bring slip and fall and premises claims.
+        </p>
+        <FactTable
+          title="Where a Greene County injury case is filed"
+          rows={[
+            { label: 'Most lawsuits', value: 'Greene County Common Pleas Court, 45 N. Detroit St, Xenia, OH 45385' },
+            { label: 'Smaller claims', value: "One of the county's municipal courts" },
+            { label: 'Near the base', value: 'Some claims involving base property may fall under federal tort law' },
+          ]}
+        />
+      </Section>
+
+      <Section title="Ohio deadlines and fault rules" tone="ice">
+        <FactTable
+          title="The rules that decide an Ohio injury claim"
+          rows={[
+            { label: 'Filing deadline', value: 'Two years from the date of injury for most claims (ORC 2305.10). Missing it usually bars the claim.' },
+            { label: 'Medical malpractice', value: 'One-year statute, with a four-year statute of repose.' },
+            {
+              label: 'Comparative fault',
+              value: 'Modified comparative negligence (ORC 2315.33). You can recover if you are less than 50% at fault, reduced by your share.',
+            },
+            { label: 'UM/UIM coverage', value: 'Your own policy may pay when the at-fault driver has no insurance or too little.' },
+            { label: 'Fees', value: 'Contingency fee basis.' },
+          ]}
+        />
+        <p>The firm starts by preserving evidence, getting witness statements and documenting the full extent of your damages.</p>
+      </Section>
+
+      <Section title="Claims the firm handles">
+        <PointGrid
+          points={[
+            { title: 'Car accidents', body: 'Crashes on US 35, SR 675, SR 444 and local roads.' },
+            { title: 'Slip and fall and premises', body: 'Stores, restaurants, parking lots and public spaces.' },
+            { title: 'Dog bites', body: 'Claims under ORC 955.28.' },
+            { title: 'Workplace third-party claims', body: 'Including contractors and workers on base property.' },
+            { title: 'Motorcycle and bicycle', body: 'Riders injured by negligent drivers.' },
+            { title: 'Wrongful death', body: 'For families after a fatal injury.' },
+          ]}
+        />
+        <p>
+          Use <Link href="/contact">the contact page</Link> or call (614) 285-5482. More on the firm&rsquo;s{' '}
+          <Link href="/personal-injury">personal injury practice</Link> across Ohio.
+        </p>
+      </Section>
+
+      <Section title="Related pages" tone="ice">
+        <LinkGrid
+          links={[
+            { href: '/locations/greene-county', title: 'Greene County', subtitle: 'Every service the firm offers in the county' },
+            { href: '/personal-injury/car-accidents', title: 'Car accident claims', subtitle: 'Ohio crash claims and insurance' },
+            { href: '/personal-injury/motorcycle-accidents', title: 'Motorcycle accident claims', subtitle: 'Injured riders' },
+          ]}
+        />
+      </Section>
+
       <FAQ faqs={faqs} />
       <ContactCTA />
     </>

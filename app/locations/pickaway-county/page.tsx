@@ -4,11 +4,12 @@ import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 import ContactCTA from '@/components/ContactCTA';
+import { Callout, FactTable, LinkGrid, Section } from '@/components/practice';
 
 export const metadata: Metadata = {
   title: 'Pickaway County OVI & Criminal Defense',
   description:
-    'OVI, criminal, and personal injury defense in Pickaway County — Circleville, Ashville, and Williamsport. Circleville Municipal Court. Call (614) 285-5482.',
+    'OVI, criminal and personal injury cases in Pickaway County: Circleville, Ashville and Williamsport, at Circleville Municipal Court. Call (614) 285-5482.',
   keywords: [
     'Pickaway County OVI attorney',
     'Pickaway County criminal defense lawyer',
@@ -21,124 +22,129 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Pickaway County OVI & Criminal Defense | Jwayyed Law LLC',
+    description: 'OVI, criminal, injury and business matters in Pickaway County, from a former Circleville Municipal Prosecutor.',
     url: 'https://www.jjlawohio.com/locations/pickaway-county',
     images: [{ url: '/assets/Jwayyed_Logo_Inverted.JPEG', width: 1200, height: 630, alt: 'Jwayyed Law LLC' }],
   },
   alternates: { canonical: '/locations/pickaway-county' },
 };
 
-const breadcrumbItems = [
-  { label: 'Pickaway County', href: '/locations/pickaway-county' },
-];
+const breadcrumbItems = [{ label: 'Pickaway County', href: '/locations/pickaway-county' }];
 
 const faqs = [
   {
     question: 'What areas of Pickaway County does Jwayyed Law LLC serve?',
     answer:
-      'Jwayyed Law LLC serves clients throughout Pickaway County, including Circleville, Ashville, Williamsport, South Bloomfield, and surrounding communities. We appear at Circleville Municipal Court (115 E. Main St, Circleville, OH 43113) and the Pickaway County Court of Common Pleas. Our attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville, giving us unique insight into local court practices.',
+      "The firm serves clients throughout Pickaway County, including Circleville, Ashville, Williamsport, South Bloomfield and nearby communities. It appears at Circleville Municipal Court (115 E. Main St, Circleville, OH 43113) and the Pickaway County Court of Common Pleas. The firm's attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville.",
   },
   {
     question: 'What practice areas does the firm handle in Pickaway County?',
     answer:
-      'Our Pickaway County practice covers OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
+      'OVI/DUI defense, criminal misdemeanor defense (theft, domestic violence, assault, drug possession, disorderly conduct, open container), personal injury (car accidents, premises liability, wrongful death), and business formation and disputes. Call (614) 285-5482 to discuss your matter.',
   },
   {
     question: 'What are the OVI penalties in Circleville Municipal Court?',
     answer:
-      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Pickaway County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. High-tier OVI (BAC 0.17% or above) carries enhanced mandatory minimums. A second OVI within 10 years requires a minimum of 10 consecutive days in jail, fines of $715 to $1,625, and a 1 to 7 year suspension.',
+      'Under Ohio Revised Code 4511.19 and HB 37 (effective April 9, 2025), a first OVI conviction in Pickaway County carries a mandatory minimum of 3 days in jail or a certified Driver Intervention Program, fines of $565 to $1,075, and a license suspension of 1 to 3 years. A high-tier OVI (BAC 0.17% or above) carries higher mandatory minimums. A second OVI within 10 years requires at least 10 consecutive days in jail, fines of $715 to $1,625 and a 1 to 7 year suspension.',
   },
   {
     question: 'What is the 30-day ALS deadline for OVI arrests in Pickaway County?',
     answer:
-      'After an OVI arrest in Pickaway County, the arresting officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have only 30 days from the date of the ALS to appeal it at Circleville Municipal Court. Missing this deadline permanently waives your right to contest the suspension. Contact our office immediately after any OVI arrest.',
+      'After an OVI arrest in Pickaway County, the officer issues an Administrative License Suspension (ALS) under ORC 4511.191. You have 30 days from the date of the ALS to appeal it at Circleville Municipal Court. Missing the deadline permanently waives your right to contest the suspension. Call the office as soon as you can after an OVI arrest.',
   },
   {
     question: 'Where is Circleville Municipal Court located?',
     answer:
-      'Circleville Municipal Court is located at 115 E. Main Street, Circleville, OH 43113. The court handles misdemeanor criminal cases, OVI/DUI charges, and traffic violations for Circleville and surrounding Pickaway County communities. The Pickaway County Court of Common Pleas (207 S. Court St, Circleville, OH 43113) handles felony cases and civil matters over $15,000.',
+      'Circleville Municipal Court is at 115 E. Main Street, Circleville, OH 43113. It hears misdemeanor criminal cases, OVI/DUI charges and traffic violations for Circleville and surrounding Pickaway County communities. The Pickaway County Court of Common Pleas (207 S. Court St, Circleville, OH 43113) hears felony cases and civil matters over $15,000.',
   },
   {
     question: 'Why choose Jwayyed Law LLC for Pickaway County legal matters?',
     answer:
-      'Our attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville — giving us firsthand knowledge of how Pickaway County cases are prosecuted, what local prosecutors look for, and how Circleville Municipal Court operates. That insider perspective translates directly into stronger defense for our Pickaway County clients. Call (614) 285-5482 for a consultation.',
+      "The firm's attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville, and has seen from the inside how Pickaway County cases are prosecuted, what local prosecutors look for and how Circleville Municipal Court operates. Call (614) 285-5482 to schedule a consultation.",
+  },
+];
+
+const SERVICES = [
+  {
+    href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court',
+    title: 'OVI / DUI defense at Circleville Municipal Court',
+    subtitle: 'First through felony OVI, high-tier, refusal, ALS appeals',
+  },
+  {
+    href: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
+    title: 'Criminal misdemeanor defense in Pickaway County',
+    subtitle: 'Theft, domestic violence, assault, drug possession, disorderly conduct',
+  },
+  {
+    href: '/locations/pickaway-county/personal-injury-pickaway-county',
+    title: 'Personal injury in Pickaway County',
+    subtitle: 'Car accidents, slip and fall, wrongful death, premises liability',
+  },
+  {
+    href: '/locations/pickaway-county/business-formation-llc-pickaway-county',
+    title: 'Business formation and LLCs in Pickaway County',
+    subtitle: 'LLC formation, operating agreements, business planning',
   },
 ];
 
 export default function PickawayCountyLocationsPage() {
-
-
   return (
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <PageHero
-        title="Pickaway County Criminal Defense & OVI Attorney"
-        description="Experienced legal representation throughout Pickaway County — Circleville, Ashville, Williamsport, and surrounding communities. Our attorney previously served as Municipal Prosecutor in Circleville. OVI defense, criminal misdemeanor defense, and personal injury. Call (614) 285-5482."
+        title="Pickaway County criminal defense and OVI"
+        description="Criminal and OVI cases in Pickaway County are heard at Circleville Municipal Court, 115 E. Main St. The firm's attorney previously served as Circleville's Municipal Prosecutor."
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
+      <Section
+        title="What we handle in Pickaway County"
+        intro={
+          <p>
+            Pickaway County sits directly south of Columbus, with Circleville as the county seat. The firm represents defendants
+            throughout the county in criminal defense and civil matters.
+          </p>
+        }
+      >
+        <LinkGrid links={SERVICES} columns={2} />
+      </Section>
 
-            <h2 className="jw-serif text-3xl font-bold text-navy-950 mb-6">
-              Legal Services in Pickaway County, Ohio
-            </h2>
-            <p className="text-navy-950/80 mb-6 leading-relaxed">
-              Pickaway County sits directly south of Columbus, with Circleville as the county seat. Our attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville — giving Jwayyed Law LLC unique familiarity with how OVI and criminal cases are handled at <strong>Circleville Municipal Court</strong> (115 E. Main St, Circleville, OH 43113). We represent defendants throughout Pickaway County in both criminal defense and civil matters. Call{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>.
-            </p>
+      <Section title="Pickaway County courts" tone="ice">
+        <FactTable
+          title="Circleville Municipal Court"
+          rows={[
+            { label: 'Address', value: '115 E. Main St, Circleville, OH 43113' },
+            { label: 'Hears', value: 'Misdemeanor criminal cases, OVI/DUI charges and traffic violations' },
+            { label: 'Covers', value: 'Circleville and surrounding Pickaway County communities' },
+            { label: 'ALS appeals', value: 'Filed here within 30 days' },
+          ]}
+        />
+        <FactTable
+          title="Pickaway County Court of Common Pleas"
+          rows={[
+            { label: 'Address', value: '207 S. Court St, Circleville, OH 43113' },
+            { label: 'Hears', value: 'Felony cases and civil matters over $15,000' },
+          ]}
+        />
+        <LinkGrid
+          columns={2}
+          links={[
+            { href: '/courts/circleville-municipal-court', title: 'Circleville Municipal Court guide', subtitle: 'What to expect at the court' },
+            { href: '/courts/pickaway-county', title: 'Pickaway County courts', subtitle: 'Every court in the county' },
+          ]}
+        />
+      </Section>
 
-            <div className="not-prose space-y-4 mb-10">
-              <div className="border-l-4 border-sky-deep bg-ice p-5">
-                <h4 className="jw-serif text-lg font-bold text-navy-950 mb-3">
-                  Pickaway County Practice Areas
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
-                  {[
-                    {
-                      label: 'OVI / DUI Defense — Circleville Municipal Court',
-                      href: '/locations/pickaway-county/ovi-dui-defense-circleville-municipal-court',
-                      desc: 'First through felony OVI, high-tier, refusal, ALS appeals',
-                    },
-                    {
-                      label: 'Criminal Misdemeanor Defense — Pickaway County',
-                      href: '/locations/pickaway-county/criminal-misdemeanor-defense-circleville-municipal-court',
-                      desc: 'Theft, domestic violence, assault, drug possession, disorderly conduct',
-                    },
-                    {
-                      label: 'Personal Injury — Pickaway County',
-                      href: '/locations/pickaway-county/personal-injury-pickaway-county',
-                      desc: 'Car accidents, slip and fall, wrongful death, premises liability',
-                    },
-                    {
-                      label: 'Business Formation / LLC — Pickaway County',
-                      href: '/locations/pickaway-county/business-formation-llc-pickaway-county',
-                      desc: 'LLC formation, operating agreements, business planning',
-                    },
-                  ].map(({ label, href, desc }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="block p-4 border border-navy-950/10 hover:shadow-[inset_4px_0_0_#1f5fa8] transition-all group"
-                    >
-                      <span className="text-sm font-semibold text-navy-950 group-hover:text-sky-deep transition-colors block mb-1">
-                        {label}
-                      </span>
-                      <span className="text-xs text-navy-950/60 group-hover:text-navy-950/80 transition-colors">{desc}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <p className="text-navy-950/80 mb-8 leading-relaxed">
-              For OVI arrests in Pickaway County, the 30-day ALS appeal deadline is critical — contact us immediately after any OVI arrest. Reach Jwayyed Law LLC at{' '}
-              <a href="tel:6142855482" className="text-sky-deep underline hover:opacity-80">(614) 285-5482</a>{' '}
-              or{' '}
-              <Link href="/contact" className="text-sky-deep underline hover:opacity-80">schedule a consultation online</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section title="A former Circleville prosecutor">
+        <p>
+          The firm&rsquo;s attorney previously served as Municipal Prosecutor and Assistant Law Director for the City of Circleville.
+          That work gives the firm direct familiarity with how OVI and criminal cases are handled at Circleville Municipal Court.
+        </p>
+        <Callout title="After an OVI arrest, the clock is 30 days">
+          The administrative license suspension must be appealed at Circleville Municipal Court within 30 days, or the right to
+          challenge it is lost. Call <a href="tel:6142855482">(614) 285-5482</a> or{' '}
+          <Link href="/contact">schedule a consultation online</Link>.
+        </Callout>
+      </Section>
 
       <FAQ faqs={faqs} />
       <ContactCTA />
