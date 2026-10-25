@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ArrowLeft } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactCTA from '@/components/ContactCTA';
 import { teamMembers, getMemberBySlug } from '@/data/team-members';
@@ -26,7 +27,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${member.name} — ${member.title}`,
+    title: `${member.name}, ${member.title}`,
     description: member.shortBio,
     keywords: [
       member.name,
@@ -35,7 +36,7 @@ export async function generateMetadata({
       'Ohio legal team',
     ],
     openGraph: {
-      title: `${member.name} — ${member.title}`,
+      title: `${member.name}, ${member.title}`,
       description: member.shortBio,
       url: `https://www.jjlawohio.com/our-law-firm/our-attorneys/${slug}`,
       type: 'profile',
@@ -79,9 +80,6 @@ export default async function StaffProfilePage({
     url: `https://www.jjlawohio.com/our-law-firm/our-attorneys/${slug}`,
   };
 
-  // Other team members for the "meet the team" section
-  const otherMembers = teamMembers.filter((m) => m.slug !== slug).slice(0, 4);
-
   // Note: member.fullBio is static HTML from data/team-members.ts (not user input).
   return (
     <>
@@ -91,162 +89,56 @@ export default async function StaffProfilePage({
       />
       <Breadcrumbs items={breadcrumbItems} />
 
-      {/* ── Profile Header ─────────────────────────────────────────── */}
-      <section className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-navy-950 via-navy-950 to-navy-950">
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '24px 24px',
-          }}
-        />
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-sky-deep/10 rounded-full blur-3xl" />
-
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
-            {/* Photo */}
-            <div className="flex-shrink-0 w-full max-w-[320px] md:w-[300px] lg:w-[350px]">
-              <div className="relative aspect-[4/5] overflow-hidden ring-1 ring-white/10">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  sizes="(max-width: 768px) 80vw, 350px"
-                  className="object-cover object-top"
-                  quality={90}
-                  priority
-                />
-              </div>
+      <section className="jw jw-mark bg-navy-950 text-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-8 sm:pt-12 pb-16 sm:pb-24 grid gap-12 lg:grid-cols-12 lg:items-end">
+          <div className="jw-enter lg:col-span-4">
+            <div className="relative aspect-[4/5] max-w-sm overflow-hidden bg-navy-900">
+              <Image
+                src={member.image}
+                alt={member.imageAlt ?? member.name}
+                fill
+                sizes="(min-width: 1024px) 30vw, 80vw"
+                className="object-cover object-top"
+                priority
+              />
             </div>
-
-            {/* Info */}
-            <div className="flex-1 text-center md:text-left">
-              <span
-                className={`
-                  inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full mb-5
-                  font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
-                  ${
-                    member.role === 'Attorney'
-                      ? 'bg-sky-deep/20 text-sky'
-                      : member.role === 'Staff'
-                        ? 'bg-[#2d6a4f]/20 text-[#40916c]'
-                        : 'bg-white/10 text-white/80'
-                  }
-                `}
-              >
-                {member.role}
-              </span>
-
-              <h1 className="jw-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
-                {member.name}
-              </h1>
-              <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sky-deep text-lg font-semibold mb-6">
-                {member.title}
-              </p>
-
-              {/* Highlights */}
-              {member.highlights && (
-                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                  {member.highlights.map((h) => (
-                    <span
-                      key={h}
-                      className="text-xs font-medium text-white/80 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
-                    >
-                      {h}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
+          </div>
+          <div className="lg:col-span-8">
+            <p className="jw-enter text-sky font-semibold">{member.title}</p>
+            <h1 className="jw-enter jw-display mt-3 text-[clamp(2.5rem,1.6rem+3.6vw,5rem)] leading-[1.02]" style={{ '--d': '80ms' } as React.CSSProperties}>
+              {member.name}
+            </h1>
+            {member.highlights && (
+              <ul className="jw-enter mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2" style={{ '--d': '160ms' } as React.CSSProperties}>
+                {member.highlights.map((h) => (
+                  <li key={h} className="border-t border-white/15 pt-3 text-white/85">
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </section>
 
-      {/* ── Bio Content ────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Static HTML content from data/team-members.ts (not user input) */}
-          <div
-            className="
-              prose prose-lg max-w-none
-              font-['DM_Sans',_'Helvetica_Neue',_sans-serif]
-              prose-headings:jw-serif
-              prose-headings:text-navy-950
-              prose-p:text-navy-950/70
-              prose-p:leading-relaxed
-              prose-p:mb-5
-              prose-strong:text-navy-950
-            "
-            dangerouslySetInnerHTML={{ __html: member.fullBio }}
-          />
-
-          {/* Back link */}
-          <div className="mt-10 pt-6 border-t border-navy-950/10">
-            <Link
-              href="/our-law-firm/our-attorneys"
-              className="inline-flex items-center gap-2 text-sky-deep hover:text-navy-950 font-semibold transition-colors duration-300 font-['DM_Sans',_'Helvetica_Neue',_sans-serif]"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to Our Attorney
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Other Team Members ─────────────────────────────────────── */}
-      {otherMembers.length > 0 && (
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="jw-serif text-2xl sm:text-3xl font-bold text-navy-950 mb-10">
-            Meet the Rest of the Team
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {otherMembers.map((other) => (
+      <section className="bg-white text-navy-950 py-16 sm:py-24">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 grid gap-10 lg:grid-cols-12">
+          <h2 className="jw-display lg:col-span-4 text-[clamp(1.875rem,1.3rem+2vw,3rem)] leading-[1.08]">Biography</h2>
+          <div className="lg:col-span-8">
+            {/* Static HTML from data/team-members.ts (not user input). */}
+            <div className="jw-prose" dangerouslySetInnerHTML={{ __html: member.fullBio }} />
+            <p className="mt-10">
               <Link
-                key={other.slug}
-                href={other.profileLink}
-                className="group"
+                href="/our-law-firm/our-attorneys"
+                className="inline-flex items-center gap-2 font-semibold text-sky-deep hover:text-navy-950 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep"
               >
-                <div className="bg-navy-950 overflow-hidden transition-all duration-500 hover:-translate-y-1">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-navy-950">
-                    <Image
-                      src={other.image}
-                      alt={other.name}
-                      fill
-                      sizes="(max-width: 640px) 50vw, 25vw"
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-                      quality={80}
-                    />
-                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-950 to-transparent" />
-                  </div>
-                  <div className="p-4 sm:p-5">
-                    <h3 className="jw-serif text-lg font-bold text-white group-hover:text-sky transition-colors duration-300">
-                      {other.name}
-                    </h3>
-                    <p className="font-['DM_Sans',_'Helvetica_Neue',_sans-serif] text-sky-deep text-xs font-semibold tracking-wide mt-1">
-                      {other.title}
-                    </p>
-                  </div>
-                </div>
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                Back to Our Attorney
               </Link>
-            ))}
+            </p>
           </div>
         </div>
       </section>
-      )}
 
       {/* ── Contact CTA ────────────────────────────────────────────── */}
       <ContactCTA />
