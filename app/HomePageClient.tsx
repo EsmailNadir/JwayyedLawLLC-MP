@@ -226,6 +226,14 @@ function MobileCallBar() {
   );
 }
 
+/** Gathers the faint JL mark pattern into one corner of a light section. */
+function markCorner(at: string, opacity: number): React.CSSProperties {
+  return {
+    '--jw-mark-fade': `radial-gradient(ellipse 55% 70% at ${at}, #000 10%, transparent 100%)`,
+    '--jw-mark-opacity': opacity,
+  } as React.CSSProperties;
+}
+
 /** Counts a figure up from zero. The server HTML holds the real figure. */
 function countUp(el: HTMLElement) {
   const to = Number(el.dataset.count);
@@ -359,7 +367,7 @@ export default function HomePageClient() {
       </div>
 
       {/* ======================= WHY CALL (bento) ======================= */}
-      <section className={`${SECTION} bg-white`} aria-labelledby="why-heading">
+      <section className={`jw-mark jw-mark--navy ${SECTION} bg-white`} style={markCorner('100% 0%', 0.05)} aria-labelledby="why-heading">
         <div className={FRAME}>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end mb-14">
             <h2 id="why-heading" className="reveal-title jw-display lg:col-span-8 text-[length:var(--step-head)]">
@@ -452,7 +460,7 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= PRACTICE AREAS (pinned title) ======================= */}
-      <section className={`${SECTION} bg-ice`} aria-labelledby="practice-heading">
+      <section className={`jw-mark jw-mark--navy ${SECTION} bg-ice`} style={markCorner('0% 100%', 0.06)} aria-labelledby="practice-heading">
         <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16`}>
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-32">
@@ -559,7 +567,7 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= RESULTS (white) ======================= */}
-      <section className={`${SECTION} bg-white`} aria-labelledby="results-heading">
+      <section className={`jw-mark jw-mark--navy ${SECTION} bg-white`} style={markCorner('100% 100%', 0.05)} aria-labelledby="results-heading">
         <div className={FRAME}>
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
             <h2 id="results-heading" className="reveal-title jw-display lg:col-span-7 text-[length:var(--step-head)]">
@@ -696,7 +704,7 @@ export default function HomePageClient() {
       </figure>
 
       {/* ======================= CONTACT + COURTS (white) ======================= */}
-      <section className={`${SECTION} bg-white`} aria-labelledby="contact-heading">
+      <section className={`jw-mark jw-mark--navy ${SECTION} bg-white`} style={markCorner('0% 0%', 0.05)} aria-labelledby="contact-heading">
         <div className={`${FRAME} grid gap-12 lg:grid-cols-12 lg:gap-16`}>
           <div className="lg:col-span-5">
             <h2 id="contact-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
@@ -743,7 +751,7 @@ export default function HomePageClient() {
       </section>
 
       {/* ======================= CLOSING (sky) ======================= */}
-      <section className="bg-sky text-navy-950" aria-labelledby="closing-heading">
+      <section className="jw-mark jw-mark--navy bg-sky text-navy-950" style={{ '--jw-mark-opacity': 0.09 } as React.CSSProperties} aria-labelledby="closing-heading">
         <div className={`${FRAME} py-[clamp(88px,9vw,152px)] grid gap-10 lg:grid-cols-12 lg:items-end`}>
           <h2 id="closing-heading" className="reveal-title jw-display lg:col-span-7 text-[1.875rem] sm:text-[length:var(--step-head)]">
             <Words text="Facing a charge or a claim?" />

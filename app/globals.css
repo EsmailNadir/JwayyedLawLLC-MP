@@ -724,3 +724,8 @@ body:has(.bg-gray-100) {
   -webkit-mask-image: var(--jw-mark-fade, linear-gradient(to left, #000 15%, transparent 85%));
   mask-image: var(--jw-mark-fade, linear-gradient(to left, #000 15%, transparent 85%));
 }
+
+/* The same mark in navy, for the white, ice and sky fields. */
+.jw-mark--navy::before {
+  background-image: url('/assets/jl-monogram-tile-navy.png');
+}
