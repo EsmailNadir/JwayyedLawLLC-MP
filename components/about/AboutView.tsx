@@ -6,6 +6,7 @@ import PageHero from '@/components/PageHero';
 import ContactCTA from '@/components/ContactCTA';
 import OVIReviews from '@/components/OVIReviews';
 import NCDDBadge from '@/components/NCDDBadge';
+import SpeechFeature from '@/components/about/SpeechFeature';
 import { PointGrid, Section, Steps } from '@/components/practice';
 
 /*
@@ -34,7 +35,7 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
       <Breadcrumbs items={breadcrumbs} />
       <PageHero
         title="Attorney Jwayyed Jwayyed"
-        description="A lifelong Ohioan and former prosecutor who now represents clients across Ohio. Licensed since 2019, Ohio Bar #0098678."
+        description="A lifelong Ohioan and former prosecutor who now represents clients across Ohio. Licensed in Ohio since 2019."
       />
 
       {/* Portrait and story */}
@@ -67,10 +68,9 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
               </p>
               <p>
                 In law school he interned at the Franklin County Public Defender&rsquo;s Office and at Safe Auto Insurance, working
-                both public and private sides of the law. Since he was licensed in 2019 (Ohio Bar #0098678), he has worked at the
-                Columbus City Attorney&rsquo;s Office and at Frost Brown Todd, a major regional law firm. He served as Municipal
-                Prosecutor and Assistant Law Director for the City of Circleville, and as Legal Director for a civil rights
-                organization, where his cases involved discrimination in employment and education. In 2023 he was selected for the
+                both public and private sides of the law. Since he was licensed in 2019, he has prosecuted across central Ohio
+                for seven years, in eight jurisdictions, including as Municipal Prosecutor and Assistant Law Director for the City
+                of Circleville. He has also served as Legal Director for a civil rights organization, where his cases involved discrimination in employment and education. In 2023 he was selected for the
                 Ohio State Bar Association (OSBA) Leadership Academy.
               </p>
               <p>
@@ -122,9 +122,8 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
         <Steps
           steps={[
             { title: 'Law school', body: 'Interned at the Franklin County Public Defender’s Office and at Safe Auto Insurance.' },
-            { title: 'Licensed in Ohio, 2019', body: 'Ohio Bar #0098678.' },
-            { title: 'Columbus City Attorney’s Office', body: 'Followed by Frost Brown Todd, a major regional law firm.' },
-            { title: 'Prosecutor and Assistant Law Director', body: 'Municipal Prosecutor and Assistant Law Director for the City of Circleville, and prosecutor for the communities above.' },
+            { title: 'Licensed in Ohio, 2019', body: 'Admitted to practice law in Ohio.' },
+            { title: 'Prosecutor across central Ohio, 7 years', body: 'Prosecuted for eight jurisdictions, including as Municipal Prosecutor and Assistant Law Director for the City of Circleville.' },
             { title: 'Legal Director, civil rights organization', body: 'Cases involving discrimination in employment and education.' },
             { title: 'OSBA Leadership Academy, 2023', body: 'One of 27 attorneys in the 2023 class.' },
             { title: 'Jwayyed Law LLC', body: 'His own practice, representing clients across Ohio.' },
@@ -146,6 +145,7 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
             </h2>
           </div>
           <div className="lg:col-span-8">
+            <SpeechFeature />
             <div id="accolades" className="scroll-mt-28 grid gap-8 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] items-center bg-ice p-6 sm:p-10">
               <Image
                 src="/assets/jwayyed-law-llc-plaque.png"
@@ -174,25 +174,12 @@ export default function AboutView({ breadcrumbs }: { breadcrumbs: { label: strin
                   body: 'CALI Award for Excellence for the top grade in Interviewing and Counseling at Capital University Law School.',
                 },
                 { title: 'Education', body: 'Juris Doctor, Capital University Law School. B.A. in Political Science, University of Akron.' },
-                { title: 'Memberships', body: 'Columbus Bar Association. Ohio State Bar Association. National College for DUI Defense.' },
+                { title: 'Memberships', body: 'Ohio State Bar Association. Columbus Bar Association. National Association of Criminal Defense Lawyers. National College for DUI Defense.' },
               ]}
             />
             <div className="mt-2">
               <NCDDBadge variant="card" />
             </div>
-            <figure className="mt-10 max-w-[20rem]">
-              <video
-                src="/videos/osba-speech.mp4"
-                className="w-full aspect-[9/16] object-cover bg-navy-950"
-                controls
-                playsInline
-                preload="metadata"
-                aria-label="Attorney Jwayyed speaking at an Ohio State Bar Association event"
-              />
-              <figcaption className="mt-3 text-[length:var(--step-small)] text-navy-950/65">
-                Speaking at an Ohio State Bar Association event.
-              </figcaption>
-            </figure>
           </div>
         </div>
       </section>

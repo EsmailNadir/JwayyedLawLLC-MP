@@ -74,7 +74,7 @@ const RELATED = [
   { href: '/business/business-litigation', title: 'Business litigation', subtitle: 'Commercial disputes and business lawsuits' },
   { href: '/business/business-dissolution', title: 'Business dissolution', subtitle: 'Winding down and dissolving an Ohio business' },
   { href: '/business/contract-drafting-review', title: 'Contract drafting and review', subtitle: 'Business contracts, NDAs and vendor agreements' },
-  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Claims when a partnership agreement is broken' },
+  { href: '/business/contract-drafting-review', title: 'Contract drafting and review', subtitle: 'Partnership and operating agreements' },
 ];
 
 export default function PartnershipDisputesPage() {
@@ -178,7 +178,7 @@ export default function PartnershipDisputesPage() {
           ]}
         />
         <p>
-          Related services include <Link href="/civil/breach-of-contract">breach of contract claims</Link>. Call{' '}
+          Related services include <Link href="/business/contract-drafting-review">contract drafting and review</Link>. Call{' '}
           <a href="tel:6142855482">(614) 285-5482</a> or <Link href="/contact">schedule a consultation online</Link>.
         </p>
       </Section>

@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     'OVI defense attorney Ohio',
     'DUI attorney Columbus Ohio',
     'personal injury attorney Ohio',
-    'civil litigation attorney Columbus',
     'business law attorney Ohio',
     'estate planning attorney Columbus',
     'trusts attorney Ohio',

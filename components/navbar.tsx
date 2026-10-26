@@ -169,7 +169,7 @@ export default function Navbar() {
     <>
       <header className={`jw sticky top-0 z-50 w-full text-white transition-colors duration-300 ${overlay ? 'bg-transparent' : 'bg-navy-950'}`}>
         <div ref={navRef} className="max-w-[1440px] mx-auto px-5 sm:px-8">
-          <div className="flex items-center justify-between h-16 xl:h-20 gap-6">
+          <div className="flex items-center justify-between h-16 xl:h-20 gap-3 sm:gap-6">
             <Link href="/" className={`flex-shrink-0 flex items-center ${FOCUS}`} aria-label="Jwayyed Law LLC home">
               <Image
                 src="/assets/jwayyed-logo-light.png"
@@ -177,8 +177,8 @@ export default function Navbar() {
                 width={2521}
                 height={407}
                 priority
-                sizes="200px"
-                className="h-7 xl:h-8 w-auto"
+                sizes="(min-width: 1280px) 280px, (min-width: 640px) 250px, 200px"
+                className="h-7 sm:h-10 xl:h-11 w-auto"
               />
             </Link>
 
@@ -199,7 +199,7 @@ export default function Navbar() {
               </ul>
             </nav>
 
-            <div className="flex items-center gap-2 flex-shrink-0">
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -565,7 +565,7 @@ function MobileDrawer({
       >
         <div className="flex items-center justify-between pl-5 pr-2 h-16 bg-navy-950 text-white flex-shrink-0">
           <Link href="/" onClick={onClose} aria-label="Jwayyed Law LLC home" className={`flex items-center ${FOCUS}`}>
-            <Image src="/assets/jwayyed-logo-light.png" alt="Jwayyed Law LLC" width={2521} height={407} sizes="150px" className="h-6 w-auto" />
+            <Image src="/assets/jwayyed-logo-light.png" alt="Jwayyed Law LLC" width={2521} height={407} sizes="200px" className="h-8 w-auto" />
           </Link>
           <button
             ref={closeButtonRef}

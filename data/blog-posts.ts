@@ -1486,7 +1486,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Defending against a CPO</h2>
       <p>If a CPO petition has been filed against you, you have the right to contest it at the full hearing. An order can affect your housing, your parental rights, your job (especially in law enforcement, education or a licensed profession) and your firearm rights. An attorney can review the evidence, find weaknesses in the petitioner&apos;s allegations, cross-examine witnesses, present your evidence, and argue against the order or against how broad its terms are. If you do not appear at the full hearing, a default CPO is usually issued against you, so do not ignore the court date.</p>
 
-      <p>Whether you need a protection order for your safety or are responding to one filed against you, Jwayyed Law LLC handles <a href="/civil">civil litigation</a> matters, including protection order proceedings, throughout Ohio. Call (614) 285-5482 or <a href="/contact">schedule a consultation</a>.</p>
+      <p>If you have questions about a protection order, call (614) 285-5482 or <a href="/contact">contact the firm</a>.</p>
     `,
   },
   {

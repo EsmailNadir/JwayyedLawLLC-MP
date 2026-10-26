@@ -560,20 +560,30 @@ body:has(.bg-gray-100) {
     transform: translateY(12%);
   }
 }
+@keyframes jw-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes jw-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 @keyframes jw-drift {
   from {
     transform: translateY(-4%);
   }
   to {
     transform: translateY(4%);
-  }
-}
-@keyframes jw-drift-wide {
-  from {
-    transform: translateY(-8%) scale(1.2);
-  }
-  to {
-    transform: translateY(8%) scale(1.2);
   }
 }
 
@@ -591,14 +601,10 @@ body:has(.bg-gray-100) {
     .jw-hero-drift {
       animation-name: jw-hero-drift;
     }
-    .jw-drift,
-    .jw-drift-wide {
+    .jw-drift {
       animation: jw-drift linear both;
       animation-timeline: view();
       animation-range: cover;
-    }
-    .jw-drift-wide {
-      animation-name: jw-drift-wide;
     }
   }
 }

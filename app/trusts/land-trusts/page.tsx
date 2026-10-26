@@ -81,7 +81,6 @@ const faqs = [
 const RELATED = [
   { href: '/trusts', title: 'All trust services', subtitle: 'Every type of trust the firm sets up' },
   { href: '/trusts/revocable-living-trusts', title: 'Revocable living trusts', subtitle: 'Probate avoidance for every asset, not just real estate' },
-  { href: '/civil/real-estate-disputes', title: 'Real estate disputes', subtitle: 'When a property deal or title goes wrong' },
   { href: '/other-services/estate-planning-wills', title: 'Estate planning and wills', subtitle: 'The plan a land trust fits into' },
 ];
 

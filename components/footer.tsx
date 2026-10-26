@@ -22,14 +22,14 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
     ],
   },
   {
-    heading: 'Injury & Civil',
+    heading: 'Personal Injury',
     links: [
       { href: '/personal-injury', label: 'Personal Injury' },
       { href: '/personal-injury/car-accidents', label: 'Car Accidents' },
       { href: '/personal-injury/slip-and-fall', label: 'Slip & Fall' },
-      { href: '/civil', label: 'Civil Litigation' },
-      { href: '/civil/appeals', label: 'Civil Appeals' },
-      { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
+      { href: '/personal-injury/truck-accidents', label: 'Truck Accidents' },
+      { href: '/personal-injury/motorcycle-accidents', label: 'Motorcycle Accidents' },
+      { href: '/personal-injury/wrongful-death', label: 'Wrongful Death' },
     ],
   },
   {
@@ -78,7 +78,7 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
 const LINK = 'hover:text-sky hover:underline underline-offset-4 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky';
 
 /**
- * The close of every page: the name first, at full width, in the navy close
+ * The close of every page: the firm's logo first, in the navy close
  * after the sky call band; then the ways to reach the firm, the link columns,
  * the trust marks and the legal line.
  */
@@ -86,9 +86,14 @@ export default function Footer() {
   return (
     <footer className="jw jw-mark bg-navy-950 text-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-8">
-        <p className="jw-display whitespace-nowrap text-[clamp(3.5rem,15.2vw,13.5rem)] leading-[0.82]" aria-hidden="true">
-          Jwayyed Law
-        </p>
+        <Image
+          src="/assets/jwayyed-logo-light.png"
+          alt="Jwayyed Law LLC"
+          width={2521}
+          height={407}
+          sizes="(min-width: 640px) 500px, 300px"
+          className="h-12 sm:h-20 w-auto"
+        />
 
         <div className="mt-16 sm:mt-20 grid gap-14 lg:grid-cols-12 lg:gap-8">
           <ul className="lg:col-span-5 grid content-start gap-3 text-[length:var(--step-lead)] leading-tight font-medium text-sky">
@@ -181,17 +186,6 @@ export default function Footer() {
               <Link href="/privacy" className={`underline underline-offset-4 ${LINK}`}>
                 Privacy Policy
               </Link>
-            </p>
-            <p>
-              Picture:{' '}
-              <a href="https://commons.wikimedia.org/w/index.php?curid=221770" className={`underline ${LINK}`}>
-                Ohio Statehouse
-              </a>
-              ,{' '}
-              <a href="https://creativecommons.org/licenses/by-sa/3.0/" className={`underline ${LINK}`}>
-                CC BY-SA 3.0
-              </a>
-              , via Wikimedia Commons.
             </p>
           </div>
           <div className="lg:col-span-3 lg:text-right">

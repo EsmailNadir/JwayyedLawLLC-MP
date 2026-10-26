@@ -84,7 +84,7 @@ const faqs = [
 const RELATED = [
   { href: '/other-services', title: 'All other legal services', subtitle: 'Estate planning, probate and dispute resolution' },
   { href: '/other-services/mediation', title: 'Mediation in Ohio', subtitle: 'Confidential negotiation with a neutral mediator' },
-  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Contract claims in Ohio courts' },
+  { href: '/business/contract-drafting-review', title: 'Contract drafting and review', subtitle: 'Arbitration clauses and the contracts around them' },
   { href: '/business/business-litigation', title: 'Business litigation', subtitle: 'Business disputes that go to court' },
 ];
 

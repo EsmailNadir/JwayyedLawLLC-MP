@@ -92,7 +92,7 @@ export default function OtherServicesPage() {
         tone="ice"
         intro={
           <p>
-            Alongside criminal defense, OVI/DUI defense, personal injury, civil litigation and business law, Jwayyed Law LLC handles
+            Alongside criminal defense, OVI/DUI defense, personal injury and business law, Jwayyed Law LLC handles
             estate planning, probate administration and dispute resolution throughout Ohio.
           </p>
         }

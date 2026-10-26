@@ -110,8 +110,8 @@ Enclosures: Medical Records, Medical Bills, Police Report, Photographs, Proof of
     title: 'Cease and Desist Letter (Debt Collector Harassment)',
     description:
       'The Fair Debt Collection Practices Act (FDCPA) gives consumers the right to demand that a debt collector stop contacting them. Once a collector receives this letter, they may generally only contact you to confirm they will stop or to notify you of a specific legal action. Sending this letter by certified mail creates a record of your demand.',
-    practiceHref: '/civil',
-    practiceLabel: 'Civil Litigation',
+    practiceHref: '/contact',
+    practiceLabel: 'Contact the Firm',
     templateText: `[YOUR NAME]
 [YOUR ADDRESS]
 [CITY, STATE, ZIP]
@@ -208,8 +208,8 @@ Sincerely,
     title: 'Notice of Intent to Sue (Pre-Suit / Small Claims)',
     description:
       'Before filing in small claims court (or any court), sending a formal notice of intent gives the other party a final chance to resolve the dispute and demonstrates good faith on your part. Ohio small claims court handles disputes up to $6,000. This letter is also useful as a general pre-suit notice in any civil matter.',
-    practiceHref: '/civil',
-    practiceLabel: 'Civil Litigation',
+    practiceHref: '/contact',
+    practiceLabel: 'Contact the Firm',
     templateText: `[YOUR NAME]
 [YOUR ADDRESS]
 [CITY, STATE, ZIP]
@@ -261,8 +261,8 @@ Sincerely,
     title: 'Employment Dispute Grievance Letter',
     description:
       'If you have experienced workplace discrimination, harassment, retaliation, unpaid wages, or another employment law violation, documenting your complaint in writing is a critical first step. This letter creates a formal record, puts your employer on notice, and may be required before you can file a claim with the EEOC or Ohio Civil Rights Commission.',
-    practiceHref: '/civil',
-    practiceLabel: 'Civil Litigation',
+    practiceHref: '/contact',
+    practiceLabel: 'Contact the Firm',
     templateText: `[YOUR NAME]
 [YOUR JOB TITLE / DEPARTMENT]
 [YOUR WORK ADDRESS OR HOME ADDRESS]

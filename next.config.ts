@@ -28,12 +28,20 @@ const nextConfig = {
       { source: '/about/legal-assistant', destination: '/our-law-firm/our-attorneys', permanent: true },
       // /about duplicated /our-law-firm/about-us; one canonical About page.
       { source: '/about', destination: '/our-law-firm/about-us', permanent: true },
-      { source: '/civil/landlord-tenant-disputes', destination: '/civil', permanent: true },
-      { source: '/civil/defamation', destination: '/civil', permanent: true },
+      // Civil practice is off the site for now (pages kept in _archived/civil). Temporary
+      // redirects, so the URLs can return if the firm brings civil work back.
+      { source: '/civil/breach-of-contract', destination: '/business/contract-drafting-review', permanent: false },
+      { source: '/civil/construction-disputes', destination: '/business/business-litigation', permanent: false },
+      { source: '/civil/employment-disputes', destination: '/business/employment-agreements', permanent: false },
+      { source: '/civil/civil-protection-orders', destination: '/criminal-defense/domestic-violence', permanent: false },
+      { source: '/civil', destination: '/services', permanent: false },
+      { source: '/civil/:path((?!landlord-tenant-disputes|defamation).*)', destination: '/services', permanent: false },
+      { source: '/civil/landlord-tenant-disputes', destination: '/services', permanent: true },
+      { source: '/civil/defamation', destination: '/services', permanent: true },
       // Removed landlord-tenant articles and old or mistyped URLs that Google still lists.
-      { source: '/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws', destination: '/civil', permanent: true },
-      { source: '/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights', destination: '/civil', permanent: true },
-      { source: '/our-law-firm/blog/landlord-wont-fix-heat-repairs-ohio', destination: '/civil', permanent: true },
+      { source: '/our-law-firm/blog/ohio-landlord-tenant-security-deposit-laws', destination: '/services', permanent: true },
+      { source: '/our-law-firm/blog/landlord-duty-repair-ohio-tenant-rights', destination: '/services', permanent: true },
+      { source: '/our-law-firm/blog/landlord-wont-fix-heat-repairs-ohio', destination: '/services', permanent: true },
       { source: '/our-law-firm/blog/charged-with-assault-what-next', destination: '/our-law-firm/blog/charged-with-assault-what-happens-next', permanent: true },
       { source: '/our-law-firm/blog/ohio-slip-and-fall-laws', destination: '/our-law-firm/blog/ohio-slip-and-fall-laws-property-owners', permanent: true },
       { source: '/our-law-firm/our-attorneys/layan-khairi', destination: '/our-law-firm/our-attorneys', permanent: true },

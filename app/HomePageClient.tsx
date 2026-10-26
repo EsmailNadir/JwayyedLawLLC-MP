@@ -41,7 +41,6 @@ const AREAS: { nav: string; title: string; image: string; alt: string }[] = [
   { nav: 'OVI / DUI', title: 'OVI / DUI Defense', image: '/assets/dui-blog.jpg', alt: 'View from a driver’s seat at night' },
   { nav: 'Criminal Defense', title: 'Criminal Defense', image: '/assets/criminal.jpg', alt: 'Columns of a courthouse' },
   { nav: 'Personal Injury', title: 'Personal Injury', image: '/assets/injury.jpg', alt: 'Columns and skylight of a public hall' },
-  { nav: 'Civil', title: 'Civil Litigation', image: '/assets/courthouse-blog.jpg', alt: 'The word Ohio carved in courthouse stone' },
   { nav: 'Business', title: 'Business Law', image: '/assets/contracts.webp', alt: 'A contract with a pen, a gavel and scales' },
   { nav: 'Other Services', title: 'Estate Planning & Probate', image: '/assets/estatePlanning.webp', alt: 'A gavel on a desk' },
 ];
@@ -60,16 +59,19 @@ const TRUST = [
   'BusinessRate Best of 2026',
   'Former municipal prosecutor',
   'Licensed in Ohio since 2019',
-  'Ohio Bar #0098678',
+  'Ohio State Bar Association member',
+  'NACDL member',
 ];
 
 const CREDENTIALS = [
   'Former Municipal Prosecutor',
   'Former Assistant Law Director, City of Circleville',
-  'Licensed in Ohio since 2019, Bar #0098678',
+  'Licensed in Ohio since 2019',
   'J.D., Capital University Law School',
   'OSBA Leadership Academy, 2023',
   'National College for DUI Defense, General Member',
+  'National Association of Criminal Defense Lawyers, Member',
+  'Ohio State Bar Association, Member',
 ];
 
 const RESULTS = [
@@ -309,8 +311,8 @@ export default function HomePageClient() {
             <br className="hidden sm:block" /> <Words text="Building Your Future." className="text-sky" start={3} />
           </h1>
           <p className="hero-follow mt-7 mx-auto max-w-[46rem] text-[length:var(--step-lead)] leading-snug text-white/85 text-pretty">
-            Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, civil, business, and
-            estate matters.
+            Strategic representation across Ohio in criminal defense, OVI/DUI, personal injury, business, and estate
+            matters.
           </p>
           <div className="hero-follow mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
@@ -605,7 +607,8 @@ export default function HomePageClient() {
 
       {/* ======================= REVIEWS (navy) ======================= */}
       <section
-        className={`jw-mark ${SECTION} bg-navy-900 text-white overflow-hidden`}
+        id="reviews"
+        className={`jw-mark ${SECTION} bg-navy-900 text-white overflow-hidden scroll-mt-16`}
         style={{ '--jw-mark-fade': 'radial-gradient(ellipse 70% 55% at 50% 0%, #000 20%, transparent 100%)' } as React.CSSProperties}
         aria-labelledby="reviews-heading"
       >
@@ -695,14 +698,6 @@ export default function HomePageClient() {
           </div>
         </div>
       </section>
-
-      {/* ======================= THE PLACE ======================= */}
-      <figure className="statehouse relative h-[64svh] min-h-[400px] overflow-hidden bg-navy-950">
-        <Image src="/assets/found/ohio-statehouse.jpg" alt="The Ohio Statehouse in Columbus" fill sizes="100vw" className="jw-drift-wide object-cover" />
-        <figcaption className={`${FRAME} absolute inset-x-0 bottom-0 pb-6 text-[length:var(--step-small)] text-white`}>
-          <span className="bg-navy-950 px-3 py-1.5">The Ohio Statehouse, Columbus.</span>
-        </figcaption>
-      </figure>
 
       {/* ======================= CONTACT + COURTS (white) ======================= */}
       <section className={`jw-mark jw-mark--navy ${SECTION} bg-white`} style={markCorner('0% 0%', 0.05)} aria-labelledby="contact-heading">

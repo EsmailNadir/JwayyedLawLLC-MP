@@ -101,15 +101,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/personal-injury/catastrophic-injuries', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
 
     // Civil
-    { url: '/civil', priority: 0.9, changeFrequency: 'weekly' as const, lastModified: d.service },
-    { url: '/civil/breach-of-contract', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/real-estate-disputes', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/evictions', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/construction-disputes', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/debt-collection-defense', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/employment-disputes', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/civil-protection-orders', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
-    { url: '/civil/appeals', priority: 0.8, changeFrequency: 'monthly' as const, lastModified: d.service },
 
     // Business
     { url: '/business', priority: 0.9, changeFrequency: 'weekly' as const, lastModified: d.service },

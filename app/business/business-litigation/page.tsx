@@ -74,7 +74,7 @@ const RELATED = [
   { href: '/business/shareholder-disputes', title: 'Shareholder disputes', subtitle: 'Minority shareholder rights and corporate disputes' },
   { href: '/business/partnership-disputes', title: 'Partnership disputes', subtitle: 'Partnership dissolution and fiduciary duty claims' },
   { href: '/business/non-compete-agreements', title: 'Non-compete agreements', subtitle: 'Enforcing and defending restrictive covenants' },
-  { href: '/civil/breach-of-contract', title: 'Breach of contract', subtitle: 'Elements, deadlines and remedies for Ohio contract claims' },
+  { href: '/business/contract-drafting-review', title: 'Contract drafting and review', subtitle: 'Contracts that prevent disputes before they start' },
 ];
 
 export default function BusinessLitigationPage() {

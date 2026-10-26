@@ -1,6 +1,7 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
 import Analytics from "@/components/Analytics";
+import ReviewToast from '@/components/ReviewToast';
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -204,17 +205,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {
             "@type": "EducationalOccupationalCredential",
             "credentialCategory": "license",
-            "description": "Licensed attorney, State of Ohio (Bar #0098678)",
+            "description": "Licensed attorney, State of Ohio, since 2019",
             "recognizedBy": {
               "@type": "Organization",
               "name": "Supreme Court of Ohio"
             }
           }
         ],
-        "memberOf": {
-          "@type": "Organization",
-          "name": "Ohio State Bar Association"
-        },
+        "memberOf": [
+          { "@type": "Organization", "name": "Ohio State Bar Association" },
+          { "@type": "Organization", "name": "Columbus Bar Association" },
+          { "@type": "Organization", "name": "National Association of Criminal Defense Lawyers" },
+          { "@type": "Organization", "name": "National College for DUI Defense" }
+        ],
         "sameAs": [
           "https://www.linkedin.com/in/jwayyed-jwayyed"
         ],
@@ -259,6 +262,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-S37MJ180WG');`}
         </Script>
+        <ReviewToast />
         <Analytics />
       </body>
     </html>

@@ -85,7 +85,6 @@ const faqs = [
 
 const RELATED = [
   { href: '/criminal-defense/assault-charges', title: 'Assault charges', subtitle: 'Simple and aggravated assault defense in Ohio' },
-  { href: '/civil/civil-protection-orders', title: 'Civil protection orders', subtitle: 'CPO defense and modification in Ohio courts' },
   { href: '/criminal-defense/expungement-record-sealing', title: 'Expungement and record sealing', subtitle: 'Clearing a criminal record under Ohio law' },
   { href: '/criminal-defense/criminal-trespass', title: 'Criminal trespass', subtitle: 'Trespass and unauthorized entry defense' },
 ];

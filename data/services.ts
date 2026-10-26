@@ -103,6 +103,7 @@ export const personalInjuryServices: ServiceCard[] = [
   { title: 'Catastrophic Injuries', href: '/personal-injury/catastrophic-injuries', description: 'Life-changing and severe injuries.' },
 ];
 
+// Civil practice is archived (_archived/civil); kept so the section can return.
 export const civilServices: ServiceCard[] = [
   { title: 'Breach of Contract', href: '/civil/breach-of-contract', description: 'Disputes involving broken agreements.' },
   { title: 'Real Estate Disputes', href: '/civil/real-estate-disputes', description: 'Conflicts over real property and transactions.' },

@@ -92,8 +92,8 @@ const serviceLinks: Record<string, { href: string; label: string }[]> = {
     { href: '/business/contract-drafting-review', label: 'Contract Drafting & Review' },
   ],
   'Civil Litigation': [
-    { href: '/civil', label: 'Civil Litigation Overview' },
-    { href: '/civil/breach-of-contract', label: 'Breach of Contract' },
+    { href: '/criminal-defense/domestic-violence', label: 'Domestic Violence Defense' },
+    { href: '/contact', label: 'Contact the Firm' },
   ],
   'Trusts': [
     { href: '/trusts', label: 'Trusts Overview' },

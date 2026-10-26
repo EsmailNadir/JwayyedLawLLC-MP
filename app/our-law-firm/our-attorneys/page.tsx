@@ -35,7 +35,6 @@ const practiceAreas = [
   { title: 'OVI / DUI defense', href: '/ovi-dui-defense' },
   { title: 'Criminal defense', href: '/criminal-defense' },
   { title: 'Personal injury', href: '/personal-injury' },
-  { title: 'Civil litigation', href: '/civil' },
   { title: 'Business law', href: '/business' },
   { title: 'Estate planning and trusts', href: '/trusts' },
   { title: 'Probate', href: '/other-services/probate' },

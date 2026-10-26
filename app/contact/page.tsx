@@ -9,7 +9,7 @@ import OfficeMap from '@/components/contact/OfficeMap';
 export const metadata: Metadata = {
   title: { absolute: 'Contact Jwayyed Law LLC | Schedule a Consultation' },
   description:
-    'Schedule a consultation with Jwayyed Law LLC for OVI/DUI, criminal, injury, civil, business or estate matters anywhere in Ohio. Call (614) 285-5482.',
+    'Schedule a consultation with Jwayyed Law LLC for OVI/DUI, criminal, injury, business or estate matters anywhere in Ohio. Call (614) 285-5482.',
   keywords: [
     'contact attorney Ohio',
     'schedule consultation Ohio',
@@ -64,7 +64,6 @@ const MATTERS = [
   { label: 'OVI / DUI defense', href: '/ovi-dui-defense' },
   { label: 'Criminal defense', href: '/criminal-defense' },
   { label: 'Personal injury', href: '/personal-injury' },
-  { label: 'Civil litigation', href: '/civil' },
   { label: 'Business law', href: '/business' },
   { label: 'Trusts', href: '/trusts' },
   { label: 'Estate planning', href: '/other-services/estate-planning-wills' },
@@ -97,7 +96,7 @@ export default function ContactPage() {
               Talk to an attorney today.
             </h1>
             <p className="jw-enter mt-6 max-w-[40rem] text-[length:var(--step-lead)] leading-snug text-white/85" style={{ '--d': '160ms' } as React.CSSProperties}>
-              Consultations for criminal, OVI, injury, civil, business and estate matters anywhere in Ohio. You
+              Consultations for criminal, OVI, injury, business and estate matters anywhere in Ohio. You
               speak with the attorney who will handle your case.
             </p>
 

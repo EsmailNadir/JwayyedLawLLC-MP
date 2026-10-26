@@ -90,22 +90,6 @@ export const siteNav: NavNode[] = [
     ],
   },
   {
-    name: 'Civil',
-    href: '/civil',
-    tagline: 'Contract, property, and employment disputes.',
-    subLinks: [
-      { name: 'Ohio Civil Attorney', href: '/civil' },
-      { name: 'Breach of Contract', href: '/civil/breach-of-contract' },
-      { name: 'Real Estate Disputes', href: '/civil/real-estate-disputes' },
-      { name: 'Evictions', href: '/civil/evictions' },
-      { name: 'Construction Disputes', href: '/civil/construction-disputes' },
-      { name: 'Debt Collection Defense', href: '/civil/debt-collection-defense' },
-      { name: 'Employment Disputes', href: '/civil/employment-disputes' },
-      { name: 'Civil Protection Orders', href: '/civil/civil-protection-orders' },
-      { name: 'Appeals', href: '/civil/appeals' },
-    ],
-  },
-  {
     name: 'Business',
     href: '/business',
     tagline: 'Counsel for Ohio owners, founders, and partners.',
@@ -271,12 +255,11 @@ export const primaryNav: NavNode[] = [
   {
     name: 'Practice areas',
     href: '/services',
-    tagline: 'Six practice areas across Ohio.',
+    tagline: 'Five practice areas across Ohio.',
     subDropdowns: [
       areaColumn('Criminal Defense'),
       areaColumn('OVI / DUI'),
       areaColumn('Personal Injury'),
-      areaColumn('Civil'),
       areaColumn('Business'),
       areaColumn('Other Services'),
     ],

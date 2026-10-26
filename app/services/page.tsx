@@ -8,7 +8,6 @@ import {
   criminalDefenseServices,
   oviServices,
   personalInjuryServices,
-  civilServices,
   businessServices,
   otherServices,
   ServiceCard,
@@ -52,13 +51,6 @@ const AREAS: { id: string; heading: string; intro: string; href: string; service
     intro: 'Representation for people injured in car, truck and motorcycle crashes, falls and other serious accidents.',
     href: '/personal-injury',
     services: personalInjuryServices,
-  },
-  {
-    id: 'civil',
-    heading: 'Civil litigation',
-    intro: 'Civil disputes involving contracts, real estate, landlord-tenant issues, debt collection defense and more.',
-    href: '/civil',
-    services: civilServices,
   },
   {
     id: 'business',
