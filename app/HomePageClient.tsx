@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Pause, Phone, Play, Star } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Phone, Star } from 'lucide-react';
 import CourtFinder from '@/components/CourtFinder';
 import NCDDBadge from '@/components/NCDDBadge';
 import OfficeStatus from '@/components/OfficeStatus';
@@ -119,12 +119,10 @@ function Words({ text, className = '', start = 0 }: { text: string; className?: 
  * The firm's own footage, full-bleed behind the opening line. Only one file
  * is fetched (phone or desktop cut, chosen in the browser); under reduced
  * motion nothing downloads. No still image stands in while it loads or if it
- * fails; the hero stays plain navy. Pausable.
+ * fails; the hero stays plain navy.
  */
 function HeroVideo() {
-  const ref = useRef<HTMLVideoElement>(null);
   const [src, setSrc] = useState<string | null>(null);
-  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -140,20 +138,12 @@ function HeroVideo() {
     };
   }, []);
 
-  useEffect(() => {
-    const v = ref.current;
-    if (!v) return;
-    if (!paused) void v.play().catch(() => setPaused(true));
-    else v.pause();
-  }, [paused, src]);
-
   return (
     <>
       <div className="hero-media jw-hero-drift absolute inset-0 bg-navy-950" aria-hidden="true">
         {src && (
           <video
             key={src}
-            ref={ref}
             muted
             loop
             playsInline
@@ -168,16 +158,6 @@ function HeroVideo() {
       {/* Neutral scrim, deeper toward the edges and the foot. */}
       <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(11,26,46,0.75)_100%)]" aria-hidden="true" />
-      {src && (
-        <button
-          type="button"
-          onClick={() => setPaused((p) => !p)}
-          className={`absolute z-20 right-5 sm:right-8 bottom-6 inline-flex items-center justify-center w-11 h-11 border border-white/30 text-white/85 hover:text-white hover:border-white transition-colors ${RING_DARK}`}
-          aria-label={paused ? 'Play background video' : 'Pause background video'}
-        >
-          {paused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}
-        </button>
-      )}
     </>
   );
 }
