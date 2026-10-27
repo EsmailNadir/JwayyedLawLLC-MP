@@ -570,14 +570,6 @@ body:has(.bg-gray-100) {
     transform: none;
   }
 }
-@keyframes jw-progress {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
 @keyframes jw-drift {
   from {
     transform: translateY(-4%);

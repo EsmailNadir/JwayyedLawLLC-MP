@@ -1,7 +1,6 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
 import Analytics from "@/components/Analytics";
-import ReviewToast from '@/components/ReviewToast';
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -262,7 +261,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-S37MJ180WG');`}
         </Script>
-        <ReviewToast />
         <Analytics />
       </body>
     </html>
