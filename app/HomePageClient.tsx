@@ -64,10 +64,25 @@ const TRUST = [
   'NACDL member',
 ];
 
-/** Bar memberships shown as tiles beside the badges in the reviews section. */
+/** Bar memberships shown as tiles beside the badges in the reviews section,
+ *  each with the association's own logo (from ohiobar.org and nacdl.org). */
 const MEMBERSHIPS = [
-  { mark: 'OSBA', name: 'Ohio State Bar Association' },
-  { mark: 'NACDL', name: 'National Association of Criminal Defense Lawyers' },
+  {
+    name: 'Ohio State Bar Association',
+    logo: '/assets/osba-logo.png',
+    alt: 'Ohio State Bar Association logo',
+    width: 230,
+    height: 71,
+    className: 'w-[200px] max-w-full h-auto',
+  },
+  {
+    name: 'National Association of Criminal Defense Lawyers',
+    logo: '/assets/nacdl-logo.svg',
+    alt: 'National Association of Criminal Defense Lawyers seal',
+    width: 106,
+    height: 108,
+    className: 'h-24 w-24 rounded-full bg-white p-1',
+  },
 ];
 
 const CREDENTIALS = [
@@ -418,9 +433,9 @@ export default function HomePageClient() {
               </div>
 
               {MEMBERSHIPS.map((m) => (
-                <div key={m.mark} className={BADGE_TILE}>
+                <div key={m.name} className={BADGE_TILE}>
                   <span className={BADGE_ART}>
-                    <span className="jw-display text-[clamp(2.25rem,1.8rem+1.5vw,3rem)] leading-none tracking-wide text-sky">{m.mark}</span>
+                    <Image src={m.logo} alt={m.alt} width={m.width} height={m.height} sizes="200px" className={m.className} />
                   </span>
                   <span>
                     <span className="block font-semibold">Member</span>
