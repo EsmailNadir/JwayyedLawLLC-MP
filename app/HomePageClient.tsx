@@ -23,7 +23,7 @@ import { siteNav } from '@/data/navigation';
 
 const PHONE_DISPLAY = '(614) 285-5482';
 
-/** Trust tiles in "What clients say": the mark large on top, its label under it. */
+/** Trust tiles above "What clients say": the mark large on top, its label under it. */
 const BADGE_TILE = 'flex flex-col items-center justify-start gap-4 px-5 pt-7 pb-6 min-w-0 text-center bg-navy-800';
 const BADGE_ART = 'flex h-24 w-full items-center justify-center';
 const PHONE_TEL = 'tel:+16142855482';
@@ -62,6 +62,12 @@ const TRUST = [
   'Licensed in Ohio since 2019',
   'Ohio State Bar Association member',
   'NACDL member',
+];
+
+/** Bar memberships shown as tiles beside the badges in the reviews section. */
+const MEMBERSHIPS = [
+  { mark: 'OSBA', name: 'Ohio State Bar Association' },
+  { mark: 'NACDL', name: 'National Association of Criminal Defense Lawyers' },
 ];
 
 const CREDENTIALS = [
@@ -344,12 +350,8 @@ export default function HomePageClient() {
         aria-labelledby="reviews-heading"
       >
         <div className={FRAME}>
-          <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16">
-            <h2 id="reviews-heading" className="reveal-title jw-display text-[length:var(--step-head)]">
-              <Words text="What clients say" />
-            </h2>
-
-            <div className="reveal-group mt-10 grid gap-3 grid-cols-2 lg:grid-cols-4">
+          <div className="text-center max-w-5xl mx-auto mb-16 sm:mb-24">
+            <div className="reveal-group grid gap-3 grid-cols-2 lg:grid-cols-3">
               <a
                 href={GOOGLE_REVIEWS_URL}
                 target="_blank"
@@ -414,8 +416,24 @@ export default function HomePageClient() {
                   <span className="block text-[length:var(--step-small)] text-mist">BusinessRate award</span>
                 </span>
               </div>
+
+              {MEMBERSHIPS.map((m) => (
+                <div key={m.mark} className={BADGE_TILE}>
+                  <span className={BADGE_ART}>
+                    <span className="jw-display text-[clamp(2.25rem,1.8rem+1.5vw,3rem)] leading-none tracking-wide text-sky">{m.mark}</span>
+                  </span>
+                  <span>
+                    <span className="block font-semibold">Member</span>
+                    <span className="block text-[length:var(--step-small)] text-mist">{m.name}</span>
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
+
+          <h2 id="reviews-heading" className="reveal-title jw-display text-center mb-10 sm:mb-12 text-[length:var(--step-head)]">
+            <Words text="What clients say" />
+          </h2>
 
           <div className="reveal-group grid items-center gap-8 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
             <ReviewSummaryCard

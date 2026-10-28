@@ -6,7 +6,7 @@ import { Play } from 'lucide-react';
 /**
  * Attorney Jwayyed's talk at the Ohio Bar Association Leadership Academy,
  * set as a feature: the portrait clip in an offset sky frame on a navy panel,
- * with the talk's opening line beside it. The browser's controls appear only
+ * with the talk's opening line under it. The browser's controls appear only
  * once it plays; before that a single play button sits over the first frame.
  */
 export default function SpeechFeature() {
@@ -28,8 +28,8 @@ export default function SpeechFeature() {
         className="pointer-events-none absolute -left-24 top-1/4 h-[28rem] w-[28rem] rounded-full bg-sky/20 blur-[110px]"
         aria-hidden="true"
       />
-      <div className="relative grid items-center gap-10 p-6 sm:p-10 md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14 lg:p-12">
-        <figure className="relative mx-auto w-full max-w-[17rem] md:mx-0">
+      <div className="relative flex flex-col items-center gap-10 p-6 sm:p-10 lg:p-12">
+        <figure className="relative mx-auto w-full max-w-[20rem]">
           {/* Offset frame. */}
           <div className="absolute inset-0 translate-x-3 translate-y-3 border border-sky/60" aria-hidden="true" />
           <div className="relative overflow-hidden bg-black shadow-[0_30px_60px_-20px_rgba(0,0,0,0.7)]">
@@ -60,18 +60,18 @@ export default function SpeechFeature() {
           <figcaption className="sr-only">Speaking at the Ohio Bar Association Leadership Academy.</figcaption>
         </figure>
 
-        <div className="text-center md:text-left">
+        <div className="text-center">
           <p className="text-[length:var(--step-small)] font-semibold uppercase tracking-[0.14em] text-sky">
             Ohio Bar Association Leadership Academy
           </p>
           <p className="mt-5 jw-display text-[clamp(1.9rem,1.3rem+2.2vw,3.1rem)] leading-[1.05] text-balance">
             &ldquo;What makes a person a leader?&rdquo;
           </p>
-          <p className="mt-5 max-w-[36ch] mx-auto md:mx-0 text-white/80 leading-relaxed">
-            Speaking at the Ohio Bar Association Leadership Academy, where he was one of 27 attorneys selected for the 2023
-            class.
+          <p className="mt-5 max-w-[44ch] mx-auto text-white/80 leading-relaxed">
+            See above as JJ spoke at the 2023 Ohio Bar Association Leadership Academy, where he was 1 of 27 attorneys
+            selected for the class.
           </p>
-          <div className="mt-8 flex items-center justify-center md:justify-start gap-4 text-[length:var(--step-small)] text-white/70">
+          <div className="mt-8 flex items-center justify-center gap-4 text-[length:var(--step-small)] text-white/70">
             <span className="h-px w-10 bg-sky" aria-hidden="true" />
             Class of 2023
           </div>
