@@ -59,7 +59,7 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 - `app/layout.tsx` wraps every page with `AnnouncementBar`, `Navbar`, `<main>`, and `Footer`, and loads GA4 via `next/script`. There is no live-chat widget (Tidio was removed).
 - `components/navbar.tsx` is the source of truth for the top-level nav (8 items, no dropdowns). Update `mainNavItems` there when adding a new top-level section.
 - `components/SearchBar.tsx` builds an in-memory Fuse.js search index from nav items at runtime. If you add navigable destinations that should be searchable, expose them through the nav structure SearchBar consumes.
-- Common page primitives: `PageHero`, `Breadcrumbs`, `FAQ`, `ContactCTA`, `ServiceCard`. Practice-area pages follow a consistent pattern: `<Breadcrumbs/> + <PageHero/> + service grid (from data/services.ts) + <FAQ/> + <ContactCTA/>`. Match this pattern when adding new landing pages.
+- Common page primitives: `PageHero`, `Breadcrumbs`, `FAQ`, `ContactCTA`. Practice-area pages follow a consistent pattern: `<Breadcrumbs/> + <PageHero/> + service grid (from data/services.ts) + <FAQ/> + <ContactCTA/>`. Match this pattern when adding new landing pages.
 
 ### Forms and scheduling
 
@@ -68,7 +68,7 @@ URL redirects (e.g., the removed Immigration practice area pointing to `/other-s
 
 ### Styling
 
-- Tailwind v4 via `@tailwindcss/postcss` (config in `tailwind.config.ts`, plus `postcss.config.{js,mjs}`). Global styles in `app/globals.css`.
+- Tailwind v4 via `@tailwindcss/postcss` (config in `tailwind.config.ts`, plus `postcss.config.mjs`). Global styles in `app/globals.css`.
 - Brand color: `#b87333` (copper) — used widely as accent. Fonts are `DM Sans` (body) and `Playfair Display` (headings), loaded via `next/font/google` in `app/layout.tsx`.
 
 ### Images and video
