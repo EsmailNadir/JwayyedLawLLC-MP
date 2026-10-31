@@ -125,6 +125,16 @@ body {
   font-family: var(--font-dm-sans), 'DM Sans', 'Arial', sans-serif;
 }
 
+/* In-page links (e.g. "Read all reviews") glide to their target instead of
+   jumping. The data-scroll-behavior attribute on <html> tells Next to switch
+   this off during route changes, so a new page still opens at the top
+   instantly. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body:has(.bg-gray-100) {
   background-color: #f3f4f6;
 }
@@ -194,6 +204,20 @@ body:has(.bg-gray-100) {
 @layer base {
   * {
     border-color: var(--color-border);
+  }
+
+  /* Tailwind v4 dropped the pointer on buttons; anything clickable gets it
+     back. A utility (e.g. cursor-default) still overrides it. */
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  summary,
+  label[for],
+  select,
+  input[type='checkbox'],
+  input[type='radio'],
+  input[type='submit'],
+  input[type='button'] {
+    cursor: pointer;
   }
 }
 

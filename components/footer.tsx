@@ -83,6 +83,10 @@ const LINK = 'hover:text-sky hover:underline underline-offset-4 transition-color
  * the trust marks and the legal line.
  */
 export default function Footer() {
+  // Pages are prerendered, so this is the year of the latest build: it rolls
+  // over with the first deploy of the new year.
+  const year = new Date().getFullYear();
+
   return (
     <footer className="jw jw-mark bg-navy-950 text-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-8">
@@ -179,10 +183,10 @@ export default function Footer() {
           <div className="lg:col-span-9 grid gap-2">
             <p className="max-w-[90ch]">
               Notice: This website is not to be considered legal advice. Consult with an attorney to receive legal advice.
-              Ohio content reflects Ohio law as of 2026. Local court rules and procedures may differ. Laws can change.
+              Ohio content reflects Ohio law as of {year}. Local court rules and procedures may differ. Laws can change.
             </p>
             <p>
-              © 2026 Jwayyed Law LLC (JJ Law Ohio). All rights reserved.{' '}
+              © {year} Jwayyed Law LLC (JJ Law Ohio). All rights reserved.{' '}
               <Link href="/privacy" className={`underline underline-offset-4 ${LINK}`}>
                 Privacy Policy
               </Link>

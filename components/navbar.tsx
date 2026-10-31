@@ -296,7 +296,7 @@ function NavItem({
   // The current section takes the copper ink; hover draws a copper bar under
   // the label. The one filled shape in the bar stays the phone button.
   const shared =
-    `relative inline-flex items-center gap-1 px-3 py-2.5 text-[length:var(--step-small)] font-medium transition-colors cursor-pointer ` +
+    `relative inline-flex items-center gap-1 px-3 py-2.5 text-[length:var(--step-small)] font-medium transition-colors ` +
     `after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-sky after:origin-left after:transition-transform after:duration-200 ` +
     `${active ? 'text-sky after:scale-x-100' : 'text-white hover:text-white after:scale-x-0 hover:after:scale-x-100'} ${FOCUS}`;
 
@@ -342,7 +342,9 @@ function NavItem({
         onKeyDown={handleTriggerKeyDown}
         aria-expanded={isOpen}
         aria-controls={panelId}
-        className={shared}
+        // The menu opens on hover, so the label reads as a heading, not a
+        // button to click.
+        className={`${shared} cursor-default`}
       >
         {node.name}
         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
