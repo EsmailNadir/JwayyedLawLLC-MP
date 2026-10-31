@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Fuse from 'fuse.js';
+import { startNavigationProgress } from '@/components/NavigationProgress';
 import { siteNav, auxiliaryNav, type NavNode } from '@/data/navigation';
 
 // ============================================================================
@@ -179,6 +180,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
           setIsOpen(false);
           inputRef.current?.blur();
           onNavigate?.();
+          startNavigationProgress();
           router.push(href);
         }
         break;
@@ -200,6 +202,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className = '', onNavigate, autoF
     setIsOpen(false);
     inputRef.current?.blur();
     onNavigate?.();
+    startNavigationProgress();
     router.push(href);
   };
 

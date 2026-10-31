@@ -1,6 +1,7 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/navbar";
 import Analytics from "@/components/Analytics";
+import NavigationProgress from "@/components/NavigationProgress";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
@@ -240,6 +241,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to main content
         </a>
+        <NavigationProgress />
         <AnnouncementBar />
         <Navbar />
 
