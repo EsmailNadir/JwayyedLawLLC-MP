@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image, { getImageProps } from 'next/image';
 import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Phone, Star } from 'lucide-react';
 import CourtFinder from '@/components/CourtFinder';
 import NCDDBadge from '@/components/NCDDBadge';
@@ -137,44 +137,55 @@ function Words({ text, className = '', start = 0 }: { text: string; className?: 
 }
 
 /**
- * The firm's own footage, full-bleed behind the opening line. Only one file
- * is fetched (phone or desktop cut, chosen in the browser); under reduced
- * motion nothing downloads. No still image stands in while it loads or if it
- * fails; the hero stays plain navy.
+ * The firm's own footage, full-bleed behind the opening line. The video is
+ * in the server HTML, so it starts downloading with the page rather than
+ * after hydration, and the files are faststart so playback begins on the
+ * first bytes. The browser picks one cut from the `media` queries (phone or
+ * desktop); under reduced motion neither matches and nothing downloads.
+ * Underneath sits the clip's own first frame, so the hero shows the footage
+ * as soon as the headline does and the video takes over without a seam.
  */
 function HeroVideo() {
-  const [src, setSrc] = useState<string | null>(null);
+  const video = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    // `media` on <source> is only read when the video loads; reload so a
+    // crossed breakpoint or a changed motion setting picks the right cut.
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     const small = window.matchMedia('(max-width: 639px)');
-    const pick = () =>
-      setSrc(reduce.matches ? null : small.matches ? '/videos/mobile-web-banner.mp4' : '/videos/background-video.mp4');
-    pick();
-    reduce.addEventListener('change', pick);
-    small.addEventListener('change', pick);
+    const reload = () => video.current?.load();
+    reduce.addEventListener('change', reload);
+    small.addEventListener('change', reload);
     return () => {
-      reduce.removeEventListener('change', pick);
-      small.removeEventListener('change', pick);
+      reduce.removeEventListener('change', reload);
+      small.removeEventListener('change', reload);
     };
   }, []);
+
+  const still = { alt: '', sizes: '100vw', loading: 'eager', fetchPriority: 'high' } as const;
+  const { props: { srcSet: desktopSrcSet } } = getImageProps({ ...still, src: '/assets/hero-first-frame.jpg', width: 1920, height: 720 });
+  const { props: { srcSet: mobileSrcSet, ...mobileImg } } = getImageProps({ ...still, src: '/assets/hero-first-frame-mobile.jpg', width: 720, height: 1280 });
 
   return (
     <>
       <div className="hero-media jw-hero-drift absolute inset-0 bg-navy-950" aria-hidden="true">
-        {src && (
-          <video
-            key={src}
-            muted
-            loop
-            playsInline
-            autoPlay
-            preload="auto"
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src={src} type="video/mp4" />
-          </video>
-        )}
+        <picture>
+          <source media="(min-width: 640px)" srcSet={desktopSrcSet} />
+          <source media="(max-width: 639px)" srcSet={mobileSrcSet} />
+          <img {...mobileImg} className="absolute inset-0 w-full h-full object-cover" />
+        </picture>
+        <video
+          ref={video}
+          muted
+          loop
+          playsInline
+          autoPlay
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source media="(prefers-reduced-motion: no-preference) and (min-width: 640px)" src="/videos/background-video.mp4" type="video/mp4" />
+          <source media="(prefers-reduced-motion: no-preference)" src="/videos/mobile-web-banner.mp4" type="video/mp4" />
+        </video>
       </div>
       {/* Neutral scrim, deeper toward the edges and the foot. */}
       <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
@@ -456,7 +467,8 @@ export default function HomePageClient() {
               reviewCount={130}
               orMore
               summaryText={`Rated ${RATING} from 130+ verified Google reviews.`}
-              className="mx-auto lg:mx-0 bg-white text-navy-950"
+              href={GOOGLE_REVIEWS_URL}
+              className={`mx-auto lg:mx-0 bg-white text-navy-950 ${RING_DARK}`}
             />
             <TestimonialWall />
           </div>

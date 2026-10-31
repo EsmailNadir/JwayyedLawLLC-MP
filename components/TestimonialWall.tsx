@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Pause, Play, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { Marquee } from '@/components/ui/3d-testimonials';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -64,13 +64,9 @@ function ReviewCard({ name, text, rating }: { name: string; text: string; rating
 }
 
 export default function TestimonialWall() {
-  // The wall scrolls without end, so it needs a way to stop that is not
-  // hover: touch screens have no hover, and keyboard focus alone is not
-  // discoverable. Hover and focus still pause it as well.
-  const [paused, setPaused] = useState(false);
-  // It also stops whenever it is off screen, so dozens of moving cards in a
-  // 3D layer are never animating out of sight while the visitor scrolls the
-  // rest of the page.
+  // Hover and focus pause the wall (see Marquee). It also stops whenever it
+  // is off screen, so dozens of moving cards in a 3D layer are never
+  // animating out of sight while the visitor scrolls the rest of the page.
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -94,41 +90,45 @@ export default function TestimonialWall() {
     };
   }, []);
 
-  const still = paused || !visible;
-
   return (
     <div
       ref={ref}
-      className={`relative flex h-[420px] w-full items-center justify-center overflow-hidden sm:h-[520px] [perspective:340px] [contain:layout_paint] ${
-        still ? '[&_.animate-marquee-vertical]:[animation-play-state:paused]' : ''
+      className={`relative h-[420px] w-full overflow-hidden sm:h-[520px] [contain:layout_paint] ${
+        !visible ? '[&_.animate-marquee-vertical]:[animation-play-state:paused]' : ''
       }`}
       aria-label="Client reviews"
     >
-      {/* Rotation kept modest. The upstream demo tilts 20deg on three axes,
-          which looks striking with placeholder text and is tiring to read with
-          real ones — these are quotes a visitor is meant to actually read. */}
-      <div
-        className="flex flex-row items-center gap-4"
-        style={{
-          transform:
-            'translateX(-30px) translateZ(-60px) rotateX(10deg) rotateY(-9deg) rotateZ(7deg)',
-        }}
-      >
-        {columns.map((group, i) => (
-          <Marquee
-            key={i}
-            vertical
-            pauseOnHover
-            reverse={i % 2 === 1}
-            repeat={3}
-            className="[--duration:46s]"
-            ariaRole="list"
-          >
-            {group.map((review) => (
-              <ReviewCard key={review.name} name={review.name} text={review.text} rating={review.rating} />
-            ))}
-          </Marquee>
-        ))}
+      {/* The cards are cut off a few pixels inside the wall's edge, under the
+          solid end of the fades below. Cut off at the edge itself, Chrome
+          could round the two differently while the wall slid in, leaving a
+          hairline of white card along the top and bottom. */}
+      <div className="absolute inset-1 flex items-center justify-center overflow-hidden [perspective:340px]">
+        {/* Rotation kept modest. The upstream demo tilts 20deg on three axes,
+            which looks striking with placeholder text and is tiring to read with
+            real ones — these are quotes a visitor is meant to actually read. */}
+        <div
+          className="flex flex-row items-center gap-4"
+          style={{
+            transform:
+              'translateX(-30px) translateZ(-60px) rotateX(10deg) rotateY(-9deg) rotateZ(7deg)',
+          }}
+        >
+          {columns.map((group, i) => (
+            <Marquee
+              key={i}
+              vertical
+              pauseOnHover
+              reverse={i % 2 === 1}
+              repeat={3}
+              className="[--duration:46s]"
+              ariaRole="list"
+            >
+              {group.map((review) => (
+                <ReviewCard key={review.name} name={review.name} text={review.text} rating={review.rating} />
+              ))}
+            </Marquee>
+          ))}
+        </div>
       </div>
 
       {/* Edge fades as fixed overlays in the navy-900 field colour. They sit
@@ -139,15 +139,6 @@ export default function TestimonialWall() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#12253d] via-[#12253d]/70 to-transparent" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#12253d] to-transparent sm:w-24" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#12253d] from-55% to-transparent sm:w-52" aria-hidden="true" />
-
-      <button
-        type="button"
-        onClick={() => setPaused((p) => !p)}
-        className="motion-reduce:hidden absolute top-3 right-3 z-10 inline-flex items-center justify-center w-11 h-11 bg-navy-950 text-white hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
-        aria-label={paused ? 'Play scrolling reviews' : 'Pause scrolling reviews'}
-      >
-        {paused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}
-      </button>
     </div>
   );
 }

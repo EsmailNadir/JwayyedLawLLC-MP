@@ -13,6 +13,8 @@ interface ReviewSummaryCardProps {
   maxRating?: number;
   /** A descriptive summary text line. */
   summaryText: string;
+  /** Where the reviews can be read. When set, the card is a link that opens in a new tab. */
+  href?: string;
   /** Optional class name for custom styling. */
   className?: string;
 }
@@ -34,15 +36,24 @@ export const ReviewSummaryCard: React.FC<ReviewSummaryCardProps> = ({
   orMore = false,
   maxRating = 5,
   summaryText,
+  href,
   className,
 }) => {
   const count = `${new Intl.NumberFormat('en-US').format(reviewCount)}${orMore ? '+' : ''}`;
+  const label = `Rated ${rating.toFixed(1)} out of ${maxRating} from ${count} reviews`;
+  const Root = href ? 'a' : 'div';
+  const rootProps = href
+    ? { href, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `${label}. Read the reviews (opens in a new tab)` }
+    : { role: 'group', 'aria-label': label };
 
   return (
-    <div
-      className={cn('w-full max-w-xs rounded-xl bg-card p-6 text-center flex flex-col items-center justify-center', className)}
-      role="group"
-      aria-label={`Rated ${rating.toFixed(1)} out of ${maxRating} from ${count} reviews`}
+    <Root
+      {...rootProps}
+      className={cn(
+        'w-full max-w-xs rounded-xl bg-card p-6 text-center flex flex-col items-center justify-center',
+        href && 'cursor-pointer',
+        className
+      )}
     >
       <div className="flex items-center gap-1" aria-hidden="true">
         {Array.from({ length: maxRating }, (_, i) => (
@@ -60,6 +71,6 @@ export const ReviewSummaryCard: React.FC<ReviewSummaryCardProps> = ({
       </p>
 
       <p className="mt-2 text-sm text-muted-foreground">{summaryText}</p>
-    </div>
+    </Root>
   );
 };
